@@ -39,7 +39,7 @@ Note that emulators can use any architecture.
 ### Frameworks
 
 Each
-[framework](http://developer.ubuntu.com/phone/platform/guides/frameworks/) is
+[framework](../../../platform/guides/frameworks.md) is
 related to an Ubuntu release. In most cases, you will want to use the latest
 version to allow your app to use the latest features of the platform, but you
 can also try and see how your app behaves with older releases.
@@ -80,10 +80,5 @@ Missing flash plugin. Please download the latest Adobe Flash Player:
 ## Next steps
 
 Now that this setup step is out of the way, you can go back to creating your
-app! Have a look at the [platformguides](http://developer.ubuntu.com/phone/platform/guides/) to learn how to
+app! Have a look at the [platformguides](../../../platform/guides/index.md) to learn how to
 make the most of our APIs.
-
-
-
-
-

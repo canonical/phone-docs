@@ -43,7 +43,7 @@ to their AppArmor manifest file:
     }
 
 You can read more about application confinement
-[here](https://developer.ubuntu.com/phone/platform/guides/app-confinement/).
+[here](app-confinement.md).
 Next, the application needs to ship an `app.accounts` file which describes the
 service(s) it's going to use:
 
@@ -432,8 +432,3 @@ time, though), and while running it will be showing all the output from the
 account plugin: for instance, if you add a `console.log("Hello World")`
 statement in your plugin, you'll see it appearing in this terminal when your
 plugin is being run.
-
-
-
-
-

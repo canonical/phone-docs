@@ -123,14 +123,9 @@ Application Output pane at the bottom of the editor.
 
 ## Next steps
 
-You may be ready to start writing apps! A great next step is the [Ubuntu AppPlatform](http://developer.ubuntu.com/phone/platform/) section for information
+You may be ready to start writing apps! A great next step is the [Ubuntu AppPlatform](../../../platform/index.md) section for information
 and guides on the common parts of Ubuntu that app developers need to know
 about. Ready to start coding? Check out the
 [QML](http://developer.ubuntu.com/apps/qml/) and
 [HTML5](http://developer.ubuntu.com/apps/html-5/) sections for help deciding
 which toolkit to use.
-
-
-
-
-
