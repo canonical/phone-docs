@@ -16,7 +16,7 @@ Ubuntu.
 
 **Tip**: A device is not required: you can develop and run apps and scopes using the Ubuntu emulator right in your Ubuntu desktop. For more info, see [Ubuntu SDK](platform/sdk/index.md)
 
-![](/static/devportal_uploaded/465794a5-c1fe-4582-80c9-c0fa9363f552-cms_page_media/1141/tel3.png)
+![](../media/465794a5-c1fe-4582-80c9-c0fa9363f552-cms_page_media/1141/tel3.png)
 
 
 

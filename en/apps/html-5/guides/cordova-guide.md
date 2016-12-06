@@ -10,7 +10,7 @@ This is a high-level guide to Cordova on Ubuntu. The guide contains
 information both for creating a new Cordova application for Ubuntu, or for
 adding Ubuntu as a distribution platform for an existing Cordova application.
 
-![](../../../../media/26d55c74-3bd8-40ca-acfb-98f640706968-cms_page_media/112/cordova.png) ![](/static/devportal_uploaded/ceec74fd-40ec-43c4-bd27-fdfd1c5cf128-cms_page_media/112/ubuntu.png)
+![](../../../../media/26d55c74-3bd8-40ca-acfb-98f640706968-cms_page_media/112/cordova.png) ![](../../../../media/ceec74fd-40ec-43c4-bd27-fdfd1c5cf128-cms_page_media/112/ubuntu.png)
 
 ## What is Cordova?
 

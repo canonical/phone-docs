@@ -80,7 +80,7 @@ To look good when cropped, the point of focus (in this example, the YouTube
 logo) you should be slightly above the horizontal center and its width should
 be a third of the icon size.
 
-![](../../../media/6f70b338-8bfc-43da-8d8c-0c2f99c7c1e9-cms_page_media/147/yt-1-300x300.png) ![](/static/devportal_uploaded/733e8c76-1c9e-409c-bcf4-aeb005e40c43-cms_page_media/147/yt-2-300x300.png)
+![](../../../media/6f70b338-8bfc-43da-8d8c-0c2f99c7c1e9-cms_page_media/147/yt-1-300x300.png) ![](../../../media/733e8c76-1c9e-409c-bcf4-aeb005e40c43-cms_page_media/147/yt-2-300x300.png)
 
 ### Creating the package
 

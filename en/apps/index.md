@@ -28,13 +28,13 @@ regardless of the implementation toolkit.
 
 [Learn more about our design values ›](http://design.ubuntu.com/apps)
 
-![Design comes first](https://developer.ubuntu.com/static/devportal_uploaded/e780dbd9-4eb9-480c-b1c2-b5a615a28c93-cms_page_media/5/making_of_apps_21222.png)
+![Design comes first](../../media/e780dbd9-4eb9-480c-b1c2-b5a615a28c93-cms_page_media/5/making_of_apps_21222.png)
 
 
 
 
 
-![](/static/devportal_uploaded/6daaacc9-e995-4b1e-b1ff-cfeda26ec317-cms_page_media/5/screenshot20151215_1202226qsdgwxcv57.png)
+![](../../media/6daaacc9-e995-4b1e-b1ff-cfeda26ec317-cms_page_media/5/screenshot20151215_1202226qsdgwxcv57.png)
 
 ## The Ubuntu App platform
 
@@ -83,8 +83,3 @@ power refined QML UIs.
 **For starters, we recommend QML and JavaScript, which are the languages used in most tutorials.**
 
 [Write your first app](qml/index.md)
-
-
-
-
-
