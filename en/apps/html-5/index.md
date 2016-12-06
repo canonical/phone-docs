@@ -63,21 +63,21 @@ sources of help and information. Here are a couple good places to visit:
 
 ### Guides
 
-Be sure to check out our [HTML5 guides](/en/phone/apps/html-5/guides/) and
-others, like those for the [Ubuntu App Platform](/en/phone/platform/guides/).
+Be sure to check out our [HTML5 guides](guides/index.md) and
+others, like those for the [Ubuntu App Platform](../../platform/guides/index.md).
 These focused articles cover key topics of interest to app developers and are
 designed to give you a high level overview of critical topics. After reading
 the guides, understanding APIs and platform features is much easier.
 
 ### Tutorials
 
-Definitely check out the [HTML5 tutorials](/en/phone/apps/html-5/tutorials/).
+Definitely check out the [HTML5 tutorials](tutorials/index.md).
 These give you detailed steps, examples and explanations that let you leap
 into productivity with Ubuntu HTML5 apps.
 
 ### APIs
 
-And of course, developers need the [API Reference docs forHTML5/JavaScript](/en/phone/apps/html-5/api/). These provide the
+And of course, developers need the [API Reference docs forHTML5/JavaScript](api.md). These provide the
 implementation-level detail you need make your HTML5 apps use the full sweet
 of platform APIs .
 

@@ -42,15 +42,15 @@ for existing APIs.
 #### **Changes between versions**
 
 You can find the list of supported APIs for the latest stable frameworks and
-the ones being currently worked on, in the [QML](/en/phone/apps/qml/) and
-[HTML5](/en/phone/apps/html-5/) API docs. Note that a command line tool to
+the ones being currently worked on, in the [QML](../../apps/qml/index.md) and
+[HTML5](../../apps/html-5/index.md) API docs. Note that a command line tool to
 list all changes between versions of a framework is coming soon.
 
 #### **Target a framework newer than the version of Ubuntu you are running**
 
 The SDK allows you to run your app with any framework, regardless of your
 development environment and version of Ubuntu. See the “Device kits” section
-of [Running apps from the SDK](/en/phone/apps/sdk/tutorials/running-apps-from-the-sdk/).
+of [Running apps from the SDK](../../apps/sdk/tutorials/running-apps-from-the-sdk.md).
 
 ### Going further
 

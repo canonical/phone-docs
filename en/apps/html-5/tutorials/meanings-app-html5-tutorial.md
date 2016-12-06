@@ -33,8 +33,8 @@ areas too.
 There are a couple requirements:
 
   * You need to install the Ubuntu SDK
-  * You need to know how to [create an HTML5 app project in the SDK](/en/phone/apps/sdk/tutorials/creating-an-sdk-app-project/)
-  * You should have some experience [running apps from the SDK](/en/phone/apps/sdk/tutorials/running-apps-from-the-sdk/)
+  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials/creating-an-sdk-app-project.md)
+  * You should have some experience [running apps from the SDK](../../sdk/tutorials/running-apps-from-the-sdk.md)
 
 ### Getting the app source
 
@@ -80,7 +80,7 @@ naturally, the GUI and control logic are simply the defaults for any new app.
 We’ll implement a GUI and control logic that suits the needs of or Meanings
 app below.
 
-**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](/en/phone/apps/sdk/) section. You can also try creating an emulator and running it there, again following those tips.
+**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
 
 ### Run the app from the terminal
 
@@ -164,7 +164,7 @@ This is the required code that creates an UbuntuUI object (locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
-**Tip**: Later, take a look at the [HTML5 UbuntuUI API](/en/phone/apps/html-5/guides/introduction-to-the-html5-ui-toolkit/) reference docs.
+**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides/introduction-to-the-html5-ui-toolkit.md) reference docs.
 
 This is an event handler for the window.onload event. It provides an anonymous
 function that executes when the event is received. This event is received
@@ -197,7 +197,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide](/en/phone/apps/html-5/guides/html5-guide/) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
 
 ### App layout
 
@@ -553,7 +553,7 @@ Now, use the device’s GUI to find the app and launch it.
 ## Next Steps
 
 Be sure to check out other HTML5 tutorials and guides in the
-[HTML5](/en/phone/apps/html-5/) section of developer.ubuntu.com!
+[HTML5](../index.md) section of developer.ubuntu.com!
 
 
 

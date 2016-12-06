@@ -16,7 +16,7 @@ guide assumes you are familar with using [autopilot testrunner](https://develope
 ## Using the Ubuntu SDK
 
 By utilizing the ubuntu SDK for development, it's easy to also run a project's
-autopilot tests directly from inside the SDK. Be sure to [follow theinstallation guide for the SDK](/en/phone/platform/sdk/installing-the-sdk/) to
+autopilot tests directly from inside the SDK. Be sure to [follow theinstallation guide for the SDK](../sdk/installing-the-sdk.md) to
 ensure the SDK release ppa is installed. Then install the autopilot plugin
 package.
 

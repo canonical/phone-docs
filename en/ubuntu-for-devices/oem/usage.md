@@ -20,10 +20,10 @@ device. After installing the example customizations, you will be able to
 explore how the Savvy API can be used to change the look, feel, and behavior
 of Ubuntu Touch to suit your requirements. It requires:
 
-  * [device supported by Ubuntu Touch](/en/phone/devices/devices/)
-  * then use [ubuntu-device-flash](/en/phone/devices/installing-ubuntu-for-devices/) to install Ubuntu Touch on your device
+  * [device supported by Ubuntu Touch](../../devices/devices.md)
+  * then use [ubuntu-device-flash](../../devices/installing-ubuntu-for-devices.md) to install Ubuntu Touch on your device
 
-**Note:** the quick start assumes you have already been able to successfully install your device with the default Ubuntu image. If you encounter difficulty, please refer to the [installation instructions](/en/phone/devices/installing-ubuntu-for-devices/).
+**Note:** the quick start assumes you have already been able to successfully install your device with the default Ubuntu image. If you encounter difficulty, please refer to the [installation instructions](../../devices/installing-ubuntu-for-devices.md).
 
 ## Tutorial
 

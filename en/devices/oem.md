@@ -22,15 +22,15 @@ The following pages provide documentation for the code and test cases.
 
 ## Contents
 
-  * [Ubuntu Image Architecture](/en/phone/ubuntu-for-devices/oem/architecture/)
+  * [Ubuntu Image Architecture](../ubuntu-for-devices/oem/architecture.md)
   * [Quick Start + Tutorial](/en/phone/ubuntu-for-devices/oem/usage/)
-  * [Customizing Audio](/en/phone/ubuntu-for-devices/oem/customize-audio/)
-  * [Customizing Visuals](/en/phone/ubuntu-for-devices/oem/customize-visuals/)
-  * [Customizing Behaviour](/en/phone/ubuntu-for-devices/oem/customize-behaviour/)
-  * [Preinstalling Content](/en/phone/ubuntu-for-devices/oem/preinstalls/)
-  * [Savvy Core tests](/en/phone/ubuntu-for-devices/oem/core/)
-  * [Savvy API tests](/en/phone/ubuntu-for-devices/oem/api/)
-  * [dconf details](/en/phone/ubuntu-for-devices/oem/implementation/)
+  * [Customizing Audio](../ubuntu-for-devices/oem/customize-audio.md)
+  * [Customizing Visuals](../ubuntu-for-devices/oem/customize-visuals.md)
+  * [Customizing Behaviour](../ubuntu-for-devices/oem/customize-behaviour.md)
+  * [Preinstalling Content](../ubuntu-for-devices/oem/preinstalls.md)
+  * [Savvy Core tests](../ubuntu-for-devices/oem/core.md)
+  * [Savvy API tests](../ubuntu-for-devices/oem/api.md)
+  * [dconf details](../ubuntu-for-devices/oem/implementation.md)
 
 
 

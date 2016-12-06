@@ -26,7 +26,7 @@ applications from it. The easiest way to create a new app from QtCreator is to
 create a New project and select the HTML5 app template. You will be asked for
 a project name, then an app name. Other required fields will be useful for
 packaging and integrating your application within the Ubuntu app confinement
-model. You can have a look at [this article](/en/phone/platform/guides/app-confinement/) to get a better grasp of what our security model is.
+model. You can have a look at [this article](../../../platform/guides/app-confinement.md) to get a better grasp of what our security model is.
 
 ![](../../../../media/80975a18-f9e3-4da4-bafa-529f7f1bbaf9-cms_page_media/108/creating-a-html5-app.png)
 
@@ -36,7 +36,7 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and devicekits](/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) should give
+without hassle on all form factors. [Click targets and devicekits](../../sdk/tutorials/click-targets-and-device-kits.md) should give
 you all the details you need if you want to dive deeper or need more help.
 
 ![](../../../../media/b295dea4-879a-442e-9d8e-f868bd216323-cms_page_media/108/welcome-html5-app.png)
@@ -99,7 +99,7 @@ For example, to know when your application is about to be closed, just use:
         });
     };
 
-You can find more documentation on Ubuntu HTML5 APIs in the [APIsection](/en/phone/apps/html-5/api/).
+You can find more documentation on Ubuntu HTML5 APIs in the [APIsection](../api.md).
 
 ## How to add an Ubuntu style
 
@@ -120,7 +120,7 @@ complete theme simply by calling :
     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
 
-And using <button> and <header> tags. [Thisarticle](/en/phone/apps/html-5/guides/introduction-to-the-html5-ui-toolkit/)
+And using <button> and <header> tags. [Thisarticle](introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 The full API doc is available at [api/html5/sdk-14.10/UbuntuUI/](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).
 

@@ -130,8 +130,8 @@ objects are also accessible from C++ code.
 
 ### Get started with the Ubuntu SDK
 
-  1. [Follow these easy steps](/en/phone/platform/sdk/installing-the-sdk/) to install the ubuntu sdk.
-  2. Congrats! Now you're all set to [start writing a phone app](/en/phone/apps/qml/tutorials/building-your-first-qml-app/).
+  1. [Follow these easy steps](../../platform/sdk/installing-the-sdk.md) to install the ubuntu sdk.
+  2. Congrats! Now you're all set to [start writing a phone app](tutorials/building-your-first-qml-app.md).
 
 ### Design something beautiful
 

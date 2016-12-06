@@ -22,7 +22,7 @@ and selecting the currency required from the list.
 ## Requirements
 
   * Ubuntu 14.04 or later – [get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * The Ubuntu SDK – [install the Ubuntu SDK](/en/phone/platform/sdk/installing-the-sdk/)
+  * The Ubuntu SDK – [install the Ubuntu SDK](../../../platform/sdk/installing-the-sdk.md)
 
 ## The tools
 
@@ -513,7 +513,7 @@ currency converter you’ve just written with a few lines of code.
 
 ## Test it!
 
-Now that the application is running, don't forget about tests! The [qualitypage for qml applications](/en/phone/platform/quality/) has you covered. Learn
+Now that the application is running, don't forget about tests! The [qualitypage for qml applications](../../../platform/quality.md) has you covered. Learn
 about writing tests for every level of the testing pyramid by using the
 application you just built.
 
@@ -554,7 +554,7 @@ Alternatively, if you only want to run the Component Showcase:
 ### Reference
 
   * [Code for this tutorial](http://bazaar.launchpad.net/~ubuntu-sdk-tutorials-dev/ubuntu-sdk-tutorials/trunk/files/head:/getting-started/CurrencyConverter/) (use bzr branch lp:ubuntu-sdk-tutorials to get a local copy)
-  * [Writing tests for Currency Converter](/en/phone/platform/quality/)
+  * [Writing tests for Currency Converter](../../../platform/quality.md)
   * [Ubuntu UI Toolkit API documentation](https://developer.ubuntu.com/api/apps/qml/current/)
   * [Qt Quick documentation](http://qt-project.org/doc/qt-5.0/qtquick/qtquick-index.html)
   * [Getting Started Programming with Qt Quick](http://qt-project.org/doc/qt-5.0/qtdoc/gettingstartedqml.html)

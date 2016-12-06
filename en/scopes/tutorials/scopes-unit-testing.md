@@ -15,7 +15,7 @@ quality of your Ubuntu scope. It builds upon the scopes development tutorials.
 [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
 
   * **The scopes development tutorial**  
-If you haven't already, [complete the scopestutorials.](/en/phone/scopes/tutorials/)
+If you haven't already, [complete the scopestutorials.](index.md)
 
   * **googletest**  
 Since you need to build the library from source, you'll notice we install make

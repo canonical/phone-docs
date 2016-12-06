@@ -50,7 +50,7 @@ APIs to empower users and developers.
 This tight integration also enables a true write-once, run-everywhere approach
 that conserves precious developer time.
 
-[Learn more about platform features ›](/phone/platform)
+[Learn more about platform features ›](../platform/index.md)
 
 
 
@@ -71,7 +71,7 @@ This integrated development environment offers a richly featured and deeply
 integrated set of development tools that gears up productivity and includes
 direct access to attached Ubuntu devices and Ubuntu emulators.
 
-[Install the Ubuntu SDK IDE ›](/phone/platform/sdk/installing-the-sdk)
+[Install the Ubuntu SDK IDE ›](../platform/sdk/installing-the-sdk.md)
 
 ### Pick your language
 
@@ -82,7 +82,7 @@ power refined QML UIs.
 
 **For starters, we recommend QML and JavaScript, which are the languages used in most tutorials.**
 
-[Write your first app](/phone/apps/qml)
+[Write your first app](qml/index.md)
 
 
 

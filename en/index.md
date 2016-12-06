@@ -11,10 +11,10 @@
 Here you can install everything needed to get developing apps and scopes for
 Ubuntu.
 
-  1. Start by [Installing the Ubuntu SDK](/phone/platform/sdk/installing-the-sdk/).
-  2. Check out the [Ubuntu installation guide for devices](/phone/devices/installing-ubuntu-for-devices/) to install Ubuntu on a supported device.
+  1. Start by [Installing the Ubuntu SDK](platform/sdk/installing-the-sdk.md).
+  2. Check out the [Ubuntu installation guide for devices](devices/installing-ubuntu-for-devices.md) to install Ubuntu on a supported device.
 
-**Tip**: A device is not required: you can develop and run apps and scopes using the Ubuntu emulator right in your Ubuntu desktop. For more info, see [Ubuntu SDK](/phone/platform/sdk/)
+**Tip**: A device is not required: you can develop and run apps and scopes using the Ubuntu emulator right in your Ubuntu desktop. For more info, see [Ubuntu SDK](platform/sdk/index.md)
 
 ![](/static/devportal_uploaded/465794a5-c1fe-4582-80c9-c0fa9363f552-cms_page_media/1141/tel3.png)
 
@@ -29,14 +29,14 @@ Ubuntu.
 Mobile and convergent apps written using QML, HTML5 and Cordova, with access
 to a wide range of device and system APIs.
 
-[Learn more about Apps ›](/phone/apps)
+[Learn more about Apps ›](apps/index.md)
 
 ### Scopes
 
 Dedicated views on the homescreen to find, organize and show a variety of
 content types, originating on the Internet or the local device.
 
-[Learn more about Scopes ›](/phone/scopes)
+[Learn more about Scopes ›](scopes/index.md)
 
 
 
@@ -53,7 +53,7 @@ scope is developed for.
 When packaged, all apps and scopes must declare which API framework they are
 intending to use on the device.
 
-[Learn more about frameworks ›](/phone/platform/guides/frameworks/)
+[Learn more about frameworks ›](platform/guides/frameworks.md)
 
 ### Security and app isolation
 
@@ -63,7 +63,7 @@ The developer must declare which policy groups are needed for the app or scope
 to function properly within the confinement rules providing security and
 privacy.
 
-[Learn more about security policies ›](/phone/platform/guides/app-confinement/)
+[Learn more about security policies ›](platform/guides/app-confinement.md)
 
 ### The build environment
 
@@ -76,7 +76,7 @@ based on the framework and target architecture (e.g. i386 or armhf). The
 architecture will correspond to the test environment the developer is using
 and ultimately what the products are built with.
 
-[Learn more about building for different architectures›](/phone/apps/sdk/tutorials/building-cross-architecture-click-applications/)
+[Learn more about building for different architectures›](apps/sdk/tutorials/building-cross-architecture-click-applications.md)
 
 ### Testing applications on devices
 
@@ -90,7 +90,7 @@ click and installed to the device or emulator in order to properly test it.
 Again the IDE will assist with creating, validating, deploying and installing
 the package.
 
-[Learn how to run apps with the Ubuntu SDK IDE›](/phone/apps/sdk/tutorials/running-apps-from-the-sdk/)
+[Learn how to run apps with the Ubuntu SDK IDE›](apps/sdk/tutorials/running-apps-from-the-sdk.md)
 
 
 

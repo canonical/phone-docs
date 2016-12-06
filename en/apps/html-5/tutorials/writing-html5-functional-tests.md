@@ -18,7 +18,7 @@ development tutorials.
 
   * The HTML5 development tutorials
 
-    * If you haven't already complete the [HTML5 development tutorials](/en/phone/apps/html-5/tutorials/)
+    * If you haven't already complete the [HTML5 development tutorials](index.md)
 
   * autopilot, selenium
 
@@ -225,7 +225,7 @@ HTML5 tests. Check out the links below for more documentation and help.
 
 [Selenium Webdriver API](http://selenium-python.readthedocs.org/en/latest/api.html)
 
-[HTML5 SDK documentation](/en/phone/apps/html-5/api/)
+[HTML5 SDK documentation](../api.md)
 
 
 

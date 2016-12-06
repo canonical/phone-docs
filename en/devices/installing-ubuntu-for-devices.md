@@ -24,7 +24,7 @@ data such as contacts, photos, and etc.) from the device.
 An optional procedure is provided below that backs up the Android apps and
 data to a local file. There is no guarantee that a restore will succeed.
 
-See [Reinstalling Android](/en/phone/devices/reinstalling-android/).
+See [Reinstalling Android](reinstalling-android.md).
 
 ### Disclaimer
 
@@ -193,7 +193,7 @@ A pop-up informs you that you have succeeded.
 ### Enable USB Debugging
 
 Here, you enable USB Debugging. This is required for a USB terminal connection
-from your Desktop to your device. After [enabling DeveloperMode](/en/phone/devices/installing-ubuntu-for-devices/##androiddevmode), the
+from your Desktop to your device. After [enabling DeveloperMode](installing-ubuntu-for-devices/##androiddevmode), the
 **Developer** options item is exposed in the Settings page.
 
   1. Navigate to **Settings → Developer options**
@@ -218,7 +218,7 @@ Before installing Ubuntu for devices, you can optionally create a backup file
 on the Desktop that saves your Android applications and data. You can use this
 backup file later to restore your applications and data if you decide to
 reinstall native Android on the device. **Tip**: To restore Android from the
-backup, see [Reinstalling and RestoringAndroid](/en/phone/devices/reinstalling-android/).
+backup, see [Reinstalling and RestoringAndroid](reinstalling-android.md).
 
 1. In a terminal on your Ubuntu Desktop, create the backup file as follows:
 
@@ -260,7 +260,7 @@ differentiate images on [http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstall
 
 This build ID is “KOT49H”. This identifies the version of the installed
 Android OS. You can use this data to pick the right Android OS version if you
-want to [reinstall Android](/en/phone/devices/reinstalling-android/).
+want to [reinstall Android](reinstalling-android.md).
 
 **Tip**: For convenience, run this command and the data is written to a file named mydevicedata:
     $ adb shell grep ro.product.name /system/build.prop > mydevicedata \
@@ -278,7 +278,7 @@ Here’s how the generated file may look:
 
 To install Ubuntu, you must first “unlock” the Android device bootloader.
 
-**Warning:** Unlocking deletes all data from the device, including apps and other data. You may want to [create a backup first](/en/phone/devices/installing-ubuntu-for-devices/##backupandroid). You must first have enabled [USB Debugging](/en/phone/devices/installing-ubuntu-for-devices/##usbdebugging) in the Android OS.
+**Warning:** Unlocking deletes all data from the device, including apps and other data. You may want to [create a backup first](installing-ubuntu-for-devices/##backupandroid). You must first have enabled [USB Debugging](installing-ubuntu-for-devices/##usbdebugging) in the Android OS.
 
 1. Boot the device into the Android bootloader:
 
@@ -304,7 +304,7 @@ To install Ubuntu, you must first “unlock” the Android device bootloader.
 6. Complete the first use Android setup steps, entering minimal information:
 Android and its data is about to be deleted during the Ubuntu install.
 
-For help locking your device, see [ReinstallingAndroid](/en/phone/devices/reinstalling-android/)
+For help locking your device, see [ReinstallingAndroid](reinstalling-android.md)
 
 ## Install Ubuntu on device
 
@@ -312,19 +312,19 @@ Here you take the final steps that install Ubuntu.
 
 ### Removing encryption
 
-**Warning:** If your device is encrypted you must perform a full factory reset before installing ubuntu. This also will delete all data from the device, including apps and other data. You may want to [create a backup first](/en/phone/devices/installing-ubuntu-for-devices/##backupandroid). You can perform a factory reset via the settings screen. Look for Backup & reset option on the latest versions of Android or tap Privacy if you’re using Android 2.3.
+**Warning:** If your device is encrypted you must perform a full factory reset before installing ubuntu. This also will delete all data from the device, including apps and other data. You may want to [create a backup first](installing-ubuntu-for-devices/##backupandroid). You can perform a factory reset via the settings screen. Look for Backup & reset option on the latest versions of Android or tap Privacy if you’re using Android 2.3.
 
 ### Select your device image channel
 
 When you install, you'll need to name the Ubuntu device image channel used to
 obtain the image. For guidance on which channel is best for you check out the
-[Channel selection guide](/en/phone/devices/image-channels/). **Tip**: After
+[Channel selection guide](image-channels.md). **Tip**: After
 installing, you can always switch to another channel.
 
 ### Install Ubuntu
 
   1. Power the device off with the Power button.
-  2. Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices)[device type](/en/phone/devices/devices/) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  2. Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices)[device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
   3. Install Ubuntu using your selected channel, in this case we use the **stable** channel:
     $ ubuntu-device-flash touch --channel=ubuntu-touch/stable/ubuntu --bootstrap
     2015/02/16 09:50:12 Expecting the device to be in the bootloader... waiting
@@ -373,7 +373,7 @@ Updates**.
 
 ### Upgrading manually
 
-**Note**: The default channel used when none is explicitly stated is stable. In the following examples, CHANNEL indicates the channel your Ubuntu was installed from. See [Display image channel information](/en/phone/devices/image-channels/). If you have configured the system to never install updates automatically, you can check for available updates and optionally install from **Settings → Updates**. You can display information about what image would be installed if you were to upgrade:
+**Note**: The default channel used when none is explicitly stated is stable. In the following examples, CHANNEL indicates the channel your Ubuntu was installed from. See [Display image channel information](image-channels.md). If you have configured the system to never install updates automatically, you can check for available updates and optionally install from **Settings → Updates**. You can display information about what image would be installed if you were to upgrade:
     $ adb shell system-image-cli --dry-run
 
 You can manually initiate an upgrade:
@@ -450,8 +450,8 @@ most out of it?
 
 ### Install more Apps and Scopes
 
-You can browse or search for more [apps](/en/phone/apps/) or
-[scopes](/en/phone/scopes/) to install on your phone from the Ubuntu Store. To
+You can browse or search for more [apps](../apps/index.md) or
+[scopes](../scopes/index.md) to install on your phone from the Ubuntu Store. To
 access it, swipe up from the bottom edge on the Apps dash screen, then press
 the Store button. Scopes can be installed to provide easily searchable content
 in addition to the Apps, Music and Videos scopes that are provided by default.
@@ -461,8 +461,8 @@ your launcher for easy access any time.
 ### Write your own Apps or Scopes
 
 Developing apps and scopes for Ubuntu is fast, easy and free! Once you
-download the [Ubuntu SDK](/en/phone/platform/sdk/installing-the-sdk/) you can
-follow along with our tutorials for [writing your firstapp](/en/phone/apps/qml/tutorials/) or [your firstscope](/en/phone/scopes/tutorials/). Then you can publish them to the Ubuntu
+download the [Ubuntu SDK](../platform/sdk/installing-the-sdk.md) you can
+follow along with our tutorials for [writing your firstapp](../apps/qml/tutorials/index.md) or [your firstscope](../scopes/tutorials/index.md). Then you can publish them to the Ubuntu
 Store for other users to enjoy!
 
 ## Getting Help

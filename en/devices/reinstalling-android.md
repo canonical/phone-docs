@@ -82,7 +82,7 @@ Wait. When the process is complete, Android boot to its welcome page.
 If you made a backup of your Android data and apps before installing Ubuntu,
 you can restore it as follows:
 
-  1.     1.       1. You must first have enabled USB Debugging in the Android OS and connected your Ubuntu desktop to the device over USB (see [here](/en/phone/devices/installing-ubuntu-for-devices/##usbdebugging)).
+  1.     1.       1. You must first have enabled USB Debugging in the Android OS and connected your Ubuntu desktop to the device over USB (see [here](installing-ubuntu-for-devices/##usbdebugging)).
       2. Open a terminal on your Ubuntu Desktop with Ctrl + Alt + T
       3. Move into the directory that contains your backup.ab file.
       4. Restore the backup.ab file to Android:
@@ -94,7 +94,7 @@ In order to install Ubuntu, the device was “unlocked”. You can optionally lo
 it.
 
   1.     1.       1. Power the device off with the Power button.
-      2. Reboot into the bootloader by pressing the correct physical button combination for your [device type](/en/phone/devices/devices/) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+      2. Reboot into the bootloader by pressing the correct physical button combination for your [device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
 
 Ensure the device is connected in fastboot mode as follows:
 

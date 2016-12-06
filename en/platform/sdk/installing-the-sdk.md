@@ -40,7 +40,7 @@ You can also launch the SDK from the shell with:
 ## Next steps
 
 A good next move is one of the quick tutorials in the Ubuntu SDK section, for
-example [Create an App Project](/phone/apps/sdk/tutorials/creating-an-sdk-app-project/) and [Running Apps from the SDK](/phone/apps/sdk/tutorials/running-apps-from-the-sdk/).
+example [Create an App Project](../../apps/sdk/tutorials/creating-an-sdk-app-project.md) and [Running Apps from the SDK](../../apps/sdk/tutorials/running-apps-from-the-sdk.md).
 
 
 

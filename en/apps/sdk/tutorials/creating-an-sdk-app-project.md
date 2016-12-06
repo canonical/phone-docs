@@ -4,7 +4,7 @@
 
 
 
-Once you have the Ubuntu SDK [installed and setup](/en/phone/platform/sdk/installing-the-sdk/), you can very easily start
+Once you have the Ubuntu SDK [installed and setup](../../../platform/sdk/installing-the-sdk.md), you can very easily start
 writing an app. Read below how to do this in seven steps.
 
 There are many different types of app projects you can create in the SDK.
@@ -34,7 +34,7 @@ used for other types.
 
 Device kits are devices environments required to build and run your app. The
 **Create new kit** button will guide you through this simple process, but you
-can have a look at the [device kitsarticle](/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) to learn
+can have a look at the [device kitsarticle](click-targets-and-device-kits.md) to learn
 more about them.
 
 ![](../../../../media/9a2be93d-6ac0-40fe-89c5-abaebe72876d-cms_page_media/32/new-project-4-700x371.png)
@@ -61,7 +61,7 @@ After creating a device kit, select it to continue:
 ## Next steps
 
 Without making any changes to your app, you can run it. Check out the
-**[Running Apps from the SDK](/en/phone/apps/sdk/tutorials/running-apps-from-the-sdk/)** tutorial in the Ubuntu SDK section for useful steps and
+**[Running Apps from the SDK](running-apps-from-the-sdk.md)** tutorial in the Ubuntu SDK section for useful steps and
 information.
 
 

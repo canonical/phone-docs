@@ -1273,7 +1273,7 @@ styles. The one on the left is the result of using the above snippet :
 
 ![](../../../media/490171dd-641e-4446-b3c3-8ce4934b343e-cms_page_media/148/jamendo_branded-180x300.png)
 
-Have a look at all the available [customisationoptions](/en/phone/scopes/guides/scopes-customization-branding/) and try to
+Have a look at all the available [customisationoptions](../guides/scopes-customization-branding.md) and try to
 make your scope shine!
 
 **That’s it, our Jamendo scope is finished. You can launch it by pressing the Start button in the SDK sidebar, see if everything compiles and starts correctly at the bottom of the editor, and try your new scope!**

@@ -15,7 +15,7 @@ know about when working with scopes.
   * Building a scope
   * Running a scope
 
-**Note**: You will need to [install the Ubuntu SDK](/en/phone/platform/sdk/installing-the-sdk/) before continuing with this tutorial.
+**Note**: You will need to [install the Ubuntu SDK](../../platform/sdk/installing-the-sdk.md) before continuing with this tutorial.
 
 ### Creating a scope
 

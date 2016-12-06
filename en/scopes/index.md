@@ -97,14 +97,14 @@ Library.
 You're all set up to get started with your first scope, there are tutorials
 available for JavaScript, Go and C++, that will help you write it.
 
-[Start a scope tutorial](/phone/scopes/tutorials/)
+[Start a scope tutorial](tutorials/index.md)
 
 ### Learn more about scopes
 
 When you want to dive further into scopes, you can always find wisdom in our
 selection of scopes developer and design guides.
 
-  * [Scopes developer guides ›](/phone/scopes/guides/)
+  * [Scopes developer guides ›](guides/index.md)
   * [Scopes design guide ›](http://design.ubuntu.com/scopes)
 
 ### Need help?

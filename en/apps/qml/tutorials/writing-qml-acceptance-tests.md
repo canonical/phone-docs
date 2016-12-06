@@ -11,8 +11,8 @@ Converter Tutorial.
 ## Requirements
 
   * Ubuntu 14.04 or later -- [get Ubuntu](http://www.ubuntu.com/download/desktop/).
-  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](/en/phone/apps/qml/tutorials/building-your-first-qml-app/).
-  * The lower level testing tutorials on [unit testing](/en/phone/apps/qml/tutorials/qml-unit-testing/), and [integration testing](/en/phone/apps/qml/tutorials/qml-integration-testing/).
+  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](building-your-first-qml-app.md).
+  * The lower level testing tutorials on [unit testing](qml-unit-testing.md), and [integration testing](qml-integration-testing.md).
 
 ## Testing like a user with autopilot
 

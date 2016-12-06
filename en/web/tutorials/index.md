@@ -9,7 +9,7 @@
 Turn any website into a webapp in minutes by following along this tutorial
 using the Ubuntu SDK:
 
-  * [Create your first webapp](/en/phone/web/tutorials/web-app-tutorial/)
+  * [Create your first webapp](web-app-tutorial.md)
 
 ### Webapp generator
 

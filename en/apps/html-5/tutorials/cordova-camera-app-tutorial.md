@@ -18,16 +18,16 @@ The app we develop here is quite simple:
 
 ### Cordova guide
 
-You may want to read [the Cordova Guide](/en/phone/apps/html-5/guides/cordova-guide/). It contains all the info you need to set up your development
+You may want to read [the Cordova Guide](../guides/cordova-guide.md). It contains all the info you need to set up your development
 environment. The three prerequisites being:
 
   * Installing `cordova-cli` from the Ubuntu Cordova PPA
-  * Creating a [click chroot](/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) for the armhf architecture, to run and contain your application
-  * Installing build dependencies in the [click chroot](/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/); refer to the corresponding section in [the Cordova Guide](/en/phone/apps/html-5/guides/cordova-guide/)
+  * Creating a [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
+  * Installing build dependencies in the [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md); refer to the corresponding section in [the Cordova Guide](../guides/cordova-guide.md)
 
 ### HTML5 UI Toolkit basics
 
-This tutorial is not focused on the UI Toolkit. For help, see [the UbuntuHTML5 UI Toolkit Guide](/en/phone/apps/html-5/guides/introduction-to-the-html5-ui-toolkit/).
+This tutorial is not focused on the UI Toolkit. For help, see [the UbuntuHTML5 UI Toolkit Guide](../guides/introduction-to-the-html5-ui-toolkit.md).
 
 ### Getting the resources for this app
 
@@ -229,7 +229,7 @@ This is the first bit of new code that’s needed. Let’s take a look at it.
   * An event handler for the Cordova deviceready event is added. This is received when the Cordova system is fully loaded and ready, so this is a great place to put code that uses Cordova objects. (See Cordova Guide for information.)
   * Inside the deviceready handler, first the loading div is hidden and then then loaded div is displayed.
   * Then, the **Take Picture** button is obtained with: UI.button(“click”).
-  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](/en/phone/apps/html-5/api/) for complete API reference docs.)
+  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](../api.md) for complete API reference docs.)
   * This event handling function calls the navigator.camera.getPicture(…) method.
   * The navigator object is the base Cordova object and is available in the HTML5 runtime container when the app includes Cordova as described above.
   * getPicture(…) takes three arguments: the name of the function to run when a picture is taken(this is calledonSuccess here and is defined below), the name of a function to run when an attempt to take a picture fails (onFail here, defined below), and some optional arguments.
@@ -313,7 +313,7 @@ Now, the Loading page and the home page look like this:
 
 ## Next steps
 
-Check out [the Cordova Guide](/en/phone/apps/html-5/guides/cordova-guide/) for
+Check out [the Cordova Guide](../guides/cordova-guide.md) for
 a high level review of using Cordova in Ubuntu HTML5 apps and for adding
 Ubuntu as a built platform for native Cordova projects.
 

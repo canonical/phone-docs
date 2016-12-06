@@ -19,7 +19,7 @@ Converter Tutorial.
 If you haven't already, [complete the currency convertertutorial](https://developer.ubuntu.com/en/apps/qml/tutorials/building-your-first-qml-app/)
 
   * **The unit testing tutorial for currency converter**  
-If you haven't already, [unit testingtutorial](/en/phone/apps/qml/tutorials/qml-unit-testing/)
+If you haven't already, [unit testingtutorial](qml-unit-testing.md)
 
   * **The QML test runner tool**  
 Open a terminal with Ctrl+Alt+T and run these commands to install all required

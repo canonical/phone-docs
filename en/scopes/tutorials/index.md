@@ -31,7 +31,7 @@ features.
   * [Adding settings to your scope](/scopes/tutorials/adding-settings-to-your-scope/)
   * [Adding location awareness to your scope](/scopes/tutorials/adding-location-awareness-to-your-scope/)
   * [Adding departments](/scopes/tutorials/adding-departments-to-your-scope/)
-  * [Linking queries in scopes](/en/phone/scopes/tutorials/linking-queries-in-scopes/)
+  * [Linking queries in scopes](linking-queries-in-scopes.md)
 
 Publish scopes in the Ubuntu store :
 

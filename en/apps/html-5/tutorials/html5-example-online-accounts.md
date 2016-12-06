@@ -14,7 +14,7 @@ Platform JavaScript Online Accounts API:
 
 The discussion here is focused primarily on Online Accounts API usage from
 JavaScript. For help getting started writing Ubuntu HTML5 apps, check out
-[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](/en/phone/platform/guides/online-accounts-developer-guide/).
+[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](../../../platform/guides/online-accounts-developer-guide.md).
 
 ## Online Accounts overview
 
@@ -48,7 +48,7 @@ In order to be able to use Online Account's API and access accounts data, it
 is important to make sure that an application properly declares appropriate
 policy group inthe application manifest and creates the necessary .provider
 and .service files as described in the following reference text:
-[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](/en/phone/platform/guides/online-accounts-developer-guide/)
+[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](../../../platform/guides/online-accounts-developer-guide.md)
 
 ### Authorization data
 
@@ -142,7 +142,7 @@ user to grant access to a given provider and (if it applies) to create a new
 account for this provider.
 
 For the definition of "short application id" and "provider_id" please refer to
-[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](/en/phone/platform/guides/online-accounts-developer-guide/)
+[https://developer.ubuntu.com/en/apps/platform/guides/online-accounts-developer-guide/](../../../platform/guides/online-accounts-developer-guide.md)
 
 ## Getting and displaying a list of enabled accounts
 

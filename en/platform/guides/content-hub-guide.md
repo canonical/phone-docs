@@ -176,10 +176,10 @@ example:
 
 That’s a high level view of the Content Hub. For detailed API reference docs
 on Content Hub, be sure to check out the API documentation on
-developer.ubuntu.com. Check both the [QML](/phone/apps/qml/api) and the
-[HTML5](/phone/apps/html-5/api/) sections of the website as APIs are available
+developer.ubuntu.com. Check both the [QML](../../apps/qml/api.md) and the
+[HTML5](../../apps/html-5/api.md) sections of the website as APIs are available
 for both. If you are interested in security policy groups and how app
-confinement works, [here's our article](/phone/platform/guides/app-confinement/) about that.
+confinement works, [here's our article](app-confinement.md) about that.
 
 
 
