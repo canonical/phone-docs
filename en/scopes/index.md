@@ -17,7 +17,7 @@ maintain traditional apps.
 These experiences are developed using Ubuntu Scopes, a new UI toolkit
 available through the Ubuntu SDK.
 
-![](/static/devportal_uploaded/bcfe3a8e-9a03-47c0-afa5-b326eb017708-cms_page_media/7/tablet-features-scopes.jpg)
+![](../../media/bcfe3a8e-9a03-47c0-afa5-b326eb017708-cms_page_media/7/tablet-features-scopes.jpg)
 
 
 
@@ -57,7 +57,7 @@ brings a great opportunity for developers and content producers to shine.
 
   * Scopes work with a simple client-server model, where a locally running server mediates data exchange between your content and user requests, keeping every scopes confined and independant from each other.
 
-![](/static/devportal_uploaded/c970e187-8f39-465f-b46f-0f7452ceb8ec-cms_page_media/7/apps-grid.png)
+![](../../media/c970e187-8f39-465f-b46f-0f7452ceb8ec-cms_page_media/7/apps-grid.png)
 
 ### There are two types of scopes:
 

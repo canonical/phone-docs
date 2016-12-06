@@ -27,9 +27,9 @@ previous version and the following new frameworks :
 These screenshots show the framework picker in the “Publish” page of the SDK
 and the complete list of available frameworks.
 
-![](/static/devportal_uploaded/7154a292-eb6c-4d50-9da3-64040ab6beb9-cms_page_media/71/pick_framework_sdk.png)
+![](../../../media/7154a292-eb6c-4d50-9da3-64040ab6beb9-cms_page_media/71/pick_framework_sdk.png)
 
-![](/static/devportal_uploaded/7da8511d-02bd-4230-b33b-6abdc4bdf4d6-cms_page_media/71/pick_framework_list_sdk.png)
+![](../../../media/7da8511d-02bd-4230-b33b-6abdc4bdf4d6-cms_page_media/71/pick_framework_list_sdk.png)
 
 ### Which framework version to target?
 

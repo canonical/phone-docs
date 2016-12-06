@@ -48,15 +48,15 @@ You now have a new piece of UI floating above your app, don’t worry you can
 move it around. The top pane of the overlay shows the frame rendering time,
 the CPU usage is at the bottom.
 
-![](/static/devportal_uploaded/5b83c9af-1efc-455b-8103-60ac5ba0007a-cms_page_media/61/perf_overlay-300x134.png)
+![](../../../media/5b83c9af-1efc-455b-8103-60ac5ba0007a-cms_page_media/61/perf_overlay-300x134.png)
 
 Interact with your app and perform common actions… Each time you end up in the
 red, there is something you need to optimize! (like this app that obviously
 needs more work before being released…)
 
-![](/static/devportal_uploaded/09a203ff-b17a-44d8-bf2c-b10d72b68f08-cms_page_media/61/perf_countries1-420x700.png)
+![](../../../media/09a203ff-b17a-44d8-bf2c-b10d72b68f08-cms_page_media/61/perf_countries1-420x700.png)
 
-![](/static/devportal_uploaded/ece11b56-a4a4-4674-a038-c67d856213ca-cms_page_media/61/perf_countries2-420x700.png)
+![](../../../media/ece11b56-a4a4-4674-a038-c67d856213ca-cms_page_media/61/perf_countries2-420x700.png)
 
 ### Profiler
 
@@ -70,7 +70,7 @@ causing it, the profiler is a fantastic tool to show you what’s going wrong:
 For each event, it provides creating and painting time, javascript functions
 and specific QML objects performance.
 
-![](/static/devportal_uploaded/ec0e48ec-beeb-47b8-8fe6-6fdc5d38b894-cms_page_media/61/perf_profiler-700x428.png)
+![](../../../media/ec0e48ec-beeb-47b8-8fe6-6fdc5d38b894-cms_page_media/61/perf_profiler-700x428.png)
 
 ## Best practices for optimum performance
 
@@ -132,7 +132,7 @@ To unload the component, simply set pageLoader.source to an empty string.
 Below, you can see how _hiding_ a GIF keeps consuming CPU as opposed to
 unloading it.
 
-![](/static/devportal_uploaded/6eb0231d-2e94-426a-94d7-226a6cfbbc91-cms_page_media/61/out.gif)
+![](../../../media/6eb0231d-2e94-426a-94d7-226a6cfbbc91-cms_page_media/61/out.gif)
 
 To learn more about it, have a look at the [Loaders documentation](http://qt-project.org/doc/qt-5/qml-qtquick-loader.html).
 
@@ -191,11 +191,11 @@ They are often the greatest memory hogs, let’s see how to handle them:
 Here is a small test app showing CPU usage on a Nexus4 with various image
 loading parameters (35%, 15% and 4%):
 
-![](/static/devportal_uploaded/68aadb7b-cba2-4692-9b48-d5658dfa1fcd-cms_page_media/61/perf_img1-420x700.png)
+![](../../../media/68aadb7b-cba2-4692-9b48-d5658dfa1fcd-cms_page_media/61/perf_img1-420x700.png)
 
-![](/static/devportal_uploaded/eb27c3fc-34f3-499a-808b-645bb4c0e779-cms_page_media/61/perf_img2-420x700.png)
+![](../../../media/eb27c3fc-34f3-499a-808b-645bb4c0e779-cms_page_media/61/perf_img2-420x700.png)
 
-![](/static/devportal_uploaded/360517c6-d948-48c0-8437-617c8894b1e4-cms_page_media/61/perf_img3-420x700.png)
+![](../../../media/360517c6-d948-48c0-8437-617c8894b1e4-cms_page_media/61/perf_img3-420x700.png)
 
   * **Avoid enabling the ****smooth**** property of images while animating them**. If you really need to smooth an image, you can turn smoothing off before the animation and add it back when the animation is over.
   * **Prefer bitmaps.** This is a sad fact of life, but vectors will load slower than bitmaps.

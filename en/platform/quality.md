@@ -16,13 +16,13 @@ A well-tested application will cover all the levels of the testing pyramid and
 provide many more low-level unit tests than high level end-to-end tests
 running through a GUI. Ubuntu has you covered on all levels.
 
-![](/static/devportal_uploaded/a67bd0d1-ff50-4b5f-9a20-e8eec795061f-cms_page_media/379/testing-pyramid.png)
+![](../../media/a67bd0d1-ff50-4b5f-9a20-e8eec795061f-cms_page_media/379/testing-pyramid.png)
 
 
 
 
 
-![](/static/devportal_uploaded/49620ea7-4058-4e20-ba73-80afc2eea7cb-cms_page_media/379/testing-unit-a.png)
+![](../../media/49620ea7-4058-4e20-ba73-80afc2eea7cb-cms_page_media/379/testing-unit-a.png)
 
 ## Unit tests
 
@@ -62,7 +62,7 @@ for an application.
 The Ubuntu Test components and the Qt Test framework are well suited for
 writing integration tests.
 
-![](/static/devportal_uploaded/3063914f-7df5-4e17-90ba-f038b3f41d5e-cms_page_media/379/testing-integration-c.png)
+![](../../media/3063914f-7df5-4e17-90ba-f038b3f41d5e-cms_page_media/379/testing-integration-c.png)
 
 
 

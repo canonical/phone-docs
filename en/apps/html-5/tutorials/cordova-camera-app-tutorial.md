@@ -99,7 +99,7 @@ starting the application directly.
 
     $ cordova run --device --debug
 
-![](/static/devportal_uploaded/e325eb75-ad97-44a2-b54b-0b5f97518a2e-cms_page_media/116/cordova-screenshot.png)
+![](../../../../media/e325eb75-ad97-44a2-b54b-0b5f97518a2e-cms_page_media/116/cordova-screenshot.png)
 
 **Tip**: you may see warning messages after the build. For example: you haven't specified an icon for your application yet.
 
@@ -168,7 +168,7 @@ following:
 
 If you run the app now, the GUI appears as follows:
 
-![](/static/devportal_uploaded/a49e5ed1-920d-4967-a0a7-d59f79f81755-cms_page_media/116/spinner.png)
+![](../../../../media/a49e5ed1-920d-4967-a0a7-d59f79f81755-cms_page_media/116/spinner.png)
 
 As noted above, that is the loading div that displays until Cordova
 deviceready event is received.
@@ -278,7 +278,7 @@ As usual, do:
 
 Here is how the application looks like after clicking **Take Picture**:
 
-![](/static/devportal_uploaded/264a3e03-204d-47d2-b46c-076da4eb1809-cms_page_media/116/camera-snap.png)
+![](../../../../media/264a3e03-204d-47d2-b46c-076da4eb1809-cms_page_media/116/camera-snap.png)
 
 Once you validate the picture, the system will bring back your application and
 will display the photo below the button.
@@ -309,7 +309,7 @@ Now, in index.html, simply add the following inside the <head>
 
 Now, the Loading page and the home page look like this:
 
-![](/static/devportal_uploaded/6f565d93-ac5a-4034-a293-02d61b45446e-cms_page_media/116/camera-app.png)
+![](../../../../media/6f565d93-ac5a-4034-a293-02d61b45446e-cms_page_media/116/camera-app.png)
 
 ## Next steps
 

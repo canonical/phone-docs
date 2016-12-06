@@ -16,10 +16,10 @@ used for other types.
 
   1. Launch the wizard in the Ubuntu SDK with: **File** > **New File or Project**
   2. Select the **Ubuntu** project type, then **HTML5 App,** and then click the **Choose** button, as shown here:  
-![](/static/devportal_uploaded/fb60d521-c71b-41d5-88f3-6e9fbe126902-cms_page_media/32/new-project-1-700x435.png)
+![](../../../../media/fb60d521-c71b-41d5-88f3-6e9fbe126902-cms_page_media/32/new-project-1-700x435.png)
 
   3. Give your project a **Name**, specify a directory to create it in, and click the **Next** button, as shown here:  
-![](/static/devportal_uploaded/d278b463-25a3-4c12-bdfb-22ccb76a8c48-cms_page_media/32/new-project-2-700x371.png)
+![](../../../../media/d278b463-25a3-4c12-bdfb-22ccb76a8c48-cms_page_media/32/new-project-2-700x371.png)
 
 **Tip**: You may want to enable this as the default directory for all Ubuntu SDK projects by checking the **Use as default project location** check box.
 
@@ -28,7 +28,7 @@ used for other types.
   * Your **maintainer** information: your name and email, ie: Joe Blobbs <joe@blobbs.com>
   * The **name** of your app.
 
-![](/static/devportal_uploaded/ea330081-2e24-4087-b17c-41ba2fdf68eb-cms_page_media/32/Screenshot from 2015-01-28 14:48:43.png)
+![](../../../../media/ea330081-2e24-4087-b17c-41ba2fdf68eb-cms_page_media/32/Screenshot from 2015-01-28 14:48:43.png)
 
   5. On the **Build targets ** page. You will be asked to create at least one device kit for your project.
 
@@ -37,16 +37,16 @@ Device kits are devices environments required to build and run your app. The
 can have a look at the [device kitsarticle](/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) to learn
 more about them.
 
-![](/static/devportal_uploaded/9a2be93d-6ac0-40fe-89c5-abaebe72876d-cms_page_media/32/new-project-4-700x371.png)
+![](../../../../media/9a2be93d-6ac0-40fe-89c5-abaebe72876d-cms_page_media/32/new-project-4-700x371.png)
 
-![](/static/devportal_uploaded/c023f7e3-a226-4ef8-b3bd-e758de7f9443-cms_page_media/32/new-project-5-700x371.png)
+![](../../../../media/c023f7e3-a226-4ef8-b3bd-e758de7f9443-cms_page_media/32/new-project-5-700x371.png)
 
 After creating a device kit, select it to continue:
 
-![](/static/devportal_uploaded/9d262fd2-7875-48eb-bb4c-03967fb0ae35-cms_page_media/32/new-project-6-700x371.png)
+![](../../../../media/9d262fd2-7875-48eb-bb4c-03967fb0ae35-cms_page_media/32/new-project-6-700x371.png)
 
   6. On the **Project Management** page, optionally select **Bazaar** under **Add to version control**:  
-![](/static/devportal_uploaded/bb17f037-6191-48a4-9c03-0013db22f1fe-cms_page_media/32/new-project-7-700x399.png)
+![](../../../../media/bb17f037-6191-48a4-9c03-0013db22f1fe-cms_page_media/32/new-project-7-700x399.png)
 
 **Tip**: You can also manage your project under revision control from the command line using bzr. To use Bazaar in the shell, first open a terminal with Ctrl + Alt + T, then install the bzr package and view help as follows:
     sudo apt-get install bzr
@@ -54,7 +54,7 @@ After creating a device kit, select it to continue:
 
   7. Click **Finish**, and the wizard finishes, the project is created, and you are returned to the main SDK GUI. At this point your new project looks something like this:
 
-![](/static/devportal_uploaded/5cdc10fb-646c-4210-a7d3-9dd4304af1d1-cms_page_media/32/new-project-8-700x371.png)
+![](../../../../media/5cdc10fb-646c-4210-a7d3-9dd4304af1d1-cms_page_media/32/new-project-8-700x371.png)
 
 **Tip**: Each app project has a desktop file that represents the app in Unity, including its displayed name and its icon.
 

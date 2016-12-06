@@ -29,7 +29,7 @@ create at least one kit and select two aspects for it :
   * The **framework** your application will use (most of the time, you will want to use the latest stable release, matching the Ubuntu release number. eg 14.04)
   * The **architecture** of the device (armfh: most phones and tablets or i386: desktop)
 
-![](/static/devportal_uploaded/d2b247de-6e44-4c36-9a6c-4b990ea0a71a-cms_page_media/34/devicekits_create-700x348.png)
+![](../../../../media/d2b247de-6e44-4c36-9a6c-4b990ea0a71a-cms_page_media/34/devicekits_create-700x348.png)
 
 Adding multiple kits will allow you to test your app in multiple contexts,
 architectures and display sizes.
@@ -41,7 +41,7 @@ change existing Kits. This is especially useful when you forgot to create a
 specific Device Kit or when your application evolves to support other devices
 and architectures.
 
-![](/static/devportal_uploaded/386976e6-a6cd-4524-8b7d-4337c494e138-cms_page_media/34/managing_kits.png)
+![](../../../../media/386976e6-a6cd-4524-8b7d-4337c494e138-cms_page_media/34/managing_kits.png)
 
 ## Adding devices
 
@@ -49,7 +49,7 @@ The “Devices” page allows you to see connected Ubuntu devices, manage their
 settings (enable developer mode, clone network configuration from your desktop
 to the device...) and create new devices (emulators).
 
-![](/static/devportal_uploaded/ef9a8598-c163-477f-b917-1bfb21f6013a-cms_page_media/34/devices_connected-700x452.png)
+![](../../../../media/ef9a8598-c163-477f-b917-1bfb21f6013a-cms_page_media/34/devices_connected-700x452.png)
 
 ### Create an emulator
 
@@ -61,7 +61,7 @@ build and _devel-proposed_ contains new changes that still need to be tested.
 Creating an emulator downloads about 300 MB and prepares a system image, which
 may take some time.
 
-![](/static/devportal_uploaded/6af7cee9-e4b5-40bd-a5b4-c45d631f7a0c-cms_page_media/34/emulator_create.png)
+![](../../../../media/6af7cee9-e4b5-40bd-a5b4-c45d631f7a0c-cms_page_media/34/emulator_create.png)
 
 ### Launch an emulator
 
@@ -70,14 +70,14 @@ Once your emulator has been built, you can configure some launch variables:
   * **Scale**: the size of the emulator window
   * **Memory**: between 512 and 1024 MB of RAM allocated to the device
 
-![](/static/devportal_uploaded/6a2b15f5-0065-4d22-a7d6-e9d50623b73a-cms_page_media/34/emulator_config-700x451.png)
+![](../../../../media/6a2b15f5-0065-4d22-a7d6-e9d50623b73a-cms_page_media/34/emulator_config-700x451.png)
 
 When launched, an emulator can be managed like any other device and is able to
 run applications using compatible device kits. **Note** that when Ubuntu
 starts on the emulator, you will be asked for a password to enter the session:
 the default password is "0000".
 
-![](/static/devportal_uploaded/ebf945b3-02f9-4a90-92ca-1c1d36d07002-cms_page_media/34/emulator_running-700x333.png)
+![](../../../../media/ebf945b3-02f9-4a90-92ca-1c1d36d07002-cms_page_media/34/emulator_running-700x333.png)
 
 ## Running your application
 
@@ -86,7 +86,7 @@ application via a button on the left side of the SDK window. The
 red/orange/green dot on the icon indicates its status (here, my phone is
 connected and ready to host the application).
 
-![](/static/devportal_uploaded/c5f4f2f4-fedf-4d96-8cb4-8c9af5ec83ae-cms_page_media/34/run-picker.png)
+![](../../../../media/c5f4f2f4-fedf-4d96-8cb4-8c9af5ec83ae-cms_page_media/34/run-picker.png)
 
 Once you have selected a run target, the play icon below will launch your
 application.

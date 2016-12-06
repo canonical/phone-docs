@@ -23,7 +23,7 @@ In the Ubuntu SDK, simply create a new project using the Unity Scope template.
 
 **File** > **New File or Project** > **Unity Scope**
 
-![](/static/devportal_uploaded/88bcfe64-ebb3-4d47-89d6-d2d0c8957809-cms_page_media/100/Screenshot from 2015-02-25 09:20:37.png)
+![](../../../media/88bcfe64-ebb3-4d47-89d6-d2d0c8957809-cms_page_media/100/Screenshot from 2015-02-25 09:20:37.png)
 
 **Tip**: Note that when you build the scope, the generated build is placed by default in the parent directory, in a directory named ‘build-<project name>-<build env>-<build config>'. For example, if your scope project is named ‘myscope’ and you are building for an armhf target, your build directory will be ../build-myscope-armhf-14_10-Default.
 
@@ -38,7 +38,7 @@ You can open scope projects from QtCreator with the **Ctrl** + **O** shortcut
 and then navigating to and selecting the CMakeLists.txt file in the project’s
 root directory.
 
-![](/static/devportal_uploaded/43b3a771-4e00-475a-b0ac-cedf3b2f402d-cms_page_media/100/scope-project-open.png)
+![](../../../media/43b3a771-4e00-475a-b0ac-cedf3b2f402d-cms_page_media/100/scope-project-open.png)
 
 ### Opening a scope branch in QtCreator as a project
 
@@ -50,7 +50,7 @@ as follows:
   2. Navigate to and select the CMakeLists.txt file in the source tree, then click the **Open** button.
   3. In the **Configure Project** dialog that displays, choose the [devices kits](/apps/sdk/tutorials/click-targets-and-device-kits/) you want your project to be configured for and click the the **Configure Project** button.
 
-![](/static/devportal_uploaded/e70c7ff9-32b0-4ce7-aaab-3923ea68cc30-cms_page_media/100/scope-branch-project-config.png)
+![](../../../media/e70c7ff9-32b0-4ce7-aaab-3923ea68cc30-cms_page_media/100/scope-branch-project-config.png)
 
 From a terminal, you can also navigate to the directory and run
 
@@ -85,13 +85,13 @@ left pane of the QtCreator or by pressing **Ctrl+R**.
   2. select which device (**Kit** column) you want to run your scope on
   3. select the scope itself (**Run** column), instead of scope-unit-tests
 
-![](/static/devportal_uploaded/47fa96ab-96fa-4b87-9fa3-d0e9155b0fa4-cms_page_media/100/scope-run-tests-vs-scope.png)
+![](../../../media/47fa96ab-96fa-4b87-9fa3-d0e9155b0fa4-cms_page_media/100/scope-run-tests-vs-scope.png)
 
 If you are using Ubuntu 14.10, you can run a scope on your desktop, by
 selecting the desktop as a target device. This runs the scope in a standalone
 window, with developer tools to tweak the ways results are rendered.
 
-![](/static/devportal_uploaded/0826ca71-65c9-4520-ba67-7144b1122aae-cms_page_media/100/unity-scope-tool.png)
+![](../../../media/0826ca71-65c9-4520-ba67-7144b1122aae-cms_page_media/100/unity-scope-tool.png)
 
   * The scope name or logo displayed in the header is derived from the .ini file
   * The left half of the run window is the scope.

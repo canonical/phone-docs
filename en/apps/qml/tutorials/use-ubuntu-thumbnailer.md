@@ -65,7 +65,7 @@ which size to produce the thumbnail.
 
 ### A few other examples
 
-![](/static/devportal_uploaded/9a38eeda-7baf-4089-bb4a-34cf66d20ad5-cms_page_media/1027/Screenshot from 2015-09-02 16-34-33.png)
+![](../../../../media/9a38eeda-7baf-4089-bb4a-34cf66d20ad5-cms_page_media/1027/Screenshot from 2015-09-02 16-34-33.png)
 
 ### Size and ratio
 

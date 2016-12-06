@@ -27,14 +27,14 @@ Select Run to change the Run settings. Use the dropdown to select the
 'Autopilot' run configuration. It will display a list of autopilot tests for
 the project.
 
-![](/static/devportal_uploaded/8dd4015e-ed32-4d3a-86f4-979b759bfc29-cms_page_media/922/Selection_008.jpg)
+![](../../../media/8dd4015e-ed32-4d3a-86f4-979b759bfc29-cms_page_media/922/Selection_008.jpg)
 
 Choose a specific test to run or run them all. When ready, launch the tests as
 normal by pressing the run button. Your autopilot tests will now run inside a
 separate window. You can watch there execution or continue working. The
 results of the tests will be displayed in the Application Output Console.
 
-![](/static/devportal_uploaded/c704f69a-99ab-49b6-ab04-f4b0bc360f70-cms_page_media/922/trim.gif)
+![](../../../media/c704f69a-99ab-49b6-ab04-f4b0bc360f70-cms_page_media/922/trim.gif)
 
 ## autopilot3-sandbox-run
 

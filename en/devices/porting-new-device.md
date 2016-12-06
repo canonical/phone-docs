@@ -14,7 +14,7 @@ This guide provides all the information required to port Ubuntu to new
 hardware, and to enable the Ubuntu community to create and host their own
 ports, with support for Over-The-Air (OTA) updates.
 
-![](/static/devportal_uploaded/efde662b-6c53-46e8-bd43-7381b1b780ed-cms_page_media/380/tel.png)
+![](../../media/efde662b-6c53-46e8-bd43-7381b1b780ed-cms_page_media/380/tel.png)
 
 
 
@@ -114,7 +114,7 @@ Other than the very basic services (needed to re-use the binary blobs already
 available), the rest is just pure Ubuntu goodness (we don't have dalvik
 running, for example).
 
-![](/static/devportal_uploaded/136981fa-6287-49d3-9874-06f40b2e4eb7-cms_page_media/380/ubuntu_touch_architecture.png)
+![](../../media/136981fa-6287-49d3-9874-06f40b2e4eb7-cms_page_media/380/ubuntu_touch_architecture.png)
 
 ### Toolchain and build system
 

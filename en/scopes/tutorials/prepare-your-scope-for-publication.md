@@ -67,8 +67,8 @@ can use the phablet-screenshot command line tool (phablet-screenshot
 <filename>.png), Shift+Ctrl+P from QtCreator or pressing Volume up + Volume
 down on the device.
 
-![](/static/devportal_uploaded/602d58b6-31d2-4702-ab9a-9260ff351b15-cms_page_media/147/screenshot-166x300.jpg)
-![](/static/devportal_uploaded/ca8f46d9-cbdf-4bfc-ab42-f0ef6a9f24b3-cms_page_media/147/scope_prev-180x300.png)
+![](../../../media/602d58b6-31d2-4702-ab9a-9260ff351b15-cms_page_media/147/screenshot-166x300.jpg)
+![](../../../media/ca8f46d9-cbdf-4bfc-ab42-f0ef6a9f24b3-cms_page_media/147/scope_prev-180x300.png)
 
 #### Icon
 
@@ -80,7 +80,7 @@ To look good when cropped, the point of focus (in this example, the YouTube
 logo) you should be slightly above the horizontal center and its width should
 be a third of the icon size.
 
-![](/static/devportal_uploaded/6f70b338-8bfc-43da-8d8c-0c2f99c7c1e9-cms_page_media/147/yt-1-300x300.png) ![](/static/devportal_uploaded/733e8c76-1c9e-409c-bcf4-aeb005e40c43-cms_page_media/147/yt-2-300x300.png)
+![](../../../media/6f70b338-8bfc-43da-8d8c-0c2f99c7c1e9-cms_page_media/147/yt-1-300x300.png) ![](/static/devportal_uploaded/733e8c76-1c9e-409c-bcf4-aeb005e40c43-cms_page_media/147/yt-2-300x300.png)
 
 ### Creating the package
 
@@ -90,9 +90,9 @@ To create it from QtCreator, make sure you have an armhf kit selected and go
 to the Publish page. Click the “Create and validate Click package” button and
 wait a few seconds for the build and validation tests to run.
 
-![](/static/devportal_uploaded/88e7beb0-b371-45a2-9322-044255d9d22b-cms_page_media/147/Screenshot-from-2014-11-26-1-700x223.png)
+![](../../../media/88e7beb0-b371-45a2-9322-044255d9d22b-cms_page_media/147/Screenshot-from-2014-11-26-1-700x223.png)
 
-![](/static/devportal_uploaded/0f797ce9-16f3-426f-bcbc-0d92b0025018-cms_page_media/147/Screenshot-from-2014-11-26-2-700x223.png)
+![](../../../media/0f797ce9-16f3-426f-bcbc-0d92b0025018-cms_page_media/147/Screenshot-from-2014-11-26-2-700x223.png)
 
 If everything is green, your click package is ready to be submitted to the
 store! It’s in your build folder (“build-<kit name>-<project name>”, located

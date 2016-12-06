@@ -36,7 +36,7 @@ strict QA criteria of automated and manual tests.
 
 ## Release cycle and image promotion
 
-![](/static/devportal_uploaded/3ce975d2-9a7e-4448-99d7-6fe674642fba-cms_page_media/28/Ubuntu phone release cycle diagram.png)
+![](../../media/3ce975d2-9a7e-4448-99d7-6fe674642fba-cms_page_media/28/Ubuntu phone release cycle diagram.png)
 
 Ubuntu images are generated daily (often multiple images per day) and are
 thoroughly tested with automated and manual tests to ensure they comply with

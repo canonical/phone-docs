@@ -44,25 +44,25 @@ It is possible to optionally define a default value for each setting.
 
 These types provide text inputs.
 
-![](/static/devportal_uploaded/355c2284-09f1-4411-983b-c9dbeba92411-cms_page_media/145/scope-settings_visitparis1.png)
+![](../../../media/355c2284-09f1-4411-983b-c9dbeba92411-cms_page_media/145/scope-settings_visitparis1.png)
 
-![](/static/devportal_uploaded/dab06f33-e0e8-4e10-b17f-1e135f80ae8f-cms_page_media/145/scope-settings_visitparis2.png)
+![](../../../media/dab06f33-e0e8-4e10-b17f-1e135f80ae8f-cms_page_media/145/scope-settings_visitparis2.png)
 
 #### boolean
 
 This type provides a checkbox.
 
-![](/static/devportal_uploaded/f19e212e-ae90-462c-955b-85240cc1cbf0-cms_page_media/145/scope-settings_indieconcerts21.png)
+![](../../../media/f19e212e-ae90-462c-955b-85240cc1cbf0-cms_page_media/145/scope-settings_indieconcerts21.png)
 
-![](/static/devportal_uploaded/e99084a7-aedc-4221-8a47-ec8efcdbd574-cms_page_media/145/scope-settings_indieconcerts11.png)
+![](../../../media/e99084a7-aedc-4221-8a47-ec8efcdbd574-cms_page_media/145/scope-settings_indieconcerts11.png)
 
 #### list
 
 This type provides an expandable list.
 
-![](/static/devportal_uploaded/f2825b25-614d-4d39-b460-1b3d80dc3528-cms_page_media/145/scope-settings_coffeenearby1.png)
+![](../../../media/f2825b25-614d-4d39-b460-1b3d80dc3528-cms_page_media/145/scope-settings_coffeenearby1.png)
 
-![](/static/devportal_uploaded/8aa72285-9d53-41a4-900d-522ede562eba-cms_page_media/145/scope-settings_coffeenearby2.png)
+![](../../../media/8aa72285-9d53-41a4-900d-522ede562eba-cms_page_media/145/scope-settings_coffeenearby2.png)
 
 ## <scope>-settings.ini
 
@@ -311,13 +311,13 @@ Simply add :
 
 Our scope now has working settings and should look like this:
 
-![](/static/devportal_uploaded/9d757f2a-3a0b-4c30-8bcd-4e6475fd04fc-cms_page_media/145/scope-settings-final0.png)
+![](../../../media/9d757f2a-3a0b-4c30-8bcd-4e6475fd04fc-cms_page_media/145/scope-settings-final0.png)
 
-![](/static/devportal_uploaded/dc36c05d-5497-4901-a9eb-878726175252-cms_page_media/145/scope-settings-final1.png)
+![](../../../media/dc36c05d-5497-4901-a9eb-878726175252-cms_page_media/145/scope-settings-final1.png)
 
-![](/static/devportal_uploaded/3e77d008-d796-43cb-b087-812c672d994e-cms_page_media/145/scope-settings-final2.png)
+![](../../../media/3e77d008-d796-43cb-b087-812c672d994e-cms_page_media/145/scope-settings-final2.png)
 
-![](/static/devportal_uploaded/34cb813b-16cc-4aa1-b630-85ccd6f60e08-cms_page_media/145/scope-settings-final3.png)
+![](../../../media/34cb813b-16cc-4aa1-b630-85ccd6f60e08-cms_page_media/145/scope-settings-final3.png)
 
 
 

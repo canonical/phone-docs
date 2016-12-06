@@ -62,7 +62,7 @@ subdirectory. Inside is a folder aptly called _currencyconverter_ which
 represents our testsuite name. Finally, inside this folder is the testcases
 and supporting code.
 
-![](/static/devportal_uploaded/e9e829ae-b5a1-4ce1-a340-8f7a9b00f3ef-cms_page_media/128/Selection_009.jpg)
+![](../../../../media/e9e829ae-b5a1-4ce1-a340-8f7a9b00f3ef-cms_page_media/128/Selection_009.jpg)
 
     cd tests/functional/currencyconverter
 

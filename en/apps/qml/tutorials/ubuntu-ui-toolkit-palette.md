@@ -112,7 +112,7 @@ These are:
 
   2. raised - sits proud but not detached from the surface of any main layer.
 
-![](/static/devportal_uploaded/a09be0f5-de6e-44c1-8ce1-ea202e1d2c83-cms_page_media/1130/palette-diagram-02.png)
+![](../../../../media/a09be0f5-de6e-44c1-8ce1-ea202e1d2c83-cms_page_media/1130/palette-diagram-02.png)
 
 In addition to these there are palette values which are not applied on any
 particular layer, but mostly color a section of a component. Those will be
@@ -148,7 +148,7 @@ color: theme.palette.normal.**baseText**
 
 }
 
-![](/static/devportal_uploaded/5e89e3e4-9330-4106-b880-34c54eac3f6d-cms_page_media/1130/s2EIHgTuUJ0fGllaUmM0duw.png)
+![](../../../../media/5e89e3e4-9330-4106-b880-34c54eac3f6d-cms_page_media/1130/s2EIHgTuUJ0fGllaUmM0duw.png)
 
 ####  Background
 
@@ -527,7 +527,7 @@ different:
 The following diagram illustrates the state transitions of a component driving
 the colors.
 
-![](/static/devportal_uploaded/a6c7cb9f-3d20-4a3d-8764-04b3ea063178-cms_page_media/1130/ssnCXsj5vjZkUKXe6ZBQ8ZA.png)
+![](../../../../media/a6c7cb9f-3d20-4a3d-8764-04b3ea063178-cms_page_media/1130/ssnCXsj5vjZkUKXe6ZBQ8ZA.png)
 
 ## Choosing the palette value set automatically
 

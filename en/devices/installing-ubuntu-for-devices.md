@@ -353,7 +353,7 @@ to it (through scripts or the command line), you might want to enable the
 developer mode. To do this, go to **Settings → About this device → Developer
 mode**.
 
-![](/static/devportal_uploaded/47419b12-60a7-4d91-910a-3d1b90ca6908-cms_page_media/26/screenshot20150630_094616727.png)
+![](../../media/47419b12-60a7-4d91-910a-3d1b90ca6908-cms_page_media/26/screenshot20150630_094616727.png)
 
 This allows you to access your device via ADB or directly with SSH, when the
 device is unlocked. The `phablet-shell` command, provided by the phablet-tools

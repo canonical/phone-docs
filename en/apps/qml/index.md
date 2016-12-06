@@ -8,21 +8,21 @@
 
 ### Unleash the power of QML
 
-![](/static/devportal_uploaded/21af50b0-f191-422c-a6e4-7a00389e847c-cms_page_media/45/gomobile-qml.jpg)
+![](../../../media/21af50b0-f191-422c-a6e4-7a00389e847c-cms_page_media/45/gomobile-qml.jpg)
 
 QML is an extremely powerful JavaScript-based declarative language for
 designing intuitive, natural and responsive user interfaces.
 
 ### Crisp, integrated design
 
-![](/static/devportal_uploaded/782a692b-9f9d-4700-b8ba-2d4fd31ffda2-cms_page_media/45/gomobile-toolkit-design-small.png)
+![](../../../media/782a692b-9f9d-4700-b8ba-2d4fd31ffda2-cms_page_media/45/gomobile-toolkit-design-small.png)
 
 The Ubuntu SDK provides fluid and natural user interface QML elements that
 blend into Ubuntu without getting in the way.
 
 ### Rich framework and APIs
 
-![](/static/devportal_uploaded/a2bc4f87-604d-4915-b653-db4bd67667f6-cms_page_media/45/qp-platform.png)
+![](../../../media/a2bc4f87-604d-4915-b653-db4bd67667f6-cms_page_media/45/qp-platform.png)
 
 Based on the cross-platform Qt framework, QML features an extensive set of
 APIs that cover the needs of the most demanding developers.

@@ -20,7 +20,7 @@ Whether an application header should be shown on the splash screen. It turns
 on splash screen mode 3 (as described above). The header will display the text
 in X-Ubuntu-Splash-Title, if defined, or the application name otherwise.
 
-![](/static/devportal_uploaded/f8095368-131b-45ce-a058-49432c9963eb-cms_page_media/63/contacts_splash-180x300.png)
+![](../../../media/f8095368-131b-45ce-a058-49432c9963eb-cms_page_media/63/contacts_splash-180x300.png)
 
 ## X-Ubuntu-Splash-Title (text, to be localizable soon)
 

@@ -29,13 +29,13 @@ Continue through the wizard by picking:
   * choose a framework (if you are unsure about which one to use, see the [Frameworks guide](https://developer.ubuntu.com/en/start/platform/guides/frameworks/)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
   * and a [kit](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
 
-![](/static/devportal_uploaded/b9a5aedd-ebd9-4b25-8804-2d3191608127-cms_page_media/927/Screenshot from 2015-06-2215:14:27.png)
+![](../../../../media/b9a5aedd-ebd9-4b25-8804-2d3191608127-cms_page_media/927/Screenshot from 2015-06-2215:14:27.png)
 
-![](/static/devportal_uploaded/438bf662-e51a-475c-8765-89cd5c7842c9-cms_page_media/927/Screenshot from 2015-06-22 15:14:41.png)
+![](../../../../media/438bf662-e51a-475c-8765-89cd5c7842c9-cms_page_media/927/Screenshot from 2015-06-22 15:14:41.png)
 
-![](/static/devportal_uploaded/c9968145-251a-4ca4-825a-59c611bd530d-cms_page_media/927/Screenshot from 2015-06-22 15:15:23.png)
+![](../../../../media/c9968145-251a-4ca4-825a-59c611bd530d-cms_page_media/927/Screenshot from 2015-06-22 15:15:23.png)
 
-![](/static/devportal_uploaded/527f236e-2245-46ef-8656-9f9e1e071421-cms_page_media/927/Screenshot from 2015-06-22 15:15:32.png)
+![](../../../../media/527f236e-2245-46ef-8656-9f9e1e071421-cms_page_media/927/Screenshot from 2015-06-22 15:15:32.png)
 
 ### Template files
 
@@ -43,7 +43,7 @@ After creating the project, the SDK has now switched to the editor tab. If you
 are already used to QML-only apps, you can see a slightly different file tree
 on the left pane:
 
-![](/static/devportal_uploaded/a4042bfc-d4af-4143-bfe7-85a0ae3f511a-cms_page_media/927/Screenshot from 2015-06-22 15:15:55.png)
+![](../../../../media/a4042bfc-d4af-4143-bfe7-85a0ae3f511a-cms_page_media/927/Screenshot from 2015-06-22 15:15:55.png)
 
 An “`app`” folder for QML files and the desktop file, a “`backend`” folder for
 C++ modules and tests, and a “`po`” folder that will hold generated
@@ -66,7 +66,7 @@ the green Play icon), you can see that it looks similar to a standalone QML
 app, the big difference is that the QML object used to display the "Hello
 world" string is actually a class imported from C++.
 
-![](/static/devportal_uploaded/bce239fa-f318-46af-bac3-421f15a2b19e-cms_page_media/927/Screenshot from 2015-06-22 15:16:35.png)
+![](../../../../media/bce239fa-f318-46af-bac3-421f15a2b19e-cms_page_media/927/Screenshot from 2015-06-22 15:16:35.png)
 
 ## First example - Calling the command-line
 
@@ -185,7 +185,7 @@ simple UI
 
 Run the app and enjoy a tiny shell access!
 
-![](/static/devportal_uploaded/75e6764d-8a67-44ba-9e0e-4be82177a770-cms_page_media/927/Screenshot from 2015-06-22 15:22:33.png)
+![](../../../../media/75e6764d-8a67-44ba-9e0e-4be82177a770-cms_page_media/927/Screenshot from 2015-06-22 15:22:33.png)
 
 ## Second example - Integrate an external library
 
@@ -332,9 +332,9 @@ Here is our QML UI using the `draw()` function in `Main.qml`
 That's it! Our simple QML app is ready to use: enter some Y-axis values in the
 input field and it will generate and display a SVG graph.
 
-![](/static/devportal_uploaded/2fa8bc9d-d64c-477d-b66c-b631c8706756-cms_page_media/927/Screenshot from 2015-06-22 15:35:54.png)
+![](../../../../media/2fa8bc9d-d64c-477d-b66c-b631c8706756-cms_page_media/927/Screenshot from 2015-06-22 15:35:54.png)
 
-![](/static/devportal_uploaded/87246b04-0036-4186-a8b6-efd4c6f84ded-cms_page_media/927/Screenshot from 2015-06-22 15:35:37.png)
+![](../../../../media/87246b04-0036-4186-a8b6-efd4c6f84ded-cms_page_media/927/Screenshot from 2015-06-22 15:35:37.png)
 
 ### Packaging
 

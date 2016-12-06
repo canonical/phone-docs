@@ -87,7 +87,7 @@ the stop watch page object as follows:
         def reset(self):
             raise NotImplementedError()
 
-![](/static/devportal_uploaded/7fb5ee92-4f3f-4e66-be1d-2e2fbc0e2d77-cms_page_media/65/stopwatch-179x300.png)
+![](../../../media/7fb5ee92-4f3f-4e66-be1d-2e2fbc0e2d77-cms_page_media/65/stopwatch-179x300.png)
 
 
 

@@ -30,9 +30,9 @@ toggle location data access. Note that it will be enabled by default. If you
 run the scope at this point, you should see a new “Settings” entry in the
 header, with an “Enable location data” checkbox.
 
-![](/static/devportal_uploaded/f860dad7-81bd-4396-868c-b50b2f7d8b6a-cms_page_media/144/scope-location-0.png)
+![](../../../media/f860dad7-81bd-4396-868c-b50b2f7d8b6a-cms_page_media/144/scope-location-0.png)
 
-![](/static/devportal_uploaded/fad54a0c-d176-4023-a538-8acfc49d4bd0-cms_page_media/144/scope-location-1.png)
+![](../../../media/fad54a0c-d176-4023-a538-8acfc49d4bd0-cms_page_media/144/scope-location-1.png)
 
 ## Location data
 
@@ -191,7 +191,7 @@ Now, we just need to use the place variable in our default query:
 
 **That’s it!** The scope should now be able to surface weather data for your location when you open it.
 
-![](/static/devportal_uploaded/7eee7ca9-7a11-46b3-be44-1d880391a38b-cms_page_media/144/scope-location-2.png)
+![](../../../media/7eee7ca9-7a11-46b3-be44-1d880391a38b-cms_page_media/144/scope-location-2.png)
 
 ## Next steps
 

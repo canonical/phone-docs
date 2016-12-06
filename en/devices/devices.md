@@ -56,21 +56,21 @@ effort basis and at different degrees of functionality.
 
 ### Featured ports
 
-![](/static/devportal_uploaded/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
+![](../../media/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
 
 **OnePlus One**  
 Marius Gripsgard
 
 [Install instructions](https://devices.ubports.com/#/bacon)
 
-![](/static/devportal_uploaded/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
+![](../../media/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
 
 **Nexus 5**  
 Vojtech Bocek
 
 [Installinstructions](https://wiki.ubuntu.com/Touch/Devices#Server_at_http:.2BAC8ALw-system-image.tasemnice.eu)
 
-![](/static/devportal_uploaded/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
+![](../../media/f365ca35-b466-4bd9-956a-9a3b7c3fac09-cms_page_media/27/tel_blank.png)
 
 **Fairphone 2**  
 Marius Gripsgard

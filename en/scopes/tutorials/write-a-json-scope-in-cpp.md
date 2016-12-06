@@ -30,9 +30,9 @@ scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
-![](/static/devportal_uploaded/45591f2b-6d99-4c68-9ba3-be193e981e79-cms_page_media/110/scope_wizard1-700x435.png)
+![](../../../media/45591f2b-6d99-4c68-9ba3-be193e981e79-cms_page_media/110/scope_wizard1-700x435.png)
 
-![](/static/devportal_uploaded/db7e3e31-f3ea-481e-ac51-60cdfc48531a-cms_page_media/110/scope_wizard2_bis-700x371.png)
+![](../../../media/db7e3e31-f3ea-481e-ac51-60cdfc48531a-cms_page_media/110/scope_wizard2_bis-700x371.png)
 
 If you need more help to get started with the SDK, have a look at the [SDKsetup article](/en/phone/apps/sdk/tutorials/creating-an-sdk-app-project/).
 
@@ -448,7 +448,7 @@ the query.
 
 ## Query string
 
-![](/static/devportal_uploaded/298ae1cf-6796-47c1-a017-cd8dd27b0be3-cms_page_media/110/soundcloud_query1-300x264.png)
+![](../../../media/298ae1cf-6796-47c1-a017-cd8dd27b0be3-cms_page_media/110/soundcloud_query1-300x264.png)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -725,7 +725,7 @@ way we want.
 
 ## Category renderers
 
-![](/static/devportal_uploaded/6cfa1712-246e-40a1-9e8a-8c145f03d6ad-cms_page_media/110/soundcloud_cat1-300x264.png)
+![](../../../media/6cfa1712-246e-40a1-9e8a-8c145f03d6ad-cms_page_media/110/soundcloud_cat1-300x264.png)
 
 Each result needs to be displayed inside a category. In terms of UI, a
 category can provide a header title to a list of results and a specific layout
@@ -947,7 +947,7 @@ set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](/static/devportal_uploaded/cd8a41c9-169c-421e-82b5-3b8f1c6d4e1b-cms_page_media/110/soundcloud_preview1-300x264.png)
+![](../../../media/cd8a41c9-169c-421e-82b5-3b8f1c6d4e1b-cms_page_media/110/soundcloud_preview1-300x264.png)
 
 The preview needs to generate widgets and connect their fields to the data
 fields in the CategorisedResult.
@@ -1177,7 +1177,7 @@ Now, we need to register the layouts into the reply object, as follows:
 
 By default, your scope looks like this :
 
-![](/static/devportal_uploaded/718a1f60-d667-44bf-8e72-3ea7f37881d5-cms_page_media/110/soundcloud_unbranded-180x300.png)
+![](../../../media/718a1f60-d667-44bf-8e72-3ea7f37881d5-cms_page_media/110/soundcloud_unbranded-180x300.png)
 
 Many display options can be changed in **data/<appid>.ini**. Here is my best
 effort at branding this scope, most of the options are self-explicit :
@@ -1243,8 +1243,8 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](/static/devportal_uploaded/df8e0a1a-81df-46a5-9812-025d9d341687-cms_page_media/110/soundcloud_branded-180x300.png)
-![](/static/devportal_uploaded/786c12ef-12b2-4e18-b74f-620dbeedb1ce-cms_page_media/110/soundcloud_branded2-180x300.png)
+![](../../../media/df8e0a1a-81df-46a5-9812-025d9d341687-cms_page_media/110/soundcloud_branded-180x300.png)
+![](../../../media/786c12ef-12b2-4e18-b74f-620dbeedb1ce-cms_page_media/110/soundcloud_branded2-180x300.png)
 
 Have a look at all the available [customizationoptions](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/) and try to make your scope shine!
 

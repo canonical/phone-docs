@@ -65,7 +65,7 @@ path to the application:
 To start Ubuntu SDK, simply open the **Dash**, start typing “**ubuntu sdk**“,
 and click on the Ubuntu SDK icon that appears on the search results.
 
-![](/static/devportal_uploaded/6f550612-b39f-43a8-a0cf-4254b9e6c830-cms_page_media/269/ubuntu-sdk-dash.jpg)
+![](../../../../media/6f550612-b39f-43a8-a0cf-4254b9e6c830-cms_page_media/269/ubuntu-sdk-dash.jpg)
 
 Next stop: putting our developer hat on.
 
@@ -117,7 +117,7 @@ Or alternatively, from the terminal:
 
 `qmlscene ~/CurrencyConverter/main.qml`
 
-![](/static/devportal_uploaded/a48c7a0f-312e-40ae-b82d-65e258cba4f6-cms_page_media/269/converter_0.png)
+![](../../../../media/a48c7a0f-312e-40ae-b82d-65e258cba4f6-cms_page_media/269/converter_0.png)
 
 Hooray! Your first Ubuntu app for the phone is up and running. Nothing very
 exciting yet, but notice how simple it was to bootstrap it. You can close your
@@ -499,7 +499,7 @@ a currency selector button and a text field to display or input the currency
 conversion values. We’ve also added a button below them to clear both text
 fields at once. Here’s a mockup to illustrate the layout:
 
-![](/static/devportal_uploaded/a6c12d22-2d1a-4d95-b28c-71c861bee5a1-cms_page_media/269/PageLayout_2.png)
+![](../../../../media/a6c12d22-2d1a-4d95-b28c-71c861bee5a1-cms_page_media/269/PageLayout_2.png)
 
 ## Lo and behold
 
@@ -507,9 +507,9 @@ So that’s it! Now we can lay back and enjoy our creation. Just press the
 Ctrl+R shortcut within Ubuntu SDK, and behold the fully functional and slick
 currency converter you’ve just written with a few lines of code.
 
-![](/static/devportal_uploaded/b1dec9a8-a67f-402a-9d20-38b201f53427-cms_page_media/269/converter_1.png)
+![](../../../../media/b1dec9a8-a67f-402a-9d20-38b201f53427-cms_page_media/269/converter_1.png)
 
-![](/static/devportal_uploaded/7fa6751d-3f86-4fd1-8d63-b4d0d25e5a9c-cms_page_media/269/converter_2.png)
+![](../../../../media/7fa6751d-3f86-4fd1-8d63-b4d0d25e5a9c-cms_page_media/269/converter_2.png)
 
 ## Test it!
 
@@ -536,7 +536,7 @@ check out the **Component Showcase** app that comes with the Ubuntu QML
 toolkit preview. With it, you’ll be able to see all of the Ubuntu components
 in action and look at their code to learn how to use it in your apps.
 
-![](/static/devportal_uploaded/b30c9376-defa-4bbc-813f-e45c4469f095-cms_page_media/269/ui_gallery.png)
+![](../../../../media/b30c9376-defa-4bbc-813f-e45c4469f095-cms_page_media/269/ui_gallery.png)
 
 If you want to study the Component Showcase code:
 

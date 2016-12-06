@@ -39,7 +39,7 @@ can launch it if he's interested in reading messages at that point.
 Since the app is not started and messages are delivered oportunistically, this
 is both battery and bandwidth-efficient.
 
-![Push Notifications diagram](/static/devportal_uploaded/b3ddee0c-77cb-4a29-9ea8-a09d0374ae34-cms_page_media/64/push2.png)
+![Push Notifications diagram](../../../media/b3ddee0c-77cb-4a29-9ea8-a09d0374ae34-cms_page_media/64/push2.png)
 
 The Ubuntu Push system provides:
 
