@@ -20,30 +20,30 @@ ports, with support for Over-The-Air (OTA) updates.
 
 
 
-  * 1. Before getting started ›
+  * 1. Before getting started&nbsp;&rsaquo;
 
 Welcome to this guide! It starts with an architectural overview and
 terminology of an Ubuntu port.
 
-  * 2. Set up your development environment ›
+  * 2. Set up your development environment&nbsp;&rsaquo;
 
 Everything you need to start working on a port and an example Nexus 4 build.
 
-  * 3. Enabling a new device ›
+  * 3. Enabling a new device&nbsp;&rsaquo;
 
 Adding your device to the project tree and retrieving proprietary drivers.
 
-  * 4. Device-specific changes ›
+  * 4. Device-specific changes&nbsp;&rsaquo;
 
 Adapting the kernel config, generating udev rules, AppArmor fixes and build
 changes.
 
-  * 5. Building and debugging ›
+  * 5. Building and debugging&nbsp;&rsaquo;
 
 Creating your image, getting started with debugging the system and optionally
 setting up an image server.
 
-  * 6. Need help? Get in touch ›
+  * 6. Need help? Get in touch&nbsp;&rsaquo;
 
 IRC, mailing list and suggesting changes to this guide.
 

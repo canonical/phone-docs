@@ -1,31 +1,12 @@
+---
+title: "QML app cookbook"
+table_of_contents: true
+---
+# QML app cookbook
 
+The App Developer Cookbook is a collection of short examples, how to's and answered questions from our developer community. In the sections below you will find information about how to perform common tasks, answers to frequently asked questions, and code snippets from real world examples.
 
-
-
-
-
-The App Developer Cookbook is a collection of short examples, how to's and
-answered questions from our developer community. In the sections below you
-will find information about how to perform common tasks, answers to frequently
-asked questions, and code snippets from real world examples.
-
-## Categories
-
-  * General App Development
-  * Platform and System Services
-  * UI Components and Shell Integration
-  * Device Sensors
-
-  * Games
-  * Files and Storage
-  * Multimedia
-  * Networking
-
-
-
-
-
-### General App Development
+## General App Development
 
   * [How can I get started with developing apps for Ubuntu Touch?](http://askubuntu.com/questions/239490/how-can-i-get-started-with-developing-apps-for-ubuntu-touch)
   * [Is there way to compile Qt5 programs, written with c++, to Ubuntu Touch?](http://askubuntu.com/questions/260185/is-there-way-to-compile-qt5-programs-written-with-c-to-ubuntu-touch)
@@ -46,10 +27,7 @@ asked questions, and code snippets from real world examples.
   * [How do I install an app on a device running ubuntu touch?](http://askubuntu.com/questions/270832/how-do-i-install-an-app-on-a-device-running-ubuntu-touch)
 
 
-
-
-
-### Platform and System Services
+## Platform and System Services
 
   * [When to use gconf vs dconf?](http://askubuntu.com/questions/91403/when-to-use-gconf-vs-dconf)
   * [How to add support for new services to Friends?](http://askubuntu.com/questions/279971/how-to-add-support-for-new-services-to-friends)
@@ -67,7 +45,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### UI Components and Shell Integration
+## UI Components and Shell Integration
 
   * [How do I start developing a lens for Unity?](http://askubuntu.com/questions/43077/how-do-i-start-developing-a-lens-for-unity)
   * [How do I add applications to the Messaging Menu?](http://askubuntu.com/questions/15617/how-do-i-add-applications-to-the-messaging-menu)
@@ -103,7 +81,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### Device Sensors
+## Device Sensors
 
   * [Low-level 10-finger multi-touch data on the Nexus 7?](http://askubuntu.com/questions/210272/low-level-10-finger-multi-touch-data-on-the-nexus-7)
   * [Will location data be available to ubuntu mobile apps?](http://askubuntu.com/questions/258281/will-location-data-be-available-to-ubuntu-mobile-apps)
@@ -112,7 +90,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### Games
+## Games
 
   * [Is there a simple "Hello World" for making games?](http://askubuntu.com/questions/136106/is-there-a-simple-hello-world-for-making-games)
   * [What 2D/3D engines and game SDKs are available?](http://askubuntu.com/questions/34200/what-2d-3d-engines-and-game-sdks-are-available)
@@ -123,7 +101,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### Files and Storage
+## Files and Storage
 
   * [Where do applications typically store data?](http://askubuntu.com/questions/4420/where-do-applications-typically-store-data)
   * [What is the preferred way to store application settings?](http://askubuntu.com/questions/42438/what-is-the-preferred-way-to-store-application-settings)
@@ -133,7 +111,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### Multimedia
+## Multimedia
 
   * [How to pass the image preview from the QML Camera component to a C++ plugin](http://askubuntu.com/questions/302774/how-to-pass-the-image-preview-from-the-qml-camera-component-to-a-c-plugin)
   * [Is there a standard or recommended sound lib in Ubuntu?](http://askubuntu.com/questions/100034/is-there-a-standard-or-recommended-sound-lib-in-ubuntu)
@@ -144,12 +122,7 @@ asked questions, and code snippets from real world examples.
 
 
 
-### Networking
+## Networking
 
   * [How to programmatically get a list of wireless SSIDs in range from NetworkManager](http://askubuntu.com/questions/137894/how-to-programmatically-get-a-list-of-wireless-ssids-in-range-from-networkmanage)
   * [get text from a Website in javascript/qml](http://askubuntu.com/questions/308547/get-text-from-a-website-in-javascript-qml)
-
-
-
-
-

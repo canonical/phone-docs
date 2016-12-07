@@ -66,7 +66,7 @@ If you’ve got any question about Ubuntu on mobile devices or developing apps
 for the phone, our experts are here to help. Ask Ubuntu is a free, community-
 driven Q&A site for Ubuntu users and developers.
 
-[Ask a question now›](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)
+[Ask a question now&nbsp;&rsaquo;](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)
 
 ## What are scopes?
 

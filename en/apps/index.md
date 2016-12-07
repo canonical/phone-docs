@@ -1,19 +1,13 @@
 
+# Ubuntu Phone apps
 
-
-
-
-
-# Make the next generation of apps
+## Make the next generation of apps
 
 Welcome to an open source and free platform under constant scrutiny and
 improvement by a vibrant global community, whose energy, connectedness, talent
 and commitment is unmatched.
 
 Ubuntu is also the third most deployed desktop OS in the world.
-
-
-
 
 
 ## Design comes first
@@ -26,9 +20,9 @@ typography, all Ubuntu apps share a simple design and superb functionality.
 From top to bottom, they feel and behave as part of the same family,
 regardless of the implementation toolkit.
 
-[Learn more about our design values ›](http://design.ubuntu.com/apps)
+[Learn more about our design values&nbsp;&rsaquo;](http://design.ubuntu.com/apps)
 
-![Design comes first](../../media/e780dbd9-4eb9-480c-b1c2-b5a615a28c93-cms_page_media/5/making_of_apps_21222.png)
+![Design comes first](../../media/apps-making_of_apps_21222.png)
 
 
 
@@ -50,7 +44,7 @@ APIs to empower users and developers.
 This tight integration also enables a true write-once, run-everywhere approach
 that conserves precious developer time.
 
-[Learn more about platform features ›](../platform/index.md)
+[Learn more about platform features&nbsp;&rsaquo;](../platform/index.md)
 
 
 
@@ -71,7 +65,7 @@ This integrated development environment offers a richly featured and deeply
 integrated set of development tools that gears up productivity and includes
 direct access to attached Ubuntu devices and Ubuntu emulators.
 
-[Install the Ubuntu SDK IDE ›](../platform/sdk/installing-the-sdk.md)
+[Install the Ubuntu SDK IDE&nbsp;&rsaquo;](../platform/sdk/installing-the-sdk.md)
 
 ### Pick your language
 

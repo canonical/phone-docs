@@ -104,16 +104,16 @@ available for JavaScript, Go and C++, that will help you write it.
 When you want to dive further into scopes, you can always find wisdom in our
 selection of scopes developer and design guides.
 
-  * [Scopes developer guides ›](guides/index.md)
-  * [Scopes design guide ›](http://design.ubuntu.com/scopes)
+  * [Scopes developer guides&nbsp;&rsaquo;](guides/index.md)
+  * [Scopes design guide&nbsp;&rsaquo;](http://design.ubuntu.com/scopes)
 
 ### Need help?
 
 Thanks to our active community, you can find support from a variety of sources
 such as Ask Ubuntu, our mailing lists or IRC channel.
 
-  * [Ask a scope question on Ask Ubuntu ›](http://askubuntu.com/questions/tagged/scopes)
-  * [Reach out to other developers (mailing-list, live chat) ›](https://developer.ubuntu.com/en/community/)
+  * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](http://askubuntu.com/questions/tagged/scopes)
+  * [Reach out to other developers (mailing-list, live chat)&nbsp;&rsaquo;](https://developer.ubuntu.com/en/community/)
 
 
 

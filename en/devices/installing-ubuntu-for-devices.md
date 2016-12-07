@@ -54,32 +54,32 @@ details.
 
 
 
-  * 1. Prepare your desktop ›
+  * 1. Prepare your desktop&nbsp;&rsaquo;
 
 Prepare your Ubuntu desktop to drive an installation on an USB connected
 device.
 
-  * 2. Save your Android data ›
+  * 2. Save your Android data&nbsp;&rsaquo;
 
 Backup up your Android apps, user data and save information about your device
 to make an Android re-install easier.
 
-  * 3. Unlock an Android device ›
+  * 3. Unlock an Android device&nbsp;&rsaquo;
 
 In order to install Ubuntu, you also need to “unlock” your Android device
 bootloader.
 
-  * 4. Install Ubuntu on a device ›
+  * 4. Install Ubuntu on a device&nbsp;&rsaquo;
 
 The install process: selecting an image channel, flashing and enabling
 developer mode.
 
-  * 5. Upgrade an Ubuntu image ›
+  * 5. Upgrade an Ubuntu image&nbsp;&rsaquo;
 
 Upgrades to new images and apps are provided over the air. Learn how to make
 that process automatic or manual.
 
-  * 6. Other image and install options ›
+  * 6. Other image and install options&nbsp;&rsaquo;
 
 Switch between install channels, from stable to devel or to a specific
 revision.

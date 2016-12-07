@@ -1,8 +1,6 @@
 
 
-
-
-
+# HTML5 app guides
 
 Here’s where you can find a growing set of **HTML5 apps** guides that
 developers need to know about to get productive. With those you will learn the
@@ -16,8 +14,3 @@ if you are interested in making your Ubuntu HTML5 application cross-platform,
 you should also read the Cordova guide below.
 
   * [Cordova Guide](cordova-guide.md)
-
-
-
-
-

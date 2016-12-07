@@ -37,7 +37,7 @@ running:
 
     bzr branch lp:~davidc3/howmanyapples/no-i18n
 
-Or [read it online›](http://bazaar.launchpad.net/~davidc3/howmanyapples/no-i18n/files)
+Or [read it online&nbsp;&rsaquo;](http://bazaar.launchpad.net/~davidc3/howmanyapples/no-i18n/files)
 
 Or simply use one of your existing projects and try to follow along (Note:
 make sure to update your project to the latest SDK template by following these

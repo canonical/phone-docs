@@ -11,7 +11,7 @@ and supported by Canonical with contributions from the wider Ubuntu community.
 
 Links to Android pages are provided for recovery purposes.
 
-Looking into installing Ubuntu on a PC or server instead? [Download Ubuntu foryour computer, server or cloud ›](http://www.ubuntu.com/download)
+Looking into installing Ubuntu on a PC or server instead? [Download Ubuntu foryour computer, server or cloud&nbsp;&rsaquo;](http://www.ubuntu.com/download)
 
 **Device**
 **Android image**

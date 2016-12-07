@@ -1,7 +1,6 @@
-
-
-
-
+---
+title: "HTML5 Unit Testing"
+---
 
 
 # Writing unit tests for HTML5 apps
@@ -10,22 +9,17 @@ In this tutorial you will learn how to write a unit test to strengthen the
 quality of your Ubuntu HTML5 application. It builds upon the HTML5 development
 tutorials.
 
-### Requirements
+## Requirements
 
   * Ubuntu 14.10 or later
-
     * [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
   * The HTML5 development tutorials
-
     * If you haven't already complete the [HTML5 development tutorials](index.md)
-
   * nodejs
+    * Open a terminal with `Ctrl+Alt+T` and run these commands to install all required packages:
+      * `sudo apt-get install nodejs`
 
-    * Open a terminal with Ctrl+Alt+T and run these commands to install all required packages:
-
-      * sudo apt-get install nodejs
-
-### What are unit tests?
+## What are unit tests?
 
 To help ensure your application performs as expected it's important to have a
 nice suite of unit tests. Unit tests are the foundation of a good testing
@@ -46,7 +40,6 @@ number of tests for your project.
 In Ubuntu, unit tests for your HTML5 application:
 
   * Are written in javascript
-
   * Utilize jasmine, grunt and nodejs
 
 ### Speaking Jasmine
@@ -55,54 +48,57 @@ In Ubuntu, unit tests for your HTML5 application:
 
 A basic spec is very simple.
 
-  * Declare a describe() function. This forms the test suite definition
+  * Declare a `describe()` function. This forms the test suite definition
+  * Using the `it` function, create test cases using javascript
+  * Utilize `expect` and matchers to make an assertion about results
 
-  * Using the it function, create testcases using javascript
-
-  * Utilize expect and matchers to make an assertion about results
-    describe("Testsuite", function() {
-      it("testname", function() {
-        expect(true).toBe(true);
-      });
-    });
+``` javascript
+describe("Testsuite", function() {
+  it("testname", function() {
+    expect(true).toBe(true);
+  });
+});
+```
 
 #### Example
 
-For example, heres a simple testsuite for a function which reverses a string:
+For example, heres a simple test suite for a function which reverses a string:
 
-    describe('String Tests',function(){
-        beforeEach(function(){
-           stringFunc = {
-               reverse: function(string) {
-                    var reversed;
-                    for(var i = string.length - 1; i >= 0; i--) {
-                        reversed += string[i];
-                    }
-                    return reversed;
+``` javascript
+describe('String Tests',function(){
+    beforeEach(function(){
+       stringFunc = {
+           reverse: function(string) {
+                var reversed;
+                for(var i = string.length - 1; i >= 0; i--) {
+                    reversed += string[i];
                 }
-           };
-        });
-        it("string is reversed", function() {
-          string = 'thisismystring';
-          expect(stringFunc.reverse(string)).toEqual('gnirtsymsisiht');
-        });
+                return reversed;
+            }
+       };
     });
+    it("string is reversed", function() {
+      string = 'thisismystring';
+      expect(stringFunc.reverse(string)).toEqual('gnirtsymsisiht');
+    });
+});
+```
 
 ### Building blocks of a spec
 
-**describe function**
+#### describe function
 
 This defines the testsuite. It takes two parameters: a simple string argument
 which is utilized as the name of the suite, and a function which contains the
 testsuite code.
 
-**it function**
+#### it function
 
 This defines the testcase. It also takes two parameters: a simple string
 argument which is utilized as the name of the testcase, and a function which
 contains the testcase code.
 
-**expect function**
+#### expect function
 
 This is used in unison with matchers to allow expectations or assertions to be
 made. This takes a single parameter that is utilized as the first part of the
@@ -117,56 +113,31 @@ the second part of the assertion.
 
 Below is a list of built-in matchers:
 
-  * toBe
-
-    * compares with ===
-
-  * toEqual
-
-    * compares ==
-
-  * toMatch
-
+  * `toBe`
+    * compares with `===`
+  * `toEqual`
+    * compares `==`
+  * `toMatch`
     * for regular expressions
-
-  * toBeDefined
-
+  * `toBeDefined`
     * compares against undefined
-
-  * toBeNull
-
+  * `toBeNull`
     * compares against null
-
-  * toBeTruthy
-
+  * `toBeTruthy`
     * for boolean casting testing
-
-  * toBeFalsy
-
+  * `toBeFalsy`
     * for boolean casting testing
-
-  * toContain
-
+  * `toContain`
     * for finding an item in an array
-
-  * toBeLessThan
-
+  * `toBeLessThan`
     * for mathematical comparisons
-
-  * toBeGreaterThan
-
+  * `toBeGreaterThan`
     * for mathematical comparisons
-
-  * toBeCloseTo
-
+  * `toBeCloseTo`
     * for precision math comparison
-
-  * toThrow
-
+  * `toThrow`
     * for testing if a function throws an exception
-
-  * toThrowError
-
+  * `toThrowError`
     * for testing a specific thrown exception
 
 ### Advanced Usage
@@ -181,35 +152,39 @@ Each functions will be performed before and after each testcase.
 
 Here’s an example with two simple testcases:
 
-    describe("testsuite1", function() {
-        beforeEach(function() {
-            before = 1;
-        });
-        afterEach(function() {
-            before = 0;
-        });
-        afterAll(function() {
-            waybefore = 0;
-        });
-        it("test1", function() {
-            expect(true).toBe(true);
-        });
-        it("test2", function() {
-            expect(false).toBe(false);
-        });
+``` javascript
+describe("testsuite1", function() {
+    beforeEach(function() {
+        before = 1;
     });
+    afterEach(function() {
+        before = 0;
+    });
+    afterAll(function() {
+        waybefore = 0;
+    });
+    it("test1", function() {
+        expect(true).toBe(true);
+    });
+    it("test2", function() {
+        expect(false).toBe(false);
+    });
+});
+```
 
 And finally here’s how they will be executed:
 
-    beforeAll
-    testsuite1
-    beforeEach
-    test1
-    afterEach
-    beforeEach
-    test2
-    afterEach
-    afterAll
+```
+beforeAll
+testsuite1
+beforeEach
+test1
+afterEach
+beforeEach
+test2
+afterEach
+afterAll
+```
 
 #### Custom Matchers
 
@@ -226,28 +201,32 @@ utilized when a failure occurs.
 
 Here’s an example custom matcher to check and ensure a value is even.
 
-    var customMatchers = {
-        toBeEven: function() {
-            return {
-                compare: function(actual, expected) {
-                    result.pass: (actual % 2) === 0
-                    if (not result.pass) {
-                      result.message = "Expected " + actual + "to be even";
-                    }
-                    return result;
-                };
-            }
+``` javascript
+var customMatchers = {
+    toBeEven: function() {
+        return {
+            compare: function(actual, expected) {
+                result.pass: (actual % 2) === 0
+                if (not result.pass) {
+                  result.message = "Expected " + actual + "to be even";
+                }
+                return result;
+            };
         }
-    };
+    }
+};
+```
 
-To include a custom matcher in your testcases, utilize the addMatchers
+To include a custom matcher in your testcases, utilize the `addMatchers`
 function. This can be done for each testcase or testsuite using the
-aforementioned Each and All functions. For example for our toBeEven custom
+aforementioned `Each` and `All` functions. For example for our `toBeEven` custom
 matcher,
 
-    beforeEach(function() {
-        jasmine.addMatchers(customMatchers();
-      });
+``` javascript
+beforeEach(function() {
+    jasmine.addMatchers(customMatchers();
+  });
+```
 
 #### Spies
 
@@ -259,50 +238,43 @@ This also allows you to fake any piece of a function you wish. For example,
 you can fake a return value from a function, throw an error, or even call a
 different function.
 
-  * and.throwError
-
+  * `and.throwError`
     * force an error to be thrown
-
-  * and.callThrough
-
-    * callsl the spy function before invoking the actual function
-
-  * and.callFake
-
+  * `and.callThrough`
+    * calls the spy function before invoking the actual function
+  * `and.callFake`
     * allows you to call a different function completely
-
-  * and.stub
-
+  * `and.stub`
     * calls the original function, ignoring callFake and callThrough
-
-  * and.returnValue
-
+  * `and.returnValue`
     * forces the returned value from the function call
 
 Here’s an example of changing a returned value via the and.returnValue
 function.
 
-    describe('Spy Fake Return',function(){
-        beforeEach(function(){
-           myFunc = {
-              returnZero: function() {
-                return 0;
-              }
-           };
-        });
-        it("spy changes value", function() {
-          foo = spyOn(myFunc, "returnZero").and.returnValue(1)
-          expect(foo).toEqual(1);
-        });
-        it("normal value is zero", function() {
-          foo = myFunc.returnZero
-          expect(foo).toEqual(0);
-        });
+``` javascript
+describe('Spy Fake Return',function(){
+    beforeEach(function(){
+       myFunc = {
+          returnZero: function() {
+            return 0;
+          }
+       };
     });
+    it("spy changes value", function() {
+      foo = spyOn(myFunc, "returnZero").and.returnValue(1)
+      expect(foo).toEqual(1);
+    });
+    it("normal value is zero", function() {
+      foo = myFunc.returnZero
+      expect(foo).toEqual(0);
+    });
+});
+```
 
 ## Conclusion
 
-#### Let me try!
+### Let me try!
 
 [Try Jasmine](http://tryjasmine.com/) is an excellent web based resource that
 will let you experiment with and learn jasmine from the comfort of your
@@ -314,15 +286,7 @@ Check out the links below for more documentation and help.
 
 ### Resources
 
-[Jasmine](http://jasmine.github.io/)
-
-[Grunt](http://gruntjs.com/)
-
-[NodeJS](https://nodejs.org/)
-
-[HTML5 SDK documentation](../api.md)
-
-
-
-
-
+ * [Jasmine](http://jasmine.github.io/)
+ * [Grunt](http://gruntjs.com/)
+ * [NodeJS](https://nodejs.org/)
+ * [HTML5 SDK documentation](../api.md)

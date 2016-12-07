@@ -61,9 +61,6 @@ navigation:
           - title: Tutorials
             location: apps/qml/tutorials/index.md
 
-          - title: Tutorials
-            location: apps/qml/tutorials/index.md
-
             children:
               - title: Add a CPP backend to your QML app
                 location: apps/qml/tutorials/add-cpp-backend-your-qml-app.md

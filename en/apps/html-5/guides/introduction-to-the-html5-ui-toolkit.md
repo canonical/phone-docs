@@ -1,8 +1,5 @@
 
-
-
-
-
+#  HTML5 UI toolkit
 
 Your app can use any visual style, but if you want to give a more native feel
 to it, Ubuntu provides a set of HTML5 layouts and widgets (with associated CSS
@@ -61,7 +58,7 @@ itself.
 ## Head and imports
 
 When you create a new app in the Ubuntu SDK, its index.html file
-<head>…</head> imports various JavaScript and CSS files. Let’s review.
+`<head>…</head>` imports various JavaScript and CSS files. Let’s review.
 
 ### Ubuntu CSS and JavaScript
 
@@ -109,7 +106,7 @@ and widgets are declared.
 ## Body and mainview
 
 Each HTML5 app has an Ubuntu mainview inside the `<body>..</body>`. This
-mainview typically contains a header and content:
+main view typically contains a header and content:
 
     <body>
         <header data-role="header">
@@ -179,7 +176,7 @@ sense. For example, consider an RSS reader app.
   * When the user selects a feed, a child page displays with list of articles.
   * When the user selects an article, a child page displays with the article text.
 
-This a hierarchical, or “deep” style: Feeds > Articles > Article
+This a hierarchical, or “deep” style: `Feeds > Articles > Article`
 
 In Ubuntu HTML5, a pagestack is used by the framework to keep track of pages
 in “deep” navigation: which Pages exist, and which one is on the top of the
@@ -237,7 +234,7 @@ Here is an example of a customized pagestack footer:
       <div data-role="page" id="page2">
         <!-- [...] -->
       </div>
-      <!-- this footer overrides 
+      <!-- this footer overrides
            the default pagestack footer -->
       <footer data-role="footer" id="footerID">
         <div data-role="list">
@@ -262,7 +259,7 @@ Here’s how to add footer to a specific page that overrides the default footer:
       </footer>
     </div>
 
-Note: A footer is represented by the Toolbar class in the Ubuntu JavaScript
+**Note:** A footer is represented by the Toolbar class in the Ubuntu JavaScript
 API.
 
 
@@ -413,8 +410,3 @@ DOM is fully loaded. Here’s an example:
 As previous examples show, this onload even handler is where initialize your
 own GUI, adding objects and event handlers to be sure the GUI is ready to
 respond to user interactions right from the start.
-
-
-
-
-

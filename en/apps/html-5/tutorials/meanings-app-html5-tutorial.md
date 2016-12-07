@@ -1,8 +1,6 @@
-
-
-
-
-
+---
+title: "'Meanings' app tutorial"
+---
 
 # Ubuntu HTML5 quick start: Meanings app
 
@@ -41,15 +39,10 @@ There are a couple requirements:
 The completed app source tree is available as a Bazaar branch. You can get it
 as follows:
 
-  1. Open a terminal with Ctrl + Alt + T.
-  2. Ensure the bzr package is installed with:  
-`$ sudo apt install bzr`
-
-  3. Get the branch with:  
-`$ bzr branch lp:ubuntu-sdk-tutorials`
-
-  4. Move into the html5/html5-tutorial-meanings directory:  
-`$ cd ubuntu-sdk-tutorials/html5/html5-tutorial-meanings`
+  1. Open a terminal with `Ctrl + Alt + T`.
+  2. Ensure the bzr package is installed with:  `$ sudo apt install bzr`
+  3. Get the branch with:  `$ bzr branch lp:ubuntu-sdk-tutorials`
+  4. Move into the html5/html5-tutorial-meanings directory:  `$ cd ubuntu-sdk-tutorials/html5/html5-tutorial-meanings`
 
 Now, let’s get developing!
 
@@ -66,9 +59,9 @@ After creating an HTML5 app project in the SDK, you can run it directly from
 the SDK on the Ubuntu Desktop (and on an attached devices, including physical
 devices and Ubuntu emulators you have created with the SDK).
 
-Get it running on the Desktop with: **Build** > **Run**.
+Get it running on the Desktop with: **Build** &gt; **Run**.
 
-**Tip**: The SDK has an icon for this (on the left side vertical panel) and a keyboard shortcut: Ctrl + R.
+**Tip**: The SDK has an icon for this (on the left side vertical panel) and a keyboard shortcut: `Ctrl + R`.
 
 Here’s how a brand new app looks when run from the SDK (the actual GUI may
 vary as refinements are released):
@@ -89,13 +82,12 @@ terminal. This can be convenient.
 
   1. Open a terminal. There are many ways. A quick way is Ctrl + Alt + T.
   2. Move to your app project directory.
-  3. Launch the app as follows:
-    $ ubuntu-html5-app-launcher --www=www
+  3. Launch the app as follows: `$ ubuntu-html5-app-launcher --www=www`
 
 Let’s take a closer look at that command:
 
-  * ubuntu-html5-app-launcher: This is the executable that launches the web container in which that HTML5 app runs. The container exposes built-in Ubuntu App Platform APIs that your app’s JavaScript can call directly.
-  * --www=www: This argument simply tells ubuntu-html5-app-launcher where to find the directory that contains the app’s HTML5 files. Currently, the HTML5 files are required to be in the www/ directory of the app project.
+  * `ubuntu-html5-app-launcher`: This is the executable that launches the web container in which that HTML5 app runs. The container exposes built-in Ubuntu App Platform APIs that your app’s JavaScript can call directly.
+  * `--www=www`: This argument simply tells ubuntu-html5-app-launcher where to find the directory that contains the app’s HTML5 files. Currently, the HTML5 files are required to be in the www/ directory of the app project.
 
 ## Debugging the app’s JavaScript
 
@@ -121,11 +113,11 @@ Chromium (or other WebKit) browser.
 
 For example, you would use a command like this:
 
-     $ ubuntu-html5-app-launcher --www=www --inspector 
+     $ ubuntu-html5-app-launcher --www=www --inspector
 
 Now, watch the output for something like this:
 
-     Inspector server started successfully. Try pointing a WebKit browser to http://192.168.1.105:9221 
+     Inspector server started successfully. Try pointing a WebKit browser to http://192.168.1.105:9221
 
 Then, you would open the URL in a WebKit browser (like Chromium) and use its
 native development tools. In the case of chromium, the displayed web page has
@@ -143,9 +135,9 @@ Let’s move on and take a look at the key files in your new app project.
 Naturally, your new HTML5 app project has an index.html, the root file for the
 app.
 
-**Tip**: Currently, all HTML5 files, including index.html, are expected to be in the www/ directory. The index.html file imports all it needs, including Ubuntu CSS and Ubuntu JavaScript, which provides a convenient set of methods to control you Ubuntu HTML5 widgets. By default, it also imports ./js/app.js, the app-specific JavaScript file. And, it may also import a Cordova JavaScript file (not needed for this app, so you can delete it if you want).
+**Tip**: Currently, all HTML5 files, including index.html, are expected to be in the www/ directory. The `index.html` file imports all it needs, including Ubuntu CSS and Ubuntu JavaScript, which provides a convenient set of methods to control you Ubuntu HTML5 widgets. By default, it also imports `./js/app.js`, the app-specific JavaScript file. And, it may also import a Cordova JavaScript file (not needed for this app, so you can delete it if you want).
 
-Let’s zero in on ./js/app.js.
+Let’s zero in on `./js/app.js`.
 
 ### App specific JavaScript: app.js
 
@@ -166,14 +158,14 @@ control the Ubuntu HTML5 GUI.
 
 **Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides/introduction-to-the-html5-ui-toolkit.md) reference docs.
 
-This is an event handler for the window.onload event. It provides an anonymous
+This is an event handler for the `window.onload` event. It provides an anonymous
 function that executes when the event is received. This event is received
 after the DOM fully loads, which is the proper time to initialize the
 UbuntuUI.
 
-**Note**: Another approach is to use the JQuery(document).ready() event handler method, as we do later in this app.
+**Note**: Another approach is to use the `JQuery(document).ready()` event handler method, as we do later in this app.
 
-After the UI object is created, the code runs the essential UI.init() method.
+After the UI object is created, the code runs the essential `UI.init()` method.
 This method is needed to initialize the UI framework.
 
 ### Other project files
@@ -222,9 +214,9 @@ Our app will use:
 ## Replacing the default HTML5
 
 We don’t need most of the default HTML in index.html. So let’s replace the
-whole <body>[...]</body> with HTML5 that declares our app’s GUI.
+whole `<body>[...]</body>` with HTML5 that declares our app’s GUI.
 
-Copy the following into index.html, replacing the <body>[...]</body>:
+Copy the following into index.html, replacing the `<body>[...]</body>`:
 
       <body>
         <div data-role="mainview">
@@ -249,7 +241,7 @@ Let’s check out how the app looks if you run it now with Ctrl + R. Note that
 the GUI does not function yet because we have not yet added the JavaScript
 control logic.
 
-![](../../../../media/a5b27e0b-cc01-4a27-8a2a-fd8664a98f78-cms_page_media/115/meanings-app.png)
+![](../../../../media/app-html5-tutorial-meanings-app.png)
 
 ## App HTML5 highlights
 
@@ -257,7 +249,7 @@ Let’s examine some highlights of this HTML.
 
 ### Mainview
 
-All the HTML5 inside the body is wrapped in a <div data-role=”mainview”>. This
+All the HTML5 inside the body is wrapped in a `<div data-role=”mainview”>`. This
 is standard for Ubuntu HTML5 apps.
 
 ### Header
@@ -270,7 +262,7 @@ This implements the header part of our tab-style layout:
 
   * We have a single tab.
   * The text that displays is “Meanings”
-  * Note the tabitem’s data-page attribute. This value (main-page) is what connects the tabitem to the tab declared lower down whose id is the same: <div data-role="tab" id="main-page">.
+  * Note the tabitem’s data-page attribute. This value (main-page) is what connects the tabitem to the tab declared lower down whose id is the same: `<div data-role="tab" id="main-page">`.
 
 When the user clicks the tabitem in the header, the corresponding tab
 displays. We have only a single tabitem/tab.
@@ -296,7 +288,7 @@ Here is our one tab:
 
 The data-role="tab" is what declares it as an Ubuntu tab.
 
-As noted above, the id="main-page" is what causes this tab to be displayed
+As noted above, the `id="main-page"` is what causes this tab to be displayed
 when the user click on the header’s corresponding tabitem.
 
 Let’s peer inside the tab.
@@ -305,11 +297,11 @@ Let’s peer inside the tab.
 
 There’s a single input box that the Ubuntu framework styles automatically:
 
-     <div><input type="text" id="word">Enter a word</input></div> 
+     <div><input type="text" id="word">Enter a word</input></div>
 
 We put this in a div so it is rendered as block, not inline, per normal HTML5.
 
-Note the id="word”. We will use this ID from JavaScript to get the word the
+Note the `id="word”`. We will use this ID from JavaScript to get the word the
 user has entered below.
 
 ### “Get” Button
@@ -317,19 +309,19 @@ user has entered below.
 There is one button that triggers the JavaScript code that calls the web API
 to look up meanings for the word the user has entered:
 
-     <button data-role="button" id="lookup">Get</button> 
+     <button data-role="button" id="lookup">Get</button>
 
 This button is declared as an Ubuntu button, with a data-role of button. This
 means it is pulled into the framework and therefore you get a convenient API
 for it. For example, you can add an click event handler using the id easily.
 
-**Tip**: Ubuntu CSS provide styles for several button classes. Check out the actual Ubuntu CSS files to see what is available. For example, check out: /usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/buttons.css
+**Tip**: Ubuntu CSS provide styles for several button classes. Check out the actual Ubuntu CSS files to see what is available. For example, check out: `/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/buttons.css`
 
 ### Empty List, populated later
 
 We declare a list that starts off empty:
 
-     <div data-role="list" id="res" /> 
+     <div data-role="list" id="res" />
 
 That’s an Ubuntu list. We will use the UbuntuUI framework to obtain the list
 in JavaScript and populate it with the meanings for the word that are returned
@@ -345,19 +337,19 @@ JavaScript we need to complete this app’s basic pieces.
 This app uses JQuery to call the web API. We need to add the JQuery lib to our
 package, which takes a few steps:
 
-  * Ensure libjs-jquery package is installed with: 
-     $ sudo apt-get install libjs-jquery 
+  * Ensure libjs-jquery package is installed with:
+     $ sudo apt-get install libjs-jquery
 
-  * Copy the lib into your app directory with 
-     $ cp /usr/share/javascript/jquery/jquery.min.js . 
+  * Copy the lib into your app directory with
+     $ cp /usr/share/javascript/jquery/jquery.min.js .
 
   * **Tip**: You might need to close and open the project for the jquery.min.js file to display in the SDK project.
-  * Include the jquery.min.js file into your index.html file by adding this line into the main HTML <header> .. </header>:
-     <script src="js/jquery.min.js"></script> 
+  * Include the jquery.min.js file into your index.html file by adding this line into the main HTML `<header> .. </header>`:
+     <script src="js/jquery.min.js"></script>
 
 ### Using the JQuery ready event handler
 
-In js/app.js, find the default window.onload event handler:
+In `js/app.js`, find the default window.onload event handler:
 
     window.onload = function () {
        var UI = new UbuntuUI();
@@ -371,7 +363,7 @@ Change the first and last lines to use the JQuery ready method, like this:
         var UI = new UbuntuUI();
         UI.init();
     [...]
-    }); 
+    });
 
 Note that the last line has changed!.
 
@@ -386,7 +378,7 @@ of the UI object and running of its init() method, so it looks like this:
     $( document ).ready(function() {
         var UI = new UbuntuUI();
         UI.init();
-    DELETE ALL THIS CODE 
+    DELETE ALL THIS CODE
     });
 
 Now, after the UI.init(); line, add the following:
@@ -401,7 +393,7 @@ Now, after the UI.init(); line, add the following:
             success: success,
             dataType:'jsonp',
             contentType: "application/json"
-          }); 
+          });
         });
 
 ### Examining the button’s event handling code
@@ -409,7 +401,7 @@ Now, after the UI.init(); line, add the following:
 First, we see the button being found with its id ("lookup") and its click
 event handling code being set by this Ubuntu framework code:
 
-     UI.button('lookup').click(FUNCTION); 
+     UI.button('lookup').click(FUNCTION);
 
 **Tip**: That’s a common and useful coding pattern in the Ubuntu framework. That is, most UbuntuUI objects that correspond to a specific HTML element with an ID can be obtained in a similar way, for example: UI.dialog(ID).
 
@@ -432,8 +424,8 @@ Add the following success function at the end of the js/app.js file:
       console.log('AJAX success.');
       var resEl = document.getElementById('res');
       var res ='<header>Meanings</header><ul>';
-      for ( var idx1 = 0; idx1 < data.tuc.length; idx1++ ) { 
-        if ( data.tuc[idx1].meanings ) { 
+      for ( var idx1 = 0; idx1 < data.tuc.length; idx1++ ) {
+        if ( data.tuc[idx1].meanings ) {
           console.log('meanings');
           for ( var idx2 = 0; idx2 < data.tuc[idx1].meanings.length; idx2++ ) {
             if ( data.tuc[idx1].meanings[idx2].text ) {
@@ -464,14 +456,14 @@ That’s it for app development!
 ## With development done, time to run the app
 
 You can now run the app using the methods referred to previously. For example,
-you can use the Ctrl + R shortcut to run it in a window on the Desktop.
+you can use the `Ctrl + R` shortcut to run it in a window on the Desktop.
 
 Here we see it running after the user has typed in the word ‘hack’ and clicked
 the **Get** button:
 
 ![](../../../../media/78cea738-e7b6-47fa-b1f7-1e99ea30786c-cms_page_media/115/meanings-app2.png)
 
-If you have problems, you might have accidently introduced errors, so trying
+If you have problems, you might have accidentally introduced errors, so trying
 debugging the app’s JavaScript as described above.
 
 Let’s package it!
@@ -486,7 +478,7 @@ the Applications scope and the Unity launcher.
 
 Give the app a reasonable name, for example: Meanings
 
-     Name=Meanings 
+     Name=Meanings
 
 You may also want to add an icon to the desktop file. This icon is displayed
 in the Unity shell to represent the app. Simply add the icon to the app’s
@@ -507,7 +499,7 @@ including:
 
   * Name
   * Maintainer: Verify this is you
-  * Title: set this to “Meanings”
+  * title: set this to “Meanings”
   * Version: this is the click package version. Be sure to increment this when appropriate, for example when publishing a new version.
   * [Security policy groups](/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
 
@@ -516,12 +508,12 @@ including:
 There are other tabs here that we can ignore for now.
 
 Go ahead and click **Create Package**. This creates the **manifest.json** file
-for the first time. (The manifest.json file may not display in the SDK until
+for the first time. (The `manifest.json` file may not display in the SDK until
 you close and reopen the app project.)
 
-**Tip**: If you are managing your app project with revision control, for example Bazaar, you should add this file with **Tools** > **Bazaar** > **Add** followed by **Tools** > **Bazaar** > **Commit**.
+**Tip**: If you are managing your app project with revision control, for example Bazaar, you should add this file with **Tools** &gt; **Bazaar** &gt; **Add** followed by **Tools** &gt; **Bazaar** &gt; **Commit**.
 
-Manifest.json is the key file when it comes to packaging your app as a click
+`Manifest.json` is the key file when it comes to packaging your app as a click
 package. Includes information just gathered It also states the framework the
 app requires (this is way to group and version APIs and runtime requirements).
 It includes a section called “hooks” that lists the apparmor file that states
@@ -532,7 +524,7 @@ Clicking **Create Package** also creates the actual installable click package
 file in the app’s parent directory. This file is named based on the fields in
 the manifest and, by default, is something like this:
 
-**com.ubuntu.developer.MAINTER.PACKAGE_VERSION_all.click**
+`com.ubuntu.developer.MAINTER.PACKAGE_VERSION_all.click`
 
 Note that package review tools automatically run. You can see their results in
 the **Publish** tab in the **Validate Click Package** section to the right.
@@ -545,17 +537,12 @@ Check out the report there for errors and fix any you see.
 Now that you have the app packaged, you can use the SDK to install it and run
 it on an attached device or emulator.
 
-Once you have an attached device or emulator, try it out with: **Build** >
-**Ubuntu** > **Install Application on Device**
+Once you have an attached device or emulator, try it out with: **Build** &gt;
+**Ubuntu** &gt; **Install Application on Device**
 
 Now, use the device’s GUI to find the app and launch it.
 
 ## Next Steps
 
 Be sure to check out other HTML5 tutorials and guides in the
-[HTML5](../index.md) section of developer.ubuntu.com!
-
-
-
-
-
+[HTML5](../index.md) section.

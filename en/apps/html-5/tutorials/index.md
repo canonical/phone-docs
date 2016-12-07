@@ -1,8 +1,8 @@
+---
+title: "HTML5 Tutorials"
+---
 
-
-
-
-
+# HTML5 Tutorials
 
 Get productive in **HTML5 app development** with these **tutorials** that
 guide you through creating an app with step-by-step procedures and
@@ -26,8 +26,4 @@ When you are ready, read about how to ensure your new HTML5 application is a
 quality one:
 
   * [HTML5 Unit Testing](html5-unit-testing.md)
-
-
-
-
-
+  * [Writing functional tests for HTML5 apps](writing-html5-functional-tests.md)

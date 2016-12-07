@@ -1,8 +1,9 @@
+---
+title: "Cordova camera app tutorial"
 
+---
 
-
-
-
+# Cordova camera app tutorial
 
 This tutorial takes you through the steps needed to create an HTML5 app that
 uses the Cordova runtime and its Camera API.
@@ -18,22 +19,21 @@ The app we develop here is quite simple:
 
 ### Cordova guide
 
-You may want to read [the Cordova Guide](../guides/cordova-guide.md). It contains all the info you need to set up your development
-environment. The three prerequisites being:
+You may want to read the [Cordova Guide](../guides/cordova-guide.md). It contains all the info you need to set up your development environment. The three prerequisites being:
 
   * Installing `cordova-cli` from the Ubuntu Cordova PPA
   * Creating a [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
-  * Installing build dependencies in the [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md); refer to the corresponding section in [the Cordova Guide](../guides/cordova-guide.md)
+  * Installing build dependencies in the [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](../guides/cordova-guide.md)
 
 ### HTML5 UI Toolkit basics
 
-This tutorial is not focused on the UI Toolkit. For help, see [the UbuntuHTML5 UI Toolkit Guide](../guides/introduction-to-the-html5-ui-toolkit.md).
+This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](../guides/introduction-to-the-html5-ui-toolkit.md).
 
 ### Getting the resources for this app
 
 You can obtain the source tree for this app as follows:
 
-Open a terminal with Ctrl + Alt + T and get the branch with:
+Open a terminal with `Ctrl + Alt + T` and get the branch with:
 
     $ bzr branch lp:ubuntu-sdk-tutorials
 
@@ -53,17 +53,17 @@ command:
 ## Define your application icon
 
 To define the icon for you application, you should first copy the sample icon
-from the ubuntu-sdk-tutorials/html5/html5-tutorial-cordova-camera directory
+from the `ubuntu-sdk-tutorials/html5/html5-tutorial-cordova-camera` directory
 
     $ cp ../ubuntu-sdk-tutorials/html5/html5-tutorial-cordova-camera/www/icon.png ./www/img/logo.png
 
 Then you need to add this entry into the Cordova app configuration file.
 
-Edit the config.xml file and add the line below:
+Edit the `config.xml` file and add the line below:
 
     <icon src="www/img/logo.png" />
 
-Note: this is a mandatory step, to let the application pass the package
+**Note**: this is a mandatory step, to let the application pass the package
 validation tests.
 
 ## Add the Ubuntu platform support code to your project
@@ -78,7 +78,7 @@ Add the Cordova Ubuntu runtime files into your app project:
 
 Now, your project contains some additional files, notably:
 
-  * platforms/ubuntu/
+    platforms/ubuntu/
 
 ## Add support for the Camera API
 
@@ -93,13 +93,13 @@ Add the Cordova Ubuntu runtime files into your app project:
 Use the standard Cordova command line tool to prepare the app for running on
 your Ubuntu phone.
 
-Generally, you don't need to build the app and then run it. The 'run' command
+Generally, you don't need to build the app and then run it. The `run` command
 will ensure the app builds and the click package sent to the phone before
 starting the application directly.
 
     $ cordova run --device --debug
 
-![](../../../../media/e325eb75-ad97-44a2-b54b-0b5f97518a2e-cms_page_media/116/cordova-screenshot.png)
+![](../../../../media/app-html5-tutorial-cordova-screenshot.png)
 
 **Tip**: you may see warning messages after the build. For example: you haven't specified an icon for your application yet.
 
@@ -116,6 +116,7 @@ Here we replace the GUI declared in the default app with one appropriate for
 this Camera app.
 
   * In index.html, add the following stylesheet declarations in the <head> section of the document:
+
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- Ubuntu UI Style imports - Ambiance theme -->
         <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
@@ -129,12 +130,14 @@ this Camera app.
         <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
 
   * Ensure, you call the following 2 Javascript files in the <head> section as well:
+
         <!-- Cordova platform API access - Uncomment this to have access to the Javascript APIs -->
         <script src="cordova.js"></script>
         <!-- Application script and css -->
         <script src="js/app.js"></script
 
   * Then, delete the entire div inside the <body>…</body> element and add the following new HTML fragment:
+
         <div data-role="mainview">
           <header data-role="header">
             <ul data-role="tabs">
@@ -168,7 +171,7 @@ following:
 
 If you run the app now, the GUI appears as follows:
 
-![](../../../../media/a49e5ed1-920d-4967-a0a7-d59f79f81755-cms_page_media/116/spinner.png)
+![](../../../../media/app-html5-tutorial-cordova-spinner.png)
 
 As noted above, that is the loading div that displays until Cordova
 deviceready event is received.
@@ -187,8 +190,8 @@ Here we add an event handler for the Cordova deviceready event and, inside
 that code, sets up our Take Picture to call the Cordova Camera API to let the
 user take a picture.
 
-You should mostly replace the default www/js/index.js file with a new file
-called app.js from the tutorial branch. We will look at the key elements of
+You should mostly replace the default `www/js/index.js` file with a new file
+called `app.js` from the tutorial branch. We will look at the key elements of
 this file below.
 
 The first step is to init the UbuntuUI object to setup the main user interface
@@ -293,7 +296,7 @@ Let’s add some CSS styling:
   * Center it
   * Center the “Loading…” progress spinner
 
-Create www/app.css with this content:
+Create `www/app.css` with this content:
 
     #loading {
       position: absolute;
@@ -303,7 +306,7 @@ Create www/app.css with this content:
       display: none;
     }
 
-Now, in index.html, simply add the following inside the <head>
+Now, in `index.html`, simply add the following inside the `<head>`
 
     <link href="app.css" rel="stylesheet" type="text/css"/>
 
@@ -313,14 +316,9 @@ Now, the Loading page and the home page look like this:
 
 ## Next steps
 
-Check out [the Cordova Guide](../guides/cordova-guide.md) for
+Check out the [Cordova Guide](../guides/cordova-guide.md) for
 a high level review of using Cordova in Ubuntu HTML5 apps and for adding
 Ubuntu as a built platform for native Cordova projects.
 
 The Cordova APIs give your HTML5 apps access to other system and device-level
 things, so check these out by visiting the Cordova API docs.
-
-
-
-
-

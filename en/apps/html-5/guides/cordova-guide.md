@@ -1,16 +1,13 @@
+---
+title: "Cordova guide"
 
-
-
-
-
+---
 
 # Creating Ubuntu applications with Cordova
 
 This is a high-level guide to Cordova on Ubuntu. The guide contains
 information both for creating a new Cordova application for Ubuntu, or for
 adding Ubuntu as a distribution platform for an existing Cordova application.
-
-![](../../../../media/26d55c74-3bd8-40ca-acfb-98f640706968-cms_page_media/112/cordova.png) ![](../../../../media/ceec74fd-40ec-43c4-bd27-fdfd1c5cf128-cms_page_media/112/ubuntu.png)
 
 ## What is Cordova?
 
@@ -63,9 +60,9 @@ Run the app on your attached device, in debug mode:
 
 `$ cordova run --device --debug`
 
-**Note:** you need cordova-cli 4.3.x to have all of these options available.\
+**Note:** you need cordova-cli 4.3.x to have all of these options available.
 
-**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/edge/guide_platforms_ubuntu_index.md.html#Ubuntu%20Platform%20Guide). 
+**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/edge/guide_platforms_ubuntu_index.md.html#Ubuntu%20Platform%20Guide).
 
 Naturally, you need to write some JavaScript to use the APIs for the plugins
 you have added too.
@@ -102,7 +99,7 @@ Install cordova from the Ubuntu Cordova PPA
     $ sudo apt-add-repository ppa:cordova-ubuntu/ppa; sudo apt-get update
     $ sudo apt-get install cordova-cli
 
-Note for expert Cordova developers: you can also install cordova manually via
+**Note**: for expert Cordova developers: you can also install cordova manually via
 npm; but please stay with cordova-cli@4.3.x until the platformAPI switch is
 fully tested on Ubuntu.
 
@@ -121,9 +118,9 @@ Add build dependencies for Cordova apps inside the chroot:
     # add build dependencies inside the click chroot
     $ sudo click chroot -a armhf -f ubuntu-sdk-15.04 install cmake libicu-dev:armhf pkg-config qtbase5-dev:armhf qtchooser qtdeclarative5-dev:armhf qtfeedback5-dev:armhf qtlocation5-dev:armhf qtmultimedia5-dev:armhf qtpim5-dev:armhf libqt5sensors5-dev:armhf qtsystems5-dev:armhf
 
-_**Note**: the ubuntu-sdk-15.04 framework is the recommended base framework to
+**Note**: the ubuntu-sdk-15.04 framework is the recommended base framework to
 use for cordova apps. If you wish to move to future revisions of the base
-framework, you will need to provide an extra option in the build step below._
+framework, you will need to provide an extra option in the build step below.
 
 Verify your environment by running the sample app.
 
@@ -166,11 +163,17 @@ proposed geolocation API as well. Cordova also provides a geolocation API.
 Here we provide some guidelines for developers to align with Ubuntu
 directions:
 
-**First Choice:** Ubuntu App Platform APIs: When an Ubuntu App Platform API is available and not deprecated, it is the best choice. This provides the best integration with the platform. However, it will affect your ability to port to other platforms, if that is your goal. For example, developers should use Content Hub, Online Accounts and Alarms APIs even if other APIs may exist that provide similar functionality.
+### First Choice: Ubuntu App Platform APIs
 
-**Second Choice:** W3C: Working W3C standard APIs should be used when there is no Ubuntu App Platform API for the functionality. W3C APIs are quickly and well supported in browsers and web containers and are likely to provide the most stability and standard APIs, so these are the best choice when platform APIs do not exist.
+When an Ubuntu App Platform API is available and not deprecated, it is the best choice. This provides the best integration with the platform. However, it will affect your ability to port to other platforms, if that is your goal. For example, developers should use Content Hub, Online Accounts and Alarms APIs even if other APIs may exist that provide similar functionality.
 
-**Rocking with Cordova APIs:** Cordova APIs provide key functionality not yet present in W3C standards or the Ubuntu Platform. Examples include Splash Screen and Accelerometer. As such Cordova APIs are a great choice for these system and device level features that can really make your HTML5 app rock!
+### Second Choice: W3C
+
+Working W3C standard APIs should be used when there is no Ubuntu App Platform API for the functionality. W3C APIs are quickly and well supported in browsers and web containers and are likely to provide the most stability and standard APIs, so these are the best choice when platform APIs do not exist.
+
+### Rocking with Cordova APIs
+
+Cordova APIs provide key functionality not yet present in W3C standards or the Ubuntu Platform. Examples include Splash Screen and Accelerometer. As such Cordova APIs are a great choice for these system and device level features that can really make your HTML5 app rock!
 
 Ubuntu HTML5, Cordova and Web APIs are in constant development, so the
 recommendations for the particular APIs mentioned above may be updated. Please
@@ -184,13 +187,13 @@ your device, for example event handlers that use Cordova navigator objects.
 
 ### Handling Cordova’s deviceready event
 
-Web developers are familiar with the window.onload event that signals when the
+Web developers are familiar with the `window.onload` event that signals when the
 DOM is fully loaded. This event is useful is for running event handler code
 right after the DOM is loaded.
 
 In Ubuntu HTML5 apps, we use that event to run the code that initializes the
 Ubuntu UI framework. After that initialization code, your Cordova app can set
-up an event handler for Cordova’s deviceready event. This event signals that
+up an event handler for Cordova’s `deviceready` event. This event signals that
 the Cordova runtime is fully ready for operations. For example, this is where
 you should place your event handlers that invoke Cordova objects.
 
@@ -223,14 +226,9 @@ straightforward pattern for a lot of what you can do with Cordova APIs.
 
 ## Next steps
 
-Check out the [Cordova CameraTutorial](../tutorials/cordova-camera-app-tutorial.md), which
+Check out the [Cordova Camera Tutorial](../tutorials/cordova-camera-app-tutorial.md), which
 provides all the steps you need to make a working HTML5 Camera app that let’s
 you snap a picture and then displays it in the app.
 
-You may also want to check out the [HTML5Guide](html5-guide.md) for an overview of Ubuntu
+You may also want to check out the [HTML5 Guide](html5-guide.md) for an overview of Ubuntu
 HTML5.
-
-
-
-
-

@@ -1,37 +1,12 @@
+---
+title: "QML apps"
+---
 
+# QML - the best tool to unlock your creativity
 
+QML is an extremely powerful JavaScript-based declarative language for designing intuitive, natural and responsive user interfaces.  The Ubuntu SDK provides fluid and natural user interface QML elements that blend into Ubuntu without getting in the way. And with a rich framework and APIs, based on the cross-platform Qt framework, QML features an extensive set of APIs that cover the needs of the most demanding developers.
 
-
-
-
-## The best tool to unlock your creativity
-
-### Unleash the power of QML
-
-![](../../../media/21af50b0-f191-422c-a6e4-7a00389e847c-cms_page_media/45/gomobile-qml.jpg)
-
-QML is an extremely powerful JavaScript-based declarative language for
-designing intuitive, natural and responsive user interfaces.
-
-### Crisp, integrated design
-
-![](../../../media/782a692b-9f9d-4700-b8ba-2d4fd31ffda2-cms_page_media/45/gomobile-toolkit-design-small.png)
-
-The Ubuntu SDK provides fluid and natural user interface QML elements that
-blend into Ubuntu without getting in the way.
-
-### Rich framework and APIs
-
-![](../../../media/a2bc4f87-604d-4915-b653-db4bd67667f6-cms_page_media/45/qp-platform.png)
-
-Based on the cross-platform Qt framework, QML features an extensive set of
-APIs that cover the needs of the most demanding developers.
-
-[Browse the API documentation ›](https://developer.ubuntu.com/api/qml/)
-
-
-
-
+[Read the API documentation&nbsp;&rsaquo;](https://developer.ubuntu.com/api/qml/)
 
 ## A powerful language to write compelling UIs
 
@@ -48,27 +23,26 @@ describe UI elements and their interaction. As such, traditionally complex
 visual motion transitions become a natural part of QML and are extremely easy
 to implement.
 
-    // Simple QML example
-    import QtQuick 2.0
-    Rectangle {
-        width: 200 // this is a property
-        height: 200
-        color: "blue"
-        Image {
-            source: "pics/logo.png"
-            anchors.centerIn: parent
-        }
+``` qml
+// Simple QML example
+import QtQuick 2.0
+Rectangle {
+    width: 200 // this is a property
+    height: 200
+    color: "blue"
+    Image {
+        source: "pics/logo.png"
+        anchors.centerIn: parent
     }
+}
+```
 
 QML is also a scripting language, which does not require compilation or cross-
 compilation and can instantly be run on any device. This provides a very rapid
 development and testing workflow, where prototyping user interfaces in QML
 becomes a very simple and agile process. Despite it being a scripting
 language, QML can leverage the OpenGL support to provide near-game-performance
-with gourgeous movements and transitions.
-
-
-
+with gorgeous movements and transitions.
 
 
 ## Components at the core
@@ -90,8 +64,6 @@ is the recommended way to write apps for the platform.
 
 
 
-
-
 ## Deep JavaScript integration
 
 One of the features that makes the language so powerful and flexible is the
@@ -106,9 +78,6 @@ This enables developers leverage their existing JavaScript knowledge they have
 of JavaScript to rapidly develop both user-interfaces and application logic.
 
 
-
-
-
 ## Extending QML with C++
 
 While for most cases QML and JavaScript is all you need to write an app, there
@@ -121,9 +90,6 @@ logic. Since QML is built upon Qt, it inherits most of the functionality from
 the Qt framework, particularly the signals and slots mechanism and the meta-
 object system. Data created using C++ is directly accessible from QML, and QML
 objects are also accessible from C++ code.
-
-
-
 
 
 ## Next steps
@@ -141,20 +107,17 @@ know about UX and visual design best practices. The App Design Guides are a
 resource that keeps growing with new guides to make your apps stand out, so
 stay tuned for new content!
 
-[Check out the App Design Guides ›](http://design.ubuntu.com/apps)
+[Check out the App Design Guides&nbsp;&rsaquo;](http://design.ubuntu.com/apps)
 
 ### Join the community!
 
-The [growing community of app developers and experts](/community/) is here to
+The growing community of app developers and experts is here to
 help you!
 
-If you have any questions about Ubuntu on mobile devices or developing apps
-for the phone, our experts are here to help. Ask Ubuntu is a free, community-
-driven Q&A site for Ubuntu users and developers.
+[Visit the community website&nbsp;&rsaquo;](http://community.ubuntu.com)
 
-[Ask a question›](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)
+### Any questions?
 
+If you have any questions about Ubuntu on mobile devices or developing apps for the phone, our experts are here to help. Ask Ubuntu is a free, community-driven Q&A site for Ubuntu users and developers.
 
-
-
-
+[Ask a question on askubuntu.com&nbsp;&rsaquo;](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)

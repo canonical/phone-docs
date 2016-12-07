@@ -1,8 +1,6 @@
 
 
-
-
-
+# HTML5 guides
 
 ## What is an HTML5 app?
 
@@ -36,7 +34,7 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and devicekits](../../sdk/tutorials/click-targets-and-device-kits.md) should give
+without hassle on all form factors. [Click targets and device kits](../../sdk/tutorials/click-targets-and-device-kits.md) should give
 you all the details you need if you want to dive deeper or need more help.
 
 ![](../../../../media/b295dea4-879a-442e-9d8e-f868bd216323-cms_page_media/108/welcome-html5-app.png)
@@ -69,7 +67,7 @@ you of any mistakes when you try to run or package your app.
 ![](../../../../media/687e78a1-759f-48cd-bb7d-237ecd56aa47-cms_page_media/108/browser-score.png)
 
 You can expect the large majority of standard APIs to be supported and be as
-easy to use as usual. Here is [the compatibitychart](http://html5test.com/s/676117241b62d256.html) of our web engine on
+easy to use as usual. Here is [the compatibity chart](http://html5test.com/s/676117241b62d256.html) of our web engine on
 html5test.com (score of 511/555). For example, to play a song, you can call
 the html5 player element:
 
@@ -99,7 +97,7 @@ For example, to know when your application is about to be closed, just use:
         });
     };
 
-You can find more documentation on Ubuntu HTML5 APIs in the [APIsection](../api.md).
+You can find more documentation on Ubuntu HTML5 APIs in the [API section](../api.md).
 
 ## How to add an Ubuntu style
 
@@ -120,11 +118,6 @@ complete theme simply by calling :
     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
 
-And using <button> and <header> tags. [Thisarticle](introduction-to-the-html5-ui-toolkit.md)
+And using &lt;button&gt; and &lt;header&gt; tags. [This article](introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 The full API doc is available at [api/html5/sdk-14.10/UbuntuUI/](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).
-
-
-
-
-

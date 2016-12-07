@@ -144,7 +144,7 @@ Channel with the Meizu Chinese custom tarball
 Channel with a developer-oriented custom tarball, including extra payload
 useful for app-developers
 
-**Note:** a _custom tarball_ is a .tar.gz archive containing additional files, apps and scopes to add to an image to customize a particular device. Learn more about devices and image structure [on this community article›](https://sturmflut.github.io/ubuntu/touch/2015/05/06/hacking-ubuntu-touch-part-2-devices-and-images/)
+**Note:** a _custom tarball_ is a .tar.gz archive containing additional files, apps and scopes to add to an image to customize a particular device. Learn more about devices and image structure [on this community article&nbsp;&rsaquo;](https://sturmflut.github.io/ubuntu/touch/2015/05/06/hacking-ubuntu-touch-part-2-devices-and-images/)
 
 ### Release Candidate channels
 
