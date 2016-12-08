@@ -1,3 +1,6 @@
+---
+title: "Ubuntu Phone apps"
+---
 
 # Ubuntu Phone apps
 
@@ -25,9 +28,6 @@ regardless of the implementation toolkit.
 ![Design comes first](../../media/apps-making_of_apps_21222.png)
 
 
-
-
-
 ![](../../media/6daaacc9-e995-4b1e-b1ff-cfeda26ec317-cms_page_media/5/screenshot20151215_1202226qsdgwxcv57.png)
 
 ## The Ubuntu App platform
@@ -47,14 +47,7 @@ that conserves precious developer time.
 [Learn more about platform features&nbsp;&rsaquo;](../platform/index.md)
 
 
-
-
-
-# Your first app
-
-
-
-
+## Your first app
 
 ### Get the tools
 
@@ -74,6 +67,6 @@ For the UI, you can choose either QML or HTML5 to write Ubuntu apps.
 For the logic, JavaScript, Qt and other languages such as Python or Go can
 power refined QML UIs.
 
-**For starters, we recommend QML and JavaScript, which are the languages used in most tutorials.**
+**Note**: for starters, we recommend QML and JavaScript, which are the languages used in most tutorials.
 
 [Write your first app](qml/index.md)

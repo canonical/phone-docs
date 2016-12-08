@@ -1,8 +1,8 @@
+---
+title: "Devices"
+---
 
-
-
-
-
+# Devices
 
 Ubuntu is a free and open source OS for desktops, phones, tablets, servers and
 the cloud. It can be installed on almost any device and powers millions of
@@ -14,7 +14,7 @@ other mobile devices.
 
 ## Convergence
 
-![](../../media/9a91f741-8b5b-4e12-957d-be76e0397dde-cms_page_media/25/moneyshot_music.jpg)
+![](../../media/devices-converged-devices.png)
 
 Since the Ubuntu Phone announcement, Ubuntu is on track to become a convergent
 OS, using the same codebase for all devices, from desktops, servers and
@@ -22,24 +22,24 @@ clouds, to phones and even smaller form factors with the arrival of
 [Snappy](), a flavor of Ubuntu dedicated to “Internet things”, such as your
 connected fridge or autonomous drone.
 
-#### Desktops
+### Desktops
 
 The desktop OS, the reason Ubuntu has been famous for the last ten years, is
 ultimately going to take advantage of all the new technologies developed for
 the mobile form factor: the MIR display server, confined and responsive apps,
-etc. You can test that work in progress by installing [Ubuntu DesktopNext](http://cdimage.ubuntu.com/ubuntu-desktop-next/daily-live/current/), an
+etc. You can test that work in progress by installing [Ubuntu Desktop](http://cdimage.ubuntu.com/daily-live/current/) next, an
 ISO image showcasing its current state.
 
-[Install Ubuntu Desktop&nbsp;&rsaquo;](http://www.ubuntu.com/download/)
+[Install Ubuntu Desktop](https://www.ubuntu.com/download/desktop)
 
-#### Phones and tablets
+### Phones and tablets
 
 The mobile OS can run on a wide range of devices, some of which you can
 purchase preinstalled such as the BQ Aquarius Ubuntu edition, or selected
 phones and tablets such as the Nexus 4 and Nexus 7 2013. The porting community
 has also enabled other devices: for example, it runs beautifully on a Nexus 5.
 
-[Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.md)
+[Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.html)
 
 ### Beyond applications
 
@@ -49,7 +49,7 @@ and services delivered directly to the screen, without the need to open an
 application, all presented in a unified and coherent style. For example, all
 your music from different apps and online services, in one -on demand- place.
 
-[Learn more about scopes&nbsp;&rsaquo;](../scopes/index.md)
+[Learn more about scopes&nbsp;&rsaquo;](../scopes/index.html)
 
 ### Security
 
@@ -63,12 +63,7 @@ you allow them to do only what you want them to do.
 
 ## Next steps
 
-  * [See the list of supported devices&nbsp;&rsaquo;](devices.md)
-  * [Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.md)
-  * [Port Ubuntu to a new device&nbsp;&rsaquo;](porting-new-device.md)
-  * [Make scopes, webapps, native and HTML5 apps with the Ubuntu SDK&nbsp;&rsaquo;](../apps/sdk/index.md)
-
-
-
-
-
+  * [See the list of supported devices&nbsp;&rsaquo;](devices.html)
+  * [Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.html)
+  * [Port Ubuntu to a new device&nbsp;&rsaquo;](porting-new-device.html)
+  * [Make scopes, webapps, native and HTML5 apps with the Ubuntu SDK&nbsp;&rsaquo;](../apps/sdk/index.html)

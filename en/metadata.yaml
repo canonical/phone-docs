@@ -95,41 +95,21 @@ navigation:
               - title: Writing QML acceptance tests
                 location: apps/qml/tutorials/writing-qml-acceptance-tests.md
 
-      - title: SDK
-
-        children:
-          - title: Building cross-architecture click applications
-            location: apps/sdk/tutorials/building-cross-architecture-click-applications.md
-
-          - title: Click targets and device kits
-            location: apps/sdk/tutorials/click-targets-and-device-kits.md
-
-          - title: Creating an SDK app project
-            location: apps/sdk/tutorials/creating-an-sdk-app-project.md
-
-          - title: Runnig apps fromt the SDK
-            location: apps/sdk/tutorials/running-apps-from-the-sdk.md
-
-          - title: Using the Ubuntu emulator
-            location: apps/sdk/tutorials/using-the-ubuntu-emulator.md
-
-
-
   - title: Devices
     location: devices/index.md
 
     children:
-      - title: Devices
-        location: devices/devices.md
-
-      - title: Image channels
-        location: devices/image-channels.md
-
-      - title: Installing Ubuntu for devices
+      - title: Installing Ubuntu
         location: devices/installing-ubuntu-for-devices.md
+
+      - title: Supported and reference devices
+        location: devices/devices.md
 
       - title: Porting to a new device
         location: devices/porting-new-device.md
+
+      - title: Image channels
+        location: devices/image-channels.md
 
       - title: Re-installing Android
         location: devices/reinstalling-android.md
@@ -189,6 +169,26 @@ navigation:
 
           - title: Using device kits
             location: platform/sdk/using-device-kits.md
+
+          - title: Tutorials
+            location: platform/sdk/tutorials/index.md
+
+            children:
+            - title: Building cross-architecture click applications
+              location: platform/sdk/tutorials/building-cross-architecture-click-applications.md
+
+            - title: Click targets and device kits
+              location: platform/sdk/tutorials/click-targets-and-device-kits.md
+
+            - title: Creating an SDK app project
+              location: platform/sdk/tutorials/creating-an-sdk-app-project.md
+
+            - title: Runnig apps fromt the SDK
+              location: platform/sdk/tutorials/running-apps-from-the-sdk.md
+
+            - title: Using the Ubuntu emulator
+              location: platform/sdk/tutorials/using-the-ubuntu-emulator.md
+
 
   - title: Scopes
     location: scopes/index.md
