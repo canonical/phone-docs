@@ -1,31 +1,20 @@
+---
+title: "QML tutorials - the SDK palette"
+---
 
-
-
-
-
-
-# The SDK Palette
+# QML tutorials - the SDK palette
 
 ## What the palette looks like now
 
-The [Palette](https://developer.ubuntu.com/api/apps/qml/sdk-15.04.1/Ubuntu.Components.Themes.Palette/) has been in need of some updating for some time and
-we’ve been working hard behind the scenes to update this for OTA 10. We’ve
-stripped back the palette and rebuilt it from the ground up, considering every
-aspect as we went along.
+The [Palette](https://developer.ubuntu.com/api/apps/qml/sdk-15.04.1/Ubuntu.Components.Themes.Palette/) has been in need of some updating for some time and we’ve been working hard behind the scenes to update this for OTA 10. We’ve stripped back the palette and rebuilt it from the ground up, considering every aspect as we went along.
 
-Below is an introduction to how the palette is constructed and how we apply it
-to components in the UI toolkit. The majority of the elements are coming with
-OTA 10 release, and we will point out those which will come with OTA 11
-explicitly.
+Below is an introduction to how the palette is constructed and how we apply it to components in the UI toolkit. The majority of the elements are coming with OTA 10 release, and we will point out those which will come with OTA 11 explicitly.
 
 ## How the palette is constructed
 
   * Colour set
-
   * Theme
-
   * Palette value
-
   * Palette value sets
 
 ### The Ubuntu color set
@@ -35,55 +24,19 @@ values or names should never be hardcoded into any component as this will lead
 to conflicts and misrepresentation of color when other themes will be used.
 These colors are defined in UbuntuColors singleton.
 
-**Colour name**
-
-**Colour values**
-
-**Colour example**
-
-Jet
-
-#111111
-
-Inkstone
-
-#3B3B3B
-
-Slate
-
-#5D5D5D
-
-Graphite
-
-#666666
-
-Ash
-
-#888888
-
-Silk
-
-#CDCDCD
-
-Porcelain
-
-#F7F7F7
-
-Blue
-
-#19B6EE
-
-Green
-
-#3EB34F
-
-Red
-
-#ED3146
-
-Orange
-
-#E95420
+Colour name | Colour values | Colour example
+----------- | ------------- | --------------
+Jet         | #111111       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjMTExMTExIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="111111" />
+Inkstone    | #3B3B3B       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjM0IzQjNCIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="3B3B3B" />
+Slate       | #5D5D5D       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjNUQ1RDVEIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="5D5D5D"/>
+Graphite    | #666666       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjNjY2NjY2IiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="666666" />
+Ash         | #888888       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjODg4ODg4IiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="888888" />
+Silk        | #CDCDCD       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjQ0RDRENEIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="CDCDCD" />
+Porcelain   | #F7F7F7       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjRjdGN0Y3IiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="F7F7F7" />
+Blue        | #19B6EE       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjMTlCNkVFIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="19B6EE" />
+Green       | #3EB34F       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjM0VCMzRGIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="3EB34F" />
+Red         | #ED3146       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjRUQzMTQ2IiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="ED3146" />
+Orange      | #E95420       | <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE1MHB4IiBoZWlnaHQ9IjM5cHgiIHZpZXdCb3g9IjAgMCAxNTAgMzkiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQxLjIgKDM1Mzk3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5TbGljZSAxPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMTMiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMzkiPjwvcmVjdD4KICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBtYXNrQ29udGVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFza1VuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIzOSIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDx1c2UgaWQ9IlJlY3RhbmdsZSIgbWFzaz0idXJsKCNtYXNrLTIpIiBmaWxsPSIjRTk1NDIwIiB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgIDwvZz4KPC9zdmc+Cg==" alt="E95420" />
 
 ### The theme
 
@@ -100,19 +53,16 @@ application UI.
 There are three layers in an Ubuntu UI and those are the following:
 
   1. background - the base layer where the application window resides
-
   2. foreground - a layer above the base, holding components brought into foreground
-
   3. overlay - a layer floating above background, mostly contains popups and dialogs
 
 There are also 2 sub layers which can sit on top of any of these main layers.
 These are:
 
   1. base - sits flat on the surface of any main layer.
-
   2. raised - sits proud but not detached from the surface of any main layer.
 
-![](../../../../media/a09be0f5-de6e-44c1-8ce1-ea202e1d2c83-cms_page_media/1130/palette-diagram-02.png)
+![](../../../../media/qml-tutorial-palette-diagram-02.png)
 
 In addition to these there are palette values which are not applied on any
 particular layer, but mostly color a section of a component. Those will be
@@ -122,31 +72,21 @@ Each palette value follows the UI layer it is applied in, and each of them has
 at least one palette value suffixed with “Text”, which defines the color value
 to be used when drawing on the base color or putting a text above it.
 
+``` QML
 Rectangle {
-
-color: theme.palette.normal.**base**
-
-border {
-
-width: 3
-
-color: theme.palette.normal.**baseText**
-
+    color: theme.palette.normal.**base**
+    border {
+        width: 3
+        color: theme.palette.normal.**baseText**
+    }
+    Text {
+        text: “Hello world”
+        anchors.centerIn: parent
+        horizontalAlignment: Text.AlignHCenter
+        color: theme.palette.normal.**baseText**
+    }
 }
-
-Text {
-
-text: “Hello world”
-
-anchors.centerIn: parent
-
-horizontalAlignment: Text.AlignHCenter
-
-color: theme.palette.normal.**baseText**
-
-}
-
-}
+```
 
 ![](../../../../media/5e89e3e4-9330-4106-b880-34c54eac3f6d-cms_page_media/1130/s2EIHgTuUJ0fGllaUmM0duw.png)
 
@@ -155,151 +95,57 @@ color: theme.palette.normal.**baseText**
 These are the colors applied to the bottom level (or background) of the
 application.
 
-**Background**
-
-**Ambiance**
-
-**Suru Dark**
-
-.background
-
-White
-
-Jet
-
-.backgroundText
-
-Jet
-
-White
-
-.backgroundSecondaryText
-
-Slate
-
-Silk
-
-.backgroundTertiaryText
-
-Ash
-
-Ash
-
-.backgroundPositiveText
-
-Green
-
-Green
-
-.backgroundNegativeText
-
-Red
-
-Red
+Background  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.background | White | Jet
+.backgroundText | Jet | White
+.backgroundSecondaryText | Slate | Silk
+.backgroundTertiaryText | Ash | Ash
+.backgroundPositiveText | Green | Green
+.backgroundNegativeText | Red | Red
 
 #### Base
 
 These are the colors applied to elements that sit flat on the main layers. For
 example the outline of a text field or the bar of the slider.
 
-**Base**
+Base  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.base | Silk | Graphite
+.baseText  | Ash | Ash
 
-**Ambiance**
-
-**Suru Dark**
-
-.base
-
-Silk
-
-Graphite
-
-.baseText
-
-Ash
-
-Ash
 
 #### Foreground
 
 These are the colors applied to components that sit on top of the background
 layer. For example the background of a neutral button.
 
-**Foreground**
-
-**Ambiance**
-
-**Suru Dark**
-
-.foreground
-
-Porcelain
-
-Inkstone
-
-.foregroundText
-
-Jet
-
-White
+Foreground  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.foreground | Porcelain | Inkstone
+.foregroundText | Jet | White
 
 #### Raised
 
 These are the colors applied to elements that are raised above the main
 layers. For example the thumb toggles for sliders and switches.
 
-**Raised**
-
-**Ambiance**
-
-**Suru Dark**
-
-.raised
-
-White
-
-White
-
-.raisedText
-
-Slate
-
-Slate
-
-.raisedSecondaryText
-
-Silk
-
-Silk
+Raised  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.raised | White | White
+.raisedText | Slate | Slate
+.raisedSecondaryText | Silk | Silk
 
 #### Overlay
 
 These are the colors applied to elements that float above the background
 layer. For example popovers, dialogs and menus.
 
-**Overlay**
-
-**Ambiance**
-
-**Suru Dark**
-
-.overlay
-
-White
-
-Inkstone
-
-.overlayText
-
-Slate
-
-white
-
-.overlaySecondaryText
-
-Silk
-
-Slate
+Overlay  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.overlay | White | Inkstone
+.overlayText | Slate | white
+.overlaySecondaryText | Silk | Slate
 
 #### Selection
 
@@ -307,115 +153,49 @@ These are the colors applied to components that have selected content. This
 should not be confused with the entire component’s selected state. For example
 text in an editable text field.
 
-**Selection**
-
-**Ambiance**
-
-**Suru Dark**
-
-.selection
-
-Blue (20% opacity)
-
-Blue (40% opacity)
-
-.selectionText
-
-Jet
-
-White
+Selection  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.selection | Blue (20% opacity) | Blue (40% opacity)
+.selectionText | Jet | White
 
 #### Field
 
 These are the colors applied to the background of input controls . For example
 the background of a text field, checkbox or radio button.
 
-**Field**
+Field  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.field | White | Jet
+.fieldText | Jet | White
 
-**Ambiance**
-
-**Suru Dark**
-
-.field
-
-White
-
-Jet
-
-.fieldText
-
-Jet
-
-White
-
-Positive
 
 These are the colors applied to positive actions. For example a positive
 button.
 
-**Positive**
-
-**Ambiance**
-
-**Suru Dark**
-
-.positive
-
-Green
-
-Green
-
-.positiveText
-
-White
-
-White
+Positive  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.positive | Green | Green
+.positiveText | White | White
 
 #### Negative
 
 These are the colors applied to negative actions. For example a negative
 button.
 
-**Negative**
-
-**Ambiance**
-
-**Suru Dark**
-
-.negative
-
-Red
-
-Red
-
-.negativeText
-
-White
-
-White
+Negative  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.negative | Red | Red
+.negativeText | White | White
 
 #### Activity
 
 These are the colors applied to active items. For example the indication of
 progress on a progress bar or a slider.
 
-**Activity**
-
-**Ambiance**
-
-**Suru Dark**
-
-.activity
-
-Blue
-
-Blue
-
-.activityText
-
-White
-
-White
+Activity  | Ambiance      | Suru dark
+----------- | ------------- | --------------
+.activity | Blue | Blue
+.activityText | White | White
 
 ### Palette value sets
 
@@ -423,22 +203,17 @@ In addition to the palette values above, an item can have a value set to
 control the look of the item as it enters or leaves a state. The defined value
 sets are:
 
-  * theme.palette.disabled
-
-  * theme.palette.normal
-
-  * theme.palette.highlighted
-
-  * theme.palette.focused
-
-  * theme.palette.selected
-
-  * theme.palette.selectedDisabled
+  * `theme.palette.disabled`
+  * `theme.palette.normal`
+  * `theme.palette.highlighted`
+  * `theme.palette.focused`
+  * `theme.palette.selected`
+  * `theme.palette.selectedDisable`d
 
 Each value set contains the color value for each of the color names listed
 above.
 
-Note: the focused value set will land in OTA11.
+**Note**: the focused value set will land in OTA11.
 
 ## How we define the color of an item
 
@@ -478,56 +253,64 @@ color value from the value sets.
 
 The wrong way:
 
-    Rectangle {
-        color: enabled ? theme.palette.normal.base : theme.palette.disabled.overlay
-    }
+``` QML
+Rectangle {
+    color: enabled ? theme.palette.normal.base : theme.palette.disabled.overlay
+}
+```
 
 The right way:
 
-    Rectangle {
-        color: enabled ? theme.palette.normal.base : theme.palette.disabled.base
-    }
+``` QML
+Rectangle {
+    color: enabled ? theme.palette.normal.base : theme.palette.disabled.base
+}
+```
 
 For example, coloring a custom Button could be done in the following way:
 
-    Rectangle {
-        signal clicked
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-            onClicked: parent.clicked()
-        }
-        color: enabled ? (mouseArea.pressed
-                         ? theme.palette.highlighted.base
-                         : theme.palette.normal.base)
-                       : theme.palette.disabled.base
+``` QML
+Rectangle {
+    signal clicked
+    MouseArea {
+        id: mouseArea
+        anchors.fill: parent
+        onClicked: parent.clicked()
     }
+    color: enabled ? (mouseArea.pressed
+                     ? theme.palette.highlighted.base
+                     : theme.palette.normal.base)
+                   : theme.palette.disabled.base
+}
+```
 
 Coloring the selected element of a ListView on the other hand is a lot
 different:
 
-    ListView {
-        id: listView
-        model: 10
-        delegate: ListItem {
-            // [...]
-        }
-        highlight: currentItem ? highlightComponent : null
-        Component {
-            id: highlightComponent
-            Rectangle {
-                color: listView.enabled ? (listView.activeFocus
-                                          ? theme.palette.focused.background
-                                          : theme.palette.selected.background)
-                                        : theme.palette.selectedDisabled.background
-            }
+``` QML
+ListView {
+    id: listView
+    model: 10
+    delegate: ListItem {
+        // [...]
+    }
+    highlight: currentItem ? highlightComponent : null
+    Component {
+        id: highlightComponent
+        Rectangle {
+            color: listView.enabled ? (listView.activeFocus
+                                      ? theme.palette.focused.background
+                                      : theme.palette.selected.background)
+                                    : theme.palette.selectedDisabled.background
         }
     }
+}
+```
 
 The following diagram illustrates the state transitions of a component driving
 the colors.
 
-![](../../../../media/a6c7cb9f-3d20-4a3d-8764-04b3ea063178-cms_page_media/1130/ssnCXsj5vjZkUKXe6ZBQ8ZA.png)
+![](../../../../media/qml-tutorial-state-transitions-colors.png)
 
 ## Choosing the palette value set automatically
 
@@ -538,8 +321,3 @@ available, component styles will no longer need to use huge bindings to find
 out the color set to be used, but instead will be able to use a simple binding
 line. The API is in prototyping phase, thus this chapter will be updated
 later.
-
-
-
-
-

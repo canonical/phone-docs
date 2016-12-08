@@ -1,8 +1,8 @@
+---
+title: "QML tutorials - internationalizing your app"
+---
 
-
-
-
-
+# QML tutorials - internationalizing your app
 
 As a developer, you probably want to see your apps in many hands. One way to
 make it happen is to enable your application for translation.
@@ -35,7 +35,7 @@ During this tutorial, we are going to use a sample app and see what it takes
 to get a translated version into users hands. You can grab the code by
 running:
 
-    bzr branch lp:~davidc3/howmanyapples/no-i18n
+`bzr branch lp:~davidc3/howmanyapples/no-i18n`
 
 Or [read it online&nbsp;&rsaquo;](http://bazaar.launchpad.net/~davidc3/howmanyapples/no-i18n/files)
 
@@ -55,20 +55,22 @@ Marking a string is as simple as calling `i18n.tr(string)`.
 
 For example:
 
-    Label {
-    	text:i18n.tr("My Label")
-    }
+``` QML
+Label {
+	text:i18n.tr("My Label")
+}
+```
 
 ### Managing plural forms
 
 In many latin languages such as english or french, putting a sentence to the
 plural form is - most of the time - simply a matter of adding an “s”. But this
-is not the case in a lot of languages, for example, arabic has 6 different
-plural forms, croatian and russian have 3, etc.
+is not the case in a lot of languages, for example, arabic has six different
+plural forms, croatian and russian have three, etc.
 
 The i18n API gives you a clean solution:
 
-    i18n.tr("%1 cat", "%1 cats", nb_of_cats).arg(nb_of_cats)
+`i18n.tr("%1 cat", "%1 cats", nb_of_cats).arg(nb_of_cats)`
 
 In the example, the first argument to `i18n.tr()` is the english singular
 form, the second one is the english plural, then comes the integer which will
@@ -92,29 +94,35 @@ translatable string, you can add a special comment starting with
 “`TRANSLATORS:`”. Note that the default Ubuntu SDK setup will only pick up
 translators comment starting this way. For example
 
-    // TRANSLATORS: %1 refers to the amount of animals, %2 to the species
-    text: i18n.tr(“Do you want to buy %1 more %2?”).arg(nb_animals).arg(species)
+``` QML
+// TRANSLATORS: %1 refers to the amount of animals, %2 to the species
+text: i18n.tr(“Do you want to buy %1 more %2?”).arg(nb_animals).arg(species)
+```
 
 ## In practice
 
 If you haven't already, download the source of the sample app by opening a
 terminal with Ctrl+Alt+t and running
 
-    bzr branch lp:~davidc3/howmanyapples/no-i18n
+``` QML
+bzr branch lp:~davidc3/howmanyapples/no-i18n
+```
 
 Open it with the SDK
 
-    cd no-i18n
-    ubuntu-sdk .
+``` QML
+cd no-i18n
+ubuntu-sdk .
+```
 
 It will open the editor. Click on `Main.qml` in the left column. The file
 should look like this: [http://bazaar.launchpad.net/~davidc3/howmanyapples/no-i18n/view/head:/Main.qml](http://bazaar.launchpad.net/~davidc3/howmanyapples/no-i18n/view/head:/Main.qml)
 
 Now, try to change all user-visible strings to `i18n.tr(string)`
 
-**Hint:** They are located at lines 27, 47 49, 51, 53, 74, 92, 108, 132 & 140
+**Hint**: They are located at lines 27, 47 49, 51, 53, 74, 92, 108, 132 & 140
 
-Try to run the app with Ctrl+R, to see if it launches. If it doesn't, make
+Try to run the app with `Ctrl+R`, to see if it launches. If it doesn't, make
 sure to check the error log for typos you could have made.
 
 That's it, you know how to internationalize!
@@ -124,14 +132,18 @@ potential to use the plurals method
 
 Change line 74 to:
 
-    text:i18n.tr("You are making %1 for %2 guest", 
-             	"You are making %1 for %2 guests",
-             	guests).arg(recipe).arg(guests)
+``` QML
+text:i18n.tr("You are making %1 for %2 guest",
+         	"You are making %1 for %2 guests",
+         	guests).arg(recipe).arg(guests)
+```
 
 The third argument of the `tr()` method (here "guests") is the value that
 triggers the change to the plural form. Therefore, at line 92, you can do:
 
-    text:i18n.tr("You will need %1 apple for this recipe", "You will need %1 apples for this recipe", apples).arg(apples)
+``` QML
+text:i18n.tr("You will need %1 apple for this recipe", "You will need %1 apples for this recipe", apples).arg(apples)
+```
 
 ### Other internationalization features
 
@@ -140,11 +152,15 @@ the `toLocaleCurrencyString()` method
 
 Change line 108:
 
-    text: "This will cost you %1".arg(price)
+``` QML
+text: "This will cost you %1".arg(price)
+```
 
 To:
 
-    text: i18n.tr("This will cost you %1").arg(Number(price).toLocaleCurrencyString(Qt.locale())
+``` QML
+text: i18n.tr("This will cost you %1").arg(Number(price).toLocaleCurrencyString(Qt.locale())
+```
 
 It will pick the correct currency symbol and the right number format depending
 on the locale.
@@ -158,10 +174,7 @@ The [Date type](http://doc.qt.io/qt-5/qml-qtqml-date.html) is also worth
 looking into if your application is displaying dates or times. This will be
 the topic of another tutorial.
 
-Let's have a look at the final internationalized version of our sample app:
-
-[http://bazaar.launchpad.net/~davidc3/howmanyapples/trunk/view/head:/Main.qml]
-(http://bazaar.launchpad.net/~davidc3/howmanyapples/trunk/view/head:/Main.qml)
+Let's have a look at the final internationalized version of our [sample app](http://bazaar.launchpad.net/~davidc3/howmanyapples/trunk/view/head:/Main.qml)
 
 As you can see, I've also added a few translator comments. Make sure to use
 them for any strings needing context!
@@ -177,21 +190,21 @@ generates or re-generates it.
 
 If you use Launchpad to get your app translated collaboratively by a community
 of translators, the Translations page
-(https://translations.launchpad.net/<projectname>) will propose you to use
+(`https://translations.launchpad.net/<projectname>`) will propose you to use
 this POT file for translations and automatically import available translations
-back in your project, as .po files, when they are available. Remember to add
-the .pot file to revision control and to [set up your project fortranslations](https://wiki.ubuntu.com/Translations/LpProjectConfiguration).
+back in your project, as `.po` files, when they are available. Remember to add
+the `.pot` file to revision control and to [set up your project fortranslations](https://wiki.ubuntu.com/Translations/LpProjectConfiguration).
 
 ## Building translations before publishing your app
 
 Once translators have worked on your app, make sure you run a last `bzr pull`
-to get all the translations (.po files) from Launchpad before building the
-actual files (.mo) that will be shipped in your package.
+to get all the translations (`.po` files) from Launchpad before building the
+actual files (`.mo`) that will be shipped in your package.
 
 Build your application one more time or simply create your click package from
 the Publish tab of the SDK to build your translations.
 
-This creates binary .mo files from the .po files provided by translators. They
+This creates binary `.mo` files from the `.po` files provided by translators. They
 will be loaded at runtime depending on the user locale.
 
 That's it, you are ready to publish a multi-language QML app!
@@ -213,23 +226,18 @@ Language.
 ## There is more to internationalization
 
 Some areas of i18n are not covered by this tutorial. For example, The SDK
-doesn’t automatically mark for translation the content of the .desktop file of
+doesn’t automatically mark for translation the content of the `.desktop` file of
 your app (its name, description, etc.), which is handled separately by CMake.
 This will be the topic of a more general i18n guide, stay tuned!
 
 ### Optional: Updating your project SDK template
 
 From time to time, project templates provided by the SDK get updated. To get
-the changes needed for this tutorial (released end of april 2015), you need to
+the changes needed for this tutorial (released end of April 2015), you need to
 update your project template manually. If your project as been created after
 this date, you don’t have anything to do.
 
   1. Make sure you have updated to the latest version of the Ubuntu SDK
   2. Rename your project folder to something else
   3. Create a new project with the SDK similar in all points to your original project
-  4. Copy everything from your renamed project folder to the new one. **Except the Makefile, .qmlproject and .qmlproject.user**. Don't forget to copy your .bzr folder if you use bzr.
-
-
-
-
-
+  4. Copy everything from your renamed project folder to the new one. **Except the Makefile, .qmlproject and .qmlproject.user**. Don't forget to copy your `.bzr` folder if you use bzr.

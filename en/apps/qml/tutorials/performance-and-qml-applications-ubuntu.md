@@ -1,15 +1,7 @@
+---
+title: "QML tutorials - performance and QML applications on Ubuntu"
+---
 
+# QML tutorials - performance and QML applications on Ubuntu
 
-
-
-
-
-Missing flash plugin. Please download the latest Adobe Flash Player:
-
-[ ![Get Adobe FlashPlayer](/static/devportal_static/cms/img/icons/plugins/get_flash_player.gif)
-](https://www.adobe.com/go/getflashplayer)
-
-
-
-
-
+<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/RpU6md2mMFs?rel=0" frameborder="0" allowfullscreen></iframe>
