@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - getting started building your first QML app"
+title: "Tutorials - building your first QML app"
 ---
 
-# Building your first QML app
+# Tutorials - building your first QML app
 
 In this recipe you will learn how to write a currency converter app for Ubuntu
 on the phone. You will be using several components from the Ubuntu QML
@@ -22,7 +22,7 @@ and selecting the currency required from the list.
 ## Requirements
 
   * Ubuntu 14.04 or later – [get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * The Ubuntu SDK – [install the Ubuntu SDK](../../../platform/sdk/installing-the-sdk.md)
+  * The Ubuntu SDK – [install the Ubuntu SDK](../../platform/sdk/installing-the-sdk.md)
 
 ## The tools
 
@@ -65,7 +65,7 @@ path to the application:
 To start Ubuntu SDK, simply open the **Dash**, start typing “**ubuntu sdk**“,
 and click on the Ubuntu SDK icon that appears on the search results.
 
-![](../../../../media/qml-tutorial-ubuntu-sdk-dash.jpg)
+![](../../../media/qml-tutorial-ubuntu-sdk-dash.jpg)
 
 Next stop: putting our developer hat on.
 
@@ -118,7 +118,7 @@ Or alternatively, from the terminal:
   1. Open a terminal with `Ctrl+Alt+T`
   2. Run the following command: `qmlscene ~/CurrencyConverter/main.qml`
 
-![](../../../../media/qml-tutorial-converter_0.png)
+![](../../../media/qml-tutorial-converter_0.png)
 
 Hooray! Your first Ubuntu app for the phone is up and running. Nothing very
 exciting yet, but notice how simple it was to bootstrap it. You can close your
@@ -200,7 +200,7 @@ Most laptops | 1 gu = 8 px
 Retina laptops | 1 gu = 16 px
 Smart phones | 1 gu = 18 px
 
-[Learn more about resolution independence](https://developer.ubuntu.com/api/apps/qml/current/UbuntuUserInterfaceToolkit.resolution-independence/)[Learn moreabout resolution independence](https://developer.ubuntu.com/api/apps/qml/current/UbuntuUserInterfaceToolkit.resolution-independence/)
+[Learn more about resolution independence](https://developer.ubuntu.com/api/apps/qml/current/UbuntuUserInterfaceToolkit.resolution-independence/)
 
 ### Internationalization
 
@@ -496,7 +496,7 @@ a currency selector button and a text field to display or input the currency
 conversion values. We’ve also added a button below them to clear both text
 fields at once. Here’s a mockup to illustrate the layout:
 
-![](../../../../media/qml-tutorial-PageLayout_2.png)
+![](../../../media/qml-tutorial-PageLayout_2.png)
 
 ## Lo and behold
 
@@ -504,13 +504,13 @@ So that’s it! Now we can lay back and enjoy our creation. Just press the
 `Ctrl+R` shortcut within Ubuntu SDK, and behold the fully functional and slick
 currency converter you’ve just written with a few lines of code.
 
-![](../../../../media/qml-tutorial-converter_1.png)
+![](../../../media/qml-tutorial-converter_1.png)
 
-![](../../../../media/qml-tutorial-converter_2.png)
+![](../../../media/qml-tutorial-converter_2.png)
 
 ## Test it!
 
-Now that the application is running, don't forget about tests! The [qualitypage for qml applications](../../../platform/quality.md) has you covered. Learn
+Now that the application is running, don't forget about tests! The [qualitypage for qml applications](../../platform/quality.html) has you covered. Learn
 about writing tests for every level of the testing pyramid by using the
 application you just built.
 
@@ -533,7 +533,7 @@ check out the **Component Showcase** app that comes with the Ubuntu QML
 toolkit preview. With it, you’ll be able to see all of the Ubuntu components
 in action and look at their code to learn how to use it in your apps.
 
-![](../../../../media/qml-tutorial-ui_gallery.png)
+![](../../../media/qml-tutorial-ui_gallery.png)
 
 If you want to study the Component Showcase code:
 
@@ -551,7 +551,7 @@ Alternatively, if you only want to run the Component Showcase:
 ### Reference
 
   * [Code for this tutorial](http://bazaar.launchpad.net/~ubuntu-sdk-tutorials-dev/ubuntu-sdk-tutorials/trunk/files/head:/getting-started/CurrencyConverter/) (use `bzr branch lp:ubuntu-sdk-tutorials` to get a local copy)
-  * [Writing tests for Currency Converter](../../../platform/quality.md)
+  * [Writing tests for Currency Converter](../../platform/quality.html)
   * [Ubuntu UI Toolkit API documentation](https://developer.ubuntu.com/api/apps/qml/current/)
   * [Qt Quick documentation](http://qt-project.org/doc/qt-5.0/qtquick/qtquick-index.html)
   * [Getting Started Programming with Qt Quick](http://qt-project.org/doc/qt-5.0/qtdoc/gettingstartedqml.html)

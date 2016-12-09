@@ -1,9 +1,9 @@
 ---
-title: "Cordova guide"
+title: "Guides - Cordova guide"
 
 ---
 
-# Creating Ubuntu applications with Cordova
+# Guides - creating Ubuntu applications with Cordova
 
 This is a high-level guide to Cordova on Ubuntu. The guide contains
 information both for creating a new Cordova application for Ubuntu, or for
@@ -41,16 +41,23 @@ simple as simple as this:
 
 Add Ubuntu as a platform:
 
-    # run this command from your application directory
-    $ cordova platform add ubuntu
+* Run this command from your application directory
 
-Add a plugin, in this case Camera
+```
+cordova platform add ubuntu
+```
 
-    $ cordova plugin add cordova-plugin-camera
+* Add a plugin, in this case Camera
 
-Build the app to for devices:
+```
+$ cordova plugin add cordova-plugin-camera
+```
 
-    $ cordova build --device
+* Build the app to for devices:
+
+```
+$ cordova build --device
+```
 
 That creates a click package suitable for use in Ubuntu.
 
@@ -58,7 +65,9 @@ That creates a click package suitable for use in Ubuntu.
 
 Run the app on your attached device, in debug mode:
 
-`$ cordova run --device --debug`
+```
+$ cordova run --device --debug
+```
 
 **Note:** you need cordova-cli 4.3.x to have all of these options available.
 
@@ -96,8 +105,10 @@ an attached Ubuntu phone or tablet device.
 
 Install cordova from the Ubuntu Cordova PPA
 
-    $ sudo apt-add-repository ppa:cordova-ubuntu/ppa; sudo apt-get update
-    $ sudo apt-get install cordova-cli
+```
+$ sudo apt-add-repository ppa:cordova-ubuntu/ppa; sudo apt-get update
+$ sudo apt-get install cordova-cli
+```
 
 **Note**: for expert Cordova developers: you can also install cordova manually via
 npm; but please stay with cordova-cli@4.3.x until the platformAPI switch is
@@ -108,15 +119,19 @@ to prevent unwanted side effects and provide a clean, repeatable process.
 
 Create a click chroot for the armhf architecture:
 
-    $ sudo apt-add-repository ppa:ubuntu-sdk-team/ppa
-    $ sudo apt-get update
-    # this will create a clean click chroot build environment
-    $ sudo apt-get install click-dev phablet-tools ubuntu-sdk-api-15.04
+```
+$ sudo apt-add-repository ppa:ubuntu-sdk-team/ppa
+$ sudo apt-get update
+# this will create a clean click chroot build environment
+$ sudo apt-get install click-dev phablet-tools ubuntu-sdk-api-15.04
+```
 
 Add build dependencies for Cordova apps inside the chroot:
 
-    # add build dependencies inside the click chroot
-    $ sudo click chroot -a armhf -f ubuntu-sdk-15.04 install cmake libicu-dev:armhf pkg-config qtbase5-dev:armhf qtchooser qtdeclarative5-dev:armhf qtfeedback5-dev:armhf qtlocation5-dev:armhf qtmultimedia5-dev:armhf qtpim5-dev:armhf libqt5sensors5-dev:armhf qtsystems5-dev:armhf
+```
+# add build dependencies inside the click chroot
+$ sudo click chroot -a armhf -f ubuntu-sdk-15.04 install cmake libicu-dev:armhf pkg-config qtbase5-dev:armhf qtchooser qtdeclarative5-dev:armhf qtfeedback5-dev:armhf qtlocation5-dev:armhf qtmultimedia5-dev:armhf qtpim5-dev:armhf libqt5sensors5-dev:armhf qtsystems5-dev:armhf
+```
 
 **Note**: the ubuntu-sdk-15.04 framework is the recommended base framework to
 use for cordova apps. If you wish to move to future revisions of the base
@@ -124,26 +139,34 @@ framework, you will need to provide an extra option in the build step below.
 
 Verify your environment by running the sample app.
 
-    $ cordova create myapp myapp.myid "My App"
-    $ cd myapp
-    $ cordova platform add ubuntu
-    $ vi config.xml
+```
+$ cordova create myapp myapp.myid "My App"
+$ cd myapp
+$ cordova platform add ubuntu
+$ vi config.xml
+```
 
-Note: be sure to have a default application icon in `www/img/logo.png`
+**Note**: be sure to have a default application icon in `www/img/logo.png`
 
-Note: also, update the author email field with a valid one:
+Also, update the author email field with a valid one:
 
-        <author email="myid@ubuntu.com" />
+``` html
+<author email="myid@ubuntu.com" />
+```
 
 Then, you should build the application for the target device:
 
-    $ cordova build --device
+```
+$ cordova build --device
+```
 
 **Note**: On first run, you may have to install some build dependencies in the click chroot. Check the section above for details
 
 And then just start the application on the phone:
 
-    $ cordova run --device --debug
+```
+$ cordova run --device --debug
+```
 
 At this point, you should see the familiar Cordova logo in the application
 running on your phone.
@@ -199,36 +222,38 @@ you should place your event handlers that invoke Cordova objects.
 
 Let’s take a look at sample code that has these parts:
 
-    window.onload = function () {
-    /* Optional: Initialize the Ubuntu UI framework */
-       var UI = new UbuntuUI();
-       UI.init();
-    /* Handle the Cordova deviceready event */
-       document.addEventListener("deviceready", function() {
-           if (console && console.log)
-               console.log('Platform layer API ready');
-    /* Add event listeners that invoke Cordova here */
-           // take picture with Cordova navigator.camera object
-           UI.button("click").click( function() {
-               navigator.camera.getPicture(onSuccess, onFail, {
-                   destinationType: Camera.DestinationType.DATA_URL
-                });
-              console.log("Take Picture button clicked");
-           }); // "click" button event handler
-       }, false);
-    };
-    function onSuccess(data){ DO SOMETHING };
-    function onFail(data){ DO SOMETHING };
+``` javascript
+window.onload = function () {
+/* Optional: Initialize the Ubuntu UI framework */
+   var UI = new UbuntuUI();
+   UI.init();
+/* Handle the Cordova deviceready event */
+   document.addEventListener("deviceready", function() {
+       if (console && console.log)
+           console.log('Platform layer API ready');
+/* Add event listeners that invoke Cordova here */
+       // take picture with Cordova navigator.camera object
+       UI.button("click").click( function() {
+           navigator.camera.getPicture(onSuccess, onFail, {
+               destinationType: Camera.DestinationType.DATA_URL
+            });
+          console.log("Take Picture button clicked");
+       }); // "click" button event handler
+   }, false);
+};
+function onSuccess(data){ DO SOMETHING };
+function onFail(data){ DO SOMETHING };
+```
 
 Here, inside the deviceready event handler, we add an event handler for an
-Ubuntu button that callsnavigator.camera.getPicture(…). That’s a standard and
+Ubuntu button that `callsnavigator.camera.getPicture(…)`. That’s a standard and
 straightforward pattern for a lot of what you can do with Cordova APIs.
 
 ## Next steps
 
-Check out the [Cordova Camera Tutorial](../tutorials/cordova-camera-app-tutorial.md), which
+Check out the [Cordova Camera Tutorial](tutorials-cordova-camera-app-tutorial.html), which
 provides all the steps you need to make a working HTML5 Camera app that let’s
 you snap a picture and then displays it in the app.
 
-You may also want to check out the [HTML5 Guide](html5-guide.md) for an overview of Ubuntu
+You may also want to check out the [HTML5 Guide](guides-html5-guide.html) for an overview of Ubuntu
 HTML5.

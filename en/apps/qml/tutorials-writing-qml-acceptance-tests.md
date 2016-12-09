@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - writing QML acceptance tests"
+title: "Tutorials - writing QML acceptance tests"
 ---
 
-# Writing QML acceptance tests
+# Tutorials - writing QML acceptance tests
 
 In this tutorial you will learn how to write an autopilot test to strengthen
 the quality of your Ubuntu QML application. It builds upon the Currency
@@ -11,8 +11,8 @@ Converter Tutorial.
 ## Requirements
 
   * Ubuntu 14.04 or later -- [get Ubuntu](http://www.ubuntu.com/download/desktop/).
-  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](building-your-first-qml-app.md).
-  * The lower level testing tutorials on [unit testing](qml-unit-testing.md), and [integration testing](qml-integration-testing.md).
+  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](tutorials-building-your-first-qml-app.html).
+  * The lower level testing tutorials on [unit testing](tutorials-qml-unit-testing.html), and [integration testing](tutorials-qml-integration-testing.html).
 
 ## Testing like a user with autopilot
 
@@ -62,7 +62,7 @@ subdirectory. Inside is a folder aptly called _currencyconverter_ which
 represents our testsuite name. Finally, inside this folder is the testcases
 and supporting code.
 
-![](../../../../media/qml-tutorial-Selection_009.jpg)
+![](../../../media/qml-tutorial-Selection_009.jpg)
 
 `cd tests/functional/currencyconverter`
 

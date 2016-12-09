@@ -1,9 +1,8 @@
 ---
-title: "HTML5 Unit Testing"
+title: "HTML5 Tutorials - unit testing"
 ---
 
-
-# Writing unit tests for HTML5 apps
+# HTML5 Tutorials - unit testing
 
 In this tutorial you will learn how to write a unit test to strengthen the
 quality of your Ubuntu HTML5 application. It builds upon the HTML5 development

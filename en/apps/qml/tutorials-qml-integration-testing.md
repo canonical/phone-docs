@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - integration testing"
+title: "Tutorials - QML integration testing"
 ---
 
-# QML integration testing
+# Tutorials - QML integration testing
 
 In this tutorial you will learn how to write an integration test to strengthen
 the quality of your Ubuntu QML application. It builds upon the Currency
@@ -11,8 +11,8 @@ Converter Tutorial.
 ## Requirements
 
   * **Ubuntu 14.04 or later** - [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * **The currency converter tutorial** - if you haven't already, [complete the currency convertertutorial](building-your-first-qml-app)
-  * **The unit testing tutorial for currency converter** - if you haven't already, [unit testingtutorial](qml-unit-testing.md)
+  * **The currency converter tutorial** - if you haven't already, [complete the currency converter tutorial](tutorials-building-your-first-qml-app.html)
+  * **The unit testing tutorial for currency converter** - if you haven't already, [unit testing tutorial](tutorials-qml-unit-testing.html)
   * **The QML test runner tool** - open a terminal with `Ctrl+Alt+T` and run these commands to install all required
 packages:
 
@@ -24,7 +24,7 @@ An integration test tests interactions between pieces of your code. It can
 help ensure that data is passed properly between functions, exceptions are
 handled properly and passed, etc.
 
-Integration tests are the middle of the [testing pyramid](../../../platform/quality.md). They cover more code
+Integration tests are the middle of the [testing pyramid](../../platform/quality.md). They cover more code
 at once and at a higher level than unit tests. As you remember, the testing pyramid describes the three levels of testing an application, going from low level tests at the bottom and increasing to high level tests at the top.
 
 In Ubuntu, like unit tests, integration tests for your qml application:
@@ -52,7 +52,7 @@ the terminal, now switch to the tutorial folder:
 If you navigate to that folder with the file browser, you can click on the
 `CurrencyConverter.qmlproject` file and open it with the Ubuntu SDK IDE:
 
-![](../../../../media/2ba6a036-bc95-477a-a87d-bf25dae3725a-cms_page_media/384/Selection_006.jpg)
+![](../../../media/2ba6a036-bc95-477a-a87d-bf25dae3725a-cms_page_media/384/Selection_006.jpg)
 
 So let’s run it! Switch back to your terminal and run:
 
@@ -61,7 +61,7 @@ So let’s run it! Switch back to your terminal and run:
 If everything went successfully, you should see a small window appear and
 disappear quickly and a printout displaying all tests as passing.
 
-![](../../../../media/5410d1f3-8661-4af0-ba1d-cf027befbc80-cms_page_media/384/Selection_008.jpg)
+![](../../../media/5410d1f3-8661-4af0-ba1d-cf027befbc80-cms_page_media/384/Selection_008.jpg)
 
 ## Integration tests for Currency Converter
 

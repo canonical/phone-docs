@@ -1,8 +1,8 @@
 ---
-title: "'Meanings' app tutorial"
+title: "HTML5 Tutorials - Meanings app"
 ---
 
-# Ubuntu HTML5 quick start: Meanings app
+# HTML5 Tutorials - Meanings app
 
 This is a great starting place to learn the basics of writing an HTML5 app.
 
@@ -156,7 +156,7 @@ This is the required code that creates an UbuntuUI object (locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
-**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides/introduction-to-the-html5-ui-toolkit.md) reference docs.
+**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides-introduction-to-the-html5-ui-toolkit.html) reference docs.
 
 This is an event handler for the `window.onload` event. It provides an anonymous
 function that executes when the event is received. This event is received

@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - registering your app with the URL Dispatcher"
+title: "Tutorials - register your app"
+---
 
-
-# QML tutorials - registering your app with the URL Dispatcher
+# Tutorials - register your app
 
 
 The URL dispatcher is a service which allows applications to launch other
@@ -58,7 +58,7 @@ create at the root of your SDK project.
 
 This new JSON formatted file needs to define a series of protocols and
 domains, more specifically: an array of `protocol` and optional `domain-
-suffix` dictionnaries:
+suffix` dictionaries:
 
 In this example, let's make it a default opener for all
 `http(s)://design.ubuntu.com/*` links. Create an `<appname>.dispatcher` file

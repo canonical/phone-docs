@@ -186,7 +186,9 @@ daily-built images.
 After you have enabled Android Developer options and connected the device to
 your Ubuntu desktop (see [here](installing-ubuntu-for-devices.html)), you can list all currently available channels (including aliases) in an Ubuntu Desktop terminal as follows:
 
-`$ ubuntu-device-flash query --list-channels --device=DEVICE`
+```
+$ ubuntu-device-flash query --list-channels --device=DEVICE
+```
 
 ## Image hosting and publishing
 

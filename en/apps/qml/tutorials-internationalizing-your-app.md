@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - internationalizing your app"
+title: "Tutorials - internationalizing your app"
 ---
 
-# QML tutorials - internationalizing your app
+# Tutorials - internationalizing your app
 
 As a developer, you probably want to see your apps in many hands. One way to
 make it happen is to enable your application for translation.
@@ -65,15 +65,15 @@ Label {
 
 In many latin languages such as english or french, putting a sentence to the
 plural form is - most of the time - simply a matter of adding an “s”. But this
-is not the case in a lot of languages, for example, arabic has six different
-plural forms, croatian and russian have three, etc.
+is not the case in a lot of languages, for example, Arabic has six different
+plural forms, Croatian and Russian have three, etc.
 
 The i18n API gives you a clean solution:
 
 `i18n.tr("%1 cat", "%1 cats", nb_of_cats).arg(nb_of_cats)`
 
 In the example, the first argument to `i18n.tr()` is the english singular
-form, the second one is the english plural, then comes the integer which will
+form, the second one is the English plural, then comes the integer which will
 trigger the change of form. They will be used to generate a translation
 template suited to all languages.
 

@@ -1,6 +1,8 @@
+---
+title: "Guides - HTML5 guide"
+---
 
-
-# HTML5 guides
+# Guides - HTML5 guide
 
 ## What is an HTML5 app?
 
@@ -24,9 +26,9 @@ applications from it. The easiest way to create a new app from QtCreator is to
 create a New project and select the HTML5 app template. You will be asked for
 a project name, then an app name. Other required fields will be useful for
 packaging and integrating your application within the Ubuntu app confinement
-model. You can have a look at [this article](../../../platform/guides/app-confinement.md) to get a better grasp of what our security model is.
+model. You can have a look at [this article](../../platform/guides/app-confinement.html) to get a better grasp of what our security model is.
 
-![](../../../../media/80975a18-f9e3-4da4-bafa-529f7f1bbaf9-cms_page_media/108/creating-a-html5-app.png)
+![](../../../media/80975a18-f9e3-4da4-bafa-529f7f1bbaf9-cms_page_media/108/creating-a-html5-app.png)
 
 Next, you will need to select devices Kits for running your app. Kits are
 containers to run your app in the context of a specific architecture (arm,
@@ -34,14 +36,14 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and device kits](../../sdk/tutorials/click-targets-and-device-kits.md) should give
+without hassle on all form factors. [Click targets and device kits](https://developer.ubuntu.com/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) should give
 you all the details you need if you want to dive deeper or need more help.
 
 ![](../../../../media/b295dea4-879a-442e-9d8e-f868bd216323-cms_page_media/108/welcome-html5-app.png)
 
 That’s it, your app template is created and ready to be edited. You can even
 run it right now by clicking the play button at the bottom of the left pane
-(or press Ctrl+R).
+(or press `Ctrl+R`).
 
 ## How to structure your app
 
@@ -58,7 +60,7 @@ tree:
   * **appname.desktop**: your app declaration to the shell that will manage its launch, icon, etc.
   * **manifest.json**: your package declaration to the system installer.
 
-These last three files have been prefilled by the SDK and you probably won’t
+These last three files have been pre-filled by the SDK and you probably won’t
 have to edit their content. If you need to, don’t worry, the system will warn
 you of any mistakes when you try to run or package your app.
 
@@ -88,16 +90,17 @@ OS specific features and design patterns pioneered in Ubuntu can be accessed
 very easily as well, such as the media-hub, online-accounts, content-hub, etc.
 For example, to know when your application is about to be closed, just use:
 
-    window.onload = function() {
-        var api = external.getUnityObject('1.0');
-        api.RuntimeApi.getApplication(function(application) {
-            application.onAboutToQuit(function(killed) {
-                console.log('killed: ' + killed)
-            });
+``` javascript
+window.onload = function() {
+    var api = external.getUnityObject('1.0');
+    api.RuntimeApi.getApplication(function(application) {
+        application.onAboutToQuit(function(killed) {
+            console.log('killed: ' + killed)
         });
-    };
-
-You can find more documentation on Ubuntu HTML5 APIs in the [API section](../api.md).
+    });
+};
+```
+You can find more documentation on Ubuntu HTML5 APIs in the [API section](api.html).
 
 ## How to add an Ubuntu style
 
@@ -107,17 +110,20 @@ and JavaScript) that you can use to build an HTML5 app that looks and behaves
 like other Ubuntu apps, for example QML apps. For example, you can import a
 complete theme simply by calling :
 
-    <!-- Ubuntu UI Style imports - Ambiance theme -->
-    <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/buttons.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/dialogs.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/page.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/pagestacks.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
-    <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
+``` html
+<!-- Ubuntu UI Style imports - Ambiance theme -->
+<link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/buttons.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/dialogs.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/page.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/pagestacks.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tab.js"></script>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
+```
 
-And using &lt;button&gt; and &lt;header&gt; tags. [This article](introduction-to-the-html5-ui-toolkit.md)
+And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.html)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
-The full API doc is available at [api/html5/sdk-14.10/UbuntuUI/](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).
+
+[Read the full API](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).

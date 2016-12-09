@@ -1,8 +1,8 @@
 ---
-title: "QML tutorials - unit testing"
+title: "Tutorials - QML unit testing"
 ---
 
-# QML unit testing
+# Tutorials - QML unit testing
 
 In this tutorial you will learn how to write a unit test to strengthen the
 quality of your Ubuntu QML application. It builds upon the Currency Converter
@@ -11,11 +11,13 @@ Tutorial.
 ## Requirements
 
   * **Ubuntu 14.04 or later**  - [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * **The Currency Converter tutorial**  - if you haven't already, [complete the Currency Convertertutorial](building-your-first-qml-app)
+  * **The Currency Converter tutorial**  - if you haven't already, [complete the Currency Convertertutorial](tutorials-building-your-first-qml-app.html)
   * **The QML test runner tool**  - open a terminal with `Ctrl+Alt+T` and run these commands to install all required
 packages:
 
-`sudo apt-get install qtdeclarative5-dev-tools qtdeclarative5-test-plugin`
+```
+$ sudo apt-get install qtdeclarative5-dev-tools qtdeclarative5-test-plugin
+```
 
 ## What are unit tests?
 
@@ -29,7 +31,7 @@ and only one assertion or assert for short. An assertion is a statement about
 the expected outcome of a series of actions. By limiting yourself to a single
 statement about the expected outcome, it is clear why a test fails.
 
-Unit tests are the base of the [testing pyramid](../../../platform/quality.md). The testing pyramid
+Unit tests are the base of the [testing pyramid](../../platform/quality.md). The testing pyramid
 describes the three levels of testing an application, going from low level
 tests at the bottom and increasing to high level tests at the top. As unit
 tests are the lowest level, they should represent the largest number of tests
@@ -76,7 +78,7 @@ the terminal, now switch to the tutorial folder:
 If you navigate to that folder with the file browser, you can click on the
 `CurrencyConverter.qmlproject` file and open it with the Ubuntu SDK IDE:
 
-![](../../../../media/94a0a594-3798-4155-bc1c-d653a2d59b55-cms_page_media/383/Test-project.png)
+![](../../../media/94a0a594-3798-4155-bc1c-d653a2d59b55-cms_page_media/383/Test-project.png)
 
 Inside you will notice a tests folder that contains three subfolders named
 unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](https://developer.ubuntu.com/en/apps/quality/).
@@ -91,7 +93,7 @@ So let’s run it! Switch back to your terminal and run:
 If everything went successfully, you should see a small printout displaying
 all tests as passing.
 
-![](../../../../media/136fda2e-e81f-49bf-989c-6a457c68a561-cms_page_media/383/Passsed.png)
+![](../../../media/136fda2e-e81f-49bf-989c-6a457c68a561-cms_page_media/383/Passsed.png)
 
 ## What to test
 

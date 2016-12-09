@@ -1,9 +1,9 @@
 ---
-title: "HTML5 Example: Online Accounts"
+title: "HTML5 Tutorials - online accounts"
 ---
 
 
-# HTML5 Example: Online Accounts
+# HTML5 Tutorials - online accounts
 
 Here we provide and discuss two example HTML5 apps that use the Ubuntu App
 Platform JavaScript Online Accounts API:

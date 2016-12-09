@@ -1,8 +1,8 @@
 ---
-title: "HTML5 Tutorials"
+title: "HTML5 Tutorials - an introduction"
 ---
 
-# HTML5 Tutorials
+# HTML5 Tutorials - an introduction
 
 Get productive in **HTML5 app development** with these **tutorials** that
 guide you through creating an app with step-by-step procedures and

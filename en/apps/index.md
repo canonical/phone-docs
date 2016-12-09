@@ -12,10 +12,7 @@ and commitment is unmatched.
 
 Ubuntu is also the third most deployed desktop OS in the world.
 
-
-## Design comes first
-
-### Build upon solid principles
+## Design comes first - build upon solid principles
 
 From solid fundamental principles to refined UI building blocks and
 typography, all Ubuntu apps share a simple design and superb functionality.
@@ -23,16 +20,9 @@ typography, all Ubuntu apps share a simple design and superb functionality.
 From top to bottom, they feel and behave as part of the same family,
 regardless of the implementation toolkit.
 
-[Learn more about our design values&nbsp;&rsaquo;](http://design.ubuntu.com/apps)
+[Learn more about our design values](http://design.ubuntu.com/apps)
 
-![Design comes first](../../media/apps-making_of_apps_21222.png)
-
-
-![](../../media/6daaacc9-e995-4b1e-b1ff-cfeda26ec317-cms_page_media/5/screenshot20151215_1202226qsdgwxcv57.png)
-
-## The Ubuntu App platform
-
-### Develop with seamless device integration
+## The Ubuntu App platform - develop with seamless device integration
 
 The list of Ubuntu App Platform APIs is long and constantly growing,
 integrating all Ubuntu apps seamlessly into the device experience, whatever
@@ -69,4 +59,4 @@ power refined QML UIs.
 
 **Note**: for starters, we recommend QML and JavaScript, which are the languages used in most tutorials.
 
-[Write your first app](qml/index.md)
+[Write your first app&nbsp;&rsaquo;](qml/index.md)

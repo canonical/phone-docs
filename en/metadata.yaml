@@ -16,37 +16,35 @@ navigation:
           - title: Cookbook
             location: apps/html-5/cookbook.md
 
-          - title: Guides
-            location: apps/html-5/guides/index.md
+          - title: Guides - an introduction
+            location: apps/html-5/guides-index.md
 
-            children:
-              - title: Cordova guide
-                location: apps/html-5/guides/cordova-guide.md
+          - title: Guides - Cordova guide
+            location: apps/html-5/guides-cordova-guide.md
 
-              - title: HTML5 guide
-                location: apps/html-5/guides/html5-guide.md
+          - title: Guides - HTML5 guide
+            location: apps/html-5/guides-html5-guide.md
 
-              - title: UI toolkit
-                location: apps/html-5/guides/introduction-to-the-html5-ui-toolkit.md
+          - title: Guides - introduction to the HTML5 UI toolkit
+            location: apps/html-5/guides-introduction-to-the-html5-ui-toolkit.md
 
-          - title: Tutorials
-            location: apps/html-5/tutorials/index.md
+          - title: Tutorials - an introduction
+            location: apps/html-5/tutorials-index.md
 
-            children:
-              - title: Cordova camera app
-                location: apps/html-5/tutorials/cordova-camera-app-tutorial.md
+          - title: Tutorials - Cordova camera app
+            location: apps/html-5/tutorials-cordova-camera-app-tutorial.md
 
-              - title: HTML5 online accounts example
-                location: apps/html-5/tutorials/html5-example-online-accounts.md
+          - title: Tutorials - online accounts example
+            location: apps/html-5/tutorials-html5-example-online-accounts.md
 
-              - title: HTML5 unit testing
-                location: apps/html-5/tutorials/html5-unit-testing.md
+          - title: Tutorials - Meanings app
+            location: apps/html-5/meanings-app-tutorial.md
 
-              - title: HTML5 meanings app
-                location: meanings-app-html5-tutorial.md
+          - title: Tutorials - unit testing
+            location: apps/html-5/tutorials-unit-testing.md
 
-              - title: Writing HTML5 functional tests
-                location: writing-html5-functional-tests.md
+          - title: Tutorials - writing functional tests
+            location: apps/html-5/writing-functional-tests.md
 
       - title: QML
         location: apps/qml/index.md
@@ -58,42 +56,41 @@ navigation:
           - title: Cookbook
             location: apps/qml/cookbook.md
 
-          - title: Tutorials
-            location: apps/qml/tutorials/index.md
+          - title: Tutorials - an introduction
+            location: apps/qml/tutorials-index.md
 
-            children:
-              - title: Add a CPP backend to your QML app
-                location: apps/qml/tutorials/add-cpp-backend-your-qml-app.md
+          - title: Tutorials - add a C++ backend to your QML app
+            location: apps/qml/tutorials-add-cpp-backend-your-qml-app.md
 
-              - title: Building your first QML app
-                location: apps/qml/tutorials/building-your-first-qml-app.md
+          - title: Tutorials - building your first QML app
+            location: apps/qml/tutorials-building-your-first-qml-app.md
 
-              - title: Internationalizing your app
-                location: apps/qml/tutorials/internationalizing-your-app.md
+          - title: Tutorials - internationalizing your app
+            location: apps/qml/tutorials-internationalizing-your-app.md
 
-              - title: Performance and QML applications
-                location: apps/qml/tutorials/performance-and-qml-applications-ubuntu.md
+          - title: Tutorials - performance and QML applications
+            location: apps/qml/tutorials-performance-and-qml-applications-ubuntu.md
 
-              - title: QML integration testing
-                location: apps/qml/tutorials/qml-integration-testing.md
+          - title: Tutorials - QML integration testing
+            location: apps/qml/tutorials-qml-integration-testing.md
 
-              - title: QML unit testing
-                location: apps/qml/tutorials/qml-unit-testing.md
+          - title: Tutorials - QML unit testing
+            location: apps/qml/tutorials-qml-unit-testing.md
 
-              - title: Register your app
-                location: apps/qml/tutorials/register-your-app-url-dispatcher.md
+          - title: Tutorials - register your app
+            location: apps/qml/tutorials-register-your-app-url-dispatcher.md
 
-              - title: Ubuntu screen keyboard tricks
-                location: apps/qml/tutorials/ubuntu-screen-keyboard-tricks.md
+          - title: Tutorials - Ubuntu screen keyboard tricks
+            location: apps/qml/tutorials-ubuntu-screen-keyboard-tricks.md
 
-              - title: Ubuntu UI toolkit palette
-                location: apps/qml/tutorials/ubuntu-ui-toolkit-palette.md
+          - title: Tutorials - Ubuntu UI toolkit palette
+            location: apps/qml/tutorials-ubuntu-ui-toolkit-palette.md
 
-              - title: Use Ubuntu thumbnailer
-                location: apps/qml/tutorials/use-ubuntu-thumbnailer.md
+          - title: Tutorials - using the Ubuntu thumbnailer
+            location: apps/qml/tutorials-use-ubuntu-thumbnailer.md
 
-              - title: Writing QML acceptance tests
-                location: apps/qml/tutorials/writing-qml-acceptance-tests.md
+          - title: Tutorials - writing QML acceptance tests
+            location: apps/qml/tutorials-writing-qml-acceptance-tests.md
 
   - title: Devices
     location: devices/index.md

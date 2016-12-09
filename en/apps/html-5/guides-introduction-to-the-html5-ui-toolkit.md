@@ -1,5 +1,8 @@
+---
+title: "Guides - introduction to the HTML5 UI toolkit"
+---
 
-#  HTML5 UI toolkit
+#  Guides - introduction to the HTML5 UI toolkit
 
 Your app can use any visual style, but if you want to give a more native feel
 to it, Ubuntu provides a set of HTML5 layouts and widgets (with associated CSS
@@ -18,9 +21,6 @@ level:
 
 Be sure to check out [design examples](http://design.ubuntu.com/apps) for
 further guidance on app layouts and widgets.
-
-
-
 
 
 ## Widgets
@@ -64,10 +64,12 @@ When you create a new app in the Ubuntu SDK, its index.html file
 
 Naturally, the head imports Ubuntu CSS and Javascript. For example:
 
-     <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css"/>
-     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
-     <!-- [...] -->
-     <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
+``` html
+<link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css"/>
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
+<!-- [...] -->
+<script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
+```
 
 **Note**: The Ubuntu JavaScript framework must also be initialized in your app’s JavaScript as explained below.
 
@@ -75,7 +77,9 @@ Naturally, the head imports Ubuntu CSS and Javascript. For example:
 
 The app also imports its own app-specific JavaScript file:
 
-     <script src="js/app.js"></script>
+``` html
+<script src="js/app.js"></script>
+```
 
 **Tip**: This file is where you initialize the Ubuntu framework, as described below.
 
@@ -84,15 +88,19 @@ The app also imports its own app-specific JavaScript file:
 By default, there is no app-specific CSS file created for you. You can easily
 add one to your source tree and use and import it like this:
 
-    <link href="app.css" rel="stylesheet" type="text/css"/>
+``` html
+<link href="app.css" rel="stylesheet" type="text/css"/>
+```
 
 ### Other app-specific JavaScript
 
 The app may import and use other JavaScript libraries that are included in the
 app source tree. Here’s an example with JQuery:
 
-    <!-- jquery lib -->
-    <script src="js/jquery.min.js"></script>
+``` html
+<!-- jquery lib -->
+<script src="js/jquery.min.js"></script>
+```
 
 There are no surprises here: the app’s index.html imports everything it needs,
 including Ubuntu JavaScript and CSS and app specific JavaScript and CSS. Let’s
@@ -105,18 +113,20 @@ and widgets are declared.
 
 ## Body and mainview
 
-Each HTML5 app has an Ubuntu mainview inside the `<body>..</body>`. This
+Each HTML5 app has an Ubuntu mainview inside the `<body>...</body>`. This
 main view typically contains a header and content:
 
-    <body>
-        <header data-role="header">
-          <!-- [...] -->
-        </header>
-        <div data-role="content">
-          <!-- [...] -->
-        </div>
-      </div>
-    </body>
+``` html
+<body>
+    <header data-role="header">
+      <!-- [...] -->
+    </header>
+    <div data-role="content">
+      <!-- [...] -->
+    </div>
+  </div>
+</body>
+```
 
 The header and content are used for both tab-style and pagestack-style app
 navigation. Let’s take a look.
@@ -140,26 +150,30 @@ tabitem’s text (this id displayed in the app). When a user clicks a tabitem,
 the content identified by the tabitem’ s data-page attribute displays. Here’s
 a sample with two tabitems:
 
-    <header data-role="header">
-      <ul data-role="tabs">
-        <li data-role="tabitem" data-page="main">Main</li>
-        <li data-role="tabitem" data-page="anotherpage">Another</li>
-      </ul>
-    </header>
+``` html
+<header data-role="header">
+  <ul data-role="tabs">
+    <li data-role="tabitem" data-page="main">Main</li>
+    <li data-role="tabitem" data-page="anotherpage">Another</li>
+  </ul>
+</header>
+```
 
 ### Content contains tabs
 
 For each tabitem, your app needs to declare corresponding tab content with the
 correct id. Here is a content section with two tabs:
 
-    <div data-role="content">
-      <div data-role="tab" id="main">
-        <!-- [...] -->
-      </div>
-      <div data-role="tab" id="anotherpage">
-        <!-- [...] -->
-      </div>
-    </div>
+``` html
+<div data-role="content">
+  <div data-role="tab" id="main">
+    <!-- [...] -->
+  </div>
+  <div data-role="tab" id="anotherpage">
+    <!-- [...] -->
+  </div>
+</div>
+```
 
 **Tip**: You can make a single page app with a single `tabitem` and one corresponding tab.
 
@@ -176,7 +190,7 @@ sense. For example, consider an RSS reader app.
   * When the user selects a feed, a child page displays with list of articles.
   * When the user selects an article, a child page displays with the article text.
 
-This a hierarchical, or “deep” style: `Feeds > Articles > Article`
+This a hierarchical, or “deep” style: `Feeds &gt; Articles &gt; Article`
 
 In Ubuntu HTML5, a pagestack is used by the framework to keep track of pages
 in “deep” navigation: which Pages exist, and which one is on the top of the
@@ -189,24 +203,25 @@ allows the user to move from a page up the pagestack to its parent page.
 Naturally, the Ubuntu JavaScript API provides methods for manipulating the
 pagestack and pages. A simple pagestack looks like this:
 
-    <body>
-      <div data-role="mainview">
-        <header data-role="header">
+``` html
+<body>
+  <div data-role="mainview">
+    <header data-role="header">
+      <!-- [...] -->
+    </header>
+    <div data-role="content">
+      <div data-role="pagestack">
+        <div data-role="page" id="main">
           <!-- [...] -->
-        </header>
-        <div data-role="content">
-          <div data-role="pagestack">
-            <div data-role="page" id="main">
-              <!-- [...] -->
-            </div> <!-- page: main -->
-            <div data-role="page" id="anotherPage">
-              <!-- [...] -->
-            </div> <!-- page: anotherPage -->
-          </div> <!-- pagestack -->
-        </div> <!-- content -->
-      </div> <!-- mainview -->
-    </body>
-
+        </div> <!-- page: main -->
+        <div data-role="page" id="anotherPage">
+          <!-- [...] -->
+        </div> <!-- page: anotherPage -->
+      </div> <!-- pagestack -->
+    </div> <!-- content -->
+  </div> <!-- mainview -->
+</body>
+```
 
 
 
@@ -227,37 +242,42 @@ have declared, if any.
 
 Here is an example of a customized pagestack footer:
 
-    <div data-role="pagestack">
-      <div data-role="page” id="page1">
-        <!-- [...] -->
-      </div>
-      <div data-role="page" id="page2">
-        <!-- [...] -->
-      </div>
-      <!-- this footer overrides
-           the default pagestack footer -->
-      <footer data-role="footer" id="footerID">
-        <div data-role="list">
-          <ul>
-            <li>
-              <a href="#" id="home">
-                <img src=”./back.png”/>
-                <span>Tap me!</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    <div> <!- end of pagestack -->
+``` html
+<div data-role="pagestack">
+  <div data-role="page” id="page1">
+    <!-- [...] -->
+  </div>
+  <div data-role="page" id="page2">
+    <!-- [...] -->
+  </div>
+  <!-- this footer overrides
+       the default pagestack footer -->
+  <footer data-role="footer" id="footerID">
+    <div data-role="list">
+      <ul>
+        <li>
+          <a href="#" id="home">
+            <img src=”./back.png”/>
+            <span>Tap me!</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+<div> <!- end of pagestack -->
+```
 
 Here’s how to add footer to a specific page that overrides the default footer:
 
-    <div data-role="page" id="anotherPage">
-      <!-- [...] -->
-      <footer data-role="footer">
-      <!-- [...] -->
-      </footer>
-    </div>
+
+``` html
+<div data-role="page" id="anotherPage">
+  <!-- [...] -->
+  <footer data-role="footer">
+  <!-- [...] -->
+  </footer>
+</div>
+```
 
 **Note:** A footer is represented by the Toolbar class in the Ubuntu JavaScript
 API.
@@ -277,21 +297,23 @@ Ubuntu buttons have a useful click() method to provide click event handling.
 
 Here’s an example of declaring a dialog:
 
-    <body>
-      <div data-role="mainview">
+``` html
+<body>
+  <div data-role="mainview">
+    <!-- [...] -->
+    <div data-role="content">
+      <div data-role="tab" id=”main”>
         <!-- [...] -->
-        <div data-role="content">
-          <div data-role="tab" id=”main”>
-            <!-- [...] -->
-          </div>
-            <!-- [...] -->
-          <div data-role="dialog" id="mydialog">
-            <!-- [...] -->
-            <button data-role="button id="close”>Close</button>
-          </div>
-        </div>
       </div>
-    </body>
+        <!-- [...] -->
+      <div data-role="dialog" id="mydialog">
+        <!-- [...] -->
+        <button data-role="button id="close”>Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+```
 
 Dialogs can contain arbitrary markup. They almost always contain a button to
 dismiss themselves. Such a button is usually connected to a JavaScript click
@@ -303,30 +325,34 @@ Here’s an example with:
 
   * A button to show a dialog
   * A dialog with a button to hides the dialog
-    <div data-role="content">
-      <div data-role="tab” id="hello-page">
-        <button data-role="button" id='show'>show</button>
-      </div>
-      <div data-role='dialog' id='dialog'>
-        <button data-role="button" id='hide'>Hide</button>
-      </div>
-    </div>
+
+ ``` html
+<div data-role="content">
+  <div data-role="tab” id="hello-page">
+    <button data-role="button" id='show'>show</button>
+  </div>
+  <div data-role='dialog' id='dialog'>
+    <button data-role="button" id='hide'>Hide</button>
+  </div>
+</div>
+```
 
 The following JavaScript handles the button click events and shows/hides the
 dialog:
 
-    window.onload = function () {
-      var UI = new UbuntuUI();
-      UI.init();
-      var dialog = UI.dialog('dialog');
-      var show = UI.button('show').click( function () {
-        dialog.show();
-      });
-      var hide = UI.button('hide').click( function () {
-      dialog.hide();
-      });
-    };
-
+``` javascript
+window.onload = function () {
+  var UI = new UbuntuUI();
+  UI.init();
+  var dialog = UI.dialog('dialog');
+  var show = UI.button('show').click( function () {
+    dialog.show();
+  });
+  var hide = UI.button('hide').click( function () {
+  dialog.hide();
+  });
+};
+```
 
 
 
@@ -337,26 +363,27 @@ The Ubuntu HTML5 framework provides flexible lists. A list can optionally have
 header text. Each list item supports various options, including primary and
 secondary text labels, an icon, and more. Here’s a sample list declaration:
 
-    <div data-role="list" id="testlist">
-      <header>My header text</header>
-      <ul>
-        <li>
-          <a href="#">Main text, to the left</a>
-        </li>
-        <li>
-          <a href="#">Main text</a>
-          <label>Right text</label>
-        </li>
-        <li>
-          <aside>
-            <img src="someicon.png">
-          </aside>
-          <a href="#">Main text</a>
-          <label>Right</label>
-        </li>
-      </ul>
-    </div>
-
+``` html
+<div data-role="list" id="testlist">
+  <header>My header text</header>
+  <ul>
+    <li>
+      <a href="#">Main text, to the left</a>
+    </li>
+    <li>
+      <a href="#">Main text</a>
+      <label>Right text</label>
+    </li>
+    <li>
+      <aside>
+        <img src="someicon.png">
+      </aside>
+      <a href="#">Main text</a>
+      <label>Right</label>
+    </li>
+  </ul>
+</div>
+```
 
 
 
@@ -398,14 +425,16 @@ after the DOM is loaded:
 This code runs when the window.onload event is received, which means when the
 DOM is fully loaded. Here’s an example:
 
-    window.onload = function () {
-      var UI = new UbuntuUI();
-      UI.init();
-      document.addEventListener("deviceready", function() {
-        if (console && console.log)
-          console.log('Platform layer API ready');
-      }, false);
-    };
+``` javascript
+window.onload = function () {
+  var UI = new UbuntuUI();
+  UI.init();
+  document.addEventListener("deviceready", function() {
+    if (console && console.log)
+      console.log('Platform layer API ready');
+  }, false);
+};
+```
 
 As previous examples show, this onload even handler is where initialize your
 own GUI, adding objects and event handlers to be sure the GUI is ready to

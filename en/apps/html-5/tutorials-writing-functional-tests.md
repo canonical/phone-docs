@@ -1,9 +1,9 @@
 ---
-title: "Writing functional tests for HTML5 apps"
+title: "HTML5 tutorials - writing functional tests"
 ---
 
 
-# Writing functional tests for HTML5 apps
+# HTML5 tutorials - writing functional tests
 
 In this tutorial you will learn how to write functional tests to strengthen
 the quality of your Ubuntu HTML5 application. It builds upon the HTML5
@@ -12,7 +12,7 @@ development tutorials.
 ### Requirements
 
   * Ubuntu 14.10 or later
-    * [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
+    * [Get Ubuntu](https://www.ubuntu.com/download/desktop/)
   * The HTML5 development tutorials
     * If you haven't already complete the [HTML5 development tutorials](index.md)
   * `autopilot`, `selenium`
