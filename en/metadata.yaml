@@ -136,16 +136,16 @@ navigation:
           - title: Frameworks
             location: platform/guides/frameworks.md
 
-          - title: Let's talk about performance
+          - title: Performance
             location: platform/guides/lets-talk-about-performance.md
 
           - title: Online accounts developer guide
             location: platform/guides/online-accounts-developer-guide.md
 
-          - title: Push notifications client guide
+          - title: Client push notifications
             location: platform/guides/push-notifications-client-guide.md
 
-          - title: Push notifications server guide
+          - title: Server push notifications
             location: platform/guides/push-notifications-server-guide.md
 
           - title: Running autopilot tests
@@ -167,24 +167,23 @@ navigation:
           - title: Using device kits
             location: platform/sdk/using-device-kits.md
 
-          - title: Tutorials
-            location: platform/sdk/tutorials/index.md
+          - title: Tutorials - an introduction
+            location: platform/sdk/tutorials-index.md
 
-            children:
-            - title: Building cross-architecture click applications
-              location: platform/sdk/tutorials/building-cross-architecture-click-applications.md
+          - title: Tutorials - building cross-architecture click applications
+            location: platform/sdk/tutorials-building-cross-architecture-click-applications.md
 
-            - title: Click targets and device kits
-              location: platform/sdk/tutorials/click-targets-and-device-kits.md
+          - title: Tutorials - click targets and device kits
+            location: platform/sdk/tutorials-click-targets-and-device-kits.md
 
-            - title: Creating an SDK app project
-              location: platform/sdk/tutorials/creating-an-sdk-app-project.md
+          - title: Tutorials - creating an SDK app project
+            location: platform/sdk/tutorials-creating-an-sdk-app-project.md
 
-            - title: Runnig apps fromt the SDK
-              location: platform/sdk/tutorials/running-apps-from-the-sdk.md
+          - title: Tutorials - running apps fromt the SDK
+            location: platform/sdk/tutorials-running-apps-from-the-sdk.md
 
-            - title: Using the Ubuntu emulator
-              location: platform/sdk/tutorials/using-the-ubuntu-emulator.md
+          - title: Tutorials - using the Ubuntu emulator
+            location: platform/sdk/tutorials-using-the-ubuntu-emulator.md
 
 
   - title: Scopes

@@ -1,10 +1,8 @@
+---
+title: "Platform guides - Online Accounts guide"
+---
 
-
-
-
-
-
-# Online Accounts guide
+# Platform guides - Online Accounts guide
 
 ## Terms and definitions
 
@@ -14,7 +12,7 @@ important to outline before further discussion.
   * **Account:** an account is given by a provider to a user, and allows access to services. For example, a Twitter account allows the user to post messages on Twitter.
   * **Provider: **a provider gives out accounts to users, as well as allowing them to use the account with a variety of services. A user can have multiple accounts by the same provider, and each account can consist of multiple services. For example, the account provided by Google can be used to access services such as GMail and Picasa.
   * **Service:** a service is hosted by a provider, and allows the user to perform some task. For example, Picasa and Facebook Photos enable users to share their photos.
-  * **Short app ID:** a unique identifier for the click application: it is given by the click package name followed by an underscore and the application name: _<package>_<app>_.
+  * **Short app ID:** a unique identifier for the click application: it is given by the click package name followed by an underscore and the application name: `_<package>_<app>_`.
 
 ## Online Accounts for application developers
 
@@ -33,40 +31,44 @@ they want to ask the user to configure a new account.
 Applications using Online Accounts need to add the ”`accounts`” policy group
 to their AppArmor manifest file:
 
-    {
-      "policy_groups": [
-        "networking",
-        "accounts",
-        ...
-      ],
-      "policy_version": 1.1
-    }
+```
+{
+  "policy_groups": [
+    "networking",
+    "accounts",
+    ...
+  ],
+  "policy_version": 1.1
+}
+```
 
 You can read more about application confinement
-[here](app-confinement.md).
+[here](app-confinement.html).
 Next, the application needs to ship an `app.accounts` file which describes the
 service(s) it's going to use:
 
+```
+{
+  "services": [
     {
-      "services": [
-        {
-          "provider": "facebook"
-        },
-        {
-          "provider": "google",
-          "auth": {
-            "oauth2/web_server": {
-              "ClientId": "foo",
-              "ClientSecret": "bar",
-              "Scopes": ["https://picasaweb.google.com/data/"]
-            }
-          }
+      "provider": "facebook"
+    },
+    {
+      "provider": "google",
+      "auth": {
+        "oauth2/web_server": {
+          "ClientId": "foo",
+          "ClientSecret": "bar",
+          "Scopes": ["https://picasaweb.google.com/data/"]
         }
-      ],
-      "translations": "myapp.developer"
+      }
     }
+  ],
+  "translations": "myapp.developer"
+}
+```
 
-In the example above, the `"services"` consists of two elements: this can
+In the example above, the "services" consists of two elements: this can
 happen, for instance, when the application supports sharing photos both to
 Facebook and Picasa.
 
@@ -90,7 +92,7 @@ runtime parameters. The second service, instead, declares the OAuth keys in
 the manifest and therefore it won't be necessary to specify them again while
 using the authentication APIs.
 
-For a list of the names and parameters of the supported autentication methods,
+For a list of the names and parameters of the supported authentication methods,
 please refer to the Authentication methods section below.
 
 In the case where there isn't already a provider file for the service you are
@@ -101,14 +103,16 @@ developers explains how to do this.
 The Online Accounts json manifest file described above needs to be added to
 the main `manifest.json` file of the package, like this:
 
-    "hooks":
-    {
-      "facebook-photos": {
-        "apparmor": "app.json",
-        "accounts": "app.accounts"
-      }
-      ...
-    }
+``` json
+"hooks":
+{
+  "facebook-photos": {
+    "apparmor": "app.json",
+    "accounts": "app.accounts"
+  }
+  ...
+}
+```
 
 Once installed, the application will be registered as a client of the Online
 Accounts service and will be able to access its API.
@@ -134,18 +138,20 @@ recommended way; we'll focus on the QML bindings throughout this document. The
 `AccountModel` offers a real-time view over the accounts database, listing all
 the configured accounts which the user has authorized the application to use:
 
-    import QtQuick 2.0
-    import Ubuntu.Components 1.0
-    import Ubuntu.OnlineAccounts 2.0
-    Item {
-      AccountModel {
-        id: accounts
-      }
-      ListView {
-        model: accounts
-        delegate: Text { text: "Account: " + model.displayName }
-      }
-    }
+``` QML
+import QtQuick 2.0
+import Ubuntu.Components 1.0
+import Ubuntu.OnlineAccounts 2.0
+Item {
+  AccountModel {
+    id: accounts
+  }
+  ListView {
+    model: accounts
+    delegate: Text { text: "Account: " + model.displayName }
+  }
+}
+```
 
 When an application is run for the first time after being installed it won't
 see any accounts in the model, because – even if the user might have some
@@ -153,24 +159,26 @@ accounts already configured in the System Settings – the user hasn't yet
 authorized it to use any accounts. The application needs to explicitly request
 access to the user's accounts, and this is done by invoking the [requestAccess()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.AccountModel/#requestAccess-method/) method:
 
-    import QtQuick 2.0
-    import Ubuntu.Components 1.0
-    import Ubuntu.OnlineAccounts 2.0
-    Item {
-      AccountModel {
-        id: accounts
-      }
-      ListView {
-        model: accounts
-        delegate: Text { text: "Account: " + model.displayName }
-      }
-      Button {
-        visible: accounts.count === 0 /* remove this if your app supports
-                                         multiple accounts */
-        text: "Use Google to login"
-        onClicked: accounts.requestAccess("myapp.me_app_google", {})
-      }
-    }
+``` QML
+import QtQuick 2.0
+import Ubuntu.Components 1.0
+import Ubuntu.OnlineAccounts 2.0
+Item {
+  AccountModel {
+    id: accounts
+  }
+  ListView {
+    model: accounts
+    delegate: Text { text: "Account: " + model.displayName }
+  }
+  Button {
+    visible: accounts.count === 0 /* remove this if your app supports
+                                     multiple accounts */
+    text: "Use Google to login"
+    onClicked: accounts.requestAccess("myapp.me_app_google", {})
+  }
+}
+```
 
 The code above would show a list of authorized accounts, and in case the list
 is empty it would show a button which, when pressed, would request the user to
@@ -193,40 +201,44 @@ services offering a basic login only, a username and a password. Obtaining the
 authentication token is simply done by accessing an `[Account](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/)` element and
 calling its `[authenticate()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticate-method)` method:
 
-    import QtQuick 2.0
-    import Ubuntu.Components 1.0
-    import Ubuntu.OnlineAccounts 2.0
-    ListView {
-      model: AccountModel {}
-      delegate: Button {
-        text: "Login with " + model.displayName
-        onClicked: model.account.authenticate({})
-        Connections {
-          target: model.account
-          onAuthenticationReply: {
-            console.log("Access token is " + reply['AccessToken'])
-          }
-        }
+``` QML
+import QtQuick 2.0
+import Ubuntu.Components 1.0
+import Ubuntu.OnlineAccounts 2.0
+ListView {
+  model: AccountModel {}
+  delegate: Button {
+    text: "Login with " + model.displayName
+    onClicked: model.account.authenticate({})
+    Connections {
+      target: model.account
+      onAuthenticationReply: {
+        console.log("Access token is " + reply['AccessToken'])
       }
     }
+  }
+}
+```
 
 After the `authenticate()` method has been called, the `Account` object will
 emit the [authenticationReply()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticationReply-signal) signal which will
 carry a `reply` parameter with the authentication result. Applications might
-want to specify some additinal parameters when performing the authentication;
+want to specify some additional parameters when performing the authentication;
 for example, an application which is logging into an account which supports
 OAuth could specify its own client ID and client secret, as well as the
 required service permissions:
 
-        ...
-        Button {
-          onClicked: model.account.authenticate({
-            "ClientId": "foo",
-            "ClientSecret": "bar",
-            "Scopes": ["publish_actions"]
-          })
-        }
-        ...
+``` QML
+...
+Button {
+  onClicked: model.account.authenticate({
+    "ClientId": "foo",
+    "ClientSecret": "bar",
+    "Scopes": ["publish_actions"]
+  })
+}
+...
+```
 
 The parameters passed to the `authenticate()` method, as well as the `reply`
 object returned with the `authenticationReply() `signal, depend on the
@@ -328,30 +340,32 @@ described here. When an application ships an account plugin, an additional
 `plugins` key must be present in the manifest, listing all the account plugins
 installed by this package:
 
+``` QML
+{
+  "services": [
     {
-      "services": [
-        {
-          "provider": "myapp.me_myapp_myservice"
-        }
-      ],
-      "plugins": [
-        {
-          "provider": "myservice",
-          "name": "My service",
-          "icon": "myservice.svg",
-          "qml": "account-plugin",
-          "auth": {
-            "oauth2/user_agent": {
-              "Host": "www.myservice.com",
-              "AuthPath": "/login"
-              "RedirectUri": "https://somesite.com",
-              "ClientId": "foo",
-              "Scopes": ["just-login"]
-            }
-          }
-        }
-      ]
+      "provider": "myapp.me_myapp_myservice"
     }
+  ],
+  "plugins": [
+    {
+      "provider": "myservice",
+      "name": "My service",
+      "icon": "myservice.svg",
+      "qml": "account-plugin",
+      "auth": {
+        "oauth2/user_agent": {
+          "Host": "www.myservice.com",
+          "AuthPath": "/login"
+          "RedirectUri": "https://somesite.com",
+          "ClientId": "foo",
+          "Scopes": ["just-login"]
+        }
+      }
+    }
+  ]
+}
+```
 
 Each object in the `plugins` key describes an account plugin. The following
 keys should be present:
@@ -375,29 +389,31 @@ account already exists in the database and just needs to be edited. When the
 plugin is done creating or editing the account, it needs to emit a
 `finished()` signal. Here's an example of a plugin skeleton:
 
-    import QtQuick 2.0
-    import Ubuntu.Components 0.1
-    Flickable {
-        id: root
-        signal finished
-        Loader {
-            id: loader
-            anchors.fill: parent
-            sourceComponent: account.accountId != 0 ? existingAccountComponent : newAccountComponent
-            Connections {
-                target: loader.item
-                onFinished: root.finished()
-            }
-        }
-        Component {
-            id: newAccountComponent
-            NewAccount {} // UI for creating a new account
-        }
-        Component {
-            id: existingAccountComponent
-            EditAccount {} // UI for editing an existing account
+``` QML
+import QtQuick 2.0
+import Ubuntu.Components 0.1
+Flickable {
+    id: root
+    signal finished
+    Loader {
+        id: loader
+        anchors.fill: parent
+        sourceComponent: account.accountId != 0 ? existingAccountComponent : newAccountComponent
+        Connections {
+            target: loader.item
+            onFinished: root.finished()
         }
     }
+    Component {
+        id: newAccountComponent
+        NewAccount {} // UI for creating a new account
+    }
+    Component {
+        id: existingAccountComponent
+        EditAccount {} // UI for editing an existing account
+    }
+}
+```
 
 The Online Accounts UI comes with a QML module providing a few elements which
 can simplify the task of creating an account plugin. For instance, it offers
@@ -406,13 +422,17 @@ replace `EditAccount` with `Options` in the example above to take it into
 use), as well as QML elements for OAuth based services. In order to use the
 elements from this module, import it as
 
-    import Ubuntu.OnlineAccounts.Plugin 1.0
+```
+import Ubuntu.OnlineAccounts.Plugin 1.0
+```
 
 In the case of OAuth based services, the module provides a good starting point
 which gives an already usable account plugin in just a couple of lines:
 
-    import Ubuntu.OnlineAccounts.Plugin 1.0
-    OAuthMain {}
+```
+import Ubuntu.OnlineAccounts.Plugin 1.0
+OAuthMain {}
+```
 
 Some more complete examples can be found in the directory
 `/usr/share/accounts/qml-plugins/`.
@@ -423,9 +443,11 @@ In order to see the console output from an account plugin, the following
 commands need to entered in the device where the Online Accounts UI will be
 running:
 
-      export OAU_LOGGING_LEVEL=2
-      export OAU_DAEMON_TIMEOUT=9999
-      online-accounts-service
+```
+export OAU_LOGGING_LEVEL=2
+export OAU_DAEMON_TIMEOUT=9999
+online-accounts-service
+```
 
 The last command won't return (it can be stopped by pressing `Ctrl+C` at any
 time, though), and while running it will be showing all the output from the

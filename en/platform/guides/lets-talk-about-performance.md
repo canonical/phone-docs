@@ -1,8 +1,8 @@
+---
+title: "Platform guides - performance"
+---
 
-
-
-
-
+# Platform guides - performance
 
 The SDK and Unity teams are constantly looking for ways to improve the overall
 performance and battery life of Ubuntu. Your app should be written in the same
@@ -26,23 +26,12 @@ your slow-downs.
 Adding the performance overlay to your application will help you see if it’s
 slower than it should:
 
-1
 
-2
+import Ubuntu.PerformanceMetrics 0.1
+PerformanceOverlay {
+    active: true
+}
 
-3
-
-4
-
-5
-
-`import Ubuntu.PerformanceMetrics 0.1`
-
-`PerformanceOverlay {`
-
-` ``active: true`
-
-`}`
 
 You now have a new piece of UI floating above your app, don’t worry you can
 move it around. The top pane of the overlay shows the frame rendering time,
@@ -56,7 +45,7 @@ needs more work before being released…)
 
 ![](../../../media/09a203ff-b17a-44d8-bf2c-b10d72b68f08-cms_page_media/61/perf_countries1-420x700.png)
 
-![](../../../media/ece11b56-a4a4-4674-a038-c67d856213ca-cms_page_media/61/perf_countries2-420x700.png)
+![](../../../media/perf_countries2-420x700.png)
 
 ### Profiler
 
@@ -80,9 +69,8 @@ are some tips.
 
 ### Stay available
 
-**Make long-running tasks asynchronous.** To keep your app responsive and available at all times, make sure long running or potentially blocking events are handled asynchronously. A high CPU usage can often **delay** the rendering of your app.
-
-**Make your app start fast**. This seems obvious, but to improve loading time, **only load the bare minimum at startup**. For that, you are going to use and love Loaders, which we are going to talk about in a moment…
+* **Make long-running tasks asynchronous.** To keep your app responsive and available at all times, make sure long running or potentially blocking events are handled asynchronously. A high CPU usage can often **delay** the rendering of your app.
+* **Make your app start fast**. This seems obvious, but to improve loading time, **only load the bare minimum at startup**. For that, you are going to use and love Loaders, which we are going to talk about in a moment…
 
 ### Divide your UI into multiple QML files
 
@@ -95,37 +83,17 @@ are some tips.
 To load a component, set the source of your loader to the qml file you need,
 for example :
 
-1
 
-2
 
-3
+Item {
+    width: 200; height: 200
+    Loader { id: pageLoader }
+    MouseArea {
+        anchors.fill: parent
+        onClicked: pageLoader.source = "Page1.qml"
+    }
+}
 
-4
-
-5
-
-6
-
-7
-
-8
-
-`Item {`
-
-` ``width: 200; height: 200`
-
-` ``Loader { id: pageLoader }`
-
-` ``MouseArea {`
-
-` ``anchors.fill: parent`
-
-` ``onClicked: pageLoader.source = "Page1.qml"`
-
-` ``}`
-
-`}`
 
 To unload the component, simply set pageLoader.source to an empty string.
 
@@ -150,50 +118,30 @@ They are often the greatest memory hogs, let’s see how to handle them:
   * **Avoid scaling and resizing images**. Don’t hesitate to use multiple sizes of your assets and declare their exact dimensions.
   * **Load large images asynchronously**, the UI will stay responsive while loading them. Note that this is only needed for local resources, network images are always lazy-loaded.
 
-1
 
-2
-
-3
-
-4
-
-`Image {`
-
-` ``source: “largefile.jpg”`
-
-` ``asynchronous: true`
-
-`}`
+```
+Image {
+    source: “largefile.jpg”
+    asynchronous: true
+}
+```
 
   * **Use sourceSize for large files**: it will define the number of pixels to be stored in memory. A large image displayed at a smaller size using its sourceSize property will effectively use the memory of the smaller display size.
 
-1
-
-2
-
-3
-
-4
-
-5
-
-`Image {`
-
-` ``source: “largefile.jpg”`
-
-` ``sourceSize: { width: 100; height: 100 }`
-
-` ``asynchronous: true`
-
-`}`
+```
+Image {
+    source: “largefile.jpg”
+    sourceSize: { width: 100; height: 100 }
+    asynchronous: true
+}
+```
 
 Here is a small test app showing CPU usage on a Nexus4 with various image
 loading parameters (35%, 15% and 4%):
 
 ![](../../../media/68aadb7b-cba2-4692-9b48-d5658dfa1fcd-cms_page_media/61/perf_img1-420x700.png)
 
-![](../../../media/eb27c3fc-34f3-499a-808b-645bb4c0e779-cms_page_media/61/perf_img2-420x700.png)
+![](../../../media/perf_img2-420x700.png)
 
 ![](../../../media/360517c6-d948-48c0-8437-617c8894b1e4-cms_page_media/61/perf_img3-420x700.png)
 
@@ -215,9 +163,4 @@ You can find more QML tips in the [Qt doc](http://qt-project.org/wiki/Performanc
 [AskUbuntu](http://askubuntu.com/questions/tagged/qml).
 
 If you are blocked on a performance issue, come on Freenode IRC and ask the
-friendly developer community in the #ubuntu-app-devel channel.
-
-
-
-
-
+friendly developer community in the [#ubuntu-app-devel channel](http://webchat.freenode.net/?channels=ubuntu-app-devel).
