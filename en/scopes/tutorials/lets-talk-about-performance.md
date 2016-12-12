@@ -26,12 +26,12 @@ your slow-downs.
 Adding the performance overlay to your application will help you see if it’s
 slower than it should:
 
-
+```
 import Ubuntu.PerformanceMetrics 0.1
 PerformanceOverlay {
     active: true
 }
-
+```
 
 You now have a new piece of UI floating above your app, don’t worry you can
 move it around. The top pane of the overlay shows the frame rendering time,
@@ -83,8 +83,7 @@ are some tips.
 To load a component, set the source of your loader to the qml file you need,
 for example :
 
-
-
+```
 Item {
     width: 200; height: 200
     Loader { id: pageLoader }
@@ -93,7 +92,7 @@ Item {
         onClicked: pageLoader.source = "Page1.qml"
     }
 }
-
+```
 
 To unload the component, simply set pageLoader.source to an empty string.
 

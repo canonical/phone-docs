@@ -1,5 +1,6 @@
 ---
 title: "Scopes tutorials - departments"
+table_of_contents: true
 ---
 
 # Scopes tutorials - departments

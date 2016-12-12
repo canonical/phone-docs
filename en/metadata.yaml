@@ -211,27 +211,27 @@ navigation:
         location: scopes/tutorials/index.md
 
         children:
-          - title: Scopes tutorials - development procedures
+          - title: Tutorials - development procedures
             location: scopes/tutorials/scope-development-procedures.md
-          - title: Scopes tutorials - write a scope in C++ for JSON data
+          - title: Tutorials - write a scope in C++ for JSON data
             location: scopes/tutorials/write-a-json-scope-in-cpp.md
-          - title: Scopes tutorials - write a scope in C++ for XML data
+          - title: Tutorials - write a scope in C++ for XML data
             location: scopes/tutorials/write-a-xml-scope-in-cpp.md
-          - title: Scopes tutorials - location awareness for scopes
+          - title: Tutorials - location awareness for scopes
             location: scopes/tutorials/adding-location-awareness-to-your-scope.md
-          - title: Scopes tutorials - adding settings to your scope
+          - title: Tutorials - adding settings to your scope
             location: scopes/tutorials/adding-settings-to-your-scope.md
-          - title: Scopes tutorials - departments
+          - title: Tutorials - departments
             location: scopes/tutorials/adding-departments-to-your-scope.md
-          - title:
+          - title: Tutorials - publishing your scope
             location: scopes/tutorials/prepare-your-scope-for-publication.md
-          - title:
+          - title: Tutorials - query linking
             location: scopes/tutorials/linking-queries-in-scopes.md
-          - title:
+          - title: Tutorials - unit testing
             location: scopes/tutorials/scopes-unit-testing.md
-          - title:
+          - title: Tutorials - developing in Go
             location: scopes/tutorials/developing-scopes-go.md
-          - title:
+          - title: Tutorials - developing in JavaScript
             location: scopes/tutorials/developing-scopes-javascript.md
 
   - title: Ubuntu for devices

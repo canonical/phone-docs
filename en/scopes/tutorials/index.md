@@ -5,28 +5,29 @@ title: "Scopes tutorials"
 # Scopes tutorials
 
 
-
-
-
 ## Get started with scopes!
 
 Get familiar with the common concepts and procedures developers need to know
 for scopes with [Scope Development Procedures](/scopes/tutorials/scope-development-procedures/).
 
-### Tutorials
+## Tutorials
 
 Create your first Unity 8 scope by following along these tutorials.
 
-  * #### C++
+### Using C++
 
     * [SoundCloud scope tutorial](/scopes/tutorials/write-a-json-scope-in-cpp/)
     * [Jamendo scope tutorial](/scopes/tutorials/write-a-xml-scope-in-cpp/)
-  * #### Go
+
+### Using Go
 
     * [Developing scopes in Go](/scopes/tutorials/developing-scopes-go/)
-  * #### JavaScript
+
+### Using JavaScript
 
     * [Developing scopes in JavaScript](/scopes/tutorials/developing-scopes-javascript/)
+
+### General guides and tutorials
 
 Learn more about how to make your scopes unique and add an extra layer of
 features.
@@ -36,6 +37,8 @@ features.
   * [Adding location awareness to your scope](/scopes/tutorials/adding-location-awareness-to-your-scope/)
   * [Adding departments](/scopes/tutorials/adding-departments-to-your-scope/)
   * [Linking queries in scopes](linking-queries-in-scopes.md)
+
+### Publishing scopes
 
 Publish scopes in the Ubuntu store :
 
