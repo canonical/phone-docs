@@ -1,4 +1,8 @@
+---
+title: "Scopes tutorials"
+---
 
+# Scopes tutorials
 
 
 
@@ -46,8 +50,3 @@ Watch the series of scopes workshops on video.
   * [Adding location support to your scope](https://www.youtube.com/watch?v=TjlXGPS1lmY&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=3)
   * [Scope development how-tos](https://www.youtube.com/watch?v=SedKymOdC4Q&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=4)
   * [Online Accounts for Scope Developers Workshop](https://www.youtube.com/watch?v=s_Y_ORqjD9g&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=5)
-
-
-
-
-

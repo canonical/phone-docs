@@ -1,10 +1,8 @@
+---
+title: "Platform guides - acceptance testing"
+---
 
-
-
-
-
-
-# Acceptance testing using the page object model
+# Platform guides - acceptance testing
 
 This guide provides a model for automating functional or acceptance tests in a
 sustainable way, independently from the language or tools used.
@@ -19,7 +17,7 @@ quoting [xUnit test patterns](http://xunitpatterns.com/)).
 
 Also they are slow and they exercise too many components, some of which are
 not under our control. That's why Test-Driven Development is instead done with
-isolated and fast [unit tests](../../apps/qml/tutorials/qml-unit-testing.md)
+isolated and fast [unit tests](../../apps/qml/tutorials/qml-unit-testing.html)
 that are not coupled to the GUI.
 
 Yet after we run the automated unit tests that don't depend on the design of
@@ -36,11 +34,6 @@ acceptance testing in a sustainable manner.
 > “ The page object pattern enables automated User Acceptance Testing in a
 sustainable manner. ”
 
-
-
-
-
-Back to top
 
 ## Introducing the Page Object Pattern
 
@@ -64,14 +57,9 @@ Let's take the page objects of the [Ubuntu ClockApp](http://bazaar.launchpad.net
 example, with some simplifications.
 
 This application is written in QML and Javascript using the Ubuntu SDK; the
-tests are written in Python using [Autopilot](http://developer.ubuntu.com/api/devel/ubuntu-14.04/autopilot/tutorial/what_is_autopilot.html) as the tool to
-simulate user actions through the GUI.
+tests are written in Python using [Autopilot](http://developer.ubuntu.com/api/devel/ubuntu-14.04/autopilot/tutorial/what_is_autopilot.html) as the tool to simulate user actions through the GUI.
 
 
-
-
-
-Back to top
 
 ### The public methods represent the services that the page offers.
 
@@ -79,21 +67,18 @@ This application has a stopwatch page that lets users measure elapsed time. It
 offers services to start, stop and reset the watch, so we start by defining
 the stop watch page object as follows:
 
-    class Stopwatch(object):
-        def start(self):
-            raise NotImplementedError()
-        def stop(self):
-            raise NotImplementedError()
-        def reset(self):
-            raise NotImplementedError()
+``` python
+class Stopwatch(object):
+    def start(self):
+        raise NotImplementedError()
+    def stop(self):
+        raise NotImplementedError()
+    def reset(self):
+        raise NotImplementedError()
+```
 
 ![](../../../media/7fb5ee92-4f3f-4e66-be1d-2e2fbc0e2d77-cms_page_media/65/stopwatch-179x300.png)
 
-
-
-
-
-Back to top
 
 ### Try not to expose the internals of the page.
 
@@ -109,12 +94,14 @@ On Python, we can indicate that a method is for internal use only by adding a
 single leading underscore to its name. So, lets implement the reset_stopwatch
 method:
 
-    def reset(self):
-        self._click_reset_button()
-    def _click_reset_button(self):
-        reset_button = self.wait_select_single(
-            'ImageButton', objectName='resetButton')
-        self.pointing_device.click_object(reset_button)
+``` python
+def reset(self):
+    self._click_reset_button()
+def _click_reset_button(self):
+    reset_button = self.wait_select_single(
+        'ImageButton', objectName='resetButton')
+    self.pointing_device.click_object(reset_button)
+```
 
 Now if the designers go crazy and decide that it's better to reset the stop
 watch in a different way, we will have to make the change only in one place to
@@ -127,19 +114,17 @@ in the GUI didn't introduce any regressions.
 
 
 
-
-
-Back to top
-
 ### Methods return other PageObjects
 
 An UAT checks a user story. It will involve the journey of the user through
 the system, so he will move from one page to another. Lets take a look at how
 a journey to reset the stop watch will look like:
 
-    stopwatch = clock_page.open_stopwatch()
-    stopwatch.start()
-    stopwatch.reset()
+``` python
+stopwatch = clock_page.open_stopwatch()
+stopwatch.start()
+stopwatch.reset()
+```
 
 In our sample application, the first page that the user will encounter is the
 Clock. One of the things the user can do from this page is to open the
@@ -148,20 +133,18 @@ stopwatch page, so we model that as a service that the Clock page provides.
 Then return the new page object that will be visible to the user after
 completing that step.
 
-    class Clock(object):
-        def open_stopwatch(self):
-            self._switch_to_tab('StopwatchTab')
-            return self.wait_select_single(Stopwatch)
+``` python
+class Clock(object):
+    def open_stopwatch(self):
+        self._switch_to_tab('StopwatchTab')
+        return self.wait_select_single(Stopwatch)
+```
 
 Now the return value of open_stopwatch will make available to the caller all
 the available services that the stopwatch exposes to the user. Thus it can be
 chained as a user journey from one page to the other.
 
 
-
-
-
-Back to top
 
 ### Generally don't make assertions
 
@@ -173,31 +156,29 @@ The page objects are the helpers for the user actions part of the test, so
 it's better to leave the check for success out of them. With that in mind, a
 test for the reset of the stopwatch would look like this:
 
-    def test_restart_button_must_restart_stopwatch_time(self):
-        # Set up.
-        stopwatch = self.clock_page.open_stopwatch()
-        stopwatch.start()
-        stopwatch.reset_stopwatch()
-        # Check that the stopwatch has been reset.
-        self.assertThat(
-            stopwatch.get_time,
-            Eventually(Equals('00:00.0')))
+``` python
+def test_restart_button_must_restart_stopwatch_time(self):
+    # Set up.
+    stopwatch = self.clock_page.open_stopwatch()
+    stopwatch.start()
+    stopwatch.reset_stopwatch()
+    # Check that the stopwatch has been reset.
+    self.assertThat(
+        stopwatch.get_time,
+        Eventually(Equals('00:00.0')))
+```
 
 We have to add a new method to the stopwatch page object: get_time. But it
 only returns the state of the GUI as the user sees it. We leave in the test
 method the assertion that checks it's the expected value.
 
-    class Stopwatch(object):
-        # ...
-        def get_time(self):
-            return self.wait_select_single(
-                'Label', objectName='time').text
-
-
-
-
-
-Back to top
+``` python
+class Stopwatch(object):
+    # ...
+    def get_time(self):
+        return self.wait_select_single(
+            'Label', objectName='time').text
+```
 
 ### Need not represent an entire page
 
@@ -206,21 +187,23 @@ we build the entire page that the user is seeing by composition of page parts.
 This way we can reuse test code for parts of the GUI that are reused in the
 application or between different applications.
 
-As an example, take the _switch_to_tab('StopwatchTab') method that we are
+As an example, take the `_switch_to_tab('StopwatchTab')` method that we are
 using to open the stopwatch page. The Clock application is using the Header
 component provided by the Ubuntu SDK, as all the other Ubuntu applications are
 doing too. So, the Ubuntu SDK also provides helpers to make it easier the user
 acceptance testing of the applications, and you will find an object like this:
 
-    class Header(object):
-        def switch_to_tab(tab_object_name):
-            """Open a tab.                                                          
-            :parameter tab_object_name: The tab's QML objectName property         
-            :return: The newly opened tab.                                          
-            :raise ToolkitException: If there is no tab with that object    
-                name.                                                               
-            """
-    	# ...
+``` python
+class Header(object):
+    def switch_to_tab(tab_object_name):
+        """Open a tab.                                                          
+        :parameter tab_object_name: The tab's QML objectName property         
+        :return: The newly opened tab.                                          
+        :raise ToolkitException: If there is no tab with that object    
+            name.                                                               
+        """
+	# ...
+```
 
 This object just represents the header of the page, and inside the object we
 define the services that the header provides to the users. If you dig into the
@@ -230,8 +213,6 @@ open the stopwatch page we end up calling Header methods.
 
 
 
-
-Back to top
 
 ### Different results for the same action are modeled as different methods
 
@@ -244,45 +225,38 @@ In this page you can add new alarms, but if you try to add an alarm for
 sometime in the past, it will result in an error. So, we will have two
 different tests that will look something like this:
 
-    def test_add_alarm_for_tomorrow_must_add_to_alarm_list(self):
-        tomorrow = ...
-        test_alarm_name = 'Test alarm for tomorrow'
-        alarm_page = self.alarm_page.add_alarm(
-            test_alarm_name, tomorrow)
-        saved_alarms = alarm_page.get_saved_alarms()
-        self.assertIn(
-            (test_alarm_name, tomorrow),
-            saved_alarms)
-    def test_add_alarm_for_earlier_today_must_display_error(self):
-        earlier_today = ...
-        test_alarm_name = 'Test alarm for earlier_today'
-        error_dialog = self.alarm_page.add_alarm_with_error(
-            test_alarm_name, earlier_today)
-        self.assertEqual(
-            error_dialog.text,
-            'Please select a time in the future.')
+``` python
+def test_add_alarm_for_tomorrow_must_add_to_alarm_list(self):
+    tomorrow = ...
+    test_alarm_name = 'Test alarm for tomorrow'
+    alarm_page = self.alarm_page.add_alarm(
+        test_alarm_name, tomorrow)
+    saved_alarms = alarm_page.get_saved_alarms()
+    self.assertIn(
+        (test_alarm_name, tomorrow),
+        saved_alarms)
+def test_add_alarm_for_earlier_today_must_display_error(self):
+    earlier_today = ...
+    test_alarm_name = 'Test alarm for earlier_today'
+    error_dialog = self.alarm_page.add_alarm_with_error(
+        test_alarm_name, earlier_today)
+    self.assertEqual(
+        error_dialog.text,
+        'Please select a time in the future.')
+```
 
-Take a look at the methods add_alarm and add_alarm_with_error. The first one
+Take a look at the methods `add_alarm` and `add_alarm_with_error`. The first one
 returns the Alarm page again, where the user can continue his journey or
 finish the test checking the result. The second one returns the error dialog
 that's expected when you try to add an alarm with the wrong values.
 
 
 
-
-
-Back to top
-
 ## Conclusion
 
-User Acceptance Tests are fragile; but if we write them carefully following
+User Acceptance Tests are fragile, but if we write them carefully following
 the Page Object Pattern we can have a stable automated test suite to run on
 every new release.
 
 On Ubuntu we can then use the time we save in formal manual tests to run a
 richer session of Exploratory Tests and to automate more user stories.
-
-
-
-
-

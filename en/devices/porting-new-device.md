@@ -1,55 +1,15 @@
+---
+title: "Devices - porting to a new device"
+table_of_contents: true
+---
 
+# Devices - porting to a new device
 
+Ubuntu for devices runs on a variety of mobile [devices](devices.html), such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris (commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is possible and encouraged to enable other devices to run the mobile OS.
 
+This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 
-
-
-Ubuntu for devices runs on a variety of mobile
-[devices](https://developer.ubuntu.com/en/start/ubuntu-for-devices/devices/),
-such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris
-(commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is
-possible and encouraged to enable other devices to run the mobile OS.
-
-This guide provides all the information required to port Ubuntu to new
-hardware, and to enable the Ubuntu community to create and host their own
-ports, with support for Over-The-Air (OTA) updates.
-
-![](../../media/efde662b-6c53-46e8-bd43-7381b1b780ed-cms_page_media/380/tel.png)
-
-
-
-
-
-  * 1. Before getting started ›
-
-Welcome to this guide! It starts with an architectural overview and
-terminology of an Ubuntu port.
-
-  * 2. Set up your development environment ›
-
-Everything you need to start working on a port and an example Nexus 4 build.
-
-  * 3. Enabling a new device ›
-
-Adding your device to the project tree and retrieving proprietary drivers.
-
-  * 4. Device-specific changes ›
-
-Adapting the kernel config, generating udev rules, AppArmor fixes and build
-changes.
-
-  * 5. Building and debugging ›
-
-Creating your image, getting started with debugging the system and optionally
-setting up an image server.
-
-  * 6. Need help? Get in touch ›
-
-IRC, mailing list and suggesting changes to this guide.
-
-
-
-
+![](../../media/devices-porting-devices-illustration.png)
 
 ## Before getting started
 
@@ -64,29 +24,27 @@ knowledge.
   * **Boot modes:** you need to be familiar with how to boot into various modes (bootloader, recovery…) by pressing volume keys or any device specific method.
   * **Unlock and root:** the device needs to be unlocked/rooted in order to allow flashing custom images. A lot of preparation work is common with attempts to port CyanogenMod or other custom Android ROMs.
 
-#### A few more tips
+### A few more tips
 
-The [XDA developer forums](http://forum.xda-developers.com/) should be
-searched and consulted for anything non-Ubuntu specific.
+The [XDA developer forums](http://forum.xda-developers.com/) should be searched and consulted for anything non-Ubuntu specific.
 
-Also always refer to sources of [a workingimplementation](https://wiki.ubuntu.com/Touch/Building), the official one
-being the Nexus 4 port.
+Also always refer to sources of [a workingimplementation](https://wiki.ubuntu.com/Touch/Building), the official one being the Nexus 4 port.
 
 ### Terminology
 
 Throughout this guide, some new terms might be introduced. This list should
 help you getting started understanding what they are:
 
-  * AOSP: the Android Open Source Project hosting the original Android source code for a selection of devices.
-  * CyanogenMod: an open-source OS based on Android.
-  * Recovery image: an alternative boot mode, independent of your operating system where you can perform advanced recovery and maintenance operations.
-  * ClockworkMod Recovery: a custom recovery option for Android devices that can be used as a point of entry to replace Android.
-  * AppArmor: a Mandatory Access Control (MAC) system which is a kernel enhancement to confine programs to a limited set of resources, such as reading from and/or writing to a specific list of folders or files.
-  * Click package: the packaging format used for apps on Ubuntu, confined by AppArmor.
-  * Mir: the display server used by Ubuntu, it's a next-generation replacement for X11.
-  * ADB: a client-server program used in Android application development. It is often used to manage and access shells on Android-based devices.
-  * Unlock: the action of disabling the software limiting the phone to a single operator's network
-  * Root: the action of enabling administrative access ("root" access) to the OS.
+  * **AOSP**: the Android Open Source Project hosting the original Android source code for a selection of devices.
+  * **CyanogenMod**: an open-source OS based on Android.
+  * **Recovery image**: an alternative boot mode, independent of your operating system where you can perform advanced recovery and maintenance operations.
+  * **ClockworkMod Recovery**: a custom recovery option for Android devices that can be used as a point of entry to replace Android.
+  * **AppArmor**: a Mandatory Access Control (MAC) system which is a kernel enhancement to confine programs to a limited set of resources, such as reading from and/or writing to a specific list of folders or files.
+  * **Click package**: the packaging format used for apps on Ubuntu, confined by AppArmor.
+  * **Mir**: the display server used by Ubuntu, it's a next-generation replacement for X11.
+  * **ADB**: a client-server program used in Android application development. It is often used to manage and access shells on Android-based devices.
+  * **Unlock**: the action of disabling the software limiting the phone to a single operator's network
+  * **Root**: the action of enabling administrative access ("root" access) to the OS.
 
 ### Architectural overview
 
@@ -136,9 +94,6 @@ booting Android image from sources and vendor blobs. If you are not, look
 closely at the following “Set up your development environment” section.
 
 
-
-
-
 ## Set up your development environment
 
 Whether you want to build Ubuntu for the currently supported Nexus devices or
@@ -147,43 +102,49 @@ to build Android from source. This setup is more or less the same whether you
 are building AOSP or a project using a part of its sources.
 
 You can find all the needed Android specific git repositories at
-[https://code-review.phablet.ubuntu.com](https://code-review.phablet.ubuntu.com). This is a working gerrit server with everything
+[code-review.phablet.ubuntu.com](https://code-review.phablet.ubuntu.com). This is a working gerrit server with everything
 needed to build the Android images used by Ubuntu Touch. The reference tree in
 there is based on AOSP (4.4.2 specifically), so make sure your device specific
 repositories are compatible with AOSP at least.
 
 For any Android related project at our git server, you'll find a branch named
-_phablet-4.4.2_r1_. This branch contains a static known git HEAD and the
+`phablet-4.4.2_r1`. This branch contains a static known git HEAD and the
 required changes needed for Ubuntu, including [our custom Androidmanifest](https://code-review.phablet.ubuntu.com/gitweb?p=aosp%2Fplatform%2Fmanifest.git;a=shortlog;h=refs%2Fheads%2Fphablet-4.4.2_r1).
 
-**The first step **is to add the phablet-tools PPA and install the phablet-tools package. Open a terminal and type:
-    sudo add-apt-repository ppa:phablet-team/tools
-    sudo apt-get update
-    sudo apt-get install phablet-tools
+The first step is to add the phablet-tools PPA and install the phablet-tools package. Open a terminal and type:
+
+```
+$ sudo add-apt-repository ppa:phablet-team/tools
+$ sudo apt-get update
+$ sudo apt-get install phablet-tools
+```
 
 Then, install all the other packages you will need for the build by running
 this command:
 
-    sudo apt-get install git gnupg flex bison gperf build-essential \
-      zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
-      libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-      libgl1-mesa-dev g++-multilib mingw32 tofrodos \
-      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-      g++-4.8-multilib
+```
+$ sudo apt-get install git gnupg flex bison gperf build-essential \
+   zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+   libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+   libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
+   g++-4.8-multilib
+```
 
-From this point on, most of the work is done by the phablet-dev-bootstrap
+From this point on, most of the work is done by the `phablet-dev-bootstrap`
 command (which is, amongst other things, a wrapper over the Android “repo”
 command used to manage an Android source tree).
 
 Create a new “phablet” directory. That will host a local repository containing
-most of the Android and Ubuntu pieces. Then run phablet-dev-bootstrap to sync
+most of the Android and Ubuntu pieces. Then run `phablet-dev-bootstrap` to sync
 that repository using a custom manifest.
 
-    mkdir phablet
-    phablet-dev-bootstrap phablet
+```
+$ mkdir phablet
+$ phablet-dev-bootstrap phablet
+```
 
-This step will take a long time (several hours), as it is downloading around
-15GB of Android sources.
+This step will take a long time (several hours), as it is downloading around 15GB of Android sources.
 
 #### Recommended: build your first Ubuntu image for a Nexus 4
 
@@ -194,16 +155,17 @@ image for a Nexus 4 before building your port.
 First, let’s speed up the incoming build process by enabling caching. Run this
 command on a terminal:
 
-    export USE_CCACHE=1
+`$ export USE_CCACHE=1`
 
 Then, source your path with a set of android build tools. Run this command
 now:
 
-    . build/envsetup.sh
+`$ . build/envsetup.sh`
 
 See the list of build targets by running the lunch command
 
-    lunch
+```
+$ lunch
       You're building on Linux
       Lunch menu... pick a combo:
         1. aosp_arm-eng
@@ -219,16 +181,17 @@ See the list of build targets by running the lunch command
         11. aosp_hammerhead-userdebug
         12. aosp_mako-userdebug
         13. aosp_manta-userdebug
+```
 
-Choose the device you want to build for (in this case, number 12 : aosp_mako-
-userdebug )
+Choose the device you want to build for (in this case, number 12 : `aosp_mako-
+userdebug`)
 
 As the last step, use the make command to build the final image.
 
-    make -j4 # Or any other amount of threads
+`$ make -j4 # Or any other amount of threads`
 
 And that’s it! If everything went well, you should now have a set of flashable
-images (boot, system, recovery) in the out/target/product/mako folder.
+images (boot, system, recovery) in the `out/target/product/mako` folder.
 
 #### Flashing the image
 
@@ -236,23 +199,24 @@ After the build out/target/product/mako will have the device specific build
 artifacts such as boot.img, system.img, recovery.img which can be flashed
 using fastboot to the respective partitions like:
 
-    $ fastboot flash boot boot.img
-    $ fastboot flash recovery recovery.img
+```
+$ fastboot flash boot boot.img
+$ fastboot flash recovery recovery.img
+```
 
 As our Ubuntu image is not built by the Android build system, the best
 approach is to just flash it directly using rootstock, like described bellow
 (from bootloader):
 
-    $ fastboot boot out/target/product/mako/recovery.img
-    $ bzr branch lp:project-rootstock-ng
-    $ cd project-rootstock-ng/
-    $ ./rootstock-touch-install vivid-preinstalled-touch-armhf.tar.gz out/target/product/mako/system.img
+```
+$ fastboot boot out/target/product/mako/recovery.img
+$ bzr branch lp:project-rootstock-ng
+$ cd project-rootstock-ng/
+$ ./rootstock-touch-install vivid-preinstalled-touch-armhf.tar.gz out/target/product/mako/system.img
+```
 
 You can find the latest Ubuntu rootfs image at
 [http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/vivid-preinstalled-touch-armhf.tar.gz](http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/utopic-preinstalled-touch-armhf.tar.gz).
-
-
-
 
 
 ## Enabling a new device
@@ -265,31 +229,34 @@ by Ubuntu Touch in order to make it fully compatible with the device.
 
 ### Device
 
-Add your device specific git repositories under _phablet/device_ ("phablet" is
+Add your device specific git repositories under `phablet/device` ("phablet" is
 the repository you cloned by following the previous build example and/or [Touch/Building](https://wiki.ubuntu.com/Touch/Building#Set_up_your_development_environment)).
 
-Make sure it's respecting the format used by AOSP (device/<vendor>/<device
-name>).
+Make sure it's respecting the format used by AOSP (`device/<vendor>/<device
+name>`).
 
 ### Hardware
 
-Add your hardware specifig git repositories under _phablet/hardware_.
+Add your hardware specific git repositories under `phablet/hardware`.
 
 Make sure it's respecting the format used by AOSP
-(hardware/<vendor>/<component>). As an example:
+(`hardware/<vendor>/<component>`). As an example:
 
-    $ ls hardware/qcom/audio/
-    Android.mk  hal  legacy  visualizer  voice_processing
+```
+$ ls hardware/qcom/audio/
+Android.mk  hal  legacy  visualizer  voice_processing
+```
 
 ### Vendor
 
-Add your vendor specific binary blobs under _phablet/vendor_.
+Add your vendor specific binary blobs under `phablet/vendor`.
 
-Make sure it's respecting the format used by AOSP
-(hardware/<vendor>/<component>).
+Make sure it's respecting the format used by AOSP (`hardware/<vendor>/<component>`).
 
-    $ ls vendor/asus/flo/
-    BoardConfigPartial.mk  BoardConfigVendor.mk  device-partial.mk  device-vendor.mk  proprietary
+```
+$ ls vendor/asus/flo/
+BoardConfigPartial.mk  BoardConfigVendor.mk  device-partial.mk  device-vendor.mk  proprietary
+```
 
 ### Retrieving the proprietary blobs from Android
 
@@ -300,9 +267,6 @@ are included in binary form.
 
 Since we use AOSP as a base, for supported devices all you need to do is to
 download and extract and run as mentioned in the downloads from [https://developers.google.com/android/nexus/drivers](https://developers.google.com/android/nexus/drivers)
-
-
-
 
 
 ## Device-specific changes
@@ -321,11 +285,9 @@ We need to enable Ubuntu-specific kernel config options. These config changes
 are essential, as without them the Android container won't start. The tool
 under “kernel” in [this git repo](https://github.com/janimo/phablet-porting-scripts) can do it automatically.
 
-`check-config <defconfig file> -w` will overwrite the existing configuration
-with appropriate values for Ubuntu.
+`check-config <defconfig file> -w` will overwrite the existing configuration with appropriate values for Ubuntu.
 
-Alternatively, [the script itself](https://github.com/janimo/phablet-porting-scripts/blob/master/kernel/check-config) contains the list of configuration
-values you need to enable or disable.
+Alternatively, [the script itself](https://github.com/janimo/phablet-porting-scripts/blob/master/kernel/check-config) contains the list of configuration values you need to enable or disable.
 
 For debugging while hardware bringup, you may also want to enable
 
@@ -344,8 +306,7 @@ patches are going to be expected by the Ubuntu userland. In any case, the
 phone will boot even without AppArmor, so these can be added later on as the
 porting progresses.
 
-These patches should be picked from a known good Ubuntu kernel tree, such as
-the mako (Nexus 4) branch in the official Ubuntu kernel repo:
+These patches should be picked from a known good Ubuntu kernel tree, such as the mako (Nexus 4) branch in the official Ubuntu kernel repo:
 
 [http://kernel.ubuntu.com/git?p=ubuntu/ubuntu-utopic.git;a=shortlog;h=refs/heads/mako](http://kernel.ubuntu.com/git?p=ubuntu/ubuntu-utopic.git;a=shortlog;h=refs/heads/mako)
 
@@ -363,9 +324,11 @@ The GPU and drivers will only work once their device nodes are set up.
 You can create the udev rules file by invoking the following command while
 Ubuntu is booted.
 
-    adb shell cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//'
+```
+$ adb shell cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//'
+```
 
-If you are unsure of the result, have a look at the udev.rules file in
+If you are unsure of the result, have a look at the `udev.rules` file in
 `/device/VENDOR/DEVICE/ubuntu` to get a grasp of what is expected.
 
 ### AppArmor
@@ -402,16 +365,18 @@ Though any package can ship the policy, it makes sense for lxc-android-config
 to ship it since it also ships the udev rules. For example, if porting the HTC
 Desire Z (vision), you might ship the following:
 
-    $ cat /usr/share/apparmor/hardware/graphics.d/htc-desire-z-vision
-      # HTC Desire Z (vision)
-      /dev/kgsl-2d0 rw,
-      /dev/genlock rw,
-      /sys/devices/system/soc/soc0/id r,
+```
+$ cat /usr/share/apparmor/hardware/graphics.d/htc-desire-z-vision
+  # HTC Desire Z (vision)
+  /dev/kgsl-2d0 rw,
+  /dev/genlock rw,
+  /sys/devices/system/soc/soc0/id r,
+```
 
 Typically you specify the path to the device followed by 'r' for read access
 or 'rw' for read and write access. Simple globs and AARE (AppArmor regular
 expressions) are also possible. See `man apparmor.d` for details. When
-developing your policy, be sure to run sudo aa-clickhook -f before running
+developing your policy, be sure to run `sudo aa-clickhook -f` before running
 your app to regenerate the policy.
 
 Please see [DebuggingApparmor](https://wiki.ubuntu.com/DebuggingApparmor#Fixing_profile_bugs) for more information on how to debug AppArmor policy.
@@ -423,13 +388,16 @@ You can test that AppArmor is functioning correctly by:
   * viewing the output of the `aa-status` command
   * manually installing a click app doesn't show any AppArmor errors (`sudo click install --force-missing-framework --user=$USER ./foo.click`)
   * launching the manually installed click application works
-  * when running, the click application is confined as seen with aa-status. Eg (be sure there are two entries: the first is that the profile is loaded and the second shows a particular pid is running under this profile), eg: 
-    sudo aa-status|grep hello-world
-    ar.com.beuno.hello-world_hello-world_0.1
-    ar.com.beuno.hello-world_hello-world_0.1 (24622)
+  * when running, the click application is confined as seen with aa-status. Eg (be sure there are two entries: the first is that the profile is loaded and the second shows a particular pid is running under this profile), eg:
 
-  * install/launch hello-world from the Ubuntu appstore and launch it via 'Installed applications'. It should run and aa-status should show it is confined
-  * launch the twitter webapp via 'Installed applications' (preinstalled on the device, otherwise get from the Ubuntu appstore). It should run and aa-status should show it is confined
+```
+$ sudo aa-status|grep hello-world
+ar.com.beuno.hello-world_hello-world_0.1
+ar.com.beuno.hello-world_hello-world_0.1 (24622)
+```
+
+  * install/launch `hello-world` from the Ubuntu appstore and launch it via 'Installed applications'. It should run and aa-status should show it is confined
+  * launch the twitter webapp via 'Installed applications' (preinstalled on the device, otherwise get from the Ubuntu appstore). It should run and `aa-status` should show it is confined
 
 While porting, it might be useful to disable AppArmor:
 
@@ -445,11 +413,11 @@ is needed to allow any user to change the display brightness. We need to chmod
 it to the proper permissions.
 
 You can usually find the permission settings needed at the device init file,
-which is usually available under
-device/[manufacturer]/[codename]/init.[codename].rc.
+which is usually available under `device/[manufacturer]/[codename]/init.[codename].rc`.
 
 The changes should look like the following:
 
+```
       1 device/samsung/p3100$ git diff
       2 diff --git a/init.espresso.rc b/init.espresso.rc
       3 index cae5772..4e7df71 100755
@@ -462,6 +430,7 @@ The changes should look like the following:
      10 +       chmod 0666 /sys/class/backlight/panel/brightness
      11        chown system radio /sys/class/lcd/panel/lcd_type
      12        chown system radio /sys/class/lcd/panel/lcd_power
+```
 
 ### Build changes
 
@@ -487,9 +456,6 @@ Add Ubuntu specific components to the tree (hybris, platform-api, etc). See
 them under the ubuntu/ directory in your source.
 
 
-
-
-
 ## Building
 
 ### The image
@@ -498,9 +464,11 @@ Like in the previous Nexus 4 example, lunch and make commands will create an
 “out” directory containing flashable images. You can run the same set of
 commands as for the Nexus 4 build:
 
-    $ . build/envsetup.sh
-    $ lunch # (Pick your device target)
-    $ make -j4
+```
+$ . build/envsetup.sh
+$ lunch # (Pick your device target)
+$ make -j4
+```
 
 #### Push to your device with rootstock-ng
 
@@ -513,10 +481,12 @@ on your PC like it is done by the Ubuntu cdimage server. You can have a look
 at its [README](https://wiki.ubuntu.com/DebuggingApparmor#Fixing_profile_bugs)
 for more info on what is happening under the hood.
 
-    $ bzr branch lp:project-rootstock-ng [rootsock_trunk_path]
-    $ ROOTFS="utopic-preinstalled-touch-armhf.tar.gz"
-    $ wget -c "http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/$ROOTFS" -O "$OUT/$ROOTFS"
-    $ $ROOTSTOCK_DIR/rootstock-touch-install "$OUT/$ROOTFS" "$OUT/system.img"
+```
+$ bzr branch lp:project-rootstock-ng [rootsock_trunk_path]
+$ ROOTFS="utopic-preinstalled-touch-armhf.tar.gz"
+$ wget -c "http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/$ROOTFS" -O "$OUT/$ROOTFS"
+$ $ROOTSTOCK_DIR/rootstock-touch-install "$OUT/$ROOTFS" "$OUT/system.img"
+```
 
 ### Clean up
 
@@ -553,10 +523,10 @@ air updates to devices and for that, you need an image server: have a look at
 
 ### Initrd
 
-If you encounter initrd issues while booting, you can add the following line
+If you encounter `initrd` issues while booting, you can add the following line
 to your kernel boot arguments
 
-    break=top
+`break=top`
 
 Alternatively, you can replace "top" by another one of the stages below:
 
@@ -571,7 +541,7 @@ look around. Unlike the usual behavior of breakpoints on the desktop, you
 cannot resume execution by exiting the adb shell.
 
 You can also add “debug” to the kernel boot argument. This will cause a log to
-be recorded in /run/ with the progress of the initrd booting process.
+be recorded in `/run/` with the progress of the initrd booting process.
 
 ### Working in the environment
 
@@ -580,13 +550,13 @@ be recorded in /run/ with the progress of the initrd booting process.
 The simplest solution, assuming that you have a UI available is to use the
 networking indicator on the device.
 
-An alternate means of configuring networking is via the phablet-network tool,
-which is part of the phablet-tools package.
+An alternate means of configuring networking is via the `phablet-network` tool,
+which is part of the `phablet-tools` package.
 
-With your Ubuntu device connected to your host computer, simply run “phablet-
-network” from your desktop to copy an active Network Manager system settings
+With your Ubuntu device connected to your host computer, simply run `phablet-
+network` from your desktop to copy an active Network Manager system settings
 file to the device. The script also has some extra options which cause the
-tool to install network-related packages such as iw and openssh-server.
+tool to install network-related packages such as `iw` and `openssh-server`.
 
 If you have difficulty enabling the wifi drivers on your platform, you can
 still get network on your phone with reverse USB tethering over adb. See
@@ -595,36 +565,38 @@ still get network on your phone with reverse USB tethering over adb. See
 #### Copying files to the phone
 
 This is required if you are not working from the Android source tree. As
-fastboot and adb should be built as part of the system build for the host
+`fastboot` and `adb` should be built as part of the system build for the host
 part, they should be in your path and located here:
 
-    out/host/linux-x86/bin/
+`out/host/linux-x86/bin/`
 
 If not installing a personal build and not porting using Trusty (or more
-recent), make sure you have the phablet-team PPA added, if not, run add-apt-
-repository ppa:phablet-team/tools
+recent), make sure you have the `phablet-team` PPA added, if not, r`un add-apt-
+repository ppa:phablet-team/tools`
 
-Then make sure to install adb and fastboot. You can do so by installing the
+Then make sure to install `adb` and `fastboot`. You can do so by installing the
 following packages:
 
-    apt-get install android-tools-adb android-tools-fastboot
+`$ apt-get install android-tools-adb android-tools-fastboot`
 
 To get packages to your device, execute the following from your desktop:
 
-    $ adb root
-    $ adb push [filename|directory name] [ubuntu path]
+```
+$ adb root
+$ adb push [filename|directory name] [ubuntu path]
+```
 
 #### Screen Pixel Ratio
 
 We have 2 important variables that define the pixel ratio behaviour of the
 system and the applications, ie. how they visually scale. Look at
-/usr/bin/ubuntu-session for GRID_UNIT_PX and QTWEBKIT_DPR.
+`/usr/bin/ubuntu-session` for GRID_UNIT_PX and QTWEBKIT_DPR.
 
 When adding the correct pixel ratio for a new port, first use the method below
 to calculate the desired DPR, and create a device specific config file which
-ubuntu-session can load at run time.
+`ubuntu-session` can load at run time.
 
-The number of pixels per grid unit (GRID_UNIT_PX) is specific to each device.
+The number of pixels per grid unit (`GRID_UNIT_PX`) is specific to each device.
 Its goal is to make the user interface of the system and the applications of
 the same perceived size regardless of the device they are displayed on. It is
 primarily dependent on the pixel density of the device’s screen and the
@@ -637,75 +609,15 @@ A reference device has been chosen from which we derive the pixels per grid
 unit for all other devices. The reference device is a laptop with a 120 ppi
 screen and the pixels per grid unit is set to 8 px/gu.
 
-Device Form Factor Resolution Density Pixels / grid unit
-
-‘Normal’ Density Laptops
-
-Desktop
-
-*
-96-150
-
-8 px/gu
-
-‘High’ Density Laptops
-
-Desktop
-
-*
-150-250
-
-16 px/gu
-
-Samsung Galaxy Nexus
-
-Phone
-
-1280x720
-
-316 ppi
-
-18 px/gu
-
-LG Nexus 4
-
-Phone
-
-1280x768
-
-320 ppi
-
-18 px/gu
-
-Samsung Nexus 10
-
-Tablet
-
-2560x1600
-
-299 ppi
-
-20 px/gu
-
-Asus Nexus 7
-
-Tablet
-
-1280x800
-
-216 ppi
-
-12 px/gu
-
-Asus Transformer
-
-Tablet
-
-1280x800
-
-149 ppi
-
-10 px/gu
+Device | Form Factor | Resolution | Density | Pixels / grid unit
+------ | ----------- | ---------- | ------- | ------------------
+‘Normal’ Density Laptops | Desktop | \* | 96-150 | 8 px/gu
+‘High’ Density Laptops | Desktop | \* | 150-250 | 16 px/gu
+Samsung Galaxy Nexus | Phone | 1280x720 | 316 ppi | 18 px/gu
+LG Nexus 4 | Phone | 1280x768 | 320 ppi | 18 px/gu
+Samsung Nexus 10 | Tablet | 2560x1600 | 299 ppi | 20 px/gu
+Asus Nexus 7 | Tablet | 1280x800 | 216 ppi | 12 px/gu
+Asus Transformer | Tablet | 1280x800 | 149 ppi | 10 px/gu
 
 There is no way for the system to dynamically identify the correct pixel ratio
 for the device, which as a side effect things might be bigger/smaller than
@@ -715,27 +627,25 @@ screen specifications of the device to the Canonical design team.
 
 To create your device specific configuration, first identify the
 ro.product.device android property used by your device (check the
-/system/build.prop file from your port or from the original Android image).
+`/system/build.prop` file from your port or from the original Android image).
 
-Then with the desired DPR, create a file at /etc/ubuntu-touch-session.d adding
-your custom GRID_UNIT_PX and QTWEBKIT_DPR variables, also specifying the
+Then with the desired `DPR`, create a file at `/etc/ubuntu-touch-session.d` adding
+your custom `GRID_UNIT_PX` and `QTWEBKIT_DPR` variables, also specifying the
 default form factor you want, such as:
 
-    $ cat /etc/ubuntu-touch-session.d/manta.conf
-    GRID_UNIT_PX=20
-    QTWEBKIT_DPR=2.5
-    FORM_FACTOR="tablet"
-
-
-
-
+```
+$ cat /etc/ubuntu-touch-session.d/manta.conf
+GRID_UNIT_PX=20
+QTWEBKIT_DPR=2.5
+FORM_FACTOR="tablet"
+```
 
 ## Need help? Get in touch
 
 Porting an OS to a new device is a broad subject and this guide doesn't
 pretend to be exhaustive on that topic. If you need more help on specific
-topics, come meet the Ubuntu teams and other like-minded people on **IRC** :
-#ubuntu-touch on [Freenode](https://wiki.ubuntu.com/IRC/ChannelList).
+topics, come meet the Ubuntu teams and other like-minded people on IRC :
+`#ubuntu-touch` on [Freenode](https://wiki.ubuntu.com/IRC/ChannelList).
 
 You should also probably join our **mailing list** by adding yourself to the
 [ubuntu-phone team](https://launchpad.net/~ubuntu-phone) on Launchpad and
@@ -748,7 +658,7 @@ If you want to report a bug or suggest changes to this guide, you can do it
 
 #### Cannot start ADB without graphics
 
-The ADB service (adbd) lives in the Ubuntu rootfs instead of in the Android
+The ADB service (`adbd`) lives in the Ubuntu rootfs instead of in the Android
 container. For security reasons, the adbd binary shipped with Ubuntu checks if
 the device's screen is unlocked and if there is a password set for the phablet
 user. It will only start when both requirements are met.
@@ -762,11 +672,6 @@ issues have been fixed, there's an unlocked adb binary that can be used
 instead of the preinstalled one. To use it:
 
   * [Download the unlocked adbd binary](http://people.canonical.com/~ogra/adbd)
-  * Copy it into the /usr/bin/adbd directory in the Ubuntu rootfs of the device being ported
-  * Run the following command to bring up the adbd service as soon as the system switches to the rootfs 
-    echo "start on startup" >/etc/init/android-tools-adbd.override
-
-
-
-
-
+  * Copy it into the `/usr/bin/adbd` directory in the Ubuntu rootfs of the device being ported
+  * Run the following command to bring up the adbd service as soon as the system switches to the rootfs
+    `echo "start on startup" >/etc/init/android-tools-adbd.override`

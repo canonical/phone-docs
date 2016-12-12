@@ -1,9 +1,4 @@
 
-
-
-
-
-
 # Welcome to HTML5 apps!
 
 Ubuntu embraces HTML5 as a first-class app toolkit. While its support is
@@ -57,13 +52,13 @@ There’s a lot to know, and fortunately the Ubuntu community is rich with
 sources of help and information. Here are a couple good places to visit:
 
   * [http://askubuntu.com](http://askubuntu.com/), a very active site. [Check out the list of already answered questions](http://askubuntu.com/questions/tagged/html5). Feel free to ask your own questions as well and make sure you use the HTML5 tag.
-  * [Our app developer community](), a great gathering place for people who share an interest in developing for Ubuntu and sharing knowledge!
+  * [Our app developer community](http://community.ubuntu.com/), a great gathering place for people who share an interest in developing for Ubuntu and sharing knowledge!
 
 ## Next steps
 
 ### Guides
 
-Be sure to check out our [HTML5 guides](guides/index.md) and
+Be sure to check out our [HTML5 guides](guides-index.html) and
 others, like those for the [Ubuntu App Platform](../../platform/guides/index.md).
 These focused articles cover key topics of interest to app developers and are
 designed to give you a high level overview of critical topics. After reading
@@ -71,7 +66,7 @@ the guides, understanding APIs and platform features is much easier.
 
 ### Tutorials
 
-Definitely check out the [HTML5 tutorials](tutorials/index.md).
+Definitely check out the [HTML5 tutorials](tutorials-index.html).
 These give you detailed steps, examples and explanations that let you leap
 into productivity with Ubuntu HTML5 apps.
 
@@ -80,8 +75,3 @@ into productivity with Ubuntu HTML5 apps.
 And of course, developers need the [API Reference docs forHTML5/JavaScript](api.md). These provide the
 implementation-level detail you need make your HTML5 apps use the full sweet
 of platform APIs .
-
-
-
-
-
