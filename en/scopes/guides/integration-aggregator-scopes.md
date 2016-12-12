@@ -1,10 +1,8 @@
+---
+title: "Scopes guides - integration with aggregator scopes"
+---
 
-
-
-
-
-
-# Integration with aggregator scopes
+# Scopes guides - integration with aggregator scopes
 
 Here you can find information about some specific aggregator scopes. This
 information helps scope developers understand how to make their scopes fit
@@ -12,7 +10,7 @@ into aggregators seamlessly.
 
 There are two parts to this integration process:
 
-  * Picking the right keywords (see [the scope keywords guide](https://developer.ubuntu.com/en/scopes/guides/scope-keywords/))
+  * Picking the right keywords (see the [scope keywords guide](scope-keywords.html)
   * Returning the right components
 
 ## Returning the right components
@@ -76,8 +74,3 @@ aggregators scopes, this list will tend to be as exhaustive as possible.
 There are no result component expectations. Each scope is displayed as a new
 category using components and renderer template provided by the first received
 result.
-
-
-
-
-

@@ -198,41 +198,41 @@ navigation:
         location: scopes/guides/index.md
 
         children:
-          - title: Integration aggregator scopes
-            location: scopes/integration-aggregator-scopes.md
+          - title: Scopes - an introduction
+            location: scopes/guides/scopes-guide.md
+          - title: Scopes customization and branding
+            location: scopes/guides/scopes-customization-branding.md
           - title: Scope keywords
-            location: scopes/scope-keywords.md
-          - title: Scopes customization branding
-            location: scopes/scopes-customization-branding.md
-          - title: Scopes guide
-            location: scopes/scopes-guide.md
+            location: scopes/guides/scope-keywords.md
+          - title: Integration aggregator scopes
+            location: scopes/guides/integration-aggregator-scopes.md
 
       - title: Tutorials
         location: scopes/tutorials/index.md
 
         children:
+          - title: Scopes tutorials - development procedures
+            location: scopes/tutorials/scope-development-procedures.md
+          - title: Scopes tutorials - write a scope in C++ for JSON data
+            location: scopes/tutorials/write-a-json-scope-in-cpp.md
+          - title: Scopes tutorials - write a scope in C++ for XML data
+            location: scopes/tutorials/write-a-xml-scope-in-cpp.md
+          - title: Scopes tutorials - location awareness for scopes
+            location: scopes/tutorials/adding-location-awareness-to-your-scope.md
+          - title: Scopes tutorials - adding settings to your scope
+            location: scopes/tutorials/adding-settings-to-your-scope.md
+          - title: Scopes tutorials - departments
+            location: scopes/tutorials/adding-departments-to-your-scope.md
           - title:
-            location: scopes/adding-departments-to-your-scope.md
+            location: scopes/tutorials/prepare-your-scope-for-publication.md
           - title:
-            location: scopes/adding-location-awareness-to-your-scope.md
+            location: scopes/tutorials/linking-queries-in-scopes.md
           - title:
-            location: scopes/adding-settings-to-your-scope.md
+            location: scopes/tutorials/scopes-unit-testing.md
           - title:
-            location: scopes/developing-scopes-go.md
+            location: scopes/tutorials/developing-scopes-go.md
           - title:
-            location: scopes/developing-scopes-javascript.md
-          - title:
-            location: scopes/linking-queries-in-scopes.md
-          - title:
-            location: scopes/prepare-your-scope-for-publication.md
-          - title:
-            location: scopes/scope-development-procedures.md
-          - title:
-            location: scopes/scopes-unit-testing.md
-          - title:
-            location: scopes/write-a-json-scope-in-cpp.md
-          - title:
-            location: scopes/write-a-xml-scope-in-cpp.md
+            location: scopes/tutorials/developing-scopes-javascript.md
 
   - title: Ubuntu for devices
 

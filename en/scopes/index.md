@@ -1,12 +1,10 @@
-
-
-
-
-
+---
+title: "Scopes"
+---
 
 # Scopes
 
-### Build more than just apps
+## Build more than just apps
 
 Ubuntu enables the delivery of content and services directly to the screen –
 effectively creating a rich, fast and unfragmented experience for users, while
@@ -21,18 +19,11 @@ available through the Ubuntu SDK.
 
 
 
-
-
 ## A new generation of mobile experiences
 
 ### Scopes in action
 
-Missing flash plugin. Please download the latest Adobe Flash Player:
-
-[ ![Get Adobe FlashPlayer](/static/devportal_static/cms/img/icons/plugins/get_flash_player.gif)
-](https://www.adobe.com/go/getflashplayer)
-
-[Watch on YouTube](https://www.youtube.com/watch?v=CsDFMIphtZk)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CsDFMIphtZk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Scopes are a complete reinvention of the content and services experience where
 you can stop trying to bring the user "in", but simply focus on bringing the
@@ -47,17 +38,12 @@ brings a great opportunity for developers and content producers to shine.
 
 
 
-
-
 ## How it works
 
   * Scopes are a point of entry into the Ubuntu ecosystem for all kinds of developers: the API is availaible in JavaScript, C++ and Go.
-
   * Using keywords, scopes can be aggregated into more general scopes, called Aggregation Scopes: your content is visible in context of what the user is actively looking for.
-
   * Scopes work with a simple client-server model, where a locally running server mediates data exchange between your content and user requests, keeping every scopes confined and independant from each other.
 
-![](../../media/c970e187-8f39-465f-b46f-0f7452ceb8ec-cms_page_media/7/apps-grid.png)
 
 ### There are two types of scopes:
 
@@ -86,26 +72,20 @@ favorites your branded scope.
 Examples: Youtube, Flickr, Amazon, Telegram, The Weather Channel, Open
 Library.
 
-
-
-
-
-* * *
-
-### Get started
+## Get started
 
 You're all set up to get started with your first scope, there are tutorials
 available for JavaScript, Go and C++, that will help you write it.
 
-[Start a scope tutorial](tutorials/index.md)
+[Start a scope tutorial](tutorials/index.html)
 
 ### Learn more about scopes
 
 When you want to dive further into scopes, you can always find wisdom in our
 selection of scopes developer and design guides.
 
-  * [Scopes developer guides&nbsp;&rsaquo;](guides/index.md)
-  * [Scopes design guide&nbsp;&rsaquo;](http://design.ubuntu.com/scopes)
+  * [Scopes developer guides&nbsp;&rsaquo;](guides/index.html)
+  * [Scopes design guides](http://design.ubuntu.com/scopes)
 
 ### Need help?
 
@@ -114,8 +94,3 @@ such as Ask Ubuntu, our mailing lists or IRC channel.
 
   * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](http://askubuntu.com/questions/tagged/scopes)
   * [Reach out to other developers (mailing-list, live chat)&nbsp;&rsaquo;](https://developer.ubuntu.com/en/community/)
-
-
-
-
-

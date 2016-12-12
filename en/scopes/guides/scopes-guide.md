@@ -1,7 +1,8 @@
+---
+title: "Scopes guides - an introduction"
+---
 
-
-
-
+# Scopes guides - an introduction
 
 
 This is a high level introduction to Ubuntu scopes, a great starting place for
@@ -15,7 +16,7 @@ One of **Unity**‘s main features is the **Dash**. The Dash allows the user to
 quickly search for information both locally (installed applications, recent
 files, bookmarks, etc) and remotely (Twitter, Google Drive, etc).
 
-![](../../../media/d3823c8e-db5a-4fd5-9901-764cc82e67af-cms_page_media/141/tablet-scopes.png)
+![](../../../media/scopes-intro-tablet-scopes.png)
 
 The Dash achieves this by having one or more **Scopes** that are responsible
 for providing one category of search results. The user may search for content
@@ -66,7 +67,7 @@ If you’ve got any question about Ubuntu on mobile devices or developing apps
 for the phone, our experts are here to help. Ask Ubuntu is a free, community-
 driven Q&A site for Ubuntu users and developers.
 
-[Ask a question now&nbsp;&rsaquo;](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)
+[Ask a question now](http://www.askubuntu.com/questions/ask?tags=mobile,application-development)
 
 ## What are scopes?
 
@@ -200,12 +201,12 @@ widget, and an actions widget:
 
 Here are the same four widgets, just in a different order:
 
-![](../../../media/d6ae641f-2359-4cc7-96bc-459fe3635bf5-cms_page_media/141/preview-differentwidgetorder.png)
+![](../../../media/scope-intro-preview-differentwidgetorder.png)
 
 You can add data to the preview that is not derived from the search result
 being processed. For example, here a new “text” widget is added:
 
-![](../../../media/dee2c9f7-58d4-443f-9337-d7d9ea128dfe-cms_page_media/141/preview-hardcode-crop.png)
+![](../../../media/scope-intro-preview-hardcode-crop.png)
 
 Different types of search results in the same scope can expose different data
 in the preview. For example, a restaurant preview may expose ratings and
@@ -239,12 +240,7 @@ at the top of column two, and there are two additional text widgets
 
 # Next steps
 
-  * A good starting point is looking at [Scopes development procedures](../tutorials/scope-development-procedures.md). This provides steps for creating a scope project in the Ubuntu SDK, building it and running it on the desktop and devices.
-  * Next, you can check out the [scopes tutorials](../tutorials/index.md). They provide working examples and discuss key points from a coding and development perspective.
+  * A good starting point is looking at [Scopes development procedures](../tutorials/scope-development-procedures.html). This provides steps for creating a scope project in the Ubuntu SDK, building it and running it on the desktop and devices.
+  * Next, you can check out the [scopes tutorials](../tutorials/index.html). They provide working examples and discuss key points from a coding and development perspective.
   * Since scopes can do so much more, you may want to have a look at the [In-Depth Scopes Developer Guide](https://developer.ubuntu.com/api/scopes/cpp/development/index/).
-  * And of course, you need the scopes [API reference docs](../api.md).
-
-
-
-
-
+  * And of course, you need the scopes [API reference docs](../api.html).

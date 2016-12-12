@@ -1,7 +1,8 @@
+---
+title: "Scopes - cookbook"
+---
 
-
-
-
+# Scopes - cookbook
 
 
 ## General Scope Development
@@ -19,8 +20,3 @@
 
 If you could not find an answer to your question here, you can ask the
 thousands of Ubuntu users and developers on Ask Ubuntu.
-
-
-
-
-

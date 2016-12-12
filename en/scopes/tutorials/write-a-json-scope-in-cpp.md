@@ -1,10 +1,9 @@
+---
+title: "Scopes tutorials - write a scope in C+ for JSON data"
+table_of_contents: true
+---
 
-
-
-
-
-
-# Write a scope in C++ for JSON data
+# Scopes tutorials - write a scope in C+ for JSON data
 
 ## SoundCloud tutorial
 
@@ -16,27 +15,27 @@ also integrate with system-wide user accounts (email, social networks…), split
 your content into categories and aggregate into each others (for example, a
 “shopping” scope aggregating results from several store scopes).
 
-In this tutorial, you will learn how to write a scope in C++ for SoundCloud,
-using the Ubuntu SDK. For this example, very limited C++ knowledge is actually
+In this tutorial, you will learn how to write a scope in C+ for SoundCloud,
+using the Ubuntu SDK. For this example, very limited C+ knowledge is actually
 required and adapting it to another service exposing a JSON API will be very
 simple.
 
-**Note:** This tutorial should work for Ubuntu 14.04 and later versions. If you want to use the scopes layout tool, you will need at least Ubuntu 14.10.
+**Note**: This tutorial should work for Ubuntu 14.04 and later versions. If you want to use the scopes layout tool, you will need at least Ubuntu 14.10.
 
 ## SDK setup
 
-The SDK provides various templates for different types of applications. C++
+The SDK provides various templates for different types of applications. C+
 scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
 ![](../../../media/45591f2b-6d99-4c68-9ba3-be193e981e79-cms_page_media/110/scope_wizard1-700x435.png)
 
-![](../../../media/db7e3e31-f3ea-481e-ac51-60cdfc48531a-cms_page_media/110/scope_wizard2_bis-700x371.png)
+![](../../../media/scope-tutorial-scope_wizard2_bis-700x371.png)
 
 If you need more help to get started with the SDK, have a look at the [SDKsetup article](../../apps/sdk/tutorials/creating-an-sdk-app-project.md).
 
-**Note:** Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
+**Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ### Testing your scope
 
@@ -49,7 +48,9 @@ then open by itself.
 
 You can get the source code of this tutorial by running
 
+
 $ bzr branch lp:~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson
+
 
 The generated project contains quite a lot of files and we are going to talk
 about the most important ones. One thing to note is that the template already
@@ -83,10 +84,9 @@ A very important file that will allow you to customize and brand your scope
 Our HTTP config: user agent and base API URL. Let’s make our first change by
 changing the apiroot to the SoundCloud API URL.
 
-15
-
-`std::string apiroot {
-``"[https://api.soundcloud.com](https://api.soundcloud.com)"` `};`
+``` C+
+std::string apiroot { "https://api.soundcloud.com" };
+```
 
 Other URL parameters will be added later with the net-cpp library.
 
@@ -94,7 +94,7 @@ Other URL parameters will be added later with the net-cpp library.
 
 [Link to the folder](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/files/head:/include/)
 
-The rest of our C++ headers. As seen below, change the
+The rest of our C+ headers. As seen below, change the
 [client.h](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/include/api/client.h) header to match the
 data structure of the SoundCloud API. You can leave the rest of headers as
 they are.
@@ -102,279 +102,85 @@ they are.
 This is how my Client class now looks like. You can try it by pasting the
 content of the tutorial file into your own :
 
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-32
-
-33
-
-34
-
-35
-
-36
-
-37
-
-38
-
-39
-
-40
-
-41
-
-42
-
-43
-
-44
-
-45
-
-46
-
-47
-
-48
-
-49
-
-50
-
-51
-
-52
-
-53
-
-54
-
-55
-
-56
-
-57
-
-58
-
-59
-
-60
-
-61
-
-62
-
-63
-
-64
-
-65
-
-66
-
-67
-
-68
-
-69
-
-70
-
-71
-
-72
-
-73
-
-74
-
-75
-
-76
-
-77
-
-78
-
-79
-
-80
-
-81
-
-82
-
-83
-
-84
-
-85
-
-86
-
-87
-
-88
-
-89
-
-90
-
-91
-
-92
-
-93
-
-94
-
-95
-
-`class` `Client {`
-
-` ``public``:`
-
-` ``/**`
-
-` ``* Our Artist object.`
-
-` ``*/`
-
-` ``struct` `Artist {`
-
-` ``unsigned ``int` `id;`
-
-` ``std::string username;`
-
-` ``std::string avatar_url;`
-
-` ``};`
-
-` ``/**`
-
-` ``* Track info, including the artist.`
-
-` ``*/`
-
-` ``struct` `Track {`
-
-` ``unsigned ``int` `id;`
-
-` ``std::string title;`
-
-` ``std::string uri;`
-
-` ``std::string artwork_url;`
-
-` ``std::string stream_url;`
-
-` ``std::string description;`
-
-` ``std::string genre;`
-
-` ``Artist artist;`
-
-` ``};`
-
-` ``/**`
-
-` ``* A list of Track objects.`
-
-` ``*/`
-
-` ``typedef` `std::deque<Track> TrackList;`
-
-` ``/**`
-
-` ``* Track results.`
-
-` ``*/`
-
-` ``struct` `TrackRes {`
-
-` ``TrackList tracks;`
-
-` ``};`
-
-` ``Client(Config::Ptr config);`
-
-` ``virtual` `~Client() = ``default``;`
-
-` ``/**`
-
-` ``* Get the track list for a query`
-
-` ``*/`
-
-` ``virtual` `TrackRes tracks(``const` `std::string &query);`
-
-` ``/**`
-
-` ``* Cancel any pending queries (this method can be called from a different
-thread)`
-
-` ``*/`
-
-` ``virtual` `void` `cancel();`
-
-` ``virtual` `Config::Ptr config();`
-
-`protected``:`
-
-` ``void` `get(``const` `core::net::Uri::Path &path,`
-
-` ``const` `core::net::Uri::QueryParameters &parameters,`
-
-` ``QJsonDocument &root);`
-
-` ``/**`
-
-` ``* Progress callback that allows the query to cancel pending HTTP
-requests.`
-
-` ``*/`
-
-` ``core::net::http::Request::Progress::Next progress_report(`
-
-` ``const` `core::net::http::Request::Progress& progress);`
-
-` ``/**`
-
-` ``* Hang onto the configuration information`
-
-` ``*/`
-
-` ``Config::Ptr config_;`
-
-` ``/**`
-
-` ``* Thread-safe cancelled flag`
-
-` ``*/`
-
-` ``std::atomic<``bool``> cancelled_;`
-
-`};`
+``` C+
+class Client {
+
+ public:
+
+ /**
+ * Our Artist object.
+ */
+
+ struct Artist {
+     unsigned int id;
+     std::string username;
+     std::string avatar_url;
+ };
+
+ /**
+ * Track info, including the artist.
+ */
+
+ struct Track {
+     unsigned int id;
+     std::string title;
+     std::string uri;
+     std::string artwork_url;
+     std::string stream_url;
+     std::string description;
+     std::string genre;
+     Artist artist;
+ };
+
+ /**
+ * A list of Track objects.
+ */
+ typedef std::deque<Track> TrackList;
+
+ /**
+ * Track results.
+ */
+ struct TrackRes {
+     TrackList tracks;
+ };
+
+ Client(Config::Ptr config);
+ virtual ~Client() = default;
+
+ /**
+ * Get the track list for a query
+ */
+ virtual TrackRes tracks(const std::string &query);
+
+ /**
+ * Cancel any pending queries (this method can be called from a different thread)
+ */
+ virtual void cancel();
+ virtual Config::Ptr config();
+
+protected:
+     void get(const core::net::Uri::Path &path,
+     const core::net::Uri::QueryParameters &parameters,
+     QJsonDocument &root);
+
+ /**
+ * Progress callback that allows the query to cancel pending HTTP
+requests.
+ */
+ core::net::http::Request::Progress::Next progress_report(
+ const core::net::http::Request::Progress& progress);
+
+ /**
+ * Hang onto the configuration information
+ */
+ Config::Ptr config_;
+
+ /**
+ * Thread-safe cancelled flag
+ */
+ std::atomic<bool> cancelled_;
+};
+```
 
 ### src/api/client.cpp
 
@@ -393,7 +199,7 @@ the entry point API the client uses to interact with the scope.
   * It implements start and stop methods. Many scopes can leave these unmodified, and this example does as well.
   * It also implements two key methods: search and preview. These methods often do not need to be modified and they are not modified in this example. However, they call critical methods that do need to be implemented in every scope, as discussed below.
 
-**Note**: You may find it useful to check out the ScopeBase class declaration (its API) in the corresponding header file: include/scope/scope.h. The header file is a great way to understand C++ classes because their API is declared without any additional implementation code, making it easy to understand.
+**Note**: You may find it useful to check out the ScopeBase class declaration (its API) in the corresponding header file: include/scope/scope.h. The header file is a great way to understand C+ classes because their API is declared without any additional implementation code, making it easy to understand.
 
 **Tip**: Check out the [Unity 8 Scope API reference docs](https://developer.ubuntu.com/api/scopes/cpp/development/) during this tutorial if you want a deeper understanding of specific classes.
 
@@ -415,13 +221,13 @@ returns them as a reply to the client:
   * Sends the query to the API client
   * Creates search result categories (for example with different layouts : grid/carousel)
   * Combines each search result with its category (creating CategorisedResult objects)
-  * Pushes categorised results into the reply object for display by the client
+  * Pushes categorized results into the reply object for display by the client
 
 Much of the coding work is done in the run method, and our changes here will
 be minimal.
 
 Check out the SearchQueryBase class declaration (its API) in the corresponding
-header file: include/scope/query.h.
+header file: `include/scope/query.h`.
 
 ### src/scope/preview.cpp
 
@@ -439,7 +245,7 @@ the preview phase. It:
   * Receives a reply object and pushes the widgets and layouts onto it for use by the client
 
 Check out the SearchPreviewBase class declaration (its API) in the
-corresponding header file: include/scope/preview.h.
+corresponding header file: `include/scope/preview.h`.
 
 For a list of Preview Widgets and documentation, see [this page](https://developer.ubuntu.com/api/scopes/cpp/development/previewwidgets/).
 
@@ -464,74 +270,36 @@ example, let’s assume it’s a good starting point for our users. Modify the
 so that it looks like this, or simply paste the content of the tutorial file
 into your own :
 
-60
+``` C+
+void Query::run(sc::SearchReplyProxy const& reply) {
 
-61
+ try {
+     // Start by getting information about the query
+     const sc::CannedQuery &query(sc::SearchQueryBase::query());
 
-62
+     // Trim the query string of whitespace
+     string query_string = alg::trim_copy(query.query_string());
 
-63
+     Client::TrackRes trackslist;
 
-64
+     if (query_string.empty()) {
 
-65
+         // If the string is empty, provide a specific one
+         trackslist = client_.tracks("blur cover");
 
-66
+     } else {
 
-67
+         // otherwise, use the query string
+         trackslist = client_.tracks(query_string);
 
-68
+     }
 
-69
-
-70
-
-71
-
-72
-
-73
-
-74
-
-75
-
-76
-
-`void` `Query::run(sc::SearchReplyProxy ``const``& reply) {`
-
-` ``try` `{`
-
-` ``// Start by getting information about the query`
-
-` ``const` `sc::CannedQuery &query(sc::SearchQueryBase::query());`
-
-` ``// Trim the query string of whitespace`
-
-` ``string query_string = alg::trim_copy(query.query_string());`
-
-` ``Client::TrackRes trackslist;`
-
-` ``if` `(query_string.empty()) {`
-
-` ``// If the string is empty, provide a specific one`
-
-` ``trackslist = client_.tracks(``"blur cover"``);`
-
-` ``} ``else` `{`
-
-` ``// otherwise, use the query string`
-
-` ``trackslist = client_.tracks(query_string);`
-
-` ``}`
-
-`(...)`
+(...)
+```
 
 ## Generating search results
 
-Let’s move on to [api/client.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/api/client.cpp)
-to get some results from SoundCloud…
+Let’s move on to [api/client.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/api/client.cpp) to get some results from SoundCloud…
 
 net-cpp is the simple networking library we are going to use to query the API.
 You can, however, replace it and use any other networking library to suit your
@@ -543,182 +311,70 @@ the content of the tutorial file into your own, or follow these steps.
 The base URI is pulled from our config header, we just need to add the rest of
 our path and parameters :
 
-60
+``` C+
+get( { "tracks.json"}, { { "client_id", "apigee" }, { "q", query } }, root);
+// https://api.soundcloud.com/tracks.json?client_id=apigee&q=<query>
+```
 
-61
-
-`get( { ``"tracks.json"``}, { { ``"client_id"``, ``"apigee"` `}, { ``"q"``,
-query } }, root);`
-
-`// [https://api.soundcloud.com/tracks.json?client_id=apigee&q=<query](https://api.soundcloud.com/tracks.json?client_id=apigee&q=%3Cquery)>`
-
-**Note about client_id:** if you wish to distribute a SoundCloud scope, you will need to register your own API key at [SoundCloud Developers](https://developers.soundcloud.com/) (it’s free and takes 5 minutes). In the above sample, I’m using their example key.
+**Note**: About `client_id`: if you wish to distribute a SoundCloud scope, you will need to register your own API key at [SoundCloud Developers](https://developers.soundcloud.com/) (it’s free and takes 5 minutes). In the above sample, I’m using their example key.
 
 Then, we need to iterate over each result present in our root JSON object and
 extract what we need. Here is our complete method:
 
-54
-
-55
-
-56
-
-57
-
-58
-
-59
-
-60
-
-61
-
-62
-
-63
-
-64
-
-65
-
-66
-
-67
-
-68
-
-69
-
-70
-
-71
-
-72
-
-73
-
-74
-
-75
-
-76
-
-77
-
-78
-
-79
-
-80
-
-81
-
-82
-
-83
-
-84
-
-85
-
-86
-
-87
-
-88
-
-89
-
-90
-
-91
-
-92
-
-93
-
-94
-
-95
-
-`Client::TrackRes Client::tracks(``const` `string& query) {`
-
-` ``QJsonDocument root;`
-
-` ``// Build a URI and get the contents.`
-
-` ``// The fist parameter forms the path part of the URI.`
-
-` ``// The second parameter forms the CGI parameters.`
-
-` ``get( { ``"tracks.json"``}, { { ``"client_id"``, ``"apigee"` `}, { ``"q"``,
-query } }, root);`
-
-` ``// [https://api.soundcloud.com/tracks.json?client_id=apigee&q=<query](https://api.soundcloud.com/tracks.json?client_id=apigee&q=%3Cquery)>`
-
-` ``// My “list of tracks” object (as seen in the corresponding header file)`
-
-` ``TrackRes result;`
-
-` ``QVariantList variant = root.toVariant().toList();`
-
-` ``for` `(``const` `QVariant &i : variant) {`
-
-` ``QVariantMap item = i.toMap();`
-
-` ``QVariantMap user = item[``"user"``].toMap();`
-
-` ``string art;`
-
-` ``// If the track artwork is empty, we use the artist picture`
-
-` ``if` `(item[``"artwork_url"``].toString().toStdString() == ``""``) {`
-
-` ``art = user[``"avatar_url"``].toString().toStdString();`
-
-` ``} ``else` `{`
-
-` ``art = item[``"artwork_url"``].toString().toStdString();`
-
-` ``}`
-
-` ``cout << item[``"title"``].toString().toStdString();`
-
-` ``// We add each result to our list`
-
-` ``result.tracks.emplace_back(`
-
-` ``Track {`
-
-` ``item[``"id"``].toUInt(), item[``"title"``].toString().toStdString(),`
-
-` ``item[``"uri"``].toString().toStdString(), art,`
-
-` ``item[``"stream_url"``].toString().toStdString(),`
-
-` ``item[``"description"``].toString().toStdString(),`
-
-` ``item[``"genre"``].toString().toStdString(),`
-
-` ``Artist {`
-
-` ``user[``"id"``].toUInt(),`
-
-` ``user[``"username"``].toString().toStdString(),`
-
-` ``user[``"avatar_url"``].toString().toStdString()`
-
-` ``}`
-
-` ``}`
-
-` ``);`
-
-` ``}`
-
-` ``return` `result;`
-
-`}`
+``` C+
+Client::TrackRes Client::tracks(const string& query) {
+
+ QJsonDocument root;
+
+ // Build a URI and get the contents.
+ // The fist parameter forms the path part of the URI.
+ // The second parameter forms the CGI parameters.
+ get( { "tracks.json"}, { { "client_id", "apigee" }, { "q", query } }, root);
+
+ // https://api.soundcloud.com/tracks.json?client_id=apigee&q=<query>
+ // My “list of tracks” object (as seen in the corresponding header file)
+
+ TrackRes result;
+
+ QVariantList variant = root.toVariant().toList();
+
+ for (const QVariant &i : variant) {
+
+     QVariantMap item = i.toMap();
+     QVariantMap user = item["user"].toMap();
+     string art;
+
+     // If the track artwork is empty, we use the artist picture
+     if (item["artwork_url"].toString().toStdString() == "") {
+         art = user["avatar_url"].toString().toStdString();
+     } else {
+         art = item["artwork_url"].toString().toStdString();
+     }
+
+     cout << item["title"].toString().toStdString();
+
+     // We add each result to our list
+     result.tracks.emplace_back(
+
+         Track {
+             item["id"].toUInt(), item["title"].toString().toStdString(),
+             item["uri"].toString().toStdString(), art,
+             item["stream_url"].toString().toStdString(),
+             item["description"].toString().toStdString(),
+             item["genre"].toString().toStdString(),
+
+             Artist {
+                 user["id"].toUInt(),
+                 user["username"].toString().toStdString(),
+                 user["avatar_url"].toString().toStdString()
+             }
+         }
+     );
+ }
+
+ return result;
+}
+```
 
 That’s it. We have the data we need and are going to see how to display it the
 way we want.
@@ -736,115 +392,49 @@ CategoryRenderers are created from JSON objects. These are created as raw
 strings. The JSON objects have two fields of immediate interest: template and
 components.
 
-Modify the categories on
-[src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp) to
-resemble this:
+Modify the categories on [src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp) to resemble this:
 
-30
+``` C+
+const static string TRACKS_TEMPLATE =
 
-31
+ R"(
+     {
+         "schema-version": 1,
+         "template": {
+         "category-layout": "grid",
+         "card-layout": "horizontal",
+         "card-size": "large"
+     },
 
-32
+     "components": {
 
-33
+         "title": "title",
+         "art" : {
+             "field": "art"
+         },
 
-34
+         "subtitle": "artist"
+        }
+     }
+ )";
+```
 
-35
+This will display a simple list of results, it’s a category style used in many scopes, working well with many types of content. You can have a look at all your options in the [unity::scopes::CategoryRenderer doc](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategoryRenderer/).
 
-36
-
-37
-
-38
-
-39
-
-40
-
-41
-
-42
-
-43
-
-44
-
-45
-
-46
-
-47
-
-`const` `static` `string TRACKS_TEMPLATE =`
-
-` ``R"(`
-
-` ``{`
-
-` ``"schema-version"``: 1,`
-
-` ``"template"``: {`
-
-` ``"category-layout"``: ``"grid"``,`
-
-` ``"card-layout"``: ``"horizontal"``,`
-
-` ``"card-size"``: ``"large"`
-
-` ``},`
-
-` ``"components"``: {`
-
-` ``"title"``: ``"title"``,`
-
-` ``"art"` `: {`
-
-` ``"field"``: ``"art"`
-
-` ``},`
-
-` ``"subtitle"``: ``"artist"`
-
-` ``}`
-
-` ``}`
-
-` ``)";`
-
-This will display a simple list of results, it’s a category style used in many
-scopes, working well with many types of content. You can have a look at all
-your options in the [unity::scopes::CategoryRenderer doc](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategoryRenderer/).
-
-Now, in the try{} part of the Query::run method, we can register our category
+Now, in the `try{}` part of the `Query::run` method, we can register our category
 on the reply object :
 
-77
+``` C+
+// Register a category for tracks
+auto tracks_cat = reply->register_category("tracks", "", "",
+    sc::CategoryRenderer(TRACKS_TEMPLATE));
 
-78
+// register_category(arbitrary category id, header title, header icon, template)
+// In this case, since this is the only category used by our scope,
+// it doesn’t need to display a header title, we leave it as a blank string.
+```
 
-79
-
-80
-
-81
-
-82
-
-`// Register a category for tracks`
-
-`auto tracks_cat = reply->register_category(``"tracks"``, ``""``, ``""``,`
-
-` ``sc::CategoryRenderer(TRACKS_TEMPLATE));`
-
-`// register_category(arbitrary category id, header title, header icon,
-template)`
-
-`// In this case, since this is the only category used by our scope,`
-
-`// it doesn’t need to display a header title, we leave it as a blank string.`
-
-# Results
+## Results
 
 For this SoundCloud scope to be useful, we want each result to have at least:
 
@@ -864,93 +454,42 @@ list, and create a [unity::scope::CategorisedResult](https://developer.ubuntu.co
 Paste the content of the tutorial file into your own, or reproduce the
 following lines :
 
-85
+```
+for (const auto &;track : trackslist.tracks) {
 
-86
+     // Use the tracks category
+     sc::CategorisedResult res(tracks_cat);
 
-87
+     // We must have a URI
+     res.set_uri(track.uri);
 
-88
+     // Our result also needs a track title
+     res.set_title(track.title);
 
-89
+     // Set the rest of the attributes, art, artist, etc.
+     res.set_art(track.artwork_url);
+     res["artist"] = track.artist.username;
+     res["stream"] = track.stream_url;
 
-90
+     // Push the result
+     if (!reply->push(res)) {
 
-91
+         // If we fail to push, it means the query has been cancelled.
+         return;
 
-92
-
-93
-
-94
-
-95
-
-96
-
-97
-
-98
-
-99
-
-100
-
-101
-
-102
-
-103
-
-104
-
-105
-
-106
-
-`for` `(``const` `auto &;track : trackslist.tracks) {`
-
-` ``// Use the tracks category`
-
-` ``sc::CategorisedResult res(tracks_cat);`
-
-` ``// We must have a URI`
-
-` ``res.set_uri(track.uri);`
-
-` ``// Our result also needs a track title`
-
-` ``res.set_title(track.title);`
-
-` ``// Set the rest of the attributes, art, artist, etc.`
-
-` ``res.set_art(track.artwork_url);`
-
-` ``res[``"artist"``] = track.artist.username;`
-
-` ``res[``"stream"``] = track.stream_url;`
-
-` ``// Push the result`
-
-` ``if` `(!reply->push(res)) {`
-
-` ``// If we fail to push, it means the query has been cancelled.`
-
-` ``return``;`
-
-` ``}`
-
-`}`
+     }
+}
+```
 
 As you can see, you can use specific methods for some fields (set_art,
 set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](../../../media/cd8a41c9-169c-421e-82b5-3b8f1c6d4e1b-cms_page_media/110/soundcloud_preview1-300x264.png)
+![](../../../media/scope-tutorial-soundcloud_preview1-300x264.png)
 
 The preview needs to generate widgets and connect their fields to the data
-fields in the CategorisedResult.
+fields in the `CategorisedResult`.
 
 It also should generate layouts to handle different display environments. The
 idea is that only the client knows the layout context. The client thinks of
@@ -975,54 +514,56 @@ This example uses three types of Preview Widgets:
   * actions: used to provide button text “Open” and the URI opened when the user clicks the preview
 
 Here’s how our example creates a header widget named w_header on the
-Preview::run method of
+`Preview::run` method of
 [src/scope/preview.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
 
-40
 
-`sc::PreviewWidget w_header(``"headerId"``, ``"header"``);`
+``` C+
+sc::PreviewWidget w_header("headerId", "header");
+```
 
   * The first parameter is an arbitrary ID. We use these IDs to assign the widget to different layouts, as shown later.
   * The second parameter is the Preview Widget type, one of the set of pre-defined types.
 
 After widget creation, the widget fields are populated with data from the
-CategorisedResult being processed by the client. Our w_header widget’s
+`CategorisedResult` being processed by the client. Our `w_header` widget’s
 standard fields: title and subtitle are populated.
 
 Two methods are available to put data into widget fields:
 
-  * add_attribute_value(FIELD, VALUE): You can use this method to simply populate data you have on hand into the widget field
-  * add_attribute_mapping(FIELD, CR_FIELD): Use this method to populate data from the CategorisedResult being processed into the widget field.
+  * `add_attribute_value(FIELD, VALUE)`: You can use this method to simply populate data you have on hand into the widget field
+  * `add_attribute_mapping(FIELD, CR_FIELD)`: Use this method to populate data from the `CategorisedResult` being processed into the widget field.
 
-In our example, widget data is derived from the current CategorisedResult, and
+In our example, widget data is derived from the current `CategorisedResult`, and
 so add_attribute_mapping is used.
 
 First, let’s map the w_header widget’s title field (the first parameter) to
-the title field in the current CategorisedResult (the second parameter):
+the title field in the current `CategorisedResult` (the second parameter):
 
-42
-
-`w_header.add_attribute_mapping(``"title"``, ``"title"``);`
+``` C+
+w_header.add_attribute_mapping("title", "title");
+```
 
 The next example is a little more interesting because we populate a widget
-field from a CategorisedResult field that is not part of the CategoryRenderer.
+field from a `CategorisedResult` field that is not part of the `CategoryRenderer`.
 The field is artist. We added the artist key and value directly to our
-CategorisedResult for each result previously. So this example shows how to
+`CategorisedResult` for each result previously. So this example shows how to
 display data in your preview even when the data is not displayed in results
 phase and is custom to the scope:
 
-43
 
-`w_header.add_attribute_mapping(``"subtitle"``, ``"artist"``);`
+``` C+
+w_header.add_attribute_mapping("subtitle", "artist");
+```
 
-Looking back at the query, where the CategorisedResults were created, we see
-again how the artist data was made available to the CategorisedResult:
+Looking back at the query, where the `CategorisedResults` were created, we see
+again how the artist data was made available to the `CategorisedResult`:
 
-84
+``` C+
+res["artist"] = track.artist.username;
+```
 
-`res[``"artist"``] = track.artist.username;`
-
-As a result of that, each CategorisedResult has an “artist” field populated
+As a result of that, each `CategorisedResult` has an “artist” field populated
 from the search result. And in this preview phase, we push that artist data
 into the w_header widget’s predefined subtitle field.
 
@@ -1031,97 +572,42 @@ widgets.
 
 Here is the result of our changes :
 
-39
+``` C+
+// Define the header section
+sc::PreviewWidget w_header("headerId", "header");
 
-40
+// It has title and a subtitle properties
+w_header.add_attribute_mapping("title", "title");
+w_header.add_attribute_mapping("subtitle", "artist");
 
-41
+// Define the image section
+sc::PreviewWidget w_art("imageId", "image");
 
-42
+// It has a single source property, mapped to the result's art property
+w_art.add_attribute_mapping("source", "art");
 
-43
+// Define the actions section
+sc::PreviewWidget w_actions("actionsId", "actions");
 
-44
+// Actions are built using tuples with an id, a label and a URI
+sc::VariantBuilder builder;
 
-45
+builder.add_tuple({
 
-46
+    {"id", sc::Variant("open")},
+    {"label", sc::Variant("Open")},
+    {"uri", result["uri"]}
 
-47
+});
 
-48
-
-49
-
-50
-
-51
-
-52
-
-53
-
-54
-
-55
-
-56
-
-57
-
-58
-
-59
-
-60
-
-61
-
-62
-
-`// Define the header section`
-
-`sc::PreviewWidget w_header(``"headerId"``, ``"header"``);`
-
-`// It has title and a subtitle properties`
-
-`w_header.add_attribute_mapping(``"title"``, ``"title"``);`
-
-`w_header.add_attribute_mapping(``"subtitle"``, ``"artist"``);`
-
-`// Define the image section`
-
-`sc::PreviewWidget w_art(``"imageId"``, ``"image"``);`
-
-`// It has a single source property, mapped to the result's art property`
-
-`w_art.add_attribute_mapping(``"source"``, ``"art"``);`
-
-`// Define the actions section`
-
-`sc::PreviewWidget w_actions(``"actionsId"``, ``"actions"``);`
-
-`// Actions are built using tuples with an id, a label and a URI`
-
-`sc::VariantBuilder builder;`
-
-`builder.add_tuple({`
-
-` ``{``"id"``, sc::Variant(``"open"``)},`
-
-` ``{``"label"``, sc::Variant(``"Open"``)},`
-
-` ``{``"uri"``, result[``"uri"``]}`
-
-`});`
-
-`w_actions.add_attribute_value(``"actions"``, builder.end());`
+w_actions.add_attribute_value("actions", builder.end());
+```
 
 And now they can be pushed to the client with the reply object:
 
-61
-
-`reply->push( { w_art, w_header, w_actions });`
+``` C+
+reply->push( { w_art, w_header, w_actions });
+```
 
 The widgets are created, populated, and pushed. But, the client also needs to
 know where to put the widgets, and even how to arrange the widgets nicely in
@@ -1133,9 +619,9 @@ take a look at layouts.
 Our example defines two layouts: one with a single column and one with two.
 These are declared like this:
 
-27
-
-`sc::ColumnLayout layout1col(1), layout2col(2);`
+``` C+
+sc::ColumnLayout layout1col(1), layout2col(2);
+```
 
 **Tip**: Check out ColumnLayout docs [here](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.ColumnLayout/).
 
@@ -1145,33 +631,29 @@ situations (like portrait mode) and a two-column layout may be appropriate for
 wide screen situations (like landscape mode).
 
 Now, as you can see in the tutorial file
-[src/scope/preview.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp),
-we need to define where our three widgets are going to go in each of these
+[src/scope/preview.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp), we need to define where our three widgets are going to go in each of these
 layouts.
 
 Naturally, in a single-column layout, all widgets have to go into that single
 column:
 
-30
-
-`layout1col.add_column( { ``"imageId"``, ``"headerId"``, ``"actionsId"``});`
+``` C+
+layout1col.add_column( { "imageId", "headerId", "actionsId"});
+```
 
 In the two-column layout, we decide to add the image to the first column, the
 header and actions to the second column:
 
-33
-
-34
-
-`layout2col.add_column( { ``"imageId"` `});`
-
-`layout2col.add_column( { ``"headerId"``, ``"actionsId"` `});`
+``` C+
+layout2col.add_column( { "imageId" });
+layout2col.add_column( { "headerId", "actionsId" });
+```
 
 Now, we need to register the layouts into the reply object, as follows:
 
-37
-
-`reply->;register_layout({layout1col, layout2col});`
+``` C+
+reply->;register_layout({layout1col, layout2col});
+```
 
 ## Customization and branding
 
@@ -1179,62 +661,25 @@ By default, your scope looks like this :
 
 ![](../../../media/718a1f60-d667-44bf-8e72-3ea7f37881d5-cms_page_media/110/soundcloud_unbranded-180x300.png)
 
-Many display options can be changed in **data/<appid>.ini**. Here is my best
+Many display options can be changed in `data/<appid>.ini`. Here is my best
 effort at branding this scope, most of the options are self-explicit :
 
-1
+``` C+
+[ScopeConfig]
+DisplayName = SoundCloud
+Description = This is a SoundCloud scope doing SoundCloud things
+Art = screenshot.png
+Author = Firstname Lastname
+Icon = icon.png
 
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-`[ScopeConfig]`
-
-`DisplayName = SoundCloud`
-
-`Description = This is a SoundCloud scope doing SoundCloud things`
-
-`Art = screenshot.png`
-
-`Author = Firstname Lastname`
-
-`Icon = icon.png`
-
-`[Appearance]`
-
-`PageHeader.Logo = logo.png`
-
-`PageHeader.background = color:///#FFFFFF`
-
-`PageHeader.ForegroundColor = #F8500F`
-
-`BackgroundColor = #FFFFFF`
-
-`PageHeader.DividerColor = #F8500F`
-
-`PreviewButtonColor = #F8500F`
+[Appearance]
+PageHeader.Logo = logo.png
+PageHeader.background = color:///#FFFFFF
+PageHeader.ForegroundColor = #F8500F
+BackgroundColor = #FFFFFF
+PageHeader.DividerColor = #F8500F
+PreviewButtonColor = #F8500F
+```
 
 I’ve also found [this SoundCloudlogo](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/download/head:/logo.png-20141029140332-sw5hgiwm8dimr0pf-16/logo.png) to
 replace the one provided by the template. Download it and save it as
@@ -1243,12 +688,12 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](../../../media/df8e0a1a-81df-46a5-9812-025d9d341687-cms_page_media/110/soundcloud_branded-180x300.png)
+![](../../../media/scope-tutorial-soundcloud_branded-180x300.png)
 ![](../../../media/786c12ef-12b2-4e18-b74f-620dbeedb1ce-cms_page_media/110/soundcloud_branded2-180x300.png)
 
-Have a look at all the available [customizationoptions](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/) and try to make your scope shine!
+Have a look at all the available [customization options](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/) and try to make your scope shine!
 
-**That’s it, our SoundCloud scope is finished. You can launch it by pressing the Start button in the SDK sidebar, see if everything compiles and starts correctly at the bottom of the editor, and try your new scope!**
+That’s it, our SoundCloud scope is finished. You can launch it by pressing the Start button in the SDK sidebar, see if everything compiles and starts correctly at the bottom of the editor, and try your new scope!
 
 ## Summary
 
@@ -1270,9 +715,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-**Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/en/publish/) to get your scope on the store in minutes.**
-
-
-
-
-
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/en/publish/) to get your scope on the store in minutes.
