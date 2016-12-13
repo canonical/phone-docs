@@ -217,9 +217,7 @@ Defining either one is simple, just specify the name of your fixture class and
 a name for the test:
 
 ``` C+
-TEST_F(TestScope, empty_search_string)
-{
-}
+TEST_F(TestScope, empty_search_string) { }
 ```
 
 For a parameterized test, the definition is similar:

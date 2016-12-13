@@ -48,13 +48,10 @@ The image preview of your scope. This field is called Art because it’s using
 the same naming metaphor scopes results use. It should be a screenshot of your
 scope in action.
 
-To take a screenshot of your scope running on a phone or in an emulator, you
-can use the phablet-screenshot command line tool (`phablet-screenshot
-<filename>.png`), `Shift+Ctrl+P` from QtCreator or pressing `Volume up` + `Volume
-down` on the device.
+To take a screenshot of your scope running on a phone or in an emulator, you can use the phablet-screenshot command line tool (`phablet-screenshot <filename>.png`), `Shift+Ctrl+P` from QtCreator or pressing `Volume up` + `Volume down` on the device.
 
 ![](../../../media/602d58b6-31d2-4702-ab9a-9260ff351b15-cms_page_media/147/screenshot-166x300.jpg)
-![](../../../media/ca8f46d9-cbdf-4bfc-ab42-f0ef6a9f24b3-cms_page_media/147/scope_prev-180x300.png)
+![](../../../media/scope-tutorial-scope_prev-180x300.png)
 
 ### Icon
 

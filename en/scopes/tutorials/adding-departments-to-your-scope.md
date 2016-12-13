@@ -76,8 +76,10 @@ departments methods.
 
 The last thing needed is registering the root department on the reply object.
 
+```
     // Register the root department on the reply
     reply->register_departments(all_depts);
+```
 
 If you try to run the scope at this point, you should see a new piece of UI at
 the top of your results!
