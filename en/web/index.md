@@ -1,8 +1,6 @@
-
-
-
-
-
+---
+title: "Web apps"
+---
 
 # Web apps
 
@@ -28,8 +26,3 @@ goes for your web applications.
   * **Integration with Ubuntu/Unity shell**: Found as an app, launched as an app, displayed as app
   * **Click packaged** and distributed through the **Ubuntu Software Store**
   * **Runs on Oxide**, a state-of-the-art web engine based on Blink/Chromium, optimized for Ubuntu
-
-
-
-
-

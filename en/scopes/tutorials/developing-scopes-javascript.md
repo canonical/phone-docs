@@ -365,5 +365,4 @@ preview: function(result, action_metadata) {
 
 ## Package creation
 
-The SDK IDE handles all the packaging process, simply follow [these instructions](https://developer.ubuntu.com/en/scopes/tutorials/prepare-your-scope-for-publication/) to ensure your scope will look great once installed on
-your phone for testing or when published in the store!
+The SDK IDE handles all the packaging process, simply follow [these instructions](https://developer.ubuntu.com/en/scopes/tutorials/prepare-your-scope-for-publication/) to ensure your scope will look great once installed on your phone for testing or when published in the store.

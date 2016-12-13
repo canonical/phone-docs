@@ -97,7 +97,7 @@ navigation:
 
     children:
       - title: Installing Ubuntu
-        location: devices/installing-ubuntu-for-devices.md
+        location: devices/installing-devices.md
 
       - title: Supported and reference devices
         location: devices/devices.md
@@ -112,7 +112,27 @@ navigation:
         location: devices/reinstalling-android.md
 
       - title: OEM
-        location: devices/oem.md
+        location: devices/oem/index.md
+
+        children:
+          - title: Architecture
+            location: devices/oem/architecture.md
+          - title: Usage
+            location: devices/oem/usage.md
+          - title: Customize audio
+            location: devices/oem/customize-audio.md
+          - title: Customize visuals
+            location: devices/oem/customize-visuals.md
+          - title: Customize behaviors
+            location: devices/oem/customize-behaviour.md
+          - title: Preinstalling content
+            location: devices/oem/preinstalls.md
+          - title: Core tests
+            location: devices/oem/core.md
+          - title: API test
+            location: devices/oem/api.md
+          - title: dconf details
+            location: devices/oem/implementation.md
 
   - title: Platform
     location: platform/index.md
@@ -234,43 +254,17 @@ navigation:
           - title: Tutorials - developing in JavaScript
             location: scopes/tutorials/developing-scopes-javascript.md
 
-  - title: Ubuntu for devices
 
-    children:
-      - title: OEM
-
-        children:
-          - title: API
-            location: ubuntu-for-devices/oem/api.md
-          - title: Architecture
-            location: ubuntu-for-devices/oem/architecture.md
-          - title: Core
-            location: ubuntu-for-devices/oem/core.md
-          - title: Customize audio
-            location: ubuntu-for-devices/oem/customize-audio.md
-          - title: Customize behavious
-            location: ubuntu-for-devices/oem/customize-behaviour.md
-          - title: Customize visuals
-            location: ubuntu-for-devices/oem/customize-visuals.md
-          - title: Implementation
-            location: ubuntu-for-devices/oem/implementation.md
-          - title: Pre-installs
-            location: ubuntu-for-devices/oem/preinstalls.md
-          - title: Usage
-            location: ubuntu-for-devices/oem/usage.md
-          - title:
-            location: ubuntu-for-devices/oem/
-
-  - title: Web
+  - title: Web apps
     location: web/index.md
 
     children:
       - title: Tutorials
         location: web/tutorials/index.md
 
-      - title: Ubuntu web apps guide
-        location: web/ubuntu-webapps-guide.md
-
         children:
-          - title: Web app tutorial
+          - title: Tutorial - create your first web app
             location: web/tutorials/web-app-tutorial.md
+
+      - title: Guide
+        location: web/ubuntu-webapps-guide.md

@@ -1,12 +1,10 @@
+---
+title: "Ubuntu phone documentation"
+---
 
+# Ubuntu phone documentation
 
-
-
-
-
-# Ubuntu phone development
-
-## Get started
+## Getting started
 
 Here you can install everything needed to get developing apps and scopes for
 Ubuntu.
@@ -16,35 +14,18 @@ Ubuntu.
 
 **Tip**: A device is not required: you can develop and run apps and scopes using the Ubuntu emulator right in your Ubuntu desktop. For more info, see [Ubuntu SDK](platform/sdk/index.md)
 
-![](../media/465794a5-c1fe-4582-80c9-c0fa9363f552-cms_page_media/1141/tel3.png)
+## Pick your adventure - Apps or Scopes
 
-
-
-
-
-## Pick your Ubuntu Phone adventure
-
-### Apps
-
-Mobile and convergent apps written using QML, HTML5 and Cordova, with access
-to a wide range of device and system APIs.
+Build mobile and convergent apps written using QML, HTML5 and Cordova, with access to a wide range of device and system APIs. Or create scopes, dedicated views on the homescreen to find, organize and show a variety of content types, originating on the Internet or the local device.
 
 [Learn more about Apps&nbsp;&rsaquo;](apps/index.md)
-
-### Scopes
-
-Dedicated views on the homescreen to find, organize and show a variety of
-content types, originating on the Internet or the local device.
 
 [Learn more about Scopes&nbsp;&rsaquo;](scopes/index.md)
 
 
-
-
-
 ## The Ubuntu development model
 
-### Frameworks: targetting APIs
+### Frameworks: targeting APIs
 
 Ubuntu applications and scopes are packaged, distributed and deployed using a
 format called `click` packaging. A framework is a set of Ubuntu APIs an app or
@@ -91,8 +72,3 @@ Again the IDE will assist with creating, validating, deploying and installing
 the package.
 
 [Learn how to run apps with the Ubuntu SDK IDE&nbsp;&rsaquo;](apps/sdk/tutorials/running-apps-from-the-sdk.md)
-
-
-
-
-
