@@ -92,13 +92,7 @@ MainView {
     objectName: "mainView"
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "currencyconverter.yourname"
-    /*
-     This property enables the application to change orientation
-     when the device is rotated. The default is false.
-    */
-    //automaticOrientation: true
-    // Removes the old toolbar and enables new features of the new header.
-    useDeprecatedToolbar: false
+
     width: units.gu(100)
     height: units.gu(75)
     property real margins: units.gu(2)
@@ -147,7 +141,7 @@ MainView {
     objectName: "mainView"
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "currencyconverter.yourname"
-   
+
     width: units.gu(100)
     height: units.gu(75)
     property real margins: units.gu(2)
