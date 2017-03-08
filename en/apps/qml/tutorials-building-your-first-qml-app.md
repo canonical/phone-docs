@@ -81,8 +81,8 @@ label inside the main view.
   5. Replace the **Column** component and all of its children, and replace them with the **Page** as shown below, and then save it with `Ctrl+S`:
 
 ``` qml
-import QtQuick 2.0
-import Ubuntu.Components 1.1
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 /*!
     \brief MainView with a Label and Button elements.
 */
@@ -92,13 +92,7 @@ MainView {
     objectName: "mainView"
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "currencyconverter.yourname"
-    /*
-     This property enables the application to change orientation
-     when the device is rotated. The default is false.
-    */
-    //automaticOrientation: true
-    // Removes the old toolbar and enables new features of the new header.
-    useDeprecatedToolbar: false
+
     width: units.gu(100)
     height: units.gu(75)
     property real margins: units.gu(2)
@@ -127,8 +121,8 @@ app for now.
 Now starting from the top of the file, let’s go through the code.
 
 ``` qml
-import QtQuick 2.0
-import Ubuntu.Components 1.1
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 ```
 
 Every QML document consists of two parts: an imports section and an object
@@ -147,13 +141,7 @@ MainView {
     objectName: "mainView"
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "currencyconverter.yourname"
-    /*
-     This property enables the application to change orientation
-     when the device is rotated. The default is false.
-    */
-    //automaticOrientation: true
-    // Removes the old toolbar and enables new features of the new header.
-    useDeprecatedToolbar: false
+
     width: units.gu(100)
     height: units.gu(75)
     property real margins: units.gu(2)
@@ -258,9 +246,9 @@ To use it, we add an additional import statement at the top of the file, so
 that it looks like:
 
 ``` qml
-import QtQuick 2.0
+import QtQuick 2.4
 import QtQuick.XmlListModel 2.0
-import Ubuntu.Components 1.1
+import Ubuntu.Components 1.3
 ```
 
 And then around line 49, add the actual rate exchange fetcher code:
@@ -343,7 +331,7 @@ Let’s first append two import statements at the top of the file, underneath th
 
 ``` qml
 import Ubuntu.Components.ListItems 0.1
-import Ubuntu.Components.Popups 0.1
+import Ubuntu.Components.Popups 1.3
 ```
 
 And then add the following code around line 79:
