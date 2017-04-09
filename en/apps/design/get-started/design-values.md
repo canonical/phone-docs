@@ -4,58 +4,6 @@ Title: Design values
 
 # Design values
 
-App Design Guides
-
-
-##
-
-
--  [Overview](/apps/design/get-started/)
-
--  [Convergence](/apps/design/get-started/convergence)
-
--  [Design philosophy](/apps/design/get-started/design-philosophy)
-
--  [Design values](/apps/design/get-started/design-values)
-
--  [Why design for Ubuntu?](/apps/design/get-started/why-design-for-ubuntu)
-
--  [Design scopes](/apps/design/get-started/design-scopes)
-
--  [Make it Ubuntu](/apps/design/get-started/make-it-ubuntu)
-
-
-##
-
-
--  [Overview](/apps/design/patterns/)
-
--  [Layouts](/apps/design/patterns/layouts)
-
--  [Gestures](/apps/design/patterns/gestures)
-
--  [Navigation](/apps/design/patterns/navigation)
-
-
-##
-
-
--  [Overview](/apps/design/building-blocks/)
-
--  [Header](/apps/design/building-blocks/header)
-
--  [Bottom edge](/apps/design/building-blocks/bottom-edge)
-
--  [List items](/apps/design/building-blocks/list-items)
-
--  [Context menus](/apps/design/building-blocks/context-menus)
-
--  [Selection controls](/apps/design/building-blocks/selection-controls)
-
--  [Scrolling](/apps/design/building-blocks/scrolling)
-
--  [Activity indicators](/apps/design/building-blocks/activity-indicators)
-
 
 This guide is intended to help designers and developers create unique and valuable user experiences.
 ![750w_DesignValues(tablet)_MainImage](https://assets.ubuntu.com/v1/845ca032-750w_DesignValuestablet_MainImage.png)
@@ -72,7 +20,7 @@ This guide is intended to help designers and developers create unique and valuab
 -  [Focus on content ›](#focus-on-content)
 
 
-##All input types supported equally
+## All input types supported equally
 
 
 In order to achieve convergence, the toolkit has adapted all components to work seamlessly across all devices with minimal changes to functionality and visual appearance.
@@ -81,7 +29,7 @@ In order to achieve convergence, the toolkit has adapted all components to work 
 This means that touch, pointer and focus interactions are now mapped to perform similar functions across different devices for a consistent and familiar user experience. No matter what the input method, the UI will respond to the user’s interaction with what they expect to happen automatically.
 
 
-####Use case
+## ## Use case
 
 ![](https://assets.ubuntu.com/v1/18e792e0-750w_Design_Values_AllInputEqualv2.png)
 
@@ -92,13 +40,13 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 [For more details on how a seamless experience can be achieved in your app, see Convergence](/apps/design/get-started/convergence).
 
 
-##Fast and effortless interactions
+## Fast and effortless interactions
 
 
 Allow users to effortlessly move through your app with minimum effort, where it is both natural and logical to them.
 
 
-####Bottom edge
+## ## Bottom edge
 
 ![366w_BottomEdge_AdditonalInfo3 (1)](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
 
@@ -106,7 +54,7 @@ Allow users to effortlessly move through your app with minimum effort, where it 
 The bottom edge allows for a natural progressive swipe from the bottom of the screen. By using touch, clicking on the bottom edge tab with a pointer, or pressing Return when the bottom edge tab is focused to open using keyboard navigation.
 
 
-####Task switcher
+## ## Task switcher
 
 ![366w_DesignValues_TaskSwitcher](https://assets.ubuntu.com/v1/68f23e6f-366w_DesignValues_TaskSwitcher.png)
 
@@ -114,7 +62,7 @@ The bottom edge allows for a natural progressive swipe from the bottom of the sc
 The task switcher allows the user to easily switch between apps or scopes using a right edge swipe. By pushing the pointer against the right edge of the screen, or pressing SUPER+W.
 
 
-##Action placement
+## Action placement
 
 
 Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are placed on the right, and negative actions, such as Delete and Cancel are placed on the left.
@@ -126,7 +74,7 @@ Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are 
 The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.
 
 
-####Negative swipes left
+## ## Negative swipes left
 
 ![366w_ListItems_ContextualActions1 (2)](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-2.png)
 
@@ -134,7 +82,7 @@ The position of positive and negative actions are important to consider when des
 The user swipes left to right to reveals a red deletion option when editing a contact.
 
 
-####Positive swipes right
+## ## Positive swipes right
 
 ![366w_ListItems_ContextualActions2](https://assets.ubuntu.com/v1/0238f83e-366w_ListItems_ContextualActions2.png)
 
@@ -148,7 +96,7 @@ The user swipes right to left to reveal contextual options, such as information 
 Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.
 
 
-##Meaning in colors
+## Meaning in colors
 
 
 The Suru design language associates meanings with certain colours to help the user distinguish between actions.
@@ -163,21 +111,21 @@ Most color blind people have difficulty distinguishing red from green. Don’t u
 Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.
 
 
-####Green
+## ## Green
 ![366w_Overview_MeaningInColoursGreen](https://assets.ubuntu.com/v1/f553758c-366w_Overview_MeaningInColoursGreen.png)
 
 
 Positive actions, such as OK, new, add or call.
 
 
-####Red
+## ## Red
 ![366w_DesignValues_MeaningInColoursRed](https://assets.ubuntu.com/v1/da5eed2d-366w_Overview_MeaningInColoursRed-1.png)
 
 
 Negative and destructive actions, such as delete or block contact.
 
 
-####Blue
+## ## Blue
 
 ![750w_DesignValues_ColourBlue (1)](https://assets.ubuntu.com/v1/388006d3-750w_DesignValues_ColourBlue-1.png)
 
@@ -191,13 +139,13 @@ Blue is an informative colour, it is neither positive or negative. Use blue for 
 For more information on how color is used across the platform see Color palette (coming soon).
 
 
-##Focus on content
+## Focus on content
 
 
 Too much user interface can interfere with content; but too little can make your app difficult to use. By focusing clearly on content many pitfalls can be avoided.
 
 
-##Make it easy to find content
+## Make it easy to find content
 
 
 Allow users to access content easily through navigational methods by using the most appropriate components.
@@ -206,7 +154,7 @@ Allow users to access content easily through navigational methods by using the m
 ![366w_Overview_FocusOnContentDO](https://assets.ubuntu.com/v1/5ddfa12b-366w_Overview_FocusOnContentDO.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-####Do
+## ## Do
 
 
 The header can provide quick access to important actions and navigational options at the top of the screen or window.
@@ -215,7 +163,7 @@ The header can provide quick access to important actions and navigational option
 ![366w_Overview_FocusOnContentDont](https://assets.ubuntu.com/v1/791f58f8-366w_Overview_FocusOnContentDont.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-####Don’t
+## ## Don’t
 
 
 Drawers have low discoverability and can hide important views from the user. Consider using the header or header section instead.

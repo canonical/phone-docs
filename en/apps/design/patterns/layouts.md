@@ -4,58 +4,6 @@ Title: Layouts
 
 # Layouts
 
-App Design Guides
-
-
-##
-
-
--  [Overview](/apps/design/get-started/)
-
--  [Convergence](/apps/design/get-started/convergence)
-
--  [Design philosophy](/apps/design/get-started/design-philosophy)
-
--  [Design values](/apps/design/get-started/design-values)
-
--  [Why design for Ubuntu?](/apps/design/get-started/why-design-for-ubuntu)
-
--  [Design scopes](/apps/design/get-started/design-scopes)
-
--  [Make it Ubuntu](/apps/design/get-started/make-it-ubuntu)
-
-
-##
-
-
--  [Overview](/apps/design/patterns/)
-
--  [Layouts](/apps/design/patterns/layouts)
-
--  [Gestures](/apps/design/patterns/gestures)
-
--  [Navigation](/apps/design/patterns/navigation)
-
-
-##
-
-
--  [Overview](/apps/design/building-blocks/)
-
--  [Header](/apps/design/building-blocks/header)
-
--  [Bottom edge](/apps/design/building-blocks/bottom-edge)
-
--  [List items](/apps/design/building-blocks/list-items)
-
--  [Context menus](/apps/design/building-blocks/context-menus)
-
--  [Selection controls](/apps/design/building-blocks/selection-controls)
-
--  [Scrolling](/apps/design/building-blocks/scrolling)
-
--  [Activity indicators](/apps/design/building-blocks/activity-indicators)
-
 
 Make your app consistent and adaptive across all screen sizes with just one API.
 
@@ -75,13 +23,13 @@ Make your app consistent and adaptive across all screen sizes with just one API.
 The  [Adaptive Layout API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.1/Ubuntu.Components.AdaptivePageLayout/) allows you to add multiple columns to a page (under heavy development).
 
 
-##Grid Unit System
+## Grid Unit System
 
 
 A Grid Unit (GU) is a virtual measure of the screen space that is calculated according to the device’s width in pixels and the predefined layout. They have been designed to suit a range of screen sizes.
 
 
-##Placing elements
+## Placing elements
 
 
 Use Grid Units to help visualise how much space you have in order to create a consistent and proportionate UI. It proves beneficial for when you are placing components and labels within your app.
@@ -90,7 +38,7 @@ Use Grid Units to help visualise how much space you have in order to create a co
 ![750w_Layouts_GridUnitSystem](https://assets.ubuntu.com/v1/d0b08da7-750w_Layouts_GridUnitSystem.png)
 
 
-##Predefined grid unit layouts
+## Predefined grid unit layouts
 
 
 The layout is calculated by taking the short edge of the screen and dividing the amount of pixels by one of the chosen predefined layouts, which are:
@@ -100,7 +48,7 @@ The layout is calculated by taking the short edge of the screen and dividing the
 - 90GU for tablets, desktop and larger screens.
 
 
-####Example of 50GU layout for mobile
+## ## Example of 50GU layout for mobile
 
 
 A mobile device would typically suit a 50 GU-wide virtual portrait screen, because it offers the right balance of content to screen real estate for palm-sized viewing.
@@ -109,7 +57,7 @@ A mobile device would typically suit a 50 GU-wide virtual portrait screen, becau
 ![366w_layout_PanelsMusic_50gu](https://assets.ubuntu.com/v1/07c68cbd-366w_layout_PanelsMusic_50gu.png)
 
 
-####Example of 90GU layout on tablet in portrait mode
+## ## Example of 90GU layout on tablet in portrait mode
 
 
 90GU is ideal for tablet sized screens, because it offers more real-estate for panels.
@@ -123,10 +71,10 @@ A mobile device would typically suit a 50 GU-wide virtual portrait screen, becau
 See the  [design blog](http://design.canonical.com/2015/06/the-grid-system-in-detail/) for developer specifications of Grid Units and layouts.
 
 
-##Layouts
+## Layouts
 
 
-##Panels
+## Panels
 
 
 A panel is a way of grouping together Grid Units to split the screen into different windows. Panels of predefined layouts can be joined together to create a multi-functionally interface from portrait to landscape.
@@ -145,17 +93,17 @@ If your app can use multiple columns then use a single screen layout on mobile t
 
 If you think of it in screen sizes, the hierarchy would be:
 
-####Mobile 50GU – 1 panel (fixed panel)
+## ## Mobile 50GU – 1 panel (fixed panel)
 
 ![366w_Layouts_PanelsCalendar1](https://assets.ubuntu.com/v1/510a8320-366w_Layouts_PanelsCalendar1.png)
 
 
-####Tablet – 2 panels, very occasionally 3 panels on larger tablets
+## ## Tablet – 2 panels, very occasionally 3 panels on larger tablets
 
 ![366w_Layouts_PanelsCalendar2](https://assets.ubuntu.com/v1/016dec66-366w_Layouts_PanelsCalendar2.png)
 
 
-####Desktop – 2 or 3 panels
+## ## Desktop – 2 or 3 panels
 
 
 On a windowed environment, just like on a tablet, more than one panel can be displayed simultaneously. By joining them in the same window, we get the familiar list panel and conjoined detail panel – a pattern typical in applications like contacts, messages, and email. Of course, there can be any number of combinations of panels depending on the specific app’s needs.
@@ -169,7 +117,7 @@ On a windowed environment, just like on a tablet, more than one panel can be dis
 Developers can choose to create completely adaptive 2 or 3 panel layouts for desktop if they desire.
 
 
-##Adaptive layout
+## Adaptive layout
 
 
 Use the AdaptiveLayout API to display panels in one or more columns from left to right.
@@ -186,16 +134,16 @@ Changing the size of the window resizes one or more joined panels. Typically, th
 ![750w_Layouts_AdaptiveLayout](https://assets.ubuntu.com/v1/f89dd4c0-750w_Layouts_AdaptiveLayout.png)
 
 
-####Example – 50GU phone and 50GU/variable on a desktop screen
+## ## Example – 50GU phone and 50GU/variable on a desktop screen
 
 
 The panel that is defined as the main panel (for example 50GU) will initially be visible in the first (leftmost) column; this will have to be specified by the developer. The subsequent columns can then be added depending on the device layout.
 
 
-##Good practice
+## Good practice
 
 
-##Use a fixed panel
+## Use a fixed panel
 
 ![750w_Layouts_GoodPractice](https://assets.ubuntu.com/v1/00e8f48f-750w_Layouts_GoodPractice.png)
 
