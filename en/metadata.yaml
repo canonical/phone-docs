@@ -5,6 +5,69 @@ navigation:
   - title: Apps
     location: apps/index.md
 
+  - title: Design - App Design Guides
+    location: apps/design/index.md
+
+    children:
+      - title: Design - Activity indicators
+        location: apps/design/building-blocks/activity-indicators.md
+
+      - title: Design - Bottom edge
+        location: apps/design/building-blocks/bottom-edge.md
+
+      - title: Design - Context menus
+        location: apps/design/building-blocks/context-menus.md
+
+      - title: Design - Header
+        location: apps/design/building-blocks/header.md
+
+      - title: Design - Building blocks overview
+        location: apps/design/building-blocks/index.md
+
+      - title: Design - List items
+        location: apps/design/building-blocks/list-items.md
+
+      - title: Design - Scrolling
+        location: apps/design/building-blocks/scrolling.md
+
+      - title: Design - Selection controls
+        location: apps/design/building-blocks/selection-controls.md
+
+    children:
+      - title: Design - Convergence
+        location: apps/design/get-started/convergence.md
+
+      - title: Design - Design philosophy
+        location: apps/design/get-started/design-philosophy.md
+
+      - title: Design - Design scopes
+        location: apps/design/get-started/design-scopes.md
+
+      - title: Design - Design values
+        location: apps/design/get-started/design-values.md
+
+      - title: Design - Get started overview
+        location: apps/design/get-started/index.md
+
+      - title: Design - Make it Ubuntu
+        location: apps/design/get-started/make-it-ubuntu.md
+
+      - title: Design - Why design for Ubuntu?
+        location: apps/design/get-started/why-design-for-ubuntu.md
+
+    children:
+      - title: Design - Gestures
+        location: apps/design/patterns/gestures.md
+
+      - title: Design - Patterns overview
+        location: apps/design/patterns/index.md
+
+      - title: Design - Layouts
+        location: apps/design/patterns/layouts.md
+
+      - title: Design - Navigation
+        location: apps/design/patterns/navigation.md
+
     children:
       - title: HTML5
         location: apps/html-5/index.md
@@ -214,6 +277,22 @@ navigation:
         location: scopes/api.md
       - title: Cookbook
         location: scopes/cookbook.md
+      - title: Design - Introducing scopes
+        location: scopes/design/index.md
+
+        children:
+          - title: Design - Components
+            location: scopes/design/components.md
+
+          - title: Design - Core scopes
+            location: scopes/design/core-scopes.md
+
+          - title: Design - Customization and branding
+            location: scopes/design/customization-and-branding.md
+
+          - title: Design - Navigation
+            location: scopes/design/navigation.md
+
       - title: Guides
         location: scopes/guides/index.md
 
