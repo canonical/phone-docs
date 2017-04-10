@@ -43,18 +43,18 @@ The Scrollbar API doesn’t handle keyboard input and has the following requirem
 A ScrollView handles scrollbar placement by automatically placing the scrollbars horizontally and vertically where appropriate in the device layout.
 
 
-## ## Scrollbar
+## Scrollbar
 ![366w_Scrollbar_HandlingOverlay_Good](https://assets.ubuntu.com/v1/6591cecc-366w_Scrollbar_HandlingOverlay_Good.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
-## ## ScrollView
+## ScrollView
 ![366w_Scrollbar_HandlingOverlay_Bad](https://assets.ubuntu.com/v1/3a6877c8-366w_Scrollbar_HandlingOverlay_Bad.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 ## Use cases
@@ -65,18 +65,18 @@ A ScrollView handles scrollbar placement by automatically placing the scrollbars
 If the content of your app is borderless, like the camera, it wouldn’t be practical to have scrollbars because it can hinder the user’s view and primary task of taking a picture.
 
 
-## ## Borderless
+## Borderless
 ![366w_Scrollbar_BorderlessContent_Good](https://assets.ubuntu.com/v1/4fcd5fea-366w_Scrollbar_BorderlessContent_Good.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
-## ## With scrollbars
+## With scrollbars
 ![366w_Scrollbar_BorderlessContent_Bad](https://assets.ubuntu.com/v1/d375f85c-366w_Scrollbar_BorderlessContent_Bad.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 ## Avoid custom scrollers

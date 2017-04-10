@@ -25,7 +25,7 @@ The toolkit includes convergent menu components that can be applied across all d
 
 A context menu can contain shortcuts to primary actions or commands that are relevant to the user’s current context.
 
-## ## Staged
+## Staged
 
 
 A contextual menu reveals relevant commands using long-press, such as saving an image in a web browser.
@@ -34,7 +34,7 @@ A contextual menu reveals relevant commands using long-press, such as saving an 
 ![366w_Menus_ContextualStaged (2)](https://assets.ubuntu.com/v1/ceed065d-366w_Menus_ContextualStaged-2.png)
 
 
-## ## Windowed
+## Windowed
 
 
 The same context menu appears with more commands when a user right-clicks on a web image.
@@ -61,7 +61,7 @@ Try to limit nesting to one level deep, because it can be difficult for the user
 
 ## Use case
 
-## ## Larger screen (tablet, desktop)
+## Larger screen (tablet, desktop)
 ![](https://assets.ubuntu.com/v1/6fcee709-750w_Menus_CascadeLarge.png)
 
 
@@ -80,15 +80,15 @@ On a touch screen, a context menu is revealed by long tapping or swiping the lis
 For medium to large screens, long-press (touch) and right click (pointer) can be used to reveal a context menu. For instance, if you have a touch screen desktop monitor, you can long press a list item to reveal a context menu, or if you have a mouse connected then you can right click.
 
 
-## ## Right-click
+## Right-click
 ![](https://assets.ubuntu.com/v1/7ba08e66-366w_ListItems_ContextualActions3.png)
 
 
-## ## Long-press
+## Long-press
 ![366w_Menus_ContextualActionsTouch](https://assets.ubuntu.com/v1/7438a96d-366w_Menus_ContextualActionsTouch.png)
 
 
-## ## Focus
+## Focus
 ![366w_Menus_ContextualActionsFocus](https://assets.ubuntu.com/v1/26ddf7b9-366w_Menus_ContextualActionsFocus.png)
 
 
@@ -98,11 +98,11 @@ For medium to large screens, long-press (touch) and right click (pointer) can be
 On smaller screens, such as mobile, users reveal leading and trailing actions by left or right swipe. The trailing actions will contain the same contextual actions as the context menu on right-click. If there are more than three trailing actions you can provide an overflow menu inside the header, or inside the list item itself.
 
 
-## ## Swipe right – Leading action
+## Swipe right – Leading action
 ![366w_ListItems_ContextualActions2 (1)](https://assets.ubuntu.com/v1/0238f83e-366w_ListItems_ContextualActions2-1-1.png)
 
 
-## ## Swipe left – Trailing actions
+## Swipe left – Trailing actions
 ![366w_ListItems_ContextualActions1 (1)](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-1.png)
 
 
@@ -132,7 +132,7 @@ It is important that each menu retains a consistency in its layout and content w
 
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
 Place the most frequently used menu items at the top of the menu. Use sentence capitalisation for each command name.
@@ -140,7 +140,7 @@ Place the most frequently used menu items at the top of the menu. Use sentence c
 
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 Place negative actions close to positive actions, because users may accidentally trigger them.
@@ -152,7 +152,7 @@ Place negative actions close to positive actions, because users may accidentally
 Each menu is made up of a set items that can include text or an icon, or both, to best display your menu items.
 
 
-## ## Text labels
+## Text labels
 
 
 It is important that you accurately describe the associated action or option in a succinct manner when using text labels inside your menus.
@@ -161,7 +161,7 @@ It is important that you accurately describe the associated action or option in 
 ![](https://assets.ubuntu.com/v1/e646c370-366w_Menus_TextLabelsDo-1.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
 Be concise and clear to avoid confusing or misinforming the user.
@@ -170,7 +170,7 @@ Be concise and clear to avoid confusing or misinforming the user.
 ![](https://assets.ubuntu.com/v1/bdefc93f-366w_Menus_TextLabelsDont-1.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 Use over-long text labels that result in truncation (…).
@@ -182,7 +182,7 @@ Use over-long text labels that result in truncation (…).
 By default the SDK applies a truncation to long text labels, therefore avoid placing them manually.
 
 
-## ## Label examples
+## Label examples
 
 - Add
 
@@ -201,7 +201,7 @@ By default the SDK applies a truncation to long text labels, therefore avoid pla
 - Share
 
 
-## ## Grouping menu items
+## Grouping menu items
 
 
 Items should be grouped in a logical manner using dividers to separate related actions that have been grouped together.
@@ -210,13 +210,13 @@ Items should be grouped in a logical manner using dividers to separate related a
 ![366w_Menus_ItemGroupingDo](https://assets.ubuntu.com/v1/9e38797b-366w_Menus_ItemGroupingDo.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
 ![menu level 1 dont](https://assets.ubuntu.com/v1/785e56ec-menu-level-1-dont.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 Divide a predictable set of commands, such as clipboard commands (Cut, Copy, Paste) from app-specific or view-specific commands.
@@ -237,7 +237,7 @@ The top three actions inside your menu will appear as trailing actions when the 
 Developer can choose to input a burger menu to store the actions inside the header rather than inside the list item, if they wish.
 
 
-## ## Avoid duplicating actions
+## Avoid duplicating actions
 
 
 Actions may be present within the app menu and elsewhere within the interface, such as actions within a toolbar. Care should be taken to ensure that duplicate actions are as relevant and useful as possible and represent a small, highly-relevant subset of the actions available.
@@ -246,7 +246,7 @@ Actions may be present within the app menu and elsewhere within the interface, s
 When the user is using touch, the most primary actions are placed inside the header area. Other actions specific to a set of list items can be found using swipe where possible. Care should be taken to avoid duplicating actions that appear in the header area within contextual actions menus.
 
 
-## ## Disabling actions when inactive
+## Disabling actions when inactive
 
 
 Rather than removing the item completely, show the user that the action exists by disabling it within the menu, when applicable.
@@ -320,13 +320,13 @@ To move, lift and rearrange content in a view or, in a multi-window environment,
 Once open, a context menu may be dismissed by either making a selection from the actions or by clicking or tapping anywhere outside of the menu area.
 
 
-## ## Keyboard input
+## Keyboard input
 
 
 The Escape Key (esc) will dismiss the contextual actions menu, as will as any user action that results in focus shifting away from the application.
 
 
-## ## Default positioning
+## Default positioning
 
 
 Context menus should be positioned in a consistent and predictable fashion across all device layouts. This is to aid visibility and provide a clear touch target for when the user interacts with the screen with their finger.
@@ -334,13 +334,13 @@ Context menus should be positioned in a consistent and predictable fashion acros
 ![366w_Menus_DefaultPositioning](https://assets.ubuntu.com/v1/628a5ae0-366w_Menus_DefaultPositioning.png)
 
 
-## ## Touch interaction
+## Touch interaction
 
 
 Context menus are centrally aligned on both horizontal and vertical axes.
 
 
-## ## Pointer interaction
+## Pointer interaction
 
 
 Menu is aligned down and to the right of the pointing device cursor point at which the user right clicked or long-pressed.

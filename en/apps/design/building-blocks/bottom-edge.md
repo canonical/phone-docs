@@ -11,7 +11,7 @@ Create something special with a unique bottom edge that belongs to your app from
 ![750w_BottomEdge_Dekko3](https://assets.ubuntu.com/v1/792099e5-750w_BottomEdge_Dekko3.png)
 
 
-## ## Quick access to new content
+## Quick access to new content
 
 -  [Overview ›](#overview)
 
@@ -104,14 +104,14 @@ You can use the bottom edge to reveal all views or tabs currently open to allows
 The toolkit provides a hint that consists of two elements: Hint 1 and Hint 2. The hint is used to let the user know that there is something worth trying at the bottom of the screen.
 
 
-## ## Hint 1
+## Hint 1
 ![366w_BottomEdge_BehaviourHints2](https://assets.ubuntu.com/v1/9f1dbb3b-366w_BottomEdge_BehaviourHints2.png)
 
 
 When your application is launched for the first time, the user will see a floating icon, known as Hint 1.
 
 
-## ## Hint 2
+## Hint 2
 ![366w_BottomEdge_BehaviourHints1 (1)](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-1.png)
 
 
@@ -133,16 +133,16 @@ It is important that your hint label is concise and clear to avoid confusing the
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32.png)
 
 
-## ## Do
+## Do
 
 
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
 
-## ## Don’t
+## Don’t
 
 
-## ## Step 1. Unfolding hint
+## Step 1. Unfolding hint
 
 
 Hint 1 is visible when the user first interacts with your app. By short swiping from Hint 1; Hint 2 starts to replace Hint 1 which then becomes fully visible.
@@ -160,7 +160,7 @@ Hint 1 is visible when the user first interacts with your app. By short swiping 
 ![366w_BottomEdge_Step1UnfoldingHint4 (1)](https://assets.ubuntu.com/v1/154a894d-366w_BottomEdge_Step1UnfoldingHint4-1.png)
 
 
-## ## Step 2. Collapsing
+## Step 2. Collapsing
 
 
 Hint 2 is now fully visible; however if the user doesn’t interact with the content or screen for a period time, then Hint 1 it will automatically fade in and replace Hint 2.

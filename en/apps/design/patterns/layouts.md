@@ -48,7 +48,7 @@ The layout is calculated by taking the short edge of the screen and dividing the
 - 90GU for tablets, desktop and larger screens.
 
 
-## ## Example of 50GU layout for mobile
+## Example of 50GU layout for mobile
 
 
 A mobile device would typically suit a 50 GU-wide virtual portrait screen, because it offers the right balance of content to screen real estate for palm-sized viewing.
@@ -57,7 +57,7 @@ A mobile device would typically suit a 50 GU-wide virtual portrait screen, becau
 ![366w_layout_PanelsMusic_50gu](https://assets.ubuntu.com/v1/07c68cbd-366w_layout_PanelsMusic_50gu.png)
 
 
-## ## Example of 90GU layout on tablet in portrait mode
+## Example of 90GU layout on tablet in portrait mode
 
 
 90GU is ideal for tablet sized screens, because it offers more real-estate for panels.
@@ -93,17 +93,17 @@ If your app can use multiple columns then use a single screen layout on mobile t
 
 If you think of it in screen sizes, the hierarchy would be:
 
-## ## Mobile 50GU – 1 panel (fixed panel)
+## Mobile 50GU – 1 panel (fixed panel)
 
 ![366w_Layouts_PanelsCalendar1](https://assets.ubuntu.com/v1/510a8320-366w_Layouts_PanelsCalendar1.png)
 
 
-## ## Tablet – 2 panels, very occasionally 3 panels on larger tablets
+## Tablet – 2 panels, very occasionally 3 panels on larger tablets
 
 ![366w_Layouts_PanelsCalendar2](https://assets.ubuntu.com/v1/016dec66-366w_Layouts_PanelsCalendar2.png)
 
 
-## ## Desktop – 2 or 3 panels
+## Desktop – 2 or 3 panels
 
 
 On a windowed environment, just like on a tablet, more than one panel can be displayed simultaneously. By joining them in the same window, we get the familiar list panel and conjoined detail panel – a pattern typical in applications like contacts, messages, and email. Of course, there can be any number of combinations of panels depending on the specific app’s needs.
@@ -134,7 +134,7 @@ Changing the size of the window resizes one or more joined panels. Typically, th
 ![750w_Layouts_AdaptiveLayout](https://assets.ubuntu.com/v1/f89dd4c0-750w_Layouts_AdaptiveLayout.png)
 
 
-## ## Example – 50GU phone and 50GU/variable on a desktop screen
+## Example – 50GU phone and 50GU/variable on a desktop screen
 
 
 The panel that is defined as the main panel (for example 50GU) will initially be visible in the first (leftmost) column; this will have to be specified by the developer. The subsequent columns can then be added depending on the device layout.

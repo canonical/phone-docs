@@ -10,7 +10,7 @@ List items can be used to make up a list of ordered scrollable items that are re
 ![750w_ListItems_MainImage (1)](https://assets.ubuntu.com/v1/12134b24-750w_ListItems_MainImage-1.png)
 
 
-## ## A list of emails
+## A list of emails
 
 
 -  [Overview ›](#overview)
@@ -40,22 +40,22 @@ List items can be used to make up a list of ordered scrollable items that are re
 Lists are displayed in a single column layout and are made up of items that can contain one or more controls. Items should be grouped together in a logical way that makes sense to the user.
 
 
-## ## Items in a form
+## Items in a form
 ![366w_ListItems_UseCases1 (2)](https://assets.ubuntu.com/v1/afc631f2-366w_ListItems_UseCases1-2.png)
 
 
-## ## A list of settings
+## A list of settings
 ![366w_ListItems_UseCases2 (2)](https://assets.ubuntu.com/v1/2903062e-366w_ListItems_UseCases2-2.png)
 
 
-## ## Use appropriately to the content
+## Use appropriately to the content
 ![366w_ListItems_ImageList (1)](https://assets.ubuntu.com/v1/755e0c6f-366w_ListItems_ImageList-1.png)
 
 
 When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery.
 
 
-## ## Use search function
+## Use search function
 ![366w_ListItems_UseCaseSearchFunction (2)](https://assets.ubuntu.com/v1/a9e74185-366w_ListItems_UseCaseSearchFunction-2.png)
 
 
@@ -76,7 +76,7 @@ The actions are placed within two categories: leading for negative actions and t
 
 ![366w_ListItems_ContextualActions1 (3)](https://assets.ubuntu.com/v1/f0bff2bc-366w_ListItems_ContextualActions1-3.png)
 
-## ## Touch – Leading action
+## Touch – Leading action
 
 
 Swipe left to right
@@ -84,7 +84,7 @@ Swipe left to right
 
 ![366w_ListItems_ContextualActions2](https://assets.ubuntu.com/v1/0238f83e-366w_ListItems_ContextualActions2.png)
 
-## ## Touch – Trailing action
+## Touch – Trailing action
 
 
 Swipe right to left
@@ -92,7 +92,7 @@ Swipe right to left
 
 ![366w_ListItems_ContextualActionsPointer (3)](https://assets.ubuntu.com/v1/ffb1c374-366w_ListItems_ContextualActionsPointer-3.png)
 
-## ## Pointer
+## Pointer
 
 
 A user can right-click to reveal the contextual menu, or drag right to left to reveal the leading or trailing options in an item.
@@ -100,7 +100,7 @@ A user can right-click to reveal the contextual menu, or drag right to left to r
 
 ![366w_ListItems_ContextualActionsFocus](https://assets.ubuntu.com/v1/93863db6-366w_ListItems_ContextualActionsFocus.png)
 
-## ## Focus
+## Focus
 
 
 A user can reveal the contextual menu by focusing on an item using keyboard navigation and hitting a keyboard key to reveal it.
@@ -124,7 +124,7 @@ You can use edit mode to allow users to multi-select, rearrange or delete items 
 ![366w_ListItems_ListEditMode2 (3)](https://assets.ubuntu.com/v1/880961a6-366w_ListItems_ListEditMode2-3.png)
 
 
-## ## Edit contacts
+## Edit contacts
 
 
 In the Contacts app for example, the list of contacts is made editable to allow users to delete or edit a contact’s information.
@@ -149,7 +149,7 @@ For more information about how edit mode is used see  [Header](/apps/design/buil
 The toolkit provides list item layouts that consist of 1 to 4 slots which can be arranged in a variety of ways. These slots can contain components that allow the list item to perform actions and display content.
 
 
-## ## Slot A (mandatory)
+## Slot A (mandatory)
 
 
 Can only contain text, such as a title with an optional subtitle.
@@ -157,7 +157,7 @@ Can only contain text, such as a title with an optional subtitle.
 ![750w_ListItems_4SlotLayout](https://assets.ubuntu.com/v1/334e715a-750w_ListItems_4SlotLayout.png)
 
 
-## ## Slot B (optional)
+## Slot B (optional)
 
 
 For additional text, an icon or a component.
@@ -200,7 +200,7 @@ Text is always aligned according to the currently displayed language. For exampl
 ![750w_ListItems_Content3](https://assets.ubuntu.com/v1/b71e1e47-750w_ListItems_Content3.png)
 
 
-## ## ListItemLayout labels:
+## ListItemLayout labels:
 
 
 1. 1 line – Title
@@ -219,13 +219,13 @@ Developers are free to override the maximum amount lines for each label. See the
 ## Actions
 
 
-## ## Primary
+## Primary
 
 
 The primary action is the main action you want a user to perform.
 
 
-## ## Secondary
+## Secondary
 
 
 A secondary action is an action the user may wish to perform instead of the primary action.
@@ -233,12 +233,12 @@ A secondary action is an action the user may wish to perform instead of the prim
 ![750w_ListItems_1action2action (3)](https://assets.ubuntu.com/v1/b861e52d-750w_ListItems_1action2action-3.png)
 
 
-## ## One action
+## One action
 
 
 Primary action: a user wants to turn their dial paid sound on or off.
 
-## ## Two actions
+## Two actions
 
 
 Primary action: a user can call using tap or click on a contacts name.
@@ -246,7 +246,7 @@ Primary action: a user can call using tap or click on a contacts name.
 
 Secondary action: a user can message a contact by taping or clicking on the message action icon.
 
-## ## Two actions – with primary icon
+## Two actions – with primary icon
 
 
 Primary action: call using tap or click on the dial action.
@@ -328,22 +328,22 @@ You can place what you wish inside the slots. However, these recommendations tak
 
 ![366w_ListItems_OneSlotSmall (2)](https://assets.ubuntu.com/v1/26479ed7-366w_ListItems_OneSlotSmall-2.png)
 
-## ## One slot
+## One slot
 
 
 ![366w_ListItems_TwoSlotSmall2](https://assets.ubuntu.com/v1/f4572937-366w_ListItems_TwoSlotSmall2.png)
 
-## ## Two slot
+## Two slot
 
 
 ![366w_ListItems_ThreeSlotSmall2 (1)](https://assets.ubuntu.com/v1/0ef2a52e-366w_ListItems_ThreeSlotSmall2-1.png)
 
-## ## Three slot
+## Three slot
 
 
 ![366w_ListItems_FourSlotSmall2 (1)](https://assets.ubuntu.com/v1/c161036d-366w_ListItems_FourSlotSmall2-1.png)
 
-## ## Four slot
+## Four slot
 
 
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)

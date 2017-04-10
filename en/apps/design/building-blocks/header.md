@@ -99,7 +99,7 @@ For smaller surfaces, such as on mobile, the SDK provides a maximum of four slot
 Slots can be arranged in a variety of ways to surface actions and navigational options to best suit the user experience of your application.
 
 
-## ## Slot A
+## Slot A
 ![366w_Header_SlotAexample1 (3)](https://assets.ubuntu.com/v1/625656cf-366w_Header_SlotAexample1-3.png)
 
 - First position on the left hand side
@@ -109,7 +109,7 @@ Slots can be arranged in a variety of ways to surface actions and navigational o
 - A navigation drawer can displays all main views in an application
 
 
-## ## Slot B
+## Slot B
 ![366w_Header_SlotBexample1 (3)](https://assets.ubuntu.com/v1/132ac0cf-366w_Header_SlotBexample1-3.png)
 
 - Mandatory title of your app or view, only one line
@@ -117,20 +117,20 @@ Slots can be arranged in a variety of ways to surface actions and navigational o
 - An optional subtitle can sit below the title, which can be two lines
 
 
-## ## Slot C
+## Slot C
 
 
 Slot C can have any action inside it, such as ‘Add new contact’ or a ‘Call’ action.
 
 
-## ## Search
+## Search
 ![366w_Header_SlotCexample1 (3)](https://assets.ubuntu.com/v1/d9aca9a6-366w_Header_SlotCexample1-3.png)
 
 
 If you are using Slot C for Settings, then it should always be positioned last.
 
 
-## ## Settings
+## Settings
 ![366w_Header_SlotCexample2 (2)](https://assets.ubuntu.com/v1/f645dd1d-366w_Header_SlotCexample2-2-1.png)
 
 
@@ -152,24 +152,24 @@ An action drawer can be used for when no other slots are available to show them.
 As the header gains width across screen sizes, additional slots become visible and actions in the drawer will appear automatically.
 
 
-## ## 3 slot layout
+## 3 slot layout
 ![Header_SlotArrangement1 (2)](https://assets.ubuntu.com/v1/407df52e-Header_SlotArrangement1-2.png)
 
 
-## ## 4 slot layout
+## 4 slot layout
 ![Header_SlotArrangement2 (2)](https://assets.ubuntu.com/v1/bf9f7a5f-Header_SlotArrangement2-2.png)
 
 
-## ## 5 slot layout
+## 5 slot layout
 ![Header_SlotArrangement3 (2)](https://assets.ubuntu.com/v1/ed3d7a0b-Header_SlotArrangement3-2.png)
 
 
-## ## 6 slot layout
+## 6 slot layout
 ![Header_SlotArrangement4 (3)](https://assets.ubuntu.com/v1/a2a5f31e-Header_SlotArrangement4-3.png)
 ![Header_SlotArrangement5 (2)](https://assets.ubuntu.com/v1/28d29fbc-Header_SlotArrangement5-2.png)
 
 
-## ## Medium to large screens
+## Medium to large screens
 
 
 The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer.
@@ -189,7 +189,7 @@ You can use search within the main header to filter the currently displayed cont
 ![750w_Header_HeaderSearchV2 (4)](https://assets.ubuntu.com/v1/6ee0744c-750w_Header_HeaderSearchV2-4.png)
 
 
-## ## Multi-panel layout
+## Multi-panel layout
 
 
 Search can appear in both panels when two or more headers are present. For example, in a mail client you may want a filter for your inbox in the first panel, and a search in the second panel to find a recipient.
@@ -226,7 +226,7 @@ The  [Toolbar API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.1/
 Edit mode allows users to modify a particular item or multiple items at once. To enter edit mode users can initiate it by directly interacting with a list item, title or card, or through an action inside the header.
 
 
-## ## When should I use edit mode?
+## When should I use edit mode?
 
 
 Use a separate edit mode if making the information editable all the time would substantially interfere with viewing, copying, or other tasks. For example, in the Notes app, if a note were editable all the time then the OSK would take up valuable reading space, and hyperlinks in notes would be hard to click or tap.
@@ -235,10 +235,10 @@ Use a separate edit mode if making the information editable all the time would s
 A toolbar can be used below the header to provide additional actions associated with editing. When editing content the actions that appear inside the main header and toolbar are relevant to an edit state allowing the user to perform tasks on the content, such as: select, rearrange or delete.
 
 
-## ## Use cases
+## Use cases
 
 
-## ## #Actions in the header ‐ picking and editing content
+## #Actions in the header ‐ picking and editing content
 
 
 If a primary action of your app is to allow users to select and move content in a list, such as a list of contacts, then surface the editing action inside the main header.
@@ -262,7 +262,7 @@ If you only use one text button then place it on the left hand side, because it 
 The toolbar can contain additional actions other than editing ones, such as ‘Share’ or ‘Forward’.
 
 
-## ## Edit mode in a multi-panel layout
+## Edit mode in a multi-panel layout
 
 
 Edit mode can be triggered through an action in the header or right-clicking or long-pressing the contextual menu.
@@ -341,7 +341,7 @@ The header will be available at all times and have a transparency of 80-90%. Thi
 ![366w_Header_HeaderFixedTransparent](https://assets.ubuntu.com/v1/665d0605-366w_Header_HeaderFixedTransparent.png)
 
 
-## ## Multi-panel layout
+## Multi-panel layout
 
 
 If your app is presented in a multi-panel layout, then the headers that appears in each panel will remain fixed and always visible when scrolling.
@@ -387,11 +387,11 @@ Useful in displaying more content in a single screen.
 If you choose not to have a header then think about how users will navigate through your UI in a different way.
 
 
-## ## Overview
+## Overview
 ![366w_Header_HeaderCustumised1](https://assets.ubuntu.com/v1/90d79b0a-366w_Header_HeaderCustumised1.png)
 
 
-## ## Top level
+## Top level
 ![366w_Header_HeaderCustumised2](https://assets.ubuntu.com/v1/beb45276-366w_Header_HeaderCustumised2.png)
 
 
@@ -410,7 +410,7 @@ The header section allow users to easily shift between category views within the
 The  [Section API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.Sections/) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.
 
 
-## ## Dekko app
+## Dekko app
 
 
 ![366w_Header_ActionInHeader1 (6)](https://assets.ubuntu.com/v1/87bb9446-366w_Header_ActionInHeader1-6.png)
@@ -422,7 +422,7 @@ The  [Section API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/
 For example, if your app was presenting an inbox of emails, from ‘All’, the sub-sections could display ‘Recent’ and ‘Archive’ to further filter the content. More sections on the screen can be visible by swiping right.
 
 
-## ## When a mouse is attached
+## When a mouse is attached
 ![750w_Header_Pointer environment](https://assets.ubuntu.com/v1/d9100a09-750w_Header_Pointer-environment.png)
 
 
@@ -444,7 +444,7 @@ More tabs are indicated by an arrow revealed when the user interacts with the he
 ![366w_Header_ClearHeader1 (1)](https://assets.ubuntu.com/v1/4a88eac0-366w_Header_ClearHeader1-1.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
 Make your sections clear and concise.
@@ -453,7 +453,7 @@ Make your sections clear and concise.
 ![366w_Header_ClearHeader2 (2)](https://assets.ubuntu.com/v1/9beb16cf-366w_Header_ClearHeader2-2.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 The header section can look cluttered if you make the titles too big.

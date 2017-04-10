@@ -29,7 +29,7 @@ In order to achieve convergence, the toolkit has adapted all components to work 
 This means that touch, pointer and focus interactions are now mapped to perform similar functions across different devices for a consistent and familiar user experience. No matter what the input method, the UI will respond to the user’s interaction with what they expect to happen automatically.
 
 
-## ## Use case
+## Use case
 
 ![](https://assets.ubuntu.com/v1/18e792e0-750w_Design_Values_AllInputEqualv2.png)
 
@@ -46,7 +46,7 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 Allow users to effortlessly move through your app with minimum effort, where it is both natural and logical to them.
 
 
-## ## Bottom edge
+## Bottom edge
 
 ![366w_BottomEdge_AdditonalInfo3 (1)](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
 
@@ -54,7 +54,7 @@ Allow users to effortlessly move through your app with minimum effort, where it 
 The bottom edge allows for a natural progressive swipe from the bottom of the screen. By using touch, clicking on the bottom edge tab with a pointer, or pressing Return when the bottom edge tab is focused to open using keyboard navigation.
 
 
-## ## Task switcher
+## Task switcher
 
 ![366w_DesignValues_TaskSwitcher](https://assets.ubuntu.com/v1/68f23e6f-366w_DesignValues_TaskSwitcher.png)
 
@@ -74,7 +74,7 @@ Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are 
 The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.
 
 
-## ## Negative swipes left
+## Negative swipes left
 
 ![366w_ListItems_ContextualActions1 (2)](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-2.png)
 
@@ -82,7 +82,7 @@ The position of positive and negative actions are important to consider when des
 The user swipes left to right to reveals a red deletion option when editing a contact.
 
 
-## ## Positive swipes right
+## Positive swipes right
 
 ![366w_ListItems_ContextualActions2](https://assets.ubuntu.com/v1/0238f83e-366w_ListItems_ContextualActions2.png)
 
@@ -111,21 +111,21 @@ Most color blind people have difficulty distinguishing red from green. Don’t u
 Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.
 
 
-## ## Green
+## Green
 ![366w_Overview_MeaningInColoursGreen](https://assets.ubuntu.com/v1/f553758c-366w_Overview_MeaningInColoursGreen.png)
 
 
 Positive actions, such as OK, new, add or call.
 
 
-## ## Red
+## Red
 ![366w_DesignValues_MeaningInColoursRed](https://assets.ubuntu.com/v1/da5eed2d-366w_Overview_MeaningInColoursRed-1.png)
 
 
 Negative and destructive actions, such as delete or block contact.
 
 
-## ## Blue
+## Blue
 
 ![750w_DesignValues_ColourBlue (1)](https://assets.ubuntu.com/v1/388006d3-750w_DesignValues_ColourBlue-1.png)
 
@@ -154,7 +154,7 @@ Allow users to access content easily through navigational methods by using the m
 ![366w_Overview_FocusOnContentDO](https://assets.ubuntu.com/v1/5ddfa12b-366w_Overview_FocusOnContentDO.png)
 ![do_32](https://assets.ubuntu.com/v1/74c13c17-do_32+%281%29.png)
 
-## ## Do
+## Do
 
 
 The header can provide quick access to important actions and navigational options at the top of the screen or window.
@@ -163,7 +163,7 @@ The header can provide quick access to important actions and navigational option
 ![366w_Overview_FocusOnContentDont](https://assets.ubuntu.com/v1/791f58f8-366w_Overview_FocusOnContentDont.png)
 ![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
-## ## Don’t
+## Don’t
 
 
 Drawers have low discoverability and can hide important views from the user. Consider using the header or header section instead.

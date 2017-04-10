@@ -5,107 +5,78 @@ navigation:
   - title: Apps
     location: apps/index.md
 
-  - title: Design - App Design Guides
-    location: apps/design/index.md
-
     children:
-      - title: Design - Activity indicators
-        location: apps/design/building-blocks/activity-indicators.md
+      - title: Design
+        location: apps/design/index.md
 
-      - title: Design - Bottom edge
-        location: apps/design/building-blocks/bottom-edge.md
+        children:
+          - title: Building blocks - overview
+            location: apps/design/building-blocks/index.md
+          - title: Building blocks - activity indicators
+            location: apps/design/building-blocks/activity-indicators.md
+          - title: Building blocks - bottom edge
+            location: apps/design/building-blocks/bottom-edge.md
+          - title: Building blocks - context menus
+            location: apps/design/building-blocks/context-menus.md
+          - title: Building blocks - header
+            location: apps/design/building-blocks/header.md
+          - title: Building blocks - list items
+            location: apps/design/building-blocks/list-items.md
+          - title: Building blocks - scrolling
+            location: apps/design/building-blocks/scrolling.md
+          - title: Building blocks - selection controls
+            location: apps/design/building-blocks/selection-controls.md
 
-      - title: Design - Context menus
-        location: apps/design/building-blocks/context-menus.md
+          - title: Get started - overview
+            location: apps/design/get-started/index.md
+          - title: Get started - convergence
+            location: apps/design/get-started/convergence.md
+          - title: Get started - design philosophy
+            location: apps/design/get-started/design-philosophy.md
+          - title: Get started - design scopes
+            location: apps/design/get-started/design-scopes.md
+          - title: Get started - design values
+            location: apps/design/get-started/design-values.md
+          - title: Get started - make it Ubuntu
+            location: apps/design/get-started/make-it-ubuntu.md
+          - title: Get started - why design for Ubuntu?
+            location: apps/design/get-started/why-design-for-ubuntu.md
 
-      - title: Design - Header
-        location: apps/design/building-blocks/header.md
+          - title: Patterns - overview
+            location: apps/design/patterns/index.md
+          - title: Patterns - gestures
+            location: apps/design/patterns/gestures.md
+          - title: Patterns - layouts
+            location: apps/design/patterns/layouts.md
+          - title: Patterns - navigation
+            location: apps/design/patterns/navigation.md
 
-      - title: Design - Building blocks overview
-        location: apps/design/building-blocks/index.md
-
-      - title: Design - List items
-        location: apps/design/building-blocks/list-items.md
-
-      - title: Design - Scrolling
-        location: apps/design/building-blocks/scrolling.md
-
-      - title: Design - Selection controls
-        location: apps/design/building-blocks/selection-controls.md
-
-    children:
-      - title: Design - Convergence
-        location: apps/design/get-started/convergence.md
-
-      - title: Design - Design philosophy
-        location: apps/design/get-started/design-philosophy.md
-
-      - title: Design - Design scopes
-        location: apps/design/get-started/design-scopes.md
-
-      - title: Design - Design values
-        location: apps/design/get-started/design-values.md
-
-      - title: Design - Get started overview
-        location: apps/design/get-started/index.md
-
-      - title: Design - Make it Ubuntu
-        location: apps/design/get-started/make-it-ubuntu.md
-
-      - title: Design - Why design for Ubuntu?
-        location: apps/design/get-started/why-design-for-ubuntu.md
-
-    children:
-      - title: Design - Gestures
-        location: apps/design/patterns/gestures.md
-
-      - title: Design - Patterns overview
-        location: apps/design/patterns/index.md
-
-      - title: Design - Layouts
-        location: apps/design/patterns/layouts.md
-
-      - title: Design - Navigation
-        location: apps/design/patterns/navigation.md
-
-    children:
       - title: HTML5
         location: apps/html-5/index.md
 
         children:
           - title: API
             location: apps/html-5/api.md
-
           - title: Cookbook
             location: apps/html-5/cookbook.md
-
           - title: Guides - an introduction
             location: apps/html-5/guides-index.md
-
           - title: Guides - Cordova guide
             location: apps/html-5/guides-cordova-guide.md
-
           - title: Guides - HTML5 guide
             location: apps/html-5/guides-html5-guide.md
-
           - title: Guides - introduction to the HTML5 UI toolkit
             location: apps/html-5/guides-introduction-to-the-html5-ui-toolkit.md
-
           - title: Tutorials - an introduction
             location: apps/html-5/tutorials-index.md
-
           - title: Tutorials - Cordova camera app
             location: apps/html-5/tutorials-cordova-camera-app-tutorial.md
-
           - title: Tutorials - online accounts example
             location: apps/html-5/tutorials-html5-example-online-accounts.md
-
           - title: Tutorials - Meanings app
             location: apps/html-5/meanings-app-tutorial.md
-
           - title: Tutorials - unit testing
             location: apps/html-5/tutorials-unit-testing.md
-
           - title: Tutorials - writing functional tests
             location: apps/html-5/writing-functional-tests.md
 
@@ -115,43 +86,30 @@ navigation:
         children:
           - title: API
             location: apps/qml/api.md
-
           - title: Cookbook
             location: apps/qml/cookbook.md
-
           - title: Tutorials - an introduction
             location: apps/qml/tutorials-index.md
-
           - title: Tutorials - add a C++ backend to your QML app
             location: apps/qml/tutorials-add-cpp-backend-your-qml-app.md
-
           - title: Tutorials - building your first QML app
             location: apps/qml/tutorials-building-your-first-qml-app.md
-
           - title: Tutorials - internationalizing your app
             location: apps/qml/tutorials-internationalizing-your-app.md
-
           - title: Tutorials - performance and QML applications
             location: apps/qml/tutorials-performance-and-qml-applications-ubuntu.md
-
           - title: Tutorials - QML integration testing
             location: apps/qml/tutorials-qml-integration-testing.md
-
           - title: Tutorials - QML unit testing
             location: apps/qml/tutorials-qml-unit-testing.md
-
           - title: Tutorials - register your app
             location: apps/qml/tutorials-register-your-app-url-dispatcher.md
-
           - title: Tutorials - Ubuntu screen keyboard tricks
             location: apps/qml/tutorials-ubuntu-screen-keyboard-tricks.md
-
           - title: Tutorials - Ubuntu UI toolkit palette
             location: apps/qml/tutorials-ubuntu-ui-toolkit-palette.md
-
           - title: Tutorials - using the Ubuntu thumbnailer
             location: apps/qml/tutorials-use-ubuntu-thumbnailer.md
-
           - title: Tutorials - writing QML acceptance tests
             location: apps/qml/tutorials-writing-qml-acceptance-tests.md
 
@@ -161,19 +119,14 @@ navigation:
     children:
       - title: Installing Ubuntu
         location: devices/installing-devices.md
-
       - title: Supported and reference devices
         location: devices/devices.md
-
       - title: Porting to a new device
         location: devices/porting-new-device.md
-
       - title: Image channels
         location: devices/image-channels.md
-
       - title: Re-installing Android
         location: devices/reinstalling-android.md
-
       - title: OEM
         location: devices/oem/index.md
 
@@ -209,34 +162,24 @@ navigation:
         children:
           - title: Acceptance testing
             location: platform/guides/acceptance-testing-using-the-page-object-model.md
-
           - title: App confinement
             location: platform/guides/app-confinement.md
-
           - title: Content hub guide
             location: platform/guides/content-hub-guide.md
-
           - title: Frameworks
             location: platform/guides/frameworks.md
-
           - title: Performance
             location: platform/guides/lets-talk-about-performance.md
-
           - title: Online accounts developer guide
             location: platform/guides/online-accounts-developer-guide.md
-
           - title: Client push notifications
             location: platform/guides/push-notifications-client-guide.md
-
           - title: Server push notifications
             location: platform/guides/push-notifications-server-guide.md
-
           - title: Running autopilot tests
             location: platform/guides/running-autopilot-tests.md
-
           - title: Splash screens
             location: platform/guides/splash-screens.md
-
           - title: URL dispatcher guide
             location: platform/guides/url-dispatcher-guide.md
 
@@ -246,25 +189,18 @@ navigation:
         children:
           - title: Installing the SDK
             location: platform/sdk/installing-the-sdk.md
-
           - title: Using device kits
             location: platform/sdk/using-device-kits.md
-
           - title: Tutorials - an introduction
             location: platform/sdk/tutorials-index.md
-
           - title: Tutorials - building cross-architecture click applications
             location: platform/sdk/tutorials-building-cross-architecture-click-applications.md
-
           - title: Tutorials - click targets and device kits
             location: platform/sdk/tutorials-click-targets-and-device-kits.md
-
           - title: Tutorials - creating an SDK app project
             location: platform/sdk/tutorials-creating-an-sdk-app-project.md
-
           - title: Tutorials - running apps fromt the SDK
             location: platform/sdk/tutorials-running-apps-from-the-sdk.md
-
           - title: Tutorials - using the Ubuntu emulator
             location: platform/sdk/tutorials-using-the-ubuntu-emulator.md
 
@@ -277,20 +213,17 @@ navigation:
         location: scopes/api.md
       - title: Cookbook
         location: scopes/cookbook.md
-      - title: Design - Introducing scopes
+      - title: Design
         location: scopes/design/index.md
 
         children:
-          - title: Design - Components
+          - title: Components
             location: scopes/design/components.md
-
-          - title: Design - Core scopes
+          - title: Core scopes
             location: scopes/design/core-scopes.md
-
-          - title: Design - Customization and branding
+          - title: Customization and branding
             location: scopes/design/customization-and-branding.md
-
-          - title: Design - Navigation
+          - title: Navigation
             location: scopes/design/navigation.md
 
       - title: Guides

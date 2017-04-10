@@ -37,11 +37,11 @@ For example, a download manager may use a progress bar so that you can easily te
 Use a determinate progress bar or spinner for tasks where the activity can be determined at any point in time, such as downloading or importing an item. If you have space within the same screen then place the progress bar below the action that initiated it.
 
 
-## ## Progress bar – downloading
+## Progress bar – downloading
 ![366w_ActivityIndicators_ProgressBar](https://assets.ubuntu.com/v1/b7cc2368-366w_ActivityIndicators_ProgressBar.png)
 
 
-## ## Spinner – transferring
+## Spinner – transferring
 ![366w_ActivityIndicators_DeterminateSpinner](https://assets.ubuntu.com/v1/79721f4b-366w_ActivityIndicators_DeterminateSpinner.png)
 
 
@@ -57,11 +57,11 @@ The toolkit progress bars and spinners automatically handle presence for individ
 Use a indeterminate progress bar or spinner if the proportion complete is unknown. For instance, the loading of a screen or re-caching a browser is something the user doesn’t need further information on and can happen in the background.
 
 
-## ## Progress bar – updating
+## Progress bar – updating
 ![366w_ActivityIndicators_IndeterminateProgress](https://assets.ubuntu.com/v1/36038136-366w_ActivityIndicators_IndeterminateProgress.png)
 
 
-## ## Spinner – loading
+## Spinner – loading
 ![750w_ActivityIndicators_Spinner](https://assets.ubuntu.com/v1/31d111ac-750w_ActivityIndicators_Spinner.png)
 
 
@@ -74,28 +74,28 @@ Use a indeterminate progress bar or spinner if the proportion complete is unknow
 A determinate progress bar or spinner with a known period of completion should always fill for a successful task, exactly once. For example when a user is downloading a new music track, then an acknowledgement that the download has been completed would be a filled progress bar.
 
 
-## ## Indeterminate steps
+## Indeterminate steps
 ![366w_ActivityIndicators_DeterminateSteps](https://assets.ubuntu.com/v1/69824bb1-366w_ActivityIndicators_DeterminateSteps.png)
 
 
 If the last step in a task is verifying its success, then allocate a fraction of the indicator to it. This communicates to the user that the software is preparing to be complete.
 
 
-## ## Determinate steps
+## Determinate steps
 ![366w_ActivityIndicators_IndeterminateSteps](https://assets.ubuntu.com/v1/f6bca0f9-366w_ActivityIndicators_IndeterminateSteps-1.png)
 
 
 Never let an Activity Indicator go backwards. If the task size changes part-way through, reallocate the remaining fraction of the indicator to that.
 
 
-## ## Use only for task progression
+## Use only for task progression
 ![366w_ActivityIndicators_Don'tSpinner](https://assets.ubuntu.com/v1/08e61720-366w_ActivityIndicators_DontSpinner.png)
 
 
 Don’t use an Activity Indicator for anything that isn’t progress of a task, such as waiting for user input or as a gauge for anything else.
 
 
-## ## Avoid confusion
+## Avoid confusion
 ![366w_ActivityIndicators_AvoidConfusion](https://assets.ubuntu.com/v1/cb401570-366w_ActivityIndicators_AvoidConfusion.png)
 
 

@@ -62,49 +62,49 @@ Avoid using a stack of screens inside an app itself, because this would confuse 
 Certain gestures are associated with a particular movement of the finger and often come naturally to the user. Functions should map closely to the physical action implied by the gesture, such as flicking through content with one finger.
 
 
-## ## Tap (one finger)
+## Tap (one finger)
 ![gesture_1f_tap (1)](https://assets.ubuntu.com/v1/30dd55e1-gesture_1f_tap-1.png)
 
 
 Use to activate a screen element, like a button.
 
 
-## ## Double tap (one finger)
+## Double tap (one finger)
 ![gesture_1f_double-tap](https://assets.ubuntu.com/v1/ac2edefd-gesture_1f_double-tap.png)
 
 
 Use to double tap an item or select an area, such as selecting text in a message.
 
 
-## ## Long press drag (one finger)
+## Long press drag (one finger)
 ![](https://assets.ubuntu.com/v1/d72ccece-gesture_1f_swipe-right.png)
 
 
 Use to pick up, move and select multiple items.
 
 
-## ## Flick (one finger)
+## Flick (one finger)
 ![gesture_1f_drag-right (1)](https://assets.ubuntu.com/v1/5934dbfa-gesture_1f_drag-right-1.png)
 
 
 Use to scroll in the direction you want the screen to move.
 
 
-## ## Long press (one finger)
+## Long press (one finger)
 ![gesture_1f_touch](https://assets.ubuntu.com/v1/f4bb4e3b-gesture_1f_touch.png)
 
 
 Use to start a selection of content or an item within the application window, such as selecting a URL to copy in the Browser.
 
 
-## ## Rotate (two finger)
+## Rotate (two finger)
 ![gesture_2f_rotate](https://assets.ubuntu.com/v1/a7cc3136-gesture_2f_rotate.png)
 
 
 Use to move around a centre point simultaneously with two fingers to rotate an object, such as editing an image.
 
 
-## ## Pinch in or out (two finger)
+## Pinch in or out (two finger)
 ![gesture_2f_pinch-in](https://assets.ubuntu.com/v1/f87d1a6d-gesture_2f_pinch-in.png)
 
 
@@ -126,20 +126,20 @@ The bottom edge is specific to your app and can be used to reveal the most impor
 The bottom edge is made discoverable to the user by a hint at the bottom of the screen. This indicates to the user that there is a visible area by swiping up from the floating hint.
 
 
-## ## Hints
+## Hints
 
 
 The bottom edge hint comprises of two elements: Hint 1 and Hint 2.
 
 
-## ## Hint 1
+## Hint 1
 ![366w_BottomEdge_BehaviourHints2](https://assets.ubuntu.com/v1/9f1dbb3b-366w_BottomEdge_BehaviourHints2.png)
 
 
 When your application is launched for the first time, the user will see a floating icon which is known as Hint 1.
 
 
-## ## Hint 2
+## Hint 2
 ![366w_BottomEdge_BehaviourHints1 (2)](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-2.png)
 
 
@@ -170,7 +170,7 @@ The look and feel of an instructional overlay should differ from your UI visual 
 For more information on instructional overlays see Coach Marks (Coming soon).
 
 
-## ## Coach marks
+## Coach marks
 
 
 Use coach marks as a single instructional overlay to point out a particular interaction or feature that may not be obvious, or naturally discoverable.
@@ -179,7 +179,7 @@ Use coach marks as a single instructional overlay to point out a particular inte
 ![366w_Gestures_CoachMarks1](https://assets.ubuntu.com/v1/4f896bc6-366w_Gestures_CoachMarks1.png)
 
 
-## ## Tutorial
+## Tutorial
 
 
 Use tutorials on rare occasions where you feel you need to give the user further instructions to discover gestures or features.

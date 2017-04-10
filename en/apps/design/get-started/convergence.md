@@ -54,7 +54,7 @@ Where possible place panels together to take full advantage of additional screen
 ![Convergence - Responsivness and consistency 02](https://assets.ubuntu.com/v1/8591851e-Convergence-Responsivness-and-consistency-02.png)
 
 
-## ## Dekko app
+## Dekko app
 
 
 The Dekko app responses to more real-estate and keeps its look and feel from mobile to tablet to desktop.
@@ -77,7 +77,7 @@ The AdaptivePageLayout API component eliminates guesswork for developers when ad
 Changing the size of the window or surface resizes one or more joined panels. Typically, the right-most panel resizes and the left-most panel maintains its original dimensions. The dimensions of the right-most panel will normally be 40 grid units or 50 grid units, though this panel may itself be resizable depending on the developer’s requirements.
 
 
-## ## How it works
+## How it works
 
 
 The developer will be able to specify where panels should go and the breakpoint in which they can expand to. The adaptive layout will automatically place them.
@@ -91,7 +91,7 @@ The developer will be able to specify where panels should go and the breakpoint 
 For a consistent and familiar user experience, the SDK maps touch, pointer, and keyboard (focus) interactions to every function.
 
 
-## ## Context menus
+## Context menus
 
 
 Using touch a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu. This is a great example of how each SDK component supports all input types equally and simultaneously.

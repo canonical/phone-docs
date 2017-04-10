@@ -54,15 +54,15 @@ Structure your app by organizing the content into a logical hierarchy.
 4. **App settings** – a place for the settings of your app, such as notification settings for receiving emails.
 
 
-## ## Overview – Dialer
+## Overview – Dialer
 ![366w_Navigation_UserJoureny2 (2)](https://assets.ubuntu.com/v1/d6f20a80-366w_Navigation_UserJoureny2-2.png)
 
 
-## ## Top level – Contacts
+## Top level – Contacts
 ![366w_Navigation_UserJourney1 (1)](https://assets.ubuntu.com/v1/fc0e39db-366w_Navigation_UserJourney1-1.png)
 
 
-## ## Lower detailed level – Contact information
+## Lower detailed level – Contact information
 ![366w_navigation_UserJourney3 (2)](https://assets.ubuntu.com/v1/ba9bb1af-366w_navigation_UserJourney3-2.png)
 
 
@@ -83,7 +83,7 @@ On mobile devices, only one page is available at once. Once a page is chosen, th
 Larger screens provide more screen estate for two or more panels to be visible at once. There are two ways page stack behaves depending on which panel the action is placed in.
 
 
-## ## Page stack over both panels
+## Page stack over both panels
 
 
 If an action is triggered in the leftmost panel, then the page will takeover all panels.
@@ -91,7 +91,7 @@ If an action is triggered in the leftmost panel, then the page will takeover all
 ![750w_Navigation_PageStackWithTwoPanelView (3)](https://assets.ubuntu.com/v1/b09027c1-750w_Navigation_PageStackWithTwoPanelView-3.png)
 
 
-## ## Page stack over the right hand panel
+## Page stack over the right hand panel
 
 
 If an action is triggered in the rightmost panel, then the page will stack over the same panel.
@@ -99,7 +99,7 @@ If an action is triggered in the rightmost panel, then the page will stack over 
 ![750w_Navigation_PageStackWithJustRightPanelView (2)](https://assets.ubuntu.com/v1/55f5860f-750w_Navigation_PageStackWithJustRightPanelView-2.png)
 
 
-## ## System Settings – right panel view change
+## System Settings – right panel view change
 
 
 In this example, ‘Brightness & Display’ has been selected inside the left panel and takes over the rightmost panel view.
@@ -121,7 +121,7 @@ Use the header to contain the most important actions and navigational options in
 ![750w_Navigation_Header (3)](https://assets.ubuntu.com/v1/54aa29cc-750w_Navigation_Header-3.png)
 
 
-## ## Slot arrangement
+## Slot arrangement
 
 
 The header features a maximum of four slots that can be arranged and combined to fulfills the user needs.
@@ -176,7 +176,7 @@ A Back Button would be irrelevant if your app only has one page, because there w
 For a multi-panel layout, such as on a desktop, each panel can display its own header, which can contain additional slots because more real estate is presented. This can be useful to reveal actions or views that were previously hidden in drawers in a single panels screen, like on mobile.
 
 
-## ## More actions revealed
+## More actions revealed
 
 
 In this example, Dekko displays an action for the bottom edge, search and settings inside the lefthand panel, and in the rightmost panel it shows a delete, favourite and messaging.
@@ -196,28 +196,28 @@ In this example, Dekko displays an action for the bottom edge, search and settin
 You can decide how you want the the header to appear in four ways: Fixed, Fixed and Opaque, Fixed and Transparent, Hidden.
 
 
-## ## Fixed (default)
+## Fixed (default)
 ![366w_Navigation_HeaderFixed (1)](https://assets.ubuntu.com/v1/5e0c2524-366w_Navigation_HeaderFixed-1.png)
 
 
 Useful for making section or action always accessible for when the user scrolls.
 
 
-## ## Transparent
+## Transparent
 ![366w_Navigation_HeaderTransparent (1)](https://assets.ubuntu.com/v1/c0844792-366w_Navigation_HeaderTransparent-1.png)
 
 
 Useful if you don’t want the header to be the focus of attention, but want it readerly available if the user needs it.
 
 
-## ## Hidden
+## Hidden
 ![366w_Navigation_HeaderHidden (1)](https://assets.ubuntu.com/v1/f2a9d47e-366w_Navigation_HeaderHidden-1.png)
 
 
 Useful for full-screen applications, such as the Camera App.
 
 
-## ## Overlay
+## Overlay
 ![366w_Navigtaion_HeaderOverlay](https://assets.ubuntu.com/v1/b7fa2ab0-366w_Navigtaion_HeaderOverlay.png)
 
 
@@ -230,11 +230,11 @@ Useful to display more content in a single screen.
 If you choose not to have a header, then think of how users will navigate through your UI in a different way.
 
 
-## ## Overview
+## Overview
 ![366w_Navigation_HeaderCustumised1 (1)](https://assets.ubuntu.com/v1/beb45276-366w_Navigation_HeaderCustumised1-1.png)
 
 
-## ## Top level
+## Top level
 ![366w_Navigation_HeaderCustumised2 (2)](https://assets.ubuntu.com/v1/90d79b0a-366w_Navigation_HeaderCustumised2-2.png)
 
 
@@ -254,7 +254,7 @@ The header section allows users to easily shift between categories views within 
 2. **The header section** sits below the main header and allows for sub-navigation or filtering within the screen indicated by the header above. One option is always selected.
 
 
-## ## Dekko app
+## Dekko app
 
 
 For example, if your app was presenting an inbox of emails, from ‘All’, the sub-sections could display ‘Recent’ and ‘Archive’ to further filter the content for the user. More section on the screen can be visible through swipe or clicking the hint that appears when a mouse is attached.
@@ -266,7 +266,7 @@ For example, if your app was presenting an inbox of emails, from ‘All’, the 
 ![366w_Navigation_TabsRecent (2)](https://assets.ubuntu.com/v1/e97e38a5-366w_Navigation_TabsRecent-2.png)
 
 
-## ## Pointer environment
+## Pointer environment
 
 
 More tabs are indicated by an arrow revealed when the pointer hovers over it.
@@ -282,7 +282,7 @@ You can use search within the main header for an additional filter for your appl
 ![750w_Navigation_HeaderSearchV2 (3)](https://assets.ubuntu.com/v1/288521f2-750w_Navigation_HeaderSearchV2-3.png)
 
 
-## ## Multi-panel layout
+## Multi-panel layout
 ![750w_Navigation_Convergence search](https://assets.ubuntu.com/v1/44a9de6b-750w_Navigation_Convergence-search.png)
 
 ![750w_Navigation_Convergence search box](https://assets.ubuntu.com/v1/65192f75-750w_Navigation_Convergence-search-box.png)
@@ -297,28 +297,28 @@ The bottom edge is specific to your application. It can give users quick access 
 When the bottom edge is revealed the page stacks over the previous page and a chevron pointing down appears in the header to allow the user to go back to the previous page.
 
 
-## ## Hint 1
+## Hint 1
 ![366w_Navigation_BottomEdge1](https://assets.ubuntu.com/v1/1a754799-366w_Navigation_BottomEdge1.png)
 
 
 Appears on application launch to hint to the user that there is a bottom edge available.
 
 
-## ## Hint 2
+## Hint 2
 ![366w_Navigation_BottomEdge2](https://assets.ubuntu.com/v1/7d755a73-366w_Navigation_BottomEdge2.png)
 
 
 The bar is revealed after Hint 1 has been interacted with.
 
 
-## ## Reveal
+## Reveal
 ![366w_Navigation_BottomEdge4](https://assets.ubuntu.com/v1/408eeee7-366w_Navigation_BottomEdge4-1.png)
 
 
 Once the user starts to swipe up from the hint. The new view starts to be revealed.
 
 
-## ## New view
+## New view
 ![366w_Navigation_BottomEdge4](https://assets.ubuntu.com/v1/408eeee7-366w_Navigation_BottomEdge4.png)
 
 
