@@ -66,7 +66,7 @@ Get it running on the Desktop with: **Build** &gt; **Run**.
 Here’s how a brand new app looks when run from the SDK (the actual GUI may
 vary as refinements are released):
 
-![](../../../../media/64578dfa-7269-40dd-8345-b8d58c0ec39e-cms_page_media/115/1.png)
+![](../../../../media/1.png)
 
 The brand new HTML5 app project has the basic set of files you need. But,
 naturally, the GUI and control logic are simply the defaults for any new app.
@@ -241,31 +241,7 @@ Let’s check out how the app looks if you run it now with Ctrl + R. Note that
 the GUI does not function yet because we have not yet added the JavaScript
 control logic.
 
-![](../../../../media/app-html5-tutorial-meanings-app.png)
-
-## App HTML5 highlights
-
-Let’s examine some highlights of this HTML.
-
-### Mainview
-
-All the HTML5 inside the body is wrapped in a `<div data-role=”mainview”>`. This
-is standard for Ubuntu HTML5 apps.
-
-### Header
-
-  * There is a header: <header data-role="header">
-  * The header contains an unordered list (ul)
-  * The unorder list has a single listitem (li) whose data-role is “tabitem”: <li data-role="tabitem" data-page="main-page">Meanings</li>
-
-This implements the header part of our tab-style layout:
-
-  * We have a single tab.
-  * The text that displays is “Meanings”
-  * Note the tabitem’s data-page attribute. This value (main-page) is what connects the tabitem to the tab declared lower down whose id is the same: `<div data-role="tab" id="main-page">`.
-
-When the user clicks the tabitem in the header, the corresponding tab
-displays. We have only a single tabitem/tab.
+![](../../../../media/tab.
 
 ### Content
 
@@ -461,7 +437,7 @@ you can use the `Ctrl + R` shortcut to run it in a window on the Desktop.
 Here we see it running after the user has typed in the word ‘hack’ and clicked
 the **Get** button:
 
-![](../../../../media/78cea738-e7b6-47fa-b1f7-1e99ea30786c-cms_page_media/115/meanings-app2.png)
+![](../../../../media/meanings-app2.png)
 
 If you have problems, you might have accidentally introduced errors, so trying
 debugging the app’s JavaScript as described above.

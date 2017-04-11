@@ -39,7 +39,7 @@ Note that emulators can use any architecture.
 ### Frameworks
 
 Each
-[framework](../guides/frameworks.html) is
+[framework](../guides/frameworks.md) is
 related to an Ubuntu release. In most cases, you will want to use the latest
 version to allow your app to use the latest features of the platform, but you
 can also try and see how your app behaves with older releases.
@@ -52,7 +52,7 @@ devices (connected via USB and existing emulators) and simple click the
 `Autocreate` button to create a device kit using the click target of your
 choice.
 
-![](../../../media/4d116adc-6ea1-478b-8314-f1b0b553d29b-cms_page_media/35/autocreate_device_kit-700x399.png)
+![](../../../media/autocreate_device_kit-700x399.png)
 
 ## Managing targets and kits
 
@@ -60,15 +60,11 @@ You can retrieve existing targets and kits from the Options pane of the SDK.
 
 Targets can be created, deleted and updated in the **"Ubuntu" > "Click"** pane
 
-![](../../../media/0e38e472-24ce-4277-a49b-cc29e3f6efcd-cms_page_media/35/manage_targets-700x404.png)
+![](../../../media/manage_targets-700x404.png)
 
 Kits can be created and deleted in the **"Build & Run" > "Kits"** pane.
 
-![](../../../media/manage_kits-700x404.png)
-
-## Video guide
-
-[Nekhelesh Ramananthan](https://plus.google.com/+NekheleshRamananthan/posts)
+![](../../../media/+NekheleshRamananthan/posts)
 demonstrates how to use the Ubuntu SDK Kits to build and run apps on the
 desktop, emulator and physical devices.
 

@@ -19,7 +19,7 @@ level:
   * **A header with tabitems**: when the user clicks a tabitem, the GUI switches to the associated tab content. This is also called “Flat” navigation because the tabs are at the same “level” and the user switches between them “horizontally” by clicking the header.
   * **A pagestack of pages**. This is called “deep” navigation. With this, the user can drill further into the stack of pages and use the “Back” button to climb out.
 
-Be sure to check out [design examples](http://design.ubuntu.com/apps) for
+Be sure to check out [design examples](../design/index.md) for
 further guidance on app layouts and widgets.
 
 

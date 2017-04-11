@@ -171,7 +171,7 @@ $ cordova run --device --debug
 At this point, you should see the familiar Cordova logo in the application
 running on your phone.
 
-![](../../../../media/2cf397c1-ceb6-4dd0-b9e7-de05c80c25ca-cms_page_media/112/cordova-screenshot.png)
+![](../../../../media/cordova-screenshot.png)
 
 Your Ubuntu system is ready for Cordova development.
 

@@ -28,20 +28,14 @@ Select Run to change the Run settings. Use the dropdown to select the
 'Autopilot' run configuration. It will display a list of autopilot tests for
 the project.
 
-![](../../../media/8dd4015e-ed32-4d3a-86f4-979b759bfc29-cms_page_media/922/Selection_008.jpg)
+![](../../../media/Selection_008.jpg)
 
 Choose a specific test to run or run them all. When ready, launch the tests as
 normal by pressing the run button. Your autopilot tests will now run inside a
 separate window. You can watch there execution or continue working. The
 results of the tests will be displayed in the Application Output Console.
 
-![](../../../media/platform-run-autopilot-trim.gif)
-
-### autopilot3-sandbox-run
-
-This tool ships with autopilot itself and was developed as a way to run
-autopilot test suites on your desktop in a sane manner. If you have autopilot,
-it's already installed. If not, make sure you [install autopilotfirst](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-installation/). By default, autopilot will take control of your mouse and
+![](../../../media/api/autopilot/python/1.5.0/guides-installation/). By default, autopilot will take control of your mouse and
 keyboard for the test duration. This is not desirable in a desktop
 environment. `autopilot3-sandbox-run` allows you to run autopilot tests in a
 nested xserver, thereby retaining control of your mouse and keyboard on the

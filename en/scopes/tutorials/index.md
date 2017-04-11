@@ -8,7 +8,7 @@ title: "Scopes tutorials"
 ## Get started with scopes!
 
 Get familiar with the common concepts and procedures developers need to know
-for scopes with [Scope Development Procedures](/scopes/tutorials/scope-development-procedures/).
+for scopes with [Scope Development Procedures](scope-development-procedures.md).
 
 ## Tutorials
 
@@ -16,33 +16,33 @@ Create your first Unity 8 scope by following along these tutorials.
 
 ### Using C++
 
-    * [SoundCloud scope tutorial](/scopes/tutorials/write-a-json-scope-in-cpp/)
-    * [Jamendo scope tutorial](/scopes/tutorials/write-a-xml-scope-in-cpp/)
+    * [SoundCloud scope tutorial](write-a-json-scope-in-cpp.md)
+    * [Jamendo scope tutorial](write-a-xml-scope-in-cpp.md)
 
 ### Using Go
 
-    * [Developing scopes in Go](/scopes/tutorials/developing-scopes-go/)
+    * [Developing scopes in Go](developing-scopes-go.md)
 
 ### Using JavaScript
 
-    * [Developing scopes in JavaScript](/scopes/tutorials/developing-scopes-javascript/)
+    * [Developing scopes in JavaScript](developing-scopes-javascript.md)
 
 ### General guides and tutorials
 
 Learn more about how to make your scopes unique and add an extra layer of
 features.
 
-  * [Customization and branding](/scopes/guides/scopes-customization-branding/)
-  * [Adding settings to your scope](/scopes/tutorials/adding-settings-to-your-scope/)
-  * [Adding location awareness to your scope](/scopes/tutorials/adding-location-awareness-to-your-scope/)
-  * [Adding departments](/scopes/tutorials/adding-departments-to-your-scope/)
+  * [Customization and branding](../guides/scopes-customization-branding.md)
+  * [Adding settings to your scope](adding-settings-to-your-scope.md)
+  * [Adding location awareness to your scope](adding-location-awareness-to-your-scope.md)
+  * [Adding departments](adding-departments-to-your-scope.md)
   * [Linking queries in scopes](linking-queries-in-scopes.md)
 
 ### Publishing scopes
 
 Publish scopes in the Ubuntu store :
 
-  * [Prepare your scope for publication](/scopes/tutorials/prepare-your-scope-for-publication/)
+  * [Prepare your scope for publication](prepare-your-scope-for-publication.md)
 
 ### Video Workshops
 

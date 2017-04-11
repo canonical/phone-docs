@@ -41,10 +41,8 @@ Ubuntu puts design first and considers toolkits (HTML5, QML and others) as an
 implementation detail. It is design that makes an Ubuntu app look and feel
 like an Ubuntu app.
 
-A good step before getting started writing Ubuntu HTML5 apps is looking at
-[design.ubuntu.com](http://design.ubuntu.com/). You will find examples and
-guidance on using Ubuntu UI layouts and building blocks (from a toolkit
-agnostic viewpoint).
+A good step before getting started writing Ubuntu HTML5 apps is looking at our [design guides](../design/index.md). You will find examples and
+guidance on using Ubuntu UI layouts and building blocks (from a toolkit agnostic viewpoint).
 
 ## Questions?
 
@@ -58,7 +56,7 @@ sources of help and information. Here are a couple good places to visit:
 
 ### Guides
 
-Be sure to check out our [HTML5 guides](guides-index.html) and
+Be sure to check out our [HTML5 guides](guides-index.md) and
 others, like those for the [Ubuntu App Platform](../../platform/guides/index.md).
 These focused articles cover key topics of interest to app developers and are
 designed to give you a high level overview of critical topics. After reading

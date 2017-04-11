@@ -10,7 +10,7 @@ into aggregators seamlessly.
 
 There are two parts to this integration process:
 
-  * Picking the right keywords (see the [scope keywords guide](scope-keywords.html)
+  * Picking the right keywords (see the [scope keywords guide](scope-keywords.md))
   * Returning the right components
 
 ## Returning the right components

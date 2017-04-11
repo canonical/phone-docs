@@ -84,9 +84,9 @@ The last thing needed is registering the root department on the reply object.
 If you try to run the scope at this point, you should see a new piece of UI at
 the top of your results!
 
-![](../../../media/1e85108f-60f3-4315-9e1c-7f1dd67c1635-cms_page_media/146/scope_dep0.png)
+![](../../../media/scope_dep0.png)
 
-![](../../../media/430f2c26-149b-4cce-bd1b-a1e2cd4dc976-cms_page_media/146/scope_dep1.png)
+![](../../../media/scope_dep1.png)
 
 ### Using departments in queries
 
@@ -122,101 +122,17 @@ if (!query.department_id().empty()) {
 }
 ```
 
-![](../../../media/996477d4-56e0-4b8c-a25a-c6cd35be8850-cms_page_media/146/scope_dep3.png)
+![](../../../media/scope_dep3.png)
 
-![](../../../media/scopt-tutorial-scope_dep2.png)
+![](../../../media/scope_dep4.png)
 
-## Complex hierarchies
+![](../../../media/scope_dep5.png)
 
-Departments allow navigating complex hierarchies, let’s demonstrate that with
-a slightly bigger example. We are going to create A
-**root-&gt;continents-&gt;countries-&gt;city hierarchy**.
+![](../../../media/scope_dep6.png)
 
-```
-sc::Department::SPtr all_depts = sc::Department::create("", query(),
-"Local weather");
-
-sc::Department::SPtr europe_department = sc::Department::create("europe",
-query(), "Europe");
-
-sc::Department::SPtr africa_department = sc::Department::create("africa",
-query(), "Africa");
-
-sc::Department::SPtr northamerica_department =
-sc::Department::create("north america", query(), "North America");
-
-sc::Department::SPtr southamerica_department =
-sc::Department::create("south america", query(), "South America");
-
-sc::Department::SPtr asia_department = sc::Department::create("asia",
-query(), "Asia");
-
-sc::Department::SPtr australia_department =
-sc::Department::create("australia", query(), "Australia");
-
-all_depts->set_subdepartments({africa_department,
-
-northamerica_department,
-
-southamerica_department,
-
-asia_department,
-
-europe_department,
-
-australia_department});
-
-sc::Department::SPtr france_department = sc::Department::create("france",
-query(), "France");
-
-sc::Department::SPtr italia_department = sc::Department::create("italia",
-query(), "Italia");
-
-sc::Department::SPtr belgium_department =
-sc::Department::create("belgium", query(), "Belgium");
-
-europe_department->add_subdepartment(france_department);
-
-europe_department->add_subdepartment(italia_department);
-
-europe_department->add_subdepartment(belgium_department);
-
-france_department->add_subdepartment(sc::Department::create("paris,fr",
-query(), "Paris"));
-
-france_department->add_subdepartment(sc::Department::create("lyon,fr",
-query(), "Lyon"));
-
-france_department->add_subdepartment(sc::Department::create("nantes,fr",
-query(), "Nantes"));
-
-france_department->add_subdepartment(sc::Department::create("bordeaux,fr"
-, query(), "Bordeaux"));
-
-france_department->add_subdepartment(sc::Department::create("brest,fr",
-query(), "Brest"));
-
-reply->register_departments(all_depts);
-```
-
-Lets see what it does !
-
-![](../../../media/b3e34309-c793-4212-b4af-6a7a20609486-cms_page_media/146/scope_dep4.png)
-
-![](../../../media/660dd0df-43c7-4875-bc0a-2cb9ee422db7-cms_page_media/146/scope_dep5.png)
-
-![](../../../media/4ed35f1f-4760-4181-b1e4-087a441e7ff1-cms_page_media/146/scope_dep6.png)
-
-![](../../../media/scope-tutorial-scope_dep7.png)
-
-### Going further
-
-Of course, nobody wants to create a large numbers of departments by hand, you
-can have a look at [this example scope](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-ifixit-departments/files) where departments are generated via a
+![](../../../media/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-ifixit-departments/files) where departments are generated via a
 request to an online service. If the API you are using is providing a way to
 list item categories or has data that can be split in a logical way, make
 sure you provide departments for the user to easily browse it!
 
-![](../../../media/scope-tutorial-scope_dep81.png)
-
-![](../../../media/b47c4584-4704-489d-926f-7ab9e3d01613-cms_page_media/146/scope_dep9.png)
+![](../../../media/scope_dep9.png)

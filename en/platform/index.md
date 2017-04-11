@@ -61,4 +61,4 @@ in a confined environment.
 
 [App Confinement: Security policy for click packages&nbsp;&rsaquo;](guides/app-confinement.html)
 
-[Browse all the platform guides](guides/index.html)
+[Browse all the platform guides](guides/index.md)

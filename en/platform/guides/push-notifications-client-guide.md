@@ -48,7 +48,7 @@ The full lifecycle of a push message is:
 If the user interacts with the notification, the application is launched and
 should check its queue for messages it has to process.
 
-![](../../../media/6d4838df-e8f8-4141-a528-988dddc9a362-cms_page_media/70/push.png)
+![](../../../media/push.png)
 
 
 

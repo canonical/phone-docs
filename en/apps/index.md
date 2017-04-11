@@ -20,7 +20,7 @@ typography, all Ubuntu apps share a simple design and superb functionality.
 From top to bottom, they feel and behave as part of the same family,
 regardless of the implementation toolkit.
 
-[Learn more about our design values](http://design.ubuntu.com/apps)
+[Learn more about our design values](design/index.md)
 
 ## The Ubuntu App platform - develop with seamless device integration
 

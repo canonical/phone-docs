@@ -63,7 +63,7 @@ you allow them to do only what you want them to do.
 
 ## Next steps
 
-  * [See the list of supported devices&nbsp;&rsaquo;](devices.html)
+  * [See the list of supported devices&nbsp;&rsaquo;](devices.md)
   * [Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.html)
   * [Port Ubuntu to a new device&nbsp;&rsaquo;](porting-new-device.html)
   * [Make scopes, webapps, native and HTML5 apps with the Ubuntu SDK&nbsp;&rsaquo;](../apps/sdk/index.html)

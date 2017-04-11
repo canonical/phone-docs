@@ -153,7 +153,7 @@ MainView {
 ```
 
 Secondly, we create a [MainView](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.MainView/), the most essential SDK component, which acts as the root container for our application. It also provides the standard
-toolbar and [Header](http://design.ubuntu.com/apps/building-blocks/header).
+toolbar and [Header](../design/building-blocks/header.md).
 
 With a syntax similar to JSON, we define its
 [properties](http://doc.qt.io/qt-5/qtqml-syntax-propertybinding.html) by

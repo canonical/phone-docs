@@ -71,14 +71,14 @@ with an example implementation that you can work from!
 To test this scope, first ensure that the build target is set to Desktop, then
 click the Play icon on the left pane (or alternatively, press `Ctrl+R`).
 
-![](../../../media/55ae687d-9f59-4e67-94e1-5500a67eda6e-cms_page_media/1024/play.png)
+![](../../../media/play.png)
 
 This will popup a window containing a preview of what your scope will look
 like on the phone. Here you can interact with your scope and test that
 everything is working as expected (search for a city, preview a weather
 result, etc.)
 
-![](../../../media/b421826e-3562-400d-b99e-45fb05a1adeb-cms_page_media/1024/jstool.png)
+![](../../../media/jstool.png)
 
 ## Project overview and npm integration
 

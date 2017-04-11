@@ -107,7 +107,7 @@ know about UX and visual design best practices. The App Design Guides are a
 resource that keeps growing with new guides to make your apps stand out, so
 stay tuned for new content!
 
-[Check out the App Design Guides&nbsp;&rsaquo;](http://design.ubuntu.com/apps)
+[Check out the App Design Guides&nbsp;&rsaquo;](../design/index.md)
 
 ### Join the community!
 

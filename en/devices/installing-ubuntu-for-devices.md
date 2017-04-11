@@ -318,14 +318,14 @@ Here you take the final steps that install Ubuntu.
 
 When you install, you'll need to name the Ubuntu device image channel used to
 obtain the image. For guidance on which channel is best for you check out the
-[Channel selection guide](image-channels.html).
+[Channel selection guide](image-channels.md).
 
 **Tip**: After installing, you can always switch to another channel.
 
 ### Install Ubuntu
 
   * Power the device off with the Power button.
-  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices)[device type](devices.html) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices)[device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
   * Install Ubuntu using your selected channel, in this case we use the **stable** channel:
 
 ```
@@ -378,7 +378,7 @@ Updates**.
 
 ### Upgrading manually
 
-**Note**: The default channel used when none is explicitly stated is stable. In the following examples, `CHANNEL` indicates the channel your Ubuntu was installed from. See [Display image channel information](image-channels.html). If you have configured the system to never install updates automatically, you can check for available updates and optionally install from **Settings → Updates**. You can display information about what image would be installed if you were to upgrade:
+**Note**: The default channel used when none is explicitly stated is stable. In the following examples, `CHANNEL` indicates the channel your Ubuntu was installed from. See [Display image channel information](image-channels.md). If you have configured the system to never install updates automatically, you can check for available updates and optionally install from **Settings → Updates**. You can display information about what image would be installed if you were to upgrade:
 
 ```
 $ adb shell system-image-cli --dry-run

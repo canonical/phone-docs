@@ -110,14 +110,14 @@ When you use this login page without setting the `anchorToKeyboard` property
 to true, it will result in the create account button being hidden as shown in
 the screenshot below.
 
-![](../../../media/8cd8476a-dbee-4488-90cf-28f52990df6f-cms_page_media/218/without_anchor.png)
+![](../../../media/without_anchor.png)
 
 However by setting the `anchorToKeyboard` property to true, you will get a
 better results as shown. Isn't that much better? By using a flickable, a user
 will be able to scroll the UI to see other text fields, but the create account
 button is always visible
 
-![](../../../media/26487ccc-3904-4d9a-96d1-245aa0899e8c-cms_page_media/218/with_anchor.png)
+![](../../../media/with_anchor.png)
 
 The example above is just one use case of many. Another example that comes to
 my mind is having a search page with a search box below which a list view is
@@ -139,24 +139,7 @@ Though I am no designer, when I think about it from the user's perspective I
 agree to it completely. Who likes to see annoying pop-ups (from the windows XP
 times) like,
 
-![](../../../media/qml-tutorial-annoying-pop-up.png)
-
-So when it comes to receiving input from the user, one step towards guiding
-the user is by showing the correct on-screen keyboard. Let me illustrate :-)
-
-Let's say you want to get the user's phone number (commonly seen in messaging
-apps), it is better to show a keyboard allowing only numeric inputs,
-
-``` QML
-TextField {
-    id: username
-    width: parent.width
-    placeholderText: "phone number"
-    inputMethodHints: Qt.ImhDialableCharactersOnly
-}
-```
-
-![](../../../media/fda0496f-74e9-4e80-a5f4-67075320f2eb-cms_page_media/218/dialer.png)
+![](../../../media/dialer.png)
 
 Let's say you want to get the user's email address, it is better to show a
 keyboard with common characters such as `@` and `.com`.
@@ -170,7 +153,7 @@ TextField {
 }
 ```
 
-![](../../../media/41b0425d-0ed0-4676-ac9d-d84e73a21b3a-cms_page_media/218/email.png)
+![](../../../media/email.png)
 
 As you may have noticed from the above code examples, you can control the OSK
 type shown using the `inputMethodHints` method. The Ubuntu SDK is quite

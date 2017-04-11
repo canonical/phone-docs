@@ -62,33 +62,7 @@ These are:
   1. base - sits flat on the surface of any main layer.
   2. raised - sits proud but not detached from the surface of any main layer.
 
-![](../../../media/qml-tutorial-palette-diagram-02.png)
-
-In addition to these there are palette values which are not applied on any
-particular layer, but mostly color a section of a component. Those will be
-described in the following chapters in more details.
-
-Each palette value follows the UI layer it is applied in, and each of them has
-at least one palette value suffixed with “Text”, which defines the color value
-to be used when drawing on the base color or putting a text above it.
-
-``` QML
-Rectangle {
-    color: theme.palette.normal.**base**
-    border {
-        width: 3
-        color: theme.palette.normal.**baseText**
-    }
-    Text {
-        text: “Hello world”
-        anchors.centerIn: parent
-        horizontalAlignment: Text.AlignHCenter
-        color: theme.palette.normal.**baseText**
-    }
-}
-```
-
-![](../../../media/5e89e3e4-9330-4106-b880-34c54eac3f6d-cms_page_media/1130/s2EIHgTuUJ0fGllaUmM0duw.png)
+![](../../../media/s2EIHgTuUJ0fGllaUmM0duw.png)
 
 ####  Background
 
