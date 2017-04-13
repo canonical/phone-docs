@@ -15,7 +15,7 @@ Start creating your app with components from the UI toolkit for the best user ex
 Use the header for placing actions and navigational options inside your app.
 
 
-[Use the header &rsaquo;](/apps/design/building-blocks/header)
+[Use the header &rsaquo;](header.md)
 
 
 ## Bottom edge
@@ -25,7 +25,7 @@ Use the header for placing actions and navigational options inside your app.
 Learn how you can create something special from the bottom of the screen.
 
 
-[Inspirational patterns &rsaquo;](/apps/design/building-blocks/bottom-edge)
+[Inspirational patterns &rsaquo;](bottom-edge.md)
 
 
 ## List items
@@ -35,7 +35,7 @@ Learn how you can create something special from the bottom of the screen.
 Find recommendations for list item layouts and what type of actions a list item can contain.
 
 
-[List items &rsaquo;](/apps/design/building-blocks/list-items)
+[List items &rsaquo;](list-items.md)
 
 
 ## Selection controls
@@ -45,4 +45,4 @@ Find recommendations for list item layouts and what type of actions a list item 
 See the different components that can be used for selecting and controlling inside a form.
 
 
-[Use checkboxes &rsaquo;](/apps/design/building-blocks/selection-controls)
+[Use checkboxes &rsaquo;](selection-controls.md)

@@ -64,7 +64,7 @@ the guides, understanding APIs and platform features is much easier.
 
 ### Tutorials
 
-Definitely check out the [HTML5 tutorials](tutorials-index.html).
+Definitely check out the [HTML5 tutorials](tutorials-index.md).
 These give you detailed steps, examples and explanations that let you leap
 into productivity with Ubuntu HTML5 apps.
 

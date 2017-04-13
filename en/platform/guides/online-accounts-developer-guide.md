@@ -43,7 +43,7 @@ to their AppArmor manifest file:
 ```
 
 You can read more about application confinement
-[here](app-confinement.html).
+[here](app-confinement.md).
 Next, the application needs to ship an `app.accounts` file which describes the
 service(s) it's going to use:
 

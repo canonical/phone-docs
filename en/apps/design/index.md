@@ -14,7 +14,7 @@ Together we can design and build beautiful and usable apps for Ubuntu.
 Familiarise yourself with the essentials before designing your app.
 
 
-[Design values &rsaquo;](/apps/design/get-started/design-values.md)
+[Design values &rsaquo;](get-started/design-values.md)
 
 
 ## Style (coming soon)
@@ -31,7 +31,7 @@ Make your app look beautiful by using the uniquely designed Ubuntu fonts and col
 Use common patterns to allow users to get where they want to naturally and with little effort.
 
 
-[Gestures &rsauo;](/apps/design/patterns/gestures.md)
+[Gestures &rsauo;](patterns/gestures.md)
 
 
 ## Building blocks
@@ -41,7 +41,7 @@ Use common patterns to allow users to get where they want to naturally and with 
 See uses cases and advice to get the best out of the Ubuntu toolkit.
 
 
-[Use the header &rsaquo;](/apps/design/building-blocks/header.md)
+[Use the header &rsaquo;](building-blocks/header.md)
 
 
 ## System integration (coming soon)

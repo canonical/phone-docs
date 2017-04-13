@@ -44,7 +44,7 @@ The same context menu appears with more commands when a user right-clicks on a w
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-[See how context menus behave in List items](/apps/design/building-blocks/list-items).
+[See how context menus behave in List items](list-items.md).
 
 
 ## Cascading menus
@@ -109,7 +109,7 @@ On smaller screens, such as mobile, users reveal leading and trailing actions by
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-[For more information about leading and trailing actions see List Item](/apps/design/building-blocks/list-items).
+[For more information about leading and trailing actions see List Item](list-items.md).
 
 
 ## Layouts
@@ -270,7 +270,7 @@ The Flag Gutter will always be present in the context menu in order to allow fla
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-For more information on checkboxes and radio buttons see  [Selection controls.](/apps/design/building-blocks/selection-controls)
+For more information on checkboxes and radio buttons see  [Selection controls.](selection-controls.md)
 
 
 ## Behavior

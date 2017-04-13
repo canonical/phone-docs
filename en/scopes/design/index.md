@@ -122,7 +122,7 @@ Cards represent a search result and can be made up of three components, which ca
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Components](/scopes/design/components) section for the different ways you can place components in cards, as well as card sizes and layouts.
+See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
 
 
 ##Categories
@@ -163,7 +163,7 @@ To see examples of a standard template code and more in-depth information see ou
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Components](/scopes/design/components) section for the different ways you can place components in cards, as well as card sizes and layouts.
+See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
 
 
 ##Modes of display
@@ -325,7 +325,7 @@ Once you have written your fantastic new scope, you will have to name it. Use  [
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-Travel through some of our  [core scopes](/scopes/design/core-scopes) for inspiration.
+Travel through some of our  [core scopes](core-scopes.md) for inspiration.
 
 
 ##The tools

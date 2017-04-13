@@ -12,14 +12,6 @@ using the Ubuntu SDK:
 
   * [Create your first webapp](web-app-tutorial.md)
 
-### Webapp generator
-
-The online webapp generator allows you to create simple webapps, ready to
-upload to the store, in an instant. Note that you will need to create a (free)
-[MyApps account](https://myapps.developer.ubuntu.com/) to access it.
-
-  * [Webapp generator](https://developer.ubuntu.com/webapp-generator/)
-
 ### Video Workshop
 
  * [Ubuntu Webapps & HTML5 Apps Workshop (Ubuntu Online Summit14.11)](https://www.youtube.com/watch?v=A0GnnWw6Xd4)

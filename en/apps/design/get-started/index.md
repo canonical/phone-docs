@@ -15,7 +15,7 @@ Understand the Ubuntu design values and how to achieved a seamless experience
 See how convergence is achieved to provide a seamless experience across all devices.
 
 
-[Mapping interactions ›](/apps/design/get-started/convergence)
+[Mapping interactions ›](convergence.md)
 
 
 ## Design values
@@ -25,7 +25,7 @@ See how convergence is achieved to provide a seamless experience across all devi
 Understand the Ubuntu design values and how they can be applied to your designs.
 
 
-[Focus on content ›](/apps/design/get-started/design-values)
+[Focus on content ›](design-values.md)
 
 
 ## Why design for Ubuntu?
@@ -35,7 +35,7 @@ Understand the Ubuntu design values and how they can be applied to your designs.
 Discover how your designs can be part of a thriving community.
 
 
-[Get involved ›](/apps/design/get-started/why-design-for-ubuntu)
+[Get involved ›](why-design-for-ubuntu.md)
 
 
 ## Make it Ubuntu
@@ -45,6 +45,4 @@ Discover how your designs can be part of a thriving community.
 Apply Ubuntu’s key components and patterns to achieve a great user experience inside your app.
 
 
-[Use the bottom edge ›](/apps/design/get-started/make-it-ubuntu)
-
-
+[Use the bottom edge ›](make-it-ubuntu.md)

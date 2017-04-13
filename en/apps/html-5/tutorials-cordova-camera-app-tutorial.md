@@ -27,7 +27,7 @@ You may want to read the [Cordova Guide](guides-cordova-guide.md). It contains a
 
 ### HTML5 UI Toolkit basics
 
-This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.html).
+This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.md).
 
 ### Getting the resources for this app
 

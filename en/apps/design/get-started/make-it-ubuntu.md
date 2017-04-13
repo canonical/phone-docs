@@ -16,7 +16,7 @@ Consider the following features to create a truly unique and beautiful Ubuntu ex
 Simply place your designs over the layout by using the grid units to help you arrange your content in a more readable, manageable way.
 
 
-[Layouts &rsaquo;](/apps/design/patterns/layouts)
+[Layouts &rsaquo;](../patterns/layouts/md)
 
 
 ## 2. Create a unique experience with the bottom edge
@@ -26,7 +26,7 @@ Simply place your designs over the layout by using the grid units to help you ar
 The bottom edge provides a more accessible way to obtain content or actions within your app. Use it to create something special.
 
 
-[Bottom edge &rsaquo;](/apps/design/building-blocks/bottom-edge)
+[Bottom edge &rsaquo;](../building-blocks/bottom-edge.md)
 
 
 ## 3. Surface most important features inside your app
@@ -36,7 +36,7 @@ The bottom edge provides a more accessible way to obtain content or actions with
 Let the user know where they are, what they can do and where they can go by using the Ubuntu Header.
 
 
-[Ubuntu header &rsaquo;](/apps/design/building-blocks/header)
+[Ubuntu header &rsaquo;](../building-blocks/header.md)
 
 
 ## 4. Make your app beautiful with our Ubuntu fonts and icon designs
@@ -44,6 +44,3 @@ Let the user know where they are, what they can do and where they can go by usin
 
 
 The uniquely stylish Ubuntu font influences UI elements and icons, making them distinctive and consistent.
-
-
-Ubuntu icons (Coming soon)

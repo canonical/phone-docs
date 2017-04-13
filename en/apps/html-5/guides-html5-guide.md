@@ -100,7 +100,7 @@ window.onload = function() {
     });
 };
 ```
-You can find more documentation on Ubuntu HTML5 APIs in the [API section](api.html).
+You can find more documentation on Ubuntu HTML5 APIs in the [API section](api.md).
 
 ## How to add an Ubuntu style
 
@@ -123,7 +123,7 @@ complete theme simply by calling :
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
 ```
 
-And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.html)
+And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 
 [Read the full API](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).

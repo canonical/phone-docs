@@ -18,7 +18,7 @@ Here you learn how to use the Ubuntu emulator from the Ubuntu SDK, including:
 
 **Note**: The Ubuntu emulator is under rapid development, including its support in the SDK. So stay nimble, stay tuned for new information, and keep alert for changes!
 
-**Tip**: For the cutting edge Ubuntu emulator and SDK experience, update your system from the SDK PPA, as explained in the [Installing the SDK](installing-the-sdk.html) tutorial.
+**Tip**: For the cutting edge Ubuntu emulator and SDK experience, update your system from the SDK PPA, as explained in the [Installing the SDK](installing-the-sdk.md) tutorial.
 
 ## What is the Ubuntu emulator?
 
@@ -72,4 +72,4 @@ displays when needed.
 ## Next steps
 
 Now that you have an emulator running as an attached device, you might check
-out the [Running an app from the SDK](tutorials-running-apps-from-the-sdk.html) tutorial.
+out the [Running an app from the SDK](tutorials-running-apps-from-the-sdk.md) tutorial.

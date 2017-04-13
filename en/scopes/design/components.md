@@ -205,7 +205,7 @@ Where we use links inside a category header, the header should be clear as to wh
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See more ways in which the header can link to either a website or an app in the  [Navigation](/scopes/design/navigation) section.
+See more ways in which the header can link to either a website or an app in the  [Navigation](navigation.md) section.
 
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
@@ -759,5 +759,3 @@ You can have the art on its own e.g. a promotional banner.
 
 
 Can be the art, header and summary together.
-
-

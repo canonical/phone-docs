@@ -102,7 +102,7 @@ Using touch a user can swipe or long-press on a list item to reveal a contextual
 ![link_external](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](/apps/design/building-blocks/header).
+All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](../building-blocks/header.md).
 
 
 ## See for yourself
@@ -111,5 +111,3 @@ All the components in the toolkit adapt to a convergent environment.  [See how t
 Ubuntu devices are shipped with built-in apps that converge over multiple devices, such as: Dekko, Calendar, Contacts and Music. They all work in the same way on your phone, tablet and desktop, giving you a seamless experience across all devices.
 
 ![750w_Convergence_Calendar](https://assets.ubuntu.com/v1/a309ff4f-750w_Convergence_Calendar.png)
-
-

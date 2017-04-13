@@ -281,7 +281,7 @@ If you need a delete icon place it on the left of the toolbar. If the  content y
 ![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
 
 
-Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](/apps/design/get-started/design-values) for more information.
+Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](design-values.md) for more information.
 
 
 ## Toolbar placement

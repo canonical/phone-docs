@@ -10,7 +10,7 @@ generic RSS feeds reader, a music library or even a store front… If you have
 an Ubuntu device, you can already have a look at some of your options by
 swiping to the right and browse the default scopes.
 
-The examples below are using the SoundCloud scope created using [thistutorial](../tutorials/write-a-json-scope-in-cpp.html).
+The examples below are using the SoundCloud scope created using [thistutorial](../tutorials/write-a-json-scope-in-cpp.md).
 
 ## Header and background
 
@@ -86,7 +86,7 @@ Here is a standard template :
 
 The “template” part defines how result cards will be laid out within the
 category. The “components” keys represent each piece of information your cards
-will display. How to attach information to a field is explained in the [Sound Cloud tutorial](../tutorials/write-a-json-scope-in-cpp.html).
+will display. How to attach information to a field is explained in the [Sound Cloud tutorial](../tutorials/write-a-json-scope-in-cpp.md).
 
 ### Template keys
 

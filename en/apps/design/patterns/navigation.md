@@ -187,7 +187,7 @@ In this example, Dekko displays an action for the bottom edge, search and settin
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-[For more slot layout examples see Header](/apps/design/building-blocks/header)
+[For more slot layout examples see Header](header.md)
 
 
 ## Header appearance

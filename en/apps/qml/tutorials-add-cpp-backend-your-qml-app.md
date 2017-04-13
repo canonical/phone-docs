@@ -5,7 +5,7 @@ title: "Tutorials - add a C++ backend to your QML app"
 
 # Tutorials - add a C++ backend to your QML app
 
-Whether you are creating a new app or porting an existing one from another ecosystem, you may need more backend power than the QML + JavaScript duo proposed in the [QML app tutorial](tutorials-building-your-first-qml-app.html). Let's have a peek at how to to add a C++ backend to your application, using system libraries or your own, and vastly increase its
+Whether you are creating a new app or porting an existing one from another ecosystem, you may need more backend power than the QML + JavaScript duo proposed in the [QML app tutorial](tutorials-building-your-first-qml-app.md). Let's have a peek at how to to add a C++ backend to your application, using system libraries or your own, and vastly increase its
 performance and potential features.
 
 In this tutorial, you will learn how to use and invoke C++ classes from QML and integrate a 3rd party library into your project.

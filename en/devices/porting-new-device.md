@@ -9,7 +9,11 @@ Ubuntu for devices runs on a variety of mobile [devices](devices.md), such as th
 
 This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 
-![](../../media/w/Doc:_porting_intro):** Porting CyanogenMod to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
+
+## Before getting started
+In order to be able to port Ubuntu to a new device, the following prerequisites should be satisfied, nevertheless, you are welcome to follow this guide even if you are attempting your first port with no previous knowledge.
+
+  * [Porting CyanogenMod](http://wiki.cyanogenmod.org/w/Doc:_porting_intro) to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
   * **Boot modes:** you need to be familiar with how to boot into various modes (bootloader, recovery…) by pressing volume keys or any device specific method.
   * **Unlock and root:** the device needs to be unlocked/rooted in order to allow flashing custom images. A lot of preparation work is common with attempts to port CyanogenMod or other custom Android ROMs.
 
@@ -17,7 +21,7 @@ This guide provides all the information required to port Ubuntu to new hardware,
 
 The [XDA developer forums](http://forum.xda-developers.com/) should be searched and consulted for anything non-Ubuntu specific.
 
-Also always refer to sources of [a workingimplementation](https://wiki.ubuntu.com/Touch/Building), the official one being the Nexus 4 port.
+Also always refer to sources of [a working implementation](https://wiki.ubuntu.com/Touch/Building), the official one being the Nexus 4 port.
 
 ### Terminology
 

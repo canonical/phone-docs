@@ -92,7 +92,7 @@ To get inspired why not check out how the branded SoundCloud scope was created i
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See where each header component can sit in our  [Component](/components) section.
+See where each header component can sit in our  [Component](components.md) section.
 
 
 ##Category and card design
@@ -104,6 +104,4 @@ The templates define how result cards are laid out within a category, where you 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Core Scope](/scopes/design/core-scopes) page for inspiration or the  [Components](/components) section on the different ways you can place components in cards, as well as card sizes and layouts.
-
-
+See our  [Core Scope](core-scopes.md) page for inspiration or the  [Components](/components) section on the different ways you can place components in cards, as well as card sizes and layouts.

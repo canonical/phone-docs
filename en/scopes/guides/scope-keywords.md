@@ -138,7 +138,7 @@ its result set, so try to keep it clean and descriptive.
 ### Returning the right components
 
 To fit in well, a child scope should take care return the result components
-expected by aggregators for that keyword. Please see the [aggregator scopes integration guide](integration-aggregator-scopes.html).
+expected by aggregators for that keyword. Please see the [aggregator scopes integration guide](integration-aggregator-scopes.md).
 
 ## What keywords should I use?
 

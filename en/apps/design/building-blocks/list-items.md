@@ -140,7 +140,7 @@ In the Contacts app for example, the list of contacts is made editable to allow 
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-For more information about how edit mode is used see  [Header](/apps/design/building-blocks/header).
+For more information about how edit mode is used see  [Header](header.md).
 
 
 ## Structure

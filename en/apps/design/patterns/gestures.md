@@ -149,7 +149,7 @@ After the user has  interacted with Hint 1, the hint will morph to become Hint 2
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-For more information on the behavior of the bottom edge hint see  [Bottom edge](/apps/design/building-blocks/bottom-edge).
+For more information on the behavior of the bottom edge hint see  [Bottom edge](bottom-edge.md).
 
 
 ## Instructional overlays

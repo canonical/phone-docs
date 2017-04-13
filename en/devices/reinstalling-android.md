@@ -78,7 +78,7 @@ Wait. When the process is complete, Android boot to its welcome page.
 If you made a backup of your Android data and apps before installing Ubuntu,
 you can restore it as follows:
 
-  * You must first have enabled USB Debugging in the Android OS and connected your Ubuntu desktop to the device over USB (see [here](installing-ubuntu-for-devices/##usbdebugging)).
+  * You must first have enabled USB Debugging in the Android OS and connected your Ubuntu desktop to the device over USB (see [here](installing-ubuntu-for-devices.md#usbdebugging)).
   * Open a terminal on your Ubuntu Desktop with `Ctrl+Alt+T`
   * Move into the directory that contains your `backup.ab` file.
   * Restore the `backup.ab` file to Android:

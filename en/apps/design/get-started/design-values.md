@@ -37,7 +37,7 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-[For more details on how a seamless experience can be achieved in your app, see Convergence](/apps/design/get-started/convergence).
+[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).
 
 
 ## Fast and effortless interactions

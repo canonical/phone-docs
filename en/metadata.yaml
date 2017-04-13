@@ -72,13 +72,13 @@ navigation:
           - title: Tutorials - Cordova camera app
             location: apps/html-5/tutorials-cordova-camera-app-tutorial.md
           - title: Tutorials - online accounts example
-            location: apps/html-5/tutorials-html5-example-online-accounts.md
+            location: apps/html-5/tutorials-example-online-accounts.md
           - title: Tutorials - Meanings app
-            location: apps/html-5/meanings-app-tutorial.md
+            location: apps/html-5/tutorials-meanings-app-tutorial.md
           - title: Tutorials - unit testing
             location: apps/html-5/tutorials-unit-testing.md
           - title: Tutorials - writing functional tests
-            location: apps/html-5/writing-functional-tests.md
+            location: apps/html-5/tutorials-writing-functional-tests.md
 
       - title: QML
         location: apps/qml/index.md
@@ -118,7 +118,7 @@ navigation:
 
     children:
       - title: Installing Ubuntu
-        location: devices/installing-devices.md
+        location: devices/installing-ubuntu-for-devices.md
       - title: Supported and reference devices
         location: devices/devices.md
       - title: Porting to a new device

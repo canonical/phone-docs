@@ -11,8 +11,8 @@ Converter Tutorial.
 ## Requirements
 
   * **Ubuntu 14.04 or later** - [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * **The currency converter tutorial** - if you haven't already, [complete the currency converter tutorial](tutorials-building-your-first-qml-app.html)
-  * **The unit testing tutorial for currency converter** - if you haven't already, [unit testing tutorial](tutorials-qml-unit-testing.html)
+  * **The currency converter tutorial** - if you haven't already, [complete the currency converter tutorial](tutorials-building-your-first-qml-app.md)
+  * **The unit testing tutorial for currency converter** - if you haven't already, [unit testing tutorial](tutorials-qml-unit-testing.md)
   * **The QML test runner tool** - open a terminal with `Ctrl+Alt+T` and run these commands to install all required
 packages:
 
