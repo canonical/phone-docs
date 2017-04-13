@@ -71,7 +71,7 @@ $ cordova run --device --debug
 
 **Note:** you need cordova-cli 4.3.x to have all of these options available.
 
-**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/edge/guide_platforms_ubuntu_index.md.html#Ubuntu%20Platform%20Guide).
+**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/dev/guide/platforms/ubuntu/index.html#Ubuntu%20Platform%20Guide).
 
 Naturally, you need to write some JavaScript to use the APIs for the plugins
 you have added too.

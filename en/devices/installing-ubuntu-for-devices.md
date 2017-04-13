@@ -38,7 +38,7 @@ registered trademarks of Canonical Ltd. All other trademarks are the property
 of their respective owners. "Ubuntu for devices" is released for limited use
 due to the inclusion of binary hardware support files. The original components
 and licenses can be found
-[here](https://developers.google.com/android/nexus/drivers).
+[here](https://developers.google.com/android/drivers).
 
 ### Release notes
 
@@ -475,8 +475,8 @@ most out of it?
 
 ### Install more Apps and Scopes
 
-You can browse or search for more [apps](apps/index.md) or
-[scopes](scopes/index.md) to install on your phone from the Ubuntu Store. To
+You can browse or search for more [apps](../apps/index.md) or
+[scopes](../scopes/index.md) to install on your phone from the Ubuntu Store. To
 access it, swipe up from the bottom edge on the Apps dash screen, then press
 the Store button. Scopes can be installed to provide easily searchable content
 in addition to the Apps, Music and Videos scopes that are provided by default.
@@ -487,7 +487,7 @@ your launcher for easy access any time.
 
 Developing apps and scopes for Ubuntu is fast, easy and free! Once you
 download the [Ubuntu SDK](platform/sdk/installing-the-sdk.md) you can
-follow along with our tutorials for [writing your firstapp](apps/qml/tutorials/index.md) or [your firstscope](scopes/tutorials/index.md). Then you can publish them to the Ubuntu
+follow along with our tutorials for [writing your firstapp](../apps/qml/tutorials/index.md) or [your firstscope](../scopes/tutorials/index.md). Then you can publish them to the Ubuntu
 Store for other users to enjoy!
 
 ## Getting Help
@@ -496,7 +496,7 @@ If you got lost somewhere, you found a bug or need some help, we're happy to
 help you. Ubuntu for devices is put together by a community of many people who
 are eager to work with you.
 
-  * If you have problems or questions, [ask on Ask Ubuntu](http://askubuntu.com/questions/ask?tags=mobile).
+  * If you have problems or questions, [ask on Ask Ubuntu](https://askubuntu.com/questions/ask?tags=mobile).
   * Join the conversation on IRC in [#ubuntu-touch](http://webchat.freenode.net/?channels=ubuntu-touch) on irc.freenode.net.
   * Join the mailing lists: [ubuntu-phone team](https://launchpad.net/~ubuntu-phone) on
 Launchpad and the team mailing list at [https://launchpad.net/~/+editemails](https://launchpad.net/~/+editemails)

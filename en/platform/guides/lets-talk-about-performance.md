@@ -144,7 +144,7 @@ times.
 ## Going further
 
 You can find more QML tips in the [Qt doc](http://qt-project.org/wiki/Performance_tip_Images) and at
-[AskUbuntu](http://askubuntu.com/questions/tagged/qml).
+[AskUbuntu](https://askubuntu.com/questions/tagged/qml).
 
 If you are blocked on a performance issue, come on Freenode IRC and ask the
 friendly developer community in the [#ubuntu-app-devel channel](http://webchat.freenode.net/?channels=ubuntu-app-devel).

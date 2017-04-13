@@ -16,8 +16,8 @@ Device | Android image*
 Aquaris E4.5 Ubuntu Edition | Retail device, Ubuntu pre-installed
 Aquaris E5 HD Ubuntu Edition  | Retail device, Ubuntu pre-installed
 Meizu MX4 Ubuntu Edition | Retail device, Ubuntu pre-installed
-Nexus 4 | [occam](https://developers.google.com/android/nexus/images#occam), [mako](https://developers.google.com/android/nexus/drivers#mako)
-Nexus 7 2013 WiFi | [razor](https://developers.google.com/android/nexus/images#razor), [flo](https://developers.google.com/android/nexus/drivers#flo)
+Nexus 4 | [occam](https://developers.google.com/android/nexus/images#occam), [mako](https://developers.google.com/android/drivers#mako)
+Nexus 7 2013 WiFi | [razor](https://developers.google.com/android/nexus/images#razor), [flo](https://developers.google.com/android/drivers#flo)
 
 \* _Links to Android pages are provided for recovery purposes._
 
@@ -52,6 +52,6 @@ through community involvement.
 
 Device | Android Image Name | Android Driver Name | Status
 ------ | ------------------ | ------------------- | ------
-Nexus 10 | [mantaray](https://developers.google.com/android/nexus/images#mantaray) | [manta](https://developers.google.com/android/nexus/drivers#manta) | Deprecated
-Galaxy Nexus | [takju](https://developers.google.com/android/nexus/images#takju) and [yakju](https://developers.google.com/android/nexus/images#yakju) | [maguro](https://developers.google.com/android/nexus/drivers#maguro) | Deprecated
-Nexus 7 2012 | [nakasi](https://developers.google.com/android/nexus/images#nakasi) or [nakasig](https://developers.google.com/android/nexus/images#nakasig) | [grouper](https://developers.google.com/android/nexus/drivers#grouper) | Deprecated
+Nexus 10 | [mantaray](https://developers.google.com/android/nexus/images#mantaray) | [manta](https://developers.google.com/android/drivers#manta) | Deprecated
+Galaxy Nexus | [takju](https://developers.google.com/android/nexus/images#takju) and [yakju](https://developers.google.com/android/nexus/images#yakju) | [maguro](https://developers.google.com/android/drivers#maguro) | Deprecated
+Nexus 7 2012 | [nakasi](https://developers.google.com/android/nexus/images#nakasi) or [nakasig](https://developers.google.com/android/nexus/images#nakasig) | [grouper](https://developers.google.com/android/drivers#grouper) | Deprecated

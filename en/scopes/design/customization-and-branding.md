@@ -104,4 +104,4 @@ The templates define how result cards are laid out within a category, where you 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Core Scope](core-scopes.md) page for inspiration or the  [Components](/components) section on the different ways you can place components in cards, as well as card sizes and layouts.
+See our  [Core Scope](core-scopes.md) page for inspiration or the  [Components](components.md) section on the different ways you can place components in cards, as well as card sizes and layouts.

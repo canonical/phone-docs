@@ -33,7 +33,7 @@ The following types are supported for settings:
   * boolean: true or false
   * list: a list of alternatives to choose from (single-choice)
 
-**Note**: Please see [Scope settings - what does “list” typereturns?](http://askubuntu.com/questions/548788/scope-settings-what-does-list-type-returns) from Ask Ubuntu
+**Note**: Please see [Scope settings - what does “list” typereturns?](https://askubuntu.com/questions/548788/scope-settings-what-does-list-type-returns) from Ask Ubuntu
 
 It is possible to optionally define a default value for each setting.
 

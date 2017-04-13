@@ -259,7 +259,7 @@ proprietary blobs, as their source code is not available for the build, and
 are included in binary form.
 
 Since we use AOSP as a base, for supported devices all you need to do is to
-download and extract and run as mentioned in the downloads from [https://developers.google.com/android/nexus/drivers](https://developers.google.com/android/nexus/drivers)
+download and extract and run as mentioned in the downloads from [https://developers.google.com/android/drivers](https://developers.google.com/android/drivers)
 
 
 ## Device-specific changes

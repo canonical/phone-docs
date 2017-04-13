@@ -92,5 +92,5 @@ selection of scopes developer and design guides.
 Thanks to our active community, you can find support from a variety of sources
 such as Ask Ubuntu, our mailing lists or IRC channel.
 
-  * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](http://askubuntu.com/questions/tagged/scopes)
+  * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](https://askubuntu.com/questions/tagged/scopes)
   * [Reach out to other developers (mailing-list, live chat)&nbsp;&rsaquo;](https://developer.ubuntu.com/en/community/)
