@@ -30,7 +30,7 @@ the user is browsing installed scopes.
 
 ### DisplayName
 
-The text that will appear in the header of your scope when running (unless you
+The text that will appear in the header of your scope when running [unless you
 are [using a logo](../guides/scopes-customization-branding.md)),
 but it’s also what users will see in the store and in their installed scopes
 list. Make sure you are using a unique DisplayName to make your scope stand
@@ -63,7 +63,7 @@ wait a few seconds for the build and validation tests to run.
 
 ![](../../../media/Screenshot-from-2014-11-26-1-700x223.png)
 
-![](../../../media/Screenshot-from-2014-11-26-2-700x223.png)
+![)(../../../media/Screenshot-from-2014-11-26-2-700x223.png)
 
 If everything is green, your click package is ready to be submitted to the
 store! It’s in your build folder (“`build-<kit name>-<project name>`”, located

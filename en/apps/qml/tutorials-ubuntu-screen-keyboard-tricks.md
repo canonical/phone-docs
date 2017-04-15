@@ -153,7 +153,7 @@ TextField {
 }
 ```
 
-![](../../../media/email.png)
+![)(../../../media/email.png)
 
 As you may have noticed from the above code examples, you can control the OSK
 type shown using the `inputMethodHints` method. The Ubuntu SDK is quite

@@ -15,4 +15,4 @@ get productive writing scopes.
   * [Scope keywords : position your scope in the user journey](scope-keywords.md)
   * [Integration with aggregator scopes](integration-aggregator-scopes.md)
 
-If you are looking for step-by-step tutorials, you will find them on [this page](../tutorials/index.md).
+If you are looking for step-by-step tutorials, you will find them on [this page)(../tutorials/index.md).

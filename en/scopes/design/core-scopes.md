@@ -243,7 +243,7 @@ Scopes can be fed by a range of different content sources; a great example of th
 - Nearest parking
 
 
-![I_am_hungry_png](https://assets.ubuntu.com/v1/a2ab01cc-I_am_hungry_png1-567x1024.png)
+![I_am_hungry_png)(https://assets.ubuntu.com/v1/a2ab01cc-I_am_hungry_png1-567x1024.png)
 
 ##I’m hungry
 

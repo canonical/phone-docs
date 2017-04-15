@@ -39,7 +39,7 @@ Find recommendations for list item layouts and what type of actions a list item 
 
 
 ## Selection controls
-![366w_BuildingBlocks_Overview_FormElements](https://assets.ubuntu.com/v1/4f9a01d9-366w_BuildingBlocks_Overview_FormElements.png)
+![366w_BuildingBlocks_Overview_FormElements)(https://assets.ubuntu.com/v1/4f9a01d9-366w_BuildingBlocks_Overview_FormElements.png)
 
 
 See the different components that can be used for selecting and controlling inside a form.

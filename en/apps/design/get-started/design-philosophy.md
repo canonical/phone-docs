@@ -66,7 +66,7 @@ What is most important is that screen layouts retain a natural, rhythmic quality
 
 The folds from origami produce simple graphical details that allow designers to create a subtle grid for positioning brand elements and components, such as logos, icons or copylines. This helps maintain focus on the main image or graphic element.
 
-![750w_DesignPhilosophy_SubtleGrid](https://assets.ubuntu.com/v1/30aa2714-750w_DesignPhilosophy_SubtleGrid.png)
+![750w_DesignPhilosophy_SubtleGrid)(https://assets.ubuntu.com/v1/30aa2714-750w_DesignPhilosophy_SubtleGrid.png)
 
 
 ## Suru mood board

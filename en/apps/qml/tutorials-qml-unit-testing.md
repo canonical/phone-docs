@@ -182,5 +182,5 @@ and help.
 ### Resources
 
   * [Ubuntu Test components reference](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test/)
-  * [Running tests with qml testrunner](http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
+  * [Running tests with qml testrunner)(http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
   * [Get started with Qt Quick Test](http://doc.qt.io/qt-5/qtquick-qtquicktest.html)

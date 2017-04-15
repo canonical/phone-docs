@@ -9,7 +9,7 @@ sustainable way, independently from the language or tools used.
 
 ## Automating user acceptance testing
 
-Automated testing of an application through the Graphical User Interface (GUI)
+Automated testing of an application through the Graphical User Interface [GUI)
 is inherently fragile. The associated test suite requires regular review and
 attention during the development cycle. This is known as **Interface
 Sensitivity** –_even minor changes to the interface can cause tests to fail_,
@@ -77,7 +77,7 @@ class Stopwatch(object):
         raise NotImplementedError()
 ```
 
-![](../../../media/stopwatch-179x300.png)
+![)(../../../media/stopwatch-179x300.png)
 
 
 ### Try not to expose the internals of the page.

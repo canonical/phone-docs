@@ -218,7 +218,7 @@ color using the following formula:
 **theme.palette.valueSet.value**
 
 where valueSet corresponds to one of the states enumerated above, with camel
-case, and value is one of the palette color values listed in [Palette values](
+case, and value is one of the palette color values listed in [Palette values)(
 https://docs.google.com/document/d/1HBY0hRKtqNvOw8jfcDHvwbhagXYmOE6S-z2_ab7qtgk/edit#heading=h.3gvdp3c2jec8).
 
 When coloring a component it is highly recommended to choose the value set

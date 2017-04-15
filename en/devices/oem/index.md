@@ -28,4 +28,4 @@ The following pages provide documentation for the code and test cases.
   * [Preinstalling Content](preinstalls.md)
   * [Savvy Core tests](core.md)
   * [Savvy API tests](api.md)
-  * [dconf details](implementation.md)
+  * [dconf details)(implementation.md)

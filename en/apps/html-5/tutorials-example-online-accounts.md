@@ -103,8 +103,8 @@ This is done in the `window.onload` event handler (or equivalent):
     window.onload = function () {
        var UI = new UbuntuUI();
        UI.init();
-    [...]
-       var api = external.getUnityObject('1.0');
+    [...)
+       var api = external.getUnityObject['1.0');
        var oa = api.OnlineAccounts;
 
 ### Getting the list of providers for the current application
@@ -143,7 +143,7 @@ oa.api.getAccounts(FILTERS, CALLBACK) function.
 
 Let’s take a closer look at the `CALLBACK`.
 
-    oa.api.getAccounts(FILTERS, function(accounts) { [...] });
+    oa.api.getAccounts(FILTERS, function(accounts) { [...) });
 
 This defines an anonymous callback function that receives the list of
 accounts, here as accounts.
@@ -158,8 +158,8 @@ Provider ID and Service ID, obtained with the API as follows:
 
     var info =
        act.displayName() + ' '
-       + JSON.stringify((act.provider()['id'])) + ' '
-       + JSON.stringify(act.service()['id']);
+       + JSON.stringify((act.provider(]('id'])) + ' '
+       + JSON.stringify(act.service(]('id']);
 
 This List is populated with the Ubuntu `List.append()` method. This uses the
 above info string and also takes the name of a callback function to be
@@ -257,7 +257,7 @@ The authcallback function receives the authentication data, here named res,
 and the authentication token is obtained from it:
 
     function authcallback(res){
-       token = res['data']['AccessToken'];
+       token = res['data']('AccessToken'];
     [...]
     }
 

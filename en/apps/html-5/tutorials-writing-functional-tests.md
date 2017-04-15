@@ -53,7 +53,7 @@ this by driving a browser and providing programmatic access to it.
 
 Before you can run a testcase, you’ll need to setup your environment.
 
-  * Create a test class that inherits [AutopilotTestCase](https://developer.ubuntu.com/api/autopilot/python/1.5.0/autopilot.testcase.AutopilotTestCase/#autopilot.testcase.AutopilotTestCase)
+  * Create a test class that inherits [AutopilotTestCase](../api-autopilot-current/autopilot.testcase.AutopilotTestCase/#autopilot.testcase.AutopilotTestCase)
   * Define your `Setup()` and `TearDown()` functions
   * Launch the application with introspection via `launch_test_application`
 
@@ -112,9 +112,9 @@ Here’s a simple test example of testing an HTML5 app with 2 buttons.
 
 ``` javascript
 def test_for_buttons(self):
-    	html5_doc_buttons = self.page.find_elements_by_css_selector(
-        	"#hello-page a")
-    	self.assertThat(len(html5_doc_buttons), Equals(2))
+      html5_doc_buttons = self.page.find_elements_by_css_selector(
+          "#hello-page a")
+      self.assertThat(len(html5_doc_buttons), Equals(2))
 ```
 
 ## Making use of selenium
@@ -185,8 +185,8 @@ actions. So putting it all together, here’s our full testcase:
 
 ``` javascript
 def test_click_button(self):
-    	button = self.page.find_elements_by_class_name(“ubuntu”)[0]
-        actions = ActionChains(self.page)
+      button = self.page.find_elements_by_class_name(“ubuntu”](0)
+        actions = ActionChains[self.page)
         actions.click(button)
         actions.perform()
 ```
@@ -206,7 +206,7 @@ When you are architecting your test suite, it’s important to think about
 design. Functional tests are the most UI sensitive testcases in your project
 and are more likely to break than lower level tests. To address this issue,
 the page object model can guide you towards writing tests that can scale and
-deal with changes over time easily. Check out the [Page ObjectModel](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-page_object/) for more information.
+deal with changes over time easily. Check out the [Page ObjectModel](../apps/api-autopilot-current/guides-page_object/) for more information.
 
 ## Conclusion
 
@@ -216,6 +216,6 @@ HTML5 tests. Check out the links below for more documentation and help.
 
 ### Resources
 
- * [Autopilot API](https://developer.ubuntu.com/api/autopilot/python/1.5.0/)
+ * [Autopilot API](../apps/api-autopilot-current/)
  * [Selenium Webdriver API](http://selenium-python.readthedocs.org/en/latest/api.html)
- * [HTML5 SDK documentation](../api.md)
+ * [HTML5 SDK documentation)(../api.md)

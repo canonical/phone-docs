@@ -59,4 +59,4 @@ Now that you are familiar with frameworks, you should probably read another
 short article on [Security Policy Groups](https://developer.ubuntu.com/en/publish/security-policy-groups/). Another piece of the platform that defines what your application is
 allowed to do and the many ways you can bring more features and security to
 your users. For an in-depth look at frameworks, you can read the complete
-[documentation](https://wiki.ubuntu.com/Click/Frameworks).
+[documentation)(https://wiki.ubuntu.com/Click/Frameworks).

@@ -22,7 +22,7 @@ desktop plugin, via the [openUrlExternally](https://developer.ubuntu.com/api/app
 
 There are a few URLs that are supported internally in the URL dispatcher.
 
- * **`application:///$(app_id).desktop`** - The application URL can be used to start an application with a known [Application ID](https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId). For applications that install their desktop file in /usr/share/applications the application ID should just be the name of the desktop file.
+ * **`application:///$(app_id).desktop`** - The application URL can be used to start an application with a known [Application ID)(https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId). For applications that install their desktop file in /usr/share/applications the application ID should just be the name of the desktop file.
  * **`appid://$(pkg)/$(app)/$(version)`** - Allows for launching an application using an application ID. Also provides for wild cards. The $(app) can be `first-listed`, `last-listed-app` or `only-listed-ap`p to select the appropriate application using the click manifest. Also the `$(version)` can be `current-user-version` to select the version in the manifest
 
 ### Application URLs

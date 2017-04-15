@@ -51,5 +51,5 @@ Watch the series of scopes workshops on video.
   * [Ubuntu Webapps & HTML5 Apps Workshop (Ubuntu Online Summit 14.11)](https://www.youtube.com/watch?v=A0GnnWw6Xd4)
   * [Introduction to scopes development ](https://www.youtube.com/watch?v=4VwIXWUWQ3s&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=2)
   * [Adding location support to your scope](https://www.youtube.com/watch?v=TjlXGPS1lmY&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=3)
-  * [Scope development how-tos](https://www.youtube.com/watch?v=SedKymOdC4Q&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=4)
+  * [Scope development how-tos)(https://www.youtube.com/watch?v=SedKymOdC4Q&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=4)
   * [Online Accounts for Scope Developers Workshop](https://www.youtube.com/watch?v=s_Y_ORqjD9g&list=PL-qBHd6_LXWYSvPX1uyD5ADBMhl41zbcw&index=5)

@@ -5,7 +5,7 @@ title: "Guides - introduction to the HTML5 UI toolkit"
 #  Guides - introduction to the HTML5 UI toolkit
 
 Your app can use any visual style, but if you want to give a more native feel
-to it, Ubuntu provides a set of HTML5 layouts and widgets (with associated CSS
+to it, Ubuntu provides a set of HTML5 layouts and widgets [with associated CSS
 and JavaScript) that you can use to build an HTML5 app that looks and behaves
 like other platform apps.
 
@@ -67,7 +67,7 @@ Naturally, the head imports Ubuntu CSS and Javascript. For example:
 ``` html
 <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css"/>
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
-<!-- [...] -->
+<!-- [...) -->
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
 ```
 

@@ -111,7 +111,7 @@ If your app allows for multi-line input inside a text field, then the user will 
 In a text field, such as in the Messaging app, the field automatically displays a scrollbar that overlays the content to allow users to scroll once they have entered more than five lines of text.
 
 
-![366w_Scrollbar_Text](https://assets.ubuntu.com/v1/a2adf439-366w_Scrollbar_Text.png)
+![366w_Scrollbar_Text)(https://assets.ubuntu.com/v1/a2adf439-366w_Scrollbar_Text.png)
 
 
 ## Scrolling inside panels

@@ -7,7 +7,7 @@ Title: List items
 
 List items can be used to make up a list of ordered scrollable items that are related to each other.
 
-![750w_ListItems_MainImage (1)](https://assets.ubuntu.com/v1/12134b24-750w_ListItems_MainImage-1.png)
+![750w_ListItems_MainImage [1)](https://assets.ubuntu.com/v1/12134b24-750w_ListItems_MainImage-1.png)
 
 
 ## A list of emails
@@ -346,7 +346,7 @@ You can place what you wish inside the slots. However, these recommendations tak
 ## Four slot
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
+![no alt text)(https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
 Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.

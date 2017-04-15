@@ -6,7 +6,7 @@ Title: Design values
 
 
 This guide is intended to help designers and developers create unique and valuable user experiences.
-![750w_DesignValues(tablet)_MainImage](https://assets.ubuntu.com/v1/845ca032-750w_DesignValuestablet_MainImage.png)
+![750w_DesignValues[tablet)_MainImage](https://assets.ubuntu.com/v1/845ca032-750w_DesignValuestablet_MainImage.png)
 
 
 -  [All input types supported equally ›](#all-input-types-supported-equally)
@@ -161,7 +161,7 @@ The header can provide quick access to important actions and navigational option
 
 
 ![366w_Overview_FocusOnContentDont](https://assets.ubuntu.com/v1/791f58f8-366w_Overview_FocusOnContentDont.png)
-![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
+![dont_32)(https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
 ## Don’t
 

@@ -31,7 +31,7 @@ suffers.
 Using the Ubuntu Push Server, this problem is alleviated: the Chatter server
 will deliver the messages to the Ubuntu Push Server, which in turn will send
 it in an efficient manner to the Ubuntu Push Client running in Bob and Carol's
-devices. The user sees a notification (all without starting the app) and then
+devices. The user sees a notification [all without starting the app) and then
 can launch it if he's interested in reading messages at that point.
 
 Since the app is not started and messages are delivered opportunistically, this
@@ -181,7 +181,7 @@ Depending on the contents of the push message it may trigger user-facing
 notifications, and will queue a message for the app to get via the PopAll
 method.
 
-The `APP_ID` is as described in the [ApplicationIddocumentation](https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
+The `APP_ID` is as described in the [ApplicationIddocumentation)(https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
 except that the version is treated as optional. Therefore both
 `com.ubuntu.music_music` and `com.ubuntu.music_music_1.3.496` are valid.
 
@@ -349,7 +349,7 @@ Here's a simple example:
 The notification can contain a **tag** field, which can later be used by the
 persistent notification management API.
 
- * **message**: (optional) A JSON object that is passed as-is to the application via PopAll.
+ * **message**: [optional) A JSON object that is passed as-is to the application via PopAll.
  * **notification**: (optional) Describes the user-facing notifications triggered by this push
 message.
 
@@ -376,7 +376,7 @@ The notification can contain a **vibrate** field, causing haptic feedback,
 that has the following content:
 
  * **pattern**: a list of integers describing a vibration pattern.
- * **duration**: duration in milliseconds. Is equivalent to setting pattern to [duration], and
+ * **duration**: duration in milliseconds. Is equivalent to setting pattern to [duration), and
 overrides pattern.
  * **repeat**: number of times the pattern has to be repeated (defaults to 1, 0 is the same
 as 1).

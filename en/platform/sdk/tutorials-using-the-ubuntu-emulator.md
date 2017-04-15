@@ -67,7 +67,7 @@ displays when needed.
 ## Getting shell access to a running emulator
 
 ![](../../../media/Touch/Emulator](https://wiki.ubuntu.com/Touch/Emulator)
-  * [http://davidplanella.org/ubuntu-emulator-quickstart-guide/](http://davidplanella.org/ubuntu-emulator-quickstart-guide/)
+  * [http://davidplanella.org/ubuntu-emulator-quickstart-guide/)(http://davidplanella.org/ubuntu-emulator-quickstart-guide/)
 
 ## Next steps
 

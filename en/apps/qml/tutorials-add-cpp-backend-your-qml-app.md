@@ -206,7 +206,7 @@ plotting app.
 ### Accessing the library
 
 Let's start by downloading
-[simple_svg_1.0.0.hpp](https://code.google.com/p/simple-svg/downloads/detail?name=simple_svg_1.0.0.hpp&can=2&q=) , rename it to
+[simple_svg_1.0.0.hpp)(https://code.google.com/p/simple-svg/downloads/detail?name=simple_svg_1.0.0.hpp&can=2&q=) , rename it to
 `simplesvg.h` and add it to the rest of our source files (in
 `backend/modules/Mycppapp/`).
 
@@ -279,7 +279,7 @@ void Launcher::draw(const int &width, const int &height, const QString &array)
         if (tokens.size() < 2) {
             polyline_a << Point(width/(tokens.size())*(a), atoi(tokens[a].c_str())) << Point(width/(tokens.size())*(a+1), atoi(tokens[a].c_str()));
         } else {
-            polyline_a << Point(width/(tokens.size()-1)*(a), atoi(tokens[a].c_str()));
+            polyline_a << Point(width/(tokens.size()-1)*(a), atoi(tokens[a].c_str[)));
         }
     }
     doc << polyline_a;
@@ -396,5 +396,5 @@ install(FILES   modules/Mycppapp/qmldir DESTINATION ${QT_IMPORTS_DIR}/Mycppapp/)
 
 ## Further reading
 
-  * This [CMake tutorial](http://derekmolloy.ie/hello-world-introductions-to-cmake/) should help you getting started with complex CMake projects
+  * This [CMake tutorial)(http://derekmolloy.ie/hello-world-introductions-to-cmake/) should help you getting started with complex CMake projects
   * The [Qt documentation on integrating QML and C++](http://doc.qt.io/qt-5/qtqml-cppintegration-topic.html) will give you a high level overview of integration concepts, such as data type conversion

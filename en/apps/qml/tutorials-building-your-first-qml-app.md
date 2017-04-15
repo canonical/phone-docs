@@ -549,4 +549,4 @@ Alternatively, if you only want to run the Component Showcase:
 ## Questions?
 
 If you’ve got any questions on this tutorial, or on the technologies that it
-uses, just [get in touch with our App Developer Community](http://community.ubuntu.com)!
+uses, just [get in touch with our App Developer Community)(http://community.ubuntu.com)!

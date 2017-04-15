@@ -67,7 +67,7 @@ Keywords = music;video;news
 
 ### Step 2: return results according to the keywords requested
 
-In order for your scope to return results relevant to the keyword(s) used by
+In order for your scope to return results relevant to the keyword[s) used by
 an aggregator, you need a way of telling what keywords were used to discover
 your scope. Your scope’s `ScopeBase::search()` method is called once for each
 search query. This method receives two arguments: a `CannedQuery` object, and a
@@ -159,7 +159,7 @@ sports. There could also be a "videos.sports" keyword that clearly indicates
 that the scope returns sports videos.
 
 For details about specific aggregator scopes, the keywords they listen for,
-and their expectations for results, please see the [aggregator scopesintegration guide](https://developer.ubuntu.com/en/scopes/guides/integration-aggregator-scopes).
+and their expectations for results, please see the [aggregator scopesintegration guide)(https://developer.ubuntu.com/en/scopes/guides/integration-aggregator-scopes).
 
 ### General keywords
 

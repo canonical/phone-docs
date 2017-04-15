@@ -7,7 +7,7 @@ Title: Selection controls
 
 The following components are used to change the state of a property or setting from a set of predefined values.
 
-![750w_FormElements_Alignment (1)](https://assets.ubuntu.com/v1/ee20c929-750w_FormElements_Alignment-1.png)
+![750w_FormElements_Alignment [1)](https://assets.ubuntu.com/v1/ee20c929-750w_FormElements_Alignment-1.png)
 
 
 -  [Checkbox ›](#checkbox)
@@ -357,7 +357,7 @@ The interval slider has two handles that can select between values. For example,
 A system volume control is a control that any app can embed in its UI. You should use this slider control when your app needs only one volume control.
 
 
-![366w_FormElements_VolumeControl](https://assets.ubuntu.com/v1/0d243a39-366w_FormElements_VolumeControl.png)
+![366w_FormElements_VolumeControl)(https://assets.ubuntu.com/v1/0d243a39-366w_FormElements_VolumeControl.png)
 
 
 For example, if you app has a media player or is a game that has sound effects, but no background music.It consists of a slider that automatically reflects and adjusts the audio volume for the current output role through the current output device.

@@ -10,7 +10,7 @@ applications developed with the Ubuntu SDK. This guide will cover the
 different options available to you for running the autopilot test suite for
 your applications. While the autopilot binary is also a testrunner, there are
 some other tools to make it easier to run on the desktop and the device. This
-guide assumes you are familiar with using [autopilot testrunner](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-running_ap/).
+guide assumes you are familiar with using [autopilot testrunner](../../apps/api-autopilot-current/guides-running_ap/).
 
 ## Running tests on the desktop
 
@@ -65,7 +65,7 @@ Autopkgtest is the easiest way to run your tests on device, especially
 considering the device has a read-only image by default. Autopkgtest is
 available in the archives, but running on the phone requires autopkgtest 3.8.1
 or newer. This requires vivid or newer. **Please update you installation of
-autopkgtest before testing.** **The best way to ensure success is to [download the latest deb](https://packages.debian.org/sid/all/autopkgtest/download) and
+autopkgtest before testing.** **The best way to ensure success is to [download the latest deb)(https://packages.debian.org/sid/all/autopkgtest/download) and
 install it**. The deb will cleanly install on Ubuntu 12.04 LTS and newer. The
 included documentation [shows how to run tests](https://people.debian.org/~mpitt/autopkgtest/README.running-tests.html)
 for a lot of possible scenarios, but for touch specific tests these are the

@@ -4,7 +4,7 @@ title: "Tutorials - click targets and device kits"
 
 # Tutorials - click targets and device kits
 
-To build your application for a specific environment (phone, emulator or
+To build your application for a specific environment [phone, emulator or
 desktop), the SDK needs to know which devices you are targeting (it can be all
 of them). That’s why, when opening the SDK for the first time, or when
 creating a new project, it will guide you through the creation of targets.
@@ -64,7 +64,7 @@ Targets can be created, deleted and updated in the **"Ubuntu" > "Click"** pane
 
 Kits can be created and deleted in the **"Build & Run" > "Kits"** pane.
 
-![](../../../media/+NekheleshRamananthan/posts)
+![)(../../../media/+NekheleshRamananthan/posts)
 demonstrates how to use the Ubuntu SDK Kits to build and run apps on the
 desktop, emulator and physical devices.
 

@@ -173,6 +173,6 @@ Hint 2 is now fully visible; however if the user doesn’t interact with the con
 
 You can choose to have the bottom edge hint hidden from view when the user scrolls the content on the screen. This would work well for apps that need the whole screen, such as the Camera app, because the primary goal is to take a picture.
 
-![750w_BottomEdge_HidingHints](https://assets.ubuntu.com/v1/e6120d50-750w_BottomEdge_HidingHints.png)
+![750w_BottomEdge_HidingHints)(https://assets.ubuntu.com/v1/e6120d50-750w_BottomEdge_HidingHints.png)
 
 

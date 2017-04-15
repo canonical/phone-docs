@@ -128,7 +128,7 @@ if (query_string.empty()) {
 
 That’s it! The scope should now be able to surface weather data for your location when you open it.
 
-![](../../../media/scope-location-2.png)
+![)(../../../media/scope-location-2.png)
 
 ## Next steps
 

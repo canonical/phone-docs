@@ -71,4 +71,4 @@ click and installed to the device or emulator in order to properly test it.
 Again the IDE will assist with creating, validating, deploying and installing
 the package.
 
-[Learn how to run apps with the Ubuntu SDK IDE&nbsp;&rsaquo;](apps/sdk/tutorials/running-apps-from-the-sdk.md)
+[Learn how to run apps with the Ubuntu SDK IDE&nbsp;&rsaquo;)(apps/sdk/tutorials/running-apps-from-the-sdk.md)

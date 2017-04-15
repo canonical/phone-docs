@@ -6,7 +6,7 @@ Title: Make it Ubuntu
 
 
 Consider the following features to create a truly unique and beautiful Ubuntu experience within your app.
-![750w_MakeItUbuntu_MainImage (1)](https://assets.ubuntu.com/v1/28c489b6-750w_MakeItUbuntu_MainImage-1.png)
+![750w_MakeItUbuntu_MainImage [1)](https://assets.ubuntu.com/v1/28c489b6-750w_MakeItUbuntu_MainImage-1.png)
 
 
 ## 1. Create a consistent look across your app
@@ -40,7 +40,7 @@ Let the user know where they are, what they can do and where they can go by usin
 
 
 ## 4. Make your app beautiful with our Ubuntu fonts and icon designs
-![366w_MakeItUbuntu_Fonts (1)](https://assets.ubuntu.com/v1/caa4932f-366w_MakeItUbuntu_Fonts-1.png)
+![366w_MakeItUbuntu_Fonts (1))(https://assets.ubuntu.com/v1/caa4932f-366w_MakeItUbuntu_Fonts-1.png)
 
 
 The uniquely stylish Ubuntu font influences UI elements and icons, making them distinctive and consistent.

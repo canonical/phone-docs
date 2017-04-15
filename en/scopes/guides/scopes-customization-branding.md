@@ -21,9 +21,9 @@ system.
 
 ![](../../../media/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-cpp/view/head:/data/com.ubuntu.developer.davidcalle.soundcloud-scope_soundcloud.ini) file allows you to set several keys to change the look of your scope header, background and text color.
 
-You can add the following keys to the [Appearance] group of this file :
+You can add the following keys to the [Appearance) group of this file :
 
-  * **ForegroundColor** - default text color (defaults to theme-provided foreground color)
+  * **ForegroundColor** - default text color [defaults to theme-provided foreground color)
   * **BackgroundColor** - color of scope background (default is transparent)
   * **ShapeImages** - whether to use Ubuntu-shape (rounded corners) for all cards and artwork (defaults to true)
   * **CategoryHeaderBackground** - background scheme of the results categories
@@ -151,5 +151,5 @@ Scope flexibility is here to unlock your creativity : try to push the
 customization to its maximum and make your scope unique. Have a look at
 default scopes such as Ebay, Wikipedia or Youtube to get some design ideas !
 
-You can dive into the [API documentation](https://developer.ubuntu.com/api/scopes/cpp/current/) if you
+You can dive into the [API documentation)(https://developer.ubuntu.com/api/scopes/cpp/current/) if you
 need more details on tweaking cards and categories to your needs.

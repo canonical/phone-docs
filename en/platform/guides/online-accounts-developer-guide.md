@@ -77,7 +77,7 @@ will access: this is done via the `services` key, which can be assigned an
 array of elements, each describing a service. The only required key is
 "`provider`", which should contain the identifier of the account provider. The
 available account providers can be found in `/usr/share/accounts/providers/`
-(those installed via click packages will be found in
+[those installed via click packages will be found in
 `~/.local/share/accounts/providers/`), and their identifier is given by their
 filename minus the “`.provider`” suffix. Authentication information can be
 specified either in the `auth` key in one's `app.accounts` file, or it can be
@@ -199,7 +199,7 @@ authentication token for that account. Depending on the authentication method
 being used, this could be an OAuth authentication token or, in case of
 services offering a basic login only, a username and a password. Obtaining the
 authentication token is simply done by accessing an `[Account](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/)` element and
-calling its `[authenticate()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticate-method)` method:
+calling its `[authenticate())(http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticate-method)` method:
 
 ``` QML
 import QtQuick 2.0
@@ -220,7 +220,7 @@ ListView {
 }
 ```
 
-After the `authenticate()` method has been called, the `Account` object will
+After the `authenticate[)` method has been called, the `Account` object will
 emit the [authenticationReply()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticationReply-signal) signal which will
 carry a `reply` parameter with the authentication result. Applications might
 want to specify some additional parameters when performing the authentication;
@@ -234,13 +234,13 @@ Button {
   onClicked: model.account.authenticate({
     "ClientId": "foo",
     "ClientSecret": "bar",
-    "Scopes": ["publish_actions"]
+    "Scopes": ["publish_actions")
   })
 }
 ...
 ```
 
-The parameters passed to the `authenticate()` method, as well as the `reply`
+The parameters passed to the `authenticate[)` method, as well as the `reply`
 object returned with the `authenticationReply() `signal, depend on the
 authentication method being used. In the next sections, the most common
 authentication method are described, along with their parameters and replies.
@@ -309,7 +309,7 @@ the following keys:
   * **`SignatureMethod`**: the signature method which needs to be used.
 
 Once the client application has received the authentication reply, it will
-need to [sign the requests](http://tools.ietf.org/html/rfc5849#section-3.1)
+need to [sign the requests)(http://tools.ietf.org/html/rfc5849#section-3.1)
 made against the service APIs. While the `ConsumerKey`, `ConsumerSecret` and
 `SignatureMethod` are typically already known to the application, they are
 also provided in the authentication reply for convenience.

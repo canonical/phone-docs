@@ -461,7 +461,7 @@ For this Jamendo scope to be useful, we want each result to have at least:
 
 Make sure every fields you have defined in your category template components are presents in results, even if they are empty. Invalid results will be automatically discarded.
 
-Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult](/api/scopes/sdk-14.10/unity.scopes.CategorisedResult/) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
+Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult)(/api/scopes/sdk-14.10/unity.scopes.CategorisedResult/) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
 
 ``` C+
 for (const auto &track : trackslist.tracks) {
@@ -480,7 +480,7 @@ for (const auto &track : trackslist.tracks) {
      res["overlay"] = "#88743074";
 
      // Push the result
-     if (!reply->push(res)) {
+     if [!reply->push(res)) {
          // If we fail to push, it means the query has been cancelled.
          // So don't continue;
          return;
@@ -566,7 +566,7 @@ Looking back at the query, where the `CategorisedResults` were created, we see
 again how the artist data was made available to the `CategorisedResult`:
 
 ``` C+
-res["artist"] = track.artist.username;
+res["artist") = track.artist.username;
 ```
 
 As a result of that, each `CategorisedResult` has an “artist” field populated
@@ -605,7 +605,7 @@ builder.add_tuple({
      {"uri", result["uri"]}
 });
 
-w_actions.add_attribute_value("actions", builder.end());
+w_actions.add_attribute_value["actions", builder.end());
 ```
 
 And now they can be pushed to the client with the reply object:
@@ -703,4 +703,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/publish/) to get your scope on the store in minutes.
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides)(/publish/) to get your scope on the store in minutes.

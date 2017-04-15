@@ -745,7 +745,7 @@ One card displays one result (data/content item). It is made up of a maximum of 
 One component must be present in any given card.
 
 
-![Placing components 2](https://assets.ubuntu.com/v1/1eeb84a0-Placing-components-2-1024x855.png)
+![Placing components 2)(https://assets.ubuntu.com/v1/1eeb84a0-Placing-components-2-1024x855.png)
 
 ##One configuration
 

@@ -145,7 +145,7 @@ The panel that is defined as the main panel (for example 50GU) will initially be
 
 ## Use a fixed panel
 
-![750w_Layouts_GoodPractice](https://assets.ubuntu.com/v1/00e8f48f-750w_Layouts_GoodPractice.png)
+![750w_Layouts_GoodPractice)(https://assets.ubuntu.com/v1/00e8f48f-750w_Layouts_GoodPractice.png)
 
 
 To provide a consistent user experience across the whole platform leave at least one of the panels fixed at a minimum size of either 50 or 40GU inside each screen size. This creates a familiar experience from mobile, tablet and desktop.

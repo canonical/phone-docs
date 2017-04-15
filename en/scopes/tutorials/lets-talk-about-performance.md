@@ -15,7 +15,7 @@ you some tips on common pitfalls and resource hogs.
 
 Let’s start with an important truth: if you want your animations and
 transitions to look natural and smooth, your application will need to render
-each frame in less than 16ms (~60fps).
+each frame in less than 16ms [~60fps).
 
 This can be a challenge if you are trying to do many things at the same time.
 The good news is: the SDK gives you tools to measure and track the cause of
@@ -146,4 +146,4 @@ You can find more QML tips in the [Qt doc](http://qt-project.org/wiki/Performanc
 [AskUbuntu](https://askubuntu.com/questions/tagged/qml).
 
 If you are blocked on a performance issue, come on Freenode IRC and ask the
-friendly developer community in the [#ubuntu-app-devel channel](http://webchat.freenode.net/?channels=ubuntu-app-devel).
+friendly developer community in the [#ubuntu-app-devel channel)(http://webchat.freenode.net/?channels=ubuntu-app-devel).

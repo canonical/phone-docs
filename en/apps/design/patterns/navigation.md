@@ -6,7 +6,7 @@ Title: Navigation
 
 
 Consistent and effortless navigation is an essential element of the overall user experience.
-![750w_Navigation_MainImage (2)](https://assets.ubuntu.com/v1/043ba3b0-750w_Navigation_MainImage-2.png)
+![750w_Navigation_MainImage [2)](https://assets.ubuntu.com/v1/043ba3b0-750w_Navigation_MainImage-2.png)
 
 -  [Usage ›](#usage)
 
@@ -312,7 +312,7 @@ The bar is revealed after Hint 1 has been interacted with.
 
 
 ## Reveal
-![366w_Navigation_BottomEdge4](https://assets.ubuntu.com/v1/408eeee7-366w_Navigation_BottomEdge4-1.png)
+![366w_Navigation_BottomEdge4)(https://assets.ubuntu.com/v1/408eeee7-366w_Navigation_BottomEdge4-1.png)
 
 
 Once the user starts to swipe up from the hint. The new view starts to be revealed.

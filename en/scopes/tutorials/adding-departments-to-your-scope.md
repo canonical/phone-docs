@@ -135,4 +135,4 @@ request to an online service. If the API you are using is providing a way to
 list item categories or has data that can be split in a logical way, make
 sure you provide departments for the user to easily browse it!
 
-![](../../../media/scope_dep9.png)
+![)(../../../media/scope_dep9.png)

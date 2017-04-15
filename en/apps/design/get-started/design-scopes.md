@@ -41,6 +41,6 @@ Scopes come in a very flexible customization package where you can add your bran
 ![366w_DesignScopes_Soundcloud](https://assets.ubuntu.com/v1/1bd8c846-366w_DesignScopes_Soundcloud.png?w=398)
 
 
-![bbc-news](https://assets.ubuntu.com/v1/4b364cf9-bbc-news.png?w=398)
+![bbc-news)(https://assets.ubuntu.com/v1/4b364cf9-bbc-news.png?w=398)
 
 

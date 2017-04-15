@@ -17,7 +17,7 @@ that developers need to know about to get productive.
   * [Frameworks: make your app feel at home on every device](frameworks.md)
   * [Let's talk about performance](lets-talk-about-performance.md)
   * [Adding a splash screen to your app](splash-screens.md)
-  * [Integrating online accounts with your app](online-accounts-developer-guide.md)
+  * [Integrating online accounts with your app)(online-accounts-developer-guide.md)
   * [Guide to page-object acceptance testing](acceptance-testing-using-the-page-object-model.md)
 
 

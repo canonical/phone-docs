@@ -203,7 +203,7 @@ class TestMainWindow(CurrencyConverterTestCase):
 
 We're now ready to execute the test to see what happens. Autopilot supports
 listing the testcases present in a testsuite and executing them via the
-autopilot list [testsuite] and autopilot3 run [testsuite] commands
+autopilot list [testsuite) and autopilot3 run [testsuite] commands
 respectively. Autopilot also supports running in verbose mode via the '-v'
 argument. This helps us see the output as we execute the test. So from the
 tests/autopilot subfolder, execute:
@@ -249,6 +249,6 @@ to the world of testing!
 
 ### Resources
 
-  * [Official Autopilot Tutorial](https://developer.ubuntu.com/api/autopilot/python/1.5.0/tutorial-getting_started/)
-  * [Autopilot API Documentation](https://developer.ubuntu.com/api/autopilot/python/1.5.0/)
-  * [Autopilot SDK Helpers](https://developer.ubuntu.com/api/autopilot/python/1.5.0/ubuntuuitoolkit/)
+  * [Official Autopilot Tutorial](../apps/api-autopilot-current/tutorial-getting_started/)
+  * [Autopilot API Documentation](../apps/api-autopilot-current/)
+  * [Autopilot SDK Helpers)(../apps/api-autopilot-current/ubuntuuitoolkit/)

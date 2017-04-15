@@ -91,4 +91,4 @@ The new App Guide will be released in phases over the coming days and weeks.
 See the Insights  [blog](https://insights.ubuntu.com/) for more updates.
 
 
-Or follow us on  [Google+](https://plus.google.com/communities/111350780270925540549) and see the  [Canonical Design blog](https://design.canonical.com/) for all the latest news and designs.
+Or follow us on  [Google+](https://plus.google.com/communities/111350780270925540549) and see the  [Canonical Design blog)(https://design.canonical.com/) for all the latest news and designs.

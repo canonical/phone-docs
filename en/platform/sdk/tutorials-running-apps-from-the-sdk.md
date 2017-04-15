@@ -55,4 +55,4 @@ the default password is "0000".
 ![](../../../media/green dot on the icon indicates its status (here, my phone is
 connected and ready to host the application).
 
-![](../../../media/index.md) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.html) and [HTML5](../../apps/html-5/index.html) sections for help deciding which toolkit to use.
+![](../../../media/index.md) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.html) and [HTML5)(../../apps/html-5/index.html) sections for help deciding which toolkit to use.

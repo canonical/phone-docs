@@ -7,7 +7,7 @@ Title: Why design for Ubuntu?
 
 Design an app that will be part of a growing new eco-system which is powered by a thriving community.
 
-![750w_WhyDesignUbuntu_MainImage (2)](https://assets.ubuntu.com/v1/bea0942d-750w_WhyDesignUbuntu_MainImage-2.png)
+![750w_WhyDesignUbuntu_MainImage [2)](https://assets.ubuntu.com/v1/bea0942d-750w_WhyDesignUbuntu_MainImage-2.png)
 
 
 - Your app will be part of the third most deployed desktop OS in the world, which is free and accessible to all
@@ -85,7 +85,7 @@ Put your creativity to work by improving the look and feel of Ubuntu. Help desig
 Write and package new software or fix bugs in existing software. Write apps on QML or HTML5.
 
 
-[Write apps for Ubuntu ›](http://community.ubuntu.com/contribute/developers/)
+[Write apps for Ubuntu ›)(http://community.ubuntu.com/contribute/developers/)
 
 
 ## Documentation

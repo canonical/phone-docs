@@ -7,7 +7,7 @@ Title: Gestures
 
 Make the most of Ubuntu’s gestures to establish consistency and familiarity within your application.
 
-![750w_Getsures_MainImage (1)](https://assets.ubuntu.com/v1/b5eb0c4c-750w_Getsures_MainImage-1.png)
+![750w_Getsures_MainImage [1)](https://assets.ubuntu.com/v1/b5eb0c4c-750w_Getsures_MainImage-1.png)
 
 
 -  [Edge gesture ›](#edge-gestures)
@@ -188,7 +188,7 @@ Use tutorials on rare occasions where you feel you need to give the user further
 On an environment where the interface may be a little different, a sequence of instructions can be used to point out where different features live. For example, from mobile to tablet the bottom edge can be placed in both panels.
 
 
-![750w_Gestures_CoachMarksTablet1](https://assets.ubuntu.com/v1/294a8035-750w_Gestures_CoachMarksTablet1.png)
+![750w_Gestures_CoachMarksTablet1)(https://assets.ubuntu.com/v1/294a8035-750w_Gestures_CoachMarksTablet1.png)
 
 
 The bottom edge is highlighted in the left panel with instructional text above it, together with a ‘Next Button to lead the user to the following instruction in the tutorial.

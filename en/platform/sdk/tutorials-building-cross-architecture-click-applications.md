@@ -155,4 +155,4 @@ file unpacked**/path/to/your/binary**
 
 This guide provides help on building a project with an armhf click build
 target. This enables you to build projects containing native code on armhf
-devices. If you need further help, [justask](http://www.askubuntu.com/questions/ask?tags=application-development)!
+devices. If you need further help, [justask)(http://www.askubuntu.com/questions/ask?tags=application-development)!

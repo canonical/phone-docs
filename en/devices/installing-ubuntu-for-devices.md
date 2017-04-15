@@ -5,7 +5,7 @@ table_of_contents: true
 
 # Devices - installing Ubuntu
 
-Here are instructions for installing Ubuntu on devices (phone and tablet).
+Here are instructions for installing Ubuntu on devices [phone and tablet).
 
 ## Supported devices
 
@@ -64,7 +64,7 @@ phablet-tools PPA.
 You need to install the ubuntu-device-flash package. This is published in the
 Ubuntu universe archive.
 
-Ensure the [universe archive is enabled](https://help.ubuntu.com/community/Repositories/CommandLine#Adding_the_Universe_and_Multiverse_Repositories).
+Ensure the [universe archive is enabled)(https://help.ubuntu.com/community/Repositories/CommandLine#Adding_the_Universe_and_Multiverse_Repositories).
 
 ### Add PPAs
 
@@ -142,7 +142,7 @@ Set up different configuration options on a device
 Installing ubuntu-device-flash also adds two important Android tools you
 frequently use: adb and fastboot.
 
-  * **adb**: Provides a terminal connection to the device when it is fully booted. (You must install Ubuntu first or enable developer options in Android.)
+  * **adb**: Provides a terminal connection to the device when it is fully booted. [You must install Ubuntu first or enable developer options in Android.)
   * **fastboot**: Provides a terminal connection over USB when the device is booted into the bootloader.
 
 The instructions here are complete, but you may also want to view help for
@@ -325,7 +325,7 @@ obtain the image. For guidance on which channel is best for you check out the
 ### Install Ubuntu
 
   * Power the device off with the Power button.
-  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices)[device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices](device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
   * Install Ubuntu using your selected channel, in this case we use the **stable** channel:
 
 ```
@@ -333,10 +333,10 @@ $ ubuntu-device-flash touch --channel=ubuntu-touch/stable/ubuntu --bootstrap
 2015/02/16 09:50:12 Expecting the device to be in the bootloader... waiting
 2015/02/16 09:50:12 Device is |mako|
 2015/02/16 09:50:12 Flashing version 1 from ubuntu-touch/stable/ubuntu channel and server https://system-image.ubuntu.com to device mako
-[...]
+[...)
 ```
 
-**Tip**: The `--bootstrap` option is normally only used when installing Ubuntu the first time. It requires that the device is booted to the bootloader. After Ubuntu is installed, one uses the ubuntu-device-flash command (without the `--bootstrap` option) while the device is booted to Ubuntu.
+**Tip**: The `--bootstrap` option is normally only used when installing Ubuntu the first time. It requires that the device is booted to the bootloader. After Ubuntu is installed, one uses the ubuntu-device-flash command [without the `--bootstrap` option) while the device is booted to Ubuntu.
 
   * **Wait until the reboot is done**. In most cases no input from you is required.
 
@@ -498,5 +498,5 @@ are eager to work with you.
 
   * If you have problems or questions, [ask on Ask Ubuntu](https://askubuntu.com/questions/ask?tags=mobile).
   * Join the conversation on IRC in [#ubuntu-touch](http://webchat.freenode.net/?channels=ubuntu-touch) on irc.freenode.net.
-  * Join the mailing lists: [ubuntu-phone team](https://launchpad.net/~ubuntu-phone) on
+  * Join the mailing lists: [ubuntu-phone team)(https://launchpad.net/~ubuntu-phone) on
 Launchpad and the team mailing list at [https://launchpad.net/~/+editemails](https://launchpad.net/~/+editemails)

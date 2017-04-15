@@ -190,7 +190,7 @@ When the user has selected a department, the ‘Featured’ menu will appear on 
 The ‘Featured’ menu allows the user to sort results by order e.g.”Price: high to low”, which changes the view of the results.
 
 
-![multiple level 6](https://assets.ubuntu.com/v1/d3367513-multiple-level-61-618x1024.png)
+![multiple level 6)(https://assets.ubuntu.com/v1/d3367513-multiple-level-61-618x1024.png)
 
 
 Once the user has selected a feature, the scope page will rearrange the results according to the feature selected.

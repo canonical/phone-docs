@@ -114,7 +114,7 @@ stay tuned for new content!
 The growing community of app developers and experts is here to
 help you!
 
-[Visit the community website&nbsp;&rsaquo;](http://community.ubuntu.com)
+[Visit the community website&nbsp;&rsaquo;)(http://community.ubuntu.com)
 
 ### Any questions?
 

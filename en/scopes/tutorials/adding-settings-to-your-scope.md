@@ -17,7 +17,7 @@ name `<scope>-settings.ini`.
 
 For example, for a scope with ID "myscope", the normal configuration file is
 `myscope.ini`, and the settings definition file is `myscope-settings.ini`. Both
-files must be installed in the same directory (together with the scope’s `.so`
+files must be installed in the same directory [together with the scope’s `.so`
 file).
 
 The shell constructs a user interface from the settings definitions. The user
@@ -79,7 +79,7 @@ the current locale, the non-localized value is used.
 Here is an example of a `<scope>-settings.ini` file using all the settings types:
 
 ```
-[location]
+[location)
  type = string
  defaultValue = London
  displayName = Location
@@ -162,7 +162,7 @@ private:
 #### Retrieve settings value
 
 We are now going to create our function exposing settings value to the scope.
-At the bottom of [src/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-settings-may2015/view/head:/src/query.cpp), let’s add a few lines that :
+At the bottom of [src/query.cpp)(http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-settings-may2015/view/head:/src/query.cpp), let’s add a few lines that :
 
   * Request settings data
   * Check if the config is empty
@@ -175,7 +175,7 @@ void Query::initScope()
     if (config.empty())
         cerr << "CONFIG EMPTY!" << endl;
     s_location = config["location"].get_string();
-    s_forecast = config["forecast"].get_bool();
+    s_forecast = config["forecast"].get_bool[);
 }
 ```
 
@@ -242,6 +242,6 @@ Our scope now has working settings and should look like this:
 
 ![](../../../media/scope-settings-final0.png)
 
-![](../../../media/scope-settings-final2.png)
+![)(../../../media/scope-settings-final2.png)
 
 ![](../../../media/scope-settings-final3.png)

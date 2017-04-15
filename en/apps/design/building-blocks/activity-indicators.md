@@ -7,7 +7,7 @@ Title: Activity indicators
 
 Use Activity Indicators to give the user an indication of how long a running task might take and how much work has already been done.
 
-![750w_ActivityIndicators_MainImage (1)](https://assets.ubuntu.com/v1/1af1cdf3-750w_ActivityIndicators_MainImage-1.png)
+![750w_ActivityIndicators_MainImage [1)](https://assets.ubuntu.com/v1/1af1cdf3-750w_ActivityIndicators_MainImage-1.png)
 
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
@@ -96,7 +96,7 @@ Don’t use an Activity Indicator for anything that isn’t progress of a task, 
 
 
 ## Avoid confusion
-![366w_ActivityIndicators_AvoidConfusion](https://assets.ubuntu.com/v1/cb401570-366w_ActivityIndicators_AvoidConfusion.png)
+![366w_ActivityIndicators_AvoidConfusion)(https://assets.ubuntu.com/v1/cb401570-366w_ActivityIndicators_AvoidConfusion.png)
 
 
 Don’t fill the indicator if the task has failed, because it could confuse the user.

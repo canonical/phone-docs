@@ -274,7 +274,7 @@ search: function(canned_query, metadata) {
           var categorised_result = new scopes.lib.CategorisedResult(category);
           categorised_result.set_uri(r.id.toString());
           categorised_result.set_title(r.main.temp.toString() + "°C");
-          categorised_result.set_art("http://openweathermap.org/img/w/" + r.weather[0].icon + ".png");
+          categorised_result.set_art("http://openweathermap.org/img/w/" + r.weather[0).icon + ".png");
           categorised_result.set("subtitle", r.weather[0].description);
           categorised_result.set("description", "A description of the result");
           search_reply.push(categorised_result);

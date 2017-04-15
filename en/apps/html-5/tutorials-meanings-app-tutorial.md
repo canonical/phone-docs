@@ -149,10 +149,10 @@ default:
     window.onload = function () {
        var UI = new UbuntuUI();
        UI.init();
-    [...]
+    [...)
     }
 
-This is the required code that creates an UbuntuUI object (locally named UI).
+This is the required code that creates an UbuntuUI object [locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
@@ -189,7 +189,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide)(../guides/html5-guide.md) for a more detailed look.
 
 ### App layout
 
@@ -421,7 +421,7 @@ An object named resEl is created for the empty list declared in our HTML and
 it is given a header: “Meanings”.
 
 Two nested loops iterate through the data to find and extract the contained
-meanings of the word. These are appended to a string variable (res) as HTML
+meanings of the word. These are appended to a string variable [res) as HTML
 listitems.
 
 Finally the list (resEl) is populated with the built up meanings list by
@@ -477,7 +477,7 @@ including:
   * Maintainer: Verify this is you
   * title: set this to “Meanings”
   * Version: this is the click package version. Be sure to increment this when appropriate, for example when publishing a new version.
-  * [Security policy groups](/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
+  * [Security policy groups)(/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
 
 **Tip**: Don’t add any security policy groups you don’t really need. Apps are confined by these policies and we all want Ubuntu app confinement to be the best available, which means developers use thoughtful discretion and only add policies as absolutely necessary.
 

@@ -11,7 +11,7 @@ A scope is a tailored view for a set of data, that can use custom layouts,
 display and branding options. From RSS news feeds to weather data and search
 engine results, the flexibility of scopes allows you to provide a simple,
 recognizable and consistent experience with the rest of the OS. Scopes can
-also integrate with system-wide user accounts (email, social networks…), split
+also integrate with system-wide user accounts [email, social networks…), split
 your content into categories and aggregate into each others (for example, a
 “shopping” scope aggregating results from several store scopes).
 
@@ -339,7 +339,7 @@ Client::TrackRes Client::tracks(const string& query) {
  for (const QVariant &i : variant) {
 
      QVariantMap item = i.toMap();
-     QVariantMap user = item["user"].toMap();
+     QVariantMap user = item["user").toMap();
      string art;
 
      // If the track artwork is empty, we use the artist picture
@@ -364,7 +364,7 @@ Client::TrackRes Client::tracks(const string& query) {
              Artist {
                  user["id"].toUInt(),
                  user["username"].toString().toStdString(),
-                 user["avatar_url"].toString().toStdString()
+                 user["avatar_url"].toString[).toStdString()
              }
          }
      );
@@ -466,11 +466,11 @@ for (const auto &;track : trackslist.tracks) {
 
      // Set the rest of the attributes, art, artist, etc.
      res.set_art(track.artwork_url);
-     res["artist"] = track.artist.username;
+     res["artist") = track.artist.username;
      res["stream"] = track.stream_url;
 
      // Push the result
-     if (!reply->push(res)) {
+     if [!reply->push(res)) {
 
          // If we fail to push, it means the query has been cancelled.
          return;
@@ -494,7 +494,7 @@ This example uses three types of Preview Widgets:
 
 Here’s how our example creates a header widget named w_header on the
 `Preview::run` method of
-[src/scope/preview.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
+[src/scope/preview.cpp)(http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
 
 
 ``` C+
@@ -579,7 +579,7 @@ builder.add_tuple({
 
 });
 
-w_actions.add_attribute_value("actions", builder.end());
+w_actions.add_attribute_value["actions", builder.end());
 ```
 
 And now they can be pushed to the client with the reply object:
@@ -644,7 +644,7 @@ Many display options can be changed in `data/<appid>.ini`. Here is my best
 effort at branding this scope, most of the options are self-explicit :
 
 ``` C+
-[ScopeConfig]
+[ScopeConfig)
 DisplayName = SoundCloud
 Description = This is a SoundCloud scope doing SoundCloud things
 Art = screenshot.png
@@ -693,4 +693,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/en/publish/) to get your scope on the store in minutes.
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides)(/en/publish/) to get your scope on the store in minutes.

@@ -4,7 +4,7 @@ title: "Devices - reinstalling Android"
 
 # Devices - reinstalling Android
 
-After installing Ubuntu, you can reinstall Android (which removes Ubuntu).
+After installing Ubuntu, you can reinstall Android [which removes Ubuntu).
 
 Warning: All Ubuntu apps and data, including user-generated data, are deleted.
 
@@ -93,7 +93,7 @@ In order to install Ubuntu, the device was “unlocked”. You can optionally lo
 it.
 
   * Power the device off with the Power button.
-  * Reboot into the bootloader by pressing the correct physical button combination for your [device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  * Reboot into the bootloader by pressing the correct physical button combination for your [device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)(https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
 
   * Ensure the device is connected in fastboot mode as follows:
 

@@ -320,7 +320,7 @@ Now, in `index.html`, simply add the following inside the `<head>`
 
 Now, the Loading page and the home page look like this:
 
-![](../../../../media/camera-app.png)
+![)(../../../../media/camera-app.png)
 
 ## Next steps
 

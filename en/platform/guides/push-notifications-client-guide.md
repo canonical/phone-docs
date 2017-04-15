@@ -24,7 +24,7 @@ suffers.
 Using the Ubuntu Push Server, this problem is alleviated: the Chatter server
 will deliver the messages to the Ubuntu Push Server, which in turn will send
 it in an efficient manner to the Ubuntu Push Client running in Bob and Carol's
-devices. The user sees a notification (all without starting the app) and then
+devices. The user sees a notification [all without starting the app) and then
 can launch it if he's interested in reading messages at that point.
 
 Since the app is not started and messages are delivered opportunistically, this
@@ -91,7 +91,7 @@ appId property to your application's APP_ID, with or without version number.
 For this to succeed the user **must** have an Ubuntu One account configured in
 the device.
 
-The APP_ID is as described in the [ApplicationIddocumentation](https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
+The APP_ID is as described in the [ApplicationIddocumentation)(https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
 except that the version is treated as optional. Therefore both
 `com.ubuntu.music_music` and `com.ubuntu.music_music_1.3.496` are valid. Keep in
 mind that while both versioned and un-versioned APP_IDs are valid, they are
@@ -263,7 +263,7 @@ persistent notification management API.
 **Note**: This format **will** change with future versions of the SDK and it **may** be
 incompatible.
 
- * **message**: (optional) A JSON object that is passed as-is to the application via PopAll.
+ * **message**: [optional) A JSON object that is passed as-is to the application via PopAll.
  * **notification**: (optional) Describes the user-facing notifications triggered by this push
 message.
 
@@ -319,7 +319,7 @@ profile, using something like this:
     "policy_groups": [
         "networking",
         "push-notification-client"
-    ],
+    ),
     "policy_version": 1.2
 }
 ```

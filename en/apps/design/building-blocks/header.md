@@ -7,7 +7,7 @@ Title: Header
 
 Use the header to let the user know where they are, what they can do, and where they can go inside your application.
 
-![750w_Header_Orientation (3)](https://assets.ubuntu.com/v1/8ec7cc1c-750w_Header_Orientation-3.png)
+![750w_Header_Orientation [3)](https://assets.ubuntu.com/v1/8ec7cc1c-750w_Header_Orientation-3.png)
 
 
 -  [Usage ›](#usage)
@@ -451,7 +451,7 @@ Make your sections clear and concise.
 
 
 ![366w_Header_ClearHeader2 (2)](https://assets.ubuntu.com/v1/9beb16cf-366w_Header_ClearHeader2-2.png)
-![dont_32](https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
+![dont_32)(https://assets.ubuntu.com/v1/01fb853b-dont_32.png)
 
 ## Don’t
 

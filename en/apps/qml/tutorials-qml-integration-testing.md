@@ -106,8 +106,8 @@ since we intend to pass data into UI elements. Fortunately, there are useful
 methods from Qt.TestCase to help us.
 
 The[ keyPress()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyPress-method),[ keyRelease()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyRelease-method), and[ keyClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyClick-method) methods can be
-used to simulate keyboard events, while [ mousePress()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mousePress-method),[ mouseRelease()]
-(https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseRelease-
+used to simulate keyboard events, while [ mousePress())(https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mousePress-method),[ mouseRelease()]
+[https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseRelease-
 method),[ mouseClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseClick-method),[ mouseDoubleClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseDoubleClick-method), and[ mouseMove()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseMove-method) methods can be used to simulate mouse events.
 
 These useful methods are self-describing and allow us to interact with the
@@ -166,7 +166,7 @@ function test_convert_data() {
     return [
         { tag: "0", inputKey: Qt.Key_0, value: 0 },
         { tag: "5", inputKey: Qt.Key_5, value: 5 }
-    ]
+    )
 }
 ```
 
@@ -183,7 +183,7 @@ should react when it is pressed. Let’s write a testcase to ensure this behaves
 as expected.
 
 ``` QML
-function test_clearButton() {
+function test_clearButton[) {
     var inputFrom = findChild(currencyConverter, "inputFrom")
     var inputTo = findChild(currencyConverter, "inputTo")
     // Click in the middle of the inputFrom TextField to focus it
@@ -215,5 +215,5 @@ documentation and help.
 ### Resources
 
   * [Ubuntu Test components API reference](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test/)
-  * [Running tests with qmltestrunner](http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
+  * [Running tests with qmltestrunner)(http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
   * [Learn how to simulate mouse and keyboard input with Qt Quick Test](http://doc.qt.io/qt-5/qml-qttest-testcase.html#simulating-keyboard-and-mouse-events)

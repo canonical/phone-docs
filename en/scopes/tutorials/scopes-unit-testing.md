@@ -239,7 +239,7 @@ INSTANTIATE_TEST_CASE_P(all_the_things, TestScope,
 from within your test, use `GetParam()` to access the current value of the
 parameter for that run.
 
-More examples of the types of parameters you can pass can be found in the [Google Test documentation](https://code.google.com/p/googletest/wiki/AdvancedGuide#Value_Parameterized_Tests).
+More examples of the types of parameters you can pass can be found in the [Google Test documentation)(https://code.google.com/p/googletest/wiki/AdvancedGuide#Value_Parameterized_Tests).
 
 ### Custom Matchers
 
@@ -438,7 +438,7 @@ Repeat for each setting bit value.
 Now to actually run these tests with different parameter values you can use
 the `INSTANTIATE_TEST_CASE_P` call shown above.
 
-### Testing Special Behavior (Online/Offline)
+### Testing Special Behavior [Online/Offline)
 
 Some scope behavior depends on whether or not the device is online. In a
 normal running environment the online/offline state is set in the
@@ -478,4 +478,4 @@ Check out the links below for more documentation and help.
  * [Google Mock cookbook](https://code.google.com/p/googlemock/wiki/CookBook)
  * [Google Test primer](https://code.google.com/p/googletest/wiki/Primer)
  * [Scope SDK documentation](http://developer.ubuntu.com/api/scopes/sdk-14.10/)
- * [Scope Testing headers](http://developer.ubuntu.com/api/devel/ubuntu-14.10/cplusplus/unity-scopes/dir_4a2a62c60bd6f2d5db6599a21d12fb4a.html)
+ * [Scope Testing headers)(http://developer.ubuntu.com/api/devel/ubuntu-14.10/cplusplus/unity-scopes/dir_4a2a62c60bd6f2d5db6599a21d12fb4a.html)

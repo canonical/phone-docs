@@ -4,7 +4,7 @@
 Ubuntu embraces HTML5 as a first-class app toolkit. While its support is
 constantly evolving and you can expect a lot of new things to come, most of
 the core parts are in good working order! So HTML5 developers can start making
-true HTML5 applications (as opposed to web pages) that fit right into the
+true HTML5 applications [as opposed to web pages) that fit right into the
 dazzling Ubuntu experience.
 
 ## What is an HTML5 app?
@@ -70,6 +70,6 @@ into productivity with Ubuntu HTML5 apps.
 
 ### APIs
 
-And of course, developers need the [API Reference docs forHTML5/JavaScript](api.md). These provide the
+And of course, developers need the [API Reference docs forHTML5/JavaScript)(api.md). These provide the
 implementation-level detail you need make your HTML5 apps use the full sweet
 of platform APIs .
