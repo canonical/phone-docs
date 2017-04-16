@@ -1,7 +1,6 @@
 ---
 Title: Accounts.index
 ---
-        
-libaccounts-qt
-==============
+
+# Accounts.index
 

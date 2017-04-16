@@ -2,8 +2,6 @@
 
 
 
-
-
 # Ubuntu Platform guides
 
 Here you will find a growing set of guides on key parts of the Ubuntu Platform
@@ -19,8 +17,6 @@ that developers need to know about to get productive.
   * [Adding a splash screen to your app](splash-screens.md)
   * [Integrating online accounts with your app)(online-accounts-developer-guide.md)
   * [Guide to page-object acceptance testing](acceptance-testing-using-the-page-object-model.md)
-
-
 
 
 

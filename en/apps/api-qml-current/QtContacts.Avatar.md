@@ -1,61 +1,37 @@
 ---
 Title: QtContacts.Avatar
 ---
-        
-Avatar
-======
+
+# QtContacts.Avatar
 
 <span class="subtitle"></span>
-The Avatar element contains avatar URLs of a contact. More...
-
-|                   |                       |
-|-------------------|-----------------------|
-| Import Statement: | import QtContacts 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[imageUrl](#imageUrl-prop)**** : string
--   ****[videoUrl](#videoUrl-prop)**** : string
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Avatar element contains the following field types:
-
--   Avatar.ImageUrl
--   Avatar.VideoUrl
-
-This element is part of the **QtContacts** module.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="imageUrl-prop"></span><span class="name">imageUrl</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the URL of the avatar image.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="videoUrl-prop"></span><span class="name">videoUrl</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the URL of a video avatar.
-
+<!-- $$$Avatar-brief -->
+<p>The Avatar element contains avatar URLs of a contact. More...</p>
+<!-- @@@Avatar -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtContacts 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#imageUrl-prop">imageUrl</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#videoUrl-prop">videoUrl</a></b></b> : string</li>
+</ul>
+<!-- $$$Avatar-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Avatar element contains the following field types:</p>
+<ul>
+<li>Avatar.ImageUrl</li>
+<li>Avatar.VideoUrl</li>
+</ul>
+<p>This element is part of the <b>QtContacts</b> module.</p>
+<!-- @@@Avatar -->
+<h2>Property Documentation</h2>
+<!-- $$$imageUrl -->
+<table class="qmlname"><tr valign="top" id="imageUrl-prop"><td class="tblQmlPropNode"><p><span class="name">imageUrl</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the URL of the avatar image.</p>
+<!-- @@@imageUrl -->
+<br/>
+<!-- $$$videoUrl -->
+<table class="qmlname"><tr valign="top" id="videoUrl-prop"><td class="tblQmlPropNode"><p><span class="name">videoUrl</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the URL of a video avatar.</p>
+<!-- @@@videoUrl -->
+<br/>

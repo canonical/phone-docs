@@ -1,21 +1,32 @@
 ---
 Title: scope_harness.ChildDepartmentMatcher
 ---
-        
-ChildDepartmentMatcher
-======================
 
- *class* `scope_harness.``ChildDepartmentMatcher`(*(object)arg1*, *(str)arg2*)<a href="#scope_harness.ChildDepartmentMatcher" class="headerlink" title="Permalink to this definition"></a>  
-Matcher object that holds constraints for matching child departments of a department.
+# scope_harness.ChildDepartmentMatcher
 
- `has_children`(*(ChildDepartmentMatcher)arg1*, *(bool)arg2*) → ChildDepartmentMatcher<a href="#scope_harness.ChildDepartmentMatcher.has_children" class="headerlink" title="Permalink to this definition"></a>  
-
- `id`<a href="#scope_harness.ChildDepartmentMatcher.id" class="headerlink" title="Permalink to this definition"></a>  
-
- `is_active`(*(ChildDepartmentMatcher)arg1*, *(bool)arg2*) → ChildDepartmentMatcher<a href="#scope_harness.ChildDepartmentMatcher.is_active" class="headerlink" title="Permalink to this definition"></a>  
-
- `label`(*(ChildDepartmentMatcher)arg1*, *(str)arg2*) → ChildDepartmentMatcher<a href="#scope_harness.ChildDepartmentMatcher.label" class="headerlink" title="Permalink to this definition"></a>  
-
- `match`(*(ChildDepartmentMatcher)arg1*, *(ChildDepartment)arg2*) → MatchResult<a href="#scope_harness.ChildDepartmentMatcher.match" class="headerlink" title="Permalink to this definition"></a>  
-match( (ChildDepartmentMatcher)arg1, (MatchResult)arg2, (ChildDepartment)arg3) -&gt; None
-
+<dl class="class">
+<dt id="scope_harness.ChildDepartmentMatcher">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">ChildDepartmentMatcher</tt><big>(</big><em>(object)arg1</em>, <em>(str)arg2</em><big>)</big><a class="headerlink" href="#scope_harness.ChildDepartmentMatcher" title="Permalink to this definition"></a></dt>
+<dd><p>Matcher object that holds constraints for matching child departments of a department.</p>
+<dl class="method">
+<dt id="scope_harness.ChildDepartmentMatcher.has_children">
+<tt class="descname">has_children</tt><big>(</big><em>(ChildDepartmentMatcher)arg1</em>, <em>(bool)arg2</em><big>)</big> &rarr; ChildDepartmentMatcher<a class="headerlink" href="#scope_harness.ChildDepartmentMatcher.has_children" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.ChildDepartmentMatcher.id">
+<tt class="descname">id</tt><a class="headerlink" href="#scope_harness.ChildDepartmentMatcher.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.ChildDepartmentMatcher.is_active">
+<tt class="descname">is_active</tt><big>(</big><em>(ChildDepartmentMatcher)arg1</em>, <em>(bool)arg2</em><big>)</big> &rarr; ChildDepartmentMatcher<a class="headerlink" href="#scope_harness.ChildDepartmentMatcher.is_active" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.ChildDepartmentMatcher.label">
+<tt class="descname">label</tt><big>(</big><em>(ChildDepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; ChildDepartmentMatcher<a class="headerlink" href="#scope_harness.ChildDepartmentMatcher.label" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.ChildDepartmentMatcher.match">
+<tt class="descname">match</tt><big>(</big><em>(ChildDepartmentMatcher)arg1</em>, <em>(ChildDepartment)arg2</em><big>)</big> &rarr; MatchResult<a class="headerlink" href="#scope_harness.ChildDepartmentMatcher.match" title="Permalink to this definition"></a></dt>
+<dd><p>match( (ChildDepartmentMatcher)arg1, (MatchResult)arg2, (ChildDepartment)arg3) -&gt; None</p>
+</dd></dl>
+</dd></dl>

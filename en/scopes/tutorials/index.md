@@ -4,7 +4,6 @@ title: "Scopes tutorials"
 
 # Scopes tutorials
 
-
 ## Get started with scopes!
 
 Get familiar with the common concepts and procedures developers need to know

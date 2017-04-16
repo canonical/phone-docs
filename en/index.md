@@ -22,7 +22,6 @@ Build mobile and convergent apps written using QML, HTML5 and Cordova, with acce
 
 [Learn more about Scopes&nbsp;&rsaquo;](scopes/index.md)
 
-
 ## The Ubuntu development model
 
 ### Frameworks: targeting APIs

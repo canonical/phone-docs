@@ -1,199 +1,94 @@
 ---
 Title: QtQuick.TextMetrics
 ---
-        
-TextMetrics
-===========
+
+# QtQuick.TextMetrics
 
 <span class="subtitle"></span>
-Provides metrics for a given font and text More...
-
-|                   |                    |
-|-------------------|--------------------|
-| Import Statement: | import QtQuick 2.4 |
-| Since:            | Qt 5.4             |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[advanceWidth](#advanceWidth-prop)**** : real
--   ****[boundingRect](#boundingRect-prop)**** : rect
--   ****[elide](#elide-prop)**** : enumeration
--   ****[elideWidth](#elideWidth-prop)**** : real
--   ****[font](#font-prop)**** : font
--   ****[height](#height-prop)**** : real
--   ****[text](#text-prop)**** : string
--   ****[tightBoundingRect](#tightBoundingRect-prop)**** : rect
--   ****[width](#width-prop)**** : real
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-[TextMetrics](index.html) calculates various properties of a given string of text for a particular font.
-
-It provides a declarative API for the functions in QFontMetricsF which take arguments.
-
-``` cpp
-TextMetrics {
-    id: textMetrics
-    font.family: "Arial"
-    elide: Text.ElideMiddle
-    elideWidth: 100
-    text: "Hello World"
+<!-- $$$TextMetrics-brief -->
+<p>Provides metrics for a given font and text More...</p>
+<!-- @@@TextMetrics -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Qt 5.4</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#advanceWidth-prop">advanceWidth</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#boundingRect-prop">boundingRect</a></b></b> : rect</li>
+<li class="fn"><b><b><a href="#elide-prop">elide</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#elideWidth-prop">elideWidth</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#font-prop">font</a></b></b> : font</li>
+<li class="fn"><b><b><a href="#height-prop">height</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#text-prop">text</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#tightBoundingRect-prop">tightBoundingRect</a></b></b> : rect</li>
+<li class="fn"><b><b><a href="#width-prop">width</a></b></b> : real</li>
+</ul>
+<!-- $$$TextMetrics-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><a href="index.html">TextMetrics</a> calculates various properties of a given string of text for a particular font.</p>
+<p>It provides a declarative API for the functions in QFontMetricsF which take arguments.</p>
+<pre class="cpp">TextMetrics {
+id: textMetrics
+font<span class="operator">.</span>family: <span class="string">&quot;Arial&quot;</span>
+elide: Text<span class="operator">.</span>ElideMiddle
+elideWidth: <span class="number">100</span>
+text: <span class="string">&quot;Hello World&quot;</span>
 }
 MyItem {
-    text: textMetrics.elidedText
-}
-```
-
-**See also** QFontMetricsF and [FontMetrics](../QtQuick.FontMetrics.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="advanceWidth-prop"></span><span class="name">advanceWidth</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the advance in pixels of the characters in [text](../QtQuick.qtquick-releasenotes.md#text). This is the distance from the position of the string to where the next string should be drawn.
-
-**See also** QFontMetricsF::width().
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="boundingRect-prop"></span><span class="name">boundingRect</span> : <span class="type">rect</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the bounding rectangle of the characters in the string specified by [text](../QtQuick.qtquick-releasenotes.md#text).
-
-**See also** QFontMetricsF::boundingRect() and [tightBoundingRect](#tightBoundingRect-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="elide-prop"></span><span class="name">elide</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the elide mode of the text. This determines the position in which the string is elided. The possible values are:
-
--   `Qt::ElideNone` - No eliding; this is the default value.
--   `Qt::ElideLeft` - For example: "...World"
--   `Qt::ElideMiddle` - For example: "He...ld"
--   `Qt::ElideRight` - For example: "Hello..."
-
-**See also** [elideWidth](#elideWidth-prop) and elidedText.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="elideWidth-prop"></span><span class="name">elideWidth</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the largest width the text can have (in pixels) before eliding will occur.
-
-**See also** [elide](#elide-prop) and elidedText.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="font-prop"></span><span class="name">font</span> : <span class="type"><a href="#font-prop">font</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the font used for the metrics calculations.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="height-prop"></span><span class="name">height</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the height of the bounding rectangle of the characters in the string specified by [text](../QtQuick.qtquick-releasenotes.md#text). It is equivalent to:
-
-``` cpp
-textMetrics.boundingRect.height
-```
-
-**See also** [boundingRect](#boundingRect-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="text-prop"></span><span class="name">text</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the text used for the metrics calculations.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="tightBoundingRect-prop"></span><span class="name">tightBoundingRect</span> : <span class="type">rect</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds a tight bounding rectangle around the characters in the string specified by [text](../QtQuick.qtquick-releasenotes.md#text).
-
-**See also** QFontMetricsF::tightBoundingRect() and [boundingRect](#boundingRect-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="width-prop"></span><span class="name">width</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the width of the bounding rectangle of the characters in the string specified by [text](../QtQuick.qtquick-releasenotes.md#text). It is equivalent to:
-
-``` cpp
-textMetrics.boundingRect.width
-```
-
-**See also** [boundingRect](#boundingRect-prop).
-
+text: textMetrics<span class="operator">.</span>elidedText
+}</pre>
+<p><b>See also </b>QFontMetricsF and <a href="QtQuick.FontMetrics.md">FontMetrics</a>.</p>
+<!-- @@@TextMetrics -->
+<h2>Property Documentation</h2>
+<!-- $$$advanceWidth -->
+<table class="qmlname"><tr valign="top" id="advanceWidth-prop"><td class="tblQmlPropNode"><p><span class="name">advanceWidth</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the advance in pixels of the characters in <a href="QtQuick.qtquick-releasenotes.md#text">text</a>. This is the distance from the position of the string to where the next string should be drawn.</p>
+<p><b>See also </b>QFontMetricsF::width().</p>
+<!-- @@@advanceWidth -->
+<br/>
+<!-- $$$boundingRect -->
+<table class="qmlname"><tr valign="top" id="boundingRect-prop"><td class="tblQmlPropNode"><p><span class="name">boundingRect</span> : <span class="type">rect</span></p></td></tr></table><p>This property holds the bounding rectangle of the characters in the string specified by <a href="QtQuick.qtquick-releasenotes.md#text">text</a>.</p>
+<p><b>See also </b>QFontMetricsF::boundingRect() and <a href="#tightBoundingRect-prop">tightBoundingRect</a>.</p>
+<!-- @@@boundingRect -->
+<br/>
+<!-- $$$elide -->
+<table class="qmlname"><tr valign="top" id="elide-prop"><td class="tblQmlPropNode"><p><span class="name">elide</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the elide mode of the text. This determines the position in which the string is elided. The possible values are:</p>
+<ul>
+<li><code>Qt::ElideNone</code> - No eliding; this is the default value.</li>
+<li><code>Qt::ElideLeft</code> - For example: &quot;..&#x2e;World&quot;</li>
+<li><code>Qt::ElideMiddle</code> - For example: &quot;He..&#x2e;ld&quot;</li>
+<li><code>Qt::ElideRight</code> - For example: &quot;Hello..&#x2e;&quot;</li>
+</ul>
+<p><b>See also </b><a href="#elideWidth-prop">elideWidth</a> and elidedText.</p>
+<!-- @@@elide -->
+<br/>
+<!-- $$$elideWidth -->
+<table class="qmlname"><tr valign="top" id="elideWidth-prop"><td class="tblQmlPropNode"><p><span class="name">elideWidth</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the largest width the text can have (in pixels) before eliding will occur.</p>
+<p><b>See also </b><a href="#elide-prop">elide</a> and elidedText.</p>
+<!-- @@@elideWidth -->
+<br/>
+<!-- $$$font -->
+<table class="qmlname"><tr valign="top" id="font-prop"><td class="tblQmlPropNode"><p><span class="name">font</span> : <span class="type"><a href="#font-prop">font</a></span></p></td></tr></table><p>This property holds the font used for the metrics calculations.</p>
+<!-- @@@font -->
+<br/>
+<!-- $$$height -->
+<table class="qmlname"><tr valign="top" id="height-prop"><td class="tblQmlPropNode"><p><span class="name">height</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the height of the bounding rectangle of the characters in the string specified by <a href="QtQuick.qtquick-releasenotes.md#text">text</a>. It is equivalent to:</p>
+<pre class="cpp">textMetrics<span class="operator">.</span>boundingRect<span class="operator">.</span>height</pre>
+<p><b>See also </b><a href="#boundingRect-prop">boundingRect</a>.</p>
+<!-- @@@height -->
+<br/>
+<!-- $$$text -->
+<table class="qmlname"><tr valign="top" id="text-prop"><td class="tblQmlPropNode"><p><span class="name">text</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the text used for the metrics calculations.</p>
+<!-- @@@text -->
+<br/>
+<!-- $$$tightBoundingRect -->
+<table class="qmlname"><tr valign="top" id="tightBoundingRect-prop"><td class="tblQmlPropNode"><p><span class="name">tightBoundingRect</span> : <span class="type">rect</span></p></td></tr></table><p>This property holds a tight bounding rectangle around the characters in the string specified by <a href="QtQuick.qtquick-releasenotes.md#text">text</a>.</p>
+<p><b>See also </b>QFontMetricsF::tightBoundingRect() and <a href="#boundingRect-prop">boundingRect</a>.</p>
+<!-- @@@tightBoundingRect -->
+<br/>
+<!-- $$$width -->
+<table class="qmlname"><tr valign="top" id="width-prop"><td class="tblQmlPropNode"><p><span class="name">width</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the width of the bounding rectangle of the characters in the string specified by <a href="QtQuick.qtquick-releasenotes.md#text">text</a>. It is equivalent to:</p>
+<pre class="cpp">textMetrics<span class="operator">.</span>boundingRect<span class="operator">.</span>width</pre>
+<p><b>See also </b><a href="#boundingRect-prop">boundingRect</a>.</p>
+<!-- @@@width -->
+<br/>

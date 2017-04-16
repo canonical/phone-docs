@@ -1,129 +1,70 @@
 ---
 Title: QtContacts.GlobalPresence
 ---
-        
-GlobalPresence
-==============
+
+# QtContacts.GlobalPresence
 
 <span class="subtitle"></span>
-The GlobalPresence element provides aggregated presence information for a contact, synthesized or supplied by the backend. More...
-
-|                   |                       |
-|-------------------|-----------------------|
-| Import Statement: | import QtContacts 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[customMessage](#customMessage-prop)**** : string
--   ****[imageUrl](#imageUrl-prop)**** : url
--   ****[nickname](#nickname-prop)**** : string
--   ****[state](#state-prop)**** : enumeration
--   ****[stateText](#stateText-prop)**** : string
--   ****[timestamp](#timestamp-prop)**** : date
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-[GlobalPresence](index.html) element contains the following field types:
-
--   [GlobalPresence](index.html).Timestamp
--   [GlobalPresence](index.html).Nickname
--   [GlobalPresence](index.html).State
--   [GlobalPresence](index.html).StateText
--   [GlobalPresence](index.html).ImageUrl
--   [GlobalPresence](index.html).CustomMessage
-
-This element is part of the **QtContacts** module.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="customMessage-prop"></span><span class="name">customMessage</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the custom status message from the contact for the online account about which this detail stores presence information.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="imageUrl-prop"></span><span class="name">imageUrl</span> : <span class="type">url</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the last-known status image url of the contact for the online account about which this detail stores presence information.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="nickname-prop"></span><span class="name">nickname</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the nickname value of the [GlobalPresence](index.html).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="state-prop"></span><span class="name">state</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the presence state enumeration value.
-
--   Presence.Unknown - Signifies that the presence state of the contact is not currently known (default).
--   Presence.Available - Signifies that the contact is available.
--   Presence.Hidden - Signifies that the contact is hidden.
--   Presence.Busy - Signifies that the contact is busy.
--   Presence.Away - Signifies that the contact is away.
--   Presence.ExtendedAway - Signifies that the contact is away for an extended period of time.
--   Presence.Offline - Signifies that the contact is offline.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="stateText-prop"></span><span class="name">stateText</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the text corresponding to the current presence state.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="timestamp-prop"></span><span class="name">timestamp</span> : <span class="type">date</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the timestamp value of the [GlobalPresence](index.html).
-
+<!-- $$$GlobalPresence-brief -->
+<p>The GlobalPresence element provides aggregated presence information for a contact, synthesized or supplied by the backend. More...</p>
+<!-- @@@GlobalPresence -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtContacts 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#customMessage-prop">customMessage</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#imageUrl-prop">imageUrl</a></b></b> : url</li>
+<li class="fn"><b><b><a href="#nickname-prop">nickname</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#state-prop">state</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#stateText-prop">stateText</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#timestamp-prop">timestamp</a></b></b> : date</li>
+</ul>
+<!-- $$$GlobalPresence-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><a href="index.html">GlobalPresence</a> element contains the following field types:</p>
+<ul>
+<li><a href="index.html">GlobalPresence</a>.Timestamp</li>
+<li><a href="index.html">GlobalPresence</a>.Nickname</li>
+<li><a href="index.html">GlobalPresence</a>.State</li>
+<li><a href="index.html">GlobalPresence</a>.StateText</li>
+<li><a href="index.html">GlobalPresence</a>.ImageUrl</li>
+<li><a href="index.html">GlobalPresence</a>.CustomMessage</li>
+</ul>
+<p>This element is part of the <b>QtContacts</b> module.</p>
+<!-- @@@GlobalPresence -->
+<h2>Property Documentation</h2>
+<!-- $$$customMessage -->
+<table class="qmlname"><tr valign="top" id="customMessage-prop"><td class="tblQmlPropNode"><p><span class="name">customMessage</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the custom status message from the contact for the online account about which this detail stores presence information.</p>
+<!-- @@@customMessage -->
+<br/>
+<!-- $$$imageUrl -->
+<table class="qmlname"><tr valign="top" id="imageUrl-prop"><td class="tblQmlPropNode"><p><span class="name">imageUrl</span> : <span class="type">url</span></p></td></tr></table><p>This property holds the last-known status image url of the contact for the online account about which this detail stores presence information.</p>
+<!-- @@@imageUrl -->
+<br/>
+<!-- $$$nickname -->
+<table class="qmlname"><tr valign="top" id="nickname-prop"><td class="tblQmlPropNode"><p><span class="name">nickname</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the nickname value of the <a href="index.html">GlobalPresence</a>.</p>
+<!-- @@@nickname -->
+<br/>
+<!-- $$$state -->
+<table class="qmlname"><tr valign="top" id="state-prop"><td class="tblQmlPropNode"><p><span class="name">state</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the presence state enumeration value.</p>
+<ul>
+<li>Presence.Unknown - Signifies that the presence state of the contact is not currently known (default).</li>
+<li>Presence.Available - Signifies that the contact is available.</li>
+<li>Presence.Hidden - Signifies that the contact is hidden.</li>
+<li>Presence.Busy - Signifies that the contact is busy.</li>
+<li>Presence.Away - Signifies that the contact is away.</li>
+<li>Presence.ExtendedAway - Signifies that the contact is away for an extended period of time.</li>
+<li>Presence.Offline - Signifies that the contact is offline.</li>
+</ul>
+<!-- @@@state -->
+<br/>
+<!-- $$$stateText -->
+<table class="qmlname"><tr valign="top" id="stateText-prop"><td class="tblQmlPropNode"><p><span class="name">stateText</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the text corresponding to the current presence state.</p>
+<!-- @@@stateText -->
+<br/>
+<!-- $$$timestamp -->
+<table class="qmlname"><tr valign="top" id="timestamp-prop"><td class="tblQmlPropNode"><p><span class="name">timestamp</span> : <span class="type">date</span></p></td></tr></table><p>This property holds the timestamp value of the <a href="index.html">GlobalPresence</a>.</p>
+<!-- @@@timestamp -->
+<br/>

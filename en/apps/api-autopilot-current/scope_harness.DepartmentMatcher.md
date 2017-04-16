@@ -1,49 +1,76 @@
 ---
 Title: scope_harness.DepartmentMatcher
 ---
-        
-DepartmentMatcher
-=================
 
- *class* `scope_harness.``DepartmentMatcher`(*(object)arg1*)<a href="#scope_harness.DepartmentMatcher" class="headerlink" title="Permalink to this definition"></a>  
-Matcher object that holds constraints for matching departments.
+# scope_harness.DepartmentMatcher
 
- `all_label`(*(DepartmentMatcher)arg1*, *(str)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.all_label" class="headerlink" title="Permalink to this definition"></a>  
-Set the department alternate (the ‘all’ variant’) label to match
-
- `child`(*(DepartmentMatcher)arg1*, *(ChildDepartmentMatcher)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.child" class="headerlink" title="Permalink to this definition"></a>  
-Set the matcher for child department
-
- `has_at_least`(*(DepartmentMatcher)arg1*, *(int)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.has_at_least" class="headerlink" title="Permalink to this definition"></a>  
-Set the minimum number of departments
-
- `has_exactly`(*(DepartmentMatcher)arg1*, *(int)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.has_exactly" class="headerlink" title="Permalink to this definition"></a>  
-Set the exact number of departments
-
- `id`(*(DepartmentMatcher)arg1*, *(str)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.id" class="headerlink" title="Permalink to this definition"></a>  
-Set the department id to match
-
- `is_hidden`(*(DepartmentMatcher)arg1*, *(bool)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.is_hidden" class="headerlink" title="Permalink to this definition"></a>  
-Set the ‘hidden’ flag to match
-
- `is_root`(*(DepartmentMatcher)arg1*, *(bool)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.is_root" class="headerlink" title="Permalink to this definition"></a>  
-Set the ‘root’ flag to match
-
- `label`(*(DepartmentMatcher)arg1*, *(str)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.label" class="headerlink" title="Permalink to this definition"></a>  
-Set the department name (label) to match
-
- `match`(*(DepartmentMatcher)arg1*, *(Department)arg2*) → MatchResult :<a href="#scope_harness.DepartmentMatcher.match" class="headerlink" title="Permalink to this definition"></a>  
-> Match the department
-
-match( (ResultMatcher)arg1, (MatchResult)arg2, (Department)arg3) -&gt; None :  
-Match the department
-
- `mode`(*(DepartmentMatcher)arg1*, *(DepartmentMatcherMode)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.mode" class="headerlink" title="Permalink to this definition"></a>  
-Set the matching mode, see DepartmentMatcherMode.
-
- `parent_id`(*(DepartmentMatcher)arg1*, *(str)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.parent_id" class="headerlink" title="Permalink to this definition"></a>  
-Set the id of parent department to match
-
- `parent_label`(*(DepartmentMatcher)arg1*, *(str)arg2*) → DepartmentMatcher :<a href="#scope_harness.DepartmentMatcher.parent_label" class="headerlink" title="Permalink to this definition"></a>  
-Set the label of parent department to match
-
+<dl class="class">
+<dt id="scope_harness.DepartmentMatcher">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">DepartmentMatcher</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#scope_harness.DepartmentMatcher" title="Permalink to this definition"></a></dt>
+<dd><p>Matcher object that holds constraints for matching departments.</p>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.all_label">
+<tt class="descname">all_label</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.all_label" title="Permalink to this definition"></a></dt>
+<dd><p>Set the department alternate (the &#8216;all&#8217; variant&#8217;) label to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.child">
+<tt class="descname">child</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(ChildDepartmentMatcher)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.child" title="Permalink to this definition"></a></dt>
+<dd><p>Set the matcher for child department</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.has_at_least">
+<tt class="descname">has_at_least</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.has_at_least" title="Permalink to this definition"></a></dt>
+<dd><p>Set the minimum number of departments</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.has_exactly">
+<tt class="descname">has_exactly</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.has_exactly" title="Permalink to this definition"></a></dt>
+<dd><p>Set the exact number of departments</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.id">
+<tt class="descname">id</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.id" title="Permalink to this definition"></a></dt>
+<dd><p>Set the department id to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.is_hidden">
+<tt class="descname">is_hidden</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(bool)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.is_hidden" title="Permalink to this definition"></a></dt>
+<dd><p>Set the &#8216;hidden&#8217; flag to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.is_root">
+<tt class="descname">is_root</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(bool)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.is_root" title="Permalink to this definition"></a></dt>
+<dd><p>Set the &#8216;root&#8217; flag to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.label">
+<tt class="descname">label</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.label" title="Permalink to this definition"></a></dt>
+<dd><p>Set the department name (label) to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.match">
+<tt class="descname">match</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(Department)arg2</em><big>)</big> &rarr; MatchResult :<a class="headerlink" href="#scope_harness.DepartmentMatcher.match" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+</blockquote>
+<dl class="docutils">
+<dt>match( (ResultMatcher)arg1, (MatchResult)arg2, (Department)arg3) -&gt; None :</dt>
+<dd>Match the department</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.mode">
+<tt class="descname">mode</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(DepartmentMatcherMode)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.mode" title="Permalink to this definition"></a></dt>
+<dd><p>Set the matching mode, see DepartmentMatcherMode.</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.parent_id">
+<tt class="descname">parent_id</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.parent_id" title="Permalink to this definition"></a></dt>
+<dd><p>Set the id of parent department to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.DepartmentMatcher.parent_label">
+<tt class="descname">parent_label</tt><big>(</big><em>(DepartmentMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; DepartmentMatcher :<a class="headerlink" href="#scope_harness.DepartmentMatcher.parent_label" title="Permalink to this definition"></a></dt>
+<dd><p>Set the label of parent department to match</p>
+</dd></dl>
+</dd></dl>

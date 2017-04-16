@@ -36,7 +36,6 @@ that conserves precious developer time.
 
 [Learn more about platform features&nbsp;&rsaquo;](../platform/index.md)
 
-
 ## Your first app
 
 ### Get the tools

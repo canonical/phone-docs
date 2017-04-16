@@ -22,7 +22,6 @@ level:
 Be sure to check out [design examples](../design/index.md) for
 further guidance on app layouts and widgets.
 
-
 ## Widgets
 
 Let’s take a look at some of the important Ubuntu HTML5 widgets you can use in
@@ -50,8 +49,6 @@ Next, let’s take a look at the overall structure of the `index.html` file
 itself.
 
 **Tip**: Declare all the main markup and widgets in HTML instead of creating them dynamically in JavaScript in order to minimize app launch time.
-
-
 
 
 
@@ -109,8 +106,6 @@ and widgets are declared.
 
 
 
-
-
 ## Body and mainview
 
 Each HTML5 app has an Ubuntu mainview inside the `<body>...</body>`. This
@@ -130,8 +125,6 @@ main view typically contains a header and content:
 
 The header and content are used for both tab-style and pagestack-style app
 navigation. Let’s take a look.
-
-
 
 
 
@@ -179,8 +172,6 @@ correct id. Here is a content section with two tabs:
 
 
 
-
-
 ## Pagestack for deep navigation
 
 Some apps are a natural fit for deep navigation, so a pagestack of pages makes
@@ -222,7 +213,6 @@ pagestack and pages. A simple pagestack looks like this:
   </div> <!-- mainview -->
 </body>
 ```
-
 
 
 
@@ -269,7 +259,6 @@ Here is an example of a customized pagestack footer:
 
 Here’s how to add footer to a specific page that overrides the default footer:
 
-
 ``` html
 <div data-role="page" id="anotherPage">
   <!-- [...] -->
@@ -281,8 +270,6 @@ Here’s how to add footer to a specific page that overrides the default footer:
 
 **Note:** A footer is represented by the Toolbar class in the Ubuntu JavaScript
 API.
-
-
 
 
 
@@ -356,7 +343,6 @@ window.onload = function () {
 
 
 
-
 ## Lists
 
 The Ubuntu HTML5 framework provides flexible lists. A list can optionally have
@@ -387,7 +373,6 @@ secondary text labels, an icon, and more. Here’s a sample list declaration:
 
 
 
-
 ## More widgets
 
 That’s a quick overview of some of the key Ubuntu widgets, but there are more,
@@ -399,8 +384,6 @@ the gallery by searching the Ubuntu Applications scope for “Ubuntu HTML5 UI
 Gallery”.
 
 Be sure to check out the JavaScript API reference docs for everything.
-
-
 
 
 

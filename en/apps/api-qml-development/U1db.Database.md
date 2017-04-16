@@ -1,135 +1,66 @@
 ---
 Title: U1db.Database
 ---
-        
-Database
-========
+
+# U1db.Database
 
 <span class="subtitle"></span>
-Database implements on-disk storage for documents and indexes. More...
-
-|                   |               |
-|-------------------|---------------|
-| Import Statement: | import U1Db . |
-| Instantiates:     | Database      |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[error](#error-prop)**** : string
--   ****[path](#path-prop)**** : string
-
-<span id="methods"></span>
-Methods
--------
-
--   void ****[deleteDoc](#deleteDoc-method)****(string)
--   Variant ****[getDoc](#getDoc-method)****(string)
--   list&lt;string&gt; ****[listDocs](#listDocs-method)****()
--   string ****[putDoc](#putDoc-method)****(var, string)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-In a ListView the Database can be used as a model which includes all documents in the database. For listing only a subset of documents Query can be used.
-
-``` qml
-ListView {
-    model: Database {
-        id: myDatabase
-    }
-    delegate: ListItem.Subtitled {
-        text: docId
-        subText: contents.color
-    }
+<!-- $$$Database-brief -->
+<p>Database implements on-disk storage for documents and indexes. More...</p>
+<!-- @@@Database -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1Db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../database.html">Database</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#error-prop">error</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#path-prop">path</a></b></b> : string</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">void <b><b><a href="#deleteDoc-method">deleteDoc</a></b></b>(string)</li>
+<li class="fn">Variant <b><b><a href="#getDoc-method">getDoc</a></b></b>(string)</li>
+<li class="fn">list&lt;string&gt; <b><b><a href="#listDocs-method">listDocs</a></b></b>()</li>
+<li class="fn">string <b><b><a href="#putDoc-method">putDoc</a></b></b>(var, string)</li>
+</ul>
+<!-- $$$Database-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>In a ListView the Database can be used as a model which includes all documents in the database. For listing only a subset of documents Query can be used.</p>
+<pre class="qml"><span class="type">ListView</span> {
+<span class="name">model</span>: <span class="name">Database</span> {
+<span class="name">id</span>: <span class="name">myDatabase</span>
 }
-```
-
-**See also** [Query](../U1db.Query.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="error-prop"></span><span class="name">error</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The last error as a string if the last operation failed.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="path-prop"></span><span class="name">path</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-A relative *path* can be given to store the database in an app-specific writable folder. This is recommended as it ensures to work with confinement. If more control is needed absolute paths or local file URIs can be used. By default or if the path is empty everything is stored in memory.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="deleteDoc-method"></span><span class="type">void</span> <span class="name">deleteDoc</span>(<span class="type">string</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Deletes the document identified by *docId*.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="getDoc-method"></span><span class="type">Variant</span> <span class="name">getDoc</span>(<span class="type">string</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns the contents of a document by *docId* in a form that QML recognizes as a Variant object, it's identical to Document::getContents() with the same *docId*.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="listDocs-method"></span><span class="type">list</span>&lt;<span class="type">string</span>&gt; <span class="name">listDocs</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a list of all stored documents by their docId.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="putDoc-method"></span><span class="type">string</span> <span class="name">putDoc</span>(<span class="type">var</span>, <span class="type">string</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Updates the existing *contents* of the document identified by *docId* if there's no error. If no *docId* is given or *docId* is an empty string the *contents* will be stored under an autogenerated name. Returns the new revision of the document, or -1 on failure.
-
+<span class="name">delegate</span>: <span class="name">ListItem</span>.Subtitled {
+<span class="name">text</span>: <span class="name">docId</span>
+<span class="name">subText</span>: <span class="name">contents</span>.<span class="name">color</span>
+}
+}</pre>
+<p><b>See also </b><a href="U1db.Query.md">Query</a>.</p>
+<!-- @@@Database -->
+<h2>Property Documentation</h2>
+<!-- $$$error -->
+<table class="qmlname"><tr valign="top" id="error-prop"><td class="tblQmlPropNode"><p><span class="name">error</span> : <span class="type">string</span></p></td></tr></table><p>The last error as a string if the last operation failed.</p>
+<!-- @@@error -->
+<br/>
+<!-- $$$path -->
+<table class="qmlname"><tr valign="top" id="path-prop"><td class="tblQmlPropNode"><p><span class="name">path</span> : <span class="type">string</span></p></td></tr></table><p>A relative <i>path</i> can be given to store the database in an app-specific writable folder. This is recommended as it ensures to work with confinement. If more control is needed absolute paths or local file URIs can be used. By default or if the path is empty everything is stored in memory.</p>
+<!-- @@@path -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$deleteDoc -->
+<table class="qmlname"><tr valign="top" id="deleteDoc-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">deleteDoc</span>(<span class="type">string</span>)</p></td></tr></table><p>Deletes the document identified by <i>docId</i>.</p>
+<!-- @@@deleteDoc -->
+<br/>
+<!-- $$$getDoc -->
+<table class="qmlname"><tr valign="top" id="getDoc-method"><td class="tblQmlFuncNode"><p><span class="type">Variant</span> <span class="name">getDoc</span>(<span class="type">string</span>)</p></td></tr></table><p>Returns the contents of a document by <i>docId</i> in a form that QML recognizes as a Variant object, it's identical to Document::getContents() with the same <i>docId</i>.</p>
+<!-- @@@getDoc -->
+<br/>
+<!-- $$$listDocs -->
+<table class="qmlname"><tr valign="top" id="listDocs-method"><td class="tblQmlFuncNode"><p><span class="type">list</span>&lt;<span class="type">string</span>&gt; <span class="name">listDocs</span>()</p></td></tr></table><p>Returns a list of all stored documents by their docId.</p>
+<!-- @@@listDocs -->
+<br/>
+<!-- $$$putDoc -->
+<table class="qmlname"><tr valign="top" id="putDoc-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">putDoc</span>(<span class="type">var</span>, <span class="type">string</span>)</p></td></tr></table><p>Updates the existing <i>contents</i> of the document identified by <i>docId</i> if there's no error. If no <i>docId</i> is given or <i>docId</i> is an empty string the <i>contents</i> will be stored under an autogenerated name. Returns the new revision of the document, or -1 on failure.</p>
+<!-- @@@putDoc -->
+<br/>

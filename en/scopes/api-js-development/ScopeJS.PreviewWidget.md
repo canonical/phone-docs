@@ -1,88 +1,73 @@
 ---
 Title: ScopeJS.PreviewWidget
 ---
-        
-PreviewWidget
-=============
 
-A widget for a preview.
+# ScopeJS.PreviewWidget
 
--   Methods
-
-<span id="add_attribute_mapping"></span>
-**`add_attribute_mapping`**( `key, value ` )
-Adds an attribute definition using a component mapping
-
-**Parameters:**
--   `key` **&lt;String&gt;**
-
-    Attribute definition
-
--   `value` **&lt;String&gt;**
-
-    Value
-
-<span id="add_attribute_value"></span>
-**`add_attribute_value`**( `key, value ` )
-Adds an attribute definition and its value
-
-**Parameters:**
--   `key` **&lt;String&gt;**
-
-    Attribute definition
-
--   `value` **&lt;String&gt;**
-
-    , {Number}, {Object}. The value can be a string, number, object
-
-<span id="add_widget"></span>
-**`add_widget`**( `widget ` )
-Adds a widget into expandable widget
-
-**Parameters:**
--   `widget` **&lt;<a href="index.html" class="crosslink">PreviewWidget</a>&gt;**
-
-    The widget that needs to be added
-
-<span id="attribute_mappings"></span>
-**`attribute_mappings`**( `  ` )
-Get the components of this widget
-
-**Returns:**
-Dictionary of widget components
-
-<span id="attribute_values"></span>
-**`attribute_values`**( `  ` )
-Get the attributes of this widget
-
-**Returns:**
-Object corresponding to attributes of this widget
-
-<span id="data"></span>
-**`data`**( `  ` )
-Get a JSON representation of this widget
-
-**Returns:**
-String representation of widget
-
-<span id="id"></span>
-String **`id`**( `  ` )
-Get the identifier of this widget
-
-**Returns:** &lt;String&gt;
-Id
-
-<span id="widget_type"></span>
-String **`widget_type`**( `  ` )
-Get type name of this widget
-
-**Returns:** &lt;String&gt;
-Widget type
-
-<span id="widgets"></span>
-**`widgets`**( `  ` )
-Get widgets of 'expandable' widget
-
-**Returns:**
-List of PreviewWidget
-
+<p>A widget for a preview.</p>
+<ul>
+<li>Methods</li>
+</ul>
+<div>
+<strong class="name"><code>add_attribute_mapping</code></strong>( <code>key, value </code> ) 
+<br>
+<p>Adds an attribute definition using a component mapping</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>key</code> <strong>&lt;String&gt;</strong>
+<p>Attribute definition</p>
+</li>
+<li>
+<code>value</code> <strong>&lt;String&gt;</strong>
+<p>Value</p>
+</li>
+</ul>
+<strong class="name"><code>add_attribute_value</code></strong>( <code>key, value </code> ) 
+<br>
+<p>Adds an attribute definition and its value</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>key</code> <strong>&lt;String&gt;</strong>
+<p>Attribute definition</p>
+</li>
+<li>
+<code>value</code> <strong>&lt;String&gt;</strong>
+<p>, {Number}, {Object}. The value can be a string, number, object</p>
+</li>
+</ul>
+<strong class="name"><code>add_widget</code></strong>( <code>widget </code> ) 
+<br>
+<p>Adds a widget into expandable widget</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>widget</code> <strong>&lt;<a href="index.html">PreviewWidget</a>&gt;</strong>
+<p>The widget that needs to be added</p>
+</li>
+</ul>
+<strong class="name"><code>attribute_mappings</code></strong>( <code>  </code> ) 
+<br>
+<p>Get the components of this widget</p>
+<br><strong>Returns:</strong> <p>Dictionary of widget components</p>
+<strong class="name"><code>attribute_values</code></strong>( <code>  </code> ) 
+<br>
+<p>Get the attributes of this widget</p>
+<br><strong>Returns:</strong> <p>Object corresponding to attributes of this widget</p>
+<strong class="name"><code>data</code></strong>( <code>  </code> ) 
+<br>
+<p>Get a JSON representation of this widget</p>
+<br><strong>Returns:</strong> <p>String representation of widget</p>
+String <strong class="name"><code>id</code></strong>( <code>  </code> ) 
+<br>
+<p>Get the identifier of this widget</p>
+<br><strong>Returns:</strong> &lt;String&gt; <p>Id</p>
+String <strong class="name"><code>widget_type</code></strong>( <code>  </code> ) 
+<br>
+<p>Get type name of this widget</p>
+<br><strong>Returns:</strong> &lt;String&gt; <p>Widget type</p>
+<strong class="name"><code>widgets</code></strong>( <code>  </code> ) 
+<br>
+<p>Get widgets of 'expandable' widget</p>
+<br><strong>Returns:</strong> <p>List of PreviewWidget</p>

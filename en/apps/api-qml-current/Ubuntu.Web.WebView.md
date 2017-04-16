@@ -1,431 +1,189 @@
 ---
 Title: Ubuntu.Web.WebView
 ---
-        
-WebView
-=======
+
+# Ubuntu.Web.WebView
 
 <span class="subtitle"></span>
-A webview that can be used to render web content in an application. More...
-
-|                   |                       |
-|-------------------|-----------------------|
-| Import Statement: | import Ubuntu.Web 0.2 |
-
--   Obsolete members
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[alertDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#alertDialog-prop)**** : component
--   ****[beforeUnloadDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#beforeUnloadDialog-prop)**** : component
--   ****[canGoBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoBack-prop)**** : bool
--   ****[canGoForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoForward-prop)**** : bool
--   ****[confirmDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#confirmDialog-prop)**** : component
--   ****[context](../../sdk-15.04.4/Ubuntu.Web.WebView.md#context-prop)**** : WebContext
--   ****[contextModel](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextModel-prop)**** : QtObject
--   ****[contextualActions](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextualActions-prop)**** : ActionList
--   ****[filePicker](../../sdk-15.04.4/Ubuntu.Web.WebView.md#filePicker-prop)**** : component
--   ****[fullscreen](../../sdk-15.04.4/Ubuntu.Web.WebView.md#fullscreen-prop)**** : bool
--   ****[icon](../../sdk-15.04.4/Ubuntu.Web.WebView.md#icon-prop)**** : url
--   ****[incognito](../../sdk-15.04.4/Ubuntu.Web.WebView.md#incognito-prop)**** : bool
--   ****[loadProgress](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loadProgress-prop)**** : int
--   ****[loading](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loading-prop)**** : bool
--   ****[navigationHistory](../../sdk-15.04.4/Ubuntu.Web.WebView.md#navigationHistory-prop)**** : list
--   ****[promptDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#promptDialog-prop)**** : component
--   ****[title](../../sdk-15.04.4/Ubuntu.Web.WebView.md#title-prop)**** : string
--   ****[url](../../sdk-15.04.4/Ubuntu.Web.WebView.md#url-prop)**** : url
-
-<span id="methods"></span>
-Methods
--------
-
--   void ****[goBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goBack-method)****()
--   void ****[goForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goForward-method)****()
--   void ****[loadHtml](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loadHtml-method)****(string *html*, url *baseUrl*)
--   void ****[reload](../../sdk-15.04.4/Ubuntu.Web.WebView.md#reload-method)****()
--   void ****[stop](../../sdk-15.04.4/Ubuntu.Web.WebView.md#stop-method)****()
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Here is a very simple example of how to use a [WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md) to render a web page:
-
-``` qml
-import QtQuick 2.4
+<!-- $$$WebView-brief -->
+<p>A webview that can be used to render web content in an application. More...</p>
+<!-- @@@WebView -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Web 0.2</td></tr></table><ul>
+<li>Obsolete members</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#alertDialog-prop">alertDialog</a></b></b> : component</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#beforeUnloadDialog-prop">beforeUnloadDialog</a></b></b> : component</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#canGoBack-prop">canGoBack</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#canGoForward-prop">canGoForward</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#confirmDialog-prop">confirmDialog</a></b></b> : component</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#context-prop">context</a></b></b> : WebContext</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#contextModel-prop">contextModel</a></b></b> : QtObject</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#contextualActions-prop">contextualActions</a></b></b> : ActionList</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#filePicker-prop">filePicker</a></b></b> : component</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#fullscreen-prop">fullscreen</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#icon-prop">icon</a></b></b> : url</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#incognito-prop">incognito</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#loadProgress-prop">loadProgress</a></b></b> : int</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#loading-prop">loading</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#navigationHistory-prop">navigationHistory</a></b></b> : list</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#promptDialog-prop">promptDialog</a></b></b> : component</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#title-prop">title</a></b></b> : string</li>
+<li class="fn"><b><b><a href="..//Ubuntu.Web.WebView.md#url-prop">url</a></b></b> : url</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">void <b><b><a href="..//Ubuntu.Web.WebView.md#goBack-method">goBack</a></b></b>()</li>
+<li class="fn">void <b><b><a href="..//Ubuntu.Web.WebView.md#goForward-method">goForward</a></b></b>()</li>
+<li class="fn">void <b><b><a href="..//Ubuntu.Web.WebView.md#loadHtml-method">loadHtml</a></b></b>(string <i>html</i>, url <i>baseUrl</i>)</li>
+<li class="fn">void <b><b><a href="..//Ubuntu.Web.WebView.md#reload-method">reload</a></b></b>()</li>
+<li class="fn">void <b><b><a href="..//Ubuntu.Web.WebView.md#stop-method">stop</a></b></b>()</li>
+</ul>
+<!-- $$$WebView-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Here is a very simple example of how to use a <a href="..//Ubuntu.Web.WebView.md">WebView</a> to render a web page:</p>
+<pre class="qml">import QtQuick 2.4
 import Ubuntu.Web 0.2
+<span class="type"><a href="..//Ubuntu.Web.WebView.md">WebView</a></span> {
+<span class="name">url</span>: <span class="string">&quot;http://ubuntu.com&quot;</span>
+}</pre>
+<p>The <code>WebView</code> component defaults to using a <a href="..//Ubuntu.Web.SharedWebContext.md">shared <code>WebContext</code></a> that is shared across all <code>WebView</code> instances in a given application.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.SharedWebContext.md">SharedWebContext</a>.</p>
+<!-- @@@WebView -->
+<h2>Property Documentation</h2>
+<!-- $$$alertDialog -->
+<table class="qmlname"><tr valign="top" id="alertDialog-prop"><td class="tblQmlPropNode"><p><span class="name">alertDialog</span> : <span class="type">component</span></p></td></tr></table><p>The QML component that will be instantiated to display a JavaScript alert dialog.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#confirmDialog-prop">confirmDialog</a>, <a href="..//Ubuntu.Web.WebView.md#promptDialog-prop">promptDialog</a>, and <a href="..//Ubuntu.Web.WebView.md#beforeUnloadDialog-prop">beforeUnloadDialog</a>.</p>
+<!-- @@@alertDialog -->
+<br/>
+<!-- $$$beforeUnloadDialog -->
+<table class="qmlname"><tr valign="top" id="beforeUnloadDialog-prop"><td class="tblQmlPropNode"><p><span class="name">beforeUnloadDialog</span> : <span class="type">component</span></p></td></tr></table><p>The QML component that will be instantiated to display a JavaScript confirmation when the user initiates a navigation away from the current page, if the page has defined an <code>onBeforeUnload</code> handler.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#alertDialog-prop">alertDialog</a>, <a href="..//Ubuntu.Web.WebView.md#confirmDialog-prop">confirmDialog</a>, and <a href="..//Ubuntu.Web.WebView.md#promptDialog-prop">promptDialog</a>.</p>
+<!-- @@@beforeUnloadDialog -->
+<br/>
+<!-- $$$canGoBack -->
+<table class="qmlname"><tr valign="top" id="canGoBack-prop"><td class="tblQmlPropNode"><p><span class="name">canGoBack</span> : <span class="type">bool</span></p></td></tr></table><p>Whether the navigation history has a previous entry to navigate back.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#goBack-method">goBack</a> and <a href="..//Ubuntu.Web.WebView.md#canGoForward-prop">canGoForward</a>.</p>
+<!-- @@@canGoBack -->
+<br/>
+<!-- $$$canGoForward -->
+<table class="qmlname"><tr valign="top" id="canGoForward-prop"><td class="tblQmlPropNode"><p><span class="name">canGoForward</span> : <span class="type">bool</span></p></td></tr></table><p>Whether the navigation history has a next entry to navigate forward.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#goForward-method">goForward</a> and <a href="..//Ubuntu.Web.WebView.md#canGoBack-prop">canGoBack</a>.</p>
+<!-- @@@canGoForward -->
+<br/>
+<!-- $$$confirmDialog -->
+<table class="qmlname"><tr valign="top" id="confirmDialog-prop"><td class="tblQmlPropNode"><p><span class="name">confirmDialog</span> : <span class="type">component</span></p></td></tr></table><p>The QML component that will be instantiated to display a JavaScript confirmation dialog.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#alertDialog-prop">alertDialog</a>, <a href="..//Ubuntu.Web.WebView.md#promptDialog-prop">promptDialog</a>, and <a href="..//Ubuntu.Web.WebView.md#beforeUnloadDialog-prop">beforeUnloadDialog</a>.</p>
+<!-- @@@confirmDialog -->
+<br/>
+<!-- $$$context -->
+<table class="qmlname"><tr valign="top" id="context-prop"><td class="tblQmlPropNode"><p><span class="name">context</span> : <span class="type"><a href="..//Ubuntu.Web.WebContext.md">WebContext</a></span></p></td></tr></table><p>The web context associated to this <a href="..//Ubuntu.Web.WebView.md">WebView</a>. By default a <a href="..//Ubuntu.Web.SharedWebContext.md">shared context</a> is used which should fit most use cases, do not override unless you really need a finer control over the context.</p>
+<!-- @@@context -->
+<br/>
+<!-- $$$contextModel -->
+<table class="qmlname"><tr valign="top" id="contextModel-prop"><td class="tblQmlPropNode"><p><span class="name">contextModel</span> : <span class="type">QtObject</span></p></td></tr></table><p>An object that holds the contextual data associated with the current context menu, as well as methods to interact with this data. User-defined <a href="..//Ubuntu.Web.WebView.md#contextualActions-prop">contextual actions</a> can use this data to process it when triggered.</p>
+<p>It has the following properties:</p>
+<ul>
+<li>linkUrl (url): the full URI of the hyperlink, if any</li>
+<li>srcUrl (url): the full URI of the image/media, if any</li>
+<li>mediaType (int): the type of media (one of Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.MediaTypeNone, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.MediaTypeImage, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.MediaTypeCanvas, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.MediaTypeAudio, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.MediaTypeVideo)</li>
+<li>isEditable (bool): whether the current element is editable</li>
+<li>editFlags (int): for editable elements, an OR-combined list of flags that define the current editing capabilities (Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.UndoCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.RedoCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.CutCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.CopyCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.PasteCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.EraseCapability, Oxide.<a href="..//Ubuntu.Web.WebView.md">WebView</a>.SelectAllCapability)</li>
+</ul>
+<p>It has the following methods:</p>
+<ul>
+<li>saveLink(): initiates a download request for the resource pointed to by the hyperlink, if any</li>
+<li>saveMedia(): initiates a download request for the media (image, canvas, audio, video), if any</li>
+</ul>
+<p>When there is no active context menu, <code>contextModel</code> is null.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#contextualActions-prop">contextualActions</a>.</p>
+<!-- @@@contextModel -->
+<br/>
+<!-- $$$contextualActions -->
+<table class="qmlname"><tr valign="top" id="contextualActions-prop"><td class="tblQmlPropNode"><p><span class="name">contextualActions</span> : <span class="type">ActionList</span></p></td></tr></table><p>A list of actions that the user will be presented with when invoking a context menu (by way of a right click on desktop, or a long press on a touch-enabled device, on an image or a hyperlink). By default the list is empty, and no menu is shown. User-defined actions can access the <a href="..//Ubuntu.Web.WebView.md#contextModel-prop">context model</a>.</p>
+<p>Example of user-defined actions:</p>
+<pre class="cpp">import Ubuntu<span class="operator">.</span>Components <span class="number">1.3</span>
+import Ubuntu<span class="operator">.</span>Web <span class="number">0.2</span>
 WebView {
-    url: "http://ubuntu.com"
+contextualActions: ActionList {
+Action {
+text: i18n<span class="operator">.</span>tr(<span class="string">&quot;Open link in browser&quot;</span>)
+enabled: contextModel <span class="operator">&amp;</span><span class="operator">&amp;</span> contextModel<span class="operator">.</span>linkUrl<span class="operator">.</span>toString()
+onTriggered: <span class="type">Qt</span><span class="operator">.</span>openUrlExternally(contextModel<span class="operator">.</span>linkUrl)
 }
-```
-
-The `WebView` component defaults to using a [shared `WebContext`](../../sdk-15.04.4/Ubuntu.Web.SharedWebContext.md) that is shared across all `WebView` instances in a given application.
-
-**See also** [SharedWebContext](../../sdk-15.04.4/Ubuntu.Web.SharedWebContext.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="alertDialog-prop"></span><span class="name">alertDialog</span> : <span class="type">component</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The QML component that will be instantiated to display a JavaScript alert dialog.
-
-**See also** [confirmDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#confirmDialog-prop), [promptDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#promptDialog-prop), and [beforeUnloadDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#beforeUnloadDialog-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="beforeUnloadDialog-prop"></span><span class="name">beforeUnloadDialog</span> : <span class="type">component</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The QML component that will be instantiated to display a JavaScript confirmation when the user initiates a navigation away from the current page, if the page has defined an `onBeforeUnload` handler.
-
-**See also** [alertDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#alertDialog-prop), [confirmDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#confirmDialog-prop), and [promptDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#promptDialog-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="canGoBack-prop"></span><span class="name">canGoBack</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether the navigation history has a previous entry to navigate back.
-
-**See also** [goBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goBack-method) and [canGoForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoForward-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="canGoForward-prop"></span><span class="name">canGoForward</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether the navigation history has a next entry to navigate forward.
-
-**See also** [goForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goForward-method) and [canGoBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoBack-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="confirmDialog-prop"></span><span class="name">confirmDialog</span> : <span class="type">component</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The QML component that will be instantiated to display a JavaScript confirmation dialog.
-
-**See also** [alertDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#alertDialog-prop), [promptDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#promptDialog-prop), and [beforeUnloadDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#beforeUnloadDialog-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="context-prop"></span><span class="name">context</span> : <span class="type"><a href="../../sdk-15.04.4/Ubuntu.Web.WebContext.md">WebContext</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The web context associated to this [WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md). By default a [shared context](../../sdk-15.04.4/Ubuntu.Web.SharedWebContext.md) is used which should fit most use cases, do not override unless you really need a finer control over the context.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="contextModel-prop"></span><span class="name">contextModel</span> : <span class="type">QtObject</span></p></td>
-</tr>
-</tbody>
-</table>
-
-An object that holds the contextual data associated with the current context menu, as well as methods to interact with this data. User-defined [contextual actions](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextualActions-prop) can use this data to process it when triggered.
-
-It has the following properties:
-
--   linkUrl (url): the full URI of the hyperlink, if any
--   srcUrl (url): the full URI of the image/media, if any
--   mediaType (int): the type of media (one of Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).MediaTypeNone, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).MediaTypeImage, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).MediaTypeCanvas, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).MediaTypeAudio, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).MediaTypeVideo)
--   isEditable (bool): whether the current element is editable
--   editFlags (int): for editable elements, an OR-combined list of flags that define the current editing capabilities (Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).UndoCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).RedoCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).CutCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).CopyCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).PasteCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).EraseCapability, Oxide.[WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md).SelectAllCapability)
-
-It has the following methods:
-
--   saveLink(): initiates a download request for the resource pointed to by the hyperlink, if any
--   saveMedia(): initiates a download request for the media (image, canvas, audio, video), if any
-
-When there is no active context menu, `contextModel` is null.
-
-**See also** [contextualActions](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextualActions-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="contextualActions-prop"></span><span class="name">contextualActions</span> : <span class="type">ActionList</span></p></td>
-</tr>
-</tbody>
-</table>
-
-A list of actions that the user will be presented with when invoking a context menu (by way of a right click on desktop, or a long press on a touch-enabled device, on an image or a hyperlink). By default the list is empty, and no menu is shown. User-defined actions can access the [context model](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextModel-prop).
-
-Example of user-defined actions:
-
-``` cpp
-import Ubuntu.Components 1.3
-import Ubuntu.Web 0.2
-WebView {
-    contextualActions: ActionList {
-        Action {
-            text: i18n.tr("Open link in browser")
-            enabled: contextModel && contextModel.linkUrl.toString()
-            onTriggered: Qt.openUrlExternally(contextModel.linkUrl)
-        }
-    }
 }
-```
-
-**See also** [contextModel](../../sdk-15.04.4/Ubuntu.Web.WebView.md#contextModel-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="filePicker-prop"></span><span class="name">filePicker</span> : <span class="type">component</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The QML component that will be instantiated to let the user select files when the user clicks an `<input type="file">` element on the current page.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fullscreen-prop"></span><span class="name">fullscreen</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether the current page requested fullscreen display.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="icon-prop"></span><span class="name">icon</span> : <span class="type"><a href="../../sdk-15.04.4/Ubuntu.Web.WebView.md#url-prop">url</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The URL of the favicon of the current page.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="incognito-prop"></span><span class="name">incognito</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether the [WebView](../../sdk-15.04.4/Ubuntu.Web.WebView.md) is being used in private browsing mode, where no data is persisted across sessions.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="loadProgress-prop"></span><span class="name">loadProgress</span> : <span class="type">int</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The load progress of the current page (as a integer value between 0 and 100).
-
-**See also** [loading](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loading-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="loading-prop"></span><span class="name">loading</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether the current page is loading.
-
-**See also** [loadProgress](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loadProgress-prop), [stop](../../sdk-15.04.4/Ubuntu.Web.WebView.md#stop-method), and [reload](../../sdk-15.04.4/Ubuntu.Web.WebView.md#reload-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="navigationHistory-prop"></span><span class="name">navigationHistory</span> : <span class="type">list</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The navigation history (back/forward entries) stored as a list model with a `currentIndex` property. Each entry exposes the URL and title of the corresponding page, as well as a timestamp of when it was visited.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="promptDialog-prop"></span><span class="name">promptDialog</span> : <span class="type">component</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The QML component that will be instantiated to display a JavaScript prompt dialog.
-
-**See also** [alertDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#alertDialog-prop), [confirmDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#confirmDialog-prop), and [beforeUnloadDialog](../../sdk-15.04.4/Ubuntu.Web.WebView.md#beforeUnloadDialog-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="title-prop"></span><span class="name">title</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The title of the current page.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="url-prop"></span><span class="name">url</span> : <span class="type"><a href="../../sdk-15.04.4/Ubuntu.Web.WebView.md#url-prop">url</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The URL of the current page.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="goBack-method"></span><span class="type">void</span> <span class="name">goBack</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Go back one entry in the navigation history.
-
-**See also** [canGoBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoBack-prop) and [goForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goForward-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="goForward-method"></span><span class="type">void</span> <span class="name">goForward</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Go forward one entry in the navigation history.
-
-**See also** [canGoForward](../../sdk-15.04.4/Ubuntu.Web.WebView.md#canGoForward-prop) and [goBack](../../sdk-15.04.4/Ubuntu.Web.WebView.md#goBack-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="loadHtml-method"></span><span class="type">void</span> <span class="name">loadHtml</span>(<span class="type">string</span> <em>html</em>, <span class="type"><a href="../../sdk-15.04.4/Ubuntu.Web.WebView.md#url-prop">url</a></span> <em>baseUrl</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Load HTML content from memory instead of loading it from a URL. The `baseUrl` argument is used to resolve relative URLs in the provided content.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="reload-method"></span><span class="type">void</span> <span class="name">reload</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Reload the current page.
-
-**See also** [stop](../../sdk-15.04.4/Ubuntu.Web.WebView.md#stop-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="stop-method"></span><span class="type">void</span> <span class="name">stop</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Stop loading the current page. Does nothing if there is no page currently loading.
-
-**See also** [reload](../../sdk-15.04.4/Ubuntu.Web.WebView.md#reload-method) and [loading](../../sdk-15.04.4/Ubuntu.Web.WebView.md#loading-prop).
-
+}</pre>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#contextModel-prop">contextModel</a>.</p>
+<!-- @@@contextualActions -->
+<br/>
+<!-- $$$filePicker -->
+<table class="qmlname"><tr valign="top" id="filePicker-prop"><td class="tblQmlPropNode"><p><span class="name">filePicker</span> : <span class="type">component</span></p></td></tr></table><p>The QML component that will be instantiated to let the user select files when the user clicks an <code>&lt;input type=&quot;file&quot;&gt;</code> element on the current page.</p>
+<!-- @@@filePicker -->
+<br/>
+<!-- $$$fullscreen -->
+<table class="qmlname"><tr valign="top" id="fullscreen-prop"><td class="tblQmlPropNode"><p><span class="name">fullscreen</span> : <span class="type">bool</span></p></td></tr></table><p>Whether the current page requested fullscreen display.</p>
+<!-- @@@fullscreen -->
+<br/>
+<!-- $$$icon -->
+<table class="qmlname"><tr valign="top" id="icon-prop"><td class="tblQmlPropNode"><p><span class="name">icon</span> : <span class="type"><a href="..//Ubuntu.Web.WebView.md#url-prop">url</a></span></p></td></tr></table><p>The URL of the favicon of the current page.</p>
+<!-- @@@icon -->
+<br/>
+<!-- $$$incognito -->
+<table class="qmlname"><tr valign="top" id="incognito-prop"><td class="tblQmlPropNode"><p><span class="name">incognito</span> : <span class="type">bool</span></p></td></tr></table><p>Whether the <a href="..//Ubuntu.Web.WebView.md">WebView</a> is being used in private browsing mode, where no data is persisted across sessions.</p>
+<!-- @@@incognito -->
+<br/>
+<!-- $$$loadProgress -->
+<table class="qmlname"><tr valign="top" id="loadProgress-prop"><td class="tblQmlPropNode"><p><span class="name">loadProgress</span> : <span class="type">int</span></p></td></tr></table><p>The load progress of the current page (as a integer value between 0 and 100).</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#loading-prop">loading</a>.</p>
+<!-- @@@loadProgress -->
+<br/>
+<!-- $$$loading -->
+<table class="qmlname"><tr valign="top" id="loading-prop"><td class="tblQmlPropNode"><p><span class="name">loading</span> : <span class="type">bool</span></p></td></tr></table><p>Whether the current page is loading.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#loadProgress-prop">loadProgress</a>, <a href="..//Ubuntu.Web.WebView.md#stop-method">stop</a>, and <a href="..//Ubuntu.Web.WebView.md#reload-method">reload</a>.</p>
+<!-- @@@loading -->
+<br/>
+<!-- $$$navigationHistory -->
+<table class="qmlname"><tr valign="top" id="navigationHistory-prop"><td class="tblQmlPropNode"><p><span class="name">navigationHistory</span> : <span class="type">list</span></p></td></tr></table><p>The navigation history (back/forward entries) stored as a list model with a <code>currentIndex</code> property. Each entry exposes the URL and title of the corresponding page, as well as a timestamp of when it was visited.</p>
+<!-- @@@navigationHistory -->
+<br/>
+<!-- $$$promptDialog -->
+<table class="qmlname"><tr valign="top" id="promptDialog-prop"><td class="tblQmlPropNode"><p><span class="name">promptDialog</span> : <span class="type">component</span></p></td></tr></table><p>The QML component that will be instantiated to display a JavaScript prompt dialog.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#alertDialog-prop">alertDialog</a>, <a href="..//Ubuntu.Web.WebView.md#confirmDialog-prop">confirmDialog</a>, and <a href="..//Ubuntu.Web.WebView.md#beforeUnloadDialog-prop">beforeUnloadDialog</a>.</p>
+<!-- @@@promptDialog -->
+<br/>
+<!-- $$$title -->
+<table class="qmlname"><tr valign="top" id="title-prop"><td class="tblQmlPropNode"><p><span class="name">title</span> : <span class="type">string</span></p></td></tr></table><p>The title of the current page.</p>
+<!-- @@@title -->
+<br/>
+<!-- $$$url -->
+<table class="qmlname"><tr valign="top" id="url-prop"><td class="tblQmlPropNode"><p><span class="name">url</span> : <span class="type"><a href="..//Ubuntu.Web.WebView.md#url-prop">url</a></span></p></td></tr></table><p>The URL of the current page.</p>
+<!-- @@@url -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$goBack -->
+<table class="qmlname"><tr valign="top" id="goBack-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">goBack</span>()</p></td></tr></table><p>Go back one entry in the navigation history.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#canGoBack-prop">canGoBack</a> and <a href="..//Ubuntu.Web.WebView.md#goForward-method">goForward</a>.</p>
+<!-- @@@goBack -->
+<br/>
+<!-- $$$goForward -->
+<table class="qmlname"><tr valign="top" id="goForward-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">goForward</span>()</p></td></tr></table><p>Go forward one entry in the navigation history.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#canGoForward-prop">canGoForward</a> and <a href="..//Ubuntu.Web.WebView.md#goBack-method">goBack</a>.</p>
+<!-- @@@goForward -->
+<br/>
+<!-- $$$loadHtml -->
+<table class="qmlname"><tr valign="top" id="loadHtml-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">loadHtml</span>(<span class="type">string</span><i> html</i>, <span class="type"><a href="..//Ubuntu.Web.WebView.md#url-prop">url</a></span><i> baseUrl</i>)</p></td></tr></table><p>Load HTML content from memory instead of loading it from a URL. The <code>baseUrl</code> argument is used to resolve relative URLs in the provided content.</p>
+<!-- @@@loadHtml -->
+<br/>
+<!-- $$$reload -->
+<table class="qmlname"><tr valign="top" id="reload-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">reload</span>()</p></td></tr></table><p>Reload the current page.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#stop-method">stop</a>.</p>
+<!-- @@@reload -->
+<br/>
+<!-- $$$stop -->
+<table class="qmlname"><tr valign="top" id="stop-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">stop</span>()</p></td></tr></table><p>Stop loading the current page. Does nothing if there is no page currently loading.</p>
+<p><b>See also </b><a href="..//Ubuntu.Web.WebView.md#reload-method">reload</a> and <a href="..//Ubuntu.Web.WebView.md#loading-prop">loading</a>.</p>
+<!-- @@@stop -->
+<br/>

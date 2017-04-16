@@ -1,13 +1,12 @@
 ---
 Title: scope_harness.DepartmentMatcherMode
 ---
-        
-DepartmentMatcherMode
-=====================
 
- *class* `scope_harness.``DepartmentMatcherMode`<a href="#scope_harness.DepartmentMatcherMode" class="headerlink" title="Permalink to this definition"></a>  
-Match mode for departments
+# scope_harness.DepartmentMatcherMode
 
-Preview matchers<a href="#preview-matchers" class="headerlink" title="Permalink to this headline"></a>
-----------------------------------------------------------------------------------------------------------------
-
+<dl class="class">
+<dt id="scope_harness.DepartmentMatcherMode">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">DepartmentMatcherMode</tt><a class="headerlink" href="#scope_harness.DepartmentMatcherMode" title="Permalink to this definition"></a></dt>
+<dd><p>Match mode for departments</p>
+</dd></dl>
+<h2>Preview matchers<a class="headerlink" href="#preview-matchers" title="Permalink to this headline"></a></h2>

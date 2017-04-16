@@ -1,43 +1,62 @@
 ---
 Title: autopilot.process.Application
 ---
-        
-Application
-===========
 
- *class* `autopilot.process.``Application`<a href="#Application" class="reference internal"></a><a href="#autopilot.process.Application" class="headerlink" title="Permalink to this definition"></a>  
- `desktop_file`<a href="#Application.desktop_file" class="reference internal"></a><a href="#autopilot.process.Application.desktop_file" class="headerlink" title="Permalink to this definition"></a>  
-Get the application desktop file.
+# autopilot.process.Application
 
-This returns just the filename, not the full path. If the application no longer exists, this returns an empty string.
-
- `name`<a href="#Application.name" class="reference internal"></a><a href="#autopilot.process.Application.name" class="headerlink" title="Permalink to this definition"></a>  
-Get the application name.
-
-Note
-
-This may change according to the current locale. If you want a unique string to match applications against, use desktop\_file instead.
-
- `icon`<a href="#Application.icon" class="reference internal"></a><a href="#autopilot.process.Application.icon" class="headerlink" title="Permalink to this definition"></a>  
-Get the application icon.
-
-|          |                       |
-|----------|-----------------------|
-| Returns: | The name of the icon. |
-
- `is_active`<a href="#Application.is_active" class="reference internal"></a><a href="#autopilot.process.Application.is_active" class="headerlink" title="Permalink to this definition"></a>  
-Is the application active (i.e. has keyboard focus)?
-
- `is_urgent`<a href="#Application.is_urgent" class="reference internal"></a><a href="#autopilot.process.Application.is_urgent" class="headerlink" title="Permalink to this definition"></a>  
-Is the application currently signalling urgency?
-
- `user_visible`<a href="#Application.user_visible" class="reference internal"></a><a href="#autopilot.process.Application.user_visible" class="headerlink" title="Permalink to this definition"></a>  
-Is this application visible to the user?
-
-Note
-
-Some applications (such as the panel) are hidden to the user but may still be returned.
-
- `get_windows`()<a href="#Application.get_windows" class="reference internal"></a><a href="#autopilot.process.Application.get_windows" class="headerlink" title="Permalink to this definition"></a>  
-Get a list of the application windows.
-
+<dl class="class">
+<dt id="autopilot.process.Application">
+<em class="property">class </em><tt class="descclassname">autopilot.process.</tt><tt class="descname">Application</tt><a class="reference internal" href="#Application"></a><a class="headerlink" href="#autopilot.process.Application" title="Permalink to this definition"></a></dt>
+<dd><dl class="attribute">
+<dt id="autopilot.process.Application.desktop_file">
+<tt class="descname">desktop_file</tt><a class="reference internal" href="#Application.desktop_file"></a><a class="headerlink" href="#autopilot.process.Application.desktop_file" title="Permalink to this definition"></a></dt>
+<dd><p>Get the application desktop file.</p>
+<p>This returns just the filename, not the full path.
+If the application no longer exists, this returns an empty string.</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="autopilot.process.Application.name">
+<tt class="descname">name</tt><a class="reference internal" href="#Application.name"></a><a class="headerlink" href="#autopilot.process.Application.name" title="Permalink to this definition"></a></dt>
+<dd><p>Get the application name.</p>
+<p class="first admonition-title">Note</p>
+<p class="last">This may change according to the current locale. If you want
+a unique string to match applications against, use desktop_file
+instead.</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="autopilot.process.Application.icon">
+<tt class="descname">icon</tt><a class="reference internal" href="#Application.icon"></a><a class="headerlink" href="#autopilot.process.Application.icon" title="Permalink to this definition"></a></dt>
+<dd><p>Get the application icon.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The name of the icon.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="attribute">
+<dt id="autopilot.process.Application.is_active">
+<tt class="descname">is_active</tt><a class="reference internal" href="#Application.is_active"></a><a class="headerlink" href="#autopilot.process.Application.is_active" title="Permalink to this definition"></a></dt>
+<dd><p>Is the application active (i.e. has keyboard focus)?</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="autopilot.process.Application.is_urgent">
+<tt class="descname">is_urgent</tt><a class="reference internal" href="#Application.is_urgent"></a><a class="headerlink" href="#autopilot.process.Application.is_urgent" title="Permalink to this definition"></a></dt>
+<dd><p>Is the application currently signalling urgency?</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="autopilot.process.Application.user_visible">
+<tt class="descname">user_visible</tt><a class="reference internal" href="#Application.user_visible"></a><a class="headerlink" href="#autopilot.process.Application.user_visible" title="Permalink to this definition"></a></dt>
+<dd><p>Is this application visible to the user?</p>
+<p class="first admonition-title">Note</p>
+<p class="last">Some applications (such as the panel) are hidden to the user
+but may still be returned.</p>
+</dd></dl>
+<dl class="method">
+<dt id="autopilot.process.Application.get_windows">
+<tt class="descname">get_windows</tt><big>(</big><big>)</big><a class="reference internal" href="#Application.get_windows"></a><a class="headerlink" href="#autopilot.process.Application.get_windows" title="Permalink to this definition"></a></dt>
+<dd><p>Get a list of the application windows.</p>
+</dd></dl>
+</dd></dl>

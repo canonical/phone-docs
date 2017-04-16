@@ -1,169 +1,69 @@
 ---
 Title: Ubuntu.Components.Styles.PageHeaderStyle
 ---
-        
-PageHeaderStyle
-===============
+
+# Ubuntu.Components.Styles.PageHeaderStyle
 
 <span class="subtitle"></span>
-Style API for page header. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components.Styles 1.3</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Item.md">Item</a></p></td>
-</tr>
-</tbody>
-</table>
-
--   Obsolete members
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[backgroundColor](#backgroundColor-prop)**** : color
--   ****[buttons](#buttons-prop)**** : ActionItemProperties
--   ****[contentHeight](#contentHeight-prop)**** : real
--   ****[defaultActionDelegate](#defaultActionDelegate-prop)**** : Component
--   ****[dividerColor](#dividerColor-prop)**** : color
--   ****[foregroundColor](#foregroundColor-prop)**** : color
--   ****[subtitleColor](#subtitleColor-prop)**** : color
--   ****[subtitleComponent](#subtitleComponent-prop)**** : Component
--   ****[titleComponent](#titleComponent-prop)**** : Component
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The component defines the style API for the [PageHeader](../Ubuntu.Components.PageHeader.md) component.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="backgroundColor-prop"></span><span class="name">backgroundColor</span> : <span class="type">color</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The color of the background of the header.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="buttons-prop"></span><span class="qmlreadonly">[read-only] </span><span class="name">buttons</span> : <span class="type"><a href="Ubuntu.Components.Styles.ActionItemProperties.md">ActionItemProperties</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-Configuration of the colors of the action buttons in the header.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="contentHeight-prop"></span><span class="name">contentHeight</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The height of the header excluding the divider and extension.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="defaultActionDelegate-prop"></span><span class="name">defaultActionDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The delegate used for the buttons in the leading and trailing [ActionBar](../Ubuntu.Components.ActionBar.md) in the header.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="dividerColor-prop"></span><span class="name">dividerColor</span> : <span class="type">color</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The color of the divider at the bottom of the header.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="foregroundColor-prop"></span><span class="name">foregroundColor</span> : <span class="type">color</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The color of the title and the action buttons in the header.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="subtitleColor-prop"></span><span class="name">subtitleColor</span> : <span class="type">color</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The color of the (optional) subtitle.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="subtitleComponent-prop"></span><span class="name">subtitleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The default component to display the subtitle.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="titleComponent-prop"></span><span class="name">titleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The default contents that will be loaded when no contents Item was set.
-
+<!-- $$$PageHeaderStyle-brief -->
+<p>Style API for page header. More...</p>
+<!-- @@@PageHeaderStyle -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
+</td></tr></table><ul>
+<li>Obsolete members</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#backgroundColor-prop">backgroundColor</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#buttons-prop">buttons</a></b></b> : ActionItemProperties</li>
+<li class="fn"><b><b><a href="#contentHeight-prop">contentHeight</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#defaultActionDelegate-prop">defaultActionDelegate</a></b></b> : Component</li>
+<li class="fn"><b><b><a href="#dividerColor-prop">dividerColor</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#foregroundColor-prop">foregroundColor</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#subtitleColor-prop">subtitleColor</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#subtitleComponent-prop">subtitleComponent</a></b></b> : Component</li>
+<li class="fn"><b><b><a href="#titleComponent-prop">titleComponent</a></b></b> : Component</li>
+</ul>
+<!-- $$$PageHeaderStyle-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The component defines the style API for the <a href="Ubuntu.Components.PageHeader.md">PageHeader</a> component.</p>
+<!-- @@@PageHeaderStyle -->
+<h2>Property Documentation</h2>
+<!-- $$$backgroundColor -->
+<table class="qmlname"><tr valign="top" id="backgroundColor-prop"><td class="tblQmlPropNode"><p><span class="name">backgroundColor</span> : <span class="type">color</span></p></td></tr></table><p>The color of the background of the header.</p>
+<!-- @@@backgroundColor -->
+<br/>
+<!-- $$$buttons -->
+<table class="qmlname"><tr valign="top" id="buttons-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">buttons</span> : <span class="type"><a href="Ubuntu.Components.Styles.ActionItemProperties.md">ActionItemProperties</a></span></p></td></tr></table><p>Configuration of the colors of the action buttons in the header.</p>
+<!-- @@@buttons -->
+<br/>
+<!-- $$$contentHeight -->
+<table class="qmlname"><tr valign="top" id="contentHeight-prop"><td class="tblQmlPropNode"><p><span class="name">contentHeight</span> : <span class="type">real</span></p></td></tr></table><p>The height of the header excluding the divider and extension.</p>
+<!-- @@@contentHeight -->
+<br/>
+<!-- $$$defaultActionDelegate -->
+<table class="qmlname"><tr valign="top" id="defaultActionDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">defaultActionDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate used for the buttons in the leading and trailing <a href="Ubuntu.Components.ActionBar.md">ActionBar</a> in the header.</p>
+<!-- @@@defaultActionDelegate -->
+<br/>
+<!-- $$$dividerColor -->
+<table class="qmlname"><tr valign="top" id="dividerColor-prop"><td class="tblQmlPropNode"><p><span class="name">dividerColor</span> : <span class="type">color</span></p></td></tr></table><p>The color of the divider at the bottom of the header.</p>
+<!-- @@@dividerColor -->
+<br/>
+<!-- $$$foregroundColor -->
+<table class="qmlname"><tr valign="top" id="foregroundColor-prop"><td class="tblQmlPropNode"><p><span class="name">foregroundColor</span> : <span class="type">color</span></p></td></tr></table><p>The color of the title and the action buttons in the header.</p>
+<!-- @@@foregroundColor -->
+<br/>
+<!-- $$$subtitleColor -->
+<table class="qmlname"><tr valign="top" id="subtitleColor-prop"><td class="tblQmlPropNode"><p><span class="name">subtitleColor</span> : <span class="type">color</span></p></td></tr></table><p>The color of the (optional) subtitle.</p>
+<!-- @@@subtitleColor -->
+<br/>
+<!-- $$$subtitleComponent -->
+<table class="qmlname"><tr valign="top" id="subtitleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">subtitleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default component to display the subtitle.</p>
+<!-- @@@subtitleComponent -->
+<br/>
+<!-- $$$titleComponent -->
+<table class="qmlname"><tr valign="top" id="titleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">titleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default contents that will be loaded when no contents Item was set.</p>
+<!-- @@@titleComponent -->
+<br/>

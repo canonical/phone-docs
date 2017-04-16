@@ -1,46 +1,31 @@
 ---
 Title: QtContacts.Guid
 ---
-        
-Guid
-====
+
+# QtContacts.Guid
 
 <span class="subtitle"></span>
-The Guid element contains a globally unique Id of a contact, for use in synchronization with other datastores. More...
-
-|                   |                       |
-|-------------------|-----------------------|
-| Import Statement: | import QtContacts 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[guid](#guid-prop)**** : string
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Guid element contains the following field types:
-
--   Guid.Guid
-
-This element is part of the **QtContacts** module.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="guid-prop"></span><span class="name">guid</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the value of the GUID.
-
+<!-- $$$Guid-brief -->
+<p>The Guid element contains a globally unique Id of a contact, for use in synchronization with other datastores. More...</p>
+<!-- @@@Guid -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtContacts 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#guid-prop">guid</a></b></b> : string</li>
+</ul>
+<!-- $$$Guid-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Guid element contains the following field types:</p>
+<ul>
+<li>Guid.Guid</li>
+</ul>
+<p>This element is part of the <b>QtContacts</b> module.</p>
+<!-- @@@Guid -->
+<h2>Property Documentation</h2>
+<!-- $$$guid -->
+<table class="qmlname"><tr valign="top" id="guid-prop"><td class="tblQmlPropNode"><p><span class="name">guid</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the value of the GUID.</p>
+<!-- @@@guid -->
+<br/>

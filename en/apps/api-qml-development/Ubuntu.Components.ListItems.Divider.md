@@ -1,35 +1,19 @@
 ---
 Title: Ubuntu.Components.ListItems.Divider
 ---
-        
-Divider
-=======
+
+# Ubuntu.Components.ListItems.Divider
 
 <span class="subtitle"></span>
-Divider to break up list items into groups. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components.ListItems 1.3</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Image.md">Image</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-**Note:** **The component is deprecated.**
-
-Examples: see [Header](../Ubuntu.Components.Header.md)
-
+<!-- $$$Divider-brief -->
+<p>Divider to break up list items into groups. More...</p>
+<!-- @@@Divider -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.ListItems 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Image.md">Image</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$Divider-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><b>Note: </b><b>The component is deprecated.</b></p><p>Examples: see <a href="Ubuntu.Components.Header.md">Header</a></p>
+<!-- @@@Divider -->

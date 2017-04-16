@@ -1,300 +1,150 @@
 ---
 Title: Ubuntu.Components.Action
 ---
-        
-Action
-======
+
+# Ubuntu.Components.Action
 
 <span class="subtitle"></span>
-Describe an action that can be re-used and shared between different components. More...
-
-|                   |                              |
-|-------------------|------------------------------|
-| Import Statement: | import Ubuntu.Components 1.3 |
-
--   Obsolete members
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[description](#description-prop)**** : string
--   ****[enabled](#enabled-prop)**** : bool
--   ****[iconName](#iconName-prop)**** : string
--   ****[iconSource](#iconSource-prop)**** : url
--   ****[keywords](#keywords-prop)**** : string
--   ****[name](#name-prop)**** : string
--   ****[parameterType](#parameterType-prop)**** : enum
--   ****[shortcut](#shortcut-prop)**** : var
--   ****[text](#text-prop)**** : string
--   ****[visible](#visible-prop)**** : bool
-
-<span id="signals"></span>
-Signals
--------
-
--   ****[triggered](#triggered-signal)****(var *value*)
-
-<span id="methods"></span>
-Methods
--------
-
--   ****[trigger](#trigger-method)****(var *value*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Actions can be used to define a specific task to be executed in different contexts using different components. The same action can be assigned to a [Button](../Ubuntu.Components.Button.md), a **Checkbox** or even a [TextField](../Ubuntu.Components.TextField.md). The [triggered](#triggered-signal) signal is emitted depending on the component. [Button](../Ubuntu.Components.Button.md) and **CheckBox** for instance emits the signal when clicked, whereas [TextField](../Ubuntu.Components.TextField.md) emits the signal when its accepted signal is triggered.
-
-If the [parameterType](#parameterType-prop) property is set, the Action is said to be parameterised. This means that when it is bound to a menu or button, the action expects a typed input parameter. The type affects the allowed value of the QVariant that must be passed to the [trigger](#trigger-method) and [triggered](#triggered-signal).
-
-``` qml
-Action {
-    id: action
-    parameterType: Action.Integer
-    text: "Int value"
-    onTriggered: {
-        // the value will be undefined
-        console.log("value is", value);
-    }
-    Component.onCompleted: trigger("Hello World!")
+<!-- $$$Action-brief -->
+<p>Describe an action that can be re-used and shared between different components. More...</p>
+<!-- @@@Action -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr></table><ul>
+<li>Obsolete members</li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#description-prop">description</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#iconName-prop">iconName</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#iconSource-prop">iconSource</a></b></b> : url</li>
+<li class="fn"><b><b><a href="#keywords-prop">keywords</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#parameterType-prop">parameterType</a></b></b> : enum</li>
+<li class="fn"><b><b><a href="#shortcut-prop">shortcut</a></b></b> : var</li>
+<li class="fn"><b><b><a href="#text-prop">text</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#visible-prop">visible</a></b></b> : bool</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="#triggered-signal">triggered</a></b></b>(var <i>value</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn"><b><b><a href="#trigger-method">trigger</a></b></b>(var <i>value</i>)</li>
+</ul>
+<!-- $$$Action-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Actions can be used to define a specific task to be executed in different contexts using different components. The same action can be assigned to a <a href="Ubuntu.Components.Button.md">Button</a>, a <b>Checkbox</b> or even a <a href="Ubuntu.Components.TextField.md">TextField</a>. The <a href="#triggered-signal">triggered</a> signal is emitted depending on the component. <a href="Ubuntu.Components.Button.md">Button</a> and <b>CheckBox</b> for instance emits the signal when clicked, whereas <a href="Ubuntu.Components.TextField.md">TextField</a> emits the signal when its accepted signal is triggered.</p>
+<p>If the <a href="#parameterType-prop">parameterType</a> property is set, the Action is said to be parameterised. This means that when it is bound to a menu or button, the action expects a typed input parameter. The type affects the allowed value of the QVariant that must be passed to the <a href="#trigger-method">trigger</a> and <a href="#triggered-signal">triggered</a>.</p>
+<pre class="qml"><span class="type"><a href="index.html">Action</a></span> {
+<span class="name">id</span>: <span class="name">action</span>
+<span class="name">parameterType</span>: <span class="name">Action</span>.<span class="name">Integer</span>
+<span class="name">text</span>: <span class="string">&quot;Int value&quot;</span>
+<span class="name">onTriggered</span>: {
+<span class="comment">// the value will be undefined</span>
+<span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;value is&quot;</span>, <span class="name">value</span>);
 }
-```
-
-When an Action is assigned to a component, the component takes the values from the action itself. Therefore assigning the action to a Button is enough to set up the label and the icon to be shown by the button.
-
-``` cpp
-Action {
-    id: stock
-    iconName: "call"
-    text: "Call"
+<span class="name">Component</span>.onCompleted: <span class="name">trigger</span>(<span class="string">&quot;Hello World!&quot;</span>)
+}</pre>
+<p>When an Action is assigned to a component, the component takes the values from the action itself. Therefore assigning the action to a Button is enough to set up the label and the icon to be shown by the button.</p>
+<pre class="cpp">Action {
+id: stock
+iconName: <span class="string">&quot;call&quot;</span>
+text: <span class="string">&quot;Call&quot;</span>
 }
 Button {
-    // this binding will set the Button's text, iconName and
-    // iconSource properties.
-    action: stock
+<span class="comment">// this binding will set the Button's text, iconName and</span>
+<span class="comment">// iconSource properties.</span>
+action: stock
+}</pre>
+<p>Actions are used to populate different Popovers like <a href="Ubuntu.Components.Popups.ActionSelectionPopover.md">ActionSelectionPopover</a> as well as to define actions for pages, or when defining options in <code>ListItemOptions</code>.</p>
+<p>Examples: See <a href="Ubuntu.Components.Page.md">Page</a></p>
+<h3 >Mnemonics</h3>
+<p>Since Ubuntu.Components 1.3 Action supports mnemonics. Mnemonics are shortcuts defined in the <a href="#text-prop">text</a> property, prefixed the shortcut letter with &amp;. For instance <code>&quot;\&amp;Call&quot;</code> will bint the <code>&quot;Alt-C&quot;</code> shortcut to the action. When a mnemonic is detected on the Action and a keyboard is attached to the device, the <a href="#text-prop">text</a> property will provide a formatted text having the mnemonic letter underscored.</p>
+<pre class="qml"><span class="type"><a href="index.html">Action</a></span> {
+<span class="name">id</span>: <span class="name">call</span>
+<span class="name">iconName</span>: <span class="string">&quot;call&quot;</span>
+<span class="name">text</span>: <span class="string">&quot;&amp;Call&quot;</span>
+}</pre>
+<!-- @@@Action -->
+<h2>Property Documentation</h2>
+<!-- $$$description -->
+<table class="qmlname"><tr valign="top" id="description-prop"><td class="tblQmlPropNode"><p><span class="name">description</span> : <span class="type">string</span></p></td></tr></table><p>User visible secondary description for the action. Description is more verbose than the <a href="#text-prop">text</a> and should describe the Action with couple of words.</p>
+<!-- @@@description -->
+<br/>
+<!-- $$$enabled -->
+<table class="qmlname"><tr valign="top" id="enabled-prop"><td class="tblQmlPropNode"><p><span class="name">enabled</span> : <span class="type">bool</span></p></td></tr></table><p>If set to false the action can not be triggered. Components visualizing the action migth either hide the action or make it insensitive. However visibility can be controlled separately using the <a href="#visible-prop">visible</a> property.</p>
+<!-- @@@enabled -->
+<br/>
+<!-- $$$iconName -->
+<table class="qmlname"><tr valign="top" id="iconName-prop"><td class="tblQmlPropNode"><p><span class="name">iconName</span> : <span class="type">string</span></p></td></tr></table><p>The icon associated with the action. If both iconName and <a href="#iconSource-prop">iconSource</a> are defined, iconName will be ignored by the components.</p>
+<p><b>Note: </b>The complete list of icons available in Ubuntu is not published yet. For now please refer to the folder where the icon theme is installed:</p><ul>
+<li>Ubuntu Touch: /usr/share/icons/suru</li>
+</ul>
+<!-- @@@iconName -->
+<br/>
+<!-- $$$iconSource -->
+<table class="qmlname"><tr valign="top" id="iconSource-prop"><td class="tblQmlPropNode"><p><span class="name">iconSource</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-url.html">url</a></span></p></td></tr></table><p>This is a URL to any image file. In order to use an icon from the Ubuntu theme, use the <a href="#iconName-prop">iconName</a> property instead.</p>
+<!-- @@@iconSource -->
+<br/>
+<!-- $$$keywords -->
+<table class="qmlname"><tr valign="top" id="keywords-prop"><td class="tblQmlPropNode"><p><span class="name">keywords</span> : <span class="type">string</span></p></td></tr></table><p>Additional user visible keywords for the action. The format of the keywords string is &quot;Keyword 1;Keyword 2;Keyword 3&quot; to allow translators to define different number of keywords per language. The keywords are separated by ; and they may contain spaces.</p>
+<pre class="qml"><span class="type"><a href="index.html">Action</a></span> {
+<span class="name">text</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Crop&quot;</span>)
+<span class="name">description</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Crop the image&quot;</span>)
+<span class="name">keywords</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Trim;Cut&quot;</span>)
+}</pre>
+<!-- @@@keywords -->
+<br/>
+<!-- $$$name -->
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>The name of the action. By default an action gets it's name generated automatically if not overridden with later. If name is set to &quot;&quot; then the action restores it's autogenerated name. The name is not user visible.</p>
+<!-- @@@name -->
+<br/>
+<!-- $$$parameterType -->
+<table class="qmlname"><tr valign="top" id="parameterType-prop"><td class="tblQmlPropNode"><p><span class="name">parameterType</span> : <span class="type">enum</span></p></td></tr></table><p>Type of the parameter passed to <a href="#trigger-method">trigger</a> and <a href="#triggered-signal">triggered</a>. Type is an enumeration:</p>
+<ul>
+<li><b>Action.None</b>: No paramater. (default)</li>
+<li><b>Action.String</b>: String parameter.</li>
+<li><b>Action.Integer</b>: Integer parameter.</li>
+<li><b>Action.Bool</b>: Boolean parameter.</li>
+<li><b>Action.Real</b>: Single precision floating point parameter.</li>
+<li><b>Action.Object</b>: The parameter is an object.</li>
+</ul>
+<pre class="qml"><span class="type"><a href="index.html">Action</a></span> {
+<span class="name">id</span>: <span class="name">action</span>
+<span class="name">parameterType</span>: <span class="name">Action</span>.<span class="name">String</span>
+<span class="name">onTriggered</span>: {
+<span class="comment">// value arguments now contain strings</span>
+<span class="name">console</span>.<span class="name">log</span>(<span class="name">value</span>);
 }
-```
-
-Actions are used to populate different Popovers like [ActionSelectionPopover](../Ubuntu.Components.Popups.ActionSelectionPopover.md) as well as to define actions for pages, or when defining options in `ListItemOptions`.
-
-Examples: See [Page](../Ubuntu.Components.Page.md)
-
-<span id="mnemonics"></span>
-### Mnemonics
-
-Since Ubuntu.Components 1.3 Action supports mnemonics. Mnemonics are shortcuts defined in the [text](#text-prop) property, prefixed the shortcut letter with &. For instance `"\&Call"` will bint the `"Alt-C"` shortcut to the action. When a mnemonic is detected on the Action and a keyboard is attached to the device, the [text](#text-prop) property will provide a formatted text having the mnemonic letter underscored.
-
-``` qml
-Action {
-    id: call
-    iconName: "call"
-    text: "&Call"
-}
-```
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="description-prop"></span><span class="name">description</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-User visible secondary description for the action. Description is more verbose than the [text](#text-prop) and should describe the Action with couple of words.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="enabled-prop"></span><span class="name">enabled</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-If set to false the action can not be triggered. Components visualizing the action migth either hide the action or make it insensitive. However visibility can be controlled separately using the [visible](#visible-prop) property.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="iconName-prop"></span><span class="name">iconName</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The icon associated with the action. If both iconName and [iconSource](#iconSource-prop) are defined, iconName will be ignored by the components.
-
-**Note:** The complete list of icons available in Ubuntu is not published yet. For now please refer to the folder where the icon theme is installed:
-
--   Ubuntu Touch: /usr/share/icons/suru
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="iconSource-prop"></span><span class="name">iconSource</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-url.html">url</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-This is a URL to any image file. In order to use an icon from the Ubuntu theme, use the [iconName](#iconName-prop) property instead.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="keywords-prop"></span><span class="name">keywords</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Additional user visible keywords for the action. The format of the keywords string is "Keyword 1;Keyword 2;Keyword 3" to allow translators to define different number of keywords per language. The keywords are separated by ; and they may contain spaces.
-
-``` qml
-Action {
-    text: i18n.tr("Crop")
-    description: i18n.tr("Crop the image")
-    keywords: i18n.tr("Trim;Cut")
-}
-```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="name-prop"></span><span class="name">name</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The name of the action. By default an action gets it's name generated automatically if not overridden with later. If name is set to "" then the action restores it's autogenerated name. The name is not user visible.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="parameterType-prop"></span><span class="name">parameterType</span> : <span class="type">enum</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Type of the parameter passed to [trigger](#trigger-method) and [triggered](#triggered-signal). Type is an enumeration:
-
--   **Action.None**: No paramater. (default)
--   **Action.String**: String parameter.
--   **Action.Integer**: Integer parameter.
--   **Action.Bool**: Boolean parameter.
--   **Action.Real**: Single precision floating point parameter.
--   **Action.Object**: The parameter is an object.
-
-``` qml
-Action {
-    id: action
-    parameterType: Action.String
-    onTriggered: {
-        // value arguments now contain strings
-        console.log(value);
-    }
-    Component.onCompleted: action.trigger("Hello World")
-}
-```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shortcut-prop"></span><span class="name">shortcut</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The keyboard shortcut that can be used to trigger the action. **StandardKey** values such as **StandardKey.Copy** as well as strings in the form "Ctrl+C" are accepted values.
-
-This QML property was introduced in Qt 1.3.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="text-prop"></span><span class="name">text</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The user visible primary label of the action.
-
-Mnemonics are shortcuts prefixed in the text with &. If the text has multiple occurences of the & character, the first one will be considered for the shortcut. The & character cannot be used as shortcut.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="visible-prop"></span><span class="name">visible</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Specifies whether the action is visible to the user. Defaults to true.
-
-Signal Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="triggered-signal"></span><span class="name">triggered</span>(<span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span> <em>value</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Signal called when the action is triggered. The user visible primary label of the action when emitted by components. Custom implementations must make sure this rule is followed, therefore instead of emitting the signal the [trigger](#trigger-method) function should be called.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="trigger-method"></span><span class="name">trigger</span>(<span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span> <em>value</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Checks the `value` against the action [parameterType](#parameterType-prop) and triggers the action. If [parameterType](#parameterType-prop) is `Action.None`, it will trigger as
-
-``` cpp
-action.trigger()
-```
-
+<span class="name">Component</span>.onCompleted: <span class="name">action</span>.<span class="name">trigger</span>(<span class="string">&quot;Hello World&quot;</span>)
+}</pre>
+<!-- @@@parameterType -->
+<br/>
+<!-- $$$shortcut -->
+<table class="qmlname"><tr valign="top" id="shortcut-prop"><td class="tblQmlPropNode"><p><span class="name">shortcut</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span></p></td></tr></table><p>The keyboard shortcut that can be used to trigger the action. <b>StandardKey</b> values such as <b>StandardKey.Copy</b> as well as strings in the form &quot;Ctrl+C&quot; are accepted values.</p>
+<p>This QML property was introduced in  Qt 1.3.</p>
+<!-- @@@shortcut -->
+<br/>
+<!-- $$$text -->
+<table class="qmlname"><tr valign="top" id="text-prop"><td class="tblQmlPropNode"><p><span class="name">text</span> : <span class="type">string</span></p></td></tr></table><p>The user visible primary label of the action.</p>
+<p>Mnemonics are shortcuts prefixed in the text with &amp;. If the text has multiple occurences of the &amp; character, the first one will be considered for the shortcut. The &amp; character cannot be used as shortcut.</p>
+<!-- @@@text -->
+<br/>
+<!-- $$$visible -->
+<table class="qmlname"><tr valign="top" id="visible-prop"><td class="tblQmlPropNode"><p><span class="name">visible</span> : <span class="type">bool</span></p></td></tr></table><p>Specifies whether the action is visible to the user. Defaults to true.</p>
+<!-- @@@visible -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$triggered -->
+<table class="qmlname"><tr valign="top" id="triggered-signal"><td class="tblQmlFuncNode"><p><span class="name">triggered</span>(<span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span><i> value</i>)</p></td></tr></table><p>Signal called when the action is triggered. The user visible primary label of the action when emitted by components. Custom implementations must make sure this rule is followed, therefore instead of emitting the signal the <a href="#trigger-method">trigger</a> function should be called.</p>
+<!-- @@@triggered -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$trigger -->
+<table class="qmlname"><tr valign="top" id="trigger-method"><td class="tblQmlFuncNode"><p><span class="name">trigger</span>(<span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span><i> value</i>)</p></td></tr></table><p>Checks the <code>value</code> against the action <a href="#parameterType-prop">parameterType</a> and triggers the action. If <a href="#parameterType-prop">parameterType</a> is <code>Action.None</code>, it will trigger as</p>
+<pre class="cpp">action<span class="operator">.</span>trigger()</pre>
+<!-- @@@trigger -->
+<br/>

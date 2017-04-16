@@ -4,7 +4,6 @@ title: "Platform guides - running autopilot tests"
 
 # Platform guides - running autopilot tests
 
-
 Autopilot is a common tool of choice for writing acceptance tests for
 applications developed with the Ubuntu SDK. This guide will cover the
 different options available to you for running the autopilot test suite for

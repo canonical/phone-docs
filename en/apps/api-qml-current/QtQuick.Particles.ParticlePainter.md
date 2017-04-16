@@ -1,75 +1,35 @@
 ---
 Title: QtQuick.Particles.ParticlePainter
 ---
-        
-ParticlePainter
-===============
+
+# QtQuick.Particles.ParticlePainter
 
 <span class="subtitle"></span>
-For specifying how to paint particles More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtQuick.Particles 2.0</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Item.md">Item</a></p></td>
-</tr>
-<tr class="odd">
-<td>Inherited By:</td>
-<td><p><a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a>, <a href="QtQuick.Particles.ImageParticle.md">ImageParticle</a>, and <a href="QtQuick.Particles.ItemParticle.md">ItemParticle</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[groups](#groups-prop)**** : list&lt;string&gt;
--   ****[system](#system-prop)**** : ParticleSystem
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The default implementation paints nothing. See the subclasses if you want to paint something visible.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="groups-prop"></span><span class="name">groups</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-Which logical particle groups will be painted.
-
-If empty, it will paint the default particle group ("").
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="system-prop"></span><span class="name">system</span> : <span class="type"><a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-This is the system whose particles can be painted by the element. If the [ParticlePainter](index.html) is a direct child of a [ParticleSystem](../QtQuick.Particles.ParticleSystem.md), it will automatically be associated with it.
-
+<!-- $$$ParticlePainter-brief -->
+<p>For specifying how to paint particles More...</p>
+<!-- @@@ParticlePainter -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick.Particles 2.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a>, <a href="QtQuick.Particles.ImageParticle.md">ImageParticle</a>, and <a href="QtQuick.Particles.ItemParticle.md">ItemParticle</a>.</p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#groups-prop">groups</a></b></b> : list&lt;string&gt;</li>
+<li class="fn"><b><b><a href="#system-prop">system</a></b></b> : ParticleSystem</li>
+</ul>
+<!-- $$$ParticlePainter-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The default implementation paints nothing. See the subclasses if you want to paint something visible.</p>
+<!-- @@@ParticlePainter -->
+<h2>Property Documentation</h2>
+<!-- $$$groups -->
+<table class="qmlname"><tr valign="top" id="groups-prop"><td class="tblQmlPropNode"><p><span class="name">groups</span> : <span class="type">list</span>&lt;<span class="type">string</span>&gt;</p></td></tr></table><p>Which logical particle groups will be painted.</p>
+<p>If empty, it will paint the default particle group (&quot;&quot;).</p>
+<!-- @@@groups -->
+<br/>
+<!-- $$$system -->
+<table class="qmlname"><tr valign="top" id="system-prop"><td class="tblQmlPropNode"><p><span class="name">system</span> : <span class="type"><a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a></span></p></td></tr></table><p>This is the system whose particles can be painted by the element. If the <a href="index.html">ParticlePainter</a> is a direct child of a <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a>, it will automatically be associated with it.</p>
+<!-- @@@system -->
+<br/>

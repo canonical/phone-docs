@@ -1,41 +1,21 @@
 ---
 Title: QtSensors.AmbientTemperatureSensor
 ---
-        
-AmbientTemperatureSensor
-========================
+
+# QtSensors.AmbientTemperatureSensor
 
 <span class="subtitle"></span>
-The AmbientTemperatureSensor element reports on the ambient temperature. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtSensors 5.0</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>QtSensors 5.1</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtSensors.Sensor.md">Sensor</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [AmbientTemperatureSensor](index.html) element reports on the ambient temperature.
-
-This element wraps the QAmbientTemperatureSensor class. Please see the documentation for QAmbientTemperatureSensor for details.
-
-**See also** [AmbientTemperatureReading](../QtSensors.AmbientTemperatureReading.md).
-
+<!-- $$$AmbientTemperatureSensor-brief -->
+<p>The AmbientTemperatureSensor element reports on the ambient temperature. More...</p>
+<!-- @@@AmbientTemperatureSensor -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  QtSensors 5.1</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtSensors.Sensor.md">Sensor</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$AmbientTemperatureSensor-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">AmbientTemperatureSensor</a> element reports on the ambient temperature.</p>
+<p>This element wraps the QAmbientTemperatureSensor class. Please see the documentation for QAmbientTemperatureSensor for details.</p>
+<p><b>See also </b><a href="QtSensors.AmbientTemperatureReading.md">AmbientTemperatureReading</a>.</p>
+<!-- @@@AmbientTemperatureSensor -->

@@ -1,99 +1,50 @@
 ---
 Title: QtOrganizer.VisualReminder
 ---
-        
-VisualReminder
-==============
+
+# QtOrganizer.VisualReminder
 
 <span class="subtitle"></span>
-The VisualReminder element contains information about a visual reminder of an item. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtOrganizer 5.0</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtOrganizer.Reminder.md">Reminder</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[dataUrl](#dataUrl-prop)**** : url
--   ****[message](#message-prop)**** : string
-
-<span id="signals"></span>
-Signals
--------
-
--   ****[onDetailChanged](#onDetailChanged-signal)****()
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The following fields are supported:
-
--   [VisualReminder](index.html).FieldRepetitionCount
--   [VisualReminder](index.html).FieldRepetitionDelay
--   [VisualReminder](index.html).FieldSecondsBeforeStart
--   [VisualReminder](index.html).FieldDataUrl
--   [VisualReminder](index.html).FieldMessage
-
-**See also** [Reminder](../QtOrganizer.Reminder.md) and QOrganizerItemVisualReminder.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="dataUrl-prop"></span><span class="name">dataUrl</span> : <span class="type">url</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the url of the visual data which the user wishes to be displayed as part of the reminder.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="message-prop"></span><span class="name">message</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the message which the user wishes to be displayed as part of the reminder.
-
-Signal Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="onDetailChanged-signal"></span><span class="name">onDetailChanged</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::onDetailChanged](../QtOrganizer.Detail.md#onDetailChanged-signal).
-
+<!-- $$$VisualReminder-brief -->
+<p>The VisualReminder element contains information about a visual reminder of an item. More...</p>
+<!-- @@@VisualReminder -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtOrganizer 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtOrganizer.Reminder.md">Reminder</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#dataUrl-prop">dataUrl</a></b></b> : url</li>
+<li class="fn"><b><b><a href="#message-prop">message</a></b></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="#onDetailChanged-signal">onDetailChanged</a></b></b>()</li>
+</ul>
+<!-- $$$VisualReminder-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The following fields are supported:</p>
+<ul>
+<li><a href="index.html">VisualReminder</a>.FieldRepetitionCount</li>
+<li><a href="index.html">VisualReminder</a>.FieldRepetitionDelay</li>
+<li><a href="index.html">VisualReminder</a>.FieldSecondsBeforeStart</li>
+<li><a href="index.html">VisualReminder</a>.FieldDataUrl</li>
+<li><a href="index.html">VisualReminder</a>.FieldMessage</li>
+</ul>
+<p><b>See also </b><a href="QtOrganizer.Reminder.md">Reminder</a> and QOrganizerItemVisualReminder.</p>
+<!-- @@@VisualReminder -->
+<h2>Property Documentation</h2>
+<!-- $$$dataUrl -->
+<table class="qmlname"><tr valign="top" id="dataUrl-prop"><td class="tblQmlPropNode"><p><span class="name">dataUrl</span> : <span class="type">url</span></p></td></tr></table><p>This property holds the url of the visual data which the user wishes to be displayed as part of the reminder.</p>
+<!-- @@@dataUrl -->
+<br/>
+<!-- $$$message -->
+<table class="qmlname"><tr valign="top" id="message-prop"><td class="tblQmlPropNode"><p><span class="name">message</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the message which the user wishes to be displayed as part of the reminder.</p>
+<!-- @@@message -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onDetailChanged -->
+<table class="qmlname"><tr valign="top" id="onDetailChanged-signal"><td class="tblQmlFuncNode"><p><span class="name">onDetailChanged</span>()</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#onDetailChanged-signal">Detail::onDetailChanged</a>.</p>
+<!-- @@@onDetailChanged -->
+<br/>

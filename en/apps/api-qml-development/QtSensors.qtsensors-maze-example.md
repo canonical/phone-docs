@@ -1,116 +1,87 @@
 ---
 Title: QtSensors.qtsensors-maze-example
 ---
-        
-Qt Sensors - Maze QML Example
-=============================
+
+# QtSensors.qtsensors-maze-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-![](https://developer.ubuntu.com/static/devportal_uploaded/f75ef1d6-82ba-46bb-9d8d-bcf4f464d483-api/apps/qml/sdk-15.04.6/qtsensors-maze-example/images/maze.png)
-
-<span id="maze-in-qml"></span>
-### Maze in QML
-
-To write a QML application that will use the [TiltSensor](../QtSensors.TiltSensor.md) QML sensors type you need to do the following steps:
-
-Import the QtSensors 5.x declarative plugin:
-
-``` qml
-import QtSensors 5.0
-```
-
-Add the Sensor QML types into your qml file.
-
-In this example we use the [TiltSensor](../QtSensors.TiltSensor.md) with values based in degrees and an accuracy of 5 degree:
-
-``` qml
-    TiltSensor {
-        id: tiltSensor
-        active: true
-    }
-```
-
-Starting the sensor can be done by setting the 'enabled' property to true:
-
-``` qml
-        onTriggered: {
-            if (!tiltSensor.enabled)
-                tiltSensor.active = true;
-```
-
-The mouse should move by a factor of the tilt value:
-
-``` qml
-                var xstep = 0;
-                xstep = tiltSensor.reading.yRotation * 0.1 //acceleration
-                var ystep = 0;
-                ystep = tiltSensor.reading.xRotation * 0.1 //acceleration
-```
-
-The walk direction of the mouse takes into account some collision detection:
-
-``` qml
-                if (xstep < 1 && xstep > 0)
-                    xstep = 0
-                else if (xstep > -1 && xstep < 0)
-                    xstep = 0
-                if (ystep < 1 && ystep > 0)
-                    ystep = 0;
-                else if (ystep > -1 && ystep < 0)
-                    ystep = 0;
-                if ((xstep < 0 && mouseCtrl.x > 0
-                     && Lib.canMove(mouseCtrl.x + xstep,mouseCtrl.y))) {
-                    xval = mouseCtrl.x + xstep;
-                } else if (xstep > 0 && mouseCtrl.x < (Lib.cellDimension * (Lib.dimension - 1))
-                    && Lib.canMove(mouseCtrl.x + xstep,mouseCtrl.y)) {
-                    xval = mouseCtrl.x + xstep;
-                } else
-                    xval = mouseCtrl.x;
-                if (ystep < 0 && mouseCtrl.y > 0
-                     && Lib.canMove(mouseCtrl.x, mouseCtrl.y + ystep)) {
-                    yval = mouseCtrl.y + ystep;
-                } else if (ystep > 0 && (mouseCtrl.y < (Lib.cellDimension * (Lib.dimension - 1)))
-                         && Lib.canMove(mouseCtrl.x, mouseCtrl.y + ystep)) {
-                    yval = mouseCtrl.y + ystep;
-                } else
-                    yval = mouseCtrl.y
-                mouseCtrl.move(xval, yval);
-```
-
-The rotation of the mouse image is determined according to the angle that the mouse is moving.
-
-``` qml
-        var a = newy - mouse.y
-        var b = newx - mouse.x
-        var c = distance(mouse.x, mouse.y, newx, newy)
-        var radians_to_degrees = 57.2957795
-        if (a > 0)
-            angle = -Math.acos(a / b) * radians_to_degrees
-        else
-            angle = -Math.asin(b / c) * radians_to_degrees
-        if (b > 0)
-             angle = -Math.acos(a / c) * radians_to_degrees
-        else
-            angle = Math.acos(a / c) * radians_to_degrees
-        if (angle < 0)
-            angle = 360 + angle
-        img.rotation = angle
-        mouse.x = newx;
-        mouse.y = newy;
-```
-
-Files:
-
--   maze/Congratulation.qml
--   maze/LabyrinthSquare.qml
--   maze/Mouse.qml
--   maze/lib.js
--   maze/maze.qml
--   maze/android/AndroidManifest.xml
--   maze/components/ApplicationWindow.qml
--   maze/components/Button.qml
--   maze/main.cpp
--   maze/maze.pro
--   maze/maze.qrc
-
+<!-- $$$maze-description -->
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f75ef1d6-82ba-46bb-9d8d-bcf4f464d483-../qtsensors-maze-example/images/maze.png" alt="" /></p>
+<h3 >Maze in QML</h3>
+<p>To write a QML application that will use the <a href="QtSensors.TiltSensor.md">TiltSensor</a> QML sensors type you need to do the following steps:</p>
+<p>Import the QtSensors 5.x declarative plugin:</p>
+<pre class="qml">import QtSensors 5.0</pre>
+<p>Add the Sensor QML types into your qml file.</p>
+<p>In this example we use the <a href="QtSensors.TiltSensor.md">TiltSensor</a> with values based in degrees and an accuracy of 5 degree:</p>
+<pre class="qml">    <span class="type"><a href="QtSensors.TiltSensor.md">TiltSensor</a></span> {
+<span class="name">id</span>: <span class="name">tiltSensor</span>
+<span class="name">active</span>: <span class="number">true</span>
+}</pre>
+<p>Starting the sensor can be done by setting the 'enabled' property to true:</p>
+<pre class="qml">        <span class="name">onTriggered</span>: {
+<span class="keyword">if</span> (!<span class="name">tiltSensor</span>.<span class="name">enabled</span>)
+<span class="name">tiltSensor</span>.<span class="name">active</span> <span class="operator">=</span> <span class="number">true</span>;</pre>
+<p>The mouse should move by a factor of the tilt value:</p>
+<pre class="qml">                var <span class="name">xstep</span> = <span class="number">0</span>;
+<span class="name">xstep</span> <span class="operator">=</span> <span class="name">tiltSensor</span>.<span class="name">reading</span>.<span class="name">yRotation</span> <span class="operator">*</span> <span class="number">0.1</span> <span class="comment">//acceleration</span>
+var <span class="name">ystep</span> = <span class="number">0</span>;
+<span class="name">ystep</span> <span class="operator">=</span> <span class="name">tiltSensor</span>.<span class="name">reading</span>.<span class="name">xRotation</span> <span class="operator">*</span> <span class="number">0.1</span> <span class="comment">//acceleration</span></pre>
+<p>The walk direction of the mouse takes into account some collision detection:</p>
+<pre class="qml">                <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">xstep</span> <span class="operator">&gt;</span> <span class="number">0</span>)
+<span class="name">xstep</span> <span class="operator">=</span> <span class="number">0</span>
+<span class="keyword">else</span> <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&gt;</span> -<span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">0</span>)
+<span class="name">xstep</span> <span class="operator">=</span> <span class="number">0</span>
+<span class="keyword">if</span> (<span class="name">ystep</span> <span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">ystep</span> <span class="operator">&gt;</span> <span class="number">0</span>)
+<span class="name">ystep</span> <span class="operator">=</span> <span class="number">0</span>;
+<span class="keyword">else</span> <span class="keyword">if</span> (<span class="name">ystep</span> <span class="operator">&gt;</span> -<span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">ystep</span> <span class="operator">&lt;</span> <span class="number">0</span>)
+<span class="name">ystep</span> <span class="operator">=</span> <span class="number">0</span>;
+<span class="keyword">if</span> ((<span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> <span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">&gt;</span> <span class="number">0</span>
+<span class="operator">&amp;&amp;</span> <span class="name">Lib</span>.<span class="name">canMove</span>(<span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">xstep</span>,<span class="name">mouseCtrl</span>.<span class="name">y</span>))) {
+<span class="name">xval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">xstep</span>;
+} <span class="keyword">else</span> <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> <span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">&lt;</span> (<span class="name">Lib</span>.<span class="name">cellDimension</span> <span class="operator">*</span> (<span class="name">Lib</span>.<span class="name">dimension</span> <span class="operator">-</span> <span class="number">1</span>))
+<span class="operator">&amp;&amp;</span> <span class="name">Lib</span>.<span class="name">canMove</span>(<span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">xstep</span>,<span class="name">mouseCtrl</span>.<span class="name">y</span>)) {
+<span class="name">xval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">xstep</span>;
+} <span class="keyword">else</span>
+<span class="name">xval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">x</span>;
+<span class="keyword">if</span> (<span class="name">ystep</span> <span class="operator">&lt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> <span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">&gt;</span> <span class="number">0</span>
+<span class="operator">&amp;&amp;</span> <span class="name">Lib</span>.<span class="name">canMove</span>(<span class="name">mouseCtrl</span>.<span class="name">x</span>, <span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">+</span> <span class="name">ystep</span>)) {
+<span class="name">yval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">+</span> <span class="name">ystep</span>;
+} <span class="keyword">else</span> <span class="keyword">if</span> (<span class="name">ystep</span> <span class="operator">&gt;</span> <span class="number">0</span> <span class="operator">&amp;&amp;</span> (<span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">&lt;</span> (<span class="name">Lib</span>.<span class="name">cellDimension</span> <span class="operator">*</span> (<span class="name">Lib</span>.<span class="name">dimension</span> <span class="operator">-</span> <span class="number">1</span>)))
+<span class="operator">&amp;&amp;</span> <span class="name">Lib</span>.<span class="name">canMove</span>(<span class="name">mouseCtrl</span>.<span class="name">x</span>, <span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">+</span> <span class="name">ystep</span>)) {
+<span class="name">yval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">y</span> <span class="operator">+</span> <span class="name">ystep</span>;
+} <span class="keyword">else</span>
+<span class="name">yval</span> <span class="operator">=</span> <span class="name">mouseCtrl</span>.<span class="name">y</span>
+<span class="name">mouseCtrl</span>.<span class="name">move</span>(<span class="name">xval</span>, <span class="name">yval</span>);</pre>
+<p>The rotation of the mouse image is determined according to the angle that the mouse is moving.</p>
+<pre class="qml">        var <span class="name">a</span> = <span class="name">newy</span> <span class="operator">-</span> <span class="name">mouse</span>.<span class="name">y</span>
+var <span class="name">b</span> = <span class="name">newx</span> <span class="operator">-</span> <span class="name">mouse</span>.<span class="name">x</span>
+var <span class="name">c</span> = <span class="name">distance</span>(<span class="name">mouse</span>.<span class="name">x</span>, <span class="name">mouse</span>.<span class="name">y</span>, <span class="name">newx</span>, <span class="name">newy</span>)
+var <span class="name">radians_to_degrees</span> = <span class="number">57.2957795</span>
+<span class="keyword">if</span> (<span class="name">a</span> <span class="operator">&gt;</span> <span class="number">0</span>)
+<span class="name">angle</span> <span class="operator">=</span> -<span class="name">Math</span>.<span class="name">acos</span>(<span class="name">a</span> <span class="operator">/</span> <span class="name">b</span>) <span class="operator">*</span> <span class="name">radians_to_degrees</span>
+<span class="keyword">else</span>
+<span class="name">angle</span> <span class="operator">=</span> -<span class="name">Math</span>.<span class="name">asin</span>(<span class="name">b</span> <span class="operator">/</span> <span class="name">c</span>) <span class="operator">*</span> <span class="name">radians_to_degrees</span>
+<span class="keyword">if</span> (<span class="name">b</span> <span class="operator">&gt;</span> <span class="number">0</span>)
+<span class="name">angle</span> <span class="operator">=</span> -<span class="name">Math</span>.<span class="name">acos</span>(<span class="name">a</span> <span class="operator">/</span> <span class="name">c</span>) <span class="operator">*</span> <span class="name">radians_to_degrees</span>
+<span class="keyword">else</span>
+<span class="name">angle</span> <span class="operator">=</span> <span class="name">Math</span>.<span class="name">acos</span>(<span class="name">a</span> <span class="operator">/</span> <span class="name">c</span>) <span class="operator">*</span> <span class="name">radians_to_degrees</span>
+<span class="keyword">if</span> (<span class="name">angle</span> <span class="operator">&lt;</span> <span class="number">0</span>)
+<span class="name">angle</span> <span class="operator">=</span> <span class="number">360</span> <span class="operator">+</span> <span class="name">angle</span>
+<span class="name">img</span>.<span class="name">rotation</span> <span class="operator">=</span> <span class="name">angle</span>
+<span class="name">mouse</span>.<span class="name">x</span> <span class="operator">=</span> <span class="name">newx</span>;
+<span class="name">mouse</span>.<span class="name">y</span> <span class="operator">=</span> <span class="name">newy</span>;</pre>
+<p>Files:</p>
+<ul>
+<li>maze/Congratulation.qml</li>
+<li>maze/LabyrinthSquare.qml</li>
+<li>maze/Mouse.qml</li>
+<li>maze/lib.js</li>
+<li>maze/maze.qml</li>
+<li>maze/android/AndroidManifest.xml</li>
+<li>maze/components/ApplicationWindow.qml</li>
+<li>maze/components/Button.qml</li>
+<li>maze/main.cpp</li>
+<li>maze/maze.pro</li>
+<li>maze/maze.qrc</li>
+</ul>
+<!-- @@@maze -->

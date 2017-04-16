@@ -44,7 +44,6 @@ Since we are working on a weather scope, let’s pick a relevant name for our
 root department, remember that it will be shown by default when the user opens
 the scope and should match the data you are surfacing.
 
-
 ```
 // Create the root department with an empty string for the 'id' parameter (the first one)
 sc::Department::SPtr all_depts = sc::Department::create("", query, "Local weather");

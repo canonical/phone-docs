@@ -111,7 +111,6 @@ if (place.empty()) {
 
 Now, we just need to use the place variable in our default query:
 
-
 ```
 if (query_string.empty()) {
 

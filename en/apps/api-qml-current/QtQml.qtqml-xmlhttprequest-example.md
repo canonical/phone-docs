@@ -1,35 +1,24 @@
 ---
 Title: QtQml.qtqml-xmlhttprequest-example
 ---
-        
-Qt Quick Examples - XMLHttpRequest
-==================================
+
+# QtQml.qtqml-xmlhttprequest-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-![](https://developer.ubuntu.com/static/devportal_uploaded/cbbf3de8-8e5a-40fb-b2ba-f8e1de2f392e-api/apps/qml/sdk-15.04.5/qtqml-xmlhttprequest-example/images/qml-xmlhttprequest-example.png)
-
-*XMLHttpRequest* contains a small QML example demonstrating [Qt QML](../QtQml.qtqml-index.md)'s [XMLHTTPRequest](../QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest) functionality. For more information, visit the section about [XMLHttpRequest](../QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest).
-
-<span id="running-the-example"></span>
-Running the Example
--------------------
-
-To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
-
-<span id="get-data"></span>
-Get Data
---------
-
-*Get data* uses the [XMLHttpRequest](../QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest) API to fetch an XML document from a server. It displays the header of the HTTP response and the body of the XML document.
-
-Files:
-
--   xmlhttprequest/data.xml
--   xmlhttprequest/get.qml
--   xmlhttprequest/xmlhttprequest.qml
--   xmlhttprequest/main.cpp
--   xmlhttprequest/xmlhttprequest.pro
--   xmlhttprequest/xmlhttprequest.qmlproject
--   xmlhttprequest/xmlhttprequest.qrc
-
+<!-- $$$xmlhttprequest-description -->
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/cbbf3de8-8e5a-40fb-b2ba-f8e1de2f392e-../qtqml-xmlhttprequest-example/images/qml-xmlhttprequest-example.png" alt="" /></p><p><i>XMLHttpRequest</i> contains a small QML example demonstrating <a href="QtQml.qtqml-index.md">Qt QML</a>'s <a href="QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest">XMLHTTPRequest</a> functionality. For more information, visit the section about <a href="QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest">XMLHttpRequest</a>.</p>
+<h2 id="running-the-example">Running the Example</h2>
+<p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
+<h2 id="get-data">Get Data</h2>
+<p><i>Get data</i> uses the <a href="QtQml.qtqml-javascript-qmlglobalobject.md#xmlhttprequest">XMLHttpRequest</a> API to fetch an XML document from a server. It displays the header of the HTTP response and the body of the XML document.</p>
+<p>Files:</p>
+<ul>
+<li>xmlhttprequest/data.xml</li>
+<li>xmlhttprequest/get.qml</li>
+<li>xmlhttprequest/xmlhttprequest.qml</li>
+<li>xmlhttprequest/main.cpp</li>
+<li>xmlhttprequest/xmlhttprequest.pro</li>
+<li>xmlhttprequest/xmlhttprequest.qmlproject</li>
+<li>xmlhttprequest/xmlhttprequest.qrc</li>
+</ul>
+<!-- @@@xmlhttprequest -->

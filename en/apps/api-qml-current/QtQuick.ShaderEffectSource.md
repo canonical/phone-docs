@@ -1,261 +1,123 @@
 ---
 Title: QtQuick.ShaderEffectSource
 ---
-        
-ShaderEffectSource
-==================
+
+# QtQuick.ShaderEffectSource
 
 <span class="subtitle"></span>
-Renders a Qt Quick item into a texture and displays it More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtQuick 2.4</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>Qt 5.0</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Item.md">Item</a></p></td>
-</tr>
-</tbody>
+<!-- $$$ShaderEffectSource-brief -->
+<p>Renders a Qt Quick item into a texture and displays it More...</p>
+<!-- @@@ShaderEffectSource -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Qt 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#format-prop">format</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#hideSource-prop">hideSource</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#live-prop">live</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#mipmap-prop">mipmap</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#recursive-prop">recursive</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#sourceItem-prop">sourceItem</a></b></b> : Item</li>
+<li class="fn"><b><b><a href="#sourceRect-prop">sourceRect</a></b></b> : rect</li>
+<li class="fn"><b><b><a href="#textureSize-prop">textureSize</a></b></b> : size</li>
+<li class="fn"><b><b><a href="#wrapMode-prop">wrapMode</a></b></b> : enumeration</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn"><b><b><a href="#scheduleUpdate-method">scheduleUpdate</a></b></b>()</li>
+</ul>
+<!-- $$$ShaderEffectSource-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">ShaderEffectSource</a> type renders <a href="#sourceItem-prop">sourceItem</a> into a texture and displays it in the scene. <a href="#sourceItem-prop">sourceItem</a> is drawn into the texture as though it was a fully opaque root item. Thus <a href="#sourceItem-prop">sourceItem</a> itself can be invisible, but still appear in the texture.</p>
+<p><a href="index.html">ShaderEffectSource</a> can be used as:</p>
+<ul>
+<li>a texture source in a <a href="QtQuick.ShaderEffect.md">ShaderEffect</a>. This allows you to apply custom shader effects to any <a href="QtQuick.qtquick-index.md">Qt Quick</a> item.</li>
+<li>a cache for a complex item. The complex item can be rendered once into the texture, which can then be animated freely without the need to render the complex item again every frame.</li>
+<li>an opacity layer. <a href="index.html">ShaderEffectSource</a> allows you to apply an opacity to items as a group rather than each item individually.</li>
+</ul>
+<table class="generic">
+<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/156d38e6-460c-4729-bd3e-339f6cc4b4c2-../QtQuick.ShaderEffectSource/images/declarative-shadereffectsource.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">width</span>: <span class="number">200</span>
+<span class="name">height</span>: <span class="number">100</span>
+<span class="name">gradient</span>: <span class="name">Gradient</span> {
+<span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">0</span>; <span class="name">color</span>: <span class="string">&quot;white&quot;</span> }
+<span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">1</span>; <span class="name">color</span>: <span class="string">&quot;black&quot;</span> }
+}
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
+<span class="name">opacity</span>: <span class="number">0.5</span>
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<span class="name">id</span>: <span class="name">foo</span>
+<span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">x</span>: <span class="number">5</span>; <span class="name">y</span>: <span class="number">5</span>; <span class="name">width</span>: <span class="number">60</span>; <span class="name">height</span>: <span class="number">60</span>; <span class="name">color</span>: <span class="string">&quot;red&quot;</span> }
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">x</span>: <span class="number">20</span>; <span class="name">y</span>: <span class="number">20</span>; <span class="name">width</span>: <span class="number">60</span>; <span class="name">height</span>: <span class="number">60</span>; <span class="name">color</span>: <span class="string">&quot;orange&quot;</span> }
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">x</span>: <span class="number">35</span>; <span class="name">y</span>: <span class="number">35</span>; <span class="name">width</span>: <span class="number">60</span>; <span class="name">height</span>: <span class="number">60</span>; <span class="name">color</span>: <span class="string">&quot;yellow&quot;</span> }
+}
+<span class="type"><a href="index.html">ShaderEffectSource</a></span> {
+<span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
+<span class="name">sourceItem</span>: <span class="name">foo</span>
+}
+}
+}</pre>
+</td></tr>
 </table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[format](#format-prop)**** : enumeration
--   ****[hideSource](#hideSource-prop)**** : bool
--   ****[live](#live-prop)**** : bool
--   ****[mipmap](#mipmap-prop)**** : bool
--   ****[recursive](#recursive-prop)**** : bool
--   ****[sourceItem](#sourceItem-prop)**** : Item
--   ****[sourceRect](#sourceRect-prop)**** : rect
--   ****[textureSize](#textureSize-prop)**** : size
--   ****[wrapMode](#wrapMode-prop)**** : enumeration
-
-<span id="methods"></span>
-Methods
--------
-
--   ****[scheduleUpdate](#scheduleUpdate-method)****()
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [ShaderEffectSource](index.html) type renders [sourceItem](#sourceItem-prop) into a texture and displays it in the scene. [sourceItem](#sourceItem-prop) is drawn into the texture as though it was a fully opaque root item. Thus [sourceItem](#sourceItem-prop) itself can be invisible, but still appear in the texture.
-
-[ShaderEffectSource](index.html) can be used as:
-
--   a texture source in a [ShaderEffect](../QtQuick.ShaderEffect.md). This allows you to apply custom shader effects to any [Qt Quick](../QtQuick.qtquick-index.md) item.
--   a cache for a complex item. The complex item can be rendered once into the texture, which can then be animated freely without the need to render the complex item again every frame.
--   an opacity layer. [ShaderEffectSource](index.html) allows you to apply an opacity to items as a group rather than each item individually.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><img src="https://developer.ubuntu.com/static/devportal_uploaded/156d38e6-460c-4729-bd3e-339f6cc4b4c2-api/apps/qml/sdk-15.04.5/QtQuick.ShaderEffectSource/images/declarative-shadereffectsource.png" /></p></td>
-<td><pre class="qml"><code>import QtQuick 2.0
-Rectangle {
-    width: 200
-    height: 100
-    gradient: Gradient {
-        GradientStop { position: 0; color: &quot;white&quot; }
-        GradientStop { position: 1; color: &quot;black&quot; }
-    }
-    Row {
-        opacity: 0.5
-        Item {
-            id: foo
-            width: 100; height: 100
-            Rectangle { x: 5; y: 5; width: 60; height: 60; color: &quot;red&quot; }
-            Rectangle { x: 20; y: 20; width: 60; height: 60; color: &quot;orange&quot; }
-            Rectangle { x: 35; y: 35; width: 60; height: 60; color: &quot;yellow&quot; }
-        }
-        ShaderEffectSource {
-            width: 100; height: 100
-            sourceItem: foo
-        }
-    }
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
-
-The [ShaderEffectSource](index.html) type does not redirect any mouse or keyboard input to [sourceItem](#sourceItem-prop). If you hide the [sourceItem](#sourceItem-prop) by setting [visible](../QtQuick.Item.md#visible-prop) to false or [opacity](../QtQuick.Item.md#opacity-prop) to zero, it will no longer react to input. In cases where the [ShaderEffectSource](index.html) is meant to replace the [sourceItem](#sourceItem-prop), you typically want to hide the [sourceItem](#sourceItem-prop) while still handling input. For this, you can use the [hideSource](#hideSource-prop) property.
-
-**Note:** If [sourceItem](#sourceItem-prop) is a [Rectangle](../QtQuick.Rectangle.md) with border, by default half the border width falls outside the texture. To get the whole border, you can extend the [sourceRect](#sourceRect-prop).
-
-**Note:** The [ShaderEffectSource](index.html) relies on FBO multisampling support to antialias edges. If the underlying hardware does not support this, which is the case for most embedded graphics chips, edges rendered inside a [ShaderEffectSource](index.html) will not be antialiased. One way to remedy this is to double the size of the effect source and render it with `smooth: true` (this is the default value of smooth). This will be equivalent to 4x multisampling, at the cost of lower performance and higher memory use.
-
-**Warning:** In most cases, using a [ShaderEffectSource](index.html) will decrease performance, and in all cases, it will increase video memory usage. Rendering through a [ShaderEffectSource](index.html) might also lead to lower quality since some OpenGL implementations support multisampled backbuffer, but not multisampled framebuffer objects.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="format-prop"></span><span class="name">format</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property defines the internal OpenGL format of the texture. Modifying this property makes most sense when the item is used as a source texture of a [ShaderEffect](../QtQuick.ShaderEffect.md). Depending on the OpenGL implementation, this property might allow you to save some texture memory.
-
--   [ShaderEffectSource](index.html).Alpha - GL\_ALPHA
--   [ShaderEffectSource](index.html).RGB - GL\_RGB
--   [ShaderEffectSource](index.html).RGBA - GL\_RGBA
-
-**Note:** Some OpenGL implementations do not support the GL\_ALPHA format.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="hideSource-prop"></span><span class="name">hideSource</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-If this property is true, the [sourceItem](#sourceItem-prop) is hidden, though it will still be rendered into the texture. As opposed to hiding the [sourceItem](#sourceItem-prop) by setting [visible](../QtQuick.Item.md#visible-prop) to false, setting this property to true will not prevent mouse or keyboard input from reaching [sourceItem](#sourceItem-prop). The property is useful when the [ShaderEffectSource](index.html) is anchored on top of, and meant to replace the [sourceItem](#sourceItem-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="live-prop"></span><span class="name">live</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-If this property is true, the texture is updated whenever the [sourceItem](#sourceItem-prop) updates. Otherwise, it will be a frozen image, even if [sourceItem](#sourceItem-prop) is assigned a new item. The property is true by default.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mipmap-prop"></span><span class="name">mipmap</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-If this property is true, mipmaps are generated for the texture.
-
-**Note:** Some OpenGL ES 2 implementations do not support mipmapping of non-power-of-two textures.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="recursive-prop"></span><span class="name">recursive</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Set this property to true if the [ShaderEffectSource](index.html) has a dependency on itself. ShaderEffectSources form a dependency chain, where one [ShaderEffectSource](index.html) can be part of the [sourceItem](#sourceItem-prop) of another. If there is a loop in this chain, a [ShaderEffectSource](index.html) could end up trying to render into the same texture it is using as source, which is not allowed by OpenGL. When this property is set to true, an extra texture is allocated so that [ShaderEffectSource](index.html) can keep a copy of the texture from the previous frame. It can then render into one texture and use the texture from the previous frame as source.
-
-Setting both this property and [live](#live-prop) to true will cause the scene graph to render continuously. Since the [ShaderEffectSource](index.html) depends on itself, updating it means that it immediately becomes dirty again.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="sourceItem-prop"></span><span class="name">sourceItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the item to be rendered into the texture. Setting this to null while [live](#live-prop) is true, will release the texture resources.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="sourceRect-prop"></span><span class="name">sourceRect</span> : <span class="type">rect</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property defines which rectangular area of the [sourceItem](#sourceItem-prop) to render into the texture. The source rectangle can be larger than [sourceItem](#sourceItem-prop) itself. If the rectangle is null, which is the default, the whole [sourceItem](#sourceItem-prop) is rendered to texture.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="textureSize-prop"></span><span class="name">textureSize</span> : <span class="type">size</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the requested size of the texture. If it is empty, which is the default, the size of the source rectangle is used.
-
-**Note:** Some platforms have a limit on how small framebuffer objects can be, which means the actual texture size might be larger than the requested size.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="wrapMode-prop"></span><span class="name">wrapMode</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property defines the OpenGL wrap modes associated with the texture. Modifying this property makes most sense when the item is used as a source texture of a [ShaderEffect](../QtQuick.ShaderEffect.md).
-
--   [ShaderEffectSource](index.html).ClampToEdge - GL\_CLAMP\_TO\_EDGE both horizontally and vertically
--   [ShaderEffectSource](index.html).RepeatHorizontally - GL\_REPEAT horizontally, GL\_CLAMP\_TO\_EDGE vertically
--   [ShaderEffectSource](index.html).RepeatVertically - GL\_CLAMP\_TO\_EDGE horizontally, GL\_REPEAT vertically
--   [ShaderEffectSource](index.html).Repeat - GL\_REPEAT both horizontally and vertically
-
-**Note:** Some OpenGL ES 2 implementations do not support the GL\_REPEAT wrap mode with non-power-of-two textures.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="scheduleUpdate-method"></span><span class="name">scheduleUpdate</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Schedules a re-rendering of the texture for the next frame. Use this to update the texture when [live](#live-prop) is false.
-
+<p>The <a href="index.html">ShaderEffectSource</a> type does not redirect any mouse or keyboard input to <a href="#sourceItem-prop">sourceItem</a>. If you hide the <a href="#sourceItem-prop">sourceItem</a> by setting <a href="QtQuick.Item.md#visible-prop">visible</a> to false or <a href="QtQuick.Item.md#opacity-prop">opacity</a> to zero, it will no longer react to input. In cases where the <a href="index.html">ShaderEffectSource</a> is meant to replace the <a href="#sourceItem-prop">sourceItem</a>, you typically want to hide the <a href="#sourceItem-prop">sourceItem</a> while still handling input. For this, you can use the <a href="#hideSource-prop">hideSource</a> property.</p>
+<p><b>Note: </b>If <a href="#sourceItem-prop">sourceItem</a> is a <a href="QtQuick.Rectangle.md">Rectangle</a> with border, by default half the border width falls outside the texture. To get the whole border, you can extend the <a href="#sourceRect-prop">sourceRect</a>.</p><p><b>Note: </b>The <a href="index.html">ShaderEffectSource</a> relies on FBO multisampling support to antialias edges. If the underlying hardware does not support this, which is the case for most embedded graphics chips, edges rendered inside a <a href="index.html">ShaderEffectSource</a> will not be antialiased. One way to remedy this is to double the size of the effect source and render it with <code>smooth: true</code> (this is the default value of smooth). This will be equivalent to 4x multisampling, at the cost of lower performance and higher memory use.</p><p><b>Warning:</b> In most cases, using a <a href="index.html">ShaderEffectSource</a> will decrease performance, and in all cases, it will increase video memory usage. Rendering through a <a href="index.html">ShaderEffectSource</a> might also lead to lower quality since some OpenGL implementations support multisampled backbuffer, but not multisampled framebuffer objects.</p>
+<!-- @@@ShaderEffectSource -->
+<h2>Property Documentation</h2>
+<!-- $$$format -->
+<table class="qmlname"><tr valign="top" id="format-prop"><td class="tblQmlPropNode"><p><span class="name">format</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property defines the internal OpenGL format of the texture. Modifying this property makes most sense when the item is used as a source texture of a <a href="QtQuick.ShaderEffect.md">ShaderEffect</a>. Depending on the OpenGL implementation, this property might allow you to save some texture memory.</p>
+<ul>
+<li><a href="index.html">ShaderEffectSource</a>.Alpha - GL_ALPHA</li>
+<li><a href="index.html">ShaderEffectSource</a>.RGB - GL_RGB</li>
+<li><a href="index.html">ShaderEffectSource</a>.RGBA - GL_RGBA</li>
+</ul>
+<p><b>Note: </b>Some OpenGL implementations do not support the GL_ALPHA format.</p><!-- @@@format -->
+<br/>
+<!-- $$$hideSource -->
+<table class="qmlname"><tr valign="top" id="hideSource-prop"><td class="tblQmlPropNode"><p><span class="name">hideSource</span> : <span class="type">bool</span></p></td></tr></table><p>If this property is true, the <a href="#sourceItem-prop">sourceItem</a> is hidden, though it will still be rendered into the texture. As opposed to hiding the <a href="#sourceItem-prop">sourceItem</a> by setting <a href="QtQuick.Item.md#visible-prop">visible</a> to false, setting this property to true will not prevent mouse or keyboard input from reaching <a href="#sourceItem-prop">sourceItem</a>. The property is useful when the <a href="index.html">ShaderEffectSource</a> is anchored on top of, and meant to replace the <a href="#sourceItem-prop">sourceItem</a>.</p>
+<!-- @@@hideSource -->
+<br/>
+<!-- $$$live -->
+<table class="qmlname"><tr valign="top" id="live-prop"><td class="tblQmlPropNode"><p><span class="name">live</span> : <span class="type">bool</span></p></td></tr></table><p>If this property is true, the texture is updated whenever the <a href="#sourceItem-prop">sourceItem</a> updates. Otherwise, it will be a frozen image, even if <a href="#sourceItem-prop">sourceItem</a> is assigned a new item. The property is true by default.</p>
+<!-- @@@live -->
+<br/>
+<!-- $$$mipmap -->
+<table class="qmlname"><tr valign="top" id="mipmap-prop"><td class="tblQmlPropNode"><p><span class="name">mipmap</span> : <span class="type">bool</span></p></td></tr></table><p>If this property is true, mipmaps are generated for the texture.</p>
+<p><b>Note: </b>Some OpenGL ES 2 implementations do not support mipmapping of non-power-of-two textures.</p><!-- @@@mipmap -->
+<br/>
+<!-- $$$recursive -->
+<table class="qmlname"><tr valign="top" id="recursive-prop"><td class="tblQmlPropNode"><p><span class="name">recursive</span> : <span class="type">bool</span></p></td></tr></table><p>Set this property to true if the <a href="index.html">ShaderEffectSource</a> has a dependency on itself. ShaderEffectSources form a dependency chain, where one <a href="index.html">ShaderEffectSource</a> can be part of the <a href="#sourceItem-prop">sourceItem</a> of another. If there is a loop in this chain, a <a href="index.html">ShaderEffectSource</a> could end up trying to render into the same texture it is using as source, which is not allowed by OpenGL. When this property is set to true, an extra texture is allocated so that <a href="index.html">ShaderEffectSource</a> can keep a copy of the texture from the previous frame. It can then render into one texture and use the texture from the previous frame as source.</p>
+<p>Setting both this property and <a href="#live-prop">live</a> to true will cause the scene graph to render continuously. Since the <a href="index.html">ShaderEffectSource</a> depends on itself, updating it means that it immediately becomes dirty again.</p>
+<!-- @@@recursive -->
+<br/>
+<!-- $$$sourceItem -->
+<table class="qmlname"><tr valign="top" id="sourceItem-prop"><td class="tblQmlPropNode"><p><span class="name">sourceItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This property holds the item to be rendered into the texture. Setting this to null while <a href="#live-prop">live</a> is true, will release the texture resources.</p>
+<!-- @@@sourceItem -->
+<br/>
+<!-- $$$sourceRect -->
+<table class="qmlname"><tr valign="top" id="sourceRect-prop"><td class="tblQmlPropNode"><p><span class="name">sourceRect</span> : <span class="type">rect</span></p></td></tr></table><p>This property defines which rectangular area of the <a href="#sourceItem-prop">sourceItem</a> to render into the texture. The source rectangle can be larger than <a href="#sourceItem-prop">sourceItem</a> itself. If the rectangle is null, which is the default, the whole <a href="#sourceItem-prop">sourceItem</a> is rendered to texture.</p>
+<!-- @@@sourceRect -->
+<br/>
+<!-- $$$textureSize -->
+<table class="qmlname"><tr valign="top" id="textureSize-prop"><td class="tblQmlPropNode"><p><span class="name">textureSize</span> : <span class="type">size</span></p></td></tr></table><p>This property holds the requested size of the texture. If it is empty, which is the default, the size of the source rectangle is used.</p>
+<p><b>Note: </b>Some platforms have a limit on how small framebuffer objects can be, which means the actual texture size might be larger than the requested size.</p><!-- @@@textureSize -->
+<br/>
+<!-- $$$wrapMode -->
+<table class="qmlname"><tr valign="top" id="wrapMode-prop"><td class="tblQmlPropNode"><p><span class="name">wrapMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property defines the OpenGL wrap modes associated with the texture. Modifying this property makes most sense when the item is used as a source texture of a <a href="QtQuick.ShaderEffect.md">ShaderEffect</a>.</p>
+<ul>
+<li><a href="index.html">ShaderEffectSource</a>.ClampToEdge - GL_CLAMP_TO_EDGE both horizontally and vertically</li>
+<li><a href="index.html">ShaderEffectSource</a>.RepeatHorizontally - GL_REPEAT horizontally, GL_CLAMP_TO_EDGE vertically</li>
+<li><a href="index.html">ShaderEffectSource</a>.RepeatVertically - GL_CLAMP_TO_EDGE horizontally, GL_REPEAT vertically</li>
+<li><a href="index.html">ShaderEffectSource</a>.Repeat - GL_REPEAT both horizontally and vertically</li>
+</ul>
+<p><b>Note: </b>Some OpenGL ES 2 implementations do not support the GL_REPEAT wrap mode with non-power-of-two textures.</p><!-- @@@wrapMode -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$scheduleUpdate -->
+<table class="qmlname"><tr valign="top" id="scheduleUpdate-method"><td class="tblQmlFuncNode"><p><span class="name">scheduleUpdate</span>()</p></td></tr></table><p>Schedules a re-rendering of the texture for the next frame. Use this to update the texture when <a href="#live-prop">live</a> is false.</p>
+<!-- @@@scheduleUpdate -->
+<br/>

@@ -4,7 +4,6 @@ title: "Tutorials - building cross-architecture click applications"
 
 # Tutorials - building cross-architecture click applications
 
-
 Building click packages is as easy as clicking a button. However building a
 package that uses compiled code and needs to run on an armhf device requires a
 little more setup. Unless you happen to have a development system that is also
@@ -93,7 +92,6 @@ For an existing project:
   * Click the new tab. This is all that is needed to configure the project to build using the selected the armhf kit. (This also closes the new tab.)
 
   ![](../../../media/x-build-addkit1-edit.png)
-
 
 ## Building with an armhf click build target
 

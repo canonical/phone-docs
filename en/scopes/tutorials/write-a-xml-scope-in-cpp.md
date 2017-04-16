@@ -43,9 +43,7 @@ by itself.
 
 You can get the source code of this tutorial by running
 
-
 $ bzr branch lp:~davidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml
-
 
 The generated project contains quite a lot of files and we are going to talk
 about the most important ones. One thing to note is that the template already
@@ -252,7 +250,6 @@ the Jamendo API is returning the most popular songs of the week, which is a
 reasonably good default set of results to present to users. Modify the
 [Query::run method](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp#L50) so that it looks like this, or simply paste the content of the tutorial file into your own :
 
-
 ``` C+
 void Query::run(sc::SearchReplyProxy const& reply) {
 
@@ -301,7 +298,6 @@ Our query URI will look like:
 Then, we need to iterate over each result present in our root XML object and
 extract what we need:
 
-
 ``` C+
 Client::TrackRes Client::tracks(const string& query) {
 
@@ -347,7 +343,6 @@ Client::TrackRes Client::tracks(const string& query) {
 The `parseTrack()` method is using QXml to iterate over “track” XML nodes in our
 data. We look for the title, artist, art and url, we use them to populate an
 array of Track objects.
-
 
 ``` C+
 static void parseTrack(Client::TrackRes& result, QXmlStreamReader& xml)

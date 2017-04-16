@@ -4,7 +4,6 @@ title: "Scopes guides - an introduction"
 
 # Scopes guides - an introduction
 
-
 This is a high level introduction to Ubuntu scopes, a great starting place for
 understanding scopes and getting started developing scopes. For other useful
 resources, including API reference docs, a hands-on tutorial, and an in-depth

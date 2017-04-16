@@ -4,7 +4,6 @@ title: "Scopes guides"
 
 # Scopes guides
 
-
 Here’s where you can find information that developers need to know about to
 get productive writing scopes.
 

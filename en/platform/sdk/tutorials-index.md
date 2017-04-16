@@ -4,7 +4,6 @@ title: "Tutorials - an overview"
 
 # Tutorials - an overview
 
-
 Get productive in the Ubuntu SDK with these short-and-sweet tutorials:
 
   * [Installing the SDK](../../platform/sdk/installing-the-sdk.html)

@@ -1,102 +1,57 @@
 ---
 Title: QtOrganizer.TodoProgress
 ---
-        
-TodoProgress
-============
+
+# QtOrganizer.TodoProgress
 
 <span class="subtitle"></span>
-The TodoProgress element contains information about the progress of a todo item. More...
-
-|                   |                        |
-|-------------------|------------------------|
-| Import Statement: | import QtOrganizer 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[finishedDateTime](#finishedDateTime-prop)**** : date
--   ****[percentageComplete](#percentageComplete-prop)**** : int
--   ****[status](#status-prop)**** : enumeration
-
-<span id="signals"></span>
-Signals
--------
-
--   ****[onDetailChanged](#onDetailChanged-signal)****()
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The following fields are supported:
-
--   [TodoProgress](index.html).FieldStatus
--   [TodoProgress](index.html).FieldPercentage
--   [TodoProgress](index.html).FieldFinishedDateTime
-
-**See also** QOrganizerTodoProgress.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="finishedDateTime-prop"></span><span class="name">finishedDateTime</span> : <span class="type">date</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the date time value which contains the date and time at which the todo item was completed.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="percentageComplete-prop"></span><span class="name">percentageComplete</span> : <span class="type">int</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the value which contains the current completion percentage of the todo item.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="status-prop"></span><span class="name">status</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the value which describes the current completion status of the todo item. The value can be one of:
-
--   [TodoProgress](index.html).NotStarted
--   [TodoProgress](index.html).InProgress
--   [TodoProgress](index.html).Complete
-
-Signal Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="onDetailChanged-signal"></span><span class="name">onDetailChanged</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::onDetailChanged](../QtOrganizer.Detail.md#onDetailChanged-signal).
-
+<!-- $$$TodoProgress-brief -->
+<p>The TodoProgress element contains information about the progress of a todo item. More...</p>
+<!-- @@@TodoProgress -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtOrganizer 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#finishedDateTime-prop">finishedDateTime</a></b></b> : date</li>
+<li class="fn"><b><b><a href="#percentageComplete-prop">percentageComplete</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#status-prop">status</a></b></b> : enumeration</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="#onDetailChanged-signal">onDetailChanged</a></b></b>()</li>
+</ul>
+<!-- $$$TodoProgress-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The following fields are supported:</p>
+<ul>
+<li><a href="index.html">TodoProgress</a>.FieldStatus</li>
+<li><a href="index.html">TodoProgress</a>.FieldPercentage</li>
+<li><a href="index.html">TodoProgress</a>.FieldFinishedDateTime</li>
+</ul>
+<p><b>See also </b>QOrganizerTodoProgress.</p>
+<!-- @@@TodoProgress -->
+<h2>Property Documentation</h2>
+<!-- $$$finishedDateTime -->
+<table class="qmlname"><tr valign="top" id="finishedDateTime-prop"><td class="tblQmlPropNode"><p><span class="name">finishedDateTime</span> : <span class="type">date</span></p></td></tr></table><p>This property holds the date time value which contains the date and time at which the todo item was completed.</p>
+<!-- @@@finishedDateTime -->
+<br/>
+<!-- $$$percentageComplete -->
+<table class="qmlname"><tr valign="top" id="percentageComplete-prop"><td class="tblQmlPropNode"><p><span class="name">percentageComplete</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the value which contains the current completion percentage of the todo item.</p>
+<!-- @@@percentageComplete -->
+<br/>
+<!-- $$$status -->
+<table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the value which describes the current completion status of the todo item. The value can be one of:</p>
+<ul>
+<li><a href="index.html">TodoProgress</a>.NotStarted</li>
+<li><a href="index.html">TodoProgress</a>.InProgress</li>
+<li><a href="index.html">TodoProgress</a>.Complete</li>
+</ul>
+<!-- @@@status -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onDetailChanged -->
+<table class="qmlname"><tr valign="top" id="onDetailChanged-signal"><td class="tblQmlFuncNode"><p><span class="name">onDetailChanged</span>()</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#onDetailChanged-signal">Detail::onDetailChanged</a>.</p>
+<!-- @@@onDetailChanged -->
+<br/>

@@ -1,93 +1,87 @@
 ---
 Title: QtMultimedia.qtmultimedia-spectrum-example
 ---
-        
-Spectrum Example
-================
+
+# QtMultimedia.qtmultimedia-spectrum-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-*Spectrum* demonstrates how the [Qt Multimedia](../QtMultimedia.qtmultimedia-index.md) module can be used to analyze an audio stream while recording it, and also play the recorded stream.
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/a16051a5-0a4b-4962-a172-5cbc5d936867-api/apps/qml/sdk-15.04.6/qtmultimedia-spectrum-example/images/spectrum-demo.png)
-
-Because Qt Multimedia allows the application to access the raw audio stream, the data can either be inspected or modified by the application. The Spectrum Analyzer example displays three pieces of information while audio is being either captured or played back:
-
--   Information about the raw audio stream, shown in the uppermost widget:
-    -   The amount of data currently in the buffer, shown in blue
-    -   The segment of data which was most recently analysed to compute the frequency spectrum, shown in green
-    -   The raw audio waveform, shown in white and scrolling from right to left
--   A representation of the frequency spectrum, shown at the lower left
--   The current RMS level of the audio stream, and the recent 'high watermark' level, shown at the lower right
-
-Spectrum analysis is performed by calculating the Fast Fourier Transform (FFT) of a segment of audio data. An open-source library, [FFTReal](http://ldesoras.free.fr/prod.html), against which the application is dynamically linked, is used to compute the transform.
-
-<span id="running-the-example"></span>
-Running the Example
--------------------
-
-To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
-
-Files:
-
--   spectrum/3rdparty/fftreal/Array.h
--   spectrum/3rdparty/fftreal/DynArray.h
--   spectrum/3rdparty/fftreal/FFTReal.h
--   spectrum/3rdparty/fftreal/FFTRealFixLen.h
--   spectrum/3rdparty/fftreal/FFTRealFixLenParam.h
--   spectrum/3rdparty/fftreal/FFTRealPassDirect.h
--   spectrum/3rdparty/fftreal/FFTRealPassInverse.h
--   spectrum/3rdparty/fftreal/FFTRealSelect.h
--   spectrum/3rdparty/fftreal/FFTRealUseTrigo.h
--   spectrum/3rdparty/fftreal/OscSinCos.h
--   spectrum/3rdparty/fftreal/TestAccuracy.h
--   spectrum/3rdparty/fftreal/TestHelperFixLen.h
--   spectrum/3rdparty/fftreal/TestHelperNormal.h
--   spectrum/3rdparty/fftreal/TestSpeed.h
--   spectrum/3rdparty/fftreal/TestWhiteNoiseGen.h
--   spectrum/3rdparty/fftreal/def.h
--   spectrum/3rdparty/fftreal/fftreal\_wrapper.cpp
--   spectrum/3rdparty/fftreal/fftreal\_wrapper.h
--   spectrum/3rdparty/fftreal/test.cpp
--   spectrum/3rdparty/fftreal/test\_fnc.h
--   spectrum/3rdparty/fftreal/test\_settings.h
--   spectrum/3rdparty/fftreal/stopwatch/ClockCycleCounter.cpp
--   spectrum/3rdparty/fftreal/stopwatch/ClockCycleCounter.h
--   spectrum/3rdparty/fftreal/stopwatch/Int64.h
--   spectrum/3rdparty/fftreal/stopwatch/StopWatch.cpp
--   spectrum/3rdparty/fftreal/stopwatch/StopWatch.h
--   spectrum/3rdparty/fftreal/stopwatch/def.h
--   spectrum/3rdparty/fftreal/stopwatch/fnc.h
--   spectrum/app/engine.cpp
--   spectrum/app/engine.h
--   spectrum/app/frequencyspectrum.cpp
--   spectrum/app/frequencyspectrum.h
--   spectrum/app/levelmeter.cpp
--   spectrum/app/levelmeter.h
--   spectrum/app/mainwidget.cpp
--   spectrum/app/mainwidget.h
--   spectrum/app/progressbar.cpp
--   spectrum/app/progressbar.h
--   spectrum/app/settingsdialog.cpp
--   spectrum/app/settingsdialog.h
--   spectrum/app/spectrograph.cpp
--   spectrum/app/spectrograph.h
--   spectrum/app/spectrum.h
--   spectrum/app/spectrumanalyser.cpp
--   spectrum/app/spectrumanalyser.h
--   spectrum/app/tonegenerator.cpp
--   spectrum/app/tonegenerator.h
--   spectrum/app/tonegeneratordialog.cpp
--   spectrum/app/tonegeneratordialog.h
--   spectrum/app/utils.cpp
--   spectrum/app/utils.h
--   spectrum/app/waveform.cpp
--   spectrum/app/waveform.h
--   spectrum/app/wavfile.cpp
--   spectrum/app/wavfile.h
--   spectrum/app/main.cpp
--   spectrum/spectrum.pro
--   spectrum/3rdparty/fftreal/fftreal.pro
--   spectrum/app/app.pro
--   spectrum/app/spectrum.qrc
-
+<!-- $$$spectrum-description -->
+<p><i>Spectrum</i> demonstrates how the <a href="QtMultimedia.qtmultimedia-index.md">Qt Multimedia</a> module can be used to analyze an audio stream while recording it, and also play the recorded stream.</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a16051a5-0a4b-4962-a172-5cbc5d936867-../qtmultimedia-spectrum-example/images/spectrum-demo.png" alt="" /></p><p>Because Qt Multimedia allows the application to access the raw audio stream, the data can either be inspected or modified by the application. The Spectrum Analyzer example displays three pieces of information while audio is being either captured or played back:</p>
+<ul>
+<li>Information about the raw audio stream, shown in the uppermost widget:<ul>
+<li>The amount of data currently in the buffer, shown in blue</li>
+<li>The segment of data which was most recently analysed to compute the frequency spectrum, shown in green</li>
+<li>The raw audio waveform, shown in white and scrolling from right to left</li>
+</ul>
+</li>
+<li>A representation of the frequency spectrum, shown at the lower left</li>
+<li>The current RMS level of the audio stream, and the recent 'high watermark' level, shown at the lower right</li>
+</ul>
+<p>Spectrum analysis is performed by calculating the Fast Fourier Transform (FFT) of a segment of audio data. An open-source library, <a href="http://ldesoras.free.fr/prod.html">FFTReal</a>, against which the application is dynamically linked, is used to compute the transform.</p>
+<h2 id="running-the-example">Running the Example</h2>
+<p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
+<p>Files:</p>
+<ul>
+<li>spectrum/3rdparty/fftreal/Array.h</li>
+<li>spectrum/3rdparty/fftreal/DynArray.h</li>
+<li>spectrum/3rdparty/fftreal/FFTReal.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealFixLen.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealFixLenParam.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealPassDirect.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealPassInverse.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealSelect.h</li>
+<li>spectrum/3rdparty/fftreal/FFTRealUseTrigo.h</li>
+<li>spectrum/3rdparty/fftreal/OscSinCos.h</li>
+<li>spectrum/3rdparty/fftreal/TestAccuracy.h</li>
+<li>spectrum/3rdparty/fftreal/TestHelperFixLen.h</li>
+<li>spectrum/3rdparty/fftreal/TestHelperNormal.h</li>
+<li>spectrum/3rdparty/fftreal/TestSpeed.h</li>
+<li>spectrum/3rdparty/fftreal/TestWhiteNoiseGen.h</li>
+<li>spectrum/3rdparty/fftreal/def.h</li>
+<li>spectrum/3rdparty/fftreal/fftreal_wrapper.cpp</li>
+<li>spectrum/3rdparty/fftreal/fftreal_wrapper.h</li>
+<li>spectrum/3rdparty/fftreal/test.cpp</li>
+<li>spectrum/3rdparty/fftreal/test_fnc.h</li>
+<li>spectrum/3rdparty/fftreal/test_settings.h</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/ClockCycleCounter.cpp</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/ClockCycleCounter.h</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/Int64.h</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/StopWatch.cpp</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/StopWatch.h</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/def.h</li>
+<li>spectrum/3rdparty/fftreal/stopwatch/fnc.h</li>
+<li>spectrum/app/engine.cpp</li>
+<li>spectrum/app/engine.h</li>
+<li>spectrum/app/frequencyspectrum.cpp</li>
+<li>spectrum/app/frequencyspectrum.h</li>
+<li>spectrum/app/levelmeter.cpp</li>
+<li>spectrum/app/levelmeter.h</li>
+<li>spectrum/app/mainwidget.cpp</li>
+<li>spectrum/app/mainwidget.h</li>
+<li>spectrum/app/progressbar.cpp</li>
+<li>spectrum/app/progressbar.h</li>
+<li>spectrum/app/settingsdialog.cpp</li>
+<li>spectrum/app/settingsdialog.h</li>
+<li>spectrum/app/spectrograph.cpp</li>
+<li>spectrum/app/spectrograph.h</li>
+<li>spectrum/app/spectrum.h</li>
+<li>spectrum/app/spectrumanalyser.cpp</li>
+<li>spectrum/app/spectrumanalyser.h</li>
+<li>spectrum/app/tonegenerator.cpp</li>
+<li>spectrum/app/tonegenerator.h</li>
+<li>spectrum/app/tonegeneratordialog.cpp</li>
+<li>spectrum/app/tonegeneratordialog.h</li>
+<li>spectrum/app/utils.cpp</li>
+<li>spectrum/app/utils.h</li>
+<li>spectrum/app/waveform.cpp</li>
+<li>spectrum/app/waveform.h</li>
+<li>spectrum/app/wavfile.cpp</li>
+<li>spectrum/app/wavfile.h</li>
+<li>spectrum/app/main.cpp</li>
+<li>spectrum/spectrum.pro</li>
+<li>spectrum/3rdparty/fftreal/fftreal.pro</li>
+<li>spectrum/app/app.pro</li>
+<li>spectrum/app/spectrum.qrc</li>
+</ul>
+<!-- @@@spectrum -->

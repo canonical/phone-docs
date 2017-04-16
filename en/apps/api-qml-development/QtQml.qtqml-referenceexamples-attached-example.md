@@ -1,28 +1,28 @@
 ---
 Title: QtQml.qtqml-referenceexamples-attached-example
 ---
-        
-Extending QML - Attached Properties Example
-===========================================
+
+# QtQml.qtqml-referenceexamples-attached-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-This example builds on:
-
--   [Extending QML - Grouped Properties Example](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-grouped/)
--   [Extending QML - Default Property Example](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-default/)
--   [Extending QML - Inheritance and Coercion Example](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-coercion/)
--   [Extending QML - Object and List Property Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-properties/)
--   [Extending QML - Adding Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-adding/)
-
-Files:
-
--   referenceexamples/attached/birthdayparty.cpp
--   referenceexamples/attached/birthdayparty.h
--   referenceexamples/attached/example.qml
--   referenceexamples/attached/person.cpp
--   referenceexamples/attached/person.h
--   referenceexamples/attached/main.cpp
--   referenceexamples/attached/attached.pro
--   referenceexamples/attached/attached.qrc
-
+<!-- $$$referenceexamples/attached-description -->
+<p>This example builds on:</p>
+<ul>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-grouped/">Extending QML - Grouped Properties Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-default/">Extending QML - Default Property Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-coercion/">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-properties/">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+</ul>
+<p>Files:</p>
+<ul>
+<li>referenceexamples/attached/birthdayparty.cpp</li>
+<li>referenceexamples/attached/birthdayparty.h</li>
+<li>referenceexamples/attached/example.qml</li>
+<li>referenceexamples/attached/person.cpp</li>
+<li>referenceexamples/attached/person.h</li>
+<li>referenceexamples/attached/main.cpp</li>
+<li>referenceexamples/attached/attached.pro</li>
+<li>referenceexamples/attached/attached.qrc</li>
+</ul>
+<!-- @@@referenceexamples/attached -->

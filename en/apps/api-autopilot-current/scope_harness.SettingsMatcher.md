@@ -1,20 +1,31 @@
 ---
 Title: scope_harness.SettingsMatcher
 ---
-        
-SettingsMatcher
-===============
 
- *class* `scope_harness.``SettingsMatcher`(*(object)arg1*)<a href="#scope_harness.SettingsMatcher" class="headerlink" title="Permalink to this definition"></a>  
-Matcher object that holds constraints for matchins settings (SettingsView) object.
+# scope_harness.SettingsMatcher
 
- `has_at_least`(*(SettingsMatcher)arg1*, *(int)arg2*) → SettingsMatcher<a href="#scope_harness.SettingsMatcher.has_at_least" class="headerlink" title="Permalink to this definition"></a>  
-
- `has_exactly`(*(SettingsMatcher)arg1*, *(int)arg2*) → SettingsMatcher<a href="#scope_harness.SettingsMatcher.has_exactly" class="headerlink" title="Permalink to this definition"></a>  
-
- `match`(*(SettingsMatcher)arg1*, *(object)arg2*) → MatchResult<a href="#scope_harness.SettingsMatcher.match" class="headerlink" title="Permalink to this definition"></a>  
-
- `mode`(*(SettingsMatcher)arg1*, *(SettingsMatcherMode)arg2*) → SettingsMatcher<a href="#scope_harness.SettingsMatcher.mode" class="headerlink" title="Permalink to this definition"></a>  
-
- `option`(*(SettingsMatcher)arg1*, *(SettingsOptionMatcher)arg2*) → SettingsMatcher<a href="#scope_harness.SettingsMatcher.option" class="headerlink" title="Permalink to this definition"></a>  
-
+<dl class="class">
+<dt id="scope_harness.SettingsMatcher">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">SettingsMatcher</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#scope_harness.SettingsMatcher" title="Permalink to this definition"></a></dt>
+<dd><p>Matcher object that holds constraints for matchins settings (SettingsView) object.</p>
+<dl class="method">
+<dt id="scope_harness.SettingsMatcher.has_at_least">
+<tt class="descname">has_at_least</tt><big>(</big><em>(SettingsMatcher)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; SettingsMatcher<a class="headerlink" href="#scope_harness.SettingsMatcher.has_at_least" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsMatcher.has_exactly">
+<tt class="descname">has_exactly</tt><big>(</big><em>(SettingsMatcher)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; SettingsMatcher<a class="headerlink" href="#scope_harness.SettingsMatcher.has_exactly" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsMatcher.match">
+<tt class="descname">match</tt><big>(</big><em>(SettingsMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; MatchResult<a class="headerlink" href="#scope_harness.SettingsMatcher.match" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsMatcher.mode">
+<tt class="descname">mode</tt><big>(</big><em>(SettingsMatcher)arg1</em>, <em>(SettingsMatcherMode)arg2</em><big>)</big> &rarr; SettingsMatcher<a class="headerlink" href="#scope_harness.SettingsMatcher.mode" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsMatcher.option">
+<tt class="descname">option</tt><big>(</big><em>(SettingsMatcher)arg1</em>, <em>(SettingsOptionMatcher)arg2</em><big>)</big> &rarr; SettingsMatcher<a class="headerlink" href="#scope_harness.SettingsMatcher.option" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+</dd></dl>

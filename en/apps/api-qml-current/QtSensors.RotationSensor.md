@@ -1,65 +1,31 @@
 ---
 Title: QtSensors.RotationSensor
 ---
-        
-RotationSensor
-==============
+
+# QtSensors.RotationSensor
 
 <span class="subtitle"></span>
-The RotationSensor element reports on device rotation around the X, Y and Z axes. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtSensors 5.0</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>QtSensors 5.0</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtSensors.Sensor.md">Sensor</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[hasZ](#hasZ-prop)**** : qreal
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [RotationSensor](index.html) element reports on device rotation around the X, Y and Z axes.
-
-This element wraps the QRotationSensor class. Please see the documentation for QRotationSensor for details.
-
-**See also** [RotationReading](../QtSensors.RotationReading.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="hasZ-prop"></span><span class="name">hasZ</span> : <span class="type">qreal</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds a value indicating if the z angle is available.
-
-Please see QRotationSensor::hasZ for information about this property.
-
+<!-- $$$RotationSensor-brief -->
+<p>The RotationSensor element reports on device rotation around the X, Y and Z axes. More...</p>
+<!-- @@@RotationSensor -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtSensors.Sensor.md">Sensor</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#hasZ-prop">hasZ</a></b></b> : qreal</li>
+</ul>
+<!-- $$$RotationSensor-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">RotationSensor</a> element reports on device rotation around the X, Y and Z axes.</p>
+<p>This element wraps the QRotationSensor class. Please see the documentation for QRotationSensor for details.</p>
+<p><b>See also </b><a href="QtSensors.RotationReading.md">RotationReading</a>.</p>
+<!-- @@@RotationSensor -->
+<h2>Property Documentation</h2>
+<!-- $$$hasZ -->
+<table class="qmlname"><tr valign="top" id="hasZ-prop"><td class="tblQmlPropNode"><p><span class="name">hasZ</span> : <span class="type">qreal</span></p></td></tr></table><p>This property holds a value indicating if the z angle is available.</p>
+<p>Please see QRotationSensor::hasZ for information about this property.</p>
+<!-- @@@hasZ -->
+<br/>

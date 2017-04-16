@@ -2,7 +2,6 @@
 title: "Quality"
 ---
 
-
 # Develop with quality
 
 Create rock-solid products with Ubuntu's Quality Assurance tools.
@@ -23,7 +22,6 @@ Unit tests are the foundation of a good testing story for your application.
 Tests cover a single unit of code with known input and expected output. Unit
 tests ensure your methods and logic perform as expected in isolation.
 
-
 ### For scope developers
 
   * [Write your first scope unit test](../scopes/tutorials/scopes-unit-testing.md)
@@ -41,8 +39,6 @@ tests ensure your methods and logic perform as expected in isolation.
 
 
 
-
-
 ## Integration tests
 
 Integration tests help ensure any custom components work well with the
@@ -54,13 +50,10 @@ writing integration tests.
 
 
 
-
-
 ### For QML app developers
 
   * [Write your first QML integration test](../apps/qml/tutorials/qml-integration-testing.md)
   * [Ubuntu Test components API reference](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test/)
-
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/En1MaDDp9_8?rel=0" frameborder="0" allowfullscreen></iframe>
 

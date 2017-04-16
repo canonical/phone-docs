@@ -2,7 +2,6 @@
 title: "Tutorials - add a C++ backend to your QML app"
 ---
 
-
 # Tutorials - add a C++ backend to your QML app
 
 Whether you are creating a new app or porting an existing one from another ecosystem, you may need more backend power than the QML + JavaScript duo proposed in the [QML app tutorial](tutorials-building-your-first-qml-app.md). Let's have a peek at how to to add a C++ backend to your application, using system libraries or your own, and vastly increase its
@@ -23,7 +22,6 @@ Continue through the wizard by picking:
 
 ![](../../../media/qml-tutorial-c-backend-screenshot2.png)
 
-
   * Enter your [developer information](https://myapps.developer.ubuntu.com/dev/account/)
 
 ![](../../../media/qml-tutorial-c-backend-screenshot3.png)
@@ -33,7 +31,6 @@ Continue through the wizard by picking:
 ![](../../../media/qml-tutorial-c-backend-screenshot4.png)
 
   * A [kit](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
-
 
 
 ### Template files

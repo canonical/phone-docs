@@ -1,27 +1,27 @@
 ---
 Title: QtQml.qtqml-referenceexamples-methods-example
 ---
-        
-Extending QML - Methods Example
-===============================
+
+# QtQml.qtqml-referenceexamples-methods-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-This example builds on:
-
--   [Extending QML - Default Property Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-default/)
--   [Extending QML - Inheritance and Coercion Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-coercion/)
--   [Extending QML - Object and List Property Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-properties/)
--   [Extending QML - Adding Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-adding/)
-
-Files:
-
--   referenceexamples/methods/birthdayparty.cpp
--   referenceexamples/methods/birthdayparty.h
--   referenceexamples/methods/example.qml
--   referenceexamples/methods/person.cpp
--   referenceexamples/methods/person.h
--   referenceexamples/methods/main.cpp
--   referenceexamples/methods/methods.pro
--   referenceexamples/methods/methods.qrc
-
+<!-- $$$referenceexamples/methods-description -->
+<p>This example builds on:</p>
+<ul>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-default/">Extending QML - Default Property Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-coercion/">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-properties/">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+</ul>
+<p>Files:</p>
+<ul>
+<li>referenceexamples/methods/birthdayparty.cpp</li>
+<li>referenceexamples/methods/birthdayparty.h</li>
+<li>referenceexamples/methods/example.qml</li>
+<li>referenceexamples/methods/person.cpp</li>
+<li>referenceexamples/methods/person.h</li>
+<li>referenceexamples/methods/main.cpp</li>
+<li>referenceexamples/methods/methods.pro</li>
+<li>referenceexamples/methods/methods.qrc</li>
+</ul>
+<!-- @@@referenceexamples/methods -->

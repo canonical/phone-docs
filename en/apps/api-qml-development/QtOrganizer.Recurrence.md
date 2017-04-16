@@ -1,151 +1,73 @@
 ---
 Title: QtOrganizer.Recurrence
 ---
-        
-Recurrence
-==========
+
+# QtOrganizer.Recurrence
 
 <span class="subtitle"></span>
-The Recurrence element contains a list of rules and dates on which the recurrent item occurs, and a list of rules and dates on which exceptions occur. More...
-
-|                   |                        |
-|-------------------|------------------------|
-| Import Statement: | import QtOrganizer 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[exceptionDates](#exceptionDates-prop)**** : list&lt;date&gt;
--   ****[exceptionRules](#exceptionRules-prop)**** : list&lt;RecurrenceRule&gt;
--   ****[recurrenceDates](#recurrenceDates-prop)**** : list&lt;date&gt;
--   ****[recurrenceRules](#recurrenceRules-prop)**** : list&lt;RecurrenceRule&gt;
-
-<span id="signals"></span>
-Signals
--------
-
--   ****[onDetailChanged](#onDetailChanged-signal)****()
-
-<span id="methods"></span>
-Methods
--------
-
--   bool ****[setValue](#setValue-method)****(field, value)
--   variant ****[value](#value-method)****(field)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The following fields are supported:
-
--   Recurrence.FieldRecurrenceRules
--   Recurrence.FieldExceptionRules
--   Recurrence.FieldRecurrenceDates
--   Recurrence.FieldExceptionDates
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="exceptionDates-prop"></span><span class="name">exceptionDates</span> : <span class="type">list</span>&lt;<span class="type">date</span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the list of exception dates.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="exceptionRules-prop"></span><span class="name">exceptionRules</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a></span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the list of exception rules.
-
-**See also** [RecurrenceRule](../QtOrganizer.RecurrenceRule.md).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="recurrenceDates-prop"></span><span class="name">recurrenceDates</span> : <span class="type">list</span>&lt;<span class="type">date</span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the list of recurrence dates.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="recurrenceRules-prop"></span><span class="name">recurrenceRules</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a></span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the list of recurrence rules.
-
-**See also** [RecurrenceRule](../QtOrganizer.RecurrenceRule.md).
-
-Signal Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="onDetailChanged-signal"></span><span class="name">onDetailChanged</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::onDetailChanged](../QtOrganizer.Detail.md#onDetailChanged-signal).
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="setValue-method"></span><span class="type">bool</span> <span class="name">setValue</span>(<span class="type">field</span>, <span class="type">value</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::setValue](../QtOrganizer.Detail.md#setValue-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="value-method"></span><span class="type">variant</span> <span class="name">value</span>(<span class="type">field</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::value](../QtOrganizer.Detail.md#value-method).
-
+<!-- $$$Recurrence-brief -->
+<p>The Recurrence element contains a list of rules and dates on which the recurrent item occurs, and a list of rules and dates on which exceptions occur. More...</p>
+<!-- @@@Recurrence -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtOrganizer 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#exceptionDates-prop">exceptionDates</a></b></b> : list&lt;date&gt;</li>
+<li class="fn"><b><b><a href="#exceptionRules-prop">exceptionRules</a></b></b> : list&lt;RecurrenceRule&gt;</li>
+<li class="fn"><b><b><a href="#recurrenceDates-prop">recurrenceDates</a></b></b> : list&lt;date&gt;</li>
+<li class="fn"><b><b><a href="#recurrenceRules-prop">recurrenceRules</a></b></b> : list&lt;RecurrenceRule&gt;</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="#onDetailChanged-signal">onDetailChanged</a></b></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">bool <b><b><a href="#setValue-method">setValue</a></b></b>(field, value)</li>
+<li class="fn">variant <b><b><a href="#value-method">value</a></b></b>(field)</li>
+</ul>
+<!-- $$$Recurrence-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The following fields are supported:</p>
+<ul>
+<li>Recurrence.FieldRecurrenceRules</li>
+<li>Recurrence.FieldExceptionRules</li>
+<li>Recurrence.FieldRecurrenceDates</li>
+<li>Recurrence.FieldExceptionDates</li>
+</ul>
+<!-- @@@Recurrence -->
+<h2>Property Documentation</h2>
+<!-- $$$exceptionDates -->
+<table class="qmlname"><tr valign="top" id="exceptionDates-prop"><td class="tblQmlPropNode"><p><span class="name">exceptionDates</span> : <span class="type">list</span>&lt;<span class="type">date</span>&gt;</p></td></tr></table><p>This property holds the list of exception dates.</p>
+<!-- @@@exceptionDates -->
+<br/>
+<!-- $$$exceptionRules -->
+<table class="qmlname"><tr valign="top" id="exceptionRules-prop"><td class="tblQmlPropNode"><p><span class="name">exceptionRules</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a></span>&gt;</p></td></tr></table><p>This property holds the list of exception rules.</p>
+<p><b>See also </b><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a>.</p>
+<!-- @@@exceptionRules -->
+<br/>
+<!-- $$$recurrenceDates -->
+<table class="qmlname"><tr valign="top" id="recurrenceDates-prop"><td class="tblQmlPropNode"><p><span class="name">recurrenceDates</span> : <span class="type">list</span>&lt;<span class="type">date</span>&gt;</p></td></tr></table><p>This property holds the list of recurrence dates.</p>
+<!-- @@@recurrenceDates -->
+<br/>
+<!-- $$$recurrenceRules -->
+<table class="qmlname"><tr valign="top" id="recurrenceRules-prop"><td class="tblQmlPropNode"><p><span class="name">recurrenceRules</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a></span>&gt;</p></td></tr></table><p>This property holds the list of recurrence rules.</p>
+<p><b>See also </b><a href="QtOrganizer.RecurrenceRule.md">RecurrenceRule</a>.</p>
+<!-- @@@recurrenceRules -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onDetailChanged -->
+<table class="qmlname"><tr valign="top" id="onDetailChanged-signal"><td class="tblQmlFuncNode"><p><span class="name">onDetailChanged</span>()</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#onDetailChanged-signal">Detail::onDetailChanged</a>.</p>
+<!-- @@@onDetailChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$setValue -->
+<table class="qmlname"><tr valign="top" id="setValue-method"><td class="tblQmlFuncNode"><p><span class="type">bool</span> <span class="name">setValue</span>(<span class="type">field</span>, <span class="type">value</span>)</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#setValue-method">Detail::setValue</a>.</p>
+<!-- @@@setValue -->
+<br/>
+<!-- $$$value -->
+<table class="qmlname"><tr valign="top" id="value-method"><td class="tblQmlFuncNode"><p><span class="type">variant</span> <span class="name">value</span>(<span class="type">field</span>)</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#value-method">Detail::value</a>.</p>
+<!-- @@@value -->
+<br/>

@@ -34,7 +34,6 @@ acceptance testing in a sustainable manner.
 > “ The page object pattern enables automated User Acceptance Testing in a
 sustainable manner. ”
 
-
 ## Introducing the Page Object Pattern
 
 The **Page Object Pattern** comes from the [Seleniumcommunity](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) and is the
@@ -60,7 +59,6 @@ This application is written in QML and Javascript using the Ubuntu SDK; the
 tests are written in Python using [Autopilot](http://developer.ubuntu.com/api/devel/ubuntu-14.04/autopilot/tutorial/what_is_autopilot.html) as the tool to simulate user actions through the GUI.
 
 
-
 ### The public methods represent the services that the page offers.
 
 This application has a stopwatch page that lets users measure elapsed time. It
@@ -78,7 +76,6 @@ class Stopwatch(object):
 ```
 
 ![)(../../../media/stopwatch-179x300.png)
-
 
 ### Try not to expose the internals of the page.
 
@@ -113,7 +110,6 @@ encapsulation and turn these tests into a useful way to verify that a change
 in the GUI didn't introduce any regressions.
 
 
-
 ### Methods return other PageObjects
 
 An UAT checks a user story. It will involve the journey of the user through
@@ -143,7 +139,6 @@ class Clock(object):
 Now the return value of open_stopwatch will make available to the caller all
 the available services that the stopwatch exposes to the user. Thus it can be
 chained as a user journey from one page to the other.
-
 
 
 ### Generally don't make assertions
@@ -212,8 +207,6 @@ open the stopwatch page we end up calling Header methods.
 
 
 
-
-
 ### Different results for the same action are modeled as different methods
 
 According to guideline #3 we are returning page objects every time that a user
@@ -249,7 +242,6 @@ Take a look at the methods `add_alarm` and `add_alarm_with_error`. The first one
 returns the Alarm page again, where the user can continue his journey or
 finish the test checking the result. The second one returns the error dialog
 that's expected when you try to add an alarm with the wrong values.
-
 
 
 ## Conclusion

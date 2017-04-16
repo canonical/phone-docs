@@ -9,7 +9,6 @@ Ubuntu for devices runs on a variety of mobile [devices](devices.md), such as th
 
 This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 
-
 ## Before getting started
 In order to be able to port Ubuntu to a new device, the following prerequisites should be satisfied, nevertheless, you are welcome to follow this guide even if you are attempting your first port with no previous knowledge.
 
@@ -85,7 +84,6 @@ errors when building with the Ubuntu tools, [use the Ubuntutools](https://wiki.u
 Make sure you are familiar with the Android build system and can build a
 booting Android image from sources and vendor blobs. If you are not, look
 closely at the following “Set up your development environment” section.
-
 
 ## Set up your development environment
 
@@ -211,7 +209,6 @@ $ ./rootstock-touch-install vivid-preinstalled-touch-armhf.tar.gz out/target/pro
 You can find the latest Ubuntu rootfs image at
 [http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/vivid-preinstalled-touch-armhf.tar.gz](http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/utopic-preinstalled-touch-armhf.tar.gz).
 
-
 ## Enabling a new device
 
 If you're repository is compatible with the AOSP tree, it's just a matter of
@@ -260,7 +257,6 @@ are included in binary form.
 
 Since we use AOSP as a base, for supported devices all you need to do is to
 download and extract and run as mentioned in the downloads from [https://developers.google.com/android/drivers](https://developers.google.com/android/drivers)
-
 
 ## Device-specific changes
 
@@ -448,7 +444,6 @@ newly built Ubuntu kernel for the recovery image.
 Add Ubuntu specific components to the tree (hybris, platform-api, etc). See
 them under the ubuntu/ directory in your source.
 
-
 ## Building
 
 ### The image
@@ -507,8 +502,6 @@ getting started with Mir.
 Now that you have your own Ubuntu port, you probably want to serve over-the-
 air updates to devices and for that, you need an image server: have a look at
 [this step by step explanation](https://www.stgraber.org/2014/02/11/your-own-ubuntu-touch-image-server/) by Stéphane Graber to learn how to create one.
-
-
 
 
 

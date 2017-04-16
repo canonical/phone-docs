@@ -1,225 +1,90 @@
 ---
 Title: Ubuntu.Test.UbuntuTestCase
 ---
-        
-UbuntuTestCase
-==============
+
+# Ubuntu.Test.UbuntuTestCase
 
 <span class="subtitle"></span>
-The UbuntuTestCase class expands the default TestCase class. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Test .</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="../../sdk-14.10/QtTest.TestCase.md">TestCase</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[testUtil](#testUtil-prop)**** : alias
-
-<span id="methods"></span>
-Methods
--------
-
--   ****[centerOf](#centerOf-method)****(*item*)
--   ****[findChild](#findChild-method)****(*obj*, *objectName*)
--   ****[findChildWithProperty](#findChildWithProperty-method)****(*item*, *property*, *value*)
--   ****[findInvisibleChild](#findInvisibleChild-method)****(*obj*, *objectName*)
--   ****[flick](#flick-method)****(*item*, *x*, *y*, *dx*, *dy*, *pressTimeout*, *steps*, *button*, *modifiers*, *delay*)
--   ****[mouseLongPress](#mouseLongPress-method)****(*item*, *x*, *y*, *button*, *modifiers*, *delay*)
--   ****[mouseMoveSlowly](#mouseMoveSlowly-method)****(*item*, *x*, *y*, *dx*, *dy*, *steps*, *stepdelay*, *buttons*)
--   ****[tryCompareFunction](#tryCompareFunction-method)****(*func*, *expectedResult*, *timeout*)
--   ****[typeString](#typeString-method)****(*string*)
--   ****[waitForHeaderAnimation](#waitForHeaderAnimation-method)****(*mainView*)
--   ****[warningFormat](#warningFormat-method)****(*line*, *column*, *message*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-**This component is under heavy development.**
-
-This class extends the default QML [TestCase](../../sdk-14.10/QtTest.TestCase.md) class which is available in [QtTest](http://doc.qt.io/qt-5/qttest-qmlmodule.html) 1.0.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="testUtil-prop"></span><span class="name">testUtil</span> : <span class="type">alias</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the inner TestUtil instance.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="centerOf-method"></span><span class="name">centerOf</span>( <em>item</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns the center point of the *item*.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="findChild-method"></span><span class="name">findChild</span>( <em>obj</em>, <em>objectName</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Find a child from the item based on the objectName.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="findChildWithProperty-method"></span><span class="name">findChildWithProperty</span>( <em>item</em>, <em>property</em>, <em>value</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Finds a visible child of an *item* having a given *property* with a given *value*.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="findInvisibleChild-method"></span><span class="name">findInvisibleChild</span>( <em>obj</em>, <em>objectName</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Find a non-visual child such as [QtObject](../../sdk-14.10/QtQml.QtObject.md) based on objectName.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="flick-method"></span><span class="name">flick</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>dx</em>, <em>dy</em>, <em>pressTimeout</em>, <em>steps</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-The function produces a flick event when executed on Flickables. When used on other components it provides the same functionality as `mouseDrag()` function. The optional *pressTimeout* parameter can be used to introduce a small delay between the mouse press and the first mouse move. Setting a negative or zero value will disable the timeout.
-
-The default flick velocity is built up using 5 move points. This can be altered by setting a positive value to *steps* parameter. The bigger the number the longer the flick will be. When a negative or zero value is given, the default of 5 move points will be used.
-
-**Note:** The function can be used to select a text in a [TextField](../Ubuntu.Components.TextField.md) or [TextArea](../Ubuntu.Components.TextArea.md) by specifying at least 400 millisecods to *pressTimeout*.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseLongPress-method"></span><span class="name">mouseLongPress</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates a long press on a mouse *button* with an optional *modifier* on an *item*. The position is defined by *x* and *y*. If *delay* is specified, the test will wait the specified amount of milliseconds before the press.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseMoveSlowly-method"></span><span class="name">mouseMoveSlowly</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>dx</em>, <em>dy</em>, <em>steps</em>, <em>stepdelay</em>, <em>buttons</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Move Mouse from x,y to distance of dx, dy divided to steps with a stepdelay (ms) and buttons.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="tryCompareFunction-method"></span><span class="name">tryCompareFunction</span>( <em>func</em>, <em>expectedResult</em>, <em>timeout</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Keeps executing a given parameter-less function until it returns the given expected result or the timemout is reached (in which case a test failure is generated)
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="typeString-method"></span><span class="name">typeString</span>( <em>string</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Convenience function to allow typing a full string instead of single characters
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="waitForHeaderAnimation-method"></span><span class="name">waitForHeaderAnimation</span>( <em>mainView</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Wait for animations of the header and the style inside the header to finish. The [MainView](../Ubuntu.Components.MainView.md) that has the header that may animate must be passed as an argument.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="warningFormat-method"></span><span class="name">warningFormat</span>( <em>line</em>, <em>column</em>, <em>message</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Warning message formatter, uses file name, line and column numbers to build up the message.
-
+<!-- $$$UbuntuTestCase-brief -->
+<p>The UbuntuTestCase class expands the default TestCase class. More...</p>
+<!-- @@@UbuntuTestCase -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Test .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtTest.TestCase.md">TestCase</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#testUtil-prop">testUtil</a></b></b> : alias</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn"><b><b><a href="#centerOf-method">centerOf</a></b></b>(<i>item</i>)</li>
+<li class="fn"><b><b><a href="#findChild-method">findChild</a></b></b>(<i>obj</i>,  <i>objectName</i>)</li>
+<li class="fn"><b><b><a href="#findChildWithProperty-method">findChildWithProperty</a></b></b>(<i>item</i>,  <i>property</i>,  <i>value</i>)</li>
+<li class="fn"><b><b><a href="#findInvisibleChild-method">findInvisibleChild</a></b></b>(<i>obj</i>,  <i>objectName</i>)</li>
+<li class="fn"><b><b><a href="#flick-method">flick</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>dx</i>,  <i>dy</i>,  <i>pressTimeout</i>,  <i>steps</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseLongPress-method">mouseLongPress</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseMoveSlowly-method">mouseMoveSlowly</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>dx</i>,  <i>dy</i>,  <i>steps</i>,  <i>stepdelay</i>,  <i>buttons</i>)</li>
+<li class="fn"><b><b><a href="#tryCompareFunction-method">tryCompareFunction</a></b></b>(<i>func</i>,  <i>expectedResult</i>,  <i>timeout</i>)</li>
+<li class="fn"><b><b><a href="#typeString-method">typeString</a></b></b>(<i>string</i>)</li>
+<li class="fn"><b><b><a href="#waitForHeaderAnimation-method">waitForHeaderAnimation</a></b></b>(<i>mainView</i>)</li>
+<li class="fn"><b><b><a href="#warningFormat-method">warningFormat</a></b></b>(<i>line</i>,  <i>column</i>,  <i>message</i>)</li>
+</ul>
+<!-- $$$UbuntuTestCase-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><b>This component is under heavy development.</b></p>
+<p>This class extends the default QML <a href="../sdk-14.10/QtTest.TestCase.md">TestCase</a> class which is available in <a href="http://doc.qt.io/qt-5/qttest-qmlmodule.html">QtTest</a> 1.0&#x2e;</p>
+<!-- @@@UbuntuTestCase -->
+<h2>Property Documentation</h2>
+<!-- $$$testUtil -->
+<table class="qmlname"><tr valign="top" id="testUtil-prop"><td class="tblQmlPropNode"><p><span class="name">testUtil</span> : <span class="type">alias</span></p></td></tr></table><p>This property holds the inner TestUtil instance.</p>
+<!-- @@@testUtil -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$centerOf -->
+<table class="qmlname"><tr valign="top" id="centerOf-method"><td class="tblQmlFuncNode"><p><span class="name">centerOf</span>(<i> item</i>)</p></td></tr></table><p>Returns the center point of the <i>item</i>.</p>
+<!-- @@@centerOf -->
+<br/>
+<!-- $$$findChild -->
+<table class="qmlname"><tr valign="top" id="findChild-method"><td class="tblQmlFuncNode"><p><span class="name">findChild</span>(<i> obj</i>, <i> objectName</i>)</p></td></tr></table><p>Find a child from the item based on the objectName.</p>
+<!-- @@@findChild -->
+<br/>
+<!-- $$$findChildWithProperty -->
+<table class="qmlname"><tr valign="top" id="findChildWithProperty-method"><td class="tblQmlFuncNode"><p><span class="name">findChildWithProperty</span>(<i> item</i>, <i> property</i>, <i> value</i>)</p></td></tr></table><p>Finds a visible child of an <i>item</i> having a given <i>property</i> with a given <i>value</i>.</p>
+<!-- @@@findChildWithProperty -->
+<br/>
+<!-- $$$findInvisibleChild -->
+<table class="qmlname"><tr valign="top" id="findInvisibleChild-method"><td class="tblQmlFuncNode"><p><span class="name">findInvisibleChild</span>(<i> obj</i>, <i> objectName</i>)</p></td></tr></table><p>Find a non-visual child such as <a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a> based on objectName.</p>
+<!-- @@@findInvisibleChild -->
+<br/>
+<!-- $$$flick -->
+<table class="qmlname"><tr valign="top" id="flick-method"><td class="tblQmlFuncNode"><p><span class="name">flick</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> dx</i>, <i> dy</i>, <i> pressTimeout</i>, <i> steps</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>The function produces a flick event when executed on Flickables. When used on other components it provides the same functionality as <code>mouseDrag()</code> function. The optional <i>pressTimeout</i> parameter can be used to introduce a small delay between the mouse press and the first mouse move. Setting a negative or zero value will disable the timeout.</p>
+<p>The default flick velocity is built up using 5 move points. This can be altered by setting a positive value to <i>steps</i> parameter. The bigger the number the longer the flick will be. When a negative or zero value is given, the default of 5 move points will be used.</p>
+<p><b>Note: </b>The function can be used to select a text in a <a href="Ubuntu.Components.TextField.md">TextField</a> or <a href="Ubuntu.Components.TextArea.md">TextArea</a> by specifying at least 400 millisecods to <i>pressTimeout</i>.</p><!-- @@@flick -->
+<br/>
+<!-- $$$mouseLongPress -->
+<table class="qmlname"><tr valign="top" id="mouseLongPress-method"><td class="tblQmlFuncNode"><p><span class="name">mouseLongPress</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates a long press on a mouse <i>button</i> with an optional <i>modifier</i> on an <i>item</i>. The position is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait the specified amount of milliseconds before the press.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<!-- @@@mouseLongPress -->
+<br/>
+<!-- $$$mouseMoveSlowly -->
+<table class="qmlname"><tr valign="top" id="mouseMoveSlowly-method"><td class="tblQmlFuncNode"><p><span class="name">mouseMoveSlowly</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> dx</i>, <i> dy</i>, <i> steps</i>, <i> stepdelay</i>, <i> buttons</i>)</p></td></tr></table><p>Move Mouse from x,y to distance of dx, dy divided to steps with a stepdelay (ms) and buttons.</p>
+<!-- @@@mouseMoveSlowly -->
+<br/>
+<!-- $$$tryCompareFunction -->
+<table class="qmlname"><tr valign="top" id="tryCompareFunction-method"><td class="tblQmlFuncNode"><p><span class="name">tryCompareFunction</span>(<i> func</i>, <i> expectedResult</i>, <i> timeout</i>)</p></td></tr></table><p>Keeps executing a given parameter-less function until it returns the given expected result or the timemout is reached (in which case a test failure is generated)</p>
+<!-- @@@tryCompareFunction -->
+<br/>
+<!-- $$$typeString -->
+<table class="qmlname"><tr valign="top" id="typeString-method"><td class="tblQmlFuncNode"><p><span class="name">typeString</span>(<i> string</i>)</p></td></tr></table><p>Convenience function to allow typing a full string instead of single characters</p>
+<!-- @@@typeString -->
+<br/>
+<!-- $$$waitForHeaderAnimation -->
+<table class="qmlname"><tr valign="top" id="waitForHeaderAnimation-method"><td class="tblQmlFuncNode"><p><span class="name">waitForHeaderAnimation</span>(<i> mainView</i>)</p></td></tr></table><p>Wait for animations of the header and the style inside the header to finish. The <a href="Ubuntu.Components.MainView.md">MainView</a> that has the header that may animate must be passed as an argument.</p>
+<!-- @@@waitForHeaderAnimation -->
+<br/>
+<!-- $$$warningFormat -->
+<table class="qmlname"><tr valign="top" id="warningFormat-method"><td class="tblQmlFuncNode"><p><span class="name">warningFormat</span>(<i> line</i>, <i> column</i>, <i> message</i>)</p></td></tr></table><p>Warning message formatter, uses file name, line and column numbers to build up the message.</p>
+<!-- @@@warningFormat -->
+<br/>

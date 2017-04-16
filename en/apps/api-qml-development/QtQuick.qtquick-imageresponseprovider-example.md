@@ -1,19 +1,18 @@
 ---
 Title: QtQuick.qtquick-imageresponseprovider-example
 ---
-        
-C++ Extensions: Image Response Provider Example
-===============================================
+
+# QtQuick.qtquick-imageresponseprovider-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-This examples shows how to use QQuickImageProvider to serve images asynchronously to QML image elements.
-
-Files:
-
--   imageresponseprovider/imageresponseprovider-example.qml
--   imageresponseprovider/imageresponseprovider.cpp
--   imageresponseprovider/imageresponseprovider.pro
--   imageresponseprovider/imageresponseprovider.qmlproject
--   imageresponseprovider/ImageResponseProviderCore/qmldir
-
+<!-- $$$imageresponseprovider-description -->
+<p>This examples shows how to use QQuickImageProvider to serve images asynchronously to QML image elements.</p>
+<p>Files:</p>
+<ul>
+<li>imageresponseprovider/imageresponseprovider-example.qml</li>
+<li>imageresponseprovider/imageresponseprovider.cpp</li>
+<li>imageresponseprovider/imageresponseprovider.pro</li>
+<li>imageresponseprovider/imageresponseprovider.qmlproject</li>
+<li>imageresponseprovider/ImageResponseProviderCore/qmldir</li>
+</ul>
+<!-- @@@imageresponseprovider -->

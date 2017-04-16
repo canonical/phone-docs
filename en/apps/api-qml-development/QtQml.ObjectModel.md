@@ -1,91 +1,54 @@
 ---
 Title: QtQml.ObjectModel
 ---
-        
-ObjectModel
-===========
+
+# QtQml.ObjectModel
 
 <span class="subtitle"></span>
-Defines a set of items to be used as a model More...
-
-|                   |                         |
-|-------------------|-------------------------|
-| Import Statement: | import QtQml.Models 2.1 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[count](#count-prop)**** : int
-
-<span id="attached-properties"></span>
-Attached Properties
--------------------
-
--   ****[index](#index-attached-prop)**** : int
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-A [ObjectModel](index.html) contains the visual items to be used in a view. When a [ObjectModel](index.html) is used in a view, the view does not require a delegate since the [ObjectModel](index.html) already contains the visual delegate (items).
-
-An item can determine its index within the model via the [index](#index-attached-prop) attached property.
-
-The example below places three colored rectangles in a ListView.
-
-``` cpp
-import QtQuick 2.0
-import QtQml.Models 2.1
+<!-- $$$ObjectModel-brief -->
+<p>Defines a set of items to be used as a model More...</p>
+<!-- @@@ObjectModel -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQml.Models 2.1</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#count-prop">count</a></b></b> : int</li>
+</ul>
+<h2 id="attached-properties">Attached Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#index-attached-prop">index</a></b></b> : int</li>
+</ul>
+<!-- $$$ObjectModel-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>A <a href="index.html">ObjectModel</a> contains the visual items to be used in a view. When a <a href="index.html">ObjectModel</a> is used in a view, the view does not require a delegate since the <a href="index.html">ObjectModel</a> already contains the visual delegate (items).</p>
+<p>An item can determine its index within the model via the <a href="#index-attached-prop">index</a> attached property.</p>
+<p>The example below places three colored rectangles in a ListView.</p>
+<pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
+import <span class="type">QtQml</span><span class="operator">.</span>Models <span class="number">2.1</span>
 Rectangle {
-    ObjectModel {
-        id: itemModel
-        Rectangle { height: 30; width: 80; color: "red" }
-        Rectangle { height: 30; width: 80; color: "green" }
-        Rectangle { height: 30; width: 80; color: "blue" }
-    }
-    ListView {
-        anchors.fill: parent
-        model: itemModel
-    }
+ObjectModel {
+id: itemModel
+Rectangle { height: <span class="number">30</span>; width: <span class="number">80</span>; color: <span class="string">&quot;red&quot;</span> }
+Rectangle { height: <span class="number">30</span>; width: <span class="number">80</span>; color: <span class="string">&quot;green&quot;</span> }
+Rectangle { height: <span class="number">30</span>; width: <span class="number">80</span>; color: <span class="string">&quot;blue&quot;</span> }
 }
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/98141b30-082d-4731-91e1-93def57369d2-api/apps/qml/sdk-15.04.6/QtQml.ObjectModel/images/visualitemmodel.png)
-
-**See also** Qt Quick Examples - Views.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="count-prop"></span><span class="name">count</span> : <span class="type">int</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The number of items in the model. This property is readonly.
-
-Attached Property Documentation
--------------------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="index-attached-prop"></span><span class="name">ObjectModel.index</span> : <span class="type">int</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This attached property holds the index of this delegate's item within the model.
-
-It is attached to each instance of the delegate.
-
+ListView {
+anchors<span class="operator">.</span>fill: parent
+model: itemModel
+}
+}</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/98141b30-082d-4731-91e1-93def57369d2-../QtQml.ObjectModel/images/visualitemmodel.png" alt="" /></p><p><b>See also </b>Qt Quick Examples - Views.</p>
+<!-- @@@ObjectModel -->
+<h2>Property Documentation</h2>
+<!-- $$$count -->
+<table class="qmlname"><tr valign="top" id="count-prop"><td class="tblQmlPropNode"><p><span class="name">count</span> : <span class="type">int</span></p></td></tr></table><p>The number of items in the model. This property is readonly.</p>
+<!-- @@@count -->
+<br/>
+<h2>Attached Property Documentation</h2>
+<!-- $$$index -->
+<table class="qmlname"><tr valign="top" id="index-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ObjectModel.index</span> : <span class="type">int</span></p></td></tr></table><p>This attached property holds the index of this delegate's item within the model.</p>
+<p>It is attached to each instance of the delegate.</p>
+<!-- @@@index -->
+<br/>

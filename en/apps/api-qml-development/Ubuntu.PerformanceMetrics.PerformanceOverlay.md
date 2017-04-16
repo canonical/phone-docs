@@ -1,63 +1,32 @@
 ---
 Title: Ubuntu.PerformanceMetrics.PerformanceOverlay
 ---
-        
-PerformanceOverlay
-==================
+
+# Ubuntu.PerformanceMetrics.PerformanceOverlay
 
 <span class="subtitle"></span>
-Overlay displaying performance related metrics (rendering time, CPU usage, etc.) More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.PerformanceMetrics .</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Item.md">Item</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[active](#active-prop)**** : bool
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-[PerformanceOverlay](index.html) displays various performance related indicators to help developers detect issues in their application.
-
-Examples:
-
-``` qml
-PerformanceOverlay {
-    active: true
-}
-```
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="active-prop"></span><span class="name">active</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Whether or not the [PerformanceOverlay](index.html) is displayed.
-
+<!-- $$$PerformanceOverlay-brief -->
+<p>Overlay displaying performance related metrics (rendering time, CPU usage, etc.) More...</p>
+<!-- @@@PerformanceOverlay -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.PerformanceMetrics .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#active-prop">active</a></b></b> : bool</li>
+</ul>
+<!-- $$$PerformanceOverlay-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><a href="index.html">PerformanceOverlay</a> displays various performance related indicators to help developers detect issues in their application.</p>
+<p>Examples:</p>
+<pre class="qml"><span class="type"><a href="index.html">PerformanceOverlay</a></span> {
+<span class="name">active</span>: <span class="number">true</span>
+}</pre>
+<!-- @@@PerformanceOverlay -->
+<h2>Property Documentation</h2>
+<!-- $$$active -->
+<table class="qmlname"><tr valign="top" id="active-prop"><td class="tblQmlPropNode"><p><span class="name">active</span> : <span class="type">bool</span></p></td></tr></table><p>Whether or not the <a href="index.html">PerformanceOverlay</a> is displayed.</p>
+<!-- @@@active -->
+<br/>

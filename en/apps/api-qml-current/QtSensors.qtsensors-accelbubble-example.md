@@ -1,67 +1,46 @@
 ---
 Title: QtSensors.qtsensors-accelbubble-example
 ---
-        
-Qt Sensors - Accel Bubble
-=========================
+
+# QtSensors.qtsensors-accelbubble-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-![](https://developer.ubuntu.com/static/devportal_uploaded/33d4709d-3527-4e22-a76d-2e5a111691ce-api/apps/qml/sdk-15.04.5/qtsensors-accelbubble-example/images/accelbubble.png)
-
-<span id="overview"></span>
-Overview
---------
-
-Writing a QML application that uses the Accelerometer QML sensors type requires the following steps:
-
-Import the Sensors Declarative module.
-
-``` qml
-import QtSensors 5.0
-```
-
-Add an Accelerometer QML type.
-
-``` qml
-    Accelerometer {
-        id: accel
-        dataRate: 100
-```
-
-Use the 'active' property to start the sensor
-
-``` qml
-        active:true
-```
-
-Move the bubble according to a factor of the accelerator sensor
-
-``` qml
-        onReadingChanged: {
-            var newX = (bubble.x + calcRoll(accel.reading.x, accel.reading.y, accel.reading.z) * .1)
-            var newY = (bubble.y - calcPitch(accel.reading.x, accel.reading.y, accel.reading.z) * .1)
-            if (isNaN(newX) || isNaN(newY))
-                return;
-            if (newX < 0)
-                newX = 0
-            if (newX > mainWindow.width - bubble.width)
-                newX = mainWindow.width - bubble.width
-            if (newY < 18)
-                newY = 18
-            if (newY > mainWindow.height - bubble.height)
-                newY = mainWindow.height - bubble.height
-                bubble.x = newX
-                bubble.y = newY
-        }
-```
-
-Files:
-
--   accelbubble/accelbubble.qml
--   accelbubble/android/AndroidManifest.xml
--   accelbubble/content/Bluebubble.svg
--   accelbubble/main.cpp
--   accelbubble/accelbubble.pro
--   accelbubble/accelbubble.qrc
-
+<!-- $$$accelbubble-description -->
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/33d4709d-3527-4e22-a76d-2e5a111691ce-../qtsensors-accelbubble-example/images/accelbubble.png" alt="" /></p>
+<h2 id="overview">Overview</h2>
+<p>Writing a QML application that uses the Accelerometer QML sensors type requires the following steps:</p>
+<p>Import the Sensors Declarative module.</p>
+<pre class="qml">import QtSensors 5.0</pre>
+<p>Add an Accelerometer QML type.</p>
+<pre class="qml">    <span class="type"><a href="QtSensors.Accelerometer.md">Accelerometer</a></span> {
+<span class="name">id</span>: <span class="name">accel</span>
+<span class="name">dataRate</span>: <span class="number">100</span></pre>
+<p>Use the 'active' property to start the sensor</p>
+<pre class="qml">        <span class="name">active</span>:<span class="number">true</span></pre>
+<p>Move the bubble according to a factor of the accelerator sensor</p>
+<pre class="qml">        <span class="name">onReadingChanged</span>: {
+var <span class="name">newX</span> = (<span class="name">bubble</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">calcRoll</span>(<span class="name">accel</span>.<span class="name">reading</span>.<span class="name">x</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">y</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">z</span>) <span class="operator">*</span> <span class="number">.1</span>)
+var <span class="name">newY</span> = (<span class="name">bubble</span>.<span class="name">y</span> <span class="operator">-</span> <span class="name">calcPitch</span>(<span class="name">accel</span>.<span class="name">reading</span>.<span class="name">x</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">y</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">z</span>) <span class="operator">*</span> <span class="number">.1</span>)
+<span class="keyword">if</span> (<span class="name">isNaN</span>(<span class="name">newX</span>) <span class="operator">||</span> <span class="name">isNaN</span>(<span class="name">newY</span>))
+<span class="keyword">return</span>;
+<span class="keyword">if</span> (<span class="name">newX</span> <span class="operator">&lt;</span> <span class="number">0</span>)
+<span class="name">newX</span> <span class="operator">=</span> <span class="number">0</span>
+<span class="keyword">if</span> (<span class="name">newX</span> <span class="operator">&gt;</span> <span class="name">mainWindow</span>.<span class="name">width</span> <span class="operator">-</span> <span class="name">bubble</span>.<span class="name">width</span>)
+<span class="name">newX</span> <span class="operator">=</span> <span class="name">mainWindow</span>.<span class="name">width</span> <span class="operator">-</span> <span class="name">bubble</span>.<span class="name">width</span>
+<span class="keyword">if</span> (<span class="name">newY</span> <span class="operator">&lt;</span> <span class="number">18</span>)
+<span class="name">newY</span> <span class="operator">=</span> <span class="number">18</span>
+<span class="keyword">if</span> (<span class="name">newY</span> <span class="operator">&gt;</span> <span class="name">mainWindow</span>.<span class="name">height</span> <span class="operator">-</span> <span class="name">bubble</span>.<span class="name">height</span>)
+<span class="name">newY</span> <span class="operator">=</span> <span class="name">mainWindow</span>.<span class="name">height</span> <span class="operator">-</span> <span class="name">bubble</span>.<span class="name">height</span>
+<span class="name">bubble</span>.<span class="name">x</span> <span class="operator">=</span> <span class="name">newX</span>
+<span class="name">bubble</span>.<span class="name">y</span> <span class="operator">=</span> <span class="name">newY</span>
+}</pre>
+<p>Files:</p>
+<ul>
+<li>accelbubble/accelbubble.qml</li>
+<li>accelbubble/android/AndroidManifest.xml</li>
+<li>accelbubble/content/Bluebubble.svg</li>
+<li>accelbubble/main.cpp</li>
+<li>accelbubble/accelbubble.pro</li>
+<li>accelbubble/accelbubble.qrc</li>
+</ul>
+<!-- @@@accelbubble -->

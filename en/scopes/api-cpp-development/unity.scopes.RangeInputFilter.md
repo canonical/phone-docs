@@ -1,724 +1,628 @@
 ---
 Title: unity.scopes.RangeInputFilter
 ---
-        
-RangeInputFilter
-================
 
-A range filter allows a start and end value to be entered by the user. [More...](#details)
+# unity.scopes.RangeInputFilter
 
-`#include <unity/scopes/RangeInputFilter.h>`
-
+<p>A range filter allows a start and end value to be entered by the user.  
+<a href="#details">More...</a></p>
+<p><code>#include &lt;unity/scopes/RangeInputFilter.h&gt;</code></p>
 Inheritance diagram for unity::scopes::RangeInputFilter:
-
-![Inheritance graph](https://developer.ubuntu.com/static/devportal_uploaded/84a80008-82e7-491c-8b9f-9684d1fcc80a-api/scopes/cpp/sdk-15.04.5/unity.scopes.RangeInputFilter/classunity_1_1scopes_1_1_range_input_filter__inherit__graph.png)
-
-<span class="legend">\[legend\]</span>
-
-pub-methods
-------------------------------------------------------
-
-std::string 
-<a href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a> () const
- 
-Get the prefix label of start value. More...
- 
-std::string 
-<a href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a> () const
- 
-Get the postfix label of start value. More...
- 
-std::string 
-<a href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a> () const
- 
-Get the prefix label of end value. More...
- 
-std::string 
-<a href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a> () const
- 
-Get the postfix label of end value. More...
- 
-std::string 
-<a href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a> () const
- 
-Get the central label for this filter. More...
- 
-<a href="unity.scopes.Variant.md">Variant</a> 
-<a href="#adf545096dacbea4303361527450321fa">default_start_value</a> () const
- 
-Get the default start value if set (int, double or null). More...
- 
-<a href="unity.scopes.Variant.md">Variant</a> 
-<a href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a> () const
- 
-Get default end value if set (int, double or null). More...
- 
-bool 
-<a href="#a64f2c9ff7ed484f49d26f601f30e8616">has_start_value</a> (<a href="unity.scopes.FilterState.md">FilterState</a> const &filter\_state) const
- 
-Check if filter state holds a start value for this filter instance. More...
- 
-bool 
-<a href="#ae459a665a5dae27445547b1c0be8c7c3">has_end_value</a> (<a href="unity.scopes.FilterState.md">FilterState</a> const &filter\_state) const
- 
-Check if filter state holds an end value for this filter instance. More...
- 
-double 
-<a href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a> (<a href="unity.scopes.FilterState.md">FilterState</a> const &filter\_state) const
- 
-Get the start value for this filter instance. More...
- 
-double 
-<a href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a> (<a href="unity.scopes.FilterState.md">FilterState</a> const &filter\_state) const
- 
-Get end value for this filter instance. More...
- 
-void 
-<a href="#a5fa97b63d86a89e7144a89e0996d1304">update_state</a> (<a href="unity.scopes.FilterState.md">FilterState</a> &filter\_state, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a>) const
- 
-Store start and end value for this filter in the filter state. More...
- 
-![-](https://developer.ubuntu.com/static/devportal_uploaded/eb588139-d958-496e-a1fc-cd6c9a9bdbfc-api/scopes/cpp/sdk-15.04.5/unity.scopes.RangeInputFilter/closed.png) Public Member Functions inherited from <a href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a>
-void 
-<a href="../unity.scopes.FilterBase.md#ab4ab1b600ce3967dc50255e736c6d02e">set_display_hints</a> (int hints)
- 
-Sets display hints for the Shell UI. More...
- 
-int 
-<a href="../unity.scopes.FilterBase.md#a8f20819591155edaab29d535c5c4c261">display_hints</a> () const
- 
-Get display hints of this filter. More...
- 
-std::string 
-<a href="../unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a> () const
- 
-Get the identifier of this filter. More...
- 
-std::string 
-<a href="../unity.scopes.FilterBase.md#aadc7344c951961331dcbe67149d56c78">filter_type</a> () const
- 
-Get the type name of this filter. More...
- 
-void 
-<a href="../unity.scopes.FilterBase.md#aec8ceae8141811833af087ba2ebe086c">set_title</a> (std::string const &<a href="../unity.scopes.FilterBase.md#a3f0c324b3aac39bb8967fc900f3a909e">title</a>)
- 
-Set an optional title of this filter. More...
- 
-std::string 
-<a href="../unity.scopes.FilterBase.md#a3f0c324b3aac39bb8967fc900f3a909e">title</a> () const
- 
-Get the optional title of this filter. More...
- 
-FilterGroup::SCPtr 
-<a href="../unity.scopes.FilterBase.md#afff4685371fe67e6f87f58e31f69a037">filter_group</a> () const
- 
-Get the filter group this filter belongs to. More...
- 
-pub-static-methods
---------------------------------------------------------------------
-
-static RangeInputFilter::SPtr 
-<a href="#a0717644ec86abcdc9dabf30302fead5d">create</a> (std::string const &<a href="../unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, std::string const &<a href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &<a href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &<a href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &<a href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &<a href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>)
- 
-Creates a RangeInputFilter. More...
- 
-static RangeInputFilter::SPtr 
-<a href="#af011c6e541e7a3776cccacf88fdba2b5">create</a> (std::string const &<a href="../unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#adf545096dacbea4303361527450321fa">default_start_value</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a>, std::string const &<a href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &<a href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &<a href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &<a href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &<a href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>)
- 
-Creates a RangeInputFilter with specific default values for start and end. More...
- 
-static RangeInputFilter::SPtr 
-<a href="#aba826b77159d4d51ec804c2132ff0f62">create</a> (std::string const &<a href="../unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, std::string const &<a href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &<a href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &<a href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &<a href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &<a href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>, FilterGroup::SCPtr const &group)
- 
-Creates a RangeInputFilter inside a FilterGroup. More...
- 
-static RangeInputFilter::SPtr 
-<a href="#ac782e01462c0f1868fca744119da91c6">create</a> (std::string const &<a href="../unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#adf545096dacbea4303361527450321fa">default_start_value</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a>, std::string const &<a href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &<a href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &<a href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &<a href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &<a href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>, FilterGroup::SCPtr const &group)
- 
-Creates a RangeInputFilter with specific default values for start and end, inside a FilterGroup. More...
- 
-static void 
-<a href="#a7cb0b4523641ea4dec9b3c619f5b9c21">update_state</a> (<a href="unity.scopes.FilterState.md">FilterState</a> &filter\_state, std::string const &filter\_id, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a>, <a href="unity.scopes.Variant.md">Variant</a> const &<a href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a>)
- 
-Store start and end value in the filter state, without having an instance of RangeInputFilter. More...
- 
-inherited
----------------------------------------------------------
-
-![-](https://developer.ubuntu.com/static/devportal_uploaded/3ee4eb9b-b186-4bc5-a351-1e902c970a6c-api/scopes/cpp/sdk-15.04.5/unity.scopes.RangeInputFilter/closed.png) Public Types inherited from <a href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a>
-enum  
-<a href="../unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159">DisplayHints</a> { <a href="../unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f">Default</a> = 0, <a href="../unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56">Primary</a> = 1 }
- 
-Display hints for the Shell UI. [More...](../unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159)
- 
-<span id="details"></span>
-Detailed Description
---------------------
-
-A range filter allows a start and end value to be entered by the user.
-
-A <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> is composed of two input boxes that accept numeric values (both of them optional). The filter can have prefix and/or postfix labels for the start and end value, respectively, plus a single label that is displayed between the two input boxes. The filter can provide defaults for that start and end value, which are used by the UI if the user does not enter explicit values.
-
-Member Function Documentation
------------------------------
-
-<span id="a41f517d0071ca0f953c478f8272bf41b" class="anchor"></span>
-|                                                             |     |     |     |       |
-|-------------------------------------------------------------|-----|-----|-----|-------|
-| std::string unity::scopes::RangeInputFilter::central\_label | (   |     | )   | const |
-
-Get the central label for this filter.
-
-Returns  
-The central label.
-
-<span id="a0717644ec86abcdc9dabf30302fead5d" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create</td>
+<img src="https://developer.ubuntu.com/static/devportal_uploaded/84a80008-82e7-491c-8b9f-9684d1fcc80a-../unity.scopes.RangeInputFilter/classunity_1_1scopes_1_1_range_input_filter__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_range_input_filter_inherit__map" alt="Inheritance graph"/>
+<map name="unity_1_1scopes_1_1_range_input_filter_inherit__map" id="unity_1_1scopes_1_1_range_input_filter_inherit__map">
+<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_filter_base.html" title="Base class for all implementations of filters. " alt="" coords="11,5,185,32"/></map>
+<center><span class="legend">[legend]</span></center>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1a4cf761c6bfa2e07eb24b6f584ec05b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a> () const </td></tr>
+<tr class="memdesc:a1a4cf761c6bfa2e07eb24b6f584ec05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the prefix label of start value.  More...<br /></td></tr>
+<tr class="separator:a1a4cf761c6bfa2e07eb24b6f584ec05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2a6ec4e9c06234ee4759dce2644008"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a> () const </td></tr>
+<tr class="memdesc:a9e2a6ec4e9c06234ee4759dce2644008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the postfix label of start value.  More...<br /></td></tr>
+<tr class="separator:a9e2a6ec4e9c06234ee4759dce2644008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acb48c94b3e9b6ca228a0e7ebb26ae5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a> () const </td></tr>
+<tr class="memdesc:a8acb48c94b3e9b6ca228a0e7ebb26ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the prefix label of end value.  More...<br /></td></tr>
+<tr class="separator:a8acb48c94b3e9b6ca228a0e7ebb26ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81dde713bcfb2b2ca24683ba9e808e34"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a> () const </td></tr>
+<tr class="memdesc:a81dde713bcfb2b2ca24683ba9e808e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the postfix label of end value.  More...<br /></td></tr>
+<tr class="separator:a81dde713bcfb2b2ca24683ba9e808e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f517d0071ca0f953c478f8272bf41b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a> () const </td></tr>
+<tr class="memdesc:a41f517d0071ca0f953c478f8272bf41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the central label for this filter.  More...<br /></td></tr>
+<tr class="separator:a41f517d0071ca0f953c478f8272bf41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf545096dacbea4303361527450321fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unity.scopes.Variant.md">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf545096dacbea4303361527450321fa">default_start_value</a> () const </td></tr>
+<tr class="memdesc:adf545096dacbea4303361527450321fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default start value if set (int, double or null).  More...<br /></td></tr>
+<tr class="separator:adf545096dacbea4303361527450321fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf471258f02a8af0f7bfdb186ed61b0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unity.scopes.Variant.md">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a> () const </td></tr>
+<tr class="memdesc:aaf471258f02a8af0f7bfdb186ed61b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default end value if set (int, double or null).  More...<br /></td></tr>
+<tr class="separator:aaf471258f02a8af0f7bfdb186ed61b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f2c9ff7ed484f49d26f601f30e8616"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64f2c9ff7ed484f49d26f601f30e8616">has_start_value</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;filter_state) const </td></tr>
+<tr class="memdesc:a64f2c9ff7ed484f49d26f601f30e8616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if filter state holds a start value for this filter instance.  More...<br /></td></tr>
+<tr class="separator:a64f2c9ff7ed484f49d26f601f30e8616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae459a665a5dae27445547b1c0be8c7c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae459a665a5dae27445547b1c0be8c7c3">has_end_value</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;filter_state) const </td></tr>
+<tr class="memdesc:ae459a665a5dae27445547b1c0be8c7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if filter state holds an end value for this filter instance.  More...<br /></td></tr>
+<tr class="separator:ae459a665a5dae27445547b1c0be8c7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd86208a5f8fe8a81877bd0bf4588758"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;filter_state) const </td></tr>
+<tr class="memdesc:afd86208a5f8fe8a81877bd0bf4588758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the start value for this filter instance.  More...<br /></td></tr>
+<tr class="separator:afd86208a5f8fe8a81877bd0bf4588758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bee0ddf65a375a4a5e19b4313de940"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;filter_state) const </td></tr>
+<tr class="memdesc:af5bee0ddf65a375a4a5e19b4313de940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get end value for this filter instance.  More...<br /></td></tr>
+<tr class="separator:af5bee0ddf65a375a4a5e19b4313de940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa97b63d86a89e7144a89e0996d1304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa97b63d86a89e7144a89e0996d1304">update_state</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> &amp;filter_state, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a>) const </td></tr>
+<tr class="memdesc:a5fa97b63d86a89e7144a89e0996d1304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store start and end value for this filter in the filter state.  More...<br /></td></tr>
+<tr class="separator:a5fa97b63d86a89e7144a89e0996d1304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_filter_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/eb588139-d958-496e-a1fc-cd6c9a9bdbfc-../unity.scopes.RangeInputFilter/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="memitem:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab4ab1b600ce3967dc50255e736c6d02e">set_display_hints</a> (int hints)</td></tr>
+<tr class="memdesc:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets display hints for the Shell UI.  More...<br /></td></tr>
+<tr class="separator:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f20819591155edaab29d535c5c4c261 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#a8f20819591155edaab29d535c5c4c261">display_hints</a> () const </td></tr>
+<tr class="memdesc:a8f20819591155edaab29d535c5c4c261 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get display hints of this filter.  More...<br /></td></tr>
+<tr class="separator:a8f20819591155edaab29d535c5c4c261 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2d96647b23af77b1ff1cffc80f3868 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a> () const </td></tr>
+<tr class="memdesc:a1f2d96647b23af77b1ff1cffc80f3868 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identifier of this filter.  More...<br /></td></tr>
+<tr class="separator:a1f2d96647b23af77b1ff1cffc80f3868 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc7344c951961331dcbe67149d56c78 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#aadc7344c951961331dcbe67149d56c78">filter_type</a> () const </td></tr>
+<tr class="memdesc:aadc7344c951961331dcbe67149d56c78 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type name of this filter.  More...<br /></td></tr>
+<tr class="separator:aadc7344c951961331dcbe67149d56c78 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8ceae8141811833af087ba2ebe086c inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#aec8ceae8141811833af087ba2ebe086c">set_title</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a3f0c324b3aac39bb8967fc900f3a909e">title</a>)</td></tr>
+<tr class="memdesc:aec8ceae8141811833af087ba2ebe086c inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an optional title of this filter.  More...<br /></td></tr>
+<tr class="separator:aec8ceae8141811833af087ba2ebe086c inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0c324b3aac39bb8967fc900f3a909e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#a3f0c324b3aac39bb8967fc900f3a909e">title</a> () const </td></tr>
+<tr class="memdesc:a3f0c324b3aac39bb8967fc900f3a909e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the optional title of this filter.  More...<br /></td></tr>
+<tr class="separator:a3f0c324b3aac39bb8967fc900f3a909e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff4685371fe67e6f87f58e31f69a037 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">FilterGroup::SCPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#afff4685371fe67e6f87f58e31f69a037">filter_group</a> () const </td></tr>
+<tr class="memdesc:afff4685371fe67e6f87f58e31f69a037 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filter group this filter belongs to.  More...<br /></td></tr>
+<tr class="separator:afff4685371fe67e6f87f58e31f69a037 inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0717644ec86abcdc9dabf30302fead5d"><td class="memItemLeft" align="right" valign="top">static RangeInputFilter::SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0717644ec86abcdc9dabf30302fead5d">create</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, std::string const &amp;<a class="el" href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &amp;<a class="el" href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &amp;<a class="el" href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &amp;<a class="el" href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &amp;<a class="el" href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>)</td></tr>
+<tr class="memdesc:a0717644ec86abcdc9dabf30302fead5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RangeInputFilter.  More...<br /></td></tr>
+<tr class="separator:a0717644ec86abcdc9dabf30302fead5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af011c6e541e7a3776cccacf88fdba2b5"><td class="memItemLeft" align="right" valign="top">static RangeInputFilter::SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af011c6e541e7a3776cccacf88fdba2b5">create</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#adf545096dacbea4303361527450321fa">default_start_value</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a>, std::string const &amp;<a class="el" href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &amp;<a class="el" href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &amp;<a class="el" href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &amp;<a class="el" href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &amp;<a class="el" href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>)</td></tr>
+<tr class="memdesc:af011c6e541e7a3776cccacf88fdba2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RangeInputFilter with specific default values for start and end.  More...<br /></td></tr>
+<tr class="separator:af011c6e541e7a3776cccacf88fdba2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba826b77159d4d51ec804c2132ff0f62"><td class="memItemLeft" align="right" valign="top">static RangeInputFilter::SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba826b77159d4d51ec804c2132ff0f62">create</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, std::string const &amp;<a class="el" href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &amp;<a class="el" href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &amp;<a class="el" href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &amp;<a class="el" href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &amp;<a class="el" href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>, FilterGroup::SCPtr const &amp;group)</td></tr>
+<tr class="memdesc:aba826b77159d4d51ec804c2132ff0f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RangeInputFilter inside a FilterGroup.  More...<br /></td></tr>
+<tr class="separator:aba826b77159d4d51ec804c2132ff0f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac782e01462c0f1868fca744119da91c6"><td class="memItemLeft" align="right" valign="top">static RangeInputFilter::SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac782e01462c0f1868fca744119da91c6">create</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#adf545096dacbea4303361527450321fa">default_start_value</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#aaf471258f02a8af0f7bfdb186ed61b0e">default_end_value</a>, std::string const &amp;<a class="el" href="#a1a4cf761c6bfa2e07eb24b6f584ec05b">start_prefix_label</a>, std::string const &amp;<a class="el" href="#a9e2a6ec4e9c06234ee4759dce2644008">start_postfix_label</a>, std::string const &amp;<a class="el" href="#a41f517d0071ca0f953c478f8272bf41b">central_label</a>, std::string const &amp;<a class="el" href="#a8acb48c94b3e9b6ca228a0e7ebb26ae5">end_prefix_label</a>, std::string const &amp;<a class="el" href="#a81dde713bcfb2b2ca24683ba9e808e34">end_postfix_label</a>, FilterGroup::SCPtr const &amp;group)</td></tr>
+<tr class="memdesc:ac782e01462c0f1868fca744119da91c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a RangeInputFilter with specific default values for start and end, inside a FilterGroup.  More...<br /></td></tr>
+<tr class="separator:ac782e01462c0f1868fca744119da91c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb0b4523641ea4dec9b3c619f5b9c21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cb0b4523641ea4dec9b3c619f5b9c21">update_state</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> &amp;filter_state, std::string const &amp;filter_id, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a>)</td></tr>
+<tr class="memdesc:a7cb0b4523641ea4dec9b3c619f5b9c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store start and end value in the filter state, without having an instance of RangeInputFilter.  More...<br /></td></tr>
+<tr class="separator:a7cb0b4523641ea4dec9b3c619f5b9c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_filter_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3ee4eb9b-b186-4bc5-a351-1e902c970a6c-../unity.scopes.RangeInputFilter/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="memitem:ab9e833d5e4029fed745d15ba63715159 inherit pub_types_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159">DisplayHints</a> { <a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f">Default</a> = 0, 
+<a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56">Primary</a> = 1
+}</td></tr>
+<tr class="memdesc:ab9e833d5e4029fed745d15ba63715159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display hints for the Shell UI.  <a href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159">More...</a><br /></td></tr>
+<tr class="separator:ab9e833d5e4029fed745d15ba63715159 inherit pub_types_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>A range filter allows a start and end value to be entered by the user. </p>
+<p>A <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> is composed of two input boxes that accept numeric values (both of them optional). The filter can have prefix and/or postfix labels for the start and end value, respectively, plus a single label that is displayed between the two input boxes. The filter can provide defaults for that start and end value, which are used by the UI if the user does not enter explicit values. </p>
+<h2 class="groupheader">Member Function Documentation</h2>
+<table class="memname">
+<tr>
+<td class="memname">std::string unity::scopes::RangeInputFilter::central_label </td>
 <td>(</td>
-<td>std::string const &amp; </td>
-<td><em>id</em>,</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
 </tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_prefix_label</em>,</td>
+</table>
+<p>Get the central label for this filter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The central label. </dd></dl>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create </td>
+<td>(</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>id</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_prefix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>central_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_postfix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>central_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_postfix_label</em> </td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_prefix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_postfix_label</em>&#160;</td>
+</tr>
+<tr>
 <td></td>
 <td>)</td>
-<td></td>
-<td></td>
+<td></td><td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">static</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Creates a <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-Parameters  
-|                       |                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-| id                    | A unique identifier for the filter that can be used to later identify it among several filters. |
-| start\_prefix\_label  | A display label for the input box for the start value, displayed to the left (can be empty).    |
-| start\_postfix\_label | A display label for the input box for the start value, displayed to the right (can be empty).   |
-| central\_label        | A display label that is displayed between the two input boxes (can be empty).                   |
-| end\_prefix\_label    | A display label for the input box for the end value, displayed to the left (can be empty).      |
-| end\_postfix\_label   | A display label for the input box for the end value, displayed to the right (can be empty).     |
-
-<!-- -->
-
-Returns  
-Instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-<span id="af011c6e541e7a3776cccacf88fdba2b5" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create</td>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+</tr>
+</table>
+<p>Creates a <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">id</td><td>A unique identifier for the filter that can be used to later identify it among several filters. </td></tr>
+<tr><td class="paramname">start_prefix_label</td><td>A display label for the input box for the start value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">start_postfix_label</td><td>A display label for the input box for the start value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">central_label</td><td>A display label that is displayed between the two input boxes (can be empty). </td></tr>
+<tr><td class="paramname">end_prefix_label</td><td>A display label for the input box for the end value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">end_postfix_label</td><td>A display label for the input box for the end value, displayed to the right (can be empty). </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </dd></dl>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create </td>
 <td>(</td>
-<td>std::string const &amp; </td>
-<td><em>id</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>id</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>default_start_value</em>,</td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>default_start_value</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>default_end_value</em>,</td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>default_end_value</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_prefix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_postfix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>central_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>central_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_prefix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_postfix_label</em> </td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_postfix_label</em>&#160;</td>
 </tr>
-<tr class="odd">
+<tr>
 <td></td>
 <td>)</td>
-<td></td>
-<td></td>
+<td></td><td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">static</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Creates a <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> with specific default values for start and end.
-
-Parameters  
-|                       |                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-| id                    | A unique identifier for the filter that can be used to later identify it among several filters. |
-| default\_start\_value | A default start value (double, int, or null).                                                   |
-| default\_end\_value   | A default end value (double, int, or null).                                                     |
-| start\_prefix\_label  | A display label for the input box for the start value, displayed to the left (can be empty).    |
-| start\_postfix\_label | A display label for the input box for the start value, displayed to the right (can be empty).   |
-| central\_label        | A display label displayed between the two input boxes (can be empty).                           |
-| end\_prefix\_label    | A display label for the input box for the end value, displayed to the left (can be empty).      |
-| end\_postfix\_label   | A display label for the input box for the end value, displayed to the right (can be empty).     |
-
-<!-- -->
-
-Returns  
-Instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-<span id="aba826b77159d4d51ec804c2132ff0f62" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create</td>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+</tr>
+</table>
+<p>Creates a <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> with specific default values for start and end. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">id</td><td>A unique identifier for the filter that can be used to later identify it among several filters. </td></tr>
+<tr><td class="paramname">default_start_value</td><td>A default start value (double, int, or null). </td></tr>
+<tr><td class="paramname">default_end_value</td><td>A default end value (double, int, or null). </td></tr>
+<tr><td class="paramname">start_prefix_label</td><td>A display label for the input box for the start value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">start_postfix_label</td><td>A display label for the input box for the start value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">central_label</td><td>A display label displayed between the two input boxes (can be empty). </td></tr>
+<tr><td class="paramname">end_prefix_label</td><td>A display label for the input box for the end value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">end_postfix_label</td><td>A display label for the input box for the end value, displayed to the right (can be empty). </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </dd></dl>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create </td>
 <td>(</td>
-<td>std::string const &amp; </td>
-<td><em>id</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>id</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_prefix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_postfix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>central_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>central_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_prefix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_postfix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>FilterGroup::SCPtr const &amp; </td>
-<td><em>group</em> </td>
+<td class="paramtype">FilterGroup::SCPtr const &amp;&#160;</td>
+<td class="paramname"><em>group</em>&#160;</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td>)</td>
-<td></td>
-<td></td>
+<td></td><td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">static</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Creates a <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> inside a <a href="unity.scopes.FilterGroup.md" title="Groups several filters into an expandable widget in the UI. ">FilterGroup</a>.
-
-Parameters  
-|                       |                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-| id                    | A unique identifier for the filter that can be used to later identify it among several filters. |
-| start\_prefix\_label  | A display label for the input box for the start value, displayed to the left (can be empty).    |
-| start\_postfix\_label | A display label for the input box for the start value, displayed to the right (can be empty).   |
-| central\_label        | A display label displayed between the two input boxes (can be empty).                           |
-| end\_prefix\_label    | A display label for the input box for the end value, displayed to the left (can be empty).      |
-| end\_postfix\_label   | A display label for the input box for the end value, displayed to the right (can be empty).     |
-| group                 | A filter group this filter should be added to.                                                  |
-
-<!-- -->
-
-Returns  
-Instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-<span id="ac782e01462c0f1868fca744119da91c6" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create</td>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+</tr>
+</table>
+<p>Creates a <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> inside a <a class="el" href="unity.scopes.FilterGroup.md" title="Groups several filters into an expandable widget in the UI. ">FilterGroup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">id</td><td>A unique identifier for the filter that can be used to later identify it among several filters. </td></tr>
+<tr><td class="paramname">start_prefix_label</td><td>A display label for the input box for the start value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">start_postfix_label</td><td>A display label for the input box for the start value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">central_label</td><td>A display label displayed between the two input boxes (can be empty). </td></tr>
+<tr><td class="paramname">end_prefix_label</td><td>A display label for the input box for the end value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">end_postfix_label</td><td>A display label for the input box for the end value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">group</td><td>A filter group this filter should be added to. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </dd></dl>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">RangeInputFilter::SPtr unity::scopes::RangeInputFilter::create </td>
 <td>(</td>
-<td>std::string const &amp; </td>
-<td><em>id</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>id</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>default_start_value</em>,</td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>default_start_value</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>default_end_value</em>,</td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>default_end_value</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_prefix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>start_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>start_postfix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>central_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>central_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_prefix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_prefix_label</em>, </td>
 </tr>
-<tr class="even">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>end_postfix_label</em>,</td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>end_postfix_label</em>, </td>
 </tr>
-<tr class="odd">
+<tr>
+<td class="paramkey"></td>
 <td></td>
-<td></td>
-<td>FilterGroup::SCPtr const &amp; </td>
-<td><em>group</em> </td>
+<td class="paramtype">FilterGroup::SCPtr const &amp;&#160;</td>
+<td class="paramname"><em>group</em>&#160;</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td>)</td>
-<td></td>
-<td></td>
+<td></td><td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">static</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Creates a <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> with specific default values for start and end, inside a <a href="unity.scopes.FilterGroup.md" title="Groups several filters into an expandable widget in the UI. ">FilterGroup</a>.
-
-Parameters  
-|                       |                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-| id                    | A unique identifier for the filter that can be used to later identify it among several filters. |
-| default\_start\_value | The default start value (double, int, or null).                                                 |
-| default\_end\_value   | The default end value (double, int, or null).                                                   |
-| start\_prefix\_label  | A display label for the input box for the start value, displayed to the left (can be empty).    |
-| start\_postfix\_label | A display label for the input box for the start value, displayed to the right (can be empty).   |
-| central\_label        | A display label displayed between the two input boxes (can be empty).                           |
-| end\_prefix\_label    | A display label for the input box for the end value, displayed to the left (can be empty).      |
-| end\_postfix\_label   | A display label for the input box for the end value, displayed to the right (can be empty).     |
-| group                 | A filter group this filter should be added to.                                                  |
-
-<!-- -->
-
-Returns  
-Instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-<span id="aaf471258f02a8af0f7bfdb186ed61b0e" class="anchor"></span>
-|                                                                                                                          |     |     |     |       |
-|--------------------------------------------------------------------------------------------------------------------------|-----|-----|-----|-------|
-| <a href="unity.scopes.Variant.md">Variant</a> unity::scopes::RangeInputFilter::default\_end\_value | (   |     | )   | const |
-
-Get default end value if set (int, double or null).
-
-The default value should be used unless a value is present in the <a href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> - use <a href="#ae459a665a5dae27445547b1c0be8c7c3" title="Check if filter state holds an end value for this filter instance. ">unity::scopes::RangeInputFilter::has_end_value()</a> and <a href="#af5bee0ddf65a375a4a5e19b4313de940" title="Get end value for this filter instance. ">unity::scopes::RangeInputFilter::end_value()</a> before resorting to the default value.
-
-<span id="adf545096dacbea4303361527450321fa" class="anchor"></span>
-|                                                                                                                            |     |     |     |       |
-|----------------------------------------------------------------------------------------------------------------------------|-----|-----|-----|-------|
-| <a href="unity.scopes.Variant.md">Variant</a> unity::scopes::RangeInputFilter::default\_start\_value | (   |     | )   | const |
-
-Get the default start value if set (int, double or null).
-
-The default value should be used unless a value is present in the <a href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> - use <a href="#a64f2c9ff7ed484f49d26f601f30e8616" title="Check if filter state holds a start value for this filter instance. ">unity::scopes::RangeInputFilter::has_start_value()</a> and <a href="#afd86208a5f8fe8a81877bd0bf4588758" title="Get the start value for this filter instance. ">unity::scopes::RangeInputFilter::start_value()</a> before resorting to the default value.
-
-<span id="a81dde713bcfb2b2ca24683ba9e808e34" class="anchor"></span>
-|                                                                  |     |     |     |       |
-|------------------------------------------------------------------|-----|-----|-----|-------|
-| std::string unity::scopes::RangeInputFilter::end\_postfix\_label | (   |     | )   | const |
-
-Get the postfix label of end value.
-
-Returns  
-The postfix label of end value.
-
-<span id="a8acb48c94b3e9b6ca228a0e7ebb26ae5" class="anchor"></span>
-|                                                                 |     |     |     |       |
-|-----------------------------------------------------------------|-----|-----|-----|-------|
-| std::string unity::scopes::RangeInputFilter::end\_prefix\_label | (   |     | )   | const |
-
-Get the prefix label of end value.
-
-Returns  
-The prefix label of end value.
-
-<span id="af5bee0ddf65a375a4a5e19b4313de940" class="anchor"></span>
-|                                                    |     |                                                                                      |                 |     |       |
-|----------------------------------------------------|-----|--------------------------------------------------------------------------------------|-----------------|-----|-------|
-| double unity::scopes::RangeInputFilter::end\_value | (   | <a href="unity.scopes.FilterState.md">FilterState</a> const &  | *filter\_state* | )   | const |
-
-Get end value for this filter instance.
-
-Returns  
-The end value or the default end value if not null.
-
-<!-- -->
-
-Exceptions  
-|                                                                                                                                                                                             |                                                                |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <a href="unity.scopes.NotFoundException.md" title="Exception to indicate that an object wasn&#39;t found by a lookup function. ">unity::scopes::NotFoundException</a> | if the end value is not set and the default end value is null. |
-
-<span id="ae459a665a5dae27445547b1c0be8c7c3" class="anchor"></span>
-|                                                       |     |                                                                                      |                 |     |       |
-|-------------------------------------------------------|-----|--------------------------------------------------------------------------------------|-----------------|-----|-------|
-| bool unity::scopes::RangeInputFilter::has\_end\_value | (   | <a href="unity.scopes.FilterState.md">FilterState</a> const &  | *filter\_state* | )   | const |
-
-Check if filter state holds an end value for this filter instance.
-
-Parameters  
-|               |                       |
-|---------------|-----------------------|
-| filter\_state | The state of filters. |
-
-<!-- -->
-
-Returns  
-`true` if filter\_state has an end value for this filter.
-
-<span id="a64f2c9ff7ed484f49d26f601f30e8616" class="anchor"></span>
-|                                                         |     |                                                                                      |                 |     |       |
-|---------------------------------------------------------|-----|--------------------------------------------------------------------------------------|-----------------|-----|-------|
-| bool unity::scopes::RangeInputFilter::has\_start\_value | (   | <a href="unity.scopes.FilterState.md">FilterState</a> const &  | *filter\_state* | )   | const |
-
-Check if filter state holds a start value for this filter instance.
-
-Parameters  
-|               |                       |
-|---------------|-----------------------|
-| filter\_state | The state of filters. |
-
-<!-- -->
-
-Returns  
-`true` if filter\_state has a start value for this filter.
-
-<span id="a9e2a6ec4e9c06234ee4759dce2644008" class="anchor"></span>
-|                                                                    |     |     |     |       |
-|--------------------------------------------------------------------|-----|-----|-----|-------|
-| std::string unity::scopes::RangeInputFilter::start\_postfix\_label | (   |     | )   | const |
-
-Get the postfix label of start value.
-
-Returns  
-The postfix label of start value.
-
-<span id="a1a4cf761c6bfa2e07eb24b6f584ec05b" class="anchor"></span>
-|                                                                   |     |     |     |       |
-|-------------------------------------------------------------------|-----|-----|-----|-------|
-| std::string unity::scopes::RangeInputFilter::start\_prefix\_label | (   |     | )   | const |
-
-Get the prefix label of start value.
-
-Returns  
-The prefix label of start value.
-
-<span id="afd86208a5f8fe8a81877bd0bf4588758" class="anchor"></span>
-|                                                      |     |                                                                                      |                 |     |       |
-|------------------------------------------------------|-----|--------------------------------------------------------------------------------------|-----------------|-----|-------|
-| double unity::scopes::RangeInputFilter::start\_value | (   | <a href="unity.scopes.FilterState.md">FilterState</a> const &  | *filter\_state* | )   | const |
-
-Get the start value for this filter instance.
-
-Returns  
-The start value or the default start value if not null.
-
-<!-- -->
-
-Exceptions  
-|                                                                                                                                                                                             |                                                                    |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <a href="unity.scopes.NotFoundException.md" title="Exception to indicate that an object wasn&#39;t found by a lookup function. ">unity::scopes::NotFoundException</a> | if the start value is not set and the default start value is null. |
-
-<span id="a5fa97b63d86a89e7144a89e0996d1304" class="anchor"></span>
-|                                                     |     |                                                                                |                  |
-|-----------------------------------------------------|-----|--------------------------------------------------------------------------------|------------------|
-| void unity::scopes::RangeInputFilter::update\_state | (   | <a href="unity.scopes.FilterState.md">FilterState</a> &  | *filter\_state*, |
-|                                                     |     | <a href="unity.scopes.Variant.md">Variant</a> const &    | *start\_value*,  |
-|                                                     |     | <a href="unity.scopes.Variant.md">Variant</a> const &    | *end\_value*     |
-|                                                     | )   |                                                                                | const            |
-
-Store start and end value for this filter in the filter state.
-
-Updates filter\_state with start and end values for this filter instance. Allowed data types for start\_value and end\_value are Variant::Type::Null, Variant::Type::Double and Variant::Type::Int. Integer values are converted to double when returned via <a href="#afd86208a5f8fe8a81877bd0bf4588758" title="Get the start value for this filter instance. ">unity::scopes::RangeInputFilter::start_value()</a> and <a href="#af5bee0ddf65a375a4a5e19b4313de940" title="Get end value for this filter instance. ">unity::scopes::RangeInputFilter::end_value()</a> methods. Pass <a href="../unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c" title="Construct a null variant. ">Variant::null()</a> as start\_value or end\_value if that value is unspecified (hasn't been entered or was erased by the user from the input box).
-
-Parameters  
-|               |                                                                                                                                               |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| filter\_state | <a href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> instance to update |
-| start\_value  | Start value                                                                                                                                   |
-| end\_value    | End value                                                                                                                                     |
-
-<span id="a7cb0b4523641ea4dec9b3c619f5b9c21" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>void unity::scopes::RangeInputFilter::update_state</td>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+</tr>
+</table>
+<p>Creates a <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a> with specific default values for start and end, inside a <a class="el" href="unity.scopes.FilterGroup.md" title="Groups several filters into an expandable widget in the UI. ">FilterGroup</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">id</td><td>A unique identifier for the filter that can be used to later identify it among several filters. </td></tr>
+<tr><td class="paramname">default_start_value</td><td>The default start value (double, int, or null). </td></tr>
+<tr><td class="paramname">default_end_value</td><td>The default end value (double, int, or null). </td></tr>
+<tr><td class="paramname">start_prefix_label</td><td>A display label for the input box for the start value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">start_postfix_label</td><td>A display label for the input box for the start value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">central_label</td><td>A display label displayed between the two input boxes (can be empty). </td></tr>
+<tr><td class="paramname">end_prefix_label</td><td>A display label for the input box for the end value, displayed to the left (can be empty). </td></tr>
+<tr><td class="paramname">end_postfix_label</td><td>A display label for the input box for the end value, displayed to the right (can be empty). </td></tr>
+<tr><td class="paramname">group</td><td>A filter group this filter should be added to. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="unity.scopes.Variant.md">Variant</a> unity::scopes::RangeInputFilter::default_end_value </td>
 <td>(</td>
-<td><a href="unity.scopes.FilterState.md">FilterState</a> &amp; </td>
-<td><em>filter_state</em>,</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
 </tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>std::string const &amp; </td>
-<td><em>filter_id</em>,</td>
+</table>
+<p>Get default end value if set (int, double or null). </p>
+<p>The default value should be used unless a value is present in the <a class="el" href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> - use <a class="el" href="#ae459a665a5dae27445547b1c0be8c7c3" title="Check if filter state holds an end value for this filter instance. ">unity::scopes::RangeInputFilter::has_end_value()</a> and <a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940" title="Get end value for this filter instance. ">unity::scopes::RangeInputFilter::end_value()</a> before resorting to the default value. </p>
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="unity.scopes.Variant.md">Variant</a> unity::scopes::RangeInputFilter::default_start_value </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
 </tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>start_value</em>,</td>
+</table>
+<p>Get the default start value if set (int, double or null). </p>
+<p>The default value should be used unless a value is present in the <a class="el" href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> - use <a class="el" href="#a64f2c9ff7ed484f49d26f601f30e8616" title="Check if filter state holds a start value for this filter instance. ">unity::scopes::RangeInputFilter::has_start_value()</a> and <a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758" title="Get the start value for this filter instance. ">unity::scopes::RangeInputFilter::start_value()</a> before resorting to the default value. </p>
+<table class="memname">
+<tr>
+<td class="memname">std::string unity::scopes::RangeInputFilter::end_postfix_label </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
 </tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td><a href="unity.scopes.Variant.md">Variant</a> const &amp; </td>
-<td><em>end_value</em> </td>
+</table>
+<p>Get the postfix label of end value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The postfix label of end value. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">std::string unity::scopes::RangeInputFilter::end_prefix_label </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
 </tr>
-<tr class="odd">
+</table>
+<p>Get the prefix label of end value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The prefix label of end value. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">double unity::scopes::RangeInputFilter::end_value </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Get end value for this filter instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The end value or the default end value if not null. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="unity.scopes.NotFoundException.md" title="Exception to indicate that an object wasn&#39;t found by a lookup function. ">unity::scopes::NotFoundException</a></td><td>if the end value is not set and the default end value is null. </td></tr>
+</table>
+</dd>
+</dl>
+<table class="memname">
+<tr>
+<td class="memname">bool unity::scopes::RangeInputFilter::has_end_value </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Check if filter state holds an end value for this filter instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">filter_state</td><td>The state of filters. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if filter_state has an end value for this filter. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">bool unity::scopes::RangeInputFilter::has_start_value </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Check if filter state holds a start value for this filter instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">filter_state</td><td>The state of filters. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if filter_state has a start value for this filter. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">std::string unity::scopes::RangeInputFilter::start_postfix_label </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Get the postfix label of start value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The postfix label of start value. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">std::string unity::scopes::RangeInputFilter::start_prefix_label </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Get the prefix label of start value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The prefix label of start value. </dd></dl>
+<table class="memname">
+<tr>
+<td class="memname">double unity::scopes::RangeInputFilter::start_value </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+<p>Get the start value for this filter instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The start value or the default start value if not null. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+<table class="exception">
+<tr><td class="paramname"><a class="el" href="unity.scopes.NotFoundException.md" title="Exception to indicate that an object wasn&#39;t found by a lookup function. ">unity::scopes::NotFoundException</a></td><td>if the start value is not set and the default start value is null. </td></tr>
+</table>
+</dd>
+</dl>
+<table class="memname">
+<tr>
+<td class="memname">void unity::scopes::RangeInputFilter::update_state </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>start_value</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>end_value</em>&#160;</td>
+</tr>
+<tr>
 <td></td>
 <td>)</td>
-<td></td>
-<td></td>
+<td></td><td> const</td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">static</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Store start and end value in the filter state, without having an instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>.
-
-Updates filter\_state with start and end values without an instance of <a href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. This is meant to be used when creating a <a href="unity.scopes.CannedQuery.md" title="Parameters of a search query. ">CannedQuery</a> that references another scope.
-
-Parameters  
-|               |                                                                                                                                               |
-|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| filter\_state | <a href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> instance to update |
-| filter\_id    | Unique identifier of filter                                                                                                                   |
-| start\_value  | Start value                                                                                                                                   |
-| end\_value    | End value                                                                                                                                     |
-
+<p>Store start and end value for this filter in the filter state. </p>
+<p>Updates filter_state with start and end values for this filter instance. Allowed data types for start_value and end_value are Variant::Type::Null, Variant::Type::Double and Variant::Type::Int. Integer values are converted to double when returned via <a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758" title="Get the start value for this filter instance. ">unity::scopes::RangeInputFilter::start_value()</a> and <a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940" title="Get end value for this filter instance. ">unity::scopes::RangeInputFilter::end_value()</a> methods. Pass <a class="el" href="unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c" title="Construct a null variant. ">Variant::null()</a> as start_value or end_value if that value is unspecified (hasn't been entered or was erased by the user from the input box).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">filter_state</td><td><a class="el" href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> instance to update </td></tr>
+<tr><td class="paramname">start_value</td><td>Start value </td></tr>
+<tr><td class="paramname">end_value</td><td>End value </td></tr>
+</table>
+</dd>
+</dl>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">void unity::scopes::RangeInputFilter::update_state </td>
+<td>(</td>
+<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> &amp;&#160;</td>
+<td class="paramname"><em>filter_state</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">std::string const &amp;&#160;</td>
+<td class="paramname"><em>filter_id</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>start_value</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype"><a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;&#160;</td>
+<td class="paramname"><em>end_value</em>&#160;</td>
+</tr>
+<tr>
+<td></td>
+<td>)</td>
+<td></td><td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+</tr>
+</table>
+<p>Store start and end value in the filter state, without having an instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. </p>
+<p>Updates filter_state with start and end values without an instance of <a class="el" href="index.html" title="A range filter allows a start and end value to be entered by the user. ">RangeInputFilter</a>. This is meant to be used when creating a <a class="el" href="unity.scopes.CannedQuery.md" title="Parameters of a search query. ">CannedQuery</a> that references another scope.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">filter_state</td><td><a class="el" href="unity.scopes.FilterState.md" title="Stores the state of multiple filters. ">FilterState</a> instance to update </td></tr>
+<tr><td class="paramname">filter_id</td><td>Unique identifier of filter </td></tr>
+<tr><td class="paramname">start_value</td><td>Start value </td></tr>
+<tr><td class="paramname">end_value</td><td>End value </td></tr>
+</table>
+</dd>
+</dl>

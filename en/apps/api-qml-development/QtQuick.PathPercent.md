@@ -1,101 +1,68 @@
 ---
 Title: QtQuick.PathPercent
 ---
-        
-PathPercent
-===========
+
+# QtQuick.PathPercent
 
 <span class="subtitle"></span>
-Manipulates the way a path is interpreted More...
-
-|                   |                    |
-|-------------------|--------------------|
-| Import Statement: | import QtQuick 2.4 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[value](#value-prop)**** : real
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-[PathPercent](index.html) allows you to manipulate the spacing between items on a [PathView](../QtQuick.PathView.md)'s path. You can use it to bunch together items on part of the path, and spread them out on other parts of the path.
-
-The examples below show the normal distribution of items along a path compared to a distribution which places 50% of the items along the [PathLine](../QtQuick.PathLine.md) section of the path.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><img src="https://developer.ubuntu.com/static/devportal_uploaded/b26871d7-6dd2-41a9-9e3d-65b7b5b2e319-api/apps/qml/sdk-15.04.6/QtQuick.PathPercent/images/declarative-nopercent.png" /></p></td>
-<td><pre class="qml"><code>PathView {
-    // ...
-    Path {
-        startX: 20; startY: 0
-        PathQuad { x: 50; y: 80; controlX: 0; controlY: 80 }
-        PathLine { x: 150; y: 80 }
-        PathQuad { x: 180; y: 0; controlX: 200; controlY: 80 }
-    }
-}</code></pre></td>
-</tr>
-<tr class="even">
-<td><p><img src="https://developer.ubuntu.com/static/devportal_uploaded/e12b0ab7-a344-498b-84a9-bbf6b4e0a91e-api/apps/qml/sdk-15.04.6/QtQuick.PathPercent/images/declarative-percent.png" /></p></td>
-<td><pre class="qml"><code>PathView {
-    // ...
-    Path {
-        startX: 20; startY: 0
-        PathQuad { x: 50; y: 80; controlX: 0; controlY: 80 }
-        PathPercent { value: 0.25 }
-        PathLine { x: 150; y: 80 }
-        PathPercent { value: 0.75 }
-        PathQuad { x: 180; y: 0; controlX: 200; controlY: 80 }
-        PathPercent { value: 1 }
-    }
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Path](../QtQuick.Path.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="value-prop"></span><span class="name">value</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The proportion of items that should be laid out up to this point.
-
-This value should always be higher than the last value specified by a [PathPercent](index.html) at a previous position in the Path.
-
-In the following example we have a Path made up of three PathLines. Normally, the items of the [PathView](../QtQuick.PathView.md) would be laid out equally along this path, with an equal number of items per line segment. [PathPercent](index.html) allows us to specify that the first and third lines should each hold 10% of the laid out items, while the second line should hold the remaining 80%.
-
-``` qml
-PathView {
-    // ...
-    Path {
-        startX: 0; startY: 0
-        PathLine { x:100; y: 0; }
-        PathPercent { value: 0.1 }
-        PathLine { x: 100; y: 100 }
-        PathPercent { value: 0.9 }
-        PathLine { x: 100; y: 0 }
-        PathPercent { value: 1 }
-    }
+<!-- $$$PathPercent-brief -->
+<p>Manipulates the way a path is interpreted More...</p>
+<!-- @@@PathPercent -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#value-prop">value</a></b></b> : real</li>
+</ul>
+<!-- $$$PathPercent-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><a href="index.html">PathPercent</a> allows you to manipulate the spacing between items on a <a href="QtQuick.PathView.md">PathView</a>'s path. You can use it to bunch together items on part of the path, and spread them out on other parts of the path.</p>
+<p>The examples below show the normal distribution of items along a path compared to a distribution which places 50% of the items along the <a href="QtQuick.PathLine.md">PathLine</a> section of the path.</p>
+<table class="generic">
+<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/b26871d7-6dd2-41a9-9e3d-65b7b5b2e319-../QtQuick.PathPercent/images/declarative-nopercent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<span class="comment">// ...</span>
+<span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<span class="name">startX</span>: <span class="number">20</span>; <span class="name">startY</span>: <span class="number">0</span>
+<span class="type"><a href="QtQuick.PathQuad.md">PathQuad</a></span> { <span class="name">x</span>: <span class="number">50</span>; <span class="name">y</span>: <span class="number">80</span>; <span class="name">controlX</span>: <span class="number">0</span>; <span class="name">controlY</span>: <span class="number">80</span> }
+<span class="type"><a href="QtQuick.PathLine.md">PathLine</a></span> { <span class="name">x</span>: <span class="number">150</span>; <span class="name">y</span>: <span class="number">80</span> }
+<span class="type"><a href="QtQuick.PathQuad.md">PathQuad</a></span> { <span class="name">x</span>: <span class="number">180</span>; <span class="name">y</span>: <span class="number">0</span>; <span class="name">controlX</span>: <span class="number">200</span>; <span class="name">controlY</span>: <span class="number">80</span> }
 }
-```
-
+}</pre>
+</td></tr>
+<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/e12b0ab7-a344-498b-84a9-bbf6b4e0a91e-../QtQuick.PathPercent/images/declarative-percent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<span class="comment">// ...</span>
+<span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<span class="name">startX</span>: <span class="number">20</span>; <span class="name">startY</span>: <span class="number">0</span>
+<span class="type"><a href="QtQuick.PathQuad.md">PathQuad</a></span> { <span class="name">x</span>: <span class="number">50</span>; <span class="name">y</span>: <span class="number">80</span>; <span class="name">controlX</span>: <span class="number">0</span>; <span class="name">controlY</span>: <span class="number">80</span> }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">0.25</span> }
+<span class="type"><a href="QtQuick.PathLine.md">PathLine</a></span> { <span class="name">x</span>: <span class="number">150</span>; <span class="name">y</span>: <span class="number">80</span> }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">0.75</span> }
+<span class="type"><a href="QtQuick.PathQuad.md">PathQuad</a></span> { <span class="name">x</span>: <span class="number">180</span>; <span class="name">y</span>: <span class="number">0</span>; <span class="name">controlX</span>: <span class="number">200</span>; <span class="name">controlY</span>: <span class="number">80</span> }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">1</span> }
+}
+}</pre>
+</td></tr>
+</table>
+<p><b>See also </b><a href="QtQuick.Path.md">Path</a>.</p>
+<!-- @@@PathPercent -->
+<h2>Property Documentation</h2>
+<!-- $$$value -->
+<table class="qmlname"><tr valign="top" id="value-prop"><td class="tblQmlPropNode"><p><span class="name">value</span> : <span class="type">real</span></p></td></tr></table><p>The proportion of items that should be laid out up to this point.</p>
+<p>This value should always be higher than the last value specified by a <a href="index.html">PathPercent</a> at a previous position in the Path.</p>
+<p>In the following example we have a Path made up of three PathLines. Normally, the items of the <a href="QtQuick.PathView.md">PathView</a> would be laid out equally along this path, with an equal number of items per line segment. <a href="index.html">PathPercent</a> allows us to specify that the first and third lines should each hold 10% of the laid out items, while the second line should hold the remaining 80%.</p>
+<pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<span class="comment">// ...</span>
+<span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<span class="name">startX</span>: <span class="number">0</span>; <span class="name">startY</span>: <span class="number">0</span>
+<span class="type"><a href="QtQuick.PathLine.md">PathLine</a></span> { <span class="name">x</span>:<span class="number">100</span>; <span class="name">y</span>: <span class="number">0</span>; }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">0.1</span> }
+<span class="type"><a href="QtQuick.PathLine.md">PathLine</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span> }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">0.9</span> }
+<span class="type"><a href="QtQuick.PathLine.md">PathLine</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">0</span> }
+<span class="type"><a href="index.html">PathPercent</a></span> { <span class="name">value</span>: <span class="number">1</span> }
+}
+}</pre>
+<!-- @@@value -->
+<br/>

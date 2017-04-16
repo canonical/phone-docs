@@ -1,75 +1,43 @@
 ---
 Title: Ubuntu.Components.ListItems.MultiValue
 ---
-        
-MultiValue
-==========
+
+# Ubuntu.Components.ListItems.MultiValue
 
 <span class="subtitle"></span>
-List item displaying multiple values. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components.ListItems 1.3</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="Ubuntu.Components.ListItems.Base.md">Base</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[values](#values-prop)**** : variant
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-**Note:** **The component is deprecated. Use [ListItem](../Ubuntu.Components.ListItem.md) component instead.**
-
-Examples:
-
-``` qml
-import Ubuntu.Components.ListItems 1.3 as ListItem
-Column {
-    ListItem.MultiValue {
-        text: "Label"
-        values: ["Value 1", "Value 2", "Value 3", "Value 4"]
-        onClicked: selected = !selected
-    }
-    ListItem.MultiValue {
-        text: "Label"
-        iconName: "compose"
-        values: ["Value 1", "Value 2", "Value 3", "Value 4"]
-        progression: true
-        onClicked: print("clicked")
-    }
+<!-- $$$MultiValue-brief -->
+<p>List item displaying multiple values. More...</p>
+<!-- @@@MultiValue -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.ListItems 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.ListItems.Base.md">Base</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#values-prop">values</a></b></b> : variant</li>
+</ul>
+<!-- $$$MultiValue-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><b>Note: </b><b>The component is deprecated. Use <a href="Ubuntu.Components.ListItem.md">ListItem</a> component instead.</b></p><p>Examples:</p>
+<pre class="qml">import Ubuntu.Components.ListItems 1.3 as ListItem
+<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.MultiValue {
+<span class="name">text</span>: <span class="string">&quot;Label&quot;</span>
+<span class="name">values</span>: [<span class="string">&quot;Value 1&quot;</span>, <span class="string">&quot;Value 2&quot;</span>, <span class="string">&quot;Value 3&quot;</span>, <span class="string">&quot;Value 4&quot;</span>]
+<span class="name">onClicked</span>: <span class="name">selected</span> <span class="operator">=</span> !<span class="name">selected</span>
 }
-```
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="values-prop"></span><span class="name">values</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-variant.html">variant</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-The list of values that will be shown under the label text
-
+<span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.MultiValue {
+<span class="name">text</span>: <span class="string">&quot;Label&quot;</span>
+<span class="name">iconName</span>: <span class="string">&quot;compose&quot;</span>
+<span class="name">values</span>: [<span class="string">&quot;Value 1&quot;</span>, <span class="string">&quot;Value 2&quot;</span>, <span class="string">&quot;Value 3&quot;</span>, <span class="string">&quot;Value 4&quot;</span>]
+<span class="name">progression</span>: <span class="number">true</span>
+<span class="name">onClicked</span>: <span class="name">print</span>(<span class="string">&quot;clicked&quot;</span>)
+}
+}</pre>
+<!-- @@@MultiValue -->
+<h2>Property Documentation</h2>
+<!-- $$$values -->
+<table class="qmlname"><tr valign="top" id="values-prop"><td class="tblQmlPropNode"><p><span class="name">values</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-variant.html">variant</a></span></p></td></tr></table><p>The list of values that will be shown under the label text</p>
+<!-- @@@values -->
+<br/>

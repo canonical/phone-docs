@@ -1,29 +1,29 @@
 ---
 Title: QtQml.qtqml-referenceexamples-signal-example
 ---
-        
-Extending QML - Signal Support Example
-======================================
+
+# QtQml.qtqml-referenceexamples-signal-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-This example builds on:
-
--   [Extending QML - Attached Properties Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-attached/)
--   [Extending QML - Grouped Properties Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-grouped/)
--   [Extending QML - Default Property Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-default/)
--   [Extending QML - Inheritance and Coercion Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-coercion/)
--   [Extending QML - Object and List Property Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-properties/)
--   [Extending QML - Adding Types Example](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-adding/)
-
-Files:
-
--   referenceexamples/signal/birthdayparty.cpp
--   referenceexamples/signal/birthdayparty.h
--   referenceexamples/signal/example.qml
--   referenceexamples/signal/person.cpp
--   referenceexamples/signal/person.h
--   referenceexamples/signal/main.cpp
--   referenceexamples/signal/signal.pro
--   referenceexamples/signal/signal.qrc
-
+<!-- $$$referenceexamples/signal-description -->
+<p>This example builds on:</p>
+<ul>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-attached/">Extending QML - Attached Properties Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-grouped/">Extending QML - Grouped Properties Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-default/">Extending QML - Default Property Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-coercion/">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-properties/">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+</ul>
+<p>Files:</p>
+<ul>
+<li>referenceexamples/signal/birthdayparty.cpp</li>
+<li>referenceexamples/signal/birthdayparty.h</li>
+<li>referenceexamples/signal/example.qml</li>
+<li>referenceexamples/signal/person.cpp</li>
+<li>referenceexamples/signal/person.h</li>
+<li>referenceexamples/signal/main.cpp</li>
+<li>referenceexamples/signal/signal.pro</li>
+<li>referenceexamples/signal/signal.qrc</li>
+</ul>
+<!-- @@@referenceexamples/signal -->

@@ -3809,7 +3809,6 @@ navigation:
           - title: index
             location: apps/api-qml-development/index.md
 
-
   - title: Devices
     location: devices/index.md
 
@@ -3900,7 +3899,6 @@ navigation:
             location: platform/sdk/tutorials-running-apps-from-the-sdk.md
           - title: Tutorials - using the Ubuntu emulator
             location: platform/sdk/tutorials-using-the-ubuntu-emulator.md
-
 
   - title: Scopes
     location: scopes/index.md
@@ -4572,7 +4570,6 @@ navigation:
             location: scopes/api-js-development/ScopeJS.SearchReply.md
           - title: ScopeJS
             location: scopes/api-js-development/ScopeJS.md
-
 
   - title: Web apps
     location: web/index.md

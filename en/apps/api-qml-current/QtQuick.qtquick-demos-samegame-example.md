@@ -1,61 +1,50 @@
 ---
 Title: QtQuick.qtquick-demos-samegame-example
 ---
-        
-Qt Quick Demo - Same Game
-=========================
+
+# QtQuick.qtquick-demos-samegame-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-*Same Game* demonstrates a QML game with custom types and logic written in JavaScript. The game uses various [Qt Quick](../QtQuick.qtquick-index.md) features such as particles, animation, and loading images.
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/848d99a4-d315-4dcf-907e-0264abcf14de-api/apps/qml/sdk-15.04.5/qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-1.png)
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/3e32acac-85a5-4d98-91a5-06ab809d12e2-api/apps/qml/sdk-15.04.5/qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-2.png)
-
-For more details about different parts of the example, see [QML Advanced Tutorial](../QtQuick.qml-advtutorial.md).
-
-<span id="running-the-example"></span>
-Running the Example
--------------------
-
-To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
-
-Files:
-
--   demos/samegame/samegame.qml
--   demos/samegame/content/BBSettings.qml
--   demos/samegame/content/Block.qml
--   demos/samegame/content/BlockEmitter.qml
--   demos/samegame/content/Button.qml
--   demos/samegame/content/GameArea.qml
--   demos/samegame/content/LogoAnimation.qml
--   demos/samegame/content/MenuEmitter.qml
--   demos/samegame/content/PaintEmitter.qml
--   demos/samegame/content/PrimaryPack.qml
--   demos/samegame/content/PuzzleBlock.qml
--   demos/samegame/content/SamegameText.qml
--   demos/samegame/content/Settings.qml
--   demos/samegame/content/SimpleBlock.qml
--   demos/samegame/content/SmokeText.qml
--   demos/samegame/content/samegame.js
--   demos/samegame/content/+blackberry/Settings.qml
--   demos/samegame/content/levels/TemplateBase.qml
--   demos/samegame/content/levels/level0.qml
--   demos/samegame/content/levels/level1.qml
--   demos/samegame/content/levels/level2.qml
--   demos/samegame/content/levels/level3.qml
--   demos/samegame/content/levels/level4.qml
--   demos/samegame/content/levels/level5.qml
--   demos/samegame/content/levels/level6.qml
--   demos/samegame/content/levels/level7.qml
--   demos/samegame/content/levels/level8.qml
--   demos/samegame/content/levels/level9.qml
--   demos/samegame/main.cpp
--   demos/samegame/samegame.pro
--   demos/samegame/samegame.qmlproject
--   demos/samegame/samegame.qrc
--   demos/samegame/content/qmldir
-
-**See also** QML Applications.
-
+<!-- $$$demos/samegame-description -->
+<p><i>Same Game</i> demonstrates a QML game with custom types and logic written in JavaScript. The game uses various <a href="QtQuick.qtquick-index.md">Qt Quick</a> features such as particles, animation, and loading images.</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/848d99a4-d315-4dcf-907e-0264abcf14de-../qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-1.png" alt="" /></p><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3e32acac-85a5-4d98-91a5-06ab809d12e2-../qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-2.png" alt="" /></p><p>For more details about different parts of the example, see <a href="QtQuick.qml-advtutorial.md">QML Advanced Tutorial</a>.</p>
+<h2 id="running-the-example">Running the Example</h2>
+<p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
+<p>Files:</p>
+<ul>
+<li>demos/samegame/samegame.qml</li>
+<li>demos/samegame/content/BBSettings.qml</li>
+<li>demos/samegame/content/Block.qml</li>
+<li>demos/samegame/content/BlockEmitter.qml</li>
+<li>demos/samegame/content/Button.qml</li>
+<li>demos/samegame/content/GameArea.qml</li>
+<li>demos/samegame/content/LogoAnimation.qml</li>
+<li>demos/samegame/content/MenuEmitter.qml</li>
+<li>demos/samegame/content/PaintEmitter.qml</li>
+<li>demos/samegame/content/PrimaryPack.qml</li>
+<li>demos/samegame/content/PuzzleBlock.qml</li>
+<li>demos/samegame/content/SamegameText.qml</li>
+<li>demos/samegame/content/Settings.qml</li>
+<li>demos/samegame/content/SimpleBlock.qml</li>
+<li>demos/samegame/content/SmokeText.qml</li>
+<li>demos/samegame/content/samegame.js</li>
+<li>demos/samegame/content/+blackberry/Settings.qml</li>
+<li>demos/samegame/content/levels/TemplateBase.qml</li>
+<li>demos/samegame/content/levels/level0.qml</li>
+<li>demos/samegame/content/levels/level1.qml</li>
+<li>demos/samegame/content/levels/level2.qml</li>
+<li>demos/samegame/content/levels/level3.qml</li>
+<li>demos/samegame/content/levels/level4.qml</li>
+<li>demos/samegame/content/levels/level5.qml</li>
+<li>demos/samegame/content/levels/level6.qml</li>
+<li>demos/samegame/content/levels/level7.qml</li>
+<li>demos/samegame/content/levels/level8.qml</li>
+<li>demos/samegame/content/levels/level9.qml</li>
+<li>demos/samegame/main.cpp</li>
+<li>demos/samegame/samegame.pro</li>
+<li>demos/samegame/samegame.qmlproject</li>
+<li>demos/samegame/samegame.qrc</li>
+<li>demos/samegame/content/qmldir</li>
+</ul>
+<p><b>See also </b>QML Applications.</p>
+<!-- @@@demos/samegame -->

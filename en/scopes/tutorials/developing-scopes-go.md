@@ -7,8 +7,6 @@ title: "Scopes tutorials"
 
 
 
-
-
 # Go scopes development
 
 This document describes how to start developing go scopes from a Vivid system

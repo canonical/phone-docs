@@ -1,101 +1,76 @@
 ---
 Title: QtSensors.qtsensors-shakeit-example
 ---
-        
-Qt Sensors - ShakeIt QML Example
-================================
+
+# QtSensors.qtsensors-shakeit-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-![](https://developer.ubuntu.com/static/devportal_uploaded/7038a205-eb6e-486f-8b79-b459588d89ed-api/apps/qml/sdk-15.04.5/qtsensors-shakeit-example/images/shakeit.png)
-
-<span id="shakeit-in-qml"></span>
-### ShakeIt in QML
-
-Writing a QML application that uses the Shake QML sensorgestures type requires the following steps:
-
-Import the Sensors Declarative module.
-
-``` qml
-import QtSensors 5.0
-```
-
-Add a [SensorGesture](../QtSensors.SensorGesture.md) QML type.
-
-``` qml
-    SensorGesture {
-```
-
-In the [SensorGesture](../QtSensors.SensorGesture.md) type, specify which gesture to be used. Note that this can be a comma separated list. Here we are only interested in one gesture recognizer.
-
-``` qml
-        gestures : ["QtSensors.shake", "QtSensors.whip", "QtSensors.twist", "QtSensors.cover",
-            "QtSensors.hover", "QtSensors.turnover", "QtSensors.pickup", "QtSensors.slam" , "QtSensors.doubletap"]
-```
-
-Use the 'enabled' property to start the sensor gesture.
-
-``` qml
-        enabled: true
-```
-
-Use the onDetected signal to do stuff.
-
-``` qml
-        onDetected:{
-            console.debug(gesture)
-            label.text = gesture
-            if (gesture == "shake") {
-                window.state == "rotated" ? window.state = "default" : window.state = "rotated"
-                timer.start()
-            }
-            if (gesture == "whip") {
-                window.state == "whipped" ? window.state = "default" : window.state = "whipped"
-                timer.start()
-            }
-            if (gesture == "twistRight") {
-                window.state == "twistedR" ? window.state = "default" : window.state = "twistedR"
-                timer.start()
-            }
-            if (gesture == "twistLeft") {
-                window.state == "twistedL" ? window.state = "default" : window.state = "twistedL"
-                timer.start()
-            }
-            if (gesture == "cover") {
-                window.state == "covered" ? window.state = "default" : window.state = "covered"
-                timer.start()
-            }
-            if (gesture == "hover") {
-                window.state == "hovered" ? window.state = "default" : window.state = "hovered"
-                timer.start()
-            }
-            if (gesture == "turnover") {
-                window.state = "default"
-                loopy2a_mono.play();
-                timer.start()
-            }
-            if (gesture == "pickup") {
-                window.state = "default"
-                phone.play()
-                timer.start()
-            }
-            if (gesture == "slam") {
-                window.state == "slammed" ? window.state = "default" : window.state = "slammed"
-                timer.start()
-            }
-            if (gesture == "doubletap") {
-                window.state == "doubletapped" ? window.state = "default" : window.state = "doubletapped"
-                timer.start()
-            }
-        }
-```
-
-There are additional gestures to shake which are supported: whip, twistRight, hover, cover, turnover and pickup.
-
-Files:
-
--   shakeit/shakeit.qml
--   shakeit/main.cpp
--   shakeit/shakeit.pro
--   shakeit/shakeit.qrc
-
+<!-- $$$shakeit-description -->
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/7038a205-eb6e-486f-8b79-b459588d89ed-../qtsensors-shakeit-example/images/shakeit.png" alt="" /></p>
+<h3 >ShakeIt in QML</h3>
+<p>Writing a QML application that uses the Shake QML sensorgestures type requires the following steps:</p>
+<p>Import the Sensors Declarative module.</p>
+<pre class="qml">import QtSensors 5.0</pre>
+<p>Add a <a href="QtSensors.SensorGesture.md">SensorGesture</a> QML type.</p>
+<pre class="qml">    <span class="type"><a href="QtSensors.SensorGesture.md">SensorGesture</a></span> {</pre>
+<p>In the <a href="QtSensors.SensorGesture.md">SensorGesture</a> type, specify which gesture to be used. Note that this can be a comma separated list. Here we are only interested in one gesture recognizer.</p>
+<pre class="qml">        <span class="name">gestures</span> : [<span class="string">&quot;QtSensors.shake&quot;</span>, <span class="string">&quot;QtSensors.whip&quot;</span>, <span class="string">&quot;QtSensors.twist&quot;</span>, <span class="string">&quot;QtSensors.cover&quot;</span>,
+<span class="string">&quot;QtSensors.hover&quot;</span>, <span class="string">&quot;QtSensors.turnover&quot;</span>, <span class="string">&quot;QtSensors.pickup&quot;</span>, <span class="string">&quot;QtSensors.slam&quot;</span> , <span class="string">&quot;QtSensors.doubletap&quot;</span>]</pre>
+<p>Use the 'enabled' property to start the sensor gesture.</p>
+<pre class="qml">        <span class="name">enabled</span>: <span class="number">true</span></pre>
+<p>Use the onDetected signal to do stuff.</p>
+<pre class="qml">        <span class="name">onDetected</span>:{
+<span class="name">console</span>.<span class="name">debug</span>(<span class="name">gesture</span>)
+<span class="name">label</span>.<span class="name">text</span> <span class="operator">=</span> <span class="name">gesture</span>
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;shake&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;rotated&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;rotated&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;whip&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;whipped&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;whipped&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;twistRight&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;twistedR&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;twistedR&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;twistLeft&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;twistedL&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;twistedL&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;cover&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;covered&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;covered&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;hover&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;hovered&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;hovered&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;turnover&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span>
+<span class="name">loopy2a_mono</span>.<span class="name">play</span>();
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;pickup&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span>
+<span class="name">phone</span>.<span class="name">play</span>()
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;slam&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;slammed&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;slammed&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+<span class="keyword">if</span> (<span class="name">gesture</span> <span class="operator">==</span> <span class="string">&quot;doubletap&quot;</span>) {
+<span class="name">window</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;doubletapped&quot;</span> ? <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;default&quot;</span> : <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;doubletapped&quot;</span>
+<span class="name">timer</span>.<span class="name">start</span>()
+}
+}</pre>
+<p>There are additional gestures to shake which are supported: whip, twistRight, hover, cover, turnover and pickup.</p>
+<p>Files:</p>
+<ul>
+<li>shakeit/shakeit.qml</li>
+<li>shakeit/main.cpp</li>
+<li>shakeit/shakeit.pro</li>
+<li>shakeit/shakeit.qrc</li>
+</ul>
+<!-- @@@shakeit -->

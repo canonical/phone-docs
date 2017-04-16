@@ -1,39 +1,20 @@
 ---
 Title: Ubuntu.Components.PopupContext
 ---
-        
-PopupContext
-============
+
+# Ubuntu.Components.PopupContext
 
 <span class="subtitle"></span>
-A special ActionContext used in Dialogs and Popups. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components 1.3</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>Ubuntu.Components 1.3</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="Ubuntu.Components.ActionContext.md">ActionContext</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-A [PopupContext](index.html) is similar to the [ActionContext](../Ubuntu.Components.ActionContext.md), with the only difference being that there can be only one [PopupContext](index.html) active at a time in an application. A [PopupContext](index.html) can have several active [ActionContext](../Ubuntu.Components.ActionContext.md) children declared, however when deactivated all child contexts will be deactivated as well, and no Action declared in these contexts will be available through shortcuts.
-
-The toolkit provides this kind of contexts in [MainView](../Ubuntu.Components.MainView.md), Popup and Dialog. It is highly recommended for applications to have a [PopupContext](index.html) defined in their rootItem.
-
+<!-- $$$PopupContext-brief -->
+<p>A special ActionContext used in Dialogs and Popups. More...</p>
+<!-- @@@PopupContext -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.ActionContext.md">ActionContext</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$PopupContext-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>A <a href="index.html">PopupContext</a> is similar to the <a href="Ubuntu.Components.ActionContext.md">ActionContext</a>, with the only difference being that there can be only one <a href="index.html">PopupContext</a> active at a time in an application. A <a href="index.html">PopupContext</a> can have several active <a href="Ubuntu.Components.ActionContext.md">ActionContext</a> children declared, however when deactivated all child contexts will be deactivated as well, and no Action declared in these contexts will be available through shortcuts.</p>
+<p>The toolkit provides this kind of contexts in <a href="Ubuntu.Components.MainView.md">MainView</a>, Popup and Dialog. It is highly recommended for applications to have a <a href="index.html">PopupContext</a> defined in their rootItem.</p>
+<!-- @@@PopupContext -->

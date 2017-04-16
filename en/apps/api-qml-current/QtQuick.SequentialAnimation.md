@@ -1,57 +1,34 @@
 ---
 Title: QtQuick.SequentialAnimation
 ---
-        
-SequentialAnimation
-===================
+
+# QtQuick.SequentialAnimation
 
 <span class="subtitle"></span>
-Allows animations to be run sequentially More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtQuick 2.4</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Animation.md">Animation</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [SequentialAnimation](index.html) and [ParallelAnimation](../QtQuick.ParallelAnimation.md) types allow multiple animations to be run together. Animations defined in a [SequentialAnimation](index.html) are run one after the other, while animations defined in a [ParallelAnimation](../QtQuick.ParallelAnimation.md) are run at the same time.
-
-The following example runs two number animations in a sequence. The [Rectangle](../QtQuick.Rectangle.md) animates to a `x` position of 50, then to a `y` position of 50.
-
-``` qml
-import QtQuick 2.0
-Rectangle {
-    id: rect
-    width: 100; height: 100
-    color: "red"
-    SequentialAnimation {
-        running: true
-        NumberAnimation { target: rect; property: "x"; to: 50; duration: 1000 }
-        NumberAnimation { target: rect; property: "y"; to: 50; duration: 1000 }
-    }
+<!-- $$$SequentialAnimation-brief -->
+<p>Allows animations to be run sequentially More...</p>
+<!-- @@@SequentialAnimation -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Animation.md">Animation</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$SequentialAnimation-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">SequentialAnimation</a> and <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> types allow multiple animations to be run together. Animations defined in a <a href="index.html">SequentialAnimation</a> are run one after the other, while animations defined in a <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> are run at the same time.</p>
+<p>The following example runs two number animations in a sequence. The <a href="QtQuick.Rectangle.md">Rectangle</a> animates to a <code>x</code> position of 50, then to a <code>y</code> position of 50.</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">id</span>: <span class="name">rect</span>
+<span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
+<span class="name">color</span>: <span class="string">&quot;red&quot;</span>
+<span class="type"><a href="index.html">SequentialAnimation</a></span> {
+<span class="name">running</span>: <span class="number">true</span>
+<span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">target</span>: <span class="name">rect</span>; <span class="name">property</span>: <span class="string">&quot;x&quot;</span>; <span class="name">to</span>: <span class="number">50</span>; <span class="name">duration</span>: <span class="number">1000</span> }
+<span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">target</span>: <span class="name">rect</span>; <span class="name">property</span>: <span class="string">&quot;y&quot;</span>; <span class="name">to</span>: <span class="number">50</span>; <span class="name">duration</span>: <span class="number">1000</span> }
 }
-```
-
-Animations defined within a [Transition](../QtQuick.qmlexampletoggleswitch.md#transition) are automatically run in parallel, so [SequentialAnimation](index.html) can be used to enclose the animations in a [Transition](../QtQuick.qmlexampletoggleswitch.md#transition) if this is the preferred behavior.
-
-Like any other animation type, a [SequentialAnimation](index.html) can be applied in a number of ways, including transitions, behaviors and property value sources. The [Animation and Transitions in Qt Quick](../QtQuick.qtquick-statesanimations-animations.md) documentation shows a variety of methods for creating animations.
-
-**Note:** Once an animation has been grouped into a [SequentialAnimation](index.html) or [ParallelAnimation](../QtQuick.ParallelAnimation.md), it cannot be individually started and stopped; the [SequentialAnimation](index.html) or [ParallelAnimation](../QtQuick.ParallelAnimation.md) must be started and stopped as a group.
-
-**See also** [ParallelAnimation](../QtQuick.ParallelAnimation.md), [Animation and Transitions in Qt Quick](../QtQuick.qtquick-statesanimations-animations.md), and [Qt Quick Examples - Animation](https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.animation/).
-
+}</pre>
+<p>Animations defined within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> are automatically run in parallel, so <a href="index.html">SequentialAnimation</a> can be used to enclose the animations in a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> if this is the preferred behavior.</p>
+<p>Like any other animation type, a <a href="index.html">SequentialAnimation</a> can be applied in a number of ways, including transitions, behaviors and property value sources. The <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> documentation shows a variety of methods for creating animations.</p>
+<p><b>Note: </b>Once an animation has been grouped into a <a href="index.html">SequentialAnimation</a> or <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a>, it cannot be individually started and stopped; the <a href="index.html">SequentialAnimation</a> or <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> must be started and stopped as a group.</p><p><b>See also </b><a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a>, <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
+<!-- @@@SequentialAnimation -->

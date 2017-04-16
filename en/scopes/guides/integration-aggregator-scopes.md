@@ -31,8 +31,6 @@ user experience.
 
 
 
-
-
 ## Aggregator definitions
 
 The following section documents specific keywords and components of main

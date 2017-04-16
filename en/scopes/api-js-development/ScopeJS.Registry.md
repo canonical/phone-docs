@@ -1,75 +1,73 @@
 ---
 Title: ScopeJS.Registry
 ---
-        
-Registry
-========
 
-White pages service for available scopes
+# ScopeJS.Registry
 
--   Methods
-
-<span id="get_metadata"></span>
-<a href="ScopeJS.ScopeMetadata.md" class="crosslink">ScopeMetadata</a> **`get_metadata`**( `id ` )
-Returns the metadata for the scope with the given ID
-
-**Parameters:**
--   `id` **&lt;String&gt;**
-
-    Attribute definition
-
-**Returns:** &lt;<a href="ScopeJS.ScopeMetadata.md" class="crosslink">ScopeMetadata</a>&gt;
-
-<span id="is_scope_running"></span>
-Boolean **`is_scope_running`**( `scope_id ` )
-Returns whether a scope is currently running or not
-
-**Parameters:**
--   `scope_id` **&lt;String&gt;**
-
-    The ID of the scope from which we wish to retrieve state
-
-**Returns:** &lt;Boolean&gt;
-True if the scope is running, and False if it is not running
-
-<span id="list"></span>
-Dictionary of String -&gt; ScopeMetadata **`list`**( `  ` )
-Returns a map containing the metadata for all scopes
-
-**Returns:** &lt;Dictionary of String -&gt; ScopeMetadata&gt;
-
-<span id="list_if"></span>
-Dictionary of String -&gt; ScopeMetadata **`list_if`**( `predicate ` )
-Returns a map containing only those scopes for which predicate returns true
-
-**Parameters:**
--   `predicate` **&lt;Function(ScopeMetadata)&gt;**
-
-    a function that must return true for each metadata item to be included in the map.
-
-**Returns:** &lt;Dictionary of String -&gt; ScopeMetadata&gt;
-
-<span id="set_list_update_callback"></span>
-**`set_list_update_callback`**( `callback ` )
-Assigns a callback method to be executed when the registry's scope list changes
-
-Note: Upon receiving this callback, you should retrieve the updated scopes list via the list() method if you wish to retain synchronisation between client and server
-
-**Parameters:**
--   `callback` **&lt;Function()&gt;**
-
-    The function that is invoked when an update occurs
-
-<span id="set_scope_state_callback"></span>
-**`set_scope_state_callback`**( `scope_id, callback ` )
-Assigns a callback method to be executed when a scope's running state (started / stopped) changes
-
-**Parameters:**
--   `scope_id` **&lt;String&gt;**
-
-    The ID of the scope from which we wish to retrieve state changes
-
--   `callback` **&lt;Function(is\_running: Boolean)&gt;**
-
-    The function that is invoked when a scope changes running state
-
+<p>White pages service for available scopes</p>
+<ul>
+<li>Methods</li>
+</ul>
+<div>
+<a href="ScopeJS.ScopeMetadata.md">ScopeMetadata</a> <strong class="name"><code>get_metadata</code></strong>( <code>id </code> ) 
+<br>
+<p>Returns the metadata for the scope with the given ID</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>id</code> <strong>&lt;String&gt;</strong>
+<p>Attribute definition</p>
+</li>
+</ul>
+<br><strong>Returns:</strong> &lt;<a href="ScopeJS.ScopeMetadata.md">ScopeMetadata</a>&gt; 
+Boolean <strong class="name"><code>is_scope_running</code></strong>( <code>scope_id </code> ) 
+<br>
+<p>Returns whether a scope is currently running or not</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>scope_id</code> <strong>&lt;String&gt;</strong>
+<p>The ID of the scope from which we wish to retrieve state</p>
+</li>
+</ul>
+<br><strong>Returns:</strong> &lt;Boolean&gt; <p>True if the scope is running, and False if it is not running</p>
+Dictionary of String -> ScopeMetadata <strong class="name"><code>list</code></strong>( <code>  </code> ) 
+<br>
+<p>Returns a map containing the metadata for all scopes</p>
+<br><strong>Returns:</strong> &lt;Dictionary of String -> ScopeMetadata&gt; 
+Dictionary of String -> ScopeMetadata <strong class="name"><code>list_if</code></strong>( <code>predicate </code> ) 
+<br>
+<p>Returns a map containing only those scopes for which predicate returns true</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>predicate</code> <strong>&lt;Function(ScopeMetadata)&gt;</strong>
+<p>a function that must return true for each metadata item to be included in the map.</p>
+</li>
+</ul>
+<br><strong>Returns:</strong> &lt;Dictionary of String -> ScopeMetadata&gt; 
+<strong class="name"><code>set_list_update_callback</code></strong>( <code>callback </code> ) 
+<br>
+<p>Assigns a callback method to be executed when the registry's scope list changes</p>
+<p>Note: Upon receiving this callback, you should retrieve the updated scopes list via the list() method if you wish to retain synchronisation between client and server</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>callback</code> <strong>&lt;Function()&gt;</strong>
+<p>The function that is invoked when an update occurs</p>
+</li>
+</ul>
+<strong class="name"><code>set_scope_state_callback</code></strong>( <code>scope_id, callback </code> ) 
+<br>
+<p>Assigns a callback method to be executed when a scope's running state (started / stopped) changes</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>scope_id</code> <strong>&lt;String&gt;</strong>
+<p>The ID of the scope from which we wish to retrieve state changes</p>
+</li>
+<li>
+<code>callback</code> <strong>&lt;Function(is_running: Boolean)&gt;</strong>
+<p>The function that is invoked when a scope changes running state</p>
+</li>
+</ul>

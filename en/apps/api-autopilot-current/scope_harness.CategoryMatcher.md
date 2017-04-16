@@ -1,37 +1,58 @@
 ---
 Title: scope_harness.CategoryMatcher
 ---
-        
-CategoryMatcher
-===============
 
- *class* `scope_harness.``CategoryMatcher`(*(object)arg1*, *(str)arg2*)<a href="#scope_harness.CategoryMatcher" class="headerlink" title="Permalink to this definition"></a>  
-Matcher object that holds constraints for matching search category.
+# scope_harness.CategoryMatcher
 
- `components`(*(CategoryMatcher)arg1*, *(object)arg2*) → CategoryMatcher<a href="#scope_harness.CategoryMatcher.components" class="headerlink" title="Permalink to this definition"></a>  
-
- `has_at_least`(*(CategoryMatcher)arg1*, *(int)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.has_at_least" class="headerlink" title="Permalink to this definition"></a>  
-Set the minimum number of categories
-
- `header_link`(*(CategoryMatcher)arg1*, *(str)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.header_link" class="headerlink" title="Permalink to this definition"></a>  
-Set the header link to match
-
- `icon`(*(CategoryMatcher)arg1*, *(str)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.icon" class="headerlink" title="Permalink to this definition"></a>  
-Set the icon to match
-
- `id`<a href="#scope_harness.CategoryMatcher.id" class="headerlink" title="Permalink to this definition"></a>  
-
- `match`(*(CategoryMatcher)arg1*, *(Category)arg2*) → MatchResult<a href="#scope_harness.CategoryMatcher.match" class="headerlink" title="Permalink to this definition"></a>  
-match( (CategoryMatcher)arg1, (MatchResult)arg2, (Category)arg3) -&gt; None
-
- `mode`(*(CategoryMatcher)arg1*, *(CategoryMatcherMode)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.mode" class="headerlink" title="Permalink to this definition"></a>  
-Set the matching mode, see CategoryMatcherMode.
-
- `renderer`(*(CategoryMatcher)arg1*, *(object)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.renderer" class="headerlink" title="Permalink to this definition"></a>  
-Set the renderer string to match
-
- `result`(*(CategoryMatcher)arg1*, *(ResultMatcher)arg2*) → CategoryMatcher<a href="#scope_harness.CategoryMatcher.result" class="headerlink" title="Permalink to this definition"></a>  
-
- `title`(*(CategoryMatcher)arg1*, *(str)arg2*) → CategoryMatcher :<a href="#scope_harness.CategoryMatcher.title" class="headerlink" title="Permalink to this definition"></a>  
-Set the title to match
-
+<dl class="class">
+<dt id="scope_harness.CategoryMatcher">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">CategoryMatcher</tt><big>(</big><em>(object)arg1</em>, <em>(str)arg2</em><big>)</big><a class="headerlink" href="#scope_harness.CategoryMatcher" title="Permalink to this definition"></a></dt>
+<dd><p>Matcher object that holds constraints for matching search category.</p>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.components">
+<tt class="descname">components</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; CategoryMatcher<a class="headerlink" href="#scope_harness.CategoryMatcher.components" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.has_at_least">
+<tt class="descname">has_at_least</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.has_at_least" title="Permalink to this definition"></a></dt>
+<dd><p>Set the minimum number of categories</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.header_link">
+<tt class="descname">header_link</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.header_link" title="Permalink to this definition"></a></dt>
+<dd><p>Set the header link to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.icon">
+<tt class="descname">icon</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.icon" title="Permalink to this definition"></a></dt>
+<dd><p>Set the icon to match</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.CategoryMatcher.id">
+<tt class="descname">id</tt><a class="headerlink" href="#scope_harness.CategoryMatcher.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.match">
+<tt class="descname">match</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(Category)arg2</em><big>)</big> &rarr; MatchResult<a class="headerlink" href="#scope_harness.CategoryMatcher.match" title="Permalink to this definition"></a></dt>
+<dd><p>match( (CategoryMatcher)arg1, (MatchResult)arg2, (Category)arg3) -&gt; None</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.mode">
+<tt class="descname">mode</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(CategoryMatcherMode)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.mode" title="Permalink to this definition"></a></dt>
+<dd><p>Set the matching mode, see CategoryMatcherMode.</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.renderer">
+<tt class="descname">renderer</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.renderer" title="Permalink to this definition"></a></dt>
+<dd><p>Set the renderer string to match</p>
+</dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.result">
+<tt class="descname">result</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(ResultMatcher)arg2</em><big>)</big> &rarr; CategoryMatcher<a class="headerlink" href="#scope_harness.CategoryMatcher.result" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.CategoryMatcher.title">
+<tt class="descname">title</tt><big>(</big><em>(CategoryMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; CategoryMatcher :<a class="headerlink" href="#scope_harness.CategoryMatcher.title" title="Permalink to this definition"></a></dt>
+<dd><p>Set the title to match</p>
+</dd></dl>
+</dd></dl>

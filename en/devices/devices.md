@@ -4,12 +4,10 @@ title: "Devices - supported and reference devices"
 
 # Devices - supported and reference devices
 
-
 ## Supported and reference devices
 
 Ubuntu phone images are built for the target devices below. These are built
 and supported by Canonical with contributions from the wider Ubuntu community.
-
 
 Device | Android image*
 ------ | -------------
@@ -42,7 +40,6 @@ What do you want to do next?
   * [Check out the complete list of community-driven ports](https://wiki.ubuntu.com/Touch/Devices)
   * [Learn how to port Ubuntu to a new device](https://developer.ubuntu.com/en/start/ubuntu-for-devices/porting-new-device)
   * [Contribute to an existing port](https://webchat.freenode.net/?channels=ubuntu-touch)
-
 
 ## Previously supported devices
 

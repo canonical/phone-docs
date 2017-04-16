@@ -2,7 +2,6 @@
 title: "HTML5 tutorials - writing functional tests"
 ---
 
-
 # HTML5 tutorials - writing functional tests
 
 In this tutorial you will learn how to write functional tests to strengthen

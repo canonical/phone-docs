@@ -1,52 +1,42 @@
 ---
 Title: UbuntuUI.Shape
 ---
-        
-Shape
-=====
 
-An Ubuntu Shape contains and decorates (with CSS styles) some markup, often an &lt;em&gt;img&lt;/em&gt;.
+# UbuntuUI.Shape
 
-<span id="UbuntuUI.Shape"></span>
-**`UbuntuUI.Shape`**( `  ` )
-##### Example
-
-``` code
- <div data-role="shape" id="shapeID">
-       <img src="URI"/>
-     </div>
-    
-     JavaScript access:
-     var shape = UI.shape("shapeID");
-    
-```
-
--   Methods
-
-<span id="click"></span>
-**`click`**( `- ` )
-Associate a function with the Click event
-
-**Parameters:**
--   `-` **&lt;Function&gt;**
-
-    The function to execute on click
-
-##### Example
-
-``` code
-   UI.shape("id").click(function(){
-                    console.log("Clicked");
-                   });
-```
-
-<span id="element"></span>
-**`element`**( `  ` )
-Returns the DOM element associated with the id this widget is bind to.
-
-##### Example
-
-``` code
-   var myshape = UI.shape("shapeid").element();
-```
-
+<p>An Ubuntu Shape contains and decorates (with CSS styles) some markup, often an &lt;em&gt;img&lt;/em&gt;.</p>
+<strong class="name"><code>UbuntuUI.Shape</code></strong>( <code>  </code> ) 
+<br>
+</span><br>
+<h5>Example</h5>
+<pre class="code prettyprint"><code> &lt;div data-role=&quot;shape&quot; id=&quot;shapeID&quot;&gt;
+&lt;img src=&quot;URI&quot;/&gt;
+&lt;/div&gt;
+JavaScript access:
+var shape = UI.shape(&quot;shapeID&quot;);
+</code></pre>
+<ul>
+<li>Methods</li>
+</ul>
+<div>
+<strong class="name"><code>click</code></strong>( <code>- </code> ) 
+<br>
+</span><br>
+<p>Associate a function with the Click event</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>-</code> <strong>&lt;Function&gt;</strong>
+<p>The function to execute on click</p>
+</li>
+</ul>
+<h5>Example</h5>
+<pre class="code prettyprint"><code>   UI.shape(&quot;id&quot;).click(function(){
+console.log(&quot;Clicked&quot;);
+});</code></pre>
+<strong class="name"><code>element</code></strong>( <code>  </code> ) 
+<br>
+</span><br>
+<p>Returns the DOM element associated with the id this widget is bind to.</p>
+<h5>Example</h5>
+<pre class="code prettyprint"><code>   var myshape = UI.shape(&quot;shapeid&quot;).element();</code></pre>

@@ -1,80 +1,48 @@
 ---
 Title: QtQuick.Translate
 ---
-        
-Translate
-=========
+
+# QtQuick.Translate
 
 <span class="subtitle"></span>
-Provides a way to move an Item without changing its x or y properties More...
-
-|                   |                    |
-|-------------------|--------------------|
-| Import Statement: | import QtQuick 2.4 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[x](#x-prop)**** : real
--   ****[y](#y-prop)**** : real
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The Translate type provides independent control over position in addition to the Item's x and y properties.
-
-The following example moves the Y axis of the [Rectangle](../QtQuick.Rectangle.md) items while still allowing the [Row](../QtQuick.qtquick-positioning-layouts.md#row) to lay the items out as if they had not been transformed:
-
-``` qml
-import QtQuick 2.0
-Row {
-    Rectangle {
-        width: 100; height: 100
-        color: "blue"
-        transform: Translate { y: 20 }
-    }
-    Rectangle {
-        width: 100; height: 100
-        color: "red"
-        transform: Translate { y: -20 }
-    }
+<!-- $$$Translate-brief -->
+<p>Provides a way to move an Item without changing its x or y properties More...</p>
+<!-- @@@Translate -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#x-prop">x</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#y-prop">y</a></b></b> : real</li>
+</ul>
+<!-- $$$Translate-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The Translate type provides independent control over position in addition to the Item's x and y properties.</p>
+<p>The following example moves the Y axis of the <a href="QtQuick.Rectangle.md">Rectangle</a> items while still allowing the <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a> to lay the items out as if they had not been transformed:</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
+<span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
+<span class="name">transform</span>: <span class="name">Translate</span> { <span class="name">y</span>: <span class="number">20</span> }
 }
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/674431e9-414d-4002-ac73-6b1d64cb749f-api/apps/qml/sdk-15.04.6/QtQuick.Translate/images/translate.png)
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="x-prop"></span><span class="name">x</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The translation along the X axis.
-
-The default value is 0.0.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="y-prop"></span><span class="name">y</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The translation along the Y axis.
-
-The default value is 0.0.
-
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
+<span class="name">color</span>: <span class="string">&quot;red&quot;</span>
+<span class="name">transform</span>: <span class="name">Translate</span> { <span class="name">y</span>: -<span class="number">20</span> }
+}
+}</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/674431e9-414d-4002-ac73-6b1d64cb749f-../QtQuick.Translate/images/translate.png" alt="" /></p><!-- @@@Translate -->
+<h2>Property Documentation</h2>
+<!-- $$$x -->
+<table class="qmlname"><tr valign="top" id="x-prop"><td class="tblQmlPropNode"><p><span class="name">x</span> : <span class="type">real</span></p></td></tr></table><p>The translation along the X axis.</p>
+<p>The default value is 0.0&#x2e;</p>
+<!-- @@@x -->
+<br/>
+<!-- $$$y -->
+<table class="qmlname"><tr valign="top" id="y-prop"><td class="tblQmlPropNode"><p><span class="name">y</span> : <span class="type">real</span></p></td></tr></table><p>The translation along the Y axis.</p>
+<p>The default value is 0.0&#x2e;</p>
+<!-- @@@y -->
+<br/>

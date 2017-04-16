@@ -5,7 +5,6 @@ table_of_contents: true
 
 # Web apps guide
 
-
 Ubuntu Webapps are a great way to deliver online web applications into Ubuntu.
 
 The Ubuntu platform provides an advanced web engine container to run online

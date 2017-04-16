@@ -1,22 +1,35 @@
 ---
 Title: scope_harness.SettingsOptionMatcher
 ---
-        
-SettingsOptionMatcher
-=====================
 
- *class* `scope_harness.``SettingsOptionMatcher`(*(object)arg1*, *(str)arg2*)<a href="#scope_harness.SettingsOptionMatcher" class="headerlink" title="Permalink to this definition"></a>  
-Matcher object that holds constraints for matching a settings option.
+# scope_harness.SettingsOptionMatcher
 
- `default_value`(*(SettingsOptionMatcher)arg1*, *(object)arg2*) → SettingsOptionMatcher<a href="#scope_harness.SettingsOptionMatcher.default_value" class="headerlink" title="Permalink to this definition"></a>  
-
- `display_name`(*(SettingsOptionMatcher)arg1*, *(str)arg2*) → SettingsOptionMatcher<a href="#scope_harness.SettingsOptionMatcher.display_name" class="headerlink" title="Permalink to this definition"></a>  
-
- `display_values`(*(SettingsOptionMatcher)arg1*, *(object)arg2*) → SettingsOptionMatcher<a href="#scope_harness.SettingsOptionMatcher.display_values" class="headerlink" title="Permalink to this definition"></a>  
-
- `id`<a href="#scope_harness.SettingsOptionMatcher.id" class="headerlink" title="Permalink to this definition"></a>  
-
- `option_type`(*(SettingsOptionMatcher)arg1*, *(SettingsOptionType)arg2*) → SettingsOptionMatcher<a href="#scope_harness.SettingsOptionMatcher.option_type" class="headerlink" title="Permalink to this definition"></a>  
-
- `value`(*(SettingsOptionMatcher)arg1*, *(object)arg2*) → SettingsOptionMatcher<a href="#scope_harness.SettingsOptionMatcher.value" class="headerlink" title="Permalink to this definition"></a>  
-
+<dl class="class">
+<dt id="scope_harness.SettingsOptionMatcher">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">SettingsOptionMatcher</tt><big>(</big><em>(object)arg1</em>, <em>(str)arg2</em><big>)</big><a class="headerlink" href="#scope_harness.SettingsOptionMatcher" title="Permalink to this definition"></a></dt>
+<dd><p>Matcher object that holds constraints for matching a settings option.</p>
+<dl class="method">
+<dt id="scope_harness.SettingsOptionMatcher.default_value">
+<tt class="descname">default_value</tt><big>(</big><em>(SettingsOptionMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; SettingsOptionMatcher<a class="headerlink" href="#scope_harness.SettingsOptionMatcher.default_value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsOptionMatcher.display_name">
+<tt class="descname">display_name</tt><big>(</big><em>(SettingsOptionMatcher)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; SettingsOptionMatcher<a class="headerlink" href="#scope_harness.SettingsOptionMatcher.display_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsOptionMatcher.display_values">
+<tt class="descname">display_values</tt><big>(</big><em>(SettingsOptionMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; SettingsOptionMatcher<a class="headerlink" href="#scope_harness.SettingsOptionMatcher.display_values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SettingsOptionMatcher.id">
+<tt class="descname">id</tt><a class="headerlink" href="#scope_harness.SettingsOptionMatcher.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsOptionMatcher.option_type">
+<tt class="descname">option_type</tt><big>(</big><em>(SettingsOptionMatcher)arg1</em>, <em>(SettingsOptionType)arg2</em><big>)</big> &rarr; SettingsOptionMatcher<a class="headerlink" href="#scope_harness.SettingsOptionMatcher.option_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="scope_harness.SettingsOptionMatcher.value">
+<tt class="descname">value</tt><big>(</big><em>(SettingsOptionMatcher)arg1</em>, <em>(object)arg2</em><big>)</big> &rarr; SettingsOptionMatcher<a class="headerlink" href="#scope_harness.SettingsOptionMatcher.value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+</dd></dl>

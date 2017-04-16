@@ -326,7 +326,6 @@ function of the `CategorisedResult` object.
 
 Here is the preview method from the template:
 
-
 ``` javascript
 preview: function(result, action_metadata) {
   return new scopes.lib.PreviewQuery(

@@ -4,7 +4,6 @@ title: "SDK - installing the SDK"
 
 # SDK - installing the SDK
 
-
 Here’s where you learn the exact steps needed to install the Ubuntu SDK,
 Ubuntu’s integrated development environment (IDE) for developing Ubuntu Apps.
 

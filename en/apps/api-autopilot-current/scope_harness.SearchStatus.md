@@ -1,20 +1,34 @@
 ---
 Title: scope_harness.SearchStatus
 ---
-        
-SearchStatus
-============
 
- *class* `scope_harness.``SearchStatus`<a href="#scope_harness.SearchStatus" class="headerlink" title="Permalink to this definition"></a>  
- `NO_INTERNET` *= scope\_harness.SearchStatus.NO\_INTERNET*<a href="#scope_harness.SearchStatus.NO_INTERNET" class="headerlink" title="Permalink to this definition"></a>  
+# scope_harness.SearchStatus
 
- `NO_LOCATION_DATA` *= scope\_harness.SearchStatus.NO\_LOCATION\_DATA*<a href="#scope_harness.SearchStatus.NO_LOCATION_DATA" class="headerlink" title="Permalink to this definition"></a>  
-
- `OKAY` *= scope\_harness.SearchStatus.OKAY*<a href="#scope_harness.SearchStatus.OKAY" class="headerlink" title="Permalink to this definition"></a>  
-
- `UNKNOWN` *= scope\_harness.SearchStatus.UNKNOWN*<a href="#scope_harness.SearchStatus.UNKNOWN" class="headerlink" title="Permalink to this definition"></a>  
-
- `names` *= {'NO\_INTERNET': scope\_harness.SearchStatus.NO\_INTERNET, 'OKAY': scope\_harness.SearchStatus.OKAY, 'NO\_LOCATION\_DATA': scope\_harness.SearchStatus.NO\_LOCATION\_DATA, 'UNKNOWN': scope\_harness.SearchStatus.UNKNOWN}*<a href="#scope_harness.SearchStatus.names" class="headerlink" title="Permalink to this definition"></a>  
-
- `values` *= {0: scope\_harness.SearchStatus.OKAY, 1: scope\_harness.SearchStatus.NO\_INTERNET, 2: scope\_harness.SearchStatus.NO\_LOCATION\_DATA, 3: scope\_harness.SearchStatus.UNKNOWN}*<a href="#scope_harness.SearchStatus.values" class="headerlink" title="Permalink to this definition"></a>  
-
+<dl class="class">
+<dt id="scope_harness.SearchStatus">
+<em class="property">class </em><tt class="descclassname">scope_harness.</tt><tt class="descname">SearchStatus</tt><a class="headerlink" href="#scope_harness.SearchStatus" title="Permalink to this definition"></a></dt>
+<dd><dl class="attribute">
+<dt id="scope_harness.SearchStatus.NO_INTERNET">
+<tt class="descname">NO_INTERNET</tt><em class="property"> = scope_harness.SearchStatus.NO_INTERNET</em><a class="headerlink" href="#scope_harness.SearchStatus.NO_INTERNET" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SearchStatus.NO_LOCATION_DATA">
+<tt class="descname">NO_LOCATION_DATA</tt><em class="property"> = scope_harness.SearchStatus.NO_LOCATION_DATA</em><a class="headerlink" href="#scope_harness.SearchStatus.NO_LOCATION_DATA" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SearchStatus.OKAY">
+<tt class="descname">OKAY</tt><em class="property"> = scope_harness.SearchStatus.OKAY</em><a class="headerlink" href="#scope_harness.SearchStatus.OKAY" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SearchStatus.UNKNOWN">
+<tt class="descname">UNKNOWN</tt><em class="property"> = scope_harness.SearchStatus.UNKNOWN</em><a class="headerlink" href="#scope_harness.SearchStatus.UNKNOWN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SearchStatus.names">
+<tt class="descname">names</tt><em class="property"> = {'NO_INTERNET': scope_harness.SearchStatus.NO_INTERNET, 'OKAY': scope_harness.SearchStatus.OKAY, 'NO_LOCATION_DATA': scope_harness.SearchStatus.NO_LOCATION_DATA, 'UNKNOWN': scope_harness.SearchStatus.UNKNOWN}</em><a class="headerlink" href="#scope_harness.SearchStatus.names" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="scope_harness.SearchStatus.values">
+<tt class="descname">values</tt><em class="property"> = {0: scope_harness.SearchStatus.OKAY, 1: scope_harness.SearchStatus.NO_INTERNET, 2: scope_harness.SearchStatus.NO_LOCATION_DATA, 3: scope_harness.SearchStatus.UNKNOWN}</em><a class="headerlink" href="#scope_harness.SearchStatus.values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+</dd></dl>

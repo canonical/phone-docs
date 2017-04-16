@@ -1,79 +1,61 @@
 ---
 Title: Ubuntu.Components.ToolbarButton
 ---
-        
-ToolbarButton
-=============
+
+# Ubuntu.Components.ToolbarButton
 
 <span class="subtitle"></span>
-An ActionItem that represents a button in the toolbar. ToolbarButtons should be included in ToolbarItems to define the tools of a Page. The behavior and look of the toolbar button can be specified by setting an Action for the button, or by setting the other properties inherited by the ActionItem. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components 1.3</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="../../sdk-15.04.4/Ubuntu.Components.ActionItem.md">ActionItem</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Example of different ways to define the toolbar button:
-
-``` qml
-import QtQuick 2.4
+<!-- $$$ToolbarButton-brief -->
+<p>An ActionItem that represents a button in the toolbar. ToolbarButtons should be included in ToolbarItems to define the tools of a Page. The behavior and look of the toolbar button can be specified by setting an Action for the button, or by setting the other properties inherited by the ActionItem. More...</p>
+<!-- @@@ToolbarButton -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="..//Ubuntu.Components.ActionItem.md">ActionItem</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$ToolbarButton-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Example of different ways to define the toolbar button:</p>
+<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-MainView {
-    width: units.gu(50)
-    height: units.gu(80)
-    Action {
-        id: action1
-        text: "action 1"
-        iconName: "compose"
-        onTriggered: print("one!")
-    }
-    Page {
-        title: "test page"
-        Label {
-            anchors.centerIn: parent
-            text: "Hello, world"
-        }
-        tools: ToolbarItems {
-            // reference to an action:
-            ToolbarButton {
-                action: action1
-            }
-            // define the action:
-            ToolbarButton {
-                action: Action {
-                    text: "Second action"
-                    iconName: "add"
-                    onTriggered: print("two!")
-                }
-                // override the text of the action:
-                text: "action 2"
-            }
-            // no associated action:
-            ToolbarButton {
-                iconName: "cancel"
-                text: "button"
-                onTriggered: print("three!")
-            }
-        }
-    }
+<span class="type"><a href="..//Ubuntu.Components.MainView.md">MainView</a></span> {
+<span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
+<span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
+<span class="type"><a href="..//Ubuntu.Components.Action.md">Action</a></span> {
+<span class="name">id</span>: <span class="name">action1</span>
+<span class="name">text</span>: <span class="string">&quot;action 1&quot;</span>
+<span class="name">iconName</span>: <span class="string">&quot;compose&quot;</span>
+<span class="name">onTriggered</span>: <span class="name">print</span>(<span class="string">&quot;one!&quot;</span>)
 }
-```
-
-See [ToolbarItems](https://developer.ubuntu.comapps/qml/sdk-15.04.4/Ubuntu.Components.ToolbarItems/) for more information on how to use [ToolbarButton](../../sdk-15.04.4/Ubuntu.Components.ToolbarButton.md).
-
+<span class="type"><a href="..//Ubuntu.Components.Page.md">Page</a></span> {
+<span class="name">title</span>: <span class="string">&quot;test page&quot;</span>
+<span class="type">Label</span> {
+<span class="name">anchors</span>.centerIn: <span class="name">parent</span>
+<span class="name">text</span>: <span class="string">&quot;Hello, world&quot;</span>
+}
+<span class="name">tools</span>: <span class="name">ToolbarItems</span> {
+<span class="comment">// reference to an action:</span>
+<span class="type"><a href="..//Ubuntu.Components.ToolbarButton.md">ToolbarButton</a></span> {
+<span class="name">action</span>: <span class="name">action1</span>
+}
+<span class="comment">// define the action:</span>
+<span class="type"><a href="..//Ubuntu.Components.ToolbarButton.md">ToolbarButton</a></span> {
+<span class="name">action</span>: <span class="name">Action</span> {
+<span class="name">text</span>: <span class="string">&quot;Second action&quot;</span>
+<span class="name">iconName</span>: <span class="string">&quot;add&quot;</span>
+<span class="name">onTriggered</span>: <span class="name">print</span>(<span class="string">&quot;two!&quot;</span>)
+}
+<span class="comment">// override the text of the action:</span>
+<span class="name">text</span>: <span class="string">&quot;action 2&quot;</span>
+}
+<span class="comment">// no associated action:</span>
+<span class="type"><a href="..//Ubuntu.Components.ToolbarButton.md">ToolbarButton</a></span> {
+<span class="name">iconName</span>: <span class="string">&quot;cancel&quot;</span>
+<span class="name">text</span>: <span class="string">&quot;button&quot;</span>
+<span class="name">onTriggered</span>: <span class="name">print</span>(<span class="string">&quot;three!&quot;</span>)
+}
+}
+}
+}</pre>
+<p>See <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.4/Ubuntu.Components.ToolbarItems/">ToolbarItems</a> for more information on how to use <a href="..//Ubuntu.Components.ToolbarButton.md">ToolbarButton</a>.</p>
+<!-- @@@ToolbarButton -->

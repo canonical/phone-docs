@@ -1,25 +1,22 @@
 ---
 Title: QtQuick.qml-tutorial
 ---
-        
-QML Tutorial
-============
+
+# QtQuick.qml-tutorial
 
 <span class="subtitle"></span>
-<span id="details"></span>
-This tutorial gives an introduction to QML, the language for Qt Quick UIs. It doesn't cover everything; the emphasis is on teaching the key principles, and features are introduced as needed.
-
-Through the different steps of this tutorial we will learn about QML basic types, we will create our own QML component with properties and signals, and we will create a simple animation with the help of states and transitions.
-
-Chapter one starts with a minimal "Hello world" program and the following chapters introduce new concepts.
-
-The tutorial's source code is located in the `examples/quick/tutorials/helloworld` directory.
-
-Tutorial chapters:
-
-1.  [Basic Types](../QtQuick.qml-tutorial1.md)
-2.  [QML Components](../QtQuick.qml-tutorial2.md)
-3.  [States and Transitions](../QtQuick.qml-tutorial3.md)
-
-<a href="QtQuick.qml-tutorial1.md" class="nextPage">QML Tutorial 1 - Basic Types</a>
-
+<!-- $$$qml-tutorial.html-description -->
+<p>This tutorial gives an introduction to QML, the language for Qt Quick UIs. It doesn't cover everything; the emphasis is on teaching the key principles, and features are introduced as needed.</p>
+<p>Through the different steps of this tutorial we will learn about QML basic types, we will create our own QML component with properties and signals, and we will create a simple animation with the help of states and transitions.</p>
+<p>Chapter one starts with a minimal &quot;Hello world&quot; program and the following chapters introduce new concepts.</p>
+<p>The tutorial's source code is located in the <code>examples/quick/tutorials/helloworld</code> directory.</p>
+<p>Tutorial chapters:</p>
+<ol class="1">
+<li><a href="QtQuick.qml-tutorial1.md">Basic Types</a></li>
+<li><a href="QtQuick.qml-tutorial2.md">QML Components</a></li>
+<li><a href="QtQuick.qml-tutorial3.md">States and Transitions</a></li>
+</ol>
+<!-- @@@qml-tutorial.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="nextPage" href="QtQuick.qml-tutorial1.md">QML Tutorial 1 - Basic Types</a>
+</p>

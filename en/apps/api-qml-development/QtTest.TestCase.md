@@ -1,838 +1,393 @@
 ---
 Title: QtTest.TestCase
 ---
-        
-TestCase
-========
+
+# QtTest.TestCase
 
 <span class="subtitle"></span>
-Represents a unit test case More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtTest 1.1</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>Qt 4.8</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtQuick.Item.md">Item</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[completed](#completed-prop)**** : bool
--   ****[name](#name-prop)**** : string
--   ****[optional](#optional-prop)**** : bool
--   ****[running](#running-prop)**** : bool
--   ****[when](#when-prop)**** : bool
--   ****[windowShown](#windowShown-prop)**** : bool
-
-<span id="methods"></span>
-Methods
--------
-
--   ****[cleanup](#cleanup-method)****()
--   ****[cleanupTestCase](#cleanupTestCase-method)****()
--   ****[compare](#compare-method)****(*actual*, *expected*, *msg*)
--   ****[expectFail](#expectFail-method)****(*tag*, *msg*)
--   ****[expectFailContinue](#expectFailContinue-method)****(*tag*, *msg*)
--   ****[fail](#fail-method)****(*msg*)
--   ****[findChild](#findChild-method)****(*parent*, *objectName*)
--   ****[fuzzyCompare](#fuzzyCompare-method)****(*actual*, *expected*, *delta*, *msg*)
--   ****[grabImage](#grabImage-method)****(*item*)
--   ****[ignoreWarning](#ignoreWarning-method)****(*msg*)
--   ****[init](#init-method)****()
--   ****[initTestCase](#initTestCase-method)****()
--   ****[keyClick](#keyClick-method)****(*key*, *modifiers*, *delay*)
--   ****[keyPress](#keyPress-method)****(*key*, *modifiers*, *delay*)
--   ****[keyRelease](#keyRelease-method)****(*key*, *modifiers*, *delay*)
--   ****[mouseClick](#mouseClick-method)****(*item*, *x*, *y*, *button*, *modifiers*, *delay*)
--   ****[mouseDoubleClick](#mouseDoubleClick-method)****(*item*, *x*, *y*, *button*, *modifiers*, *delay*)
--   ****[mouseDrag](#mouseDrag-method)****(*item*, *x*, *y*, *dx*, *dy*, *button*, *modifiers*, *delay*)
--   ****[mouseMove](#mouseMove-method)****(*item*, *x*, *y*, *delay*, *buttons*)
--   ****[mousePress](#mousePress-method)****(*item*, *x*, *y*, *button*, *modifiers*, *delay*)
--   ****[mouseRelease](#mouseRelease-method)****(*item*, *x*, *y*, *button*, *modifiers*, *delay*)
--   ****[mouseWheel](#mouseWheel-method)****(*item*, *x*, *y*, *xDelta*, *yDelta*, *buttons*, *modifiers*, *delay*)
--   ****[skip](#skip-method)****(*msg*)
--   ****[sleep](#sleep-method)****(*ms*)
--   ****[tryCompare](#tryCompare-method)****(*obj*, *prop*, *value*, *timeout*, *msg*)
--   ****[verify](#verify-method)****(*cond*, *msg*)
--   ****[wait](#wait-method)****(*ms*)
--   ****[waitForRendering](#waitForRendering-method)****(*item*, *timeout*)
--   ****[warn](#warn-method)****(*msg*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-<span id="introduction-to-qml-test-cases"></span>
-Introduction to QML test cases
-------------------------------
-
-Test cases are written as JavaScript functions within a [TestCase](index.html) type:
-
-``` cpp
-import QtQuick 2.0
-import QtTest 1.0
+<!-- $$$TestCase-brief -->
+<p>Represents a unit test case More...</p>
+<!-- @@@TestCase -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtTest 1.1</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Qt 4.8</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#completed-prop">completed</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#optional-prop">optional</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#running-prop">running</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#when-prop">when</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#windowShown-prop">windowShown</a></b></b> : bool</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn"><b><b><a href="#cleanup-method">cleanup</a></b></b>()</li>
+<li class="fn"><b><b><a href="#cleanupTestCase-method">cleanupTestCase</a></b></b>()</li>
+<li class="fn"><b><b><a href="#compare-method">compare</a></b></b>(<i>actual</i>,  <i>expected</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#expectFail-method">expectFail</a></b></b>(<i>tag</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#expectFailContinue-method">expectFailContinue</a></b></b>(<i>tag</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#fail-method">fail</a></b></b>(<i>msg</i>)</li>
+<li class="fn"><b><b><a href="#findChild-method">findChild</a></b></b>(<i>parent</i>,  <i>objectName</i>)</li>
+<li class="fn"><b><b><a href="#fuzzyCompare-method">fuzzyCompare</a></b></b>(<i>actual</i>,  <i>expected</i>,  <i>delta</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#grabImage-method">grabImage</a></b></b>(<i>item</i>)</li>
+<li class="fn"><b><b><a href="#ignoreWarning-method">ignoreWarning</a></b></b>(<i>msg</i>)</li>
+<li class="fn"><b><b><a href="#init-method">init</a></b></b>()</li>
+<li class="fn"><b><b><a href="#initTestCase-method">initTestCase</a></b></b>()</li>
+<li class="fn"><b><b><a href="#keyClick-method">keyClick</a></b></b>(<i>key</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#keyPress-method">keyPress</a></b></b>(<i>key</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#keyRelease-method">keyRelease</a></b></b>(<i>key</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseClick-method">mouseClick</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseDoubleClick-method">mouseDoubleClick</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseDrag-method">mouseDrag</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>dx</i>,  <i>dy</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseMove-method">mouseMove</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>delay</i>,  <i>buttons</i>)</li>
+<li class="fn"><b><b><a href="#mousePress-method">mousePress</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseRelease-method">mouseRelease</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>button</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#mouseWheel-method">mouseWheel</a></b></b>(<i>item</i>,  <i>x</i>,  <i>y</i>,  <i>xDelta</i>,  <i>yDelta</i>,  <i>buttons</i>,  <i>modifiers</i>,  <i>delay</i>)</li>
+<li class="fn"><b><b><a href="#skip-method">skip</a></b></b>(<i>msg</i>)</li>
+<li class="fn"><b><b><a href="#sleep-method">sleep</a></b></b>(<i>ms</i>)</li>
+<li class="fn"><b><b><a href="#tryCompare-method">tryCompare</a></b></b>(<i>obj</i>,  <i>prop</i>,  <i>value</i>,  <i>timeout</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#verify-method">verify</a></b></b>(<i>cond</i>,  <i>msg</i>)</li>
+<li class="fn"><b><b><a href="#wait-method">wait</a></b></b>(<i>ms</i>)</li>
+<li class="fn"><b><b><a href="#waitForRendering-method">waitForRendering</a></b></b>(<i>item</i>,  <i>timeout</i>)</li>
+<li class="fn"><b><b><a href="#warn-method">warn</a></b></b>(<i>msg</i>)</li>
+</ul>
+<!-- $$$TestCase-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<h2 id="introduction-to-qml-test-cases">Introduction to QML test cases</h2>
+<p>Test cases are written as JavaScript functions within a <a href="index.html">TestCase</a> type:</p>
+<pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
+import <span class="type">QtTest</span> <span class="number">1.0</span>
 TestCase {
-    name: "MathTests"
-    function test_math() {
-        compare(2 + 2, 4, "2 + 2 = 4")
-    }
-    function test_fail() {
-        compare(2 + 2, 5, "2 + 2 = 5")
-    }
+name: <span class="string">&quot;MathTests&quot;</span>
+function test_math() {
+compare(<span class="number">2</span> <span class="operator">+</span> <span class="number">2</span><span class="operator">,</span> <span class="number">4</span><span class="operator">,</span> <span class="string">&quot;2 + 2 = 4&quot;</span>)
 }
-```
-
-Functions whose names start with "test\_" are treated as test cases to be executed. The [name](#name-prop) property is used to prefix the functions in the output:
-
-``` cpp
-********* Start testing of MathTests *********
-Config: Using QTest library 4.7.2, Qt 4.7.2
-PASS   : MathTests::initTestCase()
-FAIL!  : MathTests::test_fail() 2 + 2 = 5
-   Actual (): 4
-   Expected (): 5
-   Loc: [/home/.../tst_math.qml(12)]
-PASS   : MathTests::test_math()
-PASS   : MathTests::cleanupTestCase()
-Totals: 3 passed, 1 failed, 0 skipped
-********* Finished testing of MathTests *********
-```
-
-Because of the way JavaScript properties work, the order in which the test functions are found is unpredictable. To assist with predictability, the test framework will sort the functions on ascending order of name. This can help when there are two tests that must be run in order.
-
-Multiple [TestCase](index.html) types can be supplied. The test program will exit once they have all completed. If a test case doesn't need to run (because a precondition has failed), then [optional](#optional-prop) can be set to true.
-
-<span id="data-driven-tests"></span>
-Data-driven tests
------------------
-
-Table data can be provided to a test using a function name that ends with "\_data". Alternatively, the `init_data()` function can be used to provide default test data for all test functions in a [TestCase](index.html) type:
-
-``` cpp
-import QtQuick 2.0
-import QtTest 1.1
+function test_fail() {
+compare(<span class="number">2</span> <span class="operator">+</span> <span class="number">2</span><span class="operator">,</span> <span class="number">5</span><span class="operator">,</span> <span class="string">&quot;2 + 2 = 5&quot;</span>)
+}
+}</pre>
+<p>Functions whose names start with &quot;test_&quot; are treated as test cases to be executed. The <a href="#name-prop">name</a> property is used to prefix the functions in the output:</p>
+<pre class="cpp"><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span> Start testing of MathTests <span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span>
+Config: Using <span class="type">QTest</span> library <span class="number">4.7.2</span><span class="operator">,</span> <span class="type">Qt</span> <span class="number">4.7.2</span>
+PASS   : MathTests<span class="operator">::</span><a href="#initTestCase-method">initTestCase</a>()
+FAIL<span class="operator">!</span>  : MathTests<span class="operator">::</span>test_fail() <span class="number">2</span> <span class="operator">+</span> <span class="number">2</span> <span class="operator">=</span> <span class="number">5</span>
+Actual (): <span class="number">4</span>
+Expected (): <span class="number">5</span>
+Loc: <span class="operator">[</span><span class="operator">/</span>home<span class="operator">/</span><span class="operator">.</span><span class="operator">.</span><span class="operator">.</span><span class="operator">/</span>tst_math<span class="operator">.</span>qml(<span class="number">12</span>)<span class="operator">]</span>
+PASS   : MathTests<span class="operator">::</span>test_math()
+PASS   : MathTests<span class="operator">::</span><a href="#cleanupTestCase-method">cleanupTestCase</a>()
+Totals: <span class="number">3</span> passed<span class="operator">,</span> <span class="number">1</span> failed<span class="operator">,</span> <span class="number">0</span> skipped
+<span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span> Finished testing of MathTests <span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span><span class="operator">*</span></pre>
+<p>Because of the way JavaScript properties work, the order in which the test functions are found is unpredictable. To assist with predictability, the test framework will sort the functions on ascending order of name. This can help when there are two tests that must be run in order.</p>
+<p>Multiple <a href="index.html">TestCase</a> types can be supplied. The test program will exit once they have all completed. If a test case doesn't need to run (because a precondition has failed), then <a href="#optional-prop">optional</a> can be set to true.</p>
+<h2 id="data-driven-tests">Data-driven tests</h2>
+<p>Table data can be provided to a test using a function name that ends with &quot;_data&quot;. Alternatively, the <code>init_data()</code> function can be used to provide default test data for all test functions in a <a href="index.html">TestCase</a> type:</p>
+<pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
+import <span class="type">QtTest</span> <span class="number">1.1</span>
 TestCase {
-    name: "DataTests"
-    function init_data() {
-      return [
-           {tag:"init_data_1", a:1, b:2, answer: 3},
-           {tag:"init_data_2", a:2, b:4, answer: 6}
-      ];
-    }
-    function test_table_data() {
-        return [
-            {tag: "2 + 2 = 4", a: 2, b: 2, answer: 4 },
-            {tag: "2 + 6 = 8", a: 2, b: 6, answer: 8 },
-        ]
-    }
-    function test_table(data) {
-        //data comes from test_table_data
-        compare(data.a + data.b, data.answer)
-    }
-    function test__default_table(data) {
-        //data comes from init_data
-        compare(data.a + data.b, data.answer)
-    }
+name: <span class="string">&quot;DataTests&quot;</span>
+function init_data() {
+<span class="keyword">return</span> <span class="operator">[</span>
+{tag:<span class="string">&quot;init_data_1&quot;</span><span class="operator">,</span> a:<span class="number">1</span><span class="operator">,</span> b:<span class="number">2</span><span class="operator">,</span> answer: <span class="number">3</span>}<span class="operator">,</span>
+{tag:<span class="string">&quot;init_data_2&quot;</span><span class="operator">,</span> a:<span class="number">2</span><span class="operator">,</span> b:<span class="number">4</span><span class="operator">,</span> answer: <span class="number">6</span>}
+<span class="operator">]</span>;
 }
-```
-
-The test framework will iterate over all of the rows in the table and pass each row to the test function. As shown, the columns can be extracted for use in the test. The `tag` column is special - it is printed by the test framework when a row fails, to help the reader identify which case failed amongst a set of otherwise passing tests.
-
-<span id="benchmarks"></span>
-Benchmarks
-----------
-
-Functions whose names start with "benchmark\_" will be run multiple times with the Qt benchmark framework, with an average timing value reported for the runs. This is equivalent to using the `QBENCHMARK` macro in the C++ version of QTestLib.
-
-``` cpp
+function test_table_data() {
+<span class="keyword">return</span> <span class="operator">[</span>
+{tag: <span class="string">&quot;2 + 2 = 4&quot;</span><span class="operator">,</span> a: <span class="number">2</span><span class="operator">,</span> b: <span class="number">2</span><span class="operator">,</span> answer: <span class="number">4</span> }<span class="operator">,</span>
+{tag: <span class="string">&quot;2 + 6 = 8&quot;</span><span class="operator">,</span> a: <span class="number">2</span><span class="operator">,</span> b: <span class="number">6</span><span class="operator">,</span> answer: <span class="number">8</span> }<span class="operator">,</span>
+<span class="operator">]</span>
+}
+function test_table(data) {
+<span class="comment">//data comes from test_table_data</span>
+compare(data<span class="operator">.</span>a <span class="operator">+</span> data<span class="operator">.</span>b<span class="operator">,</span> data<span class="operator">.</span>answer)
+}
+function test__default_table(data) {
+<span class="comment">//data comes from init_data</span>
+compare(data<span class="operator">.</span>a <span class="operator">+</span> data<span class="operator">.</span>b<span class="operator">,</span> data<span class="operator">.</span>answer)
+}
+}</pre>
+<p>The test framework will iterate over all of the rows in the table and pass each row to the test function. As shown, the columns can be extracted for use in the test. The <code>tag</code> column is special - it is printed by the test framework when a row fails, to help the reader identify which case failed amongst a set of otherwise passing tests.</p>
+<h2 id="benchmarks">Benchmarks</h2>
+<p>Functions whose names start with &quot;benchmark_&quot; will be run multiple times with the Qt benchmark framework, with an average timing value reported for the runs. This is equivalent to using the <code>QBENCHMARK</code> macro in the C++ version of QTestLib.</p>
+<pre class="cpp">TestCase {
+id: top
+name: <span class="string">&quot;CreateBenchmark&quot;</span>
+function benchmark_create_component() {
+var component <span class="operator">=</span> <span class="type">Qt</span><span class="operator">.</span>createComponent(<span class="string">&quot;item.qml&quot;</span>)
+var obj <span class="operator">=</span> component<span class="operator">.</span>createObject(top)
+obj<span class="operator">.</span>destroy()
+component<span class="operator">.</span>destroy()
+}
+}
+RESULT : CreateBenchmark<span class="operator">::</span>benchmark_create_component:
+<span class="number">0.23</span> msecs per iteration (total: <span class="number">60</span><span class="operator">,</span> iterations: <span class="number">256</span>)
+PASS   : CreateBenchmark<span class="operator">::</span>benchmark_create_component()</pre>
+<p>To get the effect of the <code>QBENCHMARK_ONCE</code> macro, prefix the test function name with &quot;benchmark_once_&quot;.</p>
+<h2 id="simulating-keyboard-and-mouse-events">Simulating keyboard and mouse events</h2>
+<p>The <a href="#keyPress-method">keyPress()</a>, <a href="#keyRelease-method">keyRelease()</a>, and <a href="#keyClick-method">keyClick()</a> methods can be used to simulate keyboard events within unit tests. The events are delivered to the currently focused QML item. You can pass either a Qt.Key enum value or a latin1 char (string of length one)</p>
+<pre class="cpp">Rectangle {
+width: <span class="number">50</span>; height: <span class="number">50</span>
+focus: <span class="keyword">true</span>
 TestCase {
-    id: top
-    name: "CreateBenchmark"
-    function benchmark_create_component() {
-        var component = Qt.createComponent("item.qml")
-        var obj = component.createObject(top)
-        obj.destroy()
-        component.destroy()
-    }
+name: <span class="string">&quot;KeyClick&quot;</span>
+when: windowShown
+function test_key_click() {
+keyClick(<span class="type">Qt</span><span class="operator">.</span>Key_Left)
+keyClick(<span class="string">&quot;a&quot;</span>)
+<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
 }
-RESULT : CreateBenchmark::benchmark_create_component:
-     0.23 msecs per iteration (total: 60, iterations: 256)
-PASS   : CreateBenchmark::benchmark_create_component()
-```
-
-To get the effect of the `QBENCHMARK_ONCE` macro, prefix the test function name with "benchmark\_once\_".
-
-<span id="simulating-keyboard-and-mouse-events"></span>
-Simulating keyboard and mouse events
-------------------------------------
-
-The [keyPress()](#keyPress-method), [keyRelease()](#keyRelease-method), and [keyClick()](#keyClick-method) methods can be used to simulate keyboard events within unit tests. The events are delivered to the currently focused QML item. You can pass either a Qt.Key enum value or a latin1 char (string of length one)
-
-``` cpp
-Rectangle {
-    width: 50; height: 50
-    focus: true
-    TestCase {
-        name: "KeyClick"
-        when: windowShown
-        function test_key_click() {
-            keyClick(Qt.Key_Left)
-            keyClick("a")
-            ...
-        }
-    }
 }
-```
-
-The [mousePress()](#mousePress-method), [mouseRelease()](#mouseRelease-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), and [mouseMove()](#mouseMove-method) methods can be used to simulate mouse events in a similar fashion.
-
-**Note:** keyboard and mouse events can only be delivered once the main window has been shown. Attempts to deliver events before then will fail. Use the [when](#when-prop) and [windowShown](#windowShown-prop) properties to track when the main window has been shown.
-
-**See also** [SignalSpy](../QtTest.SignalSpy.md) and Qt Quick Test Reference Documentation.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="completed-prop"></span><span class="name">completed</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property will be set to true once the test case has completed execution. Test cases are only executed once. The initial value is false.
-
-**See also** [running](#running-prop) and [when](#when-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="name-prop"></span><span class="name">name</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property defines the name of the test case for result reporting. The default is the empty string.
-
-``` cpp
+}</pre>
+<p>The <a href="#mousePress-method">mousePress()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, and <a href="#mouseMove-method">mouseMove()</a> methods can be used to simulate mouse events in a similar fashion.</p>
+<p><b>Note:</b> keyboard and mouse events can only be delivered once the main window has been shown. Attempts to deliver events before then will fail. Use the <a href="#when-prop">when</a> and <a href="#windowShown-prop">windowShown</a> properties to track when the main window has been shown.</p>
+<p><b>See also </b><a href="QtTest.SignalSpy.md">SignalSpy</a> and Qt Quick Test Reference Documentation.</p>
+<!-- @@@TestCase -->
+<h2>Property Documentation</h2>
+<!-- $$$completed -->
+<table class="qmlname"><tr valign="top" id="completed-prop"><td class="tblQmlPropNode"><p><span class="name">completed</span> : <span class="type">bool</span></p></td></tr></table><p>This property will be set to true once the test case has completed execution. Test cases are only executed once. The initial value is false.</p>
+<p><b>See also </b><a href="#running-prop">running</a> and <a href="#when-prop">when</a>.</p>
+<!-- @@@completed -->
+<br/>
+<!-- $$$name -->
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>This property defines the name of the test case for result reporting. The default is the empty string.</p>
+<pre class="cpp">TestCase {
+name: <span class="string">&quot;ButtonTests&quot;</span>
+<span class="operator">.</span><span class="operator">.</span><span class="operator">.</span>
+}</pre>
+<!-- @@@name -->
+<br/>
+<!-- $$$optional -->
+<table class="qmlname"><tr valign="top" id="optional-prop"><td class="tblQmlPropNode"><p><span class="name">optional</span> : <span class="type">bool</span></p></td></tr></table><p>Multiple <a href="index.html">TestCase</a> types can be supplied in a test application. The application will exit once they have all completed. If a test case does not need to run (because a precondition has failed), then this property can be set to true. The default value is false.</p>
+<pre class="cpp">TestCase {
+when: <span class="keyword">false</span>
+optional: <span class="keyword">true</span>
+function test_not_run() {
+verify(<span class="keyword">false</span>)
+}
+}</pre>
+<p><b>See also </b><a href="#when-prop">when</a> and <a href="#completed-prop">completed</a>.</p>
+<!-- @@@optional -->
+<br/>
+<!-- $$$running -->
+<table class="qmlname"><tr valign="top" id="running-prop"><td class="tblQmlPropNode"><p><span class="name">running</span> : <span class="type">bool</span></p></td></tr></table><p>This property will be set to true while the test case is running. The initial value is false, and the value will become false again once the test case completes.</p>
+<p><b>See also </b><a href="#completed-prop">completed</a> and <a href="#when-prop">when</a>.</p>
+<!-- @@@running -->
+<br/>
+<!-- $$$when -->
+<table class="qmlname"><tr valign="top" id="when-prop"><td class="tblQmlPropNode"><p><span class="name">when</span> : <span class="type">bool</span></p></td></tr></table><p>This property should be set to true when the application wants the test cases to run. The default value is true. In the following example, a test is run when the user presses the mouse button:</p>
+<pre class="cpp">Rectangle {
+id: foo
+width: <span class="number">640</span>; height: <span class="number">480</span>
+color: <span class="string">&quot;cyan&quot;</span>
+MouseArea {
+id: area
+anchors<span class="operator">.</span>fill: parent
+}
+property bool bar: <span class="keyword">true</span>
 TestCase {
-    name: "ButtonTests"
-    ...
+name: <span class="string">&quot;ItemTests&quot;</span>
+when: area<span class="operator">.</span>pressed
+id: test1
+function test_bar() {
+verify(bar)
 }
-```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="optional-prop"></span><span class="name">optional</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Multiple [TestCase](index.html) types can be supplied in a test application. The application will exit once they have all completed. If a test case does not need to run (because a precondition has failed), then this property can be set to true. The default value is false.
-
-``` cpp
+}
+}</pre>
+<p>The test application will exit once all <a href="index.html">TestCase</a> types have been triggered and have run. The <a href="#optional-prop">optional</a> property can be used to exclude a <a href="index.html">TestCase</a> type.</p>
+<p><b>See also </b><a href="#optional-prop">optional</a> and <a href="#completed-prop">completed</a>.</p>
+<!-- @@@when -->
+<br/>
+<!-- $$$windowShown -->
+<table class="qmlname"><tr valign="top" id="windowShown-prop"><td class="tblQmlPropNode"><p><span class="name">windowShown</span> : <span class="type">bool</span></p></td></tr></table><p>This property will be set to true after the QML viewing window has been displayed. Normally test cases run as soon as the test application is loaded and before a window is displayed. If the test case involves visual types and behaviors, then it may need to be delayed until after the window is shown.</p>
+<pre class="cpp">Button {
+id: button
+onClicked: text <span class="operator">=</span> <span class="string">&quot;Clicked&quot;</span>
 TestCase {
-    when: false
-    optional: true
-    function test_not_run() {
-        verify(false)
-    }
+name: <span class="string">&quot;ClickTest&quot;</span>
+when: windowShown
+function test_click() {
+button<span class="operator">.</span>clicked();
+compare(button<span class="operator">.</span>text<span class="operator">,</span> <span class="string">&quot;Clicked&quot;</span>);
 }
-```
-
-**See also** [when](#when-prop) and [completed](#completed-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="running-prop"></span><span class="name">running</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property will be set to true while the test case is running. The initial value is false, and the value will become false again once the test case completes.
-
-**See also** [completed](#completed-prop) and [when](#when-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="when-prop"></span><span class="name">when</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property should be set to true when the application wants the test cases to run. The default value is true. In the following example, a test is run when the user presses the mouse button:
-
-``` cpp
-Rectangle {
-    id: foo
-    width: 640; height: 480
-    color: "cyan"
-    MouseArea {
-        id: area
-        anchors.fill: parent
-    }
-    property bool bar: true
-    TestCase {
-        name: "ItemTests"
-        when: area.pressed
-        id: test1
-        function test_bar() {
-            verify(bar)
-        }
-    }
 }
-```
-
-The test application will exit once all [TestCase](index.html) types have been triggered and have run. The [optional](#optional-prop) property can be used to exclude a [TestCase](index.html) type.
-
-**See also** [optional](#optional-prop) and [completed](#completed-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="windowShown-prop"></span><span class="name">windowShown</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property will be set to true after the QML viewing window has been displayed. Normally test cases run as soon as the test application is loaded and before a window is displayed. If the test case involves visual types and behaviors, then it may need to be delayed until after the window is shown.
-
-``` cpp
-Button {
-    id: button
-    onClicked: text = "Clicked"
-    TestCase {
-        name: "ClickTest"
-        when: windowShown
-        function test_click() {
-            button.clicked();
-            compare(button.text, "Clicked");
-        }
-    }
-}
-```
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="cleanup-method"></span><span class="name">cleanup</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-This function is called after each test function that is executed in the [TestCase](index.html) type. The default implementation does nothing. The application can provide its own implementation to perform cleanup after each test function.
-
-**See also** [init()](#init-method) and [cleanupTestCase()](#cleanupTestCase-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="cleanupTestCase-method"></span><span class="name">cleanupTestCase</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-This function is called after all other test functions in the [TestCase](index.html) type have completed. The default implementation does nothing. The application can provide its own implementation to perform test case cleanup.
-
-**See also** [initTestCase()](#initTestCase-method) and [cleanup()](#cleanup-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="compare-method"></span><span class="name">compare</span>( <em>actual</em>, <em>expected</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fails the current test case if *actual* is not the same as *expected*, and displays the optional *message*. Similar to `QCOMPARE(actual, expected)` in C++.
-
-**See also** [tryCompare()](#tryCompare-method) and [fuzzyCompare](#fuzzyCompare-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="expectFail-method"></span><span class="name">expectFail</span>( <em>tag</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-In a data-driven test, marks the row associated with *tag* as expected to fail. When the fail occurs, display the *message*, abort the test, and mark the test as passing. Similar to `QEXPECT_FAIL(tag, message, Abort)` in C++.
-
-If the test is not data-driven, then *tag* must be set to the empty string.
-
-**See also** [expectFailContinue()](#expectFailContinue-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="expectFailContinue-method"></span><span class="name">expectFailContinue</span>( <em>tag</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-In a data-driven test, marks the row associated with *tag* as expected to fail. When the fail occurs, display the *message*, and then continue the test. Similar to `QEXPECT_FAIL(tag, message, Continue)` in C++.
-
-If the test is not data-driven, then *tag* must be set to the empty string.
-
-**See also** [expectFail()](#expectFail-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fail-method"></span><span class="name">fail</span>( <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fails the current test case, with the optional *message*. Similar to `QFAIL(message)` in C++.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="findChild-method"></span><span class="name">findChild</span>( <em>parent</em>, <em>objectName</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns the first child of *parent* with *objectName*, or `null` if no such item exists. Both visual and non-visual children are searched recursively, with visual children being searched first.
-
-``` cpp
-compare(findChild(item, "childObject"), expectedChildObject);
-```
-
-This QML method was introduced in Qt 5.4.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fuzzyCompare-method"></span><span class="name">fuzzyCompare</span>( <em>actual</em>, <em>expected</em>, <em>delta</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fails the current test case if the difference betwen *actual* and *expected* is greater than *delta*, and displays the optional *message*. Similar to `qFuzzyCompare(actual, expected)` in C++ but with a required *delta* value.
-
-This function can also be used for color comparisons if both the *actual* and *expected* values can be converted into color values. If any of the differences for RGBA channel values are greater than *delta*, the test fails.
-
-**See also** [tryCompare()](#tryCompare-method) and [compare()](#compare-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="grabImage-method"></span><span class="name">grabImage</span>( <em>item</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a snapshot image object of the given *item*.
-
-The returned image object has the following methods:
-
--   red(x, y) Returns the red channel value of the pixel at *x*, *y* position
--   green(x, y) Returns the green channel value of the pixel at *x*, *y* position
--   blue(x, y) Returns the blue channel value of the pixel at *x*, *y* position
--   alpha(x, y) Returns the alpha channel value of the pixel at *x*, *y* position
--   pixel(x, y) Returns the color value of the pixel at *x*, *y* position For example:
-
-    ``` cpp
-    var image = grabImage(rect);
-    compare(image.red(10, 10), 255);
-    compare(image.pixel(20, 20), Qt.rgba(255, 0, 0, 255));
-    ```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="ignoreWarning-method"></span><span class="name">ignoreWarning</span>( <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Marks *message* as an ignored warning message. When it occurs, the warning will not be printed and the test passes. If the message does not occur, then the test will fail. Similar to `QTest::ignoreMessage(QtWarningMsg, message)` in C++.
-
-**See also** [warn()](#warn-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="init-method"></span><span class="name">init</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-This function is called before each test function that is executed in the [TestCase](index.html) type. The default implementation does nothing. The application can provide its own implementation to perform initialization before each test function.
-
-**See also** [cleanup()](#cleanup-method) and [initTestCase()](#initTestCase-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="initTestCase-method"></span><span class="name">initTestCase</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-This function is called before any other test functions in the [TestCase](index.html) type. The default implementation does nothing. The application can provide its own implementation to perform test case initialization.
-
-**See also** [cleanupTestCase()](#cleanupTestCase-method) and [init()](#init-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="keyClick-method"></span><span class="name">keyClick</span>( <em>key</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates clicking of *key* with an optional *modifier* on the currently focused item. If *delay* is larger than 0, the test will wait for *delay* milliseconds.
-
-**See also** [keyPress()](#keyPress-method) and [keyRelease()](#keyRelease-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="keyPress-method"></span><span class="name">keyPress</span>( <em>key</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates pressing a *key* with an optional *modifier* on the currently focused item. If *delay* is larger than 0, the test will wait for *delay* milliseconds.
-
-**Note:** At some point you should release the key using [keyRelease()](#keyRelease-method).
-
-**See also** [keyRelease()](#keyRelease-method) and [keyClick()](#keyClick-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="keyRelease-method"></span><span class="name">keyRelease</span>( <em>key</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates releasing a *key* with an optional *modifier* on the currently focused item. If *delay* is larger than 0, the test will wait for *delay* milliseconds.
-
-**See also** [keyPress()](#keyPress-method) and [keyClick()](#keyClick-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseClick-method"></span><span class="name">mouseClick</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates clicking a mouse *button* with an optional *modifier* on an *item*. The position of the click is defined by *x* and *y*. If *delay* is specified, the test will wait for the specified amount of milliseconds before pressing and before releasing the button.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-**See also** [mousePress()](#mousePress-method), [mouseRelease()](#mouseRelease-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseMove()](#mouseMove-method), [mouseDrag()](#mouseDrag-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseDoubleClick-method"></span><span class="name">mouseDoubleClick</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates double-clicking a mouse *button* with an optional *modifier* on an *item*. The position of the click is defined by *x* and *y*. If *delay* is specified, the test will wait for the specified amount of milliseconds before pressing and before releasing the button.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-**See also** [mousePress()](#mousePress-method), [mouseRelease()](#mouseRelease-method), [mouseClick()](#mouseClick-method), [mouseMove()](#mouseMove-method), [mouseDrag()](#mouseDrag-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseDrag-method"></span><span class="name">mouseDrag</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>dx</em>, <em>dy</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates dragging the mouse on an *item* with *button* pressed and an optional *modifier*. The initial drag position is defined by *x* and *y*, and drag distance is defined by *dx* and *dy*. If *delay* is specified, the test will wait for the specified amount of milliseconds before releasing the button.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-Note: this method does not imply a drop action, to make a drop, an additional [mouseRelease](#mouseRelease-method)(item, x + dx, y + dy) is needed.
-
-**See also** [mousePress()](#mousePress-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseMove()](#mouseMove-method), [mouseRelease()](#mouseRelease-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseMove-method"></span><span class="name">mouseMove</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>delay</em>, <em>buttons</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Moves the mouse pointer to the position given by *x* and *y* within *item*. If a *delay* (in milliseconds) is given, the test will wait before moving the mouse pointer.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-**See also** [mousePress()](#mousePress-method), [mouseRelease()](#mouseRelease-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseDrag()](#mouseDrag-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mousePress-method"></span><span class="name">mousePress</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates pressing a mouse *button* with an optional *modifier* on an *item*. The position is defined by *x* and *y*. If *delay* is specified, the test will wait for the specified amount of milliseconds before the press.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-**See also** [mouseRelease()](#mouseRelease-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseMove()](#mouseMove-method), [mouseDrag()](#mouseDrag-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseRelease-method"></span><span class="name">mouseRelease</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>button</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates releasing a mouse *button* with an optional *modifier* on an *item*. The position of the release is defined by *x* and *y*. If *delay* is specified, the test will wait for the specified amount of milliseconds before releasing the button.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-**See also** [mousePress()](#mousePress-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseMove()](#mouseMove-method), [mouseDrag()](#mouseDrag-method), and [mouseWheel()](#mouseWheel-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="mouseWheel-method"></span><span class="name">mouseWheel</span>( <em>item</em>, <em>x</em>, <em>y</em>, <em>xDelta</em>, <em>yDelta</em>, <em>buttons</em>, <em>modifiers</em>, <em>delay</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Simulates rotating the mouse wheel on an *item* with *button* pressed and an optional *modifier*. The position of the wheel event is defined by *x* and *y*. If *delay* is specified, the test will wait for the specified amount of milliseconds before releasing the button.
-
-The position given by *x* and *y* is transformed from the co-ordinate system of *item* into window co-ordinates and then delivered. If *item* is obscured by another item, or a child of *item* occupies that position, then the event will be delivered to the other item instead.
-
-The *xDelta* and *yDelta* contain the wheel rotation distance in eighths of a degree. see QWheelEvent::angleDelta() for more details.
-
-**See also** [mousePress()](#mousePress-method), [mouseClick()](#mouseClick-method), [mouseDoubleClick()](#mouseDoubleClick-method), [mouseMove()](#mouseMove-method), [mouseRelease()](#mouseRelease-method), [mouseDrag()](#mouseDrag-method), and QWheelEvent::angleDelta().
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="skip-method"></span><span class="name">skip</span>( <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Skips the current test case and prints the optional *message*. If this is a data-driven test, then only the current row is skipped. Similar to `QSKIP(message)` in C++.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="sleep-method"></span><span class="name">sleep</span>( <em>ms</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Sleeps for *ms* milliseconds without processing Qt events.
-
-**See also** [wait()](#wait-method) and [waitForRendering()](#waitForRendering-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="tryCompare-method"></span><span class="name">tryCompare</span>( <em>obj</em>, <em>prop</em>, <em>value</em>, <em>timeout</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fails the current test case if the specified *property* on *obj* is not the same as *expected*, and displays the optional *message*. The test will be retried multiple times until the *timeout* (in milliseconds) is reached.
-
-This function is intended for testing applications where a property changes value based on asynchronous events. Use [compare()](#compare-method) for testing synchronous property changes.
-
-``` cpp
-tryCompare(img, "status", BorderImage.Ready)
-compare(img.width, 120)
-compare(img.height, 120)
-compare(img.horizontalTileMode, BorderImage.Stretch)
-compare(img.verticalTileMode, BorderImage.Stretch)
-```
-
-[SignalSpy::wait()](../QtTest.SignalSpy.md#wait-method) provides an alternative method to wait for a signal to be emitted.
-
-**See also** [compare()](#compare-method) and [SignalSpy::wait()](../QtTest.SignalSpy.md#wait-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="verify-method"></span><span class="name">verify</span>( <em>cond</em>, <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fails the current test case if *condition* is false, and displays the optional *message*. Similar to `QVERIFY(condition)` or `QVERIFY2(condition, message)` in C++.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="wait-method"></span><span class="name">wait</span>( <em>ms</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Waits for *ms* milliseconds while processing Qt events.
-
-**See also** [sleep()](#sleep-method) and [waitForRendering()](#waitForRendering-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="waitForRendering-method"></span><span class="name">waitForRendering</span>( <em>item</em>, <em>timeout</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Waits for *timeout* milliseconds or until the *item* is rendered by the renderer. Returns true if `item` is rendered in *timeout* milliseconds, otherwise returns false. The default *timeout* value is 5000.
-
-**See also** [sleep()](#sleep-method) and [wait()](#wait-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="warn-method"></span><span class="name">warn</span>( <em>msg</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Prints *message* as a warning message. Similar to `QWARN(message)` in C++.
-
-**See also** [ignoreWarning()](#ignoreWarning-method).
-
+}</pre>
+<!-- @@@windowShown -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$cleanup -->
+<table class="qmlname"><tr valign="top" id="cleanup-method"><td class="tblQmlFuncNode"><p><span class="name">cleanup</span>()</p></td></tr></table><p>This function is called after each test function that is executed in the <a href="index.html">TestCase</a> type. The default implementation does nothing. The application can provide its own implementation to perform cleanup after each test function.</p>
+<p><b>See also </b><a href="#init-method">init()</a> and <a href="#cleanupTestCase-method">cleanupTestCase()</a>.</p>
+<!-- @@@cleanup -->
+<br/>
+<!-- $$$cleanupTestCase -->
+<table class="qmlname"><tr valign="top" id="cleanupTestCase-method"><td class="tblQmlFuncNode"><p><span class="name">cleanupTestCase</span>()</p></td></tr></table><p>This function is called after all other test functions in the <a href="index.html">TestCase</a> type have completed. The default implementation does nothing. The application can provide its own implementation to perform test case cleanup.</p>
+<p><b>See also </b><a href="#initTestCase-method">initTestCase()</a> and <a href="#cleanup-method">cleanup()</a>.</p>
+<!-- @@@cleanupTestCase -->
+<br/>
+<!-- $$$compare -->
+<table class="qmlname"><tr valign="top" id="compare-method"><td class="tblQmlFuncNode"><p><span class="name">compare</span>(<i> actual</i>, <i> expected</i>, <i> msg</i>)</p></td></tr></table><p>Fails the current test case if <i>actual</i> is not the same as <i>expected</i>, and displays the optional <i>message</i>. Similar to <code>QCOMPARE(actual, expected)</code> in C++.</p>
+<p><b>See also </b><a href="#tryCompare-method">tryCompare()</a> and <a href="#fuzzyCompare-method">fuzzyCompare</a>.</p>
+<!-- @@@compare -->
+<br/>
+<!-- $$$expectFail -->
+<table class="qmlname"><tr valign="top" id="expectFail-method"><td class="tblQmlFuncNode"><p><span class="name">expectFail</span>(<i> tag</i>, <i> msg</i>)</p></td></tr></table><p>In a data-driven test, marks the row associated with <i>tag</i> as expected to fail. When the fail occurs, display the <i>message</i>, abort the test, and mark the test as passing. Similar to <code>QEXPECT_FAIL(tag, message, Abort)</code> in C++.</p>
+<p>If the test is not data-driven, then <i>tag</i> must be set to the empty string.</p>
+<p><b>See also </b><a href="#expectFailContinue-method">expectFailContinue()</a>.</p>
+<!-- @@@expectFail -->
+<br/>
+<!-- $$$expectFailContinue -->
+<table class="qmlname"><tr valign="top" id="expectFailContinue-method"><td class="tblQmlFuncNode"><p><span class="name">expectFailContinue</span>(<i> tag</i>, <i> msg</i>)</p></td></tr></table><p>In a data-driven test, marks the row associated with <i>tag</i> as expected to fail. When the fail occurs, display the <i>message</i>, and then continue the test. Similar to <code>QEXPECT_FAIL(tag, message, Continue)</code> in C++.</p>
+<p>If the test is not data-driven, then <i>tag</i> must be set to the empty string.</p>
+<p><b>See also </b><a href="#expectFail-method">expectFail()</a>.</p>
+<!-- @@@expectFailContinue -->
+<br/>
+<!-- $$$fail -->
+<table class="qmlname"><tr valign="top" id="fail-method"><td class="tblQmlFuncNode"><p><span class="name">fail</span>(<i> msg</i>)</p></td></tr></table><p>Fails the current test case, with the optional <i>message</i>. Similar to <code>QFAIL(message)</code> in C++.</p>
+<!-- @@@fail -->
+<br/>
+<!-- $$$findChild -->
+<table class="qmlname"><tr valign="top" id="findChild-method"><td class="tblQmlFuncNode"><p><span class="name">findChild</span>(<i> parent</i>, <i> objectName</i>)</p></td></tr></table><p>Returns the first child of <i>parent</i> with <i>objectName</i>, or <code>null</code> if no such item exists. Both visual and non-visual children are searched recursively, with visual children being searched first.</p>
+<pre class="cpp"><a href="#compare-method">compare</a>(findChild(item<span class="operator">,</span> <span class="string">&quot;childObject&quot;</span>)<span class="operator">,</span> expectedChildObject);</pre>
+<p>This QML method was introduced in  Qt 5.4.</p>
+<!-- @@@findChild -->
+<br/>
+<!-- $$$fuzzyCompare -->
+<table class="qmlname"><tr valign="top" id="fuzzyCompare-method"><td class="tblQmlFuncNode"><p><span class="name">fuzzyCompare</span>(<i> actual</i>, <i> expected</i>, <i> delta</i>, <i> msg</i>)</p></td></tr></table><p>Fails the current test case if the difference betwen <i>actual</i> and <i>expected</i> is greater than <i>delta</i>, and displays the optional <i>message</i>. Similar to <code>qFuzzyCompare(actual, expected)</code> in C++ but with a required <i>delta</i> value.</p>
+<p>This function can also be used for color comparisons if both the <i>actual</i> and <i>expected</i> values can be converted into color values. If any of the differences for RGBA channel values are greater than <i>delta</i>, the test fails.</p>
+<p><b>See also </b><a href="#tryCompare-method">tryCompare()</a> and <a href="#compare-method">compare()</a>.</p>
+<!-- @@@fuzzyCompare -->
+<br/>
+<!-- $$$grabImage -->
+<table class="qmlname"><tr valign="top" id="grabImage-method"><td class="tblQmlFuncNode"><p><span class="name">grabImage</span>(<i> item</i>)</p></td></tr></table><p>Returns a snapshot image object of the given <i>item</i>.</p>
+<p>The returned image object has the following methods:</p>
+<ul>
+<li>red(x, y) Returns the red channel value of the pixel at <i>x</i>, <i>y</i> position</li>
+<li>green(x, y) Returns the green channel value of the pixel at <i>x</i>, <i>y</i> position</li>
+<li>blue(x, y) Returns the blue channel value of the pixel at <i>x</i>, <i>y</i> position</li>
+<li>alpha(x, y) Returns the alpha channel value of the pixel at <i>x</i>, <i>y</i> position</li>
+<li>pixel(x, y) Returns the color value of the pixel at <i>x</i>, <i>y</i> position For example:<pre class="cpp">var image <span class="operator">=</span> grabImage(rect);
+<a href="#compare-method">compare</a>(image<span class="operator">.</span>red(<span class="number">10</span><span class="operator">,</span> <span class="number">10</span>)<span class="operator">,</span> <span class="number">255</span>);
+<a href="#compare-method">compare</a>(image<span class="operator">.</span>pixel(<span class="number">20</span><span class="operator">,</span> <span class="number">20</span>)<span class="operator">,</span> <span class="type">Qt</span><span class="operator">.</span>rgba(<span class="number">255</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">255</span>));</pre>
+</li>
+</ul>
+<!-- @@@grabImage -->
+<br/>
+<!-- $$$ignoreWarning -->
+<table class="qmlname"><tr valign="top" id="ignoreWarning-method"><td class="tblQmlFuncNode"><p><span class="name">ignoreWarning</span>(<i> msg</i>)</p></td></tr></table><p>Marks <i>message</i> as an ignored warning message. When it occurs, the warning will not be printed and the test passes. If the message does not occur, then the test will fail. Similar to <code>QTest::ignoreMessage(QtWarningMsg, message)</code> in C++.</p>
+<p><b>See also </b><a href="#warn-method">warn()</a>.</p>
+<!-- @@@ignoreWarning -->
+<br/>
+<!-- $$$init -->
+<table class="qmlname"><tr valign="top" id="init-method"><td class="tblQmlFuncNode"><p><span class="name">init</span>()</p></td></tr></table><p>This function is called before each test function that is executed in the <a href="index.html">TestCase</a> type. The default implementation does nothing. The application can provide its own implementation to perform initialization before each test function.</p>
+<p><b>See also </b><a href="#cleanup-method">cleanup()</a> and <a href="#initTestCase-method">initTestCase()</a>.</p>
+<!-- @@@init -->
+<br/>
+<!-- $$$initTestCase -->
+<table class="qmlname"><tr valign="top" id="initTestCase-method"><td class="tblQmlFuncNode"><p><span class="name">initTestCase</span>()</p></td></tr></table><p>This function is called before any other test functions in the <a href="index.html">TestCase</a> type. The default implementation does nothing. The application can provide its own implementation to perform test case initialization.</p>
+<p><b>See also </b><a href="#cleanupTestCase-method">cleanupTestCase()</a> and <a href="#init-method">init()</a>.</p>
+<!-- @@@initTestCase -->
+<br/>
+<!-- $$$keyClick -->
+<table class="qmlname"><tr valign="top" id="keyClick-method"><td class="tblQmlFuncNode"><p><span class="name">keyClick</span>(<i> key</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates clicking of <i>key</i> with an optional <i>modifier</i> on the currently focused item. If <i>delay</i> is larger than 0, the test will wait for <i>delay</i> milliseconds.</p>
+<p><b>See also </b><a href="#keyPress-method">keyPress()</a> and <a href="#keyRelease-method">keyRelease()</a>.</p>
+<!-- @@@keyClick -->
+<br/>
+<!-- $$$keyPress -->
+<table class="qmlname"><tr valign="top" id="keyPress-method"><td class="tblQmlFuncNode"><p><span class="name">keyPress</span>(<i> key</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates pressing a <i>key</i> with an optional <i>modifier</i> on the currently focused item. If <i>delay</i> is larger than 0, the test will wait for <i>delay</i> milliseconds.</p>
+<p><b>Note:</b> At some point you should release the key using <a href="#keyRelease-method">keyRelease()</a>.</p>
+<p><b>See also </b><a href="#keyRelease-method">keyRelease()</a> and <a href="#keyClick-method">keyClick()</a>.</p>
+<!-- @@@keyPress -->
+<br/>
+<!-- $$$keyRelease -->
+<table class="qmlname"><tr valign="top" id="keyRelease-method"><td class="tblQmlFuncNode"><p><span class="name">keyRelease</span>(<i> key</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates releasing a <i>key</i> with an optional <i>modifier</i> on the currently focused item. If <i>delay</i> is larger than 0, the test will wait for <i>delay</i> milliseconds.</p>
+<p><b>See also </b><a href="#keyPress-method">keyPress()</a> and <a href="#keyClick-method">keyClick()</a>.</p>
+<!-- @@@keyRelease -->
+<br/>
+<!-- $$$mouseClick -->
+<table class="qmlname"><tr valign="top" id="mouseClick-method"><td class="tblQmlFuncNode"><p><span class="name">mouseClick</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates clicking a mouse <i>button</i> with an optional <i>modifier</i> on an <i>item</i>. The position of the click is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before pressing and before releasing the button.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mouseClick -->
+<br/>
+<!-- $$$mouseDoubleClick -->
+<table class="qmlname"><tr valign="top" id="mouseDoubleClick-method"><td class="tblQmlFuncNode"><p><span class="name">mouseDoubleClick</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates double-clicking a mouse <i>button</i> with an optional <i>modifier</i> on an <i>item</i>. The position of the click is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before pressing and before releasing the button.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mouseDoubleClick -->
+<br/>
+<!-- $$$mouseDrag -->
+<table class="qmlname"><tr valign="top" id="mouseDrag-method"><td class="tblQmlFuncNode"><p><span class="name">mouseDrag</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> dx</i>, <i> dy</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates dragging the mouse on an <i>item</i> with <i>button</i> pressed and an optional <i>modifier</i>. The initial drag position is defined by <i>x</i> and <i>y</i>, and drag distance is defined by <i>dx</i> and <i>dy</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before releasing the button.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p>Note: this method does not imply a drop action, to make a drop, an additional <a href="#mouseRelease-method">mouseRelease</a>(item, x + dx, y + dy) is needed.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mouseDrag -->
+<br/>
+<!-- $$$mouseMove -->
+<table class="qmlname"><tr valign="top" id="mouseMove-method"><td class="tblQmlFuncNode"><p><span class="name">mouseMove</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> delay</i>, <i> buttons</i>)</p></td></tr></table><p>Moves the mouse pointer to the position given by <i>x</i> and <i>y</i> within <i>item</i>. If a <i>delay</i> (in milliseconds) is given, the test will wait before moving the mouse pointer.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mouseMove -->
+<br/>
+<!-- $$$mousePress -->
+<table class="qmlname"><tr valign="top" id="mousePress-method"><td class="tblQmlFuncNode"><p><span class="name">mousePress</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates pressing a mouse <i>button</i> with an optional <i>modifier</i> on an <i>item</i>. The position is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before the press.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p><b>See also </b><a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mousePress -->
+<br/>
+<!-- $$$mouseRelease -->
+<table class="qmlname"><tr valign="top" id="mouseRelease-method"><td class="tblQmlFuncNode"><p><span class="name">mouseRelease</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> button</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates releasing a mouse <i>button</i> with an optional <i>modifier</i> on an <i>item</i>. The position of the release is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before releasing the button.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and <a href="#mouseWheel-method">mouseWheel()</a>.</p>
+<!-- @@@mouseRelease -->
+<br/>
+<!-- $$$mouseWheel -->
+<table class="qmlname"><tr valign="top" id="mouseWheel-method"><td class="tblQmlFuncNode"><p><span class="name">mouseWheel</span>(<i> item</i>, <i> x</i>, <i> y</i>, <i> xDelta</i>, <i> yDelta</i>, <i> buttons</i>, <i> modifiers</i>, <i> delay</i>)</p></td></tr></table><p>Simulates rotating the mouse wheel on an <i>item</i> with <i>button</i> pressed and an optional <i>modifier</i>. The position of the wheel event is defined by <i>x</i> and <i>y</i>. If <i>delay</i> is specified, the test will wait for the specified amount of milliseconds before releasing the button.</p>
+<p>The position given by <i>x</i> and <i>y</i> is transformed from the co-ordinate system of <i>item</i> into window co-ordinates and then delivered. If <i>item</i> is obscured by another item, or a child of <i>item</i> occupies that position, then the event will be delivered to the other item instead.</p>
+<p>The <i>xDelta</i> and <i>yDelta</i> contain the wheel rotation distance in eighths of a degree. see QWheelEvent::angleDelta() for more details.</p>
+<p><b>See also </b><a href="#mousePress-method">mousePress()</a>, <a href="#mouseClick-method">mouseClick()</a>, <a href="#mouseDoubleClick-method">mouseDoubleClick()</a>, <a href="#mouseMove-method">mouseMove()</a>, <a href="#mouseRelease-method">mouseRelease()</a>, <a href="#mouseDrag-method">mouseDrag()</a>, and QWheelEvent::angleDelta().</p>
+<!-- @@@mouseWheel -->
+<br/>
+<!-- $$$skip -->
+<table class="qmlname"><tr valign="top" id="skip-method"><td class="tblQmlFuncNode"><p><span class="name">skip</span>(<i> msg</i>)</p></td></tr></table><p>Skips the current test case and prints the optional <i>message</i>. If this is a data-driven test, then only the current row is skipped. Similar to <code>QSKIP(message)</code> in C++.</p>
+<!-- @@@skip -->
+<br/>
+<!-- $$$sleep -->
+<table class="qmlname"><tr valign="top" id="sleep-method"><td class="tblQmlFuncNode"><p><span class="name">sleep</span>(<i> ms</i>)</p></td></tr></table><p>Sleeps for <i>ms</i> milliseconds without processing Qt events.</p>
+<p><b>See also </b><a href="#wait-method">wait()</a> and <a href="#waitForRendering-method">waitForRendering()</a>.</p>
+<!-- @@@sleep -->
+<br/>
+<!-- $$$tryCompare -->
+<table class="qmlname"><tr valign="top" id="tryCompare-method"><td class="tblQmlFuncNode"><p><span class="name">tryCompare</span>(<i> obj</i>, <i> prop</i>, <i> value</i>, <i> timeout</i>, <i> msg</i>)</p></td></tr></table><p>Fails the current test case if the specified <i>property</i> on <i>obj</i> is not the same as <i>expected</i>, and displays the optional <i>message</i>. The test will be retried multiple times until the <i>timeout</i> (in milliseconds) is reached.</p>
+<p>This function is intended for testing applications where a property changes value based on asynchronous events. Use <a href="#compare-method">compare()</a> for testing synchronous property changes.</p>
+<pre class="cpp">tryCompare(img<span class="operator">,</span> <span class="string">&quot;status&quot;</span><span class="operator">,</span> BorderImage<span class="operator">.</span>Ready)
+<a href="#compare-method">compare</a>(img<span class="operator">.</span>width<span class="operator">,</span> <span class="number">120</span>)
+<a href="#compare-method">compare</a>(img<span class="operator">.</span>height<span class="operator">,</span> <span class="number">120</span>)
+<a href="#compare-method">compare</a>(img<span class="operator">.</span>horizontalTileMode<span class="operator">,</span> BorderImage<span class="operator">.</span>Stretch)
+<a href="#compare-method">compare</a>(img<span class="operator">.</span>verticalTileMode<span class="operator">,</span> BorderImage<span class="operator">.</span>Stretch)</pre>
+<p><a href="QtTest.SignalSpy.md#wait-method">SignalSpy::wait()</a> provides an alternative method to wait for a signal to be emitted.</p>
+<p><b>See also </b><a href="#compare-method">compare()</a> and <a href="QtTest.SignalSpy.md#wait-method">SignalSpy::wait()</a>.</p>
+<!-- @@@tryCompare -->
+<br/>
+<!-- $$$verify -->
+<table class="qmlname"><tr valign="top" id="verify-method"><td class="tblQmlFuncNode"><p><span class="name">verify</span>(<i> cond</i>, <i> msg</i>)</p></td></tr></table><p>Fails the current test case if <i>condition</i> is false, and displays the optional <i>message</i>. Similar to <code>QVERIFY(condition)</code> or <code>QVERIFY2(condition, message)</code> in C++.</p>
+<!-- @@@verify -->
+<br/>
+<!-- $$$wait -->
+<table class="qmlname"><tr valign="top" id="wait-method"><td class="tblQmlFuncNode"><p><span class="name">wait</span>(<i> ms</i>)</p></td></tr></table><p>Waits for <i>ms</i> milliseconds while processing Qt events.</p>
+<p><b>See also </b><a href="#sleep-method">sleep()</a> and <a href="#waitForRendering-method">waitForRendering()</a>.</p>
+<!-- @@@wait -->
+<br/>
+<!-- $$$waitForRendering -->
+<table class="qmlname"><tr valign="top" id="waitForRendering-method"><td class="tblQmlFuncNode"><p><span class="name">waitForRendering</span>(<i> item</i>, <i> timeout</i>)</p></td></tr></table><p>Waits for <i>timeout</i> milliseconds or until the <i>item</i> is rendered by the renderer. Returns true if <code>item</code> is rendered in <i>timeout</i> milliseconds, otherwise returns false. The default <i>timeout</i> value is 5000.</p>
+<p><b>See also </b><a href="#sleep-method">sleep()</a> and <a href="#wait-method">wait()</a>.</p>
+<!-- @@@waitForRendering -->
+<br/>
+<!-- $$$warn -->
+<table class="qmlname"><tr valign="top" id="warn-method"><td class="tblQmlFuncNode"><p><span class="name">warn</span>(<i> msg</i>)</p></td></tr></table><p>Prints <i>message</i> as a warning message. Similar to <code>QWARN(message)</code> in C++.</p>
+<p><b>See also </b><a href="#ignoreWarning-method">ignoreWarning()</a>.</p>
+<!-- @@@warn -->
+<br/>

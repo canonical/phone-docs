@@ -35,7 +35,6 @@ The Ubuntu Push system provides:
   * A push server which receives **push messages** from the app servers, queues them and delivers them efficiently to the devices.
   * A push client which receives those messages, queues messages to the app and displays notifications to the user
 
-
 The full lifecycle of a push message is:
 
   1. Created in a application-specific server
@@ -52,8 +51,6 @@ should check its queue for messages it has to process.
 
 
 
-
-
 For the app developer, there are several components needed:
 
   * A server that sends the **push messages** to the Ubuntu Push server
@@ -63,8 +60,6 @@ For the app developer, there are several components needed:
 
 In the following sections, we'll see how to implement all the client side
 parts. For the application server, see the Ubuntu Push Server API section
-
-
 
 
 
@@ -145,8 +140,6 @@ value.
 
 
 
-
-
 ## Application helpers
 
 The payload delivered to push-client will be passed onto a helper program that
@@ -220,8 +213,6 @@ for all apps in the package:
 
 **Note**: For deb packages, helpers should be installed into `/usr/lib/ubuntu-push-
 client/legacy-helpers/` as part of the package.
-
-
 
 
 

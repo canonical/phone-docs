@@ -103,7 +103,6 @@ They are often the greatest memory hogs, let’s see how to handle them:
   * **Avoid scaling and resizing images**. Don’t hesitate to use multiple sizes of your assets and declare their exact dimensions.
   * **Load large images asynchronously**, the UI will stay responsive while loading them. Note that this is only needed for local resources, network images are always lazy-loaded.
 
-
 ```
 Image {
     source: “largefile.jpg”

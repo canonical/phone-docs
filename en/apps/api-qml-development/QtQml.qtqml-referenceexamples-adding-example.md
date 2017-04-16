@@ -1,89 +1,66 @@
 ---
 Title: QtQml.qtqml-referenceexamples-adding-example
 ---
-        
-Extending QML - Adding Types Example
-====================================
+
+# QtQml.qtqml-referenceexamples-adding-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-The Adding Types Example shows how to add a new object type, `Person`, to QML. The `Person` type can be used from QML like this:
-
-``` qml
-import People 1.0
-Person {
-    name: "Bob Jones"
-    shoeSize: 12
-}
-```
-
-<span id="declare-the-person-class"></span>
-Declare the Person Class
-------------------------
-
-All QML types map to C++ types. Here we declare a basic C++ Person class with the two properties we want accessible on the QML type - name and shoeSize. Although in this example we use the same name for the C++ class as the QML type, the C++ class can be named differently, or appear in a namespace.
-
-``` cpp
-class Person : public QObject
+<!-- $$$referenceexamples/adding-description -->
+<p>The Adding Types Example shows how to add a new object type, <code>Person</code>, to QML. The <code>Person</code> type can be used from QML like this:</p>
+<pre class="qml">import People 1.0
+<span class="type">Person</span> {
+<span class="name">name</span>: <span class="string">&quot;Bob Jones&quot;</span>
+<span class="name">shoeSize</span>: <span class="number">12</span>
+}</pre>
+<h2 id="declare-the-person-class">Declare the Person Class</h2>
+<p>All QML types map to C++ types. Here we declare a basic C++ Person class with the two properties we want accessible on the QML type - name and shoeSize. Although in this example we use the same name for the C++ class as the QML type, the C++ class can be named differently, or appear in a namespace.</p>
+<pre class="cpp"><span class="keyword">class</span> Person : <span class="keyword">public</span> <span class="type">QObject</span>
 {
-    Q_OBJECT
-    Q_PROPERTY(QString name READ name WRITE setName)
-    Q_PROPERTY(int shoeSize READ shoeSize WRITE setShoeSize)
-public:
-    Person(QObject *parent = 0);
-    QString name() const;
-    void setName(const QString &);
-    int shoeSize() const;
-    void setShoeSize(int);
-private:
-    QString m_name;
-    int m_shoeSize;
-};
-```
-
-<span id="define-the-person-class"></span>
-Define the Person Class
------------------------
-
-``` cpp
-Person::Person(QObject *parent)
-: QObject(parent), m_shoeSize(0)
+Q_OBJECT
+Q_PROPERTY(<span class="type">QString</span> name READ name WRITE setName)
+Q_PROPERTY(<span class="type">int</span> shoeSize READ shoeSize WRITE setShoeSize)
+<span class="keyword">public</span>:
+Person(<span class="type">QObject</span> <span class="operator">*</span>parent <span class="operator">=</span> <span class="number">0</span>);
+<span class="type">QString</span> name() <span class="keyword">const</span>;
+<span class="type">void</span> setName(<span class="keyword">const</span> <span class="type">QString</span> <span class="operator">&amp;</span>);
+<span class="type">int</span> shoeSize() <span class="keyword">const</span>;
+<span class="type">void</span> setShoeSize(<span class="type">int</span>);
+<span class="keyword">private</span>:
+<span class="type">QString</span> m_name;
+<span class="type">int</span> m_shoeSize;
+};</pre>
+<h2 id="define-the-person-class">Define the Person Class</h2>
+<pre class="cpp">Person<span class="operator">::</span>Person(<span class="type">QObject</span> <span class="operator">*</span>parent)
+: <span class="type">QObject</span>(parent)<span class="operator">,</span> m_shoeSize(<span class="number">0</span>)
 {
 }
-QString Person::name() const
+<span class="type">QString</span> Person<span class="operator">::</span>name() <span class="keyword">const</span>
 {
-    return m_name;
+<span class="keyword">return</span> m_name;
 }
-void Person::setName(const QString &n)
+<span class="type">void</span> Person<span class="operator">::</span>setName(<span class="keyword">const</span> <span class="type">QString</span> <span class="operator">&amp;</span>n)
 {
-    m_name = n;
+m_name <span class="operator">=</span> n;
 }
-int Person::shoeSize() const
+<span class="type">int</span> Person<span class="operator">::</span>shoeSize() <span class="keyword">const</span>
 {
-    return m_shoeSize;
+<span class="keyword">return</span> m_shoeSize;
 }
-void Person::setShoeSize(int s)
+<span class="type">void</span> Person<span class="operator">::</span>setShoeSize(<span class="type">int</span> s)
 {
-    m_shoeSize = s;
-}
-```
-
-The Person class implementation is quite basic. The property accessors simply return members of the object instance.
-
-The `main.cpp` file also calls the `qmlRegisterType()` function to register the `Person` type with QML as a type in the People library version 1.0, and defines the mapping between the C++ and QML class names.
-
-<span id="running-the-example"></span>
-Running the Example
--------------------
-
-The main.cpp file in the example includes a simple shell application that loads and runs the QML snippet shown at the beginning of this page.
-
-Files:
-
--   referenceexamples/adding/example.qml
--   referenceexamples/adding/person.cpp
--   referenceexamples/adding/person.h
--   referenceexamples/adding/main.cpp
--   referenceexamples/adding/adding.pro
--   referenceexamples/adding/adding.qrc
-
+m_shoeSize <span class="operator">=</span> s;
+}</pre>
+<p>The Person class implementation is quite basic. The property accessors simply return members of the object instance.</p>
+<p>The <code>main.cpp</code> file also calls the <code>qmlRegisterType()</code> function to register the <code>Person</code> type with QML as a type in the People library version 1.0, and defines the mapping between the C++ and QML class names.</p>
+<h2 id="running-the-example">Running the Example</h2>
+<p>The main.cpp file in the example includes a simple shell application that loads and runs the QML snippet shown at the beginning of this page.</p>
+<p>Files:</p>
+<ul>
+<li>referenceexamples/adding/example.qml</li>
+<li>referenceexamples/adding/person.cpp</li>
+<li>referenceexamples/adding/person.h</li>
+<li>referenceexamples/adding/main.cpp</li>
+<li>referenceexamples/adding/adding.pro</li>
+<li>referenceexamples/adding/adding.qrc</li>
+</ul>
+<!-- @@@referenceexamples/adding -->

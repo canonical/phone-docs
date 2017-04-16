@@ -88,7 +88,6 @@ Base  | Ambiance      | Suru dark
 .base | Silk | Graphite
 .baseText  | Ash | Ash
 
-
 #### Foreground
 
 These are the colors applied to components that sit on top of the background
@@ -141,7 +140,6 @@ Field  | Ambiance      | Suru dark
 ----------- | ------------- | --------------
 .field | White | Jet
 .fieldText | Jet | White
-
 
 These are the colors applied to positive actions. For example a positive
 button.

@@ -1,289 +1,178 @@
 ---
 Title: QtQml.Qt
 ---
-        
-Qt
-==
+
+# QtQml.Qt
 
 <span class="subtitle"></span>
-Provides a global object with useful enums and functions from Qt. More...
-
-|                   |                  |
-|-------------------|------------------|
-| Import Statement: | import QtQml 2.2 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[application](#application-prop)**** : object
--   ****[inputMethod](#inputMethod-prop)**** : object
--   ****[platform](#platform-prop)**** : object
-
-<span id="methods"></span>
-Methods
--------
-
--   string ****[atob](#atob-method)****(data)
--   ****[binding](#binding-method)****(function)
--   string ****[btoa](#btoa-method)****(data)
--   color ****[colorEqual](#colorEqual-method)****(color *lhs*, string *rhs*)
--   object ****[createComponent](#createComponent-method)****(url, mode, parent)
--   object ****[createQmlObject](#createQmlObject-method)****(string *qml*, object *parent*, string *filepath*)
--   color ****[darker](#darker-method)****(color *baseColor*, real *factor*)
--   ****[font](#font-method)****(object *fontSpecifier*)
--   list&lt;string&gt; ****[fontFamilies](#fontFamilies-method)****()
--   string ****[formatDate](#formatDate-method)****(datetime *date*, variant *format*)
--   string ****[formatDateTime](#formatDateTime-method)****(datetime *dateTime*, variant *format*)
--   string ****[formatTime](#formatTime-method)****(datetime *time*, variant *format*)
--   color ****[hsla](#hsla-method)****(real *hue*, real *saturation*, real *lightness*, real *alpha*)
--   object ****[include](#include-method)****(string *url*, jsobject *callback*)
--   bool ****[isQtObject](#isQtObject-method)****(object)
--   color ****[lighter](#lighter-method)****(color *baseColor*, real *factor*)
--   ****[locale](#locale-method)****(name)
--   string ****[md5](#md5-method)****(data)
--   ****[matrix4x4](#matrix4x4-method)****(real *m11*, real *m12*, real *m13*, real *m14*, real *m21*, real *m22*, real *m23*, real *m24*, real *m31*, real *m32*, real *m33*, real *m34*, real *m41*, real *m42*, real *m43*, real *m44*)
--   bool ****[openUrlExternally](#openUrlExternally-method)****(url *target*)
--   point ****[point](#point-method)****(int *x*, int *y*)
--   string ****[qsTr](#qsTr-method)****(string *sourceText*, string *disambiguation*, int *n*)
--   string ****[qsTrId](#qsTrId-method)****(string *id*, int *n*)
--   string ****[qsTrIdNoOp](#qsTrIdNoOp-method)****(string *id*)
--   string ****[qsTrNoOp](#qsTrNoOp-method)****(string *sourceText*, string *disambiguation*)
--   string ****[qsTranslate](#qsTranslate-method)****(string *context*, string *sourceText*, string *disambiguation*, int *n*)
--   string ****[qsTranslateNoOp](#qsTranslateNoOp-method)****(string *context*, string *sourceText*, string *disambiguation*)
--   ****[quaternion](#quaternion-method)****(real *scalar*, real *x*, real *y*, real *z*)
--   ****[quit](#quit-method)****()
--   rect ****[rect](#rect-method)****(int *x*, int *y*, int *width*, int *height*)
--   url ****[resolvedUrl](#resolvedUrl-method)****(url *url*)
--   color ****[rgba](#rgba-method)****(real *red*, real *green*, real *blue*, real *alpha*)
--   ****[size](#size-method)****(int *width*, int *height*)
--   color ****[tint](#tint-method)****(color *baseColor*, color *tintColor*)
--   ****[vector2d](#vector2d-method)****(real *x*, real *y*)
--   ****[vector3d](#vector3d-method)****(real *x*, real *y*, real *z*)
--   ****[vector4d](#vector4d-method)****(real *x*, real *y*, real *z*, real *w*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-<span id="qmlglobalqtobject"></span>
-The `Qt` object is a global object with utility functions, properties and enums.
-
-It is not instantiable; to use it, call the members of the global `Qt` object directly. For example:
-
-``` qml
-import QtQuick 2.0
-Text {
-    color: Qt.rgba(1, 0, 0, 1)
-    text: Qt.md5("hello, world")
-}
-```
-
-<span id="enums"></span>
-Enums
------
-
-The Qt object contains the enums available in the [Qt Namespace](index.html). For example, you can access the Qt::LeftButton and Qt::RightButton enumeration values as `Qt.LeftButton` and `Qt.RightButton`.
-
-<span id="types"></span>
-Types
------
-
-The Qt object also contains helper functions for creating objects of specific data types. This is primarily useful when setting the properties of an item when the property has one of the following types:
-
--   `rect` - use [Qt.rect()](#rect-method)
--   `point` - use [Qt.point()](#point-method)
--   `size` - use [Qt.size()](#size-method)
-
-If the `QtQuick` module has been imported, the following helper functions for creating objects of specific data types are also available for clients to use:
-
--   `color` - use [Qt.rgba()](#rgba-method), [Qt.hsla()](#hsla-method), [Qt.darker()](#darker-method), [Qt.lighter()](#lighter-method) or [Qt.tint()](#tint-method)
--   `font` - use [Qt.font()](#font-method)
--   `vector2d` - use [Qt.vector2d()](#vector2d-method)
--   `vector3d` - use [Qt.vector3d()](#vector3d-method)
--   `vector4d` - use [Qt.vector4d()](#vector4d-method)
--   `quaternion` - use [Qt.quaternion()](#quaternion-method)
--   `matrix4x4` - use [Qt.matrix4x4()](#matrix4x4-method)
-
-There are also string based constructors for these types. See [QML Basic Types](../QtQml.qtqml-typesystem-basictypes.md) for more information.
-
-<span id="date-time-formatters"></span>
-Date/Time Formatters
---------------------
-
-The Qt object contains several functions for formatting QDateTime, QDate and QTime values.
-
--   [string Qt.formatDateTime(datetime date, variant format)](#formatDateTime-method)
--   [string Qt.formatDate(datetime date, variant format)](#formatDate-method)
--   [string Qt.formatTime(datetime date, variant format)](#formatTime-method)
-
-The format specification is described at [Qt.formatDateTime](#formatDateTime-method).
-
-<span id="dynamic-object-creation"></span>
-Dynamic Object Creation
------------------------
-
-The following functions on the global object allow you to dynamically create QML items from files or strings. See [Dynamic QML Object Creation from JavaScript](../QtQml.qtqml-javascript-dynamicobjectcreation.md) for an overview of their use.
-
--   [object Qt.createComponent(url)](#createComponent-method)
--   [object Qt.createQmlObject(string qml, object parent, string filepath)](#createQmlObject-method)
-
-<span id="other-functions"></span>
-Other Functions
----------------
-
-The following functions are also on the Qt object.
-
--   [Qt.quit()](#quit-method)
--   [Qt.md5(string)](#md5-method)
--   [string Qt.btoa(string)](#btoa-method)
--   [string Qt.atob(string)](#atob-method)
--   [object Qt.binding(function)](#binding-method)
--   [object Qt.locale()](#locale-method)
--   [string Qt.resolvedUrl(string)](#resolvedUrl-method)
--   [Qt.openUrlExternally(string)](#openUrlExternally-method)
--   [list&lt;string&gt; Qt.fontFamilies()](#fontFamilies-method)
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="application-prop"></span><span class="name">application</span> : <span class="type">object</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The `application` object provides access to global application state properties shared by many QML components.
-
-Its properties are:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><code>application.active</code></td>
-<td>Deprecated, use Qt.application.state == Qt.ApplicationActive instead.</td>
-</tr>
-<tr class="even">
-<td><code>application.state</code></td>
-<td>This read-only property indicates the current state of the application.
-<p>Possible values are:</p>
+<!-- $$$Qt-brief -->
+<p>Provides a global object with useful enums and functions from Qt. More...</p>
+<!-- @@@Qt -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQml 2.2</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#application-prop">application</a></b></b> : object</li>
+<li class="fn"><b><b><a href="#inputMethod-prop">inputMethod</a></b></b> : object</li>
+<li class="fn"><b><b><a href="#platform-prop">platform</a></b></b> : object</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">string <b><b><a href="#atob-method">atob</a></b></b>(data)</li>
+<li class="fn"><b><b><a href="#binding-method">binding</a></b></b>(function)</li>
+<li class="fn">string <b><b><a href="#btoa-method">btoa</a></b></b>(data)</li>
+<li class="fn">color <b><b><a href="#colorEqual-method">colorEqual</a></b></b>(color <i>lhs</i>, string <i>rhs</i>)</li>
+<li class="fn">object <b><b><a href="#createComponent-method">createComponent</a></b></b>(url, mode, parent)</li>
+<li class="fn">object <b><b><a href="#createQmlObject-method">createQmlObject</a></b></b>(string <i>qml</i>, object <i>parent</i>, string <i>filepath</i>)</li>
+<li class="fn">color <b><b><a href="#darker-method">darker</a></b></b>(color <i>baseColor</i>, real <i>factor</i>)</li>
+<li class="fn"><b><b><a href="#font-method">font</a></b></b>(object <i>fontSpecifier</i>)</li>
+<li class="fn">list&lt;string&gt; <b><b><a href="#fontFamilies-method">fontFamilies</a></b></b>()</li>
+<li class="fn">string <b><b><a href="#formatDate-method">formatDate</a></b></b>(datetime <i>date</i>, variant <i>format</i>)</li>
+<li class="fn">string <b><b><a href="#formatDateTime-method">formatDateTime</a></b></b>(datetime <i>dateTime</i>, variant <i>format</i>)</li>
+<li class="fn">string <b><b><a href="#formatTime-method">formatTime</a></b></b>(datetime <i>time</i>, variant <i>format</i>)</li>
+<li class="fn">color <b><b><a href="#hsla-method">hsla</a></b></b>(real <i>hue</i>, real <i>saturation</i>, real <i>lightness</i>, real <i>alpha</i>)</li>
+<li class="fn">object <b><b><a href="#include-method">include</a></b></b>(string <i>url</i>, jsobject <i>callback</i>)</li>
+<li class="fn">bool <b><b><a href="#isQtObject-method">isQtObject</a></b></b>(object)</li>
+<li class="fn">color <b><b><a href="#lighter-method">lighter</a></b></b>(color <i>baseColor</i>, real <i>factor</i>)</li>
+<li class="fn"><b><b><a href="#locale-method">locale</a></b></b>(name)</li>
+<li class="fn">string <b><b><a href="#md5-method">md5</a></b></b>(data)</li>
+<li class="fn"><b><b><a href="#matrix4x4-method">matrix4x4</a></b></b>(real <i>m11</i>, real <i>m12</i>, real <i>m13</i>, real <i>m14</i>, real <i>m21</i>, real <i>m22</i>, real <i>m23</i>, real <i>m24</i>, real <i>m31</i>, real <i>m32</i>, real <i>m33</i>, real <i>m34</i>, real <i>m41</i>, real <i>m42</i>, real <i>m43</i>, real <i>m44</i>)</li>
+<li class="fn">bool <b><b><a href="#openUrlExternally-method">openUrlExternally</a></b></b>(url <i>target</i>)</li>
+<li class="fn">point <b><b><a href="#point-method">point</a></b></b>(int <i>x</i>, int <i>y</i>)</li>
+<li class="fn">string <b><b><a href="#qsTr-method">qsTr</a></b></b>(string <i>sourceText</i>, string <i>disambiguation</i>, int <i>n</i>)</li>
+<li class="fn">string <b><b><a href="#qsTrId-method">qsTrId</a></b></b>(string <i>id</i>, int <i>n</i>)</li>
+<li class="fn">string <b><b><a href="#qsTrIdNoOp-method">qsTrIdNoOp</a></b></b>(string <i>id</i>)</li>
+<li class="fn">string <b><b><a href="#qsTrNoOp-method">qsTrNoOp</a></b></b>(string <i>sourceText</i>, string <i>disambiguation</i>)</li>
+<li class="fn">string <b><b><a href="#qsTranslate-method">qsTranslate</a></b></b>(string <i>context</i>, string <i>sourceText</i>, string <i>disambiguation</i>, int <i>n</i>)</li>
+<li class="fn">string <b><b><a href="#qsTranslateNoOp-method">qsTranslateNoOp</a></b></b>(string <i>context</i>, string <i>sourceText</i>, string <i>disambiguation</i>)</li>
+<li class="fn"><b><b><a href="#quaternion-method">quaternion</a></b></b>(real <i>scalar</i>, real <i>x</i>, real <i>y</i>, real <i>z</i>)</li>
+<li class="fn"><b><b><a href="#quit-method">quit</a></b></b>()</li>
+<li class="fn">rect <b><b><a href="#rect-method">rect</a></b></b>(int <i>x</i>, int <i>y</i>, int <i>width</i>, int <i>height</i>)</li>
+<li class="fn">url <b><b><a href="#resolvedUrl-method">resolvedUrl</a></b></b>(url <i>url</i>)</li>
+<li class="fn">color <b><b><a href="#rgba-method">rgba</a></b></b>(real <i>red</i>, real <i>green</i>, real <i>blue</i>, real <i>alpha</i>)</li>
+<li class="fn"><b><b><a href="#size-method">size</a></b></b>(int <i>width</i>, int <i>height</i>)</li>
+<li class="fn">color <b><b><a href="#tint-method">tint</a></b></b>(color <i>baseColor</i>, color <i>tintColor</i>)</li>
+<li class="fn"><b><b><a href="#vector2d-method">vector2d</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+<li class="fn"><b><b><a href="#vector3d-method">vector3d</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>z</i>)</li>
+<li class="fn"><b><b><a href="#vector4d-method">vector4d</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>z</i>, real <i>w</i>)</li>
+</ul>
+<!-- $$$Qt-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <code>Qt</code> object is a global object with utility functions, properties and enums.</p>
+<p>It is not instantiable; to use it, call the members of the global <code>Qt</code> object directly. For example:</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type">Text</span> {
+<span class="name">color</span>: <span class="name">Qt</span>.<span class="name">rgba</span>(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>)
+<span class="name">text</span>: <span class="name">Qt</span>.<span class="name">md5</span>(<span class="string">&quot;hello, world&quot;</span>)
+}</pre>
+<h2 id="enums">Enums</h2>
+<p>The Qt object contains the enums available in the <a href="index.html">Qt Namespace</a>. For example, you can access the Qt::LeftButton and Qt::RightButton enumeration values as <code>Qt.LeftButton</code> and <code>Qt.RightButton</code>.</p>
+<h2 id="types">Types</h2>
+<p>The Qt object also contains helper functions for creating objects of specific data types. This is primarily useful when setting the properties of an item when the property has one of the following types:</p>
+<ul>
+<li><code>rect</code> - use <a href="#rect-method">Qt.rect()</a></li>
+<li><code>point</code> - use <a href="#point-method">Qt.point()</a></li>
+<li><code>size</code> - use <a href="#size-method">Qt.size()</a></li>
+</ul>
+<p>If the <code>QtQuick</code> module has been imported, the following helper functions for creating objects of specific data types are also available for clients to use:</p>
+<ul>
+<li><code>color</code> - use <a href="#rgba-method">Qt.rgba()</a>, <a href="#hsla-method">Qt.hsla()</a>, <a href="#darker-method">Qt.darker()</a>, <a href="#lighter-method">Qt.lighter()</a> or <a href="#tint-method">Qt.tint()</a></li>
+<li><code>font</code> - use <a href="#font-method">Qt.font()</a></li>
+<li><code>vector2d</code> - use <a href="#vector2d-method">Qt.vector2d()</a></li>
+<li><code>vector3d</code> - use <a href="#vector3d-method">Qt.vector3d()</a></li>
+<li><code>vector4d</code> - use <a href="#vector4d-method">Qt.vector4d()</a></li>
+<li><code>quaternion</code> - use <a href="#quaternion-method">Qt.quaternion()</a></li>
+<li><code>matrix4x4</code> - use <a href="#matrix4x4-method">Qt.matrix4x4()</a></li>
+</ul>
+<p>There are also string based constructors for these types. See <a href="QtQml.qtqml-typesystem-basictypes.md">QML Basic Types</a> for more information.</p>
+<h2 id="date-time-formatters">Date/Time Formatters</h2>
+<p>The Qt object contains several functions for formatting QDateTime, QDate and QTime values.</p>
+<ul>
+<li><a href="#formatDateTime-method">string Qt.formatDateTime(datetime date, variant format)</a></li>
+<li><a href="#formatDate-method">string Qt.formatDate(datetime date, variant format)</a></li>
+<li><a href="#formatTime-method">string Qt.formatTime(datetime date, variant format)</a></li>
+</ul>
+<p>The format specification is described at <a href="#formatDateTime-method">Qt.formatDateTime</a>.</p>
+<h2 id="dynamic-object-creation">Dynamic Object Creation</h2>
+<p>The following functions on the global object allow you to dynamically create QML items from files or strings. See <a href="QtQml.qtqml-javascript-dynamicobjectcreation.md">Dynamic QML Object Creation from JavaScript</a> for an overview of their use.</p>
+<ul>
+<li><a href="#createComponent-method">object Qt.createComponent(url)</a></li>
+<li><a href="#createQmlObject-method">object Qt.createQmlObject(string qml, object parent, string filepath)</a></li>
+</ul>
+<h2 id="other-functions">Other Functions</h2>
+<p>The following functions are also on the Qt object.</p>
+<ul>
+<li><a href="#quit-method">Qt.quit()</a></li>
+<li><a href="#md5-method">Qt.md5(string)</a></li>
+<li><a href="#btoa-method">string Qt.btoa(string)</a></li>
+<li><a href="#atob-method">string Qt.atob(string)</a></li>
+<li><a href="#binding-method">object Qt.binding(function)</a></li>
+<li><a href="#locale-method">object Qt.locale()</a></li>
+<li><a href="#resolvedUrl-method">string Qt.resolvedUrl(string)</a></li>
+<li><a href="#openUrlExternally-method">Qt.openUrlExternally(string)</a></li>
+<li><a href="#fontFamilies-method">list&lt;string&gt; Qt.fontFamilies()</a></li>
+</ul>
+<!-- @@@Qt -->
+<h2>Property Documentation</h2>
+<!-- $$$application -->
+<table class="qmlname"><tr valign="top" id="application-prop"><td class="tblQmlPropNode"><p><span class="name">application</span> : <span class="type">object</span></p></td></tr></table><p>The <code>application</code> object provides access to global application state properties shared by many QML components.</p>
+<p>Its properties are:</p>
+<table class="generic">
+<tr valign="top"><td ><code>application.active</code></td><td >Deprecated, use Qt.application.state == Qt.ApplicationActive instead.</td></tr>
+<tr valign="top"><td ><code>application.state</code></td><td >This read-only property indicates the current state of the application.<p>Possible values are:</p>
 <ul>
 <li>Qt.ApplicationActive - The application is the top-most and focused application, and the user is able to interact with the application.</li>
 <li>Qt.ApplicationInactive - The application is visible or partially visible, but not selected to be in front, the user cannot interact with the application. On desktop platforms, this typically means that the user activated another application. On mobile platforms, it is more common to enter this state when the OS is interrupting the user with for example incoming calls, SMS-messages or dialogs. This is usually a transient state during which the application is paused. The user may return focus to your application, but most of the time it will be the first indication that the application is going to be suspended. While in this state, consider pausing or stopping any activity that should not continue when the user cannot interact with your application, such as a video, a game, animations, or sensors. You should also avoid performing CPU-intensive tasks which might slow down the application in front.</li>
 <li>Qt.ApplicationSuspended - The application is suspended and not visible to the user. On mobile platforms, the application typically enters this state when the user returns to the home screen or switches to another application. While in this state, the application should ensure that the user perceives it as always alive and does not lose his progress, saving any persistent data. The application should cease all activities and be prepared for code execution to stop. While suspended, the application can be killed at any time without further warnings (for example when low memory forces the OS to purge suspended applications).</li>
 <li>Qt.ApplicationHidden - The application is hidden and runs in the background. This is the normal state for applications that need to do background processing, like playing music, while the user interacts with other applications. The application should free up all graphical resources when entering this state. A Qt Quick application should not usually handle this state at the QML level. Instead, you should unload the entire UI and reload the QML files whenever the application becomes active again.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><code>application.layoutDirection</code></td>
-<td>This read-only property can be used to query the default layout direction of the application. On system start-up, the default layout direction depends on the application's language. The property has a value of <code>Qt.RightToLeft</code> in locales where text and graphic elements are read from right to left, and <code>Qt.LeftToRight</code> where the reading direction flows from left to right. You can bind to this property to customize your application layouts to support both layout directions.
-<p>Possible values are:</p>
+</ul>
+</td></tr>
+<tr valign="top"><td ><code>application.layoutDirection</code></td><td >This read-only property can be used to query the default layout direction of the application. On system start-up, the default layout direction depends on the application's language. The property has a value of <code>Qt.RightToLeft</code> in locales where text and graphic elements are read from right to left, and <code>Qt.LeftToRight</code> where the reading direction flows from left to right. You can bind to this property to customize your application layouts to support both layout directions.<p>Possible values are:</p>
 <ul>
 <li>Qt.LeftToRight - Text and graphics elements should be positioned from left to right.</li>
 <li>Qt.RightToLeft - Text and graphics elements should be positioned from right to left.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><code>application.arguments</code></td>
-<td>This is a string list of the arguments the executable was invoked with.</td>
-</tr>
-<tr class="odd">
-<td><code>application.name</code></td>
-<td>This is the application name set on the QCoreApplication instance. This property can be written to in order to set the application name.</td>
-</tr>
-<tr class="even">
-<td><code>application.version</code></td>
-<td>This is the application version set on the QCoreApplication instance. This property can be written to in order to set the application version.</td>
-</tr>
-<tr class="odd">
-<td><code>application.organization</code></td>
-<td>This is the organization name set on the QCoreApplication instance. This property can be written to in order to set the organization name.</td>
-</tr>
-<tr class="even">
-<td><code>application.domain</code></td>
-<td>This is the organization domain set on the QCoreApplication instance. This property can be written to in order to set the organization domain.</td>
-</tr>
-<tr class="odd">
-<td><code>application.supportsMultipleWindows</code></td>
-<td>This read-only property can be used to determine whether or not the platform supports multiple windows. Some embedded platforms do not support multiple windows, for example.</td>
-</tr>
-</tbody>
+</ul>
+</td></tr>
+<tr valign="top"><td ><code>application.arguments</code></td><td >This is a string list of the arguments the executable was invoked with.</td></tr>
+<tr valign="top"><td ><code>application.name</code></td><td >This is the application name set on the QCoreApplication instance. This property can be written to in order to set the application name.</td></tr>
+<tr valign="top"><td ><code>application.version</code></td><td >This is the application version set on the QCoreApplication instance. This property can be written to in order to set the application version.</td></tr>
+<tr valign="top"><td ><code>application.organization</code></td><td >This is the organization name set on the QCoreApplication instance. This property can be written to in order to set the organization name.</td></tr>
+<tr valign="top"><td ><code>application.domain</code></td><td >This is the organization domain set on the QCoreApplication instance. This property can be written to in order to set the organization domain.</td></tr>
+<tr valign="top"><td ><code>application.supportsMultipleWindows</code></td><td >This read-only property can be used to determine whether or not the platform supports multiple windows. Some embedded platforms do not support multiple windows, for example.</td></tr>
 </table>
-
-The object also has one signal, aboutToQuit(), which is the same as QCoreApplication::aboutToQuit().
-
-The following example uses the `application` object to indicate whether the application is currently active:
-
-``` qml
-import QtQuick 2.0
-Rectangle {
-    width: 300; height: 55
-    color: Qt.application.active ? "white" : "lightgray"
-    Text {
-        text: "Application " + (Qt.application.active ? "active" : "inactive")
-        opacity: Qt.application.active ? 1.0 : 0.5
-        anchors.centerIn: parent
-    }
+<p>The object also has one signal, aboutToQuit(), which is the same as QCoreApplication::aboutToQuit().</p>
+<p>The following example uses the <code>application</code> object to indicate whether the application is currently active:</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type">Rectangle</span> {
+<span class="name">width</span>: <span class="number">300</span>; <span class="name">height</span>: <span class="number">55</span>
+<span class="name">color</span>: <span class="name">Qt</span>.<span class="name">application</span>.<span class="name">active</span> ? <span class="string">&quot;white&quot;</span> : <span class="string">&quot;lightgray&quot;</span>
+<span class="type">Text</span> {
+<span class="name">text</span>: <span class="string">&quot;Application &quot;</span> <span class="operator">+</span> (<span class="name">Qt</span>.<span class="name">application</span>.<span class="name">active</span> ? <span class="string">&quot;active&quot;</span> : <span class="string">&quot;inactive&quot;</span>)
+<span class="name">opacity</span>: <span class="name">Qt</span>.<span class="name">application</span>.<span class="name">active</span> ? <span class="number">1.0</span> : <span class="number">0.5</span>
+<span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 }
-```
-
-Note that when using QML without a QGuiApplication, the following properties will be undefined:
-
--   application.active
--   application.state
--   application.layoutDirection
-
-This QML property was introduced in Qt 5.1.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="inputMethod-prop"></span><span class="name">inputMethod</span> : <span class="type">object</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The `inputMethod` object allows access to application's QInputMethod object and all its properties and slots. See the QInputMethod documentation for further details.
-
-This QML property was introduced in Qt 5.0.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="platform-prop"></span><span class="name">platform</span> : <span class="type">object</span></p></td>
-</tr>
-</tbody>
-</table>
-
-The `platform` object provides info about the underlying platform.
-
-Its properties are:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><code>platform.os</code></td>
-<td>This read-only property contains the name of the operating system.
-<p>Possible values are:</p>
+}</pre>
+<p>Note that when using QML without a QGuiApplication, the following properties will be undefined:</p>
+<ul>
+<li>application.active</li>
+<li>application.state</li>
+<li>application.layoutDirection</li>
+</ul>
+<p>This QML property was introduced in  Qt 5.1.</p>
+<!-- @@@application -->
+<br/>
+<!-- $$$inputMethod -->
+<table class="qmlname"><tr valign="top" id="inputMethod-prop"><td class="tblQmlPropNode"><p><span class="name">inputMethod</span> : <span class="type">object</span></p></td></tr></table><p>The <code>inputMethod</code> object allows access to application's QInputMethod object and all its properties and slots. See the QInputMethod documentation for further details.</p>
+<p>This QML property was introduced in  Qt 5.0.</p>
+<!-- @@@inputMethod -->
+<br/>
+<!-- $$$platform -->
+<table class="qmlname"><tr valign="top" id="platform-prop"><td class="tblQmlPropNode"><p><span class="name">platform</span> : <span class="type">object</span></p></td></tr></table><p>The <code>platform</code> object provides info about the underlying platform.</p>
+<p>Its properties are:</p>
+<table class="generic">
+<tr valign="top"><td ><code>platform.os</code></td><td >This read-only property contains the name of the operating system.<p>Possible values are:</p>
 <ul>
 <li><code>&quot;android&quot;</code> - Android</li>
 <li><code>&quot;blackberry&quot;</code> - BlackBerry OS</li>
@@ -293,857 +182,390 @@ Its properties are:
 <li><code>&quot;unix&quot;</code> - Other Unix-based OS</li>
 <li><code>&quot;windows&quot;</code> - Windows</li>
 <li><code>&quot;wince&quot;</code> - Windows CE</li>
-</ul></td>
-</tr>
-</tbody>
+</ul>
+</td></tr>
 </table>
-
-This QML property was introduced in Qt 4.8.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="atob-method"></span><span class="type">string</span> <span class="name">atob</span>(<span class="type">data</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-ASCII to binary - this function returns a base64 decoding of `data`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="binding-method"></span><span class="name">binding</span>(<span class="type">function</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a JavaScript object representing a [property binding](../QtQml.qtqml-syntax-propertybinding.md).
-
-There are two main use-cases for the function: firstly, to apply a property binding imperatively from JavaScript code:
-
-``` qml
-Item {
-    property bool someCondition: true
-    property int edgePosition
-    Component.onCompleted: {
-        if (someCondition == true) {
-            // bind to the result of the binding expression passed to Qt.binding()
-            edgePosition = Qt.binding(function() { return x + width })
-        }
-    }
+<p>This QML property was introduced in  Qt 4.8.</p>
+<!-- @@@platform -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$atob -->
+<table class="qmlname"><tr valign="top" id="atob-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">atob</span>(<span class="type">data</span>)</p></td></tr></table><p>ASCII to binary - this function returns a base64 decoding of <code>data</code>.</p>
+<!-- @@@atob -->
+<br/>
+<!-- $$$binding -->
+<table class="qmlname"><tr valign="top" id="binding-method"><td class="tblQmlFuncNode"><p><span class="name">binding</span>(<span class="type">function</span>)</p></td></tr></table><p>Returns a JavaScript object representing a <a href="QtQml.qtqml-syntax-propertybinding.md">property binding</a>.</p>
+<p>There are two main use-cases for the function: firstly, to apply a property binding imperatively from JavaScript code:</p>
+<pre class="qml"><span class="type">Item</span> {
+property <span class="type">bool</span> <span class="name">someCondition</span>: <span class="number">true</span>
+property <span class="type">int</span> <span class="name">edgePosition</span>
+<span class="name">Component</span>.onCompleted: {
+<span class="keyword">if</span> (<span class="name">someCondition</span> <span class="operator">==</span> <span class="number">true</span>) {
+<span class="comment">// bind to the result of the binding expression passed to Qt.binding()</span>
+<span class="name">edgePosition</span> <span class="operator">=</span> <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="name">x</span> <span class="operator">+</span> <span class="name">width</span> })
 }
-```
-
-and secondly, to apply a property binding when initializing property values of dynamically constructed objects (via [Component.createObject()](../QtQml.Component.md#createObject-method) or Loader.setSource()).
-
-For example, assuming the existence of a DynamicText component:
-
-``` qml
-import QtQuick 2.0
-Text {
-    id: textElement
-    width: 200
-    height: 200
-    text: "Default text"
-    property string dynamicText: "Dynamic text"
-    onTextChanged: console.log(text)
 }
-```
-
-the output from:
-
-``` qml
-Item {
-    id: root
-    property string dynamicText: "Root text"
-    Component.onCompleted: {
-        var c = Qt.createComponent("DynamicText.qml")
-        var obj1 = c.createObject(root, { 'text': Qt.binding(function() { return dynamicText + ' extra text' }) })
-        root.dynamicText = "Modified root text"
-        var obj2 = c.createObject(root, { 'text': Qt.binding(function() { return this.dynamicText + ' extra text' }) })
-        obj2.dynamicText = "Modified text element text"
-    }
+}</pre>
+<p>and secondly, to apply a property binding when initializing property values of dynamically constructed objects (via <a href="QtQml.Component.md#createObject-method">Component.createObject()</a> or Loader.setSource()).</p>
+<p>For example, assuming the existence of a DynamicText component:</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type">Text</span> {
+<span class="name">id</span>: <span class="name">textElement</span>
+<span class="name">width</span>: <span class="number">200</span>
+<span class="name">height</span>: <span class="number">200</span>
+<span class="name">text</span>: <span class="string">&quot;Default text&quot;</span>
+property <span class="type">string</span> <span class="name">dynamicText</span>: <span class="string">&quot;Dynamic text&quot;</span>
+<span class="name">onTextChanged</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="name">text</span>)
+}</pre>
+<p>the output from:</p>
+<pre class="qml"><span class="type">Item</span> {
+<span class="name">id</span>: <span class="name">root</span>
+property <span class="type">string</span> <span class="name">dynamicText</span>: <span class="string">&quot;Root text&quot;</span>
+<span class="name">Component</span>.onCompleted: {
+var <span class="name">c</span> = <span class="name">Qt</span>.<span class="name">createComponent</span>(<span class="string">&quot;DynamicText.qml&quot;</span>)
+var <span class="name">obj1</span> = <span class="name">c</span>.<span class="name">createObject</span>(<span class="name">root</span>, { 'text': <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="name">dynamicText</span> <span class="operator">+</span> <span class="string">' extra text'</span> }) })
+<span class="name">root</span>.<span class="name">dynamicText</span> <span class="operator">=</span> <span class="string">&quot;Modified root text&quot;</span>
+var <span class="name">obj2</span> = <span class="name">c</span>.<span class="name">createObject</span>(<span class="name">root</span>, { 'text': <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> this.<span class="name">dynamicText</span> <span class="operator">+</span> <span class="string">' extra text'</span> }) })
+<span class="name">obj2</span>.<span class="name">dynamicText</span> <span class="operator">=</span> <span class="string">&quot;Modified text element text&quot;</span>
 }
-```
-
-and from:
-
-``` qml
-Item {
-    id: root
-    property string dynamicText: "Root text"
-    Loader {
-        id: loaderOne
-        onLoaded: root.dynamicText = "Modified root text"
-    }
-    Loader {
-        id: loaderTwo
-        onLoaded: item.dynamicText = "Modified dynamic text"
-    }
-    Component.onCompleted: {
-        loaderOne.setSource("DynamicText.qml", { 'text': Qt.binding(function() { return dynamicText + ' extra text' }) })
-        loaderTwo.setSource("DynamicText.qml", { 'text': Qt.binding(function() { return this.dynamicText + ' extra text' }) })
-    }
+}</pre>
+<p>and from:</p>
+<pre class="qml"><span class="type">Item</span> {
+<span class="name">id</span>: <span class="name">root</span>
+property <span class="type">string</span> <span class="name">dynamicText</span>: <span class="string">&quot;Root text&quot;</span>
+<span class="type">Loader</span> {
+<span class="name">id</span>: <span class="name">loaderOne</span>
+<span class="name">onLoaded</span>: <span class="name">root</span>.<span class="name">dynamicText</span> <span class="operator">=</span> <span class="string">&quot;Modified root text&quot;</span>
 }
-```
-
-should both be:
-
-``` cpp
-Root text extra text
+<span class="type">Loader</span> {
+<span class="name">id</span>: <span class="name">loaderTwo</span>
+<span class="name">onLoaded</span>: <span class="name">item</span>.<span class="name">dynamicText</span> <span class="operator">=</span> <span class="string">&quot;Modified dynamic text&quot;</span>
+}
+<span class="name">Component</span>.onCompleted: {
+<span class="name">loaderOne</span>.<span class="name">setSource</span>(<span class="string">&quot;DynamicText.qml&quot;</span>, { 'text': <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="name">dynamicText</span> <span class="operator">+</span> <span class="string">' extra text'</span> }) })
+<span class="name">loaderTwo</span>.<span class="name">setSource</span>(<span class="string">&quot;DynamicText.qml&quot;</span>, { 'text': <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> this.<span class="name">dynamicText</span> <span class="operator">+</span> <span class="string">' extra text'</span> }) })
+}
+}</pre>
+<p>should both be:</p>
+<pre class="cpp">Root text extra text
 Modified root text extra text
 Dynamic text extra text
-Modified dynamic text extra text
-```
-
-This function cannot be used in property binding declarations (see the documentation on [binding declarations and binding assignments](../QtQml.qtqml-syntax-propertybinding.md#qml-javascript-assignment)) except when the result is stored in an array bound to a var property.
-
-``` qml
-Item {
-    width: 50
-    property var storedBindings: [ Qt.binding(function() { return x + width }) ] // stored
-    property int a: Qt.binding(function() { return x + width }) // error!
-    property int b
-    Component.onCompleted: {
-        b = storedBindings[0] // causes binding assignment
-    }
+Modified dynamic text extra text</pre>
+<p>This function cannot be used in property binding declarations (see the documentation on <a href="QtQml.qtqml-syntax-propertybinding.md#qml-javascript-assignment">binding declarations and binding assignments</a>) except when the result is stored in an array bound to a var property.</p>
+<pre class="qml"><span class="type">Item</span> {
+<span class="name">width</span>: <span class="number">50</span>
+property <span class="type">var</span> <span class="name">storedBindings</span>: [ <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="name">x</span> <span class="operator">+</span> <span class="name">width</span> }) ] <span class="comment">// stored</span>
+property <span class="type">int</span> <span class="name">a</span>: <span class="name">Qt</span>.<span class="name">binding</span>(<span class="keyword">function</span>() { <span class="keyword">return</span> <span class="name">x</span> <span class="operator">+</span> <span class="name">width</span> }) <span class="comment">// error!</span>
+property <span class="type">int</span> <span class="name">b</span>
+<span class="name">Component</span>.onCompleted: {
+<span class="name">b</span> <span class="operator">=</span> <span class="name">storedBindings</span>[<span class="number">0</span>] <span class="comment">// causes binding assignment</span>
 }
-```
-
-**Note:** In Qt Quick 1, all function assignments were treated as binding assignments. The Qt.binding() function is new to Qt Quick 2.
-
-This QML method was introduced in Qt 5.0.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="btoa-method"></span><span class="type">string</span> <span class="name">btoa</span>(<span class="type">data</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Binary to ASCII - this function returns a base64 encoding of `data`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="colorEqual-method"></span><span class="type">color</span> <span class="name">colorEqual</span>(<span class="type">color</span> <em>lhs</em>, <span class="type">string</span> <em>rhs</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns true if both `lhs` and `rhs` yield equal color values. Both arguments may be either color values or string values. If a string value is supplied it must be convertible to a color, as described for the color basic type.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createComponent-method"></span><span class="type">object</span> <span class="name">createComponent</span>(<span class="type">url</span>, <span class="type">mode</span>, <span class="type">parent</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Component object created using the QML file at the specified *url*, or `null` if an empty string was given.
-
-The returned component's [Component::status](../QtQml.Component.md#status-prop) property indicates whether the component was successfully created. If the status is `Component.Error`, see [Component::errorString()](../QtQml.Component.md#errorString-method) for an error description.
-
-If the optional *mode* parameter is set to `Component.Asynchronous`, the component will be loaded in a background thread. The [Component::status](../QtQml.Component.md#status-prop) property will be `Component.Loading` while it is loading. The status will change to `Component.Ready` if the component loads successfully, or `Component.Error` if loading fails.
-
-If the optional *parent* parameter is given, it should refer to the object that will become the parent for the created [Component](../QtQml.Component.md) object.
-
-Call [Component.createObject()](../QtQml.Component.md#createObject-method) on the returned component to create an object instance of the component.
-
-For example:
-
-``` qml
-import QtQuick 2.0
-Item {
-    id: container
-    width: 300; height: 300
-    function loadButton() {
-        var component = Qt.createComponent("Button.qml");
-        if (component.status == Component.Ready) {
-            var button = component.createObject(container);
-            button.color = "red";
-        }
-    }
-    Component.onCompleted: loadButton()
+}</pre>
+<p><b>Note: </b>In Qt Quick 1, all function assignments were treated as binding assignments. The Qt.binding() function is new to Qt Quick 2.</p><p>This QML method was introduced in  Qt 5.0.</p>
+<!-- @@@binding -->
+<br/>
+<!-- $$$btoa -->
+<table class="qmlname"><tr valign="top" id="btoa-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">btoa</span>(<span class="type">data</span>)</p></td></tr></table><p>Binary to ASCII - this function returns a base64 encoding of <code>data</code>.</p>
+<!-- @@@btoa -->
+<br/>
+<!-- $$$colorEqual -->
+<table class="qmlname"><tr valign="top" id="colorEqual-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">colorEqual</span>(<span class="type">color</span><i> lhs</i>, <span class="type">string</span><i> rhs</i>)</p></td></tr></table><p>Returns true if both <code>lhs</code> and <code>rhs</code> yield equal color values. Both arguments may be either color values or string values. If a string value is supplied it must be convertible to a color, as described for the color basic type.</p>
+<!-- @@@colorEqual -->
+<br/>
+<!-- $$$createComponent -->
+<table class="qmlname"><tr valign="top" id="createComponent-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">createComponent</span>(<span class="type">url</span>, <span class="type">mode</span>, <span class="type">parent</span>)</p></td></tr></table><p>Returns a Component object created using the QML file at the specified <i>url</i>, or <code>null</code> if an empty string was given.</p>
+<p>The returned component's <a href="QtQml.Component.md#status-prop">Component::status</a> property indicates whether the component was successfully created. If the status is <code>Component.Error</code>, see <a href="QtQml.Component.md#errorString-method">Component::errorString()</a> for an error description.</p>
+<p>If the optional <i>mode</i> parameter is set to <code>Component.Asynchronous</code>, the component will be loaded in a background thread. The <a href="QtQml.Component.md#status-prop">Component::status</a> property will be <code>Component.Loading</code> while it is loading. The status will change to <code>Component.Ready</code> if the component loads successfully, or <code>Component.Error</code> if loading fails.</p>
+<p>If the optional <i>parent</i> parameter is given, it should refer to the object that will become the parent for the created <a href="QtQml.Component.md">Component</a> object.</p>
+<p>Call <a href="QtQml.Component.md#createObject-method">Component.createObject()</a> on the returned component to create an object instance of the component.</p>
+<p>For example:</p>
+<pre class="qml">import QtQuick 2.0
+<span class="type">Item</span> {
+<span class="name">id</span>: <span class="name">container</span>
+<span class="name">width</span>: <span class="number">300</span>; <span class="name">height</span>: <span class="number">300</span>
+<span class="keyword">function</span> <span class="name">loadButton</span>() {
+var <span class="name">component</span> = <span class="name">Qt</span>.<span class="name">createComponent</span>(<span class="string">&quot;Button.qml&quot;</span>);
+<span class="keyword">if</span> (<span class="name">component</span>.<span class="name">status</span> <span class="operator">==</span> <span class="name">Component</span>.<span class="name">Ready</span>) {
+var <span class="name">button</span> = <span class="name">component</span>.<span class="name">createObject</span>(<span class="name">container</span>);
+<span class="name">button</span>.<span class="name">color</span> <span class="operator">=</span> <span class="string">&quot;red&quot;</span>;
 }
-```
-
-See [Dynamic QML Object Creation from JavaScript](../QtQml.qtqml-javascript-dynamicobjectcreation.md) for more information on using this function.
-
-To create a QML object from an arbitrary string of QML (instead of a file), use [Qt.createQmlObject()](#createQmlObject-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createQmlObject-method"></span><span class="type">object</span> <span class="name">createQmlObject</span>(<span class="type">string</span> <em>qml</em>, <span class="type">object</span> <em>parent</em>, <span class="type">string</span> <em>filepath</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a new object created from the given *string* of QML which will have the specified *parent*, or `null` if there was an error in creating the object.
-
-If *filepath* is specified, it will be used for error reporting for the created object.
-
-Example (where `parentItem` is the id of an existing QML item):
-
-``` qml
-var newObject = Qt.createQmlObject('import QtQuick 2.0; Rectangle {color: "red"; width: 20; height: 20}',
-    parentItem, "dynamicSnippet1");
-```
-
-In the case of an error, a Qt Script Error object is thrown. This object has an additional property, `qmlErrors`, which is an array of the errors encountered. Each object in this array has the members `lineNumber`, `columnNumber`, `fileName` and `message`. For example, if the above snippet had misspelled color as 'colro' then the array would contain an object like the following: { "lineNumber" : 1, "columnNumber" : 32, "fileName" : "dynamicSnippet1", "message" : "Cannot assign to non-existent property "colro""}.
-
-Note that this function returns immediately, and therefore may not work if the *qml* string loads new components (that is, external QML files that have not yet been loaded). If this is the case, consider using [Qt.createComponent()](#createComponent-method) instead.
-
-See [Dynamic QML Object Creation from JavaScript](../QtQml.qtqml-javascript-dynamicobjectcreation.md) for more information on using this function.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="darker-method"></span><span class="type">color</span> <span class="name">darker</span>(<span class="type">color</span> <em>baseColor</em>, <span class="type">real</span> <em>factor</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a color darker than `baseColor` by the `factor` provided.
-
-If the factor is greater than 1.0, this function returns a darker color. Setting factor to 3.0 returns a color that has one-third the brightness. If the factor is less than 1.0, the return color is lighter, but we recommend using the Qt.[lighter()](#lighter-method) function for this purpose. If the factor is 0 or negative, the return value is unspecified.
-
-The function converts the current RGB color to HSV, divides the value (V) component by factor and converts the color back to RGB.
-
-If `factor` is not supplied, returns a color 50% darker than `baseColor` (factor 2.0).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="font-method"></span><span class="name">font</span>(<span class="type">object</span> <em>fontSpecifier</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Font with the properties specified in the `fontSpecifier` object or the nearest matching font. The `fontSpecifier` object should contain key-value pairs where valid keys are the font type's subproperty names, and the values are valid values for each subproperty. Invalid keys will be ignored.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fontFamilies-method"></span><span class="type">list</span>&lt;<span class="type">string</span>&gt; <span class="name">fontFamilies</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a list of the font families available to the application.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="formatDate-method"></span><span class="type">string</span> <span class="name">formatDate</span>(<span class="type">datetime</span> <em>date</em>, <span class="type">variant</span> <em>format</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a string representation of `date`, optionally formatted according to `format`.
-
-The *date* parameter may be a JavaScript `Date` object, a date property, a QDate, or QDateTime value. The *format* parameter may be any of the possible format values as described for Qt.formatDateTime().
-
-If *format* is not specified, *date* is formatted using Qt.DefaultLocaleShortDate.
-
-**See also** [Locale](../QtQml.Locale.md).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="formatDateTime-method"></span><span class="type">string</span> <span class="name">formatDateTime</span>(<span class="type">datetime</span> <em>dateTime</em>, <span class="type">variant</span> <em>format</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a string representation of `datetime`, optionally formatted according to `format`.
-
-The *date* parameter may be a JavaScript `Date` object, a date property, a QDate, QTime, or QDateTime value.
-
-If *format* is not provided, *dateTime* is formatted using Qt.DefaultLocaleShortDate. Otherwise, *format* should be either:
-
--   One of the Qt::DateFormat enumeration values, such as `Qt.DefaultLocaleShortDate` or `Qt.ISODate`
--   A string that specifies the format of the returned string, as detailed below.
-
-If *format* specifies a format string, it should use the following expressions to specify the date:
-
-| Expression | Output                                                                                     |
-|------------|--------------------------------------------------------------------------------------------|
-| d          | the day as number without a leading zero (1 to 31)                                         |
-| dd         | the day as number with a leading zero (01 to 31)                                           |
-| ddd        | the abbreviated localized day name (e.g. 'Mon' to 'Sun'). Uses QDate::shortDayName().      |
-| dddd       | the long localized day name (e.g. 'Monday' to 'Qt::Sunday'). Uses QDate::longDayName().    |
-| M          | the month as number without a leading zero (1-12)                                          |
-| MM         | the month as number with a leading zero (01-12)                                            |
-| MMM        | the abbreviated localized month name (e.g. 'Jan' to 'Dec'). Uses QDate::shortMonthName().  |
-| MMMM       | the long localized month name (e.g. 'January' to 'December'). Uses QDate::longMonthName(). |
-| yy         | the year as two digit number (00-99)                                                       |
-| yyyy       | the year as four digit number                                                              |
-
-In addition the following expressions can be used to specify the time:
-
-| Expression | Output                                                                |
-|------------|-----------------------------------------------------------------------|
-| h          | the hour without a leading zero (0 to 23 or 1 to 12 if AM/PM display) |
-| hh         | the hour with a leading zero (00 to 23 or 01 to 12 if AM/PM display)  |
-| m          | the minute without a leading zero (0 to 59)                           |
-| mm         | the minute with a leading zero (00 to 59)                             |
-| s          | the second without a leading zero (0 to 59)                           |
-| ss         | the second with a leading zero (00 to 59)                             |
-| z          | the milliseconds without leading zeroes (0 to 999)                    |
-| zzz        | the milliseconds with leading zeroes (000 to 999)                     |
-| AP         | use AM/PM display. *AP* will be replaced by either "AM" or "PM".      |
-| ap         | use am/pm display. *ap* will be replaced by either "am" or "pm".      |
-
-All other input characters will be ignored. Any sequence of characters that are enclosed in single quotes will be treated as text and not be used as an expression. Two consecutive single quotes ("''") are replaced by a single quote in the output.
-
-For example, if the following date/time value was specified:
-
-``` cpp
-// 21 May 2001 14:13:09
-var dateTime = new Date(2001, 5, 21, 14, 13, 09)
-```
-
-This *dateTime* value could be passed to `Qt.formatDateTime()`, [Qt.formatDate()](#formatDate-method) or [Qt.formatTime()](#formatTime-method) with the *format* values below to produce the following results:
-
-| Format          | Result        |
-|-----------------|---------------|
-| "dd.MM.yyyy"    | 21.05.2001    |
-| "ddd MMMM d yy" | Tue May 21 01 |
-| "hh:mm:ss.zzz"  | 14:13:09.042  |
-| "h:m:s ap"      | 2:13:9 pm     |
-
-**See also** [Locale](../QtQml.Locale.md).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="formatTime-method"></span><span class="type">string</span> <span class="name">formatTime</span>(<span class="type">datetime</span> <em>time</em>, <span class="type">variant</span> <em>format</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a string representation of `time`, optionally formatted according to `format`.
-
-The *time* parameter may be a JavaScript `Date` object, a QTime, or QDateTime value. The *format* parameter may be any of the possible format values as described for [Qt.formatDateTime()](#formatDateTime-method).
-
-If *format* is not specified, *time* is formatted using Qt.DefaultLocaleShortDate.
-
-**See also** [Locale](../QtQml.Locale.md).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="hsla-method"></span><span class="type">color</span> <span class="name">hsla</span>(<span class="type">real</span> <em>hue</em>, <span class="type">real</span> <em>saturation</em>, <span class="type">real</span> <em>lightness</em>, <span class="type">real</span> <em>alpha</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a color with the specified `hue`, `saturation`, `lightness` and `alpha` components. All components should be in the range 0-1 inclusive.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="include-method"></span><span class="type">object</span> <span class="name">include</span>(<span class="type">string</span> <em>url</em>, <span class="type">jsobject</span> <em>callback</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Includes another JavaScript file. This method can only be used from within JavaScript files, and not regular QML files.
-
-This imports all functions from *url* into the current script's namespace.
-
-Qt.include() returns an object that describes the status of the operation. The object has a single property, `status`, that is set to one of the following values:
-
-| Symbol                | Value | Description                                                                                                                     |
-|-----------------------|-------|---------------------------------------------------------------------------------------------------------------------------------|
-| result.OK             | 0     | The include completed successfully.                                                                                             |
-| result.LOADING        | 1     | Data is being loaded from the network.                                                                                          |
-| result.NETWORK\_ERROR | 2     | A network error occurred while fetching the url.                                                                                |
-| result.EXCEPTION      | 3     | A JavaScript exception occurred while executing the included code. An additional `exception` property will be set in this case. |
-
-The `status` property will be updated as the operation progresses.
-
-If provided, *callback* is invoked when the operation completes. The callback is passed the same object as is returned from the Qt.include() call.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="isQtObject-method"></span><span class="type">bool</span> <span class="name">isQtObject</span>(<span class="type">object</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns true if `object` is a valid reference to a Qt or QML object, otherwise false.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="lighter-method"></span><span class="type">color</span> <span class="name">lighter</span>(<span class="type">color</span> <em>baseColor</em>, <span class="type">real</span> <em>factor</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a color lighter than `baseColor` by the `factor` provided.
-
-If the factor is greater than 1.0, this functions returns a lighter color. Setting factor to 1.5 returns a color that is 50% brighter. If the factor is less than 1.0, the return color is darker, but we recommend using the Qt.[darker()](#darker-method) function for this purpose. If the factor is 0 or negative, the return value is unspecified.
-
-The function converts the current RGB color to HSV, multiplies the value (V) component by factor and converts the color back to RGB.
-
-If `factor` is not supplied, returns a color 50% lighter than `baseColor` (factor 1.5).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="locale-method"></span><span class="name">locale</span>(<span class="type">name</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a JS object representing the locale with the specified name, which has the format "language\[\_territory\]\[.codeset\]\[@modifier\]" or "C", where:
-
--   language is a lowercase, two-letter, ISO 639 language code,
--   territory is an uppercase, two-letter, ISO 3166 country code,
--   and codeset and modifier are ignored.
-
-If the string violates the locale format, or language is not a valid ISO 369 code, the "C" locale is used instead. If country is not present, or is not a valid ISO 3166 code, the most appropriate country is chosen for the specified language.
-
-**See also** [Locale](../QtQml.Locale.md).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="md5-method"></span><span class="type">string</span> <span class="name">md5</span>(<span class="type">data</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a hex string of the md5 hash of `data`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="matrix4x4-method"></span><span class="name">matrix4x4</span>(<span class="type">real</span> <em>m11</em>, <span class="type">real</span> <em>m12</em>, <span class="type">real</span> <em>m13</em>, <span class="type">real</span> <em>m14</em>, <span class="type">real</span> <em>m21</em>, <span class="type">real</span> <em>m22</em>, <span class="type">real</span> <em>m23</em>, <span class="type">real</span> <em>m24</em>, <span class="type">real</span> <em>m31</em>, <span class="type">real</span> <em>m32</em>, <span class="type">real</span> <em>m33</em>, <span class="type">real</span> <em>m34</em>, <span class="type">real</span> <em>m41</em>, <span class="type">real</span> <em>m42</em>, <span class="type">real</span> <em>m43</em>, <span class="type">real</span> <em>m44</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Matrix4x4 with the specified values. Alternatively, the function may be called with a single argument where that argument is a JavaScript array which contains the sixteen matrix values.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="openUrlExternally-method"></span><span class="type">bool</span> <span class="name">openUrlExternally</span>(<span class="type">url</span> <em>target</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Attempts to open the specified `target` url in an external application, based on the user's desktop preferences. Returns true if it succeeds, and false otherwise.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="point-method"></span><span class="type"><a href="#point-method">point</a></span> <span class="name">point</span>(<span class="type">int</span> <em>x</em>, <span class="type">int</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Point with the specified `x` and `y` coordinates.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTr-method"></span><span class="type">string</span> <span class="name">qsTr</span>(<span class="type">string</span> <em>sourceText</em>, <span class="type">string</span> <em>disambiguation</em>, <span class="type">int</span> <em>n</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a translated version of *sourceText*, optionally based on a *disambiguation* string and value of *n* for strings containing plurals; otherwise returns *sourceText* itself if no appropriate translated string is available.
-
-If the same *sourceText* is used in different roles within the same translation context, an additional identifying string may be passed in for *disambiguation*.
-
-Example:
-
-``` qml
-Text { text: qsTr("hello") }
-```
-
-**See also** Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTrId-method"></span><span class="type">string</span> <span class="name">qsTrId</span>(<span class="type">string</span> <em>id</em>, <span class="type">int</span> <em>n</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a translated string identified by *id*. If no matching string is found, the id itself is returned. This should not happen under normal conditions.
-
-If *n* &gt;= 0, all occurrences of `%n` in the resulting string are replaced with a decimal representation of *n*. In addition, depending on *n*'s value, the translation text may vary.
-
-Example:
-
-``` qml
-Text { text: qsTrId("hello_id") }
-```
-
-It is possible to supply a source string template like:
-
-`//% <string>`
-
-or
-
-`\begincomment% <string> \endcomment`
-
-Example:
-
-``` qml
-Text {
-    //% "hello"
-    text: qsTrId("hello_id")
 }
-```
-
-Creating binary translation (QM) files suitable for use with this function requires passing the `-idbased` option to the `lrelease` tool.
-
-**See also** QT\_TRID\_NOOP() and Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTrIdNoOp-method"></span><span class="type">string</span> <span class="name">qsTrIdNoOp</span>(<span class="type">string</span> <em>id</em>)</p></td>
-</tr>
-</tbody>
+<span class="name">Component</span>.onCompleted: <span class="name">loadButton</span>()
+}</pre>
+<p>See <a href="QtQml.qtqml-javascript-dynamicobjectcreation.md">Dynamic QML Object Creation from JavaScript</a> for more information on using this function.</p>
+<p>To create a QML object from an arbitrary string of QML (instead of a file), use <a href="#createQmlObject-method">Qt.createQmlObject()</a>.</p>
+<!-- @@@createComponent -->
+<br/>
+<!-- $$$createQmlObject -->
+<table class="qmlname"><tr valign="top" id="createQmlObject-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">createQmlObject</span>(<span class="type">string</span><i> qml</i>, <span class="type">object</span><i> parent</i>, <span class="type">string</span><i> filepath</i>)</p></td></tr></table><p>Returns a new object created from the given <i>string</i> of QML which will have the specified <i>parent</i>, or <code>null</code> if there was an error in creating the object.</p>
+<p>If <i>filepath</i> is specified, it will be used for error reporting for the created object.</p>
+<p>Example (where <code>parentItem</code> is the id of an existing QML item):</p>
+<pre class="qml">var <span class="name">newObject</span> = <span class="name">Qt</span>.<span class="name">createQmlObject</span>(<span class="string">'import QtQuick 2.0; Rectangle {color: &quot;red&quot;; width: 20; height: 20}'</span>,
+<span class="name">parentItem</span>, <span class="string">&quot;dynamicSnippet1&quot;</span>);</pre>
+<p>In the case of an error, a Qt Script Error object is thrown. This object has an additional property, <code>qmlErrors</code>, which is an array of the errors encountered. Each object in this array has the members <code>lineNumber</code>, <code>columnNumber</code>, <code>fileName</code> and <code>message</code>. For example, if the above snippet had misspelled color as 'colro' then the array would contain an object like the following: { &quot;lineNumber&quot; : 1, &quot;columnNumber&quot; : 32, &quot;fileName&quot; : &quot;dynamicSnippet1&quot;, &quot;message&quot; : &quot;Cannot assign to non-existent property &quot;colro&quot;&quot;}.</p>
+<p>Note that this function returns immediately, and therefore may not work if the <i>qml</i> string loads new components (that is, external QML files that have not yet been loaded). If this is the case, consider using <a href="#createComponent-method">Qt.createComponent()</a> instead.</p>
+<p>See <a href="QtQml.qtqml-javascript-dynamicobjectcreation.md">Dynamic QML Object Creation from JavaScript</a> for more information on using this function.</p>
+<!-- @@@createQmlObject -->
+<br/>
+<!-- $$$darker -->
+<table class="qmlname"><tr valign="top" id="darker-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">darker</span>(<span class="type">color</span><i> baseColor</i>, <span class="type">real</span><i> factor</i>)</p></td></tr></table><p>Returns a color darker than <code>baseColor</code> by the <code>factor</code> provided.</p>
+<p>If the factor is greater than 1.0, this function returns a darker color. Setting factor to 3.0 returns a color that has one-third the brightness. If the factor is less than 1.0, the return color is lighter, but we recommend using the Qt.<a href="#lighter-method">lighter()</a> function for this purpose. If the factor is 0 or negative, the return value is unspecified.</p>
+<p>The function converts the current RGB color to HSV, divides the value (V) component by factor and converts the color back to RGB.</p>
+<p>If <code>factor</code> is not supplied, returns a color 50% darker than <code>baseColor</code> (factor 2.0).</p>
+<!-- @@@darker -->
+<br/>
+<!-- $$$font -->
+<table class="qmlname"><tr valign="top" id="font-method"><td class="tblQmlFuncNode"><p><span class="name">font</span>(<span class="type">object</span><i> fontSpecifier</i>)</p></td></tr></table><p>Returns a Font with the properties specified in the <code>fontSpecifier</code> object or the nearest matching font. The <code>fontSpecifier</code> object should contain key-value pairs where valid keys are the font type's subproperty names, and the values are valid values for each subproperty. Invalid keys will be ignored.</p>
+<!-- @@@font -->
+<br/>
+<!-- $$$fontFamilies -->
+<table class="qmlname"><tr valign="top" id="fontFamilies-method"><td class="tblQmlFuncNode"><p><span class="type">list</span>&lt;<span class="type">string</span>&gt; <span class="name">fontFamilies</span>()</p></td></tr></table><p>Returns a list of the font families available to the application.</p>
+<!-- @@@fontFamilies -->
+<br/>
+<!-- $$$formatDate -->
+<table class="qmlname"><tr valign="top" id="formatDate-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">formatDate</span>(<span class="type">datetime</span><i> date</i>, <span class="type">variant</span><i> format</i>)</p></td></tr></table><p>Returns a string representation of <code>date</code>, optionally formatted according to <code>format</code>.</p>
+<p>The <i>date</i> parameter may be a JavaScript <code>Date</code> object, a date property, a QDate, or QDateTime value. The <i>format</i> parameter may be any of the possible format values as described for Qt.formatDateTime().</p>
+<p>If <i>format</i> is not specified, <i>date</i> is formatted using Qt.DefaultLocaleShortDate.</p>
+<p><b>See also </b><a href="QtQml.Locale.md">Locale</a>.</p>
+<!-- @@@formatDate -->
+<br/>
+<!-- $$$formatDateTime -->
+<table class="qmlname"><tr valign="top" id="formatDateTime-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">formatDateTime</span>(<span class="type">datetime</span><i> dateTime</i>, <span class="type">variant</span><i> format</i>)</p></td></tr></table><p>Returns a string representation of <code>datetime</code>, optionally formatted according to <code>format</code>.</p>
+<p>The <i>date</i> parameter may be a JavaScript <code>Date</code> object, a date property, a QDate, QTime, or QDateTime value.</p>
+<p>If <i>format</i> is not provided, <i>dateTime</i> is formatted using Qt.DefaultLocaleShortDate. Otherwise, <i>format</i> should be either:</p>
+<ul>
+<li>One of the Qt::DateFormat enumeration values, such as <code>Qt.DefaultLocaleShortDate</code> or <code>Qt.ISODate</code></li>
+<li>A string that specifies the format of the returned string, as detailed below.</li>
+</ul>
+<p>If <i>format</i> specifies a format string, it should use the following expressions to specify the date:</p>
+<table class="generic">
+<thead><tr class="qt-style"><th >Expression</th><th >Output</th></tr></thead>
+<tr valign="top"><td >d</td><td >the day as number without a leading zero (1 to 31)</td></tr>
+<tr valign="top"><td >dd</td><td >the day as number with a leading zero (01 to 31)</td></tr>
+<tr valign="top"><td >ddd</td><td >the abbreviated localized day name (e.g&#x2e; 'Mon' to 'Sun'). Uses QDate::shortDayName().</td></tr>
+<tr valign="top"><td >dddd</td><td >the long localized day name (e.g&#x2e; 'Monday' to 'Qt::Sunday'). Uses QDate::longDayName().</td></tr>
+<tr valign="top"><td >M</td><td >the month as number without a leading zero (1-12)</td></tr>
+<tr valign="top"><td >MM</td><td >the month as number with a leading zero (01-12)</td></tr>
+<tr valign="top"><td >MMM</td><td >the abbreviated localized month name (e.g&#x2e; 'Jan' to 'Dec'). Uses QDate::shortMonthName().</td></tr>
+<tr valign="top"><td >MMMM</td><td >the long localized month name (e.g&#x2e; 'January' to 'December'). Uses QDate::longMonthName().</td></tr>
+<tr valign="top"><td >yy</td><td >the year as two digit number (00-99)</td></tr>
+<tr valign="top"><td >yyyy</td><td >the year as four digit number</td></tr>
 </table>
-
-Marks *id* for dynamic translation.
-
-Returns the *id*.
-
-QT\_TRID\_NOOP is used in conjunction with the dynamic translation function [qsTrId()](#qsTrId-method). It identifies a string as requiring translation (so it can be identified by `lupdate`), but leaves the actual translation to [qsTrId()](#qsTrId-method).
-
-Example:
-
-``` qml
-Item {
-    property string greetingId: QT_TRID_NOOP("hello_id")
-    Text { text: qsTrId(greetingId) }
+<p>In addition the following expressions can be used to specify the time:</p>
+<table class="generic">
+<thead><tr class="qt-style"><th >Expression</th><th >Output</th></tr></thead>
+<tr valign="top"><td >h</td><td >the hour without a leading zero (0 to 23 or 1 to 12 if AM/PM display)</td></tr>
+<tr valign="top"><td >hh</td><td >the hour with a leading zero (00 to 23 or 01 to 12 if AM/PM display)</td></tr>
+<tr valign="top"><td >m</td><td >the minute without a leading zero (0 to 59)</td></tr>
+<tr valign="top"><td >mm</td><td >the minute with a leading zero (00 to 59)</td></tr>
+<tr valign="top"><td >s</td><td >the second without a leading zero (0 to 59)</td></tr>
+<tr valign="top"><td >ss</td><td >the second with a leading zero (00 to 59)</td></tr>
+<tr valign="top"><td >z</td><td >the milliseconds without leading zeroes (0 to 999)</td></tr>
+<tr valign="top"><td >zzz</td><td >the milliseconds with leading zeroes (000 to 999)</td></tr>
+<tr valign="top"><td >AP</td><td >use AM/PM display. <i>AP</i> will be replaced by either &quot;AM&quot; or &quot;PM&quot;.</td></tr>
+<tr valign="top"><td >ap</td><td >use am/pm display. <i>ap</i> will be replaced by either &quot;am&quot; or &quot;pm&quot;.</td></tr>
+</table>
+<p>All other input characters will be ignored. Any sequence of characters that are enclosed in single quotes will be treated as text and not be used as an expression. Two consecutive single quotes (&quot;''&quot;) are replaced by a single quote in the output.</p>
+<p>For example, if the following date/time value was specified:</p>
+<pre class="cpp"><span class="comment">// 21 May 2001 14:13:09</span>
+var dateTime <span class="operator">=</span> <span class="keyword">new</span> Date(<span class="number">2001</span><span class="operator">,</span> <span class="number">5</span><span class="operator">,</span> <span class="number">21</span><span class="operator">,</span> <span class="number">14</span><span class="operator">,</span> <span class="number">13</span><span class="operator">,</span> <span class="number">09</span>)</pre>
+<p>This <i>dateTime</i> value could be passed to <code>Qt.formatDateTime()</code>, <a href="#formatDate-method">Qt.formatDate()</a> or <a href="#formatTime-method">Qt.formatTime()</a> with the <i>format</i> values below to produce the following results:</p>
+<table class="generic">
+<thead><tr class="qt-style"><th >Format</th><th >Result</th></tr></thead>
+<tr valign="top"><td >&quot;dd.MM.yyyy&quot;</td><td >21.05.2001</td></tr>
+<tr valign="top"><td >&quot;ddd MMMM d yy&quot;</td><td >Tue May 21 01</td></tr>
+<tr valign="top"><td >&quot;hh:mm:ss.zzz&quot;</td><td >14:13:09.042</td></tr>
+<tr valign="top"><td >&quot;h:m:s ap&quot;</td><td >2:13:9 pm</td></tr>
+</table>
+<p><b>See also </b><a href="QtQml.Locale.md">Locale</a>.</p>
+<!-- @@@formatDateTime -->
+<br/>
+<!-- $$$formatTime -->
+<table class="qmlname"><tr valign="top" id="formatTime-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">formatTime</span>(<span class="type">datetime</span><i> time</i>, <span class="type">variant</span><i> format</i>)</p></td></tr></table><p>Returns a string representation of <code>time</code>, optionally formatted according to <code>format</code>.</p>
+<p>The <i>time</i> parameter may be a JavaScript <code>Date</code> object, a QTime, or QDateTime value. The <i>format</i> parameter may be any of the possible format values as described for <a href="#formatDateTime-method">Qt.formatDateTime()</a>.</p>
+<p>If <i>format</i> is not specified, <i>time</i> is formatted using Qt.DefaultLocaleShortDate.</p>
+<p><b>See also </b><a href="QtQml.Locale.md">Locale</a>.</p>
+<!-- @@@formatTime -->
+<br/>
+<!-- $$$hsla -->
+<table class="qmlname"><tr valign="top" id="hsla-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">hsla</span>(<span class="type">real</span><i> hue</i>, <span class="type">real</span><i> saturation</i>, <span class="type">real</span><i> lightness</i>, <span class="type">real</span><i> alpha</i>)</p></td></tr></table><p>Returns a color with the specified <code>hue</code>, <code>saturation</code>, <code>lightness</code> and <code>alpha</code> components. All components should be in the range 0-1 inclusive.</p>
+<!-- @@@hsla -->
+<br/>
+<!-- $$$include -->
+<table class="qmlname"><tr valign="top" id="include-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">include</span>(<span class="type">string</span><i> url</i>, <span class="type">jsobject</span><i> callback</i>)</p></td></tr></table><p>Includes another JavaScript file. This method can only be used from within JavaScript files, and not regular QML files.</p>
+<p>This imports all functions from <i>url</i> into the current script's namespace.</p>
+<p>Qt.include() returns an object that describes the status of the operation. The object has a single property, <code>status</code>, that is set to one of the following values:</p>
+<table class="generic">
+<thead><tr class="qt-style"><th >Symbol</th><th >Value</th><th >Description</th></tr></thead>
+<tr valign="top"><td >result.OK</td><td >0</td><td >The include completed successfully.</td></tr>
+<tr valign="top"><td >result.LOADING</td><td >1</td><td >Data is being loaded from the network.</td></tr>
+<tr valign="top"><td >result.NETWORK_ERROR</td><td >2</td><td >A network error occurred while fetching the url.</td></tr>
+<tr valign="top"><td >result.EXCEPTION</td><td >3</td><td >A JavaScript exception occurred while executing the included code. An additional <code>exception</code> property will be set in this case.</td></tr>
+</table>
+<p>The <code>status</code> property will be updated as the operation progresses.</p>
+<p>If provided, <i>callback</i> is invoked when the operation completes. The callback is passed the same object as is returned from the Qt.include() call.</p>
+<!-- @@@include -->
+<br/>
+<!-- $$$isQtObject -->
+<table class="qmlname"><tr valign="top" id="isQtObject-method"><td class="tblQmlFuncNode"><p><span class="type">bool</span> <span class="name">isQtObject</span>(<span class="type">object</span>)</p></td></tr></table><p>Returns true if <code>object</code> is a valid reference to a Qt or QML object, otherwise false.</p>
+<!-- @@@isQtObject -->
+<br/>
+<!-- $$$lighter -->
+<table class="qmlname"><tr valign="top" id="lighter-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">lighter</span>(<span class="type">color</span><i> baseColor</i>, <span class="type">real</span><i> factor</i>)</p></td></tr></table><p>Returns a color lighter than <code>baseColor</code> by the <code>factor</code> provided.</p>
+<p>If the factor is greater than 1.0, this functions returns a lighter color. Setting factor to 1.5 returns a color that is 50% brighter. If the factor is less than 1.0, the return color is darker, but we recommend using the Qt.<a href="#darker-method">darker()</a> function for this purpose. If the factor is 0 or negative, the return value is unspecified.</p>
+<p>The function converts the current RGB color to HSV, multiplies the value (V) component by factor and converts the color back to RGB.</p>
+<p>If <code>factor</code> is not supplied, returns a color 50% lighter than <code>baseColor</code> (factor 1.5).</p>
+<!-- @@@lighter -->
+<br/>
+<!-- $$$locale -->
+<table class="qmlname"><tr valign="top" id="locale-method"><td class="tblQmlFuncNode"><p><span class="name">locale</span>(<span class="type">name</span>)</p></td></tr></table><p>Returns a JS object representing the locale with the specified name, which has the format &quot;language[_territory][.codeset][@modifier]&quot; or &quot;C&quot;, where:</p>
+<ul>
+<li>language is a lowercase, two-letter, ISO 639 language code,</li>
+<li>territory is an uppercase, two-letter, ISO 3166 country code,</li>
+<li>and codeset and modifier are ignored.</li>
+</ul>
+<p>If the string violates the locale format, or language is not a valid ISO 369 code, the &quot;C&quot; locale is used instead. If country is not present, or is not a valid ISO 3166 code, the most appropriate country is chosen for the specified language.</p>
+<p><b>See also </b><a href="QtQml.Locale.md">Locale</a>.</p>
+<!-- @@@locale -->
+<br/>
+<!-- $$$md5 -->
+<table class="qmlname"><tr valign="top" id="md5-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">md5</span>(<span class="type">data</span>)</p></td></tr></table><p>Returns a hex string of the md5 hash of <code>data</code>.</p>
+<!-- @@@md5 -->
+<br/>
+<!-- $$$matrix4x4 -->
+<table class="qmlname"><tr valign="top" id="matrix4x4-method"><td class="tblQmlFuncNode"><p><span class="name">matrix4x4</span>(<span class="type">real</span><i> m11</i>, <span class="type">real</span><i> m12</i>, <span class="type">real</span><i> m13</i>, <span class="type">real</span><i> m14</i>, <span class="type">real</span><i> m21</i>, <span class="type">real</span><i> m22</i>, <span class="type">real</span><i> m23</i>, <span class="type">real</span><i> m24</i>, <span class="type">real</span><i> m31</i>, <span class="type">real</span><i> m32</i>, <span class="type">real</span><i> m33</i>, <span class="type">real</span><i> m34</i>, <span class="type">real</span><i> m41</i>, <span class="type">real</span><i> m42</i>, <span class="type">real</span><i> m43</i>, <span class="type">real</span><i> m44</i>)</p></td></tr></table><p>Returns a Matrix4x4 with the specified values. Alternatively, the function may be called with a single argument where that argument is a JavaScript array which contains the sixteen matrix values.</p>
+<!-- @@@matrix4x4 -->
+<br/>
+<!-- $$$openUrlExternally -->
+<table class="qmlname"><tr valign="top" id="openUrlExternally-method"><td class="tblQmlFuncNode"><p><span class="type">bool</span> <span class="name">openUrlExternally</span>(<span class="type">url</span><i> target</i>)</p></td></tr></table><p>Attempts to open the specified <code>target</code> url in an external application, based on the user's desktop preferences. Returns true if it succeeds, and false otherwise.</p>
+<!-- @@@openUrlExternally -->
+<br/>
+<!-- $$$point -->
+<table class="qmlname"><tr valign="top" id="point-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="#point-method">point</a></span> <span class="name">point</span>(<span class="type">int</span><i> x</i>, <span class="type">int</span><i> y</i>)</p></td></tr></table><p>Returns a Point with the specified <code>x</code> and <code>y</code> coordinates.</p>
+<!-- @@@point -->
+<br/>
+<!-- $$$qsTr -->
+<table class="qmlname"><tr valign="top" id="qsTr-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTr</span>(<span class="type">string</span><i> sourceText</i>, <span class="type">string</span><i> disambiguation</i>, <span class="type">int</span><i> n</i>)</p></td></tr></table><p>Returns a translated version of <i>sourceText</i>, optionally based on a <i>disambiguation</i> string and value of <i>n</i> for strings containing plurals; otherwise returns <i>sourceText</i> itself if no appropriate translated string is available.</p>
+<p>If the same <i>sourceText</i> is used in different roles within the same translation context, an additional identifying string may be passed in for <i>disambiguation</i>.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;hello&quot;</span>) }</pre>
+<p><b>See also </b>Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTr -->
+<br/>
+<!-- $$$qsTrId -->
+<table class="qmlname"><tr valign="top" id="qsTrId-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTrId</span>(<span class="type">string</span><i> id</i>, <span class="type">int</span><i> n</i>)</p></td></tr></table><p>Returns a translated string identified by <i>id</i>. If no matching string is found, the id itself is returned. This should not happen under normal conditions.</p>
+<p>If <i>n</i> &gt;= 0, all occurrences of <code>%n</code> in the resulting string are replaced with a decimal representation of <i>n</i>. In addition, depending on <i>n</i>'s value, the translation text may vary.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTrId</span>(<span class="string">&quot;hello_id&quot;</span>) }</pre>
+<p>It is possible to supply a source string template like:</p>
+<p><code>//% &lt;string&gt;</code></p>
+<p>or</p>
+<p><code>\begincomment% &lt;string&gt; \endcomment</code></p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Text</span> {
+<span class="comment">//% &quot;hello&quot;</span>
+<span class="name">text</span>: <span class="name">qsTrId</span>(<span class="string">&quot;hello_id&quot;</span>)
+}</pre>
+<p>Creating binary translation (QM) files suitable for use with this function requires passing the <code>-idbased</code> option to the <code>lrelease</code> tool.</p>
+<p><b>See also </b>QT_TRID_NOOP() and Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTrId -->
+<br/>
+<!-- $$$qsTrIdNoOp -->
+<table class="qmlname"><tr valign="top" id="qsTrIdNoOp-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTrIdNoOp</span>(<span class="type">string</span><i> id</i>)</p></td></tr></table><p>Marks <i>id</i> for dynamic translation.</p>
+<p>Returns the <i>id</i>.</p>
+<p>QT_TRID_NOOP is used in conjunction with the dynamic translation function <a href="#qsTrId-method">qsTrId()</a>. It identifies a string as requiring translation (so it can be identified by <code>lupdate</code>), but leaves the actual translation to <a href="#qsTrId-method">qsTrId()</a>.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Item</span> {
+property <span class="type">string</span> <span class="name">greetingId</span>: <span class="name">QT_TRID_NOOP</span>(<span class="string">&quot;hello_id&quot;</span>)
+<span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTrId</span>(<span class="name">greetingId</span>) }
+}</pre>
+<p><b>See also </b><a href="#qsTrId-method">qsTrId()</a> and Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTrIdNoOp -->
+<br/>
+<!-- $$$qsTrNoOp -->
+<table class="qmlname"><tr valign="top" id="qsTrNoOp-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTrNoOp</span>(<span class="type">string</span><i> sourceText</i>, <span class="type">string</span><i> disambiguation</i>)</p></td></tr></table><p>Marks <i>sourceText</i> for dynamic translation; i.e, the stored <i>sourceText</i> will not be altered.</p>
+<p>If the same <i>sourceText</i> is used in different roles within the same translation context, an additional identifying string may be passed in for <i>disambiguation</i>.</p>
+<p>Returns the <i>sourceText</i>.</p>
+<p>QT_TR_NOOP is used in conjunction with the dynamic translation functions <a href="#qsTr-method">qsTr()</a> and <a href="#qsTranslate-method">qsTranslate()</a>. It identifies a string as requiring translation (so it can be identified by <code>lupdate</code>), but leaves the actual translation to the dynamic functions.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Item</span> {
+property <span class="type">string</span> <span class="name">greeting</span>: <span class="name">QT_TR_NOOP</span>(<span class="string">&quot;hello&quot;</span>)
+<span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTr</span>(<span class="name">greeting</span>) }
+}</pre>
+<p><b>See also </b>Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTrNoOp -->
+<br/>
+<!-- $$$qsTranslate -->
+<table class="qmlname"><tr valign="top" id="qsTranslate-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTranslate</span>(<span class="type">string</span><i> context</i>, <span class="type">string</span><i> sourceText</i>, <span class="type">string</span><i> disambiguation</i>, <span class="type">int</span><i> n</i>)</p></td></tr></table><p>Returns a translated version of <i>sourceText</i> within the given <i>context</i>, optionally based on a <i>disambiguation</i> string and value of <i>n</i> for strings containing plurals; otherwise returns <i>sourceText</i> itself if no appropriate translated string is available.</p>
+<p>If the same <i>sourceText</i> is used in different roles within the same translation <i>context</i>, an additional identifying string may be passed in for <i>disambiguation</i>.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTranslate</span>(<span class="string">&quot;CustomContext&quot;</span>, <span class="string">&quot;hello&quot;</span>) }</pre>
+<p><b>See also </b>Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTranslate -->
+<br/>
+<!-- $$$qsTranslateNoOp -->
+<table class="qmlname"><tr valign="top" id="qsTranslateNoOp-method"><td class="tblQmlFuncNode"><p><span class="type">string</span> <span class="name">qsTranslateNoOp</span>(<span class="type">string</span><i> context</i>, <span class="type">string</span><i> sourceText</i>, <span class="type">string</span><i> disambiguation</i>)</p></td></tr></table><p>Marks <i>sourceText</i> for dynamic translation in the given <i>context</i>; i.e, the stored <i>sourceText</i> will not be altered.</p>
+<p>If the same <i>sourceText</i> is used in different roles within the same translation context, an additional identifying string may be passed in for <i>disambiguation</i>.</p>
+<p>Returns the <i>sourceText</i>.</p>
+<p>QT_TRANSLATE_NOOP is used in conjunction with the dynamic translation functions <a href="#qsTr-method">qsTr()</a> and <a href="#qsTranslate-method">qsTranslate()</a>. It identifies a string as requiring translation (so it can be identified by <code>lupdate</code>), but leaves the actual translation to the dynamic functions.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type">Item</span> {
+property <span class="type">string</span> <span class="name">greeting</span>: <span class="name">QT_TRANSLATE_NOOP</span>(<span class="string">&quot;CustomContext&quot;</span>, <span class="string">&quot;hello&quot;</span>)
+<span class="type">Text</span> { <span class="name">text</span>: <span class="name">qsTranslate</span>(<span class="string">&quot;CustomContext&quot;</span>, <span class="name">greeting</span>) }
+}</pre>
+<p><b>See also </b>Internationalization and Localization with Qt Quick.</p>
+<!-- @@@qsTranslateNoOp -->
+<br/>
+<!-- $$$quaternion -->
+<table class="qmlname"><tr valign="top" id="quaternion-method"><td class="tblQmlFuncNode"><p><span class="name">quaternion</span>(<span class="type">real</span><i> scalar</i>, <span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> z</i>)</p></td></tr></table><p>Returns a Quaternion with the specified <code>scalar</code>, <code>x</code>, <code>y</code>, and <code>z</code>.</p>
+<!-- @@@quaternion -->
+<br/>
+<!-- $$$quit -->
+<table class="qmlname"><tr valign="top" id="quit-method"><td class="tblQmlFuncNode"><p><span class="name">quit</span>()</p></td></tr></table><p>This function causes the QQmlEngine::quit() signal to be emitted. Within the Prototyping with qmlscene, this causes the launcher application to exit; to quit a C++ application when this method is called, connect the QQmlEngine::quit() signal to the QCoreApplication::quit() slot.</p>
+<!-- @@@quit -->
+<br/>
+<!-- $$$rect -->
+<table class="qmlname"><tr valign="top" id="rect-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="#rect-method">rect</a></span> <span class="name">rect</span>(<span class="type">int</span><i> x</i>, <span class="type">int</span><i> y</i>, <span class="type">int</span><i> width</i>, <span class="type">int</span><i> height</i>)</p></td></tr></table><p>Returns a <code>rect</code> with the top-left corner at <code>x</code>, <code>y</code> and the specified <code>width</code> and <code>height</code>.</p>
+<p>The returned object has <code>x</code>, <code>y</code>, <code>width</code> and <code>height</code> attributes with the given values.</p>
+<!-- @@@rect -->
+<br/>
+<!-- $$$resolvedUrl -->
+<table class="qmlname"><tr valign="top" id="resolvedUrl-method"><td class="tblQmlFuncNode"><p><span class="type">url</span> <span class="name">resolvedUrl</span>(<span class="type">url</span><i> url</i>)</p></td></tr></table><p>Returns <i>url</i> resolved relative to the URL of the caller.</p>
+<!-- @@@resolvedUrl -->
+<br/>
+<!-- $$$rgba -->
+<table class="qmlname"><tr valign="top" id="rgba-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">rgba</span>(<span class="type">real</span><i> red</i>, <span class="type">real</span><i> green</i>, <span class="type">real</span><i> blue</i>, <span class="type">real</span><i> alpha</i>)</p></td></tr></table><p>Returns a color with the specified <code>red</code>, <code>green</code>, <code>blue</code> and <code>alpha</code> components. All components should be in the range 0-1 inclusive.</p>
+<!-- @@@rgba -->
+<br/>
+<!-- $$$size -->
+<table class="qmlname"><tr valign="top" id="size-method"><td class="tblQmlFuncNode"><p><span class="name">size</span>(<span class="type">int</span><i> width</i>, <span class="type">int</span><i> height</i>)</p></td></tr></table><p>Returns a Size with the specified <code>width</code> and <code>height</code>.</p>
+<!-- @@@size -->
+<br/>
+<!-- $$$tint -->
+<table class="qmlname"><tr valign="top" id="tint-method"><td class="tblQmlFuncNode"><p><span class="type">color</span> <span class="name">tint</span>(<span class="type">color</span><i> baseColor</i>, <span class="type">color</span><i> tintColor</i>)</p></td></tr></table><p>This function allows tinting one color with another.</p>
+<p>The tint color should usually be mostly transparent, or you will not be able to see the underlying color. The below example provides a slight red tint by having the tint color be pure red which is only 1/16th opaque.</p>
+<pre class="qml"><span class="type">Item</span> {
+<span class="type">Rectangle</span> {
+<span class="name">x</span>: <span class="number">0</span>; <span class="name">width</span>: <span class="number">80</span>; <span class="name">height</span>: <span class="number">80</span>
+<span class="name">color</span>: <span class="string">&quot;lightsteelblue&quot;</span>
 }
-```
-
-**See also** [qsTrId()](#qsTrId-method) and Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTrNoOp-method"></span><span class="type">string</span> <span class="name">qsTrNoOp</span>(<span class="type">string</span> <em>sourceText</em>, <span class="type">string</span> <em>disambiguation</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Marks *sourceText* for dynamic translation; i.e, the stored *sourceText* will not be altered.
-
-If the same *sourceText* is used in different roles within the same translation context, an additional identifying string may be passed in for *disambiguation*.
-
-Returns the *sourceText*.
-
-QT\_TR\_NOOP is used in conjunction with the dynamic translation functions [qsTr()](#qsTr-method) and [qsTranslate()](#qsTranslate-method). It identifies a string as requiring translation (so it can be identified by `lupdate`), but leaves the actual translation to the dynamic functions.
-
-Example:
-
-``` qml
-Item {
-    property string greeting: QT_TR_NOOP("hello")
-    Text { text: qsTr(greeting) }
+<span class="type">Rectangle</span> {
+<span class="name">x</span>: <span class="number">100</span>; <span class="name">width</span>: <span class="number">80</span>; <span class="name">height</span>: <span class="number">80</span>
+<span class="name">color</span>: <span class="name">Qt</span>.<span class="name">tint</span>(<span class="string">&quot;lightsteelblue&quot;</span>, <span class="string">&quot;#10FF0000&quot;</span>)
 }
-```
-
-**See also** Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTranslate-method"></span><span class="type">string</span> <span class="name">qsTranslate</span>(<span class="type">string</span> <em>context</em>, <span class="type">string</span> <em>sourceText</em>, <span class="type">string</span> <em>disambiguation</em>, <span class="type">int</span> <em>n</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a translated version of *sourceText* within the given *context*, optionally based on a *disambiguation* string and value of *n* for strings containing plurals; otherwise returns *sourceText* itself if no appropriate translated string is available.
-
-If the same *sourceText* is used in different roles within the same translation *context*, an additional identifying string may be passed in for *disambiguation*.
-
-Example:
-
-``` qml
-Text { text: qsTranslate("CustomContext", "hello") }
-```
-
-**See also** Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="qsTranslateNoOp-method"></span><span class="type">string</span> <span class="name">qsTranslateNoOp</span>(<span class="type">string</span> <em>context</em>, <span class="type">string</span> <em>sourceText</em>, <span class="type">string</span> <em>disambiguation</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Marks *sourceText* for dynamic translation in the given *context*; i.e, the stored *sourceText* will not be altered.
-
-If the same *sourceText* is used in different roles within the same translation context, an additional identifying string may be passed in for *disambiguation*.
-
-Returns the *sourceText*.
-
-QT\_TRANSLATE\_NOOP is used in conjunction with the dynamic translation functions [qsTr()](#qsTr-method) and [qsTranslate()](#qsTranslate-method). It identifies a string as requiring translation (so it can be identified by `lupdate`), but leaves the actual translation to the dynamic functions.
-
-Example:
-
-``` qml
-Item {
-    property string greeting: QT_TRANSLATE_NOOP("CustomContext", "hello")
-    Text { text: qsTranslate("CustomContext", greeting) }
-}
-```
-
-**See also** Internationalization and Localization with Qt Quick.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="quaternion-method"></span><span class="name">quaternion</span>(<span class="type">real</span> <em>scalar</em>, <span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>z</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Quaternion with the specified `scalar`, `x`, `y`, and `z`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="quit-method"></span><span class="name">quit</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-This function causes the QQmlEngine::quit() signal to be emitted. Within the Prototyping with qmlscene, this causes the launcher application to exit; to quit a C++ application when this method is called, connect the QQmlEngine::quit() signal to the QCoreApplication::quit() slot.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="rect-method"></span><span class="type"><a href="#rect-method">rect</a></span> <span class="name">rect</span>(<span class="type">int</span> <em>x</em>, <span class="type">int</span> <em>y</em>, <span class="type">int</span> <em>width</em>, <span class="type">int</span> <em>height</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a `rect` with the top-left corner at `x`, `y` and the specified `width` and `height`.
-
-The returned object has `x`, `y`, `width` and `height` attributes with the given values.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="resolvedUrl-method"></span><span class="type">url</span> <span class="name">resolvedUrl</span>(<span class="type">url</span> <em>url</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns *url* resolved relative to the URL of the caller.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="rgba-method"></span><span class="type">color</span> <span class="name">rgba</span>(<span class="type">real</span> <em>red</em>, <span class="type">real</span> <em>green</em>, <span class="type">real</span> <em>blue</em>, <span class="type">real</span> <em>alpha</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a color with the specified `red`, `green`, `blue` and `alpha` components. All components should be in the range 0-1 inclusive.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="size-method"></span><span class="name">size</span>(<span class="type">int</span> <em>width</em>, <span class="type">int</span> <em>height</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Size with the specified `width` and `height`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="tint-method"></span><span class="type">color</span> <span class="name">tint</span>(<span class="type">color</span> <em>baseColor</em>, <span class="type">color</span> <em>tintColor</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-This function allows tinting one color with another.
-
-The tint color should usually be mostly transparent, or you will not be able to see the underlying color. The below example provides a slight red tint by having the tint color be pure red which is only 1/16th opaque.
-
-``` qml
-Item {
-    Rectangle {
-        x: 0; width: 80; height: 80
-        color: "lightsteelblue"
-    }
-    Rectangle {
-        x: 100; width: 80; height: 80
-        color: Qt.tint("lightsteelblue", "#10FF0000")
-    }
-}
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/4b1d9d03-2e94-4c07-a35a-0d07273a8119-api/apps/qml/sdk-15.04.5/QtQml.Qt/images/declarative-rect_tint.png)
-
-Tint is most useful when a subtle change is intended to be conveyed due to some event; you can then use tinting to more effectively tune the visible color.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="vector2d-method"></span><span class="name">vector2d</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Vector2D with the specified `x` and `y`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="vector3d-method"></span><span class="name">vector3d</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>z</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Vector3D with the specified `x`, `y` and `z`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="vector4d-method"></span><span class="name">vector4d</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>z</em>, <span class="type">real</span> <em>w</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a Vector4D with the specified `x`, `y`, `z` and `w`.
-
+}</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4b1d9d03-2e94-4c07-a35a-0d07273a8119-../QtQml.Qt/images/declarative-rect_tint.png" alt="" /></p><p>Tint is most useful when a subtle change is intended to be conveyed due to some event; you can then use tinting to more effectively tune the visible color.</p>
+<!-- @@@tint -->
+<br/>
+<!-- $$$vector2d -->
+<table class="qmlname"><tr valign="top" id="vector2d-method"><td class="tblQmlFuncNode"><p><span class="name">vector2d</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Returns a Vector2D with the specified <code>x</code> and <code>y</code>.</p>
+<!-- @@@vector2d -->
+<br/>
+<!-- $$$vector3d -->
+<table class="qmlname"><tr valign="top" id="vector3d-method"><td class="tblQmlFuncNode"><p><span class="name">vector3d</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> z</i>)</p></td></tr></table><p>Returns a Vector3D with the specified <code>x</code>, <code>y</code> and <code>z</code>.</p>
+<!-- @@@vector3d -->
+<br/>
+<!-- $$$vector4d -->
+<table class="qmlname"><tr valign="top" id="vector4d-method"><td class="tblQmlFuncNode"><p><span class="name">vector4d</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> z</i>, <span class="type">real</span><i> w</i>)</p></td></tr></table><p>Returns a Vector4D with the specified <code>x</code>, <code>y</code>, <code>z</code> and <code>w</code>.</p>
+<!-- @@@vector4d -->
+<br/>

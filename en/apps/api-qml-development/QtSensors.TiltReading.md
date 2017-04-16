@@ -1,81 +1,37 @@
 ---
 Title: QtSensors.TiltReading
 ---
-        
-TiltReading
-===========
+
+# QtSensors.TiltReading
 
 <span class="subtitle"></span>
-The TiltReading element holds the most recent TiltSensor reading. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtSensors 5.0</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>QtSensors 5.0</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtSensors.SensorReading.md">SensorReading</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[xRotation](#xRotation-prop)**** : qreal
--   ****[yRotation](#yRotation-prop)**** : qreal
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [TiltReading](index.html) element holds the most recent [TiltSensor](../QtSensors.TiltSensor.md) reading.
-
-This element wraps the QTiltReading class. Please see the documentation for QTiltReading for details.
-
-This element cannot be directly created.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="xRotation-prop"></span><span class="name">xRotation</span> : <span class="type">qreal</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the amount of tilt on the X axis.
-
-Please see QTiltReading::xRotation for information about this property.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="yRotation-prop"></span><span class="name">yRotation</span> : <span class="type">qreal</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the amount of tilt on the Y axis.
-
-Please see QTiltReading::yRotation for information about this property.
-
+<!-- $$$TiltReading-brief -->
+<p>The TiltReading element holds the most recent TiltSensor reading. More...</p>
+<!-- @@@TiltReading -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtSensors.SensorReading.md">SensorReading</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#xRotation-prop">xRotation</a></b></b> : qreal</li>
+<li class="fn"><b><b><a href="#yRotation-prop">yRotation</a></b></b> : qreal</li>
+</ul>
+<!-- $$$TiltReading-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">TiltReading</a> element holds the most recent <a href="QtSensors.TiltSensor.md">TiltSensor</a> reading.</p>
+<p>This element wraps the QTiltReading class. Please see the documentation for QTiltReading for details.</p>
+<p>This element cannot be directly created.</p>
+<!-- @@@TiltReading -->
+<h2>Property Documentation</h2>
+<!-- $$$xRotation -->
+<table class="qmlname"><tr valign="top" id="xRotation-prop"><td class="tblQmlPropNode"><p><span class="name">xRotation</span> : <span class="type">qreal</span></p></td></tr></table><p>This property holds the amount of tilt on the X axis.</p>
+<p>Please see QTiltReading::xRotation for information about this property.</p>
+<!-- @@@xRotation -->
+<br/>
+<!-- $$$yRotation -->
+<table class="qmlname"><tr valign="top" id="yRotation-prop"><td class="tblQmlPropNode"><p><span class="name">yRotation</span> : <span class="type">qreal</span></p></td></tr></table><p>This property holds the amount of tilt on the Y axis.</p>
+<p>Please see QTiltReading::yRotation for information about this property.</p>
+<!-- @@@yRotation -->
+<br/>

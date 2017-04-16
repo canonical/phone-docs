@@ -1,74 +1,59 @@
 ---
 Title: UbuntuUserInterfaceToolkit.ubuntu-layouts1
 ---
-        
-Layouts - Terminology
-=====================
+
+# UbuntuUserInterfaceToolkit.ubuntu-layouts1
 
 <span class="subtitle"></span>
-<span id="details"></span>
-First let's introduce the terminology we are going to use across this tutorial.
-
-<span id="layout-block-container-and-item-holder"></span>
-#### Layout Block, Container and Item holder
-
-A layout block is a component embedding several layout definitions and items to be laid out. It is typically defined by the [Layouts](../Ubuntu.Layouts.Layouts.md) component.
-
-Each layout defined in the block is compound of containers, which can host laid out items hosted by item holders.
-
-An item holder is a pseudo-item which can host only one item, where the item is anchored to the item holder's edges, therefore the item holder has control over the componet's size, scale and rotation.
-
-To understand this let's take the following layout structure:
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/789046e7-ef38-470e-a7b3-4ef64d7493e9-api/apps/qml/sdk-15.04.6/ubuntu-layouts1/images/sample-layout.png)
-
-In this layout all three buttons are laid out in the same container, but green button was required to take the height of the window, whereas the red and blue buttons were required to have the same width and height.
-
-Illustrating the layout on the image with code:
-
-``` qml
-Layouts { // <-- layout block
-    id: layouts
-    layouts: [
-        // [...]
-        ConditionalLayout { // <-- layout
-            name: "composit"
-            Row { // <-- layout container
-                // [...]
-                ItemLayout { // <-- item holder
-                    item: "item2"
-                    // [...]
-                }
-                ItemLayout { // <-- item holder
-                    item: "item1"
-                    // [...]
-                }
-                ItemLayout { // <-- item holder
-                    item: "item3"
-                    // [...]
-                }
-            }
-        }
-    ]
-    // the items to lay outitem3
-    Button {
-        Layouts.item: "item1"
-        // [...]
-    }
-    Button {
-        Layouts.item: "item2"
-        // [...]
-    }
-    Button {
-        Layouts.item: "item3"
-        // [...]
-    }
+<!-- $$$ubuntu-layouts1.html-description -->
+<p>First let's introduce the terminology we are going to use across this tutorial.</p>
+<h4 >Layout Block, Container and Item holder</h4>
+<p>A layout block is a component embedding several layout definitions and items to be laid out. It is typically defined by the <a href="Ubuntu.Layouts.Layouts.md">Layouts</a> component.</p>
+<p>Each layout defined in the block is compound of containers, which can host laid out items hosted by item holders.</p>
+<p>An item holder is a pseudo-item which can host only one item, where the item is anchored to the item holder's edges, therefore the item holder has control over the componet's size, scale and rotation.</p>
+<p>To understand this let's take the following layout structure:</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/789046e7-ef38-470e-a7b3-4ef64d7493e9-../ubuntu-layouts1/images/sample-layout.png" alt="" /></p><p>In this layout all three buttons are laid out in the same container, but green button was required to take the height of the window, whereas the red and blue buttons were required to have the same width and height.</p>
+<p>Illustrating the layout on the image with code:</p>
+<pre class="qml"><span class="type"><a href="Ubuntu.Layouts.Layouts.md">Layouts</a></span> { <span class="comment">// &lt;-- layout block</span>
+<span class="name">id</span>: <span class="name">layouts</span>
+<span class="name">layouts</span>: [
+<span class="comment">// [...]</span>
+<span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> { <span class="comment">// &lt;-- layout</span>
+<span class="name">name</span>: <span class="string">&quot;composit&quot;</span>
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> { <span class="comment">// &lt;-- layout container</span>
+<span class="comment">// [...]</span>
+<span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> { <span class="comment">// &lt;-- item holder</span>
+<span class="name">item</span>: <span class="string">&quot;item2&quot;</span>
+<span class="comment">// [...]</span>
 }
-```
-
-A container can be any item, however it is preferable to use positioners or [QtQuick](http://doc.qt.io/qt-5/qtquick-qmlmodule.html) layout elements whenever possible.
-
-As next step let's create some layouts.
-
-<a href="UbuntuUserInterfaceToolkit.ubuntu-layouts2.md" class="nextPage">Layouts - The first conditional layout</a>
-
+<span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> { <span class="comment">// &lt;-- item holder</span>
+<span class="name">item</span>: <span class="string">&quot;item1&quot;</span>
+<span class="comment">// [...]</span>
+}
+<span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> { <span class="comment">// &lt;-- item holder</span>
+<span class="name">item</span>: <span class="string">&quot;item3&quot;</span>
+<span class="comment">// [...]</span>
+}
+}
+}
+]
+<span class="comment">// the items to lay outitem3</span>
+<span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
+<span class="name">Layouts</span>.item: <span class="string">&quot;item1&quot;</span>
+<span class="comment">// [...]</span>
+}
+<span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
+<span class="name">Layouts</span>.item: <span class="string">&quot;item2&quot;</span>
+<span class="comment">// [...]</span>
+}
+<span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
+<span class="name">Layouts</span>.item: <span class="string">&quot;item3&quot;</span>
+<span class="comment">// [...]</span>
+}
+}</pre>
+<p>A container can be any item, however it is preferable to use positioners or <a href="http://doc.qt.io/qt-5/qtquick-qmlmodule.html">QtQuick</a> layout elements whenever possible.</p>
+<p>As next step let's create some layouts.</p>
+<!-- @@@ubuntu-layouts1.html -->
+<p class="naviNextPrevious footerNavi">
+<li><a class="nextPage" href="UbuntuUserInterfaceToolkit.ubuntu-layouts2.md">Layouts - The first conditional layout</a></li>
+</p>

@@ -1,121 +1,102 @@
 ---
 Title: unity.scopes.VariantBuilder
 ---
-        
-VariantBuilder
-==============
 
-Helper class for creating and populating <a href="unity.scopes.Variant.md" title="Simple variant class that can hold an integer, boolean, string, double, dictionary, array or null value. ">Variant</a> containers. [More...](#details)
+# unity.scopes.VariantBuilder
 
-`#include <unity/scopes/VariantBuilder.h>`
-
-pub-methods
-------------------------------------------------------
-
-void 
-<a href="#a6636c251658079d95b2c9da9fac297d5">add_tuple</a> (std::initializer\_list&lt; std::pair&lt; std::string, <a href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &tuple)
- 
-Adds a tuple of key-value pairs to an array. More...
- 
-void 
-<a href="#aea54406435e03542d10da70cd04a6b80">add_tuple</a> (std::vector&lt; std::pair&lt; std::string, <a href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &tuple)
- 
-Adds a tuple of key-value pairs to an array. More...
- 
-<a href="unity.scopes.Variant.md">Variant</a> 
-<a href="#abc6c1133cffc6730df7470185460e802">end</a> ()
- 
-Retrieves a completed variant. More...
- 
-Copy and assignment
-
-Copy and assignment operators (move and non-move versions) have the usual value semantics.
-
- 
-**VariantBuilder** (<a href="index.html">VariantBuilder</a> const &other)
- 
- 
-**VariantBuilder** (<a href="index.html">VariantBuilder</a> &&other)
- 
-<a href="index.html">VariantBuilder</a> & 
-**operator=** (<a href="index.html">VariantBuilder</a> const &other)
- 
-<a href="index.html">VariantBuilder</a> & 
-**operator=** (<a href="index.html">VariantBuilder</a> &&other)
- 
-<span id="details"></span>
-Detailed Description
---------------------
-
-Helper class for creating and populating <a href="unity.scopes.Variant.md" title="Simple variant class that can hold an integer, boolean, string, double, dictionary, array or null value. ">Variant</a> containers.
-
-The main purpose of this class is to ease creation of variant containers needed for <a href="unity.scopes.PreviewWidget.md" title="A widget for a preview. ">PreviewWidget</a> instances or any other classes that require non-trivial variant definitions.
-
-For example, the value of the "rating" key of the following JSON template
-
+<p>Helper class for creating and populating <a class="el" href="unity.scopes.Variant.md" title="Simple variant class that can hold an integer, boolean, string, double, dictionary, array or null value. ">Variant</a> containers.  
+<a href="#details">More...</a></p>
+<p><code>#include &lt;unity/scopes/VariantBuilder.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6636c251658079d95b2c9da9fac297d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6636c251658079d95b2c9da9fac297d5">add_tuple</a> (std::initializer_list&lt; std::pair&lt; std::string, <a class="el" href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &amp;tuple)</td></tr>
+<tr class="memdesc:a6636c251658079d95b2c9da9fac297d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a tuple of key-value pairs to an array.  More...<br /></td></tr>
+<tr class="separator:a6636c251658079d95b2c9da9fac297d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea54406435e03542d10da70cd04a6b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea54406435e03542d10da70cd04a6b80">add_tuple</a> (std::vector&lt; std::pair&lt; std::string, <a class="el" href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &amp;tuple)</td></tr>
+<tr class="memdesc:aea54406435e03542d10da70cd04a6b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a tuple of key-value pairs to an array.  More...<br /></td></tr>
+<tr class="separator:aea54406435e03542d10da70cd04a6b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6c1133cffc6730df7470185460e802"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unity.scopes.Variant.md">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc6c1133cffc6730df7470185460e802">end</a> ()</td></tr>
+<tr class="memdesc:abc6c1133cffc6730df7470185460e802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a completed variant.  More...<br /></td></tr>
+<tr class="separator:abc6c1133cffc6730df7470185460e802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2">Copy and assignment</td></tr>
+<tr><td colspan="2"><p>Copy and assignment operators (move and non-move versions) have the usual value semantics. </p>
+</td></tr>
+<tr class="memitem:a454b3668e3638bab21dba637ed2bc024"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>VariantBuilder</b> (<a class="el" href="index.html">VariantBuilder</a> const &amp;other)</td></tr>
+<tr class="separator:a454b3668e3638bab21dba637ed2bc024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cec9964e9837d3685d339ceb7852404"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>VariantBuilder</b> (<a class="el" href="index.html">VariantBuilder</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a8cec9964e9837d3685d339ceb7852404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3f9a796ad583e2c66b25637d60b45b"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="index.html">VariantBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">VariantBuilder</a> const &amp;other)</td></tr>
+<tr class="separator:a6f3f9a796ad583e2c66b25637d60b45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf76f6ae2481c10c016abb2ae827a6d1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="index.html">VariantBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">VariantBuilder</a> &amp;&amp;other)</td></tr>
+<tr class="separator:acf76f6ae2481c10c016abb2ae827a6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Helper class for creating and populating <a class="el" href="unity.scopes.Variant.md" title="Simple variant class that can hold an integer, boolean, string, double, dictionary, array or null value. ">Variant</a> containers. </p>
+<p>The main purpose of this class is to ease creation of variant containers needed for <a class="el" href="unity.scopes.PreviewWidget.md" title="A widget for a preview. ">PreviewWidget</a> instances or any other classes that require non-trivial variant definitions.</p>
+<p>For example, the value of the "rating" key of the following JSON template </p>
+```
 {
-
-<span class="stringliteral">"type"</span>: <span class="stringliteral">"reviews"</span>,
-
+<span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;reviews&quot;</span>,
 ...
-
-<span class="stringliteral">"reviews"</span>: \[{<span class="stringliteral">"rating"</span>: null, <span class="stringliteral">"review"</span>: null, <span class="stringliteral">"author"</span>: null}\]
-
+<span class="stringliteral">&quot;reviews&quot;</span>: [{<span class="stringliteral">&quot;rating&quot;</span>: null, <span class="stringliteral">&quot;review&quot;</span>: null, <span class="stringliteral">&quot;author&quot;</span>: null}]
 }
-
-can be created with <a href="index.html" title="Helper class for creating and populating Variant containers. ">VariantBuilder</a> as follows:
-
+```
+<p>can be created with <a class="el" href="index.html" title="Helper class for creating and populating Variant containers. ">VariantBuilder</a> as follows:</p>
+```
 VariantBuilder builder;
-
-builder.add\_tuple({{<span class="stringliteral">"rating"</span>, <a href="../unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c" class="code">Variant::null</a>())}, {<span class="stringliteral">"review"</span>, <a href="../unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c" class="code">Variant::null</a>()}, {<span class="stringliteral">"author"</span>, <a href="../unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c" class="code">Variant::null</a>()}});
-
-Member Function Documentation
------------------------------
-
-<span id="a6636c251658079d95b2c9da9fac297d5" class="anchor"></span>
-|                                                |     |                                                                                                                                             |         |     |     |
-|------------------------------------------------|-----|---------------------------------------------------------------------------------------------------------------------------------------------|---------|-----|-----|
-| void unity::scopes::VariantBuilder::add\_tuple | (   | std::initializer\_list&lt; std::pair&lt; std::string, <a href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &  | *tuple* | )   |     |
-
-Adds a tuple of key-value pairs to an array.
-
-It can be used multiple times to create an array of tuples, for example:
-
-\[{<span class="stringliteral">"a"</span>: 1, <span class="stringliteral">"b"</span>: 2}, {<span class="stringliteral">"c"</span>: 2, <span class="stringliteral">"d"</span> : 3}\]
-
-can be created with:
-
+builder.add_tuple({{<span class="stringliteral">&quot;rating&quot;</span>, <a class="code" href="unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c">Variant::null</a>())}, {<span class="stringliteral">&quot;review&quot;</span>, <a class="code" href="unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c">Variant::null</a>()}, {<span class="stringliteral">&quot;author&quot;</span>, <a class="code" href="unity.scopes.Variant.md#a2bd2d5425fdec9af9340c22e3b47ac1c">Variant::null</a>()}});
+```
+ <h2 class="groupheader">Member Function Documentation</h2>
+<table class="memname">
+<tr>
+<td class="memname">void unity::scopes::VariantBuilder::add_tuple </td>
+<td>(</td>
+<td class="paramtype">std::initializer_list&lt; std::pair&lt; std::string, <a class="el" href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &amp;&#160;</td>
+<td class="paramname"><em>tuple</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+<p>Adds a tuple of key-value pairs to an array. </p>
+<p>It can be used multiple times to create an array of tuples, for example: </p>
+```
+[{<span class="stringliteral">&quot;a&quot;</span>: 1, <span class="stringliteral">&quot;b&quot;</span>: 2}, {<span class="stringliteral">&quot;c&quot;</span>: 2, <span class="stringliteral">&quot;d&quot;</span> : 3}]
+```
+<p> can be created with: </p>
+```
 VariantBuilder builder;
-
-builder.add\_tuple({{<span class="stringliteral">"a"</span>, Variant(1)}, {<span class="stringliteral">"b"</span>, Variant(2)}});
-
-builder.add\_tuple({{<span class="stringliteral">"c"</span>, Variant(2)}, {<span class="stringliteral">"d"</span>, Variant(3)}});
-
-<span id="aea54406435e03542d10da70cd04a6b80" class="anchor"></span>
-|                                                |     |                                                                                                                                  |         |     |     |
-|------------------------------------------------|-----|----------------------------------------------------------------------------------------------------------------------------------|---------|-----|-----|
-| void unity::scopes::VariantBuilder::add\_tuple | (   | std::vector&lt; std::pair&lt; std::string, <a href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &  | *tuple* | )   |     |
-
-Adds a tuple of key-value pairs to an array.
-
-This is an overloaded version of add\_tuple that accepts `std::vector` instead of `std::initializer_list`, making it more convenient for language bindings.
-
-<span id="abc6c1133cffc6730df7470185460e802" class="anchor"></span>
-|                                                                                                        |     |     |     |     |
-|--------------------------------------------------------------------------------------------------------|-----|-----|-----|-----|
-| <a href="unity.scopes.Variant.md">Variant</a> unity::scopes::VariantBuilder::end | (   |     | )   |     |
-
-Retrieves a completed variant.
-
-Returns the completed variant and resets this builder, so the builder can be re-used.
-
-Returns  
-The completed variant.
-
-<!-- -->
-
-Exceptions  
-|                       |                                         |
-|-----------------------|-----------------------------------------|
-| unity::LogicException | if the builder does not hold a variant. |
-
+builder.add_tuple({{<span class="stringliteral">&quot;a&quot;</span>, Variant(1)}, {<span class="stringliteral">&quot;b&quot;</span>, Variant(2)}});
+builder.add_tuple({{<span class="stringliteral">&quot;c&quot;</span>, Variant(2)}, {<span class="stringliteral">&quot;d&quot;</span>, Variant(3)}});
+```
+ 
+<table class="memname">
+<tr>
+<td class="memname">void unity::scopes::VariantBuilder::add_tuple </td>
+<td>(</td>
+<td class="paramtype">std::vector&lt; std::pair&lt; std::string, <a class="el" href="unity.scopes.Variant.md">Variant</a> &gt;&gt; const &amp;&#160;</td>
+<td class="paramname"><em>tuple</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+<p>Adds a tuple of key-value pairs to an array. </p>
+<p>This is an overloaded version of add_tuple that accepts <code>std::vector</code> instead of <code>std::initializer_list</code>, making it more convenient for language bindings. </p>
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="unity.scopes.Variant.md">Variant</a> unity::scopes::VariantBuilder::end </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td></td>
+</tr>
+</table>
+<p>Retrieves a completed variant. </p>
+<p>Returns the completed variant and resets this builder, so the builder can be re-used. </p><dl class="section return"><dt>Returns</dt><dd>The completed variant. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+<table class="exception">
+<tr><td class="paramname">unity::LogicException</td><td>if the builder does not hold a variant. </td></tr>
+</table>
+</dd>
+</dl>

@@ -1,227 +1,72 @@
 ---
 Title: QtFeedback.Actuator
 ---
-        
-actuator
-========
+
+# QtFeedback.Actuator
 
 <span class="subtitle"></span>
-The Actuator element represents a feedback actuator. More...
-
-|                   |                   |
-|-------------------|-------------------|
-| Import Statement: | import .          |
-| Instantiates:     | QFeedbackActuator |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[actuatorId](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#actuatorId-prop)**** : int
--   ****[enabled](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#enabled-prop)**** : bool
--   ****[name](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#name-prop)**** : string
--   ****[state](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#state-prop)**** : enumeration
--   ****[valid](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#valid-prop)**** : bool
-
-<span id="methods"></span>
-Methods
--------
-
--   bool ****[isCapabilitySupported](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#isCapabilitySupported-method)****(enumeration *capability*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The Actuator class maps directly to the QFeedbackActuator C++ class, and can be used with HapticsEffect elements.
-
-There are several predefined enumerations and constants provided in this object:
-
-1. Capability
-
--   Envelope - Value specifying that the device can bound its intensity by an envelope.
--   Period - Value specifying that the device can play periodic effects.
-
-2. State
-
--   Busy - The actuator is busy.
--   Ready - The actuator is ready to play an effect.
--   Unknown - The actuator is in an unknown state.
-
-**See also** HapticsEffect and QFeedbackActuator.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="actuatorId-prop"></span><span class="name">actuatorId</span> : <span class="type">int</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the id of the feedback actuator. This property is read only.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="enabled-prop"></span><span class="name">enabled</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property is true if the feedback actuator is enabled.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="name-prop"></span><span class="name">name</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the name of the feedback actuator. This property is read only.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="state-prop"></span><span class="name">state</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the state of the feedback actuator. This property is read only.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="valid-prop"></span><span class="name">valid</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property is true if the actuator is valid. This property is read only.
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="isCapabilitySupported-method"></span><span class="type">bool</span> <span class="name">isCapabilitySupported</span>(<span class="type">enumeration</span> <em>capability</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns if the actuator supports the supplied *capability*, available capabilities are:
-
--   Envelope - Value specifying that the device can bound its intensity by an Envelope.
--   Period - Value specifying that the device can play periodic effects.
-
-[Back to top](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#)
-
--   [Desktop](https://developer.ubuntu.com/en/desktop/)
-    ---------------------------------------------------
-
-    -   [Overview](https://developer.ubuntu.com/en/desktop/)
-    -   [Get started](http://snapcraft.io/?utm_source=developer.ubuntu.com&utm_medium=devportal&utm_term=snaps%20snapcraft%20desktop&utm_content=menu&utm_campaign=duc_snappers)
-    -   [Examples](https://github.com/ubuntu/snappy-playpen)
-
--   [Phone](https://developer.ubuntu.com/en/phone/)
-    -----------------------------------------------
-
-    -   [Overview](https://developer.ubuntu.com/en/phone/)
-    -   [Scopes](https://developer.ubuntu.com/en/phone/scopes/)
-    -   [Apps](https://developer.ubuntu.com/en/phone/apps/)
-    -   [Web Apps](https://developer.ubuntu.com/en/phone/web/)
-    -   [Platform](https://developer.ubuntu.com/en/phone/platform/)
-    -   [Devices](https://developer.ubuntu.com/en/phone/devices/)
-
--   [Core](https://developer.ubuntu.com/core)
-    -----------------------------------------
-
-    -   [Overview](https://developer.ubuntu.com/core)
-    -   [Get started](https://developer.ubuntu.com/core/get-started)
-    -   [Tutorials](https://developer.ubuntu.com/core/tutorials)
-    -   [Examples](https://developer.ubuntu.com/core/examples)
-    -   [Publish and distribute](https://developer.ubuntu.com/core/publish-and-distribute)
-    -   [Documentation](https://developer.ubuntu.com/core/documentation)
-    -   [Troubleshooting](https://developer.ubuntu.com/core/troubleshooting)
-
--   [Community](https://developer.ubuntu.com/en/community/)
-    -------------------------------------------------------
-
-    -   [Overview](https://developer.ubuntu.com/en/community/)
-    -   [App development training](https://developer.ubuntu.com/en/community/training/)
-    -   [Core apps](https://developer.ubuntu.com/en/community/core-apps/)
-    -   [Blog](https://developer.ubuntu.com/en/community/blog/)
-
--   [Publish](https://developer.ubuntu.com/en/publish/)
-    ---------------------------------------------------
-
-    -   [Overview](https://developer.ubuntu.com/en/publish/)
-    -   [Application states](https://developer.ubuntu.com/en/publish/application-states/)
-    -   [Packaging click apps](https://developer.ubuntu.com/en/publish/packaging-click-apps/)
-    -   [Creating a good icon](https://developer.ubuntu.com/en/publish/creating-a-good-icon/)
-    -   [Web](https://developer.ubuntu.com/en/publish/web/)
-    -   [Security policy groups](https://developer.ubuntu.com/en/publish/security-policy-groups/)
-    -   [Choosing a license](https://developer.ubuntu.com/en/publish/choosing-a-license/)
-    -   [Other forms of submitting apps](https://developer.ubuntu.com/en/publish/other-forms-of-submitting-apps/)
-    -   [Scopes](https://developer.ubuntu.com/en/publish/scopes/)
-
--   View in:
-    --------
-
-    -   [English](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md "Change to language: English")
-    -   [Simplified Chinese](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md "Change to language: Simplified Chinese")
-
--   [Download](http://ubuntu.com/download/)
-    ---------------------------------------
-
-    -   [Overview](http://ubuntu.com/download)
-    -   [Cloud](http://ubuntu.com/download/cloud)
-    -   [Server](http://ubuntu.com/download/server)
-    -   [Desktop](http://ubuntu.com/download/desktop)
-    -   [Ubuntu Kylin](http://ubuntu.com/download/ubuntu-kylin)
-    -   [Alternative downloads](http://ubuntu.com/download/alternative-downloads)
-
--   [Support](http://ubuntu.com/support/)
-    -------------------------------------
-
-    -   [Overview](http://ubuntu.com/support)
-    -   [Security notices](http://www.ubuntu.com/usn/)
-
--   [About](http://ubuntu.com/about/)
-    ---------------------------------
-
-    -   [About Ubuntu](http://ubuntu.com/about/about-ubuntu)
-    -   [Careers](http://www.canonical.com/careers)
-    -   [Canonical and Ubuntu](http://ubuntu.com/about/canonical-and-ubuntu)
-    -   [Contact us](http://ubuntu.com/about/contact-us)
-    -   [Canonical news feed](http://insights.ubuntu.com/feed/)
-
-© 2015 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.
-
--   [Legal information](http://www.ubuntu.com/legal)
--   [Report a bug on this site](https://bugs.launchpad.net/developer-ubuntu-com/)
-
-<span class="accessibility-aid">[Go to the top of the page](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#)</span>
+<!-- $$$Actuator-brief -->
+<p>The Actuator element represents a feedback actuator. More...</p>
+<!-- @@@Actuator -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../qfeedbackactuator.html">QFeedbackActuator</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#actuatorId-prop">actuatorId</a></b></b> : int</li>
+<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#state-prop">state</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#valid-prop">valid</a></b></b> : bool</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">bool <b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#isCapabilitySupported-method">isCapabilitySupported</a></b></b>(enumeration <i>capability</i>)</li>
+</ul>
+<!-- $$$Actuator-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The Actuator class maps directly to the QFeedbackActuator C++ class, and can be used with HapticsEffect elements.</p>
+<p>There are several predefined enumerations and constants provided in this object:</p>
+<p>1. Capability</p>
+<ul>
+<li>Envelope - Value specifying that the device can bound its intensity by an envelope.</li>
+<li>Period - Value specifying that the device can play periodic effects.</li>
+</ul>
+<p>2. State</p>
+<ul>
+<li>Busy - The actuator is busy.</li>
+<li>Ready - The actuator is ready to play an effect.</li>
+<li>Unknown - The actuator is in an unknown state.</li>
+</ul>
+<p><b>See also </b>HapticsEffect and QFeedbackActuator.</p>
+<!-- @@@Actuator -->
+<h2>Property Documentation</h2>
+<!-- $$$actuatorId -->
+<table class="qmlname"><tr valign="top" id="actuatorId-prop"><td class="tblQmlPropNode"><p><span class="name">actuatorId</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the id of the feedback actuator. This property is read only.</p>
+<!-- @@@actuatorId -->
+<br/>
+<!-- $$$enabled -->
+<table class="qmlname"><tr valign="top" id="enabled-prop"><td class="tblQmlPropNode"><p><span class="name">enabled</span> : <span class="type">bool</span></p></td></tr></table><p>This property is true if the feedback actuator is enabled.</p>
+<!-- @@@enabled -->
+<br/>
+<!-- $$$name -->
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the name of the feedback actuator. This property is read only.</p>
+<!-- @@@name -->
+<br/>
+<!-- $$$state -->
+<table class="qmlname"><tr valign="top" id="state-prop"><td class="tblQmlPropNode"><p><span class="name">state</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the state of the feedback actuator. This property is read only.</p>
+<!-- @@@state -->
+<br/>
+<!-- $$$valid -->
+<table class="qmlname"><tr valign="top" id="valid-prop"><td class="tblQmlPropNode"><p><span class="name">valid</span> : <span class="type">bool</span></p></td></tr></table><p>This property is true if the actuator is valid. This property is read only.</p>
+<!-- @@@valid -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$isCapabilitySupported -->
+<table class="qmlname"><tr valign="top" id="isCapabilitySupported-method"><td class="tblQmlFuncNode"><p><span class="type">bool</span> <span class="name">isCapabilitySupported</span>(<span class="type">enumeration</span><i> capability</i>)</p></td></tr></table><p>Returns if the actuator supports the supplied <i>capability</i>, available capabilities are:</p>
+<ul>
+<li>Envelope - Value specifying that the device can bound its intensity by an Envelope.</li>
+<li>Period - Value specifying that the device can play periodic effects.</li>
+</ul>
+<!-- @@@isCapabilitySupported -->

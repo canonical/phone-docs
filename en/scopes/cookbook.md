@@ -4,7 +4,6 @@ title: "Scopes - cookbook"
 
 # Scopes - cookbook
 
-
 ## General Scope Development
 
   * [What opportunities do scopes offer to mobile operators?](https://askubuntu.com/questions/310667/what-opportunities-do-scopes-offer-to-mobile-operators)

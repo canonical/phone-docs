@@ -4,7 +4,6 @@ title: "Scopes - API"
 
 # Scopes - API
 
-
 The Ubuntu platform provides a rich set of technologies for your scopes to
 shine and reach their full potential. The API documentation will provide you
 with detailed technical information and examples.

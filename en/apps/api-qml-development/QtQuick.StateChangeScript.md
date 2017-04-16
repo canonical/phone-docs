@@ -1,80 +1,51 @@
 ---
 Title: QtQuick.StateChangeScript
 ---
-        
-StateChangeScript
-=================
+
+# QtQuick.StateChangeScript
 
 <span class="subtitle"></span>
-Specifies how to run a script in a state More...
-
-|                   |                    |
-|-------------------|--------------------|
-| Import Statement: | import QtQuick 2.4 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[name](#name-prop)**** : string
--   ****[script](#script-prop)**** : script
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-A [StateChangeScript](index.html) is run upon entering a state. You can optionally use [ScriptAction](../QtQuick.ScriptAction.md) to specify the point in the transition at which the [StateChangeScript](index.html) should be run.
-
-``` qml
-State {
-    name: "state1"
-    StateChangeScript {
-        name: "myScript"
-        script: doStateStuff();
-    }
-    // ...
+<!-- $$$StateChangeScript-brief -->
+<p>Specifies how to run a script in a state More...</p>
+<!-- @@@StateChangeScript -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#script-prop">script</a></b></b> : script</li>
+</ul>
+<!-- $$$StateChangeScript-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>A <a href="index.html">StateChangeScript</a> is run upon entering a state. You can optionally use <a href="QtQuick.ScriptAction.md">ScriptAction</a> to specify the point in the transition at which the <a href="index.html">StateChangeScript</a> should be run.</p>
+<pre class="qml"><span class="type"><a href="QtQuick.State.md">State</a></span> {
+<span class="name">name</span>: <span class="string">&quot;state1&quot;</span>
+<span class="type"><a href="index.html">StateChangeScript</a></span> {
+<span class="name">name</span>: <span class="string">&quot;myScript&quot;</span>
+<span class="name">script</span>: <span class="name">doStateStuff</span>();
 }
-// ...
-Transition {
-    to: "state1"
-    SequentialAnimation {
-        NumberAnimation { /* ... */ }
-        ScriptAction { scriptName: "myScript" }
-        NumberAnimation { /* ... */ }
-    }
+<span class="comment">// ...</span>
 }
-```
-
-**See also** [ScriptAction](../QtQuick.ScriptAction.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="name-prop"></span><span class="name">name</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the name of the script. This name can be used by a [ScriptAction](../QtQuick.ScriptAction.md) to target a specific script.
-
-**See also** [ScriptAction::scriptName](../QtQuick.ScriptAction.md#scriptName-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="script-prop"></span><span class="name">script</span> : <span class="type"><a href="#script-prop">script</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the script to run when the state is current.
-
+<span class="comment">// ...</span>
+<span class="type"><a href="QtQuick.Transition.md">Transition</a></span> {
+<span class="name">to</span>: <span class="string">&quot;state1&quot;</span>
+<span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
+<span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="comment">/* ... */</span> }
+<span class="type"><a href="QtQuick.ScriptAction.md">ScriptAction</a></span> { <span class="name">scriptName</span>: <span class="string">&quot;myScript&quot;</span> }
+<span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="comment">/* ... */</span> }
+}
+}</pre>
+<p><b>See also </b><a href="QtQuick.ScriptAction.md">ScriptAction</a>.</p>
+<!-- @@@StateChangeScript -->
+<h2>Property Documentation</h2>
+<!-- $$$name -->
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the name of the script. This name can be used by a <a href="QtQuick.ScriptAction.md">ScriptAction</a> to target a specific script.</p>
+<p><b>See also </b><a href="QtQuick.ScriptAction.md#scriptName-prop">ScriptAction::scriptName</a>.</p>
+<!-- @@@name -->
+<br/>
+<!-- $$$script -->
+<table class="qmlname"><tr valign="top" id="script-prop"><td class="tblQmlPropNode"><p><span class="name">script</span> : <span class="type"><a href="#script-prop">script</a></span></p></td></tr></table><p>This property holds the script to run when the state is current.</p>
+<!-- @@@script -->
+<br/>

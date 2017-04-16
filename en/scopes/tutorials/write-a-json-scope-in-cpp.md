@@ -46,9 +46,7 @@ then open by itself.
 
 You can get the source code of this tutorial by running
 
-
 $ bzr branch lp:~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson
-
 
 The generated project contains quite a lot of files and we are going to talk
 about the most important ones. One thing to note is that the template already
@@ -496,7 +494,6 @@ Here’s how our example creates a header widget named w_header on the
 `Preview::run` method of
 [src/scope/preview.cpp)(http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
 
-
 ``` C+
 sc::PreviewWidget w_header("headerId", "header");
 ```
@@ -529,7 +526,6 @@ The field is artist. We added the artist key and value directly to our
 `CategorisedResult` for each result previously. So this example shows how to
 display data in your preview even when the data is not displayed in results
 phase and is custom to the scope:
-
 
 ``` C+
 w_header.add_attribute_mapping("subtitle", "artist");

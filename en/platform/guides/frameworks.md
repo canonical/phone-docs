@@ -4,7 +4,6 @@ title: "Platform guides - frameworks"
 
 # Platform guides - frameworks
 
-
 Frameworks are contracts between applications and the platform: a list of APIs
 and libraries your application can use. Their role is to ensure that your app
 is compatible with Ubuntu devices. Since Ubuntu 13.10, several frameworks were

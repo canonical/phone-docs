@@ -1,10 +1,9 @@
 ---
 Title: U1db.u1db-qt-tutorial-2b
 ---
-        
-u1db-qt-tutorial-2b
-===================
+
+# U1db.u1db-qt-tutorial-2b
 
 <span class="subtitle"></span>
-<span id="details"></span>
-
+<!-- $$$u1db-qt-tutorial-2b.html-description -->
+<!-- @@@u1db-qt-tutorial-2b.html -->

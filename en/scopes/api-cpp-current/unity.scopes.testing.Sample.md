@@ -1,190 +1,130 @@
 ---
 Title: unity.scopes.testing.Sample
 ---
-        
-Sample
-======
 
-The <a href="index.html" title="The Sample class models the interface to a sample of raw observations and their statistical propertie...">Sample</a> class models the interface to a sample of raw observations and their statistical properties. [More...](#details)
+# unity.scopes.testing.Sample
 
-`#include <unity/scopes/testing/Statistics.h>`
-
+<p>The <a class="el" href="index.html" title="The Sample class models the interface to a sample of raw observations and their statistical propertie...">Sample</a> class models the interface to a sample of raw observations and their statistical properties.  
+<a href="#details">More...</a></p>
+<p><code>#include &lt;unity/scopes/testing/Statistics.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Sample:
-
-![Inheritance graph](https://developer.ubuntu.com/static/devportal_uploaded/feac90fb-6b37-45a0-b04c-355b1cb082f8-api/scopes/cpp/sdk-15.04.4/unity.scopes.testing.Sample/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png)
-
-<span class="legend">\[legend\]</span>
-
-pub-types
------------------------------------------
-
-typedef std::size\_t 
-<a href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a>
- 
-typedef double 
-<a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>
- 
-typedef std::function&lt; void(<a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>)&gt; 
-<a href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a>
- 
-pub-methods
-------------------------------------------------------
-
-virtual <a href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a> 
-<a href="#ab37cab3e43f1a8cbc9955ab6ec5e7e40">get_size</a> () const =0
- 
-virtual <a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> 
-<a href="#aa4e03bd0ca10b2172954b50a3c544667">get_mean</a> () const =0
- 
-virtual <a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> 
-<a href="#a646d6b0dca1081f812958c86ce7e8d01">get_variance</a> () const =0
- 
-virtual void 
-<a href="#a051bdf96e55f8da92bb3829bbf650cf4">enumerate</a> (const <a href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a> &enumerator) const =0
- 
-<span id="details"></span>
-Detailed Description
---------------------
-
-The <a href="index.html" title="The Sample class models the interface to a sample of raw observations and their statistical propertie...">Sample</a> class models the interface to a sample of raw observations and their statistical properties.
-
-Member Typedef Documentation
-----------------------------
-
-<span id="a4d588f4837a81c163ebd653d88648144" class="anchor"></span>
-|                                                                                                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| typedef std::function&lt;void(<a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>)&gt; <a href="#a4d588f4837a81c163ebd653d88648144">unity::scopes::testing::Sample::Enumerator</a> |
-
-Function signature for enumerating all raw observations.
-
-<span id="a45542150c14b4486c58cb14cca3072e9" class="anchor"></span>
-|                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------|
-| typedef std::size\_t <a href="#a45542150c14b4486c58cb14cca3072e9">unity::scopes::testing::Sample::SizeType</a> |
-
-Unsigned type describing the size of the sample.
-
-<span id="a9e02cfa261b23b40c9da59cda6ab0dc8" class="anchor"></span>
-|                                                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------|
-| typedef double <a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">unity::scopes::testing::Sample::ValueType</a> |
-
-Floating point type describing an individual observation.
-
-Member Function Documentation
------------------------------
-
-<span id="a051bdf96e55f8da92bb3829bbf650cf4" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual void unity::scopes::testing::Sample::enumerate</td>
-<td>(</td>
-<td>const <a href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a> &amp; </td>
-<td><em>enumerator</em></td>
-<td>)</td>
-<td>const</td>
-</tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">pure virtual</span></span></td>
-</tr>
-</tbody>
+<img src="https://developer.ubuntu.com/static/devportal_uploaded/feac90fb-6b37-45a0-b04c-355b1cb082f8-../unity.scopes.testing.Sample/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1testing_1_1_sample_inherit__map" alt="Inheritance graph"/>
+<map name="unity_1_1scopes_1_1testing_1_1_sample_inherit__map" id="unity_1_1scopes_1_1testing_1_1_sample_inherit__map">
+<area shape="rect" id="node2" href="https://developer.ubuntu.com../structunity_1_1scopes_1_1testing_1_1_benchmark_1_1_result_1_1_timing.html" title="unity::scopes::testing\l::Benchmark::Result::Timing" alt="" coords="5,95,204,136"/></map>
+<center><span class="legend">[legend]</span></center>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Public Types</h2></td></tr>
+<tr class="memitem:a45542150c14b4486c58cb14cca3072e9"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a></td></tr>
+<tr class="separator:a45542150c14b4486c58cb14cca3072e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e02cfa261b23b40c9da59cda6ab0dc8"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a></td></tr>
+<tr class="separator:a9e02cfa261b23b40c9da59cda6ab0dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d588f4837a81c163ebd653d88648144"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(<a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a></td></tr>
+<tr class="separator:a4d588f4837a81c163ebd653d88648144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab37cab3e43f1a8cbc9955ab6ec5e7e40"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37cab3e43f1a8cbc9955ab6ec5e7e40">get_size</a> () const =0</td></tr>
+<tr class="separator:ab37cab3e43f1a8cbc9955ab6ec5e7e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e03bd0ca10b2172954b50a3c544667"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4e03bd0ca10b2172954b50a3c544667">get_mean</a> () const =0</td></tr>
+<tr class="separator:aa4e03bd0ca10b2172954b50a3c544667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646d6b0dca1081f812958c86ce7e8d01"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a646d6b0dca1081f812958c86ce7e8d01">get_variance</a> () const =0</td></tr>
+<tr class="separator:a646d6b0dca1081f812958c86ce7e8d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051bdf96e55f8da92bb3829bbf650cf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a051bdf96e55f8da92bb3829bbf650cf4">enumerate</a> (const <a class="el" href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a> &amp;enumerator) const =0</td></tr>
+<tr class="separator:a051bdf96e55f8da92bb3829bbf650cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-
-Enumerate all raw observations from the sample.
-
-Implemented in unity::scopes::testing::Benchmark::Result::Timing.
-
-<span id="aa4e03bd0ca10b2172954b50a3c544667" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual <a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> unity::scopes::testing::Sample::get_mean</td>
-<td>(</td>
-<td></td>
-<td>)</td>
-<td>const</td>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The <a class="el" href="index.html" title="The Sample class models the interface to a sample of raw observations and their statistical propertie...">Sample</a> class models the interface to a sample of raw observations and their statistical properties. </p>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<table class="memname">
+<tr>
+<td class="memname">typedef std::function&lt;void(<a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a>)&gt; <a class="el" href="#a4d588f4837a81c163ebd653d88648144">unity::scopes::testing::Sample::Enumerator</a></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">pure virtual</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Query the empirical mean of the sample.
-
-Implemented in unity::scopes::testing::Benchmark::Result::Timing.
-
-<span id="ab37cab3e43f1a8cbc9955ab6ec5e7e40" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual <a href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a> unity::scopes::testing::Sample::get_size</td>
-<td>(</td>
-<td></td>
-<td>)</td>
-<td>const</td>
+<p>Function signature for enumerating all raw observations. </p>
+<table class="memname">
+<tr>
+<td class="memname">typedef std::size_t <a class="el" href="#a45542150c14b4486c58cb14cca3072e9">unity::scopes::testing::Sample::SizeType</a></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">pure virtual</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Query the size of the sample.
-
-Implemented in unity::scopes::testing::Benchmark::Result::Timing.
-
-<span id="a646d6b0dca1081f812958c86ce7e8d01" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual <a href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> unity::scopes::testing::Sample::get_variance</td>
-<td>(</td>
-<td></td>
-<td>)</td>
-<td>const</td>
+<p>Unsigned type describing the size of the sample. </p>
+<table class="memname">
+<tr>
+<td class="memname">typedef double <a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">unity::scopes::testing::Sample::ValueType</a></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">pure virtual</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Query the empirical variance of the sample.
-
-Implemented in unity::scopes::testing::Benchmark::Result::Timing.
-
+<p>Floating point type describing an individual observation. </p>
+<h2 class="groupheader">Member Function Documentation</h2>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void unity::scopes::testing::Sample::enumerate </td>
+<td>(</td>
+<td class="paramtype">const <a class="el" href="#a4d588f4837a81c163ebd653d88648144">Enumerator</a> &amp;&#160;</td>
+<td class="paramname"><em>enumerator</em></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+</tr>
+</table>
+<p>Enumerate all raw observations from the sample. </p>
+<p>Implemented in unity::scopes::testing::Benchmark::Result::Timing.</p>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual <a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> unity::scopes::testing::Sample::get_mean </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+</tr>
+</table>
+<p>Query the empirical mean of the sample. </p>
+<p>Implemented in unity::scopes::testing::Benchmark::Result::Timing.</p>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual <a class="el" href="#a45542150c14b4486c58cb14cca3072e9">SizeType</a> unity::scopes::testing::Sample::get_size </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+</tr>
+</table>
+<p>Query the size of the sample. </p>
+<p>Implemented in unity::scopes::testing::Benchmark::Result::Timing.</p>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual <a class="el" href="#a9e02cfa261b23b40c9da59cda6ab0dc8">ValueType</a> unity::scopes::testing::Sample::get_variance </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td> const</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+</tr>
+</table>
+<p>Query the empirical variance of the sample. </p>
+<p>Implemented in unity::scopes::testing::Benchmark::Result::Timing.</p>

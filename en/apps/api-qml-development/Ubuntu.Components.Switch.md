@@ -1,43 +1,25 @@
 ---
 Title: Ubuntu.Components.Switch
 ---
-        
-Switch
-======
+
+# Ubuntu.Components.Switch
 
 <span class="subtitle"></span>
-Switch is a component with two states, checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import Ubuntu.Components 1.3</td>
-</tr>
-<tr class="even">
-<td>Inherits:</td>
-<td><p><a href="Ubuntu.Components.CheckBox.md">CheckBox</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-[See also the Design Guidelines on selection](https://design.ubuntu.com/apps/building-blocks/selection).
-
-Example:
-
-``` qml
-Item {
-    Switch {
-        checked: true
-    }
+<!-- $$$Switch-brief -->
+<p>Switch is a component with two states, checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style. More...</p>
+<!-- @@@Switch -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.CheckBox.md">CheckBox</a></p>
+</td></tr></table><ul>
+</ul>
+<!-- $$$Switch-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p><a href="https://design.ubuntu.com/apps/building-blocks/selection">See also the Design Guidelines on selection</a>.</p>
+<p>Example:</p>
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="index.html">Switch</a></span> {
+<span class="name">checked</span>: <span class="number">true</span>
 }
-```
-
+}</pre>
+<!-- @@@Switch -->

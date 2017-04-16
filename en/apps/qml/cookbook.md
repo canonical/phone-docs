@@ -26,7 +26,6 @@ The App Developer Cookbook is a collection of short examples, how to's and answe
   * [Will developers be able to use ruby or python for apps on ubuntu mobile?](https://askubuntu.com/questions/258343/will-developers-be-able-to-use-ruby-or-python-for-apps-on-ubuntu-mobile)
   * [How do I install an app on a device running ubuntu touch?](https://askubuntu.com/questions/270832/how-do-i-install-an-app-on-a-device-running-ubuntu-touch)
 
-
 ## Platform and System Services
 
   * [When to use gconf vs dconf?](https://askubuntu.com/questions/91403/when-to-use-gconf-vs-dconf)
@@ -40,8 +39,6 @@ The App Developer Cookbook is a collection of short examples, how to's and answe
   * [Ubuntu one API file upload maximum size](https://askubuntu.com/questions/63831/ubuntu-one-api-file-upload-maximum-size)
   * [How can I run a command from a qml script?](https://askubuntu.com/questions/308968/how-can-i-run-a-command-from-a-qml-script)
   * [Run system commands from QML App](https://askubuntu.com/questions/288494/run-system-commands-from-qml-app)
-
-
 
 
 
@@ -79,14 +76,10 @@ The App Developer Cookbook is a collection of short examples, how to's and answe
 
 
 
-
-
 ## Device Sensors
 
   * [Low-level 10-finger multi-touch data on the Nexus 7?](https://askubuntu.com/questions/210272/low-level-10-finger-multi-touch-data-on-the-nexus-7)
   * [Will location data be available to ubuntu mobile apps?](https://askubuntu.com/questions/258281/will-location-data-be-available-to-ubuntu-mobile-apps)
-
-
 
 
 
@@ -99,15 +92,11 @@ The App Developer Cookbook is a collection of short examples, how to's and answe
 
 
 
-
-
 ## Files and Storage
 
   * [Where do applications typically store data?](https://askubuntu.com/questions/4420/where-do-applications-typically-store-data)
   * [What is the preferred way to store application settings?](https://askubuntu.com/questions/42438/what-is-the-preferred-way-to-store-application-settings)
   * [Can commercial applications use Gsettings?](https://askubuntu.com/questions/257297/can-commercial-applications-use-gsettings)
-
-
 
 
 
@@ -117,8 +106,6 @@ The App Developer Cookbook is a collection of short examples, how to's and answe
   * [Is there a standard or recommended sound lib in Ubuntu?](https://askubuntu.com/questions/100034/is-there-a-standard-or-recommended-sound-lib-in-ubuntu)
   * [Playing Sound with Ubuntu QML Toolkit preview](https://askubuntu.com/questions/236619/playing-sound-with-ubuntu-qml-toolkit-preview)
   * [Problem with SVG image in QML](https://askubuntu.com/questions/259510/problem-with-svg-image-in-qml)
-
-
 
 
 

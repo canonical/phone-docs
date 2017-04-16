@@ -1,503 +1,973 @@
 ---
 Title: ubuntuuitoolkit
 ---
-        
-Ubuntu UI Toolkit Autopilot tests and helpers.
 
- *class* `ubuntuuitoolkit.``AppHeader`(*\*args*)<a href="#ubuntuuitoolkit.AppHeader" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-AppHeader Autopilot custom proxy object.
-
- `click_action_button`(*action\_object\_name*)<a href="#ubuntuuitoolkit.AppHeader.click_action_button" class="headerlink" title="Permalink to this definition">¶</a>  
-Click an action button of the header.
-
-Parameters:
-
-**object\_name** – The QML objectName property of the action
-
-Raises ToolkitException:
-
- 
-
-If there is no action button with that object name.
-
- `click_back_button`()<a href="#ubuntuuitoolkit.AppHeader.click_back_button" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `click_custom_back_button`()<a href="#ubuntuuitoolkit.AppHeader.click_custom_back_button" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `ensure_visible`()<a href="#ubuntuuitoolkit.AppHeader.ensure_visible" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `get_selected_section_index`()<a href="#ubuntuuitoolkit.AppHeader.get_selected_section_index" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `switch_to_next_tab`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.AppHeader.switch_to_next_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the next tab.
-
-Raises ToolkitException:
-
- 
-
-If the main view has no tabs.
-
- `switch_to_section_by_index`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.AppHeader.switch_to_section_by_index" class="headerlink" title="Permalink to this definition">¶</a>  
-Select a section in the header divider
-
-Parameters:
-
-**index** – The index of the section to select
-
-Raises ToolkitEmulatorException:
-
- 
-
-If the selection index is out of range or useDeprecatedToolbar is set.
-
- `switch_to_tab_by_index`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.AppHeader.switch_to_tab_by_index" class="headerlink" title="Permalink to this definition">¶</a>  
-Open a tab. This only supports the new tabs in the header
-
-Parameters:
-
-**index** – The index of the tab to open.
-
-Raises ToolkitException:
-
- 
-
-If the tab index is out of range or useDeprecatedToolbar is set.
-
- `wait_for_animation`()<a href="#ubuntuuitoolkit.AppHeader.wait_for_animation" class="headerlink" title="Permalink to this definition">¶</a>  
-
-<!-- -->
-
- `ubuntuuitoolkit.``check_autopilot_version`()<a href="#ubuntuuitoolkit.check_autopilot_version" class="headerlink" title="Permalink to this definition">¶</a>  
-Check that the Autopilot installed version matches the one required.
-
-Raises ToolkitException:
-
- 
-
-If the installed Autopilot version does’t match the required by the custom proxy objects.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``CheckBox`(*\*args*)<a href="#ubuntuuitoolkit.CheckBox" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-CheckBox Autopilot custom proxy object.
-
- `change_state`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.CheckBox.change_state" class="headerlink" title="Permalink to this definition">¶</a>  
-Change the state of a CheckBox.
-
-If it is checked, it will be unchecked. If it is unchecked, it will be checked.
-
-|             |                                                                                            |
-|-------------|--------------------------------------------------------------------------------------------|
-| Parameters: | **time\_out** – number of seconds to wait for the CheckBox state to change. Default is 10. |
-
- `check`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.CheckBox.check" class="headerlink" title="Permalink to this definition">¶</a>  
-Check a CheckBox, if its not already checked.
-
-|             |                                                                                        |
-|-------------|----------------------------------------------------------------------------------------|
-| Parameters: | **timeout** – number of seconds to wait for the CheckBox to be checked. Default is 10. |
-
- `uncheck`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.CheckBox.uncheck" class="headerlink" title="Permalink to this definition">¶</a>  
-Uncheck a CheckBox, if its not already unchecked.
-
-|             |                                                                                          |
-|-------------|------------------------------------------------------------------------------------------|
-| Parameters: | **timeout** – number of seconds to wait for the CheckBox to be unchecked. Default is 10. |
-
-<!-- -->
-
- `ubuntuuitoolkit.``get_keyboard`()<a href="#ubuntuuitoolkit.get_keyboard" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the keyboard device.
-
-<!-- -->
-
- `ubuntuuitoolkit.``get_pointing_device`()<a href="#ubuntuuitoolkit.get_pointing_device" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the pointing device depending on the platform.
-
-If the platform is Desktop, the pointing device will be a Mouse. If not, the pointing device will be Touch.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``Header`(*\*args*)<a href="#ubuntuuitoolkit.Header" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._header.AppHeader`
-
-Autopilot helper for the deprecated Header.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``Dialog`(*\*args*)<a href="#ubuntuuitoolkit.Dialog" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-Autopilot helper for the Dialog component.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``UCListItem`(*\*args*)<a href="#ubuntuuitoolkit.UCListItem" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-Base class to emulate swipe for leading and trailing actions.
-
- `toggle_selected`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.UCListItem.toggle_selected" class="headerlink" title="Permalink to this definition">¶</a>  
-Toggles selected state of the ListItem.
-
- `trigger_leading_action`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.UCListItem.trigger_leading_action" class="headerlink" title="Permalink to this definition">¶</a>  
-Swipe the item in from left to right to open leading actions and click on the button representing the requested action.
-
-parameters: action\_objectName - object name of the action to be  
-triggered. wait\_function - a custom wait function to wait till the action is triggered
-
- `trigger_trailing_action`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.UCListItem.trigger_trailing_action" class="headerlink" title="Permalink to this definition">¶</a>  
-Swipe the item in from right to left to open trailing actions and click on the button representing the requested action.
-
-parameters: action\_objectName - object name of the action to be  
-triggered. wait\_function - a custom wait function to wait till the action is triggered
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``MainView`(*\*args*)<a href="#ubuntuuitoolkit.MainView" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-MainView Autopilot custom proxy object.
-
- `click_action_button`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.click_action_button" class="headerlink" title="Permalink to this definition">¶</a>  
-Click the specified button.
-
-Parameters:
-
-**action\_object\_name** – the objectName of the action to trigger.
-
-Raises ToolkitException:
-
- 
-
-The requested button is not available.
-
- `close_toolbar`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.close_toolbar" class="headerlink" title="Permalink to this definition">¶</a>  
-Close the toolbar if it is opened.
-
-Raises ToolkitException:
-
- 
-
-If the main view has no toolbar.
-
- `get_action_selection_popover`(*object\_name*)<a href="#ubuntuuitoolkit.MainView.get_action_selection_popover" class="headerlink" title="Permalink to this definition">¶</a>  
-Return an ActionSelectionPopover custom proxy object.
-
-|             |                                                                |
-|-------------|----------------------------------------------------------------|
-| Parameters: | **object\_name** – The QML objectName property of the popover. |
-
- `get_header`()<a href="#ubuntuuitoolkit.MainView.get_header" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the AppHeader custom proxy object of the MainView.
-
- `get_tabs`()<a href="#ubuntuuitoolkit.MainView.get_tabs" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the Tabs custom proxy object of the MainView.
-
-Raises ToolkitException:
-
- 
-
-If the main view has no tabs.
-
- `get_text_input_context_menu`(*object\_name*)<a href="#ubuntuuitoolkit.MainView.get_text_input_context_menu" class="headerlink" title="Permalink to this definition">¶</a>  
-Return a TextInputContextMenu emulator.
-
-|             |                                                                |
-|-------------|----------------------------------------------------------------|
-| Parameters: | **object\_name** – The QML objectName property of the popover. |
-
- `get_toolbar`()<a href="#ubuntuuitoolkit.MainView.get_toolbar" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the Toolbar custom proxy object of the MainView.
-
-Raises ToolkitException:
-
- 
-
-If the main view has no toolbar.
-
- `go_back`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.go_back" class="headerlink" title="Permalink to this definition">¶</a>  
-Go to the previous page.
-
- `open_toolbar`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.open_toolbar" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the toolbar if it is not already opened.
-
-Returns:
-
-The toolbar.
-
-Raises ToolkitException:
-
- 
-
-If the main view has no toolbar.
-
- `switch_to_next_tab`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.switch_to_next_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the next tab.
-
-|          |                       |
-|----------|-----------------------|
-| Returns: | The newly opened tab. |
-
- `switch_to_previous_tab`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.switch_to_previous_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the previous tab.
-
-|          |                       |
-|----------|-----------------------|
-| Returns: | The newly opened tab. |
-
- `switch_to_tab`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.switch_to_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Open a tab.
-
-Parameters:
-
-**object\_name** – The QML objectName property of the tab.
-
-Returns:
-
-The newly opened tab.
-
-Raises ToolkitException:
-
- 
-
-If there is no tab with that object name.
-
- `switch_to_tab_by_index`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.MainView.switch_to_tab_by_index" class="headerlink" title="Permalink to this definition">¶</a>  
-Open a tab.
-
-Parameters:
-
-**index** – The index of the tab to open.
-
-Returns:
-
-The newly opened tab.
-
-Raises ToolkitException:
-
- 
-
-If the tab index is out of range.
-
- *classmethod* `validate_dbus_object`(*path*, *state*)<a href="#ubuntuuitoolkit.MainView.validate_dbus_object" class="headerlink" title="Permalink to this definition">¶</a>  
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``OptionSelector`(*\*args*)<a href="#ubuntuuitoolkit.OptionSelector" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-OptionSelector Autopilot custom proxy object
-
- `get_current_label`()<a href="#ubuntuuitoolkit.OptionSelector.get_current_label" class="headerlink" title="Permalink to this definition">¶</a>  
-gets the text of the currently selected item
-
- `get_option_count`()<a href="#ubuntuuitoolkit.OptionSelector.get_option_count" class="headerlink" title="Permalink to this definition">¶</a>  
-Gets the number of items in the option selector
-
- `get_selected_index`()<a href="#ubuntuuitoolkit.OptionSelector.get_selected_index" class="headerlink" title="Permalink to this definition">¶</a>  
-Gets the current selected index of the QQuickListView
-
- `get_selected_text`()<a href="#ubuntuuitoolkit.OptionSelector.get_selected_text" class="headerlink" title="Permalink to this definition">¶</a>  
-gets the text of the currently selected item
-
- `select_option`(*\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.OptionSelector.select_option" class="headerlink" title="Permalink to this definition">¶</a>  
-Select delegate in option selector
-
-Example usage::  
-select\_option(objectName=”myOptionSelectorDelegate”) select\_option(‘Label’, text=”some\_text\_here”)
-
-|             |                                                                               |
-|-------------|-------------------------------------------------------------------------------|
-| Parameters: | **kwargs** – keywords used to find property(s) of delegate in option selector |
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``QQuickFlickable`(*\*args*)<a href="#ubuntuuitoolkit.QQuickFlickable" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._flickable.Scrollable`
-
- `pull_to_refresh`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.pull_to_refresh" class="headerlink" title="Permalink to this definition">¶</a>  
-Pulls the flickable down and triggers a refresh on it.
-
-Raises <a href="#ubuntuuitoolkit.ToolkitException" class="reference internal" title="ubuntuuitoolkit.ToolkitException">ubuntuuitoolkit.ToolkitException</a>:
-
- 
-
-If the flickable has no pull to release functionality.
-
- `swipe_child_into_view`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.swipe_child_into_view" class="headerlink" title="Permalink to this definition">¶</a>  
-Make the child visible.
-
-Currently it works only when the object needs to be swiped vertically. TODO implement horizontal swiping. –elopio - 2014-03-21
-
- `swipe_to_bottom`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_bottom" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `swipe_to_show_more_above`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_above" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `swipe_to_show_more_below`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_below" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `swipe_to_top`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_top" class="headerlink" title="Permalink to this definition">¶</a>  
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``QQuickGridView`(*\*args*)<a href="#ubuntuuitoolkit.QQuickGridView" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._flickable.QQuickFlickable`
-
-Autopilot helper for the QQuickGridView component.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``QQuickListView`(*\*args*)<a href="#ubuntuuitoolkit.QQuickListView" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._flickable.QQuickFlickable`
-
- `click_element`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickListView.click_element" class="headerlink" title="Permalink to this definition">¶</a>  
-Click an element from the list.
-
-It swipes the element into view if it’s center is not visible.
-
-|             |                                                                                                                                                                                                             |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameters: | -   **objectName** – The objectName property of the element to click.                                                                                                                                       
-  -   **direction** – The direction where the element is, it can be either ‘above’ or ‘below’. Default value is None, which means we don’t know where the object is and we will need to search the full list.  |
-
- `drag_item`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickListView.drag_item" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `enable_select_mode`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.QQuickListView.enable_select_mode" class="headerlink" title="Permalink to this definition">¶</a>  
-Default implementation to enable select mode. Performs a long tap over the first list item in the ListView. The delegates must be the new ListItem components.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``TabBar`(*\*args*)<a href="#ubuntuuitoolkit.TabBar" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-TabBar Autopilot custom proxy object.
-
- `switch_to_next_tab`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.TabBar.switch_to_next_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the next tab.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``Tabs`(*\*args*)<a href="#ubuntuuitoolkit.Tabs" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-Tabs Autopilot custom proxy object.
-
- `get_current_tab`()<a href="#ubuntuuitoolkit.Tabs.get_current_tab" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the currently selected tab.
-
- `get_number_of_tabs`()<a href="#ubuntuuitoolkit.Tabs.get_number_of_tabs" class="headerlink" title="Permalink to this definition">¶</a>  
-Return the number of tabs.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``TextArea`(*\*args*)<a href="#ubuntuuitoolkit.TextArea" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._textfield.TextField`
-
-TextArea autopilot emulator.
-
- `clear`()<a href="#ubuntuuitoolkit.TextArea.clear" class="headerlink" title="Permalink to this definition">¶</a>  
-Clear the text area.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``TextField`(*\*args*)<a href="#ubuntuuitoolkit.TextField" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-TextField Autopilot custom proxy object.
-
- `clear`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.TextField.clear" class="headerlink" title="Permalink to this definition">¶</a>  
-Clear the text field.
-
- `is_empty`()<a href="#ubuntuuitoolkit.TextField.is_empty" class="headerlink" title="Permalink to this definition">¶</a>  
-Return True if the text field is empty. False otherwise.
-
- `write`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.TextField.write" class="headerlink" title="Permalink to this definition">¶</a>  
-Write into the text field.
-
-|             |                                                                                                                                                                     |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameters: | -   **text** – The text to write.                                                                                                                                   
-  -   **clear** – If True, the text field will be cleared before writing the text. If False, the text will be appended at the end of the text field. Default is True.  |
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``Toolbar`(*\*args*)<a href="#ubuntuuitoolkit.Toolbar" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase`
-
-Toolbar Autopilot custom proxy object.
-
- `click_back_button`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.Toolbar.click_back_button" class="headerlink" title="Permalink to this definition">¶</a>  
-Click the back button of the toolbar.
-
- `click_button`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.Toolbar.click_button" class="headerlink" title="Permalink to this definition">¶</a>  
-Click a button of the toolbar.
-
-The toolbar should be opened before clicking the button, or an exception will be raised. If the toolbar is closed for some reason (e.g., timer finishes) after moving the mouse cursor and before clicking the button, it is re-opened automatically by this function.
-
-Parameters:
-
-**object\_name** – The QML objectName property of the button.
-
-Raises ToolkitException:
-
- 
-
-If there is no button with that object name.
-
- `close`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.Toolbar.close" class="headerlink" title="Permalink to this definition">¶</a>  
-Close the toolbar if it’s opened.
-
- `open`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.Toolbar.open" class="headerlink" title="Permalink to this definition">¶</a>  
-Open the toolbar if it’s not already opened.
-
-|          |              |
-|----------|--------------|
-| Returns: | The toolbar. |
-
-<!-- -->
-
- *exception* `ubuntuuitoolkit.``ToolkitException`<a href="#ubuntuuitoolkit.ToolkitException" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `exceptions.Exception`
-
-Exception raised when there is an error with the custom proxy object.
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``UbuntuListView11`(*\*args*)<a href="#ubuntuuitoolkit.UbuntuListView11" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `ubuntuuitoolkit._custom_proxy_objects._qquicklistview.QQuickListView`
-
-Autopilot helper for the UbuntuListView 1.1.
-
- `manual_refresh_nowait`()<a href="#ubuntuuitoolkit.UbuntuListView11.manual_refresh_nowait" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `manual_refresh_wait`()<a href="#ubuntuuitoolkit.UbuntuListView11.manual_refresh_wait" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `pull_to_refresh_enabled`()<a href="#ubuntuuitoolkit.UbuntuListView11.pull_to_refresh_enabled" class="headerlink" title="Permalink to this definition">¶</a>  
-
- `wait_refresh_completed`()<a href="#ubuntuuitoolkit.UbuntuListView11.wait_refresh_completed" class="headerlink" title="Permalink to this definition">¶</a>  
-
-<!-- -->
-
- *class* `ubuntuuitoolkit.``UbuntuUIToolkitCustomProxyObjectBase`(*\*args*)<a href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase" class="headerlink" title="Permalink to this definition">¶</a>  
-Bases: `autopilot.introspection.dbus.CustomEmulatorBase`
-
-A base class for all the Ubuntu UI Toolkit custom proxy objects.
-
- `is_flickable`()<a href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.is_flickable" class="headerlink" title="Permalink to this definition">¶</a>  
-Check if the object is flickable.
-
-If the object has a flicking attribute, we consider it as a flickable.
-
-|          |                                                   |
-|----------|---------------------------------------------------|
-| Returns: | True if the object is flickable. False otherwise. |
-
- `swipe_into_view`(*instance*, *\*args*, *\*\*kwargs*)<a href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.swipe_into_view" class="headerlink" title="Permalink to this definition">¶</a>  
-Make the object visible.
-
-Currently it works only when the object needs to be swiped vertically. TODO implement horizontal swiping. –elopio - 2014-03-21
-
+# ubuntuuitoolkit
+
+<!-- Start Namespace Content -->
+<p>Ubuntu UI Toolkit Autopilot tests and helpers.</p>
+<dl class="class">
+<dt id="ubuntuuitoolkit.AppHeader">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">AppHeader</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>AppHeader Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.click_action_button">
+<tt class="descname">click_action_button</tt><big>(</big><em>action_object_name</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.click_action_button" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Click an action button of the header.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> &#8211; The QML objectName property of the action</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">If there is no action button with that object
+name.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.click_back_button">
+<tt class="descname">click_back_button</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.click_back_button" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.click_custom_back_button">
+<tt class="descname">click_custom_back_button</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.click_custom_back_button" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.ensure_visible">
+<tt class="descname">ensure_visible</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.ensure_visible" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.get_selected_section_index">
+<tt class="descname">get_selected_section_index</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.get_selected_section_index" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.switch_to_next_tab">
+<tt class="descname">switch_to_next_tab</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.switch_to_next_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the next tab.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the main view has no tabs.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.switch_to_section_by_index">
+<tt class="descname">switch_to_section_by_index</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.switch_to_section_by_index" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Select a section in the header divider</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; The index of the section to select</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitEmulatorException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">If the selection index is out of
+range or useDeprecatedToolbar is set.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.switch_to_tab_by_index">
+<tt class="descname">switch_to_tab_by_index</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.switch_to_tab_by_index" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open a tab. This only supports the new tabs in the header</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; The index of the tab to open.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">If the tab index is out
+of range or useDeprecatedToolbar is set.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.AppHeader.wait_for_animation">
+<tt class="descname">wait_for_animation</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.AppHeader.wait_for_animation" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="function">
+<dt id="ubuntuuitoolkit.check_autopilot_version">
+<tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">check_autopilot_version</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.check_autopilot_version" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Check that the Autopilot installed version matches the one required.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the installed Autopilot version does&#8217;t
+match the required by the custom proxy objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.CheckBox">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">CheckBox</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.CheckBox" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>CheckBox Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.CheckBox.change_state">
+<tt class="descname">change_state</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.CheckBox.change_state" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Change the state of a CheckBox.</p>
+<p>If it is checked, it will be unchecked. If it is unchecked, it will be
+checked.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time_out</strong> &#8211; number of seconds to wait for the CheckBox state
+to change. Default is 10.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.CheckBox.check">
+<tt class="descname">check</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.CheckBox.check" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Check a CheckBox, if its not already checked.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> &#8211; number of seconds to wait for the CheckBox to be
+checked. Default is 10.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.CheckBox.uncheck">
+<tt class="descname">uncheck</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.CheckBox.uncheck" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Uncheck a CheckBox, if its not already unchecked.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>timeout</strong> &#8211; number of seconds to wait for the CheckBox to be
+unchecked. Default is 10.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+</dd></dl>
+<dl class="function">
+<dt id="ubuntuuitoolkit.get_keyboard">
+<tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">get_keyboard</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.get_keyboard" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the keyboard device.</p>
+</dd></dl>
+<dl class="function">
+<dt id="ubuntuuitoolkit.get_pointing_device">
+<tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">get_pointing_device</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.get_pointing_device" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the pointing device depending on the platform.</p>
+<p>If the platform is <cite>Desktop</cite>, the pointing device will be a <cite>Mouse</cite>.
+If not, the pointing device will be <cite>Touch</cite>.</p>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.Header">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">Header</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Header" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._header.AppHeader</span></tt></p>
+<p>Autopilot helper for the deprecated Header.</p>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.Dialog">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">Dialog</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Dialog" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>Autopilot helper for the Dialog component.</p>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.UCListItem">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">UCListItem</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UCListItem" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>Base class to emulate swipe for leading and trailing actions.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UCListItem.toggle_selected">
+<tt class="descname">toggle_selected</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UCListItem.toggle_selected" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Toggles selected state of the ListItem.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UCListItem.trigger_leading_action">
+<tt class="descname">trigger_leading_action</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UCListItem.trigger_leading_action" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Swipe the item in from left to right to open leading actions
+and click on the button representing the requested action.</p>
+<dl class="docutils">
+<dt>parameters: action_objectName - object name of the action to be</dt>
+<dd>triggered.
+wait_function - a custom wait function to wait till the
+action is triggered</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UCListItem.trigger_trailing_action">
+<tt class="descname">trigger_trailing_action</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UCListItem.trigger_trailing_action" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Swipe the item in from right to left to open trailing actions
+and click on the button representing the requested action.</p>
+<dl class="docutils">
+<dt>parameters: action_objectName - object name of the action to be</dt>
+<dd>triggered.
+wait_function - a custom wait function to wait till the
+action is triggered</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.MainView">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">MainView</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>MainView Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.click_action_button">
+<tt class="descname">click_action_button</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.click_action_button" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Click the specified button.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>action_object_name</strong> &#8211; the objectName of the action to trigger.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">The requested button is not available.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.close_toolbar">
+<tt class="descname">close_toolbar</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.close_toolbar" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Close the toolbar if it is opened.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the main view has no toolbar.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.get_action_selection_popover">
+<tt class="descname">get_action_selection_popover</tt><big>(</big><em>object_name</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.get_action_selection_popover" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return an ActionSelectionPopover custom proxy object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> &#8211; The QML objectName property of the popover.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.get_header">
+<tt class="descname">get_header</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.get_header" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the AppHeader custom proxy object of the MainView.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.get_tabs">
+<tt class="descname">get_tabs</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.get_tabs" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the Tabs custom proxy object of the MainView.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the main view has no tabs.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.get_text_input_context_menu">
+<tt class="descname">get_text_input_context_menu</tt><big>(</big><em>object_name</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.get_text_input_context_menu" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return a TextInputContextMenu emulator.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> &#8211; The QML objectName property of the popover.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.get_toolbar">
+<tt class="descname">get_toolbar</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.get_toolbar" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the Toolbar custom proxy object of the MainView.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the main view has no toolbar.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.go_back">
+<tt class="descname">go_back</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.go_back" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Go to the previous page.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.open_toolbar">
+<tt class="descname">open_toolbar</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.open_toolbar" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the toolbar if it is not already opened.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The toolbar.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">If the main view has no toolbar.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.switch_to_next_tab">
+<tt class="descname">switch_to_next_tab</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.switch_to_next_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the next tab.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The newly opened tab.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.switch_to_previous_tab">
+<tt class="descname">switch_to_previous_tab</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.switch_to_previous_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the previous tab.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The newly opened tab.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.switch_to_tab">
+<tt class="descname">switch_to_tab</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.switch_to_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open a tab.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> &#8211; The QML objectName property of the tab.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The newly opened tab.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If there is no tab with that object
+name.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.MainView.switch_to_tab_by_index">
+<tt class="descname">switch_to_tab_by_index</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.switch_to_tab_by_index" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open a tab.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> &#8211; The index of the tab to open.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The newly opened tab.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the tab index
+is out of range.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="classmethod">
+<dt id="ubuntuuitoolkit.MainView.validate_dbus_object">
+<em class="property">classmethod </em><tt class="descname">validate_dbus_object</tt><big>(</big><em>path</em>, <em>state</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.MainView.validate_dbus_object" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.OptionSelector">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">OptionSelector</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>OptionSelector Autopilot custom proxy object</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.OptionSelector.get_current_label">
+<tt class="descname">get_current_label</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector.get_current_label" title="Permalink to this definition">&para;</a></dt>
+<dd><p>gets the text of the currently selected item</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.OptionSelector.get_option_count">
+<tt class="descname">get_option_count</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector.get_option_count" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Gets the number of items in the option selector</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.OptionSelector.get_selected_index">
+<tt class="descname">get_selected_index</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector.get_selected_index" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Gets the current selected index of the QQuickListView</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.OptionSelector.get_selected_text">
+<tt class="descname">get_selected_text</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector.get_selected_text" title="Permalink to this definition">&para;</a></dt>
+<dd><p>gets the text of the currently selected item</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.OptionSelector.select_option">
+<tt class="descname">select_option</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.OptionSelector.select_option" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Select delegate in option selector</p>
+<dl class="docutils">
+<dt>Example usage::</dt>
+<dd>select_option(objectName=&#8221;myOptionSelectorDelegate&#8221;)
+select_option(&#8216;Label&#8217;, text=&#8221;some_text_here&#8221;)</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kwargs</strong> &#8211; keywords used to find property(s) of delegate in
+option selector</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.QQuickFlickable">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">QQuickFlickable</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._flickable.Scrollable</span></tt></p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.pull_to_refresh">
+<tt class="descname">pull_to_refresh</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.pull_to_refresh" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Pulls the flickable down and triggers a refresh on it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises <a class="reference internal" href="#ubuntuuitoolkit.ToolkitException" title="ubuntuuitoolkit.ToolkitException">ubuntuuitoolkit.ToolkitException</a>:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">If the flickable has no pull
+to release functionality.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.swipe_child_into_view">
+<tt class="descname">swipe_child_into_view</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.swipe_child_into_view" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Make the child visible.</p>
+<p>Currently it works only when the object needs to be swiped vertically.
+TODO implement horizontal swiping. &#8211;elopio - 2014-03-21</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.swipe_to_bottom">
+<tt class="descname">swipe_to_bottom</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_bottom" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_above">
+<tt class="descname">swipe_to_show_more_above</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_above" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_below">
+<tt class="descname">swipe_to_show_more_below</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_show_more_below" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickFlickable.swipe_to_top">
+<tt class="descname">swipe_to_top</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickFlickable.swipe_to_top" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.QQuickGridView">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">QQuickGridView</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickGridView" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._flickable.QQuickFlickable</span></tt></p>
+<p>Autopilot helper for the QQuickGridView component.</p>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.QQuickListView">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">QQuickListView</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickListView" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._flickable.QQuickFlickable</span></tt></p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickListView.click_element">
+<tt class="descname">click_element</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickListView.click_element" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Click an element from the list.</p>
+<p>It swipes the element into view if it&#8217;s center is not visible.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>objectName</strong> &#8211; The objectName property of the element to click.</li>
+<li><strong>direction</strong> &#8211; The direction where the element is, it can be
+either &#8216;above&#8217; or &#8216;below&#8217;. Default value is None, which means we
+don&#8217;t know where the object is and we will need to search the full
+list.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickListView.drag_item">
+<tt class="descname">drag_item</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickListView.drag_item" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.QQuickListView.enable_select_mode">
+<tt class="descname">enable_select_mode</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.QQuickListView.enable_select_mode" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Default implementation to enable select mode. Performs a long tap
+over the first list item in the ListView. The delegates must be
+the new ListItem components.</p>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.TabBar">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">TabBar</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TabBar" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>TabBar Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.TabBar.switch_to_next_tab">
+<tt class="descname">switch_to_next_tab</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TabBar.switch_to_next_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the next tab.</p>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.Tabs">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">Tabs</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Tabs" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>Tabs Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Tabs.get_current_tab">
+<tt class="descname">get_current_tab</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Tabs.get_current_tab" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the currently selected tab.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Tabs.get_number_of_tabs">
+<tt class="descname">get_number_of_tabs</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Tabs.get_number_of_tabs" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return the number of tabs.</p>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.TextArea">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">TextArea</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextArea" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._textfield.TextField</span></tt></p>
+<p>TextArea autopilot emulator.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.TextArea.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextArea.clear" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Clear the text area.</p>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.TextField">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">TextField</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextField" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>TextField Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.TextField.clear">
+<tt class="descname">clear</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextField.clear" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Clear the text field.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.TextField.is_empty">
+<tt class="descname">is_empty</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextField.is_empty" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Return True if the text field is empty. False otherwise.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.TextField.write">
+<tt class="descname">write</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.TextField.write" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Write into the text field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>text</strong> &#8211; The text to write.</li>
+<li><strong>clear</strong> &#8211; If True, the text field will be cleared before
+writing the text. If False, the text will be appended at the end
+of the text field. Default is True.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.Toolbar">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">Toolbar</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Toolbar" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._common.UbuntuUIToolkitCustomProxyObjectBase</span></tt></p>
+<p>Toolbar Autopilot custom proxy object.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Toolbar.click_back_button">
+<tt class="descname">click_back_button</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Toolbar.click_back_button" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Click the back button of the toolbar.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Toolbar.click_button">
+<tt class="descname">click_button</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Toolbar.click_button" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Click a button of the toolbar.</p>
+<p>The toolbar should be opened before clicking the button, or an
+exception will be raised. If the toolbar is closed for some reason
+(e.g., timer finishes) after moving the mouse cursor and before
+clicking the button, it is re-opened automatically by this function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>object_name</strong> &#8211; The QML objectName property of the button.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises ToolkitException:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">If there is no button with that object
+name.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Toolbar.close">
+<tt class="descname">close</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Toolbar.close" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Close the toolbar if it&#8217;s opened.</p>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.Toolbar.open">
+<tt class="descname">open</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.Toolbar.open" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Open the toolbar if it&#8217;s not already opened.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The toolbar.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+</dd></dl>
+<dl class="exception">
+<dt id="ubuntuuitoolkit.ToolkitException">
+<em class="property">exception </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">ToolkitException</tt><a class="headerlink" href="#ubuntuuitoolkit.ToolkitException" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></tt></p>
+<p>Exception raised when there is an error with the custom proxy object.</p>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.UbuntuListView11">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">UbuntuListView11</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuListView11" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">ubuntuuitoolkit._custom_proxy_objects._qquicklistview.QQuickListView</span></tt></p>
+<p>Autopilot helper for the UbuntuListView 1.1.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuListView11.manual_refresh_nowait">
+<tt class="descname">manual_refresh_nowait</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuListView11.manual_refresh_nowait" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuListView11.manual_refresh_wait">
+<tt class="descname">manual_refresh_wait</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuListView11.manual_refresh_wait" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuListView11.pull_to_refresh_enabled">
+<tt class="descname">pull_to_refresh_enabled</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuListView11.pull_to_refresh_enabled" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuListView11.wait_refresh_completed">
+<tt class="descname">wait_refresh_completed</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuListView11.wait_refresh_completed" title="Permalink to this definition">&para;</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="class">
+<dt id="ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase">
+<em class="property">class </em><tt class="descclassname">ubuntuuitoolkit.</tt><tt class="descname">UbuntuUIToolkitCustomProxyObjectBase</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">autopilot.introspection.dbus.CustomEmulatorBase</span></tt></p>
+<p>A base class for all the Ubuntu UI Toolkit custom proxy objects.</p>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.is_flickable">
+<tt class="descname">is_flickable</tt><big>(</big><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.is_flickable" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Check if the object is flickable.</p>
+<p>If the object has a flicking attribute, we consider it as a flickable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the object is flickable. False otherwise.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.swipe_into_view">
+<tt class="descname">swipe_into_view</tt><big>(</big><em>instance</em>, <em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#ubuntuuitoolkit.UbuntuUIToolkitCustomProxyObjectBase.swipe_into_view" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Make the object visible.</p>
+<p>Currently it works only when the object needs to be swiped vertically.
+TODO implement horizontal swiping. &#8211;elopio - 2014-03-21</p>
+</dd></dl>
+</dd></dl>
+<!-- End Namespace Content -->
+<!-- div.inner-wrapper -->
+<!-- div.wrapper -->
+<footer class="global clearfix no-global">
+<p class="top-link"><a href="#">Back to top</a>
+</p>
+<nav id="main-navigation" role="navigation">
+<ul>
+<li>
+<h2><a href="https://developer.ubuntu.com/en/desktop/" class="">Desktop</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="https://developer.ubuntu.com/en/desktop/" >Overview</a></li>
+<li class="">
+<a href="http://snapcraft.io/?utm_source=developer.ubuntu.com&amp;utm_medium=devportal&amp;utm_term=snaps%20snapcraft%20desktop&amp;utm_content=menu&amp;utm_campaign=duc_snappers" class="">Get started</a>
+</li>
+<li class="">
+<a href="https://github.com/ubuntu/snappy-playpen" class="">Examples</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="https://developer.ubuntu.com/en/phone/" class="">Phone</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="https://developer.ubuntu.com/en/phone/" >Overview</a></li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/phone/scopes/" class="">Scopes</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/phone/apps/" class="">Apps</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/phone/web/" class="">Web Apps</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/phone/platform/" class="">Platform</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/phone/devices/" class="">Devices</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="https://developer.ubuntu.com/core" class="">Core</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="https://developer.ubuntu.com/core" >Overview</a></li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/get-started" class="">Get started</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/tutorials" class="">Tutorials</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/examples" class="">Examples</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/publish-and-distribute" class="">Publish and distribute</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/documentation" class="">Documentation</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/core/troubleshooting" class="">Troubleshooting</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="https://developer.ubuntu.com/en/community/" class="">Community</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="https://developer.ubuntu.com/en/community/" >Overview</a></li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/community/training/" class="">App development training</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/community/core-apps/" class="">Core apps</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/community/blog/" class="">Blog</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="https://developer.ubuntu.com/en/publish/" class="">Publish</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="https://developer.ubuntu.com/en/publish/" >Overview</a></li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/application-states/" class="">Application states</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/packaging-click-apps/" class="">Packaging click apps</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/creating-a-good-icon/" class="">Creating a good icon</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/web/" class="">Web</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/security-policy-groups/" class="">Security policy groups</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/choosing-a-license/" class="">Choosing a license</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/other-forms-of-submitting-apps/" class="">Other forms of submitting apps</a>
+</li>
+<li class="">
+<a href="https://developer.ubuntu.com/en/publish/scopes/" class="">Scopes</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /.footer-a -->
+<ul class="clearfix">
+<li>
+<h2>View in:</h2>
+<ul class="second-level-nav">
+<li class="lang active">
+<a href="index.html" title="Change to language: English">English</a>
+</li>
+<li class="lang">
+<a href="index.html" title="Change to language: Simplified Chinese">Simplified Chinese</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="http://ubuntu.com/download/">Download</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="http://ubuntu.com/download">Overview</a>
+</li>
+<li><a href="http://ubuntu.com/download/cloud">Cloud</a>
+</li>
+<li><a href="http://ubuntu.com/download/server">Server</a>
+</li>
+<li><a href="http://ubuntu.com/download/desktop">Desktop</a>
+</li>
+<li><a href="http://ubuntu.com/download/ubuntu-kylin">Ubuntu Kylin</a>
+</li>
+<li><a href="http://ubuntu.com/download/alternative-downloads">Alternative downloads</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="http://ubuntu.com/support/">Support</a></h2>
+<ul class="second-level-nav">
+<li class="first"><a href="http://ubuntu.com/support">Overview</a>
+</li>
+<li><a href="http://www.ubuntu.com/usn/">Security notices</a>
+</li>
+</ul>
+</li>
+<li>
+<h2><a href="http://ubuntu.com/about/">About</a></h2>
+<ul class="second-level-nav">
+<li><a href="http://ubuntu.com/about/about-ubuntu">About Ubuntu</a>
+</li>
+<li><a href="http://www.canonical.com/careers">Careers</a>
+</li>
+<li><a href="http://ubuntu.com/about/canonical-and-ubuntu">Canonical and Ubuntu</a>
+</li>
+<li><a accesskey="7" href="http://ubuntu.com/about/contact-us">Contact us</a>
+</li>
+<li><a accesskey="2" href="http://insights.ubuntu.com/feed/">Canonical news feed</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<p class="twelve-col">© 2015 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+<ul class="inline clear">
+<li><a href="http://www.ubuntu.com/legal">Legal information</a>
+</li>
+<li><a href="https://bugs.launchpad.net/developer-ubuntu-com/">Report a bug on this site</a>
+</li>
+</ul>
+<span class="accessibility-aid"><a href="#">Go to the top of the page</a></span>
+<!-- /.legal -->
+</footer>
+<script type='text/javascript' src='https://developer.ubuntu.com/static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='https://developer.ubuntu.com/static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shAutoloader.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+(function(){
+var corecss = document.createElement('link');
+var themecss = document.createElement('link');
+var corecssurl = "/static/devportal_static/developer_portal/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+if ( corecss.setAttribute ) {
+corecss.setAttribute( "rel", "stylesheet" );
+corecss.setAttribute( "type", "text/css" );
+corecss.setAttribute( "href", corecssurl );
+} else {
+corecss.rel = "stylesheet";
+corecss.href = corecssurl;
+}
+document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+var themecssurl = "/static/devportal_static/developer_portal/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+if ( themecss.setAttribute ) {
+themecss.setAttribute( "rel", "stylesheet" );
+themecss.setAttribute( "type", "text/css" );
+themecss.setAttribute( "href", themecssurl );
+} else {
+themecss.rel = "stylesheet";
+themecss.href = themecssurl;
+}
+//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+})();
+SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+SyntaxHighlighter.config.strings.help = '?';
+SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.autoloader(
+'js jscript javascript  /static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shBrushJScript.js',
+'c cpp                  /static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shBrushCpp.js',
+'xml html               /static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shBrushXml.js',
+'bash                   /static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shBrushBash.js',
+'python                 /static/devportal_static/developer_portal/syntaxhighlighter3/scripts/shBrushPython.js'
+);
+SyntaxHighlighter.all();
+</script>
+<!-- Use this only until Modernizr fixes Opera Mini background-size detection -->
+<script>
+var isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
+if(isOperaMini) {
+var root = document.documentElement;
+root.className += " opera-mini";
+}
+</script>
+<script>
+if(!core){ var core = {}; }
+core.globalPrepend = 'body';
+</script>
+<script src="https://developer.ubuntu.com/assets/sites/ubuntu/latest/u/js/plugins/yui-combined.min.js"></script>
+<script src="https://developer.ubuntu.com/assets/sites/ubuntu/latest/u/js/global.js"></script>
+<script src="https://developer.ubuntu.com/assets/sites/guidelines/js/responsive/core.js"></script>
+<script src="https://developer.ubuntu.com/assets/sites/ubuntu/latest/u/js/global.js"></script>
+<script src="https://developer.ubuntu.com/assets/sites/ubuntu/latest/u/js/scratch.js"></script>
+<script src="https://developer.ubuntu.com/assets/sites/ubuntu/latest/u/js/plugins/respond.min.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+/* Save to developer.ubuntu.com profile */	
+_gaq.push(['_setAccount', 'UA-1018242-33']);
+_gaq.push(['_setDomainName', '.ubuntu.com']);
+_gaq.push(['_trackPageview']);
+/* Save to www.ubuntu.com profile */	
+_gaq.push(['b._setAccount', 'UA-1018242-4']);
+_gaq.push(['b._setDomainName', '.ubuntu.com']);
+_gaq.push(['b._trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

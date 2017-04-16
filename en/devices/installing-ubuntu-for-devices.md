@@ -49,7 +49,6 @@ features as development continues. Ubuntu for devices does not yet provide a
 reliable replacement for your current handset, phone or tablet. See [Release notes](https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes#Ubuntu_Touch) for
 details.
 
-
 ## Prepare your Desktop
 
 Here you learn how to prepare your Ubuntu Desktop system. After these steps

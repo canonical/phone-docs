@@ -3,7 +3,6 @@ title: "Platform guides - app confinement"
 ---
 
 
-
 # Platform guides - app confinement
 
 ## AppArmor policy for click packages

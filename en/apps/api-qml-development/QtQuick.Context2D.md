@@ -1,1218 +1,537 @@
 ---
 Title: QtQuick.Context2D
 ---
-        
-Context2D
-=========
+
+# QtQuick.Context2D
 
 <span class="subtitle"></span>
-Provides 2D context for shapes on a Canvas item More...
-
-|                   |                    |
-|-------------------|--------------------|
-| Import Statement: | import QtQuick 2.4 |
-| Since:            | Qt 5.0             |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[canvas](#canvas-prop)**** : QtQuick::Canvas
--   ****[fillRule](#fillRule-prop)**** : enumeration
--   ****[fillStyle](#fillStyle-prop)**** : variant
--   ****[font](#font-prop)**** : string
--   ****[globalAlpha](#globalAlpha-prop)**** : real
--   ****[globalCompositeOperation](#globalCompositeOperation-prop)**** : string
--   ****[lineCap](#lineCap-prop)**** : string
--   ****[lineJoin](#lineJoin-prop)**** : string
--   ****[lineWidth](#lineWidth-prop)**** : real
--   ****[miterLimit](#miterLimit-prop)**** : real
--   ****[shadowBlur](#shadowBlur-prop)**** : real
--   ****[shadowColor](#shadowColor-prop)**** : string
--   ****[shadowOffsetX](#shadowOffsetX-prop)**** : qreal
--   ****[shadowOffsetY](#shadowOffsetY-prop)**** : qreal
--   ****[strokeStyle](#strokeStyle-prop)**** : variant
--   ****[textAlign](#textAlign-prop)**** : string
--   ****[textBaseline](#textBaseline-prop)**** : string
-
-<span id="methods"></span>
-Methods
--------
-
--   object ****[arc](#arc-method)****(real *x*, real *y*, real *radius*, real *startAngle*, real *endAngle*, bool *anticlockwise*)
--   object ****[arcTo](#arcTo-method)****(real *x1*, real *y1*, real *x2*, real *y2*, real *radius*)
--   object ****[beginPath](#beginPath-method)****()
--   object ****[bezierCurveTo](#bezierCurveTo-method)****(real *cp1x*, real *cp1y*, real *cp2x*, real *cp2y*, real *x*, real *y*)
--   object ****[clearRect](#clearRect-method)****(real *x*, real *y*, real *w*, real *h*)
--   object ****[clip](#clip-method)****()
--   object ****[closePath](#closePath-method)****()
--   object ****[createConicalGradient](#createConicalGradient-method)****(real *x*, real *y*, real *angle*)
--   CanvasImageData ****[createImageData](#createImageData-method-3)****(Url *imageUrl*)
--   CanvasImageData ****[createImageData](#createImageData-method-2)****(CanvasImageData *imageData*)
--   CanvasImageData ****[createImageData](#createImageData-method)****(real *sw*, real *sh*)
--   object ****[createLinearGradient](#createLinearGradient-method)****(real *x0*, real *y0*, real *x1*, real *y1*)
--   variant ****[createPattern](#createPattern-method-2)****(Image *image*, string *repetition*)
--   variant ****[createPattern](#createPattern-method)****(color *color*, enumeration *patternMode*)
--   object ****[createRadialGradient](#createRadialGradient-method)****(real *x0*, real *y0*, real *r0*, real *x1*, real *y1*, real *r1*)
--   ****[drawImage](#drawImage-method-3)****(variant *image*, real *sx*, real *sy*, real *sw*, real *sh*, real *dx*, real *dy*, real *dw*, real *dh*)
--   ****[drawImage](#drawImage-method-2)****(variant *image*, real *dx*, real *dy*, real *dw*, real *dh*)
--   ****[drawImage](#drawImage-method)****(variant *image*, real *dx*, real *dy*)
--   object ****[ellipse](#ellipse-method)****(real *x*, real *y*, real *w*, real *h*)
--   object ****[fill](#fill-method)****()
--   object ****[fillRect](#fillRect-method)****(real *x*, real *y*, real *w*, real *h*)
--   object ****[fillText](#fillText-method)****(text, x, y)
--   CanvasImageData ****[getImageData](#getImageData-method)****(real *sx*, real *sy*, real *sw*, real *sh*)
--   object ****[isPointInPath](#isPointInPath-method)****(real *x*, real *y*)
--   object ****[lineTo](#lineTo-method)****(real *x*, real *y*)
--   object ****[measureText](#measureText-method)****(text)
--   object ****[moveTo](#moveTo-method)****(real *x*, real *y*)
--   object ****[putImageData](#putImageData-method)****(CanvasImageData *imageData*, real *dx*, real *dy*, real *dirtyX*, real *dirtyY*, real *dirtyWidth*, real *dirtyHeight*)
--   object ****[quadraticCurveTo](#quadraticCurveTo-method)****(real *cpx*, real *cpy*, real *x*, real *y*)
--   object ****[rect](#rect-method)****(real *x*, real *y*, real *w*, real *h*)
--   object ****[reset](#reset-method)****()
--   object ****[resetTransform](#resetTransform-method)****()
--   object ****[restore](#restore-method)****()
--   object ****[rotate](#rotate-method)****(real *angle*)
--   object ****[roundedRect](#roundedRect-method)****(real *x*, real *y*, real *w*, real *h*, real *xRadius*, real *yRadius*)
--   object ****[save](#save-method)****()
--   object ****[scale](#scale-method)****(real *x*, real *y*)
--   object ****[setTransform](#setTransform-method)****(real *a*, real *b*, real *c*, real *d*, real *e*, real *f*)
--   object ****[shear](#shear-method)****(real *sh*, real *sv*)
--   object ****[stroke](#stroke-method)****()
--   object ****[strokeRect](#strokeRect-method)****(real *x*, real *y*, real *w*, real *h*)
--   object ****[strokeText](#strokeText-method)****(text, x, y)
--   object ****[text](#text-method)****(string *text*, real *x*, real *y*)
--   object ****[transform](#transform-method)****(real *a*, real *b*, real *c*, real *d*, real *e*, real *f*)
--   object ****[translate](#translate-method)****(real *x*, real *y*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The [Context2D](index.html) object can be created by `Canvas` item's `getContext()` method:
-
-``` cpp
-Canvas {
-  id:canvas
-  onPaint:{
-     var ctx = canvas.getContext('2d');
-     //...
-  }
+<!-- $$$Context2D-brief -->
+<p>Provides 2D context for shapes on a Canvas item More...</p>
+<!-- @@@Context2D -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Qt 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#canvas-prop">canvas</a></b></b> : QtQuick::Canvas</li>
+<li class="fn"><b><b><a href="#fillRule-prop">fillRule</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#fillStyle-prop">fillStyle</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#font-prop">font</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#globalAlpha-prop">globalAlpha</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#globalCompositeOperation-prop">globalCompositeOperation</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#lineCap-prop">lineCap</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#lineJoin-prop">lineJoin</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#lineWidth-prop">lineWidth</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#miterLimit-prop">miterLimit</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#shadowBlur-prop">shadowBlur</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#shadowColor-prop">shadowColor</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#shadowOffsetX-prop">shadowOffsetX</a></b></b> : qreal</li>
+<li class="fn"><b><b><a href="#shadowOffsetY-prop">shadowOffsetY</a></b></b> : qreal</li>
+<li class="fn"><b><b><a href="#strokeStyle-prop">strokeStyle</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#textAlign-prop">textAlign</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#textBaseline-prop">textBaseline</a></b></b> : string</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">object <b><b><a href="#arc-method">arc</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>radius</i>, real <i>startAngle</i>, real <i>endAngle</i>, bool <i>anticlockwise</i>)</li>
+<li class="fn">object <b><b><a href="#arcTo-method">arcTo</a></b></b>(real <i>x1</i>, real <i>y1</i>, real <i>x2</i>, real <i>y2</i>, real <i>radius</i>)</li>
+<li class="fn">object <b><b><a href="#beginPath-method">beginPath</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#bezierCurveTo-method">bezierCurveTo</a></b></b>(real <i>cp1x</i>, real <i>cp1y</i>, real <i>cp2x</i>, real <i>cp2y</i>, real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#clearRect-method">clearRect</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>)</li>
+<li class="fn">object <b><b><a href="#clip-method">clip</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#closePath-method">closePath</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#createConicalGradient-method">createConicalGradient</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>angle</i>)</li>
+<li class="fn">CanvasImageData <b><b><a href="#createImageData-method-3">createImageData</a></b></b>(Url <i>imageUrl</i>)</li>
+<li class="fn">CanvasImageData <b><b><a href="#createImageData-method-2">createImageData</a></b></b>(CanvasImageData <i>imageData</i>)</li>
+<li class="fn">CanvasImageData <b><b><a href="#createImageData-method">createImageData</a></b></b>(real <i>sw</i>, real <i>sh</i>)</li>
+<li class="fn">object <b><b><a href="#createLinearGradient-method">createLinearGradient</a></b></b>(real <i>x0</i>, real <i>y0</i>, real <i>x1</i>, real <i>y1</i>)</li>
+<li class="fn">variant <b><b><a href="#createPattern-method-2">createPattern</a></b></b>(Image <i>image</i>, string <i>repetition</i>)</li>
+<li class="fn">variant <b><b><a href="#createPattern-method">createPattern</a></b></b>(color <i>color</i>, enumeration <i>patternMode</i>)</li>
+<li class="fn">object <b><b><a href="#createRadialGradient-method">createRadialGradient</a></b></b>(real <i>x0</i>, real <i>y0</i>, real <i>r0</i>, real <i>x1</i>, real <i>y1</i>, real <i>r1</i>)</li>
+<li class="fn"><b><b><a href="#drawImage-method-3">drawImage</a></b></b>(variant <i>image</i>, real <i>sx</i>, real <i>sy</i>, real <i>sw</i>, real <i>sh</i>, real <i>dx</i>, real <i>dy</i>, real <i>dw</i>, real <i>dh</i>)</li>
+<li class="fn"><b><b><a href="#drawImage-method-2">drawImage</a></b></b>(variant <i>image</i>, real <i>dx</i>, real <i>dy</i>, real <i>dw</i>, real <i>dh</i>)</li>
+<li class="fn"><b><b><a href="#drawImage-method">drawImage</a></b></b>(variant <i>image</i>, real <i>dx</i>, real <i>dy</i>)</li>
+<li class="fn">object <b><b><a href="#ellipse-method">ellipse</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>)</li>
+<li class="fn">object <b><b><a href="#fill-method">fill</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#fillRect-method">fillRect</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>)</li>
+<li class="fn">object <b><b><a href="#fillText-method">fillText</a></b></b>(text, x, y)</li>
+<li class="fn">CanvasImageData <b><b><a href="#getImageData-method">getImageData</a></b></b>(real <i>sx</i>, real <i>sy</i>, real <i>sw</i>, real <i>sh</i>)</li>
+<li class="fn">object <b><b><a href="#isPointInPath-method">isPointInPath</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#lineTo-method">lineTo</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#measureText-method">measureText</a></b></b>(text)</li>
+<li class="fn">object <b><b><a href="#moveTo-method">moveTo</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#putImageData-method">putImageData</a></b></b>(CanvasImageData <i>imageData</i>, real <i>dx</i>, real <i>dy</i>, real <i>dirtyX</i>, real <i>dirtyY</i>, real <i>dirtyWidth</i>, real <i>dirtyHeight</i>)</li>
+<li class="fn">object <b><b><a href="#quadraticCurveTo-method">quadraticCurveTo</a></b></b>(real <i>cpx</i>, real <i>cpy</i>, real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#rect-method">rect</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>)</li>
+<li class="fn">object <b><b><a href="#reset-method">reset</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#resetTransform-method">resetTransform</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#restore-method">restore</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#rotate-method">rotate</a></b></b>(real <i>angle</i>)</li>
+<li class="fn">object <b><b><a href="#roundedRect-method">roundedRect</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>, real <i>xRadius</i>, real <i>yRadius</i>)</li>
+<li class="fn">object <b><b><a href="#save-method">save</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#scale-method">scale</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#setTransform-method">setTransform</a></b></b>(real <i>a</i>, real <i>b</i>, real <i>c</i>, real <i>d</i>, real <i>e</i>, real <i>f</i>)</li>
+<li class="fn">object <b><b><a href="#shear-method">shear</a></b></b>(real <i>sh</i>, real <i>sv</i>)</li>
+<li class="fn">object <b><b><a href="#stroke-method">stroke</a></b></b>()</li>
+<li class="fn">object <b><b><a href="#strokeRect-method">strokeRect</a></b></b>(real <i>x</i>, real <i>y</i>, real <i>w</i>, real <i>h</i>)</li>
+<li class="fn">object <b><b><a href="#strokeText-method">strokeText</a></b></b>(text, x, y)</li>
+<li class="fn">object <b><b><a href="#text-method">text</a></b></b>(string <i>text</i>, real <i>x</i>, real <i>y</i>)</li>
+<li class="fn">object <b><b><a href="#transform-method">transform</a></b></b>(real <i>a</i>, real <i>b</i>, real <i>c</i>, real <i>d</i>, real <i>e</i>, real <i>f</i>)</li>
+<li class="fn">object <b><b><a href="#translate-method">translate</a></b></b>(real <i>x</i>, real <i>y</i>)</li>
+</ul>
+<!-- $$$Context2D-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The <a href="index.html">Context2D</a> object can be created by <code>Canvas</code> item's <code>getContext()</code> method:</p>
+<pre class="cpp">Canvas {
+id:canvas
+onPaint:{
+var ctx <span class="operator">=</span> canvas<span class="operator">.</span>getContext(<span class="char">'2d'</span>);
+<span class="comment">//...</span>
 }
-```
-
-The [Context2D](index.html) API implements the same [W3C Canvas 2D Context API standard](http://www.w3.org/TR/2dcontext) with some enhanced features.
-
-The [Context2D](index.html) API provides the rendering **context** which defines the methods and attributes needed to draw on the `Canvas` item. The following assigns the canvas rendering context to a `context` variable:
-
-``` cpp
-var context = mycanvas.getContext("2d")
-```
-
-The [Context2D](index.html) API renders the canvas as a coordinate system whose origin (0,0) is at the top left corner, as shown in the figure below. Coordinates increase along the `x` axis from left to right and along the `y` axis from top to bottom of the canvas.
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/6efb18d5-44b3-4efa-98b3-ee73e770aa59-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-context.gif)
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="canvas-prop"></span><span class="name">canvas</span> : <span class="type"><a href="QtQuick.Canvas.md">QtQuick::Canvas</a></span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the canvas item that the context paints on.
-
-This property is read only.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fillRule-prop"></span><span class="name">fillRule</span> : <span class="type">enumeration</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current fill rule used for filling shapes. The following fill rules supported:
-
--   Qt.OddEvenFill
--   Qt.WindingFill
-
-Note: Unlike the QPainterPath, the Canvas API uses the winding fill as the default fill rule. The fillRule property is part of the context rendering state.
-
-**See also** [fillStyle](#fillStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fillStyle-prop"></span><span class="name">fillStyle</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current style used for filling shapes. The style can be either a string containing a CSS color, a [CanvasGradient](../QtQuick.CanvasGradient.md) or CanvasPattern object. Invalid values are ignored. This property accepts several color syntaxes:
-
--   'rgb(red, green, blue)' - for example: 'rgb(255, 100, 55)' or 'rgb(100%, 70%, 30%)'
--   'rgba(red, green, blue, alpha)' - for example: 'rgb(255, 100, 55, 1.0)' or 'rgb(100%, 70%, 30%, 0.5)'
--   'hsl(hue, saturation, lightness)'
--   'hsla(hue, saturation, lightness, alpha)'
--   '\#RRGGBB' - for example: '\#00FFCC'
--   Qt.rgba(red, green, blue, alpha) - for example: Qt.rgba(0.3, 0.7, 1, 1.0)
-
-If the `fillStyle` or [strokeStyle](#strokeStyle-prop) is assigned many times in a loop, the last Qt.rgba() syntax should be chosen, as it has the best performance, because it's already a valid QColor value, does not need to be parsed everytime.
-
-The default value is '\#000000'.
-
-**See also** [createLinearGradient()](#createLinearGradient-method), [createRadialGradient()](#createRadialGradient-method), [createPattern()](#createPattern-method), and [strokeStyle](#strokeStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="font-prop"></span><span class="name">font</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current font settings.
-
-A subset of the [w3C 2d context standard for font](http://www.w3.org/TR/2dcontext/#dom-context-2d-font) is supported:
-
--   font-style (optional): normal | italic | oblique
--   font-variant (optional): normal | small-caps
--   font-weight (optional): normal | bold | 0 ... 99
--   font-size: Npx | Npt (where N is a positive number)
--   font-family: See <http://www.w3.org/TR/CSS2/fonts.html#propdef-font-family>
-
-**Note:** The font-size and font-family properties are mandatory and must be in the order they are shown in above. In addition, a font family with spaces in its name must be quoted.
-
-The default font value is "10px sans-serif".
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="globalAlpha-prop"></span><span class="name">globalAlpha</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current alpha value applied to rendering operations. The value must be in the range from `0.0` (fully transparent) to `1.0` (fully opaque). The default value is `1.0`.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="globalCompositeOperation-prop"></span><span class="name">globalCompositeOperation</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current the current composition operation, from the list below:
-
--   source-atop - A atop B. Display the source image wherever both images are opaque. Display the destination image wherever the destination image is opaque but the source image is transparent. Display transparency elsewhere.
--   source-in - A in B. Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.
--   source-out - A out B. Display the source image wherever the source image is opaque and the destination image is transparent. Display transparency elsewhere.
--   source-over - (default) A over B. Display the source image wherever the source image is opaque. Display the destination image elsewhere.
--   destination-atop - B atop A. Same as source-atop but using the destination image instead of the source image and vice versa.
--   destination-in - B in A. Same as source-in but using the destination image instead of the source image and vice versa.
--   destination-out - B out A. Same as source-out but using the destination image instead of the source image and vice versa.
--   destination-over - B over A. Same as source-over but using the destination image instead of the source image and vice versa.
--   lighter - A plus B. Display the sum of the source image and destination image, with color values approaching 255 (100%) as a limit.
--   copy - A (B is ignored). Display the source image instead of the destination image.
--   xor - A xor B. Exclusive OR of the source image and destination image.
-
-Additionally, this property also accepts the compositon modes listed in QPainter::CompositionMode. According to the W3C standard, these extension composition modes are provided as "vendorName-operationName" syntax, for example: QPainter::CompositionMode\_Exclusion is provided as "qt-exclusion".
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="lineCap-prop"></span><span class="name">lineCap</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current line cap style. The possible line cap styles are:
-
--   butt - the end of each line has a flat edge perpendicular to the direction of the line, this is the default line cap value.
--   round - a semi-circle with the diameter equal to the width of the line must then be added on to the end of the line.
--   square - a rectangle with the length of the line width and the width of half the line width, placed flat against the edge perpendicular to the direction of the line.
-
-Other values are ignored.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="lineJoin-prop"></span><span class="name">lineJoin</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current line join style. A join exists at any point in a subpath shared by two consecutive lines. When a subpath is closed, then a join also exists at its first point (equivalent to its last point) connecting the first and last lines in the subpath.
-
-The possible line join styles are:
-
--   bevel - this is all that is rendered at joins.
--   round - a filled arc connecting the two aforementioned corners of the join, abutting (and not overlapping) the aforementioned triangle, with the diameter equal to the line width and the origin at the point of the join, must be rendered at joins.
--   miter - a second filled triangle must (if it can given the miter length) be rendered at the join, this is the default line join style.
-
-Other values are ignored.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="lineWidth-prop"></span><span class="name">lineWidth</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current line width. Values that are not finite values greater than zero are ignored.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="miterLimit-prop"></span><span class="name">miterLimit</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current miter limit ratio. The default miter limit value is 10.0.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shadowBlur-prop"></span><span class="name">shadowBlur</span> : <span class="type">real</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current level of blur applied to shadows
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shadowColor-prop"></span><span class="name">shadowColor</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current shadow color.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shadowOffsetX-prop"></span><span class="name">shadowOffsetX</span> : <span class="type">qreal</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current shadow offset in the positive horizontal distance.
-
-**See also** [shadowOffsetY](#shadowOffsetY-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shadowOffsetY-prop"></span><span class="name">shadowOffsetY</span> : <span class="type">qreal</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current shadow offset in the positive vertical distance.
-
-**See also** [shadowOffsetX](#shadowOffsetX-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="strokeStyle-prop"></span><span class="name">strokeStyle</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current color or style to use for the lines around shapes, The style can be either a string containing a CSS color, a [CanvasGradient](../QtQuick.CanvasGradient.md) or CanvasPattern object. Invalid values are ignored.
-
-The default value is '\#000000'.
-
-**See also** [createLinearGradient()](#createLinearGradient-method), [createRadialGradient()](#createRadialGradient-method), [createPattern()](#createPattern-method), and [fillStyle](#fillStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="textAlign-prop"></span><span class="name">textAlign</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current text alignment settings. The possible values are:
-
--   start
--   end
--   left
--   right
--   center
-
-Other values are ignored. The default value is "start".
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="textBaseline-prop"></span><span class="name">textBaseline</span> : <span class="type">string</span></p></td>
-</tr>
-</tbody>
-</table>
-
-Holds the current baseline alignment settings. The possible values are:
-
--   top
--   hanging
--   middle
--   alphabetic
--   ideographic
--   bottom
-
-Other values are ignored. The default value is "alphabetic".
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="arc-method"></span><span class="type">object</span> <span class="name">arc</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>radius</em>, <span class="type">real</span> <em>startAngle</em>, <span class="type">real</span> <em>endAngle</em>, <span class="type">bool</span> <em>anticlockwise</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds an arc to the current subpath that lies on the circumference of the circle whose center is at the point (*x*, *y*) and whose radius is *radius*.
-
-Both `startAngle` and `endAngle` are measured from the x-axis in radians.
-
-\[Missing image qml-item-canvas-arc.png\]
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/f79f7795-3171-4896-b404-0a2cd1bb5391-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-startAngle.png)
-
-The *anticlockwise* parameter is `true` for each arc in the figure above because they are all drawn in the anticlockwise direction.
-
-**See also** [arcTo](#arcTo-method) and [W3C's 2D Context Standard for arc()](http://www.w3.org/TR/2dcontext/#dom-context-2d-arc).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="arcTo-method"></span><span class="type">object</span> <span class="name">arcTo</span>(<span class="type">real</span> <em>x1</em>, <span class="type">real</span> <em>y1</em>, <span class="type">real</span> <em>x2</em>, <span class="type">real</span> <em>y2</em>, <span class="type">real</span> <em>radius</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds an arc with the given control points and radius to the current subpath, connected to the previous point by a straight line. To draw an arc, you begin with the same steps you followed to create a line:
-
--   Call the [beginPath()](#beginPath-method) method to set a new path.
--   Call the [moveTo](#moveTo-method)(`x`, `y`) method to set your starting position on the canvas at the point (`x`, `y`).
--   To draw an arc or circle, call the arcTo(*x1*, *y1*, *x2*, *y2*, *radius*) method. This adds an arc with starting point (*x1*, *y1*), ending point (*x2*, *y2*), and *radius* to the current subpath and connects it to the previous subpath by a straight line.
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/a01abd24-99a1-4213-a6d0-2058e44d4dca-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-arcTo.png)
-
-**See also** [arc](#arc-method) and [W3C's 2D Context Standard for arcTo()](http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="beginPath-method"></span><span class="type">object</span> <span class="name">beginPath</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Resets the current path to a new path.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="bezierCurveTo-method"></span><span class="type">object</span> <span class="name">bezierCurveTo</span>(<span class="type">real</span> <em>cp1x</em>, <span class="type">real</span> <em>cp1y</em>, <span class="type">real</span> <em>cp2x</em>, <span class="type">real</span> <em>cp2y</em>, <span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds a cubic bezier curve between the current position and the given endPoint using the control points specified by (`cp1x`, cp1y), and (`cp2x`, `cp2y`). After the curve is added, the current position is updated to be at the end point (`x`, `y`) of the curve. The following code produces the path shown below:
-
-``` cpp
-ctx.strokeStyle = Qt.rgba(0, 0, 0, 1);
-ctx.lineWidth = 1;
-ctx.beginPath();
-ctx.moveTo(20, 0);//start point
-ctx.bezierCurveTo(-10, 90, 210, 90, 180, 0);
-ctx.stroke();
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/ea8adca7-d21e-4783-ba50-663e95514c60-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-bezierCurveTo.png)
-
-**See also** [W3C 2d context standard for bezierCurveTo](http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto) and [The beautiful flower demo by using bezierCurveTo](http://www.openrise.com/lab/FlowerPower/).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="clearRect-method"></span><span class="type">object</span> <span class="name">clearRect</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Clears all pixels on the canvas in the given rectangle to transparent black.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="clip-method"></span><span class="type">object</span> <span class="name">clip</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates the clipping region from the current path. Any parts of the shape outside the clipping path are not displayed. To create a complex shape using the `clip()` method:
-
-1.  Call the `context.beginPath()` method to set the clipping path.
-2.  Define the clipping path by calling any combination of the `lineTo`, `arcTo`, `arc`, `moveTo`, etc and `closePath` methods.
-3.  Call the `context.clip()` method.
-
-The new shape displays. The following shows how a clipping path can modify how an image displays:
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/3e52baa6-04aa-48ea-94dd-86fc16e98e42-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-clip-complex.png)
-
-**See also** [beginPath()](#beginPath-method), [closePath()](#closePath-method), [stroke()](#stroke-method), [fill()](#fill-method), and [W3C 2d context standard for clip](http://www.w3.org/TR/2dcontext/#dom-context-2d-clip).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="closePath-method"></span><span class="type">object</span> <span class="name">closePath</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Closes the current subpath by drawing a line to the beginning of the subpath, automatically starting a new path. The current point of the new path is the previous subpath's first point.
-
-**See also** [W3C 2d context standard for closePath](http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createConicalGradient-method"></span><span class="type">object</span> <span class="name">createConicalGradient</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>angle</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a [CanvasGradient](../QtQuick.CanvasGradient.md) object that represents a conical gradient that interpolate colors counter-clockwise around a center point (`x`, `y`) with start angle `angle` in units of radians.
-
-**See also** [CanvasGradient::addColorStop()](../QtQuick.CanvasGradient.md#addColorStop-method), [createLinearGradient()](#createLinearGradient-method), [createRadialGradient()](#createRadialGradient-method), [createPattern()](#createPattern-method), [fillStyle](#fillStyle-prop), and [strokeStyle](#strokeStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createImageData-method-3"></span><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type">Url</span> <em>imageUrl</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates a [CanvasImageData](../QtQuick.CanvasImageData.md) object with the given image loaded from *imageUrl*.
-
-**Note:** The *imageUrl* must be already loaded before this function call, otherwise an empty [CanvasImageData](../QtQuick.CanvasImageData.md) obect will be returned.
-
-**See also** [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method), [QtQuick::Canvas::unloadImage()](../QtQuick.Canvas.md#unloadImage-method), and [QtQuick::Canvas::isImageLoaded](../QtQuick.Canvas.md#isImageLoaded-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createImageData-method-2"></span><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <em>imageData</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates a [CanvasImageData](../QtQuick.CanvasImageData.md) object with the same dimensions as the argument.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createImageData-method"></span><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type">real</span> <em>sw</em>, <span class="type">real</span> <em>sh</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates a [CanvasImageData](../QtQuick.CanvasImageData.md) object with the given dimensions(*sw*, *sh*).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createLinearGradient-method"></span><span class="type">object</span> <span class="name">createLinearGradient</span>(<span class="type">real</span> <em>x0</em>, <span class="type">real</span> <em>y0</em>, <span class="type">real</span> <em>x1</em>, <span class="type">real</span> <em>y1</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a [CanvasGradient](../QtQuick.CanvasGradient.md) object that represents a linear gradient that transitions the color along a line between the start point (*x0*, *y0*) and the end point (*x1*, *y1*).
-
-A gradient is a smooth transition between colors. There are two types of gradients: linear and radial. Gradients must have two or more color stops, representing color shifts positioned from 0 to 1 between to the gradient's starting and end points or circles.
-
-**See also** [CanvasGradient::addColorStop()](../QtQuick.CanvasGradient.md#addColorStop-method), [createRadialGradient()](#createRadialGradient-method), [createConicalGradient()](#createConicalGradient-method), [createPattern()](#createPattern-method), [fillStyle](#fillStyle-prop), and [strokeStyle](#strokeStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createPattern-method-2"></span><span class="type">variant</span> <span class="name">createPattern</span>(<span class="type"><a href="QtQuick.Image.md">Image</a></span> <em>image</em>, <span class="type">string</span> <em>repetition</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a CanvasPattern object that uses the given image and repeats in the direction(s) given by the repetition argument.
-
-The *image* parameter must be a valid Image item, a valid [CanvasImageData](../QtQuick.CanvasImageData.md) object or loaded image url, if there is no image data, throws an INVALID\_STATE\_ERR exception.
-
-The allowed values for *repetition* are:
-
--   "repeat" - both directions
--   "repeat-x - horizontal only
--   "repeat-y" - vertical only
--   "no-repeat" - neither
-
-If the repetition argument is empty or null, the value "repeat" is used.
-
-**See also** [strokeStyle](#strokeStyle-prop) and [fillStyle](#fillStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createPattern-method"></span><span class="type">variant</span> <span class="name">createPattern</span>(<span class="type">color</span> <em>color</em>, <span class="type">enumeration</span> <em>patternMode</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-This is a overload function. Returns a CanvasPattern object that uses the given *color* and *patternMode*. The valid pattern modes are:
-
--   Qt.SolidPattern
--   Qt.Dense1Pattern
--   Qt.Dense2Pattern
--   Qt.Dense3Pattern
--   Qt.Dense4Pattern
--   Qt.Dense5Pattern
--   Qt.Dense6Pattern
--   Qt.Dense7Pattern
--   Qt.HorPattern
--   Qt.VerPattern
--   Qt.CrossPattern
--   Qt.BDiagPattern
--   Qt.FDiagPattern
--   Qt.DiagCrossPattern
-
-**See also** Qt::BrushStyle.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="createRadialGradient-method"></span><span class="type">object</span> <span class="name">createRadialGradient</span>(<span class="type">real</span> <em>x0</em>, <span class="type">real</span> <em>y0</em>, <span class="type">real</span> <em>r0</em>, <span class="type">real</span> <em>x1</em>, <span class="type">real</span> <em>y1</em>, <span class="type">real</span> <em>r1</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns a [CanvasGradient](../QtQuick.CanvasGradient.md) object that represents a radial gradient that paints along the cone given by the start circle with origin (x0, y0) and radius r0, and the end circle with origin (x1, y1) and radius r1.
-
-**See also** [CanvasGradient::addColorStop()](../QtQuick.CanvasGradient.md#addColorStop-method), [createLinearGradient()](#createLinearGradient-method), [createConicalGradient()](#createConicalGradient-method), [createPattern()](#createPattern-method), [fillStyle](#fillStyle-prop), and [strokeStyle](#strokeStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="drawImage-method-3"></span><span class="name">drawImage</span>(<span class="type">variant</span> <em>image</em>, <span class="type">real</span> <em>sx</em>, <span class="type">real</span> <em>sy</em>, <span class="type">real</span> <em>sw</em>, <span class="type">real</span> <em>sh</em>, <span class="type">real</span> <em>dx</em>, <span class="type">real</span> <em>dy</em>, <span class="type">real</span> <em>dw</em>, <span class="type">real</span> <em>dh</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-This is an overloaded function. Draws the given item as *image* from source point (*sx*, *sy*) and source width *sw*, source height *sh* onto the canvas at point (*dx*, *dy*) and with width *dw*, height *dh*.
-
-Note: The *image* type can be an Image or Canvas item, an image url or a [CanvasImageData](../QtQuick.CanvasImageData.md) object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method) method first. This image been drawing is subject to the current context clip path, even the given `image` is a [CanvasImageData](../QtQuick.CanvasImageData.md) object.
-
-**See also** [CanvasImageData](../QtQuick.CanvasImageData.md), [Image](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image), [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method), [Canvas::isImageLoaded](../QtQuick.Canvas.md#isImageLoaded-method), [Canvas::imageLoaded](../QtQuick.Canvas.md#imageLoaded-signal), and [W3C 2d context standard for drawImage](http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="drawImage-method-2"></span><span class="name">drawImage</span>(<span class="type">variant</span> <em>image</em>, <span class="type">real</span> <em>dx</em>, <span class="type">real</span> <em>dy</em>, <span class="type">real</span> <em>dw</em>, <span class="type">real</span> <em>dh</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-This is an overloaded function. Draws the given item as *image* onto the canvas at point (*dx*, *dy*) and with width *dw*, height *dh*.
-
-Note: The *image* type can be an Image item, an image url or a [CanvasImageData](../QtQuick.CanvasImageData.md) object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method) method first. This image been drawing is subject to the current context clip path, even the given `image` is a [CanvasImageData](../QtQuick.CanvasImageData.md) object.
-
-**See also** [CanvasImageData](../QtQuick.CanvasImageData.md), [Image](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image), [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method), [Canvas::isImageLoaded](../QtQuick.Canvas.md#isImageLoaded-method), [Canvas::imageLoaded](../QtQuick.Canvas.md#imageLoaded-signal), and [W3C 2d context standard for drawImage](http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="drawImage-method"></span><span class="name">drawImage</span>(<span class="type">variant</span> <em>image</em>, <span class="type">real</span> <em>dx</em>, <span class="type">real</span> <em>dy</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Draws the given *image* on the canvas at position (*dx*, *dy*). Note: The *image* type can be an Image item, an image url or a [CanvasImageData](../QtQuick.CanvasImageData.md) object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's [Canvas::loadImage()](../QtQuick.Canvas.md#loadImage-method) method first. This image been drawing is subject to the current context clip path, even the given `image` is a [CanvasImageData](../QtQuick.CanvasImageData.md) object.
-
-**See also** [CanvasImageData](../QtQuick.CanvasImageData.md), [Image](https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image), [Canvas::loadImage](../QtQuick.Canvas.md#loadImage-method), [Canvas::isImageLoaded](../QtQuick.Canvas.md#isImageLoaded-method), [Canvas::imageLoaded](../QtQuick.Canvas.md#imageLoaded-signal), and [W3C 2d context standard for drawImage](http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="ellipse-method"></span><span class="type">object</span> <span class="name">ellipse</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates an ellipse within the bounding rectangle defined by its top-left corner at (*x*, y), width *w* and height *h*, and adds it to the path as a closed subpath.
-
-The ellipse is composed of a clockwise curve, starting and finishing at zero degrees (the 3 o'clock position).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fill-method"></span><span class="type">object</span> <span class="name">fill</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Fills the subpaths with the current fill style.
-
-**See also** [W3C 2d context standard for fill](http://www.w3.org/TR/2dcontext/#dom-context-2d-fill) and [fillStyle](#fillStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fillRect-method"></span><span class="type">object</span> <span class="name">fillRect</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Paint the specified rectangular area using the [fillStyle](#fillStyle-prop).
-
-**See also** [fillStyle](#fillStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="fillText-method"></span><span class="type">object</span> <span class="name">fillText</span>(<span class="type"><a href="#text-method">text</a></span>, <span class="type">x</span>, <span class="type">y</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Fills the given text at the given position.
-
-**See also** [font](#font-prop), [textAlign](#textAlign-prop), [textBaseline](#textBaseline-prop), and [strokeText](#strokeText-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="getImageData-method"></span><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">getImageData</span>(<span class="type">real</span> <em>sx</em>, <span class="type">real</span> <em>sy</em>, <span class="type">real</span> <em>sw</em>, <span class="type">real</span> <em>sh</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns an [CanvasImageData](../QtQuick.CanvasImageData.md) object containing the image data for the given rectangle of the canvas.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="isPointInPath-method"></span><span class="type">object</span> <span class="name">isPointInPath</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns true if the given point is in the current path.
-
-**See also** [W3C 2d context standard for isPointInPath](http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="lineTo-method"></span><span class="type">object</span> <span class="name">lineTo</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Draws a line from the current position to the point (x, y).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="measureText-method"></span><span class="type">object</span> <span class="name">measureText</span>(<span class="type"><a href="#text-method">text</a></span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Returns an object with a `width` property, whose value is equivalent to calling QFontMetrics::width() with the given *text* in the current font.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="moveTo-method"></span><span class="type">object</span> <span class="name">moveTo</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Creates a new subpath with the given point.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="putImageData-method"></span><span class="type">object</span> <span class="name">putImageData</span>(<span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <em>imageData</em>, <span class="type">real</span> <em>dx</em>, <span class="type">real</span> <em>dy</em>, <span class="type">real</span> <em>dirtyX</em>, <span class="type">real</span> <em>dirtyY</em>, <span class="type">real</span> <em>dirtyWidth</em>, <span class="type">real</span> <em>dirtyHeight</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Paints the data from the given ImageData object onto the canvas. If a dirty rectangle (*dirtyX*, *dirtyY*, *dirtyWidth*, *dirtyHeight*) is provided, only the pixels from that rectangle are painted.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="quadraticCurveTo-method"></span><span class="type">object</span> <span class="name">quadraticCurveTo</span>(<span class="type">real</span> <em>cpx</em>, <span class="type">real</span> <em>cpy</em>, <span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds a quadratic bezier curve between the current point and the endpoint (`x`, `y`) with the control point specified by (`cpx`, `cpy`).
-
-See [W3C 2d context standard for quadraticCurveTo](http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto)
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="rect-method"></span><span class="type">object</span> <span class="name">rect</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds a rectangle at position (`x`, `y`), with the given width `w` and height `h`, as a closed subpath.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="reset-method"></span><span class="type">object</span> <span class="name">reset</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Resets the context state and properties to the default values.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="resetTransform-method"></span><span class="type">object</span> <span class="name">resetTransform</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Reset the transformation matrix to the default value (equivalent to calling [setTransform](#setTransform-method)(`1`, `0`, `0`, `1`, `0`, `0`)).
-
-**See also** [transform()](#transform-method), [setTransform()](#setTransform-method), and [reset()](#reset-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="restore-method"></span><span class="type">object</span> <span class="name">restore</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Pops the top state on the stack, restoring the context to that state.
-
-**See also** [save()](#save-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="rotate-method"></span><span class="type">object</span> <span class="name">rotate</span>(<span class="type">real</span> <em>angle</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Rotate the canvas around the current origin by *angle* in radians and clockwise direction.
-
-``` cpp
-ctx.rotate(Math.PI/2);
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/a3b540fe-ecd9-42d5-bfbe-ca86ec057de5-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-rotate.png)
-
-The rotation transformation matrix is as follows:
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/414e0372-092d-454e-815d-b40fc3b74d5f-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-math-rotate.png)
-
-where the *angle* of rotation is in radians.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="roundedRect-method"></span><span class="type">object</span> <span class="name">roundedRect</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>, <span class="type">real</span> <em>xRadius</em>, <span class="type">real</span> <em>yRadius</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds the given rectangle rect with rounded corners to the path. The `xRadius` and `yRadius` arguments specify the radius of the ellipses defining the corners of the rounded rectangle.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="save-method"></span><span class="type">object</span> <span class="name">save</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Pushes the current state onto the state stack.
-
-Before changing any state attributes, you should save the current state for future reference. The context maintains a stack of drawing states. Each state consists of the current transformation matrix, clipping region, and values of the following attributes:
-
--   [strokeStyle](#strokeStyle-prop)
--   [fillStyle](#fillStyle-prop)
--   [fillRule](#fillRule-prop)
--   [globalAlpha](#globalAlpha-prop)
--   [lineWidth](#lineWidth-prop)
--   [lineCap](#lineCap-prop)
--   [lineJoin](#lineJoin-prop)
--   [miterLimit](#miterLimit-prop)
--   [shadowOffsetX](#shadowOffsetX-prop)
--   [shadowOffsetY](#shadowOffsetY-prop)
--   [shadowBlur](#shadowBlur-prop)
--   [shadowColor](#shadowColor-prop)
--   [globalCompositeOperation](#globalCompositeOperation-prop)
--   [font](#font-prop)
--   [textAlign](#textAlign-prop)
--   [textBaseline](#textBaseline-prop)
-
-The current path is NOT part of the drawing state. The path can be reset by invoking the [beginPath()](#beginPath-method) method.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="scale-method"></span><span class="type">object</span> <span class="name">scale</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Increases or decreases the size of each unit in the canvas grid by multiplying the scale factors to the current tranform matrix. *x* is the scale factor in the horizontal direction and *y* is the scale factor in the vertical direction.
-
-The following code doubles the horizontal size of an object drawn on the canvas and halves its vertical size:
-
-``` cpp
-ctx.scale(2.0, 0.5);
-```
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/95378f68-e4c4-4eca-bbfa-5aff16ac9f08-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-scale.png)
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="setTransform-method"></span><span class="type">object</span> <span class="name">setTransform</span>(<span class="type">real</span> <em>a</em>, <span class="type">real</span> <em>b</em>, <span class="type">real</span> <em>c</em>, <span class="type">real</span> <em>d</em>, <span class="type">real</span> <em>e</em>, <span class="type">real</span> <em>f</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Changes the transformation matrix to the matrix given by the arguments as described below.
-
-Modifying the transformation matrix directly enables you to perform scaling, rotating, and translating transformations in a single step.
-
-Each point on the canvas is multiplied by the matrix before anything is drawn. The [HTML Canvas 2D Context specification](http://www.w3.org/TR/2dcontext/#transformations) defines the transformation matrix as:
-
-![](https://developer.ubuntu.com/static/devportal_uploaded/221aebe2-25d2-4cf0-bd4b-c2abd4d1d69b-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-math.png)
-
-where:
-
--   `a` is the scale factor in the horizontal (x) direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/4ef4f937-e2ed-4743-8cd1-dfffdb5a8a4c-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-scalex.png)
-
--   `c` is the skew factor in the x direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/76c1f570-f303-43d7-a1b9-8594abd2d1ec-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-skewx.png)
-
--   `e` is the translation in the x direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/1527d9e1-b0ef-43c0-8a9c-1bd3a1a3d030-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-translate.png)
-
--   `b` is the skew factor in the y (vertical) direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/ae4ff57d-4a49-444b-a887-795bfc5fb284-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-skewy.png)
-
--   `d` is the scale factor in the y direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/fe1f9a22-186a-4a31-a130-ee31327fd7f7-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-scaley.png)
-
--   `f` is the translation in the y direction
-
-    ![](https://developer.ubuntu.com/static/devportal_uploaded/0d20688a-f035-4e34-8c98-c2305ba5765f-api/apps/qml/sdk-15.04.6/QtQuick.Context2D/images/qml-item-canvas-translatey.png)
-
--   the last row remains constant
-
-The scale factors and skew factors are multiples; `e` and `f` are coordinate space units, just like the units in the translate(x,y) method.
-
-**See also** [transform()](#transform-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="shear-method"></span><span class="type">object</span> <span class="name">shear</span>(<span class="type">real</span> <em>sh</em>, <span class="type">real</span> <em>sv</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Shears the transformation matrix by *sh* in the horizontal direction and *sv* in the vertical direction.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="stroke-method"></span><span class="type">object</span> <span class="name">stroke</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-Strokes the subpaths with the current stroke style.
-
-See [W3C 2d context standard for stroke](http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke)
-
-**See also** [strokeStyle](#strokeStyle-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="strokeRect-method"></span><span class="type">object</span> <span class="name">strokeRect</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>, <span class="type">real</span> <em>w</em>, <span class="type">real</span> <em>h</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Stroke the specified rectangle's path using the [strokeStyle](#strokeStyle-prop), [lineWidth](#lineWidth-prop), [lineJoin](#lineJoin-prop), and (if appropriate) [miterLimit](#miterLimit-prop) attributes.
-
-**See also** [strokeStyle](#strokeStyle-prop), [lineWidth](#lineWidth-prop), [lineJoin](#lineJoin-prop), and [miterLimit](#miterLimit-prop).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="strokeText-method"></span><span class="type">object</span> <span class="name">strokeText</span>(<span class="type"><a href="#text-method">text</a></span>, <span class="type">x</span>, <span class="type">y</span>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Strokes the given text at the given position.
-
-**See also** [font](#font-prop), [textAlign](#textAlign-prop), [textBaseline](#textBaseline-prop), and [fillText](#fillText-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="text-method"></span><span class="type">object</span> <span class="name">text</span>(<span class="type">string</span> <em>text</em>, <span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Adds the given `text` to the path as a set of closed subpaths created from the current context font supplied. The subpaths are positioned so that the left end of the text's baseline lies at the point specified by (`x`, `y`).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="transform-method"></span><span class="type">object</span> <span class="name">transform</span>(<span class="type">real</span> <em>a</em>, <span class="type">real</span> <em>b</em>, <span class="type">real</span> <em>c</em>, <span class="type">real</span> <em>d</em>, <span class="type">real</span> <em>e</em>, <span class="type">real</span> <em>f</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-This method is very similar to [setTransform()](#setTransform-method), but instead of replacing the old transform matrix, this method applies the given tranform matrix to the current matrix by multiplying to it.
-
-The [setTransform](#setTransform-method)(a, b, c, d, e, f) method actually resets the current transform to the identity matrix, and then invokes the transform(a, b, c, d, e, f) method with the same arguments.
-
-**See also** [setTransform()](#setTransform-method).
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="translate-method"></span><span class="type">object</span> <span class="name">translate</span>(<span class="type">real</span> <em>x</em>, <span class="type">real</span> <em>y</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-Translates the origin of the canvas by a horizontal distance of *x*, and a vertical distance of *y*, in coordinate space units.
-
-Translating the origin enables you to draw patterns of different objects on the canvas without having to measure the coordinates manually for each shape.
-
+}</pre>
+<p>The <a href="index.html">Context2D</a> API implements the same <a href="http://www.w3.org/TR/2dcontext">W3C Canvas 2D Context API standard</a> with some enhanced features.</p>
+<p>The <a href="index.html">Context2D</a> API provides the rendering <b>context</b> which defines the methods and attributes needed to draw on the <code>Canvas</code> item. The following assigns the canvas rendering context to a <code>context</code> variable:</p>
+<pre class="cpp">var context <span class="operator">=</span> mycanvas<span class="operator">.</span>getContext(<span class="string">&quot;2d&quot;</span>)</pre>
+<p>The <a href="index.html">Context2D</a> API renders the canvas as a coordinate system whose origin (0,0) is at the top left corner, as shown in the figure below. Coordinates increase along the <code>x</code> axis from left to right and along the <code>y</code> axis from top to bottom of the canvas.</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6efb18d5-44b3-4efa-98b3-ee73e770aa59-../QtQuick.Context2D/images/qml-item-canvas-context.gif" alt="" /></p><!-- @@@Context2D -->
+<h2>Property Documentation</h2>
+<!-- $$$canvas -->
+<table class="qmlname"><tr valign="top" id="canvas-prop"><td class="tblQmlPropNode"><p><span class="name">canvas</span> : <span class="type"><a href="QtQuick.Canvas.md">QtQuick::Canvas</a></span></p></td></tr></table><p>Holds the canvas item that the context paints on.</p>
+<p>This property is read only.</p>
+<!-- @@@canvas -->
+<br/>
+<!-- $$$fillRule -->
+<table class="qmlname"><tr valign="top" id="fillRule-prop"><td class="tblQmlPropNode"><p><span class="name">fillRule</span> : <span class="type">enumeration</span></p></td></tr></table><p>Holds the current fill rule used for filling shapes. The following fill rules supported:</p>
+<ul>
+<li>Qt.OddEvenFill</li>
+<li>Qt.WindingFill</li>
+</ul>
+<p>Note: Unlike the QPainterPath, the Canvas API uses the winding fill as the default fill rule. The fillRule property is part of the context rendering state.</p>
+<p><b>See also </b><a href="#fillStyle-prop">fillStyle</a>.</p>
+<!-- @@@fillRule -->
+<br/>
+<!-- $$$fillStyle -->
+<table class="qmlname"><tr valign="top" id="fillStyle-prop"><td class="tblQmlPropNode"><p><span class="name">fillStyle</span> : <span class="type">variant</span></p></td></tr></table><p>Holds the current style used for filling shapes. The style can be either a string containing a CSS color, a <a href="QtQuick.CanvasGradient.md">CanvasGradient</a> or CanvasPattern object. Invalid values are ignored. This property accepts several color syntaxes:</p>
+<ul>
+<li>'rgb(red, green, blue)' - for example: 'rgb(255, 100, 55)' or 'rgb(100%, 70%, 30%)'</li>
+<li>'rgba(red, green, blue, alpha)' - for example: 'rgb(255, 100, 55, 1.0)' or 'rgb(100%, 70%, 30%, 0.5)'</li>
+<li>'hsl(hue, saturation, lightness)'</li>
+<li>'hsla(hue, saturation, lightness, alpha)'</li>
+<li>'#RRGGBB' - for example: '#00FFCC'</li>
+<li>Qt.rgba(red, green, blue, alpha) - for example: Qt.rgba(0.3, 0.7, 1, 1.0)</li>
+</ul>
+<p>If the <code>fillStyle</code> or <a href="#strokeStyle-prop">strokeStyle</a> is assigned many times in a loop, the last Qt.rgba() syntax should be chosen, as it has the best performance, because it's already a valid QColor value, does not need to be parsed everytime.</p>
+<p>The default value is '#000000'.</p>
+<p><b>See also </b><a href="#createLinearGradient-method">createLinearGradient()</a>, <a href="#createRadialGradient-method">createRadialGradient()</a>, <a href="#createPattern-method">createPattern()</a>, and <a href="#strokeStyle-prop">strokeStyle</a>.</p>
+<!-- @@@fillStyle -->
+<br/>
+<!-- $$$font -->
+<table class="qmlname"><tr valign="top" id="font-prop"><td class="tblQmlPropNode"><p><span class="name">font</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current font settings.</p>
+<p>A subset of the <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">w3C 2d context standard for font</a> is supported:</p>
+<ul>
+<li>font-style (optional): normal | italic | oblique</li>
+<li>font-variant (optional): normal | small-caps</li>
+<li>font-weight (optional): normal | bold | 0 ..&#x2e; 99</li>
+<li>font-size: Npx | Npt (where N is a positive number)</li>
+<li>font-family: See <a href="http://www.w3.org/TR/CSS2/fonts.html#propdef-font-family">http://www.w3.org/TR/CSS2/fonts.html#propdef-font-family</a></li>
+</ul>
+<p><b>Note: </b>The font-size and font-family properties are mandatory and must be in the order they are shown in above. In addition, a font family with spaces in its name must be quoted.</p><p>The default font value is &quot;10px sans-serif&quot;.</p>
+<!-- @@@font -->
+<br/>
+<!-- $$$globalAlpha -->
+<table class="qmlname"><tr valign="top" id="globalAlpha-prop"><td class="tblQmlPropNode"><p><span class="name">globalAlpha</span> : <span class="type">real</span></p></td></tr></table><p>Holds the current alpha value applied to rendering operations. The value must be in the range from <code>0.0</code> (fully transparent) to <code>1.0</code> (fully opaque). The default value is <code>1.0</code>.</p>
+<!-- @@@globalAlpha -->
+<br/>
+<!-- $$$globalCompositeOperation -->
+<table class="qmlname"><tr valign="top" id="globalCompositeOperation-prop"><td class="tblQmlPropNode"><p><span class="name">globalCompositeOperation</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current the current composition operation, from the list below:</p>
+<ul>
+<li>source-atop - A atop B. Display the source image wherever both images are opaque. Display the destination image wherever the destination image is opaque but the source image is transparent. Display transparency elsewhere.</li>
+<li>source-in - A in B. Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.</li>
+<li>source-out - A out B. Display the source image wherever the source image is opaque and the destination image is transparent. Display transparency elsewhere.</li>
+<li>source-over - (default) A over B. Display the source image wherever the source image is opaque. Display the destination image elsewhere.</li>
+<li>destination-atop - B atop A. Same as source-atop but using the destination image instead of the source image and vice versa.</li>
+<li>destination-in - B in A. Same as source-in but using the destination image instead of the source image and vice versa.</li>
+<li>destination-out - B out A. Same as source-out but using the destination image instead of the source image and vice versa.</li>
+<li>destination-over - B over A. Same as source-over but using the destination image instead of the source image and vice versa.</li>
+<li>lighter - A plus B. Display the sum of the source image and destination image, with color values approaching 255 (100%) as a limit.</li>
+<li>copy - A (B is ignored). Display the source image instead of the destination image.</li>
+<li>xor - A xor B. Exclusive OR of the source image and destination image.</li>
+</ul>
+<p>Additionally, this property also accepts the compositon modes listed in QPainter::CompositionMode. According to the W3C standard, these extension composition modes are provided as &quot;vendorName-operationName&quot; syntax, for example: QPainter::CompositionMode_Exclusion is provided as &quot;qt-exclusion&quot;.</p>
+<!-- @@@globalCompositeOperation -->
+<br/>
+<!-- $$$lineCap -->
+<table class="qmlname"><tr valign="top" id="lineCap-prop"><td class="tblQmlPropNode"><p><span class="name">lineCap</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current line cap style. The possible line cap styles are:</p>
+<ul>
+<li>butt - the end of each line has a flat edge perpendicular to the direction of the line, this is the default line cap value.</li>
+<li>round - a semi-circle with the diameter equal to the width of the line must then be added on to the end of the line.</li>
+<li>square - a rectangle with the length of the line width and the width of half the line width, placed flat against the edge perpendicular to the direction of the line.</li>
+</ul>
+<p>Other values are ignored.</p>
+<!-- @@@lineCap -->
+<br/>
+<!-- $$$lineJoin -->
+<table class="qmlname"><tr valign="top" id="lineJoin-prop"><td class="tblQmlPropNode"><p><span class="name">lineJoin</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current line join style. A join exists at any point in a subpath shared by two consecutive lines. When a subpath is closed, then a join also exists at its first point (equivalent to its last point) connecting the first and last lines in the subpath.</p>
+<p>The possible line join styles are:</p>
+<ul>
+<li>bevel - this is all that is rendered at joins.</li>
+<li>round - a filled arc connecting the two aforementioned corners of the join, abutting (and not overlapping) the aforementioned triangle, with the diameter equal to the line width and the origin at the point of the join, must be rendered at joins.</li>
+<li>miter - a second filled triangle must (if it can given the miter length) be rendered at the join, this is the default line join style.</li>
+</ul>
+<p>Other values are ignored.</p>
+<!-- @@@lineJoin -->
+<br/>
+<!-- $$$lineWidth -->
+<table class="qmlname"><tr valign="top" id="lineWidth-prop"><td class="tblQmlPropNode"><p><span class="name">lineWidth</span> : <span class="type">real</span></p></td></tr></table><p>Holds the current line width. Values that are not finite values greater than zero are ignored.</p>
+<!-- @@@lineWidth -->
+<br/>
+<!-- $$$miterLimit -->
+<table class="qmlname"><tr valign="top" id="miterLimit-prop"><td class="tblQmlPropNode"><p><span class="name">miterLimit</span> : <span class="type">real</span></p></td></tr></table><p>Holds the current miter limit ratio. The default miter limit value is 10.0&#x2e;</p>
+<!-- @@@miterLimit -->
+<br/>
+<!-- $$$shadowBlur -->
+<table class="qmlname"><tr valign="top" id="shadowBlur-prop"><td class="tblQmlPropNode"><p><span class="name">shadowBlur</span> : <span class="type">real</span></p></td></tr></table><p>Holds the current level of blur applied to shadows</p>
+<!-- @@@shadowBlur -->
+<br/>
+<!-- $$$shadowColor -->
+<table class="qmlname"><tr valign="top" id="shadowColor-prop"><td class="tblQmlPropNode"><p><span class="name">shadowColor</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current shadow color.</p>
+<!-- @@@shadowColor -->
+<br/>
+<!-- $$$shadowOffsetX -->
+<table class="qmlname"><tr valign="top" id="shadowOffsetX-prop"><td class="tblQmlPropNode"><p><span class="name">shadowOffsetX</span> : <span class="type">qreal</span></p></td></tr></table><p>Holds the current shadow offset in the positive horizontal distance.</p>
+<p><b>See also </b><a href="#shadowOffsetY-prop">shadowOffsetY</a>.</p>
+<!-- @@@shadowOffsetX -->
+<br/>
+<!-- $$$shadowOffsetY -->
+<table class="qmlname"><tr valign="top" id="shadowOffsetY-prop"><td class="tblQmlPropNode"><p><span class="name">shadowOffsetY</span> : <span class="type">qreal</span></p></td></tr></table><p>Holds the current shadow offset in the positive vertical distance.</p>
+<p><b>See also </b><a href="#shadowOffsetX-prop">shadowOffsetX</a>.</p>
+<!-- @@@shadowOffsetY -->
+<br/>
+<!-- $$$strokeStyle -->
+<table class="qmlname"><tr valign="top" id="strokeStyle-prop"><td class="tblQmlPropNode"><p><span class="name">strokeStyle</span> : <span class="type">variant</span></p></td></tr></table><p>Holds the current color or style to use for the lines around shapes, The style can be either a string containing a CSS color, a <a href="QtQuick.CanvasGradient.md">CanvasGradient</a> or CanvasPattern object. Invalid values are ignored.</p>
+<p>The default value is '#000000'.</p>
+<p><b>See also </b><a href="#createLinearGradient-method">createLinearGradient()</a>, <a href="#createRadialGradient-method">createRadialGradient()</a>, <a href="#createPattern-method">createPattern()</a>, and <a href="#fillStyle-prop">fillStyle</a>.</p>
+<!-- @@@strokeStyle -->
+<br/>
+<!-- $$$textAlign -->
+<table class="qmlname"><tr valign="top" id="textAlign-prop"><td class="tblQmlPropNode"><p><span class="name">textAlign</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current text alignment settings. The possible values are:</p>
+<ul>
+<li>start</li>
+<li>end</li>
+<li>left</li>
+<li>right</li>
+<li>center</li>
+</ul>
+<p>Other values are ignored. The default value is &quot;start&quot;.</p>
+<!-- @@@textAlign -->
+<br/>
+<!-- $$$textBaseline -->
+<table class="qmlname"><tr valign="top" id="textBaseline-prop"><td class="tblQmlPropNode"><p><span class="name">textBaseline</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current baseline alignment settings. The possible values are:</p>
+<ul>
+<li>top</li>
+<li>hanging</li>
+<li>middle</li>
+<li>alphabetic</li>
+<li>ideographic</li>
+<li>bottom</li>
+</ul>
+<p>Other values are ignored. The default value is &quot;alphabetic&quot;.</p>
+<!-- @@@textBaseline -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$arc -->
+<table class="qmlname"><tr valign="top" id="arc-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">arc</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> radius</i>, <span class="type">real</span><i> startAngle</i>, <span class="type">real</span><i> endAngle</i>, <span class="type">bool</span><i> anticlockwise</i>)</p></td></tr></table><p>Adds an arc to the current subpath that lies on the circumference of the circle whose center is at the point (<i>x</i>, <i>y</i>) and whose radius is <i>radius</i>.</p>
+<p>Both <code>startAngle</code> and <code>endAngle</code> are measured from the x-axis in radians.</p>
+<p class="centerAlign"><font color="red">[Missing image qml-item-canvas-arc.png]</font></p><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f79f7795-3171-4896-b404-0a2cd1bb5391-../QtQuick.Context2D/images/qml-item-canvas-startAngle.png" alt="" /></p><p>The <i>anticlockwise</i> parameter is <code>true</code> for each arc in the figure above because they are all drawn in the anticlockwise direction.</p>
+<p><b>See also </b><a href="#arcTo-method">arcTo</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arc">W3C's 2D Context Standard for arc()</a>.</p>
+<!-- @@@arc -->
+<br/>
+<!-- $$$arcTo -->
+<table class="qmlname"><tr valign="top" id="arcTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">arcTo</span>(<span class="type">real</span><i> x1</i>, <span class="type">real</span><i> y1</i>, <span class="type">real</span><i> x2</i>, <span class="type">real</span><i> y2</i>, <span class="type">real</span><i> radius</i>)</p></td></tr></table><p>Adds an arc with the given control points and radius to the current subpath, connected to the previous point by a straight line. To draw an arc, you begin with the same steps you followed to create a line:</p>
+<ul>
+<li>Call the <a href="#beginPath-method">beginPath()</a> method to set a new path.</li>
+<li>Call the <a href="#moveTo-method">moveTo</a>(<code>x</code>, <code>y</code>) method to set your starting position on the canvas at the point (<code>x</code>, <code>y</code>).</li>
+<li>To draw an arc or circle, call the arcTo(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>radius</i>) method. This adds an arc with starting point (<i>x1</i>, <i>y1</i>), ending point (<i>x2</i>, <i>y2</i>), and <i>radius</i> to the current subpath and connects it to the previous subpath by a straight line.</li>
+</ul>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a01abd24-99a1-4213-a6d0-2058e44d4dca-../QtQuick.Context2D/images/qml-item-canvas-arcTo.png" alt="" /></p><p><b>See also </b><a href="#arc-method">arc</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto">W3C's 2D Context Standard for arcTo()</a>.</p>
+<!-- @@@arcTo -->
+<br/>
+<!-- $$$beginPath -->
+<table class="qmlname"><tr valign="top" id="beginPath-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">beginPath</span>()</p></td></tr></table><p>Resets the current path to a new path.</p>
+<!-- @@@beginPath -->
+<br/>
+<!-- $$$bezierCurveTo -->
+<table class="qmlname"><tr valign="top" id="bezierCurveTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">bezierCurveTo</span>(<span class="type">real</span><i> cp1x</i>, <span class="type">real</span><i> cp1y</i>, <span class="type">real</span><i> cp2x</i>, <span class="type">real</span><i> cp2y</i>, <span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Adds a cubic bezier curve between the current position and the given endPoint using the control points specified by (<code>cp1x</code>, cp1y), and (<code>cp2x</code>, <code>cp2y</code>). After the curve is added, the current position is updated to be at the end point (<code>x</code>, <code>y</code>) of the curve. The following code produces the path shown below:</p>
+<pre class="cpp">ctx<span class="operator">.</span>strokeStyle <span class="operator">=</span> <span class="type">Qt</span><span class="operator">.</span>rgba(<span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span>);
+ctx<span class="operator">.</span>lineWidth <span class="operator">=</span> <span class="number">1</span>;
+ctx<span class="operator">.</span><a href="#beginPath-method">beginPath</a>();
+ctx<span class="operator">.</span><a href="#moveTo-method">moveTo</a>(<span class="number">20</span><span class="operator">,</span> <span class="number">0</span>);<span class="comment">//start point</span>
+ctx<span class="operator">.</span>bezierCurveTo(<span class="operator">-</span><span class="number">10</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">210</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">180</span><span class="operator">,</span> <span class="number">0</span>);
+ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ea8adca7-d21e-4783-ba50-663e95514c60-../QtQuick.Context2D/images/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
+<!-- @@@bezierCurveTo -->
+<br/>
+<!-- $$$clearRect -->
+<table class="qmlname"><tr valign="top" id="clearRect-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">clearRect</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>)</p></td></tr></table><p>Clears all pixels on the canvas in the given rectangle to transparent black.</p>
+<!-- @@@clearRect -->
+<br/>
+<!-- $$$clip -->
+<table class="qmlname"><tr valign="top" id="clip-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">clip</span>()</p></td></tr></table><p>Creates the clipping region from the current path. Any parts of the shape outside the clipping path are not displayed. To create a complex shape using the <code>clip()</code> method:</p>
+<ol class="1">
+<li>Call the <code>context.beginPath()</code> method to set the clipping path.</li>
+<li>Define the clipping path by calling any combination of the <code>lineTo</code>, <code>arcTo</code>, <code>arc</code>, <code>moveTo</code>, etc and <code>closePath</code> methods.</li>
+<li>Call the <code>context.clip()</code> method.</li>
+</ol>
+<p>The new shape displays. The following shows how a clipping path can modify how an image displays:</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3e52baa6-04aa-48ea-94dd-86fc16e98e42-../QtQuick.Context2D/images/qml-item-canvas-clip-complex.png" alt="" /></p><p><b>See also </b><a href="#beginPath-method">beginPath()</a>, <a href="#closePath-method">closePath()</a>, <a href="#stroke-method">stroke()</a>, <a href="#fill-method">fill()</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip">W3C 2d context standard for clip</a>.</p>
+<!-- @@@clip -->
+<br/>
+<!-- $$$closePath -->
+<table class="qmlname"><tr valign="top" id="closePath-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">closePath</span>()</p></td></tr></table><p>Closes the current subpath by drawing a line to the beginning of the subpath, automatically starting a new path. The current point of the new path is the previous subpath's first point.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath">W3C 2d context standard for closePath</a>.</p>
+<!-- @@@closePath -->
+<br/>
+<!-- $$$createConicalGradient -->
+<table class="qmlname"><tr valign="top" id="createConicalGradient-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">createConicalGradient</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> angle</i>)</p></td></tr></table><p>Returns a <a href="QtQuick.CanvasGradient.md">CanvasGradient</a> object that represents a conical gradient that interpolate colors counter-clockwise around a center point (<code>x</code>, <code>y</code>) with start angle <code>angle</code> in units of radians.</p>
+<p><b>See also </b><a href="QtQuick.CanvasGradient.md#addColorStop-method">CanvasGradient::addColorStop()</a>, <a href="#createLinearGradient-method">createLinearGradient()</a>, <a href="#createRadialGradient-method">createRadialGradient()</a>, <a href="#createPattern-method">createPattern()</a>, <a href="#fillStyle-prop">fillStyle</a>, and <a href="#strokeStyle-prop">strokeStyle</a>.</p>
+<!-- @@@createConicalGradient -->
+<br/>
+<!-- $$$createImageData -->
+<table class="qmlname"><tr valign="top" id="createImageData-method-3"><td class="tblQmlFuncNode"><p><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type">Url</span><i> imageUrl</i>)</p></td></tr></table><p>Creates a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object with the given image loaded from <i>imageUrl</i>.</p>
+<p><b>Note: </b>The <i>imageUrl</i> must be already loaded before this function call, otherwise an empty <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> obect will be returned.</p><p><b>See also </b><a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#unloadImage-method">QtQuick::Canvas::unloadImage()</a>, and <a href="QtQuick.Canvas.md#isImageLoaded-method">QtQuick::Canvas::isImageLoaded</a>.</p>
+<!-- @@@createImageData -->
+<br/>
+<!-- $$$createImageData -->
+<table class="qmlname"><tr valign="top" id="createImageData-method-2"><td class="tblQmlFuncNode"><p><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span><i> imageData</i>)</p></td></tr></table><p>Creates a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object with the same dimensions as the argument.</p>
+<!-- @@@createImageData -->
+<br/>
+<!-- $$$createImageData -->
+<table class="qmlname"><tr valign="top" id="createImageData-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">createImageData</span>(<span class="type">real</span><i> sw</i>, <span class="type">real</span><i> sh</i>)</p></td></tr></table><p>Creates a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object with the given dimensions(<i>sw</i>, <i>sh</i>).</p>
+<!-- @@@createImageData -->
+<br/>
+<!-- $$$createLinearGradient -->
+<table class="qmlname"><tr valign="top" id="createLinearGradient-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">createLinearGradient</span>(<span class="type">real</span><i> x0</i>, <span class="type">real</span><i> y0</i>, <span class="type">real</span><i> x1</i>, <span class="type">real</span><i> y1</i>)</p></td></tr></table><p>Returns a <a href="QtQuick.CanvasGradient.md">CanvasGradient</a> object that represents a linear gradient that transitions the color along a line between the start point (<i>x0</i>, <i>y0</i>) and the end point (<i>x1</i>, <i>y1</i>).</p>
+<p>A gradient is a smooth transition between colors. There are two types of gradients: linear and radial. Gradients must have two or more color stops, representing color shifts positioned from 0 to 1 between to the gradient's starting and end points or circles.</p>
+<p><b>See also </b><a href="QtQuick.CanvasGradient.md#addColorStop-method">CanvasGradient::addColorStop()</a>, <a href="#createRadialGradient-method">createRadialGradient()</a>, <a href="#createConicalGradient-method">createConicalGradient()</a>, <a href="#createPattern-method">createPattern()</a>, <a href="#fillStyle-prop">fillStyle</a>, and <a href="#strokeStyle-prop">strokeStyle</a>.</p>
+<!-- @@@createLinearGradient -->
+<br/>
+<!-- $$$createPattern -->
+<table class="qmlname"><tr valign="top" id="createPattern-method-2"><td class="tblQmlFuncNode"><p><span class="type">variant</span> <span class="name">createPattern</span>(<span class="type"><a href="QtQuick.Image.md">Image</a></span><i> image</i>, <span class="type">string</span><i> repetition</i>)</p></td></tr></table><p>Returns a CanvasPattern object that uses the given image and repeats in the direction(s) given by the repetition argument.</p>
+<p>The <i>image</i> parameter must be a valid Image item, a valid <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object or loaded image url, if there is no image data, throws an INVALID_STATE_ERR exception.</p>
+<p>The allowed values for <i>repetition</i> are:</p>
+<ul>
+<li>&quot;repeat&quot; - both directions</li>
+<li>&quot;repeat-x - horizontal only</li>
+<li>&quot;repeat-y&quot; - vertical only</li>
+<li>&quot;no-repeat&quot; - neither</li>
+</ul>
+<p>If the repetition argument is empty or null, the value &quot;repeat&quot; is used.</p>
+<p><b>See also </b><a href="#strokeStyle-prop">strokeStyle</a> and <a href="#fillStyle-prop">fillStyle</a>.</p>
+<!-- @@@createPattern -->
+<br/>
+<!-- $$$createPattern -->
+<table class="qmlname"><tr valign="top" id="createPattern-method"><td class="tblQmlFuncNode"><p><span class="type">variant</span> <span class="name">createPattern</span>(<span class="type">color</span><i> color</i>, <span class="type">enumeration</span><i> patternMode</i>)</p></td></tr></table><p>This is a overload function. Returns a CanvasPattern object that uses the given <i>color</i> and <i>patternMode</i>. The valid pattern modes are:</p>
+<ul>
+<li>Qt.SolidPattern</li>
+<li>Qt.Dense1Pattern</li>
+<li>Qt.Dense2Pattern</li>
+<li>Qt.Dense3Pattern</li>
+<li>Qt.Dense4Pattern</li>
+<li>Qt.Dense5Pattern</li>
+<li>Qt.Dense6Pattern</li>
+<li>Qt.Dense7Pattern</li>
+<li>Qt.HorPattern</li>
+<li>Qt.VerPattern</li>
+<li>Qt.CrossPattern</li>
+<li>Qt.BDiagPattern</li>
+<li>Qt.FDiagPattern</li>
+<li>Qt.DiagCrossPattern</li>
+</ul>
+<p><b>See also </b>Qt::BrushStyle.</p>
+<!-- @@@createPattern -->
+<br/>
+<!-- $$$createRadialGradient -->
+<table class="qmlname"><tr valign="top" id="createRadialGradient-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">createRadialGradient</span>(<span class="type">real</span><i> x0</i>, <span class="type">real</span><i> y0</i>, <span class="type">real</span><i> r0</i>, <span class="type">real</span><i> x1</i>, <span class="type">real</span><i> y1</i>, <span class="type">real</span><i> r1</i>)</p></td></tr></table><p>Returns a <a href="QtQuick.CanvasGradient.md">CanvasGradient</a> object that represents a radial gradient that paints along the cone given by the start circle with origin (x0, y0) and radius r0, and the end circle with origin (x1, y1) and radius r1.</p>
+<p><b>See also </b><a href="QtQuick.CanvasGradient.md#addColorStop-method">CanvasGradient::addColorStop()</a>, <a href="#createLinearGradient-method">createLinearGradient()</a>, <a href="#createConicalGradient-method">createConicalGradient()</a>, <a href="#createPattern-method">createPattern()</a>, <a href="#fillStyle-prop">fillStyle</a>, and <a href="#strokeStyle-prop">strokeStyle</a>.</p>
+<!-- @@@createRadialGradient -->
+<br/>
+<!-- $$$drawImage -->
+<table class="qmlname"><tr valign="top" id="drawImage-method-3"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> sx</i>, <span class="type">real</span><i> sy</i>, <span class="type">real</span><i> sw</i>, <span class="type">real</span><i> sh</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>, <span class="type">real</span><i> dw</i>, <span class="type">real</span><i> dh</i>)</p></td></tr></table><p>This is an overloaded function. Draws the given item as <i>image</i> from source point (<i>sx</i>, <i>sy</i>) and source width <i>sw</i>, source height <i>sh</i> onto the canvas at point (<i>dx</i>, <i>dy</i>) and with width <i>dw</i>, height <i>dh</i>.</p>
+<p>Note: The <i>image</i> type can be an Image or Canvas item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<!-- @@@drawImage -->
+<br/>
+<!-- $$$drawImage -->
+<table class="qmlname"><tr valign="top" id="drawImage-method-2"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>, <span class="type">real</span><i> dw</i>, <span class="type">real</span><i> dh</i>)</p></td></tr></table><p>This is an overloaded function. Draws the given item as <i>image</i> onto the canvas at point (<i>dx</i>, <i>dy</i>) and with width <i>dw</i>, height <i>dh</i>.</p>
+<p>Note: The <i>image</i> type can be an Image item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<!-- @@@drawImage -->
+<br/>
+<!-- $$$drawImage -->
+<table class="qmlname"><tr valign="top" id="drawImage-method"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>)</p></td></tr></table><p>Draws the given <i>image</i> on the canvas at position (<i>dx</i>, <i>dy</i>). Note: The <i>image</i> type can be an Image item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<!-- @@@drawImage -->
+<br/>
+<!-- $$$ellipse -->
+<table class="qmlname"><tr valign="top" id="ellipse-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">ellipse</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>)</p></td></tr></table><p>Creates an ellipse within the bounding rectangle defined by its top-left corner at (<i>x</i>, y), width <i>w</i> and height <i>h</i>, and adds it to the path as a closed subpath.</p>
+<p>The ellipse is composed of a clockwise curve, starting and finishing at zero degrees (the 3 o'clock position).</p>
+<!-- @@@ellipse -->
+<br/>
+<!-- $$$fill -->
+<table class="qmlname"><tr valign="top" id="fill-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">fill</span>()</p></td></tr></table><p>Fills the subpaths with the current fill style.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fill">W3C 2d context standard for fill</a> and <a href="#fillStyle-prop">fillStyle</a>.</p>
+<!-- @@@fill -->
+<br/>
+<!-- $$$fillRect -->
+<table class="qmlname"><tr valign="top" id="fillRect-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">fillRect</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>)</p></td></tr></table><p>Paint the specified rectangular area using the <a href="#fillStyle-prop">fillStyle</a>.</p>
+<p><b>See also </b><a href="#fillStyle-prop">fillStyle</a>.</p>
+<!-- @@@fillRect -->
+<br/>
+<!-- $$$fillText -->
+<table class="qmlname"><tr valign="top" id="fillText-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">fillText</span>(<span class="type"><a href="#text-method">text</a></span>, <span class="type">x</span>, <span class="type">y</span>)</p></td></tr></table><p>Fills the given text at the given position.</p>
+<p><b>See also </b><a href="#font-prop">font</a>, <a href="#textAlign-prop">textAlign</a>, <a href="#textBaseline-prop">textBaseline</a>, and <a href="#strokeText-method">strokeText</a>.</p>
+<!-- @@@fillText -->
+<br/>
+<!-- $$$getImageData -->
+<table class="qmlname"><tr valign="top" id="getImageData-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span> <span class="name">getImageData</span>(<span class="type">real</span><i> sx</i>, <span class="type">real</span><i> sy</i>, <span class="type">real</span><i> sw</i>, <span class="type">real</span><i> sh</i>)</p></td></tr></table><p>Returns an <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object containing the image data for the given rectangle of the canvas.</p>
+<!-- @@@getImageData -->
+<br/>
+<!-- $$$isPointInPath -->
+<table class="qmlname"><tr valign="top" id="isPointInPath-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">isPointInPath</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Returns true if the given point is in the current path.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath">W3C 2d context standard for isPointInPath</a>.</p>
+<!-- @@@isPointInPath -->
+<br/>
+<!-- $$$lineTo -->
+<table class="qmlname"><tr valign="top" id="lineTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">lineTo</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Draws a line from the current position to the point (x, y).</p>
+<!-- @@@lineTo -->
+<br/>
+<!-- $$$measureText -->
+<table class="qmlname"><tr valign="top" id="measureText-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">measureText</span>(<span class="type"><a href="#text-method">text</a></span>)</p></td></tr></table><p>Returns an object with a <code>width</code> property, whose value is equivalent to calling QFontMetrics::width() with the given <i>text</i> in the current font.</p>
+<!-- @@@measureText -->
+<br/>
+<!-- $$$moveTo -->
+<table class="qmlname"><tr valign="top" id="moveTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">moveTo</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Creates a new subpath with the given point.</p>
+<!-- @@@moveTo -->
+<br/>
+<!-- $$$putImageData -->
+<table class="qmlname"><tr valign="top" id="putImageData-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">putImageData</span>(<span class="type"><a href="QtQuick.CanvasImageData.md">CanvasImageData</a></span><i> imageData</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>, <span class="type">real</span><i> dirtyX</i>, <span class="type">real</span><i> dirtyY</i>, <span class="type">real</span><i> dirtyWidth</i>, <span class="type">real</span><i> dirtyHeight</i>)</p></td></tr></table><p>Paints the data from the given ImageData object onto the canvas. If a dirty rectangle (<i>dirtyX</i>, <i>dirtyY</i>, <i>dirtyWidth</i>, <i>dirtyHeight</i>) is provided, only the pixels from that rectangle are painted.</p>
+<!-- @@@putImageData -->
+<br/>
+<!-- $$$quadraticCurveTo -->
+<table class="qmlname"><tr valign="top" id="quadraticCurveTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">quadraticCurveTo</span>(<span class="type">real</span><i> cpx</i>, <span class="type">real</span><i> cpy</i>, <span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Adds a quadratic bezier curve between the current point and the endpoint (<code>x</code>, <code>y</code>) with the control point specified by (<code>cpx</code>, <code>cpy</code>).</p>
+<p>See <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto">W3C 2d context standard for quadraticCurveTo</a></p>
+<!-- @@@quadraticCurveTo -->
+<br/>
+<!-- $$$rect -->
+<table class="qmlname"><tr valign="top" id="rect-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">rect</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>)</p></td></tr></table><p>Adds a rectangle at position (<code>x</code>, <code>y</code>), with the given width <code>w</code> and height <code>h</code>, as a closed subpath.</p>
+<!-- @@@rect -->
+<br/>
+<!-- $$$reset -->
+<table class="qmlname"><tr valign="top" id="reset-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">reset</span>()</p></td></tr></table><p>Resets the context state and properties to the default values.</p>
+<!-- @@@reset -->
+<br/>
+<!-- $$$resetTransform -->
+<table class="qmlname"><tr valign="top" id="resetTransform-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">resetTransform</span>()</p></td></tr></table><p>Reset the transformation matrix to the default value (equivalent to calling <a href="#setTransform-method">setTransform</a>(<code>1</code>, <code>0</code>, <code>0</code>, <code>1</code>, <code>0</code>, <code>0</code>)).</p>
+<p><b>See also </b><a href="#transform-method">transform()</a>, <a href="#setTransform-method">setTransform()</a>, and <a href="#reset-method">reset()</a>.</p>
+<!-- @@@resetTransform -->
+<br/>
+<!-- $$$restore -->
+<table class="qmlname"><tr valign="top" id="restore-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">restore</span>()</p></td></tr></table><p>Pops the top state on the stack, restoring the context to that state.</p>
+<p><b>See also </b><a href="#save-method">save()</a>.</p>
+<!-- @@@restore -->
+<br/>
+<!-- $$$rotate -->
+<table class="qmlname"><tr valign="top" id="rotate-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">rotate</span>(<span class="type">real</span><i> angle</i>)</p></td></tr></table><p>Rotate the canvas around the current origin by <i>angle</i> in radians and clockwise direction.</p>
+<pre class="cpp">ctx<span class="operator">.</span>rotate(Math<span class="operator">.</span>PI<span class="operator">/</span><span class="number">2</span>);</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a3b540fe-ecd9-42d5-bfbe-ca86ec057de5-../QtQuick.Context2D/images/qml-item-canvas-rotate.png" alt="" /></p><p>The rotation transformation matrix is as follows:</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/414e0372-092d-454e-815d-b40fc3b74d5f-../QtQuick.Context2D/images/qml-item-canvas-math-rotate.png" alt="" /></p><p>where the <i>angle</i> of rotation is in radians.</p>
+<!-- @@@rotate -->
+<br/>
+<!-- $$$roundedRect -->
+<table class="qmlname"><tr valign="top" id="roundedRect-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">roundedRect</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>, <span class="type">real</span><i> xRadius</i>, <span class="type">real</span><i> yRadius</i>)</p></td></tr></table><p>Adds the given rectangle rect with rounded corners to the path. The <code>xRadius</code> and <code>yRadius</code> arguments specify the radius of the ellipses defining the corners of the rounded rectangle.</p>
+<!-- @@@roundedRect -->
+<br/>
+<!-- $$$save -->
+<table class="qmlname"><tr valign="top" id="save-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">save</span>()</p></td></tr></table><p>Pushes the current state onto the state stack.</p>
+<p>Before changing any state attributes, you should save the current state for future reference. The context maintains a stack of drawing states. Each state consists of the current transformation matrix, clipping region, and values of the following attributes:</p>
+<ul>
+<li><a href="#strokeStyle-prop">strokeStyle</a></li>
+<li><a href="#fillStyle-prop">fillStyle</a></li>
+<li><a href="#fillRule-prop">fillRule</a></li>
+<li><a href="#globalAlpha-prop">globalAlpha</a></li>
+<li><a href="#lineWidth-prop">lineWidth</a></li>
+<li><a href="#lineCap-prop">lineCap</a></li>
+<li><a href="#lineJoin-prop">lineJoin</a></li>
+<li><a href="#miterLimit-prop">miterLimit</a></li>
+<li><a href="#shadowOffsetX-prop">shadowOffsetX</a></li>
+<li><a href="#shadowOffsetY-prop">shadowOffsetY</a></li>
+<li><a href="#shadowBlur-prop">shadowBlur</a></li>
+<li><a href="#shadowColor-prop">shadowColor</a></li>
+<li><a href="#globalCompositeOperation-prop">globalCompositeOperation</a></li>
+<li><a href="#font-prop">font</a></li>
+<li><a href="#textAlign-prop">textAlign</a></li>
+<li><a href="#textBaseline-prop">textBaseline</a></li>
+</ul>
+<p>The current path is NOT part of the drawing state. The path can be reset by invoking the <a href="#beginPath-method">beginPath()</a> method.</p>
+<!-- @@@save -->
+<br/>
+<!-- $$$scale -->
+<table class="qmlname"><tr valign="top" id="scale-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">scale</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Increases or decreases the size of each unit in the canvas grid by multiplying the scale factors to the current tranform matrix. <i>x</i> is the scale factor in the horizontal direction and <i>y</i> is the scale factor in the vertical direction.</p>
+<p>The following code doubles the horizontal size of an object drawn on the canvas and halves its vertical size:</p>
+<pre class="cpp">ctx<span class="operator">.</span>scale(<span class="number">2.0</span><span class="operator">,</span> <span class="number">0.5</span>);</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/95378f68-e4c4-4eca-bbfa-5aff16ac9f08-../QtQuick.Context2D/images/qml-item-canvas-scale.png" alt="" /></p><!-- @@@scale -->
+<br/>
+<!-- $$$setTransform -->
+<table class="qmlname"><tr valign="top" id="setTransform-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">setTransform</span>(<span class="type">real</span><i> a</i>, <span class="type">real</span><i> b</i>, <span class="type">real</span><i> c</i>, <span class="type">real</span><i> d</i>, <span class="type">real</span><i> e</i>, <span class="type">real</span><i> f</i>)</p></td></tr></table><p>Changes the transformation matrix to the matrix given by the arguments as described below.</p>
+<p>Modifying the transformation matrix directly enables you to perform scaling, rotating, and translating transformations in a single step.</p>
+<p>Each point on the canvas is multiplied by the matrix before anything is drawn. The <a href="http://www.w3.org/TR/2dcontext/#transformations">HTML Canvas 2D Context specification</a> defines the transformation matrix as:</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/221aebe2-25d2-4cf0-bd4b-c2abd4d1d69b-../QtQuick.Context2D/images/qml-item-canvas-math.png" alt="" /></p><p>where:</p>
+<ul>
+<li><code>a</code> is the scale factor in the horizontal (x) direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4ef4f937-e2ed-4743-8cd1-dfffdb5a8a4c-../QtQuick.Context2D/images/qml-item-canvas-scalex.png" alt="" /></p></li>
+<li><code>c</code> is the skew factor in the x direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/76c1f570-f303-43d7-a1b9-8594abd2d1ec-../QtQuick.Context2D/images/qml-item-canvas-skewx.png" alt="" /></p></li>
+<li><code>e</code> is the translation in the x direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/1527d9e1-b0ef-43c0-8a9c-1bd3a1a3d030-../QtQuick.Context2D/images/qml-item-canvas-translate.png" alt="" /></p></li>
+<li><code>b</code> is the skew factor in the y (vertical) direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ae4ff57d-4a49-444b-a887-795bfc5fb284-../QtQuick.Context2D/images/qml-item-canvas-skewy.png" alt="" /></p></li>
+<li><code>d</code> is the scale factor in the y direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/fe1f9a22-186a-4a31-a130-ee31327fd7f7-../QtQuick.Context2D/images/qml-item-canvas-scaley.png" alt="" /></p></li>
+<li><code>f</code> is the translation in the y direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0d20688a-f035-4e34-8c98-c2305ba5765f-../QtQuick.Context2D/images/qml-item-canvas-translatey.png" alt="" /></p></li>
+<li>the last row remains constant</li>
+</ul>
+<p>The scale factors and skew factors are multiples; <code>e</code> and <code>f</code> are coordinate space units, just like the units in the translate(x,y) method.</p>
+<p><b>See also </b><a href="#transform-method">transform()</a>.</p>
+<!-- @@@setTransform -->
+<br/>
+<!-- $$$shear -->
+<table class="qmlname"><tr valign="top" id="shear-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">shear</span>(<span class="type">real</span><i> sh</i>, <span class="type">real</span><i> sv</i>)</p></td></tr></table><p>Shears the transformation matrix by <i>sh</i> in the horizontal direction and <i>sv</i> in the vertical direction.</p>
+<!-- @@@shear -->
+<br/>
+<!-- $$$stroke -->
+<table class="qmlname"><tr valign="top" id="stroke-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">stroke</span>()</p></td></tr></table><p>Strokes the subpaths with the current stroke style.</p>
+<p>See <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke">W3C 2d context standard for stroke</a></p>
+<p><b>See also </b><a href="#strokeStyle-prop">strokeStyle</a>.</p>
+<!-- @@@stroke -->
+<br/>
+<!-- $$$strokeRect -->
+<table class="qmlname"><tr valign="top" id="strokeRect-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">strokeRect</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> w</i>, <span class="type">real</span><i> h</i>)</p></td></tr></table><p>Stroke the specified rectangle's path using the <a href="#strokeStyle-prop">strokeStyle</a>, <a href="#lineWidth-prop">lineWidth</a>, <a href="#lineJoin-prop">lineJoin</a>, and (if appropriate) <a href="#miterLimit-prop">miterLimit</a> attributes.</p>
+<p><b>See also </b><a href="#strokeStyle-prop">strokeStyle</a>, <a href="#lineWidth-prop">lineWidth</a>, <a href="#lineJoin-prop">lineJoin</a>, and <a href="#miterLimit-prop">miterLimit</a>.</p>
+<!-- @@@strokeRect -->
+<br/>
+<!-- $$$strokeText -->
+<table class="qmlname"><tr valign="top" id="strokeText-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">strokeText</span>(<span class="type"><a href="#text-method">text</a></span>, <span class="type">x</span>, <span class="type">y</span>)</p></td></tr></table><p>Strokes the given text at the given position.</p>
+<p><b>See also </b><a href="#font-prop">font</a>, <a href="#textAlign-prop">textAlign</a>, <a href="#textBaseline-prop">textBaseline</a>, and <a href="#fillText-method">fillText</a>.</p>
+<!-- @@@strokeText -->
+<br/>
+<!-- $$$text -->
+<table class="qmlname"><tr valign="top" id="text-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">text</span>(<span class="type">string</span><i> text</i>, <span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Adds the given <code>text</code> to the path as a set of closed subpaths created from the current context font supplied. The subpaths are positioned so that the left end of the text's baseline lies at the point specified by (<code>x</code>, <code>y</code>).</p>
+<!-- @@@text -->
+<br/>
+<!-- $$$transform -->
+<table class="qmlname"><tr valign="top" id="transform-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">transform</span>(<span class="type">real</span><i> a</i>, <span class="type">real</span><i> b</i>, <span class="type">real</span><i> c</i>, <span class="type">real</span><i> d</i>, <span class="type">real</span><i> e</i>, <span class="type">real</span><i> f</i>)</p></td></tr></table><p>This method is very similar to <a href="#setTransform-method">setTransform()</a>, but instead of replacing the old transform matrix, this method applies the given tranform matrix to the current matrix by multiplying to it.</p>
+<p>The <a href="#setTransform-method">setTransform</a>(a, b, c, d, e, f) method actually resets the current transform to the identity matrix, and then invokes the transform(a, b, c, d, e, f) method with the same arguments.</p>
+<p><b>See also </b><a href="#setTransform-method">setTransform()</a>.</p>
+<!-- @@@transform -->
+<br/>
+<!-- $$$translate -->
+<table class="qmlname"><tr valign="top" id="translate-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">translate</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Translates the origin of the canvas by a horizontal distance of <i>x</i>, and a vertical distance of <i>y</i>, in coordinate space units.</p>
+<p>Translating the origin enables you to draw patterns of different objects on the canvas without having to measure the coordinates manually for each shape.</p>
+<!-- @@@translate -->
+<br/>

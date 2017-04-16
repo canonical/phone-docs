@@ -1,35 +1,24 @@
 ---
 Title: QtQuick.qtquick-localstorage-example
 ---
-        
-Qt Quick Examples - Local Storage
-=================================
+
+# QtQuick.qtquick-localstorage-example
 
 <span class="subtitle"></span>
-<span id="details"></span>
-![](https://developer.ubuntu.com/static/devportal_uploaded/28034874-2b67-49c0-984c-270aa77e29a1-api/apps/qml/sdk-15.04.5/qtquick-localstorage-example/images/qml-localstorage-example.png)
-
-*Local Storage* is a collection of small QML examples relating to Qt Quick's local storage functionality.
-
-<span id="running-the-example"></span>
-Running the Example
--------------------
-
-To run the example from Qt Creator, open the **Welcome** mode and select the example from **Examples**. For more information, visit Building and Running an Example.
-
-<span id="hello-world"></span>
-Hello World
------------
-
-*Hello World* demonstrates creating a simple SQL table and doing insert and select operations.
-
-Files:
-
--   localstorage/localstorage/hello.qml
--   localstorage/localstorage/localstorage.qml
--   localstorage/localstorage/main.cpp
--   localstorage/localstorage.pro
--   localstorage/localstorage/localstorage.pro
--   localstorage/localstorage/localstorage.qmlproject
--   localstorage/localstorage/localstorage.qrc
-
+<!-- $$$localstorage-description -->
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/28034874-2b67-49c0-984c-270aa77e29a1-../qtquick-localstorage-example/images/qml-localstorage-example.png" alt="" /></p><p><i>Local Storage</i> is a collection of small QML examples relating to Qt Quick's local storage functionality.</p>
+<h2 id="running-the-example">Running the Example</h2>
+<p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
+<h2 id="hello-world">Hello World</h2>
+<p><i>Hello World</i> demonstrates creating a simple SQL table and doing insert and select operations.</p>
+<p>Files:</p>
+<ul>
+<li>localstorage/localstorage/hello.qml</li>
+<li>localstorage/localstorage/localstorage.qml</li>
+<li>localstorage/localstorage/main.cpp</li>
+<li>localstorage/localstorage.pro</li>
+<li>localstorage/localstorage/localstorage.pro</li>
+<li>localstorage/localstorage/localstorage.qmlproject</li>
+<li>localstorage/localstorage/localstorage.qrc</li>
+</ul>
+<!-- @@@localstorage -->

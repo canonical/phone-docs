@@ -1,122 +1,84 @@
 ---
 Title: unity.scopes.ListenerBase
 ---
-        
-ListenerBase
-============
 
-Abstract base class to be notified of request completion (such as a query or activation request). [More...](#details)
+# unity.scopes.ListenerBase
 
-`#include <unity/scopes/ListenerBase.h>`
-
+<p>Abstract base class to be notified of request completion (such as a query or activation request).  
+<a href="#details">More...</a></p>
+<p><code>#include &lt;unity/scopes/ListenerBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ListenerBase:
-
-![Inheritance graph](https://developer.ubuntu.com/static/devportal_uploaded/01e8b630-79ac-4625-8474-9d5f93b429fd-api/scopes/cpp/sdk-15.04.4/unity.scopes.ListenerBase/classunity_1_1scopes_1_1_listener_base__inherit__graph.png)
-
-<span class="legend">\[legend\]</span>
-
-pub-methods
-------------------------------------------------------
-
-virtual void 
-<a href="#afb44937749b61c9e3ebfa20ec6e4634b">finished</a> (<a href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &details)=0
- 
-Called once by the scopes runtime after the final result for a request was sent. More...
- 
-virtual void 
-<a href="#a3b38fa642754142f40968f3ff8d1bdc8">info</a> (<a href="unity.scopes.OperationInfo.md">OperationInfo</a> const &op\_info)
- 
-Called by the scopes runtime each time a scope reports additional information about the reply to a query. More...
- 
-<span id="details"></span>
-Detailed Description
---------------------
-
-Abstract base class to be notified of request completion (such as a query or activation request).
-
-See also  
-<a href="unity.scopes.ActivationListenerBase.md" title="Base class to receive a response to a result activation request. ">ActivationListenerBase</a>
-
-<a href="unity.scopes.PreviewQueryBase.md" title="Abstract base class to represent a particular preview. ">PreviewQueryBase</a>
-
-<a href="unity.scopes.SearchListenerBase.md" title="Abstract base interface for a client to receive the results of a query. ">SearchListenerBase</a>
-
-Member Function Documentation
------------------------------
-
-<span id="afb44937749b61c9e3ebfa20ec6e4634b" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual void unity::scopes::ListenerBase::finished</td>
+<img src="https://developer.ubuntu.com/static/devportal_uploaded/01e8b630-79ac-4625-8474-9d5f93b429fd-../unity.scopes.ListenerBase/classunity_1_1scopes_1_1_listener_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_listener_base_inherit__map" alt="Inheritance graph"/>
+<map name="unity_1_1scopes_1_1_listener_base_inherit__map" id="unity_1_1scopes_1_1_listener_base_inherit__map">
+<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_activation_listener_base.html" title="Base class to receive a response to a result activation request. " alt="" coords="283,5,459,47"/><area shape="rect" id="node3" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_preview_listener_base.html" title="Abstract base class for a scope to respond to preview requests. " alt="" coords="249,71,493,98"/><area shape="rect" id="node4" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_search_listener_base.html" title="Abstract base interface for a client to receive the results of a query. " alt="" coords="251,122,492,149"/><area shape="rect" id="node5" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder.html" title="Base class for a client to receive and buffer the results of a query until another BufferedResultForw..." alt="" coords="541,115,727,156"/></map>
+<center><span class="legend">[legend]</span></center>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afb44937749b61c9e3ebfa20ec6e4634b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb44937749b61c9e3ebfa20ec6e4634b">finished</a> (<a class="el" href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &amp;details)=0</td></tr>
+<tr class="memdesc:afb44937749b61c9e3ebfa20ec6e4634b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by the scopes runtime after the final result for a request was sent.  More...<br /></td></tr>
+<tr class="separator:afb44937749b61c9e3ebfa20ec6e4634b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b38fa642754142f40968f3ff8d1bdc8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b38fa642754142f40968f3ff8d1bdc8">info</a> (<a class="el" href="unity.scopes.OperationInfo.md">OperationInfo</a> const &amp;op_info)</td></tr>
+<tr class="memdesc:a3b38fa642754142f40968f3ff8d1bdc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the scopes runtime each time a scope reports additional information about the reply to a query.  More...<br /></td></tr>
+<tr class="separator:a3b38fa642754142f40968f3ff8d1bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Abstract base class to be notified of request completion (such as a query or activation request). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="unity.scopes.ActivationListenerBase.md" title="Base class to receive a response to a result activation request. ">ActivationListenerBase</a> </dd>
+<dd>
+<a class="el" href="unity.scopes.PreviewQueryBase.md" title="Abstract base class to represent a particular preview. ">PreviewQueryBase</a> </dd>
+<dd>
+<a class="el" href="unity.scopes.SearchListenerBase.md" title="Abstract base interface for a client to receive the results of a query. ">SearchListenerBase</a> </dd></dl>
+<h2 class="groupheader">Member Function Documentation</h2>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void unity::scopes::ListenerBase::finished </td>
 <td>(</td>
-<td><a href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &amp; </td>
-<td><em>details</em></td>
-<td>)</td>
+<td class="paramtype"><a class="el" href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &amp;&#160;</td>
+<td class="paramname"><em>details</em></td><td>)</td>
 <td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">pure virtual</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Called once by the scopes runtime after the final result for a request was sent.
-
-Calls to <a href="#afb44937749b61c9e3ebfa20ec6e4634b" title="Called once by the scopes runtime after the final result for a request was sent. ">finished()</a> are made by an arbitrary thread.
-
-Exceptions thrown from <a href="#afb44937749b61c9e3ebfa20ec6e4634b" title="Called once by the scopes runtime after the final result for a request was sent. ">finished()</a> are ignored.
-
-Parameters  
-|         |                                                                                                                                       |
-|---------|---------------------------------------------------------------------------------------------------------------------------------------|
-| details | Contains details about the completion status of a query as well as any additional information regarding the operation of the request. |
-
-Implemented in <a href="../unity.scopes.utility.BufferedResultForwarder.md#a9bd57e76c08a01560a700d665cc40e96">unity::scopes::utility::BufferedResultForwarder</a>, and <a href="../unity.scopes.ActivationListenerBase.md#a89f1e3697d62b098c73704368d3bc4c8">unity::scopes::ActivationListenerBase</a>.
-
-<span id="a3b38fa642754142f40968f3ff8d1bdc8" class="anchor"></span>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><table>
-<tbody>
-<tr class="odd">
-<td>virtual void unity::scopes::ListenerBase::info</td>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+</tr>
+</table>
+<p>Called once by the scopes runtime after the final result for a request was sent. </p>
+<p>Calls to <a class="el" href="#afb44937749b61c9e3ebfa20ec6e4634b" title="Called once by the scopes runtime after the final result for a request was sent. ">finished()</a> are made by an arbitrary thread.</p>
+<p>Exceptions thrown from <a class="el" href="#afb44937749b61c9e3ebfa20ec6e4634b" title="Called once by the scopes runtime after the final result for a request was sent. ">finished()</a> are ignored. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">details</td><td>Contains details about the completion status of a query as well as any additional information regarding the operation of the request. </td></tr>
+</table>
+</dd>
+</dl>
+<p>Implemented in <a class="el" href="unity.scopes.utility.BufferedResultForwarder.md#a9bd57e76c08a01560a700d665cc40e96">unity::scopes::utility::BufferedResultForwarder</a>, and <a class="el" href="unity.scopes.ActivationListenerBase.md#a89f1e3697d62b098c73704368d3bc4c8">unity::scopes::ActivationListenerBase</a>.</p>
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void unity::scopes::ListenerBase::info </td>
 <td>(</td>
-<td><a href="unity.scopes.OperationInfo.md">OperationInfo</a> const &amp; </td>
-<td><em>op_info</em></td>
-<td>)</td>
+<td class="paramtype"><a class="el" href="unity.scopes.OperationInfo.md">OperationInfo</a> const &amp;&#160;</td>
+<td class="paramname"><em>op_info</em></td><td>)</td>
 <td></td>
 </tr>
-</tbody>
-</table></td>
-<td><span class="mlabels"><span class="mlabel">virtual</span></span></td>
-</tr>
-</tbody>
 </table>
-
-Called by the scopes runtime each time a scope reports additional information about the reply to a query.
-
-More than one <a href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> call can arrive during processing of a single query.
-
-Calls to <a href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> are made by an arbitrary thread.
-
-Exceptions thrown from <a href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> are ignored.
-
-Parameters  
-|          |                                                         |
-|----------|---------------------------------------------------------|
-| op\_info | Contains all details of the information being reported. |
-
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+</tr>
+</table>
+<p>Called by the scopes runtime each time a scope reports additional information about the reply to a query. </p>
+<p>More than one <a class="el" href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> call can arrive during processing of a single query.</p>
+<p>Calls to <a class="el" href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> are made by an arbitrary thread.</p>
+<p>Exceptions thrown from <a class="el" href="#a3b38fa642754142f40968f3ff8d1bdc8" title="Called by the scopes runtime each time a scope reports additional information about the reply to a qu...">info()</a> are ignored. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">op_info</td><td>Contains all details of the information being reported. </td></tr>
+</table>
+</dd>
+</dl>

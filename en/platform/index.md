@@ -2,7 +2,6 @@
 title: "Platform"
 ---
 
-
 # Welcome to the Ubuntu App Platform!
 
 Here is where you find a growing set of guides about Ubuntu as a platform for

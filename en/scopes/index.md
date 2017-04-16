@@ -18,7 +18,6 @@ available through the Ubuntu SDK.
 ![](../../media/tablet-features-scopes.jpg)
 
 
-
 ## A new generation of mobile experiences
 
 ### Scopes in action
@@ -37,13 +36,11 @@ It’s a world away from traditional smartphones and the app icon grid, and
 brings a great opportunity for developers and content producers to shine.
 
 
-
 ## How it works
 
   * Scopes are a point of entry into the Ubuntu ecosystem for all kinds of developers: the API is available in JavaScript, C++ and Go.
   * Using keywords, scopes can be aggregated into more general scopes, called Aggregation Scopes: your content is visible in context of what the user is actively looking for.
   * Scopes work with a simple client-server model, where a locally running server mediates data exchange between your content and user requests, keeping every scopes confined and independent from each other.
-
 
 ### There are two types of scopes:
 

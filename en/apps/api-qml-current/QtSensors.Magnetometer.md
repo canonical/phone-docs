@@ -1,65 +1,31 @@
 ---
 Title: QtSensors.Magnetometer
 ---
-        
-Magnetometer
-============
+
+# QtSensors.Magnetometer
 
 <span class="subtitle"></span>
-The Magnetometer element reports on magnetic field strength along the Z, Y and Z axes. More...
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Import Statement:</td>
-<td>import QtSensors 5.0</td>
-</tr>
-<tr class="even">
-<td>Since:</td>
-<td>QtSensors 5.0</td>
-</tr>
-<tr class="odd">
-<td>Inherits:</td>
-<td><p><a href="QtSensors.Sensor.md">Sensor</a></p></td>
-</tr>
-</tbody>
-</table>
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[returnGeoValues](#returnGeoValues-prop)**** : bool
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The Magnetometer element reports on magnetic field strength along the Z, Y and Z axes.
-
-This element wraps the QMagnetometer class. Please see the documentation for QMagnetometer for details.
-
-**See also** [MagnetometerReading](../QtSensors.MagnetometerReading.md).
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="returnGeoValues-prop"></span><span class="name">returnGeoValues</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds a value indicating if geomagnetic values should be returned.
-
-Please see QMagnetometer::returnGeoValues for information about this property.
-
+<!-- $$$Magnetometer-brief -->
+<p>The Magnetometer element reports on magnetic field strength along the Z, Y and Z axes. More...</p>
+<!-- @@@Magnetometer -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  QtSensors 5.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtSensors.Sensor.md">Sensor</a></p>
+</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#returnGeoValues-prop">returnGeoValues</a></b></b> : bool</li>
+</ul>
+<!-- $$$Magnetometer-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The Magnetometer element reports on magnetic field strength along the Z, Y and Z axes.</p>
+<p>This element wraps the QMagnetometer class. Please see the documentation for QMagnetometer for details.</p>
+<p><b>See also </b><a href="QtSensors.MagnetometerReading.md">MagnetometerReading</a>.</p>
+<!-- @@@Magnetometer -->
+<h2>Property Documentation</h2>
+<!-- $$$returnGeoValues -->
+<table class="qmlname"><tr valign="top" id="returnGeoValues-prop"><td class="tblQmlPropNode"><p><span class="name">returnGeoValues</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds a value indicating if geomagnetic values should be returned.</p>
+<p>Please see QMagnetometer::returnGeoValues for information about this property.</p>
+<!-- @@@returnGeoValues -->
+<br/>

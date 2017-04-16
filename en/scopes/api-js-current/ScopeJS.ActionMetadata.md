@@ -1,41 +1,44 @@
 ---
 Title: ScopeJS.ActionMetadata
 ---
-        
-ActionMetadata
-==============
 
-Metadata passed to scopes for preview and activation
+# ScopeJS.ActionMetadata
 
--   Methods
-
-<span id="contains_hint"></span>
-**`contains_hint`**( `hint ` )
-Check if this ActionMetadata has a hint
-
-**Parameters:**
--   `hint` **&lt;String&gt;**
-
-**Returns:**
-Boolean
-
-<span id="get"></span>
-String **`get`**( `key ` )
-Get the value of an attribute
-
-**Parameters:**
--   `key` **&lt;String&gt;**
-
-**Returns:** &lt;String&gt;
-, {Number} or {Object}
-
-<span id="set"></span>
-**`set`**( `key, value ` )
-Set the value of an attribute
-
-**Parameters:**
--   `key` **&lt;String&gt;**
--   `value` **&lt;String&gt;**
-
-    , {Number} or {Object}
-
+<p>Metadata passed to scopes for preview and activation</p>
+<ul>
+<li>Methods</li>
+</ul>
+<div>
+<strong class="name"><code>contains_hint</code></strong>( <code>hint </code> ) 
+<br>
+<p>Check if this ActionMetadata has a hint</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>hint</code> <strong>&lt;String&gt;</strong>
+</li>
+</ul>
+<br><strong>Returns:</strong> <p>Boolean</p>
+String <strong class="name"><code>get</code></strong>( <code>key </code> ) 
+<br>
+<p>Get the value of an attribute</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>key</code> <strong>&lt;String&gt;</strong>
+</li>
+</ul>
+<br><strong>Returns:</strong> &lt;String&gt; <p>, {Number} or {Object}</p>
+<strong class="name"><code>set</code></strong>( <code>key, value </code> ) 
+<br>
+<p>Set the value of an attribute</p>
+<strong>Parameters:</strong>
+<ul class="params">
+<li>
+<code>key</code> <strong>&lt;String&gt;</strong>
+</li>
+<li>
+<code>value</code> <strong>&lt;String&gt;</strong>
+<p>, {Number} or {Object}</p>
+</li>
+</ul>

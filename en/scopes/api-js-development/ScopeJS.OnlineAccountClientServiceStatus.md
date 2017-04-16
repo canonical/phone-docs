@@ -1,43 +1,27 @@
 ---
 Title: ScopeJS.OnlineAccountClientServiceStatus
 ---
-        
-OnlineAccountClientServiceStatus
-================================
 
-An object that contains the details about a service's status and authorization parameters
+# ScopeJS.OnlineAccountClientServiceStatus
 
--   Properties
-
-<span id="access_token"></span>
-`access_token` &lt;**String**&gt;
-"AccessToken" OAuth parameter.
-
-<span id="account_id"></span>
-`account_id` &lt;**String**&gt;
-Check if state for the given filter has been stored
-
-<span id="client_id"></span>
-`client_id` &lt;**String**&gt;
-"ConsumerKey" / "ClientId" OAuth (1 / 2) parameter.
-
-<span id="client_secret"></span>
-`client_secret` &lt;**String**&gt;
-"ClientSecret" / "ConsumerSecret" OAuth (1 / 2) parameter.
-
-<span id="error"></span>
-`error` &lt;**String**&gt;
-Error message (empty if no error occurred).
-
-<span id="service_authenticated"></span>
-`service_authenticated` &lt;**Boolean**&gt;
-True if this service is authenticated
-
-<span id="service_enabled"></span>
-`service_enabled` &lt;**Boolean**&gt;
-True if this service is enabled
-
-<span id="token_secret"></span>
-`token_secret` &lt;**String**&gt;
-"TokenSecret" OAuth parameter.
-
+<p>An object that contains the details about a service's status and authorization parameters</p>
+<ul>
+<li>Properties</li>
+</ul>
+<div>
+<code>access_token</code> &lt;<strong>String</strong>&gt;<br>
+<p>&quot;AccessToken&quot; OAuth parameter.</p>
+<code>account_id</code> &lt;<strong>String</strong>&gt;<br>
+<p>Check if state for the given filter has been stored</p>
+<code>client_id</code> &lt;<strong>String</strong>&gt;<br>
+<p>&quot;ConsumerKey&quot; / &quot;ClientId&quot; OAuth (1 / 2) parameter.</p>
+<code>client_secret</code> &lt;<strong>String</strong>&gt;<br>
+<p>&quot;ClientSecret&quot; / &quot;ConsumerSecret&quot; OAuth (1 / 2) parameter.</p>
+<code>error</code> &lt;<strong>String</strong>&gt;<br>
+<p>Error message (empty if no error occurred).</p>
+<code>service_authenticated</code> &lt;<strong>Boolean</strong>&gt;<br>
+<p>True if this service is authenticated</p>
+<code>service_enabled</code> &lt;<strong>Boolean</strong>&gt;<br>
+<p>True if this service is enabled</p>
+<code>token_secret</code> &lt;<strong>String</strong>&gt;<br>
+<p>&quot;TokenSecret&quot; OAuth parameter.</p>

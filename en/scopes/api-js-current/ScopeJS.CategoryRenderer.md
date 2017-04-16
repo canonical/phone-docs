@@ -1,18 +1,15 @@
 ---
 Title: ScopeJS.CategoryRenderer
 ---
-        
-CategoryRenderer
-================
 
-A category renderer template in JSON format.
+# ScopeJS.CategoryRenderer
 
--   Methods
-
-<span id="data"></span>
-**`data`**( `  ` )
-Returns complete renderer template definition in JSON format.
-
-**Returns:**
-String The renderer template (JSON)
-
+<p>A category renderer template in JSON format.</p>
+<ul>
+<li>Methods</li>
+</ul>
+<div>
+<strong class="name"><code>data</code></strong>( <code>  </code> ) 
+<br>
+<p>Returns complete renderer template definition in JSON format.</p>
+<br><strong>Returns:</strong> <p>String The renderer template (JSON)</p>

@@ -1,170 +1,112 @@
 ---
 Title: Ubuntu.Connectivity.NetworkingStatus
 ---
-        
-NetworkingStatus
-================
+
+# Ubuntu.Connectivity.NetworkingStatus
 
 <span class="subtitle"></span>
-Overall system networking status. More...
-
-|                   |          |
-|-------------------|----------|
-| Import Statement: | import . |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[limitations](#limitations-prop)**** : Limitations
--   ****[limitedBandwith](#limitedBandwith-prop)**** : bool
--   ****[online](#online-prop)**** : bool
--   ****[status](#status-prop)**** : Status
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-This is the top-level class for accessing networking information.
-
-This class inherits the Qt C++ ubuntu::connectivity::NetworkingStatus and provides two utility properties online and [limitedBandwith](#limitedBandwith-prop) for easier QML usage.
-
-This object is exposed as a singleton.
-
-**note:** Using this component in confined application requires *connectivity* policy group.
-
-``` cpp
-/*
- * Copyright (C) 2014 Canonical Ltd.
- *
- * This program is free software: you can redistribute it and/or modify it
- * under the terms of the GNU Lesser General Public License version 3,
- * as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+<!-- $$$NetworkingStatus-brief -->
+<p>Overall system networking status. More...</p>
+<!-- @@@NetworkingStatus -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#limitations-prop">limitations</a></b></b> : Limitations</li>
+<li class="fn"><b><b><a href="#limitedBandwith-prop">limitedBandwith</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#online-prop">online</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#status-prop">status</a></b></b> : Status</li>
+</ul>
+<!-- $$$NetworkingStatus-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>This is the top-level class for accessing networking information.</p>
+<p>This class inherits the Qt C++ ubuntu::connectivity::NetworkingStatus and provides two utility properties online and <a href="#limitedBandwith-prop">limitedBandwith</a> for easier QML usage.</p>
+<p>This object is exposed as a singleton.</p>
+<p><b>note:</b> Using this component in confined application requires <i>connectivity</i> policy group.</p>
+<pre class="cpp"><span class="comment">/*
+* Copyright (C) 2014 Canonical Ltd.
+*
+* This program is free software: you can redistribute it and/or modify it
+* under the terms of the GNU Lesser General Public License version 3,
+* as published by the Free Software Foundation.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public License
+* along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+*/</span>
 import QtQuick 2.0
 import Ubuntu.Components 0.1
 import Ubuntu.Connectivity 1.0
-MainView {
-    id: root
-    objectName: "mainView"
-    applicationName: "Connectivity"
-    width: units.gu(100)
-    height: units.gu(75)
-    property real margins: units.gu(2)
-    property real buttonWidth: units.gu(9)
-    property var statusMap: ["Offline", "Connecting", "Online"]
-    Connections {
-        target: Connectivity
-        // full status can be retrieved from the base C++ class
-        // status property
-        onStatusChanged: console.log("Status: " + statusMap[Connectivity.status])
-        onOnlineChanged: console.log("Online: " + Connectivity.online)
-    }
-    Page {
-        title: i18n.tr("Networking Status")
-        Column {
-            anchors.centerIn: parent
-            Label {
-                // use the online property
-                text: Connectivity.online ? "Online" : "Not online"
-                fontSize: "large"
-            }
-            Label {
-                // use the status property
-                text: "Status: " + statusMap[Connectivity.status]
-                fontSize: "large"
-            }
-            Label {
-                // use the limitedBandwith property
-                text: Connectivity.limitedBandwith ? "Bandwith limited" : "Bandwith not limited"
-                fontSize: "large"
-            }
-        }
-    }
+<span class="type">MainView</span> {
+<span class="name">id</span>: <span class="name">root</span>
+<span class="name">objectName</span>: <span class="string">&quot;mainView&quot;</span>
+<span class="name">applicationName</span>: <span class="string">&quot;Connectivity&quot;</span>
+<span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
+<span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">75</span>)
+property <span class="type">real</span> <span class="name">margins</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">2</span>)
+property <span class="type">real</span> <span class="name">buttonWidth</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">9</span>)
+property <span class="type">var</span> <span class="name">statusMap</span>: [<span class="string">&quot;Offline&quot;</span>, <span class="string">&quot;Connecting&quot;</span>, <span class="string">&quot;Online&quot;</span>]
+<span class="type">Connections</span> {
+<span class="name">target</span>: <span class="name">Connectivity</span>
+<span class="comment">// full status can be retrieved from the base C++ class</span>
+<span class="comment">// status property</span>
+<span class="name">onStatusChanged</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Status: &quot;</span> <span class="operator">+</span> <span class="name">statusMap</span>[<span class="name">Connectivity</span>.<span class="name">status</span>])
+<span class="name">onOnlineChanged</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Online: &quot;</span> <span class="operator">+</span> <span class="name">Connectivity</span>.<span class="name">online</span>)
 }
-```
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="limitations-prop"></span><span class="name">limitations</span> : <span class="type">Limitations</span></p></td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="limitedBandwith-prop"></span><span class="name">limitedBandwith</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-**true** if Internet connection is bandwith limited.
-
-shorthand for C++:
-
-``` cpp
-networkingStatus->limitations().contains(NetworkingStatus::Limitations::Bandwith)
-```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="online-prop"></span><span class="name">online</span> : <span class="type">bool</span></p></td>
-</tr>
-</tbody>
-</table>
-
-**true** if system has Internet connection.
-
-shorthand for C++:
-
-``` cpp
-networkingStatus->status() == NetworkingStatus::Online
-```
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="status-prop"></span><span class="name">status</span> : <span class="type">Status</span></p></td>
-</tr>
-</tbody>
-</table>
-
-status property of the base C++ class.
-
-``` cpp
-onStatusChanged: {
-    if (status === NetworkingStatus::Offline)
-        ;
-    else if (status === NetworkingStatus::Connecting)
-        ;
-    else if (status === NetworkingStatus::Online)
-        ;
+<span class="type">Page</span> {
+<span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Networking Status&quot;</span>)
+<span class="type">Column</span> {
+<span class="name">anchors</span>.centerIn: <span class="name">parent</span>
+<span class="type">Label</span> {
+<span class="comment">// use the online property</span>
+<span class="name">text</span>: <span class="name">Connectivity</span>.<span class="name">online</span> ? <span class="string">&quot;Online&quot;</span> : <span class="string">&quot;Not online&quot;</span>
+<span class="name">fontSize</span>: <span class="string">&quot;large&quot;</span>
 }
-```
-
+<span class="type">Label</span> {
+<span class="comment">// use the status property</span>
+<span class="name">text</span>: <span class="string">&quot;Status: &quot;</span> <span class="operator">+</span> <span class="name">statusMap</span>[<span class="name">Connectivity</span>.<span class="name">status</span>]
+<span class="name">fontSize</span>: <span class="string">&quot;large&quot;</span>
+}
+<span class="type">Label</span> {
+<span class="comment">// use the limitedBandwith property</span>
+<span class="name">text</span>: <span class="name">Connectivity</span>.<span class="name">limitedBandwith</span> ? <span class="string">&quot;Bandwith limited&quot;</span> : <span class="string">&quot;Bandwith not limited&quot;</span>
+<span class="name">fontSize</span>: <span class="string">&quot;large&quot;</span>
+}
+}
+}
+}</pre>
+<!-- @@@NetworkingStatus -->
+<h2>Property Documentation</h2>
+<!-- $$$limitations -->
+<table class="qmlname"><tr valign="top" id="limitations-prop"><td class="tblQmlPropNode"><p><span class="name">limitations</span> : <span class="type">Limitations</span></p></td></tr></table><!-- @@@limitations -->
+<br/>
+<!-- $$$limitedBandwith -->
+<table class="qmlname"><tr valign="top" id="limitedBandwith-prop"><td class="tblQmlPropNode"><p><span class="name">limitedBandwith</span> : <span class="type">bool</span></p></td></tr></table><p><b>true</b> if Internet connection is bandwith limited.</p>
+<p>shorthand for C++:</p>
+<pre class="cpp">networkingStatus<span class="operator">-</span><span class="operator">&gt;</span>limitations()<span class="operator">.</span>contains(NetworkingStatus<span class="operator">::</span>Limitations<span class="operator">::</span>Bandwith)</pre>
+<!-- @@@limitedBandwith -->
+<br/>
+<!-- $$$online -->
+<table class="qmlname"><tr valign="top" id="online-prop"><td class="tblQmlPropNode"><p><span class="name">online</span> : <span class="type">bool</span></p></td></tr></table><p><b>true</b> if system has Internet connection.</p>
+<p>shorthand for C++:</p>
+<pre class="cpp">networkingStatus<span class="operator">-</span><span class="operator">&gt;</span>status() <span class="operator">=</span><span class="operator">=</span> NetworkingStatus<span class="operator">::</span>Online</pre>
+<!-- @@@online -->
+<br/>
+<!-- $$$status -->
+<table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">Status</span></p></td></tr></table><p>status property of the base C++ class.</p>
+<pre class="cpp">onStatusChanged: {
+<span class="keyword">if</span> (status <span class="operator">=</span><span class="operator">=</span><span class="operator">=</span> NetworkingStatus<span class="operator">::</span>Offline)
+;
+<span class="keyword">else</span> <span class="keyword">if</span> (status <span class="operator">=</span><span class="operator">=</span><span class="operator">=</span> NetworkingStatus<span class="operator">::</span>Connecting)
+;
+<span class="keyword">else</span> <span class="keyword">if</span> (status <span class="operator">=</span><span class="operator">=</span><span class="operator">=</span> NetworkingStatus<span class="operator">::</span>Online)
+;
+}</pre>
+<!-- @@@status -->
+<br/>

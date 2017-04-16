@@ -1,138 +1,89 @@
 ---
 Title: Ubuntu.Components.MenuBar
 ---
-        
-MenuBar
-=======
+
+# Ubuntu.Components.MenuBar
 
 <span class="subtitle"></span>
-MenuBar defines an application menu bar structure More...
-
-|                   |                              |
-|-------------------|------------------------------|
-| Import Statement: | import Ubuntu.Components 1.3 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[menus](#menus-prop)**** : list&lt;Menu&gt;
-
-<span id="methods"></span>
-Methods
--------
-
--   void ****[appendMenu](#appendMenu-method)****(Menu *menu*)
--   void ****[insertMenu](#insertMenu-method)****(int *index*, Menu *menu*)
--   void ****[removeMenu](#removeMenu-method)****(Menu *menu*)
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-Example usage:
-
-``` qml
-import QtQuick 2.4
+<!-- $$$MenuBar-brief -->
+<p>MenuBar defines an application menu bar structure More...</p>
+<!-- @@@MenuBar -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#menus-prop">menus</a></b></b> : list&lt;Menu&gt;</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn">void <b><b><a href="#appendMenu-method">appendMenu</a></b></b>(Menu <i>menu</i>)</li>
+<li class="fn">void <b><b><a href="#insertMenu-method">insertMenu</a></b></b>(int <i>index</i>, Menu <i>menu</i>)</li>
+<li class="fn">void <b><b><a href="#removeMenu-method">removeMenu</a></b></b>(Menu <i>menu</i>)</li>
+</ul>
+<!-- $$$MenuBar-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>Example usage:</p>
+<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-MainView {
-    MenuBar {
-        Menu {
-            text: "_File"
-            MenuItem {
-                text: "_New"
-                shortcut: "Ctrl+N"
-            }
-            MenuItem {
-                text: "_Open"
-                shortcut: "Ctrl+O"
-            }
-            MenuSeparator {}
-            MenuItem {
-                action: exitAction
-            }
-        }
-        Menu {
-            text: "_Edit"
-            MenuItem {
-                text: "_Undo"
-                iconSource: "image://theme/undo"
-            }
-        }
-        Menu {
-            text: "_Window"
-            MenuItem {
-                text: "Fullscreen"
-                checkable: true
-                checked: false
-            }
-        }
-    }
-    Action {
-        id: boundAction
-        text: "E_xit"
-        onTriggered: {
-            Qt.quit();
-        }
-    }
+<span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
+<span class="type"><a href="index.html">MenuBar</a></span> {
+<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> {
+<span class="name">text</span>: <span class="string">&quot;_File&quot;</span>
+<span class="type">MenuItem</span> {
+<span class="name">text</span>: <span class="string">&quot;_New&quot;</span>
+<span class="name">shortcut</span>: <span class="string">&quot;Ctrl+N&quot;</span>
 }
-```
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="menus-prop"></span><span class="qmldefault">[default] </span><span class="name">menus</span> : <span class="type">list</span>&lt;<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span>&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
-List of Menus in this [MenuBar](index.html).
-
-Method Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="appendMenu-method"></span><span class="type">void</span> <span class="name">appendMenu</span>(<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> <em>menu</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-\* \* Append a Menu to the [MenuBar](index.html)
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="insertMenu-method"></span><span class="type">void</span> <span class="name">insertMenu</span>(<span class="type">int</span> <em>index</em>, <span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> <em>menu</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-\* \* Insert a Menu to the [MenuBar](index.html) at the specified position
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="removeMenu-method"></span><span class="type">void</span> <span class="name">removeMenu</span>(<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> <em>menu</em>)</p></td>
-</tr>
-</tbody>
-</table>
-
-\* \* Remove a Menu from the [MenuBar](index.html)
-
+<span class="type">MenuItem</span> {
+<span class="name">text</span>: <span class="string">&quot;_Open&quot;</span>
+<span class="name">shortcut</span>: <span class="string">&quot;Ctrl+O&quot;</span>
+}
+<span class="type">MenuSeparator</span> {}
+<span class="type">MenuItem</span> {
+<span class="name">action</span>: <span class="name">exitAction</span>
+}
+}
+<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> {
+<span class="name">text</span>: <span class="string">&quot;_Edit&quot;</span>
+<span class="type">MenuItem</span> {
+<span class="name">text</span>: <span class="string">&quot;_Undo&quot;</span>
+<span class="name">iconSource</span>: <span class="string">&quot;image://theme/undo&quot;</span>
+}
+}
+<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span> {
+<span class="name">text</span>: <span class="string">&quot;_Window&quot;</span>
+<span class="type">MenuItem</span> {
+<span class="name">text</span>: <span class="string">&quot;Fullscreen&quot;</span>
+<span class="name">checkable</span>: <span class="number">true</span>
+<span class="name">checked</span>: <span class="number">false</span>
+}
+}
+}
+<span class="type"><a href="Ubuntu.Components.Action.md">Action</a></span> {
+<span class="name">id</span>: <span class="name">boundAction</span>
+<span class="name">text</span>: <span class="string">&quot;E_xit&quot;</span>
+<span class="name">onTriggered</span>: {
+<span class="name">Qt</span>.<span class="name">quit</span>();
+}
+}
+}</pre>
+<!-- @@@MenuBar -->
+<h2>Property Documentation</h2>
+<!-- $$$menus -->
+<table class="qmlname"><tr valign="top" id="menus-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">menus</span> : <span class="type">list</span>&lt;<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span>&gt;</p></td></tr></table><p>List of Menus in this <a href="index.html">MenuBar</a>.</p>
+<!-- @@@menus -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$appendMenu -->
+<table class="qmlname"><tr valign="top" id="appendMenu-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">appendMenu</span>(<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span><i> menu</i>)</p></td></tr></table><p>* * Append a Menu to the <a href="index.html">MenuBar</a></p>
+<!-- @@@appendMenu -->
+<br/>
+<!-- $$$insertMenu -->
+<table class="qmlname"><tr valign="top" id="insertMenu-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">insertMenu</span>(<span class="type">int</span><i> index</i>, <span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span><i> menu</i>)</p></td></tr></table><p>* * Insert a Menu to the <a href="index.html">MenuBar</a> at the specified position</p>
+<!-- @@@insertMenu -->
+<br/>
+<!-- $$$removeMenu -->
+<table class="qmlname"><tr valign="top" id="removeMenu-method"><td class="tblQmlFuncNode"><p><span class="type">void</span> <span class="name">removeMenu</span>(<span class="type"><a href="Ubuntu.Components.Menu.md">Menu</a></span><i> menu</i>)</p></td></tr></table><p>* * Remove a Menu from the <a href="index.html">MenuBar</a></p>
+<!-- @@@removeMenu -->
+<br/>

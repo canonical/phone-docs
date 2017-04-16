@@ -1,144 +1,82 @@
 ---
 Title: QtOrganizer.EventAttendee
 ---
-        
-EventAttendee
-=============
+
+# QtOrganizer.EventAttendee
 
 <span class="subtitle"></span>
-The EventAttendee element contains information about an attendee of an event. More...
-
-|                   |                        |
-|-------------------|------------------------|
-| Import Statement: | import QtOrganizer 5.0 |
-
-<span id="properties"></span>
-Properties
-----------
-
--   ****[attendeeId](#attendeeId-prop)**** : variant
--   ****[emailAddress](#emailAddress-prop)**** : variant
--   ****[name](#name-prop)**** : variant
--   ****[participationRole](#participationRole-prop)**** : variant
--   ****[participationStatus](#participationStatus-prop)**** : variant
-
-<span id="signals"></span>
-Signals
--------
-
--   ****[onDetailChanged](#onDetailChanged-signal)****()
-
-<span id="details"></span>
-Detailed Description
---------------------
-
-The following fields are supported:
-
--   [EventAttendee](index.html).FieldName
--   [EventAttendee](index.html).FieldEmailAddress
--   [EventAttendee](index.html).FieldAddendeeId
--   [EventAttendee](index.html).FieldParticipationStatus
--   [EventAttendee](index.html).FieldParticipationRole
-
-**See also** QOrganizerEventAttendee.
-
-Property Documentation
-----------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="attendeeId-prop"></span><span class="name">attendeeId</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the unique identifier of the attendee.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="emailAddress-prop"></span><span class="name">emailAddress</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the email address of the attendee.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="name-prop"></span><span class="name">name</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the name of the attendee.
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="participationRole-prop"></span><span class="name">participationRole</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the participation role of the attendee of the event.The value can be one of:
-
--   [EventAttendee](index.html).RoleUnknown
--   [EventAttendee](index.html).RoleOrganizer
--   [EventAttendee](index.html).RoleChairperson
--   [EventAttendee](index.html).RoleHost
--   [EventAttendee](index.html).RoleRequiredParticipant
--   [EventAttendee](index.html).RoleOptionalParticipant
--   [EventAttendee](index.html).RoleNonParticipant
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="participationStatus-prop"></span><span class="name">participationStatus</span> : <span class="type">variant</span></p></td>
-</tr>
-</tbody>
-</table>
-
-This property holds the participation status of the attendee of the event. The value can be one of:
-
--   [EventAttendee](index.html).StatusUnknown
--   [EventAttendee](index.html).StatusAccepted
--   [EventAttendee](index.html).StatusDeclined
--   [EventAttendee](index.html).StatusTentative
--   [EventAttendee](index.html).StatusDelegated
--   [EventAttendee](index.html).StatusInProcess
--   [EventAttendee](index.html).StatusCompleted
-
-Signal Documentation
---------------------
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><span id="onDetailChanged-signal"></span><span class="name">onDetailChanged</span>()</p></td>
-</tr>
-</tbody>
-</table>
-
-**See also** [Detail::onDetailChanged](../QtOrganizer.Detail.md#onDetailChanged-signal).
-
+<!-- $$$EventAttendee-brief -->
+<p>The EventAttendee element contains information about an attendee of an event. More...</p>
+<!-- @@@EventAttendee -->
+<table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtOrganizer 5.0</td></tr></table><ul>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="#attendeeId-prop">attendeeId</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#emailAddress-prop">emailAddress</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#participationRole-prop">participationRole</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="#participationStatus-prop">participationStatus</a></b></b> : variant</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn"><b><b><a href="#onDetailChanged-signal">onDetailChanged</a></b></b>()</li>
+</ul>
+<!-- $$$EventAttendee-description -->
+<h2 id="details">Detailed Description</h2>
+</p>
+<p>The following fields are supported:</p>
+<ul>
+<li><a href="index.html">EventAttendee</a>.FieldName</li>
+<li><a href="index.html">EventAttendee</a>.FieldEmailAddress</li>
+<li><a href="index.html">EventAttendee</a>.FieldAddendeeId</li>
+<li><a href="index.html">EventAttendee</a>.FieldParticipationStatus</li>
+<li><a href="index.html">EventAttendee</a>.FieldParticipationRole</li>
+</ul>
+<p><b>See also </b>QOrganizerEventAttendee.</p>
+<!-- @@@EventAttendee -->
+<h2>Property Documentation</h2>
+<!-- $$$attendeeId -->
+<table class="qmlname"><tr valign="top" id="attendeeId-prop"><td class="tblQmlPropNode"><p><span class="name">attendeeId</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the unique identifier of the attendee.</p>
+<!-- @@@attendeeId -->
+<br/>
+<!-- $$$emailAddress -->
+<table class="qmlname"><tr valign="top" id="emailAddress-prop"><td class="tblQmlPropNode"><p><span class="name">emailAddress</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the email address of the attendee.</p>
+<!-- @@@emailAddress -->
+<br/>
+<!-- $$$name -->
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the name of the attendee.</p>
+<!-- @@@name -->
+<br/>
+<!-- $$$participationRole -->
+<table class="qmlname"><tr valign="top" id="participationRole-prop"><td class="tblQmlPropNode"><p><span class="name">participationRole</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the participation role of the attendee of the event.The value can be one of:</p>
+<ul>
+<li><a href="index.html">EventAttendee</a>.RoleUnknown</li>
+<li><a href="index.html">EventAttendee</a>.RoleOrganizer</li>
+<li><a href="index.html">EventAttendee</a>.RoleChairperson</li>
+<li><a href="index.html">EventAttendee</a>.RoleHost</li>
+<li><a href="index.html">EventAttendee</a>.RoleRequiredParticipant</li>
+<li><a href="index.html">EventAttendee</a>.RoleOptionalParticipant</li>
+<li><a href="index.html">EventAttendee</a>.RoleNonParticipant</li>
+</ul>
+<!-- @@@participationRole -->
+<br/>
+<!-- $$$participationStatus -->
+<table class="qmlname"><tr valign="top" id="participationStatus-prop"><td class="tblQmlPropNode"><p><span class="name">participationStatus</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the participation status of the attendee of the event. The value can be one of:</p>
+<ul>
+<li><a href="index.html">EventAttendee</a>.StatusUnknown</li>
+<li><a href="index.html">EventAttendee</a>.StatusAccepted</li>
+<li><a href="index.html">EventAttendee</a>.StatusDeclined</li>
+<li><a href="index.html">EventAttendee</a>.StatusTentative</li>
+<li><a href="index.html">EventAttendee</a>.StatusDelegated</li>
+<li><a href="index.html">EventAttendee</a>.StatusInProcess</li>
+<li><a href="index.html">EventAttendee</a>.StatusCompleted</li>
+</ul>
+<!-- @@@participationStatus -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onDetailChanged -->
+<table class="qmlname"><tr valign="top" id="onDetailChanged-signal"><td class="tblQmlFuncNode"><p><span class="name">onDetailChanged</span>()</p></td></tr></table><p><b>See also </b><a href="QtOrganizer.Detail.md#onDetailChanged-signal">Detail::onDetailChanged</a>.</p>
+<!-- @@@onDetailChanged -->
+<br/>

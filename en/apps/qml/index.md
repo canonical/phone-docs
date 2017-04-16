@@ -44,7 +44,6 @@ becomes a very simple and agile process. Despite it being a scripting
 language, QML can leverage the OpenGL support to provide near-game-performance
 with gorgeous movements and transitions.
 
-
 ## Components at the core
 
 Components and their elements are the main building blocks of a QML
@@ -63,7 +62,6 @@ While pure QML is fully supported, developing with the Ubuntu SDK components
 is the recommended way to write apps for the platform.
 
 
-
 ## Deep JavaScript integration
 
 One of the features that makes the language so powerful and flexible is the
@@ -77,7 +75,6 @@ Integrating JavaScript into a QML app can be done in a number of ways:
 This enables developers leverage their existing JavaScript knowledge they have
 of JavaScript to rapidly develop both user-interfaces and application logic.
 
-
 ## Extending QML with C++
 
 While for most cases QML and JavaScript is all you need to write an app, there
@@ -90,7 +87,6 @@ logic. Since QML is built upon Qt, it inherits most of the functionality from
 the Qt framework, particularly the signals and slots mechanism and the meta-
 object system. Data created using C++ is directly accessible from QML, and QML
 objects are also accessible from C++ code.
-
 
 ## Next steps
 
