@@ -9,17 +9,17 @@ Title: QtSensors.qtsensors-grue-example
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/7042d7c8-be43-45ba-9a7d-32c508c7e916-../qtsensors-grue-example/images/qtsensors-examples-grue.png" alt="" /></p><p>The Qt Sensors - Grue sensor example demonstrates all the steps from creating a new sensor to using it.</p>
 <p>The sensor definition is placed in a library where client apps can access it. The actual implementation lives in a plugin.</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtSensors.grue/#grue-sensor-definition">Grue Sensor Definition</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtSensors.grue/#grue-sensor-implementation">Grue Sensor Implementation</a></li>
+<li><a href="QtSensors.grue/#grue-sensor-definition">Grue Sensor Definition</a></li>
+<li><a href="QtSensors.grue/#grue-sensor-implementation">Grue Sensor Implementation</a></li>
 </ul>
 <p>The sensor can now be used by a C++ application, even if the application does not have access to the definition.</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtSensors.grue/#grue-sensor-console-application">Grue Sensor Console Application</a></li>
+<li><a href="QtSensors.grue/#grue-sensor-console-application">Grue Sensor Console Application</a></li>
 </ul>
 <p>To make the sensor available to a QML application an import must be created.</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtSensors.grue/#grue-sensor-qml-import">Grue Sensor QML Import</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtSensors.grue/#grue-sensor-qml-application">Grue Sensor QML Application</a></li>
+<li><a href="QtSensors.grue/#grue-sensor-qml-import">Grue Sensor QML Import</a></li>
+<li><a href="QtSensors.grue/#grue-sensor-qml-application">Grue Sensor QML Application</a></li>
 </ul>
 <h2 id="grue-sensor-definition">Grue Sensor Definition</h2>
 <p>The Grue sensor is defined in a library so that applications can use it. The source code is available in the <code>grue/lib</code> subdirectory.</p>

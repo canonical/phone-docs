@@ -9,12 +9,12 @@ Title: QtQuick.qtquick-demos-maroon-example
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/8943333f-a8ae-47d1-977a-388e9a8bbaca-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-2.png" alt="" /></p><p><i>Maroon in Trouble</i> demonstrates QML features that are useful when developing games:</p>
 <ul>
 <li>Using custom QML types to create different screens for different stages of the game.</li>
-<li>Using the <a href="QtQuick.Item.md">Item</a> and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> types to construct a game background.</li>
+<li>Using the <a href="QtQuick.Item.md">Item</a> and <a href="QtQuick.imageelements/#image">Image</a> types to construct a game background.</li>
 <li>Using the <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a>, <a href="QtQuick.NumberAnimation.md">NumberAnimation</a>, <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a>, <a href="QtQuick.Particles.Emitter.md">Emitter</a>, and <a href="QtQuick.Particles.Wander.md">Wander</a> types to animate background objects.</li>
 <li>Using the Timer and <a href="QtQuick.Repeater.md">Repeater</a> types to display a countdown sequence before starting the game.</li>
 <li>Using a custom QML type with custom properties to construct a game board.</li>
-<li>Using the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> and <a href="QtQuick.Sprite.md">Sprite</a> types to add animated objects to the game board.</li>
-<li>Using a custom QML type that uses the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type with some custom properties to add a menu where the players can buy objects.</li>
+<li>Using the <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> and <a href="QtQuick.Sprite.md">Sprite</a> types to add animated objects to the game board.</li>
+<li>Using a custom QML type that uses the <a href="QtQuick.imageelements/#image">Image</a> type with some custom properties to add a menu where the players can buy objects.</li>
 <li>Using custom properties with private functions to keep track of game statistics and a custom QML type to display them to the players.</li>
 <li>Using the <a href="QtQuick.State.md">State</a> type with JavaScript functions to manage game states.</li>
 <li>Using the SoundEffect type to play individual sound effects depending on the object type and the action applied to the object.</li>
@@ -32,7 +32,7 @@ Title: QtQuick.qtquick-demos-maroon-example
 </ul>
 <p>To use the custom types, we add an import statement to the main QML file, maroon.qml that imports the folder called <code>content</code> where the types are located:</p>
 <pre class="qml">import &quot;content&quot;</pre>
-<p>We use the screen types at different stages of the game. The NewGameScreen type is used to create the screen that appears when the players start the app. In NewGameScreen.qml, we use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type to create a New Game button that the players can press to start a new game.</p>
+<p>We use the screen types at different stages of the game. The NewGameScreen type is used to create the screen that appears when the players start the app. In NewGameScreen.qml, we use an <a href="QtQuick.imageelements/#image">Image</a> type to create a New Game button that the players can press to start a new game.</p>
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/1b0db3ef-8292-4162-8251-780e4eb0c0a7-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-1.png" alt="" /></p><p>Tapping the button initiates a countdown timer that triggers the creation of the game canvas by using the GameCanvas type. Another Timer type spawns mobs of fish inside bubbles that the players must free before they reach the surface. The players can tap on the screen to open a menu where they can buy different types of weapons (melee, ranged, and bombs) to burst the bubbles.</p>
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ef450e97-f87b-49ee-b133-12c36b654100-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-2.png" alt="" /></p><p>When the game finishes, a screen created by using the GameOverScreen type appears. On this screen, the players can see their score and start a new game.</p>
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/8056f14f-9278-4d53-8233-662737e1c2d5-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-3.jpg" alt="" /></p><p>The screens are all created on the same background and use some of the same images and animations.</p>
@@ -45,7 +45,7 @@ Title: QtQuick.qtquick-demos-maroon-example
 property <span class="type">var</span> <span class="name">gameState</span>
 property <span class="type">bool</span> <span class="name">passedSplash</span>: <span class="number">false</span></pre>
 <p>We declare two custom properties for the root item, <code>gameState</code> and <code>passedSplash</code> that we will use later to manage game states.</p>
-<p>We use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> item to display the game background image:</p>
+<p>We use an <a href="QtQuick.imageelements/#image">Image</a> item to display the game background image:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>:<span class="string">&quot;content/gfx/background.png&quot;</span>
 <span class="name">anchors</span>.bottom: <span class="name">view</span>.<span class="name">bottom</span></pre>
@@ -57,7 +57,7 @@ property <span class="type">bool</span> <span class="name">passedSplash</span>: 
 <span class="name">width</span>: <span class="number">320</span>
 <span class="type">GameOverScreen</span> { <span class="name">gameCanvas</span>: <span class="name">canvas</span> }</pre>
 <p>We set a negative value for the <code>y</code> property to set the first scene at the bottom of the sea. We calculate the position by subtracting the height of a screen from the <code>height</code> property.</p>
-<p>Within the column layout, we use an <a href="QtQuick.Item.md">Item</a> type to add objects to the background. Within the item, we use <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a> layout objects to position <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> objects that display waves on the game canvas and the game over screen:</p>
+<p>Within the column layout, we use an <a href="QtQuick.Item.md">Item</a> type to add objects to the background. Within the item, we use <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a> layout objects to position <a href="QtQuick.imageelements/#image">Image</a> objects that display waves on the game canvas and the game over screen:</p>
 <pre class="qml">        <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">canvasArea</span>
 <span class="name">width</span>: <span class="number">320</span>
@@ -86,7 +86,7 @@ property <span class="type">bool</span> <span class="name">passedSplash</span>: 
 <span class="name">source</span>: <span class="string">&quot;content/gfx/wave.png&quot;</span>
 }</pre>
 <p>The second row of waves is positioned on the y axis with a slight offset to the first row. We also use the <code>opacity</code> property to make the waves appear lighter in color than the first two waves, which gives the background some depth.</p>
-<p>We use <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> objects to also display sunlight on the new game screen and on the game canvas:</p>
+<p>We use <a href="QtQuick.imageelements/#image">Image</a> objects to also display sunlight on the new game screen and on the game canvas:</p>
 <pre class="qml">            <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;content/gfx/sunlight.png&quot;</span>
 <span class="name">opacity</span>: <span class="number">0.02</span>
@@ -99,7 +99,7 @@ property <span class="type">bool</span> <span class="name">passedSplash</span>: 
 <span class="name">y</span>: <span class="number">20</span>
 <span class="name">anchors</span>.horizontalCenter: <span class="name">parent</span>.<span class="name">horizontalCenter</span></pre>
 <p>We set the <code>opacity</code> property of the images to <code>0.02</code> and <code>0.04</code> to give some depth to the rays of sunshine. We use the <code>y</code> property to position the images at fixed locations on the y axis and the <code>anchors.horizontalCenter</code> property to center them horizontally in relation to their parent.</p>
-<p>We use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type to display an image that adds a deepening shadow to the background:</p>
+<p>We use an <a href="QtQuick.imageelements/#image">Image</a> type to display an image that adds a deepening shadow to the background:</p>
 <pre class="qml">            <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;content/gfx/grid.png&quot;</span>
 <span class="name">opacity</span>: <span class="number">0.5</span>
@@ -144,7 +144,7 @@ SequentialAnimation on <span class="name">rotation</span> {
 <p>In addition to animation, we use particles to generate motion on the game screens. We use the <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a> QML type in maroon.qml to make bubbles appear at the bottom of the new game screen and game canvas and slowly float towards the top on varying trajectories.</p>
 <p>To use the <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a> type, we must import Qt Quick Particles:</p>
 <pre class="qml">import QtQuick.Particles 2.0</pre>
-<p>To have the particles appear on the game background, we place the <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a> type within the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type that displays the game background:</p>
+<p>To have the particles appear on the game background, we place the <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a> type within the <a href="QtQuick.imageelements/#image">Image</a> type that displays the game background:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>:<span class="string">&quot;content/gfx/background.png&quot;</span>
 <span class="name">anchors</span>.bottom: <span class="name">view</span>.<span class="name">bottom</span>
@@ -180,7 +180,7 @@ SequentialAnimation on <span class="name">rotation</span> {
 }</pre>
 <p>For another example of using the <a href="QtQuick.Particles.ParticleSystem.md">ParticleSystem</a> type, see the GameOverScreen.qml file, where an <a href="QtQuick.Particles.ImageParticle.md">ImageParticle</a> type is used to make clouds move across the sky.</p>
 <h2 id="using-timers">Using Timers</h2>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4fc71e0f-d618-4642-b0ae-bdb5d0871d13-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-4.jpg" alt="" /></p><p>In maroon.qml, we use the Timer type with a <a href="QtQuick.Repeater.md">Repeater</a> type to display a countdown sequence before using another timer to start a new game. Both timers are started simultaneously in the <code>&quot;gameOn&quot;</code> state, that is when the players tap the New Game button and <code>passedSplash</code> is <code>true</code>. This is explained in more detail in <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.demos-maroon/#managing-game-states">Managing Game States</a>.</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4fc71e0f-d618-4642-b0ae-bdb5d0871d13-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-4.jpg" alt="" /></p><p>In maroon.qml, we use the Timer type with a <a href="QtQuick.Repeater.md">Repeater</a> type to display a countdown sequence before using another timer to start a new game. Both timers are started simultaneously in the <code>&quot;gameOn&quot;</code> state, that is when the players tap the New Game button and <code>passedSplash</code> is <code>true</code>. This is explained in more detail in <a href="QtQuick.demos-maroon/#managing-game-states">Managing Game States</a>.</p>
 <p>We use the <code>countdownTimer</code> to display the countdown sequence:</p>
 <pre class="qml">            <span class="type">Timer</span> {
 <span class="name">id</span>: <span class="name">countdownTimer</span>
@@ -193,7 +193,7 @@ SequentialAnimation on <span class="name">rotation</span> {
 <p>We set the <code>repeat</code> property to <code>true</code> to specify that the timer is triggered at the interval of 1 second as long as the value of <code>countdown</code> is less than 5.</p>
 <p>The <code>countdown</code> property is defined in the root item with an initial value of <code>10</code>, so that <code>countdownTimer</code> is not running by default:</p>
 <pre class="qml">    property <span class="type">int</span> <span class="name">countdown</span>: <span class="number">10</span></pre>
-<p>Each time the timer is triggered, an image from the countdown sequence is displayed. We use a <a href="QtQuick.Repeater.md">Repeater</a> type to instantiate the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> delegate in the context of the repeater's parent, <code>canvasArea</code> item, seeded with data from the <code>model</code>:</p>
+<p>Each time the timer is triggered, an image from the countdown sequence is displayed. We use a <a href="QtQuick.Repeater.md">Repeater</a> type to instantiate the <a href="QtQuick.imageelements/#image">Image</a> delegate in the context of the repeater's parent, <code>canvasArea</code> item, seeded with data from the <code>model</code>:</p>
 <pre class="qml">            <span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: [<span class="string">&quot;content/gfx/text-blank.png&quot;</span>, <span class="string">&quot;content/gfx/text-3.png&quot;</span>, <span class="string">&quot;content/gfx/text-2.png&quot;</span>, <span class="string">&quot;content/gfx/text-1.png&quot;</span>, <span class="string">&quot;content/gfx/text-go.png&quot;</span>]
 <span class="name">delegate</span>: <span class="name">Image</span> {
@@ -228,7 +228,7 @@ property <span class="type"><a href="QtQuick.Item.md">Item</a></span> <span clas
 <p>We use the custom properties to set the <code>width</code> and <code>height</code> of the <code>grid</code> item as the amount of columns and rows multiplied by square size:</p>
 <pre class="qml">    <span class="name">width</span>: <span class="name">cols</span> <span class="operator">*</span> <span class="name">squareSize</span>
 <span class="name">height</span>: <span class="name">rows</span> <span class="operator">*</span> <span class="name">squareSize</span></pre>
-<p>We use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type with a <a href="QtQuick.MouseArea.md">MouseArea</a> type to display a help button that the players can tap to view an image that contains instructions for playing the game:</p>
+<p>We use an <a href="QtQuick.imageelements/#image">Image</a> type with a <a href="QtQuick.MouseArea.md">MouseArea</a> type to display a help button that the players can tap to view an image that contains instructions for playing the game:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">helpButton</span>
 <span class="name">z</span>: <span class="number">1010</span>
@@ -254,7 +254,7 @@ Behavior on <span class="name">opacity</span> { <span class="type"><a href="QtQu
 <p>We declare the <code>goAway()</code> private function to disable the mouse area and make the image fully transparent and a <code>comeBack()</code> function to enable the mouse area and make the button fully opaque. We use a <a href="QtQuick.Behavior.md">Behavior</a> type on the <code>opacity</code> property to apply the default number animation when the value of <code>opacity</code> changes.</p>
 <p>When the players tap the help button, the <code>onClicked</code> signal handler is called to hide the help button by setting the <code>helpButton.visible</code> property to <code>false</code> and to show the help image by setting the <code>helpImage.visible</code> property to <code>false</code>.</p>
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0ef6d0f5-d18e-40dd-96c9-f254e2e66cc7-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-6.jpg" alt="" /></p><p>We use anchoring to position the help button at the bottom center of the game canvas.</p>
-<p>We use another <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type to display the help image:</p>
+<p>We use another <a href="QtQuick.imageelements/#image">Image</a> type to display the help image:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">helpImage</span>
 <span class="name">z</span>: <span class="number">1010</span>
@@ -296,14 +296,14 @@ property <span class="type">bool</span> <span class="name">dying</span>: <span c
 <span class="name">z</span>: <span class="number">1001</span>
 <span class="keyword">function</span> <span class="name">fire</span>() { }
 ...</pre>
-<p>We use a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> type to animate the fish:</p>
+<p>We use a <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> type to animate the fish:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.SpriteSequence.md">SpriteSequence</a></span> {
 <span class="name">id</span>: <span class="name">fishSprite</span>
 <span class="name">width</span>: <span class="number">64</span>
 <span class="name">height</span>: <span class="number">64</span>
 <span class="name">interpolate</span>: <span class="number">false</span>
 <span class="name">goalSprite</span>: <span class="string">&quot;&quot;</span></pre>
-<p>The <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> type renders and controls a list of animations defined by <a href="QtQuick.Sprite.md">Sprite</a> types:</p>
+<p>The <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> type renders and controls a list of animations defined by <a href="QtQuick.Sprite.md">Sprite</a> types:</p>
 <pre class="qml">        <span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span> {
 <span class="name">name</span>: <span class="string">&quot;left&quot;</span>
 <span class="name">source</span>: <span class="string">&quot;../gfx/mob-idle.png&quot;</span>
@@ -363,7 +363,7 @@ property <span class="type">bool</span> <span class="name">goingLeft</span>: <sp
 <span class="name">duration</span>: <span class="number">300</span>
 }</pre>
 <h3 >Bursting Bubbles</h3>
-<p>We use another <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> to animate the bubbles so that they become smaller and finally burst when they are attacked by a shooter or a melee. For this effect, we set the value of the <code>scale</code> property to decrease by <code>0.2</code> each time the custom <code>hp</code> property changes:</p>
+<p>We use another <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> to animate the bubbles so that they become smaller and finally burst when they are attacked by a shooter or a melee. For this effect, we set the value of the <code>scale</code> property to decrease by <code>0.2</code> each time the custom <code>hp</code> property changes:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.SpriteSequence.md">SpriteSequence</a></span> {
 <span class="name">id</span>: <span class="name">bubble</span>
 <span class="name">width</span>: <span class="number">64</span>
@@ -375,7 +375,7 @@ property <span class="type">bool</span> <span class="name">goingLeft</span>: <sp
 <pre class="qml">        Behavior on <span class="name">scale</span> {
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">duration</span>: <span class="number">150</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">OutBack</span> }
 }</pre>
-<p>The <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> consist of two sprites that display different images. The first sprite, <code>&quot;big&quot;</code>, uses the catch.png image to display an empty bubble:</p>
+<p>The <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> consist of two sprites that display different images. The first sprite, <code>&quot;big&quot;</code>, uses the catch.png image to display an empty bubble:</p>
 <pre class="qml">        <span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span> {
 <span class="name">name</span>: <span class="string">&quot;big&quot;</span>
 <span class="name">source</span>: <span class="string">&quot;../gfx/catch.png&quot;</span>
@@ -391,7 +391,7 @@ property <span class="type">bool</span> <span class="name">goingLeft</span>: <sp
 <span class="name">frameX</span>: <span class="number">64</span>
 <span class="name">frameDuration</span>: <span class="number">200</span>
 }</pre>
-<p>Within the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a>, we use <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> with <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to animate the transitions between the frames. To create a pulsating effect on the bubbles, we apply a sequential animation on the <code>width</code> property with two number animations to first increase the bubble width from <code>* 1</code> to <code>* 1.1</code> over 800 milliseconds and then bring it back over 1 second:</p>
+<p>Within the <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a>, we use <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> with <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to animate the transitions between the frames. To create a pulsating effect on the bubbles, we apply a sequential animation on the <code>width</code> property with two number animations to first increase the bubble width from <code>* 1</code> to <code>* 1.1</code> over 800 milliseconds and then bring it back over 1 second:</p>
 <pre class="qml">        SequentialAnimation on <span class="name">width</span> {
 <span class="name">loops</span>: <span class="name">Animation</span>.<span class="name">Infinite</span>
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">from</span>: <span class="name">width</span> <span class="operator">*</span> <span class="number">1</span>; <span class="name">to</span>: <span class="name">width</span> <span class="operator">*</span> <span class="number">1.1</span>; <span class="name">duration</span>: <span class="number">800</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span> }
@@ -403,9 +403,9 @@ property <span class="type">bool</span> <span class="name">goingLeft</span>: <sp
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">from</span>: <span class="name">height</span> <span class="operator">*</span> <span class="number">1</span>; <span class="name">to</span>: <span class="name">height</span> <span class="operator">*</span> <span class="number">1.15</span>; <span class="name">duration</span>: <span class="number">1200</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span> }
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">from</span>: <span class="name">height</span> <span class="operator">*</span> <span class="number">1.15</span>; <span class="name">to</span>: <span class="name">height</span> <span class="operator">*</span> <span class="number">1</span>; <span class="name">duration</span>: <span class="number">1000</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span> }
 }</pre>
-<p>We use yet another <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#spritesequence">SpriteSequence</a> to display the effect of squid ink on the bubbles. For more examples of using sprite sequences, see the QML files in the <code>towers</code> directory.</p>
+<p>We use yet another <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> to display the effect of squid ink on the bubbles. For more examples of using sprite sequences, see the QML files in the <code>towers</code> directory.</p>
 <h2 id="adding-dialogs">Adding Dialogs</h2>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6b7c01fd-9c88-4323-af6a-36ca863fd034-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-5.jpg" alt="" /></p><p>In GameCanvas.qml, we use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type with some custom properties to create a menu where the players can buy tower objects:</p>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6b7c01fd-9c88-4323-af6a-36ca863fd034-../qtquick-demos-maroon-example/images/qtquick-demo-maroon-med-5.jpg" alt="" /></p><p>In GameCanvas.qml, we use an <a href="QtQuick.imageelements/#image">Image</a> type with some custom properties to create a menu where the players can buy tower objects:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">towerMenu</span>
 <span class="name">visible</span>: <span class="number">false</span>
@@ -507,7 +507,7 @@ property <span class="type">bool</span> <span class="name">towerExists</span>: <
 <p>We use the <code>canBuild</code> custom property to prevent players from adding tower objects in locations where tower objects already exist.</p>
 <p>We use the <code>source</code> property to display the image for the tower type.</p>
 <p>The <code>onClicked</code> signal handler is called to execute the <code>finish()</code> function that closes the menu when the players tap an enabled build button.</p>
-<p>Build buttons are enabled when the players have enough coins to buy the tower objects. We use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type in BuildButton.qml to display images on the buttons:</p>
+<p>Build buttons are enabled when the players have enough coins to buy the tower objects. We use an <a href="QtQuick.imageelements/#image">Image</a> type in BuildButton.qml to display images on the buttons:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">img</span>
 <span class="name">opacity</span>: (<span class="name">canBuild</span> <span class="operator">&amp;&amp;</span> <span class="name">gameCanvas</span>.<span class="name">coins</span> <span class="operator">&gt;=</span> <span class="name">Logic</span>.<span class="name">towerData</span>[<span class="name">towerType</span><span class="operator">-</span><span class="number">1</span>].<span class="name">cost</span>) ? <span class="number">1.0</span> : <span class="number">0.4</span>
@@ -521,7 +521,7 @@ property <span class="type">bool</span> <span class="name">towerExists</span>: <
 <span class="name">color</span>: <span class="string">&quot;#ffffff&quot;</span>
 <span class="name">text</span>: <span class="name">Logic</span>.<span class="name">towerData</span>[<span class="name">towerType</span> <span class="operator">-</span> <span class="number">1</span>].<span class="name">cost</span>
 }</pre>
-<p>To display a pointer on the screen at the position where the tower object will be added, we use the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type. We use the <code>visible</code> property to determine whether the dialog-pointer.png image should be positioned below or above the menu. When the value of the <code>col</code> property equals the <code>index</code> and the value or the <code>row</code> property is not <code>0</code>, we anchor the image to the bottom of its parent, BuildButton.</p>
+<p>To display a pointer on the screen at the position where the tower object will be added, we use the <a href="QtQuick.imageelements/#image">Image</a> type. We use the <code>visible</code> property to determine whether the dialog-pointer.png image should be positioned below or above the menu. When the value of the <code>col</code> property equals the <code>index</code> and the value or the <code>row</code> property is not <code>0</code>, we anchor the image to the bottom of its parent, BuildButton.</p>
 <p>When the value or the <code>row</code> property is <code>0</code>, we anchor the image to the top of BuildButton to position the pointer above the menu and use the <code>rotation</code> property to rotate it by 180 degrees, so that it points upwards:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">visible</span>: <span class="name">col</span> <span class="operator">==</span> <span class="name">index</span> <span class="operator">&amp;&amp;</span> <span class="name">row</span> <span class="operator">!=</span> <span class="number">0</span>
@@ -637,7 +637,7 @@ property <span class="type">int</span> <span class="name">lives</span>: <span cl
 <span class="name">onTriggered</span>: <span class="name">Logic</span>.<span class="name">startGame</span>(<span class="name">canvas</span>);
 }</pre>
 <p>The game continues until <code>gameState.gameOver</code> is set to <code>true</code> and <code>gameState.gameRunning</code> is set to <code>false</code> by calling the <code>endGame()</code> function when the value of the <code>gameState.lives</code> property becomes less than or equal to <code>0</code>.</p>
-<p>In GameOverScreen.qml, we use a <a href="QtQuick.MouseArea.md">MouseArea</a> type and an <code>onClicked</code> signal handler within an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type to return to the game canvas when the players tap the New Game button:</p>
+<p>In GameOverScreen.qml, we use a <a href="QtQuick.MouseArea.md">MouseArea</a> type and an <code>onClicked</code> signal handler within an <a href="QtQuick.imageelements/#image">Image</a> type to return to the game canvas when the players tap the New Game button:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;gfx/button-play.png&quot;</span>
 <span class="name">anchors</span>.bottom: <span class="name">parent</span>.<span class="name">bottom</span>

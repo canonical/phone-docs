@@ -10,11 +10,11 @@ Title: QtQuick.qtquick-imageelements-example
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="borderimage">BorderImage</h2>
-<p><i>BorderImage</i> shows off the various scaling modes of the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#borderimage">BorderImage</a> type by setting its horizontalTileMode and verticalTileMode properties.</p>
+<p><i>BorderImage</i> shows off the various scaling modes of the <a href="QtQuick.imageelements/#borderimage">BorderImage</a> type by setting its horizontalTileMode and verticalTileMode properties.</p>
 <h2 id="image">Image</h2>
-<p><i>Image</i> shows off the various fill modes of the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#image">Image</a> type.</p>
+<p><i>Image</i> shows off the various fill modes of the <a href="QtQuick.imageelements/#image">Image</a> type.</p>
 <h2 id="shadows">Shadows</h2>
-<p><i>Shadows</i> shows how to create a drop shadow effect for a rectangular item using a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#borderimage">BorderImage</a>:</p>
+<p><i>Shadows</i> shows how to create a drop shadow effect for a rectangular item using a <a href="QtQuick.imageelements/#borderimage">BorderImage</a>:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.BorderImage.md">BorderImage</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">rectangle</span>
 <span class="type">anchors</span> { <span class="name">leftMargin</span>: -<span class="number">6</span>; <span class="name">topMargin</span>: -<span class="number">6</span>; <span class="name">rightMargin</span>: -<span class="number">8</span>; <span class="name">bottomMargin</span>: -<span class="number">8</span> }
@@ -37,7 +37,7 @@ Title: QtQuick.qtquick-imageelements-example
 }</pre>
 <p>The sprite animation will loop three times.</p>
 <h2 id="spritesequence">SpriteSequence</h2>
-<p><i>SpriteSequence</i> demonstrates using a sprite sequence to draw an animated and interactive bear. The <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#spritesequence">SpriteSequence</a> object defines five different sprites. The bear is initially in a <i>still</i> state:</p>
+<p><i>SpriteSequence</i> demonstrates using a sprite sequence to draw an animated and interactive bear. The <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> object defines five different sprites. The bear is initially in a <i>still</i> state:</p>
 <pre class="qml">        <span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span>{
 <span class="name">name</span>: <span class="string">&quot;still&quot;</span>
 <span class="name">source</span>: <span class="string">&quot;content/BearSheet.png&quot;</span>

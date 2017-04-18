@@ -12,13 +12,13 @@ Title: QtQuick.qml-advtutorial
 <p>An understanding of JavaScript is helpful to understand parts of this tutorial, but if you don't know JavaScript you can still get a feel for how you can integrate backend logic to create and control QML types.</p>
 <p>Tutorial chapters:</p>
 <ol class="1">
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.tutorials-samegame-samegame1/">Creating the Game Canvas and Blocks</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.tutorials-samegame-samegame2/">Populating the Game Canvas</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.tutorials-samegame-samegame3/">Implementing the Game Logic</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.tutorials-samegame-samegame4/">Finishing Touches</a></li>
+<li><a href="QtQuick.tutorials-samegame-samegame1/">Creating the Game Canvas and Blocks</a></li>
+<li><a href="QtQuick.tutorials-samegame-samegame2/">Populating the Game Canvas</a></li>
+<li><a href="QtQuick.tutorials-samegame-samegame3/">Implementing the Game Logic</a></li>
+<li><a href="QtQuick.tutorials-samegame-samegame4/">Finishing Touches</a></li>
 </ol>
 <p>All the code in this tutorial can be found in Qt's <code>examples/quick/tutorials/samegame</code> directory.</p>
 <!-- @@@qml-advtutorial.html -->
 <p class="naviNextPrevious footerNavi">
-<a class="nextPage" href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.tutorials-samegame-samegame1/">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
+<a class="nextPage" href="QtQuick.tutorials-samegame-samegame1/">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
 </p>

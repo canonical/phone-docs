@@ -20,7 +20,7 @@ Title: QtSensors.qtsensors-index
 <h2 id="information-for-backend-implementors">Information for Backend Implementors</h2>
 <table class="generic">
 <tr valign="top"><td >Backend</td><td >Information about the Qt Sensors back end</td></tr>
-<tr valign="top"><td ><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtSensors.grue/">Qt Sensors - Grue Sensor Example</a></td><td >The Qt Sensors - Grue Sensor Example demonstrates creation of a sensor backend</td></tr>
+<tr valign="top"><td ><a href="QtSensors.grue/">Qt Sensors - Grue Sensor Example</a></td><td >The Qt Sensors - Grue Sensor Example demonstrates creation of a sensor backend</td></tr>
 </table>
 <h2 id="compatibility-with-qtmobility-sensors-api">Compatibility with QtMobility Sensors API</h2>
 <p>Qt Sensors 5.0 (the initial release) is generally expected to be source compatible with QtMobility Sensors 1.2&#x2e;</p>

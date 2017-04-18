@@ -13,15 +13,15 @@ Title: QtFeedback.Actuator
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#actuatorId-prop">actuatorId</a></b></b> : int</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#enabled-prop">enabled</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#state-prop">state</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#valid-prop">valid</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtFeedback.actuator.md#actuatorId-prop">actuatorId</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtFeedback.actuator.md#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtFeedback.actuator.md#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtFeedback.actuator.md#state-prop">state</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="QtFeedback.actuator.md#valid-prop">valid</a></b></b> : bool</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">bool <b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md#isCapabilitySupported-method">isCapabilitySupported</a></b></b>(enumeration <i>capability</i>)</li>
+<li class="fn">bool <b><b><a href="QtFeedback.actuator.md#isCapabilitySupported-method">isCapabilitySupported</a></b></b>(enumeration <i>capability</i>)</li>
 </ul>
 <!-- $$$Actuator-description -->
 <h2 id="details">Detailed Description</h2>

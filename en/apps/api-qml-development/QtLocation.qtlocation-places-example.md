@@ -6,7 +6,7 @@ Title: QtLocation.qtlocation-places-example
 
 <span class="subtitle"></span>
 <!-- $$$places-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/cbfbec21-e6e6-4201-b72d-0838c7b4ebaa-api/apps/qml/sdk-15.04.1/qtlocation-places-example/images/qml-places.png" alt="" /></p>
+<p class="centerAlign"><img src="../../media/qml-places.png" alt="" /></p>
 <h2 id="overview">Overview</h2>
 <p>The Places example presents an application window displaying a map. At the top of the window is a search box, which is used to enter a place search query. To search for a place enter a search term into the text box and click the magnifying glass icon. To search for a place by category, click the category icon to display the list of available categories and select the desired category. The place search query will be for places that are near the current location shown on the map.</p>
 <p>The search box provides search term suggestions when three or more characters are entered. Selecting one of the suggestions will cause a place search to be performed with the selected search text.</p>

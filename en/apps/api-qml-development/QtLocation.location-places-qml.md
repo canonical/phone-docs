@@ -54,9 +54,9 @@ Title: QtLocation.location-places-qml
 }
 <span class="name">spacing</span>: <span class="number">10</span>
 }</pre>
-</td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/83a3d51e-3b66-4934-8d36-49d205587fba-api/apps/qml/sdk-15.04.1/location-places-qml/images/places-list.png" alt="" /></td></tr>
+</td><td ><img src="../../media/places-list.png" alt="" /></td></tr>
 </table>
-<p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.places_list/">Places List</a> example for full source code.</p>
+<p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="QtLocation.places_list/">Places List</a> example for full source code.</p>
 <h3 >Display Search Results using a MapItemView</h3>
 <p>Instead of a ListView, the <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> can be used in conjunction with a <a href="..//QtLocation.MapItemView.md">MapItemView</a> to display markers on a map. Firstly a <a href="..//QtLocation.Map.md">Map</a> is used to define the visual region occupied by the map, in this case it fills the entirety of its parent. Other properties are specified such as the <a href="..//QtLocation.Map.md#plugin-prop">plugin</a> providing the maps, and the map's <a href="..//QtLocation.Map.md#center-prop">center</a> and <a href="..//QtLocation.Map.md#zoomLevel-prop">zoomLevel</a>.</p>
 <p>Inside the <a href="..//QtLocation.Map.md">Map</a>, a <a href="..//QtLocation.MapItemView.md">MapItemView</a> is declared, where the <a href="..//QtLocation.MapItemView.md#model-prop">model</a> property has been set to the search model and a <a href="..//QtLocation.MapItemView.md#delegate-prop">delegate</a> consisting of a <a href="..//QtLocation.MapQuickItem.md">MapQuickItem</a> is used to display a marker image. A marker is shown for every place that was found by the search model. The delegate uses the <i>place</i> role to position the marker.</p>
@@ -83,9 +83,9 @@ Title: QtLocation.location-places-qml
 }
 }
 }</pre>
-</td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/1cf25225-6c8f-4d72-a945-5564b3fd0a7d-api/apps/qml/sdk-15.04.1/location-places-qml/images/places-map.jpg" alt="" /></td></tr>
+</td><td ><img src="../../media/places-map.jpg" alt="" /></td></tr>
 </table>
-<p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.places_map/">Places Map</a> example for full source code.</p>
+<p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="QtLocation.places_map/">Places Map</a> example for full source code.</p>
 <h3 >Fetching Place Details</h3>
 <p>In order to save bandwidth, sometimes a backend will only return places which are partially populated with details. This can be checked with the <a href="..//QtLocation.Place.md#detailsFetched-prop">Place::detailsFetched</a> property which indicates whether all availalable details have been fetched or not. If not, the <a href="..//QtLocation.Place.md#getDetails-method">Place::getDetails</a>() method can be invoked to fetch the remaining details.</p>
 <pre class="qml"><span class="keyword">if</span> (!<span class="name">place</span>.<span class="name">detailsFetched</span>)
@@ -103,7 +103,7 @@ var <span class="name">place</span> = <span class="name">Qt</span>.<span class="
 <span class="name">place</span>.<span class="name">remove</span>();</pre>
 <h3 >Learn More</h3>
 <p>The above snippets only exhibit a small subset of Places functionality. Refer to the <a href="..//QtLocation.location-places-qml.md#places-types">Places Types</a> shown below for richer content such as <a href="..//QtLocation.ImageModel.md">images</a>, <a href="..//QtLocation.ReviewModel.md">reviews</a> etc, as well as more indepth descriptions and explanations.</p>
-<p>See also the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.places/">Places (QML)</a> example for a more comprehensive demonstration on how to use the API.</p>
+<p>See also the <a href="QtLocation.places/">Places (QML)</a> example for a more comprehensive demonstration on how to use the API.</p>
 <h2 id="places-types">Places Types</h2>
 <h3 >Data Types</h3>
 <table class="annotated">

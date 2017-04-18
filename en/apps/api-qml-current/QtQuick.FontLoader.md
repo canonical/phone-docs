@@ -30,7 +30,7 @@ Title: QtQuick.FontLoader
 <span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="string">&quot;Fixed-size font&quot;</span>; <span class="name">font</span>.family: <span class="name">fixedFont</span>.<span class="name">name</span> }
 <span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="string">&quot;Fancy font&quot;</span>; <span class="name">font</span>.family: <span class="name">webFont</span>.<span class="name">name</span> }
 }</pre>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.text/#fonts">Qt Quick Examples - Text Fonts</a>.</p>
+<p><b>See also </b><a href="QtQuick.text/#fonts">Qt Quick Examples - Text Fonts</a>.</p>
 <!-- @@@FontLoader -->
 <h2>Property Documentation</h2>
 <!-- $$$name -->

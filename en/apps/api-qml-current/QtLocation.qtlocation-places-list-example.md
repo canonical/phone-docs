@@ -6,7 +6,7 @@ Title: QtLocation.qtlocation-places-list-example
 
 <span class="subtitle"></span>
 <!-- $$$places_list-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f87d87d6-a456-4cf4-a3e7-cbc4a562f964-api/apps/qml/sdk-15.04.1/qtlocation-places-list-example/images/places-list.png" alt="" /></p><p>To write a QML application that will show places in a list, we start by making the following import declarations.</p>
+<p class="centerAlign"><img src="../../media/places-list.png" alt="" /></p><p>To write a QML application that will show places in a list, we start by making the following import declarations.</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2
 import QtLocation 5.3</pre>

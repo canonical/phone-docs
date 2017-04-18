@@ -53,7 +53,7 @@ path: <span class="operator">[</span>
 <span class="operator">]</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/29a2920b-1ce7-48db-96e5-c81cae609c77-api/apps/qml/sdk-15.04.1/QtLocation.MapPolygon/images/api-mappolygon.png" alt="" /></p><!-- @@@MapPolygon -->
+<p class="centerAlign"><img src="../../media/api-mappolygon.png" alt="" /></p><!-- @@@MapPolygon -->
 <h2>Property Documentation</h2>
 <!-- $$$border -->
 <table class="qmlname"><tr valign="top" id="border-prop"><th class="centerAlign"><p><b>border group</b></p></th></tr><tr valign="top" id="border.width-prop"><td class="tblQmlPropNode"><p><span class="name">border.width</span> : <span class="type">int</span></p></td></tr><tr valign="top" id="border.color-prop"><td class="tblQmlPropNode"><p><span class="name">border.color</span> : <span class="type">color</span></p></td></tr></table><p>This property is part of the border property group. The border property group holds the width and color used to draw the border of the polygon.</p>

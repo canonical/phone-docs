@@ -8,7 +8,7 @@ Title: QtQuick.qtquick-demos-stocqt-example
 <!-- $$$demos/stocqt-description -->
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/8d8b1b91-50ea-497d-ba53-f8c642c4c3ce-../qtquick-demos-stocqt-example/images/qtquick-demo-stocqt.png" alt="" /></p><p>The <i>StocQt</i> application presents a trend chart for the first stock in the list of NASDAQ-100 stocks maintained by it. It allows the user to choose another stock from the list, and fetches the required data for the selected stock by sending an <code>XMLHttpRequest</code> to http://finance.yahoo.com.</p>
 <p>The application uses several custom types such as Button, CheckBox, StockChart, StockInfo, StockView, and so on. These types are used to present the stock data in a readable form and also let the user customize the trend chart. For example, the user can choose to view the yearly, monthly, or daily trends in the stock price.</p>
-<p>The application uses the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.views/#objectmodel">ObjectModel</a> type to access the two visual data models that it depends on.</p>
+<p>The application uses the <a href="QtQuick.views/#objectmodel">ObjectModel</a> type to access the two visual data models that it depends on.</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 ...

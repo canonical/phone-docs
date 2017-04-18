@@ -44,7 +44,7 @@ import QtQuick 2.0
 <span class="type">Button</span> { <span class="name">x</span>: <span class="number">50</span>; <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">50</span>; <span class="name">color</span>: <span class="string">&quot;blue&quot;</span> }
 <span class="type">Button</span> { <span class="name">width</span>: <span class="number">50</span>; <span class="name">height</span>: <span class="number">50</span>; <span class="name">radius</span>: <span class="number">8</span> }
 }</pre>
-</td><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a3fd3228-57ad-4aa3-ba24-ffa21eb87994-../qtqml-documents-topic/images/button-types.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="../../media/button-types.png" alt="" /></p></td></tr>
 </table>
 <p>Please see the documentation about <a href="QtQml.qtqml-documents-definetypes.md">defining object types in documents</a> for in-depth information on the topic.</p>
 <h2 id="resource-loading-and-network-transparency">Resource Loading and Network Transparency</h2>

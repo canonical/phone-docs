@@ -96,5 +96,5 @@ Title: QtQuick.qtquick-tutorials-dynamicview-dynamicview1-example
 <!-- @@@tutorials/dynamicview/dynamicview1 -->
 <p class="naviNextPrevious footerNavi">
 <a class="prevPage" href="QtQuick.qml-dynamicview-tutorial.md">QML Dynamic View Ordering Tutorial</a>
-<a class="nextPage" href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.tutorials-dynamicview-dynamicview2/">QML Dynamic View Ordering Tutorial 2 - Dragging View Items</a>
+<a class="nextPage" href="QtQuick.tutorials-dynamicview-dynamicview2/">QML Dynamic View Ordering Tutorial 2 - Dragging View Items</a>
 </p>

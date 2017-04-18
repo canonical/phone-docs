@@ -8,13 +8,13 @@ Title: QtQml.qtqml-referenceexamples-valuesource-example
 <!-- $$$referenceexamples/valuesource-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-signal/">Extending QML - Signal Support Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-attached/">Extending QML - Attached Properties Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-grouped/">Extending QML - Grouped Properties Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-default/">Extending QML - Default Property Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-coercion/">Extending QML - Inheritance and Coercion Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-properties/">Extending QML - Object and List Property Types Example</a></li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.referenceexamples-signal/">Extending QML - Signal Support Example</a></li>
+<li><a href="QtQml.referenceexamples-attached/">Extending QML - Attached Properties Example</a></li>
+<li><a href="QtQml.referenceexamples-grouped/">Extending QML - Grouped Properties Example</a></li>
+<li><a href="QtQml.referenceexamples-default/">Extending QML - Default Property Example</a></li>
+<li><a href="QtQml.referenceexamples-coercion/">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="QtQml.referenceexamples-properties/">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>Files:</p>
 <ul>

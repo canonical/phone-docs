@@ -9,19 +9,19 @@ Title: QtFeedback.HapticsEffect
 <p>The HapticsEffect element represents a custom haptic feedback effect. More...</p>
 <!-- @@@HapticsEffect -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.FeedbackEffect.md">FeedbackEffect</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtFeedback.FeedbackEffect.md">FeedbackEffect</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#actuator-prop">actuator</a></b></b> : Actuator</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#attackIntensity-prop">attackIntensity</a></b></b> : double</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#attackTime-prop">attackTime</a></b></b> : int</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#availableActuators-prop">availableActuators</a></b></b> : list&lt;Actuator&gt;</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#fadeIntensity-prop">fadeIntensity</a></b></b> : double</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#fadeTime-prop">fadeTime</a></b></b> : int</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#intensity-prop">intensity</a></b></b> : double</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.hapticseffect.md#period-prop">period</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#actuator-prop">actuator</a></b></b> : Actuator</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#attackIntensity-prop">attackIntensity</a></b></b> : double</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#attackTime-prop">attackTime</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#availableActuators-prop">availableActuators</a></b></b> : list&lt;Actuator&gt;</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#fadeIntensity-prop">fadeIntensity</a></b></b> : double</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#fadeTime-prop">fadeTime</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#intensity-prop">intensity</a></b></b> : double</li>
+<li class="fn"><b><b><a href="QtFeedback.hapticseffect.md#period-prop">period</a></b></b> : int</li>
 </ul>
 <!-- $$$HapticsEffect-description -->
 <h2 id="details">Detailed Description</h2>
@@ -45,8 +45,8 @@ rumbleEffect.start();  // plays a rumble effect
 <!-- @@@HapticsEffect -->
 <h2>Property Documentation</h2>
 <!-- $$$actuator -->
-<table class="qmlname"><tr valign="top" id="actuator-prop"><td class="tblQmlPropNode"><p><span class="name">actuator</span> : <span class="type"><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md">Actuator</a></span></p></td></tr></table><p>The actuator that is used for playing this effect.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md">Actuator</a>.</p>
+<table class="qmlname"><tr valign="top" id="actuator-prop"><td class="tblQmlPropNode"><p><span class="name">actuator</span> : <span class="type"><a href="QtFeedback.actuator.md">Actuator</a></span></p></td></tr></table><p>The actuator that is used for playing this effect.</p>
+<p><b>See also </b><a href="QtFeedback.actuator.md">Actuator</a>.</p>
 <!-- @@@actuator -->
 <br/>
 <!-- $$$attackIntensity -->
@@ -58,8 +58,8 @@ rumbleEffect.start();  // plays a rumble effect
 <!-- @@@attackTime -->
 <br/>
 <!-- $$$availableActuators -->
-<table class="qmlname"><tr valign="top" id="availableActuators-prop"><td class="tblQmlPropNode"><p><span class="name">availableActuators</span> : <span class="type">list</span>&lt;<span class="type"><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md">Actuator</a></span>&gt;</p></td></tr></table><p>This property holds a list of available actuators. This property is read only.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.actuator.md">Actuator</a>.</p>
+<table class="qmlname"><tr valign="top" id="availableActuators-prop"><td class="tblQmlPropNode"><p><span class="name">availableActuators</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtFeedback.actuator.md">Actuator</a></span>&gt;</p></td></tr></table><p>This property holds a list of available actuators. This property is read only.</p>
+<p><b>See also </b><a href="QtFeedback.actuator.md">Actuator</a>.</p>
 <!-- @@@availableActuators -->
 <br/>
 <!-- $$$fadeIntensity -->

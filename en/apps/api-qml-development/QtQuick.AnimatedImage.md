@@ -23,7 +23,7 @@ Title: QtQuick.AnimatedImage
 <!-- $$$AnimatedImage-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="index.html">AnimatedImage</a> type extends the features of the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type, providing a way to play animations stored as images containing a series of frames, such as those stored in GIF files.</p>
+<p>The <a href="index.html">AnimatedImage</a> type extends the features of the <a href="QtQuick.imageelements/#image">Image</a> type, providing a way to play animations stored as images containing a series of frames, such as those stored in GIF files.</p>
 <p>Information about the current frame and total length of the animation can be obtained using the <a href="#currentFrame-prop">currentFrame</a> and <a href="#frameCount-prop">frameCount</a> properties. You can start, pause and stop the animation by changing the values of the <a href="#playing-prop">playing</a> and <a href="#paused-prop">paused</a> properties.</p>
 <p>The full list of supported formats can be determined with QMovie::supportedFormats().</p>
 <h2 id="example-usage">Example Usage</h2>
@@ -41,7 +41,7 @@ property <span class="type">int</span> <span class="name">frames</span>: <span c
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 }
 }</pre>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#borderimage">BorderImage</a> and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a>.</p>
+<p><b>See also </b><a href="QtQuick.imageelements/#borderimage">BorderImage</a> and <a href="QtQuick.imageelements/#image">Image</a>.</p>
 <!-- @@@AnimatedImage -->
 <h2>Property Documentation</h2>
 <!-- $$$currentFrame -->

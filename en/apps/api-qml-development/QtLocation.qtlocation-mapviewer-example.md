@@ -30,7 +30,7 @@ Title: QtLocation.qtlocation-mapviewer-example
 </ul>
 </li>
 </ul>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/011bd6d2-c505-42c3-8044-175a014ac70f-api/apps/qml/sdk-15.04.1/qtlocation-mapviewer-example/images/example-mapviewer.png" alt="" /></p>
+<p class="centerAlign"><img src="../../media/example-mapviewer.png" alt="" /></p>
 <h3 >Displaying a Map</h3>
 <p>Drawing a map on-screen is accomplished using the Map type, as shown below.</p>
 <pre class="qml"><span class="type"><a href="..//QtLocation.Map.md">Map</a></span> {

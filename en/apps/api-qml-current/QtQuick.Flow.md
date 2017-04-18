@@ -42,7 +42,7 @@ Title: QtQuick.Flow
 <p>The Flow item automatically positions the child <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> items side by side, wrapping as necessary:</p>
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/c2de63e7-591e-4d55-8ef0-376249189884-../QtQuick.Flow/images/qml-flow-snippet.png" alt="" /></p><p>If an item within a Flow is not <a href="QtQuick.Item.md#visible-prop">visible</a>, or if it has a width or height of 0, the item will not be laid out and it will not be visible within the Flow. Also, since a Flow automatically positions its children, a child item within a Flow should not set its <a href="QtQuick.Item.md#x-prop">x</a> or <a href="QtQuick.Item.md#y-prop">y</a> positions or anchor itself with any of the <a href="QtQuick.Item.md#anchors-prop">anchor</a> properties.</p>
 <p>For more information on using Flow and other related positioner-types, see <a href="QtQuick.qtquick-positioning-layouts.md">Item Positioners</a>.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a>, <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#grid">Grid</a>, <a href="QtQuick.Positioner.md">Positioner</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a>, <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#grid">Grid</a>, <a href="QtQuick.Positioner.md">Positioner</a>, and <a href="QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@Flow -->
 <h2>Property Documentation</h2>
 <!-- $$$add -->
@@ -52,7 +52,7 @@ Title: QtQuick.Flow
 <li>Child items that change their <a href="QtQuick.Item.md#visible-prop">Item::visible</a> property from false to true, and thus are now visible</li>
 </ul>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being added. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>Note: </b>This transition is not applied to the items that already part of the positioner at the time of its creation. In this case, the <a href="#populate-prop">populate</a> transition is applied instead.</p><p><b>See also </b><a href="#populate-prop">populate</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>Note: </b>This transition is not applied to the items that already part of the positioner at the time of its creation. In this case, the <a href="#populate-prop">populate</a> transition is applied instead.</p><p><b>See also </b><a href="#populate-prop">populate</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@add -->
 <br/>
 <!-- $$$effectiveLayoutDirection -->
@@ -77,7 +77,7 @@ Title: QtQuick.Flow
 <li>Qt.LeftToRight (default) - Items are positioned from the top to bottom, and left to right. The flow direction is dependent on the <a href="#flow-prop">Flow::flow</a> property.</li>
 <li>Qt.RightToLeft - Items are positioned from the top to bottom, and right to left. The flow direction is dependent on the <a href="#flow-prop">Flow::flow</a> property.</li>
 </ul>
-<p><b>See also </b><a href="QtQuick.Grid.md#layoutDirection-prop">Grid::layoutDirection</a>, <a href="QtQuick.Row.md#layoutDirection-prop">Row::layoutDirection</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.righttoleft/">Qt Quick Examples - Right to Left</a>.</p>
+<p><b>See also </b><a href="QtQuick.Grid.md#layoutDirection-prop">Grid::layoutDirection</a>, <a href="QtQuick.Row.md#layoutDirection-prop">Row::layoutDirection</a>, and <a href="QtQuick.righttoleft/">Qt Quick Examples - Right to Left</a>.</p>
 <!-- @@@layoutDirection -->
 <br/>
 <!-- $$$move -->
@@ -87,13 +87,13 @@ Title: QtQuick.Flow
 <li>Child items that are repositioned due to the resizing of other items in the positioner</li>
 </ul>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being moved. Note, however, that for this move transition, the <a href="QtQuick.ViewTransition.md">ViewTransition</a>.targetIndexes and <a href="QtQuick.ViewTransition.md">ViewTransition</a>.targetItems lists are only set when this transition is triggered by the addition of other items in the positioner; in other cases, these lists will be empty. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>Note: </b>In Qt Quick 1, this transition was applied to all items that were part of the positioner at the time of its creation. From <a href="QtQuick.qtquick-index.md">QtQuick 2</a> onwards, positioners apply the <a href="#populate-prop">populate</a> transition to these items instead.</p><p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>Note: </b>In Qt Quick 1, this transition was applied to all items that were part of the positioner at the time of its creation. From <a href="QtQuick.qtquick-index.md">QtQuick 2</a> onwards, positioners apply the <a href="#populate-prop">populate</a> transition to these items instead.</p><p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@move -->
 <br/>
 <!-- $$$populate -->
 <table class="qmlname"><tr valign="top" id="populate-prop"><td class="tblQmlPropNode"><p><span class="name">populate</span> : <span class="type"><a href="QtQuick.Transition.md">Transition</a></span></p></td></tr></table><p>This property holds the transition to be run for items that are part of this positioner at the time of its creation. The transition is run when the positioner is first created.</p>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being added. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@populate -->
 <br/>
 <!-- $$$spacing -->
