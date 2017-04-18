@@ -184,7 +184,7 @@ provides the entry point API the client uses to interact with the scope.
 
 **Note**: You may find it useful to check out the `ScopeBase` class declaration (its API) in the corresponding header file: `include/scope/scope.h`. The header file is a great way to understand C++ classes because their API is declared without any additional implementation code, making it easy to understand.
 
-**Tip**: Check out the [Unity 8 Scope API reference docs](../api-autopilot-current/index.mdscope/query.cpp
+**Tip**: Check out the [Unity 8 Scope API reference docs](../api-autopilot-current/index.md
 
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp)
 

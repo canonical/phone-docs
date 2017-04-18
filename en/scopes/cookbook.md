@@ -15,7 +15,7 @@ title: "Scopes - cookbook"
 
 ### Still have questions?
 
-[Ask your Question!)(http://www.askubuntu.com/questions/ask?tags=application-development,scopes)
+[Ask your Question!](http://www.askubuntu.com/questions/ask?tags=application-development,scopes)
 
 If you could not find an answer to your question here, you can ask the
 thousands of Ubuntu users and developers on Ask Ubuntu.
