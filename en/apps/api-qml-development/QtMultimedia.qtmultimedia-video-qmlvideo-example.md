@@ -9,7 +9,7 @@ Title: QtMultimedia.qtmultimedia-video-qmlvideo-example
 <p><i>QML Video</i> demonstrates the various transformations (move; resize; rotate; change aspect ratio) that can be applied to QML <a href="QtMultimedia.VideoOutput.md">VideoOutput</a> and <a href="QtMultimedia.qml-multimedia.md#camera">Camera</a> types.</p>
 <p>It also shows how native code can be combined with QML to implement more advanced functionality - in this case, C++ code is used to calculate the QML frame rate. This value is rendered in QML in a semi-transparent item overlaid on the video content.</p>
 <p>The following image shows the application executing the video-overlay scene, which creates a dummy overlay item (just a semi-transparent Rectangle), which moves across the <a href="QtMultimedia.VideoOutput.md">VideoOutput</a> item.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a12e395b-bd6e-404e-8fe2-68d753440dc3-../qtmultimedia-video-qmlvideo-example/images/qmlvideo-overlay.jpg" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/qmlvideo-overlay.jpg" alt="" /></p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="application-structure">Application Structure</h2>
@@ -20,7 +20,7 @@ Title: QtMultimedia.qtmultimedia-video-qmlvideo-example
 <li>A SceneSelectionPanel, which is a flickable list displaying the available scenes</li>
 <li>At the lower left, an item which displays the QML repainting rate - the upper number is the instantaneous frame rate and the lower number is the average over the past second.</li>
 </ul>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ee553493-9f9e-49c9-b5cc-bcfbd2444691-../qtmultimedia-video-qmlvideo-example/images/qmlvideo-menu.jpg" alt="" /></p><p>Each scene in the flickable list is implemented in its own QML file - for example the video-basic scene (which just displays a static VideoOutput in the center of the screen) is implemented in the VideoBasic.qml file. As you can see from the code, this makes use of a type of inheritance: a VideoBasic item ..&#x2e;</p>
+<p class="centerAlign"><img src="../../../../media/qmlvideo-menu.jpg" alt="" /></p><p>Each scene in the flickable list is implemented in its own QML file - for example the video-basic scene (which just displays a static VideoOutput in the center of the screen) is implemented in the VideoBasic.qml file. As you can see from the code, this makes use of a type of inheritance: a VideoBasic item ..&#x2e;</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type">SceneBasic</span> {
 <span class="name">contentType</span>: <span class="string">&quot;video&quot;</span>
@@ -141,7 +141,7 @@ Q_INVOKABLE <span class="type">void</span> notify();
 }
 }</pre>
 <p>The result looks like this:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3974ff76-21e2-4c5d-93ff-9fda105e1b14-../qtmultimedia-video-qmlvideo-example/images/video-qml-paint-rate.png" alt="" /></p><p>All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():</p>
+<p class="centerAlign"><img src="../../../../media/video-qml-paint-rate.png" alt="" /></p><p>All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():</p>
 <pre class="qml"><span class="preprocessor">#include &lt;QtGui/QGuiApplication&gt;</span>
 <span class="preprocessor">#include &lt;QtQuick/QQuickItem&gt;</span>
 <span class="preprocessor">#include &lt;QtQuick/QQuickView&gt;</span>

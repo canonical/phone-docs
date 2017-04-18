@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-views-example
 
 <span class="subtitle"></span>
 <!-- $$$views-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/b396920c-8bf0-45fa-aab8-e95f5b748802-../qtquick-views-example/images/qml-modelviews-example.png" alt="" /></p><p><i>Views</i> is a collection of small QML examples relating to model and view functionality. They demonstrate how to show data from a model using the Qt Quick view types. For more information, visit the <a href="QtQuick.qtquick-modelviewsdata-modelview.md">Models and Views in Qt Quick</a> page.</p>
+<p class="centerAlign"><img src="../../../../media/qml-modelviews-example.png" alt="" /></p><p><i>Views</i> is a collection of small QML examples relating to model and view functionality. They demonstrate how to show data from a model using the Qt Quick view types. For more information, visit the <a href="QtQuick.qtquick-modelviewsdata-modelview.md">Models and Views in Qt Quick</a> page.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="gridview-and-pathview">GridView and PathView</h2>

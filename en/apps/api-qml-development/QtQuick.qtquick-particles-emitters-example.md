@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-particles-emitters-example
 
 <span class="subtitle"></span>
 <!-- $$$particles/emitters-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/88ec1975-59c2-4c3a-810c-a38d298a7aaa-../qtquick-particles-emitters-example/images/qml-emitters-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Emitters in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="../../../../media/qml-emitters-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Emitters in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
 <p>Velocity from motion gives the effect of strong particle motion through primarily moving the emitters:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Particles.Emitter.md">Emitter</a></span> {
 <span class="name">id</span>: <span class="name">trailsNormal</span>

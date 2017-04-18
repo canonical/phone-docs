@@ -29,7 +29,7 @@ at once and at a higher level than unit tests. As you remember, the testing pyra
 
 In Ubuntu, like unit tests, integration tests for your qml application:
 
-  * Are written in JavaScript within an [Ubuntu Testcase](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test.UbuntuTestCase/) type
+  * Are written in JavaScript within an [Ubuntu Testcase](../api-qml-current/Ubuntu.Test.UbuntuTestCase.md) type
   * Are executed with the `qmltestrunner` tool, which will determine whether they pass or fail
 
 Again, the `qmltestrunner` tool allows you to execute QML files as testcases
@@ -105,15 +105,15 @@ We also need to think about how we will simulate mouse and keyboard input,
 since we intend to pass data into UI elements. Fortunately, there are useful
 methods from Qt.TestCase to help us.
 
-The[ keyPress()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyPress-method),[ keyRelease()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyRelease-method), and[ keyClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#keyClick-method) methods can be
-used to simulate keyboard events, while [ mousePress())(https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mousePress-method),[ mouseRelease()]
-[https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseRelease-
-method),[ mouseClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseClick-method),[ mouseDoubleClick()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseDoubleClick-method), and[ mouseMove()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#mouseMove-method) methods can be used to simulate mouse events.
+The[ keyPress()](../api-qml-current/QtTest.TestCase.md#keyPress-method),[ keyRelease()](../api-qml-current/QtTest.TestCase.md#keyRelease-method), and[ keyClick()](../api-qml-current/QtTest.TestCase.md#keyClick-method) methods can be
+used to simulate keyboard events, while [ mousePress())(../api-qml-current/QtTest.TestCase.md#mousePress-method),[ mouseRelease()]
+[../api-qml-current/QtTest.TestCase.md#mouseRelease-
+method),[ mouseClick()](../api-qml-current/QtTest.TestCase.md#mouseClick-method),[ mouseDoubleClick()](../api-qml-current/QtTest.TestCase.md#mouseDoubleClick-method), and[ mouseMove()](../api-qml-current/QtTest.TestCase.md#mouseMove-method) methods can be used to simulate mouse events.
 
 These useful methods are self-describing and allow us to interact with the
 active qml element. Before using them however, we must ensure the window has
 loaded. To do this, we’ll be using the
-[when](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#when-prop) and[ windowShown](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#windowShown-prop) properties.
+[when](../api-qml-current/QtTest.TestCase.md#when-prop) and[ windowShown](../api-qml-current/QtTest.TestCase.md#windowShown-prop) properties.
 
 `when: windowShown`
 
@@ -199,8 +199,8 @@ function test_clearButton[) {
 }
 ```
 
-In this testcase we utilize the [tryCompare](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#tryCompare-method) function to issue asserts in reaction to our simulation of inputs. This allows for an asynchronous event to
-occur, as opposed to the [compare](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#compare-method) function which we used above. In other words, our assertion won’t fail immediately, since the inputfield needs some
+In this testcase we utilize the [tryCompare](../api-qml-current/QtTest.TestCase.md#tryCompare-method) function to issue asserts in reaction to our simulation of inputs. This allows for an asynchronous event to
+occur, as opposed to the [compare](../api-qml-current/QtTest.TestCase.md#compare-method) function which we used above. In other words, our assertion won’t fail immediately, since the inputfield needs some
 small amount of time to react to the button state.
 
 Notice the multiple assertions as well. If we ever decide the clear button should perform additional functions, we can update this testcase.
@@ -214,6 +214,6 @@ documentation and help.
 
 ### Resources
 
-  * [Ubuntu Test components API reference](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test/)
+  * [Ubuntu Test components API reference](../api-qml-current/Ubuntu.Test.md)
   * [Running tests with qmltestrunner)(http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
   * [Learn how to simulate mouse and keyboard input with Qt Quick Test](http://doc.qt.io/qt-5/qml-qttest-testcase.html#simulating-keyboard-and-mouse-events)

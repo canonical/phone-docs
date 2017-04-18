@@ -126,4 +126,4 @@ complete theme simply by calling :
 And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 
-[Read the full API](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).
+[Read the full API](../api-html-current/UbuntuUI.md).

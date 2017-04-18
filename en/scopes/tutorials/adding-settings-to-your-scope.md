@@ -242,6 +242,6 @@ Our scope now has working settings and should look like this:
 
 ![](../../../media/scope-settings-final0.png)
 
-![)(../../../media/scope-settings-final2.png)
+![](../../../media/scope-settings-final2.png)
 
 ![](../../../media/scope-settings-final3.png)

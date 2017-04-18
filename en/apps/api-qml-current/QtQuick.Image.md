@@ -42,7 +42,7 @@ Title: QtQuick.Image
 <span class="type"><a href="index.html">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;pics/qtlogo.png&quot;</span>
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/88ff1898-d790-4461-b166-769f7e61e0dc-../QtQuick.Image/images/declarative-qtlogo.png" alt="" /></p><br style="clear: both" />
+<p class="centerAlign"><img src="../../../../media/declarative-qtlogo.png" alt="" /></p><br style="clear: both" />
 <h2 id="performance">Performance</h2>
 <p>By default, locally available images are loaded immediately, and the user interface is blocked until loading is complete. If a large image is to be loaded, it may be preferable to load the image in a low priority thread, by enabling the <a href="#asynchronous-prop">asynchronous</a> property.</p>
 <p>If the image is obtained from a network rather than a local resource, it is automatically loaded asynchronously, and the <a href="#progress-prop">progress</a> and <a href="#status-prop">status</a> properties are updated as appropriate.</p>
@@ -72,25 +72,25 @@ Title: QtQuick.Image
 <li>Image.Pad - the image is not transformed</li>
 </ul>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/942ddd3d-e9a3-4e60-a175-659a5019e50e-../QtQuick.Image/images/declarative-qtlogo-stretch.png" alt="" /></p></td><td >Stretch (default)<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-stretch.png" alt="" /></p></td><td >Stretch (default)<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">130</span>; <span class="name">height</span>: <span class="number">100</span>
 <span class="name">source</span>: <span class="string">&quot;qtlogo.png&quot;</span>
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6696e9e4-4614-4cc0-9d9a-f655b3697cf1-../QtQuick.Image/images/declarative-qtlogo-preserveaspectfit.png" alt="" /></p></td><td >PreserveAspectFit<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-preserveaspectfit.png" alt="" /></p></td><td >PreserveAspectFit<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">130</span>; <span class="name">height</span>: <span class="number">100</span>
 <span class="name">fillMode</span>: <span class="name">Image</span>.<span class="name">PreserveAspectFit</span>
 <span class="name">source</span>: <span class="string">&quot;qtlogo.png&quot;</span>
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/28170bc7-b947-4c98-9816-ba912d11607c-../QtQuick.Image/images/declarative-qtlogo-preserveaspectcrop.png" alt="" /></p></td><td >PreserveAspectCrop<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-preserveaspectcrop.png" alt="" /></p></td><td >PreserveAspectCrop<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">130</span>; <span class="name">height</span>: <span class="number">100</span>
 <span class="name">fillMode</span>: <span class="name">Image</span>.<span class="name">PreserveAspectCrop</span>
 <span class="name">source</span>: <span class="string">&quot;qtlogo.png&quot;</span>
 <span class="name">clip</span>: <span class="number">true</span>
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/9b716802-02fb-4ffe-ac7f-8fd51ab8ef55-../QtQuick.Image/images/declarative-qtlogo-tile.png" alt="" /></p></td><td >Tile<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-tile.png" alt="" /></p></td><td >Tile<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">120</span>; <span class="name">height</span>: <span class="number">120</span>
 <span class="name">fillMode</span>: <span class="name">Image</span>.<span class="name">Tile</span>
 <span class="name">horizontalAlignment</span>: <span class="name">Image</span>.<span class="name">AlignLeft</span>
@@ -98,14 +98,14 @@ Title: QtQuick.Image
 <span class="name">source</span>: <span class="string">&quot;qtlogo.png&quot;</span>
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0e0bed12-80ec-4237-82b6-6980e7df4fdb-../QtQuick.Image/images/declarative-qtlogo-tilevertically.png" alt="" /></p></td><td >TileVertically<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-tilevertically.png" alt="" /></p></td><td >TileVertically<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">120</span>; <span class="name">height</span>: <span class="number">120</span>
 <span class="name">fillMode</span>: <span class="name">Image</span>.<span class="name">TileVertically</span>
 <span class="name">verticalAlignment</span>: <span class="name">Image</span>.<span class="name">AlignTop</span>
 <span class="name">source</span>: <span class="string">&quot;qtlogo.png&quot;</span>
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/057285b1-d967-4ddf-bbaf-3001546ba21a-../QtQuick.Image/images/declarative-qtlogo-tilehorizontally.png" alt="" /></p></td><td >TileHorizontally<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-qtlogo-tilehorizontally.png" alt="" /></p></td><td >TileHorizontally<pre class="qml"><span class="type"><a href="index.html">Image</a></span> {
 <span class="name">width</span>: <span class="number">120</span>; <span class="name">height</span>: <span class="number">120</span>
 <span class="name">fillMode</span>: <span class="name">Image</span>.<span class="name">TileHorizontally</span>
 <span class="name">verticalAlignment</span>: <span class="name">Image</span>.<span class="name">AlignLeft</span>

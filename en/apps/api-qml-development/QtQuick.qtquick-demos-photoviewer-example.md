@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-demos-photoviewer-example
 
 <span class="subtitle"></span>
 <!-- $$$demos/photoviewer-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f3f250c5-fa02-4a38-9597-6f888f6ab1be-../qtquick-demos-photoviewer-example/images/qtquick-demo-photoviewer-small.png" alt="" /></p><p><i>Photo Viewer</i> demonstrates the following <a href="QtQuick.qtquick-index.md">Qt Quick</a> features:</p>
+<p class="centerAlign"><img src="../../../../media/qtquick-demo-photoviewer-small.png" alt="" /></p><p><i>Photo Viewer</i> demonstrates the following <a href="QtQuick.qtquick-index.md">Qt Quick</a> features:</p>
 <ul>
 <li>Using custom types to create screens and screen controls.</li>
 <li>Using Qt Quick Controls to create an application window.</li>

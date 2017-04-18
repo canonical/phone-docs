@@ -21,7 +21,7 @@ Title: QtQuick.PathPercent
 <p><a href="index.html">PathPercent</a> allows you to manipulate the spacing between items on a <a href="QtQuick.PathView.md">PathView</a>'s path. You can use it to bunch together items on part of the path, and spread them out on other parts of the path.</p>
 <p>The examples below show the normal distribution of items along a path compared to a distribution which places 50% of the items along the <a href="QtQuick.PathLine.md">PathLine</a> section of the path.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/393dbdee-64bb-48f7-9451-5f3177d47d51-../QtQuick.PathPercent/images/declarative-nopercent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-nopercent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
 <span class="comment">// ...</span>
 <span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">20</span>; <span class="name">startY</span>: <span class="number">0</span>
@@ -31,7 +31,7 @@ Title: QtQuick.PathPercent
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d543dcb5-cf61-4f2a-ba3b-191d0896ddc7-../QtQuick.PathPercent/images/declarative-percent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-percent.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
 <span class="comment">// ...</span>
 <span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">20</span>; <span class="name">startY</span>: <span class="number">0</span>

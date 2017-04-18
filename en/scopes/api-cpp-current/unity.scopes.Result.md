@@ -8,9 +8,9 @@ Title: unity.scopes.Result
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Result.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Result:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/4ada4156-0b84-4e2a-9482-5aa968ae216c-../unity.scopes.Result/classunity_1_1scopes_1_1_result__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_result_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_result__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_result_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_result_inherit__map" id="unity_1_1scopes_1_1_result_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_categorised_result.html" title="A result, including the category it belongs to. " alt="" coords="5,80,196,121"/><area shape="rect" id="node3" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1testing_1_1_result.html" title="A simple class implementation of unity::scopes::Result that provides a default constructor. " alt="" coords="221,80,378,121"/></map>
+<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_categorised_result.html" title="A result, including the category it belongs to. " alt="" coords="5,80,196,121"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_result.html" title="A simple class implementation of unity::scopes::Result that provides a default constructor. " alt="" coords="221,80,378,121"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">

@@ -9,7 +9,7 @@ Title: U1db.Query
 <p>Query filters documents based on the query and index. More...</p>
 <!-- @@@Query -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../query.html">Query</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com/api//query.html">Query</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

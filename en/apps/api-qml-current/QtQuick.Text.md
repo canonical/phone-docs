@@ -76,7 +76,7 @@ Title: QtQuick.Text
 <pre class="qml"><span class="type"><a href="index.html">Text</a></span> {
 <span class="name">text</span>: <span class="string">&quot;&lt;b&gt;Hello&lt;/b&gt; &lt;i&gt;World!&lt;/i&gt;&quot;</span>
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/75df8567-5c8f-4ed8-8e70-30c16654c4f2-../QtQuick.Text/images/declarative-text.png" alt="" /></p><p>If height and width are not explicitly set, Text will attempt to determine how much room is needed and set it accordingly. Unless <a href="#wrapMode-prop">wrapMode</a> is set, it will always prefer width to height (all text will be placed on a single line).</p>
+<p class="centerAlign"><img src="../../../../media/declarative-text.png" alt="" /></p><p>If height and width are not explicitly set, Text will attempt to determine how much room is needed and set it accordingly. Unless <a href="#wrapMode-prop">wrapMode</a> is set, it will always prefer width to height (all text will be placed on a single line).</p>
 <p>The <a href="#elide-prop">elide</a> property can alternatively be used to fit a single line of plain text to a set width.</p>
 <p>Note that the Supported HTML Subset is limited. Also, if the text contains HTML img tags that load remote images, the text is reloaded.</p>
 <p>Text provides read-only text. For editable text, see <a href="QtQuick.TextEdit.md">TextEdit</a>.</p>
@@ -305,7 +305,7 @@ Title: QtQuick.Text
 <span class="type"><a href="index.html">Text</a></span> { <span class="name">font</span>.pointSize: <span class="number">24</span>; <span class="name">text</span>: <span class="string">&quot;Outline&quot;</span>;<span class="name">style</span>: <span class="name">Text</span>.<span class="name">Outline</span>; <span class="name">styleColor</span>: <span class="string">&quot;red&quot;</span> }
 <span class="type"><a href="index.html">Text</a></span> { <span class="name">font</span>.pointSize: <span class="number">24</span>; <span class="name">text</span>: <span class="string">&quot;Sunken&quot;</span>; <span class="name">style</span>: <span class="name">Text</span>.<span class="name">Sunken</span>; <span class="name">styleColor</span>: <span class="string">&quot;#AAAAAA&quot;</span> }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/542ee41d-717c-4627-a1bf-91afb6852b8f-../QtQuick.Text/images/declarative-textstyle.png" alt="" /></p><!-- @@@style -->
+<p class="centerAlign"><img src="../../../../media/declarative-textstyle.png" alt="" /></p><!-- @@@style -->
 <br/>
 <!-- $$$styleColor -->
 <table class="qmlname"><tr valign="top" id="styleColor-prop"><td class="tblQmlPropNode"><p><span class="name">styleColor</span> : <span class="type">color</span></p></td></tr></table><p>Defines the secondary color used by text styles.</p>
@@ -361,7 +361,7 @@ Title: QtQuick.Text
 <span class="name">text</span>: <span class="string">&quot;&lt;b&gt;Hello&lt;/b&gt; &lt;i&gt;World!&lt;/i&gt;&quot;</span>
 }
 }</pre>
-</td><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/540c90fc-2b90-4796-bac6-bb0a92f1281d-../QtQuick.Text/images/declarative-textformat.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="../../../../media/declarative-textformat.png" alt="" /></p></td></tr>
 </table>
 <p>Text.RichText supports a larger subset of HTML 4, as described on the Supported HTML Subset page. You should prefer using Text.PlainText or Text.StyledText instead, as they offer better performance.</p>
 <!-- @@@textFormat -->

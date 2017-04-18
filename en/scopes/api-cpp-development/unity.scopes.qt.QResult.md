@@ -8,9 +8,9 @@ Title: unity.scopes.qt.QResult
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QResult.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QResult:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/ebcbff77-7f91-45d4-85dd-ffb3a4193f3c-../unity.scopes.qt.QResult/classunity_1_1scopes_1_1qt_1_1_q_result__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_result_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_result__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_result_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1qt_1_1_q_result_inherit__map" id="unity_1_1scopes_1_1qt_1_1_q_result_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1qt_1_1_q_categorised_result.html" title="A result, including the category it belongs to. " alt="" coords="5,95,152,136"/></map>
+<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_categorised_result.html" title="A result, including the category it belongs to. " alt="" coords="5,95,152,136"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">

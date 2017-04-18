@@ -78,7 +78,7 @@ Title: QtQuick.Flickable
 <p>In traditional user interfaces, views can be scrolled using standard controls, such as scroll bars and arrow buttons. In some situations, it is also possible to drag the view directly by pressing and holding a mouse button while moving the cursor. In touch-based user interfaces, this dragging action is often complemented with a flicking action, where scrolling continues after the user has stopped touching the view.</p>
 <p>Flickable does not automatically clip its contents. If it is not used as a full-screen item, you should consider setting the <a href="QtQuick.Item.md#clip-prop">clip</a> property to true.</p>
 <h2 id="example-usage">Example Usage</h2>
-<p><img src="https://developer.ubuntu.com/static/devportal_uploaded/0fd53132-3cc7-4a05-9dbc-23a94cb8cc88-../QtQuick.Flickable/images/flickable.gif" alt="" /></p>
+<p><img src="../../../../media/flickable.gif" alt="" /></p>
 <p>The following example shows a small view onto a large image in which the user can drag or flick the image in order to view different parts of it.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="index.html">Flickable</a></span> {
@@ -287,7 +287,7 @@ component<span class="operator">.</span>createObject(myFlickable<span class="ope
 }
 }</pre>
 <p>When the above view is flicked beyond its bounds, it will return to its bounds using the transition specified:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/2c40134a-32de-4cc9-8bee-4b6a0f4d479c-../QtQuick.Flickable/images/flickable-rebound.gif" alt="" /></p><p>If this property is not set, a default animation is applied.</p>
+<p class="centerAlign"><img src="../../../../media/flickable-rebound.gif" alt="" /></p><p>If this property is not set, a default animation is applied.</p>
 <!-- @@@rebound -->
 <br/>
 <!-- $$$rightMargin -->

@@ -7,5 +7,5 @@ you with detailed technical information and examples on how to make the most
 of device and platform functionnalities.
 
 * [Cordova documentation: Ubuntu Platform Guide](http://cordova.apache.org/docs/en/5.0.0/guide/platforms/ubuntu/index.html)
-* [Stable release APIs&nbsp;&rsaquo;](http://developer.ubuntu.com/api/apps/html5/current/)
-* [Development snapshot APIs&nbsp;&rsaquo;)(http://developer.ubuntu.com/api/apps/html5/development/)
+* [Stable release APIs&nbsp;&rsaquo;](../apps-html5-current/index.md)
+* [Development snapshot APIs&nbsp;&rsaquo;](../api-html5-development/index.md)

@@ -104,9 +104,9 @@ most important ones are:
     * A mock of `unity::scopes::SearchReply` that makes it possible to intercept responses to search request sent from the scope to a client, so you can test if your scope returns the expected data.
   * `unity::scopes::testing::MockPreviewReply`
     * A mock of `unity::scopes::PreviewReply` that makes it possible to intercept and test responses to preview request sent from the scope to a client.
-  * [`unity::scopes::testing::Result`](https://developer.ubuntu.com/api/scopes/sdk-14.10/unity.scopes.testing.Result/)
+  * [`unity::scopes::testing::Result`](../api-autopilot-current/index.md)
     * A simple Result class derived from `unity::scopes::Result` that provides a default constructor, so you can create dummy results (without attributes) for testing purposes.
-  * [`unity::scopes::testing::category`](https://developer.ubuntu.com/api/scopes/sdk-14.10/unity.scopes.testing.Category/)
+  * [`unity::scopes::testing::category`](../api-autopilot-current/index.md)
     * A simple class derived from `unity::scopes::Category` that makes it possible to create dummy categories (which otherwise would require an instance of SearchReply and a call to `register_category()`).
 
 ### Test Template
@@ -477,5 +477,5 @@ Check out the links below for more documentation and help.
 
  * [Google Mock cookbook](https://code.google.com/p/googlemock/wiki/CookBook)
  * [Google Test primer](https://code.google.com/p/googletest/wiki/Primer)
- * [Scope SDK documentation](http://developer.ubuntu.com/api/scopes/sdk-14.10/)
- * [Scope Testing headers)(http://developer.ubuntu.com/api/devel/ubuntu-14.10/cplusplus/unity-scopes/dir_4a2a62c60bd6f2d5db6599a21d12fb4a.html)
+ * [Scope SDK documentation](../api-cpp-current/index.md)
+ * [Scope Testing headers)(../api-cpp-current/unity-scopes.md)

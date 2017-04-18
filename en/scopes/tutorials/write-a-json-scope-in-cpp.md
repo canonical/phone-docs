@@ -189,7 +189,7 @@ access. Its sole purpose is to retrieve data from SoundCloud.
 
 [Link to the file](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/scope.cpp)
 
-This file defines a class of type [unity::scopes::ScopeBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.ScopeBase/) that provides
+This file defines a class of type [unity::scopes::ScopeBase](../api-cpp-development/unity.scopes.ScopeBase.md) that provides
 the entry point API the client uses to interact with the scope.
 
   * It implements start and stop methods. Many scopes can leave these unmodified, and this example does as well.
@@ -197,7 +197,7 @@ the entry point API the client uses to interact with the scope.
 
 **Note**: You may find it useful to check out the ScopeBase class declaration (its API) in the corresponding header file: include/scope/scope.h. The header file is a great way to understand C+ classes because their API is declared without any additional implementation code, making it easy to understand.
 
-**Tip**: Check out the [Unity 8 Scope API reference docs](https://developer.ubuntu.com/api/scopes/cpp/development/) during this tutorial if you want a deeper understanding of specific classes.
+**Tip**: Check out the [Unity 8 Scope API reference docs](../api-cpp-development/index.md) during this tutorial if you want a deeper understanding of specific classes.
 
 ### src/scope/query.cpp
 
@@ -207,7 +207,7 @@ Here is where we send queries to the API client, transform returned results
 into result cards, declare categories that will host these cards and their
 layout.
 
-This file defines a class of type [unity::scopes::SearchQueryBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.SearchQueryBase/).
+This file defines a class of type [unity::scopes::SearchQueryBase](../api-cpp-development/unity.scopes.SearchQueryBase.md).
 
 This class generates search results from a query string a client provides and
 returns them as a reply to the client:
@@ -229,7 +229,7 @@ header file: `include/scope/query.h`.
 
 [Link to the file](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp)
 
-This key file defines a class of type [unity::scopes::PreviewQueryBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.PreviewQueryBase/).
+This key file defines a class of type [unity::scopes::PreviewQueryBase](../api-cpp-development/unity.scopes.PreviewQueryBase.md).
 
 This class defines the widgets and layouts used for each search result during
 the preview phase. It:
@@ -243,7 +243,7 @@ the preview phase. It:
 Check out the SearchPreviewBase class declaration (its API) in the
 corresponding header file: `include/scope/preview.h`.
 
-For a list of Preview Widgets and documentation, see [this page](https://developer.ubuntu.com/api/scopes/cpp/development/previewwidgets/).
+For a list of Preview Widgets and documentation, see [this page](../api-cpp-development/previewwidgets.md).
 
 Let’s drill into our example scope and detail some of the code, starting with
 the query.
@@ -415,7 +415,7 @@ const static string TRACKS_TEMPLATE =
  )";
 ```
 
-This will display a simple list of results, it’s a category style used in many scopes, working well with many types of content. You can have a look at all your options in the [unity::scopes::CategoryRenderer doc](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategoryRenderer/).
+This will display a simple list of results, it’s a category style used in many scopes, working well with many types of content. You can have a look at all your options in the [unity::scopes::CategoryRenderer doc](../api-cpp-development/unity.scopes.CategoryRenderer.md).
 
 Now, in the `try{}` part of the `Query::run` method, we can register our category
 on the reply object :
@@ -446,7 +446,7 @@ automatically discarded.
 
 Still in [src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp),
 in the try{} part of our Query::run method, we need to iterate over our tracks
-list, and create a [unity::scope::CategorisedResult](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategorisedResult/) for each.
+list, and create a [unity::scope::CategorisedResult](../api-cpp-development/unity.scopes.CategorisedResult.md) for each.
 Paste the content of the tutorial file into your own, or reproduce the
 following lines :
 
@@ -598,7 +598,7 @@ These are declared like this:
 sc::ColumnLayout layout1col(1), layout2col(2);
 ```
 
-**Tip**: Check out ColumnLayout docs [here](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.ColumnLayout/).
+**Tip**: Check out ColumnLayout docs [here](../api-cpp-development/unity.scopes.ColumnLayout.md).
 
 We do not need to know exactly how the client uses these. But the general
 expectation is that a single-column layout is appropriate for narrow-screen

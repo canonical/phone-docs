@@ -353,5 +353,4 @@ my_writable_dir = os.environ['XDG_DATA_HOME'] + APP_PKGNAME
 
 ## App confinement and your app
 
-Read our article on [security policygroups](http://developer.ubuntu.com/en/publish/security-policy-groups/) if you want to find out more about how this is relevant to your app and how you can
-effectively test your app.
+Read our article on [security policygroups](http://developer.ubuntu.com/en/publish/security-policy-groups/) if you want to find out more about how this is relevant to your app and how you can effectively test your app.

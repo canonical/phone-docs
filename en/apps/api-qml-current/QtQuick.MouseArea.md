@@ -62,7 +62,7 @@ Title: QtQuick.MouseArea
 <p>If a <a href="index.html">MouseArea</a> overlaps with the area of other <a href="index.html">MouseArea</a> items, you can choose to propagate <code>clicked</code>, <code>doubleClicked</code> and <code>pressAndHold</code> events to these other items by setting <a href="#propagateComposedEvents-prop">propagateComposedEvents</a> to true and rejecting events that should be propagated. See the <a href="#propagateComposedEvents-prop">propagateComposedEvents</a> documentation for details.</p>
 <p>By default, <a href="index.html">MouseArea</a> items only report mouse clicks and not changes to the position of the mouse cursor. Setting the <a href="#hoverEnabled-prop">hoverEnabled</a> property ensures that handlers defined for onPositionChanged, onEntered and onExited are used and that the <a href="#containsMouse-prop">containsMouse</a> property is updated even when no mouse buttons are pressed.</p>
 <h2 id="example-usage">Example Usage</h2>
-<p><img src="https://developer.ubuntu.com/static/devportal_uploaded/951370c0-a78f-4e02-854e-3712d15b2a7b-../QtQuick.MouseArea/images/qml-mousearea-snippet.png" alt="" /></p>
+<p><img src="../../../../media/qml-mousearea-snippet.png" alt="" /></p>
 <p>The following example uses a <a href="index.html">MouseArea</a> in a <a href="QtQuick.Rectangle.md">Rectangle</a> that changes the <a href="QtQuick.Rectangle.md">Rectangle</a> color to red when clicked:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

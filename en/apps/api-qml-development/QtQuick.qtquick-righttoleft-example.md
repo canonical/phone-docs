@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-righttoleft-example
 
 <span class="subtitle"></span>
 <!-- $$$righttoleft-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/9e733f15-3b7c-4e12-ad09-e48f5ddbfa3a-../qtquick-righttoleft-example/images/qml-righttoleft-example.png" alt="" /></p><p><i>Right to Left</i> is a collection of small QML examples relating to right to left (RTL) localization support. For more information, visit <a href="QtQuick.qtquick-positioning-righttoleft.md">Right-to-left User Interfaces</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qml-righttoleft-example.png" alt="" /></p><p><i>Right to Left</i> is a collection of small QML examples relating to right to left (RTL) localization support. For more information, visit <a href="QtQuick.qtquick-positioning-righttoleft.md">Right-to-left User Interfaces</a>.</p>
 <p>These are the examples in Right to Left:</p>
 <ul>
 <li><i>Layout Direction</i> - shows RTL layout direction</li>

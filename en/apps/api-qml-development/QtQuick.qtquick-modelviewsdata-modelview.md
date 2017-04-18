@@ -7,7 +7,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 <span class="subtitle"></span>
 <!-- $$$qtquick-modelviewsdata-modelview.html-description -->
 <p>Simply put, applications need to form data and display the data. Qt Quick has the notion of <i>models</i>, <i>views</i>, and <i>delegates</i> to display data. They modularize the visualization of data in order to give the developer or designer control over the different aspects of the data. A developer can swap a list view with a grid view with little changes to the data. Similarly, encapsulating an instance of the data in a delegate allows the developer to dictate how to present or handle the data.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f4bfb94c-3a3f-4c4c-999d-68bc32ae7e4b-../qtquick-modelviewsdata-modelview/images/modelview-overview.png" alt="" /></p><ul>
+<p class="centerAlign"><img src="../../../../media/modelview-overview.png" alt="" /></p><ul>
 <li><b>Model</b> - contains the data and its structure. There are several QML types for creating models.</li>
 <li><b>View</b> - a container that displays the data. The view might display the data in a list or a grid.</li>
 <li><b>Delegate</b> - dictates how the data should appear in the view. The delegate takes each data in the model and encapsulates it. The data is accessible through the delegate.</li>
@@ -75,7 +75,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 <span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">0.0</span>; <span class="name">color</span>: <span class="string">&quot;#8EE2FE&quot;</span>}
 <span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">0.66</span>; <span class="name">color</span>: <span class="string">&quot;#7ED2EE&quot;</span>}
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/66d9ad6f-ec45-48d5-9bb3-ed37f6ecef38-../qtquick-modelviewsdata-modelview/images/listview-decorations.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/listview-decorations.png" alt="" /></p>
 <h3 >Mouse and Touch Handling</h3>
 <p>The views handle dragging and flicking of their content, however they do not handle touch interaction with the individual delegates. In order for the delegates to react to touch input, e.g&#x2e; to set the <code>currentIndex</code>, a <a href="QtQuick.MouseArea.md">MouseArea</a> with the appropriate touch handling logic must be provided by the delegate.</p>
 <p>Note that if <code>highlightRangeMode</code> is set to <code>StrictlyEnforceRange</code> the currentIndex will be affected by dragging/flicking the view, since the view will always ensure that the <code>currentIndex</code> is within the highlight range specified.</p>
@@ -124,7 +124,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/bac01bf7-cd49-4142-abd7-bd6fe83842b1-../qtquick-modelviewsdata-modelview/images/listview-section.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/listview-section.png" alt="" /></p>
 <h2 id="view-delegates">View Delegates</h2>
 <p>Views need a <i>delegate</i> to visually represent an item in a list. A view will visualize each item list according to the template defined by the delegate. Items in a model are accessible through the <code>index</code> property as well as the item's properties.</p>
 <pre class="qml"><span class="type">Component</span> {
@@ -138,7 +138,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 <span class="name">text</span>: <span class="name">type</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/b7953ffe-e362-4d48-872b-715b512f2313-../qtquick-modelviewsdata-modelview/images/listview-setup.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/listview-setup.png" alt="" /></p>
 <h3 >Accessing Views and Models from Delegates</h3>
 <p>The list view to which the delegate is bound is accessible from the delegate through the <code>ListView.view</code> property. Likewise, the <a href="QtQuick.draganddrop/#gridview">GridView</a> <code>GridView.view</code> is available to delegates. The corresponding model and its properties, therefore, are available through <code>ListView.view.model</code>. In addition, any defined signals or methods in the model are also accessible.</p>
 <p>This mechanism is useful when you want to use the same delegate for a number of views, for example, but you want decorations or other features to be different for each view, and you would like these different settings to be properties of each of the views. Similarly, it might be of interest to access or show some properties of the model.</p>
@@ -303,7 +303,7 @@ property <span class="type">color</span> <span class="name">fruit_color</span>: 
 <p>Models can be defined in C++ and then made available to QML. This mechanism is useful for exposing existing C++ data models or otherwise complex datasets to QML.</p>
 <p>For information, visit the <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md">Using C++ Models with Qt Quick Views</a> article.</p>
 <h2 id="repeaters">Repeaters</h2>
-<p><img src="https://developer.ubuntu.com/static/devportal_uploaded/41fa8717-fa13-4158-ab9f-99f38f8a9987-../qtquick-modelviewsdata-modelview/images/repeater-index.png" alt="" /></p>
+<p><img src="../../../../media/repeater-index.png" alt="" /></p>
 <p>Repeaters create items from a template for use with positioners, using data from a model. Combining repeaters and positioners is an easy way to lay out lots of items. A <a href="QtQuick.Repeater.md">Repeater</a> item is placed inside a positioner, and generates items that the enclosing positioner arranges.</p>
 <p>Each Repeater creates a number of items by combining each element of data from a model, specified using the <a href="QtQuick.Repeater.md#model-prop">model</a> property, with the template item, defined as a child item within the Repeater. The total number of items is determined by the amount of data in the model.</p>
 <p>The following example shows a repeater used with a Grid item to arrange a set of Rectangle items. The Repeater item creates a series of 24 rectangles for the Grid item to position in a 5 by 5 arrangement.</p>

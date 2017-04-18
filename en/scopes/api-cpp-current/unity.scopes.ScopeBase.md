@@ -8,9 +8,9 @@ Title: unity.scopes.ScopeBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ScopeBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/8e0d3424-0fb7-464a-b9d6-27dd15e011b9-../unity.scopes.ScopeBase/classunity_1_1scopes_1_1_scope_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_scope_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_scope_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_scope_base_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_scope_base_inherit__map" id="unity_1_1scopes_1_1_scope_base_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i.html" title="unity::scopes::qt::\lQScopeBaseAPI" alt="" coords="57,155,192,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_abstract_scope_base.html" title="Abstract base class for a scope implementation. " alt="" coords="5,5,244,32"/></map>
+<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i.html" title="unity::scopes::qt::\lQScopeBaseAPI" alt="" coords="57,155,192,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_abstract_scope_base.html" title="Abstract base class for a scope implementation. " alt="" coords="5,5,244,32"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">

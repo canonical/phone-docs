@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QSearchQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QSearchQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QSearchQueryBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/7e61e600-c962-45fa-b6d0-7e29ec2a5647-../unity.scopes.qt.QSearchQueryBase/classunity_1_1scopes_1_1qt_1_1_q_search_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_search_query_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_search_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_search_query_base_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1qt_1_1_q_search_query_base_inherit__map" id="unity_1_1scopes_1_1qt_1_1_q_search_query_base_inherit__map">
 </map>
 <center><span class="legend">[legend]</span></center>

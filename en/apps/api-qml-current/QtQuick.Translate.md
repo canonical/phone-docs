@@ -34,7 +34,7 @@ Title: QtQuick.Translate
 <span class="name">transform</span>: <span class="name">Translate</span> { <span class="name">y</span>: -<span class="number">20</span> }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/16415974-2cb5-489c-9ac1-a4bf3ad9049d-../QtQuick.Translate/images/translate.png" alt="" /></p><!-- @@@Translate -->
+<p class="centerAlign"><img src="../../../../media/translate.png" alt="" /></p><!-- @@@Translate -->
 <h2>Property Documentation</h2>
 <!-- $$$x -->
 <table class="qmlname"><tr valign="top" id="x-prop"><td class="tblQmlPropNode"><p><span class="name">x</span> : <span class="type">real</span></p></td></tr></table><p>The translation along the X axis.</p>

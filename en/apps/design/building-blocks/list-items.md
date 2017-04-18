@@ -26,7 +26,7 @@ List items can be used to make up a list of ordered scrollable items that are re
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-[See the ListItemLayout API that provides customisable templates](https://developer.ubuntu.com/api/apps/design/qml/current/Ubuntu.Components.ListItemLayout/), and the  [ListItem API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04/Ubuntu.Components.ListItem/) that provides swiping actions.
+[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.
 
 ## Overview
 
@@ -132,7 +132,7 @@ If your list item allows for navigation through to an associated view, then a Pr
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-The  [ProgressionSlot API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.ProgressionSlot/) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
+The  [ProgressionSlot API](../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
 
 ![366w_ListItems_Chevron1 (4)](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)
 
@@ -156,7 +156,7 @@ Text is always aligned according to the currently displayed language. For exampl
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-Developers are free to override the maximum amount lines for each label. See the  [Label API](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Components.Label/) for more information.
+Developers are free to override the maximum amount lines for each label. See the  [Label API](../api-qml-current/Ubuntu.Components.Label.md) for more information.
 
 ## Actions
 
@@ -258,4 +258,3 @@ Provide a caption under the title to give the user more information if necessary
 ![366w_ListItems_FourSlotBad](https://assets.ubuntu.com/v1/b340de77-366w_ListItems_FourSlotBad.png)
 
 In this example, the list item is too overcrowded and it is not immediately apparent what the primary action is.
-

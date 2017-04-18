@@ -7,7 +7,7 @@ Title: QtQuick.qtquick-demos-samegame-example
 <span class="subtitle"></span>
 <!-- $$$demos/samegame-description -->
 <p><i>Same Game</i> demonstrates a QML game with custom types and logic written in JavaScript. The game uses various <a href="QtQuick.qtquick-index.md">Qt Quick</a> features such as particles, animation, and loading images.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f9cb239d-14e3-4666-96b6-741d1c6001e7-../qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-1.png" alt="" /></p><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ac626288-94d2-4c70-b5b9-218c377a1d8e-../qtquick-demos-samegame-example/images/qtquick-demo-samegame-med-2.png" alt="" /></p><p>For more details about different parts of the example, see <a href="QtQuick.qml-advtutorial.md">QML Advanced Tutorial</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qtquick-demo-samegame-med-1.png" alt="" /></p><p class="centerAlign"><img src="../../../../media/qtquick-demo-samegame-med-2.png" alt="" /></p><p>For more details about different parts of the example, see <a href="QtQuick.qml-advtutorial.md">QML Advanced Tutorial</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <p>Files:</p>

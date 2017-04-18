@@ -9,7 +9,7 @@ Title: QtQuick.qtquick-tutorials-samegame-samegame1-example
 <h3 >Creating the application screen</h3>
 <p>The first step is to create the basic QML items in your application.</p>
 <p>To begin with, we create our Same Game application with a main screen like this:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f48d42da-4e3f-4a40-b9cf-6859e7d80b31-../qtquick-tutorials-samegame-samegame1-example/images/declarative-adv-tutorial1.png" alt="" /></p><p>This is defined by the main application file, <code>samegame.qml</code>, which looks like this:</p>
+<p class="centerAlign"><img src="../../../../media/declarative-adv-tutorial1.png" alt="" /></p><p>This is defined by the main application file, <code>samegame.qml</code>, which looks like this:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">screen</span>

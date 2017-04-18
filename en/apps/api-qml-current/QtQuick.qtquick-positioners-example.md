@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-positioners-example
 
 <span class="subtitle"></span>
 <!-- $$$positioners-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/064a33f2-7b12-4afb-8f39-77838bdb21a8-../qtquick-positioners-example/images/qml-positioners-example.png" alt="" /></p><p><i>Positioners</i> is a collection of small QML examples relating to positioners. Each example is a small QML file emphasizing a particular type or feature. For more information, visit <a href="QtQuick.qtquick-positioning-topic.md">Important Concepts In Qt Quick - Positioning</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qml-positioners-example.png" alt="" /></p><p><i>Positioners</i> is a collection of small QML examples relating to positioners. Each example is a small QML file emphasizing a particular type or feature. For more information, visit <a href="QtQuick.qtquick-positioning-topic.md">Important Concepts In Qt Quick - Positioning</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="transitions">Transitions</h2>

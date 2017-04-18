@@ -7,7 +7,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts6
 <span class="subtitle"></span>
 <!-- $$$ubuntu-layouts6.html-description -->
 <p>There is one more thing you can do with <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> container, which is to define overlay items for certain hosted items on certain layouts. If an <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> has child elements defined, the hosted item will be stacked as topmost element, so all the child elements declared in <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> will be rendered as overlay on top of the hosted item.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/e8f29d42-5943-482a-ae85-547ff21283df-../ubuntu-layouts6/images/layout7.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
+<p class="centerAlign"><img src="../../../../media/layout7.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
 <span class="type"><a href="QtQuick.Row.md">Row</a></span> {

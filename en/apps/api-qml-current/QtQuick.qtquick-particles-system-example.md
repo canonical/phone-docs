@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-particles-system-example
 
 <span class="subtitle"></span>
 <!-- $$$particles/system-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/c9c2d188-9d62-43c1-a741-341ee3558c17-../qtquick-particles-system-example/images/qml-system-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="../../../../media/qml-system-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
 <p>Dynamic comparison compares using the particle system to getting a similar effect with the following code that dynamically instantiates Image types.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">fakeEmitter</span>

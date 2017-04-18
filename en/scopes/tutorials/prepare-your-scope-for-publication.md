@@ -63,7 +63,7 @@ wait a few seconds for the build and validation tests to run.
 
 ![](../../../media/Screenshot-from-2014-11-26-1-700x223.png)
 
-![)(../../../media/Screenshot-from-2014-11-26-2-700x223.png)
+![](../../../media/Screenshot-from-2014-11-26-2-700x223.png)
 
 If everything is green, your click package is ready to be submitted to the
 store! It’s in your build folder (“`build-<kit name>-<project name>`”, located

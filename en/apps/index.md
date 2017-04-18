@@ -47,7 +47,7 @@ This integrated development environment offers a richly featured and deeply
 integrated set of development tools that gears up productivity and includes
 direct access to attached Ubuntu devices and Ubuntu emulators.
 
-[Install the Ubuntu SDK IDE&nbsp;&rsaquo;)(../platform/sdk/installing-the-sdk.md)
+[Install the Ubuntu SDK IDE&nbsp;&rsaquo;](../platform/sdk/installing-the-sdk.md)
 
 ### Pick your language
 

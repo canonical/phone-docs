@@ -15,10 +15,10 @@ Title: QtMultimedia.radiooverview
 <p>There are two examples showing the usage of the Radio API. One shows how to use the QRadioTuner class from C++. The other shows how to implement a similar application using QML and Radio.</p>
 <h3 >Radio Example</h3>
 <p>This image shows the example using the QRadioTuner API.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/bf1e3a19-38af-4777-bdd3-0d63313cd54e-../radiooverview/images/radio-example.png" alt="" /></p><p>The example reads the frequency from the radio tuner, and sets the &quot;Got Signal&quot; text based on the signal strength. The buttons allow the user to tune and scan up and down the frequency band, while the slider to the side allows volume adjustments.</p>
+<p class="centerAlign"><img src="../../../../media/radio-example.png" alt="" /></p><p>The example reads the frequency from the radio tuner, and sets the &quot;Got Signal&quot; text based on the signal strength. The buttons allow the user to tune and scan up and down the frequency band, while the slider to the side allows volume adjustments.</p>
 <p>Only the FM frequency band is used in this example.</p>
 <h3 >Declarative Radio Example</h3>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/00f61506-6623-47fe-bfea-b9f2f1f16fe3-../radiooverview/images/declarative-radio-example.png" alt="" /></p><p>This example has the same functionality of the regular radio example mentioned above, but it includes a nice horizontal dial showing the position of the current frequency inside the band.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-radio-example.png" alt="" /></p><p>This example has the same functionality of the regular radio example mentioned above, but it includes a nice horizontal dial showing the position of the current frequency inside the band.</p>
 <h2 id="reference-documentation">Reference documentation</h2>
 <h3 >C++ Classes</h3>
 <table class="annotated">

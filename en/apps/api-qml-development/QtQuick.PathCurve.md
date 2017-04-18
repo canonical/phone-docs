@@ -41,7 +41,7 @@ Title: QtQuick.PathCurve
 }
 }</pre>
 <p>This example produces the following path (with the starting point and <a href="index.html">PathCurve</a> points highlighted in red):</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/fd3a5c32-eb73-4f9f-b062-29664dfc31de-../QtQuick.PathCurve/images/declarative-pathcurve.png" alt="" /></p><p><b>See also </b><a href="QtQuick.Path.md">Path</a>, <a href="QtQuick.PathLine.md">PathLine</a>, <a href="QtQuick.PathQuad.md">PathQuad</a>, <a href="QtQuick.PathCubic.md">PathCubic</a>, <a href="QtQuick.PathArc.md">PathArc</a>, and <a href="QtQuick.PathSvg.md">PathSvg</a>.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-pathcurve.png" alt="" /></p><p><b>See also </b><a href="QtQuick.Path.md">Path</a>, <a href="QtQuick.PathLine.md">PathLine</a>, <a href="QtQuick.PathQuad.md">PathQuad</a>, <a href="QtQuick.PathCubic.md">PathCubic</a>, <a href="QtQuick.PathArc.md">PathArc</a>, and <a href="QtQuick.PathSvg.md">PathSvg</a>.</p>
 <!-- @@@PathCurve -->
 <h2>Property Documentation</h2>
 <!-- $$$relativeX -->

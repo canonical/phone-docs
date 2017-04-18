@@ -232,4 +232,4 @@ At a fraction of the cost of building an app, the scope toolkit allows you to gi
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-Raring to go? Then dive into our  [Scope Toolkit(SDK))(../api-cpp-current/index.md)(SDK) for all our APIs.
+Raring to go? Then dive into our  [Scope Toolkit(SDK)](../api-cpp-current/index.md)(SDK) for all our APIs.

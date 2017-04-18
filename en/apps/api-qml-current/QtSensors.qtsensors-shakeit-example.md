@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-shakeit-example
 
 <span class="subtitle"></span>
 <!-- $$$shakeit-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/7038a205-eb6e-486f-8b79-b459588d89ed-../qtsensors-shakeit-example/images/shakeit.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/shakeit.png" alt="" /></p>
 <h3 >ShakeIt in QML</h3>
 <p>Writing a QML application that uses the Shake QML sensorgestures type requires the following steps:</p>
 <p>Import the Sensors Declarative module.</p>

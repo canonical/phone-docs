@@ -107,7 +107,7 @@ qml.files = *.qml
 qml.path = $$DESTPATH
 INSTALLS += target qml</pre>
 <p>Now we can build and run the application:</p>
-<p class="centerAlign"><img src="../../media/extending-tutorial-chapter1.png" alt="" /></p><p><b>Note: </b>You may see a warning <i>Expression ..&#x2e; depends on non-NOTIFYable properties: PieChart::name</i>. This happens because we add a binding to the writable <code>name</code> property, but haven't yet defined a notify signal for it. The QML engine therefore cannot update the binding if the <code>name</code> value changes. This is addressed in the following chapters.</p>
+<p class="centerAlign"><img src="../../../../media/extending-tutorial-chapter1.png" alt="" /></p><p><b>Note: </b>You may see a warning <i>Expression ..&#x2e; depends on non-NOTIFYable properties: PieChart::name</i>. This happens because we add a binding to the writable <code>name</code> property, but haven't yet defined a notify signal for it. The QML engine therefore cannot update the binding if the <code>name</code> value changes. This is addressed in the following chapters.</p>
 <h2 id="chapter-2-connecting-to-c-methods-and-signals">Chapter 2: Connecting to C++ Methods and Signals</h2>
 <p><code>extending-qml/chapter2-methods</code></p>
 <p>Suppose we want <code>PieChart</code> to have a &quot;clearChart()&quot; method that erases the chart and then emits a &quot;chartCleared&quot; signal. Our <code>app.qml</code> would be able to call <code>clearChart()</code> and receive <code>chartCleared()</code> signals like this:</p>
@@ -131,7 +131,7 @@ import QtQuick 2.0
 <span class="name">text</span>: <span class="string">&quot;Click anywhere to clear the chart&quot;</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../media/extending-tutorial-chapter2.png" alt="" /></p><p>To do this, we add a <code>clearChart()</code> method and a <code>chartCleared()</code> signal to our C++ class:</p>
+<p class="centerAlign"><img src="../../../../media/extending-tutorial-chapter2.png" alt="" /></p><p>To do this, we add a <code>clearChart()</code> method and a <code>chartCleared()</code> signal to our C++ class:</p>
 <pre class="cpp"><span class="keyword">class</span> PieChart : <span class="keyword">public</span> <span class="type">QQuickPaintedItem</span>
 {
 ...
@@ -183,7 +183,7 @@ import QtQuick 2.0
 <span class="name">text</span>: <span class="string">&quot;Click anywhere to change the chart color&quot;</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../media/extending-tutorial-chapter3.png" alt="" /></p><p>The &quot;color: chartA.color&quot; statement binds the <code>color</code> value of <code>chartB</code> to the <code>color</code> of <code>chartA</code>. Whenever <code>chartA</code>'s <code>color</code> value changes, <code>chartB</code>'s <code>color</code> value updates to the same value. When the window is clicked, the <code>onClicked</code> handler in the MouseArea changes the color of <code>chartA</code>, thereby changing both charts to the color blue.</p>
+<p class="centerAlign"><img src="../../../../media/extending-tutorial-chapter3.png" alt="" /></p><p>The &quot;color: chartA.color&quot; statement binds the <code>color</code> value of <code>chartB</code> to the <code>color</code> of <code>chartA</code>. Whenever <code>chartA</code>'s <code>color</code> value changes, <code>chartB</code>'s <code>color</code> value updates to the same value. When the window is clicked, the <code>onClicked</code> handler in the MouseArea changes the color of <code>chartA</code>, thereby changing both charts to the color blue.</p>
 <p>It's easy to enable property binding for the <code>color</code> property. We add a NOTIFY feature to its Q_PROPERTY() declaration to indicate that a &quot;colorChanged&quot; signal is emitted whenever the value changes.</p>
 <pre class="cpp"><span class="keyword">class</span> PieChart : <span class="keyword">public</span> <span class="type">QQuickPaintedItem</span>
 {
@@ -311,7 +311,7 @@ import QtQuick 2.0
 ]
 }
 }</pre>
-<p class="centerAlign"><img src="../../media/extending-tutorial-chapter5.png" alt="" /></p><p>To do this, we replace the <code>pieSlice</code> property in <code>PieChart</code> with a <code>slices</code> property, declared as a QQmlListProperty type. The QQmlListProperty class enables the creation of list properties in QML extensions. We replace the <code>pieSlice()</code> function with a <code>slices()</code> function that returns a list of slices, and add an internal <code>append_slice()</code> function (discussed below). We also use a QList to store the internal list of slices as <code>m_slices</code>:</p>
+<p class="centerAlign"><img src="../../../../media/extending-tutorial-chapter5.png" alt="" /></p><p>To do this, we replace the <code>pieSlice</code> property in <code>PieChart</code> with a <code>slices</code> property, declared as a QQmlListProperty type. The QQmlListProperty class enables the creation of list properties in QML extensions. We replace the <code>pieSlice()</code> function with a <code>slices()</code> function that returns a list of slices, and add an internal <code>append_slice()</code> function (discussed below). We also use a QList to store the internal list of slices as <code>m_slices</code>:</p>
 <pre class="cpp"><span class="keyword">class</span> PieChart : <span class="keyword">public</span> <span class="type">QQuickItem</span>
 {
 Q_OBJECT

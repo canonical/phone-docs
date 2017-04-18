@@ -13,15 +13,15 @@ Title: QtFeedback.Actuator
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="https://developer.ubuntu.com...md#actuatorId-prop">actuatorId</a></b></b> : int</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.com...md#enabled-prop">enabled</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.com...md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.com...md#state-prop">state</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.com...md#valid-prop">valid</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#actuatorId-prop">actuatorId</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#state-prop">state</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#valid-prop">valid</a></b></b> : bool</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">bool <b><b><a href="https://developer.ubuntu.com...md#isCapabilitySupported-method">isCapabilitySupported</a></b></b>(enumeration <i>capability</i>)</li>
+<li class="fn">bool <b><b><a href="#isCapabilitySupported-method">isCapabilitySupported</a></b></b>(enumeration <i>capability</i>)</li>
 </ul>
 <!-- $$$Actuator-description -->
 <h2 id="details">Detailed Description</h2>

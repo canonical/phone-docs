@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-threading-example
 
 <span class="subtitle"></span>
 <!-- $$$threading-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0931328d-6149-430e-b9b0-4096831cd8c7-../qtquick-threading-example/images/qml-threading-example.png" alt="" /></p><p><i>Threading</i> is a collection of QML multithreading examples.</p>
+<p class="centerAlign"><img src="../../../../media/qml-threading-example.png" alt="" /></p><p><i>Threading</i> is a collection of QML multithreading examples.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="threaded-listmodel">Threaded ListModel</h2>

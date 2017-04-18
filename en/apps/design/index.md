@@ -47,7 +47,7 @@ Download handy templates and the Ubuntu color palette to help you on your way.
 
 The toolkit contains all the important components you need to make your own unique Ubuntu experience. Follow the link below for all the API and developer documentation.
 
-[Ubuntu SDK &rsaquo;](http://developer.ubuntu.com/apps/design/sdk/)
+[Ubuntu SDK &rsaquo;](../../platform/sdk/index.md)
 
 ## Release phases
 

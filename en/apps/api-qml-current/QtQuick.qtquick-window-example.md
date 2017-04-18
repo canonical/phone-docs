@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-window-example
 
 <span class="subtitle"></span>
 <!-- $$$window-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d0cefcc7-6474-491c-a40c-54e79a91da1c-../qtquick-window-example/images/qml-window-example.png" alt="" /></p><p><i>Window and Screen</i> shows how to:</p>
+<p class="centerAlign"><img src="../../../../media/qml-window-example.png" alt="" /></p><p><i>Window and Screen</i> shows how to:</p>
 <ul>
 <li>create a window in QML</li>
 <li>control its visibility</li>

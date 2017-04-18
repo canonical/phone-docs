@@ -7,7 +7,7 @@ Title: QtQuick.qml-tutorial2
 <span class="subtitle"></span>
 <!-- $$$qml-tutorial2.html-description -->
 <p>This chapter adds a color picker to change the color of the text.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d87f6062-33bb-4f49-ac24-394dfba82410-../qml-tutorial2/images/declarative-tutorial2.png" alt="" /></p><p>Our color picker is made of six cells with different colors. To avoid writing the same code multiple times for each cell, we create a new <code>Cell</code> component. A component provides a way of defining a new type that we can re-use in other QML files. A QML component is like a black-box and interacts with the outside world through properties, signals and functions and is generally defined in its own QML file. (For more details, see the Component documentation). The component's filename must always start with a capital letter.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-tutorial2.png" alt="" /></p><p>Our color picker is made of six cells with different colors. To avoid writing the same code multiple times for each cell, we create a new <code>Cell</code> component. A component provides a way of defining a new type that we can re-use in other QML files. A QML component is like a black-box and interacts with the outside world through properties, signals and functions and is generally defined in its own QML file. (For more details, see the Component documentation). The component's filename must always start with a capital letter.</p>
 <p>Here is the QML code for <code>Cell.qml</code>:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Item.md">Item</a></span> {

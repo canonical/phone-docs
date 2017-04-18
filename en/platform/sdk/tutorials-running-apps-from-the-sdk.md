@@ -6,7 +6,7 @@ title: "Tutorials - running apps from the SDK"
 
 This tutorial will teach you how to use the SDK to run applications on Ubuntu
 devices, including the emulator and the desktop. For information about
-installing Ubuntu on a phone or tablet, see [Installing Ubuntu for devices](http://developer.ubuntu.com/start/ubuntu-for-devices/installing-ubuntu-for-devices/)
+installing Ubuntu on a phone or tablet, see [Installing Ubuntu for devices](../devices/installing-ubuntu-for-devices.md)
 
 ## Introduction
 
@@ -55,4 +55,4 @@ the default password is "0000".
 ![](../../../media/green dot on the icon indicates its status (here, my phone is
 connected and ready to host the application).
 
-![](../../../media/index.md) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.html) and [HTML5)(../../apps/html-5/index.html) sections for help deciding which toolkit to use.
+![](../../../media/index.md) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.html) and [HTML5](../../apps/html-5/index.html) sections for help deciding which toolkit to use.

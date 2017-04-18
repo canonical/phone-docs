@@ -27,7 +27,7 @@ Title: QtQuick.PathQuad
 </p>
 <p>The following QML produces the path shown below:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/8d9d0827-df9a-4bd4-88df-c5ae5cdc7e97-../QtQuick.PathQuad/images/declarative-pathquad.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../../media/declarative-pathquad.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">0</span>; <span class="name">startY</span>: <span class="number">0</span>
 <span class="type"><a href="index.html">PathQuad</a></span> { <span class="name">x</span>: <span class="number">200</span>; <span class="name">y</span>: <span class="number">0</span>; <span class="name">controlX</span>: <span class="number">100</span>; <span class="name">controlY</span>: <span class="number">150</span> }
 }</pre>

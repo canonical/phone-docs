@@ -36,7 +36,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts4
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3ba9f8fc-584a-4922-8b17-962614beb83f-../ubuntu-layouts4/images/layout3.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/layout3.png" alt="" /></p>
 <!-- @@@ubuntu-layouts4.html -->
 <p class="naviNextPrevious footerNavi">
 <li><a class="nextPage" href="UbuntuUserInterfaceToolkit.ubuntu-layouts5.md">Layouts - Hiding elements, showing more</a></li>

@@ -62,7 +62,7 @@ you access to :
   * region_code
   * zip_postal_code
 
-Have a look at the [API documentation](https://developer.ubuntu.com/api/scopes/cpp/sdk-14.10/unity.scopes.Location/) to dive in all the details. As you will
+Have a look at the [API documentation](../api-autopilot-current/index.md) to dive in all the details. As you will
 see, each location data element has an equivalent `has__element_()` function to
 ensure its availability.
 
@@ -127,7 +127,7 @@ if (query_string.empty()) {
 
 That’s it! The scope should now be able to surface weather data for your location when you open it.
 
-![)(../../../media/scope-location-2.png)
+![](../../../media/scope-location-2.png)
 
 ## Next steps
 

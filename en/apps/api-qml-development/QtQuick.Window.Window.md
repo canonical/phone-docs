@@ -9,7 +9,7 @@ Title: QtQuick.Window.Window
 <p>Creates a new top-level window More...</p>
 <!-- @@@Window -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick.Window 2.2</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../qquickwindow.html">QQuickWindow</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick.Window 2.2</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com/api//qquickwindow.html">QQuickWindow</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
@@ -107,7 +107,7 @@ Title: QtQuick.Window.Window
 <table class="qmlname"><tr valign="top" id="height-prop"><td class="tblQmlPropNode"><p><span class="name">height</span> : <span class="type">int</span></p></td></tr></table><p>Defines the window's position and size.</p>
 <p>The (x,y) position is relative to the <a href="QtQuick.Window.Screen.md">Screen</a> if there is only one, or to the virtual desktop (arrangement of multiple screens).</p>
 <pre class="qml"><span class="type"><a href="index.html">Window</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span>; <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span> }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/42fbda2b-01a4-45df-97c7-65ff858ababf-../QtQuick.Window.Window/images/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@height -->
+<p class="centerAlign"><img src="../../../../media/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@height -->
 <br/>
 <!-- $$$maximumHeight -->
 <table class="qmlname"><tr valign="top" id="maximumHeight-prop"><td class="tblQmlPropNode"><p><span class="name">maximumHeight</span> : <span class="type">int</span></p></td></tr></table><p>Defines the window's maximum size.</p>
@@ -170,19 +170,19 @@ Title: QtQuick.Window.Window
 <table class="qmlname"><tr valign="top" id="width-prop"><td class="tblQmlPropNode"><p><span class="name">width</span> : <span class="type">int</span></p></td></tr></table><p>Defines the window's position and size.</p>
 <p>The (x,y) position is relative to the <a href="QtQuick.Window.Screen.md">Screen</a> if there is only one, or to the virtual desktop (arrangement of multiple screens).</p>
 <pre class="qml"><span class="type"><a href="index.html">Window</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span>; <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span> }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/8ac2d524-ac5f-450b-a832-f27e91939493-../QtQuick.Window.Window/images/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@width -->
+<p class="centerAlign"><img src="../../../../media/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@width -->
 <br/>
 <!-- $$$x -->
 <table class="qmlname"><tr valign="top" id="x-prop"><td class="tblQmlPropNode"><p><span class="name">x</span> : <span class="type">int</span></p></td></tr></table><p>Defines the window's position and size.</p>
 <p>The (x,y) position is relative to the <a href="QtQuick.Window.Screen.md">Screen</a> if there is only one, or to the virtual desktop (arrangement of multiple screens).</p>
 <pre class="qml"><span class="type"><a href="index.html">Window</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span>; <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span> }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/510301fe-874d-49a1-aa4e-d6ade79432bf-../QtQuick.Window.Window/images/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@x -->
+<p class="centerAlign"><img src="../../../../media/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@x -->
 <br/>
 <!-- $$$y -->
 <table class="qmlname"><tr valign="top" id="y-prop"><td class="tblQmlPropNode"><p><span class="name">y</span> : <span class="type">int</span></p></td></tr></table><p>Defines the window's position and size.</p>
 <p>The (x,y) position is relative to the <a href="QtQuick.Window.Screen.md">Screen</a> if there is only one, or to the virtual desktop (arrangement of multiple screens).</p>
 <pre class="qml"><span class="type"><a href="index.html">Window</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span>; <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span> }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/261a33a9-e26d-4e78-aa29-85589698cecc-../QtQuick.Window.Window/images/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@y -->
+<p class="centerAlign"><img src="../../../../media/screen-and-window-dimensions.jpg" alt="" /></p><!-- @@@y -->
 <br/>
 <h2>Attached Property Documentation</h2>
 <!-- $$$active -->

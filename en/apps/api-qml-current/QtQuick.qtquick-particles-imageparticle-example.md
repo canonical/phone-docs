@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-particles-imageparticle-example
 
 <span class="subtitle"></span>
 <!-- $$$particles/imageparticle-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ad728099-66ed-49ef-b7f5-2033f4e62cec-../qtquick-particles-imageparticle-example/images/qml-imageparticle-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="../../../../media/qml-imageparticle-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
 <p>All at once shows off several of the features of <a href="QtQuick.Particles.ImageParticle.md">ImageParticle</a> at the same time.</p>
 <pre class="qml"><span class="name">sprites</span>: [
 <span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span> {

@@ -251,4 +251,4 @@ to the world of testing!
 
   * [Official Autopilot Tutorial](../apps/api-autopilot-current/tutorial-getting_started/)
   * [Autopilot API Documentation](../apps/api-autopilot-current/)
-  * [Autopilot SDK Helpers)(../apps/api-autopilot-current/ubuntuuitoolkit/)
+  * [Autopilot SDK Helpers](../apps/api-autopilot-current/ubuntuuitoolkit/)

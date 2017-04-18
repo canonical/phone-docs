@@ -8,7 +8,7 @@ Title: unity.scopes.NotFoundException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::NotFoundException:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/90474ec5-3dee-4cf5-abb0-a43f072a07c7-../unity.scopes.NotFoundException/classunity_1_1scopes_1_1_not_found_exception__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_not_found_exception_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_not_found_exception__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_not_found_exception_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_not_found_exception_inherit__map" id="unity_1_1scopes_1_1_not_found_exception_inherit__map">
 </map>
 <center><span class="legend">[legend]</span></center>

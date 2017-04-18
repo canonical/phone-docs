@@ -151,5 +151,5 @@ Scope flexibility is here to unlock your creativity : try to push the
 customization to its maximum and make your scope unique. Have a look at
 default scopes such as Ebay, Wikipedia or Youtube to get some design ideas !
 
-You can dive into the [API documentation)(https://developer.ubuntu.com/api/scopes/cpp/current/) if you
+You can dive into the [API documentation)(../api-cpp-current/index.md) if you
 need more details on tweaking cards and categories to your needs.

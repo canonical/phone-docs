@@ -87,7 +87,7 @@ The user can tap the cross in the header or the back chevron to be taken back to
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-Implement the  [SearchReply](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.SearchReply/) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.SearchListenerBase/),  [SearchMetadata](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.SearchMetadata/) and  [SearchQueryBase](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.SearchQueryBase/) elements.
+Implement the  [SearchReply](../api-cpp-current/SearchReply.md) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](../api-cpp-current/SearchListenerBase.md),  [SearchMetadata](../api-cpp-current/SearchMetadata.md) and  [SearchQueryBase](../api-cpp-current/SearchQueryBase.md) elements.
 
 ##Categories
 
@@ -103,7 +103,7 @@ Categories are used to group together related content in a readable and manageab
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-To implement the  [Category](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.Category/) and  [Categorised Result](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.CategorisedResult/) element in your scope see our SDK.
+To implement the  [Category](../api-cpp-current/Category.md) and  [Categorised Result](../api-cpp-current/CategorisedResult.md) element in your scope see our SDK.
 
 ##Structure
 
@@ -121,7 +121,7 @@ Think about what the user will first expect to see at the top of your scope. If 
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-Implement a JSON formatted template with the  [Category Renderer](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.CategoryRenderer/) from our SDK.
+Implement a JSON formatted template with the  [Category Renderer](../api-cpp-current/CategoryRenderer.md) from our SDK.
 
 ##Category header
 
@@ -153,7 +153,7 @@ See more ways in which the header can link to either a website or an app in the 
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-Implement a  [Hyperlink](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.Link/)(label and canned query) from our SDK.
+Implement a  [Hyperlink](../api-cpp-current/Link.md)(label and canned query) from our SDK.
 
 ##Designing categories
 
@@ -201,7 +201,7 @@ A card is a visual representation of a content result; you can design them in di
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
-Implement the  [Result](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.Result/) element from our SDK, which contains the attributes of a result returned by a Scope.
+Implement the  [Result](../api-cpp-current/Result.md) element from our SDK, which contains the attributes of a result returned by a Scope.
 
 ##Card components
 

@@ -64,7 +64,7 @@ Targets can be created, deleted and updated in the **"Ubuntu" > "Click"** pane
 
 Kits can be created and deleted in the **"Build & Run" > "Kits"** pane.
 
-![)(../../../media/+NekheleshRamananthan/posts)
+![](../../../media/+NekheleshRamananthan/posts)
 demonstrates how to use the Ubuntu SDK Kits to build and run apps on the
 desktop, emulator and physical devices.
 

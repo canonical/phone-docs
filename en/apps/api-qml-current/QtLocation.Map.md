@@ -69,7 +69,7 @@ longitude: <span class="number">153</span>
 zoomLevel: map<span class="operator">.</span>minimumZoomLevel
 gesture<span class="operator">.</span>enabled: <span class="keyword">true</span>
 }</pre>
-<p class="centerAlign"><img src="../../media/api-map.png" alt="" /></p><!-- @@@Map -->
+<p class="centerAlign"><img src="../../../../media/api-map.png" alt="" /></p><!-- @@@Map -->
 <h2>Property Documentation</h2>
 <!-- $$$activeMapType -->
 <table class="qmlname"><tr valign="top" id="activeMapType-prop"><td class="tblQmlPropNode"><p><span class="name">activeMapType</span> : <span class="type"><a href="..//QtLocation.MapType.md">MapType</a></span></p></td></tr></table><p>Access to the currently active <a href="..//QtLocation.MapType.md">map type</a>.</p>

@@ -112,7 +112,7 @@ If all tests are green, you can see how your app looks along others by
 installing it on your device, directly from the **Publish** page with the
 **Install on device** button.
 
-![)(../../../media/bq3-small.png)
+![](../../../media/bq3-small.png)
 
 ### **Publishing your app**
 

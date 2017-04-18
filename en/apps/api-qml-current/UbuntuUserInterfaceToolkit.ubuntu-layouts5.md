@@ -28,7 +28,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts5
 }
 }</pre>
 <p>The layout when the block width exceeds 50 GU will look like this:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f6758f33-ddc5-43c3-a172-55f9c4496769-../ubuntu-layouts5/images/layout6.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/layout6.png" alt="" /></p>
 <h2 id="showing-more-content">Showing more content</h2>
 <p>Another use case is to show extra content in a different layout/form factor. These components can simply be declared inside the layout itself, assuming that those are not going to be used in any other layout. If yes, those must also be declared in the default layout in order to preserve their state, or other modalities to transfer the component state must be used. Let's create a layout which will be activated when the layout block width exceeds 70 GU.</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
@@ -58,7 +58,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts5
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/63533016-8466-40ec-90b1-cc7cd28dfc55-../ubuntu-layouts5/images/layout6-2.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/layout6-2.png" alt="" /></p>
 <!-- @@@ubuntu-layouts5.html -->
 <p class="naviNextPrevious footerNavi">
 <li><a class="nextPage" href="UbuntuUserInterfaceToolkit.ubuntu-layouts6.md">Layouts - Overlay items in an item host</a></li>

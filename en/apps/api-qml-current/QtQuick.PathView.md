@@ -114,7 +114,7 @@ Title: QtQuick.PathView
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/52014486-2259-4d17-b722-42706f8aeafe-../QtQuick.PathView/images/pathview.gif" alt="" /></p><p>(Note the above example uses <a href="QtQuick.PathAttribute.md">PathAttribute</a> to scale and modify the opacity of the items as they rotate. This additional code can be seen in the <a href="QtQuick.PathAttribute.md">PathAttribute</a> documentation.)</p>
+<p class="centerAlign"><img src="../../../../media/pathview.gif" alt="" /></p><p>(Note the above example uses <a href="QtQuick.PathAttribute.md">PathAttribute</a> to scale and modify the opacity of the items as they rotate. This additional code can be seen in the <a href="QtQuick.PathAttribute.md">PathAttribute</a> documentation.)</p>
 <p><a href="index.html">PathView</a> does not automatically handle keyboard navigation. This is because the keys to use for navigation will depend upon the shape of the path. Navigation can be added quite simply by setting <code>focus</code> to <code>true</code> and calling <a href="#decrementCurrentIndex-method">decrementCurrentIndex()</a> or <a href="#incrementCurrentIndex-method">incrementCurrentIndex()</a>, for example to navigate using the left and right arrow keys:</p>
 <pre class="qml"><span class="type"><a href="index.html">PathView</a></span> {
 <span class="comment">// ...</span>

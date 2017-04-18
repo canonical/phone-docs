@@ -189,7 +189,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide)(../guides/html5-guide.md) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
 
 ### App layout
 

@@ -8,7 +8,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <!-- $$$ubuntu-layouts7.html-description -->
 <p>As mentioned, with Layouts we can achieve to have a single code base supporting different form factors. The following example illustrates how to support different layouts with the same code base.</p>
 <h2 id="default-layout">Default layout</h2>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/244866db-374b-4019-8d68-e6adec7d29e7-../ubuntu-layouts7/images/simple-layout1.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
+<p class="centerAlign"><img src="../../../../media/simple-layout1.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">id</span>: <span class="name">redButton</span>
 <span class="name">text</span>: <span class="string">&quot;Item #1&quot;</span>
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
@@ -57,7 +57,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 }</pre>
 <h2 id="conditional-layouts">Conditional layouts</h2>
 <h3 >Column layout</h3>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/535e39ed-d3a5-4feb-af6d-188c231a0dc5-../ubuntu-layouts7/images/simple-layout2.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
+<p class="centerAlign"><img src="../../../../media/simple-layout2.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
 <span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
@@ -89,7 +89,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 }
 },</pre>
 <h3 >Row layout</h3>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/40840dc7-ab78-4539-bb41-b2ce9cc1d49e-../ubuntu-layouts7/images/simple-layout3.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
+<p class="centerAlign"><img src="../../../../media/simple-layout3.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>)
 <span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
@@ -121,7 +121,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 }
 },</pre>
 <h3 >Layout hiding element</h3>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6fce9bd3-c40b-42f1-9b5a-bf4c76150555-../ubuntu-layouts7/images/simple-layout4.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
+<p class="centerAlign"><img src="../../../../media/simple-layout4.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;hiding-element&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
 <span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
@@ -139,7 +139,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 }
 },</pre>
 <h3 >Layout showing more</h3>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0e0ee815-d859-4f4c-821e-dc03a3573110-../ubuntu-layouts7/images/simple-layout5.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
+<p class="centerAlign"><img src="../../../../media/simple-layout5.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;showing-more&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
 <span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {

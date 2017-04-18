@@ -8,9 +8,9 @@ Title: unity.scopes.ActivationQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ActivationQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ActivationQueryBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/505edda9-7e63-4566-9c0a-b8f043a082b8-../unity.scopes.ActivationQueryBase/classunity_1_1scopes_1_1_activation_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_activation_query_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_activation_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_activation_query_base_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_activation_query_base_inherit__map" id="unity_1_1scopes_1_1_activation_query_base_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_query_base.html" title="Abstract server&#45;side base interface for a query that is executed inside a scope. " alt="" coords="5,5,188,32"/></map>
+<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_query_base.html" title="Abstract server&#45;side base interface for a query that is executed inside a scope. " alt="" coords="5,5,188,32"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
@@ -43,7 +43,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a0cb38f795f4096a6bc2f40d5c192df6e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cb38f795f4096a6bc2f40d5c192df6e">action_id</a> () const </td></tr>
 <tr class="memdesc:a0cb38f795f4096a6bc2f40d5c192df6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the action identifier for this activation request handler.  More...<br /></td></tr>
 <tr class="separator:a0cb38f795f4096a6bc2f40d5c192df6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/abcd9bd9-0944-41ae-99b6-a27ede5c0221-../unity.scopes.ActivationQueryBase/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="../../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
 <tr class="memitem:a095e61eabe2042eeea5c4df1a444d7d4 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.QueryBase.md#a095e61eabe2042eeea5c4df1a444d7d4">valid</a> () const </td></tr>
 <tr class="memdesc:a095e61eabe2042eeea5c4df1a444d7d4 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this query is still valid.  More...<br /></td></tr>
 <tr class="separator:a095e61eabe2042eeea5c4df1a444d7d4 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

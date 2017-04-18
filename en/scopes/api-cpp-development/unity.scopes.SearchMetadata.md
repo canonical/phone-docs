@@ -8,9 +8,9 @@ Title: unity.scopes.SearchMetadata
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/SearchMetadata.h&gt;</code></p>
 Inheritance diagram for unity::scopes::SearchMetadata:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/4b48c407-a62c-4667-9477-0cf2dbddc115-../unity.scopes.SearchMetadata/classunity_1_1scopes_1_1_search_metadata__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_metadata_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_search_metadata__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_metadata_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_search_metadata_inherit__map" id="unity_1_1scopes_1_1_search_metadata_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_query_metadata.html" title="Base class for extra metadata passed to scopes as a part of a request. " alt="" coords="9,5,221,32"/></map>
+<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_query_metadata.html" title="Base class for extra metadata passed to scopes as a part of a request. " alt="" coords="9,5,221,32"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70f02e2124009c8ded20f2441c627b67"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="index.html">SearchMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">SearchMetadata</a> &amp;&amp;)</td></tr>
 <tr class="separator:a70f02e2124009c8ded20f2441c627b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_metadata')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/56fb6e5c-dcc6-47f0-ac4b-cce0eb053b7e-../unity.scopes.SearchMetadata/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryMetadata.md">unity::scopes::QueryMetadata</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_metadata')"><img src="../../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryMetadata.md">unity::scopes::QueryMetadata</a></td></tr>
 <tr class="memitem:a3ca25150669d96171aec6ab56ef6bb0e inherit pub_methods_classunity_1_1scopes_1_1_query_metadata"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.QueryMetadata.md#a3ca25150669d96171aec6ab56ef6bb0e">locale</a> () const </td></tr>
 <tr class="memdesc:a3ca25150669d96171aec6ab56ef6bb0e inherit pub_methods_classunity_1_1scopes_1_1_query_metadata"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the locale string.  More...<br /></td></tr>
 <tr class="separator:a3ca25150669d96171aec6ab56ef6bb0e inherit pub_methods_classunity_1_1scopes_1_1_query_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_query_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_query_metadata')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/01c15e3e-dc41-4a2c-832c-a726a80c523d-../unity.scopes.SearchMetadata/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.QueryMetadata.md">unity::scopes::QueryMetadata</a></td></tr>
+<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_query_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_query_metadata')"><img src="../../../../media/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.QueryMetadata.md">unity::scopes::QueryMetadata</a></td></tr>
 <tr class="memitem:a20eb916661728a7d9c00485e28f88701 inherit pub_types_classunity_1_1scopes_1_1_query_metadata"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.QueryMetadata.md#a20eb916661728a7d9c00485e28f88701">ConnectivityStatus</a> { <b>Unknown</b>, 
 <b>Connected</b>, 
 <b>Disconnected</b>

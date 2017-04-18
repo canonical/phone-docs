@@ -56,7 +56,7 @@ Rectangle { width: <span class="number">50</span>; height: <span class="number">
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/53b2c0b3-9631-475c-bb3b-c485c528414c-../qtquick-visualcanvas-visualparent/images/visual-parent-example.png" alt="" /></p><p>Because the algorithm recurses through the visual item hierarchy, any children of the green rectangle will also be drawn beneath the blue rectangle and beneath any of the blue rectangle's children.</p>
+<p class="centerAlign"><img src="../../../../media/visual-parent-example.png" alt="" /></p><p>Because the algorithm recurses through the visual item hierarchy, any children of the green rectangle will also be drawn beneath the blue rectangle and beneath any of the blue rectangle's children.</p>
 <p>Stacking order can be influenced with the <a href="QtQuick.Item.md#z-prop">Item::z</a> property. Z values below 0 will stack below the parent, and if z values are assigned then siblings will stack in z-order (with creation order used to break ties). Z values only affect stacking compared to siblings and the parent item. If you have an item who is obscured by a subtree rooted above its parent item, no z value on that item will increase its stacking order to stack above that subtree. To stack that item above the other subtree you'll have to alter z values farther up in the hierarchy, or re-arrange the visual item hierarchy.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;#272822&quot;</span>
@@ -86,7 +86,7 @@ Rectangle { width: <span class="number">50</span>; height: <span class="number">
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d8392b0e-111d-4aca-9e82-de2125a5efe3-../qtquick-visualcanvas-visualparent/images/visual-parent-example2.png" alt="" /></p><p>In the above example, the red rectangle has a high z value, but is still stacked below the blue rectangle. This is because it is a child of the green rectangle, and the green rectangle is a sibling of the blue rectangle. The z value of the green rectangle is lower than that of the blue rectangle, so the green rectangle and all children will be stacked beneath the blue rectangle.</p>
+<p class="centerAlign"><img src="../../../../media/visual-parent-example2.png" alt="" /></p><p>In the above example, the red rectangle has a high z value, but is still stacked below the blue rectangle. This is because it is a child of the green rectangle, and the green rectangle is a sibling of the blue rectangle. The z value of the green rectangle is lower than that of the blue rectangle, so the green rectangle and all children will be stacked beneath the blue rectangle.</p>
 <h3 >Canvas Ownership</h3>
 <p>The definition of what is rendered in a Qt Quick scene is the visual item tree rooted at QQuickWindow::contentItem. Therefore to add an Item to a specific Qt Quick scene for rendering it needs to become a visual hierarchy child of an Item already in the visual item hierarchy, such as QQuickWindow::contentItem.</p>
 <!-- @@@qtquick-visualcanvas-visualparent.html -->

@@ -6,7 +6,7 @@ Title: QtLocation.qtlocation-places-map-example
 
 <span class="subtitle"></span>
 <!-- $$$places_map-description -->
-<p class="centerAlign"><img src="../../media/places-map.jpg" alt="" /></p><p>To write a QML application that will show places on a map, we start by making the following import declarations.</p>
+<p class="centerAlign"><img src="../../../../media/places-map.jpg" alt="" /></p><p>To write a QML application that will show places on a map, we start by making the following import declarations.</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2
 import QtLocation 5.3</pre>

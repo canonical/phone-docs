@@ -23,7 +23,7 @@ Title: QtQuick.Gradient
 <p>A gradient without any gradient stops is rendered as a solid white fill.</p>
 <p>Note that this item is not a visual representation of a gradient. To display a gradient, use a visual item (like <a href="QtQuick.Rectangle.md">Rectangle</a>) which supports the use of gradients.</p>
 <h2 id="example-usage">Example Usage</h2>
-<p><img src="https://developer.ubuntu.com/static/devportal_uploaded/90557112-73b4-4042-bdcc-6ed1dfb726f0-../QtQuick.Gradient/images/qml-gradient.png" alt="" /></p>
+<p><img src="../../../../media/qml-gradient.png" alt="" /></p>
 <p>The following example declares a <a href="QtQuick.Rectangle.md">Rectangle</a> item with a gradient starting with red, blending to yellow at one third of the height of the rectangle, and ending with green:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>

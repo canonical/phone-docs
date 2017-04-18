@@ -8,9 +8,9 @@ Title: unity.scopes.PreviewQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/PreviewQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::PreviewQueryBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/c84614df-f282-4864-8aec-606800a56f5f-../unity.scopes.PreviewQueryBase/classunity_1_1scopes_1_1_preview_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_preview_query_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_preview_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_preview_query_base_inherit__map" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1_preview_query_base_inherit__map" id="unity_1_1scopes_1_1_preview_query_base_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1qt_1_1_q_preview_query_base_a_p_i.html" title="Abstract base class to represent a particular preview. " alt="" coords="35,155,206,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com../classunity_1_1scopes_1_1_query_base.html" title="Abstract server&#45;side base interface for a query that is executed inside a scope. " alt="" coords="29,5,212,32"/></map>
+<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_preview_query_base_a_p_i.html" title="Abstract base class to represent a particular preview. " alt="" coords="35,155,206,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_query_base.html" title="Abstract server&#45;side base interface for a query that is executed inside a scope. " alt="" coords="29,5,212,32"/></map>
 <center><span class="legend">[legend]</span></center>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
@@ -24,7 +24,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40f82d521b7c31a3b29f4c1143242d62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unity.scopes.ActionMetadata.md">ActionMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f82d521b7c31a3b29f4c1143242d62">action_metadata</a> () const </td></tr>
 <tr class="memdesc:a40f82d521b7c31a3b29f4c1143242d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get metadata for this preview request.  More...<br /></td></tr>
 <tr class="separator:a40f82d521b7c31a3b29f4c1143242d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6058fcfd-8c54-4cb4-9396-5482656f507f-../unity.scopes.PreviewQueryBase/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="../../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
 <tr class="memitem:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.QueryBase.md#a596b19dbfd6efe96b834be75a9b64c68">cancelled</a> ()=0</td></tr>
 <tr class="memdesc:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the scopes runtime when the query originator cancels a query.  More...<br /></td></tr>
 <tr class="separator:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

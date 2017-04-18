@@ -7,7 +7,7 @@ Title: QtQuick.qtquick-customitems-painteditem-example
 <span class="subtitle"></span>
 <!-- $$$customitems/painteditem-description -->
 <p>The Painted Item example shows how to use the QML Scene Graph framework to implement custom scenegraph items using QPainter.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/38661ba9-e499-46b0-a52a-b00c464c15a6-../qtquick-customitems-painteditem-example/images/declarative-textballoons_example.png" alt="" /></p><p>The QQuickPaintedItem class is a class derived from QQuickItem for implementing custom QML Scene Graph items using the QPainter interfaces.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-textballoons_example.png" alt="" /></p><p>The QQuickPaintedItem class is a class derived from QQuickItem for implementing custom QML Scene Graph items using the QPainter interfaces.</p>
 <p>The example consists of an item class, a plugin class and a QML file to use this plugin. The <code>TextBalloon</code> class represents the individual text balloons extending QQuickPaintedItem, the <code>TextBalloonPlugin</code> class represents the skeleton code for a Qt Quick plugin and the <code>textballoons.qml</code> file is used to load the plugin and display the text balloons.</p>
 <p>We will focus on the <code>TextBalloon</code> class first and continue with the <code>textballoons.qml</code> file. For an example on how to implement a <a href="QtQuick.qtquick-index.md">Qt Quick</a> plugin please look at Writing an Extension Plugin</p>
 <h2 id="textballoon-class-declaration">TextBalloon Class Declaration</h2>

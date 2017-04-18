@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-qmlqtsensors-example
 
 <span class="subtitle"></span>
 <!-- $$$qmlqtsensors-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4cd1d40f-bf99-4851-a56b-570c94adeae7-../qtsensors-qmlqtsensors-example/images/qmlqtsensors.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../../media/qmlqtsensors.png" alt="" /></p>
 <h3 >Qt Sensors in QML</h3>
 <p>To write a QML application that will use the QML sensors types in the QtSensors 5 import you need to to the following steps:</p>
 <p>Import the QtSensors 5.x declarative plugin:</p>

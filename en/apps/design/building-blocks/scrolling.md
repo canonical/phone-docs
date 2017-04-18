@@ -10,7 +10,7 @@ The toolkit provides a ScrollView component that allows users to scroll content 
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-The  [ScrollView API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.ScrollView/) is a scrollable view that features scrollbars and scrolling when using keyboard keys.
+The  [ScrollView API](../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.
 
 ## ScrollView vs. Scrollbar APIs
 
@@ -76,7 +76,7 @@ Place any ListView API inside a ScrollView to present a scrollbar when items hav
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-Use the  [ListView API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.5/QtQuick.ListView/) or see  [List Items](list-items.md) for more guidance on using lists inside your application.
+Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](list-items.md) for more guidance on using lists inside your application.
 
 ## Scrolling within a text field
 
@@ -93,4 +93,3 @@ The toolkit provides panels that can be used to display anything from images, la
 By wrapping the panel inside a ScrollView it will automatically adhere to the content in any device layout.
 
 ![750w_Scrollbar_InsidePanel](https://assets.ubuntu.com/v1/f9e5b0bb-750w_Scrollbar_InsidePanel.png)
-

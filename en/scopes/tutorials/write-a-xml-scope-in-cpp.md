@@ -176,7 +176,7 @@ access. Its sole purpose is to retrieve data from Jamendo.
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/scope.cpp)
 
 This file defines a class of type
-[unity::scopes::ScopeBase](/api/scopes/sdk-14.10/unity.scopes.ScopeBase/) that
+[unity::scopes::ScopeBase](../api-autopilot-current/index.md) that
 provides the entry point API the client uses to interact with the scope.
 
   * It implements start and stop methods. Many scopes can leave these unmodified, and this example does as well.
@@ -184,9 +184,7 @@ provides the entry point API the client uses to interact with the scope.
 
 **Note**: You may find it useful to check out the `ScopeBase` class declaration (its API) in the corresponding header file: `include/scope/scope.h`. The header file is a great way to understand C++ classes because their API is declared without any additional implementation code, making it easy to understand.
 
-**Tip**: Check out the [Unity 8 Scope API reference docs](/api/scopes/sdk-14.10/) during this tutorial if you want a deeper understanding of specific classes.
-
-### src/scope/query.cpp
+**Tip**: Check out the [Unity 8 Scope API reference docs](../api-autopilot-current/index.mdscope/query.cpp
 
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp)
 
@@ -194,7 +192,7 @@ Here is where we send queries to the API client, transform returned results
 into result cards, declare categories that will host these cards and their
 layout.
 
-This file defines a class of type [unity::scopes::SearchQueryBase](/api/scopes/sdk-14.10/unity.scopes.SearchQueryBase/).
+This file defines a class of type [unity::scopes::SearchQueryBase](../api-autopilot-current/index.md).
 
 This class generates search results from a query string a client provides and
 returns them as a reply to the client:
@@ -216,7 +214,7 @@ header file: `include/scope/query.h`.
 
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/preview.cpp)
 
-This key file defines a class of type [unity::scopes::PreviewQueryBase](/api/scopes/sdk-14.10/unity.scopes.PreviewQueryBase/).
+This key file defines a class of type [unity::scopes::PreviewQueryBase](../api-autopilot-current/index.md).
 
 This class defines the widgets and layouts used for each search result during
 the preview phase. It:
@@ -230,14 +228,7 @@ the preview phase. It:
 Check out the `SearchPreviewBase` class declaration (its API) in the
 corresponding header file: `include/scope/preview.h`.
 
-For a list of Preview Widgets and documentation, see [thispage](/api/scopes/sdk-14.10/preview_20widget_20types).
-
-Let’s drill into our example scope and detail some of the code, starting with
-the query.
-
-## Query string
-
-![](../../../media/jamendo_query-239x300.png)
+For a list of Preview Widgets and documentation, see [thispage](../api-autopilot-current/index.md../../media/jamendo_query-239x300.png)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -429,7 +420,7 @@ const static string TRACKS_TEMPLATE =
 
 This will display a simple list of results, it’s a category style used in many
 scopes, working well with many types of content. You can have a look at all
-your options in the [unity::scopes::CategoryRendererdoc](/api/scopes/sdk-14.10/unity.scopes.CategoryRenderer/).
+your options in the [unity::scopes::CategoryRendererdoc](../api-autopilot-current/index.md).
 
 Now, in the `try{}` part of the `Query::run` method, we can register our category
 on the reply object :
@@ -456,7 +447,7 @@ For this Jamendo scope to be useful, we want each result to have at least:
 
 Make sure every fields you have defined in your category template components are presents in results, even if they are empty. Invalid results will be automatically discarded.
 
-Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult)(/api/scopes/sdk-14.10/unity.scopes.CategorisedResult/) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
+Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult)(../api-autopilot-current/index.md) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
 
 ``` C+
 for (const auto &track : trackslist.tracks) {
@@ -508,7 +499,7 @@ create them. Each type of widget also has additional fields that vary by
 widget type.
 
 You can see the the list of Preview Widget types and the fields they offer
-[here](/api/scopes/sdk-14.10/previewwidgets/).
+[here](../api-autopilot-current/index.md).
 
 This example uses three types of Preview Widgets:
 
@@ -623,7 +614,7 @@ These are declared like this:
 sc::ColumnLayout layout1col(1), layout2col(2);
 ```
 
-**Tip**: Check out ColumnLayout docs [here](/api/scopes/sdk-14.10/unity.scopes.ColumnLayout/).
+**Tip**: Check out ColumnLayout docs [here](../api-autopilot-current/index.md).
 
 We do not need to know exactly how the client uses these. But the general
 expectation is that a single-column layout is appropriate for narrow-screen

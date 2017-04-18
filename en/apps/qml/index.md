@@ -6,7 +6,7 @@ title: "QML apps"
 
 QML is an extremely powerful JavaScript-based declarative language for designing intuitive, natural and responsive user interfaces.  The Ubuntu SDK provides fluid and natural user interface QML elements that blend into Ubuntu without getting in the way. And with a rich framework and APIs, based on the cross-platform Qt framework, QML features an extensive set of APIs that cover the needs of the most demanding developers.
 
-[Read the API documentation&nbsp;&rsaquo;](https://developer.ubuntu.com/api/qml/)
+[Read the API documentation&nbsp;&rsaquo;](../api-qml-current/)
 
 ## A powerful language to write compelling UIs
 

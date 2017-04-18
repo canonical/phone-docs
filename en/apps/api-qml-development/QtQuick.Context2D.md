@@ -94,7 +94,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <p>The <a href="index.html">Context2D</a> API provides the rendering <b>context</b> which defines the methods and attributes needed to draw on the <code>Canvas</code> item. The following assigns the canvas rendering context to a <code>context</code> variable:</p>
 <pre class="cpp">var context <span class="operator">=</span> mycanvas<span class="operator">.</span>getContext(<span class="string">&quot;2d&quot;</span>)</pre>
 <p>The <a href="index.html">Context2D</a> API renders the canvas as a coordinate system whose origin (0,0) is at the top left corner, as shown in the figure below. Coordinates increase along the <code>x</code> axis from left to right and along the <code>y</code> axis from top to bottom of the canvas.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6efb18d5-44b3-4efa-98b3-ee73e770aa59-../QtQuick.Context2D/images/qml-item-canvas-context.gif" alt="" /></p><!-- @@@Context2D -->
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-context.gif" alt="" /></p><!-- @@@Context2D -->
 <h2>Property Documentation</h2>
 <!-- $$$canvas -->
 <table class="qmlname"><tr valign="top" id="canvas-prop"><td class="tblQmlPropNode"><p><span class="name">canvas</span> : <span class="type"><a href="QtQuick.Canvas.md">QtQuick::Canvas</a></span></p></td></tr></table><p>Holds the canvas item that the context paints on.</p>
@@ -243,7 +243,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <!-- $$$arc -->
 <table class="qmlname"><tr valign="top" id="arc-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">arc</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> radius</i>, <span class="type">real</span><i> startAngle</i>, <span class="type">real</span><i> endAngle</i>, <span class="type">bool</span><i> anticlockwise</i>)</p></td></tr></table><p>Adds an arc to the current subpath that lies on the circumference of the circle whose center is at the point (<i>x</i>, <i>y</i>) and whose radius is <i>radius</i>.</p>
 <p>Both <code>startAngle</code> and <code>endAngle</code> are measured from the x-axis in radians.</p>
-<p class="centerAlign"><font color="red">[Missing image qml-item-canvas-arc.png]</font></p><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f79f7795-3171-4896-b404-0a2cd1bb5391-../QtQuick.Context2D/images/qml-item-canvas-startAngle.png" alt="" /></p><p>The <i>anticlockwise</i> parameter is <code>true</code> for each arc in the figure above because they are all drawn in the anticlockwise direction.</p>
+<p class="centerAlign"><font color="red">[Missing image qml-item-canvas-arc.png]</font></p><p class="centerAlign"><img src="../../../../media/qml-item-canvas-startAngle.png" alt="" /></p><p>The <i>anticlockwise</i> parameter is <code>true</code> for each arc in the figure above because they are all drawn in the anticlockwise direction.</p>
 <p><b>See also </b><a href="#arcTo-method">arcTo</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arc">W3C's 2D Context Standard for arc()</a>.</p>
 <!-- @@@arc -->
 <br/>
@@ -254,7 +254,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <li>Call the <a href="#moveTo-method">moveTo</a>(<code>x</code>, <code>y</code>) method to set your starting position on the canvas at the point (<code>x</code>, <code>y</code>).</li>
 <li>To draw an arc or circle, call the arcTo(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>radius</i>) method. This adds an arc with starting point (<i>x1</i>, <i>y1</i>), ending point (<i>x2</i>, <i>y2</i>), and <i>radius</i> to the current subpath and connects it to the previous subpath by a straight line.</li>
 </ul>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a01abd24-99a1-4213-a6d0-2058e44d4dca-../QtQuick.Context2D/images/qml-item-canvas-arcTo.png" alt="" /></p><p><b>See also </b><a href="#arc-method">arc</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto">W3C's 2D Context Standard for arcTo()</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-arcTo.png" alt="" /></p><p><b>See also </b><a href="#arc-method">arc</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto">W3C's 2D Context Standard for arcTo()</a>.</p>
 <!-- @@@arcTo -->
 <br/>
 <!-- $$$beginPath -->
@@ -269,7 +269,7 @@ ctx<span class="operator">.</span><a href="#beginPath-method">beginPath</a>();
 ctx<span class="operator">.</span><a href="#moveTo-method">moveTo</a>(<span class="number">20</span><span class="operator">,</span> <span class="number">0</span>);<span class="comment">//start point</span>
 ctx<span class="operator">.</span>bezierCurveTo(<span class="operator">-</span><span class="number">10</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">210</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">180</span><span class="operator">,</span> <span class="number">0</span>);
 ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ea8adca7-d21e-4783-ba50-663e95514c60-../QtQuick.Context2D/images/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
 <!-- @@@bezierCurveTo -->
 <br/>
 <!-- $$$clearRect -->
@@ -284,7 +284,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <li>Call the <code>context.clip()</code> method.</li>
 </ol>
 <p>The new shape displays. The following shows how a clipping path can modify how an image displays:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3e52baa6-04aa-48ea-94dd-86fc16e98e42-../QtQuick.Context2D/images/qml-item-canvas-clip-complex.png" alt="" /></p><p><b>See also </b><a href="#beginPath-method">beginPath()</a>, <a href="#closePath-method">closePath()</a>, <a href="#stroke-method">stroke()</a>, <a href="#fill-method">fill()</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip">W3C 2d context standard for clip</a>.</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-clip-complex.png" alt="" /></p><p><b>See also </b><a href="#beginPath-method">beginPath()</a>, <a href="#closePath-method">closePath()</a>, <a href="#stroke-method">stroke()</a>, <a href="#fill-method">fill()</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip">W3C 2d context standard for clip</a>.</p>
 <!-- @@@clip -->
 <br/>
 <!-- $$$closePath -->
@@ -444,8 +444,8 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <!-- $$$rotate -->
 <table class="qmlname"><tr valign="top" id="rotate-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">rotate</span>(<span class="type">real</span><i> angle</i>)</p></td></tr></table><p>Rotate the canvas around the current origin by <i>angle</i> in radians and clockwise direction.</p>
 <pre class="cpp">ctx<span class="operator">.</span>rotate(Math<span class="operator">.</span>PI<span class="operator">/</span><span class="number">2</span>);</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a3b540fe-ecd9-42d5-bfbe-ca86ec057de5-../QtQuick.Context2D/images/qml-item-canvas-rotate.png" alt="" /></p><p>The rotation transformation matrix is as follows:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/414e0372-092d-454e-815d-b40fc3b74d5f-../QtQuick.Context2D/images/qml-item-canvas-math-rotate.png" alt="" /></p><p>where the <i>angle</i> of rotation is in radians.</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-rotate.png" alt="" /></p><p>The rotation transformation matrix is as follows:</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-math-rotate.png" alt="" /></p><p>where the <i>angle</i> of rotation is in radians.</p>
 <!-- @@@rotate -->
 <br/>
 <!-- $$$roundedRect -->
@@ -480,20 +480,20 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <table class="qmlname"><tr valign="top" id="scale-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">scale</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Increases or decreases the size of each unit in the canvas grid by multiplying the scale factors to the current tranform matrix. <i>x</i> is the scale factor in the horizontal direction and <i>y</i> is the scale factor in the vertical direction.</p>
 <p>The following code doubles the horizontal size of an object drawn on the canvas and halves its vertical size:</p>
 <pre class="cpp">ctx<span class="operator">.</span>scale(<span class="number">2.0</span><span class="operator">,</span> <span class="number">0.5</span>);</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/95378f68-e4c4-4eca-bbfa-5aff16ac9f08-../QtQuick.Context2D/images/qml-item-canvas-scale.png" alt="" /></p><!-- @@@scale -->
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-scale.png" alt="" /></p><!-- @@@scale -->
 <br/>
 <!-- $$$setTransform -->
 <table class="qmlname"><tr valign="top" id="setTransform-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">setTransform</span>(<span class="type">real</span><i> a</i>, <span class="type">real</span><i> b</i>, <span class="type">real</span><i> c</i>, <span class="type">real</span><i> d</i>, <span class="type">real</span><i> e</i>, <span class="type">real</span><i> f</i>)</p></td></tr></table><p>Changes the transformation matrix to the matrix given by the arguments as described below.</p>
 <p>Modifying the transformation matrix directly enables you to perform scaling, rotating, and translating transformations in a single step.</p>
 <p>Each point on the canvas is multiplied by the matrix before anything is drawn. The <a href="http://www.w3.org/TR/2dcontext/#transformations">HTML Canvas 2D Context specification</a> defines the transformation matrix as:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/221aebe2-25d2-4cf0-bd4b-c2abd4d1d69b-../QtQuick.Context2D/images/qml-item-canvas-math.png" alt="" /></p><p>where:</p>
+<p class="centerAlign"><img src="../../../../media/qml-item-canvas-math.png" alt="" /></p><p>where:</p>
 <ul>
-<li><code>a</code> is the scale factor in the horizontal (x) direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/4ef4f937-e2ed-4743-8cd1-dfffdb5a8a4c-../QtQuick.Context2D/images/qml-item-canvas-scalex.png" alt="" /></p></li>
-<li><code>c</code> is the skew factor in the x direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/76c1f570-f303-43d7-a1b9-8594abd2d1ec-../QtQuick.Context2D/images/qml-item-canvas-skewx.png" alt="" /></p></li>
-<li><code>e</code> is the translation in the x direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/1527d9e1-b0ef-43c0-8a9c-1bd3a1a3d030-../QtQuick.Context2D/images/qml-item-canvas-translate.png" alt="" /></p></li>
-<li><code>b</code> is the skew factor in the y (vertical) direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ae4ff57d-4a49-444b-a887-795bfc5fb284-../QtQuick.Context2D/images/qml-item-canvas-skewy.png" alt="" /></p></li>
-<li><code>d</code> is the scale factor in the y direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/fe1f9a22-186a-4a31-a130-ee31327fd7f7-../QtQuick.Context2D/images/qml-item-canvas-scaley.png" alt="" /></p></li>
-<li><code>f</code> is the translation in the y direction<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0d20688a-f035-4e34-8c98-c2305ba5765f-../QtQuick.Context2D/images/qml-item-canvas-translatey.png" alt="" /></p></li>
+<li><code>a</code> is the scale factor in the horizontal (x) direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-scalex.png" alt="" /></p></li>
+<li><code>c</code> is the skew factor in the x direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-skewx.png" alt="" /></p></li>
+<li><code>e</code> is the translation in the x direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-translate.png" alt="" /></p></li>
+<li><code>b</code> is the skew factor in the y (vertical) direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-skewy.png" alt="" /></p></li>
+<li><code>d</code> is the scale factor in the y direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-scaley.png" alt="" /></p></li>
+<li><code>f</code> is the translation in the y direction<p class="centerAlign"><img src="../../../../media/qml-item-canvas-translatey.png" alt="" /></p></li>
 <li>the last row remains constant</li>
 </ul>
 <p>The scale factors and skew factors are multiples; <code>e</code> and <code>f</code> are coordinate space units, just like the units in the translate(x,y) method.</p>

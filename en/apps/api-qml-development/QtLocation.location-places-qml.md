@@ -54,7 +54,7 @@ Title: QtLocation.location-places-qml
 }
 <span class="name">spacing</span>: <span class="number">10</span>
 }</pre>
-</td><td ><img src="../../media/places-list.png" alt="" /></td></tr>
+</td><td ><img src="../../../../media/places-list.png" alt="" /></td></tr>
 </table>
 <p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="QtLocation.places_list/">Places List</a> example for full source code.</p>
 <h3 >Display Search Results using a MapItemView</h3>
@@ -83,7 +83,7 @@ Title: QtLocation.location-places-qml
 }
 }
 }</pre>
-</td><td ><img src="../../media/places-map.jpg" alt="" /></td></tr>
+</td><td ><img src="../../../../media/places-map.jpg" alt="" /></td></tr>
 </table>
 <p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="..//QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="QtLocation.places_map/">Places Map</a> example for full source code.</p>
 <h3 >Fetching Place Details</h3>

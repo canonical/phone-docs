@@ -5,7 +5,7 @@ Title: UbuntuUI.index
 # UbuntuUI.index
 
 <p>These pages provide reference docs for the Ubunbtu HTML5 framework.</p>
-<p>See <a href="http://developer.ubuntu.com">developer.ubuntu.com</a> for more information on writing Ubuntu HTML5 apps, including: using the Ubuntu SDK, creating HTML5 app projects, importing Ubuntu HTML5 CSS and JavaScript into your app, and more. </p>
+
 <h4>Ubuntu HTML5 widgets</h4>
 <p>The Ubuntun HTML5 framework provides a set of "widgets" you use to build an application in the Ubuntu style (see design.ubuntu.com for descriptions of Ubuntu app "building blocks" with links to APIs for each supported implementation toolkit). For example, an Ubuntu HTML5 app has a dynamic Header with Tabs that together provide navigation through the app's Pages. Pages may contain Lists, Popovers, Buttons, Shapes, and a lot more. The app has a Footer (also called a Toolbar) to which you can add Buttons. There are many options and the list keeps growing!<p>
 <p>Each widget has its HTML part, a corresponding JavaScript object (many of which provide additional methods), and CSS styles.</p>
@@ -33,7 +33,7 @@ Title: UbuntuUI.index
 <p>Be sure to check out the Ubuntu HTML5 CSS files you import into your app. They provide a set of styles that theme the HTML5 widgets to the Ubuntu app design and style.</p>
 <h4>Let's grow this!</h4>
 <p>Let's work together to keep HTML5 as a top-notch app development framework on Ubuntu. Everyone can help by filing bugs, triaging them, and of course, fixing them. So let's get to work writing apps!</p>
-<script src="https://developer.ubuntu.com../assets/vendor/prettify/prettify-min.js"></script>
+<script src="https://developer.ubuntu.com/api//assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>
-<script src="https://developer.ubuntu.com../assets/js/yui-prettify.js"></script>
-<script src="https://developer.ubuntu.com../assets/js/tabs.js"></script>
+<script src="https://developer.ubuntu.com/api//assets/js/yui-prettify.js"></script>
+<script src="https://developer.ubuntu.com/api//assets/js/tabs.js"></script>

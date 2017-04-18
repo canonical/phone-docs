@@ -52,7 +52,7 @@ Title: QtQuick.qtquick-input-focus
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/48764e21-8d06-40f5-a365-9d264066ab61-../qtquick-input-focus/images/declarative-qmlfocus1.png" alt="" /></p><p>However, were the above example to be used as a reusable or imported component, this simple use of the <code>focus</code> property is no longer sufficient.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-qmlfocus1.png" alt="" /></p><p>However, were the above example to be used as a reusable or imported component, this simple use of the <code>focus</code> property is no longer sufficient.</p>
 <p>To demonstrate, we create two instances of our previously defined component and set the first one to have focus. The intention is that when the <code>A</code>, <code>B</code>, or <code>C</code> keys are pressed, the first of the two components receives the event and responds accordingly.</p>
 <p>The code that imports and creates two MyWidget instances:</p>
 <pre class="qml"><span class="comment">//Window code that imports MyWidget</span>
@@ -86,7 +86,7 @@ Title: QtQuick.qtquick-input-focus
 }
 }</pre>
 <p>We would like to have the first MyWidget object to have the focus by setting its <code>focus</code> property to <code>true</code>. However, by running the code, we can confirm that the second widget receives the focus.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6cf61b49-f621-4d30-b060-6a6a887a3f71-../qtquick-input-focus/images/declarative-qmlfocus2.png" alt="" /></p><p>Looking at both <code>MyWidget</code> and <code>window</code> code, the problem is evident - there are three types that set the <code>focus</code> property set to <code>true</code>. The two MyWidget sets the <code>focus</code> to <code>true</code> and the <code>window</code> component also sets the focus. Ultimately, only one type can have keyboard focus, and the system has to decide which type receives the focus. When the second MyWidget is created, it receives the focus because it is the last type to set its <code>focus</code> property to <code>true</code>.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-qmlfocus2.png" alt="" /></p><p>Looking at both <code>MyWidget</code> and <code>window</code> code, the problem is evident - there are three types that set the <code>focus</code> property set to <code>true</code>. The two MyWidget sets the <code>focus</code> to <code>true</code> and the <code>window</code> component also sets the focus. Ultimately, only one type can have keyboard focus, and the system has to decide which type receives the focus. When the second MyWidget is created, it receives the focus because it is the last type to set its <code>focus</code> property to <code>true</code>.</p>
 <p>This problem is due to visibility. The <code>MyWidget</code> component would like to have the focus, but it cannot control the focus when it is imported or reused. Likewise, the <code>window</code> component does not have the ability to know if its imported components are requesting the focus.</p>
 <p>To solve this problem, the QML introduces a concept known as a <i>focus scope</i>. For existing Qt users, a focus scope is like an automatic focus proxy. A focus scope is created by declaring the <a href="QtQuick.FocusScope.md">FocusScope</a> type.</p>
 <p>In the next example, a <a href="QtQuick.FocusScope.md">FocusScope</a> type is added to the component, and the visual result shown.</p>
@@ -111,7 +111,7 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d7468c66-2f5f-432d-83f2-3054e328e69a-../qtquick-input-focus/images/declarative-qmlfocus3.png" alt="" /></p><p>Conceptually <i>focus scopes</i> are quite simple.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-qmlfocus3.png" alt="" /></p><p>Conceptually <i>focus scopes</i> are quite simple.</p>
 <ul>
 <li>Within each focus scope one object may have <code>Item::focus</code> set to <code>true</code>. If more than one <a href="QtQuick.Item.md">Item</a> has the <code>focus</code> property set, the last type to set the <code>focus</code> will have the focus and the others are unset, similar to when there are no focus scopes.</li>
 <li>When a focus scope receives active focus, the contained type with <code>focus</code> set (if any) also gets the active focus. If this type is also a <a href="QtQuick.FocusScope.md">FocusScope</a>, the proxying behavior continues. Both the focus scope and the sub-focused item will have <code>activeFocus</code> property set.</li>
@@ -157,7 +157,7 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 }
 <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> { <span class="name">anchors</span>.fill: <span class="name">parent</span>; <span class="name">onClicked</span>: { <span class="name">scope</span>.<span class="name">focus</span> <span class="operator">=</span> <span class="number">true</span> } }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0dd5673e-71b9-492c-8997-81072915e2c6-../qtquick-input-focus/images/declarative-qmlfocus4.png" alt="" /></p><p>When a QML <a href="QtQuick.Item.md">Item</a> explicitly relinquishes focus (by setting its <code>focus</code> property to <code>false</code> while it has active focus), the system does not automatically select another type to receive focus. That is, it is possible for there to be no currently active focus.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-qmlfocus4.png" alt="" /></p><p>When a QML <a href="QtQuick.Item.md">Item</a> explicitly relinquishes focus (by setting its <code>focus</code> property to <code>false</code> while it has active focus), the system does not automatically select another type to receive focus. That is, it is possible for there to be no currently active focus.</p>
 <p>See <a href="QtQuick.keyinteraction/">Qt Quick Examples - Key Interaction</a> for a demonstration of moving keyboard focus between multiple areas using <a href="QtQuick.FocusScope.md">FocusScope</a> types.</p>
 <h2 id="advanced-uses-of-focus-scopes">Advanced Uses of Focus Scopes</h2>
 <p>Focus scopes allow focus to allocation to be easily partitioned. Several QML items use it to this effect.</p>
@@ -184,6 +184,6 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3a9cf79b-1088-41c6-a75a-9112daf02b27-../qtquick-input-focus/images/declarative-qmlfocus5.png" alt="" /></p><p>While the example is simple, there are a lot going on behind the scenes. Whenever the current item changes, the <a href="QtQuick.ListView.md">ListView</a> sets the delegate's <code>Item::focus</code> property. As the <a href="QtQuick.ListView.md">ListView</a> is a focus scope, this doesn't affect the rest of the application. However, if the <a href="QtQuick.ListView.md">ListView</a> itself has active focus this causes the delegate itself to receive active focus. In this example, the root type of the delegate is also a focus scope, which in turn gives active focus to the <code>Text</code> type that actually performs the work of handling the <code>Return</code> key.</p>
+<p class="centerAlign"><img src="../../../../media/declarative-qmlfocus5.png" alt="" /></p><p>While the example is simple, there are a lot going on behind the scenes. Whenever the current item changes, the <a href="QtQuick.ListView.md">ListView</a> sets the delegate's <code>Item::focus</code> property. As the <a href="QtQuick.ListView.md">ListView</a> is a focus scope, this doesn't affect the rest of the application. However, if the <a href="QtQuick.ListView.md">ListView</a> itself has active focus this causes the delegate itself to receive active focus. In this example, the root type of the delegate is also a focus scope, which in turn gives active focus to the <code>Text</code> type that actually performs the work of handling the <code>Return</code> key.</p>
 <p>All of the QML view classes, such as <a href="QtQuick.PathView.md">PathView</a> and <a href="QtQuick.draganddrop/#gridview">GridView</a>, behave in a similar manner to allow key handling in their respective delegates.</p>
 <!-- @@@qtquick-input-focus.html -->

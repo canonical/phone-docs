@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-shadereffects-example
 
 <span class="subtitle"></span>
 <!-- $$$shadereffects-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/19372ec8-84b9-4d37-9966-d4a8be22881f-../qtquick-shadereffects-example/images/qml-shadereffects-example.png" alt="" /></p><p>This example demonstrates a couple of visual effects that you can perform with shaders in Qt Quick. It applies five different effects on a text and a couple of images. For more information, visit <a href="QtQuick.qtquick-effects-topic.md">Important Concepts In Qt Quick - Graphical Effects</a></p>
+<p class="centerAlign"><img src="../../../../media/qml-shadereffects-example.png" alt="" /></p><p>This example demonstrates a couple of visual effects that you can perform with shaders in Qt Quick. It applies five different effects on a text and a couple of images. For more information, visit <a href="QtQuick.qtquick-effects-topic.md">Important Concepts In Qt Quick - Graphical Effects</a></p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="using-shadereffect">Using ShaderEffect</h2>

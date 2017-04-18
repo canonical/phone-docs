@@ -52,7 +52,7 @@ Title: QtQuick.AnchorChanges
 }
 <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> { <span class="name">anchors</span>.fill: <span class="name">parent</span>; <span class="name">onClicked</span>: <span class="name">window</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;reanchored&quot;</span> }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/903bb5b0-ff69-425d-80cb-408c2871b379-../QtQuick.AnchorChanges/images/anchorchanges.png" alt="" /></p><p><a href="index.html">AnchorChanges</a> can be animated using <a href="QtQuick.AnchorAnimation.md">AnchorAnimation</a>.</p>
+<p class="centerAlign"><img src="../../../../media/anchorchanges.png" alt="" /></p><p><a href="index.html">AnchorChanges</a> can be animated using <a href="QtQuick.AnchorAnimation.md">AnchorAnimation</a>.</p>
 <pre class="qml"><span class="comment">//animate our anchor changes</span>
 <span class="type"><a href="QtQuick.Transition.md">Transition</a></span> {
 <span class="type"><a href="QtQuick.AnchorAnimation.md">AnchorAnimation</a></span> {}

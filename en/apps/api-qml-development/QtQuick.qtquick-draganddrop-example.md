@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-draganddrop-example
 
 <span class="subtitle"></span>
 <!-- $$$draganddrop-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/04926f89-c69c-4395-810d-9d9dcc364ea9-../qtquick-draganddrop-example/images/qml-draganddrop-example.png" alt="" /></p><p><i>Drag and Drop</i> is a collection of small QML examples relating to drag and drop functionality. For more information, visit the Drag and Drop page.</p>
+<p class="centerAlign"><img src="../../../../media/qml-draganddrop-example.png" alt="" /></p><p><i>Drag and Drop</i> is a collection of small QML examples relating to drag and drop functionality. For more information, visit the Drag and Drop page.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="tiles">Tiles</h2>

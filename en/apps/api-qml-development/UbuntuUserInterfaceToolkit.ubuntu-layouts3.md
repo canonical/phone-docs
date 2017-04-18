@@ -41,7 +41,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts3
 }
 }</pre>
 <p>The layout after resizing the window width to exceed 50 GU will look as follows:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/643dd195-5d90-4465-a6d4-876815ca1eea-../ubuntu-layouts3/images/layout2.png" alt="" /></p><p>Note that when resizing the window width to &lt; 50 GU, you will get all your components back to their original (default) positions and anchors.</p>
+<p class="centerAlign"><img src="../../../../media/layout2.png" alt="" /></p><p>Note that when resizing the window width to &lt; 50 GU, you will get all your components back to their original (default) positions and anchors.</p>
 <!-- @@@ubuntu-layouts3.html -->
 <p class="naviNextPrevious footerNavi">
 <li><a class="nextPage" href="UbuntuUserInterfaceToolkit.ubuntu-layouts4.md">Layouts - Lay out a single item differently from others</a></li>

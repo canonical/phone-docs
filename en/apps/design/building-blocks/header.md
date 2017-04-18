@@ -26,7 +26,7 @@ Use the header to let the user know where they are, what they can do, and where 
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-The  [Header API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.1/Ubuntu.Components.Header/) includes the exposed, flickable and moving properties of the header.
+The  [Header API](../api-qml-current/Ubuntu.Components.Header.md) includes the exposed, flickable and moving properties of the header.
 
 ## Usage
 
@@ -161,7 +161,7 @@ The toolbar is an additional component that can be used to hold actions.
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-The  [Toolbar API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.1/Ubuntu.Components.Toolbar/) allows you to determine the action or options you want to display in the toolbar.
+The  [Toolbar API](../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.
 
 ## Edit mode
 
@@ -296,7 +296,7 @@ The header section allow users to easily shift between category views within the
 
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
-The  [Section API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.Sections/) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.
+The  [Section API](../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.
 
 ## Dekko app
 
@@ -340,4 +340,3 @@ The header section can look cluttered if you make the titles too big.
 Allow users quick access to the most important actions by placing them inside the header. For example, in the Contact app: ‘Call’ and ‘Add Contact’ are available in the header to give quick access to the Dialler and Address book.
 
 ![366w_Header_ClearHeaderAction (1)](https://assets.ubuntu.com/v1/50dcda9a-366w_Header_ClearHeaderAction-1.png)
-

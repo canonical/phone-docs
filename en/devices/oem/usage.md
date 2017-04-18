@@ -21,7 +21,7 @@ of Ubuntu Touch to suit your requirements. It requires:
   * [device supported by Ubuntu Touch](../devices.md)
   * then use [ubuntu-device-flash](../installing-ubuntu-for-devices.md) to install Ubuntu Touch on your device
 
-**Note**: the quick start assumes you have already been able to successfully install your device with the default Ubuntu image. If you encounter difficulty, please refer to the [installation instructions)(../installing-ubuntu-for-devices.md).
+**Note**: the quick start assumes you have already been able to successfully install your device with the default Ubuntu image. If you encounter difficulty, please refer to the [installation instructions](../installing-ubuntu-for-devices.md).
 
 ## Tutorial
 

@@ -56,7 +56,7 @@ Let's take the page objects of the [Ubuntu ClockApp](http://bazaar.launchpad.net
 example, with some simplifications.
 
 This application is written in QML and Javascript using the Ubuntu SDK; the
-tests are written in Python using [Autopilot](http://developer.ubuntu.com/api/devel/ubuntu-14.04/autopilot/tutorial/what_is_autopilot.html) as the tool to simulate user actions through the GUI.
+tests are written in Python using [Autopilot](../api-autopilot-current/tutorial-what_is_autopilot.md) as the tool to simulate user actions through the GUI.
 
 
 ### The public methods represent the services that the page offers.
@@ -75,7 +75,7 @@ class Stopwatch(object):
         raise NotImplementedError()
 ```
 
-![)(../../../media/stopwatch-179x300.png)
+![](../../../media/stopwatch-179x300.png)
 
 ### Try not to expose the internals of the page.
 
