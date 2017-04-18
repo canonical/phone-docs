@@ -35,7 +35,7 @@ Title: QtQml.qtqml-syntax-objectattributes
 <p>A property is an attribute of an object that can be assigned a static value or bound to a dynamic expression. A property's value can be read by other objects. Generally it can also be modified by another object, unless a particular QML type has explicitly disallowed this for a specific property.</p>
 <h4 >Defining Property Attributes</h4>
 <p>A property may be defined for a type in C++ by registering a Q_PROPERTY of a class which is then registered with the QML type system. Alternatively, a custom property of an object type may be defined in an object declaration in a QML document with the following syntax:</p>
-<pre class="cpp">    <span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property <span class="operator">&lt;</span>propertyType<span class="operator">&gt;</span> <span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span></pre>
+<pre class="cpp"><span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property <span class="operator">&lt;</span>propertyType<span class="operator">&gt;</span> <span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span></pre>
 <p>In this way an object declaration may <a href="QtQml.qtqml-typesystem-objecttypes.md#defining-object-types-from-qml">expose a particular value</a> to outside objects or maintain some internal state more easily.</p>
 <p>Property names must begin with a lower case letter and can only contain letters, numbers and underscores. JavaScript reserved words are not valid property names. The <code>default</code> keyword is optional, and modifies the semantics of the property being declared. See the upcoming section on <a href="#default-properties">default properties</a> for more information about the <code>default</code> property modifier.</p>
 <p>Declaring a custom property implicitly creates a value-change <a href="#signal-attributes">signal</a> for that property, as well as an associated <a href="#signal-handler-attributes">signal handler</a> called <i>on&lt;PropertyName&gt;Changed</i>, where <i>&lt;PropertyName&gt;</i> is the name of the property, with the first letter capitalized.</p>
@@ -73,9 +73,9 @@ property Rectangle someRectangle</pre>
 <p>In either case, the value may be either a <i>static</i> value or a <i>binding expression</i> value.</p>
 <h5 >Value Assignment on Initialization</h5>
 <p>The syntax for assigning a value to a property on initialization is:</p>
-<pre class="cpp">    <span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> : <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
+<pre class="cpp"><span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> : <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
 <p>An initialization value assignment may be combined with a property definition in an object declaration, if desired. In that case, the syntax of the property definition becomes:</p>
-<pre class="cpp">    <span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property <span class="operator">&lt;</span>propertyType<span class="operator">&gt;</span> <span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> : <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
+<pre class="cpp"><span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property <span class="operator">&lt;</span>propertyType<span class="operator">&gt;</span> <span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> : <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
 <p>An example of property value initialization follows:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type">Rectangle</span> {
@@ -84,7 +84,7 @@ property <span class="type">color</span> <span class="name">nextColor</span>: <s
 }</pre>
 <h5 >Imperative Value Assignment</h5>
 <p>An imperative value assignment is where a property value (either static value or binding expression) is assigned to a property from imperative JavaScript code. The syntax of an imperative value assignment is just the JavaScript assignment operator, as shown below:</p>
-<pre class="cpp">    <span class="operator">[</span><span class="operator">&lt;</span>objectId<span class="operator">&gt;</span><span class="operator">.</span><span class="operator">]</span><span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> <span class="operator">=</span> value</pre>
+<pre class="cpp"><span class="operator">[</span><span class="operator">&lt;</span>objectId<span class="operator">&gt;</span><span class="operator">.</span><span class="operator">]</span><span class="operator">&lt;</span>propertyName<span class="operator">&gt;</span> <span class="operator">=</span> value</pre>
 <p>An example of imperative value assignment follows:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type">Rectangle</span> {
@@ -124,7 +124,7 @@ property <span class="type">color</span> <span class="name">nextColor</span>: <s
 <h4 >Special Property Types</h4>
 <h5 >Object List Property Attributes</h5>
 <p>A list type property can be assigned a list of QML object-type values. The syntax for defining an object list value is a comma-separated list surrounded by square brackets:</p>
-<pre class="cpp">    <span class="operator">[</span> <span class="operator">&lt;</span>item <span class="number">1</span><span class="operator">&gt;</span><span class="operator">,</span> <span class="operator">&lt;</span>item <span class="number">2</span><span class="operator">&gt;</span><span class="operator">,</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> <span class="operator">]</span></pre>
+<pre class="cpp"><span class="operator">[</span> <span class="operator">&lt;</span>item <span class="number">1</span><span class="operator">&gt;</span><span class="operator">,</span> <span class="operator">&lt;</span>item <span class="number">2</span><span class="operator">&gt;</span><span class="operator">,</span> <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> <span class="operator">]</span></pre>
 <p>For example, the Item type has a states property that is used to hold a list of <a href="QtQml.State.md">State</a> type objects. The code below initializes the value of this property to a list of three <a href="QtQml.State.md">State</a> objects:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type">Item</span> {
@@ -140,9 +140,9 @@ property <span class="type">color</span> <span class="name">nextColor</span>: <s
 <span class="name">states</span>: <span class="name">State</span> { <span class="name">name</span>: <span class="string">&quot;running&quot;</span> }
 }</pre>
 <p>A list type property may be specified in an object declaration with the following syntax:</p>
-<pre class="cpp">    <span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property list<span class="operator">&lt;</span><span class="operator">&lt;</span>objectType<span class="operator">&gt;</span><span class="operator">&gt;</span> propertyName</pre>
+<pre class="cpp"><span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property list<span class="operator">&lt;</span><span class="operator">&lt;</span>objectType<span class="operator">&gt;</span><span class="operator">&gt;</span> propertyName</pre>
 <p>and, like other property declarations, a property initialization may be combined with the property declaration with the following syntax:</p>
-<pre class="cpp">    <span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property list<span class="operator">&lt;</span><span class="operator">&lt;</span>objectType<span class="operator">&gt;</span><span class="operator">&gt;</span> propertyName: <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
+<pre class="cpp"><span class="operator">[</span><span class="keyword">default</span><span class="operator">]</span> property list<span class="operator">&lt;</span><span class="operator">&lt;</span>objectType<span class="operator">&gt;</span><span class="operator">&gt;</span> propertyName: <span class="operator">&lt;</span>value<span class="operator">&gt;</span></pre>
 <p>An example of list property declaration follows:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type">Rectangle</span> {
@@ -203,11 +203,11 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 <span class="name">color</span>: <span class="string">&quot;#1234ff&quot;</span>
 }
 <span class="name">Component</span>.onCompleted: {
-<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)    <span class="comment">//prints &quot;#1234ff&quot;</span>
+<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)<span class="comment">//prints &quot;#1234ff&quot;</span>
 <span class="name">setInternalColor</span>()
-<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)    <span class="comment">//prints &quot;#111111&quot;</span>
+<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)<span class="comment">//prints &quot;#111111&quot;</span>
 <span class="name">coloredrectangle</span>.<span class="name">color</span> <span class="operator">=</span> <span class="string">&quot;#884646&quot;</span>
-<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)    <span class="comment">//prints #884646</span>
+<span class="name">console</span>.<span class="name">log</span> (<span class="name">coloredrectangle</span>.<span class="name">color</span>)<span class="comment">//prints #884646</span>
 }
 <span class="comment">//internal function that has access to internal properties</span>
 <span class="keyword">function</span> <span class="name">setInternalColor</span>() {
@@ -387,7 +387,7 @@ signal <span class="type">deactivated</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">30</span>
 <span class="type">Rectangle</span> {
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">30</span>
-<span class="name">color</span>: <span class="name">ListView</span>.<span class="name">isCurrentItem</span> ? <span class="string">&quot;red&quot;</span> : <span class="string">&quot;yellow&quot;</span>    <span class="comment">// WRONG! This won't work.</span>
+<span class="name">color</span>: <span class="name">ListView</span>.<span class="name">isCurrentItem</span> ? <span class="string">&quot;red&quot;</span> : <span class="string">&quot;yellow&quot;</span><span class="comment">// WRONG! This won't work.</span>
 }
 }
 }</pre>

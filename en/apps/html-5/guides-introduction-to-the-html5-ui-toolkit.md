@@ -113,12 +113,12 @@ main view typically contains a header and content:
 
 ``` html
 <body>
-    <header data-role="header">
-      <!-- [...] -->
-    </header>
-    <div data-role="content">
-      <!-- [...] -->
-    </div>
+<header data-role="header">
+  <!-- [...] -->
+</header>
+<div data-role="content">
+  <!-- [...] -->
+</div>
   </div>
 </body>
 ```
@@ -146,8 +146,8 @@ a sample with two tabitems:
 ``` html
 <header data-role="header">
   <ul data-role="tabs">
-    <li data-role="tabitem" data-page="main">Main</li>
-    <li data-role="tabitem" data-page="anotherpage">Another</li>
+<li data-role="tabitem" data-page="main">Main</li>
+<li data-role="tabitem" data-page="anotherpage">Another</li>
   </ul>
 </header>
 ```
@@ -160,10 +160,10 @@ correct id. Here is a content section with two tabs:
 ``` html
 <div data-role="content">
   <div data-role="tab" id="main">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <div data-role="tab" id="anotherpage">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
 </div>
 ```
@@ -197,19 +197,19 @@ pagestack and pages. A simple pagestack looks like this:
 ``` html
 <body>
   <div data-role="mainview">
-    <header data-role="header">
-      <!-- [...] -->
-    </header>
-    <div data-role="content">
-      <div data-role="pagestack">
-        <div data-role="page" id="main">
-          <!-- [...] -->
-        </div> <!-- page: main -->
-        <div data-role="page" id="anotherPage">
-          <!-- [...] -->
-        </div> <!-- page: anotherPage -->
-      </div> <!-- pagestack -->
-    </div> <!-- content -->
+<header data-role="header">
+  <!-- [...] -->
+</header>
+<div data-role="content">
+  <div data-role="pagestack">
+<div data-role="page" id="main">
+  <!-- [...] -->
+</div> <!-- page: main -->
+<div data-role="page" id="anotherPage">
+  <!-- [...] -->
+</div> <!-- page: anotherPage -->
+  </div> <!-- pagestack -->
+</div> <!-- content -->
   </div> <!-- mainview -->
 </body>
 ```
@@ -235,24 +235,24 @@ Here is an example of a customized pagestack footer:
 ``` html
 <div data-role="pagestack">
   <div data-role="page” id="page1">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <div data-role="page" id="page2">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <!-- this footer overrides
        the default pagestack footer -->
   <footer data-role="footer" id="footerID">
-    <div data-role="list">
-      <ul>
-        <li>
-          <a href="#" id="home">
-            <img src=”./back.png”/>
-            <span>Tap me!</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+<div data-role="list">
+  <ul>
+<li>
+  <a href="#" id="home">
+<img src=”./back.png”/>
+<span>Tap me!</span>
+  </a>
+</li>
+  </ul>
+</div>
   </footer>
 <div> <!- end of pagestack -->
 ```
@@ -287,17 +287,17 @@ Here’s an example of declaring a dialog:
 ``` html
 <body>
   <div data-role="mainview">
-    <!-- [...] -->
-    <div data-role="content">
-      <div data-role="tab" id=”main”>
-        <!-- [...] -->
-      </div>
-        <!-- [...] -->
-      <div data-role="dialog" id="mydialog">
-        <!-- [...] -->
-        <button data-role="button id="close”>Close</button>
-      </div>
-    </div>
+<!-- [...] -->
+<div data-role="content">
+  <div data-role="tab" id=”main”>
+<!-- [...] -->
+  </div>
+<!-- [...] -->
+  <div data-role="dialog" id="mydialog">
+<!-- [...] -->
+<button data-role="button id="close”>Close</button>
+  </div>
+</div>
   </div>
 </body>
 ```
@@ -316,10 +316,10 @@ Here’s an example with:
  ``` html
 <div data-role="content">
   <div data-role="tab” id="hello-page">
-    <button data-role="button" id='show'>show</button>
+<button data-role="button" id='show'>show</button>
   </div>
   <div data-role='dialog' id='dialog'>
-    <button data-role="button" id='hide'>Hide</button>
+<button data-role="button" id='hide'>Hide</button>
   </div>
 </div>
 ```
@@ -353,20 +353,20 @@ secondary text labels, an icon, and more. Here’s a sample list declaration:
 <div data-role="list" id="testlist">
   <header>My header text</header>
   <ul>
-    <li>
-      <a href="#">Main text, to the left</a>
-    </li>
-    <li>
-      <a href="#">Main text</a>
-      <label>Right text</label>
-    </li>
-    <li>
-      <aside>
-        <img src="someicon.png">
-      </aside>
-      <a href="#">Main text</a>
-      <label>Right</label>
-    </li>
+<li>
+  <a href="#">Main text, to the left</a>
+</li>
+<li>
+  <a href="#">Main text</a>
+  <label>Right text</label>
+</li>
+<li>
+  <aside>
+<img src="someicon.png">
+  </aside>
+  <a href="#">Main text</a>
+  <label>Right</label>
+</li>
   </ul>
 </div>
 ```

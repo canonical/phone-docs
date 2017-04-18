@@ -413,7 +413,7 @@ line<span class="operator">.</span>width <span class="operator">=</span> line<sp
 <br/>
 <!-- $$$linkActivated -->
 <table class="qmlname"><tr valign="top" id="linkActivated-signal"><td class="tblQmlFuncNode"><p><span class="name">linkActivated</span>(<span class="type">string</span><i> link</i>)</p></td></tr></table><p>This signal is emitted when the user clicks on a link embedded in the text. The link must be in rich text or HTML format and the <i>link</i> string provides access to the particular link.</p>
-<pre class="qml">    <span class="type"><a href="index.html">Text</a></span> {
+<pre class="qml"><span class="type"><a href="index.html">Text</a></span> {
 <span class="name">textFormat</span>: <span class="name">Text</span>.<span class="name">RichText</span>
 <span class="name">text</span>: <span class="string">&quot;See the &lt;a href=\&quot;http://qt-project.org\&quot;&gt;Qt Project website&lt;/a&gt;.&quot;</span>
 <span class="name">onLinkActivated</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="name">link</span> <span class="operator">+</span> <span class="string">&quot; link activated&quot;</span>)

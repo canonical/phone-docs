@@ -82,8 +82,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 MyScope();
 <span class="keyword">virtual</span> ~MyScope();
 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#ac25f3f326e2cf25de2f2eca18de5926c">start</a>(std::string <span class="keyword">const</span>&amp; scope_id);   <span class="comment">// Optional</span>
-<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a80c5fec9e985dbb315d780ef2a56bfbf">stop</a>();                               <span class="comment">// Optional</span>
-<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a386e99b98318a70f25db84bbe11c0292">run</a>();                                <span class="comment">// Optional</span>
+<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a80c5fec9e985dbb315d780ef2a56bfbf">stop</a>();                   <span class="comment">// Optional</span>
+<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a386e99b98318a70f25db84bbe11c0292">run</a>();                    <span class="comment">// Optional</span>
 <span class="comment">// ...</span>
 };
 ```

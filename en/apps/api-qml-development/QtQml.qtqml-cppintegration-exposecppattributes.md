@@ -58,7 +58,7 @@ component<span class="operator">.</span>create();
 import QtQuick 2.0
 <span class="type">Text</span> {
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
-<span class="name">text</span>: <span class="name">msg</span>.<span class="name">author</span>    <span class="comment">// invokes Message::author() to get this value</span>
+<span class="name">text</span>: <span class="name">msg</span>.<span class="name">author</span><span class="comment">// invokes Message::author() to get this value</span>
 <span class="name">Component</span>.onCompleted: {
 <span class="name">msg</span>.<span class="name">author</span> <span class="operator">=</span> <span class="string">&quot;Jonah&quot;</span>  <span class="comment">// invokes Message::setAuthor()</span>
 }

@@ -11,7 +11,7 @@ Title: QtSensors.qtsensors-qmlsensorgestures-example
 <p>Import the QtSensors 5.x module:</p>
 <pre class="qml">import QtSensors 5.0</pre>
 <p>Add the <a href="QtSensors.SensorGesture.md">SensorGesture</a> QML type into your qml file.</p>
-<pre class="qml">    <span class="type"><a href="QtSensors.SensorGesture.md">SensorGesture</a></span> {
+<pre class="qml"><span class="type"><a href="QtSensors.SensorGesture.md">SensorGesture</a></span> {
 <span class="name">id</span>: <span class="name">sensorGesture</span>
 <span class="name">enabled</span>: <span class="number">false</span>
 <span class="name">onDetected</span>: {
@@ -28,13 +28,13 @@ count++;
 <p>Each <a href="QtSensors.SensorGesture.md">SensorGesture</a> QML type contains a property called gestures. This example uses an alias <code>gestureId</code> for this property.</p>
 <pre class="qml">    property <span class="type">alias</span> <span class="name">gestureId</span>: <span class="name">sensorGesture</span>.<span class="name">gestures</span></pre>
 <p>Then, the gesture or gestures to use can be specified using the alias:</p>
-<pre class="qml">        <span class="name">onSelectedGestureChanged</span>: {
+<pre class="qml"><span class="name">onSelectedGestureChanged</span>: {
 <span class="name">gesture</span>.<span class="name">enabled</span> <span class="operator">=</span> <span class="number">false</span>;
 <span class="name">gesture</span>.<span class="name">gestureId</span> <span class="operator">=</span> <span class="name">gestureList</span>.<span class="name">selectedGesture</span>;
 ...
 }</pre>
 <p>A list of all available gestures is accessible through the <code>availableGestures</code> property:</p>
-<pre class="qml">        <span class="type">ListView</span> {
+<pre class="qml"><span class="type">ListView</span> {
 <span class="name">id</span>: <span class="name">gestureList</span>
 <span class="name">model</span>: <span class="name">gesture</span>.<span class="name">availableGestures</span>
 ...

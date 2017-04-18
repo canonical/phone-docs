@@ -15,7 +15,7 @@ Title: QtQuick.qtquick-imageelements-example
 <p><i>Image</i> shows off the various fill modes of the <a href="QtQuick.imageelements/#image">Image</a> type.</p>
 <h2 id="shadows">Shadows</h2>
 <p><i>Shadows</i> shows how to create a drop shadow effect for a rectangular item using a <a href="QtQuick.imageelements/#borderimage">BorderImage</a>:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.BorderImage.md">BorderImage</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.BorderImage.md">BorderImage</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">rectangle</span>
 <span class="type">anchors</span> { <span class="name">leftMargin</span>: -<span class="number">6</span>; <span class="name">topMargin</span>: -<span class="number">6</span>; <span class="name">rightMargin</span>: -<span class="number">8</span>; <span class="name">bottomMargin</span>: -<span class="number">8</span> }
 <span class="type">border</span> { <span class="name">left</span>: <span class="number">10</span>; <span class="name">top</span>: <span class="number">10</span>; <span class="name">right</span>: <span class="number">10</span>; <span class="name">bottom</span>: <span class="number">10</span> }
@@ -23,7 +23,7 @@ Title: QtQuick.qtquick-imageelements-example
 }</pre>
 <h2 id="animatedsprite">AnimatedSprite</h2>
 <p><i>AnimatedSprite</i> shows how to display a simple animation using an <a href="QtQuick.qtquick-effects-sprites.md#animatedsprite">AnimatedSprite</a> object:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.AnimatedSprite.md">AnimatedSprite</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.AnimatedSprite.md">AnimatedSprite</a></span> {
 <span class="name">id</span>: <span class="name">sprite</span>
 <span class="name">width</span>: <span class="number">170</span>
 <span class="name">height</span>: <span class="number">170</span>
@@ -38,7 +38,7 @@ Title: QtQuick.qtquick-imageelements-example
 <p>The sprite animation will loop three times.</p>
 <h2 id="spritesequence">SpriteSequence</h2>
 <p><i>SpriteSequence</i> demonstrates using a sprite sequence to draw an animated and interactive bear. The <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> object defines five different sprites. The bear is initially in a <i>still</i> state:</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span>{
+<pre class="qml"><span class="type"><a href="QtQuick.Sprite.md">Sprite</a></span>{
 <span class="name">name</span>: <span class="string">&quot;still&quot;</span>
 <span class="name">source</span>: <span class="string">&quot;content/BearSheet.png&quot;</span>
 <span class="name">frameCount</span>: <span class="number">1</span>
@@ -48,7 +48,7 @@ Title: QtQuick.qtquick-imageelements-example
 <span class="name">to</span>: {&quot;still&quot;:<span class="number">1</span>, &quot;blink&quot;:<span class="number">0.1</span>, &quot;floating&quot;:<span class="number">0</span>}
 }</pre>
 <p>When the scene is clicked, an animation sets the sprite sequence to the <i>falling</i> states and animates the bear's y property.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
 <span class="name">id</span>: <span class="name">anim</span>
 <span class="type"><a href="QtQuick.ScriptAction.md">ScriptAction</a></span> { <span class="name">script</span>: <span class="name">image</span>.<span class="name">goalSprite</span> <span class="operator">=</span> <span class="string">&quot;falling&quot;</span>; }
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">target</span>: <span class="name">image</span>; <span class="name">property</span>: <span class="string">&quot;y&quot;</span>; <span class="name">to</span>: <span class="number">480</span>; <span class="name">duration</span>: <span class="number">12000</span>; }

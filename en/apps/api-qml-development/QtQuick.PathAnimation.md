@@ -39,7 +39,7 @@ Title: QtQuick.PathAnimation
 <span class="name">path</span>: <span class="name">Path</span> {
 <span class="comment">//no startX, startY</span>
 <span class="type"><a href="QtQuick.PathCurve.md">PathCurve</a></span> { <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">100</span>}
-<span class="type"><a href="QtQuick.PathCurve.md">PathCurve</a></span> {}    <span class="comment">//last element is empty with no end point specified</span>
+<span class="type"><a href="QtQuick.PathCurve.md">PathCurve</a></span> {}<span class="comment">//last element is empty with no end point specified</span>
 }
 }</pre>
 <p>In the above case, the path start will be the item's current position, and the path end will be the item's target position in the target state.</p>

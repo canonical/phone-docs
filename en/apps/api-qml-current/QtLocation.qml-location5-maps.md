@@ -50,7 +50,7 @@ map<span class="operator">.</span>center <span class="operator">=</span> positio
 <span class="name">delegate</span>: <span class="name">pointDelegate</span>
 }</pre>
 <p>These geocoding features are called from a higher level piece of code. In this snippet we see an <code>onGoButtonClicked</code> signal handler that extracts the address from the user interface and then creates a query for the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> to process and determine the geographical coordinates.</p>
-<pre class="qml">        <span class="type">Address</span> {
+<pre class="qml"><span class="type">Address</span> {
 <span class="name">id</span>: <span class="name">geocodeAddress</span>
 }
 <span class="name">onGoButtonClicked</span>: {
@@ -107,7 +107,7 @@ property <span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a
 }
 }</pre>
 <p>The user enters, via a dialog, some information such as the starting point of the route, some waypoints and the destination. All of these locations are waypoints so the locations from start to finish will be entered as a sequence of waypoints. Then other query properties can be set that may be specific to this trip.</p>
-<pre class="qml">        <span class="keyword">function</span> <span class="name">calculateRoute</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">calculateRoute</span>() {
 <span class="comment">// clear away any old data in the query</span>
 <span class="name">map</span>.<span class="name">routeQuery</span>.<span class="name">clearWaypoints</span>();
 <span class="comment">// add the start and end coords as waypoints on the route</span>
@@ -126,7 +126,7 @@ property <span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a
 <span class="name">map</span>.<span class="name">center</span> <span class="operator">=</span> <span class="name">startCoordinate</span>;
 }</pre>
 <p>The <code>routeInfoModel</code> ListModel is used to grab the results of the query and construct a suitable list for display. The ListModel <code>routeInfoModel</code> contains an <code>update()</code> function that loops through the segments extracting the segment length, instruction text and distance to the next instruction. The extracted data is formatted for display as it is retrieved.</p>
-<pre class="qml">    <span class="type">ListModel</span> {
+<pre class="qml"><span class="type">ListModel</span> {
 <span class="name">id</span>: <span class="name">routeInfoModel</span>
 property <span class="type">string</span> <span class="name">travelTime</span>
 property <span class="type">string</span> <span class="name">distance</span>

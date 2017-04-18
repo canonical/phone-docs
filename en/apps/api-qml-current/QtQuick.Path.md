@@ -44,7 +44,7 @@ Title: QtQuick.Path
 <li><a href="QtQuick.PathAttribute.md">PathAttribute</a> - an attribute at a given position in the path.</li>
 <li><a href="QtQuick.PathPercent.md">PathPercent</a> - a way to spread out items along various segments of the path.</li>
 </ul>
-<pre class="qml">    <span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.PathView.md">PathView</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">ContactModel</span> {}
 <span class="name">delegate</span>: <span class="name">delegate</span>

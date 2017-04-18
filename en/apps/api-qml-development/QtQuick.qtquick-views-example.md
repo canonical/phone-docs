@@ -11,7 +11,7 @@ Title: QtQuick.qtquick-views-example
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="gridview-and-pathview">GridView and PathView</h2>
 <p><i>GridView</i> and <i>PathView</i> demonstrate usage of these types to display views.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.GridView.md">GridView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.GridView.md">GridView</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">cellWidth</span>: <span class="number">100</span>; <span class="name">cellHeight</span>: <span class="number">100</span>
 <span class="name">focus</span>: <span class="number">true</span>
@@ -37,7 +37,7 @@ Title: QtQuick.qtquick-views-example
 <h2 id="dynamic-list">Dynamic List</h2>
 <p><i>Dynamic List</i> demonstrates animation of runtime additions and removals to a <a href="QtQuick.ListView.md">ListView</a>.</p>
 <p>The <a href="QtQuick.ListView.md">ListView</a>.onAdd signal handler runs an animation when new items are added to the view, and the <a href="QtQuick.ListView.md">ListView</a>.onRemove another when they are removed.</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">ListView</span>.onAdd: <span class="name">SequentialAnimation</span> {
 <span class="type"><a href="QtQuick.PropertyAction.md">PropertyAction</a></span> { <span class="name">target</span>: <span class="name">delegateItem</span>; <span class="name">property</span>: <span class="string">&quot;height&quot;</span>; <span class="name">value</span>: <span class="number">0</span> }
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">target</span>: <span class="name">delegateItem</span>; <span class="name">property</span>: <span class="string">&quot;height&quot;</span>; <span class="name">to</span>: <span class="number">80</span>; <span class="name">duration</span>: <span class="number">250</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span> }
@@ -52,7 +52,7 @@ Title: QtQuick.qtquick-views-example
 <h3 >Expanding Delegates</h3>
 <p><i>Expanding Delegates</i> demonstrates delegates that expand when activated.</p>
 <p>It has a complex delegate the size and appearance of which can change, displacing other items in the view.</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">recipe</span>
 <span class="comment">// Create a property to contain the visibility of the details.</span>
 <span class="comment">// We can bind multiple element's opacity to this one property,</span>
@@ -110,7 +110,7 @@ property <span class="type">real</span> <span class="name">detailsOpacity</span>
 }</pre>
 <h2 id="highlight">Highlight</h2>
 <p><i>Highlight</i> demonstrates adding a custom highlight to a <a href="QtQuick.ListView.md">ListView</a>.</p>
-<pre class="qml">    <span class="comment">// Define a highlight with customized movement between items.</span>
+<pre class="qml"><span class="comment">// Define a highlight with customized movement between items.</span>
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">highlightBar</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -199,7 +199,7 @@ current--;
 }</pre>
 <h2 id="sections">Sections</h2>
 <p><i>Sections</i> demonstrates the various section headers and footers available to <a href="QtQuick.ListView.md">ListView</a>.</p>
-<pre class="qml">    <span class="comment">// The delegate for each section header</span>
+<pre class="qml"><span class="comment">// The delegate for each section header</span>
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">sectionHeading</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -280,7 +280,7 @@ current--;
 }</pre>
 <h2 id="objectmodel">ObjectModel</h2>
 <p><i>ObjectModel</i> uses an <a href="QtQuick.views/#objectmodel">ObjectModel</a> for the model instead of a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a>.</p>
-<pre class="qml">    <span class="type">ObjectModel</span> {
+<pre class="qml"><span class="type">ObjectModel</span> {
 <span class="name">id</span>: <span class="name">itemModel</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="name">view</span>.<span class="name">width</span>; <span class="name">height</span>: <span class="name">view</span>.<span class="name">height</span>

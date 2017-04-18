@@ -19,7 +19,7 @@ Title: QtQuick.qtquick-demos-calqlatr-example
 <p>To use the custom types, we add an import statement to the main QML file, calqlatr.qml that imports the folder called <code>content</code> where the types are located:</p>
 <pre class="cpp">import <span class="string">&quot;content&quot;</span></pre>
 <p>We can then display custom components by adding the component types to any QML file. For example, we use the NumberPad type in calqlatr.qml to create the number pad of the calculator. We place the type inside an <a href="QtQuick.Item.md">Item</a> QML type, which is the base type for all visual items in Qt Quick:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">pad</span>
 <span class="name">width</span>: <span class="number">180</span>
 <span class="type">NumberPad</span> { <span class="name">id</span>: <span class="name">numPad</span>; <span class="name">y</span>: <span class="number">10</span>; <span class="name">anchors</span>.horizontalCenter: <span class="name">parent</span>.<span class="name">horizontalCenter</span> }
@@ -58,7 +58,7 @@ signal <span class="type">buttonPressed</span>
 <h2 id="animating-components">Animating Components</h2>
 <p>We use the Display type to display calculations. In Display.qml, we use images to make the display component look like a slip of paper that contains a grip. Users can drag the grip to move the display from left to right.</p>
 <p>When users release the grip, the <a href="QtQuick.AnimationController.md">AnimationController</a> QML type that we define in the calqlatr.qml file finishes running the controlled animation in either a forwards or a backwards direction. To run the animation, we call either completeToEnd() or completeToBeginning(), depending on the direction. We do this in the <a href="QtQuick.MouseArea.md">MouseArea</a>'s <code>onReleased</code> signal handler, where <code>controller</code> is the id of our <a href="QtQuick.AnimationController.md">AnimationController</a>:</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 ...
 <span class="name">onReleased</span>: {
 <span class="keyword">if</span> (<span class="name">rewind</span>)
@@ -69,7 +69,7 @@ signal <span class="type">buttonPressed</span>
 }</pre>
 <p>Unlike other QML animation types, <a href="QtQuick.AnimationController.md">AnimationController</a> is not driven by internal timers but by explicitly setting its progress property to a value between <code>0.0</code> and <code>1.0</code>.</p>
 <p>Inside the <a href="QtQuick.AnimationController.md">AnimationController</a>, we run two <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> instances in parallel to move the number pad and the display components simultaneously to the opposite sides of the view. In addition, we run a <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> instance to scale the number pad during the transition, giving the animation some depth.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.AnimationController.md">AnimationController</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.AnimationController.md">AnimationController</a></span> {
 <span class="name">id</span>: <span class="name">controller</span>
 <span class="name">animation</span>: <span class="name">ParallelAnimation</span> {
 <span class="name">id</span>: <span class="name">anim</span>
@@ -83,7 +83,7 @@ signal <span class="type">buttonPressed</span>
 }</pre>
 <p>We use the easing curve of the type <code>Easing.InOutQuad</code> to accelerate the motion until halfway and then decelerate it.</p>
 <p>In Button.qml, the text colors of the number pad buttons are also animated.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Text.md">Text</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">id</span>: <span class="name">textItem</span>
 ...
 <span class="name">color</span>: (<span class="name">dimmable</span> <span class="operator">&amp;&amp;</span> <span class="name">dimmed</span>) ? <span class="name">Qt</span>.<span class="name">darker</span>(<span class="name">button</span>.<span class="name">color</span>) : <span class="name">button</span>.<span class="name">color</span>
@@ -102,7 +102,7 @@ Behavior on <span class="name">color</span> { <span class="type"><a href="QtQuic
 <p>We use Qt.darker() to darken the color when the button is dimmed, and Qt.lighter() to <i>light up</i> the button when pressed. The latter is done in a separate <a href="QtQuick.State.md">state</a> called <i>&quot;pressed&quot;</i>, which activates when the <code>pressed</code> property of the button's <a href="QtQuick.MouseArea.md">MouseArea</a> is set.</p>
 <p>The color changes are animated by defining a <a href="QtQuick.Behavior.md">Behavior</a> on the <code>color</code> property.</p>
 <p>In order to dynamically change the <code>dimmed</code> property of all the buttons of the <code>NumberPad</code>, we connect its <code>buttonPressed</code> signal to the <code>Button</code>'s <code>updateDimmed()</code> function in Button.qml:</p>
-<pre class="qml">    <span class="keyword">function</span> <span class="name">updateDimmed</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">updateDimmed</span>() {
 <span class="name">dimmed</span> <span class="operator">=</span> <span class="name">window</span>.<span class="name">isButtonDisabled</span>(<span class="name">button</span>.<span class="name">text</span>)
 }
 <span class="name">Component</span>.onCompleted: {
@@ -114,7 +114,7 @@ Behavior on <span class="name">color</span> { <span class="type"><a href="QtQuic
 <p>The calculator.js file defines our calculator engine. It contains variables to store the calculator state, and functions that are called when the user presses the digit and operator buttons. To use the engine, we import calculator.js in the calqlatr.qml file as <code>CalcEngine</code>:</p>
 <pre class="cpp">import <span class="string">&quot;content/calculator.js&quot;</span> as CalcEngine</pre>
 <p>Importing the engine creates a new instance of it. Therefore, we only do it in the main QML file, <code>calqlatr.qml</code>. The root item defined in this file contains helper functions that allow other types to access the calculator engine:</p>
-<pre class="qml">    <span class="keyword">function</span> <span class="name">operatorPressed</span>(<span class="name">operator</span>) {
+<pre class="qml"><span class="keyword">function</span> <span class="name">operatorPressed</span>(<span class="name">operator</span>) {
 <span class="name">CalcEngine</span>.<span class="name">operatorPressed</span>(<span class="name">operator</span>)
 <span class="name">numPad</span>.<span class="name">buttonPressed</span>()
 }

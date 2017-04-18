@@ -106,7 +106,7 @@ PropertyChanges { target: img; opacity: <span class="number">0</span> }
 <span class="type">anchors</span> { <span class="name">verticalCenter</span>: <span class="name">parent</span>.<span class="name">verticalCenter</span>; <span class="name">left</span>: <span class="name">dialogText</span>.<span class="name">right</span> }
 <span class="name">width</span>: <span class="number">80</span>
 <span class="name">text</span>: <span class="string">&quot;&quot;</span>
-<span class="name">onAccepted</span>: <span class="name">container</span>.<span class="name">hide</span>()    <span class="comment">// close dialog when Enter is pressed</span>
+<span class="name">onAccepted</span>: <span class="name">container</span>.<span class="name">hide</span>()<span class="comment">// close dialog when Enter is pressed</span>
 }
 ...
 }</pre>

@@ -59,7 +59,7 @@ Title: QtQuick.qtquick-tutorials-dynamicview-dynamicview1-example
 <h3 >Walkthrough</h3>
 <p>The first item defined within the application's root Rectangle is the delegate Component. This is the template from which each item in the <a href="QtQuick.ListView.md">ListView</a> is constructed.</p>
 <p>The <code>name</code>, <code>age</code>, <code>type</code>, and <code>size</code> variables referenced in the delegate are sourced from the model data. The names correspond to roles defined in the model.</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">dragDelegate</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">content</span>
@@ -79,7 +79,7 @@ Title: QtQuick.qtquick-tutorials-dynamicview-dynamicview1-example
 }
 }</pre>
 <p>The second part of the application is the <a href="QtQuick.ListView.md">ListView</a> itself to which we bind the model and delegate.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">view</span>
 <span class="type">anchors</span> { <span class="name">fill</span>: <span class="name">parent</span>; <span class="name">margins</span>: <span class="number">2</span> }
 <span class="name">model</span>: <span class="name">PetsModel</span> {}

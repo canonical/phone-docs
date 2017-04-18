@@ -13,12 +13,12 @@ Title: QtSensors.qtsensors-maze-example
 <pre class="qml">import QtSensors 5.0</pre>
 <p>Add the Sensor QML types into your qml file.</p>
 <p>In this example we use the <a href="QtSensors.TiltSensor.md">TiltSensor</a> with values based in degrees and an accuracy of 5 degree:</p>
-<pre class="qml">    <span class="type"><a href="QtSensors.TiltSensor.md">TiltSensor</a></span> {
+<pre class="qml"><span class="type"><a href="QtSensors.TiltSensor.md">TiltSensor</a></span> {
 <span class="name">id</span>: <span class="name">tiltSensor</span>
 <span class="name">active</span>: <span class="number">true</span>
 }</pre>
 <p>Starting the sensor can be done by setting the 'enabled' property to true:</p>
-<pre class="qml">        <span class="name">onTriggered</span>: {
+<pre class="qml"><span class="name">onTriggered</span>: {
 <span class="keyword">if</span> (!<span class="name">tiltSensor</span>.<span class="name">enabled</span>)
 <span class="name">tiltSensor</span>.<span class="name">active</span> <span class="operator">=</span> <span class="number">true</span>;</pre>
 <p>The mouse should move by a factor of the tilt value:</p>
@@ -27,7 +27,7 @@ Title: QtSensors.qtsensors-maze-example
 var <span class="name">ystep</span> = <span class="number">0</span>;
 <span class="name">ystep</span> <span class="operator">=</span> <span class="name">tiltSensor</span>.<span class="name">reading</span>.<span class="name">xRotation</span> <span class="operator">*</span> <span class="number">0.1</span> <span class="comment">//acceleration</span></pre>
 <p>The walk direction of the mouse takes into account some collision detection:</p>
-<pre class="qml">                <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">xstep</span> <span class="operator">&gt;</span> <span class="number">0</span>)
+<pre class="qml">    <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">xstep</span> <span class="operator">&gt;</span> <span class="number">0</span>)
 <span class="name">xstep</span> <span class="operator">=</span> <span class="number">0</span>
 <span class="keyword">else</span> <span class="keyword">if</span> (<span class="name">xstep</span> <span class="operator">&gt;</span> -<span class="number">1</span> <span class="operator">&amp;&amp;</span> <span class="name">xstep</span> <span class="operator">&lt;</span> <span class="number">0</span>)
 <span class="name">xstep</span> <span class="operator">=</span> <span class="number">0</span>

@@ -37,14 +37,14 @@ signal <span class="type">clicked</span>(color cellColor)
 <p>We declare a <code>cellColor</code> property. This property is accessible from <i>outside</i> our component, this allows us to instantiate the cells with different colors. This property is just an alias to an existing property - the color of the rectangle that compose the cell (see Property Binding).</p>
 <pre class="qml">    signal <span class="type">clicked</span>(color cellColor)</pre>
 <p>We want our component to also have a signal that we call <i>clicked</i> with a <i>cellColor</i> parameter of type <i>color</i>. We will use this signal to change the color of the text in the main QML file later.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rectangle</span>
 <span class="name">border</span>.color: <span class="string">&quot;white&quot;</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 }</pre>
 <p>Our cell component is basically a colored rectangle with the <code>id</code> <i>rectangle</i>.</p>
 <p>The <code>anchors.fill</code> property is a convenient way to set the size of a visual type. In this case the rectangle will have the same size as its parent (see <a href="QtQuick.qtquick-positioning-anchors.md#anchor-layout">Anchor-Based Layout</a>).</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">container</span>.<span class="name">clicked</span>(<span class="name">container</span>.<span class="name">cellColor</span>)
 }</pre>
@@ -77,7 +77,7 @@ signal <span class="type">clicked</span>(color cellColor)
 }
 }</pre>
 <p>We create the color picker by putting 6 cells with different colors in a grid.</p>
-<pre class="qml">        <span class="type">Cell</span> { <span class="name">cellColor</span>: <span class="string">&quot;red&quot;</span>; <span class="name">onClicked</span>: <span class="name">helloText</span>.<span class="name">color</span> <span class="operator">=</span> <span class="name">cellColor</span> }</pre>
+<pre class="qml"><span class="type">Cell</span> { <span class="name">cellColor</span>: <span class="string">&quot;red&quot;</span>; <span class="name">onClicked</span>: <span class="name">helloText</span>.<span class="name">color</span> <span class="operator">=</span> <span class="name">cellColor</span> }</pre>
 <p>When the <i>clicked</i> signal of our cell is triggered, we want to set the color of the text to the <i>cellColor</i> passed as a parameter. We can react to any signal of our component through a property of the name <i>'onSignalName'</i> (see Signal Attributes).</p>
 <!-- @@@qml-tutorial2.html -->
 <p class="naviNextPrevious footerNavi">

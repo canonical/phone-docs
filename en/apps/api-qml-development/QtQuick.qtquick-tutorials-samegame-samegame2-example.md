@@ -76,7 +76,7 @@ var <span class="name">dynamicObject</span> = <span class="name">component</span
 <p>Now we need to call the JavaScript code in <code>samegame.js</code> from our QML files. To do this, we add this line to <code>samegame.qml</code> which imports the JavaScript file as a module:</p>
 <pre class="qml">import &quot;samegame.js&quot; as SameGame</pre>
 <p>This allows us to refer to any functions within <code>samegame.js</code> using &quot;SameGame&quot; as a prefix: for example, <code>SameGame.startNewGame()</code> or <code>SameGame.createBlock()</code>. This means we can now connect the New Game button's <code>onClicked</code> handler to the <code>startNewGame()</code> function, like this:</p>
-<pre class="qml">        <span class="type">Button</span> {
+<pre class="qml"><span class="type">Button</span> {
 <span class="type">anchors</span> { <span class="name">left</span>: <span class="name">parent</span>.<span class="name">left</span>; <span class="name">verticalCenter</span>: <span class="name">parent</span>.<span class="name">verticalCenter</span> }
 <span class="name">text</span>: <span class="string">&quot;New Game&quot;</span>
 <span class="name">onClicked</span>: <span class="name">SameGame</span>.<span class="name">startNewGame</span>()

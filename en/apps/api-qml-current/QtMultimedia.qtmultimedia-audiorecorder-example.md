@@ -18,7 +18,7 @@ Title: QtMultimedia.qtmultimedia-audiorecorder-example
 <pre class="cpp">audioRecorder <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QAudioRecorder</span>(<span class="keyword">this</span>);</pre>
 <p>And setup the lists as described above. The text on the record and pause buttons are toggled depending on the state of the <code>audioRecorder</code> object. This means that if the state is QMediaRecorder::StoppedState then the button text will be &quot;Record&quot; and &quot;Pause&quot;. In QMediaRecorder::RecordingState the record button will have the text &quot;Stop&quot;, and in QMediaRecorder::PausedState the pause button will have the text &quot;Resume&quot;.</p>
 <p>Pressing the buttons will also result in a toggle based on the state. If recording is stopped, then pressing the record button will setup the QAudioEncoderSettings based on the values of the selection lists, will set the encoding settings and container on the <code>audioRecorder</code> object, and start recording using the record() method.</p>
-<pre class="cpp">    <span class="type">QAudioEncoderSettings</span> settings;
+<pre class="cpp"><span class="type">QAudioEncoderSettings</span> settings;
 settings<span class="operator">.</span>setCodec(boxValue(ui<span class="operator">-</span><span class="operator">&gt;</span>audioCodecBox)<span class="operator">.</span>toString());
 settings<span class="operator">.</span>setSampleRate(boxValue(ui<span class="operator">-</span><span class="operator">&gt;</span>sampleRateBox)<span class="operator">.</span>toInt());
 settings<span class="operator">.</span>setBitRate(boxValue(ui<span class="operator">-</span><span class="operator">&gt;</span>bitrateBox)<span class="operator">.</span>toInt());

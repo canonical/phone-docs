@@ -73,13 +73,13 @@ easy to use as usual. Here is [the compatibity chart](http://html5test.com/s/676
 html5test.com (score of 511/555). For example, to play a song, you can call
 the html5 player element:
 
-    <audio id="demo" src="audio.mp3"></audio>
-    <div>
-     <button>Play the Audio</button>
-     <button>Pause the Audio</button>
-     <button>Increase Volume</button>
-     <button>Decrease Volume</button>
-    </div>
+<audio id="demo" src="audio.mp3"></audio>
+<div>
+ <button>Play the Audio</button>
+ <button>Pause the Audio</button>
+ <button>Increase Volume</button>
+ <button>Decrease Volume</button>
+</div>
 
 You can find more documentation on Web APIs at
 [webplatform.org](https://docs.webplatform.org/wiki/apis).

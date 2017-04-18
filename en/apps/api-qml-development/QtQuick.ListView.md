@@ -577,7 +577,7 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 </ul>
 <p>Each item in the list has attached properties named <code>ListView.section</code>, <code>ListView.previousSection</code> and <code>ListView.nextSection</code>.</p>
 <p>For example, here is a <a href="index.html">ListView</a> that displays a list of animals, separated into sections. Each item in the <a href="index.html">ListView</a> is placed in a different section depending on the &quot;size&quot; property of the model item. The <code>sectionHeading</code> delegate component provides the light blue bar that marks the beginning of each section.</p>
-<pre class="qml">    <span class="comment">// The delegate for each section header</span>
+<pre class="qml"><span class="comment">// The delegate for each section header</span>
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">sectionHeading</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

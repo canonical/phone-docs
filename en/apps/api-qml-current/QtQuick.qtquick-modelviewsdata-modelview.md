@@ -56,7 +56,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 <span class="name">color</span>: <span class="string">&quot;lightgray&quot;</span>
 }
 }
-<span class="type">Component</span> {     <span class="comment">//instantiated when header is processed</span>
+<span class="type">Component</span> { <span class="comment">//instantiated when header is processed</span>
 <span class="name">id</span>: <span class="name">bannercomponent</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">banner</span>

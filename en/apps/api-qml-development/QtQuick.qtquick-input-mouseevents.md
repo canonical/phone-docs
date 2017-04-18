@@ -41,7 +41,7 @@ Title: QtQuick.qtquick-input-mouseevents
 <li>released</li>
 </ul>
 <p>These signals have signal handlers that are invoked when the signals are emitted.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;area clicked&quot;</span>)
 <span class="name">onDoubleClicked</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;area double clicked&quot;</span>)
@@ -52,7 +52,7 @@ Title: QtQuick.qtquick-input-mouseevents
 <p>Some mouse gestures and button clicks need to be enabled before they send or receive events. Certain <a href="QtQuick.MouseArea.md">MouseArea</a> and <a href="QtQuick.MouseEvent.md">MouseEvent</a> properties enable these gestures.</p>
 <p>To listen to (or explicitly ignore) a certain mouse button, set the appropriate mouse button to the <a href="QtQuick.MouseArea.md#acceptedButtons-prop">acceptedButtons</a> property.</p>
 <p>Naturally, the mouse events, such as button presses and mouse positions, are sent during a mouse click. For example, the <code>containsMouse</code> property will only retrieve its correct value during a mouse press. The <a href="QtQuick.MouseArea.md#hoverEnabled-prop">hoverEnabled</a> will enable mouse events and positioning even when there are no mouse button presses. Setting the <code>hoverEnabled</code> property to <code>true</code>, in turn will enable the <code>entered</code>, <code>exited</code>, and <code>positionChanged</code> signal and their respective signal handlers.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">hoverEnabled</span>: <span class="number">true</span>
 <span class="name">acceptedButtons</span>: <span class="name">Qt</span>.<span class="name">LeftButton</span> <span class="operator">|</span> <span class="name">Qt</span>.<span class="name">RightButton</span>
 <span class="name">onEntered</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;mouse entered the area&quot;</span>)

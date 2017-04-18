@@ -57,12 +57,12 @@ Title: QtLocation.qtlocation-mapviewer-example
 <pre class="qml">    property <span class="type"><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a></span> <span class="name">geocodeModel</span>: <span class="name">GeocodeModel</span> {
 }</pre>
 <p>Then, to display the contents of the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> we use a <a href="..//QtLocation.MapItemView.md">MapItemView</a>:</p>
-<pre class="qml">    <span class="type"><a href="..//QtLocation.MapItemView.md">MapItemView</a></span> {
+<pre class="qml"><span class="type"><a href="..//QtLocation.MapItemView.md">MapItemView</a></span> {
 <span class="name">model</span>: <span class="name">geocodeModel</span>
 <span class="name">delegate</span>: <span class="name">pointDelegate</span>
 }</pre>
 <p><a href="..//QtLocation.MapItemView.md">MapItemView</a> uses an object called a &quot;delegate&quot; to act as a template for the items it creates. This can contain any map object desired, but in this case we show a <a href="..//QtLocation.MapCircle.md">MapCircle</a>:</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">pointDelegate</span>
 <span class="type"><a href="..//QtLocation.MapCircle.md">MapCircle</a></span> {
 <span class="name">radius</span>: <span class="number">1000</span>
@@ -74,7 +74,7 @@ Title: QtLocation.qtlocation-mapviewer-example
 <p>With these three objects, we have enough to receive Geocode responses and display them on our Map. The final piece is to send the actual Geocode request.</p>
 <p>In this example, we have a utility component called Dialog which we use to display the user interface requesting geocoding parameters. You can create a similar component yourself using Dialog.qml in this example as a reference, or drive the process using any other UI you wish.</p>
 <p>To send a geocode request, first we create an Address object, and fill it in with the desired parameters. Then we set &quot;map.geocodeModel.query&quot; to the filled in Address, and call update() on the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.</p>
-<pre class="qml">    <span class="type">InputDialog</span> {
+<pre class="qml"><span class="type">InputDialog</span> {
 <span class="name">id</span>: <span class="name">geocodeDialog</span>
 <span class="type">Address</span> {
 <span class="name">id</span>: <span class="name">geocodeAddress</span>
@@ -103,13 +103,13 @@ property <span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a
 <span class="name">query</span>: <span class="name">routeQuery</span>
 }</pre>
 <p>To display the contents of a model to the user, we need a view. Once again we will use a <a href="..//QtLocation.MapItemView.md">MapItemView</a>, to display the Routes as objects on the Map:</p>
-<pre class="qml">    <span class="type"><a href="..//QtLocation.MapItemView.md">MapItemView</a></span> {
+<pre class="qml"><span class="type"><a href="..//QtLocation.MapItemView.md">MapItemView</a></span> {
 <span class="name">model</span>: <span class="name">routeModel</span>
 <span class="name">delegate</span>: <span class="name">routeDelegate</span>
 <span class="name">autoFitViewport</span>: <span class="number">true</span>
 }</pre>
 <p>To act as a template for the objects we wish the view to create, we create a delegate component:</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">routeDelegate</span>
 <span class="type"><a href="..//QtLocation.MapRoute.md">MapRoute</a></span> {
 <span class="name">route</span>: <span class="name">routeData</span>
@@ -119,13 +119,13 @@ property <span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a
 <span class="name">opacity</span>: <span class="number">0.8</span>
 }</pre>
 <p>With the model, view and delegate now complete, the only missing component is some kind of control over the model to begin the Route request process. In the simplest case, we can fill out a Route request using two already available coordinates, which we store inside the RouteDialog component:</p>
-<pre class="qml">    <span class="type">RouteDialog</span> {
+<pre class="qml"><span class="type">RouteDialog</span> {
 <span class="name">id</span>: <span class="name">routeDialog</span>
 property <span class="type">variant</span> <span class="name">startCoordinate</span>
 property <span class="type">variant</span> <span class="name">endCoordinate</span>
 }</pre>
 <p>In the next snippet, we show how to set up the request object and instruct the model to update. We also instruct the map to center on the start coordinate for our routing request.</p>
-<pre class="qml">        <span class="keyword">function</span> <span class="name">calculateRoute</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">calculateRoute</span>() {
 <span class="comment">// clear away any old data in the query</span>
 <span class="name">map</span>.<span class="name">routeQuery</span>.<span class="name">clearWaypoints</span>();
 <span class="comment">// add the start and end coords as waypoints on the route</span>
@@ -137,7 +137,7 @@ property <span class="type">variant</span> <span class="name">endCoordinate</spa
 <span class="comment">// center the map on the start coord</span>
 <span class="name">map</span>.<span class="name">center</span> <span class="operator">=</span> <span class="name">startCoordinate</span>;</pre>
 <p>This is all that is required to display a Route on the Map. However, it is also useful to be able to retrieve the written directions and explanation of the travel route. In the example, these are displayed in the pull-out on the left-hand side of the map. To create this pull-out's contents, we use a standard ListModel and ListView pair. The data in the ListModel is built from the routeModel's output:</p>
-<pre class="qml">    <span class="type">ListModel</span> {
+<pre class="qml"><span class="type">ListModel</span> {
 <span class="name">id</span>: <span class="name">routeInfoModel</span>
 property <span class="type">string</span> <span class="name">travelTime</span>
 property <span class="type">string</span> <span class="name">distance</span>
@@ -156,7 +156,7 @@ property <span class="type">string</span> <span class="name">distance</span>
 }
 }</pre>
 <p>Inside the <a href="..//QtLocation.RouteModel.md">RouteModel</a>, we add an <a href="..//QtLocation.RouteModel.md#status-prop">onStatusChanged</a> handler, which calls the <code>update()</code> function we defined on the model:</p>
-<pre class="qml">        <span class="name">onStatusChanged</span>: {
+<pre class="qml"><span class="name">onStatusChanged</span>: {
 <span class="keyword">if</span> (<span class="name">status</span> <span class="operator">==</span> <span class="name">RouteModel</span>.<span class="name">Ready</span>) {
 <span class="keyword">switch</span> (<span class="name">count</span>) {
 <span class="keyword">case</span> <span class="number">0</span>:

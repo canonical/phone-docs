@@ -22,7 +22,7 @@ Title: QtLocation.ReviewModel
 </p>
 <p>The <a href="..//QtLocation.ReviewModel.md">ReviewModel</a> is a read-only model used to fetch reviews about a <a href="..//QtLocation.location-cpp-qml.md#place">Place</a>. The model incrementally fetches. The number of reviews which are fetched at a time is specified by the <a href="..//QtLocation.ReviewModel.md#batchSize-prop">batchSize</a> property. The total number of reviews available can be accessed via the <a href="..//QtLocation.ReviewModel.md#totalCount-prop">totalCount</a> property.</p>
 <p>To use the <a href="..//QtLocation.ReviewModel.md">ReviewModel</a> we need a view and a delegate. In this snippet we see the setting up of a ListView with a <a href="..//QtLocation.ReviewModel.md">ReviewModel</a> model and a delegate.</p>
-<pre class="qml">    <span class="type">ListView</span> {
+<pre class="qml"><span class="type">ListView</span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">place</span>.<span class="name">reviewModel</span>
 <span class="name">delegate</span>: <span class="name">ReviewDelegate</span> { }

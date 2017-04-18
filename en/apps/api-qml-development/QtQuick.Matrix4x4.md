@@ -29,8 +29,8 @@ Title: QtQuick.Matrix4x4
 property <span class="type">real</span> <span class="name">a</span>: <span class="name">Math</span>.<span class="name">PI</span> <span class="operator">/</span> <span class="number">4</span>
 <span class="name">matrix</span>: <span class="name">Qt</span>.<span class="name">matrix4x4</span>(<span class="name">Math</span>.<span class="name">cos</span>(<span class="name">a</span>), -<span class="name">Math</span>.<span class="name">sin</span>(<span class="name">a</span>), <span class="number">0</span>, <span class="number">0</span>,
 <span class="name">Math</span>.<span class="name">sin</span>(<span class="name">a</span>),  <span class="name">Math</span>.<span class="name">cos</span>(<span class="name">a</span>), <span class="number">0</span>, <span class="number">0</span>,
-<span class="number">0</span>,           <span class="number">0</span>,            <span class="number">1</span>, <span class="number">0</span>,
-<span class="number">0</span>,           <span class="number">0</span>,            <span class="number">0</span>, <span class="number">1</span>)
+<span class="number">0</span>,   <span class="number">0</span>,<span class="number">1</span>, <span class="number">0</span>,
+<span class="number">0</span>,   <span class="number">0</span>,<span class="number">0</span>, <span class="number">1</span>)
 }
 }</pre>
 <!-- @@@Matrix4x4 -->

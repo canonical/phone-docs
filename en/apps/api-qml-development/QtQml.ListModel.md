@@ -124,7 +124,7 @@ Title: QtQml.ListModel
 }</pre>
 <h2 id="modifying-list-models">Modifying List Models</h2>
 <p>The content of a <a href="index.html">ListModel</a> may be created and modified using the <a href="#clear-method">clear()</a>, <a href="#append-method">append()</a>, <a href="#set-method">set()</a>, <a href="#insert-method">insert()</a> and <a href="#setProperty-method">setProperty()</a> methods. For example:</p>
-<pre class="qml">    <span class="type"><a href="QtQml.Component.md">Component</a></span> {
+<pre class="qml"><span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">fruitDelegate</span>
 <span class="type">Item</span> {
 <span class="name">width</span>: <span class="number">200</span>; <span class="name">height</span>: <span class="number">50</span>
@@ -141,7 +141,7 @@ Title: QtQml.ListModel
 <h2 id="using-threaded-list-models-with-workerscript">Using Threaded List Models with WorkerScript</h2>
 <p><a href="index.html">ListModel</a> can be used together with <a href="QtQml.WorkerScript.md">WorkerScript</a> access a list model from multiple threads. This is useful if list modifications are synchronous and take some time: the list operations can be moved to a different thread to avoid blocking of the main GUI thread.</p>
 <p>Here is an example that uses <a href="QtQml.WorkerScript.md">WorkerScript</a> to periodically append the current time to a list model:</p>
-<pre class="qml">        <span class="type"><a href="QtQml.Timer.md">Timer</a></span> {
+<pre class="qml"><span class="type"><a href="QtQml.Timer.md">Timer</a></span> {
 <span class="name">id</span>: <span class="name">timer</span>
 <span class="name">interval</span>: <span class="number">2000</span>; <span class="name">repeat</span>: <span class="number">true</span>
 <span class="name">running</span>: <span class="number">true</span>

@@ -37,7 +37,7 @@ import QtQml.StateMachine 1.0 as DSM
 <h2 id="a-simple-state-machine">A Simple State Machine</h2>
 <p>To demonstrate the core functionality of the State Machine API, let's look at an example: A state machine with three states, <code>s1</code>, <code>s2</code> and <code>s3</code>. The state machine is controlled by a single Button; when the button is clicked, the machine transitions to another state. Initially, the state machine is in state <code>s1</code>. The following is a state chart showing the different states in our example.</p>
 <p class="centerAlign"><img src="../../../../media/statemachine-button.png" alt="" /></p><p>The following snippet shows the code needed to create such a state machine.</p>
-<pre class="qml">    <span class="type">Button</span> {
+<pre class="qml"><span class="type">Button</span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">id</span>: <span class="name">button</span>
 <span class="comment">// change the button label to the active state id</span>
@@ -92,7 +92,7 @@ import QtQml.StateMachine 1.0 as DSM
 <p>We can achieve the same behavior (namely that clicking the Quit button quits the state machine, regardless of which state the state machine is in) by grouping states <code>s1</code>, <code>s2</code> and <code>s3</code>. This is done by creating a new top-level state and making the three original states children of the new state. The following diagram shows the new state machine.</p>
 <p class="centerAlign"><img src="../../../../media/statemachine-button-nested.png" alt="" /></p><p>The three original states have been renamed <code>s11</code>, <code>s12</code> and <code>s13</code> to reflect that they are now childrens of the new top-level state, <code>s1</code>. Child states implicitly inherit the transitions of their parent state. This means it is now sufficient to add a single transition from <code>s1</code> to the final state, <code>s2</code>. New states added to <code>s1</code> will automatically inherit this transition.</p>
 <p>All that's needed to group states is to specify the proper parent when the state is created. You also need to specify which of the child states is the initial one (the child state the state machine should enter when the parent state is the target of a transition).</p>
-<pre class="qml">    <span class="type">Row</span> {
+<pre class="qml"><span class="type">Row</span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">spacing</span>: <span class="number">2</span>
 <span class="type">Button</span> {
@@ -166,7 +166,7 @@ import QtQml.StateMachine 1.0 as DSM
 }</pre>
 <p>In this case we want the application to quit when the state machine is finished, so the machine's <i>finished()</i> signal is connected to the application's <i>quit()</i> slot.</p>
 <p>A child state can override an inherited transition. For example, the following code adds a transition that effectively causes the Quit button to be ignored when the state machine is in state, <code>s12</code>.</p>
-<pre class="qml">            <span class="type"><a href="QtQml.State.md">State</a></span> {
+<pre class="qml"><span class="type"><a href="QtQml.State.md">State</a></span> {
 <span class="name">id</span>: <span class="name">s12</span>
 <span class="comment">// create a transition from s12 to s13 when the button is clicked</span>
 <span class="type"><a href="QtQml.SignalTransition.md">SignalTransition</a></span> {
@@ -189,7 +189,7 @@ import QtQml.StateMachine 1.0 as DSM
 <p>A history state is created as a child of the state for which we wish to record the current child state; when the state machine detects the presence of such a state at runtime, it automatically records the current (real) child state when the parent state exits. A transition to the history state is in fact a transition to the child state that the state machine had previously saved; the state machine automatically &quot;forwards&quot; the transition to the real child state.</p>
 <p>The following diagram shows the state machine after the interrupt mechanism has been added.</p>
 <p class="centerAlign"><img src="../../../../media/statemachine-button-history.png" alt="" /></p><p>The following code shows how it can be implemented; in this example we simply display a message box when <code>s3</code> is entered, then immediately return to the previous child state of <code>s1</code> via the history state.</p>
-<pre class="qml">    <span class="type">Row</span> {
+<pre class="qml"><span class="type">Row</span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">spacing</span>: <span class="number">2</span>
 <span class="type">Button</span> {

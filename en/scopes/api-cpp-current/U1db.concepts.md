@@ -81,7 +81,7 @@ tempFieldName <span class="operator">=</span> getCurrentDocumentKey(aDocument<sp
 tempContents<span class="operator">[</span>tempFieldName<span class="operator">]</span> <span class="operator">=</span> documentContent<span class="operator">.</span>text
 aDocument<span class="operator">.</span>contents <span class="operator">=</span> tempContents</pre>
 <p>Here a rectangle is defined that represents the lower portion of our application. It will contain all the main parts of the application.</p>
-<pre class="qml">             <span class="type">Rectangle</span> {
+<pre class="qml"> <span class="type">Rectangle</span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">45</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
 <span class="name">anchors</span>.bottom: <span class="name">parent</span>.<span class="name">bottom</span>
@@ -89,7 +89,7 @@ aDocument<span class="operator">.</span>contents <span class="operator">=</span>
 <span class="comment">// The remainder of the main part of the application goes here ...</span>
 }</pre>
 <p>The following <a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a> is for displaying contents for the current state of the global document, as defined by the key / name in the address bar.</p>
-<pre class="qml">                     <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
+<pre class="qml">         <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
 <span class="name">id</span>: <span class="name">documentContent</span>
 <span class="name">selectByMouse</span> : <span class="number">false</span>
 <span class="name">x</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
@@ -99,7 +99,7 @@ aDocument<span class="operator">.</span>contents <span class="operator">=</span>
 <span class="name">color</span>: <span class="string">&quot;#000000&quot;</span>
 }</pre>
 <p>There is an object within in the 'aDocument' model defined earlier called 'contents', which contains a key called 'hello', which represents a search string. In this example the key will represent the name of a document in the database, which will be displayed in the address bar. Displaying the key is demonstrated here:</p>
-<pre class="qml">                     <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
+<pre class="qml">         <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
 <span class="name">text</span>: <span class="name">displayKey</span>(<span class="name">aDocument</span>.<span class="name">contents</span>)
 <span class="keyword">function</span> <span class="name">displayKey</span>(<span class="name">documentObject</span>){
 var <span class="name">keys</span> = <span class="name">Object</span>.<span class="name">keys</span>(<span class="name">documentObject</span>);

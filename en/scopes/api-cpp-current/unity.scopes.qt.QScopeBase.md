@@ -34,8 +34,8 @@ Public Member Functions</h2></td></tr>
 <span class="keyword">public</span>:
 MyScope();
 <span class="keyword">virtual</span> ~MyScope();
-<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a948bd6ed6f465292db9ffb0eff11f1de">start</a>(QString <span class="keyword">const</span>&amp; scope_id);       <span class="comment">// Optional</span>
-<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a4cd139ca1b5cb8a1943b39d0729d8ca5">stop</a>();                               <span class="comment">// Optional</span>
+<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a948bd6ed6f465292db9ffb0eff11f1de">start</a>(QString <span class="keyword">const</span>&amp; scope_id);   <span class="comment">// Optional</span>
+<span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="#a4cd139ca1b5cb8a1943b39d0729d8ca5">stop</a>();                   <span class="comment">// Optional</span>
 <span class="comment">// ...</span>
 };
 ```

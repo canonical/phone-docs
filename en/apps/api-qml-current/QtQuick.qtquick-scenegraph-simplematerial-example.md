@@ -53,19 +53,19 @@ QSG_DECLARE_SIMPLE_COMPARABLE_SHADER(Shader<span class="operator">,</span> State
 <span class="string">&quot;}&quot;</span>;
 }</pre>
 <p>Next comes the declaration of the shader source code, where we define a vertex and fragment shader. The simple material assumes the presence of <code>qt_Matrix</code> in the vertex shader and <code>qt_Opacity</code> in the fragment shader.</p>
-<pre class="cpp">    <span class="type">QList</span><span class="operator">&lt;</span><span class="type">QByteArray</span><span class="operator">&gt;</span> attributes() <span class="keyword">const</span>
+<pre class="cpp"><span class="type">QList</span><span class="operator">&lt;</span><span class="type">QByteArray</span><span class="operator">&gt;</span> attributes() <span class="keyword">const</span>
 {
 <span class="keyword">return</span> <span class="type">QList</span><span class="operator">&lt;</span><span class="type">QByteArray</span><span class="operator">&gt;</span>() <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;aVertex&quot;</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;aTexCoord&quot;</span>;
 }</pre>
 <p>We reimplement the <code>attributes</code> function to return the name of the <code>aVertex</code> and <code>aTexCoord</code> attributes. These attributes will be mapped to attribute indices 0 and 1 in the node's geometry.</p>
-<pre class="cpp">    <span class="type">void</span> resolveUniforms()
+<pre class="cpp"><span class="type">void</span> resolveUniforms()
 {
 id_color <span class="operator">=</span> program()<span class="operator">-</span><span class="operator">&gt;</span>uniformLocation(<span class="string">&quot;color&quot;</span>);
 }
 <span class="keyword">private</span>:
 <span class="type">int</span> id_color;</pre>
 <p>Uniforms can be accessed either by name or by index, where index is faster than name. We reimplement the <code>resolveUniforms()</code> function to find the index of the <code>color</code> uniform. We do not have to worry about resolving <code>qt_Opacity</code> or <code>qt_Matrix</code> as these are handled by the baseclass.</p>
-<pre class="cpp">    <span class="type">void</span> updateState(<span class="keyword">const</span> State <span class="operator">*</span>state<span class="operator">,</span> <span class="keyword">const</span> State <span class="operator">*</span>)
+<pre class="cpp"><span class="type">void</span> updateState(<span class="keyword">const</span> State <span class="operator">*</span>state<span class="operator">,</span> <span class="keyword">const</span> State <span class="operator">*</span>)
 {
 program()<span class="operator">-</span><span class="operator">&gt;</span>setUniformValue(id_color<span class="operator">,</span> state<span class="operator">-</span><span class="operator">&gt;</span>color);
 }</pre>
@@ -147,7 +147,7 @@ import SimpleMaterial 1.0
 <span class="name">height</span>: <span class="number">480</span>
 <span class="name">color</span>: <span class="string">&quot;black&quot;</span></pre>
 <p>In the QML file, we import our custom type so we can instantiate it.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type">SimpleMaterialItem</span> {
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>;
@@ -166,7 +166,7 @@ import SimpleMaterial 1.0
 }
 }</pre>
 <p>Then we create a column containing three instances of our custom item, each with a different color.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">Qt</span>.<span class="name">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.8</span>)
 <span class="name">radius</span>: <span class="number">10</span>
 <span class="name">antialiasing</span>: <span class="number">true</span>

@@ -38,7 +38,7 @@ sensorStopped();
 <span class="keyword">if</span> (lightSensor<span class="operator">-</span><span class="operator">&gt;</span>isBusy())
 sensorBusy();</pre>
 <p>The setReading method is needed so that the sensors library knows where the readings are coming from. This backend has a local copy of the reading so it passes a pointer to the function.</p>
-<pre class="cpp">    <span class="comment">// Register our reading instance</span>
+<pre class="cpp"><span class="comment">// Register our reading instance</span>
 setReading<span class="operator">&lt;</span>GrueSensorReading<span class="operator">&gt;</span>(<span class="operator">&amp;</span>m_reading);</pre>
 <p>However it is also possible to pass null to the setReading method in which case the sensors library will create an instance and return a pointer.</p>
 <pre class="cpp"><span class="comment">// Create a reading instance for us to use</span>

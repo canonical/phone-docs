@@ -85,7 +85,7 @@ Title: QtQml.qtqml-syntax-basics
 <li>Multiline comments start with /* and finish with */</li>
 </ul>
 <pre class="qml"><span class="type">Text</span> {
-<span class="name">text</span>: <span class="string">&quot;Hello world!&quot;</span>    <span class="comment">//a basic greeting</span>
+<span class="name">text</span>: <span class="string">&quot;Hello world!&quot;</span><span class="comment">//a basic greeting</span>
 <span class="comment">/*
 We want this text to stand out from the rest so
 we give it a large size and different font.
@@ -95,7 +95,7 @@ we give it a large size and different font.
 }</pre>
 <p>Comments are ignored by the engine when processing QML code. They are useful for explaining what a section of code is doing, whether for reference at a later date or for explaining the implementation to others.</p>
 <p>Comments can also be used to prevent the execution of code, which is sometimes useful for tracking down problems.</p>
-<pre class="qml">    <span class="type">Text</span> {
+<pre class="qml"><span class="type">Text</span> {
 <span class="name">text</span>: <span class="string">&quot;Hello world!&quot;</span>
 <span class="comment">//opacity: 0.5</span>
 }</pre>

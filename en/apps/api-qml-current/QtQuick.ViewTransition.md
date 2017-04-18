@@ -96,7 +96,7 @@ Title: QtQuick.ViewTransition
 <h4 >Delaying animations based on index</h4>
 <p>Since each view transition is run once for each item affected by the transition, the <a href="index.html">ViewTransition</a> properties can be used within a transition to define custom behavior for each item's transition. For example, the <a href="QtQuick.ListView.md">ListView</a> in the previous example could use this information to create a ripple-type effect on the movement of the displaced items.</p>
 <p>This can be achieved by modifying the <code>displaced</code> transition so that it delays the animation of each displaced item based on the difference between its index (provided by <a href="index.html">ViewTransition</a>.index) and the first removed index (provided by <a href="index.html">ViewTransition</a>.<a href="#targetIndexes-attached-prop">targetIndexes</a>):</p>
-<pre class="qml">    <span class="name">displaced</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">displaced</span>: <span class="name">Transition</span> {
 <span class="name">id</span>: <span class="name">dispTrans</span>
 <span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
 <span class="type"><a href="QtQuick.PauseAnimation.md">PauseAnimation</a></span> {
@@ -111,7 +111,7 @@ Title: QtQuick.ViewTransition
 <h4 >Animating items to intermediate positions</h4>
 <p>The <a href="index.html">ViewTransition</a>.item property gives a reference to the item to which the transition is being applied. This can be used to access any of the item's attributes, custom <code>property</code> values, and so on.</p>
 <p>Below is a modification of the <code>displaced</code> transition from the previous example. It adds a <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> with nested <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> objects that reference <a href="index.html">ViewTransition</a>.item to access each item's <code>x</code> and <code>y</code> values at the start of their transitions. This allows each item to animate to an intermediate position relative to its starting point for the transition, before animating to its final position in the view:</p>
-<pre class="qml">    <span class="name">displaced</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">displaced</span>: <span class="name">Transition</span> {
 <span class="name">id</span>: <span class="name">dispTrans</span>
 <span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
 <span class="type"><a href="QtQuick.PauseAnimation.md">PauseAnimation</a></span> {
@@ -134,7 +134,7 @@ Title: QtQuick.ViewTransition
 <p>Now, a displaced item will first move to a position of (20, 50) relative to its starting position, and then to its final, correct position in the view:</p>
 <p class="centerAlign"><img src="../../../../media/viewtransitions-intermediatemove.gif" alt="" /></p><p>Since the final <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> does not specify a <code>to</code> value, the view implicitly sets this value to the item's final position in the view, and so this last animation will move this item to the correct place. If the transition requires the final position of the item for some calculation, this is accessible through <a href="index.html">ViewTransition</a>.destination.</p>
 <p>Instead of using multiple NumberAnimations, you could use a <a href="QtQuick.animation/#pathanimation">PathAnimation</a> to animate an item over a curved path. For example, the <code>add</code> transition in the previous example could be augmented with a <a href="QtQuick.animation/#pathanimation">PathAnimation</a> as follows: to animate newly added items along a path:</p>
-<pre class="qml">    <span class="name">add</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">add</span>: <span class="name">Transition</span> {
 <span class="name">id</span>: <span class="name">addTrans</span>
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">property</span>: <span class="string">&quot;opacity&quot;</span>; <span class="name">from</span>: <span class="number">0</span>; <span class="name">to</span>: <span class="number">1.0</span>; <span class="name">duration</span>: <span class="number">400</span> }
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">property</span>: <span class="string">&quot;scale&quot;</span>; <span class="name">from</span>: <span class="number">0</span>; <span class="name">to</span>: <span class="number">1.0</span>; <span class="name">duration</span>: <span class="number">400</span> }
@@ -182,7 +182,7 @@ Title: QtQuick.ViewTransition
 <p>If multiple items are added in rapid succession, without waiting for a previous transition to finish, this is the result:</p>
 <p class="centerAlign"><img src="../../../../media/viewtransitions-interruptedbad.gif" alt="" /></p><p>Each newly added item undergoes an <code>add</code> transition, but before the transition can finish, another item is added, displacing the previously added item. Because of this, the <code>add</code> transition on the previously added item is interrupted and a <code>displaced</code> transition is started on the item instead. Due to the interruption, the <code>opacity</code> and <code>scale</code> animations have not completed, thus producing items with opacity and scale that are below 1.0&#x2e;</p>
 <p>To fix this, the <code>displaced</code> transition should additionally ensure the item properties are set to the end values specified in the <code>add</code> transition, effectively resetting these values whenever an item is displaced. In this case, it means setting the item opacity and scale to 1.0:</p>
-<pre class="qml">    <span class="name">displaced</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">displaced</span>: <span class="name">Transition</span> {
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">properties</span>: <span class="string">&quot;x,y&quot;</span>; <span class="name">duration</span>: <span class="number">400</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">OutBounce</span> }
 <span class="comment">// ensure opacity and scale values return to 1.0</span>
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">property</span>: <span class="string">&quot;opacity&quot;</span>; <span class="name">to</span>: <span class="number">1.0</span> }
@@ -228,7 +228,7 @@ Title: QtQuick.ViewTransition
 <p>When the space key is pressed, three items are moved from index 5 to index 1. For each moved item, the <code>moveTransition</code> sequence presumably animates the item's color to &quot;yellow&quot;, then animates it to its final position, then changes the item color back to &quot;lightsteelblue&quot; using a <a href="QtQuick.ScriptAction.md">ScriptAction</a>. However, when run, the transition does not produce the intended result:</p>
 <p class="centerAlign"><img src="../../../../media/viewtransitions-scriptactionbad.gif" alt="" /></p><p>Only the last moved item is returned to the &quot;lightsteelblue&quot; color; the others remain yellow. This is because the <a href="QtQuick.ScriptAction.md">ScriptAction</a> is not run until after the transition has already been initialized, by which time the <a href="index.html">ViewTransition</a>.item value has changed to refer to a different item; the item that the script had intended to refer to is not the one held by <a href="index.html">ViewTransition</a>.item at the time the <a href="QtQuick.ScriptAction.md">ScriptAction</a> is actually invoked.</p>
 <p>In this instance, to avoid this issue, the view could set the property using a <a href="QtQuick.PropertyAction.md">PropertyAction</a> instead:</p>
-<pre class="qml">    <span class="name">move</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">move</span>: <span class="name">Transition</span> {
 <span class="name">id</span>: <span class="name">moveTrans</span>
 <span class="type"><a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a></span> {
 <span class="type"><a href="QtQuick.ColorAnimation.md">ColorAnimation</a></span> { <span class="name">property</span>: <span class="string">&quot;color&quot;</span>; <span class="name">to</span>: <span class="string">&quot;yellow&quot;</span>; <span class="name">duration</span>: <span class="number">400</span> }

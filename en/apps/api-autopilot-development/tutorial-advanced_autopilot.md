@@ -249,9 +249,9 @@ the test or skipping the test all together.</p>
 <p>If a preferred backend was specified, but that backend doesn&#8217;t exist (probably the test author mis-spelled it), a <tt class="xref py py-exc docutils literal"><span class="pre">RuntimeError</span></tt> will be raised:</p>
 <pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autopilot.input</span> <span class="kn">import</span> <span class="n">Keyboard</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">kbd</span> <span class="o">=</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;uinput&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="n">kbd</span> <span class="o">=</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;uinput&quot;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Unable to create keyboard: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+<span class="gp">... </span><span class="k">print</span><span class="p">(</span><span class="s">&quot;Unable to create keyboard: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
 <span class="gp">...</span>
 <span class="go">Unable to create keyboard: Unknown backend &#39;uinput&#39;</span>
 </pre>
@@ -263,10 +263,10 @@ the test or skipping the test all together.</p>
 <pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autopilot.input</span> <span class="kn">import</span> <span class="n">Keyboard</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autopilot</span> <span class="kn">import</span> <span class="n">BackendException</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="n">kbd</span> <span class="o">=</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;UInput&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="n">kbd</span> <span class="o">=</span> <span class="n">Keyboard</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;UInput&quot;</span><span class="p">)</span>
 <span class="gp">... </span><span class="k">except</span> <span class="n">BackendException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="gp">... </span>    <span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">original_exception</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="gp">... </span><span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">original_exception</span><span class="p">)</span>
+<span class="gp">... </span><span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 <span class="gp">...</span>
 <span class="go">&#39;UInputError(\&#39;&quot;/dev/uinput&quot; cannot be opened for writing\&#39;,)&#39;</span>
 <span class="go">&#39;BackendException(\&#39;Error while initialising backend. Original exception was: &quot;/dev/uinput&quot; cannot be opened for writing\&#39;,)&#39;</span>

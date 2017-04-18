@@ -12,7 +12,7 @@ Title: QtQuick.qtquick-touchinteraction-example
 <h2 id="multipoint-flames">Multipoint Flames</h2>
 <p><i>Multipoint Flames</i> demonstrates distinguishing different fingers in a <a href="QtQuick.MultiPointTouchArea.md">MultiPointTouchArea</a>, by assigning a different colored flame to each touch point.</p>
 <p>The MultipointTouchArea sets up multiple touch points:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.MultiPointTouchArea.md">MultiPointTouchArea</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.MultiPointTouchArea.md">MultiPointTouchArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">minimumTouchPoints</span>: <span class="number">1</span>
 <span class="name">maximumTouchPoints</span>: <span class="number">5</span>
@@ -25,7 +25,7 @@ Title: QtQuick.qtquick-touchinteraction-example
 ]
 }</pre>
 <p>The flames are then simply bound to the coordinates of the touch point, and whether it is currently pressed, as follows:</p>
-<pre class="qml">    <span class="type">ParticleFlame</span> {
+<pre class="qml"><span class="type">ParticleFlame</span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">emitterX</span>: <span class="name">touch1</span>.<span class="name">x</span>
 <span class="name">emitterY</span>: <span class="name">touch1</span>.<span class="name">y</span>

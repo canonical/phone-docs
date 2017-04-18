@@ -71,7 +71,7 @@ property <span class="type">color</span> <span class="name">color</span>: <span 
 </td><td ><pre class="qml"><span class="type">ListView</span> {
 <span class="name">width</span>: <span class="number">400</span>; <span class="name">height</span>: <span class="number">400</span>
 <span class="name">model</span>: <span class="number">5</span>
-<span class="name">delegate</span>: <span class="name">myItem</span>.<span class="name">mycomponent</span>    <span class="comment">//will create green Rectangles</span>
+<span class="name">delegate</span>: <span class="name">myItem</span>.<span class="name">mycomponent</span><span class="comment">//will create green Rectangles</span>
 <span class="type">MyItem</span> { <span class="name">id</span>: <span class="name">myItem</span> }
 }</pre>
 </td></tr>

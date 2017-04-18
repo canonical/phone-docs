@@ -7,7 +7,7 @@ Title: QtQuick.qtquick-tutorials-dynamicview-dynamicview4-example
 <span class="subtitle"></span>
 <!-- $$$tutorials/dynamicview/dynamicview4-description -->
 <p>Drag and drop isn't the only way items in a view can be re-ordered, using a DelegateModel it is also possible to sort items based on model data. To do that we extend our DelegateModel instance like this:</p>
-<pre class="qml">    <span class="type">DelegateModel</span> {
+<pre class="qml"><span class="type">DelegateModel</span> {
 <span class="name">id</span>: <span class="name">visualModel</span>
 property <span class="type">var</span> <span class="name">lessThan</span>: [
 <span class="keyword">function</span>(<span class="name">left</span>, right) { <span class="keyword">return</span> <span class="name">left</span>.<span class="name">name</span> <span class="operator">&lt;</span> <span class="name">right</span>.<span class="name">name</span> },
@@ -65,7 +65,7 @@ var <span class="name">index</span> = <span class="name">insertPosition</span>(<
 }</pre>
 <h3 >Walkthrough</h3>
 <p>Items in a DelegateModel are filtered into groups represented by the DelegateModelGroup type, normally all items in the model belong to a default items group but this default can be changed with the includeByDefault property. To implement our sorting we want items to first be added to an unsorted group from where we can transfer them to a sorted position in the items group. To do that we clear includeByDefault on the items group and set it on a new group name 'unsorted'.</p>
-<pre class="qml">        <span class="name">items</span>.includeByDefault: <span class="number">false</span>
+<pre class="qml"><span class="name">items</span>.includeByDefault: <span class="number">false</span>
 <span class="name">groups</span>: <span class="name">VisualDataGroup</span> {
 <span class="name">id</span>: <span class="name">unsortedItems</span>
 <span class="name">name</span>: <span class="string">&quot;unsorted&quot;</span>
@@ -73,7 +73,7 @@ var <span class="name">index</span> = <span class="name">insertPosition</span>(<
 }</pre>
 <p>We sort the items by first finding the position in the items group to insert the first unsorted item and then transfer the item to the items group before moving it to the pre-determined index and repeat until the unsorted group is empty.</p>
 <p>To find the insert position for an item we request a handle for the item from the unsorted group with the get function. Through the model property on this handle we can access the same model data that is available in a delegate instance of that item and compare against other items to determine relative position.</p>
-<pre class="qml">        <span class="keyword">function</span> <span class="name">insertPosition</span>(<span class="name">lessThan</span>, item) {
+<pre class="qml"><span class="keyword">function</span> <span class="name">insertPosition</span>(<span class="name">lessThan</span>, item) {
 var <span class="name">lower</span> = <span class="number">0</span>
 var <span class="name">upper</span> = <span class="name">items</span>.<span class="name">count</span>
 <span class="keyword">while</span> (<span class="name">lower</span> <span class="operator">&lt;</span> <span class="name">upper</span>) {
@@ -112,7 +112,7 @@ var <span class="name">index</span> = <span class="name">insertPosition</span>(<
 }
 ]</pre>
 <p>A sort is triggered whenever new items are added to the unsorted DelegateModel which we are notified of by the onChanged handler. If no sort function is currently selected we simply transfer all items from the unsorted group to the items group, otherwise we call sort with the selected sort function.</p>
-<pre class="qml">        <span class="name">groups</span>: <span class="name">VisualDataGroup</span> {
+<pre class="qml"><span class="name">groups</span>: <span class="name">VisualDataGroup</span> {
 <span class="name">id</span>: <span class="name">unsortedItems</span>
 <span class="name">name</span>: <span class="string">&quot;unsorted&quot;</span>
 <span class="name">includeByDefault</span>: <span class="number">true</span>

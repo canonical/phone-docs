@@ -24,7 +24,7 @@ Title: QtMultimedia.Torch
 <pre class="qml">import QtQuick 2.0
 import QtMultimedia 5.0
 <span class="type"><a href="index.html">Torch</a></span> {
-<span class="name">power</span>: <span class="number">75</span>       <span class="comment">// 75% of full power</span>
+<span class="name">power</span>: <span class="number">75</span>   <span class="comment">// 75% of full power</span>
 <span class="name">enabled</span>: <span class="number">true</span>   <span class="comment">// On</span>
 }</pre>
 <!-- @@@Torch -->

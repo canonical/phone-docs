@@ -102,7 +102,7 @@ gl_FragColor = vec4(g, g, g, p.a) * qt_Opacity;
 </table>
 <p>It is also possible to combine multiple layered items:</p>
 <table class="generic">
-<tr valign="top"><td ><img src="../../../../media/qml-shadereffect-opacitymask.png" alt="" /></td><td ><pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<tr valign="top"><td ><img src="../../../../media/qml-shadereffect-opacitymask.png" alt="" /></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">gradientRect</span>;
 <span class="name">width</span>: <span class="number">10</span>
 <span class="name">height</span>: <span class="number">10</span>

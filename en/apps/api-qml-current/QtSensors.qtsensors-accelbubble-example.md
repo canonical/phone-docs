@@ -12,13 +12,13 @@ Title: QtSensors.qtsensors-accelbubble-example
 <p>Import the Sensors Declarative module.</p>
 <pre class="qml">import QtSensors 5.0</pre>
 <p>Add an Accelerometer QML type.</p>
-<pre class="qml">    <span class="type"><a href="QtSensors.Accelerometer.md">Accelerometer</a></span> {
+<pre class="qml"><span class="type"><a href="QtSensors.Accelerometer.md">Accelerometer</a></span> {
 <span class="name">id</span>: <span class="name">accel</span>
 <span class="name">dataRate</span>: <span class="number">100</span></pre>
 <p>Use the 'active' property to start the sensor</p>
-<pre class="qml">        <span class="name">active</span>:<span class="number">true</span></pre>
+<pre class="qml"><span class="name">active</span>:<span class="number">true</span></pre>
 <p>Move the bubble according to a factor of the accelerator sensor</p>
-<pre class="qml">        <span class="name">onReadingChanged</span>: {
+<pre class="qml"><span class="name">onReadingChanged</span>: {
 var <span class="name">newX</span> = (<span class="name">bubble</span>.<span class="name">x</span> <span class="operator">+</span> <span class="name">calcRoll</span>(<span class="name">accel</span>.<span class="name">reading</span>.<span class="name">x</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">y</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">z</span>) <span class="operator">*</span> <span class="number">.1</span>)
 var <span class="name">newY</span> = (<span class="name">bubble</span>.<span class="name">y</span> <span class="operator">-</span> <span class="name">calcPitch</span>(<span class="name">accel</span>.<span class="name">reading</span>.<span class="name">x</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">y</span>, <span class="name">accel</span>.<span class="name">reading</span>.<span class="name">z</span>) <span class="operator">*</span> <span class="number">.1</span>)
 <span class="keyword">if</span> (<span class="name">isNaN</span>(<span class="name">newX</span>) <span class="operator">||</span> <span class="name">isNaN</span>(<span class="name">newY</span>))

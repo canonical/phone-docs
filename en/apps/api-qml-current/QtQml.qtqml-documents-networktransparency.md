@@ -30,7 +30,7 @@ Title: QtQml.qtqml-documents-networktransparency
 <p>If the string assigned to a URL is already an absolute URL, then &quot;resolving&quot; does not change it and the URL is assigned directly.</p>
 <h2 id="qrc-resources">QRC Resources</h2>
 <p>One of the URL schemes built into Qt is the &quot;qrc&quot; scheme. This allows content to be compiled into the executable using The Qt Resource System. Using this, an executable can reference QML content that is compiled into the executable:</p>
-<pre class="cpp">    <span class="type">QQuickView</span> <span class="operator">*</span>view <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QQuickView</span>;
+<pre class="cpp"><span class="type">QQuickView</span> <span class="operator">*</span>view <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QQuickView</span>;
 view<span class="operator">-</span><span class="operator">&gt;</span>setUrl(<span class="type">QUrl</span>(<span class="string">&quot;qrc:/dial.qml&quot;</span>));</pre>
 <p>The content itself can then use relative URLs, and so be transparently unaware that the content is compiled into the executable.</p>
 <h2 id="limitations">Limitations</h2>

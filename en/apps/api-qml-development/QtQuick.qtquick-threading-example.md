@@ -11,7 +11,7 @@ Title: QtQuick.qtquick-threading-example
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="threaded-listmodel">Threaded ListModel</h2>
 <p><i>Threaded <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a></i> contains a <a href="QtQuick.ListView.md">ListView</a> and a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a>. The <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> object is updated asynchronously in another thread, and the results propagate back to the main thread. A timer requests updates from the worker thread periodically:</p>
-<pre class="qml">        <span class="type">Timer</span> {
+<pre class="qml"><span class="type">Timer</span> {
 <span class="name">id</span>: <span class="name">timer</span>
 <span class="name">interval</span>: <span class="number">2000</span>; <span class="name">repeat</span>: <span class="number">true</span>
 <span class="name">running</span>: <span class="number">true</span>
@@ -32,7 +32,7 @@ var <span class="name">data</span> = {'time': new <span class="name">Date</span>
 <h2 id="workerscript">WorkerScript</h2>
 <p><i>WorkerScript</i> contains an example of using a <a href="QtQuick.threading/#workerscript">WorkerScript</a> to offload expensive calculations into another thread. This keeps the UI from being blocked. This example calculates numbers in Pascal's Triangle, and not in a very optimal way, so it will often take several seconds to complete the calculation. By doing this in a <a href="QtQuick.threading/#workerscript">WorkerScript</a> in another thread, the UI is not blocked during this time.</p>
 <p>When the UI needs another value, a request is sent to the <a href="QtQuick.threading/#workerscript">WorkerScript</a>:</p>
-<pre class="qml">        <span class="type">Spinner</span> {
+<pre class="qml"><span class="type">Spinner</span> {
 <span class="name">id</span>: <span class="name">rowSpinner</span>
 <span class="name">label</span>: <span class="string">&quot;Row&quot;</span>
 <span class="name">onValueChanged</span>: {
@@ -50,7 +50,7 @@ column: <span class="name">message</span>.<span class="name">column</span>,
 result: <span class="name">calculatedResult</span>} );
 }</pre>
 <p>When it's done, the result returns to the main scene via the <a href="QtQuick.threading/#workerscript">WorkerScript</a> type:</p>
-<pre class="qml">    <span class="type">WorkerScript</span> {
+<pre class="qml"><span class="type">WorkerScript</span> {
 <span class="name">id</span>: <span class="name">myWorker</span>
 <span class="name">source</span>: <span class="string">&quot;workerscript.js&quot;</span>
 <span class="name">onMessage</span>: {

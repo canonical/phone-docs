@@ -48,7 +48,7 @@ highp <span class="type">float</span> currentSize <span class="operator">=</span
 currentSize <span class="operator">=</span> <span class="number">0.</span>;
 highp vec2 pos <span class="operator">=</span> qt_ParticlePos
 <span class="operator">-</span> currentSize <span class="operator">/</span> <span class="number">2.</span> <span class="operator">+</span> currentSize <span class="operator">*</span> qt_ParticleTex   <span class="comment">// adjust size</span>
-<span class="operator">+</span> qt_ParticleVec<span class="operator">.</span>xy <span class="operator">*</span> t <span class="operator">*</span> qt_ParticleData<span class="operator">.</span>y         <span class="comment">// apply velocity vector..</span>
+<span class="operator">+</span> qt_ParticleVec<span class="operator">.</span>xy <span class="operator">*</span> t <span class="operator">*</span> qt_ParticleData<span class="operator">.</span>y <span class="comment">// apply velocity vector..</span>
 <span class="operator">+</span> <span class="number">0.5</span> <span class="operator">*</span> qt_ParticleVec<span class="operator">.</span>zw <span class="operator">*</span> pow(t <span class="operator">*</span> qt_ParticleData<span class="operator">.</span>y<span class="operator">,</span> <span class="number">2.</span>);
 gl_Position <span class="operator">=</span> qt_Matrix <span class="operator">*</span> vec4(pos<span class="operator">.</span>x<span class="operator">,</span> pos<span class="operator">.</span>y<span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">1</span>);
 }</pre>

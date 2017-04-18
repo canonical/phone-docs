@@ -218,22 +218,22 @@ whole `<body>[...]</body>` with HTML5 that declares our app’s GUI.
 
 Copy the following into index.html, replacing the `<body>[...]</body>`:
 
-      <body>
-        <div data-role="mainview">
-          <header data-role="header">
-            <ul data-role="tabs">
-              <li data-role="tabitem" data-page="main-page">Meanings</li>
-            </ul>
-          </header>
-          <div data-role="content">
-            <div data-role="tab" id="main-page">
-              <div><input type="text" id="word">Enter a word</input></div>
-              <button data-role="button" id="lookup">Get</button>
-              <div data-role="list" id="res" />
-            </div> <!-- tab: main-page -->
-          </div> <!-- content -->
-        </div> <!-- mainview -->
-      </body>
+  <body>
+<div data-role="mainview">
+  <header data-role="header">
+<ul data-role="tabs">
+  <li data-role="tabitem" data-page="main-page">Meanings</li>
+</ul>
+  </header>
+  <div data-role="content">
+<div data-role="tab" id="main-page">
+  <div><input type="text" id="word">Enter a word</input></div>
+  <button data-role="button" id="lookup">Get</button>
+  <div data-role="list" id="res" />
+</div> <!-- tab: main-page -->
+  </div> <!-- content -->
+</div> <!-- mainview -->
+  </body>
 
 **Tip**: It may be easier to copy and paste from the app source branch described above.
 
@@ -247,9 +247,9 @@ control logic.
 
 Below the header, we have a content div, declared like this:
 
-    <div data-role="content">
+<div data-role="content">
     [...]
-    </div> <!-- content -->
+</div> <!-- content -->
 
 This div contains the tabs that correspond with each tabitem declared in the
 header (in our case, only one tab). Let’s take a look at our tab.
@@ -258,9 +258,9 @@ header (in our case, only one tab). Let’s take a look at our tab.
 
 Here is our one tab:
 
-    <div data-role="tab" id="main-page">
+<div data-role="tab" id="main-page">
     [...]
-    </div> <!-- tab: main-page -->
+</div> <!-- tab: main-page -->
 
 The data-role="tab" is what declares it as an Ubuntu tab.
 
@@ -273,7 +273,7 @@ Let’s peer inside the tab.
 
 There’s a single input box that the Ubuntu framework styles automatically:
 
-     <div><input type="text" id="word">Enter a word</input></div>
+ <div><input type="text" id="word">Enter a word</input></div>
 
 We put this in a div so it is rendered as block, not inline, per normal HTML5.
 
@@ -285,7 +285,7 @@ user has entered below.
 There is one button that triggers the JavaScript code that calls the web API
 to look up meanings for the word the user has entered:
 
-     <button data-role="button" id="lookup">Get</button>
+ <button data-role="button" id="lookup">Get</button>
 
 This button is declared as an Ubuntu button, with a data-role of button. This
 means it is pulled into the framework and therefore you get a convenient API
@@ -297,7 +297,7 @@ for it. For example, you can add an click event handler using the id easily.
 
 We declare a list that starts off empty:
 
-     <div data-role="list" id="res" />
+ <div data-role="list" id="res" />
 
 That’s an Ubuntu list. We will use the UbuntuUI framework to obtain the list
 in JavaScript and populate it with the meanings for the word that are returned
@@ -321,7 +321,7 @@ package, which takes a few steps:
 
   * **Tip**: You might need to close and open the project for the jquery.min.js file to display in the SDK project.
   * Include the jquery.min.js file into your index.html file by adding this line into the main HTML `<header> .. </header>`:
-     <script src="js/jquery.min.js"></script>
+ <script src="js/jquery.min.js"></script>
 
 ### Using the JQuery ready event handler
 

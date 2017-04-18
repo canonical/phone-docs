@@ -38,8 +38,8 @@ property <span class="type">bool</span> <span class="name">flipped</span>: <span
 <span class="name">id</span>: <span class="name">rotation</span>
 <span class="name">origin</span>.x: <span class="name">flipable</span>.<span class="name">width</span><span class="operator">/</span><span class="number">2</span>
 <span class="name">origin</span>.y: <span class="name">flipable</span>.<span class="name">height</span><span class="operator">/</span><span class="number">2</span>
-<span class="name">axis</span>.x: <span class="number">0</span>; <span class="name">axis</span>.y: <span class="number">1</span>; <span class="name">axis</span>.z: <span class="number">0</span>     <span class="comment">// set axis.y to 1 to rotate around y-axis</span>
-<span class="name">angle</span>: <span class="number">0</span>    <span class="comment">// the default angle</span>
+<span class="name">axis</span>.x: <span class="number">0</span>; <span class="name">axis</span>.y: <span class="number">1</span>; <span class="name">axis</span>.z: <span class="number">0</span> <span class="comment">// set axis.y to 1 to rotate around y-axis</span>
+<span class="name">angle</span>: <span class="number">0</span><span class="comment">// the default angle</span>
 }
 <span class="name">states</span>: <span class="name">State</span> {
 <span class="name">name</span>: <span class="string">&quot;back&quot;</span>

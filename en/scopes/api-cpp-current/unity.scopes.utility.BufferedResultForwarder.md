@@ -74,7 +74,7 @@ category_(target_cat)
 {
 }
 <span class="keywordtype">void</span> <a class="code" href="#af712d8a72e6cd0818ab9d2c3274b25e6">push</a>(CategorisedResult result)<span class="keyword"> override</span>
-<span class="keyword">    </span>{
+<span class="keyword"></span>{
 result.set_category(category_); <span class="comment">// put all incoming results in single category</span>
 <a class="code" href="#a55fd083a188f5dd2a940b1f280409347">upstream</a>()-&gt;push(result); <span class="comment">// push modified result to the client</span>
 <span class="comment">// we push into a single target category, so we&#39;re ready as soon as we received and pushed first result</span>

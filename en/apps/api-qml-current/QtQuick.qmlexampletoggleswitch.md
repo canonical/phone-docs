@@ -87,13 +87,13 @@ property <span class="type">bool</span> <span class="name">on</span>: <span clas
 }</pre>
 <p>the text will only be visible when the switch is on.</p>
 <h3 >Images and user interaction</h3>
-<pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">background</span>
 <span class="name">source</span>: <span class="string">&quot;background.png&quot;</span>
 <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> { <span class="name">anchors</span>.fill: <span class="name">parent</span>; <span class="name">onClicked</span>: <span class="name">toggle</span>() }
 }</pre>
 <p>First, we create the background image of the switch. In order for the switch to toggle when the user clicks on the background, we add a <a href="QtQuick.MouseArea.md">MouseArea</a> as a child item of the image. A <code>MouseArea</code> has a <code>onClicked</code> property that is triggered when the item is clicked. For the moment we will just call a <code>toggle()</code> function. We will see what this function does in a moment.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">knob</span>
 <span class="name">x</span>: <span class="number">1</span>; <span class="name">y</span>: <span class="number">2</span>
 <span class="name">source</span>: <span class="string">&quot;knob.png&quot;</span>
@@ -106,7 +106,7 @@ property <span class="type">bool</span> <span class="name">on</span>: <span clas
 }</pre>
 <p>Then, we place the image of the knob on top of the background. The interaction here is a little more complex. We want the knob to move with the finger when it is clicked. That is what the <code>drag</code> property of the <code>MouseArea</code> is for. We also want to toggle the switch if the knob is released between state. We handle this case in the <code>dorelease()</code> function that is called in the <code>onReleased</code> property.</p>
 <h3 >States</h3>
-<pre class="qml">    <span class="name">states</span>: [
+<pre class="qml"><span class="name">states</span>: [
 <span class="type"><a href="QtQuick.State.md">State</a></span> {
 <span class="name">name</span>: <span class="string">&quot;on&quot;</span>
 <span class="type"><a href="QtQuick.PropertyChanges.md">PropertyChanges</a></span> { <span class="name">target</span>: <span class="name">knob</span>; <span class="name">x</span>: <span class="number">78</span> }
@@ -126,14 +126,14 @@ property <span class="type">bool</span> <span class="name">on</span>: <span clas
 <p>For more information on states see <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a>.</p>
 <h3 >Functions</h3>
 <p>We add two JavaScript functions to our switch:</p>
-<pre class="qml">    <span class="keyword">function</span> <span class="name">toggle</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">toggle</span>() {
 <span class="keyword">if</span> (<span class="name">toggleswitch</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;on&quot;</span>)
 <span class="name">toggleswitch</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;off&quot;</span>;
 <span class="keyword">else</span>
 <span class="name">toggleswitch</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;on&quot;</span>;
 }</pre>
 <p>This first function is called when the background image or the knob are clicked. We simply want the switch to toggle between the two states (<i>on</i> and <i>off</i>).</p>
-<pre class="qml">    <span class="keyword">function</span> <span class="name">releaseSwitch</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">releaseSwitch</span>() {
 <span class="keyword">if</span> (<span class="name">knob</span>.<span class="name">x</span> <span class="operator">==</span> <span class="number">1</span>) {
 <span class="keyword">if</span> (<span class="name">toggleswitch</span>.<span class="name">state</span> <span class="operator">==</span> <span class="string">&quot;off&quot;</span>) <span class="keyword">return</span>;
 }
@@ -145,12 +145,12 @@ property <span class="type">bool</span> <span class="name">on</span>: <span clas
 <p>This second function is called when the knob is released and we want to make sure that the knob does not end up between states (neither <i>on</i> nor <i>off</i>). If it is the case call the <code>toggle()</code> function otherwise we do nothing.</p>
 <p>For more information on scripts see JavaScript Expressions in QML Documents.</p>
 <h3 >Transition</h3>
-<pre class="qml">    <span class="name">transitions</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">transitions</span>: <span class="name">Transition</span> {
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">properties</span>: <span class="string">&quot;x&quot;</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span>; <span class="name">duration</span>: <span class="number">200</span> }
 }</pre>
 <p>At this point, when the switch toggles between the two states the knob will instantly change its <code>x</code> position between 1 and 78. In order for the knob to move smoothly we add a transition that will animate the <code>x</code> property with an easing curve for a duration of 200ms.</p>
 <p>For more information on transitions see <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>.</p>
 <h2 id="usage">Usage</h2>
 <p>The switch can be used in a QML file, like this:</p>
-<pre class="qml">    <span class="type">Switch</span> { <span class="name">anchors</span>.centerIn: <span class="name">parent</span>; <span class="name">on</span>: <span class="number">false</span> }</pre>
+<pre class="qml"><span class="type">Switch</span> { <span class="name">anchors</span>.centerIn: <span class="name">parent</span>; <span class="name">on</span>: <span class="number">false</span> }</pre>
 <!-- @@@qmlexampletoggleswitch.html -->

@@ -33,7 +33,7 @@ import QtLocation 5.3
 }
 }</pre>
 <p>The following example shows how to assign and modify an attribute:</p>
-<pre class="qml">    <span class="comment">//assign a new attribute to a place</span>
+<pre class="qml"><span class="comment">//assign a new attribute to a place</span>
 var <span class="name">smokingAttrib</span> = <span class="name">Qt</span>.<span class="name">createQmlObject</span>(<span class="string">'import QtLocation 5.3; PlaceAttribute {}'</span>, <span class="name">place</span>);
 <span class="name">smokingAttrib</span>.<span class="name">label</span> <span class="operator">=</span> <span class="string">&quot;Smoking Allowed&quot;</span>
 <span class="name">smokingAttrib</span>.<span class="name">text</span> <span class="operator">=</span> <span class="string">&quot;No&quot;</span>

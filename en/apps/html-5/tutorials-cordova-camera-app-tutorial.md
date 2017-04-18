@@ -138,21 +138,21 @@ $ cordova run --device --debug
 ``` html
 <div data-role="mainview">
   <header data-role="header">
-    <ul data-role="tabs">
-      <li data-role="tabitem" data-page="camera">Camera</li>
-    </ul>
+<ul data-role="tabs">
+  <li data-role="tabitem" data-page="camera">Camera</li>
+</ul>
   </header>
   <div data-role="content">
-    <div data-role="tab" id="camera">
-        <div id="loading">
-            <header>Loading...</header>
-            <progress class="bigger">Loading...</progress>
-        </div>
-        <div id="loaded">
-            <button data-role="button" class="ubuntu" id="click">Take Picture</button>
-            <img id="image" src="" />
-        </div>
-    </div> <!-- tab: camera -->
+<div data-role="tab" id="camera">
+<div id="loading">
+<header>Loading...</header>
+<progress class="bigger">Loading...</progress>
+</div>
+<div id="loaded">
+<button data-role="button" class="ubuntu" id="click">Take Picture</button>
+<img id="image" src="" />
+</div>
+</div> <!-- tab: camera -->
   </div> <!-- content -->
 </div> <!-- mainview -->
 ```

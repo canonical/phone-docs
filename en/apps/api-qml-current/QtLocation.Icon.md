@@ -35,7 +35,7 @@ import QtLocation 5.3
 <span class="name">source</span>: <span class="name">icon</span>.<span class="name">url</span>(<span class="name">Qt</span>.<span class="name">size</span>(<span class="number">64</span>, <span class="number">64</span>))
 }</pre>
 <p>Alternatively, a default sized icon can be specified like so:</p>
-<pre class="qml">    <span class="name">source</span>: <span class="name">icon</span>.<span class="name">url</span>()</pre>
+<pre class="qml"><span class="name">source</span>: <span class="name">icon</span>.<span class="name">url</span>()</pre>
 <!-- @@@Icon -->
 <h2>Property Documentation</h2>
 <!-- $$$icon -->

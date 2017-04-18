@@ -19,7 +19,7 @@ Title: QtQuick.qtquick-tutorials-samegame-samegame3-example
 <p>As this is a tutorial about QML, not game design, we will only discuss <code>handleClick()</code> and <code>victoryCheck()</code> below since they interface directly with the QML types. Note that although the game logic here is written in JavaScript, it could have been written in C++ and then exposed to QML.</p>
 <h4 >Enabling mouse click interaction</h4>
 <p>To make it easier for the JavaScript code to interface with the QML types, we have added an Item called <code>gameCanvas</code> to <code>samegame.qml</code>. It replaces the background as the item which contains the blocks. It also accepts mouse input from the user. Here is the item code:</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">gameCanvas</span>
 property <span class="type">int</span> <span class="name">score</span>: <span class="number">0</span>
 property <span class="type">int</span> <span class="name">blockSize</span>: <span class="number">40</span>
@@ -89,7 +89,7 @@ var <span class="name">deservesBonus</span> = <span class="number">true</span>;
 }
 }</pre>
 <p>And this is how it is used in the main <code>samegame.qml</code> file:</p>
-<pre class="qml">    <span class="type">Dialog</span> {
+<pre class="qml"><span class="type">Dialog</span> {
 <span class="name">id</span>: <span class="name">dialog</span>
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 <span class="name">z</span>: <span class="number">100</span>

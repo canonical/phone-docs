@@ -22,7 +22,7 @@ Title: QtQuick.qtquick-modelviewsdata-cppmodels
 }
 }</pre>
 <p>A Qt application can load this QML document and set the value of <code>myModel</code> to a QStringList:</p>
-<pre class="cpp">    <span class="type">QStringList</span> dataList;
+<pre class="cpp"><span class="type">QStringList</span> dataList;
 dataList<span class="operator">.</span>append(<span class="string">&quot;Item 1&quot;</span>);
 dataList<span class="operator">.</span>append(<span class="string">&quot;Item 2&quot;</span>);
 dataList<span class="operator">.</span>append(<span class="string">&quot;Item 3&quot;</span>);

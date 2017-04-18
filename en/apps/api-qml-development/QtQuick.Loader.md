@@ -164,7 +164,7 @@ signal <span class="type">message</span>(string msg)
 <span class="name">height</span>: <span class="number">400</span>
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">myComponent</span>
-<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">index</span> }    <span class="comment">//fails</span>
+<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">index</span> }<span class="comment">//fails</span>
 }
 <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
@@ -178,15 +178,15 @@ signal <span class="type">message</span>(string msg)
 }
 }</pre>
 <p>In this situation we can either move the component inline,</p>
-<pre class="qml">        <span class="name">delegate</span>: <span class="name">Component</span> {
+<pre class="qml"><span class="name">delegate</span>: <span class="name">Component</span> {
 <span class="type"><a href="index.html">Loader</a></span> {
 <span class="name">sourceComponent</span>: <span class="name">Component</span> {
-<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">index</span> }    <span class="comment">//okay</span>
+<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">index</span> }<span class="comment">//okay</span>
 }
 }
 }</pre>
 <p>into a separate file,</p>
-<pre class="qml">        <span class="name">delegate</span>: <span class="name">Component</span> {
+<pre class="qml"><span class="name">delegate</span>: <span class="name">Component</span> {
 <span class="type"><a href="index.html">Loader</a></span> {
 <span class="name">source</span>: <span class="string">&quot;MyComponent.qml&quot;</span> <span class="comment">//okay</span>
 }
@@ -197,7 +197,7 @@ signal <span class="type">message</span>(string msg)
 <span class="name">height</span>: <span class="number">400</span>
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">myComponent</span>
-<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">modelIndex</span> }    <span class="comment">//okay</span>
+<span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">modelIndex</span> }<span class="comment">//okay</span>
 }
 <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>

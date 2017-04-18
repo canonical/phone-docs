@@ -23,6 +23,6 @@ Title: QtQml.qtqml-documents-structure
 <pre class="cpp"><span class="comment">// MyQmlFile.qml</span>
 import <span class="type">QtQuick</span> <span class="number">2.0</span>
 Rectangle { width: <span class="number">200</span>; height: <span class="number">200</span>; color: <span class="string">&quot;red&quot;</span> }
-Rectangle { width: <span class="number">200</span>; height: <span class="number">200</span>; color: <span class="string">&quot;blue&quot;</span> }    <span class="comment">// invalid!</span></pre>
+Rectangle { width: <span class="number">200</span>; height: <span class="number">200</span>; color: <span class="string">&quot;blue&quot;</span> }<span class="comment">// invalid!</span></pre>
 <p>This is because a .qml file automatically defines a QML type, which encapsulates a <i>single</i> QML object definition. This is discussed further in <a href="QtQml.qtqml-documents-definetypes.md">Documents as QML object type definitions</a>.</p>
 <!-- @@@qtqml-documents-structure.html -->

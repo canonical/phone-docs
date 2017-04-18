@@ -27,7 +27,7 @@ Title: QtQuick.Flow
 </p>
 <p>The Flow item positions its child items like words on a page, wrapping them to create rows or columns of items.</p>
 <p>Below is a Flow that contains various <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> items:</p>
-<pre class="qml">    <span class="type"><a href="index.html">Flow</a></span> {
+<pre class="qml"><span class="type"><a href="index.html">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">anchors</span>.margins: <span class="number">4</span>
 <span class="name">spacing</span>: <span class="number">10</span>

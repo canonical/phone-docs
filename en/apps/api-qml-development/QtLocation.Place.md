@@ -79,7 +79,7 @@ Title: QtLocation.Place
 <span class="name">visibility</span>: <span class="name">Place</span>.<span class="name">PrivateVisibility</span>
 }</pre>
 <p>Then invoke the <a href="..//QtLocation.Place.md#save-method">save()</a> method:</p>
-<pre class="qml">    <span class="name">myPlace</span>.<span class="name">save</span>();</pre>
+<pre class="qml"><span class="name">myPlace</span>.<span class="name">save</span>();</pre>
 <p>The <a href="..//QtLocation.Place.md#status-prop">status</a> property will change to Place.Saving and then to Place.Ready if the save was successful or to Place.Error if an error occurs.</p>
 <p>If the <a href="..//QtLocation.Place.md#placeId-prop">placeId</a> property is set, the backend will update an existing place otherwise it will create a new place. On success the <a href="..//QtLocation.Place.md#placeId-prop">placeId</a> property will be updated with the identifier of the newly saved place.</p>
 <h4 >Caveats</h4>
@@ -177,7 +177,7 @@ Title: QtLocation.Place
 <!-- $$$placeId -->
 <table class="qmlname"><tr valign="top" id="placeId-prop"><td class="tblQmlPropNode"><p><span class="name">placeId</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the unique identifier of the place. The place identifier is only meaningful to the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> that generated it and is not transferable between <a href="..//QtLocation.location-places-qml.md#plugin">Plugins</a>. The place id is not guaranteed to be universally unique, but unique within the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> that generated it.</p>
 <p>If only the place identifier is known, all other place data can fetched from the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a>.</p>
-<pre class="qml">    <span class="name">place</span>.<span class="name">plugin</span> <span class="operator">=</span> <span class="name">myPlugin</span>;
+<pre class="qml"><span class="name">place</span>.<span class="name">plugin</span> <span class="operator">=</span> <span class="name">myPlugin</span>;
 <span class="name">place</span>.<span class="name">placeId</span> <span class="operator">=</span> <span class="string">&quot;known-place-id&quot;</span>;
 <span class="name">place</span>.<span class="name">getDetails</span>();</pre>
 <!-- @@@placeId -->

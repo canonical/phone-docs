@@ -66,7 +66,7 @@ Title: QtQuick.AnchorChanges
 <p>To reset an anchor you can assign <code>undefined</code>:</p>
 <pre class="qml"><span class="type"><a href="index.html">AnchorChanges</a></span> {
 <span class="name">target</span>: <span class="name">myItem</span>
-<span class="name">anchors</span>.left: <span class="name">undefined</span>          <span class="comment">//remove myItem's left anchor</span>
+<span class="name">anchors</span>.left: <span class="name">undefined</span>  <span class="comment">//remove myItem's left anchor</span>
 <span class="name">anchors</span>.right: <span class="name">otherItem</span>.<span class="name">right</span>
 }</pre>
 <!-- @@@anchors -->

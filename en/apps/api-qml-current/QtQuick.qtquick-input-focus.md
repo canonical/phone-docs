@@ -30,7 +30,7 @@ Title: QtQuick.qtquick-input-focus
 <p>See also the <a href="QtQuick.Keys.md">Keys attached property</a> and <a href="QtQuick.KeyNavigation.md">KeyNavigation attached property</a>.</p>
 <h2 id="querying-the-active-focus-item">Querying the Active Focus Item</h2>
 <p>Whether or not an <a href="QtQuick.Item.md">Item</a> has active focus can be queried through the property <code>Item::activeFocus</code> property. For example, here we have a <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> type whose text is determined by whether or not it has active focus.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Text.md">Text</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">text</span>: <span class="name">activeFocus</span> ? <span class="string">&quot;I have active focus!&quot;</span> : <span class="string">&quot;I do not have active focus&quot;</span>
 }</pre>
 <h2 id="acquiring-focus-and-focus-scopes">Acquiring Focus and Focus Scopes</h2>
@@ -62,7 +62,7 @@ Title: QtQuick.qtquick-input-focus
 <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>; <span class="name">spacing</span>: <span class="number">15</span>
 <span class="type">MyWidget</span> {
-<span class="name">focus</span>: <span class="number">true</span>             <span class="comment">//set this MyWidget to receive the focus</span>
+<span class="name">focus</span>: <span class="number">true</span> <span class="comment">//set this MyWidget to receive the focus</span>
 <span class="name">color</span>: <span class="string">&quot;lightblue&quot;</span>
 }
 <span class="type">MyWidget</span> {
@@ -125,7 +125,7 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>; <span class="name">spacing</span>: <span class="number">15</span>
 <span class="type">MyClickableWidget</span> {
-<span class="name">focus</span>: <span class="number">true</span>             <span class="comment">//set this MyWidget to receive the focus</span>
+<span class="name">focus</span>: <span class="number">true</span> <span class="comment">//set this MyWidget to receive the focus</span>
 <span class="name">color</span>: <span class="string">&quot;lightblue&quot;</span>
 }
 <span class="type">MyClickableWidget</span> {

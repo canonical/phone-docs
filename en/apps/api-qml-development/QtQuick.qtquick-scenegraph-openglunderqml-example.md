@@ -166,7 +166,7 @@ SequentialAnimation on <span class="name">t</span> {
 }
 }</pre>
 <p>We import the Squircle QML type with the name we registered in the <code>main()</code> function. We then instantiate it and create a running <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> on its <code>t</code> property.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">Qt</span>.<span class="name">rgba</span>(<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0.7</span>)
 <span class="name">radius</span>: <span class="number">10</span>
 <span class="name">border</span>.width: <span class="number">1</span>

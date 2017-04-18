@@ -125,7 +125,7 @@ Title: QtQuick.PathView
 <p>The path view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
 <p>Delegates are instantiated as needed and may be destroyed at any time. State should <i>never</i> be stored in a delegate.</p>
 <p><a href="index.html">PathView</a> attaches a number of properties to the root item of the delegate, for example <code>PathView.isCurrentItem</code>. In the following example, the root delegate item can access this attached property directly as <code>PathView.isCurrentItem</code>, while the child <code>nameText</code> object must refer to this property as <code>wrapper.PathView.isCurrentItem</code>.</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">delegate</span>
 <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">wrapper</span>
@@ -171,7 +171,7 @@ Title: QtQuick.PathView
 <p>The number of objects and bindings in the delegate has a direct effect on the flicking performance of the view when <a href="#pathItemCount-prop">pathItemCount</a> is specified. If at all possible, place functionality that is not needed for the normal display of the delegate in a <a href="QtQuick.Loader.md">Loader</a> which can load additional components when needed.</p>
 <p>Note that the <a href="index.html">PathView</a> will layout the items based on the size of the root item in the delegate.</p>
 <p>Here is an example delegate:</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">delegate</span>
 <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">wrapper</span>
@@ -317,7 +317,7 @@ Title: QtQuick.PathView
 <table class="qmlname"><tr valign="top" id="isCurrentItem-attached-prop"><td class="tblQmlPropNode"><p><span class="name">PathView.isCurrentItem</span> : <span class="type">bool</span></p></td></tr></table><p>This attached property is true if this delegate is the current item; otherwise false.</p>
 <p>It is attached to each instance of the delegate.</p>
 <p>This property may be used to adjust the appearance of the current item.</p>
-<pre class="qml">    <span class="type">Component</span> {
+<pre class="qml"><span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">delegate</span>
 <span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">wrapper</span>

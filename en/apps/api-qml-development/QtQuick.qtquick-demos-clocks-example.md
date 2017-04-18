@@ -17,7 +17,7 @@ Title: QtQuick.qtquick-demos-clocks-example
 <span class="name">width</span>: <span class="number">640</span>; <span class="name">height</span>: <span class="number">320</span>
 <span class="name">color</span>: <span class="string">&quot;#646464&quot;</span></pre>
 <p>We use a <a href="QtQuick.ListView.md">ListView</a> type to display a list of the items provided by a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> type:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">clockview</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">orientation</span>: <span class="name">ListView</span>.<span class="name">Horizontal</span>
@@ -40,7 +40,7 @@ Title: QtQuick.qtquick-demos-clocks-example
 <p>The Clock custom type is used as the <a href="QtQuick.ListView.md">ListView</a>'s <code>delegate</code>, defining the visual appearance of list items. To use the Clock type, we add an import statement that imports the folder called <code>content</code> where the type is located:</p>
 <pre class="qml">import &quot;content&quot; as Content</pre>
 <p>We use an <a href="QtQuick.imageelements/#image">Image</a> type to display arrows that indicate whether users can flick the view to see more clocks on the left or right:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>
 <span class="name">anchors</span>.bottom: <span class="name">parent</span>.<span class="name">bottom</span>
 <span class="name">anchors</span>.margins: <span class="number">10</span>
@@ -61,7 +61,7 @@ Behavior on <span class="name">opacity</span> { <span class="type"><a href="QtQu
 }</pre>
 <p>We use the <code>opacity</code> property to hide the arrows when the list view is located at the beginning or end of the x axis.</p>
 <p>In Clock.qml, we define a <code>timeChanged()</code> function in which we use methods from the JavaScript <code>Date</code> object to fetch the current time in UTC and to adjust it to the correct time zone:</p>
-<pre class="qml">    <span class="keyword">function</span> <span class="name">timeChanged</span>() {
+<pre class="qml"><span class="keyword">function</span> <span class="name">timeChanged</span>() {
 var <span class="name">date</span> = new <span class="name">Date</span>;
 <span class="name">hours</span> <span class="operator">=</span> <span class="name">internationalTime</span> ? <span class="name">date</span>.<span class="name">getUTCHours</span>() <span class="operator">+</span> <span class="name">Math</span>.<span class="name">floor</span>(<span class="name">clock</span>.<span class="name">shift</span>) : <span class="name">date</span>.<span class="name">getHours</span>()
 <span class="name">night</span> <span class="operator">=</span> ( <span class="name">hours</span> <span class="operator">&lt;</span> <span class="number">7</span> <span class="operator">||</span> <span class="name">hours</span> <span class="operator">&gt;</span> <span class="number">19</span> )
@@ -69,18 +69,18 @@ var <span class="name">date</span> = new <span class="name">Date</span>;
 <span class="name">seconds</span> <span class="operator">=</span> <span class="name">date</span>.<span class="name">getUTCSeconds</span>();
 }</pre>
 <p>We use a Timer type to update the time at intervals of 100 milliseconds:</p>
-<pre class="qml">    <span class="type">Timer</span> {
+<pre class="qml"><span class="type">Timer</span> {
 <span class="name">interval</span>: <span class="number">100</span>; <span class="name">running</span>: <span class="number">true</span>; <span class="name">repeat</span>: <span class="number">true</span>;
 <span class="name">onTriggered</span>: <span class="name">clock</span>.<span class="name">timeChanged</span>()
 }</pre>
 <p>We use <a href="QtQuick.imageelements/#image">Image</a> types within an <a href="QtQuick.Item.md">Item</a> type to display the time on an analog clock face. Different images are used for daytime and nighttime hours:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 <span class="name">width</span>: <span class="number">200</span>; <span class="name">height</span>: <span class="number">240</span>
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> { <span class="name">id</span>: <span class="name">background</span>; <span class="name">source</span>: <span class="string">&quot;clock.png&quot;</span>; <span class="name">visible</span>: <span class="name">clock</span>.<span class="name">night</span> <span class="operator">==</span> <span class="number">false</span> }
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> { <span class="name">source</span>: <span class="string">&quot;clock-night.png&quot;</span>; <span class="name">visible</span>: <span class="name">clock</span>.<span class="name">night</span> <span class="operator">==</span> <span class="number">true</span> }</pre>
 <p>A <a href="QtQuick.Rotation.md">Rotation</a> transform applied to <a href="QtQuick.imageelements/#image">Image</a> types provides a way to rotate the clock hands. The <code>origin</code> property holds the point that stays fixed relative to the parent as the rest of the item rotates. The <code>angle</code> property determines the angle to rotate the hands in degrees clockwise.</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">x</span>: <span class="number">92.5</span>; <span class="name">y</span>: <span class="number">27</span>
 <span class="name">source</span>: <span class="string">&quot;hour.png&quot;</span>
 <span class="name">transform</span>: <span class="name">Rotation</span> {
@@ -121,7 +121,7 @@ Behavior on <span class="name">angle</span> {
 }</pre>
 <p>We use a <a href="QtQuick.Behavior.md">Behavior</a> type on the <code>angle</code> property to apply a <a href="QtQuick.SpringAnimation.md">SpringAnimation</a> when the time changes. The <code>spring</code> and <code>damping</code> properties enable the spring-like motion of the clock hands, and a <code>modulus</code> of <code>360</code> makes the animation target values wrap around at a full circle.</p>
 <p>We use a <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> type to display the city name below the clock:</p>
-<pre class="qml">        <span class="type"><a href="QtQuick.Text.md">Text</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">id</span>: <span class="name">cityLabel</span>
 <span class="name">y</span>: <span class="number">210</span>; <span class="name">anchors</span>.horizontalCenter: <span class="name">parent</span>.<span class="name">horizontalCenter</span>
 <span class="name">color</span>: <span class="string">&quot;white&quot;</span>

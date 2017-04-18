@@ -71,7 +71,7 @@ import QtQuick.XmlListModel 2.0
 <h3 >Using key XML roles</h3>
 <p>You can define certain roles as &quot;keys&quot; so that when <a href="#reload-method">reload()</a> is called, the model will only add and refresh data that contains new values for these keys.</p>
 <p>For example, if above role for &quot;pubDate&quot; was defined like this instead:</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;pubDate&quot;</span>; <span class="name">query</span>: <span class="string">&quot;pubDate/string()&quot;</span>; <span class="name">isKey</span>: <span class="number">true</span> }</pre>
+<pre class="qml"><span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;pubDate&quot;</span>; <span class="name">query</span>: <span class="string">&quot;pubDate/string()&quot;</span>; <span class="name">isKey</span>: <span class="number">true</span> }</pre>
 <p>Then when <a href="#reload-method">reload()</a> is called, the model will only add and reload items with a &quot;pubDate&quot; value that is not already present in the model.</p>
 <p>This is useful when displaying the contents of XML documents that are incrementally updated (such as RSS feeds) to avoid repainting the entire contents of a model in a view.</p>
 <p>If multiple key roles are specified, the model only adds and reload items with a combined value of all key roles that is not already present in the model.</p>

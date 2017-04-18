@@ -46,13 +46,13 @@ Title: QtQuick.qml-tutorial3
 }
 }</pre>
 <h2 id="walkthrough">Walkthrough</h2>
-<pre class="qml">        <span class="name">states</span>: <span class="name">State</span> {
+<pre class="qml"><span class="name">states</span>: <span class="name">State</span> {
 <span class="name">name</span>: <span class="string">&quot;down&quot;</span>; <span class="name">when</span>: <span class="name">mouseArea</span>.<span class="name">pressed</span> <span class="operator">==</span> <span class="number">true</span>
 <span class="type"><a href="QtQuick.PropertyChanges.md">PropertyChanges</a></span> { <span class="name">target</span>: <span class="name">helloText</span>; <span class="name">y</span>: <span class="number">160</span>; <span class="name">rotation</span>: <span class="number">180</span>; <span class="name">color</span>: <span class="string">&quot;red&quot;</span> }
 }</pre>
 <p>First, we create a new <i>down</i> state for our text type. This state will be activated when the <a href="QtQuick.MouseArea.md">MouseArea</a> is pressed, and deactivated when it is released.</p>
 <p>The <i>down</i> state includes a set of property changes from our implicit <i>default state</i> (the items as they were initially defined in the QML). Specifically, we set the <code>y</code> property of the text to <code>160</code>, the rotation to <code>180</code> and the <code>color</code> to red.</p>
-<pre class="qml">        <span class="name">transitions</span>: <span class="name">Transition</span> {
+<pre class="qml"><span class="name">transitions</span>: <span class="name">Transition</span> {
 <span class="name">from</span>: <span class="string">&quot;&quot;</span>; <span class="name">to</span>: <span class="string">&quot;down&quot;</span>; <span class="name">reversible</span>: <span class="number">true</span>
 <span class="type"><a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a></span> {
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">properties</span>: <span class="string">&quot;y,rotation&quot;</span>; <span class="name">duration</span>: <span class="number">500</span>; <span class="name">easing</span>.type: <span class="name">Easing</span>.<span class="name">InOutQuad</span> }

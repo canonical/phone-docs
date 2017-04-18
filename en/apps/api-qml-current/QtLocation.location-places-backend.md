@@ -60,7 +60,7 @@ Q_ARG(<span class="type">QPlaceReply</span> <span class="operator">*</span><span
 <p>In order to accomplish cross-referencing, there needs to be a link between the original place and the favorited place and this is typically handled via an alternative identifier attribute. The favorited place contains an alternative identifier attribute which has the identifier of the original place.</p>
 <pre class="cpp">origin R<span class="operator">/</span>O manager(nokia)       destination R<span class="operator">/</span>W manager (places_jsondb)
 Save
-Place id: ae246         <span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">&gt;</span>    Place id: <span class="number">0001</span>
+Place id: ae246 <span class="operator">-</span><span class="operator">-</span><span class="operator">-</span><span class="operator">&gt;</span>    Place id: <span class="number">0001</span>
 Attribute type: x_provider      Attribute type: x_id_nokia
 Attribute value: nokia          Attribute text value: ae246</pre>
 <p>There are 3 prerequisites for implementing cross-referencing by alternative identifier. The first is that the origin manager must provide the x_provider attribute with the value being the name of the manager's QGeoServiceProvider. The attribute label should be kept empty, indicating the attribute should not be displayed to users.</p>

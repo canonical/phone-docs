@@ -32,7 +32,7 @@ Title: QtQuick.qml-tutorial1
 <span class="name">color</span>: <span class="string">&quot;lightgray&quot;</span></pre>
 <p>We declare a root object of type <a href="QtQuick.Rectangle.md">Rectangle</a>. It is one of the basic building blocks you can use to create an application in QML. We give it an <code>id</code> to be able to refer to it later. In this case, we call it &quot;page&quot;. We also set the <code>width</code>, <code>height</code> and <code>color</code> properties. The <a href="QtQuick.Rectangle.md">Rectangle</a> type contains many other properties (such as <code>x</code> and <code>y</code>), but these are left at their default values.</p>
 <h3 >Text Type</h3>
-<pre class="qml">    <span class="type"><a href="QtQuick.Text.md">Text</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">id</span>: <span class="name">helloText</span>
 <span class="name">text</span>: <span class="string">&quot;Hello world!&quot;</span>
 <span class="name">y</span>: <span class="number">30</span>

@@ -106,8 +106,8 @@ In this file are an arbitrary number of themes, in the following form:
 
 ```
 <theme>
-    <foreground start="#e54c19" main="#ff9900" end="#e54c19" />
-    <background start="#ff9900" main="#e54c19" end="#cc0000" />
+<foreground start="#e54c19" main="#ff9900" end="#e54c19" />
+<background start="#ff9900" main="#e54c19" end="#cc0000" />
 </theme>
 ```
 

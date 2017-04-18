@@ -46,7 +46,7 @@ BezierCurve(<span class="type">QQuickItem</span> <span class="operator">*</span>
 <span class="type">int</span> m_segmentCount;
 };</pre>
 <p>The item declaration subclasses the QQuickItem class and adds five properties. One for each of the four control points in the bezier curve and a parameter to control the number of segments the curve is subdivided into. For each of the properties we have corresponding getter and setter functions. Since these properties can be bound to in QML, it is also preferable to have notifier signals for each of them so changes will be picked up the QML engine and used accordingly.</p>
-<pre class="cpp">    <span class="type">QSGNode</span> <span class="operator">*</span>updatePaintNode(<span class="type">QSGNode</span> <span class="operator">*</span><span class="operator">,</span> UpdatePaintNodeData <span class="operator">*</span>);</pre>
+<pre class="cpp"><span class="type">QSGNode</span> <span class="operator">*</span>updatePaintNode(<span class="type">QSGNode</span> <span class="operator">*</span><span class="operator">,</span> UpdatePaintNodeData <span class="operator">*</span>);</pre>
 <p>The synchronization point between the QML scene and the rendering scene graph is the virtual function QQuickItem::updatePaintNode() which all items with custom scene graph logic must implement.</p>
 <p><b>Note: </b>The scene graph will on many hardware configurations be rendering on a separate thread. It is therefore crucial that interaction with the scene graph happens in a controlled manner, first and foremost through the QQuickItem::updatePaintNode() function.</p>
 <h2 id="beziercurve-implementation">BezierCurve Implementation</h2>
@@ -92,7 +92,7 @@ node<span class="operator">-</span><span class="operator">&gt;</span>setFlag(<sp
 <p>Custom attribute sets can also created, but that is not covered in this example.</p>
 <p>Since we do not have any special needs for memory managing the geometry, we specify that the QSGGeometryNode should own the geometry.</p>
 <p>To minimize allocations, reduce memory fragmentation and improve performance, it would also be possible to make the geometry a member of a QSGGeometryNode subclass, in which case, we would not have set the QSGGeometryNode::OwnsGeometry flag.</p>
-<pre class="cpp">        <span class="type">QSGFlatColorMaterial</span> <span class="operator">*</span>material <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QSGFlatColorMaterial</span>;
+<pre class="cpp"><span class="type">QSGFlatColorMaterial</span> <span class="operator">*</span>material <span class="operator">=</span> <span class="keyword">new</span> <span class="type">QSGFlatColorMaterial</span>;
 material<span class="operator">-</span><span class="operator">&gt;</span>setColor(<span class="type">QColor</span>(<span class="number">255</span><span class="operator">,</span> <span class="number">0</span><span class="operator">,</span> <span class="number">0</span>));
 node<span class="operator">-</span><span class="operator">&gt;</span>setMaterial(material);
 node<span class="operator">-</span><span class="operator">&gt;</span>setFlag(<span class="type">QSGNode</span><span class="operator">::</span>OwnsMaterial);</pre>
@@ -103,7 +103,7 @@ geometry <span class="operator">=</span> node<span class="operator">-</span><spa
 geometry<span class="operator">-</span><span class="operator">&gt;</span>allocate(m_segmentCount);
 }</pre>
 <p>In the case where the QML item has changed and we only want to modify the existing node's geometry, we cast the <code>oldNode</code> to a QSGGeometryNode instance and extract it's geometry. In case the segment count has changed, we call QSGGeometry::allocate() to make sure it has the right number of vertices.</p>
-<pre class="cpp">    <span class="type">QRectF</span> bounds <span class="operator">=</span> boundingRect();
+<pre class="cpp"><span class="type">QRectF</span> bounds <span class="operator">=</span> boundingRect();
 <span class="type">QSGGeometry</span><span class="operator">::</span>Point2D <span class="operator">*</span>vertices <span class="operator">=</span> geometry<span class="operator">-</span><span class="operator">&gt;</span>vertexDataAsPoint2D();
 <span class="keyword">for</span> (<span class="type">int</span> i <span class="operator">=</span> <span class="number">0</span>; i <span class="operator">&lt;</span> m_segmentCount; <span class="operator">+</span><span class="operator">+</span>i) {
 <span class="type">qreal</span> t <span class="operator">=</span> i <span class="operator">/</span> <span class="type">qreal</span>(m_segmentCount <span class="operator">-</span> <span class="number">1</span>);
@@ -118,7 +118,7 @@ vertices<span class="operator">[</span>i<span class="operator">]</span><span cla
 }
 node<span class="operator">-</span><span class="operator">&gt;</span>markDirty(<span class="type">QSGNode</span><span class="operator">::</span>DirtyGeometry);</pre>
 <p>To fill the geometry, we first extract the vertex array from it. Since we are using one of the default attribute sets, we can use the convenience function QSGGeometry::vertexDataAsPoint2D(). Then we go through each segment and calculate its position and write that value to the vertex.</p>
-<pre class="cpp">    <span class="keyword">return</span> node;
+<pre class="cpp"><span class="keyword">return</span> node;
 }</pre>
 <p>In the end of the function, we return the node so the scene graph can render it.</p>
 <h2 id="application-entry-point">Application Entry-Point</h2>
@@ -158,7 +158,7 @@ SequentialAnimation on <span class="name">t</span> {
 <span class="name">p3</span>: <span class="name">Qt</span>.<span class="name">point</span>(<span class="number">1</span> <span class="operator">-</span> <span class="name">t</span>, <span class="name">t</span>)
 }</pre>
 <p>To make the example a bit more interesting we add an animation to change the two control points in the curve. The end points stay unchanged.</p>
-<pre class="qml">    <span class="type"><a href="QtQuick.Text.md">Text</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">anchors</span>.bottom: <span class="name">line</span>.<span class="name">bottom</span>
 <span class="name">x</span>: <span class="number">20</span>
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span> <span class="operator">-</span> <span class="number">40</span>

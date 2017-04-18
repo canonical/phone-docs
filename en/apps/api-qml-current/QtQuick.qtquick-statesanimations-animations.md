@@ -120,7 +120,7 @@ SequentialAnimation on <span class="name">color</span> {
 ]
 }</pre>
 <p>Binding the <code>to</code> and <code>from</code> properties to the state's name will assign that particular transition to the state change. For simple or symmetric transitions, setting the to <code>to</code> property to the wild card symbol, &quot;<code>*</code>&quot;, denotes that the transition applies to any state change.</p>
-<pre class="qml">    <span class="name">transitions</span>:
+<pre class="qml"><span class="name">transitions</span>:
 <span class="name">Transition</span> {
 <span class="name">to</span>: <span class="string">&quot;*&quot;</span>
 <span class="type"><a href="QtQuick.ColorAnimation.md">ColorAnimation</a></span> { <span class="name">target</span>: <span class="name">button</span>; <span class="name">duration</span>: <span class="number">100</span>}

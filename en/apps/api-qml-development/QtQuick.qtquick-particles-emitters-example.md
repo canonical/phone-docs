@@ -22,7 +22,7 @@ Title: QtQuick.qtquick-particles-emitters-example
 <span class="name">sizeVariation</span>: <span class="number">4</span>
 }</pre>
 <p>Burst and pulse calls the burst and pulse methods on two idential emitters.</p>
-<pre class="qml">    <span class="keyword">if</span> (<span class="name">lastWasPulse</span>) {
+<pre class="qml"><span class="keyword">if</span> (<span class="name">lastWasPulse</span>) {
 <span class="name">burstEmitter</span>.<span class="name">burst</span>(<span class="number">500</span>);
 <span class="name">lastWasPulse</span> <span class="operator">=</span> <span class="number">false</span>;
 } <span class="keyword">else</span> {

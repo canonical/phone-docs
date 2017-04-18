@@ -43,7 +43,7 @@ Rectangle { id: rect2; anchors<span class="operator">.</span>left: rect1<span cl
 }</pre>
 <p>Anchors can also be changed imperatively within JavaScript. However, these changes should be carefully ordered, or they may produce unexpected outcomes. The following example illustrates the issue:</p>
 <table class="generic">
-<tr valign="top"><td ><pre class="cpp">    <span class="comment">//bad code</span>
+<tr valign="top"><td ><pre class="cpp"><span class="comment">//bad code</span>
 Rectangle {
 width: <span class="number">50</span>
 anchors<span class="operator">.</span>left: parent<span class="operator">.</span>left
@@ -56,7 +56,7 @@ anchors<span class="operator">.</span>left <span class="operator">=</span> undef
 </table>
 <p>When <code>reanchorToRight</code> is called, the function first sets the right anchor. At that point, both left and right anchors are set, and the item will be stretched horizontally to fill its parent. When the left anchor is unset, the new width will remain. Thus when updating anchors within JavaScript, you should first unset any anchors that are no longer required, and only then set any new anchors that are required, as shown below:</p>
 <table class="generic">
-<tr valign="top"><td ><pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<tr valign="top"><td ><pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">50</span>
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>
 <span class="keyword">function</span> <span class="name">reanchorToRight</span>() {
@@ -83,7 +83,7 @@ Rectangle { id: rect1; <span class="operator">.</span><span class="operator">.</
 }
 Item {
 id: group2
-Rectangle { id: rect2; anchors<span class="operator">.</span>left: rect1<span class="operator">.</span>right; <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> }    <span class="comment">// invalid anchor!</span>
+Rectangle { id: rect2; anchors<span class="operator">.</span>left: rect1<span class="operator">.</span>right; <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> }<span class="comment">// invalid anchor!</span>
 }</pre>
 <p>Also, anchor-based layouts cannot be mixed with absolute positioning. If an item specifies its <a href="QtQuick.Item.md#x-prop">x</a> position and also sets <a href="QtQuick.Item.md#anchors.left-prop">anchors.left</a>, or anchors its left and right edges but additionally sets a <a href="QtQuick.Item.md#width-prop">width</a>, the result is undefined, as it would not be clear whether the item should use anchoring or absolute positioning. The same can be said for setting an item's <a href="QtQuick.Item.md#y-prop">y</a> and <a href="QtQuick.Item.md#height-prop">height</a> with <a href="QtQuick.Item.md#anchors.top-prop">anchors.top</a> and <a href="QtQuick.Item.md#anchors.bottom-prop">anchors.bottom</a>, or setting <a href="QtQuick.Item.md#anchors.fill-prop">anchors.fill</a> as well as <a href="QtQuick.Item.md#width-prop">width</a> or <a href="QtQuick.Item.md#height-prop">height</a>. The same applies when using positioners such as Row and Grid, which may set the item's <a href="QtQuick.Item.md#x-prop">x</a> and <a href="QtQuick.Item.md#y-prop">y</a> properties. If you wish to change from using anchor-based to absolute positioning, you can clear an anchor value by setting it to <code>undefined</code>.</p>
 <!-- @@@qtquick-positioning-anchors.html -->
