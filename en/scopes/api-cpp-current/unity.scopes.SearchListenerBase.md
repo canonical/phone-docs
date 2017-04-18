@@ -6,12 +6,12 @@ Title: unity.scopes.SearchListenerBase
 
 <p>Abstract base interface for a client to receive the results of a query.  
 <a href="#details">More...</a></p>
-<p><code>#include &lt;unity/scopes/SearchListenerBase.h&gt;</code></p>
-Inheritance diagram for unity::scopes::SearchListenerBase:
+<p><pre class="cpp">#include &lt;unity/scopes/SearchListenerBase.h&gt;</pre></p>
+
+<p>Inheritance diagram for unity::scopes::SearchListenerBase:</p>
+
 <img src="../../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_listener_base_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_search_listener_base_inherit__map" id="unity_1_1scopes_1_1_search_listener_base_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder.html" title="Base class for a client to receive and buffer the results of a query until another BufferedResultForw..." alt="" coords="33,155,219,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_listener_base.html" title="Abstract base class to be notified of request completion (such as a query or activation request)..." alt="" coords="28,5,224,32"/></map>
-<center><span class="legend">[legend]</span></center>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -45,90 +45,42 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>If the implementation of a push method throws an exception, the scopes runtime calls <a class="el" href="unity.scopes.ListenerBase.md#afb44937749b61c9e3ebfa20ec6e4634b" title="Called once by the scopes runtime after the final result for a request was sent. ">ListenerBase::finished()</a> with an 'Error' status.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="unity.scopes.ListenerBase.md" title="Abstract base class to be notified of request completion (such as a query or activation request)...">ListenerBase</a> </dd></dl>
 <h2 class="groupheader">Member Function Documentation</h2>
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void unity::scopes::SearchListenerBase::push </td>
-<td>(</td>
-<td class="paramtype">Department::SCPtr const &amp;&#160;</td>
-<td class="paramname"><em>parent</em></td><td>)</td>
-<td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-</tr>
-</table>
+
+<pre class="cpp">
+virtual void unity::scopes::SearchListenerBase::push
+  ( Department::SCPtr const & <em>parent</em> )
+</pre>
+
 <p>Called at most once by the scopes runtime for a tree of departments returned by a query. </p>
+
 <p>The default implementation does nothing. </p>
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void unity::scopes::SearchListenerBase::push </td>
-<td>(</td>
-<td class="paramtype">experimental::Annotation&#160;</td>
-<td class="paramname"><em>annotation</em></td><td>)</td>
-<td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-</tr>
-</table>
-<p>Called once by the scopes runtime for each annotation that is returned by a query(). </p>
+
+
+<pre class="cpp">
+virtual void unity::scopes::SearchListenerBase::push
+  ( experimental::Annotation <em>annotation</em> )
+</pre>
+
+<p>Called once by the scopes runtime for each annotation that is returned by a query().</p>
 <p>The default implementation does nothing. </p>
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void unity::scopes::SearchListenerBase::push </td>
-<td>(</td>
-<td class="paramtype">Category::SCPtr const &amp;&#160;</td>
-<td class="paramname"><em>category</em></td><td>)</td>
-<td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-</tr>
-</table>
+
+
+
+<pre class="cpp">
+virtual void unity::scopes::SearchListenerBase::push
+  ( Category::SCPtr const & <em>category</em> )
+</pre>
+
 <p>Called once by the scopes runtime for each category that is returned by a query(). </p>
+
 <p>Receipt of categories may be interleaved with the receipt of results, that is, there is no guarantee that the complete set of categories will be provided before the first query result.</p>
 <p>The default implementation does nothing. </p>
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void unity::scopes::SearchListenerBase::push </td>
-<td>(</td>
-<td class="paramtype"><a class="el" href="unity.scopes.md#adab58c13cf604e0e64bd6b1a745364d3">Filters</a> const &amp;&#160;</td>
-<td class="paramname"><em>filters</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype"><a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;&#160;</td>
-<td class="paramname"><em>filter_state</em>&#160;</td>
-</tr>
-<tr>
-<td></td>
-<td>)</td>
-<td></td><td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-</tr>
-</table>
+
+
+<pre class="cpp">
+virtual void unity::scopes::SearchListenerBase::push </td>
+  ( <a class="el" href="unity.scopes.md#adab58c13cf604e0e64bd6b1a745364d3">Filters</a> const & <em>filters</em>, <a class="el" href="unity.scopes.FilterState.md">FilterState</a> const & <em>filter_state</em> )
+</pre>
+
 <p>Called once by the scopes to send all the filters and their state. </p>
 <p>The default implementation does nothing. </p>
