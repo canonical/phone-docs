@@ -1,16 +1,11 @@
 ---
 Title: Navigation
+table_of_contents: true
 ---
 
 # Navigation
 
 Allow the user to retrieve and browse content easily within your scope through great structure and a consistent feel.
-
--  [Scope header ›](#scope-header)
-
--  [Category header ›](#category-header)
-
--  [Departments ›](#departments)
 
 ##Scope header
 
@@ -26,13 +21,11 @@ The scope header contains the main title of your scope, together with four eleme
 
 3. **Settings – ** will take the user to the settings page of the scope where they can enable their location and online accounts to feed the scope.
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See our  [Component](components.md) section on how to best place these actions inside your scope header.|
+|----|----|
 
-See our  [Component](components.md) section on how to best place these actions inside your scope header.
-
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-For more information on how to implement settings in your scope, see our  [SDK](https://developer.ubuntu.com/en/scopes/design/tutorials/adding-settings-to-your-scope/).
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|For more information on how to implement settings in your scope, see our  [SDK](../tutorials/adding-settings-to-your-scope/).|
+|----|----|
 
 ##Category header
 
@@ -42,15 +35,14 @@ Links to child scopes can be placed within the category header.
 
 ##NearBy scope
 
-![Scope links Timeout b (1)](https://assets.ubuntu.com/v1/02a07bd1-Scope-links-Timeout-b-1-618x1024.png)
+![Scope links Timeout b-1](https://assets.ubuntu.com/v1/02a07bd1-Scope-links-Timeout-b-1-618x1024.png)
 
 ##TimeOut scope
 
 If the scope is invoked by an aggregator scope, then it will have a back button.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-You cannot swipe to navigate through a scope link. You must use a chevron to indicate to the user that it leads somewhere. As swiping may take the user to the next/previous scope.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|You cannot swipe to navigate through a scope link. You must use a chevron to indicate to the user that it leads somewhere. As swiping may take the user to the next/previous scope.|
+|----|----|
 
 Scope links can only be added by the scope author.
 
@@ -70,9 +62,8 @@ Departments are an optional feature that can be placed under the scope header to
 
 - Naming the top-level department e.g. ‘Shop by department’ or ‘Genres’
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-The scope author chooses what content goes in the navigation paths. Categorize your content to give the user easy access to specific results.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|The scope author chooses what content goes in the navigation paths. Categorize your content to give the user easy access to specific results.|
+|----|----|
 
 ##Hierarchy
 
@@ -98,13 +89,11 @@ Users can navigate through a scope in a single hierarchy navigation or multiple 
 
 - When the top-level department is open a maximum of 5 departments can be shown with a ‘show more’ button included.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|We use it in some of core scopes such as Music and Shopping, where users can browse by genre or departments.|
+|----|----|
 
-We use it in some of core scopes such as Music and Shopping, where users can browse by genre or departments.
-
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Learn how to create departments and use them in queries in our  [SDK](https://developer.ubuntu.com/en/scopes/design/tutorials/adding-departments-to-your-scope/).
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Learn how to create departments and use them in queries in our  [SDK](../tutorials/adding-departments-to-your-scope.md).|
+|----|----|
 
 ##Multiple level hierarchy
 
@@ -136,11 +125,9 @@ When the user has selected a department, the ‘Featured’ menu will appear on 
 
 The ‘Featured’ menu allows the user to sort results by order e.g.”Price: high to low”, which changes the view of the results.
 
-![multiple level 6)(https://assets.ubuntu.com/v1/d3367513-multiple-level-61-618x1024.png)
+![multiple level 6](https://assets.ubuntu.com/v1/d3367513-multiple-level-61-618x1024.png)
 
 Once the user has selected a feature, the scope page will rearrange the results according to the feature selected.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-Where there are multiple choices in each department branch a chevron is used to indicate to the user that there are options available.
-
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Where there are multiple choices in each department branch a chevron is used to indicate to the user that there are options available.|
+|----|----|

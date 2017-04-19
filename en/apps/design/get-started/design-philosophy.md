@@ -1,5 +1,6 @@
 ---
 Title: Design philosophy
+table_of_contents: true
 ---
 
 # Design philosophy
@@ -8,15 +9,8 @@ The Ubuntu interface has been designed according to a philosophy called Suru.
 
 ![750w_DesignPhilosophy_MainImage](https://assets.ubuntu.com/v1/c69e1015-750w_DesignPhilosophy_MainImage.png)
 
--  [Suru meaning &rsaquo;](#suru-meaning)
-
--  [Translated in design &rsaquo;](#translated-in-design)
-
--  [Suru mood board &rsaquo;](#suru-mood-board)
-
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-[See how the Suru visual language is integrated into the new Xerus 16.04 wallpaper here](https://design.canonical.com/2016/04/wallpaper-design-for-xenial-xerus-16-04/).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[See how the Suru visual language is integrated into the new Xerus 16.04 wallpaper here](https://design.canonical.com/2016/04/wallpaper-design-for-xenial-xerus-16-04/).|
+|-----|-----|
 
 ## Suru meaning
 

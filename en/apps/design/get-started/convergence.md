@@ -1,5 +1,6 @@
 ---
 Title: Convergence
+table_of_contents: true
 ---
 
 # Convergence
@@ -7,14 +8,6 @@ Title: Convergence
 Use one operating system for all devices to provide familiar experiences from phone to tablet to desktop, and back again.
 
 ![750w_Convergence_MainImage](https://assets.ubuntu.com/v1/d7f88a3e-750w_Convergence_MainImage.png)
-
--  [What is convergence? ›](#what-is-convergence)
-
--  [Why are we doing it? ›](#why-are-we-doing-it)
-
--  [How are we doing it? ›](#how-are-we-doing-it)
-
--  [See for yourself ›](#see-for-yourself)
 
 ## What is convergence?
 
@@ -72,9 +65,8 @@ Using touch a user can swipe or long-press on a list item to reveal a contextual
 
 ![750w_Design_Values_AllInputEqualv2](https://assets.ubuntu.com/v1/a2260192-750w_Design_Values_AllInputEqualv2.png)
 
-![link_external](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](../building-blocks/header.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](../building-blocks/header.md).|
+|-----|-----|
 
 ## See for yourself
 

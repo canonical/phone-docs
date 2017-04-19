@@ -1,26 +1,16 @@
 ---
 Title: Components
+table_of_contents: true
 ---
 
 # Components
 
 These are the building blocks that allow you to create a consistent and structured scope.
 
--  [Scope header ›](#scope-header)
-
--  [Categories ›](#categories)
-
--  [Cards ›](#cards)
-
 ##Scope header
 
 We use the scope header for navigation purposes and placing actions.
 
--  [Scope title ›](#scope-title)
-
--  [Placing actions ›](#placing-actions)
-
--  [Header search ›](#header-search)
 
 ##Scope title
 
@@ -48,18 +38,16 @@ The header consists of one text string and optional monochromatic icons.
 
 3. Settings – enables persistent settings for simple customizations, such as enabling the user’s geographical location to receive local content sources.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-Arrange your header to maximize the important actions inside your scope, such as using a search icon for users to reach a specific result.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Arrange your header to maximize the important actions inside your scope, such as using a search icon for users to reach a specific result.|
+|----|----|
 
 ![placing actions 2](https://assets.ubuntu.com/v1/c29fc303-placing-actions-22-1024x179.png)
 
 ####Burger menu
 1. When more than three actions are placed in the scope header e.g. favorite, settings and search – a burger  menu is used on the right to store two of the actions.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-We recommend you use the burger menu sparingly, as it hides away views and actions from the user.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|We recommend you use the burger menu sparingly, as it hides away views and actions from the user.|
+|----|----|
 
 ##Header search
 
@@ -85,9 +73,8 @@ Once the user has committed to a search, they will be presented with results tak
 
 The user can tap the cross in the header or the back chevron to be taken back to the scope home screen.
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Implement the  [SearchReply](../api-cpp-current/SearchReply.md) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](../api-cpp-current/SearchListenerBase.md),  [SearchMetadata](../api-cpp-current/SearchMetadata.md) and  [SearchQueryBase](../api-cpp-current/SearchQueryBase.md) elements.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [SearchReply](../api-cpp-current/SearchReply.md) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](../api-cpp-current/SearchListenerBase.md),  [SearchMetadata](../api-cpp-current/SearchMetadata.md) and  [SearchQueryBase](../api-cpp-current/SearchQueryBase.md) elements.|
+|----|----|
 
 ##Categories
 
@@ -101,27 +88,24 @@ Categories are used to group together related content in a readable and manageab
 
 -  [Category expansion ›](#category-expansion)
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-To implement the  [Category](../api-cpp-current/Category.md) and  [Categorised Result](../api-cpp-current/CategorisedResult.md) element in your scope see our SDK.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To implement the  [Category](../api-cpp-current/Category.md) and  [Categorised Result](../api-cpp-current/CategorisedResult.md) element in your scope see our SDK.|
+|----|----|
 
 ##Structure
 
 Structure your scope according to the user’s activities, and group cards in categories to help them find related results.
 
-![Structure (1)](https://assets.ubuntu.com/v1/4d85b0ab-Structure-11-722x1024.png)
+![Structure-1](https://assets.ubuntu.com/v1/4d85b0ab-Structure-11-722x1024.png)
 
 1. Personal data – this displays the user’s local data on their device. For example, it could display the user’s ‘Recently Played’ music from their personally stored music.
 
 2. Online service accounts – this displays the user’s connected online service accounts. For example, the Music Scope will display the user’s likes from their SoundCloud account.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Think about what the user will first expect to see at the top of your scope. If your scope is selling products, for instance, you may want to use the top category as a promotional banner.|
+|----|----|
 
-Think about what the user will first expect to see at the top of your scope. If your scope is selling products, for instance, you may want to use the top category as a promotional banner.
-
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Implement a JSON formatted template with the  [Category Renderer](../api-cpp-current/CategoryRenderer.md) from our SDK.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a JSON formatted template with the  [Category Renderer](../api-cpp-current/CategoryRenderer.md) from our SDK.|
+|----|----|
 
 ##Category header
 
@@ -147,13 +131,11 @@ Where we use links inside a category header, the header should be clear as to wh
 
 ![Header link 2](https://assets.ubuntu.com/v1/7794773a-Header-link-21-618x1024.png)
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
+||![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)||See more ways in which the header can link to either a website or an app in the  [Navigation](navigation.md) section.|
+|-----|-----|
 
-See more ways in which the header can link to either a website or an app in the  [Navigation](navigation.md) section.
-
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Implement a  [Hyperlink](../api-cpp-current/Link.md)(label and canned query) from our SDK.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a  [Hyperlink](../api-cpp-current/Link.md)(label and canned query) from our SDK.|
+|----|----|
 
 ##Designing categories
 
@@ -173,9 +155,8 @@ The horizontal-list layout allows users to scroll horizontally to view more resu
 
 A category header can assume a collapsed or expanded state; without a header, it is not expandable.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-It is useful to condense the amount of content on the screen, so the user can browse content in other categories.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|It is useful to condense the amount of content on the screen, so the user can browse content in other categories.|
+|----|----|
 
 ![Category Expansion 1](https://assets.ubuntu.com/v1/6002b078-Category-Expansion-1-618x1024.png)
 
@@ -199,9 +180,8 @@ A card is a visual representation of a content result; you can design them in di
 
 -  [Designing cards ›](#designing-cards)
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Implement the  [Result](../api-cpp-current/Result.md) element from our SDK, which contains the attributes of a result returned by a Scope.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [Result](../api-cpp-current/Result.md) element from our SDK, which contains the attributes of a result returned by a Scope.|
+|----|----|
 
 ##Card components
 
@@ -223,38 +203,35 @@ The art can be an icon or a thumbnail.
 
 The art mask defines the maximum size of the art (image) within a card.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-Depending on the context of your card, you might want the art to take centre stage, or just be a visual aid to the content.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Depending on the context of your card, you might want the art to take centre stage, or just be a visual aid to the content.|
+|----|----|
 
 ##Horizontal
 
-![Card art 1-2 (1)](https://assets.ubuntu.com/v1/56a33d9c-Card-art-1-2-1.png)
+![Card art 1-2-1](https://assets.ubuntu.com/v1/56a33d9c-Card-art-1-2-1.png)
 
 ####1.2
 
 The art-mask width equals art-mask height.
 
-![Card art 1-3 (1)](https://assets.ubuntu.com/v1/e92f38bb-Card-art-1-3-1.png)
+![Card art 1-3-1](https://assets.ubuntu.com/v1/e92f38bb-Card-art-1-3-1.png)
 
 ####1.3
 
 You can define the art-mask height to the width, within a range from of 3:1 or 2:1.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-By default, the art-mask width equals the art-mask height on a 1:1 ratio.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|By default, the art-mask width equals the art-mask height on a 1:1 ratio.|
+|----|----|
 
 ##Vertical
-![Card art 1 (1)](https://assets.ubuntu.com/v1/4c414a17-Card-art-1-1-162x300.png)
+![Card art 1-1](https://assets.ubuntu.com/v1/4c414a17-Card-art-1-1-162x300.png)
 
 ####Vertical
 
 The art-mask width = card width.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-By default, the art-mask height equals the art-mask width on a 1:1 ratio.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|By default, the art-mask height equals the art-mask width on a 1:1 ratio.|
+|----|----|
 
 ####Crop your art within the art-mask
 
@@ -270,9 +247,8 @@ If your art does not fit in the mask, it will be cropped.
 
 2. Image fills art-mask
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-You may choose to scale the art proportionally with the largest aspect of the art scaled to fill the art-mask.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|You may choose to scale the art proportionally with the largest aspect of the art scaled to fill the art-mask.|
+|----|----|
 
 ##Card header
 
@@ -342,9 +318,8 @@ The three attributes can be arranged and combined in a number of ways.
 
 The header will have a dark overlay and the text will be white.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-When a header is an overlay, it should not include a mascot.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|When a header is an overlay, it should not include a mascot.|
+|----|----|
 
 ##Header text styles
 
@@ -370,52 +345,13 @@ The title, subtitle and attribute can be shown in certain font weights and sizes
 
 ####5
 
-1
-2
-3
-4
-5
-
-**Font weight**
-Regular
-Regular
-**1.**Title: Medium
-
-2.Subtitle: Light
-**1.**Title: Medium
-
-**2.**Subtitle: Light
-
-**3.**Attribute(s): Regular
-**1.**Title: Medium, 2.Subtitle: Light
-
-**Font size**
-Small
-Small
-**1.**Title: Small
-
-**2.**Subtitle: Extra small	**1.**Title: Small
-
-**2.**Subtitle: Extra small
-
-**3.**Attribute(s): Small	n/a
-
-**Padding between text baselines**
-n/a
-n/a
->1.5GU
-**1.**Title: >1.5GU
-
-**2.**Subtitle: 2GU	**1.**Title: >1.5GU
-
-**2.**Subtitle: 2GU
-
-**Alignment**
-Left/Middle
-Left/Middle
-Left
-Left
-Left
+||Font weight|Font size|Padding between text baselines|Alignment|
+|---|---|---|---|---|
+|1|Regular|Small|n/a|Left/Middle|
+|2|Regular|Small|n/a|Left/Middle|
+|3|1.Title: Medium, 2.Subtitle: Light|1.Title: Small, 2.Subtitle: Extra small|>1.5GU|Left|
+|4|1.Title: Medium, 2.Subtitle: Light, 3.Attribute(s): Regular|1.Title: Small, 2.Subtitle: Extra small, 3.Attribute(s): Small|1.Title: >1.5GU, 2.Subtitle: 2GU|Left|
+|5|1.Title: Medium, 2.Subtitle: Light|n/a|1.Title: >1.5GU, 2.Subtitle: 2GU|Left|
 
 ##Card summary
 
@@ -427,13 +363,11 @@ Text can be split into paragraphs.
 
 - When a card includes a summary text, then the background to the header and summary should be white.
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|You cannot redefine the summary text formatting in any way, and it cannot be used with a small card template.|
+|----|----|
 
-You cannot redefine the summary text formatting in any way, and it cannot be used with a small card template.
-
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-Summaries are great for showing glimpses of news stories or reviews.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Summaries are great for showing glimpses of news stories or reviews.|
+|----|----|
 
 ##Card size
 
@@ -463,17 +397,15 @@ Three cards are 12GU each on a 40GU device – with a 1GU margin. It is availabl
 
 Useful in displaying music art and track titles.
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-On bigger form factors, a small size is automatically converted to a medium size.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|On bigger form factors, a small size is automatically converted to a medium size.|
+|----|----|
 
 ##Designing cards
 
 There are two classes of card template: vertical and horizontal.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-You must choose a card template that is compatible with the category layout. In case of layout errors, we try to gracefully fall back to defaults.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|You must choose a card template that is compatible with the category layout. In case of layout errors, we try to gracefully fall back to defaults.|
+|----|----|
 
 ##Vertical
 
@@ -497,17 +429,10 @@ You must choose a card template that is compatible with the category layout. In 
 
 ####Small Art, Header and Attribute
 
-**Category layout**
-Grid
-Horizontal-list
-
-**Header overlay**
-No
-Yes
-
-**Grid size**
-S. M. L
-S. M. L
+|Category layout|Header overlay|Grid size|
+|---|---|---|
+|Grid|No|S. M. L|
+|Horizontal-list||Yes|S. M. L|
 
 ##Horizontal
 
@@ -519,21 +444,11 @@ S. M. L
 
 ####Art, Header (Emblem on the right), Attribute and Summary
 
-**Category layout**
-Grid
-Horizontal-list
+|Category layout|Header overlay|Grid size|Inside a shape|
+|---|---|---|---|
+|Grid|No|L|No|
+|Horizontal-list|No|L|No|
 
-**Header overlay**
-No
-No
-
-**Grid size**
-L
-L
-
-**Inside a shape**
-No
-No
 
 ##Placing components
 
@@ -545,11 +460,10 @@ One card displays one result (data/content item). It is made up of a maximum of 
 
 - Summary (additional info, ratings, associated buttons, etc)
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|One component must be present in any given card.|
+|----|----|
 
-One component must be present in any given card.
-
-![Placing components 2)(https://assets.ubuntu.com/v1/1eeb84a0-Placing-components-2-1024x855.png)
+![Placing components 2](https://assets.ubuntu.com/v1/1eeb84a0-Placing-components-2-1024x855.png)
 
 ##One configuration
 

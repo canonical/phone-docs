@@ -15,4 +15,4 @@ If you have an existing Cordova application and want to port it to Ubuntu, or
 if you are interested in making your Ubuntu HTML5 application cross-platform,
 you should also read the Cordova guide below.
 
-  * [Cordova Guide)(guides-cordova-guide.md)
+  * [Cordova Guide](guides-cordova-guide.md)

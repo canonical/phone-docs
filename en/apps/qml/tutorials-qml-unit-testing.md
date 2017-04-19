@@ -81,7 +81,7 @@ If you navigate to that folder with the file browser, you can click on the
 ![](../../../media/Test-project.png)
 
 Inside you will notice a tests folder that contains three subfolders named
-unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](https://developer.ubuntu.com/en/apps/quality/).
+unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](../../platform/quality.md).
 
 Since we are interested in the unit tests, navigate to the unit folder. Inside
 you’ll find the `tst_convert.qml` file, which is a QML unit test.

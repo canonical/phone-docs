@@ -14,14 +14,14 @@ Use the header for placing actions and navigational options inside your app.
 [Use the header &rsaquo;](header.md)
 
 ## Bottom edge
-![366w_BuildingBlocks_Overview_BottomEdge (1)](https://assets.ubuntu.com/v1/e96df5af-366w_BuildingBlocks_Overview_BottomEdge-1.png)
+![366w_BuildingBlocks_Overview_BottomEdge-1](https://assets.ubuntu.com/v1/e96df5af-366w_BuildingBlocks_Overview_BottomEdge-1.png)
 
 Learn how you can create something special from the bottom of the screen.
 
 [Inspirational patterns &rsaquo;](bottom-edge.md)
 
 ## List items
-![366w_BuildingBlocks_Overview_ListItems (1)](https://assets.ubuntu.com/v1/e8b9d12d-366w_BuildingBlocks_Overview_ListItems-1.png)
+![366w_BuildingBlocks_Overview_ListItems-1](https://assets.ubuntu.com/v1/e8b9d12d-366w_BuildingBlocks_Overview_ListItems-1.png)
 
 Find recommendations for list item layouts and what type of actions a list item can contain.
 

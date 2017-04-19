@@ -1,5 +1,6 @@
 ---
 Title: Design values
+table_of_contents: true
 ---
 
 # Design values
@@ -7,15 +8,6 @@ Title: Design values
 This guide is intended to help designers and developers create unique and valuable user experiences.
 ![750w_DesignValues[tablet)_MainImage](https://assets.ubuntu.com/v1/845ca032-750w_DesignValuestablet_MainImage.png)
 
--  [All input types supported equally ›](#all-input-types-supported-equally)
-
--  [Fast and effortless interactions ›](#fast-and-effortless-interactions)
-
--  [Action placement ›](#action-placement)
-
--  [Meaning in colors ›](#meaning-in-colors)
-
--  [Focus on content ›](#focus-on-content)
 
 ## All input types supported equally
 
@@ -27,9 +19,8 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 
 ![](https://assets.ubuntu.com/v1/18e792e0-750w_Design_Values_AllInputEqualv2.png)
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).|
+|-----|-----|
 
 ## Fast and effortless interactions
 
@@ -37,7 +28,7 @@ Allow users to effortlessly move through your app with minimum effort, where it 
 
 ## Bottom edge
 
-![366w_BottomEdge_AdditonalInfo3 (1)](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
+![366w_BottomEdge_AdditonalInfo3-1](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
 
 The bottom edge allows for a natural progressive swipe from the bottom of the screen. By using touch, clicking on the bottom edge tab with a pointer, or pressing Return when the bottom edge tab is focused to open using keyboard navigation.
 
@@ -51,13 +42,12 @@ The task switcher allows the user to easily switch between apps or scopes using 
 
 Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are placed on the right, and negative actions, such as Delete and Cancel are placed on the left.
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.|
+|-----|-----|
 
 ## Negative swipes left
 
-![366w_ListItems_ContextualActions1 (2)](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-2.png)
+![366w_ListItems_ContextualActions1-1](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-2.png)
 
 The user swipes left to right to reveals a red deletion option when editing a contact.
 
@@ -67,9 +57,8 @@ The user swipes left to right to reveals a red deletion option when editing a co
 
 The user swipes right to left to reveal contextual options, such as information and messaging.
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.|
+|-----|-----|
 
 ## Meaning in colors
 
@@ -77,9 +66,8 @@ The Suru design language associates meanings with certain colours to help the us
 
 Most color blind people have difficulty distinguishing red from green. Don’t use color in isolation, but instead bring them together with additional visual cues (e.g. text labels, button position and style).
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.|
+|-----|-----|
 
 ## Green
 ![366w_Overview_MeaningInColoursGreen](https://assets.ubuntu.com/v1/f553758c-366w_Overview_MeaningInColoursGreen.png)
@@ -93,13 +81,12 @@ Negative and destructive actions, such as delete or block contact.
 
 ## Blue
 
-![750w_DesignValues_ColourBlue (1)](https://assets.ubuntu.com/v1/388006d3-750w_DesignValues_ColourBlue-1.png)
+![750w_DesignValues_ColourBlue-1](https://assets.ubuntu.com/v1/388006d3-750w_DesignValues_ColourBlue-1.png)
 
 Blue is an informative colour, it is neither positive or negative. Use blue for selected activity states. It works with all other elements, on both dark and light backgrounds, and stands out clearly and precisely when used in combination with a focus state.
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-For more information on how color is used across the platform see Color palette (coming soon).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on how color is used across the platform see Color palette (coming soon).|
+|-----|-----|
 
 ## Focus on content
 
@@ -122,4 +109,3 @@ The header can provide quick access to important actions and navigational option
 ## Don’t
 
 Drawers have low discoverability and can hide important views from the user. Consider using the header or header section instead.
-

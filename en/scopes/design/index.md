@@ -1,26 +1,12 @@
 ---
 Title: Introducing scopes
+table_of_contents: true
 ---
 
 # Introducing scopes
 
-Ubuntu’s scopes give you related content on one screen, instead of hiding it behind different apps. So everything you look for in life is now right at your fingertips.
+Ubuntu’s scopes give you related content on one screen, instead of hiding it behind different apps. So everything you look for in life is now right at your fingertips.  Scopes use a straightforward framework for containing data sources where they deliver content by topic, straight to the user’s fingertips.
 
-## What is a scope?
-
-Scopes use a straightforward framework for containing data sources where they deliver content by topic, straight to the user’s fingertips.
-
--  [How they work ›](#how-they-work)
-
--  [The benefit of Scopes ›](#the-benefit-of-scopes)
-
--  [Easy to create ›](#easy-to-create)
-
--  [Scope types ›](#scope-types)
-
--  [Launch scopes ›](#launch-scopes)
-
--  [Start designing ›](#start-designing)
 
 ## How they work
 
@@ -28,7 +14,7 @@ Scopes use a straightforward framework for containing data sources where they de
 
 - They group elements together in categories and pre-defined cards to create home screens with related content.
 
-![diagram (1)](https://assets.ubuntu.com/v1/f993130b-diagram-1-1024x764.png)
+![diagram-1](https://assets.ubuntu.com/v1/f993130b-diagram-1-1024x764.png)
 
 1. **Cards –** It all starts with a result, which can be made up of a maximum of three components to create a concise visual package.
 
@@ -38,9 +24,8 @@ Scopes use a straightforward framework for containing data sources where they de
 
 4. **Scopes –** This is the container that holds all the related cards and categories together inside a concise and visually pleasing home screen.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-An aggregator scope displays data from multiple sources as opposed to a normal scope, branded or unbranded, which displays data from a single source.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|An aggregator scope displays data from multiple sources as opposed to a normal scope, branded or unbranded, which displays data from a single source.|
+|----|----|
 
 ## The benefit of Scopes
 
@@ -50,7 +35,7 @@ Scopes allow you to deliver a new mobile experience where content is more access
 
 Unlike an app where you have to delve into each for specific content, scopes surface related content and services all in one place.
 
-![nearby-1 (1)](https://assets.ubuntu.com/v1/bd82cf6c-nearby-1.png)
+![nearby-1-1](https://assets.ubuntu.com/v1/bd82cf6c-nearby-1.png)
 
 ![Timeout_2](https://assets.ubuntu.com/v1/805b6583-Timeout_2.png)
 
@@ -64,9 +49,8 @@ Allow users to purchase music, products, connect to websites, view map locations
 
 ![timeout_1](https://assets.ubuntu.com/v1/b176388d-timeout_1.png)
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Implement the widget, meta data and query bases for previews from our  [SDK](../api-cpp-current/index.md).
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the widget, meta data and query bases for previews from our  [SDK](../api-cpp-current/index.md).|
+|----|----|
 
 ## Easy to create
 
@@ -88,9 +72,8 @@ Cards represent a search result and can be made up of three components, which ca
 2. Header
 3. Summary
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
-
-See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.|
+|----|----|
 
 ## Categories
 
@@ -111,13 +94,11 @@ Categories group together related results and help you structure your scope to s
 - **Collapsed rows:** Number of result rows displayed while the category is collapsed.
 - **Card-background:** Change the background color for cards.
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To see examples of a standard template code and more in-depth information see our  [developer docs.](../guides/scopes-customization-branding.md)|
+|----|----|
 
-To see examples of a standard template code and more in-depth information see our  [developer docs.](https://developer.ubuntu.com/en/scopes/design/guides/scopes-customization-branding/)
-
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
-
-See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.|
+|----|----|
 
 ## Modes of display
 
@@ -127,7 +108,7 @@ Scopes have two modes of displaying content.
 
 When the user has not requested a specific search query, the scope will display a set of results that might have relevance to the user e.g. weather.
 
-![nearby-1 (1)](https://assets.ubuntu.com/v1/bd82cf6c-nearby-1.png)
+![nearby-1-1](https://assets.ubuntu.com/v1/bd82cf6c-nearby-1.png)
 
 ![search_in_scope](https://assets.ubuntu.com/v1/9ca20510-search_in_scope.png)
 
@@ -141,9 +122,8 @@ The scope will search across all its data sources and render results according t
 
 ![search_in_scope](https://assets.ubuntu.com/v1/9ca20510-search_in_scope.png)
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
-
-As the scope author, you can choose how to layout your category structure and use appropriate filters to best show content results.
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|As the scope author, you can choose how to layout your category structure and use appropriate filters to best show content results.|
+|----|----|
 
 ## Scope types
 
@@ -191,7 +171,7 @@ Contains local services from around the user’s area.
 - Inrix
 - Open street maps
 
-![apps (1)](https://assets.ubuntu.com/v1/64e7c610-apps.png)
+![apps-1](https://assets.ubuntu.com/v1/64e7c610-apps.png)
 
 ## Apps
 
@@ -218,18 +198,15 @@ The grid unit defines a visual rhythm in Ubuntu and should be used for all measu
 
 A benefit of using grid units instead of pixels is that it gives the designer more of a visualization of how much space they have to work with, together with sizing and positioning elements more specifically.
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Once you have written your fantastic new scope, you will have to name it. Use  [keywords](../guides/scope-keywords.md) to help your scope get noticed.|
+|----|----|
 
-Once you have written your fantastic new scope, you will have to name it. Use  [keywords](https://developer.ubuntu.com/en/scopes/design/tutorials/scope-keywords/) to help your scope get noticed.
-
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
-
-Travel through some of our  [core scopes](core-scopes.md) for inspiration.
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|Travel through some of our  [core scopes](core-scopes.md) for inspiration.|
+|----|----|
 
 ## The tools
 
 At a fraction of the cost of building an app, the scope toolkit allows you to give the user more than just an RSS feed, but a whole new user experience of consuming and surfacing content.
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-Raring to go? Then dive into our  [Scope Toolkit(SDK)](../api-cpp-current/index.md)(SDK) for all our APIs.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Raring to go? Then dive into our  [Scope Toolkit(SDK)](../api-cpp-current/index.md)(SDK) for all our APIs.|
+|----|----|

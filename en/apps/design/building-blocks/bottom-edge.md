@@ -1,5 +1,6 @@
 ---
 Title: Bottom edge
+table_of_contents: true
 ---
 
 # Bottom edge
@@ -8,26 +9,16 @@ Create something special with a unique bottom edge that belongs to your app from
 
 ![750w_BottomEdge_Dekko3](https://assets.ubuntu.com/v1/792099e5-750w_BottomEdge_Dekko3.png)
 
-## Quick access to new content
-
--  [Overview ›](#overview)
-
--  [Use cases ›](#use-cases)
-
--  [Hints ›](#hints)
-
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-The  [BottomEdge API](../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [BottomEdge API](../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.|
+|-----|-----|
 
 ## Overview
 
 The bottom edge allows for a very natural transition through a progressive gesture from the bottom of the screen. The gesture should take logical steps to reach a point of interest for the user. It can provide access to a view via page stack, important actions, or access to app settings and features.
 ![750w_BottomEdge_MainImage](https://assets.ubuntu.com/v1/7a805f7a-750w_BottomEdge_MainImage.png)
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-You can create your own customised bottom edge and add different content depending on the context of your app.  [See ‘Loving the bottom edge’ for more information.](http://design.canonical.com/2014/03/loving-the-bottom-edge/)
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|You can create your own customised bottom edge and add different content depending on the context of your app.  [See ‘Loving the bottom edge’ for more information.](http://design.canonical.com/2014/03/loving-the-bottom-edge/)|
+|-----|-----|
 
 ## Use cases
 
@@ -45,29 +36,29 @@ Use the bottom edge to quickly create or draft new content, such as composing a 
 
 Use the bottom edge to give the user quick access to an app setting or feature, such as setting a new alarm in the Clock app.
 
-![366w_BottomEdge_Clock1 (2)](https://assets.ubuntu.com/v1/c80957d2-366w_BottomEdge_Clock1-2.png)
+![366w_BottomEdge_Clock1-2](https://assets.ubuntu.com/v1/c80957d2-366w_BottomEdge_Clock1-2.png)
 
-![366w_BottomEdge_Clock2 (1)](https://assets.ubuntu.com/v1/1d680866-366w_BottomEdge_Clock2-1.png)
+![366w_BottomEdge_Clock2-1](https://assets.ubuntu.com/v1/1d680866-366w_BottomEdge_Clock2-1.png)
 
 ## Does your app allow the user to add information in a form?
 
 Use the bottom edge to provide quick access to a form, such as adding a new contact or creating a new account.
 
-![366w_BottomEdge_AdditonalInfo1 (1)](https://assets.ubuntu.com/v1/d838401e-366w_BottomEdge_AdditonalInfo1-1.png)
+![366w_BottomEdge_AdditonalInfo1-1](https://assets.ubuntu.com/v1/d838401e-366w_BottomEdge_AdditonalInfo1-1.png)
 
-![366w_BottomEdge_AdditonalInfo2 (1)](https://assets.ubuntu.com/v1/cc091cb4-366w_BottomEdge_AdditonalInfo2-1.png)
+![366w_BottomEdge_AdditonalInfo2-1](https://assets.ubuntu.com/v1/cc091cb4-366w_BottomEdge_AdditonalInfo2-1.png)
 
-![366w_BottomEdge_AdditonalInfo3 (1)](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
+![366w_BottomEdge_AdditonalInfo3-1](https://assets.ubuntu.com/v1/88771047-366w_BottomEdge_AdditonalInfo3-1.png)
 
-![366w_BottomEdge_AdditonalInfo4 (1)](https://assets.ubuntu.com/v1/c5a2ff13-366w_BottomEdge_AdditonalInfo4-1.png)
+![366w_BottomEdge_AdditonalInfo4-1](https://assets.ubuntu.com/v1/c5a2ff13-366w_BottomEdge_AdditonalInfo4-1.png)
 
 ## Does your app allow users to access more views?
 
 You can use the bottom edge to reveal all views or tabs currently open to allows the user to switch between them easily and quickly. For example, the bottom edge in the Browser app reveals all the open tabs the user has open.
 
-![366w_BottomEdge_AccessMoreViews1 (2)](https://assets.ubuntu.com/v1/c350019d-366w_BottomEdge_AccessMoreViews1-2.png)
+![366w_BottomEdge_AccessMoreViews1-2](https://assets.ubuntu.com/v1/c350019d-366w_BottomEdge_AccessMoreViews1-2.png)
 
-![366w_BottomEdge_AccessMoreViews2 (3)](https://assets.ubuntu.com/v1/e6ec7344-366w_BottomEdge_AccessMoreViews2-3.png)
+![366w_BottomEdge_AccessMoreViews2-3](https://assets.ubuntu.com/v1/e6ec7344-366w_BottomEdge_AccessMoreViews2-3.png)
 
 ## Hints
 
@@ -79,7 +70,7 @@ The toolkit provides a hint that consists of two elements: Hint 1 and Hint 2. Th
 When your application is launched for the first time, the user will see a floating icon, known as Hint 1.
 
 ## Hint 2
-![366w_BottomEdge_BehaviourHints1 (1)](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-1.png)
+![366w_BottomEdge_BehaviourHints1-1](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-1.png)
 
 After the user has interacted with Hint 1, the hint will morph to become Hint 2, which contains a label, icon or a combination of the two. Using a label with an icon gives the user more detail of the content it will show.
 
@@ -103,19 +94,19 @@ It is important that your hint label is concise and clear to avoid confusing the
 
 Hint 1 is visible when the user first interacts with your app. By short swiping from Hint 1; Hint 2 starts to replace Hint 1 which then becomes fully visible.
 
-![366w_BottomEdge_Step1UnfoldingHint1 (1)](https://assets.ubuntu.com/v1/0b542b2e-366w_BottomEdge_Step1UnfoldingHint1-1.png)
+![366w_BottomEdge_Step1UnfoldingHint1-1](https://assets.ubuntu.com/v1/0b542b2e-366w_BottomEdge_Step1UnfoldingHint1-1.png)
 
-![366w_BottomEdge_Step1UnfoldingHint2 (1)](https://assets.ubuntu.com/v1/af151c33-366w_BottomEdge_Step1UnfoldingHint2-1.png)
+![366w_BottomEdge_Step1UnfoldingHint2-1](https://assets.ubuntu.com/v1/af151c33-366w_BottomEdge_Step1UnfoldingHint2-1.png)
 
-![366w_BottomEdge_Step1UnfoldingHint3 (1)](https://assets.ubuntu.com/v1/606fd284-366w_BottomEdge_Step1UnfoldingHint3-1.png)
+![366w_BottomEdge_Step1UnfoldingHint3-1](https://assets.ubuntu.com/v1/606fd284-366w_BottomEdge_Step1UnfoldingHint3-1.png)
 
-![366w_BottomEdge_Step1UnfoldingHint4 (1)](https://assets.ubuntu.com/v1/154a894d-366w_BottomEdge_Step1UnfoldingHint4-1.png)
+![366w_BottomEdge_Step1UnfoldingHint4-1](https://assets.ubuntu.com/v1/154a894d-366w_BottomEdge_Step1UnfoldingHint4-1.png)
 
 ## Step 2. Collapsing
 
 Hint 2 is now fully visible; however if the user doesn’t interact with the content or screen for a period time, then Hint 1 it will automatically fade in and replace Hint 2.
 
-![750w_BottomEdge_CollapsingHints (1)](https://assets.ubuntu.com/v1/7e1040d0-750w_BottomEdge_CollapsingHints-1.png)
+![750w_BottomEdge_CollapsingHints-1](https://assets.ubuntu.com/v1/7e1040d0-750w_BottomEdge_CollapsingHints-1.png)
 
 ## Hiding the hint
 

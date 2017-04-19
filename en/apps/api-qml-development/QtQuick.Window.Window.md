@@ -9,7 +9,7 @@ Title: QtQuick.Window.Window
 <p>Creates a new top-level window More...</p>
 <!-- @@@Window -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick.Window 2.2</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com/api//qquickwindow.html">QQuickWindow</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick.Window 2.2</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="QtQuick.Window.md">QtQuick.Window</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

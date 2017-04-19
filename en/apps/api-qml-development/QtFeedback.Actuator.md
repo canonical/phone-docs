@@ -9,7 +9,7 @@ Title: QtFeedback.Actuator
 <p>The Actuator element represents a feedback actuator. More...</p>
 <!-- @@@Actuator -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com/api//qfeedbackactuator.html">QFeedbackActuator</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="QtFeedback.Actuator.md">QtFeedback.Actuator</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

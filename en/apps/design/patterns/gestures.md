@@ -1,18 +1,14 @@
 ---
 Title: Gestures
+table_of_contents: true
 ---
 
 # Gestures
 
 Make the most of Ubuntu’s gestures to establish consistency and familiarity within your application.
 
-![750w_Getsures_MainImage [1)](https://assets.ubuntu.com/v1/b5eb0c4c-750w_Getsures_MainImage-1.png)
+![750w_Getsures_MainImage-1](https://assets.ubuntu.com/v1/b5eb0c4c-750w_Getsures_MainImage-1.png)
 
--  [Edge gesture ›](#edge-gestures)
-
--  [Gestural activities ›](#gestural-activities)
-
--  [Discoverability ›](#discoverability)
 
 ## Edge gestures
 
@@ -49,7 +45,7 @@ Avoid using a stack of screens inside an app itself, because this would confuse 
 Certain gestures are associated with a particular movement of the finger and often come naturally to the user. Functions should map closely to the physical action implied by the gesture, such as flicking through content with one finger.
 
 ## Tap (one finger)
-![gesture_1f_tap (1)](https://assets.ubuntu.com/v1/30dd55e1-gesture_1f_tap-1.png)
+![gesture_1f_tap-1](https://assets.ubuntu.com/v1/30dd55e1-gesture_1f_tap-1.png)
 
 Use to activate a screen element, like a button.
 
@@ -64,7 +60,7 @@ Use to double tap an item or select an area, such as selecting text in a message
 Use to pick up, move and select multiple items.
 
 ## Flick (one finger)
-![gesture_1f_drag-right (1)](https://assets.ubuntu.com/v1/5934dbfa-gesture_1f_drag-right-1.png)
+![gesture_1f_drag-right-1](https://assets.ubuntu.com/v1/5934dbfa-gesture_1f_drag-right-1.png)
 
 Use to scroll in the direction you want the screen to move.
 
@@ -103,13 +99,12 @@ The bottom edge hint comprises of two elements: Hint 1 and Hint 2.
 When your application is launched for the first time, the user will see a floating icon which is known as Hint 1.
 
 ## Hint 2
-![366w_BottomEdge_BehaviourHints1 (2)](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-2.png)
+![366w_BottomEdge_BehaviourHints1-1](https://assets.ubuntu.com/v1/fab43755-366w_BottomEdge_BehaviourHints1-2.png)
 
 After the user has  interacted with Hint 1, the hint will morph to become Hint 2. This hint contains a label, icon or a combinations of the two. By using both a label and an icon it gives the user more detail of the content it will show, such as ‘ + New page’.
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-For more information on the behavior of the bottom edge hint see  [Bottom edge](bottom-edge.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on the behavior of the bottom edge hint see  [Bottom edge](bottom-edge.md).|
+|-----|-----|
 
 ## Instructional overlays
 
@@ -118,10 +113,6 @@ When the user initially opens your app you can guide them through the different 
 The SDK toolkit provides coach marks and tutorials that you can use to illustrate gestures using text and arrows.
 
 The look and feel of an instructional overlay should differ from your UI visual style. Doing this will create a distinction between what is permanently part of the app and what is an initial overlay feature.
-
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-For more information on instructional overlays see Coach Marks (Coming soon).
 
 ## Coach marks
 
@@ -140,4 +131,3 @@ On an environment where the interface may be a little different, a sequence of i
 The bottom edge is highlighted in the left panel with instructional text above it, together with a ‘Next Button to lead the user to the following instruction in the tutorial.
 
 ![750w_Gestures_CoachMarksTablet](https://assets.ubuntu.com/v1/9f9c1af3-750w_Gestures_CoachMarksTablet.png)
-

@@ -1,30 +1,17 @@
 ---
 Title: Core scopes
+table_of_contents: true
 ---
 
 # Core scopes
 
 Take inspiration from how we have structured and designed some of our core scopes.
 
--  [Favoriting ›](#favoriting)
-
--  [Navigation ›](#navigation)
-
--  [Enabling content ›](#enabling-content)
-
--  [Designing layouts ›](#designing-layouts)
-
--  [Categories ›](#categories)
-
--  [Sourcing your scope ›](#sourcing-your-scope)
-
--  [Discover more ›](#discover-more)
-
-##Favoriting
+## Favoriting
 
 The user can choose the scopes they would like to appear on swipe from the App scope (default) by favoriting or unfavoriting.
 
-##Manage screen
+## Manage screen
 
 The user can swipe up from the Bottom Edge to manage their installed scopes. The hint appears at the bottom of every scope page.
 
@@ -32,21 +19,20 @@ The user can swipe up from the Bottom Edge to manage their installed scopes. The
 
 ![unfavourited1](https://assets.ubuntu.com/v1/04575fa3-unfavourited11-567x1024.png)
 
-##Unfavorited scope
+## Unfavorited scope
 
 When unfavorited the whole scope fades away and the scope next on the right appears, where the pagination dots are corrected.
 
-##Favorited scope
+## Favorited scope
 
 Once favorited, the star on the right hand side of the scope header is filled, and the scope appears when the user swipes right from the App scope.
 
 ![today_filled_png1](https://assets.ubuntu.com/v1/073f30a6-today_filled_png12-567x1024.png)
 
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|The user is always able to remove all scopes (except the Apps scope), regardless of the initial scope configuration chosen by the operator.|
+|----|----|
 
-The user is always able to remove all scopes (except the Apps scope), regardless of the initial scope configuration chosen by the operator.
-
-##Navigation
+## Navigation
 
 There are a number of ways to navigate to different views inside a scope.
 
@@ -60,15 +46,14 @@ There are a number of ways to navigate to different views inside a scope.
 
 4. Tap card to preview content – tapping on a card can take the user to a preview screen, where they can take action e.g. ‘Play’ or ‘Open’.
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See more in our  [Navigation](navigation.md) section on how to get the best navigation experience within your scope.|
+|-----|-----|
 
-See more in our  [Navigation](navigation.md) section on how to get the best navigation experience within your scope.
-
-##Enabling content
+## Enabling content
 
 From the settings icon in the scope header, users can enable their geographical location to enable local data, switch certain data feeds on or off, or choose a configuration.
 
-##No data sourced
+## No data sourced
 
 When no data feeds are connected to the scope, the scope will appear bare.
 
@@ -76,7 +61,7 @@ When no data feeds are connected to the scope, the scope will appear bare.
 
 ![settings_today](https://assets.ubuntu.com/v1/b05bfaf5-settings_today1-567x1024.png)
 
-##Settings
+## Settings
 
 From the ‘Settings’ icon in the scope header, the user will be presented with a checklist with the data sources they wish the scope to be fed with.
 
@@ -86,13 +71,11 @@ Once the user goes back to the scope screen, the scope will be automatically fil
 
 ![today](https://assets.ubuntu.com/v1/79520fde-today1-567x1024.png)
 
-![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
+|![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|The header must always have a back button to take the user back to the previous screen, if it is invoked by an aggregator scope or through settings.|
+|----|----|
 
-The header must always have a back button to take the user back to the previous screen, if it is invoked by an aggregator scope or through settings.
-
-![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
-
-See how to implement  [location settings](../api-cpp-current/Location.md) inside your scope in our SDK.
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|See how to implement  [location settings](../api-cpp-current/Location.md) inside your scope in our SDK.|
+|----|----|
 
 ##Designing layouts
 
@@ -120,9 +103,8 @@ Taken from our News scope, this card is used to display a snippet of a news stor
 
 ![example](https://assets.ubuntu.com/v1/fb4cd451-example.png)
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
-
-See more in our  [Components](components.md) section on the different card sizes and layout designs.
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See more in our  [Components](components.md) section on the different card sizes and layout designs.|
+|----|----|
 
 ##Categories
 
@@ -140,9 +122,8 @@ This is an example taken from our NearBy scope, where it shows events in the use
 
 ![nearby](https://assets.ubuntu.com/v1/96bd8412-nearby1.png)
 
-![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
-
-See more in our  [Components](components.md) section on how to structure your categories and how both the category and scope header works.
+|![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See more in our  [Components](components.md) section on how to structure your categories and how both the category and scope header works.|
+|----|----|
 
 ##Sourcing your scope
 
@@ -178,7 +159,7 @@ Scopes can be fed by a range of different content sources; a great example of th
 
 - Nearest parking
 
-![I_am_hungry_png)(https://assets.ubuntu.com/v1/a2ab01cc-I_am_hungry_png1-567x1024.png)
+![I_am_hungry_png](https://assets.ubuntu.com/v1/a2ab01cc-I_am_hungry_png1-567x1024.png)
 
 ##I’m hungry
 

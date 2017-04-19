@@ -38,7 +38,7 @@ Marius Gripsgard | Vojtech Bocek | Marius Gripsgard
 What do you want to do next?
 
   * [Check out the complete list of community-driven ports](https://wiki.ubuntu.com/Touch/Devices)
-  * [Learn how to port Ubuntu to a new device](https://developer.ubuntu.com/en/start/ubuntu-for-devices/porting-new-device)
+  * [Learn how to port Ubuntu to a new device](porting-new-device.md)
   * [Contribute to an existing port](https://webchat.freenode.net/?channels=ubuntu-touch)
 
 ## Previously supported devices

@@ -1,5 +1,6 @@
 ---
 Title: Layouts
+table_of_contents: true
 ---
 
 # Layouts
@@ -8,15 +9,9 @@ Make your app consistent and adaptive across all screen sizes with just one API.
 
 ![750w_Layout_MainImage](https://assets.ubuntu.com/v1/a7a07787-750w_Layout_MainImage.png)
 
--  [Grid unit system ›](#grid-unit-system)
 
--  [Layouts ›](#layouts)
-
--  [Good practice ›](#good-practice)
-
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-The  [Adaptive Layout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) allows you to add multiple columns to a page (under heavy development).
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Adaptive Layout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) allows you to add multiple columns to a page (under heavy development).|
+|-----|-----|
 
 ## Grid Unit System
 
@@ -48,9 +43,8 @@ A mobile device would typically suit a 50 GU-wide virtual portrait screen, becau
 
 ![750w_Layouts_PanelsMusicPortrait](https://assets.ubuntu.com/v1/360dd366-750w_Layouts_PanelsMusicPortrait.png)
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-See the  [design blog](http://design.canonical.com/2015/06/the-grid-system-in-detail/) for developer specifications of Grid Units and layouts.
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|See the  [design blog](http://design.canonical.com/2015/06/the-grid-system-in-detail/) for developer specifications of Grid Units and layouts.|
+|-----|-----|
 
 ## Layouts
 
@@ -82,17 +76,15 @@ On a windowed environment, just like on a tablet, more than one panel can be dis
 
 ![750_Layouts_Panels3](https://assets.ubuntu.com/v1/0f37e2e2-750_Layouts_Panels3.png)
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-Developers can choose to create completely adaptive 2 or 3 panel layouts for desktop if they desire.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers can choose to create completely adaptive 2 or 3 panel layouts for desktop if they desire.|
+|-----|-----|
 
 ## Adaptive layout
 
 Use the AdaptiveLayout API to display panels in one or more columns from left to right.
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-The  [AdaptiveLayout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) provides a flexible way of viewing a stack of pages in one or more columns. Unlike in PageStack, there can be more than one Page active at a time, depending on the number of the columns in the view.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The  [AdaptiveLayout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) provides a flexible way of viewing a stack of pages in one or more columns. Unlike in PageStack, there can be more than one Page active at a time, depending on the number of the columns in the view.|
+|-----|-----|
 
 Changing the size of the window resizes one or more joined panels. Typically, the right-most panel resizes and the left-most panel maintains its original dimensions. The dimensions of the right-most panel will normally be 40 or 50 grid units; though this panel may itself be resizable depending on the developer’s requirements.
 
@@ -106,7 +98,6 @@ The panel that is defined as the main panel (for example 50GU) will initially be
 
 ## Use a fixed panel
 
-![750w_Layouts_GoodPractice)(https://assets.ubuntu.com/v1/00e8f48f-750w_Layouts_GoodPractice.png)
+![750w_Layouts_GoodPractice](https://assets.ubuntu.com/v1/00e8f48f-750w_Layouts_GoodPractice.png)
 
 To provide a consistent user experience across the whole platform leave at least one of the panels fixed at a minimum size of either 50 or 40GU inside each screen size. This creates a familiar experience from mobile, tablet and desktop.
-

@@ -8,9 +8,8 @@ The toolkit provides a ScrollView component that allows users to scroll content 
 
 ![750w_Scrollbar_MainImage](https://assets.ubuntu.com/v1/3b6f6d0a-750w_Scrollbar_MainImage.png)
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-The  [ScrollView API](../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ScrollView API](../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.|
+|-----|-----|
 
 ## ScrollView vs. Scrollbar APIs
 
@@ -74,9 +73,8 @@ Place any ListView API inside a ScrollView to present a scrollbar when items hav
 
 ![366w_Scrollbar_List](https://assets.ubuntu.com/v1/312f5973-366w_Scrollbar_List.png)
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](list-items.md) for more guidance on using lists inside your application.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](list-items.md) for more guidance on using lists inside your application.|
+|-----|-----|
 
 ## Scrolling within a text field
 

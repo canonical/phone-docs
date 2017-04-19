@@ -266,7 +266,7 @@ notification to be given to the user, and has the following fields:
  * **actions**: If empty (the default), a bubble notification is non-clickable. If you add a
 URL, then bubble notifications are clickable and launch that URL. One use for
 this is using a URL like `appid://com.ubuntu.developer.ralsina.hello/hello/current-user-version` which
-will switch to the app or launch it if it's not running. See the [URLDispatcher guide](https://developer.ubuntu.com/en/apps/platform/guides/url-dispatcher-guide/) for more information.
+will switch to the app or launch it if it's not running. See the [URLDispatcher guide](url-dispatcher-guide.md) for more information.
  * **icon**: An icon relating to the event being notified. Defaults to empty (no icon); a secondary icon relating to the application will be shown as well, regardless of this field.
  * **timestamp**: Seconds since the unix epoch, only used for persist (for now). If zero or
 unset, defaults to current timestamp.

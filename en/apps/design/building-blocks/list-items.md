@@ -1,50 +1,34 @@
 ---
 Title: List items
+table_of_contents: true
 ---
 
 # List items
 
 List items can be used to make up a list of ordered scrollable items that are related to each other.
 
-![750w_ListItems_MainImage [1)](https://assets.ubuntu.com/v1/12134b24-750w_ListItems_MainImage-1.png)
+![750w_ListItems_MainImage-1)](https://assets.ubuntu.com/v1/12134b24-750w_ListItems_MainImage-1.png)
 
-## A list of emails
-
--  [Overview ›](#overview)
-
--  [Contextual actions for list items ›](#contextual-actions-for-list-items)
-
--  [Lists in edit mode ›](#lists-in-edit-mode)
-
--  [Structure ›](#structure)
-
--  [Actions ›](#actions)
-
--  [Communicating feedback ›](#communicating-feedback)
-
--  [List item layouts ›](#list-item-layouts)
-
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.|
+|-----|-----|
 
 ## Overview
 
 Lists are displayed in a single column layout and are made up of items that can contain one or more controls. Items should be grouped together in a logical way that makes sense to the user.
 
 ## Items in a form
-![366w_ListItems_UseCases1 (2)](https://assets.ubuntu.com/v1/afc631f2-366w_ListItems_UseCases1-2.png)
+![366w_ListItems_UseCases1-1](https://assets.ubuntu.com/v1/afc631f2-366w_ListItems_UseCases1-2.png)
 
 ## A list of settings
-![366w_ListItems_UseCases2 (2)](https://assets.ubuntu.com/v1/2903062e-366w_ListItems_UseCases2-2.png)
+![366w_ListItems_UseCases2-1](https://assets.ubuntu.com/v1/2903062e-366w_ListItems_UseCases2-2.png)
 
 ## Use appropriately to the content
-![366w_ListItems_ImageList (1)](https://assets.ubuntu.com/v1/755e0c6f-366w_ListItems_ImageList-1.png)
+![366w_ListItems_ImageList-1](https://assets.ubuntu.com/v1/755e0c6f-366w_ListItems_ImageList-1.png)
 
 When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery.
 
 ## Use search function
-![366w_ListItems_UseCaseSearchFunction (2)](https://assets.ubuntu.com/v1/a9e74185-366w_ListItems_UseCaseSearchFunction-2.png)
+![366w_ListItems_UseCaseSearchFunction-1](https://assets.ubuntu.com/v1/a9e74185-366w_ListItems_UseCaseSearchFunction-2.png)
 
 Consider adding a search function for lists that are likely to contain a large number of items, in order for the users to quickly search a particular item.
 
@@ -56,7 +40,7 @@ Touch and pointer interactions perform the same functions across convergent devi
 
 The actions are placed within two categories: leading for negative actions and trailing for positive actions. Grouping actions into positive and negative areas inside your list items will reinforce familiarity inside your app; allowing users to find and identify important actions easily.
 
-![366w_ListItems_ContextualActions1 (3)](https://assets.ubuntu.com/v1/f0bff2bc-366w_ListItems_ContextualActions1-3.png)
+![366w_ListItems_ContextualActions1-3](https://assets.ubuntu.com/v1/f0bff2bc-366w_ListItems_ContextualActions1-3.png)
 
 ## Touch – Leading action
 
@@ -68,7 +52,7 @@ Swipe left to right
 
 Swipe right to left
 
-![366w_ListItems_ContextualActionsPointer (3)](https://assets.ubuntu.com/v1/ffb1c374-366w_ListItems_ContextualActionsPointer-3.png)
+![366w_ListItems_ContextualActionsPointer-3](https://assets.ubuntu.com/v1/ffb1c374-366w_ListItems_ContextualActionsPointer-3.png)
 
 ## Pointer
 
@@ -88,9 +72,9 @@ You can use edit mode to allow users to multi-select, rearrange or delete items 
 
 ## Use case
 
-![366w_ListItems_ListEditMode1 (4)](https://assets.ubuntu.com/v1/03e5997a-366w_ListItems_ListEditMode1-4.png)
+![366w_ListItems_ListEditMode1-1](https://assets.ubuntu.com/v1/03e5997a-366w_ListItems_ListEditMode1-4.png)
 
-![366w_ListItems_ListEditMode2 (3)](https://assets.ubuntu.com/v1/880961a6-366w_ListItems_ListEditMode2-3.png)
+![366w_ListItems_ListEditMode2-1](https://assets.ubuntu.com/v1/880961a6-366w_ListItems_ListEditMode2-3.png)
 
 ## Edit contacts
 
@@ -102,9 +86,8 @@ In the Contacts app for example, the list of contacts is made editable to allow 
 
 3. The header changes to reveal editing actions, and the header section is replaced with a toolbar underneath the main header with further editing actions.
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-For more information about how edit mode is used see  [Header](header.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information about how edit mode is used see  [Header](header.md).|
+|-----|-----|
 
 ## Structure
 
@@ -130,13 +113,12 @@ List items must always contain at least one slot.
 
 If your list item allows for navigation through to an associated view, then a ProgressionSlot (chevron) is used in a fixed position in the right-most slot. No other actions is displayed in this slot, because this would conflict with the chevron navigation.
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ProgressionSlot API](../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.|
+|-----|-----|
 
-The  [ProgressionSlot API](../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
+![366w_ListItems_Chevron1-1](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)
 
-![366w_ListItems_Chevron1 (4)](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)
-
-![366w_ListItems_Chevron2 (3)](https://assets.ubuntu.com/v1/912aaefd-366w_ListItems_Chevron2-3.png)
+![366w_ListItems_Chevron2-1](https://assets.ubuntu.com/v1/912aaefd-366w_ListItems_Chevron2-3.png)
 
 ## Content
 
@@ -154,9 +136,8 @@ Text is always aligned according to the currently displayed language. For exampl
 
 3. 2 lines – Summary
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-Developers are free to override the maximum amount lines for each label. See the  [Label API](../api-qml-current/Ubuntu.Components.Label.md) for more information.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers are free to override the maximum amount lines for each label. See the  [Label API](../api-qml-current/Ubuntu.Components.Label.md) for more information.|
+|-----|-----|
 
 ## Actions
 
@@ -168,7 +149,7 @@ The primary action is the main action you want a user to perform.
 
 A secondary action is an action the user may wish to perform instead of the primary action.
 
-![750w_ListItems_1action2action (3)](https://assets.ubuntu.com/v1/b861e52d-750w_ListItems_1action2action-3.png)
+![750w_ListItems_1action2action-1](https://assets.ubuntu.com/v1/b861e52d-750w_ListItems_1action2action-3.png)
 
 ## One action
 
@@ -186,9 +167,8 @@ Primary action: call using tap or click on the dial action.
 
 Secondary action: message using tap or click on the message action icon.
 
-![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-Avoid creating visual noise by repeatedly using additional actions in list items.
+|![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Avoid creating visual noise by repeatedly using additional actions in list items.|
+|-----|-----|
 
 ## Touch regions
 
@@ -196,9 +176,9 @@ Tapping anywhere in the list item should perform the primary action. The seconda
 
 For example, user will expect to tap on the contact name or call button (primary action) to call a contact. The secondary action would be to message the contact using the message action icon.
 
-![366w_ListItems_ActionsPrimary (1)](https://assets.ubuntu.com/v1/7ab1c77d-366w_ListItems_ActionsPrimary-1.png)
+![366w_ListItems_ActionsPrimary-1](https://assets.ubuntu.com/v1/7ab1c77d-366w_ListItems_ActionsPrimary-1.png)
 
-![366w_ListItems_ActionsSecondary (1)](https://assets.ubuntu.com/v1/a70a0b6c-366w_ListItems_ActionsSecondary-1.png)
+![366w_ListItems_ActionsSecondary-1](https://assets.ubuntu.com/v1/a70a0b6c-366w_ListItems_ActionsSecondary-1.png)
 
 Primary action – call
 
@@ -214,9 +194,9 @@ You can use a slot to communicate if something has changed within a list item. F
 
 If a list item needs to provide feedback from an associated action, then the list item should not be used to communicate this.
 
-![366w_ListItems_CommunicatingFeedback1 (1)](https://assets.ubuntu.com/v1/7c36aac8-366w_ListItems_CommunicatingFeedback1-1.png)
+![366w_ListItems_CommunicatingFeedback1-1](https://assets.ubuntu.com/v1/7c36aac8-366w_ListItems_CommunicatingFeedback1-1.png)
 
-![366w_ListItems_CommunicatingFeedback2 (1)](https://assets.ubuntu.com/v1/9c48008e-366w_ListItems_CommunicatingFeedback2-1.png)
+![366w_ListItems_CommunicatingFeedback2-1](https://assets.ubuntu.com/v1/9c48008e-366w_ListItems_CommunicatingFeedback2-1.png)
 
 In System Settings if a user has tried to connect to another device using Bluetooth and no device has been found, a text label within the view is used to indicate feedback.
 
@@ -230,11 +210,10 @@ The toolkit provides a number of layouts when creating a list item to ensure use
 
 - The maximum number of slots is four.
 
-![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
+|![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|You can place what you wish inside the slots. However, these recommendations take into consideration cognitive familiarity to provide a clean and minimalist look.|
+|-----|-----|
 
-You can place what you wish inside the slots. However, these recommendations take into consideration cognitive familiarity to provide a clean and minimalist look.
-
-![366w_ListItems_OneSlotSmall (2)](https://assets.ubuntu.com/v1/26479ed7-366w_ListItems_OneSlotSmall-2.png)
+![366w_ListItems_OneSlotSmall-1](https://assets.ubuntu.com/v1/26479ed7-366w_ListItems_OneSlotSmall-2.png)
 
 ## One slot
 
@@ -242,17 +221,16 @@ You can place what you wish inside the slots. However, these recommendations tak
 
 ## Two slot
 
-![366w_ListItems_ThreeSlotSmall2 (1)](https://assets.ubuntu.com/v1/0ef2a52e-366w_ListItems_ThreeSlotSmall2-1.png)
+![366w_ListItems_ThreeSlotSmall2-1](https://assets.ubuntu.com/v1/0ef2a52e-366w_ListItems_ThreeSlotSmall2-1.png)
 
 ## Three slot
 
-![366w_ListItems_FourSlotSmall2 (1)](https://assets.ubuntu.com/v1/c161036d-366w_ListItems_FourSlotSmall2-1.png)
+![366w_ListItems_FourSlotSmall2-1](https://assets.ubuntu.com/v1/c161036d-366w_ListItems_FourSlotSmall2-1.png)
 
 ## Four slot
 
-![no alt text)(https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.
+|![no alt text)(https://assets.ubuntu.com/v1/75f60d24-link_external.png)|Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.|
+|-----|-----|
 
 ## Avoid cluttered list items
 ![366w_ListItems_FourSlotBad](https://assets.ubuntu.com/v1/b340de77-366w_ListItems_FourSlotBad.png)

@@ -26,11 +26,11 @@ Continue through the wizard by picking:
 
 ![](../../../media/qml-tutorial-c-backend-screenshot3.png)
 
-  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](https://developer.ubuntu.com/en/start/platform/guides/frameworks/)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
+  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](../..//platform/guides/frameworks.md)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
 
 ![](../../../media/qml-tutorial-c-backend-screenshot4.png)
 
-  * A [kit](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
+  * A [kit](../../platform/sdk/tutorials-click-targets-and-device-kits.md) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
 
 
 ### Template files

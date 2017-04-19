@@ -69,4 +69,3 @@ Write and package new software or fix bugs in existing software. Write apps on Q
 Help produce official documentation, share the solution to a problem, or check, proof and test other documents for accuracy.
 
 [Improve and assist with documentation ›](http://community.ubuntu.com/contribute/documentation/)
-
