@@ -60,7 +60,7 @@ We provide a set of several elements that you can use to change the look of your
 
 - Page header navigation background
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To get inspired why not check out how the branded SoundCloud scope was created in this handy  [tutorial](..//tutorials/write-a-json-scope-in-cpp.md), or simply flick through the default scopes on your Ubuntu device.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To get inspired why not check out how the branded SoundCloud scope was created in this handy  [tutorial](../tutorials/write-a-json-scope-in-cpp.md), or simply flick through the default scopes on your Ubuntu device.|
 |----|----|
 
 |![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See where each header component can sit in our  [Component](components.md) section.|

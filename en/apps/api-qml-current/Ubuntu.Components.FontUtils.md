@@ -23,14 +23,14 @@ Title: Ubuntu.Components.FontUtils
 <p>Example of a Label implementation which uses the default base scale for the font size:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Text.md">Text</a></span> {
+<span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 property <span class="type">string</span> <span class="name">fontSize</span>: <span class="string">&quot;medium&quot;</span>
 <span class="name">font</span>.pixelSize: <span class="name">FontUtils</span>.<span class="name">sizeToPixels</span>(<span class="name">fontSize</span>)
 }</pre>
 <p>Another example of a custom text input component exposing a fontSize property and a base font unit size to scale its font:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a></span> {
+<span class="type"><a href="QtQuick.TextInput.md">TextInput</a></span> {
 property <span class="type">string</span> <span class="name">fontSize</span>: <span class="string">&quot;small&quot;</span>
 property <span class="type">int</span> <span class="name">baseFontUnits</span>: <span class="name">units</span>.<span class="name">dp</span>(<span class="number">20</span>)
 <span class="name">font</span>.pixelSize: <span class="name">FontUtils</span>.<span class="name">modularScale</span>(<span class="name">fontSize</span>) <span class="operator">*</span> <span class="name">units</span>.<span class="name">dp</span>(<span class="name">baseFontUnits</span>)

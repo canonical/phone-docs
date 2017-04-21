@@ -18,7 +18,7 @@ Title: Ubuntu.Components.StyleHints
 <!-- $$$StyleHints-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">StyleHints</a> is a custom parser, meaning style properties can be listed without any property declaration, same way as in <a href="../sdk-14.10/QtQuick.PropertyChanges.md">PropertyChanges</a> or Connections, which are similar custom parsers. Properties enumerated do not have to be present in the component's style as default, behavior which can be chenged by setting <a href="#ignoreUnknownProperties-prop">ignoreUnknownProperties</a> to true. In this case properties not found in the style will be displayed as warnings.</p>
+<p><a href="index.html">StyleHints</a> is a custom parser, meaning style properties can be listed without any property declaration, same way as in <a href="QtQuick.PropertyChanges.md">PropertyChanges</a> or Connections, which are similar custom parsers. Properties enumerated do not have to be present in the component's style as default, behavior which can be chenged by setting <a href="#ignoreUnknownProperties-prop">ignoreUnknownProperties</a> to true. In this case properties not found in the style will be displayed as warnings.</p>
 <p>In the following example the Button will be drawn as white when not pressed, and colored as blue when pressed.</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">id</span>: <span class="name">button</span>

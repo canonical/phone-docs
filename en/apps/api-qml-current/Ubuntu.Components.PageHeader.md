@@ -39,7 +39,7 @@ Title: Ubuntu.Components.PageHeader
 <!-- @@@PageHeader -->
 <h2>Property Documentation</h2>
 <!-- $$$contents -->
-<table class="qmlname"><tr valign="top" id="contents-prop"><td class="tblQmlPropNode"><p><span class="name">contents</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The contents item to display in the header. By default the contents is undefined, and setting it will disable showing of the title and subtitle.</p>
+<table class="qmlname"><tr valign="top" id="contents-prop"><td class="tblQmlPropNode"><p><span class="name">contents</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The contents item to display in the header. By default the contents is undefined, and setting it will disable showing of the title and subtitle.</p>
 <p>Example:</p>
 <pre class="qml"><span class="type"><a href="index.html">PageHeader</a></span> {
 <span class="name">id</span>: <span class="name">header</span>
@@ -57,7 +57,7 @@ Title: Ubuntu.Components.PageHeader
 <!-- @@@contents -->
 <br/>
 <!-- $$$extension -->
-<table class="qmlname"><tr valign="top" id="extension-prop"><td class="tblQmlPropNode"><p><span class="name">extension</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Item shown at the bottom of the header. The extension can be any Item, but it must have a height so that the <a href="index.html">PageHeader</a> correctly adjusts its height for the extension to fit. The extension Item should anchor to the left, right and bottom of its parent so that it will be automatically positioned above the header divider. This property replaces the sections property. Sections can now be added to the header as follows:</p>
+<table class="qmlname"><tr valign="top" id="extension-prop"><td class="tblQmlPropNode"><p><span class="name">extension</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Item shown at the bottom of the header. The extension can be any Item, but it must have a height so that the <a href="index.html">PageHeader</a> correctly adjusts its height for the extension to fit. The extension Item should anchor to the left, right and bottom of its parent so that it will be automatically positioned above the header divider. This property replaces the sections property. Sections can now be added to the header as follows:</p>
 <pre class="qml"><span class="type"><a href="index.html">PageHeader</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Header with sections&quot;</span>
 <span class="name">extension</span>: <span class="name">Sections</span> {

@@ -49,7 +49,7 @@ qDebug() <span class="operator">&lt;</span><span class="operator">&lt;</span> <s
 searchReply<span class="operator">-</span><span class="operator">&gt;</span>deleteLater();  <span class="comment">//discard reply</span>
 searchReply <span class="operator">=</span> <span class="number">0</span>;
 }</pre>
-<p><b>Note:</b> Depending upon the plugin backend that was chosen, the search results may contain places which have further details that can be fetched on a place by place basis. To fetch these other details see <a href="..//QtLocation.location-places-cpp.md#fetching-place-details">Fetching Place Details</a>.</p>
+<p><b>Note:</b> Depending upon the plugin backend that was chosen, the search results may contain places which have further details that can be fetched on a place by place basis. To fetch these other details see <a href="QtLocation.location-places-cpp.md#fetching-place-details">Fetching Place Details</a>.</p>
 <h4 >Recommendations</h4>
 <p>Recommendations can be retrieved by supplying a place id via QPlaceSearchRequest::setRecommendationId(). Any places similar to the given place are retrieved.</p>
 <h4 >Paging</h4>
@@ -156,7 +156,7 @@ savePlaceReply <span class="operator">=</span> <span class="number">0</span>;
 <li>categories (tag-like names to describe a place)</li>
 <li>visibility scope</li>
 </ul>
-<p>It is possible that providers may only support a subset of these. See the <a href="..//QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin documentation</a> for more details.</p>
+<p>It is possible that providers may only support a subset of these. See the <a href="QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin documentation</a> for more details.</p>
 <p>Saving of properties such as the rating, extended attributes, images, reviews, editorials and supplier is explicitly not supported by the Places API.</p>
 <h4 >Saving Between Managers</h4>
 <p>When saving places between managers, there are a few things to be aware of. Some fields of a place such as the id, categories and icons are manager specific entities for example the categories in one manager may not be recognized in another. Therefore trying to save a place directly from one manager to another is not possible.</p>

@@ -74,7 +74,7 @@ Once the user goes back to the scope screen, the scope will be automatically fil
 |![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|The header must always have a back button to take the user back to the previous screen, if it is invoked by an aggregator scope or through settings.|
 |----|----|
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|See how to implement  [location settings](../api-cpp-current/Location.md) inside your scope in our SDK.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|See how to implement  [location settings](../api-cpp-current/unity.scopes.Location.md) inside your scope in our SDK.|
 |----|----|
 
 ##Designing layouts

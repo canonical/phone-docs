@@ -24,7 +24,7 @@ development tutorials.
 
 Functional or acceptance tests help ensure your application behaves properly
 from a user perspective. The tests seek to mimic the user as closely as
-possible. Acceptance tests are the pinnacle of the [testing pyramid](../scopes/tutorials/scopes-unit-testing.md). The
+possible. Acceptance tests are the pinnacle of the [testing pyramid](../../scopes/tutorials/scopes-unit-testing.md). The
 testing pyramid describes the three levels of testing an application, going
 from low level tests at the bottom and increasing to high level tests at the
 top. As acceptance tests are the highest level, they will represent the
@@ -52,7 +52,7 @@ this by driving a browser and providing programmatic access to it.
 
 Before you can run a testcase, you’ll need to setup your environment.
 
-  * Create a test class that inherits [AutopilotTestCase](../api-autopilot-current/autopilot.testcase.AutopilotTestCase/#autopilot.testcase.AutopilotTestCase)
+  * Create a test class that inherits [AutopilotTestCase](../api-autopilot-current/autopilot.testcase.AutopilotTestCase.md)
   * Define your `Setup()` and `TearDown()` functions
   * Launch the application with introspection via `launch_test_application`
 
@@ -140,7 +140,7 @@ Fortunately selenium also makes it easy to find and introspect objects. You
 can issue a find by id, name, path, link, tag, class, and css! You can also
 find multiple elements by most of the same attributes.
 
-You can read more about finding elements in the [Selenium documentation](http://selenium-python.readthedocs.org/en/latest/locating-elements.html#locating-elements).
+You can read more about finding elements in the [Selenium documentation](http://selenium-python.readthedocs.io/locating-elements.html).
 
 Once you have found an element you can interact with it by reading its
 properties or performing an action. Let’s talk about each one.
@@ -190,12 +190,12 @@ def test_click_button(self):
         actions.perform()
 ```
 
-To find out about other useful methods, check out the [Actions Chain documentation](http://selenium-python.readthedocs.org/en/latest/api.html#module-selenium.webdriver.common.action_chains).
+To find out about other useful methods, check out the [Actions Chain documentation](http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.common.action_chains).
 
 ## Assertions and Expectations
 
 In addition to the suite of assertions that autopilot has, selenium allows for
-you to create expectations about elements. These are called [expected conditions](http://selenium-python.readthedocs.org/en/latest/api.html#module-selenium.webdriver.support.expected_conditions). For example, we could wait for an element to be clickable before clicking on it.
+you to create expectations about elements. These are called [expected conditions](http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.support.expected_conditions). For example, we could wait for an element to be clickable before clicking on it.
 
 ```wait.until(expected_conditions.element_to_be_clickable(By.class("ubuntu")))```
 
@@ -205,7 +205,7 @@ When you are architecting your test suite, it’s important to think about
 design. Functional tests are the most UI sensitive testcases in your project
 and are more likely to break than lower level tests. To address this issue,
 the page object model can guide you towards writing tests that can scale and
-deal with changes over time easily. Check out the [Page ObjectModel](../apps/api-autopilot-current/guides-page_object/) for more information.
+deal with changes over time easily. Check out the [Page ObjectModel](../api-autopilot-current/guides-page_object.md) for more information.
 
 ## Conclusion
 
@@ -215,6 +215,6 @@ HTML5 tests. Check out the links below for more documentation and help.
 
 ### Resources
 
- * [Autopilot API](../apps/api-autopilot-current/)
- * [Selenium Webdriver API](http://selenium-python.readthedocs.org/en/latest/api.html)
- * [HTML5 SDK documentation](../api.md)
+ * [Autopilot API](../api-autopilot-current/index.md)
+ * [Selenium Webdriver API](http://selenium-python.readthedocs.io/api.html)
+ * [HTML5 SDK documentation](api.md)

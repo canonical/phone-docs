@@ -100,10 +100,10 @@ project, you can use it for building, as long as the project is configured
 using cmake.
 
   * Open **Build and Run Kit Selector** which can be found in the vertical left pane, as well as **Build** > **Open Build and Run Kit Selector**.
-    * Ensure the armhf click build target is selected. ![](../../../../media/sdk-select-armhf-target.png)
+    * Ensure the armhf click build target is selected. ![](../../../media/sdk-select-armhf-target.png)
   * Open the **Publish** tab located in the vertical pane on the left.
   * Click **Create package**.
-  * The created click package will be placed to the build directory of the project. The exact path to the click package is logged in the "Compilet output" logs in Edit mode. One might need to scroll up few pages. ![](../../../../media/sdk-click-package-completed.png)
+  * The created click package will be placed to the build directory of the project. The exact path to the click package is logged in the "Compilet output" logs in Edit mode. One might need to scroll up few pages. ![](../../../media/sdk-click-package-completed.png)
 
 The Ubuntu SDK should utilize the target we created earlier to produce a build
 for armhf devices. You can deploy your application to your tablet, phone or
@@ -120,7 +120,7 @@ inside your build directory. To verify the click package was built correctly:
   * Navigate to the package you built, and open it.
   * Check the output for warnings and error messages
 
-![](../../../../media/validate-click.png)
+![](../../../media/validate-click.png)
 
 To verify the package has been compiled properly:
 

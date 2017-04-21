@@ -13,30 +13,30 @@ Title: QtLocation.Plugin
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#allowExperimental-prop">allowExperimental</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#availableServiceProviders-prop">availableServiceProviders</a></b></b> : stringlist</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#isAttached-prop">isAttached</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#locales-prop">locales</a></b></b> : stringlist</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#parameters-prop">parameters</a></b></b> : list&lt;PluginParameter&gt;</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#preferred-prop">preferred</a></b></b> : stringlist</li>
-<li class="fn"><b><b><a href="..//QtLocation.Plugin.md#required-prop">required</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#allowExperimental-prop">allowExperimental</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#availableServiceProviders-prop">availableServiceProviders</a></b></b> : stringlist</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#isAttached-prop">isAttached</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#locales-prop">locales</a></b></b> : stringlist</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#parameters-prop">parameters</a></b></b> : list&lt;PluginParameter&gt;</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#preferred-prop">preferred</a></b></b> : stringlist</li>
+<li class="fn"><b><b><a href="QtLocation.Plugin.md#required-prop">required</a></b></b> : enumeration</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">bool <b><b><a href="..//QtLocation.Plugin.md#supportsGeocoding-method">supportsGeocoding</a></b></b>(GeocodingFeatures <i>features</i>)</li>
-<li class="fn">bool <b><b><a href="..//QtLocation.Plugin.md#supportsMapping-method">supportsMapping</a></b></b>(MappingFeatures <i>features</i>)</li>
-<li class="fn">bool <b><b><a href="..//QtLocation.Plugin.md#supportsPlaces-method">supportsPlaces</a></b></b>(PlacesFeatures <i>features</i>)</li>
-<li class="fn">bool <b><b><a href="..//QtLocation.Plugin.md#supportsRouting-method">supportsRouting</a></b></b>(RoutingFeatures <i>features</i>)</li>
+<li class="fn">bool <b><b><a href="QtLocation.Plugin.md#supportsGeocoding-method">supportsGeocoding</a></b></b>(GeocodingFeatures <i>features</i>)</li>
+<li class="fn">bool <b><b><a href="QtLocation.Plugin.md#supportsMapping-method">supportsMapping</a></b></b>(MappingFeatures <i>features</i>)</li>
+<li class="fn">bool <b><b><a href="QtLocation.Plugin.md#supportsPlaces-method">supportsPlaces</a></b></b>(PlacesFeatures <i>features</i>)</li>
+<li class="fn">bool <b><b><a href="QtLocation.Plugin.md#supportsRouting-method">supportsRouting</a></b></b>(RoutingFeatures <i>features</i>)</li>
 </ul>
 <!-- $$$Plugin-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The Plugin type is used to declaratively specify which available GeoServices plugin should be used for various tasks in the Location API. Plugins are used by <a href="..//QtLocation.Map.md">Map</a>, <a href="..//QtLocation.RouteModel.md">RouteModel</a>, and <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> types, as well as a variety of others.</p>
-<p>Plugins recognized by the system have a <a href="..//QtLocation.Plugin.md#name-prop">name</a> property, a simple string normally indicating the name of the service that the Plugin retrieves data from. They also have a variety of features, which can be test for using the <a href="..//QtLocation.Plugin.md#supportsRouting-method">supportsRouting()</a>, <a href="..//QtLocation.Plugin.md#supportsGeocoding-method">supportsGeocoding()</a>, <a href="..//QtLocation.Plugin.md#supportsMapping-method">supportsMapping()</a> and <a href="..//QtLocation.Plugin.md#supportsPlaces-method">supportsPlaces()</a> methods.</p>
-<p>When a Plugin object is created, it is &quot;detached&quot; and not associated with any actual service plugin. Once it has received information via setting its <a href="..//QtLocation.Plugin.md#name-prop">name</a>, <a href="..//QtLocation.Plugin.md#preferred-prop">preferred</a>, or <a href="..//QtLocation.Plugin.md#required-prop">required</a> properties, it will choose an appropriate service plugin to attach to. Plugin objects can only be attached once; to use multiple plugins, create multiple Plugin objects.</p>
+<p>The Plugin type is used to declaratively specify which available GeoServices plugin should be used for various tasks in the Location API. Plugins are used by <a href="QtLocation.Map.md">Map</a>, <a href="QtLocation.RouteModel.md">RouteModel</a>, and <a href="QtLocation.GeocodeModel.md">GeocodeModel</a> types, as well as a variety of others.</p>
+<p>Plugins recognized by the system have a <a href="QtLocation.Plugin.md#name-prop">name</a> property, a simple string normally indicating the name of the service that the Plugin retrieves data from. They also have a variety of features, which can be test for using the <a href="QtLocation.Plugin.md#supportsRouting-method">supportsRouting()</a>, <a href="QtLocation.Plugin.md#supportsGeocoding-method">supportsGeocoding()</a>, <a href="QtLocation.Plugin.md#supportsMapping-method">supportsMapping()</a> and <a href="QtLocation.Plugin.md#supportsPlaces-method">supportsPlaces()</a> methods.</p>
+<p>When a Plugin object is created, it is &quot;detached&quot; and not associated with any actual service plugin. Once it has received information via setting its <a href="QtLocation.Plugin.md#name-prop">name</a>, <a href="QtLocation.Plugin.md#preferred-prop">preferred</a>, or <a href="QtLocation.Plugin.md#required-prop">required</a> properties, it will choose an appropriate service plugin to attach to. Plugin objects can only be attached once; to use multiple plugins, create multiple Plugin objects.</p>
 <h3 >Example Usage</h3>
-<p>The following snippet shows a Plugin object being created with the <a href="..//QtLocation.Plugin.md#required-prop">required</a> and <a href="..//QtLocation.Plugin.md#preferred-prop">preferred</a> properties set. This Plugin will attach to the first plugin found plugin that supports both mapping and geocoding, and will prefer plugins named &quot;nokia&quot; or &quot;foo&quot; to any others.</p>
+<p>The following snippet shows a Plugin object being created with the <a href="QtLocation.Plugin.md#required-prop">required</a> and <a href="QtLocation.Plugin.md#preferred-prop">preferred</a> properties set. This Plugin will attach to the first plugin found plugin that supports both mapping and geocoding, and will prefer plugins named &quot;nokia&quot; or &quot;foo&quot; to any others.</p>
 <pre class="cpp">Plugin {
 id: plugin
 preferred: <span class="operator">[</span><span class="string">&quot;nokia&quot;</span><span class="operator">,</span> <span class="string">&quot;foo&quot;</span><span class="operator">]</span>
@@ -49,7 +49,7 @@ required: Plugin<span class="operator">.</span>AnyMappingFeatures <span class="o
 <!-- @@@allowExperimental -->
 <br/>
 <!-- $$$availableServiceProviders -->
-<table class="qmlname"><tr valign="top" id="availableServiceProviders-prop"><td class="tblQmlPropNode"><p><span class="name">availableServiceProviders</span> : <span class="type">stringlist</span></p></td></tr></table><p>This property holds a list of all available service plugins' names. This can be used to manually enumerate the available plugins if the control provided by <a href="..//QtLocation.Plugin.md#name-prop">name</a> and <a href="..//QtLocation.Plugin.md#required-prop">required</a> is not sufficient for your needs.</p>
+<table class="qmlname"><tr valign="top" id="availableServiceProviders-prop"><td class="tblQmlPropNode"><p><span class="name">availableServiceProviders</span> : <span class="type">stringlist</span></p></td></tr></table><p>This property holds a list of all available service plugins' names. This can be used to manually enumerate the available plugins if the control provided by <a href="QtLocation.Plugin.md#name-prop">name</a> and <a href="QtLocation.Plugin.md#required-prop">required</a> is not sufficient for your needs.</p>
 <!-- @@@availableServiceProviders -->
 <br/>
 <!-- $$$isAttached -->
@@ -65,34 +65,34 @@ required: Plugin<span class="operator">.</span>AnyMappingFeatures <span class="o
 <li>country is an uppercase, two- or three-letter, ISO 3166 country code (also &quot;419&quot; as defined by United Nations),</li>
 <li>the &quot;C&quot; locale is identical in behavior to English/UnitedStates as per QLocale</li>
 </ul>
-<p>If the first specified locale cannot be accommodated, the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> falls back to the next and so forth. Some <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> backends may not support a set of locales which are rigidly defined. An arbitrary example is that some <a href="..//QtLocation.location-cpp-qml.md#place">Place</a>'s in France could have French and English localizations, while certain areas in America may only have the English localization available. In the above scenario, the set of supported locales is context dependent on the search location.</p>
-<p>If the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> cannot accommodate any of the preferred locales, the manager falls back to using a supported language that is backend specific.</p>
-<p>For <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a>'s that do not support locales, the locales list is always empty.</p>
+<p>If the first specified locale cannot be accommodated, the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> falls back to the next and so forth. Some <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> backends may not support a set of locales which are rigidly defined. An arbitrary example is that some <a href="QtLocation.location-cpp-qml.md#place">Place</a>'s in France could have French and English localizations, while certain areas in America may only have the English localization available. In the above scenario, the set of supported locales is context dependent on the search location.</p>
+<p>If the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> cannot accommodate any of the preferred locales, the manager falls back to using a supported language that is backend specific.</p>
+<p>For <a href="QtLocation.location-places-qml.md#plugin">Plugin</a>'s that do not support locales, the locales list is always empty.</p>
 <p>The following code demonstrates how to set a single and multiple locales:</p>
 <pre class="qml"><span class="comment">//single locale</span>
-<span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span> {
+<span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span> {
 <span class="name">locales</span>: <span class="string">&quot;en_US&quot;</span>
 }
 <span class="comment">//multiple locales</span>
-<span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span> {
+<span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span> {
 <span class="name">locales</span>: [<span class="string">&quot;fr_FR&quot;</span>,<span class="string">&quot;en_US&quot;</span>]
 }</pre>
 <!-- @@@locales -->
 <br/>
 <!-- $$$name -->
-<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the name of the plugin. Setting this property will cause the Plugin to only attach to a plugin with exactly this name. The value of <a href="..//QtLocation.Plugin.md#required-prop">required</a> will be ignored.</p>
+<table class="qmlname"><tr valign="top" id="name-prop"><td class="tblQmlPropNode"><p><span class="name">name</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the name of the plugin. Setting this property will cause the Plugin to only attach to a plugin with exactly this name. The value of <a href="QtLocation.Plugin.md#required-prop">required</a> will be ignored.</p>
 <!-- @@@name -->
 <br/>
 <!-- $$$parameters -->
-<table class="qmlname"><tr valign="top" id="parameters-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">default</span><span class="name">parameters</span> : <span class="type">list</span>&lt;<span class="type"><a href="..//QtLocation.PluginParameter.md">PluginParameter</a></span>&gt;</p></td></tr></table><p>This property holds the list of plugin parameters.</p>
+<table class="qmlname"><tr valign="top" id="parameters-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">default</span><span class="name">parameters</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtLocation.PluginParameter.md">PluginParameter</a></span>&gt;</p></td></tr></table><p>This property holds the list of plugin parameters.</p>
 <!-- @@@parameters -->
 <br/>
 <!-- $$$preferred -->
-<table class="qmlname"><tr valign="top" id="preferred-prop"><td class="tblQmlPropNode"><p><span class="name">preferred</span> : <span class="type">stringlist</span></p></td></tr></table><p>This property contains an ordered list of preferred plugin names, which will be checked for the required features set in <a href="..//QtLocation.Plugin.md#required-prop">required</a> before any other available plugins are checked.</p>
+<table class="qmlname"><tr valign="top" id="preferred-prop"><td class="tblQmlPropNode"><p><span class="name">preferred</span> : <span class="type">stringlist</span></p></td></tr></table><p>This property contains an ordered list of preferred plugin names, which will be checked for the required features set in <a href="QtLocation.Plugin.md#required-prop">required</a> before any other available plugins are checked.</p>
 <!-- @@@preferred -->
 <br/>
 <!-- $$$required -->
-<table class="qmlname"><tr valign="top" id="required-prop"><td class="tblQmlPropNode"><p><span class="name">required</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property contains the set of features that will be required by the Plugin object when choosing which service plugin to attach to. If the <a href="..//QtLocation.Plugin.md#name-prop">name</a> property is set, this has no effect.</p>
+<table class="qmlname"><tr valign="top" id="required-prop"><td class="tblQmlPropNode"><p><span class="name">required</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property contains the set of features that will be required by the Plugin object when choosing which service plugin to attach to. If the <a href="QtLocation.Plugin.md#name-prop">name</a> property is set, this has no effect.</p>
 <p>Any of the following values or a bitwise combination of multiple values may be set:</p>
 <ul>
 <li>Plugin.NoFeatures</li>

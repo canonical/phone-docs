@@ -8,15 +8,13 @@ Title: unity.scopes.QueryMetadata
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/QueryMetadata.h&gt;</code></p>
 Inheritance diagram for unity::scopes::QueryMetadata:
-<img src="../../../../media/classunity_1_1scopes_1_1_query_metadata__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_query_metadata_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_query_metadata_inherit__map" id="unity_1_1scopes_1_1_query_metadata_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_action_metadata.html" title="Metadata passed to scopes for preview and activation. " alt="" coords="5,80,220,107"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_search_metadata.html" title="Metadata passed with search requests. " alt="" coords="245,80,463,107"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_query_metadata__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Types</h2></td></tr>
-<tr class="memitem:a20eb916661728a7d9c00485e28f88701"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20eb916661728a7d9c00485e28f88701">ConnectivityStatus</a> { <b>Unknown</b>, 
-<b>Connected</b>, 
+<tr class="memitem:a20eb916661728a7d9c00485e28f88701"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20eb916661728a7d9c00485e28f88701">ConnectivityStatus</a> { <b>Unknown</b>,
+<b>Connected</b>,
 <b>Disconnected</b>
 }</td></tr>
 <tr class="memdesc:a20eb916661728a7d9c00485e28f88701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the internet connectivity status.  <a href="#a20eb916661728a7d9c00485e28f88701">More...</a><br /></td></tr>

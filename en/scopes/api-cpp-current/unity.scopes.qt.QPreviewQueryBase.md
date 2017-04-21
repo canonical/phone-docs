@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QPreviewQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QPreviewQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QPreviewQueryBase:
-<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_preview_query_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1qt_1_1_q_preview_query_base_inherit__map" id="unity_1_1scopes_1_1qt_1_1_q_preview_query_base_inherit__map">
 </map>
 <center><span class="legend">[legend]</span></center>

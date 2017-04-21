@@ -16,7 +16,7 @@ In the Ubuntu SDK, simply create a new project using the Unity Scope template.
 
 **File** &gt; **New File or Project** &gt; **Unity Scope**
 
-![](../../../media/apps/sdk/tutorials).
+![](../../../media/platform/sdk/tutorials).
 
 ## Opening a scope project
 
@@ -37,7 +37,7 @@ as follows:
 
   1. `Ctrl+O` to open a file or project (or use the **File** &gt; **Open File and Project** menu).
   2. Navigate to and select the CMakeLists.txt file in the source tree, then click the **Open** button.
-  3. In the **Configure Project** dialog that displays, choose the [devices kits](/apps/sdk/tutorials/click-targets-and-device-kits/) you want your project to be configured for and click the the **Configure Project** button.
+  3. In the **Configure Project** dialog that displays, choose the [devices kits](../../platform/sdk/tutorials-click-targets-and-device-kits.md) you want your project to be configured for and click the the **Configure Project** button.
 
 ![](../../../media/llibMYSCOPE.so`: the scope’s shared object used by clients that call the scope
   * `BUILDDIR/src/llibMYSCOPE.ini`: the file used to launch the scope, as discussed next.
@@ -66,7 +66,7 @@ window, with developer tools to tweak the ways results are rendered.
   * The right half is for development purposes. It allows you to modify the scope in various ways. For example, you can click Override category to edit a Category template that controls how results are displayed.
 
 If you are using an earlier version of Ubuntu, you will need to create an
-emulator from the Devices page or connect an Ubuntu phone via USB. There is a [tutorial for that](/apps/sdk/tutorials/running-apps-from-the-sdk/).
+emulator from the Devices page or connect an Ubuntu phone via USB. There is a [tutorial for that](../../platform/sdk/tutorials-running-apps-from-the-sdk/).
 
 To run a scope from the terminal, simply use unity-scope-tool followed by the
 path to your scope .ini file (which is in src/):

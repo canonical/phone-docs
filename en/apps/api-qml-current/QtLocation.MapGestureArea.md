@@ -13,33 +13,33 @@ Title: QtLocation.MapGestureArea
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#activeGestures-prop">activeGestures</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#enabled-prop">enabled</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#flickDeceleration-prop">flickDeceleration</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#isPanActive-prop">isPanActive</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#isPinchActive-prop">isPinchActive</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#maximumZoomLevelChange-prop">maximumZoomLevelChange</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#panEnabled-prop">panEnabled</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#pinchEnabled-prop">pinchEnabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#activeGestures-prop">activeGestures</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#flickDeceleration-prop">flickDeceleration</a></b></b> : real</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#isPanActive-prop">isPanActive</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#isPinchActive-prop">isPinchActive</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#maximumZoomLevelChange-prop">maximumZoomLevelChange</a></b></b> : real</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#panEnabled-prop">panEnabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#pinchEnabled-prop">pinchEnabled</a></b></b> : bool</li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#flickFinished-signal">flickFinished</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#flickStarted-signal">flickStarted</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#panFinished-signal">panFinished</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#panStarted-signal">panStarted</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a></b></b>(PinchEvent <i>event</i>)</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a></b></b>(PinchEvent <i>event</i>)</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a></b></b>(PinchEvent <i>event</i>)</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#flickFinished-signal">flickFinished</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#flickStarted-signal">flickStarted</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#panFinished-signal">panFinished</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#panStarted-signal">panStarted</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a></b></b>(PinchEvent <i>event</i>)</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a></b></b>(PinchEvent <i>event</i>)</li>
+<li class="fn"><b><b><a href="QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a></b></b>(PinchEvent <i>event</i>)</li>
 </ul>
 <!-- $$$MapGestureArea-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a> objects are used as part of a Map, to provide for panning, flicking and pinch-to-zoom gesture used on touch displays.</p>
-<p>A <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a> is automatically created with a new Map and available with the <a href="..//QtLocation.Map.md#gesture-prop">gesture</a> property. This is the only way to create a <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>, and once created this way cannot be destroyed without its parent Map.</p>
-<p>The two most commonly used properties of the <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a> are the <a href="..//QtLocation.MapGestureArea.md#enabled-prop">enabled</a> and <a href="..//QtLocation.MapGestureArea.md#activeGestures-prop">activeGestures</a> properties. Both of these must be set before a <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a> will have any effect upon interaction with the Map. The <a href="..//QtLocation.MapGestureArea.md#flickDeceleration-prop">flickDeceleration</a> property controls how quickly the map pan slows after contact is released while panning the map.</p>
+<p><a href="QtLocation.MapGestureArea.md">MapGestureArea</a> objects are used as part of a Map, to provide for panning, flicking and pinch-to-zoom gesture used on touch displays.</p>
+<p>A <a href="QtLocation.MapGestureArea.md">MapGestureArea</a> is automatically created with a new Map and available with the <a href="QtLocation.Map.md#gesture-prop">gesture</a> property. This is the only way to create a <a href="QtLocation.MapGestureArea.md">MapGestureArea</a>, and once created this way cannot be destroyed without its parent Map.</p>
+<p>The two most commonly used properties of the <a href="QtLocation.MapGestureArea.md">MapGestureArea</a> are the <a href="QtLocation.MapGestureArea.md#enabled-prop">enabled</a> and <a href="QtLocation.MapGestureArea.md#activeGestures-prop">activeGestures</a> properties. Both of these must be set before a <a href="QtLocation.MapGestureArea.md">MapGestureArea</a> will have any effect upon interaction with the Map. The <a href="QtLocation.MapGestureArea.md#flickDeceleration-prop">flickDeceleration</a> property controls how quickly the map pan slows after contact is released while panning the map.</p>
 <h3 >Performance</h3>
-<p>The <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>, when enabled, must process all incoming touch events in order to track the shape and size of the &quot;pinch&quot;. The overhead added on touch events can be considered constant time.</p>
+<p>The <a href="QtLocation.MapGestureArea.md">MapGestureArea</a>, when enabled, must process all incoming touch events in order to track the shape and size of the &quot;pinch&quot;. The overhead added on touch events can be considered constant time.</p>
 <h3 >Example Usage</h3>
 <p>The following example enables the zoom and pan gestures on the map, but not flicking. So the map scrolling will halt immediately on releasing the mouse button / touch.</p>
 <pre class="cpp">Map {
@@ -51,12 +51,12 @@ gesture<span class="operator">.</span>activeGestures: MapGestureArea<span class=
 <!-- $$$activeGestures -->
 <table class="qmlname"><tr valign="top" id="activeGestures-prop"><td class="tblQmlPropNode"><p><span class="name">activeGestures</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the gestures that will be active. By default the zoom, pan and flick gestures are enabled.</p>
 <ul>
-<li><a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>.NoGesture - Don't support any additional gestures (value: 0x0000).</li>
-<li><a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>.ZoomGesture - Support the map zoom gesture (value: 0x0001).</li>
-<li><a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>.PanGesture - Support the map pan gesture (value: 0x0002).</li>
-<li><a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>.FlickGesture - Support the map flick gesture (value: 0x0004).</li>
+<li><a href="QtLocation.MapGestureArea.md">MapGestureArea</a>.NoGesture - Don't support any additional gestures (value: 0x0000).</li>
+<li><a href="QtLocation.MapGestureArea.md">MapGestureArea</a>.ZoomGesture - Support the map zoom gesture (value: 0x0001).</li>
+<li><a href="QtLocation.MapGestureArea.md">MapGestureArea</a>.PanGesture - Support the map pan gesture (value: 0x0002).</li>
+<li><a href="QtLocation.MapGestureArea.md">MapGestureArea</a>.FlickGesture - Support the map flick gesture (value: 0x0004).</li>
 </ul>
-<p><b>Note: </b>For the time being, only <a href="..//QtLocation.MapGestureArea.md">MapGestureArea</a>.ZoomGesture is supported.</p><!-- @@@activeGestures -->
+<p><b>Note: </b>For the time being, only <a href="QtLocation.MapGestureArea.md">MapGestureArea</a>.ZoomGesture is supported.</p><!-- @@@activeGestures -->
 <br/>
 <!-- $$$enabled -->
 <table class="qmlname"><tr valign="top" id="enabled-prop"><td class="tblQmlPropNode"><p><span class="name">enabled</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds whether the gestures are enabled. Note: disabling gestures during an active gesture does not have effect on the potentially active current gesture.</p>
@@ -112,18 +112,18 @@ gesture<span class="operator">.</span>activeGestures: MapGestureArea<span class=
 <!-- $$$pinchFinished -->
 <table class="qmlname"><tr valign="top" id="pinchFinished-signal"><td class="tblQmlFuncNode"><p><span class="name">pinchFinished</span>(<span class="type">PinchEvent</span><i> event</i>)</p></td></tr></table><p>This signal is emitted at the end of a pinch gesture.</p>
 <p>The corresponding handler is <code>onPinchFinished</code>.</p>
-<p><b>See also </b><a href="..//QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> and <a href="..//QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a>.</p>
+<p><b>See also </b><a href="QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> and <a href="QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a>.</p>
 <!-- @@@pinchFinished -->
 <br/>
 <!-- $$$pinchStarted -->
 <table class="qmlname"><tr valign="top" id="pinchStarted-signal"><td class="tblQmlFuncNode"><p><span class="name">pinchStarted</span>(<span class="type">PinchEvent</span><i> event</i>)</p></td></tr></table><p>This signal is emitted when a pinch gesture is started.</p>
 <p>The corresponding handler is <code>onPinchStarted</code>.</p>
-<p><b>See also </b><a href="..//QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a> and <a href="..//QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a>.</p>
+<p><b>See also </b><a href="QtLocation.MapGestureArea.md#pinchUpdated-signal">pinchUpdated</a> and <a href="QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a>.</p>
 <!-- @@@pinchStarted -->
 <br/>
 <!-- $$$pinchUpdated -->
-<table class="qmlname"><tr valign="top" id="pinchUpdated-signal"><td class="tblQmlFuncNode"><p><span class="name">pinchUpdated</span>(<span class="type">PinchEvent</span><i> event</i>)</p></td></tr></table><p>This signal is emitted as the user's fingers move across the map, after the <a href="..//QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> signal is emitted.</p>
+<table class="qmlname"><tr valign="top" id="pinchUpdated-signal"><td class="tblQmlFuncNode"><p><span class="name">pinchUpdated</span>(<span class="type">PinchEvent</span><i> event</i>)</p></td></tr></table><p>This signal is emitted as the user's fingers move across the map, after the <a href="QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> signal is emitted.</p>
 <p>The corresponding handler is <code>onPinchUpdated</code>.</p>
-<p><b>See also </b><a href="..//QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> and <a href="..//QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a>.</p>
+<p><b>See also </b><a href="QtLocation.MapGestureArea.md#pinchStarted-signal">pinchStarted</a> and <a href="QtLocation.MapGestureArea.md#pinchFinished-signal">pinchFinished</a>.</p>
 <!-- @@@pinchUpdated -->
 <br/>

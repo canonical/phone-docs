@@ -16,7 +16,7 @@ import Ubuntu.Components.Popups 1.3
 <span class="name">applicationName</span>: <span class="string">&quot;subthemed&quot;</span>
 <span class="comment">// make sure the main theme is Ambiance</span>
 <span class="name">theme</span>.name: <span class="string">&quot;Ubuntu.Components.Themes.Ambiance&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dialogComponent</span>
 <span class="type"><a href="Ubuntu.Components.Popups.Dialog.md">Dialog</a></span> {
 <span class="name">id</span>: <span class="name">dialog</span>
@@ -48,7 +48,7 @@ import Ubuntu.Components.Themes 1.3
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
 <span class="name">applicationName</span>: <span class="string">&quot;subthemed&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dialogComponent</span>
 <span class="type"><a href="Ubuntu.Components.Popups.Dialog.md">Dialog</a></span> {
 <span class="name">id</span>: <span class="name">dialog</span>
@@ -80,7 +80,7 @@ import Ubuntu.Components.Themes 1.3
 }
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Set Ambiance theme&quot;</span>
@@ -106,7 +106,7 @@ import Ubuntu.Components.Themes 1.3
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
 <span class="name">applicationName</span>: <span class="string">&quot;subthemed&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dialogComponent</span>
 <span class="type"><a href="Ubuntu.Components.Popups.Dialog.md">Dialog</a></span> {
 <span class="name">id</span>: <span class="name">dialog</span>
@@ -127,7 +127,7 @@ import Ubuntu.Components.Themes 1.3
 }
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Set Ambiance theme&quot;</span>

@@ -7,7 +7,7 @@ Title: QtLocation.location-plugin-nokia
 <span class="subtitle"></span>
 <!-- $$$location-plugin-nokia.html-description -->
 <h2 id="overview">Overview</h2>
-<p>Included with Qt Location is a geo services plugin which accesses the relevant Nokia services provided by Nokia. The use of these services is governed by the terms and conditions available at <a href="..//QtLocation.location-plugin-nokia-terms.md">Qt Location Nokia Plugin - Nokia Services Terms and Conditions</a>.</p>
+<p>Included with Qt Location is a geo services plugin which accesses the relevant Nokia services provided by Nokia. The use of these services is governed by the terms and conditions available at <a href="QtLocation.location-plugin-nokia-terms.md">Qt Location Nokia Plugin - Nokia Services Terms and Conditions</a>.</p>
 <p>Note that accepting the terms and conditions only applies those terms and conditions to the use of the Nokia geo services plugin and does not limit the use of the other geo services plugins that may be included with Qt.</p>
 <p>The Nokia geo services plugin can be loaded by using the plugin key &quot;nokia&quot;.</p>
 <p>The online plugin uses the tiled map classes, which caches tile data in heap memory and texture memory.</p>
@@ -19,7 +19,7 @@ Title: QtLocation.location-plugin-nokia
 <tr valign="top"><td >app_id</td><td >Client <i>app_id</i> part of the app_id/token pair used for authentication by all managers.</td></tr>
 <tr valign="top"><td >token</td><td >Client <i>token</i> part of the app_id/token pair for the service used for authentication by all managers.</td></tr>
 </table>
-<p>The Nokia geo services plugin requires an application id and token pair to authenticate the application with the Nokia services. To obtain an application id and token pair visit <a href="http://api.developer.nokia.com/">http://api.developer.nokia.com/</a></p>
+<p>The Nokia geo services plugin requires an application id and token pair to authenticate the application with the Nokia services. To obtain an application id and token pair visit <a href="https://doc.qt.io/qt-5/location-plugin-here.html/">https://doc.qt.io/qt-5/location-plugin-here.html/</a></p>
 <h3 >Optional parameters</h3>
 <p>The following table lists optional parameters that can be passed to the Nokia plugin.</p>
 <table class="generic">

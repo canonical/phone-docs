@@ -36,25 +36,25 @@ Title: Ubuntu.Components.Styles.ListItemStyle
 <!-- @@@animatePanels -->
 <br/>
 <!-- $$$dragPanel -->
-<table class="qmlname"><tr valign="top" id="dragPanel-prop"><td class="tblQmlPropNode"><p><span class="name">dragPanel</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item visualizing the drag handler. <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s dragging mechanism uses this property to detect the area the dragging can be initiated from. If not set, the <a href="Ubuntu.Components.ListItem.md">ListItem</a> will assume the dragging can be initiated from the entire area of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>.</p>
+<table class="qmlname"><tr valign="top" id="dragPanel-prop"><td class="tblQmlPropNode"><p><span class="name">dragPanel</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item visualizing the drag handler. <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s dragging mechanism uses this property to detect the area the dragging can be initiated from. If not set, the <a href="Ubuntu.Components.ListItem.md">ListItem</a> will assume the dragging can be initiated from the entire area of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>.</p>
 <!-- @@@dragPanel -->
 <br/>
 <!-- $$$dropAnimation -->
-<table class="qmlname"><tr valign="top" id="dropAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">dropAnimation</span> : <span class="type"><a href="../sdk-14.10/QtQuick.PropertyAnimation.md">PropertyAnimation</a></span></p></td></tr></table><p>The property holds the animation executed on <a href="Ubuntu.Components.ListItem.md">ListItem</a> dropping.</p>
+<table class="qmlname"><tr valign="top" id="dropAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">dropAnimation</span> : <span class="type"><a href="QtQuick.PropertyAnimation.md">PropertyAnimation</a></span></p></td></tr></table><p>The property holds the animation executed on <a href="Ubuntu.Components.ListItem.md">ListItem</a> dropping.</p>
 <!-- @@@dropAnimation -->
 <br/>
 <!-- $$$flickable -->
-<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">flickable</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The property holds the Flickable (or <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>) holding the <a href="Ubuntu.Components.ListItem.md">ListItem</a> styled.</p>
+<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">flickable</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The property holds the Flickable (or <a href="QtQuick.ListView.md">ListView</a>) holding the <a href="Ubuntu.Components.ListItem.md">ListItem</a> styled.</p>
 <p>This QML property was introduced in  Ubuntu.Components.Styles 1.3.</p>
 <!-- @@@flickable -->
 <br/>
 <!-- $$$listItemIndex -->
-<table class="qmlname"><tr valign="top" id="listItemIndex-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">listItemIndex</span> : <span class="type">in</span></p></td></tr></table><p>The property proxies the <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s index context property to the style, which is either the index of the list item in a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> or the child index. Use this property rather than the <code>index</code> context property as that may not be defined in situations where the <a href="Ubuntu.Components.ListItem.md">ListItem</a> is not a delegate of a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> or Repeater.</p>
+<table class="qmlname"><tr valign="top" id="listItemIndex-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">listItemIndex</span> : <span class="type">in</span></p></td></tr></table><p>The property proxies the <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s index context property to the style, which is either the index of the list item in a <a href="QtQuick.ListView.md">ListView</a> or the child index. Use this property rather than the <code>index</code> context property as that may not be defined in situations where the <a href="Ubuntu.Components.ListItem.md">ListItem</a> is not a delegate of a <a href="QtQuick.ListView.md">ListView</a> or Repeater.</p>
 <p>This QML property was introduced in  Ubuntu.Components.Styles 1.3.</p>
 <!-- @@@listItemIndex -->
 <br/>
 <!-- $$$snapAnimation -->
-<table class="qmlname"><tr valign="top" id="snapAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">snapAnimation</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Animation.md">Animation</a></span></p></td></tr></table><p>Holds the behavior used in animating when snapped in or out.</p>
+<table class="qmlname"><tr valign="top" id="snapAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">snapAnimation</span> : <span class="type"><a href="QtQuick.Animation.md">Animation</a></span></p></td></tr></table><p>Holds the behavior used in animating when snapped in or out.</p>
 <!-- @@@snapAnimation -->
 <br/>
 <h2>Method Documentation</h2>

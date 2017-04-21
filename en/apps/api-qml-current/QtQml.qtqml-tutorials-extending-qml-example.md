@@ -101,7 +101,7 @@ HEADERS += piechart.h
 SOURCES += piechart.cpp \
 main.cpp
 RESOURCES += chapter1-basics.qrc
-DESTPATH = $$[QT_INSTALL_EXAMPLES]/qml/tutorials/extending-qml/chapter1-basics
+DESTPATH = $$[QT_INSTALL_EXAMPLES]/qml/tutorials-extending-qml/chapter1-basics
 target.path = $$DESTPATH
 qml.files = *.qml
 qml.path = $$DESTPATH
@@ -374,7 +374,7 @@ chartsplugin.h
 SOURCES += piechart.cpp \
 pieslice.cpp \
 chartsplugin.cpp
-DESTPATH=$$[QT_INSTALL_EXAMPLES]/qml/tutorials/extending-qml/chapter6-plugins/Charts
+DESTPATH=$$[QT_INSTALL_EXAMPLES]/qml/tutorials-extending-qml/chapter6-plugins/Charts
 target.path=$$DESTPATH
 qmldir.files=$$PWD/qmldir
 qmldir.path=$$DESTPATH

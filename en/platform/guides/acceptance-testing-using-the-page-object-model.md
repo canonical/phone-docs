@@ -17,7 +17,7 @@ quoting [xUnit test patterns](http://xunitpatterns.com/)).
 
 Also they are slow and they exercise too many components, some of which are
 not under our control. That's why Test-Driven Development is instead done with
-isolated and fast [unit tests](../../apps/qml/tutorials/qml-unit-testing.html)
+isolated and fast [unit tests](../../apps/qml/tutorials-qml-unit-testing.html)
 that are not coupled to the GUI.
 
 Yet after we run the automated unit tests that don't depend on the design of
@@ -56,7 +56,7 @@ Let's take the page objects of the [Ubuntu ClockApp](http://bazaar.launchpad.net
 example, with some simplifications.
 
 This application is written in QML and Javascript using the Ubuntu SDK; the
-tests are written in Python using [Autopilot](../api-autopilot-current/tutorial-what_is_autopilot.md) as the tool to simulate user actions through the GUI.
+tests are written in Python using [Autopilot](../../apps/api-autopilot-current/index.md) as the tool to simulate user actions through the GUI.
 
 
 ### The public methods represent the services that the page offers.

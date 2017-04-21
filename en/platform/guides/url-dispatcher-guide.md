@@ -14,7 +14,7 @@ is a useful way to get out of their application to another piece of content or
 user request.
 
 For QML applications access to the URL Dispatcher is provided through the Qt
-desktop plugin, via the [openUrlExternally](../api-qml-current/QtQml.Qt.md.md#openUrlExternally-method) method. C++ applications can use the [openURL](http://qt-project.org/doc/qt-5.0/qtgui/qdesktopservices.html#openUrl) method. Both are valid and the backend is transparent. For other applications they can use the Platform API or liburl-dispatcher directly depending on their needs.
+desktop plugin, via the [openUrlExternally](../../apps/api-qml-current/QtQml.Qt.md#openUrlExternally-method) method. C++ applications can use the [openURL](http://qt-project.org/doc/qt-5.0/qtgui/qdesktopservices.html#openUrl) method. Both are valid and the backend is transparent. For other applications they can use the Platform API or liburl-dispatcher directly depending on their needs.
 
 ## Supported URLs
 

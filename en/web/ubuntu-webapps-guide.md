@@ -112,7 +112,7 @@ $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/* http://www.ubuntu
   * The asterix is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL
 
 With this launch command and URL pattern, the user can navigate to and open in
-the webapp any URL that starts with [http://www.ubuntu.com/](http://www.ubuntu.com/). For example, they can click on the Phone button ([http://www.ubuntu.com/phone](http://www.ubuntu.com/phone)) in the banner and it opens in the webapp, or the Tablet button ([http://www.ubuntu.com/tablet](http://www.ubuntu.com/tablet)). But, clicking `Developer` opens the corresponding URL in the browser.
+the webapp any URL that starts with [http://www.ubuntu.com/](http://www.ubuntu.com/). For example, they can click on the Phone button in the banner and it opens in the webapp, or the Tablet button. But, clicking `Developer` opens the corresponding URL in the browser.
 
 **Tip**: Make sure to fully specify the subdomain in your starting URL, that is, use [http://www.ubuntu.com](http://www.ubuntu.com) instead of [www.ubuntu.com](http://ubuntu.com). Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns.
 
@@ -122,9 +122,9 @@ You might want to limit access to only some subpages of your site from within
 the webapp. This is easy with wildcard patterns. (Links to other subpages are
 opened in the browser.) For example, the following allows access to
 [www.ubuntu.com/desktop/features](http://www.ubuntu.com/desktop/features) and
-[www.ubuntu.com/phone/features](http://www.ubuntu.com/phone/features) while
+www.ubuntu.com/phone/features while
 not allowing access to [www.ubuntu.com/desktop](http://www.ubuntu.com/desktop)
-or [www.ubuntu.com/phone](http://www.ubuntu.com/phone)
+or www.ubuntu.com/phone
 
 ```
 $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/*/features http://www.ubuntu.com
@@ -135,13 +135,13 @@ $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/*/features http://w
 You can use multiple patterns by separating them with a comma. For example,
 the following allows access only to
 [www.ubuntu.com/desktop/features](http://www.ubuntu.com/desktop/features) and
-[www.ubuntu.com/phone/features](http://www.ubuntu.com/phone/features):
+www.ubuntu.com/phone/features:
 
 ```
 $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/desktop/features,http://www.ubuntu.com/phone/features  http://www.ubuntu.com
 ```
 
-**Tip**: Multiple patterns are often necessary to achieve the intended containment behavior.
+**Tip**: Multiple patterns are often necessary to achieve the intended containment behaviour.
 
 ### Adding a specific subdomain
 

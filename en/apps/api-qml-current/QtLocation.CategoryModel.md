@@ -13,27 +13,27 @@ Title: QtLocation.CategoryModel
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.CategoryModel.md#plugin-prop">plugin</a></b></b> : Plugin</li>
-<li class="fn"><b><b><a href="..//QtLocation.CategoryModel.md#status-prop">status</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.CategoryModel.md#plugin-prop">plugin</a></b></b> : Plugin</li>
+<li class="fn"><b><b><a href="QtLocation.CategoryModel.md#status-prop">status</a></b></b> : enumeration</li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.CategoryModel.md#dataChanged-signal">dataChanged</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.CategoryModel.md#dataChanged-signal">dataChanged</a></b></b>()</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">string <b><b><a href="..//QtLocation.CategoryModel.md#errorString-method">errorString</a></b></b>()</li>
+<li class="fn">string <b><b><a href="QtLocation.CategoryModel.md#errorString-method">errorString</a></b></b>()</li>
 </ul>
 <!-- $$$CategoryModel-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.CategoryModel.md">CategoryModel</a> type provides a model of the categories that are available from the current <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a>. The model supports both a flat list of categories and a hierarchical tree representing category groupings. This can be controlled by the <a href="..//QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a> property.</p>
+<p>The <a href="QtLocation.CategoryModel.md">CategoryModel</a> type provides a model of the categories that are available from the current <a href="QtLocation.location-places-qml.md#plugin">Plugin</a>. The model supports both a flat list of categories and a hierarchical tree representing category groupings. This can be controlled by the <a href="QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a> property.</p>
 <p>The model supports the following roles:</p>
 <table class="generic">
 <thead><tr class="qt-style"><th >Role</th><th >Type</th><th >Description</th></tr></thead>
-<tr valign="top"><td >category</td><td ><a href="..//QtLocation.location-cpp-qml.md#category">Category</a></td><td >Category object for the current item.</td></tr>
-<tr valign="top"><td >parentCategory</td><td ><a href="..//QtLocation.location-cpp-qml.md#category">Category</a></td><td >Parent category object for the current item. If there is no parent, null is returned.</td></tr>
+<tr valign="top"><td >category</td><td ><a href="QtLocation.location-cpp-qml.md#category">Category</a></td><td >Category object for the current item.</td></tr>
+<tr valign="top"><td >parentCategory</td><td ><a href="QtLocation.location-cpp-qml.md#category">Category</a></td><td >Parent category object for the current item. If there is no parent, null is returned.</td></tr>
 </table>
 <p>The following example displays a flat list of all available categories:</p>
 <pre class="qml">import QtQuick 2.0
@@ -54,16 +54,16 @@ import QtLocation 5.3
 <!-- @@@hierarchical -->
 <br/>
 <!-- $$$plugin -->
-<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the provider <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> used by this model.</p>
+<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the provider <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> used by this model.</p>
 <!-- @@@plugin -->
 <br/>
 <!-- $$$status -->
 <table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the status of the model. It can be one of:</p>
 <table class="generic">
-<tr valign="top"><td ><a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.Null</td><td >No category fetch query has been executed. The model is empty.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.Ready</td><td >No error occurred during the last operation, further operations may be performed on the model.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.Loading</td><td >The model is being updated, no other operations may be performed until complete.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.Error</td><td >An error occurred during the last operation, further operations can still be performed on the model.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.CategoryModel.md">CategoryModel</a>.Null</td><td >No category fetch query has been executed. The model is empty.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.CategoryModel.md">CategoryModel</a>.Ready</td><td >No error occurred during the last operation, further operations may be performed on the model.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.CategoryModel.md">CategoryModel</a>.Loading</td><td >The model is being updated, no other operations may be performed until complete.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.CategoryModel.md">CategoryModel</a>.Error</td><td >An error occurred during the last operation, further operations can still be performed on the model.</td></tr>
 </table>
 <!-- @@@status -->
 <br/>

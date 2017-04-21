@@ -34,7 +34,7 @@ Title: Ubuntu.Components.i18n
 <p>i18n cannot be instantiated, and is already available as a context property. It is based on <a href="https://www.gnu.org/software/gettext/">gettext</a>, and thus the standard gettext tools can be used for translating a project. Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 0.1
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {

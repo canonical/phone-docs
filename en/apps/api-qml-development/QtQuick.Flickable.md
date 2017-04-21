@@ -74,7 +74,7 @@ Title: QtQuick.Flickable
 <!-- $$$Flickable-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The Flickable item places its children on a surface that can be dragged and flicked, causing the view onto the child items to scroll. This behavior forms the basis of Items that are designed to show large numbers of child items, such as <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop/#gridview">GridView</a>.</p>
+<p>The Flickable item places its children on a surface that can be dragged and flicked, causing the view onto the child items to scroll. This behavior forms the basis of Items that are designed to show large numbers of child items, such as <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>.</p>
 <p>In traditional user interfaces, views can be scrolled using standard controls, such as scroll bars and arrow buttons. In some situations, it is also possible to drag the view directly by pressing and holding a mouse button while moving the cursor. In touch-based user interfaces, this dragging action is often complemented with a flicking action, where scrolling continues after the user has stopped touching the view.</p>
 <p>Flickable does not automatically clip its contents. If it is not used as a full-screen item, you should consider setting the <a href="QtQuick.Item.md#clip-prop">clip</a> property to true.</p>
 <h2 id="example-usage">Example Usage</h2>
@@ -244,12 +244,12 @@ component<span class="operator">.</span>createObject(myFlickable<span class="ope
 <br/>
 <!-- $$$originX -->
 <table class="qmlname"><tr valign="top" id="originX-prop"><td class="tblQmlPropNode"><p><span class="name">originX</span> : <span class="type">real</span></p></td></tr></table><p>These properties hold the origin of the content. This value always refers to the top-left position of the content regardless of layout direction.</p>
-<p>This is usually (0,0), however <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop/#gridview">GridView</a> may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.</p>
+<p>This is usually (0,0), however <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.</p>
 <!-- @@@originX -->
 <br/>
 <!-- $$$originY -->
 <table class="qmlname"><tr valign="top" id="originY-prop"><td class="tblQmlPropNode"><p><span class="name">originY</span> : <span class="type">real</span></p></td></tr></table><p>These properties hold the origin of the content. This value always refers to the top-left position of the content regardless of layout direction.</p>
-<p>This is usually (0,0), however <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop/#gridview">GridView</a> may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.</p>
+<p>This is usually (0,0), however <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> may have an arbitrary origin due to delegate size variation, or item insertion/removal outside the visible region.</p>
 <!-- @@@originY -->
 <br/>
 <!-- $$$pixelAligned -->
@@ -322,7 +322,7 @@ component<span class="operator">.</span>createObject(myFlickable<span class="ope
 <span class="name">color</span>: <span class="string">&quot;black&quot;</span>
 }
 }</pre>
-<p><b>See also </b><a href="QtQuick.customitems-scrollbar/">UI Components: Scrollbar Example</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-customitems-scrollbar-example.md">UI Components: Scrollbar Example</a>.</p>
 <!-- @@@visibleArea -->
 <br/>
 <h2>Signal Documentation</h2>

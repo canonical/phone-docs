@@ -9,7 +9,7 @@ Create something special with a unique bottom edge that belongs to your app from
 
 ![750w_BottomEdge_Dekko3](https://assets.ubuntu.com/v1/792099e5-750w_BottomEdge_Dekko3.png)
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [BottomEdge API](../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [BottomEdge API](../../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.|
 |-----|-----|
 
 ## Overview

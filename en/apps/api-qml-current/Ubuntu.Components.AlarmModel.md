@@ -28,7 +28,7 @@ Title: Ubuntu.Components.AlarmModel
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Components.ListItems 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">AlarmModel</span> {}
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
@@ -39,7 +39,7 @@ import Ubuntu.Components.ListItems 1.0
 }</pre>
 <p>The model defines the same roles as the <a href="Ubuntu.Components.Alarm.md">Alarm</a> properties. Note that the use of <i>enabled</i> role in delegates may be ambiguous. Therefore the model defines the additional role called <i>model</i>, which represents the <a href="Ubuntu.Components.Alarm.md">Alarm</a> object from the index the delegate is showing the data, so the <i>enabled</i> role can then be accessed by simply dereferencing the model i.e&#x2e; model.enabled.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">AlarmModel</span>{}
 <span class="name">delegate</span>: <span class="name">Standard</span> {
 <span class="name">text</span>: <span class="name">message</span>
@@ -51,7 +51,7 @@ import Ubuntu.Components.ListItems 1.0
 <p>The number of alarm events can be obtained from the <a href="#count-prop">count</a> property. To get a specific alarm event data from the model, use the <a href="#get-method">get()</a> function.</p>
 <p>As the <a href="#get-method">get()</a> function returns the alarm object from the given index. Combined with the alarm functions the alarms can be updated in place.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">AlarmModel</span>{
 <span class="name">id</span>: <span class="name">alarmModel</span>
 }
@@ -70,7 +70,7 @@ var <span class="name">data</span> = <span class="name">alarmModel</span>.<span 
 }
 }</pre>
 <p>In this kind of &quot;in place&quot; updates using the <i>model</i> role would give the same result:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">AlarmModel</span>{
 <span class="name">id</span>: <span class="name">alarmModel</span>
 }

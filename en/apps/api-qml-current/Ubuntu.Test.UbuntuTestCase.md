@@ -9,7 +9,7 @@ Title: Ubuntu.Test.UbuntuTestCase
 <p>The UbuntuTestCase class expands the default TestCase class. More...</p>
 <!-- @@@UbuntuTestCase -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Test .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtTest.TestCase.md">TestCase</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Test .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtTest.TestCase.md">TestCase</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -34,7 +34,7 @@ Title: Ubuntu.Test.UbuntuTestCase
 <h2 id="details">Detailed Description</h2>
 </p>
 <p><b>This component is under heavy development.</b></p>
-<p>This class extends the default QML <a href="../sdk-14.10/QtTest.TestCase.md">TestCase</a> class which is available in <a href="http://doc.qt.io/qt-5/qttest-qmlmodule.html">QtTest</a> 1.0&#x2e;</p>
+<p>This class extends the default QML <a href="QtTest.TestCase.md">TestCase</a> class which is available in <a href="http://doc.qt.io/qt-5/qttest-qmlmodule.html">QtTest</a> 1.0&#x2e;</p>
 <!-- @@@UbuntuTestCase -->
 <h2>Property Documentation</h2>
 <!-- $$$testUtil -->
@@ -55,7 +55,7 @@ Title: Ubuntu.Test.UbuntuTestCase
 <!-- @@@findChildWithProperty -->
 <br/>
 <!-- $$$findInvisibleChild -->
-<table class="qmlname"><tr valign="top" id="findInvisibleChild-method"><td class="tblQmlFuncNode"><p><span class="name">findInvisibleChild</span>(<i> obj</i>, <i> objectName</i>)</p></td></tr></table><p>Find a non-visual child such as <a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a> based on objectName.</p>
+<table class="qmlname"><tr valign="top" id="findInvisibleChild-method"><td class="tblQmlFuncNode"><p><span class="name">findInvisibleChild</span>(<i> obj</i>, <i> objectName</i>)</p></td></tr></table><p>Find a non-visual child such as <a href="QtQml.QtObject.md">QtObject</a> based on objectName.</p>
 <!-- @@@findInvisibleChild -->
 <br/>
 <!-- $$$flick -->

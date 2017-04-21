@@ -1,8 +1,8 @@
 ---
-Title: QtQml.qtqml-referenceexamples-adding-example
+Title: QtQml.qtqml-referenceexamples-adding-example.
 ---
 
-# QtQml.qtqml-referenceexamples-adding-example
+# QtQml.qtqml-referenceexamples-adding-example.
 
 <span class="subtitle"></span>
 <!-- $$$referenceexamples/adding-description -->

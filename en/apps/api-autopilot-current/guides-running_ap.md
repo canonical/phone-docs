@@ -128,7 +128,7 @@ ogg-vorbis</em> files, with an .ogv extension. They will be named with the test 
 <pre>$ autopilot3 vis
 </pre>
 <p>The result should be a window similar to below:</p>
-<img alt="../../_images/ap_vis_front_page.png" src="../../../../media/ap_vis_front_page.png" />
+<img alt="ap_vis_front_page.png" src="../../../../media/ap_vis_front_page.png" />
 <p>Selecting a connection from the drop-down box allows you to inspect different autopilot-supporting applications. If Unity is running, the Unity connection should always be present. If other applications have been started with the autopilot support enabled, they should appear in this list as well. Once a connection is selected, the introspection tree is rendered in the left-hand pane, and the details of each object appear in the right-hand pane.</p>
-<img alt="../../_images/ap_vis_object.png" src="../../../../media/ap_vis_object.png" />
+<img alt="ap_vis_object.png" src="../../../../media/ap_vis_object.png" />
 <p>Autopilot vis also has the ability to search the object tree for nodes that match a given name (such as &#8220;LauncherController&#8221;, for example), and draw a transparent overlay over a widget if it contains position information. These tools, when combined can make finding certain parts of an application introspection tree much easier.</p>

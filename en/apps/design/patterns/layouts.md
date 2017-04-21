@@ -10,7 +10,7 @@ Make your app consistent and adaptive across all screen sizes with just one API.
 ![750w_Layout_MainImage](https://assets.ubuntu.com/v1/a7a07787-750w_Layout_MainImage.png)
 
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Adaptive Layout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) allows you to add multiple columns to a page (under heavy development).|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Adaptive Layout API](../../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) allows you to add multiple columns to a page (under heavy development).|
 |-----|-----|
 
 ## Grid Unit System
@@ -83,7 +83,7 @@ On a windowed environment, just like on a tablet, more than one panel can be dis
 
 Use the AdaptiveLayout API to display panels in one or more columns from left to right.
 
-|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The  [AdaptiveLayout API](../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) provides a flexible way of viewing a stack of pages in one or more columns. Unlike in PageStack, there can be more than one Page active at a time, depending on the number of the columns in the view.|
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The  [AdaptiveLayout API](../../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) provides a flexible way of viewing a stack of pages in one or more columns. Unlike in PageStack, there can be more than one Page active at a time, depending on the number of the columns in the view.|
 |-----|-----|
 
 Changing the size of the window resizes one or more joined panels. Typically, the right-most panel resizes and the left-most panel maintains its original dimensions. The dimensions of the right-most panel will normally be 40 or 50 grid units; though this panel may itself be resizable depending on the developer’s requirements.

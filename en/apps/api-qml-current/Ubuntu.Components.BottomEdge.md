@@ -158,11 +158,11 @@ property <span class="type">color</span> <span class="name">color</span>: <span 
 <!-- @@@activeRegion -->
 <br/>
 <!-- $$$contentComponent -->
-<table class="qmlname"><tr valign="top" id="contentComponent-prop"><td class="tblQmlPropNode"><p><span class="name">contentComponent</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the component defining the content of the bottom edge. The property behaves the same way as Loader's <i>sourceComponent</i> property.</p>
+<table class="qmlname"><tr valign="top" id="contentComponent-prop"><td class="tblQmlPropNode"><p><span class="name">contentComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the component defining the content of the bottom edge. The property behaves the same way as Loader's <i>sourceComponent</i> property.</p>
 <!-- @@@contentComponent -->
 <br/>
 <!-- $$$contentItem -->
-<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">contentItem</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item created either from <a href="#contentUrl-prop">contentUrl</a> or <a href="#contentComponent-prop">contentComponent</a> properties.</p>
+<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">contentItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item created either from <a href="#contentUrl-prop">contentUrl</a> or <a href="#contentComponent-prop">contentComponent</a> properties.</p>
 <!-- @@@contentItem -->
 <br/>
 <!-- $$$contentUrl -->

@@ -8,7 +8,7 @@ The toolkit provides a ScrollView component that allows users to scroll content 
 
 ![750w_Scrollbar_MainImage](https://assets.ubuntu.com/v1/3b6f6d0a-750w_Scrollbar_MainImage.png)
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ScrollView API](../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ScrollView API](../../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.|
 |-----|-----|
 
 ## ScrollView vs. Scrollbar APIs

@@ -46,7 +46,7 @@ Title: Ubuntu.Components.BottomEdgeHint
 <!-- @@@deactivateTimeout -->
 <br/>
 <!-- $$$flickable -->
-<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="name">flickable</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The property holds the flickable, which when flicked hides the hint. <i>Hidden</i> state is reached when this property is set to a Flickable which is flicking or moving. It is recommended to set the property when the hint is placed above a flickable content. Defaults to null.</p>
+<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="name">flickable</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The property holds the flickable, which when flicked hides the hint. <i>Hidden</i> state is reached when this property is set to a Flickable which is flicking or moving. It is recommended to set the property when the hint is placed above a flickable content. Defaults to null.</p>
 <!-- @@@flickable -->
 <br/>
 <!-- $$$iconName -->

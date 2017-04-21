@@ -113,7 +113,7 @@ List items must always contain at least one slot.
 
 If your list item allows for navigation through to an associated view, then a ProgressionSlot (chevron) is used in a fixed position in the right-most slot. No other actions is displayed in this slot, because this would conflict with the chevron navigation.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ProgressionSlot API](../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ProgressionSlot API](../../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.|
 |-----|-----|
 
 ![366w_ListItems_Chevron1-1](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)
@@ -136,7 +136,7 @@ Text is always aligned according to the currently displayed language. For exampl
 
 3. 2 lines – Summary
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers are free to override the maximum amount lines for each label. See the  [Label API](../api-qml-current/Ubuntu.Components.Label.md) for more information.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers are free to override the maximum amount lines for each label. See the  [Label API](../../api-qml-current/Ubuntu.Components.Label.md) for more information.|
 |-----|-----|
 
 ## Actions

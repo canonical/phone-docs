@@ -13,23 +13,23 @@ Title: QtLocation.Route
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.Route.md#bounds-prop">bounds</a></b></b> : georectangle</li>
-<li class="fn"><b><b><a href="..//QtLocation.Route.md#distance-prop">distance</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.Route.md#path-prop">path</a></b></b> : QJSValue</li>
-<li class="fn"><b><b><a href="..//QtLocation.Route.md#segments-prop">segments</a></b></b> : list&lt;RouteSegment&gt;</li>
-<li class="fn"><b><b><a href="..//QtLocation.Route.md#travelTime-prop">travelTime</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtLocation.Route.md#bounds-prop">bounds</a></b></b> : georectangle</li>
+<li class="fn"><b><b><a href="QtLocation.Route.md#distance-prop">distance</a></b></b> : real</li>
+<li class="fn"><b><b><a href="QtLocation.Route.md#path-prop">path</a></b></b> : QJSValue</li>
+<li class="fn"><b><b><a href="QtLocation.Route.md#segments-prop">segments</a></b></b> : list&lt;RouteSegment&gt;</li>
+<li class="fn"><b><b><a href="QtLocation.Route.md#travelTime-prop">travelTime</a></b></b> : int</li>
 </ul>
 <!-- $$$Route-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>A Route type contains high level information about a route, such as the length the route, the estimated travel time for the route, and enough information to render a basic image of the route on a map.</p>
 <p>The QGeoRoute object also contains a list of RouteSegment objects which describe subsections of the route in greater detail.</p>
-<p>The primary means of acquiring Route objects is <a href="..//QtLocation.RouteModel.md">RouteModel</a>.</p>
+<p>The primary means of acquiring Route objects is <a href="QtLocation.RouteModel.md">RouteModel</a>.</p>
 <h2 id="example">Example</h2>
 <p>This example shows how to display a route's maneuvers in a ListView:</p>
 <pre class="qml">import QtQuick 2.0
 import QtLocation 5.3
-<span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a></span> {
+<span class="type"><a href="QtLocation.RouteModel.md">RouteModel</a></span> {
 <span class="name">id</span>: <span class="name">routeModel</span>
 <span class="comment">// model initialization</span>
 }
@@ -65,9 +65,9 @@ property <span class="type">bool</span> <span class="name">hasManeuver</span> : 
 <!-- @@@path -->
 <br/>
 <!-- $$$segments -->
-<table class="qmlname"><tr valign="top" id="segments-prop"><td class="tblQmlPropNode"><p><span class="name">segments</span> : <span class="type">list</span>&lt;<span class="type"><a href="..//QtLocation.RouteSegment.md">RouteSegment</a></span>&gt;</p></td></tr></table><p>Read-only property which holds the list of <a href="..//QtLocation.RouteSegment.md">RouteSegment</a> objects of this route.</p>
+<table class="qmlname"><tr valign="top" id="segments-prop"><td class="tblQmlPropNode"><p><span class="name">segments</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtLocation.RouteSegment.md">RouteSegment</a></span>&gt;</p></td></tr></table><p>Read-only property which holds the list of <a href="QtLocation.RouteSegment.md">RouteSegment</a> objects of this route.</p>
 <p>To access individual segments you can use standard list accessors: 'segments.length' indicates the number of objects and 'segments[index starting from zero]' gives the actual objects.</p>
-<p><b>See also </b><a href="..//QtLocation.RouteSegment.md">RouteSegment</a>.</p>
+<p><b>See also </b><a href="QtLocation.RouteSegment.md">RouteSegment</a>.</p>
 <!-- @@@segments -->
 <br/>
 <!-- $$$travelTime -->

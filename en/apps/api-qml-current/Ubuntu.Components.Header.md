@@ -32,13 +32,13 @@ import Ubuntu.Components 1.3
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">6</span>)
 <span class="name">flickable</span>: <span class="name">scrollableContent</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="comment">// to visualize the header</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">color</span>: <span class="name">UbuntuColors</span>.<span class="name">blue</span>
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">id</span>: <span class="name">scrollableContent</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">height</span> <span class="operator">*</span> <span class="number">2</span>
@@ -55,7 +55,7 @@ import Ubuntu.Components 1.3
 <!-- @@@exposed -->
 <br/>
 <!-- $$$flickable -->
-<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="name">flickable</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>When flickable is set, scrolling vertically in the flickable, or setting the Flickable's y-value will move the header y-position by the same amount as the flickable content movement. When scrolling the flickable, upon release, the header will animate to fully exposed or fully hidden state, depending on whether it was more or less than half exposed when the user stopped moving the flickable.</p>
+<table class="qmlname"><tr valign="top" id="flickable-prop"><td class="tblQmlPropNode"><p><span class="name">flickable</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>When flickable is set, scrolling vertically in the flickable, or setting the Flickable's y-value will move the header y-position by the same amount as the flickable content movement. When scrolling the flickable, upon release, the header will animate to fully exposed or fully hidden state, depending on whether it was more or less than half exposed when the user stopped moving the flickable.</p>
 <p>When flickable is null, the header can be exposed or hidden by setting the <a href="#exposed-prop">exposed</a> property. Note that <a href="#exposed-prop">exposed</a> is not automatically updated when the value of flickable changes, so if the header must be exposed when the flickable changes (or is set to null), this must be done explicitly. Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
@@ -67,7 +67,7 @@ import Ubuntu.Components 1.3
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">primaryPage</span>: <span class="name">Page</span> {
 <span class="name">id</span>: <span class="name">page</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">id</span>: <span class="name">contentFlick</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">topMargin</span>: <span class="name">page</span>.<span class="name">header</span>.<span class="name">flickable</span> ? <span class="number">0</span> : <span class="name">page</span>.<span class="name">header</span>.<span class="name">height</span>
@@ -84,7 +84,7 @@ import Ubuntu.Components 1.3
 }
 }</pre>
 <p>The topMargin of the flickable will automatically be updated by adding the height of the header to the current topMargin. When changing the flickable, the topMargin of the previous flickable is restored by subtracting the header height from it. Making the header invisible has the same effect on the topMargin as unsetting the flickable.</p>
-<p>It is permitted to use a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> as the value of flickable, but this works well only if the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>.header property is not set. Alternatively, a Header component may be used for <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>.header, but in that case the flickable of the Header must be null.</p>
+<p>It is permitted to use a <a href="QtQuick.ListView.md">ListView</a> as the value of flickable, but this works well only if the <a href="QtQuick.ListView.md">ListView</a>.header property is not set. Alternatively, a Header component may be used for <a href="QtQuick.ListView.md">ListView</a>.header, but in that case the flickable of the Header must be null.</p>
 <!-- @@@flickable -->
 <br/>
 <!-- $$$moving -->

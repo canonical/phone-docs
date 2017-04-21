@@ -73,7 +73,7 @@ Once the user has committed to a search, they will be presented with results tak
 
 The user can tap the cross in the header or the back chevron to be taken back to the scope home screen.
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [SearchReply](../api-cpp-current/SearchReply.md) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](../api-cpp-current/SearchListenerBase.md),  [SearchMetadata](../api-cpp-current/SearchMetadata.md) and  [SearchQueryBase](../api-cpp-current/SearchQueryBase.md) elements.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [SearchReply](../api-cpp-current/unity.scopes.SearchReply.md) element from our SDK, which allows the results of a search query to be sent to the query source. Also see:  [SearchListenerBase](../api-cpp-current/unity.scopes.SearchListenerBase.md),  [SearchMetadata](../api-cpp-current/unity.scopes.SearchMetadata.md) and  [SearchQueryBase](../api-cpp-current/unity.scopes.SearchQueryBase.md) elements.|
 |----|----|
 
 ##Categories
@@ -88,7 +88,7 @@ Categories are used to group together related content in a readable and manageab
 
 -  [Category expansion ›](#category-expansion)
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To implement the  [Category](../api-cpp-current/Category.md) and  [Categorised Result](../api-cpp-current/CategorisedResult.md) element in your scope see our SDK.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|To implement the  [Category](../api-cpp-current/unity.scopes.Category.md) and  [Categorised Result](../api-cpp-current/unity.scopes.CategorisedResult.md) element in your scope see our SDK.|
 |----|----|
 
 ##Structure
@@ -104,7 +104,7 @@ Structure your scope according to the user’s activities, and group cards in ca
 |![no alt text](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)|Think about what the user will first expect to see at the top of your scope. If your scope is selling products, for instance, you may want to use the top category as a promotional banner.|
 |----|----|
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a JSON formatted template with the  [Category Renderer](../api-cpp-current/CategoryRenderer.md) from our SDK.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a JSON formatted template with the  [Category Renderer](../api-cpp-current/unity.scopes.CategoryRenderer.md) from our SDK.|
 |----|----|
 
 ##Category header
@@ -134,7 +134,7 @@ Where we use links inside a category header, the header should be clear as to wh
 ||![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)||See more ways in which the header can link to either a website or an app in the  [Navigation](navigation.md) section.|
 |-----|-----|
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a  [Hyperlink](../api-cpp-current/Link.md)(label and canned query) from our SDK.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement a  [Hyperlink](../api-cpp-current/unity.scopes.Link.md)(label and canned query) from our SDK.|
 |----|----|
 
 ##Designing categories
@@ -180,7 +180,7 @@ A card is a visual representation of a content result; you can design them in di
 
 -  [Designing cards ›](#designing-cards)
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [Result](../api-cpp-current/Result.md) element from our SDK, which contains the attributes of a result returned by a Scope.|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|Implement the  [Result](../api-cpp-current/unity.scopes.Result.md) element from our SDK, which contains the attributes of a result returned by a Scope.|
 |----|----|
 
 ##Card components

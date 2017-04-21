@@ -37,7 +37,7 @@ Title: QtQuick.Rotation
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 <span class="name">transform</span>: <span class="name">Rotation</span> { <span class="name">origin</span>.x: <span class="number">25</span>; <span class="name">origin</span>.y: <span class="number">25</span>; <span class="name">angle</span>: <span class="number">45</span>}
 }</pre>
-<p>For 3D-like item rotations, you must specify the axis of rotation in addition to the origin point. The following example shows various 3D-like rotations applied to an <a href="QtQuick.imageelements/#image">Image</a>.</p>
+<p>For 3D-like item rotations, you must specify the axis of rotation in addition to the origin point. The following example shows various 3D-like rotations applied to an <a href="QtQuick.qtquick-imageelements-example.md/#image">Image</a>.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">x</span>: <span class="number">10</span>; <span class="name">y</span>: <span class="number">10</span>
@@ -60,7 +60,7 @@ Title: QtQuick.Rotation
 <span class="name">transform</span>: <span class="name">Rotation</span> { <span class="name">origin</span>.x: <span class="number">30</span>; <span class="name">origin</span>.y: <span class="number">30</span>; <span class="type">axis</span> { <span class="name">x</span>: <span class="number">0</span>; <span class="name">y</span>: <span class="number">1</span>; <span class="name">z</span>: <span class="number">0</span> } <span class="name">angle</span>: <span class="number">72</span> }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../../media/axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.customitems-dialcontrol/">Dial Control example</a> and <a href="QtQuick.demos-clocks/">Qt Quick Demo - Clocks</a>.</p>
+<p class="centerAlign"><img src="../../../../media/axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-customitems-dialcontrol-example.md">Dial Control example</a> and <a href="QtQuick.qtquick-demos-clocks-example.md">Qt Quick Demo - Clocks</a>.</p>
 <!-- @@@Rotation -->
 <h2>Property Documentation</h2>
 <!-- $$$angle -->

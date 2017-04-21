@@ -13,29 +13,29 @@ Title: QtLocation.MapItemView
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapItemView.md#autoFitViewport-prop">autoFitViewport</a></b></b> : Component</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapItemView.md#delegate-prop">delegate</a></b></b> : Component</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapItemView.md#model-prop">model</a></b></b> : model</li>
+<li class="fn"><b><b><a href="QtLocation.MapItemView.md#autoFitViewport-prop">autoFitViewport</a></b></b> : Component</li>
+<li class="fn"><b><b><a href="QtLocation.MapItemView.md#delegate-prop">delegate</a></b></b> : Component</li>
+<li class="fn"><b><b><a href="QtLocation.MapItemView.md#model-prop">model</a></b></b> : model</li>
 </ul>
 <!-- $$$MapItemView-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.MapItemView.md">MapItemView</a> is used to populate Map with MapItems from a model. The <a href="..//QtLocation.MapItemView.md">MapItemView</a> type only makes sense when contained in a Map, meaning that it has no standalone presentation.</p>
+<p>The <a href="QtLocation.MapItemView.md">MapItemView</a> is used to populate Map with MapItems from a model. The <a href="QtLocation.MapItemView.md">MapItemView</a> type only makes sense when contained in a Map, meaning that it has no standalone presentation.</p>
 <h3 >Example Usage</h3>
-<p>This example demonstrates how to use the MapViewItem object to display a <a href="..//QtLocation.Route.md">route</a> on a <a href="..//QtLocation.Map.md">map</a>:</p>
+<p>This example demonstrates how to use the MapViewItem object to display a <a href="QtLocation.Route.md">route</a> on a <a href="QtLocation.Map.md">map</a>:</p>
 <pre class="qml">import QtQuick 2.0
 import QtLocation 5.3
-<span class="type"><a href="..//QtLocation.Map.md">Map</a></span> {
-<span class="type"><a href="..//QtLocation.RouteModel.md">RouteModel</a></span> {
+<span class="type"><a href="QtLocation.Map.md">Map</a></span> {
+<span class="type"><a href="QtLocation.RouteModel.md">RouteModel</a></span> {
 <span class="name">id</span>: <span class="name">routeModel</span>
 }
-<span class="type"><a href="..//QtLocation.MapItemView.md">MapItemView</a></span> {
+<span class="type"><a href="QtLocation.MapItemView.md">MapItemView</a></span> {
 <span class="name">model</span>: <span class="name">routeModel</span>
 <span class="name">delegate</span>: <span class="name">routeDelegate</span>
 }
 <span class="type">Component</span> {
 <span class="name">id</span>: <span class="name">routeDelegate</span>
-<span class="type"><a href="..//QtLocation.MapRoute.md">MapRoute</a></span> {
+<span class="type"><a href="QtLocation.MapRoute.md">MapRoute</a></span> {
 <span class="name">route</span>: <span class="name">routeData</span>
 <span class="name">line</span>.color: <span class="string">&quot;blue&quot;</span>
 <span class="name">line</span>.width: <span class="number">5</span>

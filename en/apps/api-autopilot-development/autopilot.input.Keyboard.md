@@ -6,22 +6,22 @@ Title: autopilot.input.Keyboard
 
 <dl class="class">
 <dt id="autopilot.input.Keyboard">
-<em class="property">class </em><tt class="descclassname">autopilot.input.</tt><tt class="descname">Keyboard</tt><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard"></a><a class="headerlink" href="#autopilot.input.Keyboard" title="Permalink to this definition"></a></dt>
+<em class="property">class </em><tt class="descclassname">autopilot.input.</tt><tt class="descname">Keyboard</tt><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard"></a><a class="headerlink" href="#autopilot.input.Keyboard" title="Permalink to this definition"></a></dt>
 <dd><p>A simple keyboard device class.</p>
 <p>The keyboard class is used to generate key events while in an autopilot
 test. This class should not be instantiated directly. To get an
-instance of the keyboard class, call <a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#autopilot.input.Keyboard.create" title="autopilot.input.Keyboard.create"><tt class="xref py py-meth docutils literal"><span class="pre">create</span></tt></a> instead.</p>
+instance of the keyboard class, call <a class="reference internal" href="autopilot.input.Keyboard.md#autopilot.input.Keyboard.create" title="autopilot.input.Keyboard.create"><tt class="xref py py-meth docutils literal"><span class="pre">create</span></tt></a> instead.</p>
 <dl class="staticmethod">
 <dt id="autopilot.input.Keyboard.create">
-<em class="property">static </em><tt class="descname">create</tt><big>(</big><em>preferred_backend=''</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.create"></a><a class="headerlink" href="#autopilot.input.Keyboard.create" title="Permalink to this definition"></a></dt>
-<dd><p>Get an instance of the <a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#autopilot.input.Keyboard" title="autopilot.input.Keyboard"><tt class="xref py py-class docutils literal"><span class="pre">Keyboard</span></tt></a> class.</p>
+<em class="property">static </em><tt class="descname">create</tt><big>(</big><em>preferred_backend=''</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.create"></a><a class="headerlink" href="#autopilot.input.Keyboard.create" title="Permalink to this definition"></a></dt>
+<dd><p>Get an instance of the <a class="reference internal" href="autopilot.input.Keyboard.md#autopilot.input.Keyboard" title="autopilot.input.Keyboard"><tt class="xref py py-class docutils literal"><span class="pre">Keyboard</span></tt></a> class.</p>
 <p>For more infomration on picking specific backends, see
-<a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
+<a class="reference internal" href="tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
 <p>For details regarding backend limitations please see:
-<a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#keyboard-backend-limitations"><em>Keyboard backend limitations</em></a></p>
+<a class="reference internal" href="tutorial-advanced_autopilot.md#keyboard-backend-limitations"><em>Keyboard backend limitations</em></a></p>
 <p class="first admonition-title">Warning</p>
 <p class="last">The <strong>OSK</strong> (On Screen Keyboard) backend option does not
-implement either <a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#autopilot.input.Keyboard.press" title="autopilot.input.Keyboard.press"><tt class="xref py py-meth docutils literal"><span class="pre">press</span></tt></a> or <a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#autopilot.input.Keyboard.release" title="autopilot.input.Keyboard.release"><tt class="xref py py-meth docutils literal"><span class="pre">release</span></tt></a> methods due to
+implement either <a class="reference internal" href="autopilot.input.Keyboard.md#autopilot.input.Keyboard.press" title="autopilot.input.Keyboard.press"><tt class="xref py py-meth docutils literal"><span class="pre">press</span></tt></a> or <a class="reference internal" href="autopilot.input.Keyboard.md#autopilot.input.Keyboard.release" title="autopilot.input.Keyboard.release"><tt class="xref py py-meth docutils literal"><span class="pre">release</span></tt></a> methods due to
 technical implementation details and will raise a NotImplementedError
 exception if used.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -55,7 +55,7 @@ is set, but that backend could not be instantiated.</td>
 </dd></dl>
 <dl class="method">
 <dt id="autopilot.input.Keyboard.focused_type">
-<tt class="descname">focused_type</tt><big>(</big><em>input_target</em>, <em>pointer=None</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.focused_type"></a><a class="headerlink" href="#autopilot.input.Keyboard.focused_type" title="Permalink to this definition"></a></dt>
+<tt class="descname">focused_type</tt><big>(</big><em>input_target</em>, <em>pointer=None</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.focused_type"></a><a class="headerlink" href="#autopilot.input.Keyboard.focused_type" title="Permalink to this definition"></a></dt>
 <dd><p>Type into an input widget.</p>
 <p>This context manager takes care of making sure a particular
 <em>input_target</em> UI control is selected before any text is entered.</p>
@@ -77,7 +77,7 @@ Touch pointer will be created based on the current platform.</p>
 </dd></dl>
 <dl class="method">
 <dt id="autopilot.input.Keyboard.press">
-<tt class="descname">press</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.press"></a><a class="headerlink" href="#autopilot.input.Keyboard.press" title="Permalink to this definition"></a></dt>
+<tt class="descname">press</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.press"></a><a class="headerlink" href="#autopilot.input.Keyboard.press" title="Permalink to this definition"></a></dt>
 <dd><p>Send key press events only.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -105,7 +105,7 @@ and will raise a NotImplementedError if called.</p>
 </dd></dl>
 <dl class="method">
 <dt id="autopilot.input.Keyboard.release">
-<tt class="descname">release</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.release"></a><a class="headerlink" href="#autopilot.input.Keyboard.release" title="Permalink to this definition"></a></dt>
+<tt class="descname">release</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.release"></a><a class="headerlink" href="#autopilot.input.Keyboard.release" title="Permalink to this definition"></a></dt>
 <dd><p>Send key release events only.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -133,7 +133,7 @@ and will raise a NotImplementedError if called.</p>
 </dd></dl>
 <dl class="method">
 <dt id="autopilot.input.Keyboard.press_and_release">
-<tt class="descname">press_and_release</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.press_and_release"></a><a class="headerlink" href="#autopilot.input.Keyboard.press_and_release" title="Permalink to this definition"></a></dt>
+<tt class="descname">press_and_release</tt><big>(</big><em>keys</em>, <em>delay=0.2</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.press_and_release"></a><a class="headerlink" href="#autopilot.input.Keyboard.press_and_release" title="Permalink to this definition"></a></dt>
 <dd><p>Press and release all items in &#8216;keys&#8217;.</p>
 <p>This is the same as calling &#8216;press(keys);release(keys)&#8217;.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -156,7 +156,7 @@ key.</li>
 </dd></dl>
 <dl class="method">
 <dt id="autopilot.input.Keyboard.type">
-<tt class="descname">type</tt><big>(</big><em>string</em>, <em>delay=0.1</em><big>)</big><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#Keyboard.type"></a><a class="headerlink" href="#autopilot.input.Keyboard.type" title="Permalink to this definition"></a></dt>
+<tt class="descname">type</tt><big>(</big><em>string</em>, <em>delay=0.1</em><big>)</big><a class="reference internal" href="autopilot.input.Keyboard.md#Keyboard.type"></a><a class="headerlink" href="#autopilot.input.Keyboard.type" title="Permalink to this definition"></a></dt>
 <dd><p>Simulate a user typing a string of text.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

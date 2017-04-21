@@ -8,10 +8,9 @@ Title: unity.scopes.MiddlewareException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::MiddlewareException:
-<img src="../../../../media/classunity_1_1scopes_1_1_middleware_exception__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_middleware_exception_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_middleware_exception_inherit__map" id="unity_1_1scopes_1_1_middleware_exception_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_object_not_exist_exception.html" title="Exception to indicate that a (twoway) request was sent to an object with an unknown identity..." alt="" coords="5,169,183,211"/><area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_timeout_exception.html" title="Exception to indicate that a twoway request timed out. " alt="" coords="207,177,434,203"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_middleware_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

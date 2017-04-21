@@ -40,26 +40,26 @@ Title: Ubuntu.Components.ListItems.Empty
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type">Model</span> {
 <span class="name">id</span>: <span class="name">contactModel</span>
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> {
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> {
 <span class="name">name</span>: <span class="string">&quot;Bill Smith&quot;</span>
 <span class="name">number</span>: <span class="string">&quot;555 3264&quot;</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> {
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> {
 <span class="name">name</span>: <span class="string">&quot;John Brown&quot;</span>
 <span class="name">number</span>: <span class="string">&quot;555 8426&quot;</span>
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">width</span>: <span class="number">180</span>; <span class="name">height</span>: <span class="number">200</span>
 <span class="name">model</span>: <span class="name">contactModel</span>
 <span class="name">delegate</span>: <span class="name">ListItem</span>.Empty {
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">6</span>)
 <span class="name">removable</span>: <span class="number">true</span>
 <span class="name">onItemRemoved</span>: <span class="name">contactModel</span>.<span class="name">remove</span>(<span class="name">index</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Text.md">Text</a></span> {
+<span class="type"><a href="QtQuick.Text.md">Text</a></span> {
 <span class="name">text</span>: <span class="name">name</span> <span class="operator">+</span> <span class="string">&quot; &quot;</span> <span class="operator">+</span> <span class="name">number</span>
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 }
@@ -70,7 +70,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <!-- @@@Empty -->
 <h2>Property Documentation</h2>
 <!-- $$$backgroundIndicator -->
-<table class="qmlname"><tr valign="top" id="backgroundIndicator-prop"><td class="tblQmlPropNode"><p><span class="name">backgroundIndicator</span> : <span class="type">list</span>&lt;<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Defines the item background item to be showed during the item swiping</p>
+<table class="qmlname"><tr valign="top" id="backgroundIndicator-prop"><td class="tblQmlPropNode"><p><span class="name">backgroundIndicator</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Defines the item background item to be showed during the item swiping</p>
 <!-- @@@backgroundIndicator -->
 <br/>
 <!-- $$$confirmRemoval -->
@@ -94,7 +94,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <!-- @@@selected -->
 <br/>
 <!-- $$$showDivider -->
-<table class="qmlname"><tr valign="top" id="showDivider-prop"><td class="tblQmlPropNode"><p><span class="name">showDivider</span> : <span class="type">bool</span></p></td></tr></table><p>Set to show or hide the thin bottom divider line (drawn by the <a href="Ubuntu.Components.ListItems.ThinDivider.md">ThinDivider</a> component). This line is shown by default except in cases where this item is the delegate of a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>.</p>
+<table class="qmlname"><tr valign="top" id="showDivider-prop"><td class="tblQmlPropNode"><p><span class="name">showDivider</span> : <span class="type">bool</span></p></td></tr></table><p>Set to show or hide the thin bottom divider line (drawn by the <a href="Ubuntu.Components.ListItems.ThinDivider.md">ThinDivider</a> component). This line is shown by default except in cases where this item is the delegate of a <a href="QtQuick.ListView.md">ListView</a>.</p>
 <!-- @@@showDivider -->
 <br/>
 <!-- $$$swipingState -->

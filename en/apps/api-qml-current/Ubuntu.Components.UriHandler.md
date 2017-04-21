@@ -20,7 +20,7 @@ Title: Ubuntu.Components.UriHandler
 </p>
 <p><a href="index.html">UriHandler</a> is a singleton handling opened URIs. The application can be signalled of opened URIs through the opened signal. The content of the &quot;APP_ID&quot; environment variable is used to determine the object path. If the D-Bus session bus is not connected or the &quot;APP_ID&quot; variable is not set or empty, the handler stays uninitialized.</p>
 <p>Example of use:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQml.Connections.md">Connections</a></span> {
+<pre class="qml"><span class="type"><a href="QtQml.Connections.md">Connections</a></span> {
 <span class="name">target</span>: <span class="name">UriHandler</span>
 <span class="name">onOpened</span>: <span class="name">print</span>(<span class="name">uris</span>)
 }</pre>

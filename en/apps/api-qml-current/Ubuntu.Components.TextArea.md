@@ -144,7 +144,7 @@ Title: Ubuntu.Components.TextArea
 <!-- @@@contentWidth -->
 <br/>
 <!-- $$$cursorDelegate -->
-<table class="qmlname"><tr valign="top" id="cursorDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">cursorDelegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate for the cursor in the <a href="index.html">TextArea</a>.</p>
+<table class="qmlname"><tr valign="top" id="cursorDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">cursorDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate for the cursor in the <a href="index.html">TextArea</a>.</p>
 <p>If you set a cursorDelegate for a <a href="index.html">TextArea</a>, this delegate will be used for drawing the cursor instead of the standard cursor. An instance of the delegate will be created and managed by the text edit when a cursor is needed, and the x and y properties of delegate instance will be set so as to be one pixel before the top left of the current character.</p>
 <p>Note that the root item of the delegate component must be a <a href="http://doc.qt.io/qt-5/qquickitem.html">QQuickItem</a> or <a href="http://doc.qt.io/qt-5/qquickitem.html">QQuickItem</a> derived item.</p>
 <!-- @@@cursorDelegate -->
@@ -164,7 +164,7 @@ Title: Ubuntu.Components.TextArea
 <!-- @@@cursorVisible -->
 <br/>
 <!-- $$$displayText -->
-<table class="qmlname"><tr valign="top" id="displayText-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">displayText</span> : <span class="type">string</span></p></td></tr></table><p>This property contains the text that is displayed on the screen. May differ from the text property value when <a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.RichText format is selected.</p>
+<table class="qmlname"><tr valign="top" id="displayText-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">displayText</span> : <span class="type">string</span></p></td></tr></table><p>This property contains the text that is displayed on the screen. May differ from the text property value when <a href="QtQuick.TextEdit.md">TextEdit</a>.RichText format is selected.</p>
 <!-- @@@displayText -->
 <br/>
 <!-- $$$effectiveHorizontalAlignment -->
@@ -183,10 +183,10 @@ Title: Ubuntu.Components.TextArea
 <table class="qmlname"><tr valign="top" id="horizontalAlignment-prop"><td class="tblQmlPropNode"><p><span class="name">horizontalAlignment</span> : <span class="type">enumeration</span></p></td></tr></table><p>Sets the horizontal alignment of the text within the TextAre item's width and height. By default, the text alignment follows the natural alignment of the text, for example text that is read from left to right will be aligned to the left.</p>
 <p>Valid values for <a href="#effectiveHorizontalAlignment-prop">effectiveHorizontalAlignment</a> are:</p>
 <ul>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignLeft (default)</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignRight</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignHCenter</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignJustify</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignLeft (default)</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignRight</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignHCenter</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignJustify</li>
 </ul>
 <!-- @@@horizontalAlignment -->
 <br/>
@@ -244,8 +244,8 @@ Title: Ubuntu.Components.TextArea
 <!-- $$$mouseSelectionMode -->
 <table class="qmlname"><tr valign="top" id="mouseSelectionMode-prop"><td class="tblQmlPropNode"><p><span class="name">mouseSelectionMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>Specifies how text should be selected using a mouse.</p>
 <ul>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.SelectCharacters - The selection is updated with individual characters. (Default)</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.SelectWords - The selection is updated with whole words.</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.SelectCharacters - The selection is updated with individual characters. (Default)</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.SelectWords - The selection is updated with whole words.</li>
 </ul>
 <p>This property only applies when <a href="#selectByMouse-prop">selectByMouse</a> is true.</p>
 <!-- @@@mouseSelectionMode -->
@@ -324,32 +324,32 @@ Title: Ubuntu.Components.TextArea
 <!-- $$$textFormat -->
 <table class="qmlname"><tr valign="top" id="textFormat-prop"><td class="tblQmlPropNode"><p><span class="name">textFormat</span> : <span class="type">enumeration</span></p></td></tr></table><p>The way the text property should be displayed.</p>
 <ul>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AutoText</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.PlainText</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.RichText</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AutoText</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.PlainText</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.RichText</li>
 </ul>
-<p>The default is <a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.PlainText. If the text format is <a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AutoText the text edit will automatically determine whether the text should be treated as rich text. This determination is made using Qt::mightBeRichText().</p>
+<p>The default is <a href="QtQuick.TextEdit.md">TextEdit</a>.PlainText. If the text format is <a href="QtQuick.TextEdit.md">TextEdit</a>.AutoText the text edit will automatically determine whether the text should be treated as rich text. This determination is made using Qt::mightBeRichText().</p>
 <!-- @@@textFormat -->
 <br/>
 <!-- $$$verticalAlignment -->
 <table class="qmlname"><tr valign="top" id="verticalAlignment-prop"><td class="tblQmlPropNode"><p><span class="name">verticalAlignment</span> : <span class="type">enumeration</span></p></td></tr></table><p>Sets the vertical alignment of the text within the TextAres item's width and height. By default, the text alignment follows the natural alignment of the text.</p>
 <p>Valid values for verticalAlignment are:</p>
 <ul>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignTop (default)</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignBottom</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.AlignVCenter</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignTop (default)</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignBottom</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.AlignVCenter</li>
 </ul>
 <!-- @@@verticalAlignment -->
 <br/>
 <!-- $$$wrapMode -->
-<table class="qmlname"><tr valign="top" id="wrapMode-prop"><td class="tblQmlPropNode"><p><span class="name">wrapMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>Set this property to wrap the text to the <a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a> item's width. The text will only wrap if an explicit width has been set.</p>
+<table class="qmlname"><tr valign="top" id="wrapMode-prop"><td class="tblQmlPropNode"><p><span class="name">wrapMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>Set this property to wrap the text to the <a href="QtQuick.TextEdit.md">TextEdit</a> item's width. The text will only wrap if an explicit width has been set.</p>
 <ul>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.NoWrap - no wrapping will be performed. If the text contains insufficient newlines, then implicitWidth will exceed a set width.</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.WordWrap - wrapping is done on word boundaries only. If a word is too long, implicitWidth will exceed a set width.</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.WrapAnywhere - wrapping is done at any point on a line, even if it occurs in the middle of a word.</li>
-<li><a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.Wrap - if possible, wrapping occurs at a word boundary; otherwise it will occur at the appropriate point on the line, even in the middle of a word.</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.NoWrap - no wrapping will be performed. If the text contains insufficient newlines, then implicitWidth will exceed a set width.</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.WordWrap - wrapping is done on word boundaries only. If a word is too long, implicitWidth will exceed a set width.</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.WrapAnywhere - wrapping is done at any point on a line, even if it occurs in the middle of a word.</li>
+<li><a href="QtQuick.TextEdit.md">TextEdit</a>.Wrap - if possible, wrapping occurs at a word boundary; otherwise it will occur at the appropriate point on the line, even in the middle of a word.</li>
 </ul>
-<p>The default is <a href="../sdk-14.10/QtQuick.TextEdit.md">TextEdit</a>.Wrap</p>
+<p>The default is <a href="QtQuick.TextEdit.md">TextEdit</a>.Wrap</p>
 <!-- @@@wrapMode -->
 <br/>
 <h2>Signal Documentation</h2>

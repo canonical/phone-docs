@@ -13,13 +13,13 @@ Title: Ubuntu.Web.SharedWebContext
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//Ubuntu.Web.SharedWebContext.md#customUA-prop">customUA</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Web.SharedWebContext.md#sharedContext-prop">sharedContext</a></b></b> : WebContext</li>
+<li class="fn"><b><b><a href="Ubuntu.Web.SharedWebContext.md#customUA-prop">customUA</a></b></b> : string</li>
+<li class="fn"><b><b><a href="Ubuntu.Web.SharedWebContext.md#sharedContext-prop">sharedContext</a></b></b> : WebContext</li>
 </ul>
 <!-- $$$SharedWebContext-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Note that the <a href="..//Ubuntu.Web.WebView.md">WebView</a> component already uses the shared context.</p>
+<p>Note that the <a href="Ubuntu.Web.WebView.md">WebView</a> component already uses the shared context.</p>
 <!-- @@@SharedWebContext -->
 <h2>Property Documentation</h2>
 <!-- $$$customUA -->
@@ -27,6 +27,6 @@ Title: Ubuntu.Web.SharedWebContext
 <!-- @@@customUA -->
 <br/>
 <!-- $$$sharedContext -->
-<table class="qmlname"><tr valign="top" id="sharedContext-prop"><td class="tblQmlPropNode"><p><span class="name">sharedContext</span> : <span class="type"><a href="..//Ubuntu.Web.WebContext.md">WebContext</a></span></p></td></tr></table><p>The <a href="..//Ubuntu.Web.WebContext.md">WebContext</a> instance that several <a href="..//Ubuntu.Web.WebView.md">WebView</a> instances can share.</p>
+<table class="qmlname"><tr valign="top" id="sharedContext-prop"><td class="tblQmlPropNode"><p><span class="name">sharedContext</span> : <span class="type"><a href="Ubuntu.Web.WebContext.md">WebContext</a></span></p></td></tr></table><p>The <a href="Ubuntu.Web.WebContext.md">WebContext</a> instance that several <a href="Ubuntu.Web.WebView.md">WebView</a> instances can share.</p>
 <!-- @@@sharedContext -->
 <br/>

@@ -26,7 +26,7 @@ Continue through the wizard by picking:
 
 ![](../../../media/qml-tutorial-c-backend-screenshot3.png)
 
-  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](../..//platform/guides/frameworks.md)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
+  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](../../platform/guides/frameworks.md)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
 
 ![](../../../media/qml-tutorial-c-backend-screenshot4.png)
 

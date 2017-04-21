@@ -173,7 +173,7 @@ A pop-up informs you that you have succeeded.
 ### Enable USB Debugging
 
 Here, you enable USB Debugging. This is required for a USB terminal connection
-from your Desktop to your device. After [enabling DeveloperMode](installing-ubuntu-for-devices.md#androiddevmode), the
+from your Desktop to your device. After [enabling DeveloperMode](#androiddevmode), the
 **Developer** options item is exposed in the Settings page.
 
   1. Navigate to **Settings → Developer options**
@@ -324,7 +324,7 @@ obtain the image. For guidance on which channel is best for you check out the
 ### Install Ubuntu
 
   * Power the device off with the Power button.
-  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices](device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  * Reboot into the bootloader by pressing the correct physical button combination for your [ ](/devices](device type](devices.md) as shown here: [https://source.android.com/source/building-devices#booting-into-fastboot-mode](https://source.android.com/source/building-devices#booting-into-fastboot-mode)
   * Install Ubuntu using your selected channel, in this case we use the **stable** channel:
 
 ```
@@ -485,8 +485,8 @@ your launcher for easy access any time.
 ### Write your own Apps or Scopes
 
 Developing apps and scopes for Ubuntu is fast, easy and free! Once you
-download the [Ubuntu SDK](platform/sdk/installing-the-sdk.md) you can
-follow along with our tutorials for [writing your firstapp](../apps/qml/tutorials/index.md) or [your firstscope](../scopes/tutorials/index.md). Then you can publish them to the Ubuntu
+download the [Ubuntu SDK](../platform/sdk/installing-the-sdk.md) you can
+follow along with our tutorials for [writing your firstapp](../apps/qml/tutorials-index.md) or [your firstscope](../scopes/tutorials/index.md). Then you can publish them to the Ubuntu
 Store for other users to enjoy!
 
 ## Getting Help

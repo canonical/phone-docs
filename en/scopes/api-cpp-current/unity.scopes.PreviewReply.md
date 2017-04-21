@@ -8,10 +8,8 @@ Title: unity.scopes.PreviewReply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/PreviewReply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::PreviewReply:
-<img src="../../../../media/classunity_1_1scopes_1_1_preview_reply__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_preview_reply_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_preview_reply_inherit__map" id="unity_1_1scopes_1_1_preview_reply_inherit__map">
-<area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_preview_reply.html" title="Mock for unity::scopes::PreviewReply class. " alt="" coords="24,229,181,271"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_reply.html" title="Allows query termination to be sent to the source of a query. " alt="" coords="29,80,176,107"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_object.html" title="The root base class for all proxies. " alt="" coords="25,5,180,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_preview_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -13,28 +13,28 @@ Title: QtLocation.Category
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#category-prop">category</a></b></b> : QPlaceCategory</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#categoryId-prop">categoryId</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#icon-prop">icon</a></b></b> : PlaceIcon</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#plugin-prop">plugin</a></b></b> : Plugin</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#status-prop">status</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="..//QtLocation.Category.md#visibility-prop">visibility</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href=#category-prop">category</a></b></b> : QPlaceCategory</li>
+<li class="fn"><b><b><a href=#categoryId-prop">categoryId</a></b></b> : string</li>
+<li class="fn"><b><b><a href=#icon-prop">icon</a></b></b> : PlaceIcon</li>
+<li class="fn"><b><b><a href=#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href=#plugin-prop">plugin</a></b></b> : Plugin</li>
+<li class="fn"><b><b><a href=#status-prop">status</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href=#visibility-prop">visibility</a></b></b> : enumeration</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">string <b><b><a href="..//QtLocation.Category.md#errorString-method">errorString</a></b></b>()</li>
-<li class="fn">void <b><b><a href="..//QtLocation.Category.md#remove-method">remove</a></b></b>()</li>
-<li class="fn">void <b><b><a href="..//QtLocation.Category.md#save-method">save</a></b></b>()</li>
+<li class="fn">string <b><b><a href=#errorString-method">errorString</a></b></b>()</li>
+<li class="fn">void <b><b><a href=#remove-method">remove</a></b></b>()</li>
+<li class="fn">void <b><b><a href=#save-method">save</a></b></b>()</li>
 </ul>
 <!-- $$$Category-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Categories are used to search for places based on the categories they are associated with. The list of available categories can be obtained from the <a href="..//QtLocation.CategoryModel.md">CategoryModel</a>. The <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> has a <a href="..//QtLocation.PlaceSearchModel.md#categories-prop">categories</a> property that is used to limit the search results to places with the specified categories.</p>
-<p>If the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> supports it, categories can be created or removed. To create a new category construct a new Category object and set its properties, then invoke the <a href="..//QtLocation.Category.md#save-method">save()</a> method.</p>
+<p>Categories are used to search for places based on the categories they are associated with. The list of available categories can be obtained from the <a href="QtLocation.CategoryModel.md">CategoryModel</a>. The <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> has a <a href="QtLocation.PlaceSearchModel.md#categories-prop">categories</a> property that is used to limit the search results to places with the specified categories.</p>
+<p>If the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> supports it, categories can be created or removed. To create a new category construct a new Category object and set its properties, then invoke the <a href=#save-method">save()</a> method.</p>
 <pre class="qml">import QtPositioning 5.2
 import QtLocation 5.3
-<span class="type"><a href="..//QtLocation.Category.md">Category</a></span> {
+<span class="type"><a href=">Category</a></span> {
 <span class="name">id</span>: <span class="name">category</span>
 <span class="name">plugin</span>: <span class="name">myPlugin</span>
 <span class="name">name</span>: <span class="string">&quot;New Category&quot;</span>
@@ -42,8 +42,8 @@ import QtLocation 5.3
 }
 ...
 <span class="name">category</span>.<span class="name">save</span>();</pre>
-<p>To remove a category ensure that the <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a> and <a href="..//QtLocation.Category.md#categoryId-prop">categoryId</a> properties are set and call the <a href="..//QtLocation.Category.md#remove-method">remove()</a> method.</p>
-<p><b>See also </b><a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.</p>
+<p>To remove a category ensure that the <a href="QtLocation.location-places-qml.md#plugin">plugin</a> and <a href=#categoryId-prop">categoryId</a> properties are set and call the <a href=#remove-method">remove()</a> method.</p>
+<p><b>See also </b><a href="QtLocation.CategoryModel.md">CategoryModel</a>.</p>
 <!-- @@@Category -->
 <h2>Property Documentation</h2>
 <!-- $$$category -->
@@ -51,7 +51,7 @@ import QtLocation 5.3
 <!-- @@@category -->
 <br/>
 <!-- $$$categoryId -->
-<table class="qmlname"><tr valign="top" id="categoryId-prop"><td class="tblQmlPropNode"><p><span class="name">categoryId</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the identifier of the category. The categoryId is a string which uniquely identifies this category within the categories <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a>.</p>
+<table class="qmlname"><tr valign="top" id="categoryId-prop"><td class="tblQmlPropNode"><p><span class="name">categoryId</span> : <span class="type">string</span></p></td></tr></table><p>This property holds the identifier of the category. The categoryId is a string which uniquely identifies this category within the categories <a href="QtLocation.location-places-qml.md#plugin">plugin</a>.</p>
 <!-- @@@categoryId -->
 <br/>
 <!-- $$$icon -->
@@ -63,7 +63,7 @@ import QtLocation 5.3
 <!-- @@@name -->
 <br/>
 <!-- $$$plugin -->
-<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the location based service to which the category belongs.</p>
+<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the location based service to which the category belongs.</p>
 <!-- @@@plugin -->
 <br/>
 <!-- $$$status -->
@@ -84,7 +84,7 @@ import QtLocation 5.3
 <tr valign="top"><td >Category.PrivateVisibility</td><td >The category is private to the current user. The category may be transferred to an online service but is only ever visible to the current user.</td></tr>
 <tr valign="top"><td >Category.PublicVisibility</td><td >The category is public.</td></tr>
 </table>
-<p>Note that visibility does not affect how <a href="..//QtLocation.location-cpp-qml.md#place">Place</a>s associated with the category are displayed in the user-interface of an application on the device. Instead, it defines the sharing semantics of the category.</p>
+<p>Note that visibility does not affect how <a href="QtLocation.location-cpp-qml.md#place">Place</a>s associated with the category are displayed in the user-interface of an application on the device. Instead, it defines the sharing semantics of the category.</p>
 <!-- @@@visibility -->
 <br/>
 <h2>Method Documentation</h2>

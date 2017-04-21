@@ -10,7 +10,7 @@ Title: unity.scopes.SearchListenerBase
 
 <p>Inheritance diagram for unity::scopes::SearchListenerBase:</p>
 
-<img src="../../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_listener_base_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">

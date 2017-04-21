@@ -113,7 +113,7 @@ import Ubuntu.Component 1.3
 <p>That will make sure <a href="Ubuntu.Components.SlotsLayout.md#mainSlot-prop">SlotsLayout::mainSlot</a> is resized to accomodate the (currently empty) subtitle.</p>
 <p>This is useful, for instance, if you want all list items in a list view to have the same height even without having to fill <a href="#subtitle-prop">subtitle</a>'s (or summary's) text with dummy content.</p>
 <h2 id="labels-properties">Labels' properties</h2>
-<p><a href="index.html">ListItemLayout</a>'s labels are the same component as <a href="Ubuntu.Components.Label.md">Label</a>, but with slightly different default properties. Moreover, <a href="Ubuntu.Components.Label.md">Label</a> derives from <a href="../sdk-14.10/QtQuick.qtquick-releasenotes.md#text">Text</a>. As a consequence, you can access and override all the properties provided by <a href="../sdk-14.10/QtQuick.qtquick-releasenotes.md#text">Text</a> and <a href="Ubuntu.Components.Label.md">Label</a>, if needed. Please refer to <a href="../sdk-14.10/QtQuick.qtquick-releasenotes.md#text">Text</a>'s and <a href="Ubuntu.Components.Label.md">Label</a>'s documentation to see the list of all the properties.</p>
+<p><a href="index.html">ListItemLayout</a>'s labels are the same component as <a href="Ubuntu.Components.Label.md">Label</a>, but with slightly different default properties. Moreover, <a href="Ubuntu.Components.Label.md">Label</a> derives from <a href="QtQuick.qtquick-releasenotes.md#text">Text</a>. As a consequence, you can access and override all the properties provided by <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> and <a href="Ubuntu.Components.Label.md">Label</a>, if needed. Please refer to <a href="QtQuick.qtquick-releasenotes.md#text">Text</a>'s and <a href="Ubuntu.Components.Label.md">Label</a>'s documentation to see the list of all the properties.</p>
 <p>The default values for <a href="index.html">ListItemLayout</a>'s labels are defined in the documentation of each label. See <a href="#title-prop">title</a>, <a href="#subtitle-prop">subtitle</a> and <a href="#summary-prop">summary</a>.</p>
 <p><b>Note</b>: if you want to change the elide mode of a label to something other than <code>Text.ElideRight</code>, make sure its <code>wrapMode</code> is set to <code>Text.NoWrap</code>. See <a href="QtQuick.Text.md#wrapMode-prop">Text::wrapMode</a> for more details.</p>
 <pre class="qml">import QtQuick 2.4
@@ -221,7 +221,7 @@ import Ubuntu.Components 1.3
 }</pre>
 <p>The default <a href="QtQuick.Text.md#elide-prop">Text::elide</a> value for title is <code>Text.ElideRight</code>.</p>
 <p>The default <a href="QtQuick.Text.md#wrapMode-prop">Text::wrapMode</a> is <code>Text.WrapAnywhere</code>.</p>
-<p>That means, for instance, that if you want to use a different elide mode, you also have to set wrapMode to <code>Text.NoWrap</code>. Refer to the official <a href="../sdk-14.10/QtQuick.qtquick-releasenotes.md#text">Text</a> documentation for further details.</p>
+<p>That means, for instance, that if you want to use a different elide mode, you also have to set wrapMode to <code>Text.NoWrap</code>. Refer to the official <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> documentation for further details.</p>
 <p>The default <a href="Ubuntu.Components.Label.md#textSize-prop">Label::textSize</a> is <code>Label.Medium</code>.</p>
 <p>The rest of the properties have the same default values as <a href="Ubuntu.Components.Label.md">Label</a>.</p>
 <!-- @@@title -->

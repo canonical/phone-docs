@@ -12,7 +12,7 @@ Consider the following features to create a truly unique and beautiful Ubuntu ex
 
 Simply place your designs over the layout by using the grid units to help you arrange your content in a more readable, manageable way.
 
-[Layouts &rsaquo;](../patterns/layouts/md)
+[Layouts &rsaquo;](../patterns/layouts.md)
 
 ## 2. Create a unique experience with the bottom edge
 ![366w_MakeItUbuntu_BottomEdge-1](https://assets.ubuntu.com/v1/6812ab69-366w_MakeItUbuntu_BottomEdge-1.png)

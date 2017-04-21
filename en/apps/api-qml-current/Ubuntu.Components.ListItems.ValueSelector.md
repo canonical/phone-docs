@@ -28,7 +28,7 @@ Title: Ubuntu.Components.ListItems.ValueSelector
 </p>
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">width</span>: <span class="number">250</span>
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.ValueSelector {
 <span class="name">text</span>: <span class="string">&quot;Standard&quot;</span>

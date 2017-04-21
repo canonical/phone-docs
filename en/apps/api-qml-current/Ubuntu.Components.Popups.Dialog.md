@@ -30,15 +30,15 @@ Title: Ubuntu.Components.Popups.Dialog
 <!-- $$$Dialog-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="http://design.ubuntu.com/apps/building-blocks/dialog">See also the Design Guidelines on Dialogs</a>.</p>
+
 <p>Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dialog</span>
 <span class="type"><a href="index.html">Dialog</a></span> {
 <span class="name">id</span>: <span class="name">dialogue</span>
@@ -97,7 +97,7 @@ import Ubuntu.Components.Popups 1.3
 <!-- @@@modal -->
 <br/>
 <!-- $$$style -->
-<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The style of the foreground of the Dialog. This property takes precedence over <a href="#styleName-prop">styleName</a></p>
+<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The style of the foreground of the Dialog. This property takes precedence over <a href="#styleName-prop">styleName</a></p>
 <p>This QML property was introduced in  Ubuntu.Components 1.3.</p>
 <p><b>See also </b><a href="Ubuntu.Components.StyledItem.md#style-prop">StyledItem::style</a>.</p>
 <!-- @@@style -->
@@ -122,7 +122,7 @@ import Ubuntu.Components.Popups 1.3
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
 <span class="comment">// make sure the main theme is Ambiance</span>
 <span class="name">theme</span>.name: <span class="string">&quot;Ubuntu.Components.Themes.Ambiance&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dialogComponent</span>
 <span class="type"><a href="index.html">Dialog</a></span> {
 <span class="name">id</span>: <span class="name">dialog</span>

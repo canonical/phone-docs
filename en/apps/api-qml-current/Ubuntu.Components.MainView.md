@@ -58,13 +58,13 @@ import Ubuntu.Components 1.3
 <span class="name">title</span>: <span class="string">&quot;Page with Flickable&quot;</span>
 <span class="name">flickable</span>: <span class="name">myFlickable</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">id</span>: <span class="name">myFlickable</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="number">100</span>
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;line &quot;</span><span class="operator">+</span><span class="name">index</span>
@@ -74,7 +74,7 @@ import Ubuntu.Components 1.3
 }
 }
 }</pre>
-<p>The same header behavior is automatic when using a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> instead of a Flickable in the above example.</p>
+<p>The same header behavior is automatic when using a <a href="QtQuick.ListView.md">ListView</a> instead of a Flickable in the above example.</p>
 <p>The examples above show how to include a single <a href="Ubuntu.Components.Page.md">Page</a> inside a <a href="index.html">MainView</a>, but more advanced application structures are possible using <a href="Ubuntu.Components.AdaptivePageLayout.md">AdaptivePageLayout</a>.</p>
 <!-- @@@MainView -->
 <h2>Property Documentation</h2>

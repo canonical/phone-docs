@@ -88,8 +88,8 @@ aDocument<span class="operator">.</span>contents <span class="operator">=</span>
 <span class="name">color</span>: <span class="string">&quot;#00FFFFFF&quot;</span>
 <span class="comment">// The remainder of the main part of the application goes here ...</span>
 }</pre>
-<p>The following <a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a> is for displaying contents for the current state of the global document, as defined by the key / name in the address bar.</p>
-<pre class="qml">         <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
+<p>The following <a href="../../apps/api-qml-current/Ubuntu.Components.TextArea.md">TextArea</a> is for displaying contents for the current state of the global document, as defined by the key / name in the address bar.</p>
+<pre class="qml">         <span class="type"><a href="../../apps/api-qml-current/Ubuntu.Components.TextArea.md">TextArea</a></span>{
 <span class="name">id</span>: <span class="name">documentContent</span>
 <span class="name">selectByMouse</span> : <span class="number">false</span>
 <span class="name">x</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
@@ -99,7 +99,7 @@ aDocument<span class="operator">.</span>contents <span class="operator">=</span>
 <span class="name">color</span>: <span class="string">&quot;#000000&quot;</span>
 }</pre>
 <p>There is an object within in the 'aDocument' model defined earlier called 'contents', which contains a key called 'hello', which represents a search string. In this example the key will represent the name of a document in the database, which will be displayed in the address bar. Displaying the key is demonstrated here:</p>
-<pre class="qml">         <span class="type"><a href="../../../apps/qml/sdk-14.10/Ubuntu.Components.TextArea.md">TextArea</a></span>{
+<pre class="qml">         <span class="type"><a href="../../apps/api-qml-current/Ubuntu.Components.TextArea.md">TextArea</a></span>{
 <span class="name">text</span>: <span class="name">displayKey</span>(<span class="name">aDocument</span>.<span class="name">contents</span>)
 <span class="keyword">function</span> <span class="name">displayKey</span>(<span class="name">documentObject</span>){
 var <span class="name">keys</span> = <span class="name">Object</span>.<span class="name">keys</span>(<span class="name">documentObject</span>);

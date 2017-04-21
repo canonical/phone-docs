@@ -44,7 +44,7 @@ Title: Ubuntu.Components.Popups.ActionSelectionPopover
 }
 }</pre>
 <p>An array of actions can be used when the actions to be presented are reused from a set of predefined actions:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.Action.md">Action</a></span> {
 <span class="name">id</span>: <span class="name">action1</span>
 <span class="name">text</span>: <span class="string">&quot;Action one&quot;</span>
@@ -74,10 +74,10 @@ Title: Ubuntu.Components.Popups.ActionSelectionPopover
 <!-- @@@actions -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the delegate to visualize the action. The delegate should define one of the data holder properties recognized by the popover in order to access action data.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the delegate to visualize the action. The delegate should define one of the data holder properties recognized by the popover in order to access action data.</p>
 <!-- @@@delegate -->
 <br/>
 <!-- $$$target -->
-<table class="qmlname"><tr valign="top" id="target-prop"><td class="tblQmlPropNode"><p><span class="name">target</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the object on which the action will be performed.</p>
+<table class="qmlname"><tr valign="top" id="target-prop"><td class="tblQmlPropNode"><p><span class="name">target</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the object on which the action will be performed.</p>
 <!-- @@@target -->
 <br/>

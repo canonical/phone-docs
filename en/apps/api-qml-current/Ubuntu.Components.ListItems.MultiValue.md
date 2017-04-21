@@ -21,7 +21,7 @@ Title: Ubuntu.Components.ListItems.MultiValue
 </p>
 <p><b>Note: </b><b>The component is deprecated. Use <a href="Ubuntu.Components.ListItem.md">ListItem</a> component instead.</b></p><p>Examples:</p>
 <pre class="qml">import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.MultiValue {
 <span class="name">text</span>: <span class="string">&quot;Label&quot;</span>
 <span class="name">values</span>: [<span class="string">&quot;Value 1&quot;</span>, <span class="string">&quot;Value 2&quot;</span>, <span class="string">&quot;Value 3&quot;</span>, <span class="string">&quot;Value 4&quot;</span>]

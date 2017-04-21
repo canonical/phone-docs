@@ -6,12 +6,10 @@ Title: unity.scopes.SearchListenerBase
 
 <p>Abstract base interface for a client to receive the results of a query.  
 <a href="#details">More...</a></p>
-<p><code>#include &lt;unity/scopes/SearchListenerBase.h&gt;</code></p>
+<p><code>#include &lt;unity/scopes/unity.scopes.SearchListenerBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::SearchListenerBase:
-<img src="../../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_listener_base_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_search_listener_base_inherit__map" id="unity_1_1scopes_1_1_search_listener_base_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder.html" title="Base class for a client to receive and buffer the results of a query until another BufferedResultForw..." alt="" coords="33,155,219,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_listener_base.html" title="Abstract base class to be notified of request completion (such as a query or activation request)..." alt="" coords="28,5,224,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

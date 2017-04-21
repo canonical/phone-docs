@@ -13,33 +13,33 @@ Title: QtLocation.MapPolyline
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#line-prop">line</a></b></b><ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#line.width-prop">line.width</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#line.color-prop">line.color</a></b></b> : color</li>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#line-prop">line</a></b></b><ul>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#line.width-prop">line.width</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#line.color-prop">line.color</a></b></b> : color</li>
 </ul>
 </li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#path-prop">path</a></b></b> : list&lt;coordinate&gt;</li>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#path-prop">path</a></b></b> : list&lt;coordinate&gt;</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a></b></b>(coordinate)</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a></b></b>(coordinate)</li>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a></b></b>(coordinate)</li>
+<li class="fn"><b><b><a href="QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a></b></b>(coordinate)</li>
 </ul>
 <!-- $$$MapPolyline-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.MapPolyline.md">MapPolyline</a> type displays a polyline on a map, specified in terms of an ordered list of coordinates. The coordinates on the path cannot be directly changed after being added to the Polyline. Instead, copy the <a href="..//QtLocation.MapPolyline.md#path-prop">path</a> into a var, modify the copy and reassign the copy back to the <a href="..//QtLocation.MapPolyline.md#path-prop">path</a>.</p>
+<p>The <a href="QtLocation.MapPolyline.md">MapPolyline</a> type displays a polyline on a map, specified in terms of an ordered list of coordinates. The coordinates on the path cannot be directly changed after being added to the Polyline. Instead, copy the <a href="QtLocation.MapPolyline.md#path-prop">path</a> into a var, modify the copy and reassign the copy back to the <a href="QtLocation.MapPolyline.md#path-prop">path</a>.</p>
 <pre class="cpp">var path <span class="operator">=</span> mapPolyline<span class="operator">.</span>path;
 path<span class="operator">[</span><span class="number">0</span><span class="operator">]</span><span class="operator">.</span>latitude <span class="operator">=</span> <span class="number">5</span>;
 mapPolyline<span class="operator">.</span>path <span class="operator">=</span> path;</pre>
-<p>Coordinates can also be added and removed at any time using the <a href="..//QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a> and <a href="..//QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a> methods.</p>
-<p>By default, the polyline is displayed as a 1-pixel thick black line. This can be changed using the <a href="..//QtLocation.MapPolyline.md#line.width-prop">line.width</a> and <a href="..//QtLocation.MapPolyline.md#line.color-prop">line.color</a> properties.</p>
+<p>Coordinates can also be added and removed at any time using the <a href="QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a> and <a href="QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a> methods.</p>
+<p>By default, the polyline is displayed as a 1-pixel thick black line. This can be changed using the <a href="QtLocation.MapPolyline.md#line.width-prop">line.width</a> and <a href="QtLocation.MapPolyline.md#line.color-prop">line.color</a> properties.</p>
 <h3 >Performance</h3>
 <p>MapPolylines have a rendering cost that is O(n) with respect to the number of vertices. This means that the per frame cost of having a polyline on the Map grows in direct proportion to the number of points in the polyline.</p>
-<p>Like the other map objects, <a href="..//QtLocation.MapPolyline.md">MapPolyline</a> is normally drawn without a smooth appearance. Setting the opacity property will force the object to be blended, which decreases performance considerably depending on the hardware in use.</p>
+<p>Like the other map objects, <a href="QtLocation.MapPolyline.md">MapPolyline</a> is normally drawn without a smooth appearance. Setting the opacity property will force the object to be blended, which decreases performance considerably depending on the hardware in use.</p>
 <p><b>Note: </b>MapPolylines are implemented using the OpenGL GL_LINES primitive. There have been occasional reports of issues and rendering inconsistencies on some (particularly quite old) platforms. No workaround is yet available for these issues.</p>
 <h3 >Example Usage</h3>
-<p>The following snippet shows a <a href="..//QtLocation.MapPolyline.md">MapPolyline</a> with 4 points, making a shape like the top part of a &quot;question mark&quot; (?), near Brisbane, Australia. The line drawn is 3 pixels in width and green in color.</p>
+<p>The following snippet shows a <a href="QtLocation.MapPolyline.md">MapPolyline</a> with 4 points, making a shape like the top part of a &quot;question mark&quot; (?), near Brisbane, Australia. The line drawn is 3 pixels in width and green in color.</p>
 <pre class="cpp">Map {
 MapPolyline {
 line<span class="operator">.</span>width: <span class="number">3</span>
@@ -67,11 +67,11 @@ path: <span class="operator">[</span>
 <h2>Method Documentation</h2>
 <!-- $$$addCoordinate -->
 <table class="qmlname"><tr valign="top" id="addCoordinate-method"><td class="tblQmlFuncNode"><p><span class="name">addCoordinate</span>(<span class="type">coordinate</span>)</p></td></tr></table><p>Adds a coordinate to the path.</p>
-<p><b>See also </b><a href="..//QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a> and <a href="..//QtLocation.MapPolyline.md#path-prop">path</a>.</p>
+<p><b>See also </b><a href="QtLocation.MapPolyline.md#removeCoordinate-method">removeCoordinate</a> and <a href="QtLocation.MapPolyline.md#path-prop">path</a>.</p>
 <!-- @@@addCoordinate -->
 <br/>
 <!-- $$$removeCoordinate -->
 <table class="qmlname"><tr valign="top" id="removeCoordinate-method"><td class="tblQmlFuncNode"><p><span class="name">removeCoordinate</span>(<span class="type">coordinate</span>)</p></td></tr></table><p>Removes a coordinate from the path. If there are multiple instances of the same coordinate, the one added last is removed.</p>
-<p><b>See also </b><a href="..//QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a> and <a href="..//QtLocation.MapPolyline.md#path-prop">path</a>.</p>
+<p><b>See also </b><a href="QtLocation.MapPolyline.md#addCoordinate-method">addCoordinate</a> and <a href="QtLocation.MapPolyline.md#path-prop">path</a>.</p>
 <!-- @@@removeCoordinate -->
 <br/>

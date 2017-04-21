@@ -8,10 +8,8 @@ Title: unity.scopes.SearchReply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/SearchReply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::SearchReply:
-<img src="../../../../media/classunity_1_1scopes_1_1_search_reply__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_search_reply_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_search_reply_inherit__map" id="unity_1_1scopes_1_1_search_reply_inherit__map">
-<area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_search_reply.html" title="Mock for unity::scopes::SearchReply class. " alt="" coords="22,229,179,271"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_reply.html" title="Allows query termination to be sent to the source of a query. " alt="" coords="27,80,174,107"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_object.html" title="The root base class for all proxies. " alt="" coords="23,5,178,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_search_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

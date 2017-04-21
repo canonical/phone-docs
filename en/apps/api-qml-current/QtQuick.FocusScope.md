@@ -16,5 +16,5 @@ Title: QtQuick.FocusScope
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>Focus scopes assist in keyboard focus handling when building reusable QML components. All the details are covered in the <a href="QtQuick.qtquick-input-focus.md">keyboard focus documentation</a>.</p>
-<p><b>See also </b><a href="QtQuick.keyinteraction/">Qt Quick Examples - Key Interaction</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-keyinteraction-example.md">Qt Quick Examples - Key Interaction</a>.</p>
 <!-- @@@FocusScope -->

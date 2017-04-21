@@ -24,7 +24,7 @@ The scope header contains the main title of your scope, together with four eleme
 |![no alt text](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)|See our  [Component](components.md) section on how to best place these actions inside your scope header.|
 |----|----|
 
-|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|For more information on how to implement settings in your scope, see our  [SDK](../tutorials/adding-settings-to-your-scope/).|
+|![no alt text](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)|For more information on how to implement settings in your scope, see our  [SDK](../tutorials/adding-settings-to-your-scope.md).|
 |----|----|
 
 ##Category header

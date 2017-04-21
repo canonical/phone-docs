@@ -13,7 +13,7 @@ The following components are used to change the state of a property or setting f
 
 Use a checkbox to enable or select an option from a list; or as a singular option. For example, a singular option that is an instruction to the system such as ‘Show password’, or selecting a property to be applied or unapplied to add or change a setting; such as changing a font style to ‘Bold’ and ‘Italic’.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Checkbox API](../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Checkbox API](../../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.|
 |-----|-----|
 
 ## Multiple options
@@ -141,7 +141,7 @@ The switch allows the user to perform an action by turning it on or off.
 
 ![750w_FormElements_UseCasesBluetooth](https://assets.ubuntu.com/v1/49e2bc42-750w_FormElements_UseCasesBluetooth.png)
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Switch API](../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Switch API](../../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.|
 |-----|-----|
 
 ## Use cases
@@ -164,7 +164,7 @@ The toolkit provides a combination of multiple pickers for you to use to show th
 
 Use the spinner component to display a set of values on a reel that can be either flickable or draggable.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [PickerPanel API](../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [PickerPanel API](../../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.|
 |-----|-----|
 
 ## Display month, year and day
@@ -207,7 +207,7 @@ The Time Picker supports hour, minute and seconds elements in any combination; e
 
 Use interactive sliders to select a value from a continuous or discrete range of values.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Slider API](../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.|
 |-----|-----|
 
 ## Slider types

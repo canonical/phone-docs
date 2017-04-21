@@ -1,8 +1,8 @@
 ---
-Title: QtQuick.qtquick-positioners-example
+Title: QtQuick.positioners-example-example
 ---
 
-# QtQuick.qtquick-positioners-example
+# QtQuick.positioners-example-example
 
 <span class="subtitle"></span>
 <!-- $$$positioners-description -->

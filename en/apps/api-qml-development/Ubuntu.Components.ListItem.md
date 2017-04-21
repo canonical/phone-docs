@@ -250,7 +250,7 @@ import Ubuntu.Components 1.3
 }</pre>
 <p><a href="index.html">ListItem</a> does not provide animations when the <a href="QtQuick.ListView.md">ListView</a>'s model is updated. In order to have animation, use <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> or provide a transition animation to the moveDisplaced or displaced property of the <a href="QtQuick.ListView.md">ListView</a>.</p>
 <h4 >Using non-QAbstractItemModel models</h4>
-<p>Live dragging (moving content on the move) is only possible when the model is a derivate of the <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a>. When a list model is used, the <a href="QtQuick.ListView.md">ListView</a> will re-create all the items in the view, meaning that the dragged item will no longer be controlled by the dragging. However, non-live drag'n'drop operations can still be implemented with these kind of lists as well.</p>
+<p>Live dragging (moving content on the move) is only possible when the model is a derivate of the <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a>. When a list model is used, the <a href="QtQuick.ListView.md">ListView</a> will re-create all the items in the view, meaning that the dragged item will no longer be controlled by the dragging. However, non-live drag'n'drop operations can still be implemented with these kind of lists as well.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 <span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
@@ -481,7 +481,7 @@ import Ubuntu.Components 1.3
 <br/>
 <h2>Signal Documentation</h2>
 <!-- $$$clicked -->
-<table class="qmlname"><tr valign="top" id="clicked-signal"><td class="tblQmlFuncNode"><p><span class="name">clicked</span>()</p></td></tr></table><p>The signal is emitted when the component gets released while the <a href="#highlighted-prop">highlighted</a> property is set. The signal is not emitted if the <a href="index.html">ListItem</a> content is swiped or when used in Flickable (or <a href="QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) and the Flickable gets moved.</p>
+<table class="qmlname"><tr valign="top" id="clicked-signal"><td class="tblQmlFuncNode"><p><span class="name">clicked</span>()</p></td></tr></table><p>The signal is emitted when the component gets released while the <a href="#highlighted-prop">highlighted</a> property is set. The signal is not emitted if the <a href="index.html">ListItem</a> content is swiped or when used in Flickable (or <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) and the Flickable gets moved.</p>
 <p>If the <a href="index.html">ListItem</a> contains a component which contains an active <a href="QtQuick.MouseArea.md">MouseArea</a>, the clicked signal will be supressed when clicked over this area.</p>
 <!-- @@@clicked -->
 <br/>

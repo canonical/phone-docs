@@ -8,10 +8,8 @@ Title: unity.scopes.PreviewQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/PreviewQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::PreviewQueryBase:
-<img src="../../../../media/classunity_1_1scopes_1_1_preview_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_preview_query_base_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_preview_query_base_inherit__map" id="unity_1_1scopes_1_1_preview_query_base_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_preview_query_base_a_p_i.html" title="Abstract base class to represent a particular preview. " alt="" coords="35,155,206,196"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_query_base.html" title="Abstract server&#45;side base interface for a query that is executed inside a scope. " alt="" coords="29,5,212,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_preview_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

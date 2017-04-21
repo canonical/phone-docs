@@ -29,7 +29,7 @@ import Ubuntu.Layouts 0.1
 <span class="name">layouts</span>: [
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>
 <span class="type"><a href="index.html">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;input&quot;</span>
@@ -43,7 +43,7 @@ import Ubuntu.Layouts 0.1
 }
 ]
 <span class="comment">// default layout</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a></span> {
+<span class="type"><a href="QtQuick.TextInput.md">TextInput</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">text</span>: <span class="string">&quot;input&quot;</span>
 <span class="name">Layouts</span>.item: <span class="string">&quot;input&quot;</span>

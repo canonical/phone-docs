@@ -20,7 +20,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts1
 <span class="comment">// [...]</span>
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> { <span class="comment">// &lt;-- layout</span>
 <span class="name">name</span>: <span class="string">&quot;composit&quot;</span>
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> { <span class="comment">// &lt;-- layout container</span>
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> { <span class="comment">// &lt;-- layout container</span>
 <span class="comment">// [...]</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> { <span class="comment">// &lt;-- item holder</span>
 <span class="name">item</span>: <span class="string">&quot;item2&quot;</span>

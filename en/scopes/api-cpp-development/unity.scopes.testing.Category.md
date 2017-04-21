@@ -8,10 +8,8 @@ Title: unity.scopes.testing.Category
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Category.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Category:
-<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_category__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1testing_1_1_category_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1testing_1_1_category_inherit__map" id="unity_1_1scopes_1_1testing_1_1_category_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_category.html" title="A set of related results returned by a scope and displayed within a single pane in the Unity dash..." alt="" coords="5,5,176,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_category__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

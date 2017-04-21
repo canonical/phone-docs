@@ -35,15 +35,15 @@ import Ubuntu.Components.ListItems 1.3
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
+<span class="type"><a href="QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
 <span class="name">id</span>: <span class="name">listModel</span>
 <span class="name">source</span>: <span class="string">&quot;http://feeds.reuters.com/reuters/topNews&quot;</span>
 <span class="name">query</span>: <span class="string">&quot;/rss/channel/item&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
+<span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
 }
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Reuters&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">view</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">listModel</span>
@@ -59,7 +59,7 @@ import Ubuntu.Components.ListItems 1.3
 }
 }
 }</pre>
-<p><b>Note: </b><a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> has a built-in <a href="index.html">PullToRefresh</a>, therefore it is recommended to use <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> instead of <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>.</p><p>The component will also show the progress of the model's update when the refresh gets initiated by the model or from other party. Style implementations can decide whether to visualize that or not.</p>
+<p><b>Note: </b><a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> has a built-in <a href="index.html">PullToRefresh</a>, therefore it is recommended to use <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> instead of <a href="QtQuick.ListView.md">ListView</a>.</p><p>The component will also show the progress of the model's update when the refresh gets initiated by the model or from other party. Style implementations can decide whether to visualize that or not.</p>
 <p>As default, the component displays a Label visualizing the two states of the component, which is pull to refresh and release to refresh. As mentioned, this is driven by the threshold value specified by the style, and the state is reported by the <a href="#releaseToRefresh-prop">releaseToRefresh</a> property. The <a href="#content-prop">content</a> specifies the visuals to be shown by the component. Custom implementations can hold any component, which will be anchor filled to the component itself.</p>
 <pre class="qml">import QtQuick 2.4
 import QtQuick.XmlListModel 2.0
@@ -68,15 +68,15 @@ import Ubuntu.Components.ListItems 1.3
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
+<span class="type"><a href="QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
 <span class="name">id</span>: <span class="name">listModel</span>
 <span class="name">source</span>: <span class="string">&quot;http://feeds.reuters.com/reuters/topNews&quot;</span>
 <span class="name">query</span>: <span class="string">&quot;/rss/channel/item&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
+<span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
 }
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Reuters&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">view</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">listModel</span>
@@ -109,22 +109,22 @@ import Ubuntu.Components.ListItems 1.3
 <span class="name">id</span>: <span class="name">main</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
+<span class="type"><a href="QtQuick.XmlListModel.XmlListModel.md">XmlListModel</a></span> {
 <span class="name">id</span>: <span class="name">rssFeed</span>
 <span class="name">source</span>: <span class="string">&quot;http://feeds.reuters.com/reuters/topNews&quot;</span>
 <span class="name">query</span>: <span class="string">&quot;/rss/channel/item&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
+<span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
 }
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Reuters&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">id</span>: <span class="name">flickable</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">height</span>
 <span class="name">contentWidth</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">width</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="name">rssFeed</span>
 <span class="type"><a href="Ubuntu.Components.ListItems.Standard.md">Standard</a></span> {
 <span class="name">width</span>: <span class="name">main</span>.<span class="name">width</span>
@@ -146,7 +146,7 @@ import Ubuntu.Components.ListItems 1.3
 <!-- @@@PullToRefresh -->
 <h2>Property Documentation</h2>
 <!-- $$$content -->
-<table class="qmlname"><tr valign="top" id="content-prop"><td class="tblQmlPropNode"><p><span class="name">content</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the visuals to be displayed when the component is revealed upon manual refresh. The default value is a Label showing &quot;Pull to refresh..&#x2e;&quot; text when the component is pulled down till the activation threshold, and &quot;Release to refresh..&#x2e;&quot; after that.</p>
+<table class="qmlname"><tr valign="top" id="content-prop"><td class="tblQmlPropNode"><p><span class="name">content</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the visuals to be displayed when the component is revealed upon manual refresh. The default value is a Label showing &quot;Pull to refresh..&#x2e;&quot; text when the component is pulled down till the activation threshold, and &quot;Release to refresh..&#x2e;&quot; after that.</p>
 <!-- @@@content -->
 <br/>
 <!-- $$$offset -->
@@ -162,7 +162,7 @@ import Ubuntu.Components.ListItems 1.3
 <!-- @@@releaseToRefresh -->
 <br/>
 <!-- $$$target -->
-<table class="qmlname"><tr valign="top" id="target-prop"><td class="tblQmlPropNode"><p><span class="name">target</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The Flickable or derivate the component is attached to. This can only be the parent or a sibling of the component. Defaults to the parent.</p>
+<table class="qmlname"><tr valign="top" id="target-prop"><td class="tblQmlPropNode"><p><span class="name">target</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>The Flickable or derivate the component is attached to. This can only be the parent or a sibling of the component. Defaults to the parent.</p>
 <!-- @@@target -->
 <br/>
 <h2>Signal Documentation</h2>

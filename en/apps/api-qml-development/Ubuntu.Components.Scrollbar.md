@@ -70,6 +70,6 @@ This behaviour is intended and makes for a less confusing User Experience.</p>
 <!-- @@@align -->
 <br/>
 <!-- $$$flickableItem -->
-<table class="qmlname"><tr valign="top" id="flickableItem-prop"><td class="tblQmlPropNode"><p><span class="name">flickableItem</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>This property holds the flickable item (Flickable, <a href="QtQuick.ListView.md">ListView</a> or <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) the Scrollbar is attached to.</p>
+<table class="qmlname"><tr valign="top" id="flickableItem-prop"><td class="tblQmlPropNode"><p><span class="name">flickableItem</span> : <span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span></p></td></tr></table><p>This property holds the flickable item (Flickable, <a href="QtQuick.ListView.md">ListView</a> or <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) the Scrollbar is attached to.</p>
 <!-- @@@flickableItem -->
 <br/>

@@ -14,26 +14,26 @@ Title: Ubuntu.Components.Tabs
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.Tabs.md#count-prop">count</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.Tabs.md#currentPage-prop">currentPage</a></b></b> : Item</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.Tabs.md#selectedTab-prop">selectedTab</a></b></b> : Tab</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.Tabs.md#selectedTabIndex-prop">selectedTabIndex</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.Tabs.md#tabChildren-prop">tabChildren</a></b></b> : list&lt;Item&gt;</li>
+<li class="fn"><b><b><a href="Ubuntu.Components.Tabs.md#count-prop">count</a></b></b> : int</li>
+<li class="fn"><b><b><a href="Ubuntu.Components.Tabs.md#currentPage-prop">currentPage</a></b></b> : Item</li>
+<li class="fn"><b><b><a href="Ubuntu.Components.Tabs.md#selectedTab-prop">selectedTab</a></b></b> : Tab</li>
+<li class="fn"><b><b><a href="Ubuntu.Components.Tabs.md#selectedTabIndex-prop">selectedTabIndex</a></b></b> : int</li>
+<li class="fn"><b><b><a href="Ubuntu.Components.Tabs.md#tabChildren-prop">tabChildren</a></b></b> : list&lt;Item&gt;</li>
 </ul>
 <!-- $$$Tabs-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Tabs must be placed inside a <a href="..//Ubuntu.Components.MainView.md">MainView</a> so that it will automatically have a header that shows the tabs that can be selected, and the toolbar which contains the tools of the <a href="..//Ubuntu.Components.Page.md">Page</a> in the currently selected <a href="..//Ubuntu.Components.Tab.md">Tab</a>.</p>
+<p>Tabs must be placed inside a <a href="Ubuntu.Components.MainView.md">MainView</a> so that it will automatically have a header that shows the tabs that can be selected, and the toolbar which contains the tools of the <a href="Ubuntu.Components.Page.md">Page</a> in the currently selected <a href="Ubuntu.Components.Tab.md">Tab</a>.</p>
 <p>Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="..//Ubuntu.Components.MainView.md">MainView</a></span> {
+<span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">48</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>)
-<span class="type"><a href="..//Ubuntu.Components.Tabs.md">Tabs</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tabs.md">Tabs</a></span> {
 <span class="name">id</span>: <span class="name">tabs</span>
-<span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span> {
 <span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Simple page&quot;</span>)
 <span class="name">page</span>: <span class="name">Page</span> {
 <span class="type">Label</span> {
@@ -42,14 +42,14 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <span class="name">text</span>: <span class="string">&quot;A centered label&quot;</span>
 }
 <span class="name">tools</span>: <span class="name">ToolbarItems</span> {
-<span class="type"><a href="..//Ubuntu.Components.ToolbarButton.md">ToolbarButton</a></span> {
+<span class="type"><a href="Ubuntu.Components.ToolbarButton.md">ToolbarButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;action&quot;</span>
 <span class="name">onTriggered</span>: <span class="name">print</span>(<span class="string">&quot;action triggered&quot;</span>)
 }
 }
 }
 }
-<span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span> {
 <span class="name">id</span>: <span class="name">externalTab</span>
 <span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;External&quot;</span>)
 <span class="name">page</span>: <span class="name">Loader</span> {
@@ -62,10 +62,10 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <span class="name">source</span>: (<span class="name">tabs</span>.<span class="name">selectedTab</span> <span class="operator">===</span> <span class="name">externalTab</span>) ? <span class="name">Qt</span>.<span class="name">resolvedUrl</span>(<span class="string">&quot;MyCustomPage.qml&quot;</span>) : <span class="string">&quot;&quot;</span>
 }
 }
-<span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span> {
 <span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;List view&quot;</span>)
 <span class="name">page</span>: <span class="name">Page</span> {
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">clip</span>: <span class="number">true</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="number">20</span>
@@ -78,31 +78,31 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 }
 }
 }</pre>
-<p>As the example above shows, an external <a href="..//Ubuntu.Components.Page.md">Page</a> inside a <a href="..//Ubuntu.Components.Tab.md">Tab</a> can be loaded using a Loader. Note that setting the top anchor or the height of the Loader would override the <a href="..//Ubuntu.Components.Page.md">Page</a> height. We avoid this because the <a href="..//Ubuntu.Components.Page.md">Page</a> automatically adapts its height to accommodate for the header.</p>
+<p>As the example above shows, an external <a href="Ubuntu.Components.Page.md">Page</a> inside a <a href="Ubuntu.Components.Tab.md">Tab</a> can be loaded using a Loader. Note that setting the top anchor or the height of the Loader would override the <a href="Ubuntu.Components.Page.md">Page</a> height. We avoid this because the <a href="Ubuntu.Components.Page.md">Page</a> automatically adapts its height to accommodate for the header.</p>
 <p>It is possible to use a Repeater to generate tabs, but when doing so, ensure that the Repeater is declared inside the Tabs at the end, because otherwise the shuffling of the order of children by the Repeater can cause incorrect ordering of the tabs.</p>
-<p>The <a href="http://design.ubuntu.com/apps/global-patterns/navigation">Navigation Patterns</a> specify that a tabs header should never be combined with the back button of a <a href="..//Ubuntu.Components.PageStack.md">PageStack</a>. The only way to combine Tabs and <a href="..//Ubuntu.Components.PageStack.md">PageStack</a> that avoids this is by pushing the Tabs as the first page on the <a href="..//Ubuntu.Components.PageStack.md">PageStack</a>, and pushing other pages on top of that, as is shown in the following example:</p>
+<p>The <a href="../design/patterns/navigation.md">Navigation Patterns</a> specify that a tabs header should never be combined with the back button of a <a href="Ubuntu.Components.PageStack.md">PageStack</a>. The only way to combine Tabs and <a href="Ubuntu.Components.PageStack.md">PageStack</a> that avoids this is by pushing the Tabs as the first page on the <a href="Ubuntu.Components.PageStack.md">PageStack</a>, and pushing other pages on top of that, as is shown in the following example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="..//Ubuntu.Components.MainView.md">MainView</a></span> {
+<span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">id</span>: <span class="name">mainView</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">38</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
-<span class="type"><a href="..//Ubuntu.Components.PageStack.md">PageStack</a></span> {
+<span class="type"><a href="Ubuntu.Components.PageStack.md">PageStack</a></span> {
 <span class="name">id</span>: <span class="name">pageStack</span>
 <span class="name">Component</span>.onCompleted: <span class="name">push</span>(<span class="name">tabs</span>)
-<span class="type"><a href="..//Ubuntu.Components.Tabs.md">Tabs</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tabs.md">Tabs</a></span> {
 <span class="name">id</span>: <span class="name">tabs</span>
-<span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Tab 1&quot;</span>
 <span class="name">page</span>: <span class="name">Page</span> {
-<span class="type"><a href="..//Ubuntu.Components.Button.md">Button</a></span> {
+<span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">pageStack</span>.<span class="name">push</span>(<span class="name">page3</span>)
 <span class="name">text</span>: <span class="string">&quot;Press&quot;</span>
 }
 }
 }
-<span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span> {
+<span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Tab 2&quot;</span>
 <span class="name">page</span>: <span class="name">Page</span> {
 <span class="type">Label</span> {
@@ -112,7 +112,7 @@ import Ubuntu.Components 1.3
 }
 }
 }
-<span class="type"><a href="..//Ubuntu.Components.Page.md">Page</a></span> {
+<span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">id</span>: <span class="name">page3</span>
 <span class="name">visible</span>: <span class="number">false</span>
 <span class="name">title</span>: <span class="string">&quot;Page on stack&quot;</span>
@@ -130,11 +130,11 @@ import Ubuntu.Components 1.3
 <!-- @@@count -->
 <br/>
 <!-- $$$currentPage -->
-<table class="qmlname"><tr valign="top" id="currentPage-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">read-only</span><span class="name">currentPage</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The page of the currently selected tab.</p>
+<table class="qmlname"><tr valign="top" id="currentPage-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">read-only</span><span class="name">currentPage</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The page of the currently selected tab.</p>
 <!-- @@@currentPage -->
 <br/>
 <!-- $$$selectedTab -->
-<table class="qmlname"><tr valign="top" id="selectedTab-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">read-only</span><span class="name">selectedTab</span> : <span class="type"><a href="..//Ubuntu.Components.Tab.md">Tab</a></span></p></td></tr></table><p>The currently selected tab.</p>
+<table class="qmlname"><tr valign="top" id="selectedTab-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">read-only</span><span class="name">selectedTab</span> : <span class="type"><a href="Ubuntu.Components.Tab.md">Tab</a></span></p></td></tr></table><p>The currently selected tab.</p>
 <!-- @@@selectedTab -->
 <br/>
 <!-- $$$selectedTabIndex -->
@@ -142,6 +142,6 @@ import Ubuntu.Components 1.3
 <!-- @@@selectedTabIndex -->
 <br/>
 <!-- $$$tabChildren -->
-<table class="qmlname"><tr valign="top" id="tabChildren-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">default</span><span class="name">tabChildren</span> : <span class="type">list</span>&lt;<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Children are placed in a separate item that has functionality to extract the Tab items.</p>
+<table class="qmlname"><tr valign="top" id="tabChildren-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">default</span><span class="name">tabChildren</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Children are placed in a separate item that has functionality to extract the Tab items.</p>
 <!-- @@@tabChildren -->
 <br/>

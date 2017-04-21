@@ -47,7 +47,7 @@ Title: Ubuntu.Components.Arguments
 <p>The code above ensures that at least one argument is passed on the command line which will then be available in QML via the <a href="#defaultArgument-prop">defaultArgument</a> property. Optionally two other arguments can be passed:</p>
 <p><i>--fullscreen</i> that will be exposed as a boolean property: <a href="#values-prop">values</a>.fullscreen</p>
 <p><i>--volume</i> that will be exposed as a string property: <a href="#values-prop">values</a>.volume</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;volume = &quot;</span> <span class="operator">+</span> <span class="name">args</span>.<span class="name">values</span>.<span class="name">volume</span>
 }

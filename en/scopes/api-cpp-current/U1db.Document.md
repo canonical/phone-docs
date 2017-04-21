@@ -9,7 +9,7 @@ Title: U1db.Document
 <!-- @@@Document -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;Document&gt;</span>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="../../../apps/qml/sdk-14.10/U1db.Document.md">Document</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="U1db.Document.md">Document</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
 </ul>
 <h2 id="public-functions">Public Functions</h2>
 <table class="alignedsummary">
@@ -43,8 +43,8 @@ Title: U1db.Document
 <p>Returns whether the document will be newly created if it doesn't exist.</p>
 <!-- @@@getCreate -->
 <!-- $$$getDatabase[overload1]$$$getDatabase -->
-<h3 class="fn" id="getDatabase"><span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> * Document::<span class="name">getDatabase</span>()</h3>
-<p>Returns the <a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a>.</p>
+<h3 class="fn" id="getDatabase"><span class="type"><a href="U1db.Database.md">Database</a></span> * Document::<span class="name">getDatabase</span>()</h3>
+<p>Returns the <a href="U1db.Database.md">Database</a>.</p>
 <!-- @@@getDatabase -->
 <!-- $$$getDefaults[overload1]$$$getDefaults -->
 <h3 class="fn" id="getDefaults"><span class="type">QVariant</span> Document::<span class="name">getDefaults</span>()</h3>
@@ -63,7 +63,7 @@ Title: U1db.Document
 <p>If <i>create</i> is true, docId is not empty and no document with the same docId exists, defaults will be used to store the document.</p>
 <!-- @@@setCreate -->
 <!-- $$$setDatabase[overload1]$$$setDatabaseDatabase* -->
-<h3 class="fn" id="setDatabase"><span class="type">void</span> Document::<span class="name">setDatabase</span>(<span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> *<i> database</i>)</h3>
+<h3 class="fn" id="setDatabase"><span class="type">void</span> Document::<span class="name">setDatabase</span>(<span class="type"><a href="U1db.Database.md">Database</a></span> *<i> database</i>)</h3>
 <p>The <i>database</i> is used to lookup the contents of the document, reflecting changes done to it and conversely changes are saved to the database.</p>
 <!-- @@@setDatabase -->
 <!-- $$$setDefaults[overload1]$$$setDefaultsQVariant -->

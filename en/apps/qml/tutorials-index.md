@@ -22,13 +22,13 @@ Ubuntu SDK.
 
 ## Other tutorials
 
-  * [Building a custom theme for your app](../../api-qml-current/UbuntuUserInterfaceToolkit.ubuntu-theming.md)
+  * [Building a custom theme for your app](../api-qml-current/UbuntuUserInterfaceToolkit.ubuntu-theming.md)
   * [The Palette](tutorials-ubuntu-ui-toolkit-palette.md)
-  * [Using conditional layouts](../../api-qml-current/UbuntuUserInterfaceToolkit.ubuntu-layouts.md)
+  * [Using conditional layouts](../api-qml-current/UbuntuUserInterfaceToolkit.ubuntu-layouts.md)
   * [On-screen keyboard tricks](tutorials-ubuntu-screen-keyboard-tricks.md)
   * [Measuring performance and optimizations](tutorials-performance-and-qml-applications-ubuntu.md)
-  * [Automatic state saving](../../api-qml-current/UbuntuUserInterfaceToolkit.statesaving.md)
-  * [Resolution independence](../../api-qml-current/UbuntuUserInterfaceToolkit.resolution-independence.md)
+  * [Automatic state saving](../api-qml-current/Ubuntu.Components.StateSaver.md)
+  * [Resolution independence](../api-qml-current/UbuntuUserInterfaceToolkit.resolution-independence.md)
   * [Internationalizing your app](tutorials-internationalizing-your-app.md)
   * [Registering your app with the URL Dispatcher](tutorials-register-your-app-url-dispatcher.md)
   * [Use the Ubuntu Thumbnailer in your app](tutorials-use-ubuntu-thumbnailer.md)

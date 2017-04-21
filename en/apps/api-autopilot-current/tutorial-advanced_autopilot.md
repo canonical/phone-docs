@@ -1,8 +1,8 @@
 ---
-Title: tutorial-advanced_autopilot
+Title: Tutorial - advanced autopilot
 ---
 
-# tutorial-advanced_autopilot
+# Tutorial - advanced autopilot
 
 <p>This document covers advanced features in autopilot.</p>
 <span id="id1"></span><h2>Cleaning Up<a class="headerlink" href="#cleaning-up" title="Permalink to this headline"></a></h2>
@@ -178,7 +178,7 @@ the test or skipping the test all together.</p>
 <li><tt class="xref py py-meth docutils literal"><span class="pre">tap_object</span></tt> can be used to tap the center point of a given introspection object, where the screen co-ordinates are taken from one of several properties of the object</li>
 </ul>
 <p>Autopilot additionally provides the class <tt class="xref py py-class docutils literal"><span class="pre">autopilot.input.Pointer</span></tt> as a means to provide a single unified API that can be used with both <tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt> input and <tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt> input . See the <tt class="xref py py-class docutils literal"><span class="pre">documentation</span></tt> for this class for further details of this, as not all operations can be performed on both of these input types.</p>
-<p>This example demonstrates swiping from the center of the screen to the left edge, which could for example be used in <a class="reference external" href="http://www.ubuntu.com/phone/features">Ubuntu Touch</a> to swipe a new scope into view.</p>
+<p>This example demonstrates swiping from the center of the screen to the left edge, which could for example be used in Ubuntu touch to swipe a new scope into view.</p>
 <ol class="arabic">
 <li><p class="first">First calculate the center point of the screen (see: <a class="reference internal" href="#display-information"><em>Display Information</em></a>):</p>
 <pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autopilot.display</span> <span class="kn">import</span> <span class="n">Display</span>
@@ -199,7 +199,7 @@ the test or skipping the test all together.</p>
 <ul class="simple">
 <li><tt class="xref py py-meth docutils literal"><span class="pre">autopilot.gestures.pinch</span></tt> provides a 2-finger pinch gesture centered around an [x,y] point on the screen</li>
 </ul>
-<p>This example demonstrates how to use the pinch gesture, which for example could be used on <a class="reference external" href="http://www.ubuntu.com/phone/features">Ubuntu Touch</a> web-browser, or gallery application to zoom in or out of currently displayed content.</p>
+<p>This example demonstrates how to use the pinch gesture, which for example could be used on Ubuntu touch web-browser, or gallery application to zoom in or out of currently displayed content.</p>
 <ol class="arabic">
 <li><p class="first">To zoom in, pinch vertically outwards from the center point by 100 pixels:</p>
 <pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">autopilot</span> <span class="kn">import</span> <span class="n">gestures</span>
@@ -495,7 +495,7 @@ supported by the OSK backend (or the current language layout).</li>
 </pre>
 <p class="first admonition-title">Note</p>
 <p class="last">You must pass the test case&#8217;s &#8216;addDetail&#8217; method to these application launch fixtures if you want application logs to be attached to the test result. This is due to the way fixtures are cleaned up, and is unavoidable.</p>
-<p>The main qml file of some click applications can also be launched directly from source. This can be done using the <a class="reference external" href="../api-qml-current/QtQuick.qtquick-qmlscene.md">qmlscene</a> application directly on the target application&#8217;s main qml file. This example uses <a class="reference internal" href="autopilot.testcase.AutopilotTestCase.md#autopilot.testcase.AutopilotTestCase.launch_test_application" title="autopilot.testcase.AutopilotTestCase.launch_test_application"><tt class="xref py py-meth docutils literal"><span class="pre">launch_test_application</span></tt></a> method from within a test case:</p>
+<p>The main qml file of some click applications can also be launched directly from source. This can be done using the <a class="reference external" href="http://doc.qt.io/qt-5/qtquick-qmlscene.html">qmlscene</a> application directly on the target application&#8217;s main qml file. This example uses <a class="reference internal" href="autopilot.testcase.AutopilotTestCase.md#autopilot.testcase.AutopilotTestCase.launch_test_application" title="autopilot.testcase.AutopilotTestCase.launch_test_application"><tt class="xref py py-meth docutils literal"><span class="pre">launch_test_application</span></tt></a> method from within a test case:</p>
 <pre><span class="n">app_proxy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">launch_test_application</span><span class="p">(</span><span class="s">&#39;qmlscene&#39;</span><span class="p">,</span> <span class="s">&#39;application.qml&#39;</span><span class="p">,</span> <span class="n">app_type</span><span class="o">=</span><span class="s">&#39;qt&#39;</span><span class="p">)</span>
 </pre>
 <p>However, using this method it will not be possible to return an application specific custom proxy object, see <a class="reference internal" href="#custom-proxy-classes"><em>Writing Custom Proxy Classes</em></a>.</p>

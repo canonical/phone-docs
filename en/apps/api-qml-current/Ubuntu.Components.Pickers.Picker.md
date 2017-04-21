@@ -69,7 +69,7 @@ var <span class="name">stack</span> = [];
 <h4 >Known issues</h4>
 <ul>
 <li>[1] Circular picker does not react on touch generated flicks (on touch enabled devices) when nested into a Flickable - <a href="https://bugreports.qt-project.org/browse/QTBUG-30840">https://bugreports.qt-project.org/browse/QTBUG-30840</a></li>
-<li>[2] Circular picker sets <a href="#selectedIndex-prop">selectedIndex</a> to 0 when the model is cleared, contrary to linear one, which sets it to -1 - <a href="https://bugreports.qt-project.org/browse/QTBUG-35400">https://bugreports.qt-project.org/browse/QTBUG-35400</a></li>
+<li>[2] Circular picker sets <a href="#selectedIndex-prop">selectedIndex</a> to 0 when the model is cleared, contrary to linear one, which sets it to -1 - <a href="https://bugreports.qt.io/browse/QTBUG-35400">https://bugreports.qt.io/browse/QTBUG-35400</a></li>
 </ul>
 <!-- @@@Picker -->
 <h2>Property Documentation</h2>
@@ -78,7 +78,7 @@ var <span class="name">stack</span> = [];
 <!-- @@@circular -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate visualizing the model elements. Any kind of component can be used as delegate, however it is recommended to use <a href="Ubuntu.Components.Pickers.PickerDelegate.md">PickerDelegate</a>, which integrates selection functionality into the Picker.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate visualizing the model elements. Any kind of component can be used as delegate, however it is recommended to use <a href="Ubuntu.Components.Pickers.PickerDelegate.md">PickerDelegate</a>, which integrates selection functionality into the Picker.</p>
 <!-- @@@delegate -->
 <br/>
 <!-- $$$itemHeight -->

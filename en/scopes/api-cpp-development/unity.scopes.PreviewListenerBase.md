@@ -8,10 +8,8 @@ Title: unity.scopes.PreviewListenerBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/PreviewListenerBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::PreviewListenerBase:
-<img src="../../../../media/classunity_1_1scopes_1_1_preview_listener_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_preview_listener_base_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_preview_listener_base_inherit__map" id="unity_1_1scopes_1_1_preview_listener_base_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_listener_base.html" title="Abstract base class to be notified of request completion (such as a query or activation request)..." alt="" coords="29,5,225,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_preview_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

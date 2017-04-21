@@ -27,7 +27,7 @@ Title: Ubuntu.Components.Haptics
 <p>Example of using Haptics:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">implicitWidth</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">20</span>)
 <span class="name">implicitHeight</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">5</span>)
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
@@ -36,7 +36,7 @@ import Ubuntu.Components 1.3
 <span class="name">horizontalAlignment</span>: <span class="name">Text</span>.<span class="name">AlignHCenter</span>
 <span class="name">verticalAlignment</span>: <span class="name">Text</span>.<span class="name">AlignVCenter</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a></span> {
+<span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">Haptics</span>.<span class="name">play</span>()
 }
@@ -44,7 +44,7 @@ import Ubuntu.Components 1.3
 <p>Custom effects can be played as follows:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">implicitWidth</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">20</span>)
 <span class="name">implicitHeight</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">5</span>)
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
@@ -53,7 +53,7 @@ import Ubuntu.Components 1.3
 <span class="name">horizontalAlignment</span>: <span class="name">Text</span>.<span class="name">AlignHCenter</span>
 <span class="name">verticalAlignment</span>: <span class="name">Text</span>.<span class="name">AlignVCenter</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a></span> {
+<span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">Haptics</span>.<span class="name">play</span>({duration: <span class="number">25</span>, attackIntensity: <span class="number">0.7</span>})
 }

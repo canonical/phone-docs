@@ -86,9 +86,9 @@ Title: Ubuntu.Components.TextField
 <!-- $$$TextField-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="https://design.ubuntu.com/apps/building-blocks/text-input#text-field">See also the Design Guidelines on the Text Field</a>.</p>
+<p><a href="../design/building-blocks/selection-controls.md">See also the Design Guidelines on the Text Field</a>.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">TextField</a></span> {
 <span class="name">placeholderText</span>: <span class="string">&quot;hint text&quot;</span>
 }
@@ -171,7 +171,7 @@ Title: Ubuntu.Components.TextField
 <!-- @@@contentWidth -->
 <br/>
 <!-- $$$cursorDelegate -->
-<table class="qmlname"><tr valign="top" id="cursorDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">cursorDelegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate for the cursor in the <a href="index.html">TextField</a>.</p>
+<table class="qmlname"><tr valign="top" id="cursorDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">cursorDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate for the cursor in the <a href="index.html">TextField</a>.</p>
 <p>If you set a cursorDelegate for a <a href="index.html">TextField</a>, this delegate will be used for drawing the cursor instead of the standard cursor. An instance of the delegate will be created and managed by the <a href="index.html">TextField</a> when a cursor is needed, and the x property of delegate instance will be set so as to be one pixel before the top left of the current character.</p>
 <p>Note that the root item of the delegate component must be a <a href="http://doc.qt.io/qt-5/qquickitem.html">QQuickItem</a> or <a href="http://doc.qt.io/qt-5/qquickitem.html">QQuickItem</a> derived item.</p>
 <!-- @@@cursorDelegate -->
@@ -205,10 +205,10 @@ Title: Ubuntu.Components.TextField
 <!-- $$$echoMode -->
 <table class="qmlname"><tr valign="top" id="echoMode-prop"><td class="tblQmlPropNode"><p><span class="name">echoMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>Specifies how the text should be displayed in the <a href="index.html">TextField</a>.</p>
 <ul>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.Normal - Displays the text as it is. (Default)</li>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.Password - Displays asterixes instead of characters.</li>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.NoEcho - Displays nothing.</li>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.PasswordEchoOnEdit - Displays characters as they are entered while editing, otherwise displays asterisks.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.Normal - Displays the text as it is. (Default)</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.Password - Displays asterixes instead of characters.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.NoEcho - Displays nothing.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.PasswordEchoOnEdit - Displays characters as they are entered while editing, otherwise displays asterisks.</li>
 </ul>
 <!-- @@@echoMode -->
 <br/>
@@ -234,10 +234,10 @@ Title: Ubuntu.Components.TextField
 <br/>
 <!-- $$$horizontalAlignment -->
 <table class="qmlname"><tr valign="top" id="horizontalAlignment-prop"><td class="tblQmlPropNode"><p><span class="name">horizontalAlignment</span> : <span class="type">enumeration</span></p></td></tr></table><p>Sets the horizontal alignment of the text within the item's width and height. By default, the text alignment follows the natural alignment of the text, for example text that is read from left to right will be aligned to the left.</p>
-<p><a href="index.html">TextField</a> does not have vertical alignment, as the natural height is exactly the height of the single line of text. If you set the height manually to something larger, <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a> will always be top aligned vertically. You can use anchors to align it however you want within another item.</p>
-<p>The valid values for horizontalAlignment are <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignLeft, <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignRight and <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignHCenter.</p>
-<p>Valid values for <a href="#verticalAlignment-prop">verticalAlignment</a> are <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignTop (default), <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignBottom <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.AlignVCenter.</p>
-<p>When using the attached property <a href="../sdk-14.10/QtQuick.LayoutMirroring.md#enabled-prop">LayoutMirroring::enabled</a> to mirror application layouts, the horizontal alignment of text will also be mirrored. However, the property horizontalAlignment will remain unchanged. To query the effective horizontal alignment of <a href="index.html">TextField</a>, use the read-only property <a href="#effectiveHorizontalAlignment-prop">effectiveHorizontalAlignment</a>.</p>
+<p><a href="index.html">TextField</a> does not have vertical alignment, as the natural height is exactly the height of the single line of text. If you set the height manually to something larger, <a href="QtQuick.TextInput.md">TextInput</a> will always be top aligned vertically. You can use anchors to align it however you want within another item.</p>
+<p>The valid values for horizontalAlignment are <a href="QtQuick.TextInput.md">TextInput</a>.AlignLeft, <a href="QtQuick.TextInput.md">TextInput</a>.AlignRight and <a href="QtQuick.TextInput.md">TextInput</a>.AlignHCenter.</p>
+<p>Valid values for <a href="#verticalAlignment-prop">verticalAlignment</a> are <a href="QtQuick.TextInput.md">TextInput</a>.AlignTop (default), <a href="QtQuick.TextInput.md">TextInput</a>.AlignBottom <a href="QtQuick.TextInput.md">TextInput</a>.AlignVCenter.</p>
+<p>When using the attached property <a href="QtQuick.LayoutMirroring.md#enabled-prop">LayoutMirroring::enabled</a> to mirror application layouts, the horizontal alignment of text will also be mirrored. However, the property horizontalAlignment will remain unchanged. To query the effective horizontal alignment of <a href="index.html">TextField</a>, use the read-only property <a href="#effectiveHorizontalAlignment-prop">effectiveHorizontalAlignment</a>.</p>
 <!-- @@@horizontalAlignment -->
 <br/>
 <!-- $$$inputMask -->
@@ -247,7 +247,7 @@ Title: Ubuntu.Components.TextField
 <!-- @@@inputMask -->
 <br/>
 <!-- $$$inputMethodComposing -->
-<table class="qmlname"><tr valign="top" id="inputMethodComposing-prop"><td class="tblQmlPropNode"><p><span class="name">inputMethodComposing</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds whether the <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a> has partial text input from an input method.</p>
+<table class="qmlname"><tr valign="top" id="inputMethodComposing-prop"><td class="tblQmlPropNode"><p><span class="name">inputMethodComposing</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds whether the <a href="QtQuick.TextInput.md">TextInput</a> has partial text input from an input method.</p>
 <p>While it is composing an input method may rely on mouse or key events from the <a href="index.html">TextField</a> to edit or commit the partial text. This property can be used to determine when to disable events handlers that may interfere with the correct operation of an input method.</p>
 <!-- @@@inputMethodComposing -->
 <br/>
@@ -297,8 +297,8 @@ Title: Ubuntu.Components.TextField
 <!-- $$$mouseSelectionMode -->
 <table class="qmlname"><tr valign="top" id="mouseSelectionMode-prop"><td class="tblQmlPropNode"><p><span class="name">mouseSelectionMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>Specifies how text should be selected using a mouse.</p>
 <ul>
-<li>-<a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectCharacters - The selection is updated with individual characters. (Default)</li>
-<li>-<a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectWords - The selection is updated with whole words.</li>
+<li>-<a href="QtQuick.TextInput.md">TextInput</a>.SelectCharacters - The selection is updated with individual characters. (Default)</li>
+<li>-<a href="QtQuick.TextInput.md">TextInput</a>.SelectWords - The selection is updated with whole words.</li>
 </ul>
 <p>This property only applies when <a href="#selectByMouse-prop">selectByMouse</a> is true.</p>
 <!-- @@@mouseSelectionMode -->
@@ -378,8 +378,8 @@ myTextInput<span class="operator">.</span>selectionEnd);</pre>
 <!-- @@@text -->
 <br/>
 <!-- $$$validator -->
-<table class="qmlname"><tr valign="top" id="validator-prop"><td class="tblQmlPropNode"><p><span class="name">validator</span> : <span class="type">Validator</span></p></td></tr></table><p>Allows you to set a validator on the <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>. When a validator is set the <a href="index.html">TextField</a> will only accept input which leaves the text property in an acceptable or intermediate state. The accepted signal will only be sent if the text is in an acceptable state when enter is pressed.</p>
-<p>Currently supported validators are <a href="../sdk-14.10/QtQuick.IntValidator.md">IntValidator</a>, <a href="../sdk-14.10/QtQuick.DoubleValidator.md">DoubleValidator</a> and <a href="../sdk-14.10/QtQuick.RegExpValidator.md">RegExpValidator</a>. An example of using validators is shown below, which allows input of integers between 11 and 31 into the text input:</p>
+<table class="qmlname"><tr valign="top" id="validator-prop"><td class="tblQmlPropNode"><p><span class="name">validator</span> : <span class="type">Validator</span></p></td></tr></table><p>Allows you to set a validator on the <a href="QtQuick.TextInput.md">TextInput</a>. When a validator is set the <a href="index.html">TextField</a> will only accept input which leaves the text property in an acceptable or intermediate state. The accepted signal will only be sent if the text is in an acceptable state when enter is pressed.</p>
+<p>Currently supported validators are <a href="QtQuick.IntValidator.md">IntValidator</a>, <a href="QtQuick.DoubleValidator.md">DoubleValidator</a> and <a href="QtQuick.RegExpValidator.md">RegExpValidator</a>. An example of using validators is shown below, which allows input of integers between 11 and 31 into the text input:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">TextField</a></span>{
@@ -435,17 +435,17 @@ import Ubuntu.Components 1.3
 <!-- $$$moveCursorSelection -->
 <table class="qmlname"><tr valign="top" id="moveCursorSelection-method"><td class="tblQmlFuncNode"><p><span class="name">moveCursorSelection</span>(<i> position</i>, <i> mode</i>)</p></td></tr></table><p>Moves the cursor to position and updates the selection according to the optional mode parameter. (To only move the cursor, set the <a href="#cursorPosition-prop">cursorPosition</a> property.)</p>
 <p>When this method is called it additionally sets either the <a href="#selectionStart-prop">selectionStart</a> or the <a href="#selectionEnd-prop">selectionEnd</a> (whichever was at the previous cursor position) to the specified position. This allows you to easily extend and contract the selected text range.</p>
-<p>The selection mode specifies whether the selection is updated on a per character or a per word basis. If not specified the selection mode will default to <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectCharacters.</p>
+<p>The selection mode specifies whether the selection is updated on a per character or a per word basis. If not specified the selection mode will default to <a href="QtQuick.TextInput.md">TextInput</a>.SelectCharacters.</p>
 <ul>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectCharacters - Sets either the <a href="#selectionStart-prop">selectionStart</a> or <a href="#selectionEnd-prop">selectionEnd</a> (whichever was at the previous cursor position) to the specified position.</li>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectWords - Sets the <a href="#selectionStart-prop">selectionStart</a> and <a href="#selectionEnd-prop">selectionEnd</a> to include all words between the specified position and the previous cursor position. Words partially in the range are included.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.SelectCharacters - Sets either the <a href="#selectionStart-prop">selectionStart</a> or <a href="#selectionEnd-prop">selectionEnd</a> (whichever was at the previous cursor position) to the specified position.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.SelectWords - Sets the <a href="#selectionStart-prop">selectionStart</a> and <a href="#selectionEnd-prop">selectionEnd</a> to include all words between the specified position and the previous cursor position. Words partially in the range are included.</li>
 </ul>
 <p>For example, take this sequence of calls:</p>
 <pre class="cpp">cursorPosition <span class="operator">=</span> <span class="number">5</span>
 moveCursorSelection(<span class="number">9</span><span class="operator">,</span> TextInput<span class="operator">.</span>SelectCharacters)
 moveCursorSelection(<span class="number">7</span><span class="operator">,</span> TextInput<span class="operator">.</span>SelectCharacters)</pre>
 <p>This moves the cursor to position 5, extend the selection end from 5 to 9 and then retract the selection end from 9 to 7, leaving the text from position 5 to 7 selected (the 6th and 7th characters).</p>
-<p>The same sequence with <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.SelectWords will extend the selection start to a word boundary before or on position 5 and extend the selection end to a word boundary on or past position 9.</p>
+<p>The same sequence with <a href="QtQuick.TextInput.md">TextInput</a>.SelectWords will extend the selection start to a word boundary before or on position 5 and extend the selection end to a word boundary on or past position 9.</p>
 <!-- @@@moveCursorSelection -->
 <br/>
 <!-- $$$paste -->
@@ -457,8 +457,8 @@ moveCursorSelection(<span class="number">7</span><span class="operator">,</span>
 <p>This means that for all x values before the first character this function returns 0, and for all x values after the last character this function returns text.length.</p>
 <p>The cursor position type specifies how the cursor position should be resolved.</p>
 <ul>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.CursorBetweenCharacters - Returns the position between characters that is nearest x.</li>
-<li>- <a href="../sdk-14.10/QtQuick.TextInput.md">TextInput</a>.CursorOnCharacter - Returns the position before the character that is nearest x.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.CursorBetweenCharacters - Returns the position between characters that is nearest x.</li>
+<li>- <a href="QtQuick.TextInput.md">TextInput</a>.CursorOnCharacter - Returns the position before the character that is nearest x.</li>
 </ul>
 <!-- @@@positionAt -->
 <br/>

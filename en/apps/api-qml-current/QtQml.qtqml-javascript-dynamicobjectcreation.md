@@ -7,7 +7,7 @@ Title: QtQml.qtqml-javascript-dynamicobjectcreation
 <span class="subtitle"></span>
 <!-- $$$qtqml-javascript-dynamicobjectcreation.html-description -->
 <p>QML supports the dynamic creation of objects from within JavaScript. This is useful to delay instantiation of objects until necessary, thereby improving application startup time. It also allows visual objects to be dynamically created and added to the scene in reaction to user input or other events.</p>
-<p>See the <a href="QtQml.dynamicscene/">Dynamic Scene example</a> for a demonstration of the concepts discussed on this page.</p>
+<p>See the <a href="QtQml.qtqml-dynamicscene-example.md">Dynamic Scene example</a> for a demonstration of the concepts discussed on this page.</p>
 <h2 id="creating-objects-dynamically">Creating Objects Dynamically</h2>
 <p>There are two ways to create objects dynamically from JavaScript. You can either call <a href="QtQml.Qt.md#createComponent-method">Qt.createComponent()</a> to dynamically create a <a href="QtQml.Component.md">Component</a> object, or use <a href="QtQml.Qt.md#createQmlObject-method">Qt.createQmlObject()</a> to create an object from a string of QML. Creating a component is better if you have an existing component defined in a QML document and you want to dynamically create instances of that component. Otherwise, creating an object from a string of QML is useful when the object QML itself is generated at runtime.</p>
 <h3 >Creating a Component Dynamically</h3>

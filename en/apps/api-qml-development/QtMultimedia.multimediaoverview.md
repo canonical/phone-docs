@@ -45,7 +45,7 @@ Title: QtMultimedia.multimediaoverview
 <tr valign="top"><td >Viewfinder processing</td><td ></td><td >Camera, VideoOutput</td><td >QCamera, QAbstractVideoSurface, QVideoFrame</td></tr>
 <tr valign="top"><td >Capturing photos</td><td >camera, declarative-camera</td><td >Camera</td><td >QCamera, QCameraImageCapture</td></tr>
 <tr valign="top"><td >Capturing movies</td><td >camera, declarative-camera</td><td >Camera</td><td >QCamera, QMediaRecorder</td></tr>
-<tr valign="top"><td >3D sound sources</td><td ></td><td ><a href="QtMultimedia.audioengine/">Audio Engine</a></td><td ><a href="QtAudioEngine.AudioEngine.md">AudioEngine</a>, <a href="QtAudioEngine.Sound.md">Sound</a></td><td ></td></tr>
+<tr valign="top"><td >3D sound sources</td><td ></td><td ><a href="QtMultimedia.qtmultimedia-audioengine-example.md">Audio Engine</a></td><td ><a href="QtAudioEngine.AudioEngine.md">AudioEngine</a>, <a href="QtAudioEngine.Sound.md">Sound</a></td><td ></td></tr>
 </table>
 <h2 id="limitations">Limitations</h2>
 <p>The Qt Multimedia APIs build upon the multimedia framework of the underlying platform. This can mean that support for various codecs or containers can vary between machines, depending on what the end user has installed.</p>

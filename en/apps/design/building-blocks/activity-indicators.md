@@ -8,7 +8,7 @@ Use Activity Indicators to give the user an indication of how long a running tas
 
 ![750w_ActivityIndicators_MainImage-1)](https://assets.ubuntu.com/v1/1af1cdf3-750w_ActivityIndicators_MainImage-1.png)
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Activity Indicator API](../api-qml-current/Ubuntu.Components.ActivityIndicator.md) visually indicates that a task of unknown or known duration is in progress.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Activity Indicator API](../../api-qml-current/Ubuntu.Components.ActivityIndicator.md) visually indicates that a task of unknown or known duration is in progress.|
 |-----|-----|
 
 ## Types of indicators

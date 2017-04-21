@@ -26,18 +26,18 @@ Title: Ubuntu.Components.ViewItems
 <!-- $$$ViewItems-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>These properties are automatically attached to the parent item of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>, or to <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, when the component is used as delegate.</p>
+<p>These properties are automatically attached to the parent item of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>, or to <a href="QtQuick.ListView.md">ListView</a>, when the component is used as delegate.</p>
 <!-- @@@ViewItems -->
 <h2>Attached Property Documentation</h2>
 <!-- $$$dragMode -->
-<table class="qmlname"><tr valign="top" id="dragMode-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.dragMode</span> : <span class="type">bool</span></p></td></tr></table><p>The property drives the dragging mode of the ListItems within a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>. It has no effect on any other parent of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>.</p>
+<table class="qmlname"><tr valign="top" id="dragMode-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.dragMode</span> : <span class="type">bool</span></p></td></tr></table><p>The property drives the dragging mode of the ListItems within a <a href="QtQuick.ListView.md">ListView</a>. It has no effect on any other parent of the <a href="Ubuntu.Components.ListItem.md">ListItem</a>.</p>
 <p>When set, <a href="Ubuntu.Components.ListItem.md">ListItem</a> content will be disabled and a panel will be shown enabling the dragging mode. The items can be dragged by dragging this handler only. The feature can be activated same time with <a href="Ubuntu.Components.ListItem.md#selectMode-prop">ListItem::selectMode</a>.</p>
 <p>The panel is configured by the style.</p>
 <p><b>See also </b><a href="Ubuntu.Components.Styles.ListItemStyle.md">ListItemStyle</a> and <a href="#dragUpdated-signal">dragUpdated</a>.</p>
 <!-- @@@dragMode -->
 <br/>
 <!-- $$$expandedIndices -->
-<table class="qmlname"><tr valign="top" id="expandedIndices-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.expandedIndices</span> : <span class="type">list</span>&lt;<span class="type">int</span>&gt;</p></td></tr></table><p>The property contains the indexes of the ListItems marked as expanded. The indexes are model indexes when used in <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, and child indexes in other components. The property being writable, initial expansion configuration can be provided for a view, and provides ability to save the expansion state.</p>
+<table class="qmlname"><tr valign="top" id="expandedIndices-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.expandedIndices</span> : <span class="type">list</span>&lt;<span class="type">int</span>&gt;</p></td></tr></table><p>The property contains the indexes of the ListItems marked as expanded. The indexes are model indexes when used in <a href="QtQuick.ListView.md">ListView</a>, and child indexes in other components. The property being writable, initial expansion configuration can be provided for a view, and provides ability to save the expansion state.</p>
 <p><b>Note: </b>If the <a href="#expansionFlags-attached-prop">ViewItems::expansionFlags</a> is having <code>ViewItems.Exclusive</code> flags set, only the last item from the list will be considered and set as expanded.</p><p>This QML property was introduced in  Ubuntu.Components 1.3.</p>
 <!-- @@@expandedIndices -->
 <br/>
@@ -58,7 +58,7 @@ Title: Ubuntu.Components.ViewItems
 <!-- @@@selectMode -->
 <br/>
 <!-- $$$selectedIndices -->
-<table class="qmlname"><tr valign="top" id="selectedIndices-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.selectedIndices</span> : <span class="type">list</span>&lt;<span class="type">int</span>&gt;</p></td></tr></table><p>The property contains the indexes of the ListItems marked as selected. The indexes are model indexes when used in <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, and child indexes in other components. The property being writable, initial selection configuration can be provided for a view, and provides ability to save the selection state.</p>
+<table class="qmlname"><tr valign="top" id="selectedIndices-attached-prop"><td class="tblQmlPropNode"><p><span class="name">ViewItems.selectedIndices</span> : <span class="type">list</span>&lt;<span class="type">int</span>&gt;</p></td></tr></table><p>The property contains the indexes of the ListItems marked as selected. The indexes are model indexes when used in <a href="QtQuick.ListView.md">ListView</a>, and child indexes in other components. The property being writable, initial selection configuration can be provided for a view, and provides ability to save the selection state.</p>
 <!-- @@@selectedIndices -->
 <br/>
 <h2>Attached Signal Documentation</h2>
@@ -70,11 +70,11 @@ Title: Ubuntu.Components.ViewItems
 <tr valign="top"><td >Moving</td><td >source index from where the item dragged from</td><td >destination index where the item can be dragged to</td><td >the same value set at <i>Started</i>, can be changed</td><td >the same value set at <i>Started</i>, can be changed</td></tr>
 <tr valign="top"><td >Dropped</td><td >source index from where the item dragged from</td><td >destination index where the item can be dragged to</td><td >the value set at <i>Started/Moving</i>, changes are omitted</td><td >the value set at <i>Started/Moving</i>, changes are omitted</td></tr>
 </table>
-<p>Implementations <b>must move the model data</b> in order to re-order the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> content. If the move is not acceptable, it must be cancelled by setting <b>event.accept</b> to <i>false</i>, in which case the dragged index (<b>from</b>) will not be updated and next time the signal is emitted will be the same.</p>
+<p>Implementations <b>must move the model data</b> in order to re-order the <a href="QtQuick.ListView.md">ListView</a> content. If the move is not acceptable, it must be cancelled by setting <b>event.accept</b> to <i>false</i>, in which case the dragged index (<b>from</b>) will not be updated and next time the signal is emitted will be the same.</p>
 <p>An example implementation of a live dragging with restrictions:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">model</span>: <span class="name">ListModel</span> {
@@ -106,7 +106,7 @@ import Ubuntu.Components 1.2
 <p>A drag'n'drop implementation might be required when model changes are too expensive, and continuously updating while dragging would cause lot of traffic. The following example illustrates how to implement such a scenario:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">model</span>: <span class="name">ListModel</span> {

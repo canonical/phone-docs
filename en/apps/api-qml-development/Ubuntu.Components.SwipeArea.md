@@ -54,7 +54,7 @@ import Ubuntu.Components 1.3
 }
 }
 }</pre>
-<p><b>Note: </b>When used with a Flickable (or <a href="QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) always put the <a href="index.html">SwipeArea</a> next to the Flickable as sibling.</p><!-- @@@SwipeArea -->
+<p><b>Note: </b>When used with a Flickable (or <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) always put the <a href="index.html">SwipeArea</a> next to the Flickable as sibling.</p><!-- @@@SwipeArea -->
 <h2>Property Documentation</h2>
 <!-- $$$direction -->
 <table class="qmlname"><tr valign="top" id="direction-prop"><td class="tblQmlPropNode"><p><span class="name">direction</span> : <span class="type">enum</span></p></td></tr></table><p>The direction in which the gesture should move in order to be recognized.</p>

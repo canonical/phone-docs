@@ -9,7 +9,7 @@ Title: U1db.Index
 <p>An Index defines what fields can be filtered using Query. More...</p>
 <!-- @@@Index -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="index.html"><a href="../sdk-14.10/Ubuntu.DownloadManager.index.md">Index</a></td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="index.html"><a href="Ubuntu.DownloadManager.index.md">Index</a></td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

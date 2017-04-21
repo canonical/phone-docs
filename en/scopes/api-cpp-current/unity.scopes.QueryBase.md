@@ -8,10 +8,8 @@ Title: unity.scopes.QueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/QueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::QueryBase:
-<img src="../../../../media/classunity_1_1scopes_1_1_query_base__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_query_base_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_query_base_inherit__map" id="unity_1_1scopes_1_1_query_base_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_activation_query_base.html" title="Base class for an activation request that is executed inside a scope. " alt="" coords="263,5,439,47"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_preview_query_base.html" title="Abstract base class to represent a particular preview. " alt="" coords="236,71,467,98"/><area shape="rect" id="node5" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_search_query_base.html" title="Abstract base class to represent a particular query. " alt="" coords="237,126,465,153"/><area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_preview_query_base_a_p_i.html" title="Abstract base class to represent a particular preview. " alt="" coords="515,60,685,101"/><area shape="rect" id="node6" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1qt_1_1_q_search_query_base_a_p_i.html" title="Abstract base class to represent a particular query. " alt="" coords="517,125,683,167"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

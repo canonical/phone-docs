@@ -9,7 +9,7 @@ Title: U1db.Database
 <p>Database implements on-disk storage for documents and indexes. More...</p>
 <!-- @@@Database -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1Db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com/api//database.html">Database</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1Db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="#">Database</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

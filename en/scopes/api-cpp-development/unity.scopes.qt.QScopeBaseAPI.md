@@ -6,10 +6,8 @@ Title: unity.scopes.qt.QScopeBaseAPI
 
 <p><code>#include &lt;unity/scopes/qt/QScopeBaseAPI.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QScopeBaseAPI:
-<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i_inherit__map" id="unity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_scope_base.html" title="Base class for a scope implementation. " alt="" coords="32,80,217,107"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_abstract_scope_base.html" title="Abstract base class for a scope implementation. " alt="" coords="5,5,244,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

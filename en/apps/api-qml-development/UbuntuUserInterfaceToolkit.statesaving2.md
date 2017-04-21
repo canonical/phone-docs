@@ -14,7 +14,7 @@ Title: UbuntuUserInterfaceToolkit.statesaving2
 <span class="name">opacity</span>: <span class="number">0.9</span>
 <span class="name">StateSaver</span>.properties: <span class="string">&quot;color, opacity&quot;</span>
 }</pre>
-<p><b>Note</b> that not all types of properties can be saved. Object types or list models for example are excluded from the types that can be saved, but all properties listed as <a href="..//QtQml.qtqml-typesystem-basictypes.md">QML base types</a> can be serialized.</p>
+<p><b>Note</b> that not all types of properties can be saved. Object types or list models for example are excluded from the types that can be saved, but all properties listed as <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a> can be serialized.</p>
 <h2 id="grouped-properties">Grouped properties</h2>
 <p>Grouped properties, which have serializable types can also be saved. It simply needs to be specified together with the group identifier.</p>
 <pre class="qml">import QtQuick 2.4

@@ -27,7 +27,7 @@ Title: Ubuntu.Components.Units
 <p>A global instance of Units is exposed as the <b>units</b> context property. Example usage:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">2</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">5</span>)
 }</pre>

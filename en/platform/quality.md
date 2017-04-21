@@ -25,7 +25,7 @@ tests ensure your methods and logic perform as expected in isolation.
 ### For scope developers
 
   * [Write your first scope unit test](../scopes/tutorials/scopes-unit-testing.md)
-  * [Scopes testing API reference](../scopes/api-cpp-current/cplusplus/unity-scopes.md)
+  * [Scopes testing API reference](../scopes/api-cpp-current/unity-scopes.md)
 
 ### For QML app developers
 
@@ -34,7 +34,7 @@ tests ensure your methods and logic perform as expected in isolation.
 
 ### For HTML5 app developers
 
-  * [Write your first HTML5 unit test](../apps/html-5/tutorials-html5-unit-testing.md)
+  * [Write your first HTML5 unit test](../apps/html-5/tutorials-unit-testing.md)
   * [Jasmine API reference](http://jasmine.github.io/)
 
 
@@ -53,7 +53,7 @@ writing integration tests.
 ### For QML app developers
 
   * [Write your first QML integration test](../apps/qml/tutorials-qml-integration-testing.md)
-  * [Ubuntu Test components API reference](../api-qml-current/Ubuntu.Test.md)
+  * [Ubuntu Test components API reference](../apps/api-qml-current/Ubuntu.Test.md)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/En1MaDDp9_8?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -63,10 +63,10 @@ Functional or acceptance tests help ensure your application behaves properly
 from a user perspective. The tests seek to mimic the user as closely as
 possible. Autopilot is the recommended tool for testing.
 
-  * [Get started with the Autopilot tutorial](../api-autopilot-current/tutorial-getting_started.md)
+  * [Get started with the Autopilot tutorial](../apps/api-autopilot-current/tutorial-getting_started.md)
   * [Guide to the page object model for functional testing](guides/acceptance-testing-using-the-page-object-model.md)
-  * [Autopilot API reference](../api-autopilot-current/index.md)
-  * [Running Autopilot Tests](../guides/running-autopilot-tests.md)
+  * [Autopilot API reference](../apps/api-autopilot-current/index.md)
+  * [Running Autopilot Tests](guides/running-autopilot-tests.md)
 
 ### For scope developers
 
@@ -76,9 +76,9 @@ possible. Autopilot is the recommended tool for testing.
 ### For QML app developers
 
   * [Write your first Autopilot test](../apps/qml/tutorials-writing-qml-acceptance-tests.md)
-  * [Autopilot SDK helpers API reference](../api-autopilot-current/ubuntuuitoolkit.md)
+  * [Autopilot SDK helpers API reference](../apps/api-autopilot-current/ubuntuuitoolkit.md)
 
 ### For HTML5 app developers
 
-  * [Writing HTML5 functional tests](../apps/html-5/tutorials-writing-html5-functional-tests.md)
-  * [Selenium API](http://selenium-python.readthedocs.org/en/latest/api.html)
+  * [Writing HTML5 functional tests](../apps/html-5/tutorials-writing-functional-tests.md)
+  * [Selenium API](http://selenium-python.readthedocs.io/api.html)

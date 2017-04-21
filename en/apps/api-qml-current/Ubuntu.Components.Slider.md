@@ -33,9 +33,9 @@ Title: Ubuntu.Components.Slider
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>The slider's sensing area is defined by the width and height, therefore styles should take this into account when defining the visuals, and alter these values to align the graphics' sizes.</p>
-<p><a href="https://design.ubuntu.com/apps/building-blocks/selection#slider">See also the Design Guidelines on Sliders</a>.</p>
+<p><a href="../design/building-blocks/selection-controls.md#slider">See also the Design Guidelines on Sliders</a>.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">Slider</a></span> {
 <span class="keyword">function</span> <span class="name">formatValue</span>(<span class="name">v</span>) { <span class="keyword">return</span> <span class="name">v</span>.<span class="name">toFixed</span>(<span class="number">2</span>) }
 <span class="name">minimumValue</span>: -<span class="number">3.14</span>

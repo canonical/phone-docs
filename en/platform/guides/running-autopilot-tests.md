@@ -9,7 +9,7 @@ applications developed with the Ubuntu SDK. This guide will cover the
 different options available to you for running the autopilot test suite for
 your applications. While the autopilot binary is also a testrunner, there are
 some other tools to make it easier to run on the desktop and the device. This
-guide assumes you are familiar with using [autopilot testrunner](../../apps/api-autopilot-current/guides-running_ap/).
+guide assumes you are familiar with using [autopilot testrunner](../../apps/api-autopilot-current/guides-running_ap.md).
 
 ## Running tests on the desktop
 

@@ -7,10 +7,8 @@ Title: unity.scopes.utility.BufferedResultForwarder
 <p>Base class for a client to receive and buffer the results of a query until another <a class="el" href="index.html" title="Base class for a client to receive and buffer the results of a query until another BufferedResultForw...">BufferedResultForwarder</a> becomes ready.  
 <a href="#details">More...</a></p>
 Inheritance diagram for unity::scopes::utility::BufferedResultForwarder:
-<img src="../../../../media/classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1utility_1_1_buffered_result_forwarder_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1utility_1_1_buffered_result_forwarder_inherit__map" id="unity_1_1scopes_1_1utility_1_1_buffered_result_forwarder_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_search_listener_base.html" title="Abstract base interface for a client to receive the results of a query. " alt="" coords="5,80,247,107"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_listener_base.html" title="Abstract base class to be notified of request completion (such as a query or activation request)..." alt="" coords="28,5,224,32"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1utility_1_1_buffered_result_forwarder__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

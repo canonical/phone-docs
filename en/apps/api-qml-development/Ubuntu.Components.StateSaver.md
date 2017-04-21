@@ -80,8 +80,8 @@ import Ubuntu.Components 1.2
 }
 <span class="comment">// [...]</span>
 }</pre>
-<p>It can be used in the same way in <a href="QtQuick.ListView.md">ListView</a> or <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>, except that both <a href="QtQuick.ListView.md">ListView</a> and <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> must have an id set.</p>
-<p>The <a href="index.html">StateSaver</a> can save all <a href="..//QtQml.qtqml-typesystem-basictypes.md">QML base types</a>, Objects, list of objects or variants containing any of these cannot be saved.</p>
+<p>It can be used in the same way in <a href="QtQuick.ListView.md">ListView</a> or <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>, except that both <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> must have an id set.</p>
+<p>The <a href="index.html">StateSaver</a> can save all <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a>, Objects, list of objects or variants containing any of these cannot be saved.</p>
 <!-- @@@StateSaver -->
 <h2>Property Documentation</h2>
 <!-- $$$enabled -->
@@ -90,7 +90,7 @@ import Ubuntu.Components 1.2
 <!-- @@@enabled -->
 <br/>
 <!-- $$$properties -->
-<table class="qmlname"><tr valign="top" id="properties-prop"><td class="tblQmlPropNode"><p><span class="name">properties</span> : <span class="type">string</span></p></td></tr></table><p>List of properties to be serialized, separated with commas. Properties must be writable and can only be <a href="..//QtQml.qtqml-typesystem-basictypes.md">QML base types</a>.</p>
+<table class="qmlname"><tr valign="top" id="properties-prop"><td class="tblQmlPropNode"><p><span class="name">properties</span> : <span class="type">string</span></p></td></tr></table><p>List of properties to be serialized, separated with commas. Properties must be writable and can only be <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a>.</p>
 <p>A custom single line input which saves the text, placeholderText, font and color would look as follows:</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.TextField.md">TextField</a></span> {
 <span class="name">id</span>: <span class="name">input</span>

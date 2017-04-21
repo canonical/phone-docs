@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Styles.ComboButtonStyle
 <p>Style API for ComboButton component. More...</p>
 <!-- @@@ComboButtonStyle -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -31,7 +31,7 @@ Title: Ubuntu.Components.Styles.ComboButtonStyle
 <!-- @@@ComboButtonStyle -->
 <h2>Property Documentation</h2>
 <!-- $$$comboListHolder -->
-<table class="qmlname"><tr valign="top" id="comboListHolder-prop"><td class="tblQmlPropNode"><p><span class="name">comboListHolder</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The item which will hold the combo list data. Implementations can point both this and <a href="#comboListPanel-prop">comboListPanel</a> to the same component, however separate items should be used if a gap between the panel and the content is required. See Ambiance theme.</p>
+<table class="qmlname"><tr valign="top" id="comboListHolder-prop"><td class="tblQmlPropNode"><p><span class="name">comboListHolder</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The item which will hold the combo list data. Implementations can point both this and <a href="#comboListPanel-prop">comboListPanel</a> to the same component, however separate items should be used if a gap between the panel and the content is required. See Ambiance theme.</p>
 <!-- @@@comboListHolder -->
 <br/>
 <!-- $$$comboListMargin -->
@@ -39,7 +39,7 @@ Title: Ubuntu.Components.Styles.ComboButtonStyle
 <!-- @@@comboListMargin -->
 <br/>
 <!-- $$$comboListPanel -->
-<table class="qmlname"><tr valign="top" id="comboListPanel-prop"><td class="tblQmlPropNode"><p><span class="name">comboListPanel</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The item pointing to the panel holding the combo list and additional design artifacts. It is used by the component to drive the expansion size.</p>
+<table class="qmlname"><tr valign="top" id="comboListPanel-prop"><td class="tblQmlPropNode"><p><span class="name">comboListPanel</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The item pointing to the panel holding the combo list and additional design artifacts. It is used by the component to drive the expansion size.</p>
 <!-- @@@comboListPanel -->
 <br/>
 <!-- $$$defaultColor -->
@@ -55,7 +55,7 @@ Title: Ubuntu.Components.Styles.ComboButtonStyle
 <!-- @@@defaultFont -->
 <br/>
 <!-- $$$defaultGradient -->
-<table class="qmlname"><tr valign="top" id="defaultGradient-prop"><td class="tblQmlPropNode"><p><span class="name">defaultGradient</span> : <span class="type"><a href="../sdk-15.04/QtQuick.Gradient.md">Gradient</a></span></p></td></tr></table><p>Default gradient for the main button.</p>
+<table class="qmlname"><tr valign="top" id="defaultGradient-prop"><td class="tblQmlPropNode"><p><span class="name">defaultGradient</span> : <span class="type"><a href="QtQuick.Gradient.md">Gradient</a></span></p></td></tr></table><p>Default gradient for the main button.</p>
 <!-- @@@defaultGradient -->
 <br/>
 <!-- $$$dropDownSeparatorWidth -->

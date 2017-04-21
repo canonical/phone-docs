@@ -37,15 +37,15 @@ Title: Ubuntu.Components.Alarm
 <p>Example usage:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">20</span>)
 <span class="type"><a href="index.html">Alarm</a></span>{
 <span class="name">id</span>: <span class="name">alarm</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">id</span>: <span class="name">date</span>
@@ -57,7 +57,7 @@ import Ubuntu.Components 1.2
 <span class="name">onAccepted</span>: <span class="name">alarm</span>.<span class="name">date</span> <span class="operator">=</span> new <span class="name">Date</span>(<span class="name">text</span>)
 }
 }
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">id</span>: <span class="name">msg</span>
@@ -84,7 +84,7 @@ import Ubuntu.Components 1.2
 <p><b>Note: </b>Do not call reset function on an alarm event object when that was returned by the <a href="Ubuntu.Components.AlarmModel.md#get-method">AlarmModel::get</a> function, as that will reset the alarm cache data!</p><!-- @@@Alarm -->
 <h2>Property Documentation</h2>
 <!-- $$$date -->
-<table class="qmlname"><tr valign="top" id="date-prop"><td class="tblQmlPropNode"><p><span class="name">date</span> : <span class="type"><a href="../sdk-14.10/QtQml.Date.md">Date</a></span></p></td></tr></table><p>The property holds the date the alarm will be triggered. The default value is the current date and time the alarm object was created. Further <a href="#reset-method">reset</a> calls will bring the value back to the time the <a href="#reset-method">reset</a> was called.</p>
+<table class="qmlname"><tr valign="top" id="date-prop"><td class="tblQmlPropNode"><p><span class="name">date</span> : <span class="type"><a href="QtQml.Date.md">Date</a></span></p></td></tr></table><p>The property holds the date the alarm will be triggered. The default value is the current date and time the alarm object was created. Further <a href="#reset-method">reset</a> calls will bring the value back to the time the <a href="#reset-method">reset</a> was called.</p>
 <!-- @@@date -->
 <br/>
 <!-- $$$daysOfWeek -->

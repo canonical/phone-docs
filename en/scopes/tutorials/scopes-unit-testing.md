@@ -104,9 +104,9 @@ most important ones are:
     * A mock of `unity::scopes::SearchReply` that makes it possible to intercept responses to search request sent from the scope to a client, so you can test if your scope returns the expected data.
   * `unity::scopes::testing::MockPreviewReply`
     * A mock of `unity::scopes::PreviewReply` that makes it possible to intercept and test responses to preview request sent from the scope to a client.
-  * [`unity::scopes::testing::Result`](../api-autopilot-current/index.md)
+  * [`unity::scopes::testing::Result`](../../apps/api-autopilot-current/index.md)
     * A simple Result class derived from `unity::scopes::Result` that provides a default constructor, so you can create dummy results (without attributes) for testing purposes.
-  * [`unity::scopes::testing::category`](../api-autopilot-current/index.md)
+  * [`unity::scopes::testing::category`](../../apps/api-autopilot-current/index.md)
     * A simple class derived from `unity::scopes::Category` that makes it possible to create dummy categories (which otherwise would require an instance of SearchReply and a call to `register_category()`).
 
 ### Test Template

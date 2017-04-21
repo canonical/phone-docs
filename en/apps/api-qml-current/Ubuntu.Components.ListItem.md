@@ -54,7 +54,7 @@ import Ubuntu.Components 1.2
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="index.html">ListItem</a></span> {
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
@@ -102,7 +102,7 @@ import Ubuntu.Components 1.2
 }
 }</pre>
 <p><a href="#contentItem-prop">contentItem</a> holds all components and resources declared as child to <a href="index.html">ListItem</a>. Being an Item, all properties can be accessed or altered. However, make sure you never change <b>x</b>, <b>y</b>, <b>width</b>, <b>height</b> or <b>anchors</b> properties as those are controlled by the <a href="index.html">ListItem</a> itself when leading or trailing actions are revealed or when selectable and draggable mode is turned on, and thus might cause the component to misbehave. Anchors margins are free to alter.</p>
-<p>Each <a href="index.html">ListItem</a> has a thin divider shown on the bottom of the component. This divider can be configured through the <a href="#divider-prop">divider</a> grouped property, which can configure its margins from the edges of the <a href="index.html">ListItem</a> as well as its visibility. When used in <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> or <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a>, the last list item will not show the divider no matter of the visible property value set.</p>
+<p>Each <a href="index.html">ListItem</a> has a thin divider shown on the bottom of the component. This divider can be configured through the <a href="#divider-prop">divider</a> grouped property, which can configure its margins from the edges of the <a href="index.html">ListItem</a> as well as its visibility. When used in <a href="QtQuick.ListView.md">ListView</a> or <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a>, the last list item will not show the divider no matter of the visible property value set.</p>
 <p><a href="index.html">ListItem</a> can handle actions that can get swiped from front or back of the item. These actions are Action elements visualized in panels attached to the front or to the back of the item, and are revealed by swiping the item horizontally. The swipe is started only after the mouse/touch move had passed a given threshold. The actions are visualized by a panel, which is configurable through the <a href="Ubuntu.Components.Styles.ListItemStyle.md">ListItemStyle</a>.</p>
 <p>The actions are configured through the <a href="#leadingActions-prop">leadingActions</a> as well as <a href="#trailingActions-prop">trailingActions</a> properties.</p>
 <pre class="qml"><span class="type"><a href="index.html">ListItem</a></span> {
@@ -142,19 +142,19 @@ import Ubuntu.Components 1.2
 <p><a href="index.html">ListItem</a> provides a set of attached properties which are attached to each panel of the <a href="index.html">ListItem</a>. However not all properties are valid in all the circumstances.</p>
 <p>The component is styled using the <a href="Ubuntu.Components.Styles.ListItemStyle.md">ListItemStyle</a> style interface.</p>
 <h3 >Selection mode</h3>
-<p>The selection mode of a <a href="index.html">ListItem</a> is controlled by the <a href="Ubuntu.Components.ViewItems.md#selectMode-attached-prop">ViewItems::selectMode</a> attached property. This property is attached to each parent item of the <a href="index.html">ListItem</a> exception being when used as delegate in <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, where the property is attached to the view itself.</p>
+<p>The selection mode of a <a href="index.html">ListItem</a> is controlled by the <a href="Ubuntu.Components.ViewItems.md#selectMode-attached-prop">ViewItems::selectMode</a> attached property. This property is attached to each parent item of the <a href="index.html">ListItem</a> exception being when used as delegate in <a href="QtQuick.ListView.md">ListView</a>, where the property is attached to the view itself.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
 <span class="comment">// this will not have any effect</span>
 <span class="name">ViewItems</span>.selectMode: <span class="number">true</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="comment">// this will work</span>
 <span class="name">ViewItems</span>.selectMode: <span class="number">false</span>
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="number">25</span>
 <span class="type"><a href="index.html">ListItem</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
@@ -167,13 +167,13 @@ import Ubuntu.Components 1.2
 <p>The indices selected are stored in <a href="Ubuntu.Components.ViewItems.md#selectedIndices-attached-prop">ViewItems::selectedIndices</a> attached property, attached the same way as the <a href="Ubuntu.Components.ViewItems.md#selectMode-attached-prop">ViewItems::selectMode</a> property is. This is a read/write property, meaning that initial selected item indices can be set up. The list contains the indices added in the order of selection, not sorted in any form.</p>
 <p><b>Note: </b>When in selectable mode, the <a href="index.html">ListItem</a> content is not disabled and <a href="#clicked-signal">clicked</a> and <a href="#pressAndHold-signal">pressAndHold</a> signals are also emitted. The only restriction the component implies is that leading and trailing actions cannot be swiped in. selectable property can be used to implement different behavior when <a href="#clicked-signal">clicked</a> or <a href="#pressAndHold-signal">pressAndHold</a>.</p>
 <h3 >Dragging mode</h3>
-<p>The dragging mode is only supported on <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, as it requires a model supported view to be used. The drag mode can be activated through the <a href="Ubuntu.Components.ViewItems.md#dragMode-attached-prop">ViewItems::dragMode</a> attached property, when attached to the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>. The items will show a panel as defined in the style, and dragging will be possible when initiated over this panel. Pressing or clicking anywhere else on the <a href="index.html">ListItem</a> will invoke the item's action assigned to the touched area.</p>
+<p>The dragging mode is only supported on <a href="QtQuick.ListView.md">ListView</a>, as it requires a model supported view to be used. The drag mode can be activated through the <a href="Ubuntu.Components.ViewItems.md#dragMode-attached-prop">ViewItems::dragMode</a> attached property, when attached to the <a href="QtQuick.ListView.md">ListView</a>. The items will show a panel as defined in the style, and dragging will be possible when initiated over this panel. Pressing or clicking anywhere else on the <a href="index.html">ListItem</a> will invoke the item's action assigned to the touched area.</p>
 <p>The dragging is realized through the <a href="Ubuntu.Components.ViewItems.md#dragUpdated-signal">ViewItems::dragUpdated</a> signal, and a signal handler must be implemented in order to have the draging working. Implementations can drive the drag to be live (each time the dragged item is dragged over an other item will change the order of the items) or drag'n'drop way (the dragged item will be moved only when the user releases the item by dropping it to the desired position). The signal has a <a href="Ubuntu.Components.ListItemDrag.md">ListItemDrag</a> <i>event</i> parameter, which gives detailed information about the drag event, like started, dragged up or downwards or dropped, allowing in this way various restrictions on the dragging.</p>
 <p>The dragging event provides three states reported in <a href="Ubuntu.Components.ListItemDrag.md#status-prop">ListItemDrag::status</a> field, <i>Started</i>, <i>Moving</i> and <i>Dropped</i>. The other event field values depend on the status, therefore the status must be taken into account when implementing the signal handler. In case live dragging is needed, <i>Moving</i> state must be checked, and for non-live drag (drag'n'drop) the <i>Moving</i> state must be blocked by setting <i>event.accept = false</i>, otherwise the dragging will not know whether the model has been updated or not.</p>
 <p>Example of live drag implementation:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">ListModel</span> {
 <span class="name">Component</span>.onCompleted: {
 <span class="keyword">for</span> (<span class="keyword">var</span> <span class="name">i</span> = <span class="number">0</span>; <span class="name">i</span> <span class="operator">&lt;</span> <span class="number">100</span>; i++) {
@@ -203,7 +203,7 @@ import Ubuntu.Components 1.2
 <p>Example of drag'n'drop implementation:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">ListModel</span> {
 <span class="name">Component</span>.onCompleted: {
 <span class="keyword">for</span> (<span class="keyword">var</span> <span class="name">i</span> = <span class="number">0</span>; <span class="name">i</span> <span class="operator">&lt;</span> <span class="number">100</span>; i++) {
@@ -233,12 +233,12 @@ import Ubuntu.Components 1.2
 }
 }
 }</pre>
-<p><a href="index.html">ListItem</a> does not provide animations when the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>'s model is updated. In order to have animation, use <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> or provide a transition animation to the moveDisplaced or displaced property of the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>.</p>
+<p><a href="index.html">ListItem</a> does not provide animations when the <a href="QtQuick.ListView.md">ListView</a>'s model is updated. In order to have animation, use <a href="Ubuntu.Components.UbuntuListView.md">UbuntuListView</a> or provide a transition animation to the moveDisplaced or displaced property of the <a href="QtQuick.ListView.md">ListView</a>.</p>
 <h4 >Using non-QAbstractItemModel models</h4>
-<p>Live dragging (moving content on the move) is only possible when the model is a derivate of the <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a>. When a list model is used, the <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> will re-create all the items in the view, meaning that the dragged item will no longer be controlled by the dragging. However, non-live drag'n'drop operations can still be implemented with these kind of lists as well.</p>
+<p>Live dragging (moving content on the move) is only possible when the model is a derivate of the <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a>. When a list model is used, the <a href="QtQuick.ListView.md">ListView</a> will re-create all the items in the view, meaning that the dragged item will no longer be controlled by the dragging. However, non-live drag'n'drop operations can still be implemented with these kind of lists as well.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: [<span class="string">&quot;plum&quot;</span>, <span class="string">&quot;peach&quot;</span>, <span class="string">&quot;pomegrenade&quot;</span>, <span class="string">&quot;pear&quot;</span>, <span class="string">&quot;banana&quot;</span>]
 <span class="name">delegate</span>: <span class="name">ListItem</span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
@@ -264,10 +264,10 @@ var <span class="name">list</span> = <span class="name">model</span>;
 }
 }
 }</pre>
-<p>When using <a href="../sdk-14.10/QtQml.DelegateModel.md">DelegateModel</a>, it must be taken into account when implementing the <a href="Ubuntu.Components.ViewItems.md#dragUpdated-signal">ViewItems::dragUpdated</a> signal handler.</p>
+<p>When using <a href="QtQml.DelegateModel.md">DelegateModel</a>, it must be taken into account when implementing the <a href="Ubuntu.Components.ViewItems.md#dragUpdated-signal">ViewItems::dragUpdated</a> signal handler.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">DelegateModel</span> {
 <span class="name">model</span>: [<span class="string">&quot;apple&quot;</span>, <span class="string">&quot;pear&quot;</span>, <span class="string">&quot;plum&quot;</span>, <span class="string">&quot;peach&quot;</span>, <span class="string">&quot;nuts&quot;</span>, <span class="string">&quot;dates&quot;</span>]
 <span class="name">delegate</span>: <span class="name">ListItem</span> {
@@ -294,7 +294,7 @@ var <span class="name">list</span> = <span class="name">model</span>.<span class
 <p>The default expansion behavior is set to be exclusive and locked, meaning there can be only one <a href="index.html">ListItem</a> expanded within a view and neither leading nor trailing action panels cannot be swiped in. Expanding an other <a href="index.html">ListItem</a> will collapse the previosuly expanded one. There can be cases when tapping outside of the expanded area of a <a href="index.html">ListItem</a> we woudl need the expanded one to collapse automatically. This can be achieved by setting <code>ViewItems.CollapseOnOutsidePress</code> flag to <a href="Ubuntu.Components.ViewItems.md#expansionFlags-attached-prop">ViewItems::expansionFlags</a>. This flag will also turn on <code>ViewItems.Exclusive</code> flag, as tapping outside practicly forbids more than one item to be expanded at a time.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
 <span class="name">model</span>: <span class="name">ListModel</span> {
@@ -344,7 +344,7 @@ import Ubuntu.Components 1.3
 <!-- @@@color -->
 <br/>
 <!-- $$$contentItem -->
-<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="name">contentItem</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>contentItem holds the components placed on a <a href="index.html">ListItem</a>. It is anchored to the <a href="index.html">ListItem</a> on left, top and right, and to the divider on the bottom, or to the <a href="index.html">ListItem</a>'s bottom in case the divider is not visible. The content is clipped by default. It is not recommended to change the anchors as the <a href="index.html">ListItem</a> controls them, however any other property value is free to change. Example:</p>
+<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="name">contentItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>contentItem holds the components placed on a <a href="index.html">ListItem</a>. It is anchored to the <a href="index.html">ListItem</a> on left, top and right, and to the divider on the bottom, or to the <a href="index.html">ListItem</a>'s bottom in case the divider is not visible. The content is clipped by default. It is not recommended to change the anchors as the <a href="index.html">ListItem</a> controls them, however any other property value is free to change. Example:</p>
 <pre class="qml"><span class="type"><a href="index.html">ListItem</a></span> {
 <span class="type">contentItem</span>.anchors {
 <span class="name">leftMargin</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">2</span>)
@@ -382,7 +382,7 @@ import Ubuntu.Components 1.3
 <!-- @@@highlightColor -->
 <br/>
 <!-- $$$highlighted -->
-<table class="qmlname"><tr valign="top" id="highlighted-prop"><td class="tblQmlPropNode"><p><span class="name">highlighted</span> : <span class="type">bool</span></p></td></tr></table><p>True when the item is pressed. The items stays highlighted when the mouse or touch is moved horizontally. When in Flickable (or <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>), the item gets un-highlighted (false) when the mouse or touch is moved towards the vertical direction causing the flickable to move.</p>
+<table class="qmlname"><tr valign="top" id="highlighted-prop"><td class="tblQmlPropNode"><p><span class="name">highlighted</span> : <span class="type">bool</span></p></td></tr></table><p>True when the item is pressed. The items stays highlighted when the mouse or touch is moved horizontally. When in Flickable (or <a href="QtQuick.ListView.md">ListView</a>), the item gets un-highlighted (false) when the mouse or touch is moved towards the vertical direction causing the flickable to move.</p>
 <p>Configures the color when highlighted. Defaults to the theme palette's background color.</p>
 <p>An item is highlighted, thus highlight state toggled, when pressed and it has one of the following conditions fulfilled:</p>
 <ul>
@@ -424,17 +424,17 @@ import Ubuntu.Components 1.3
 <table class="qmlname"><tr valign="top" id="swipeEnabled-prop"><td class="tblQmlPropNode"><p><span class="name">swipeEnabled</span> : <span class="type">bool</span></p></td></tr></table><p>The property enables the swiping of the leading- or trailing actions. This is useful when an overlay component needs to handle mouse moves or drag events without the <a href="index.html">ListItem</a> to steal the events. Defaults to true.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
 <span class="name">model</span>: <span class="number">25</span>
 <span class="name">delegate</span>: <span class="name">ListItem</span> {
 <span class="name">swipeEnabled</span>: !<span class="name">mouseArea</span>.<span class="name">drag</span>.<span class="name">active</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">2</span>)
 <span class="name">height</span>: <span class="name">width</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a></span> {
+<span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">id</span>: <span class="name">mouseArea</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">drag</span>.target: <span class="name">parent</span>
@@ -457,8 +457,8 @@ import Ubuntu.Components 1.3
 <br/>
 <h2>Signal Documentation</h2>
 <!-- $$$clicked -->
-<table class="qmlname"><tr valign="top" id="clicked-signal"><td class="tblQmlFuncNode"><p><span class="name">clicked</span>()</p></td></tr></table><p>The signal is emitted when the component gets released while the <a href="#highlighted-prop">highlighted</a> property is set. The signal is not emitted if the <a href="index.html">ListItem</a> content is swiped or when used in Flickable (or <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) and the Flickable gets moved.</p>
-<p>If the <a href="index.html">ListItem</a> contains a component which contains an active <a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a>, the clicked signal will be supressed when clicked over this area.</p>
+<table class="qmlname"><tr valign="top" id="clicked-signal"><td class="tblQmlFuncNode"><p><span class="name">clicked</span>()</p></td></tr></table><p>The signal is emitted when the component gets released while the <a href="#highlighted-prop">highlighted</a> property is set. The signal is not emitted if the <a href="index.html">ListItem</a> content is swiped or when used in Flickable (or <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>) and the Flickable gets moved.</p>
+<p>If the <a href="index.html">ListItem</a> contains a component which contains an active <a href="QtQuick.MouseArea.md">MouseArea</a>, the clicked signal will be supressed when clicked over this area.</p>
 <!-- @@@clicked -->
 <br/>
 <!-- $$$contentMovementEnded -->
@@ -471,6 +471,6 @@ import Ubuntu.Components 1.3
 <br/>
 <!-- $$$pressAndHold -->
 <table class="qmlname"><tr valign="top" id="pressAndHold-signal"><td class="tblQmlFuncNode"><p><span class="name">pressAndHold</span>()</p></td></tr></table><p>The signal is emitted when the list item is long pressed.</p>
-<p>If the <a href="index.html">ListItem</a> contains a component which contains an active <a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a>, the pressAndHold signal will be supressed when pressed over this area.</p>
+<p>If the <a href="index.html">ListItem</a> contains a component which contains an active <a href="QtQuick.MouseArea.md">MouseArea</a>, the pressAndHold signal will be supressed when pressed over this area.</p>
 <!-- @@@pressAndHold -->
 <br/>

@@ -9,7 +9,7 @@ Title: Ubuntu.Components.SlotsLayout
 <p>The SlotsLayout component provides an easy way to layout a list of user-interface elements horizontally following Ubuntu design standards. We call the elements which we want to layout &quot;slots&quot;. <b>Slots</b> is just another name for SlotsLayout's <b>visual children</b>. More...</p>
 <!-- @@@SlotsLayout -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.ListItemLayout.md">ListItemLayout</a>.</p>
 </td></tr></table><ul>
 </ul>
@@ -103,8 +103,8 @@ Title: Ubuntu.Components.SlotsLayout
 <span class="type"><a href="Ubuntu.Components.CheckBox.md">CheckBox</a></span> { <span class="name">SlotsLayout</span>.position: <span class="name">SlotsLayout</span>.<span class="name">Trailing</span> }
 }
 }</pre>
-<p>The second option is to use a <a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a> as a wrapper around <a href="index.html">SlotsLayout</a>, as the following code demonstrates:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a></span> {
+<p>The second option is to use a <a href="QtQuick.MouseArea.md">MouseArea</a> as a wrapper around <a href="index.html">SlotsLayout</a>, as the following code demonstrates:</p>
+<pre class="qml"><span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>
 <span class="name">anchors</span>.right: <span class="name">parent</span>.<span class="name">right</span>
 <span class="name">height</span>: <span class="name">layout</span>.<span class="name">height</span>
@@ -118,7 +118,7 @@ Title: Ubuntu.Components.SlotsLayout
 <span class="type"><a href="Ubuntu.Components.CheckBox.md">CheckBox</a></span> { <span class="name">SlotsLayout</span>.position: <span class="name">SlotsLayout</span>.<span class="name">Trailing</span> }
 }
 }</pre>
-<p><b>Note</b>: as recommended in <a href="#resizing-the-layout">Resizing the layout</a>, since <a href="index.html">SlotsLayout</a> has a dynamic height, it is important to have the parent item's height (in this case <a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a>) follow <a href="index.html">SlotsLayout</a>'s <b>height</b>, and not the opposite, to avoid getting the slots clipped out of the layout.</p>
+<p><b>Note</b>: as recommended in <a href="#resizing-the-layout">Resizing the layout</a>, since <a href="index.html">SlotsLayout</a> has a dynamic height, it is important to have the parent item's height (in this case <a href="QtQuick.MouseArea.md">MouseArea</a>) follow <a href="index.html">SlotsLayout</a>'s <b>height</b>, and not the opposite, to avoid getting the slots clipped out of the layout.</p>
 <h2 id="advanced-layout-tweaks">Advanced layout tweaks</h2>
 <p>The automatic layout provided by <a href="index.html">SlotsLayout</a> is designed to cover most of the usecases. There could be times, however, where you might want to tweak the positioning of one particular slot.</p>
 <p>A slot can set its attached properties <a href="#padding-attached-prop">SlotsLayout::padding</a> and <a href="#overrideVerticalPositioning-attached-prop">SlotsLayout::overrideVerticalPositioning</a> to reach the desired position.</p>
@@ -159,7 +159,7 @@ Title: Ubuntu.Components.SlotsLayout
 <!-- @@@SlotsLayout -->
 <h2>Property Documentation</h2>
 <!-- $$$mainSlot -->
-<table class="qmlname"><tr valign="top" id="mainSlot-prop"><td class="tblQmlPropNode"><p><span class="name">mainSlot</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This property represents the main slot of the layout. By default, <a href="index.html">SlotsLayout</a> has no mainSlot set.</p>
+<table class="qmlname"><tr valign="top" id="mainSlot-prop"><td class="tblQmlPropNode"><p><span class="name">mainSlot</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This property represents the main slot of the layout. By default, <a href="index.html">SlotsLayout</a> has no mainSlot set.</p>
 <p>The main slot is the one that defines the vertical positioning of the other slots. Because of this, changing its position and <a href="#overrideVerticalPositioning-attached-prop">overrideVerticalPositioning</a> attached properties has no effect. More details can be found in the section <a href="#automatic-vertical-positioning-of-slots">Automatic vertical positioning of slots</a>.</p>
 <p><b>Note</b>: because of limitations in <a href="http://doc.qt.io/qt-5/qtquick-qmlmodule.html">QtQuick</a>/QML, it is not possible to initialize mainSlot's attached properties. Setting mainSlot's attached properties has to be done via JS, for example inside Component.onCompleted, as shown in the following example:</p>
 <pre class="qml"><span class="type"><a href="index.html">SlotsLayout</a></span> {
@@ -197,7 +197,7 @@ Title: Ubuntu.Components.SlotsLayout
 <!-- @@@overrideVerticalPositioning -->
 <br/>
 <!-- $$$padding -->
-<table class="qmlname"><tr valign="top" id="padding-attached-prop"><td class="tblQmlPropNode"><p><span class="name">SlotsLayout.padding</span> : <span class="type"><a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a></span></p></td></tr></table><p>While <a href="index.html">SlotsLayout</a>'s padding property defines the padding around the whole layout, this attached property defines the padding around the slot it is attached to.</p>
+<table class="qmlname"><tr valign="top" id="padding-attached-prop"><td class="tblQmlPropNode"><p><span class="name">SlotsLayout.padding</span> : <span class="type"><a href="QtQml.QtObject.md">QtObject</a></span></p></td></tr></table><p>While <a href="index.html">SlotsLayout</a>'s padding property defines the padding around the whole layout, this attached property defines the padding around the slot it is attached to.</p>
 <p>It is a grouped property that exposes the properties padding.top, padding.bottom, padding.leading, padding.trailing.</p>
 <p>The default value for <a href="index.html">SlotsLayout</a>.padding.top is 0. The default value for <a href="index.html">SlotsLayout</a>.padding.bottom is 0. The default value for <a href="index.html">SlotsLayout</a>.padding.leading is 1 Grid Unit. The default value for <a href="index.html">SlotsLayout</a>.padding.trailing is 1 Grid Unit.</p>
 <p>Please note that <b>top</b> and <b>bottom</b> paddings are only used when <a href="#overrideVerticalPositioning-attached-prop">SlotsLayout::overrideVerticalPositioning</a> is set to false. More about this in <a href="#automatic-vertical-positioning-of-slots">Automatic vertical positioning of slots</a>.</p>

@@ -13,7 +13,7 @@ tutorials.
   * Ubuntu 14.10 or later
     * [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
   * The HTML5 development tutorials
-    * If you haven't already complete the [HTML5 development tutorials](index.md)
+    * If you haven't already complete the [HTML5 development tutorials](tutorials-index.md)
   * nodejs
     * Open a terminal with `Ctrl+Alt+T` and run these commands to install all required packages:
       * `sudo apt-get install nodejs`
@@ -30,7 +30,7 @@ only one assertion or assert for short. An assertion is a statement about the
 expected outcome of a series of actions. By limiting yourself to a single
 statement about the expected outcome, it is clear why a test fails.
 
-Unit tests are the base of the [testing pyramid](../../../platform/quality.md).
+Unit tests are the base of the [testing pyramid](../../platform/quality.md).
 The testing pyramid describes the three levels of testing an application,
 going from low level tests at the bottom and increasing to high level tests at
 the top. As unit tests are the lowest level, they should represent the largest
@@ -288,4 +288,4 @@ Check out the links below for more documentation and help.
  * [Jasmine](http://jasmine.github.io/)
  * [Grunt](http://gruntjs.com/)
  * [NodeJS](https://nodejs.org/)
- * [HTML5 SDK documentation](../api.md)
+ * [HTML5 SDK documentation](api.md)

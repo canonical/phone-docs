@@ -10,7 +10,7 @@ Title: UbuntuUserInterfaceToolkit.statesaving3
 <ul>
 <li>- don't try to save <a href="Ubuntu.Components.MainView.md">MainView</a>.applicationName, as its change will take effect next time the application is launched</li>
 <li>- specify IDs for all components as well as for parents even if their presence is not justified in the document</li>
-<li>types other than the ones listed in <a href="..//QtQml.qtqml-typesystem-basictypes.md">QML base types</a> will not be serialized</li>
+<li>types other than the ones listed in <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a> will not be serialized</li>
 <li>- grouped properties can be saved by specifying the complete path to the property i.e&#x2e; <i>border.width</i>, <i>border.color</i>, etc.</li>
 </ul>
 <br>

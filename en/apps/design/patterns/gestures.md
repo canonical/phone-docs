@@ -103,7 +103,7 @@ When your application is launched for the first time, the user will see a floati
 
 After the user has  interacted with Hint 1, the hint will morph to become Hint 2. This hint contains a label, icon or a combinations of the two. By using both a label and an icon it gives the user more detail of the content it will show, such as ‘ + New page’.
 
-|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on the behavior of the bottom edge hint see  [Bottom edge](bottom-edge.md).|
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on the behavior of the bottom edge hint see  [Bottom edge](../building-blocks/bottom-edge.md).|
 |-----|-----|
 
 ## Instructional overlays

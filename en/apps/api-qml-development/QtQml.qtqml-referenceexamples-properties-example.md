@@ -8,7 +8,7 @@ Title: QtQml.qtqml-referenceexamples-properties-example
 <!-- $$$referenceexamples/properties-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>The Object and List Property Types example shows how to add object and list properties in QML. This example adds a BirthdayParty type that specifies a birthday party, consisting of a celebrant and a list of guests. People are specified using the People QML type built in the previous example.</p>
 <pre class="qml"><span class="type">BirthdayParty</span> {

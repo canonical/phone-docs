@@ -8,10 +8,8 @@ Title: unity.scopes.Reply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Reply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Reply:
-<img src="../../../../media/classunity_1_1scopes_1_1_reply__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_reply_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_reply_inherit__map" id="unity_1_1scopes_1_1_reply_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_preview_reply.html" title="Allows the results of a preview to be sent to the preview requester. " alt="" coords="5,155,200,181"/><area shape="rect" id="node5" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_search_reply.html" title="Allows the results of a search query to be sent to the query source. " alt="" coords="225,155,415,181"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_object.html" title="The root base class for all proxies. " alt="" coords="133,5,288,32"/><area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_preview_reply.html" title="Mock for unity::scopes::PreviewReply class. " alt="" coords="24,229,181,271"/><area shape="rect" id="node6" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_search_reply.html" title="Mock for unity::scopes::SearchReply class. " alt="" coords="241,229,399,271"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -118,4 +118,4 @@ installing it on your device, directly from the **Publish** page with the
 
 We are done with the SDK. Once you have successfully created a click package
 and are happy with how it looks and works, you are ready to upload it and
-start the process of [publishing it](/en/publish/).
+start the process of [publishing it](https://developer.ubuntu.com/en/publish/).

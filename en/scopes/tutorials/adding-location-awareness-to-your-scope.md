@@ -62,7 +62,7 @@ you access to :
   * region_code
   * zip_postal_code
 
-Have a look at the [API documentation](../api-autopilot-current/index.md) to dive in all the details. As you will
+Have a look at the [API documentation](../../apps/api-autopilot-current/index.md) to dive in all the details. As you will
 see, each location data element has an equivalent `has__element_()` function to
 ensure its availability.
 

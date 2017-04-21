@@ -31,8 +31,8 @@ areas too.
 There are a couple requirements:
 
   * You need to install the Ubuntu SDK
-  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials/creating-an-sdk-app-project.md)
-  * You should have some experience [running apps from the SDK](../../sdk/tutorials/running-apps-from-the-sdk.md)
+  * You need to know how to [create an HTML5 app project in the SDK](../../platform/sdk/tutorials-creating-an-sdk-app-project.md)
+  * You should have some experience [running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.md)
 
 ### Getting the app source
 
@@ -66,14 +66,14 @@ Get it running on the Desktop with: **Build** &gt; **Run**.
 Here’s how a brand new app looks when run from the SDK (the actual GUI may
 vary as refinements are released):
 
-![](../../../../media/cms_page_media1.png)
+![](../../../media/cms_page_media1.png)
 
 The brand new HTML5 app project has the basic set of files you need. But,
 naturally, the GUI and control logic are simply the defaults for any new app.
 We’ll implement a GUI and control logic that suits the needs of or Meanings
 app below.
 
-**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
+**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../platform/sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
 
 ### Run the app from the terminal
 
@@ -156,7 +156,7 @@ This is the required code that creates an UbuntuUI object [locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
-**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides-introduction-to-the-html5-ui-toolkit.md) reference docs.
+**Tip**: Later, take a look at the [HTML5 UbuntuUI API](guides-introduction-to-the-html5-ui-toolkit.md) reference docs.
 
 This is an event handler for the `window.onload` event. It provides an anonymous
 function that executes when the event is received. This event is received
@@ -189,7 +189,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide](guides-html5-guide.md) for a more detailed look.
 
 ### App layout
 
@@ -243,7 +243,7 @@ Let’s check out how the app looks if you run it now with Ctrl + R. Note that
 the GUI does not function yet because we have not yet added the JavaScript
 control logic.
 
-![](../../../../media/meanings-app.png)
+![](../../../media/meanings-app.png)
 
 ### Content
 
@@ -442,7 +442,7 @@ you can use the `Ctrl + R` shortcut to run it in a window on the Desktop.
 Here we see it running after the user has typed in the word ‘hack’ and clicked
 the **Get** button:
 
-![](../../../../media/meanings-app2.png)
+![](../../../media/meanings-app2.png)
 
 If you have problems, you might have accidentally introduced errors, so trying
 debugging the app’s JavaScript as described above.
@@ -482,7 +482,7 @@ including:
 * Maintainer: Verify this is you
 * title: set this to “Meanings”
 * Version: this is the click package version. Be sure to increment this when appropriate, for example when publishing a new version.
-* [Security policy groups)(/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
+* [Security policy groups)(https://developer.ubuntu.com/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
 
 **Tip**: Don’t add any security policy groups you don’t really need. Apps are confined by these policies and we all want Ubuntu app confinement to be the best available, which means developers use thoughtful discretion and only add policies as absolutely necessary.
 

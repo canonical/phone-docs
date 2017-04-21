@@ -1,8 +1,8 @@
 ---
-Title: ubuntuuitoolkit
+Title: Ubuntu UI Toolkit
 ---
 
-# ubuntuuitoolkit
+# Ubuntu UI Toolkit
 
 <!-- Start Namespace Content -->
 <p>Ubuntu UI Toolkit Autopilot tests and helpers.</p>

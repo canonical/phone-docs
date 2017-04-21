@@ -135,5 +135,5 @@ var <span class="name">index</span> = <span class="name">insertPosition</span>(<
 </ul>
 <!-- @@@tutorials/dynamicview/dynamicview4 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-dynamicview-dynamicview3/">QML Dynamic View Ordering Tutorial 3 - Moving Dragged Items</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-samegame-samegame3-example.md">QML Dynamic View Ordering Tutorial 3 - Moving Dragged Items</a>
 </p>

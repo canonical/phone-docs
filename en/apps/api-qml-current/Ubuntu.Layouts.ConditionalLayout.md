@@ -32,7 +32,7 @@ Title: Ubuntu.Layouts.ConditionalLayout
 <span class="type"><a href="index.html">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;flow&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">dp</span>(<span class="number">3</span>)
 <span class="name">flow</span>: <span class="name">Flow</span>.<span class="name">LeftToRight</span>
@@ -54,7 +54,7 @@ Title: Ubuntu.Layouts.ConditionalLayout
 }
 }
 ]
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">dp</span>(<span class="number">2</span>)
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Button #1&quot;</span>
@@ -75,7 +75,7 @@ Title: Ubuntu.Layouts.ConditionalLayout
 <!-- @@@ConditionalLayout -->
 <h2>Property Documentation</h2>
 <!-- $$$layout -->
-<table class="qmlname"><tr valign="top" id="layout-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">layout</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>Default property holding the definition component of the layout. The component will be instantiated once the condition evaluates to true.</p>
+<table class="qmlname"><tr valign="top" id="layout-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">layout</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>Default property holding the definition component of the layout. The component will be instantiated once the condition evaluates to true.</p>
 <!-- @@@layout -->
 <br/>
 <!-- $$$name -->

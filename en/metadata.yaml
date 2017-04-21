@@ -1965,6 +1965,8 @@ navigation:
             location: apps/api-qml-current/Ubuntu.Components.StyledItem.md
           - title: Ubuntu.Components.Styles.ActionBarStyle
             location: apps/api-qml-current/Ubuntu.Components.Styles.ActionBarStyle.md
+          - title: Ubuntu.Components.Styles.ActionItemProperties
+            location: apps/api-qml-current/Ubuntu.Components.Styles.ActionItemProperties.md
           - title: Ubuntu.Components.Styles.BottomEdgeStyle
             location: apps/api-qml-current/Ubuntu.Components.Styles.BottomEdgeStyle.md
           - title: Ubuntu.Components.Styles.ComboButtonStyle

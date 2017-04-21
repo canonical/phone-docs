@@ -8,10 +8,8 @@ Title: unity.scopes.Object
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Object.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Object:
-<img src="../../../../media/classunity_1_1scopes_1_1_object__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1_object_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1_object_inherit__map" id="unity_1_1scopes_1_1_object_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_query_ctrl.html" title="QueryCtrl allows a query to be cancelled. " alt="" coords="208,5,381,32"/><area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_registry.html" title="White pages service for available scopes. " alt="" coords="213,56,376,83"/><area shape="rect" id="node4" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_reply.html" title="Allows query termination to be sent to the source of a query. " alt="" coords="221,107,368,133"/><area shape="rect" id="node9" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_scope.html" title="Allows queries, preview requests, and activation requests to be sent to a scope. " alt="" coords="218,157,371,184"/><area shape="rect" id="node5" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_preview_reply.html" title="Allows the results of a preview to be sent to the preview requester. " alt="" coords="429,80,624,107"/><area shape="rect" id="node7" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1_search_reply.html" title="Allows the results of a search query to be sent to the query source. " alt="" coords="431,135,622,161"/><area shape="rect" id="node6" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_preview_reply.html" title="Mock for unity::scopes::PreviewReply class. " alt="" coords="672,69,829,110"/><area shape="rect" id="node8" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_mock_search_reply.html" title="Mock for unity::scopes::SearchReply class. " alt="" coords="672,134,829,175"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1_object__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

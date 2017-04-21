@@ -28,7 +28,7 @@ Title: Ubuntu.Components.ListItems.Standard
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.Standard {
 <span class="name">text</span>: <span class="string">&quot;Selectable standard list item&quot;</span>
 <span class="name">selected</span>: <span class="number">false</span>
@@ -55,7 +55,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <!-- @@@Standard -->
 <h2>Property Documentation</h2>
 <!-- $$$control -->
-<table class="qmlname"><tr valign="top" id="control-prop"><td class="tblQmlPropNode"><p><span class="name">control</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>An optional control that is displayed inside the list item. The width of the control must be specified in order to determine the layout of the list item.</p>
+<table class="qmlname"><tr valign="top" id="control-prop"><td class="tblQmlPropNode"><p><span class="name">control</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>An optional control that is displayed inside the list item. The width of the control must be specified in order to determine the layout of the list item.</p>
 <!-- @@@control -->
 <br/>
 <!-- $$$fallbackIconName -->

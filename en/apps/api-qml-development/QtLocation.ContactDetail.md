@@ -13,14 +13,14 @@ Title: QtLocation.ContactDetail
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.ContactDetail.md#contactDetail-prop">contactDetail</a></b></b> : QPlaceContactDetail</li>
-<li class="fn"><b><b><a href="..//QtLocation.ContactDetail.md#label-prop">label</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.ContactDetail.md#value-prop">value</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtLocation.ContactDetail.md#contactDetail-prop">contactDetail</a></b></b> : QPlaceContactDetail</li>
+<li class="fn"><b><b><a href="QtLocation.ContactDetail.md#label-prop">label</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtLocation.ContactDetail.md#value-prop">value</a></b></b> : string</li>
 </ul>
 <!-- $$$ContactDetail-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.ContactDetail.md">ContactDetail</a> provides a single detail on how one could contact a <a href="..//QtLocation.location-cpp-qml.md#place">Place</a>. The <a href="..//QtLocation.ContactDetail.md">ContactDetail</a> consists of a <a href="..//QtLocation.ContactDetail.md#label-prop">label</a>, which is a localized string describing the contact method, and a <a href="..//QtLocation.ContactDetail.md#value-prop">value</a> representing the actual contact detail.</p>
+<p>The <a href="QtLocation.ContactDetail.md">ContactDetail</a> provides a single detail on how one could contact a <a href="QtLocation.location-cpp-qml.md#place">Place</a>. The <a href="QtLocation.ContactDetail.md">ContactDetail</a> consists of a <a href="QtLocation.ContactDetail.md#label-prop">label</a>, which is a localized string describing the contact method, and a <a href="QtLocation.ContactDetail.md#value-prop">value</a> representing the actual contact detail.</p>
 <h2 id="examples">Examples</h2>
 <p>The following example demonstrates how to assign a single phone number to a place in JavaScript:</p>
 <pre class="qml"><span class="keyword">function</span> <span class="name">writeSingle</span>() {
@@ -51,7 +51,7 @@ var <span class="name">numbers</span> = new <span class="name">Array</span>();
 <br/>
 <!-- $$$label -->
 <table class="qmlname"><tr valign="top" id="label-prop"><td class="tblQmlPropNode"><p><span class="name">label</span> : <span class="type">string</span></p></td></tr></table><p>This property holds a label describing the contact detail.</p>
-<p>The label can potentially be localized. The language is dependent on the entity that sets it, typically this is the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a>. The <a href="..//QtLocation.Plugin.md#locales-prop">Plugin::locales</a> property defines what language is used.</p>
+<p>The label can potentially be localized. The language is dependent on the entity that sets it, typically this is the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a>. The <a href="QtLocation.Plugin.md#locales-prop">Plugin::locales</a> property defines what language is used.</p>
 <!-- @@@label -->
 <br/>
 <!-- $$$value -->

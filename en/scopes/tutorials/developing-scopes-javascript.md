@@ -20,7 +20,7 @@ online service should be very simple.
 
 ## Requirements
 
-Before going through this tutorial, you need to have the [Ubuntu SDK installed](../../platform/sdk/installing-the-sdk.md) and [click targets created](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/), preferably for the desktop and phone (armhf) targets.
+Before going through this tutorial, you need to have the [Ubuntu SDK installed](../../platform/sdk/installing-the-sdk.md) and [click targets created](../../platform/sdk/tutorials-click-targets-and-device-kits.md), preferably for the desktop and phone (armhf) targets.
 
 You also need to install the JS scopes dev tools and prepare your dev
 environment with the following commands:
@@ -46,7 +46,7 @@ scopes-doc` package.
 ### Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](https://developer.ubuntu.com/en/apps/sdk/tutorials/running-apps-from-the-sdk/).
+sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](../../platform/sdk/tutorials-running-apps-from-the-sdk.md).
 
 ## Create a new JavaScript scope
 
@@ -59,7 +59,7 @@ the "Unity Scope (JavaScript)" template.
 The project wizard will appear and prompt you to fill your project details:
 
   1. Fill in your project name and location, then click “Next”.
-  2. Ensure that these details are correct, then select your prefered “Template type” (i.e. if the web service you intend on querying returns XML data, select “JavaScript scope using HTTP and XML”, and so on), then click “Next”.
+  2. Ensure that these details are correct, then select your preferred “Template type” (i.e. if the web service you intend on querying returns XML data, select “JavaScript scope using HTTP and XML”, and so on), then click “Next”.
   3. Enable all of the kits listed, then click “Next” again.
   4. Select a version control (optional), then click “Finish”.
   5. At this point, a few dialogs labeled “CMake Wizard” will appear (one after the other) for each Click target you have installed on your system. Simply click **Next -&gt; Run CMake -&gt; Finish** on each of them to complete the project creation process.
@@ -364,4 +364,4 @@ preview: function(result, action_metadata) {
 
 ## Package creation
 
-The SDK IDE handles all the packaging process, simply follow [these instructions](https://developer.ubuntu.com/en/scopes/tutorials/prepare-your-scope-for-publication/) to ensure your scope will look great once installed on your phone for testing or when published in the store.
+The SDK IDE handles all the packaging process, simply follow [these instructions](prepare-your-scope-for-publication.md) to ensure your scope will look great once installed on your phone for testing or when published in the store.

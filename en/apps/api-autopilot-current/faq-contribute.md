@@ -38,7 +38,7 @@ Title: faq-contribute
 <h3><a class="toc-backref" href="#id4">Q. Where can I get help / support?</a><a class="headerlink" href="#q-where-can-i-get-help-support" title="Permalink to this headline"></a></h3>
 <p>The developers hang out in the #ubuntu-autopilot IRC channel on irc.freenode.net.</p>
 <h3><a class="toc-backref" href="#id5">Q. How do I download the code?</a><a class="headerlink" href="#q-how-do-i-download-the-code" title="Permalink to this headline"></a></h3>
-<p>Autopilot is using Launchpad and Bazaar for source code hosting. If you&#8217;re new to Bazaar, or distributed version control in general, take a look at the <a class="reference external" href="http://doc.bazaar.canonical.com/bzr.dev/en/mini-tutorial.md">Bazaar mini-tutorial first.</a></p>
+<p>Autopilot is using Launchpad and Bazaar for source code hosting. If you&#8217;re new to Bazaar, or distributed version control in general, take a look at the <a class="reference external" href="http://doc.bazaar.canonical.com/bzr.dev/en/mini-tutorial/">Bazaar mini-tutorial first.</a></p>
 <p>Install bzr open a terminal and type:</p>
 <pre>$ sudo apt-get install bzr
 </pre>

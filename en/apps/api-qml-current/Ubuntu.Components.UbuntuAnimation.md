@@ -25,7 +25,7 @@ Title: Ubuntu.Components.UbuntuAnimation
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>Example of use:</p>
-<pre class="qml"><span class="type"><a href="..//QtQuick.RotationAnimation.md">RotationAnimation</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.RotationAnimation.md">RotationAnimation</a></span> {
 <span class="name">duration</span>: <span class="name">UbuntuAnimation</span>.<span class="name">SlowDuration</span>
 <span class="name">easing</span>: <span class="name">UbuntuAnimation</span>.<span class="name">StandardEasing</span>
 }</pre>
@@ -36,7 +36,7 @@ Title: Ubuntu.Components.UbuntuAnimation
 <li><a href="#SlowDuration-prop">SlowDuration</a>: less frequent, non-disruptive.</li>
 <li><a href="#SleepyDuration-prop">SleepyDuration</a>: disruptive.</li>
 </ul>
-<p>Note that <a href="Ubuntu.Components.UbuntuNumberAnimation.md">UbuntuNumberAnimation</a> provides a standard <a href="../sdk-14.10/QtQuick.NumberAnimation.md">NumberAnimation</a> for Ubuntu applications.</p>
+<p>Note that <a href="Ubuntu.Components.UbuntuNumberAnimation.md">UbuntuNumberAnimation</a> provides a standard <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> for Ubuntu applications.</p>
 <!-- @@@UbuntuAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$BriskDuration -->

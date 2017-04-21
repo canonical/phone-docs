@@ -11,7 +11,7 @@ Title: UbuntuUserInterfaceToolkit.statesaving
 <p>Consider the following simple <a href="http://doc.qt.io/qt-5/qtquick-qmlmodule.html">QtQuick</a> application, which on button press randomly changes its background.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)

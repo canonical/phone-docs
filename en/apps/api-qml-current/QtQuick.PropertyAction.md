@@ -70,25 +70,25 @@ Title: QtQuick.PropertyAction
 <br/>
 <!-- $$$properties -->
 <table class="qmlname"><tr valign="top" id="properties-prop"><td class="tblQmlPropNode"><p><span class="name">properties</span> : <span class="type">string</span></p></td></tr></table><p>These properties determine the items and their properties that are affected by this action.</p>
-<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> documentation.</p>
+<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> documentation.</p>
 <p><b>See also </b><a href="#exclude-prop">exclude</a>.</p>
 <!-- @@@properties -->
 <br/>
 <!-- $$$property -->
 <table class="qmlname"><tr valign="top" id="property-prop"><td class="tblQmlPropNode"><p><span class="name">property</span> : <span class="type">string</span></p></td></tr></table><p>These properties determine the items and their properties that are affected by this action.</p>
-<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> documentation.</p>
+<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> documentation.</p>
 <p><b>See also </b><a href="#exclude-prop">exclude</a>.</p>
 <!-- @@@property -->
 <br/>
 <!-- $$$target -->
 <table class="qmlname"><tr valign="top" id="target-prop"><td class="tblQmlPropNode"><p><span class="name">target</span> : <span class="type">Object</span></p></td></tr></table><p>These properties determine the items and their properties that are affected by this action.</p>
-<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> documentation.</p>
+<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> documentation.</p>
 <p><b>See also </b><a href="#exclude-prop">exclude</a>.</p>
 <!-- @@@target -->
 <br/>
 <!-- $$$targets -->
 <table class="qmlname"><tr valign="top" id="targets-prop"><td class="tblQmlPropNode"><p><span class="name">targets</span> : <span class="type">list</span>&lt;<span class="type">Object</span>&gt;</p></td></tr></table><p>These properties determine the items and their properties that are affected by this action.</p>
-<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> documentation.</p>
+<p>The details of how these properties are interpreted in different situations is covered in the <a href="QtQuick.PropertyAnimation.md#properties-prop">corresponding</a> <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> documentation.</p>
 <p><b>See also </b><a href="#exclude-prop">exclude</a>.</p>
 <!-- @@@targets -->
 <br/>

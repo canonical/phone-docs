@@ -10,7 +10,7 @@ Use the header to let the user know where they are, what they can do, and where 
 ![750w_Header_Orientation-3)](https://assets.ubuntu.com/v1/8ec7cc1c-750w_Header_Orientation-3.png)
 
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Header API](../api-qml-current/Ubuntu.Components.Header.md) includes the exposed, flickable and moving properties of the header.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Header API](../../api-qml-current/Ubuntu.Components.Header.md) includes the exposed, flickable and moving properties of the header.|
 |-----|-----|
 
 ## Usage
@@ -142,7 +142,7 @@ Avoid placing search in both panels unless necessary, because it could confuse t
 
 The toolbar is an additional component that can be used to hold actions.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Toolbar API](../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Toolbar API](../../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.|
 |-----|-----|
 
 ## Edit mode
@@ -184,7 +184,7 @@ An activated edit mode must always apply to the panel view it is triggered in. I
 
 If you need a delete icon place it on the left of the toolbar. If the  content you are editing needs to be saved then use two text buttons instead, such as ‘Cancel’ and ‘Save’.
 
-|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](design-values.md) for more information.|
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](../get-started/design-values.md) for more information.|
 |-----|-----|
 
 ## Toolbar placement
@@ -273,7 +273,7 @@ For example, the Clock app has a customized header and uses icons at the top of 
 
 The header section allow users to easily shift between category views within the same page. It has the same visibility as the main header. For example, if the header is set to default it will slide away with the sections when the user scrolls down.
 
-|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Section API](../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.|
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Section API](../../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.|
 |-----|-----|
 
 ## Dekko app

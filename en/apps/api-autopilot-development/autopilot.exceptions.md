@@ -30,9 +30,9 @@ not yet created) the object you are trying to access in autopilot. This
 typically happens for a number of possible reasons:</p>
 <ul class="simple">
 <li>The UI widget you are trying to access with
-<a class="reference internal" href="../1.5.0/autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.select_single" title="autopilot.introspection.ProxyBase.select_single"><tt class="xref py py-meth docutils literal"><span class="pre">select_single</span></tt></a> or
-<a class="reference internal" href="../1.5.0/autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.wait_select_single" title="autopilot.introspection.ProxyBase.wait_select_single"><tt class="xref py py-meth docutils literal"><span class="pre">wait_select_single</span></tt></a> or
-<a class="reference internal" href="../1.5.0/autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.select_many" title="autopilot.introspection.ProxyBase.select_many"><tt class="xref py py-meth docutils literal"><span class="pre">select_many</span></tt></a> does not exist
+<a class="reference internal" href="autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.select_single" title="autopilot.introspection.ProxyBase.select_single"><tt class="xref py py-meth docutils literal"><span class="pre">select_single</span></tt></a> or
+<a class="reference internal" href="autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.wait_select_single" title="autopilot.introspection.ProxyBase.wait_select_single"><tt class="xref py py-meth docutils literal"><span class="pre">wait_select_single</span></tt></a> or
+<a class="reference internal" href="autopilot.introspection.ProxyBase.md#autopilot.introspection.ProxyBase.select_many" title="autopilot.introspection.ProxyBase.select_many"><tt class="xref py py-meth docutils literal"><span class="pre">select_many</span></tt></a> does not exist
 yet.</li>
 <li>The UI widget you are trying to access has been destroyed by the
 application.</li>

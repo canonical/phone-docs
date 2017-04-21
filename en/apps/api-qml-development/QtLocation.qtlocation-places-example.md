@@ -12,17 +12,17 @@ Title: QtLocation.qtlocation-places-example
 <p>The search box provides search term suggestions when three or more characters are entered. Selecting one of the suggestions will cause a place search to be performed with the selected search text.</p>
 <p>Search results are available from the slide out tab on the left. Clicking on a search result will display details about the place. If a places has rich content (editorials, reviews and images), these can be accessed by the buttons on the details page. To find similar places click the &quot;Find similar&quot; button. If the current Geo service provider supports it, buttons to edit and remove a place will also be available.</p>
 <p>The geo service provider can be changed by accessing the &quot;Provider&quot; menu at the bottom of the window. Depending on the features supported by the provider, the &quot;New&quot; menu allows creating new Places and Categories. To create a new place, select &quot;Place&quot; from the &quot;New&quot; menu and fill in the fields. Click &quot;Go!&quot; to save the place. To create a new category, select &quot;Category&quot; from the &quot;New&quot; menu and fill in the fields. Click &quot;Go!&quot; to save the category.</p>
-<p>The Places example can work with any of the available geo services plugins. However, some plugins may require additional <a href="..//QtLocation.PluginParameter.md">plugin parameters</a> in order to function correctly. <a href="..//QtLocation.PluginParameter.md">Plugin parameters</a> can be passed on the command line using the <code>--plugin</code> argument, which takes the form:</p>
+<p>The Places example can work with any of the available geo services plugins. However, some plugins may require additional <a href="QtLocation.PluginParameter.md">plugin parameters</a> in order to function correctly. <a href="QtLocation.PluginParameter.md">Plugin parameters</a> can be passed on the command line using the <code>--plugin</code> argument, which takes the form:</p>
 <pre class="cpp"><span class="operator">-</span><span class="operator">-</span>plugin<span class="operator">.</span><span class="operator">&lt;</span>parameter name<span class="operator">&gt;</span> <span class="operator">&lt;</span>parameter value<span class="operator">&gt;</span></pre>
-<p>Refer to the documentation for each of the geo services plugins for details on what plugin parameters they support. The Nokia services plugin supplied with Qt requires an <i>app_id</i> and <i>token</i> pair. See &quot;<a href="..//QtLocation.location-plugin-nokia.md">Qt Location Nokia Plugin</a>&quot; for details.</p>
+<p>Refer to the documentation for each of the geo services plugins for details on what plugin parameters they support. The Nokia services plugin supplied with Qt requires an <i>app_id</i> and <i>token</i> pair. See &quot;<a href="QtLocation.location-plugin-nokia.md">Qt Location Nokia Plugin</a>&quot; for details.</p>
 <h2 id="displaying-categories">Displaying Categories</h2>
-<p>Before search by category can be performed, the list of available categories needs to be retrieved. This is achieved by creating a <a href="..//QtLocation.CategoryModel.md">CategoryModel</a>.</p>
-<pre class="qml"><span class="type"><a href="..//QtLocation.CategoryModel.md">CategoryModel</a></span> {
+<p>Before search by category can be performed, the list of available categories needs to be retrieved. This is achieved by creating a <a href="QtLocation.CategoryModel.md">CategoryModel</a>.</p>
+<pre class="qml"><span class="type"><a href="QtLocation.CategoryModel.md">CategoryModel</a></span> {
 <span class="name">id</span>: <span class="name">categoryModel</span>
 <span class="name">plugin</span>: <span class="name">placesPlugin</span>
 <span class="name">hierarchical</span>: <span class="number">true</span>
 }</pre>
-<p>The <a href="..//QtLocation.CategoryModel.md">CategoryModel</a> type provides a model of the available categories. It can provide either a flat list or a hierarchical tree model. In this example, we use a hierarchical tree model, by setting the <a href="..//QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a> property to <i>true</i>. The <a href="..//QtLocation.CategoryModel.md#plugin-prop">plugin</a> property is set to <i>placesPlugin</i> which is the <i>identifier</i> of the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> object used for place search throughout the example.</p>
+<p>The <a href="QtLocation.CategoryModel.md">CategoryModel</a> type provides a model of the available categories. It can provide either a flat list or a hierarchical tree model. In this example, we use a hierarchical tree model, by setting the <a href="QtLocation.CategoryModel.md#hierarchical-prop">hierarchical</a> property to <i>true</i>. The <a href="QtLocation.CategoryModel.md#plugin-prop">plugin</a> property is set to <i>placesPlugin</i> which is the <i>identifier</i> of the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> object used for place search throughout the example.</p>
 <p>Next we create a view to display the category model.</p>
 <pre class="qml"><span class="type">ListView</span> {
 <span class="name">id</span>: <span class="name">root</span>
@@ -51,8 +51,8 @@ signal <span class="type">editClicked</span>(variant category)
 }
 }
 }</pre>
-<p>Because a hierarchical model is being used, a DelegateModel is needed to provide navigation functionality. If flat list model was being used the view could use the <a href="..//QtLocation.CategoryModel.md">CategoryModel</a> directly.</p>
-<p>The view contains a header item that is used as a back button to navigate up the category tree. The <i>onClicked</i> handler sets the root index of the DelegateModel to the parent of the current index. Categories are displayed by the <i>CategoryDelegate</i>, which provides four signals. The <i>onArrowClicked</i> handler sets the root index to the current index causing the sub categories of the selected category to be displayed. The <i>onClicked</i> handler emits the <b>categoryClicked()</b> signal with a category parameter indicating which specific category has been chosen. The <i>onCrossClicked</i> handler will invoke the categories <a href="..//QtLocation.Category.md#remove-method">remove()</a> method. The <i>onEditClicked</i> handler invokes the <b>editClicked()</b> signal of the root item, this is used to notify which particular category is to be edited.</p>
+<p>Because a hierarchical model is being used, a DelegateModel is needed to provide navigation functionality. If flat list model was being used the view could use the <a href="QtLocation.CategoryModel.md">CategoryModel</a> directly.</p>
+<p>The view contains a header item that is used as a back button to navigate up the category tree. The <i>onClicked</i> handler sets the root index of the DelegateModel to the parent of the current index. Categories are displayed by the <i>CategoryDelegate</i>, which provides four signals. The <i>onArrowClicked</i> handler sets the root index to the current index causing the sub categories of the selected category to be displayed. The <i>onClicked</i> handler emits the <b>categoryClicked()</b> signal with a category parameter indicating which specific category has been chosen. The <i>onCrossClicked</i> handler will invoke the categories <a href="QtLocation.Category.md#remove-method">remove()</a> method. The <i>onEditClicked</i> handler invokes the <b>editClicked()</b> signal of the root item, this is used to notify which particular category is to be edited.</p>
 <p>The <i>CategoryDelegate</i> displays the category name and emits the <i>clicked</i> signal when the text is clicked:</p>
 <pre class="qml"><span class="type">Text</span> {
 <span class="name">id</span>: <span class="name">name</span>
@@ -100,7 +100,7 @@ signal <span class="type">editClicked</span>(variant category)
 <span class="name">onClicked</span>: <span class="name">root</span>.<span class="name">arrowClicked</span>()
 }</pre>
 <h2 id="presenting-search-suggestions">Presenting Search Suggestions</h2>
-<p>The <a href="..//QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a> type is used to fetch suggested search terms based on a partially entered search term.</p>
+<p>The <a href="QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a> type is used to fetch suggested search terms based on a partially entered search term.</p>
 <p>A new suggestion search is triggered whenever the entered search term is changed.</p>
 <pre class="qml"><span class="name">onTextChanged</span>: {
 <span class="keyword">if</span> (<span class="name">searchRectangle</span>.<span class="name">suggestionsEnabled</span>) {
@@ -115,8 +115,8 @@ signal <span class="type">editClicked</span>(variant category)
 }
 }</pre>
 <p>The <i>suggestionsEnabled</i> property is used to temporarily disable search suggestions when a suggestion is selected (selecting it updates the search term text). Suggestions are only queried if the length of the search term is three or more characters, otherwise the search boxes state is reset.</p>
-<p>When the status of the <a href="..//QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a> changes, the state of the search box is changed to display the search suggestions.</p>
-<pre class="qml"><span class="type"><a href="..//QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a></span> {
+<p>When the status of the <a href="QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a> changes, the state of the search box is changed to display the search suggestions.</p>
+<pre class="qml"><span class="type"><a href="QtLocation.PlaceSearchSuggestionModel.md">PlaceSearchSuggestionModel</a></span> {
 <span class="name">id</span>: <span class="name">suggestionModel</span>
 <span class="name">plugin</span>: <span class="name">placesPlugin</span>
 <span class="name">searchArea</span>: <span class="name">placeSearchModel</span>.<span class="name">searchArea</span>
@@ -146,8 +146,8 @@ signal <span class="type">editClicked</span>(variant category)
 }</pre>
 <p>A Text object is used as the delegate to display the suggestion text. Clicking on the suggested search term updates the search term and triggers a place search using the search suggestion.</p>
 <h2 id="searching-for-places">Searching for Places</h2>
-<p>The <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> type is used to search for places.</p>
-<pre class="qml"><span class="type"><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a></span> {
+<p>The <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> type is used to search for places.</p>
+<pre class="qml"><span class="type"><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a></span> {
 <span class="name">id</span>: <span class="name">placeSearchModel</span>
 <span class="name">plugin</span>: <span class="name">placesPlugin</span>
 <span class="name">searchArea</span>: <span class="name">searchRegion</span>
@@ -185,8 +185,8 @@ signal <span class="type">editClicked</span>(variant category)
 }
 }
 }</pre>
-<p>First some of the model's properties are set, which will be used to form the search request. The <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> property is set to the <i>searchRegion</i> object which is a GeoCircle with a center that is linked to the current location displayed on the <a href="..//QtLocation.Map.md">Map</a>.</p>
-<p>Finally, we define two helper functions <b>searchForCategory()</b> and <b>searchForText()</b>, which set either the <a href="..//QtLocation.PlaceSearchModel.md#categories-prop">categories</a> or <a href="..//QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> properties and invokes the <a href="..//QtLocation.PlaceSearchModel.md#update-method">update()</a> method to start the place search. The search results are displayed in a ListView.</p>
+<p>First some of the model's properties are set, which will be used to form the search request. The <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> property is set to the <i>searchRegion</i> object which is a GeoCircle with a center that is linked to the current location displayed on the <a href="QtLocation.Map.md">Map</a>.</p>
+<p>Finally, we define two helper functions <b>searchForCategory()</b> and <b>searchForText()</b>, which set either the <a href="QtLocation.PlaceSearchModel.md#categories-prop">categories</a> or <a href="QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> properties and invokes the <a href="QtLocation.PlaceSearchModel.md#update-method">update()</a> method to start the place search. The search results are displayed in a ListView.</p>
 <pre class="qml"><span class="type">ListView</span> {
 <span class="name">id</span>: <span class="name">searchView</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
@@ -283,15 +283,15 @@ place: <span class="name">model</span>.<span class="name">place</span>,
 }
 }</pre>
 <h2 id="displaying-place-content">Displaying Place Content</h2>
-<p>Places can have additional rich content, including editorials, reviews and images. Rich content is accessed via a set of models. Content models are generally not created directly by the application developer, instead models are obtained from the <a href="..//QtLocation.Place.md#editorialModel-prop">editorialModel</a>, <a href="..//QtLocation.Place.md#reviewModel-prop">reviewModel</a> and <a href="..//QtLocation.Place.md#imageModel-prop">imageModel</a> properties of the <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> type.</p>
+<p>Places can have additional rich content, including editorials, reviews and images. Rich content is accessed via a set of models. Content models are generally not created directly by the application developer, instead models are obtained from the <a href="QtLocation.Place.md#editorialModel-prop">editorialModel</a>, <a href="QtLocation.Place.md#reviewModel-prop">reviewModel</a> and <a href="QtLocation.Place.md#imageModel-prop">imageModel</a> properties of the <a href="QtLocation.location-cpp-qml.md#place">Place</a> type.</p>
 <pre class="qml"><span class="type">ListView</span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">place</span>.<span class="name">editorialModel</span>
 <span class="name">delegate</span>: <span class="name">EditorialDelegate</span> { }
 }</pre>
 <h2 id="place-and-category-creation">Place and Category Creation</h2>
-<p>Some backends may support creation and saving of new places and categories. Plugin support can be checked an run-time with the <a href="..//QtLocation.Plugin.md#supportsPlaces-method">Plugin::supportsPlaces</a>() method.</p>
-<p>To save a new place, first create a new <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> object, using the Qt.createQmlObject() method. Assign the appropriate plugin and place properties and invoke the <a href="..//QtLocation.Place.md#save-method">save()</a> method.</p>
+<p>Some backends may support creation and saving of new places and categories. Plugin support can be checked an run-time with the <a href="QtLocation.Plugin.md#supportsPlaces-method">Plugin::supportsPlaces</a>() method.</p>
+<p>To save a new place, first create a new <a href="QtLocation.location-cpp-qml.md#place">Place</a> object, using the Qt.createQmlObject() method. Assign the appropriate plugin and place properties and invoke the <a href="QtLocation.Place.md#save-method">save()</a> method.</p>
 <pre class="qml"><span class="name">locationPlace</span>.<span class="name">plugin</span> <span class="operator">=</span> <span class="name">placesPlugin</span>;
 <span class="name">locationPlace</span>.<span class="name">name</span> <span class="operator">=</span> <span class="name">dataFieldsModel</span>.<span class="name">get</span>(<span class="number">0</span>).<span class="name">inputText</span>;
 <span class="name">locationPlace</span>.<span class="name">location</span>.<span class="name">address</span>.<span class="name">street</span> <span class="operator">=</span> <span class="name">dataFieldsModel</span>.<span class="name">get</span>(<span class="number">1</span>).<span class="name">inputText</span>;
@@ -332,8 +332,8 @@ var <span class="name">modifiedCategory</span> = <span class="name">category</sp
 <span class="name">category</span> <span class="operator">=</span> <span class="name">modifiedCategory</span>;
 <span class="name">category</span>.<span class="name">save</span>();
 }</pre>
-<p>Support for place and category removal can be checked at run-time by using the <a href="..//QtLocation.Plugin.md#supportsPlaces-method">Plugin::supportsPlaces</a> method, passing in a <a href="..//QtLocation.Plugin.md#supportsPlaces-method">Plugin::PlacesFeatures</a> flag and getting back <i>true</i> if the feature is supported. For example one would invoke <i>supportsPlaces(Plugin.RemovePlaceFeature)</i> to check if the <i>Plugin.RemovePlaceFeature</i> is supported.</p>
-<p>To remove a place, invoke its <a href="..//QtLocation.Place.md#remove-method">remove()</a> method. To remove a category, invoke its <a href="..//QtLocation.Category.md#remove-method">remove()</a> method.</p>
+<p>Support for place and category removal can be checked at run-time by using the <a href="QtLocation.Plugin.md#supportsPlaces-method">Plugin::supportsPlaces</a> method, passing in a <a href="QtLocation.Plugin.md#supportsPlaces-method">Plugin::PlacesFeatures</a> flag and getting back <i>true</i> if the feature is supported. For example one would invoke <i>supportsPlaces(Plugin.RemovePlaceFeature)</i> to check if the <i>Plugin.RemovePlaceFeature</i> is supported.</p>
+<p>To remove a place, invoke its <a href="QtLocation.Place.md#remove-method">remove()</a> method. To remove a category, invoke its <a href="QtLocation.Category.md#remove-method">remove()</a> method.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>The example detects which plugins are available and has an option to show them in the via the Provider button.</p>
 <p>Files:</p>

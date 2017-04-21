@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QPreviewReply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QPreviewReply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QPreviewReply:
-<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1qt_1_1_q_preview_reply_inherit__map" alt="Inheritance graph"/>
+<img src="../../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <map name="unity_1_1scopes_1_1qt_1_1_q_preview_reply_inherit__map" id="unity_1_1scopes_1_1qt_1_1_q_preview_reply_inherit__map">
 </map>
 <center><span class="legend">[legend]</span></center>

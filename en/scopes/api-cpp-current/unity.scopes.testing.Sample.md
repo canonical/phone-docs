@@ -8,10 +8,9 @@ Title: unity.scopes.testing.Sample
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Statistics.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Sample:
-<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1testing_1_1_sample_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1testing_1_1_sample_inherit__map" id="unity_1_1scopes_1_1testing_1_1_sample_inherit__map">
-<area shape="rect" id="node2" href="https://developer.ubuntu.com/api//structunity_1_1scopes_1_1testing_1_1_benchmark_1_1_result_1_1_timing.html" title="unity::scopes::testing\l::Benchmark::Result::Timing" alt="" coords="5,95,204,136"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Types</h2></td></tr>

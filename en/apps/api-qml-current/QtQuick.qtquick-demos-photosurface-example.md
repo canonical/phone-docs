@@ -44,7 +44,7 @@ property <span class="type">var</span> <span class="name">currentFrame</span>: <
 <pre class="cpp">import <span class="type">QtQuick</span><span class="operator">.</span>Dialogs <span class="number">1.0</span></pre>
 <p>We use the <code>fileDialog.open()</code> function to open the file dialog when the app starts:</p>
 <pre class="cpp">Component<span class="operator">.</span>onCompleted: fileDialog<span class="operator">.</span>open()</pre>
-<p>Users can also click the file dialog icon to open the file dialog. We use an <a href="QtQuick.imageelements/#image">Image</a> QML type to display the icon. Inside the <a href="QtQuick.imageelements/#image">Image</a> type, we use a <a href="QtQuick.MouseArea.md">MouseArea</a> with the <code>onClicked</code> signal handler to call the <code>fileDialog.open()</code> function:</p>
+<p>Users can also click the file dialog icon to open the file dialog. We use an <a href="QtQuick.qtquick-imageelements-example.md/#image">Image</a> QML type to display the icon. Inside the <a href="QtQuick.qtquick-imageelements-example.md/#image">Image</a> type, we use a <a href="QtQuick.MouseArea.md">MouseArea</a> with the <code>onClicked</code> signal handler to call the <code>fileDialog.open()</code> function:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">anchors</span>.top: <span class="name">parent</span>.<span class="name">top</span>
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>

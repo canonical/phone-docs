@@ -43,7 +43,7 @@ import Ubuntu.Components 1.3
 <span class="name">bottom</span>: <span class="name">rect</span>.<span class="name">top</span>
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rect</span>
 <span class="name">color</span>: <span class="name">UbuntuColors</span>.<span class="name">red</span>
 <span class="type">anchors</span> {
@@ -70,7 +70,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <span class="name">id</span>: <span class="name">page0</span>
 <span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Root page&quot;</span>)
 <span class="name">visible</span>: <span class="number">false</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.Standard {
 <span class="name">text</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Page one&quot;</span>)
@@ -89,7 +89,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <span class="name">id</span>: <span class="name">page1</span>
 <span class="name">visible</span>: <span class="number">false</span>
 property <span class="type">alias</span> <span class="name">color</span>: <span class="name">rectangle</span>.<span class="name">color</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rectangle</span>
 <span class="type">anchors</span> {
 <span class="name">fill</span>: <span class="name">parent</span>
@@ -103,7 +103,7 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 <!-- @@@PageStack -->
 <h2>Property Documentation</h2>
 <!-- $$$currentPage -->
-<table class="qmlname"><tr valign="top" id="currentPage-prop"><td class="tblQmlPropNode"><p><span class="name">currentPage</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The currently active page</p>
+<table class="qmlname"><tr valign="top" id="currentPage-prop"><td class="tblQmlPropNode"><p><span class="name">currentPage</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The currently active page</p>
 <!-- @@@currentPage -->
 <br/>
 <!-- $$$data -->

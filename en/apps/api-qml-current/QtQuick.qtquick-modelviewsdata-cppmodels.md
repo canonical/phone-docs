@@ -30,7 +30,7 @@ dataList<span class="operator">.</span>append(<span class="string">&quot;Item 4&
 <span class="type">QQuickView</span> view;
 <span class="type">QQmlContext</span> <span class="operator">*</span>ctxt <span class="operator">=</span> view<span class="operator">.</span>rootContext();
 ctxt<span class="operator">-</span><span class="operator">&gt;</span>setContextProperty(<span class="string">&quot;myModel&quot;</span><span class="operator">,</span> <span class="type">QVariant</span><span class="operator">::</span>fromValue(dataList));</pre>
-<p>The complete source code for this example is available in <a href="QtQuick.models-stringlistmodel/">examples/quick/models/stringlistmodel</a> within the Qt install directory.</p>
+<p>The complete source code for this example is available in <a href="QtQuick.qtquick-models-stringlistmodel-example.md">examples/quick/models/stringlistmodel</a> within the Qt install directory.</p>
 <p><b>Note:</b> There is no way for the view to know that the contents of a QStringList have changed. If the QStringList changes, it will be necessary to reset the model by calling QQmlContext::setContextProperty() again.</p>
 <h3 >QObjectList-based model</h3>
 <p>A list of QObject* values can also be used as a model. A QList&lt;QObject*&gt; provides the properties of the objects in the list as roles.</p>
@@ -67,7 +67,7 @@ ctxt<span class="operator">-</span><span class="operator">&gt;</span>setContextP
 }
 }</pre>
 <p>Note the use of <code>color</code> property with qualifier. The properties of the object are not replicated in the <code>model</code> object, as they are easily available via the <code>modelData</code> object.</p>
-<p>The complete source code for this example is available in <a href="QtQuick.models-objectlistmodel/">examples/quick/models/objectlistmodel</a> within the Qt install directory.</p>
+<p>The complete source code for this example is available in <a href="QtQuick.qtquick-models-objectlistmodel-example.md">examples/quick/models/objectlistmodel</a> within the Qt install directory.</p>
 <p>Note: There is no way for the view to know that the contents of a QList has changed. If the QList changes, it is necessary to reset the model by calling QQmlContext::setContextProperty() again.</p>
 <h3 >QAbstractItemModel</h3>
 <p>A model can be defined by subclassing <a href="#qabstractitemmodel">QAbstractItemModel</a>. This is the best approach if you have a more complex model that cannot be supported by the other approaches. A <a href="#qabstractitemmodel">QAbstractItemModel</a> can also automatically notify a QML view when the model data changes.</p>
@@ -115,7 +115,7 @@ ctxt<span class="operator">-</span><span class="operator">&gt;</span>setContextP
 <span class="name">delegate</span>: <span class="name">Text</span> { <span class="name">text</span>: <span class="string">&quot;Animal: &quot;</span> <span class="operator">+</span> <span class="name">type</span> <span class="operator">+</span> <span class="string">&quot;, &quot;</span> <span class="operator">+</span> <span class="name">size</span> }
 }</pre>
 <p>QML views are automatically updated when the model changes. Remember the model must follow the standard rules for model changes and notify the view when the model has changed by using QAbstractItemModel::dataChanged(), QAbstractItemModel::beginInsertRows(), and so on. See the Model subclassing reference for more information.</p>
-<p>The complete source code for this example is available in <a href="QtQuick.models-abstractitemmodel/">examples/quick/models/abstractitemmodel</a> within the Qt install directory.</p>
+<p>The complete source code for this example is available in <a href="QtQuick.qtquick-models-abstractitemmodel-example.md">examples/quick/models/abstractitemmodel</a> within the Qt install directory.</p>
 <p><a href="#qabstractitemmodel">QAbstractItemModel</a> presents a hierarchy of tables, but the views currently provided by QML can only display list data. In order to display the child lists of a hierarchical model, use the DelegateModel QML type, which provides the following properties and functions to be used with list models of <a href="#qabstractitemmodel">QAbstractItemModel</a> type:</p>
 <ul>
 <li><i>hasModelChildren</i> role property to determine whether a node has child nodes.</li>

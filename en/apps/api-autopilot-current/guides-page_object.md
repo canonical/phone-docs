@@ -35,7 +35,7 @@ Thus pages are modeled as objects following these guidelines:</p>
 <li>Objects need not represent the entire page.</li>
 <li>Actions which produce multiple results should have a test for each result</li>
 </ol>
-<p>Lets take the page objects of the <a class="reference external" href="http://bazaar.launchpad.net/~ubuntu-clock-dev/ubuntu-clock-app/trunk/view/399/tests/autopilot/ubuntu_clock_app/emulators.py">Ubuntu Clock App</a> as an example, with some simplifications. This application is written in
+<p>Lets take the page objects of the <a class="reference external" href="http://bazaar.launchpad.net/~ubuntu-clock-dev/ubuntu-clock-app/trunk/files/head:/tests/autopilot/ubuntu_clock_app/tests/">Ubuntu Clock App</a> as an example, with some simplifications. This application is written in
 QML and Javascript using the <a class="reference external" href="../../platform/sdk/index.md">Ubuntu SDK</a>.</p>
 <h3><a class="toc-backref" href="#id3">1. The public methods represent the services that the page offers.</a><a class="headerlink" href="#the-public-methods-represent-the-services-that-the-page-offers" title="Permalink to this headline"></a></h3>
 <p>This application has a stopwatch page that lets users measure elapsed

@@ -36,10 +36,10 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and device kits](../platform/sdk/tutorials-click-targets-and-device-kits.md) should give
+without hassle on all form factors. [Click targets and device kits](../../platform/sdk/tutorials-click-targets-and-device-kits.md) should give
 you all the details you need if you want to dive deeper or need more help.
 
-![](../../../../media/welcome-html5-app.png)
+![](../../../media/welcome-html5-app.png)
 
 That’s it, your app template is created and ready to be edited. You can even
 run it right now by clicking the play button at the bottom of the left pane
@@ -56,7 +56,7 @@ tree:
   * **js**: contains your javascript files
   * **index.html**: homepage of your app
   * **icon.png**: your app icon
-  * **appname.apparmor**: [security policy groups](/en/publish/security-policy-groups/) declared by your app to access device functionalities (camera, networking, access to user content, etc.)
+  * **appname.apparmor**: [security policy groups](https://developer.ubuntu.com/en/publish/security-policy-groups/) declared by your app to access device functionalities (camera, networking, access to user content, etc.)
   * **appname.desktop**: your app declaration to the shell that will manage its launch, icon, etc.
   * **manifest.json**: your package declaration to the system installer.
 
@@ -66,7 +66,7 @@ you of any mistakes when you try to run or package your app.
 
 ## How to use Web APIs in your application
 
-![](../../../../media/browser-score.png)
+![](../../../media/browser-score.png)
 
 You can expect the large majority of standard APIs to be supported and be as
 easy to use as usual. Here is [the compatibity chart](http://html5test.com/s/676117241b62d256.html) of our web engine on
@@ -82,7 +82,7 @@ the html5 player element:
 </div>
 
 You can find more documentation on Web APIs at
-[webplatform.org](https://docs.webplatform.org/wiki/apis).
+[webplatform.org](https://www.webplatform.org/docs/apis/).
 
 ## How to use Ubuntu APIs in your application
 
@@ -126,4 +126,4 @@ complete theme simply by calling :
 And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 
-[Read the full API](../api-html-current/UbuntuUI.md).
+[Read the full API](../api-html5-current/UbuntuUI.md).

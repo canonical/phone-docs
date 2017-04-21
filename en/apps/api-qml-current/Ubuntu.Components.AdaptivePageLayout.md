@@ -46,7 +46,7 @@ import Ubuntu.Components 1.3
 <span class="name">id</span>: <span class="name">header</span>
 <span class="name">title</span>: <span class="string">&quot;Main Page&quot;</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.top: <span class="name">header</span>.<span class="name">bottom</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Add Page2 above &quot;</span> <span class="operator">+</span> <span class="name">page1</span>.<span class="name">title</span>
@@ -95,7 +95,7 @@ import Ubuntu.Components 1.3
 <span class="name">fillWidth</span>: <span class="number">true</span>
 }
 }
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">page1Component</span>
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">id</span>: <span class="name">page1</span>
@@ -103,7 +103,7 @@ import Ubuntu.Components 1.3
 <span class="name">id</span>: <span class="name">header</span>
 <span class="name">title</span>: <span class="string">&quot;Main page&quot;</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.top: <span class="name">header</span>.<span class="name">bottom</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Add Page2 above &quot;</span> <span class="operator">+</span> <span class="name">page1</span>.<span class="name">title</span>
@@ -159,13 +159,13 @@ import Ubuntu.Components 1.3
 <h2>Method Documentation</h2>
 <!-- $$$addPageToCurrentColumn -->
 <table class="qmlname"><tr valign="top" id="addPageToCurrentColumn-method"><td class="tblQmlFuncNode"><p><span class="name">addPageToCurrentColumn</span>(<i> sourcePage</i>, <i> page</i>, <i> properties</i>)</p></td></tr></table><p>Adds a <code>page</code> to the column the <code>sourcePage</code> resides in and removes all pages from the higher columns. <code>page</code> can be a Component or a file. <code>properties</code> is a JSON object containing properties to be set when page is created. <code>sourcePage</code> must be active.</p>
-<p>The function creates the new page asynchronously if the new <code>page</code> to be added is a Component or a QML document and the <a href="#asynchronous-prop">asynchronous</a> property is set to true. In this case the function returns an incubator which can be used to track the page creation. For more about incubation in QML and creating components asynchronously, see <a href="../sdk-14.10/QtQml.Component.md#incubateObject-method">Component.incubateObject()</a>. The following example removes an element from the list model whenever the page opened in the second column is closed. Note, the example must be run on desktop or on a device with at least 90 grid units screen width.</p>
+<p>The function creates the new page asynchronously if the new <code>page</code> to be added is a Component or a QML document and the <a href="#asynchronous-prop">asynchronous</a> property is set to true. In this case the function returns an incubator which can be used to track the page creation. For more about incubation in QML and creating components asynchronously, see <a href="QtQml.Component.md#incubateObject-method">Component.incubateObject()</a>. The following example removes an element from the list model whenever the page opened in the second column is closed. Note, the example must be run on desktop or on a device with at least 90 grid units screen width.</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">page2Component</span>
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">header</span>: <span class="name">PageHeader</span> {
@@ -187,7 +187,7 @@ import Ubuntu.Components 1.3
 <span class="name">title</span>: <span class="string">&quot;Primary Page&quot;</span>
 <span class="name">flickable</span>: <span class="name">listView</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">id</span>: <span class="name">listView</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="number">10</span>
@@ -211,7 +211,7 @@ listView.model--;
 }
 }
 }</pre>
-<p><b>See also </b><a href="../sdk-14.10/QtQml.Component.md#incubateObject-method">Component.incubateObject</a>.</p>
+<p><b>See also </b><a href="QtQml.Component.md#incubateObject-method">Component.incubateObject</a>.</p>
 <!-- @@@addPageToCurrentColumn -->
 <br/>
 <!-- $$$addPageToNextColumn -->

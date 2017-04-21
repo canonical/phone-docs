@@ -27,7 +27,7 @@ Title: QtQuick.SpriteSequence
 <!-- $$$SpriteSequence-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> renders and controls a list of animations defined by <a href="QtQuick.Sprite.md">Sprite</a> types.</p>
+<p><a href="QtQuick.qtquick-imageelements-example.md/#spritesequence">SpriteSequence</a> renders and controls a list of animations defined by <a href="QtQuick.Sprite.md">Sprite</a> types.</p>
 <p>For full details, see the <a href="QtQuick.qtquick-effects-sprites.md">Sprite Animations</a> overview.</p>
 <!-- @@@SpriteSequence -->
 <h2>Property Documentation</h2>
@@ -57,6 +57,6 @@ Title: QtQuick.SpriteSequence
 <br/>
 <h2>Method Documentation</h2>
 <!-- $$$jumpTo -->
-<table class="qmlname"><tr valign="top" id="jumpTo-method"><td class="tblQmlFuncNode"><p><span class="name">jumpTo</span>(<span class="type">string</span><i> sprite</i>)</p></td></tr></table><p>This function causes the <a href="QtQuick.imageelements/#spritesequence">SpriteSequence</a> to jump to the specified sprite immediately, intermediate sprites are not played. The <i>sprite</i> argument is the name of the sprite you wish to jump to.</p>
+<table class="qmlname"><tr valign="top" id="jumpTo-method"><td class="tblQmlFuncNode"><p><span class="name">jumpTo</span>(<span class="type">string</span><i> sprite</i>)</p></td></tr></table><p>This function causes the <a href="QtQuick.qtquick-imageelements-example.md/#spritesequence">SpriteSequence</a> to jump to the specified sprite immediately, intermediate sprites are not played. The <i>sprite</i> argument is the name of the sprite you wish to jump to.</p>
 <!-- @@@jumpTo -->
 <br/>

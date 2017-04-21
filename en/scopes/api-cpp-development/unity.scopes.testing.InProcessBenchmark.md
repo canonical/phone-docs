@@ -8,10 +8,8 @@ Title: unity.scopes.testing.InProcessBenchmark
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/InProcessBenchmark.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::InProcessBenchmark:
-<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_in_process_benchmark__inherit__graph.png" border="0" usemap="#unity_1_1scopes_1_1testing_1_1_in_process_benchmark_inherit__map" alt="Inheritance graph"/>
-<map name="unity_1_1scopes_1_1testing_1_1_in_process_benchmark_inherit__map" id="unity_1_1scopes_1_1testing_1_1_in_process_benchmark_inherit__map">
-<area shape="rect" id="node3" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_out_of_process_benchmark.html" title="The OutOfProcessBenchmark class provides scope authors with runtime benchmarking capabilities. The actual runs are executed in another process. " alt="" coords="5,184,196,225"/><area shape="rect" id="node2" href="https://developer.ubuntu.com/api//classunity_1_1scopes_1_1testing_1_1_benchmark.html" title="The Benchmark class defines an interface to provide scope authors with runtime benchmarking capabilit..." alt="" coords="22,5,179,47"/></map>
-<center><span class="legend">[legend]</span></center>
+<img src="../../../../media/classunity_1_1scopes_1_1testing_1_1_in_process_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
+
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -9,7 +9,7 @@ Title: U1db.Document
 <p>Document proxies a single document stored in the Database. More...</p>
 <!-- @@@Document -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="index.html"><a href="../../../scopes/cpp/sdk-14.10/U1db.Document.md">Document</a></td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="index.html"><a href="#">Document</a></td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

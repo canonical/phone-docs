@@ -13,53 +13,53 @@ Title: QtLocation.PlaceSearchModel
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#categories-prop">categories</a></b></b> : list&lt;Category&gt;</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#count-prop">count</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#favoritesMatchParameters-prop">favoritesMatchParameters</a></b></b> : VariantMap</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#favoritesPlugin-prop">favoritesPlugin</a></b></b> : Plugin</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#nextPagesAvailable-prop">nextPagesAvailable</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#plugin-prop">plugin</a></b></b> : Plugin</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#previousPagesAvailable-prop">previousPagesAvailable</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#recommendationId-prop">recommendationId</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#relevanceHint-prop">relevanceHint</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a></b></b> : variant</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a></b></b> : enum</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#visibilityScope-prop">visibilityScope</a></b></b> : enum</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#categories-prop">categories</a></b></b> : list&lt;Category&gt;</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#count-prop">count</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#favoritesMatchParameters-prop">favoritesMatchParameters</a></b></b> : VariantMap</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#favoritesPlugin-prop">favoritesPlugin</a></b></b> : Plugin</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a></b></b> : int</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#nextPagesAvailable-prop">nextPagesAvailable</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#plugin-prop">plugin</a></b></b> : Plugin</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#previousPagesAvailable-prop">previousPagesAvailable</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#recommendationId-prop">recommendationId</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#relevanceHint-prop">relevanceHint</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a></b></b> : variant</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a></b></b> : string</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#status-prop">status</a></b></b> : enum</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#visibilityScope-prop">visibilityScope</a></b></b> : enum</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#cancel-method">cancel</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#data-method">data</a></b></b>(int <i>index</i>, string <i>role</i>)</li>
-<li class="fn">string <b><b><a href="..//QtLocation.PlaceSearchModel.md#errorString-method">errorString</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#nextPage-method">nextPage</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#previousPage-method">previousPage</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#reset-method">reset</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#update-method">update</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceSearchModel.md#updateWith-method">updateWith</a></b></b>(int <i>proposedSearchIndex</i>)</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#cancel-method">cancel</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#data-method">data</a></b></b>(int <i>index</i>, string <i>role</i>)</li>
+<li class="fn">string <b><b><a href="QtLocation.PlaceSearchModel.md#errorString-method">errorString</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#nextPage-method">nextPage</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#previousPage-method">previousPage</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#reset-method">reset</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#update-method">update</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtLocation.PlaceSearchModel.md#updateWith-method">updateWith</a></b></b>(int <i>proposedSearchIndex</i>)</li>
 </ul>
 <!-- $$$PlaceSearchModel-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> provides a model of place search results within the <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a>. The <a href="..//QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> and <a href="..//QtLocation.location-places-backend.md#categories">categories</a> properties can be set to restrict the search results to places matching those criteria.</p>
-<p>The <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> returns both sponsored and <a href="http://en.wikipedia.org/wiki/Organic_search">organic search results</a>. Sponsored search results will have the <code>sponsored</code> role set to true.</p>
+<p><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> provides a model of place search results within the <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a>. The <a href="QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> and <a href="QtLocation.location-places-backend.md#categories">categories</a> properties can be set to restrict the search results to places matching those criteria.</p>
+<p>The <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> returns both sponsored and <a href="http://en.wikipedia.org/wiki/Organic_search">organic search results</a>. Sponsored search results will have the <code>sponsored</code> role set to true.</p>
 <p>The model returns data for the following roles:</p>
 <table class="generic">
 <thead><tr class="qt-style"><th >Role</th><th >Type</th><th >Description</th></tr></thead>
 <tr valign="top"><td >type</td><td >enum</td><td >The type of search result.</td></tr>
 <tr valign="top"><td >title</td><td >string</td><td >A string describing the search result.</td></tr>
-<tr valign="top"><td >icon</td><td ><a href="..//QtLocation.location-cpp-qml.md#placeicon">PlaceIcon</a></td><td >Icon representing the search result.</td></tr>
-<tr valign="top"><td >distance</td><td >real</td><td >Valid only when the <code>type</code> role is <code>PlaceResult</code>, the distance to the place from the center of the <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a>. If no <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> has been specified, the distance is NaN.</td></tr>
-<tr valign="top"><td >place</td><td ><a href="..//QtLocation.location-cpp-qml.md#place">Place</a></td><td >Valid only when the <code>type</code> role is <code>PlaceResult</code>, an object representing the place.</td></tr>
+<tr valign="top"><td >icon</td><td ><a href="QtLocation.location-cpp-qml.md#placeicon">PlaceIcon</a></td><td >Icon representing the search result.</td></tr>
+<tr valign="top"><td >distance</td><td >real</td><td >Valid only when the <code>type</code> role is <code>PlaceResult</code>, the distance to the place from the center of the <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a>. If no <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> has been specified, the distance is NaN.</td></tr>
+<tr valign="top"><td >place</td><td ><a href="QtLocation.location-cpp-qml.md#place">Place</a></td><td >Valid only when the <code>type</code> role is <code>PlaceResult</code>, an object representing the place.</td></tr>
 <tr valign="top"><td >sponsored</td><td >bool</td><td >Valid only when the <code>type</code> role is <code>PlaceResult</code>, true if the search result is a sponsored result.</td></tr>
 </table>
 <h3 >Search Result Types</h3>
 <p>The <code>type</code> role can take on the following values:</p>
 <table class="generic">
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.UnknownSearchResult</td><td >The contents of the search result are unknown.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.PlaceResult</td><td >The search result contains a place.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.ProposedSearchResult</td><td >The search result contains a proposed search which may be relevant.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.UnknownSearchResult</td><td >The contents of the search result are unknown.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.PlaceResult</td><td >The search result contains a place.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.ProposedSearchResult</td><td >The search result contains a proposed search which may be relevant.</td></tr>
 </table>
 <p>It can often be helpful to use a Loader to create a delegate that will choose different Components based on the search result type.</p>
 <pre class="qml"><span class="type">Component</span> {
@@ -81,13 +81,13 @@ Title: QtLocation.PlaceSearchModel
 }
 }</pre>
 <h2 id="detection-of-updated-and-removed-places">Detection of Updated and Removed Places</h2>
-<p>The <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> listens for places that have been updated or removed from its plugin's backend. If it detects that a place has been updated and that place is currently present in the model, then it will call <a href="..//QtLocation.Place.md#getDetails-method">Place::getDetails</a> to refresh the details. If it detects that a place has been removed, then correspondingly the place will be removed from the model if it is currently present.</p>
+<p>The <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> listens for places that have been updated or removed from its plugin's backend. If it detects that a place has been updated and that place is currently present in the model, then it will call <a href="QtLocation.Place.md#getDetails-method">Place::getDetails</a> to refresh the details. If it detects that a place has been removed, then correspondingly the place will be removed from the model if it is currently present.</p>
 <h2 id="example">Example</h2>
-<p>The following example shows how to use the <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> to search for Pizza restaurants in close proximity of a given position. A <a href="..//QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> and <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> are provided to the model and <a href="..//QtLocation.PlaceSearchModel.md#update-method">update()</a> is used to perform a lookup query. Note that the model does not incrementally fetch search results, but rather performs a single fetch when <a href="..//QtLocation.PlaceSearchModel.md#update-method">update()</a> is run. The <a href="..//QtLocation.PlaceSearchModel.md#count-prop">count</a> is set to the number of search results returned during the fetch.</p>
+<p>The following example shows how to use the <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> to search for Pizza restaurants in close proximity of a given position. A <a href="QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a> and <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> are provided to the model and <a href="QtLocation.PlaceSearchModel.md#update-method">update()</a> is used to perform a lookup query. Note that the model does not incrementally fetch search results, but rather performs a single fetch when <a href="QtLocation.PlaceSearchModel.md#update-method">update()</a> is run. The <a href="QtLocation.PlaceSearchModel.md#count-prop">count</a> is set to the number of search results returned during the fetch.</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2
 import QtLocation 5.3
-<span class="type"><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a></span> {
+<span class="type"><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a></span> {
 <span class="name">id</span>: <span class="name">searchModel</span>
 <span class="name">plugin</span>: <span class="name">myPlugin</span>
 <span class="name">searchTerm</span>: <span class="string">&quot;pizza&quot;</span>
@@ -95,12 +95,12 @@ import QtLocation 5.3
 <span class="name">Component</span>.onCompleted: <span class="name">update</span>()
 }</pre>
 <h2 id="paging">Paging</h2>
-<p>The <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> API has some limited support for paging. The <a href="..//QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a> and <a href="..//QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a> functions as well as the <a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a> property can be used to access paged search results. When the <a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a> property is set the search result page contains at most <a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a> entries (of type place result). For example, if the backend has 5 search results in total [a,b,c,d,e], and assuming the first page is shown and limit of 3 has been set then a,b,c is returned. The <a href="..//QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a> would return d,e. The <a href="..//QtLocation.PlaceSearchModel.md#nextPagesAvailable-prop">nextPagesAvailable</a> and <a href="..//QtLocation.PlaceSearchModel.md#previousPagesAvailable-prop">previousPagesAvailable</a> properties can be used to check for further pages. At the moment the API does not support the means to retrieve the total number of items available from the backed. Note that support for <a href="..//QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a>, <a href="..//QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a> and <a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a> can vary according to the <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a>.</p>
+<p>The <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a> API has some limited support for paging. The <a href="QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a> and <a href="QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a> functions as well as the <a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a> property can be used to access paged search results. When the <a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a> property is set the search result page contains at most <a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a> entries (of type place result). For example, if the backend has 5 search results in total [a,b,c,d,e], and assuming the first page is shown and limit of 3 has been set then a,b,c is returned. The <a href="QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a> would return d,e. The <a href="QtLocation.PlaceSearchModel.md#nextPagesAvailable-prop">nextPagesAvailable</a> and <a href="QtLocation.PlaceSearchModel.md#previousPagesAvailable-prop">previousPagesAvailable</a> properties can be used to check for further pages. At the moment the API does not support the means to retrieve the total number of items available from the backed. Note that support for <a href="QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a>, <a href="QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a> and <a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a> can vary according to the <a href="QtLocation.location-places-qml.md#plugin">plugin</a>.</p>
 <p><b>See also </b>CategoryModel and QPlaceManager.</p>
 <!-- @@@PlaceSearchModel -->
 <h2>Property Documentation</h2>
 <!-- $$$categories -->
-<table class="qmlname"><tr valign="top" id="categories-prop"><td class="tblQmlPropNode"><p><span class="name">categories</span> : <span class="type">list</span>&lt;<span class="type"><a href="..//QtLocation.Category.md">Category</a></span>&gt;</p></td></tr></table><p>This property holds a list of categories to be used when searching. Returned search results will be for places that match at least one of the categories.</p>
+<table class="qmlname"><tr valign="top" id="categories-prop"><td class="tblQmlPropNode"><p><span class="name">categories</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtLocation.Category.md">Category</a></span>&gt;</p></td></tr></table><p>This property holds a list of categories to be used when searching. Returned search results will be for places that match at least one of the categories.</p>
 <!-- @@@categories -->
 <br/>
 <!-- $$$count -->
@@ -109,15 +109,15 @@ import QtLocation 5.3
 <!-- @@@count -->
 <br/>
 <!-- $$$favoritesMatchParameters -->
-<table class="qmlname"><tr valign="top" id="favoritesMatchParameters-prop"><td class="tblQmlPropNode"><p><span class="name">favoritesMatchParameters</span> : <span class="type">VariantMap</span></p></td></tr></table><p>This property holds a set of parameters used to specify how search result places are matched to favorites in the <a href="..//QtLocation.PlaceSearchModel.md#favoritesPlugin-prop">favoritesPlugin</a>.</p>
-<p>By default the parameter map is empty and implies that the favorites plugin matches by <a href="..//QtLocation.location-places-backend.md#alternative-identifier-cross-referencing">alternative identifiers</a>. Generally, an application developer will not need to set this property.</p>
-<p>In cases where the favorites plugin does not support matching by alternative identifiers, then the <a href="..//QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin documentation</a> should be consulted to see precisely what key-value parameters to set.</p>
+<table class="qmlname"><tr valign="top" id="favoritesMatchParameters-prop"><td class="tblQmlPropNode"><p><span class="name">favoritesMatchParameters</span> : <span class="type">VariantMap</span></p></td></tr></table><p>This property holds a set of parameters used to specify how search result places are matched to favorites in the <a href="QtLocation.PlaceSearchModel.md#favoritesPlugin-prop">favoritesPlugin</a>.</p>
+<p>By default the parameter map is empty and implies that the favorites plugin matches by <a href="QtLocation.location-places-backend.md#alternative-identifier-cross-referencing">alternative identifiers</a>. Generally, an application developer will not need to set this property.</p>
+<p>In cases where the favorites plugin does not support matching by alternative identifiers, then the <a href="QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin documentation</a> should be consulted to see precisely what key-value parameters to set.</p>
 <!-- @@@favoritesMatchParameters -->
 <br/>
 <!-- $$$favoritesPlugin -->
-<table class="qmlname"><tr valign="top" id="favoritesPlugin-prop"><td class="tblQmlPropNode"><p><span class="name">favoritesPlugin</span> : <span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> which will be used to search for favorites. Any places from the search which can be cross-referenced or matched in the favoritesPlugin will have their <a href="..//QtLocation.Place.md#favorite-prop">favorite</a> property set to the corresponding <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> from the favoritesPlugin.</p>
-<p>If the favoritesPlugin is not set, the <a href="..//QtLocation.Place.md#favorite-prop">favorite</a> property of the places in the results will always be null.</p>
-<p><b>See also </b><a href="..//QtLocation.Place.md#favorites">Favorites</a>.</p>
+<table class="qmlname"><tr valign="top" id="favoritesPlugin-prop"><td class="tblQmlPropNode"><p><span class="name">favoritesPlugin</span> : <span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> which will be used to search for favorites. Any places from the search which can be cross-referenced or matched in the favoritesPlugin will have their <a href="QtLocation.Place.md#favorite-prop">favorite</a> property set to the corresponding <a href="QtLocation.location-cpp-qml.md#place">Place</a> from the favoritesPlugin.</p>
+<p>If the favoritesPlugin is not set, the <a href="QtLocation.Place.md#favorite-prop">favorite</a> property of the places in the results will always be null.</p>
+<p><b>See also </b><a href="QtLocation.Place.md#favorites">Favorites</a>.</p>
 <!-- @@@favoritesPlugin -->
 <br/>
 <!-- $$$limit -->
@@ -126,16 +126,16 @@ import QtLocation 5.3
 <br/>
 <!-- $$$nextPagesAvailable -->
 <table class="qmlname"><tr valign="top" id="nextPagesAvailable-prop"><td class="tblQmlPropNode"><p><span class="name">nextPagesAvailable</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds whether there is one or more additional pages of search results available.</p>
-<p><b>See also </b><a href="..//QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a>.</p>
+<p><b>See also </b><a href="QtLocation.PlaceSearchModel.md#nextPage-method">nextPage()</a>.</p>
 <!-- @@@nextPagesAvailable -->
 <br/>
 <!-- $$$plugin -->
-<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> which will be used to perform the search.</p>
+<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> which will be used to perform the search.</p>
 <!-- @@@plugin -->
 <br/>
 <!-- $$$previousPagesAvailable -->
 <table class="qmlname"><tr valign="top" id="previousPagesAvailable-prop"><td class="tblQmlPropNode"><p><span class="name">previousPagesAvailable</span> : <span class="type">bool</span></p></td></tr></table><p>This property holds whether there is one or more previous pages of search results available.</p>
-<p><b>See also </b><a href="..//QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a>.</p>
+<p><b>See also </b><a href="QtLocation.PlaceSearchModel.md#previousPage-method">previousPage()</a>.</p>
 <!-- @@@previousPagesAvailable -->
 <br/>
 <!-- $$$recommendationId -->
@@ -153,8 +153,8 @@ import QtLocation 5.3
 <br/>
 <!-- $$$searchArea -->
 <table class="qmlname"><tr valign="top" id="searchArea-prop"><td class="tblQmlPropNode"><p><span class="name">searchArea</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the search area. The search result returned by the model will be within the search area.</p>
-<p>If this property is set to a geocircle its radius property may be left unset, in which case the <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> will choose an appropriate radius for the search.</p>
-<p>Support for specifying a search area can vary according to the <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a> backend implementation. For example, some may support a search center only while others may only support geo rectangles.</p>
+<p>If this property is set to a geocircle its radius property may be left unset, in which case the <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> will choose an appropriate radius for the search.</p>
+<p>Support for specifying a search area can vary according to the <a href="QtLocation.location-places-qml.md#plugin">plugin</a> backend implementation. For example, some may support a search center only while others may only support geo rectangles.</p>
 <!-- @@@searchArea -->
 <br/>
 <!-- $$$searchTerm -->
@@ -164,10 +164,10 @@ import QtLocation 5.3
 <!-- $$$status -->
 <table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">enum</span></p></td></tr></table><p>This property holds the status of the model. It can be one of:</p>
 <table class="generic">
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Null</td><td >No search query has been executed. The model is empty.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready</td><td >The search query has completed, and the results are available.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Loading</td><td >A search query is currently being executed.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Error</td><td >An error occurred when executing the previous search query.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Null</td><td >No search query has been executed. The model is empty.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready</td><td >The search query has completed, and the results are available.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Loading</td><td >A search query is currently being executed.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Error</td><td >An error occurred when executing the previous search query.</td></tr>
 </table>
 <!-- @@@status -->
 <br/>
@@ -184,9 +184,9 @@ import QtLocation 5.3
 <br/>
 <h2>Method Documentation</h2>
 <!-- $$$cancel -->
-<table class="qmlname"><tr valign="top" id="cancel-method"><td class="tblQmlFuncNode"><p><span class="name">cancel</span>()</p></td></tr></table><p>Cancels an ongoing search operation immediately and sets the model status to <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready. The model retains any search results it had before the operation was started.</p>
+<table class="qmlname"><tr valign="top" id="cancel-method"><td class="tblQmlFuncNode"><p><span class="name">cancel</span>()</p></td></tr></table><p>Cancels an ongoing search operation immediately and sets the model status to <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready. The model retains any search results it had before the operation was started.</p>
 <p>If an operation is not ongoing, invoking cancel() has no effect.</p>
-<p><b>See also </b><a href="..//QtLocation.PlaceSearchModel.md#update-method">update()</a> and <a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a>.</p>
+<p><b>See also </b><a href="QtLocation.PlaceSearchModel.md#update-method">update()</a> and <a href="QtLocation.PlaceSearchModel.md#status-prop">status</a>.</p>
 <!-- @@@cancel -->
 <br/>
 <!-- $$$data -->
@@ -207,12 +207,12 @@ import QtLocation 5.3
 <!-- @@@previousPage -->
 <br/>
 <!-- $$$reset -->
-<table class="qmlname"><tr valign="top" id="reset-method"><td class="tblQmlFuncNode"><p><span class="name">reset</span>()</p></td></tr></table><p>Resets the model. All search results are cleared, any outstanding requests are aborted and possible errors are cleared. Model status will be set to <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Null.</p>
+<table class="qmlname"><tr valign="top" id="reset-method"><td class="tblQmlFuncNode"><p><span class="name">reset</span>()</p></td></tr></table><p>Resets the model. All search results are cleared, any outstanding requests are aborted and possible errors are cleared. Model status will be set to <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Null.</p>
 <!-- @@@reset -->
 <br/>
 <!-- $$$update -->
-<table class="qmlname"><tr valign="top" id="update-method"><td class="tblQmlFuncNode"><p><span class="name">update</span>()</p></td></tr></table><p>Updates the model based on the provided query parameters. The model will be populated with a list of places matching the search parameters specified by the type's properties. Search criteria is specified by setting properties such as the <a href="..//QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a>, <a href="..//QtLocation.location-places-backend.md#categories">categories</a>, <a href="..//QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> and <a href="..//QtLocation.PlaceSearchModel.md#limit-prop">limit</a>. Support for these properties may vary according to <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a>. <code>update()</code> then submits the set of criteria to the <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a> to process.</p>
-<p>While the model is updating the <a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a> of the model is set to <code>PlaceSearchModel.Loading</code>. If the model is successfully updated the <a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a> is set to <code>PlaceSearchModel.Ready</code>, while if it unsuccessfully completes, the <a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a> is set to <code>PlaceSearchModel.Error</code> and the model cleared.</p>
+<table class="qmlname"><tr valign="top" id="update-method"><td class="tblQmlFuncNode"><p><span class="name">update</span>()</p></td></tr></table><p>Updates the model based on the provided query parameters. The model will be populated with a list of places matching the search parameters specified by the type's properties. Search criteria is specified by setting properties such as the <a href="QtLocation.PlaceSearchModel.md#searchTerm-prop">searchTerm</a>, <a href="QtLocation.location-places-backend.md#categories">categories</a>, <a href="QtLocation.PlaceSearchModel.md#searchArea-prop">searchArea</a> and <a href="QtLocation.PlaceSearchModel.md#limit-prop">limit</a>. Support for these properties may vary according to <a href="QtLocation.location-places-qml.md#plugin">plugin</a>. <code>update()</code> then submits the set of criteria to the <a href="QtLocation.location-places-qml.md#plugin">plugin</a> to process.</p>
+<p>While the model is updating the <a href="QtLocation.PlaceSearchModel.md#status-prop">status</a> of the model is set to <code>PlaceSearchModel.Loading</code>. If the model is successfully updated the <a href="QtLocation.PlaceSearchModel.md#status-prop">status</a> is set to <code>PlaceSearchModel.Ready</code>, while if it unsuccessfully completes, the <a href="QtLocation.PlaceSearchModel.md#status-prop">status</a> is set to <code>PlaceSearchModel.Error</code> and the model cleared.</p>
 <pre class="cpp">PlaceSearchModel {
 id: model
 plugin: backendPlugin
@@ -229,11 +229,11 @@ model<span class="operator">.</span>searchArea<span class="operator">.</span>cen
 model<span class="operator">.</span>update();
 }
 }</pre>
-<p><b>See also </b><a href="..//QtLocation.PlaceSearchModel.md#cancel-method">cancel()</a> and <a href="..//QtLocation.PlaceSearchModel.md#status-prop">status</a>.</p>
+<p><b>See also </b><a href="QtLocation.PlaceSearchModel.md#cancel-method">cancel()</a> and <a href="QtLocation.PlaceSearchModel.md#status-prop">status</a>.</p>
 <!-- @@@update -->
 <br/>
 <!-- $$$updateWith -->
-<table class="qmlname"><tr valign="top" id="updateWith-method"><td class="tblQmlFuncNode"><p><span class="name">updateWith</span>(<span class="type">int</span><i> proposedSearchIndex</i>)</p></td></tr></table><p>Updates the model based on the ProposedSearchResult at index <i>proposedSearchIndex</i>. The model will be populated with a list of places matching the proposed search. Model status will be set to <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Loading. If the model is updated successfully status will be set to <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready. If an error occurs status will be set to <a href="..//QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Error and the model cleared.</p>
+<table class="qmlname"><tr valign="top" id="updateWith-method"><td class="tblQmlFuncNode"><p><span class="name">updateWith</span>(<span class="type">int</span><i> proposedSearchIndex</i>)</p></td></tr></table><p>Updates the model based on the ProposedSearchResult at index <i>proposedSearchIndex</i>. The model will be populated with a list of places matching the proposed search. Model status will be set to <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Loading. If the model is updated successfully status will be set to <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Ready. If an error occurs status will be set to <a href="QtLocation.PlaceSearchModel.md">PlaceSearchModel</a>.Error and the model cleared.</p>
 <p>If <i>proposedSearchIndex</i> does not reference a ProposedSearchResult this method does nothing.</p>
 <!-- @@@updateWith -->
 <br/>
