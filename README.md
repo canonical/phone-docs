@@ -25,6 +25,13 @@ There are more resources for this project on [Launchpad](https://launchpad.net/u
 
 Please feel free to submit [bugs](https://github.com/ubuntudesign/phone-docs/issues/new), or even better, pull requests if you see errors or ammends.
 
+If you want to do larger edits, or build the docs yourself, then refere to [documentation-builder](https://github.com/canonical-webteam/documentation-builder) for more information.  But basically.
+
+1. clone this repo
+2. install the documentation builder `snap install documentation-builder` or build it yourself
+3. run the documentation-builder in the repo
+4. open the `build/en/index.html` file
+
 ## Thank-you
 
 A thank-you to the hundreds of people who have worked on this project from Canonical and the Ubuntu community!
