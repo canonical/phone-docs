@@ -43,7 +43,7 @@ to their AppArmor manifest file:
 ```
 
 You can read more about application confinement
-[here](app-confinement.html).
+[here](app-confinement.md).
 Next, the application needs to ship an `app.accounts` file which describes the
 service(s) it's going to use:
 
@@ -77,7 +77,7 @@ will access: this is done via the `services` key, which can be assigned an
 array of elements, each describing a service. The only required key is
 "`provider`", which should contain the identifier of the account provider. The
 available account providers can be found in `/usr/share/accounts/providers/`
-(those installed via click packages will be found in
+[those installed via click packages will be found in
 `~/.local/share/accounts/providers/`), and their identifier is given by their
 filename minus the “`.provider`” suffix. Authentication information can be
 specified either in the `auth` key in one's `app.accounts` file, or it can be
@@ -131,7 +131,7 @@ steps, as described in more detail in the following sections.
 
 #### Accessing the accounts database
 
-The API to enumerate the accounts is provided by the `[AccountModel](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.AccountModel/)` QML
+The API to enumerate the accounts is provided by the `[AccountModel](../../apps/api-qml-current/Ubuntu.OnlineAccounts.md)` QML
 element. It's also possible to access the same functionality by using C++ (via
 libOnlineAccountsQt), but the QML bindings are the simplest and most
 recommended way; we'll focus on the QML bindings throughout this document. The
@@ -157,7 +157,7 @@ When an application is run for the first time after being installed it won't
 see any accounts in the model, because – even if the user might have some
 accounts already configured in the System Settings – the user hasn't yet
 authorized it to use any accounts. The application needs to explicitly request
-access to the user's accounts, and this is done by invoking the [requestAccess()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.AccountModel/#requestAccess-method/) method:
+access to the user's accounts, and this is done by invoking the [requestAccess()](../../apps/api-qml-current/Ubuntu.OnlineAccounts.md#requestAccess-method/) method:
 
 ``` QML
 import QtQuick 2.0
@@ -198,8 +198,8 @@ Once the application has got an account, it can proceed and obtain an
 authentication token for that account. Depending on the authentication method
 being used, this could be an OAuth authentication token or, in case of
 services offering a basic login only, a username and a password. Obtaining the
-authentication token is simply done by accessing an `[Account](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/)` element and
-calling its `[authenticate()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticate-method)` method:
+authentication token is simply done by accessing an `[Account](../../apps/api-qml-current/Ubuntu.OnlineAccounts.md)` element and
+calling its `[authenticate())(../../apps/api-qml-current/Ubuntu.OnlineAccounts.md#authenticate-method)` method:
 
 ``` QML
 import QtQuick 2.0
@@ -220,8 +220,8 @@ ListView {
 }
 ```
 
-After the `authenticate()` method has been called, the `Account` object will
-emit the [authenticationReply()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticationReply-signal) signal which will
+After the `authenticate[)` method has been called, the `Account` object will
+emit the [authenticationReply()](../../apps/api-qml-current/Ubuntu.OnlineAccounts.md#authenticationReply-signal) signal which will
 carry a `reply` parameter with the authentication result. Applications might
 want to specify some additional parameters when performing the authentication;
 for example, an application which is logging into an account which supports
@@ -234,13 +234,13 @@ Button {
   onClicked: model.account.authenticate({
     "ClientId": "foo",
     "ClientSecret": "bar",
-    "Scopes": ["publish_actions"]
+    "Scopes": ["publish_actions")
   })
 }
 ...
 ```
 
-The parameters passed to the `authenticate()` method, as well as the `reply`
+The parameters passed to the `authenticate[)` method, as well as the `reply`
 object returned with the `authenticationReply() `signal, depend on the
 authentication method being used. In the next sections, the most common
 authentication method are described, along with their parameters and replies.
@@ -309,7 +309,7 @@ the following keys:
   * **`SignatureMethod`**: the signature method which needs to be used.
 
 Once the client application has received the authentication reply, it will
-need to [sign the requests](http://tools.ietf.org/html/rfc5849#section-3.1)
+need to [sign the requests)(http://tools.ietf.org/html/rfc5849#section-3.1)
 made against the service APIs. While the `ConsumerKey`, `ConsumerSecret` and
 `SignatureMethod` are typically already known to the application, they are
 also provided in the authentication reply for convenience.
@@ -381,7 +381,7 @@ keys should be present:
 The QML plugin is responsible for creating the UI to be shown when an account
 needs to be created or edited. The root element of the plugin is expected to
 be a `Flickable`, and it will have access to an `account` context variable of
-type `[Account](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.Account/)` which represents the account being created or edited. In order
+type `[Account](../../apps/api-qml-current/Ubuntu.OnlineAccounts.Account.md)` which represents the account being created or edited. In order
 to decide whether the desired operation is the creation or the editing of an
 account, the plugin can check the `account.accountId` property, whose value
 will be `0` for the creation operation, and a number greater than zero if the

@@ -4,7 +4,6 @@ title: "SDK - installing the SDK"
 
 # SDK - installing the SDK
 
-
 Here’s where you learn the exact steps needed to install the Ubuntu SDK,
 Ubuntu’s integrated development environment (IDE) for developing Ubuntu Apps.
 
@@ -31,7 +30,7 @@ Install as follows:
   1. Search in the Dash for “Ubuntu SDK”.
   2. Launch it from this icon:
 
-![](../../../media/9a2b7a5a-f1e5-42ed-b90f-f73c3bfa0298-cms_page_media/23/ubuntu-qtcreator.png)
+![](../../../media/ubuntu-qtcreator.png)
 
 You can also launch the SDK from the shell with:
 
@@ -42,4 +41,4 @@ You can also launch the SDK from the shell with:
 ## Next steps
 
 A good next move is one of the quick tutorials in the Ubuntu SDK section, for
-example [Create an App Project](tutorials-creating-an-sdk-app-project.html) and [Running Apps from the SDK](tutorials-running-apps-from-the-sdk.html).
+example [Create an App Project](tutorials-creating-an-sdk-app-project.md) and [Running Apps from the SDK](tutorials-running-apps-from-the-sdk.md).

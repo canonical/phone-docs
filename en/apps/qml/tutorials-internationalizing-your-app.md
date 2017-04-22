@@ -19,7 +19,7 @@ translatable. Let's get started.
 A few terms you need to understand before diving in.
 
   * **Gettext**: the technology used by Ubuntu to translate applications
-  * **Internationalization (i18n)**: what you will be doing in your app to enable translations
+  * **Internationalization [i18n)**: what you will be doing in your app to enable translations
   * **Localization (l10n)**: what translators do
   * **User locale**: for most cases, you can think of it as the language the user has chosen for the UI of their system. However, locale is the broader term that includes the group of settings associated with a particular localized configuration: language, date/time format, currency, etc.
   * **POT files**: template files containing all your application strings, exposed to translators. There is generally only one and it is also known as “Translation template.”
@@ -174,7 +174,7 @@ The [Date type](http://doc.qt.io/qt-5/qml-qtqml-date.html) is also worth
 looking into if your application is displaying dates or times. This will be
 the topic of another tutorial.
 
-Let's have a look at the final internationalized version of our [sample app](http://bazaar.launchpad.net/~davidc3/howmanyapples/trunk/view/head:/Main.qml)
+Let's have a look at the final internationalized version of our [sample app)(http://bazaar.launchpad.net/~davidc3/howmanyapples/trunk/view/head:/Main.qml)
 
 As you can see, I've also added a few translator comments. Make sure to use
 them for any strings needing context!

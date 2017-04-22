@@ -3,7 +3,6 @@ title: "Platform guides - app confinement"
 ---
 
 
-
 # Platform guides - app confinement
 
 ## AppArmor policy for click packages
@@ -282,7 +281,7 @@ following provides what developers should need. The following environment
 variables are set/adjusted for apps ([not including scopes](https://wiki.ubuntu.com/SecurityTeam/Specifications/ScopesConfinement)):
 
   * **UBUNTU_APPLICATION_ISOLATION=1**: convenience variable
-  * **APP_ID**: the [application ID](https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId) as used by the system. Provided for convenience
+  * **APP_ID**: the [application ID)(https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId) as used by the system. Provided for convenience
   * **XDG_CACHE_HOME**: set to `$HOME/.cache`
   * **XDG_CONFIG_HOME**: set to `$HOME/.config`
   * **XDG_DATA_HOME**: set to `$HOME/.local/share`
@@ -346,7 +345,7 @@ Alternatively, the `APP_PKGNAME` can be programmaticly found by parsing the
 desired `XDG` dir. Example pseudocode:
 
 ```
-APP_PKGNAME = APP_ID.split('_')[0]
+APP_PKGNAME = APP_ID.split('_'](0]
 my_writable_dir = os.environ['XDG_DATA_HOME'] + APP_PKGNAME
 ```
 
@@ -354,5 +353,4 @@ my_writable_dir = os.environ['XDG_DATA_HOME'] + APP_PKGNAME
 
 ## App confinement and your app
 
-Read our article on [security policygroups](http://developer.ubuntu.com/en/publish/security-policy-groups/) if you want to find out more about how this is relevant to your app and how you can
-effectively test your app.
+Read our article on [security policygroups](http://developer.ubuntu.comhttps://developer.ubuntu.com/en/publish/security-policy-groups/) if you want to find out more about how this is relevant to your app and how you can effectively test your app.

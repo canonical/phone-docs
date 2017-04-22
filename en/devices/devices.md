@@ -4,20 +4,18 @@ title: "Devices - supported and reference devices"
 
 # Devices - supported and reference devices
 
-
 ## Supported and reference devices
 
 Ubuntu phone images are built for the target devices below. These are built
 and supported by Canonical with contributions from the wider Ubuntu community.
-
 
 Device | Android image*
 ------ | -------------
 Aquaris E4.5 Ubuntu Edition | Retail device, Ubuntu pre-installed
 Aquaris E5 HD Ubuntu Edition  | Retail device, Ubuntu pre-installed
 Meizu MX4 Ubuntu Edition | Retail device, Ubuntu pre-installed
-Nexus 4 | [occam](https://developers.google.com/android/nexus/images#occam), [mako](https://developers.google.com/android/nexus/drivers#mako)
-Nexus 7 2013 WiFi | [razor](https://developers.google.com/android/nexus/images#razor), [flo](https://developers.google.com/android/nexus/drivers#flo)
+Nexus 4 | [occam](https://developers.google.com/android/nexus/images#occam), [mako](https://developers.google.com/android/drivers#mako)
+Nexus 7 2013 WiFi | [razor](https://developers.google.com/android/nexus/images#razor), [flo](https://developers.google.com/android/drivers#flo)
 
 \* _Links to Android pages are provided for recovery purposes._
 
@@ -40,9 +38,8 @@ Marius Gripsgard | Vojtech Bocek | Marius Gripsgard
 What do you want to do next?
 
   * [Check out the complete list of community-driven ports](https://wiki.ubuntu.com/Touch/Devices)
-  * [Learn how to port Ubuntu to a new device](https://developer.ubuntu.com/en/start/ubuntu-for-devices/porting-new-device)
+  * [Learn how to port Ubuntu to a new device](porting-new-device.md)
   * [Contribute to an existing port](https://webchat.freenode.net/?channels=ubuntu-touch)
-
 
 ## Previously supported devices
 
@@ -52,6 +49,6 @@ through community involvement.
 
 Device | Android Image Name | Android Driver Name | Status
 ------ | ------------------ | ------------------- | ------
-Nexus 10 | [mantaray](https://developers.google.com/android/nexus/images#mantaray) | [manta](https://developers.google.com/android/nexus/drivers#manta) | Deprecated
-Galaxy Nexus | [takju](https://developers.google.com/android/nexus/images#takju) and [yakju](https://developers.google.com/android/nexus/images#yakju) | [maguro](https://developers.google.com/android/nexus/drivers#maguro) | Deprecated
-Nexus 7 2012 | [nakasi](https://developers.google.com/android/nexus/images#nakasi) or [nakasig](https://developers.google.com/android/nexus/images#nakasig) | [grouper](https://developers.google.com/android/nexus/drivers#grouper) | Deprecated
+Nexus 10 | [mantaray](https://developers.google.com/android/nexus/images#mantaray) | [manta](https://developers.google.com/android/drivers#manta) | Deprecated
+Galaxy Nexus | [takju](https://developers.google.com/android/nexus/images#takju) and [yakju](https://developers.google.com/android/nexus/images#yakju) | [maguro](https://developers.google.com/android/drivers#maguro) | Deprecated
+Nexus 7 2012 | [nakasi](https://developers.google.com/android/nexus/images#nakasi) or [nakasig](https://developers.google.com/android/nexus/images#nakasig) | [grouper](https://developers.google.com/android/drivers#grouper) | Deprecated

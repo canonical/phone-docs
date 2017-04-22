@@ -2,7 +2,6 @@
 title: "Tutorials"
 ---
 
-
 # Tutorials
 
 ## Get started with webapps!
@@ -11,14 +10,6 @@ Turn any website into a webapp in minutes by following along this tutorial
 using the Ubuntu SDK:
 
   * [Create your first webapp](web-app-tutorial.md)
-
-### Webapp generator
-
-The online webapp generator allows you to create simple webapps, ready to
-upload to the store, in an instant. Note that you will need to create a (free)
-[MyApps account](https://myapps.developer.ubuntu.com/) to access it.
-
-  * [Webapp generator](https://developer.ubuntu.com/webapp-generator/)
 
 ### Video Workshop
 

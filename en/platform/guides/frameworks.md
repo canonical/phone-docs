@@ -4,7 +4,6 @@ title: "Platform guides - frameworks"
 
 # Platform guides - frameworks
 
-
 Frameworks are contracts between applications and the platform: a list of APIs
 and libraries your application can use. Their role is to ensure that your app
 is compatible with Ubuntu devices. Since Ubuntu 13.10, several frameworks were
@@ -28,9 +27,9 @@ previous version and the following new frameworks :
 These screenshots show the framework picker in the “Publish” page of the SDK
 and the complete list of available frameworks.
 
-![](../../../media/7154a292-eb6c-4d50-9da3-64040ab6beb9-cms_page_media/71/pick_framework_sdk.png)
+![](../../../media/pick_framework_sdk.png)
 
-![](../../../media/7da8511d-02bd-4230-b33b-6abdc4bdf4d6-cms_page_media/71/pick_framework_list_sdk.png)
+![](../../../media/pick_framework_list_sdk.png)
 
 ### Which framework version to target?
 
@@ -51,7 +50,7 @@ list all changes between versions of a framework is coming soon.
 
 The SDK allows you to run your app with any framework, regardless of your
 development environment and version of Ubuntu. See the “Device kits” section
-of [Running apps from the SDK](../../apps/sdk/tutorials/running-apps-from-the-sdk.html).
+of [Running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.html).
 
 ### Going further
 
@@ -59,4 +58,4 @@ Now that you are familiar with frameworks, you should probably read another
 short article on [Security Policy Groups](https://developer.ubuntu.com/en/publish/security-policy-groups/). Another piece of the platform that defines what your application is
 allowed to do and the many ways you can bring more features and security to
 your users. For an in-depth look at frameworks, you can read the complete
-[documentation](https://wiki.ubuntu.com/Click/Frameworks).
+[documentation)(https://wiki.ubuntu.com/Click/Frameworks).

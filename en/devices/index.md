@@ -39,7 +39,7 @@ purchase preinstalled such as the BQ Aquarius Ubuntu edition, or selected
 phones and tablets such as the Nexus 4 and Nexus 7 2013. The porting community
 has also enabled other devices: for example, it runs beautifully on a Nexus 5.
 
-[Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.html)
+[Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.md)
 
 ### Beyond applications
 
@@ -49,7 +49,7 @@ and services delivered directly to the screen, without the need to open an
 application, all presented in a unified and coherent style. For example, all
 your music from different apps and online services, in one -on demand- place.
 
-[Learn more about scopes&nbsp;&rsaquo;](../scopes/index.html)
+[Learn more about scopes&nbsp;&rsaquo;](../scopes/index.md)
 
 ### Security
 
@@ -59,11 +59,11 @@ them to. This makes for a very secure operating system that puts your privacy
 into your hands, without undermining the applications purpose and usefuleness:
 you allow them to do only what you want them to do.
 
-[Learn more about our security policies&nbsp;&rsaquo;](/en/publish/security-policy-groups/)
+[Learn more about our security policies&nbsp;&rsaquo;](https://developer.ubuntu.com/en/publish/security-policy-groups/)
 
 ## Next steps
 
-  * [See the list of supported devices&nbsp;&rsaquo;](devices.html)
-  * [Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.html)
-  * [Port Ubuntu to a new device&nbsp;&rsaquo;](porting-new-device.html)
-  * [Make scopes, webapps, native and HTML5 apps with the Ubuntu SDK&nbsp;&rsaquo;](../apps/sdk/index.html)
+  * [See the list of supported devices&nbsp;&rsaquo;](devices.md)
+  * [Install Ubuntu on your phone or tablet&nbsp;&rsaquo;](installing-ubuntu-for-devices.md)
+  * [Port Ubuntu to a new device&nbsp;&rsaquo;](porting-new-device.md)
+  * [Make scopes, webapps, native and HTML5 apps with the Ubuntu SDK&nbsp;&rsaquo;](../platform/sdk/index.md)

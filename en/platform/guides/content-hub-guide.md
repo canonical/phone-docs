@@ -171,4 +171,4 @@ on Content Hub, be sure to check out the API documentation on
 developer.ubuntu.com. Check both the [QML](../../apps/qml/api.html) and the
 [HTML5](../../apps/html-5/api.html) sections of the website as APIs are available
 for both. If you are interested in security policy groups and how app
-confinement works, [here's our article](app-confinement.html) about that.
+confinement works, [here's our article](app-confinement.md) about that.

@@ -4,7 +4,6 @@ title: "Tutorials - register your app"
 
 # Tutorials - register your app
 
-
 The URL dispatcher is a service which allows applications to launch other
 applications and to open specific URLs with specific applications.
 
@@ -164,7 +163,7 @@ Arguments values can be retrieved by simply using the component id.
 When multiple applications register for the same protocol and domain, the last
 one installed takes precedence over the others. A new UI to let the user pick
 which application to use is currently being worked on. You can follow its
-progress on [bug report #1378350](https://pad.lv/1378350)
+progress on [bug report #1378350](https://bugs.launchpad.net/ubuntu/+source/url-dispatcher/+bug/1378350)
 
 If you have questions about this tutorial or corner cases usage of the URL
-Dispatcher, make sure to ask your question on [AskUbuntu with the application-development tag](http://askubuntu.com/questions/tagged/application-development).
+Dispatcher, make sure to ask your question on [AskUbuntu with the application-development tag](https://askubuntu.com/questions/tagged/application-development).

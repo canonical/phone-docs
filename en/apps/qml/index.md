@@ -6,7 +6,7 @@ title: "QML apps"
 
 QML is an extremely powerful JavaScript-based declarative language for designing intuitive, natural and responsive user interfaces.  The Ubuntu SDK provides fluid and natural user interface QML elements that blend into Ubuntu without getting in the way. And with a rich framework and APIs, based on the cross-platform Qt framework, QML features an extensive set of APIs that cover the needs of the most demanding developers.
 
-[Read the API documentation&nbsp;&rsaquo;](https://developer.ubuntu.com/api/qml/)
+[Read the API documentation&nbsp;&rsaquo;](../api-qml-current/)
 
 ## A powerful language to write compelling UIs
 
@@ -44,7 +44,6 @@ becomes a very simple and agile process. Despite it being a scripting
 language, QML can leverage the OpenGL support to provide near-game-performance
 with gorgeous movements and transitions.
 
-
 ## Components at the core
 
 Components and their elements are the main building blocks of a QML
@@ -63,7 +62,6 @@ While pure QML is fully supported, developing with the Ubuntu SDK components
 is the recommended way to write apps for the platform.
 
 
-
 ## Deep JavaScript integration
 
 One of the features that makes the language so powerful and flexible is the
@@ -76,7 +74,6 @@ Integrating JavaScript into a QML app can be done in a number of ways:
 
 This enables developers leverage their existing JavaScript knowledge they have
 of JavaScript to rapidly develop both user-interfaces and application logic.
-
 
 ## Extending QML with C++
 
@@ -91,13 +88,12 @@ the Qt framework, particularly the signals and slots mechanism and the meta-
 object system. Data created using C++ is directly accessible from QML, and QML
 objects are also accessible from C++ code.
 
-
 ## Next steps
 
 ### Get started with the Ubuntu SDK
 
   1. [Follow these easy steps](../../platform/sdk/installing-the-sdk.md) to install the ubuntu sdk.
-  2. Congrats! Now you're all set to [start writing a phone app](tutorials/building-your-first-qml-app.md).
+  2. Congrats! Now you're all set to [start writing a phone app](tutorials-building-your-first-qml-app.md).
 
 ### Design something beautiful
 
@@ -107,14 +103,14 @@ know about UX and visual design best practices. The App Design Guides are a
 resource that keeps growing with new guides to make your apps stand out, so
 stay tuned for new content!
 
-[Check out the App Design Guides&nbsp;&rsaquo;](http://design.ubuntu.com/apps)
+[Check out the App Design Guides&nbsp;&rsaquo;](../design/index.md)
 
 ### Join the community!
 
 The growing community of app developers and experts is here to
 help you!
 
-[Visit the community website&nbsp;&rsaquo;](http://community.ubuntu.com)
+[Visit the community website&nbsp;&rsaquo;)(http://community.ubuntu.com)
 
 ### Any questions?
 

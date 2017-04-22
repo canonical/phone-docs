@@ -4,7 +4,7 @@ title: "Tutorials - creating an SDK app project"
 
 # Tutorials - creating an SDK app project
 
-Once you have the Ubuntu SDK [installed and setup](installing-the-sdk.html), you can very easily start
+Once you have the Ubuntu SDK [installed and setup](installing-the-sdk.md), you can very easily start
 writing an app. Read below how to do this in seven steps.
 
 There are many different types of app projects you can create in the SDK.
@@ -34,7 +34,7 @@ used for other types.
 
 Device kits are devices environments required to build and run your app. The
 **Create new kit** button will guide you through this simple process, but you
-can have a look at the [device kits article](tutorials-click-targets-and-device-kits.html) to learn
+can have a look at the [device kits article](tutorials-click-targets-and-device-kits.md) to learn
 more about them.
 
 ![](../../../media/sdk-tutorial_new-project-4.png)
@@ -63,5 +63,5 @@ bzr help
 
 ## Next steps
 
-Without making any changes to your app, you can run it. Check out the [Running Apps from the SDK](tutorials-running-apps-from-the-sdk.html) tutorial in the Ubuntu SDK section for useful steps and
+Without making any changes to your app, you can run it. Check out the [Running Apps from the SDK](tutorials-running-apps-from-the-sdk.md) tutorial in the Ubuntu SDK section for useful steps and
 information.

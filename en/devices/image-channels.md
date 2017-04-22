@@ -25,7 +25,6 @@ schedules. Build IDs are defined within a specific channel.
 
 **Note**: the Ubuntu phone release process is based on the concept of promoting images at a consistent release cadence to incrementally more stable channels until they reach end users. Each promotion to a more stable channel requires the image to have passed a strict QA criteria of automated and manual tests.
 
-
 ## Release cycle and image promotion
 
 ![](../../media/devices-phone-release-cycle-diagram.png)
@@ -39,7 +38,6 @@ only promoted to their non-proposed channels once they comply with a set of
 quality criteria. At any time, there are always two daily-built channel sets
 working: devel and rc. Images built from the rc channels eventually become the
 stable images.
-
 
 ## Channel selection guide
 
@@ -62,7 +60,6 @@ Meizu MX4 | `ubuntu-touch/stable/meizu.en`
 Meizu MX4 | `ubuntu-touch/stable/meizu.zh`
 A customer device under development | `ubuntu-touch/stable/ubuntu`
 A device supported by a community port | `ubuntu-touch/stable/ubuntu`
-
 
 ## Available Ubuntu phone channels
 
@@ -184,7 +181,7 @@ daily-built images.
 ## Listing channels
 
 After you have enabled Android Developer options and connected the device to
-your Ubuntu desktop (see [here](installing-ubuntu-for-devices.html)), you can list all currently available channels (including aliases) in an Ubuntu Desktop terminal as follows:
+your Ubuntu desktop (see [here](installing-ubuntu-for-devices.md)), you can list all currently available channels (including aliases) in an Ubuntu Desktop terminal as follows:
 
 ```
 $ ubuntu-device-flash query --list-channels --device=DEVICE

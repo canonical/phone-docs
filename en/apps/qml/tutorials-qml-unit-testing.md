@@ -11,7 +11,7 @@ Tutorial.
 ## Requirements
 
   * **Ubuntu 14.04 or later**  - [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
-  * **The Currency Converter tutorial**  - if you haven't already, [complete the Currency Convertertutorial](tutorials-building-your-first-qml-app.html)
+  * **The Currency Converter tutorial**  - if you haven't already, [complete the Currency Convertertutorial](tutorials-building-your-first-qml-app.md)
   * **The QML test runner tool**  - open a terminal with `Ctrl+Alt+T` and run these commands to install all required
 packages:
 
@@ -39,7 +39,7 @@ for your project.
 
 In Ubuntu, unit tests for your QML application:
 
-  * Are written in JavaScript within an [Ubuntu Testcase](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test.UbuntuTestCase/) type. This makes it easy to write tests with only a few lines of JavaScript
+  * Are written in JavaScript within an [Ubuntu Testcase](../api-qml-current/Ubuntu.Test.UbuntuTestCase.md) type. This makes it easy to write tests with only a few lines of JavaScript
   * Are executed with the qmltestrunner tool, which will determine whether they pass or fail
 
 ## Testing with qmltestrunner
@@ -47,7 +47,7 @@ In Ubuntu, unit tests for your QML application:
 QML makes developing applications easy. Fortunately, it makes testing those
 applications easy too! The `qmltestrunner` tool allows you to execute QML files
 as testcases. As we will learn later, these files should contain test_
-functions and use the [Ubuntu Testcase](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test.UbuntuTestCase/) type.
+functions and use the [Ubuntu Testcase](../api-qml-current/Ubuntu.Test.UbuntuTestCase.md) type.
 
 Here’s an example of a very basic unit test:
 
@@ -78,10 +78,10 @@ the terminal, now switch to the tutorial folder:
 If you navigate to that folder with the file browser, you can click on the
 `CurrencyConverter.qmlproject` file and open it with the Ubuntu SDK IDE:
 
-![](../../../media/94a0a594-3798-4155-bc1c-d653a2d59b55-cms_page_media/383/Test-project.png)
+![](../../../media/Test-project.png)
 
 Inside you will notice a tests folder that contains three subfolders named
-unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](https://developer.ubuntu.com/en/apps/quality/).
+unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](../../platform/quality.md).
 
 Since we are interested in the unit tests, navigate to the unit folder. Inside
 you’ll find the `tst_convert.qml` file, which is a QML unit test.
@@ -93,7 +93,7 @@ So let’s run it! Switch back to your terminal and run:
 If everything went successfully, you should see a small printout displaying
 all tests as passing.
 
-![](../../../media/136fda2e-e81f-49bf-989c-6a457c68a561-cms_page_media/383/Passsed.png)
+![](../../../media/Passsed.png)
 
 ## What to test
 
@@ -141,7 +141,7 @@ cases and test them!
 ## Running a testcase
 
 After you’ve written your set of test cases, it’s important to understand how
-they will be executed. [Ubuntu Testcase](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test.UbuntuTestCase/) contains some built in methods that
+they will be executed. [Ubuntu Testcase](../api-qml-current/Ubuntu.Test.UbuntuTestCase.md) contains some built in methods that
 control execution. For example, here’s the actual order of execution for our
 example unit test suite in `tst_convert.qml`.
 
@@ -158,8 +158,8 @@ cleanupTestCase()
 
 If you need to execute some code before or after running a test that is common
 to all tests, put it in
-[init ()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#init-method) / [cleanup ()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#cleanup-method). If you have a bit of code that needs to execute
-before any tests are run, or after the test suite is complete, place it in [initTestCase()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#initTestCase-method) / [cleanupTestCase()](https://developer.ubuntu.com/api/qml/sdk-14.10/QtTest.TestCase/#cleanupTestCase-method) respectively.
+[init ()](../api-qml-current/QtTest.TestCase.md#init-method) / [cleanup ()](../api-qml-current/QtTest.TestCase.md#cleanup-method). If you have a bit of code that needs to execute
+before any tests are run, or after the test suite is complete, place it in [initTestCase()](../api-qml-current/QtTest.TestCase.md#initTestCase-method) / [cleanupTestCase()](../api-qml-current/QtTest.TestCase.md#cleanupTestCase-method) respectively.
 
 For our test suite you can see we do have some code in both `initTestCase()` and
 `cleanupTestCase()`. Since our app requires an Internet connection,
@@ -181,6 +181,6 @@ and help.
 
 ### Resources
 
-  * [Ubuntu Test components reference](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Test/)
-  * [Running tests with qml testrunner](http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
+  * [Ubuntu Test components reference](../api-qml-current/Ubuntu.Test.md)
+  * [Running tests with qml testrunner)(http://doc.qt.io/qt-5/qtquick-qtquicktest.html#running-tests)
   * [Get started with Qt Quick Test](http://doc.qt.io/qt-5/qtquick-qtquicktest.html)

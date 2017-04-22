@@ -2,7 +2,6 @@
 title: "Devices - OEM"
 ---
 
-
 # Devices - OEM
 
 Ubuntu Touch has been designed to allow for easy customization of look, feel, and behavior by downstreams including commercial OEMs and community remixes. Ubuntu Touch presents a well-defined customization API for downstream modification. Any customization outside this API is undefined and unsupported.
@@ -28,4 +27,4 @@ The following pages provide documentation for the code and test cases.
   * [Preinstalling Content](preinstalls.md)
   * [Savvy Core tests](core.md)
   * [Savvy API tests](api.md)
-  * [dconf details](implementation.md)
+  * [dconf details)(implementation.md)

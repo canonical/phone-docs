@@ -15,8 +15,7 @@ maintain traditional apps.
 These experiences are developed using Ubuntu Scopes, a new UI toolkit
 available through the Ubuntu SDK.
 
-![](../../media/bcfe3a8e-9a03-47c0-afa5-b326eb017708-cms_page_media/7/tablet-features-scopes.jpg)
-
+![](../../media/tablet-features-scopes.jpg)
 
 
 ## A new generation of mobile experiences
@@ -37,13 +36,11 @@ It’s a world away from traditional smartphones and the app icon grid, and
 brings a great opportunity for developers and content producers to shine.
 
 
-
 ## How it works
 
-  * Scopes are a point of entry into the Ubuntu ecosystem for all kinds of developers: the API is availaible in JavaScript, C++ and Go.
+  * Scopes are a point of entry into the Ubuntu ecosystem for all kinds of developers: the API is available in JavaScript, C++ and Go.
   * Using keywords, scopes can be aggregated into more general scopes, called Aggregation Scopes: your content is visible in context of what the user is actively looking for.
-  * Scopes work with a simple client-server model, where a locally running server mediates data exchange between your content and user requests, keeping every scopes confined and independant from each other.
-
+  * Scopes work with a simple client-server model, where a locally running server mediates data exchange between your content and user requests, keeping every scopes confined and independent from each other.
 
 ### There are two types of scopes:
 
@@ -77,20 +74,20 @@ Library.
 You're all set up to get started with your first scope, there are tutorials
 available for JavaScript, Go and C++, that will help you write it.
 
-[Start a scope tutorial](tutorials/index.html)
+[Start a scope tutorial](tutorials/index.md)
 
 ### Learn more about scopes
 
 When you want to dive further into scopes, you can always find wisdom in our
 selection of scopes developer and design guides.
 
-  * [Scopes developer guides&nbsp;&rsaquo;](guides/index.html)
-  * [Scopes design guides](http://design.ubuntu.com/scopes)
+  * [Scopes developer guides&nbsp;&rsaquo;](guides/index.md)
+  * [Scopes design guides](design/index.md)
 
 ### Need help?
 
 Thanks to our active community, you can find support from a variety of sources
 such as Ask Ubuntu, our mailing lists or IRC channel.
 
-  * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](http://askubuntu.com/questions/tagged/scopes)
+  * [Ask a scope question on Ask Ubuntu&nbsp;&rsaquo;](https://askubuntu.com/questions/tagged/scopes)
   * [Reach out to other developers (mailing-list, live chat)&nbsp;&rsaquo;](https://developer.ubuntu.com/en/community/)

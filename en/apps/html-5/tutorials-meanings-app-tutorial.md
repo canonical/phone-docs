@@ -31,8 +31,8 @@ areas too.
 There are a couple requirements:
 
   * You need to install the Ubuntu SDK
-  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials/creating-an-sdk-app-project.md)
-  * You should have some experience [running apps from the SDK](../../sdk/tutorials/running-apps-from-the-sdk.md)
+  * You need to know how to [create an HTML5 app project in the SDK](../../platform/sdk/tutorials-creating-an-sdk-app-project.md)
+  * You should have some experience [running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.md)
 
 ### Getting the app source
 
@@ -66,14 +66,14 @@ Get it running on the Desktop with: **Build** &gt; **Run**.
 Here’s how a brand new app looks when run from the SDK (the actual GUI may
 vary as refinements are released):
 
-![](../../../../media/64578dfa-7269-40dd-8345-b8d58c0ec39e-cms_page_media/115/1.png)
+![](../../../media/cms_page_media1.png)
 
 The brand new HTML5 app project has the basic set of files you need. But,
 naturally, the GUI and control logic are simply the defaults for any new app.
 We’ll implement a GUI and control logic that suits the needs of or Meanings
 app below.
 
-**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
+**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../platform/sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
 
 ### Run the app from the terminal
 
@@ -149,14 +149,14 @@ default:
     window.onload = function () {
        var UI = new UbuntuUI();
        UI.init();
-    [...]
+    [...)
     }
 
-This is the required code that creates an UbuntuUI object (locally named UI).
+This is the required code that creates an UbuntuUI object [locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
-**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides-introduction-to-the-html5-ui-toolkit.html) reference docs.
+**Tip**: Later, take a look at the [HTML5 UbuntuUI API](guides-introduction-to-the-html5-ui-toolkit.md) reference docs.
 
 This is an event handler for the `window.onload` event. It provides an anonymous
 function that executes when the event is received. This event is received
@@ -189,7 +189,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide](guides-html5-guide.md) for a more detailed look.
 
 ### App layout
 
@@ -218,22 +218,24 @@ whole `<body>[...]</body>` with HTML5 that declares our app’s GUI.
 
 Copy the following into index.html, replacing the `<body>[...]</body>`:
 
+``` html
       <body>
         <div data-role="mainview">
           <header data-role="header">
-            <ul data-role="tabs">
-              <li data-role="tabitem" data-page="main-page">Meanings</li>
-            </ul>
+        <ul data-role="tabs">
+          <li data-role="tabitem" data-page="main-page">Meanings</li>
+        </ul>
           </header>
           <div data-role="content">
-            <div data-role="tab" id="main-page">
-              <div><input type="text" id="word">Enter a word</input></div>
-              <button data-role="button" id="lookup">Get</button>
-              <div data-role="list" id="res" />
-            </div> <!-- tab: main-page -->
+        <div data-role="tab" id="main-page">
+          <div><input type="text" id="word">Enter a word</input></div>
+          <button data-role="button" id="lookup">Get</button>
+          <div data-role="list" id="res" />
+        </div> <!-- tab: main-page -->
           </div> <!-- content -->
         </div> <!-- mainview -->
       </body>
+```
 
 **Tip**: It may be easier to copy and paste from the app source branch described above.
 
@@ -241,38 +243,14 @@ Let’s check out how the app looks if you run it now with Ctrl + R. Note that
 the GUI does not function yet because we have not yet added the JavaScript
 control logic.
 
-![](../../../../media/app-html5-tutorial-meanings-app.png)
-
-## App HTML5 highlights
-
-Let’s examine some highlights of this HTML.
-
-### Mainview
-
-All the HTML5 inside the body is wrapped in a `<div data-role=”mainview”>`. This
-is standard for Ubuntu HTML5 apps.
-
-### Header
-
-  * There is a header: <header data-role="header">
-  * The header contains an unordered list (ul)
-  * The unorder list has a single listitem (li) whose data-role is “tabitem”: <li data-role="tabitem" data-page="main-page">Meanings</li>
-
-This implements the header part of our tab-style layout:
-
-  * We have a single tab.
-  * The text that displays is “Meanings”
-  * Note the tabitem’s data-page attribute. This value (main-page) is what connects the tabitem to the tab declared lower down whose id is the same: `<div data-role="tab" id="main-page">`.
-
-When the user clicks the tabitem in the header, the corresponding tab
-displays. We have only a single tabitem/tab.
+![](../../../media/meanings-app.png)
 
 ### Content
 
 Below the header, we have a content div, declared like this:
 
     <div data-role="content">
-    [...]
+        [...]
     </div> <!-- content -->
 
 This div contains the tabs that correspond with each tabitem declared in the
@@ -283,7 +261,7 @@ header (in our case, only one tab). Let’s take a look at our tab.
 Here is our one tab:
 
     <div data-role="tab" id="main-page">
-    [...]
+        [...]
     </div> <!-- tab: main-page -->
 
 The data-role="tab" is what declares it as an Ubuntu tab.
@@ -297,7 +275,7 @@ Let’s peer inside the tab.
 
 There’s a single input box that the Ubuntu framework styles automatically:
 
-     <div><input type="text" id="word">Enter a word</input></div>
+    <div><input type="text" id="word">Enter a word</input></div>
 
 We put this in a div so it is rendered as block, not inline, per normal HTML5.
 
@@ -309,7 +287,7 @@ user has entered below.
 There is one button that triggers the JavaScript code that calls the web API
 to look up meanings for the word the user has entered:
 
-     <button data-role="button" id="lookup">Get</button>
+    <button data-role="button" id="lookup">Get</button>
 
 This button is declared as an Ubuntu button, with a data-role of button. This
 means it is pulled into the framework and therefore you get a convenient API
@@ -321,7 +299,7 @@ for it. For example, you can add an click event handler using the id easily.
 
 We declare a list that starts off empty:
 
-     <div data-role="list" id="res" />
+    <div data-role="list" id="res" />
 
 That’s an Ubuntu list. We will use the UbuntuUI framework to obtain the list
 in JavaScript and populate it with the meanings for the word that are returned
@@ -337,14 +315,17 @@ JavaScript we need to complete this app’s basic pieces.
 This app uses JQuery to call the web API. We need to add the JQuery lib to our
 package, which takes a few steps:
 
-  * Ensure libjs-jquery package is installed with:
+* Ensure libjs-jquery package is installed with:
+
      $ sudo apt-get install libjs-jquery
 
-  * Copy the lib into your app directory with
+ * Copy the lib into your app directory with
+
      $ cp /usr/share/javascript/jquery/jquery.min.js .
 
-  * **Tip**: You might need to close and open the project for the jquery.min.js file to display in the SDK project.
-  * Include the jquery.min.js file into your index.html file by adding this line into the main HTML `<header> .. </header>`:
+* **Tip**: You might need to close and open the project for the jquery.min.js file to display in the SDK project.
+* Include the jquery.min.js file into your index.html file by adding this line into the main HTML `<header> .. </header>`:
+
      <script src="js/jquery.min.js"></script>
 
 ### Using the JQuery ready event handler
@@ -445,7 +426,7 @@ An object named resEl is created for the empty list declared in our HTML and
 it is given a header: “Meanings”.
 
 Two nested loops iterate through the data to find and extract the contained
-meanings of the word. These are appended to a string variable (res) as HTML
+meanings of the word. These are appended to a string variable [res) as HTML
 listitems.
 
 Finally the list (resEl) is populated with the built up meanings list by
@@ -461,7 +442,7 @@ you can use the `Ctrl + R` shortcut to run it in a window on the Desktop.
 Here we see it running after the user has typed in the word ‘hack’ and clicked
 the **Get** button:
 
-![](../../../../media/78cea738-e7b6-47fa-b1f7-1e99ea30786c-cms_page_media/115/meanings-app2.png)
+![](../../../media/meanings-app2.png)
 
 If you have problems, you might have accidentally introduced errors, so trying
 debugging the app’s JavaScript as described above.
@@ -497,11 +478,11 @@ the left side of the SDK GUI.
 Here you see a **General** tab that displays key info about the package,
 including:
 
-  * Name
-  * Maintainer: Verify this is you
-  * title: set this to “Meanings”
-  * Version: this is the click package version. Be sure to increment this when appropriate, for example when publishing a new version.
-  * [Security policy groups](/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
+* Name
+* Maintainer: Verify this is you
+* title: set this to “Meanings”
+* Version: this is the click package version. Be sure to increment this when appropriate, for example when publishing a new version.
+* [Security policy groups)(https://developer.ubuntu.com/en/publish/security-policy-groups/): This is the list of apparmor policies your app needs. (Apparmor is the security/confinement tool used in Ubuntu.)
 
 **Tip**: Don’t add any security policy groups you don’t really need. Apps are confined by these policies and we all want Ubuntu app confinement to be the best available, which means developers use thoughtful discretion and only add policies as absolutely necessary.
 

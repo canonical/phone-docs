@@ -2,10 +2,9 @@
 title: "Tutorials - add a C++ backend to your QML app"
 ---
 
-
 # Tutorials - add a C++ backend to your QML app
 
-Whether you are creating a new app or porting an existing one from another ecosystem, you may need more backend power than the QML + JavaScript duo proposed in the [QML app tutorial](tutorials-building-your-first-qml-app.html). Let's have a peek at how to to add a C++ backend to your application, using system libraries or your own, and vastly increase its
+Whether you are creating a new app or porting an existing one from another ecosystem, you may need more backend power than the QML + JavaScript duo proposed in the [QML app tutorial](tutorials-building-your-first-qml-app.md). Let's have a peek at how to to add a C++ backend to your application, using system libraries or your own, and vastly increase its
 performance and potential features.
 
 In this tutorial, you will learn how to use and invoke C++ classes from QML and integrate a 3rd party library into your project.
@@ -23,17 +22,15 @@ Continue through the wizard by picking:
 
 ![](../../../media/qml-tutorial-c-backend-screenshot2.png)
 
-
   * Enter your [developer information](https://myapps.developer.ubuntu.com/dev/account/)
 
 ![](../../../media/qml-tutorial-c-backend-screenshot3.png)
 
-  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](https://developer.ubuntu.com/en/start/platform/guides/frameworks/)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
+  * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](../../platform/guides/frameworks.md)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
 
 ![](../../../media/qml-tutorial-c-backend-screenshot4.png)
 
-  * A [kit](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
-
+  * A [kit](../../platform/sdk/tutorials-click-targets-and-device-kits.md) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
 
 
 ### Template files
@@ -206,7 +203,7 @@ plotting app.
 ### Accessing the library
 
 Let's start by downloading
-[simple_svg_1.0.0.hpp](https://code.google.com/p/simple-svg/downloads/detail?name=simple_svg_1.0.0.hpp&can=2&q=) , rename it to
+[simple_svg_1.0.0.hpp)(https://code.google.com/p/simple-svg/downloads/detail?name=simple_svg_1.0.0.hpp&can=2&q=) , rename it to
 `simplesvg.h` and add it to the rest of our source files (in
 `backend/modules/Mycppapp/`).
 
@@ -279,7 +276,7 @@ void Launcher::draw(const int &width, const int &height, const QString &array)
         if (tokens.size() < 2) {
             polyline_a << Point(width/(tokens.size())*(a), atoi(tokens[a].c_str())) << Point(width/(tokens.size())*(a+1), atoi(tokens[a].c_str()));
         } else {
-            polyline_a << Point(width/(tokens.size()-1)*(a), atoi(tokens[a].c_str()));
+            polyline_a << Point(width/(tokens.size()-1)*(a), atoi(tokens[a].c_str[)));
         }
     }
     doc << polyline_a;
@@ -396,5 +393,5 @@ install(FILES   modules/Mycppapp/qmldir DESTINATION ${QT_IMPORTS_DIR}/Mycppapp/)
 
 ## Further reading
 
-  * This [CMake tutorial](http://derekmolloy.ie/hello-world-introductions-to-cmake/) should help you getting started with complex CMake projects
+  * This [CMake tutorial)(http://derekmolloy.ie/hello-world-introductions-to-cmake/) should help you getting started with complex CMake projects
   * The [Qt documentation on integrating QML and C++](http://doc.qt.io/qt-5/qtqml-cppintegration-topic.html) will give you a high level overview of integration concepts, such as data type conversion

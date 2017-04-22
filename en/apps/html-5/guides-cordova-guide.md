@@ -71,7 +71,7 @@ $ cordova run --device --debug
 
 **Note:** you need cordova-cli 4.3.x to have all of these options available.
 
-**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/edge/guide_platforms_ubuntu_index.md.html#Ubuntu%20Platform%20Guide).
+**Important:** we do not recommend to use cordova-cli > 4.x yet, because of the tool API change that is not fully tested on Ubuntu. Check out upstream Cordova docs for detailed information about Ubuntu platform support in the native [Cordova CLI workflow](http://cordova.apache.org/docs/en/dev/guide/platforms/ubuntu/index.html#Ubuntu%20Platform%20Guide).
 
 Naturally, you need to write some JavaScript to use the APIs for the plugins
 you have added too.
@@ -171,7 +171,7 @@ $ cordova run --device --debug
 At this point, you should see the familiar Cordova logo in the application
 running on your phone.
 
-![](../../../../media/2cf397c1-ceb6-4dd0-b9e7-de05c80c25ca-cms_page_media/112/cordova-screenshot.png)
+<img src="../../../media/cordova-screenshot.png" width="250" />
 
 Your Ubuntu system is ready for Cordova development.
 
@@ -251,9 +251,9 @@ straightforward pattern for a lot of what you can do with Cordova APIs.
 
 ## Next steps
 
-Check out the [Cordova Camera Tutorial](tutorials-cordova-camera-app-tutorial.html), which
+Check out the [Cordova Camera Tutorial](tutorials-cordova-camera-app-tutorial.md), which
 provides all the steps you need to make a working HTML5 Camera app that let’s
 you snap a picture and then displays it in the app.
 
-You may also want to check out the [HTML5 Guide](guides-html5-guide.html) for an overview of Ubuntu
+You may also want to check out the [HTML5 Guide](guides-html5-guide.md) for an overview of Ubuntu
 HTML5.

@@ -5,22 +5,14 @@ table_of_contents: true
 
 # Devices - porting to a new device
 
-Ubuntu for devices runs on a variety of mobile [devices](devices.html), such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris (commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is possible and encouraged to enable other devices to run the mobile OS.
+Ubuntu for devices runs on a variety of mobile [devices](devices.md), such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris (commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is possible and encouraged to enable other devices to run the mobile OS.
 
 This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 
-![](../../media/devices-porting-devices-illustration.png)
-
 ## Before getting started
+In order to be able to port Ubuntu to a new device, the following prerequisites should be satisfied, nevertheless, you are welcome to follow this guide even if you are attempting your first port with no previous knowledge.
 
-In order to be able to port Ubuntu to a new device, the following
-prerequisites should be satisfied, nevertheless, you are welcome to follow
-this guide even if you are attempting your first port with no previous
-knowledge.
-
-  * **Android sources:** the device already runs Android and we have access to an Android source tree (preferably the original as with OEM devices but CyanogenMod or independent ports are enough too) and kernel sources for the device. Note that this guide focuses on porting to devices present in the AOSP tree and another version will focus on CyanogenMod based ports.
-  * **Drivers:** you will need the vendor proprietary drivers, which make the GPU and various sensors work. If not explicitly available for download they need to be extracted from a running device.
-  * **[CyanogenMod porting guide](http://wiki.cyanogenmod.org/w/Doc:_porting_intro):** Porting CyanogenMod to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
+  * [Porting CyanogenMod](http://wiki.cyanogenmod.org/w/Doc:_porting_intro) to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
   * **Boot modes:** you need to be familiar with how to boot into various modes (bootloader, recovery…) by pressing volume keys or any device specific method.
   * **Unlock and root:** the device needs to be unlocked/rooted in order to allow flashing custom images. A lot of preparation work is common with attempts to port CyanogenMod or other custom Android ROMs.
 
@@ -28,7 +20,7 @@ knowledge.
 
 The [XDA developer forums](http://forum.xda-developers.com/) should be searched and consulted for anything non-Ubuntu specific.
 
-Also always refer to sources of [a workingimplementation](https://wiki.ubuntu.com/Touch/Building), the official one being the Nexus 4 port.
+Also always refer to sources of [a working implementation](https://wiki.ubuntu.com/Touch/Building), the official one being the Nexus 4 port.
 
 ### Terminology
 
@@ -72,7 +64,7 @@ Other than the very basic services (needed to re-use the binary blobs already
 available), the rest is just pure Ubuntu goodness (we don't have dalvik
 running, for example).
 
-![](../../media/136981fa-6287-49d3-9874-06f40b2e4eb7-cms_page_media/380/ubuntu_touch_architecture.png)
+![](../../media/ubuntu_touch_architecture.png)
 
 ### Toolchain and build system
 
@@ -92,7 +84,6 @@ errors when building with the Ubuntu tools, [use the Ubuntutools](https://wiki.u
 Make sure you are familiar with the Android build system and can build a
 booting Android image from sources and vendor blobs. If you are not, look
 closely at the following “Set up your development environment” section.
-
 
 ## Set up your development environment
 
@@ -218,7 +209,6 @@ $ ./rootstock-touch-install vivid-preinstalled-touch-armhf.tar.gz out/target/pro
 You can find the latest Ubuntu rootfs image at
 [http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/vivid-preinstalled-touch-armhf.tar.gz](http://cdimage.ubuntu.com/ubuntu-touch/daily-preinstalled/current/utopic-preinstalled-touch-armhf.tar.gz).
 
-
 ## Enabling a new device
 
 If you're repository is compatible with the AOSP tree, it's just a matter of
@@ -266,8 +256,7 @@ proprietary blobs, as their source code is not available for the build, and
 are included in binary form.
 
 Since we use AOSP as a base, for supported devices all you need to do is to
-download and extract and run as mentioned in the downloads from [https://developers.google.com/android/nexus/drivers](https://developers.google.com/android/nexus/drivers)
-
+download and extract and run as mentioned in the downloads from [https://developers.google.com/android/drivers](https://developers.google.com/android/drivers)
 
 ## Device-specific changes
 
@@ -455,7 +444,6 @@ newly built Ubuntu kernel for the recovery image.
 Add Ubuntu specific components to the tree (hybris, platform-api, etc). See
 them under the ubuntu/ directory in your source.
 
-
 ## Building
 
 ### The image
@@ -514,8 +502,6 @@ getting started with Mir.
 Now that you have your own Ubuntu port, you probably want to serve over-the-
 air updates to devices and for that, you need an image server: have a look at
 [this step by step explanation](https://www.stgraber.org/2014/02/11/your-own-ubuntu-touch-image-server/) by Stéphane Graber to learn how to create one.
-
-
 
 
 

@@ -11,7 +11,7 @@ easy to add to your code. In this short tutorial, you are going to learn how
 to bring location awareness to your scope.
 
 For this example, we are going to use a default scope template. Let’s start by
-opening QtCreator and [create a new scope project](/scopes/tutorials/scope-development-procedures/) using the HTTP + JSON API template.
+opening QtCreator and [create a new scope project](scope-development-procedures.md) using the HTTP + JSON API template.
 
 ## Location settings
 
@@ -31,9 +31,9 @@ toggle location data access. Note that it will be enabled by default. If you
 run the scope at this point, you should see a new “Settings” entry in the
 header, with an “Enable location data” checkbox.
 
-![](../../../media/f860dad7-81bd-4396-868c-b50b2f7d8b6a-cms_page_media/144/scope-location-0.png)
+![](../../../media/scope-location-0.png)
 
-![](../../../media/fad54a0c-d176-4023-a538-8acfc49d4bd0-cms_page_media/144/scope-location-1.png)
+![](../../../media/scope-location-1.png)
 
 ## Location data
 
@@ -62,7 +62,7 @@ you access to :
   * region_code
   * zip_postal_code
 
-Have a look at the [API documentation](https://developer.ubuntu.com/api/scopes/cpp/sdk-14.10/unity.scopes.Location/) to dive in all the details. As you will
+Have a look at the [API documentation](../../apps/api-autopilot-current/index.md) to dive in all the details. As you will
 see, each location data element has an equivalent `has__element_()` function to
 ensure its availability.
 
@@ -111,7 +111,6 @@ if (place.empty()) {
 
 Now, we just need to use the place variable in our default query:
 
-
 ```
 if (query_string.empty()) {
 
@@ -128,10 +127,10 @@ if (query_string.empty()) {
 
 That’s it! The scope should now be able to surface weather data for your location when you open it.
 
-![](../../../media/7eee7ca9-7a11-46b3-be44-1d880391a38b-cms_page_media/144/scope-location-2.png)
+![](../../../media/scope-location-2.png)
 
 ## Next steps
 
 Now that you have seen how to add more context to scope queries, you should
-have a look at the [Settings tutorial](/scopes/tutorials/adding-settings-to-your-scope/) to give users more freedom to customize your scope and adapt it
+have a look at the [Settings tutorial](adding-settings-to-your-scope.md) to give users more freedom to customize your scope and adapt it
 to their needs.

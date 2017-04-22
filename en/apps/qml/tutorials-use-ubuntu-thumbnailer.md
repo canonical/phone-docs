@@ -6,7 +6,7 @@ title: "Tutorials - using the Ubuntu thumbnailer"
 
 The Ubuntu Thumbnailer QML plugin gives you extremely fast access to
 thumbnails of pictures and videos stored locally, as well as music artwork
-(albums and artists) using a third party backend.
+[albums and artists) using a third party backend.
 
 ## Why use the thumbnailer
 

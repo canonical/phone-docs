@@ -12,7 +12,7 @@ using the Ubuntu SDK. For this example, very limited C++ knowledge is actually
 required and adapting it to another service exposing a XML API will be fairly
 simple.
 
-**Note**: This tutorial should work for Ubuntu 14.04 and later versions. If you are using 14.04, you will need [an emulator or a device](/apps/sdk/tutorials/running-apps-from-the-sdk/). If you want to use the desktop scopes layout tool, you will need at least Ubuntu 14.10.
+**Note**: This tutorial should work for Ubuntu 14.04 and later versions. If you are using 14.04, you will need [an emulator or a device](../../platform/sdk/tutorials-running-apps-from-the-sdk.md). If you want to use the desktop scopes layout tool, you will need at least Ubuntu 14.10.
 
 ## SDK setup
 
@@ -21,21 +21,21 @@ scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
-![](../../../media/47017daf-1c24-45a6-8ea5-3b6fbd26d508-cms_page_media/148/scope_wizard1-700x435.png)
+![](../../../media/scope_wizard1-700x435.png)
 
 In the third screen of the wizard, we are going to pick the “Qt scope using
 HTTP + XML API” template.
 
-![](../../../media/25934cef-bece-44c0-ac9e-5158403a9bce-cms_page_media/148/scope-wizard-step3-xml1-700x371.png)
+![](../../../media/scope-wizard-step3-xml1-700x371.png)
 
-If you need more help to get started with the SDK, have a look at the [SDK setup article](/apps/sdk/tutorials/creating-an-sdk-app-project/).
+If you need more help to get started with the SDK, have a look at the [SDK setup article](../../platform/sdk/tutorials-creating-an-sdk-app-project.md).
 
-**Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
+**Note**: Even if you are used to the [security policies](https://developer.ubuntu.com/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ## Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope on [your phone or on in anemulator](/apps/sdk/tutorials/running-apps-from-the-sdk/). Wait a few seconds
+sidebar of the SDK to test the scope on [your phone or on in anemulator](../../platform/sdk/tutorials-running-apps-from-the-sdk.md). Wait a few seconds
 for your project to be built and uploaded to the device, it should then open
 by itself.
 
@@ -43,9 +43,7 @@ by itself.
 
 You can get the source code of this tutorial by running
 
-
 $ bzr branch lp:~davidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml
-
 
 The generated project contains quite a lot of files and we are going to talk
 about the most important ones. One thing to note is that the template already
@@ -63,7 +61,7 @@ environment.
 
 Security policy groups used by your scopes. None in our case, since the
 “ubuntu-scope-network” template we are using already allows network calls.
-Learn more about [security policy groups](/en/publish/security-policy-groups/).
+Learn more about [security policy groups](https://developer.ubuntu.com/en/publish/security-policy-groups/).
 
 ### data/<appid>.ini
 
@@ -178,7 +176,7 @@ access. Its sole purpose is to retrieve data from Jamendo.
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/scope.cpp)
 
 This file defines a class of type
-[unity::scopes::ScopeBase](/api/scopes/sdk-14.10/unity.scopes.ScopeBase/) that
+[unity::scopes::ScopeBase](../../apps/api-autopilot-current/index.md) that
 provides the entry point API the client uses to interact with the scope.
 
   * It implements start and stop methods. Many scopes can leave these unmodified, and this example does as well.
@@ -186,9 +184,7 @@ provides the entry point API the client uses to interact with the scope.
 
 **Note**: You may find it useful to check out the `ScopeBase` class declaration (its API) in the corresponding header file: `include/scope/scope.h`. The header file is a great way to understand C++ classes because their API is declared without any additional implementation code, making it easy to understand.
 
-**Tip**: Check out the [Unity 8 Scope API reference docs](/api/scopes/sdk-14.10/) during this tutorial if you want a deeper understanding of specific classes.
-
-### src/scope/query.cpp
+**Tip**: Check out the [Unity 8 Scope API reference docs](../../apps/api-autopilot-current/index.md
 
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp)
 
@@ -196,7 +192,7 @@ Here is where we send queries to the API client, transform returned results
 into result cards, declare categories that will host these cards and their
 layout.
 
-This file defines a class of type [unity::scopes::SearchQueryBase](/api/scopes/sdk-14.10/unity.scopes.SearchQueryBase/).
+This file defines a class of type [unity::scopes::SearchQueryBase](../../apps/api-autopilot-current/index.md).
 
 This class generates search results from a query string a client provides and
 returns them as a reply to the client:
@@ -218,7 +214,7 @@ header file: `include/scope/query.h`.
 
 [Link to the file](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/preview.cpp)
 
-This key file defines a class of type [unity::scopes::PreviewQueryBase](/api/scopes/sdk-14.10/unity.scopes.PreviewQueryBase/).
+This key file defines a class of type [unity::scopes::PreviewQueryBase](../../apps/api-autopilot-current/index.md).
 
 This class defines the widgets and layouts used for each search result during
 the preview phase. It:
@@ -232,14 +228,7 @@ the preview phase. It:
 Check out the `SearchPreviewBase` class declaration (its API) in the
 corresponding header file: `include/scope/preview.h`.
 
-For a list of Preview Widgets and documentation, see [thispage](/api/scopes/sdk-14.10/preview_20widget_20types).
-
-Let’s drill into our example scope and detail some of the code, starting with
-the query.
-
-## Query string
-
-![](../../../media/21349aa9-4605-49fa-878c-1ac94b023dde-cms_page_media/148/jamendo_query-239x300.png)
+For a list of Preview Widgets and documentation, see [thispage](../../apps/api-autopilot-current/index.md)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -251,7 +240,6 @@ Here, I’m triggering a search for an empty string by default. In this case,
 the Jamendo API is returning the most popular songs of the week, which is a
 reasonably good default set of results to present to users. Modify the
 [Query::run method](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp#L50) so that it looks like this, or simply paste the content of the tutorial file into your own :
-
 
 ``` C+
 void Query::run(sc::SearchReplyProxy const& reply) {
@@ -301,7 +289,6 @@ Our query URI will look like:
 Then, we need to iterate over each result present in our root XML object and
 extract what we need:
 
-
 ``` C+
 Client::TrackRes Client::tracks(const string& query) {
 
@@ -348,7 +335,6 @@ The `parseTrack()` method is using QXml to iterate over “track” XML nodes in
 data. We look for the title, artist, art and url, we use them to populate an
 array of Track objects.
 
-
 ``` C+
 static void parseTrack(Client::TrackRes& result, QXmlStreamReader& xml)
 {
@@ -394,7 +380,7 @@ display it the way we want.
 
 ## Category renderers
 
-![](../../../media/0396d437-af2e-4f86-ae31-9f49939fefdf-cms_page_media/148/jamendo_home-239x300.png)
+![](../../../media/jamendo_home-239x300.png)
 
 Each result needs to be displayed inside a category. In terms of UI, a
 category can provide a header title to a list of results and a specific layout
@@ -434,7 +420,7 @@ const static string TRACKS_TEMPLATE =
 
 This will display a simple list of results, it’s a category style used in many
 scopes, working well with many types of content. You can have a look at all
-your options in the [unity::scopes::CategoryRendererdoc](/api/scopes/sdk-14.10/unity.scopes.CategoryRenderer/).
+your options in the [unity::scopes::CategoryRendererdoc](../../apps/api-autopilot-current/index.md).
 
 Now, in the `try{}` part of the `Query::run` method, we can register our category
 on the reply object :
@@ -461,7 +447,7 @@ For this Jamendo scope to be useful, we want each result to have at least:
 
 Make sure every fields you have defined in your category template components are presents in results, even if they are empty. Invalid results will be automatically discarded.
 
-Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult](/api/scopes/sdk-14.10/unity.scopes.CategorisedResult/) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
+Still in [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), in the `try{}` part of our `Query::run` method, we need to iterate over our tracks list, and create a [unity::scope::CategorisedResult)(../../apps/api-autopilot-current/index.md) for each. Paste the content of the tutorial file into your own, or reproduce the following lines:
 
 ``` C+
 for (const auto &track : trackslist.tracks) {
@@ -480,7 +466,7 @@ for (const auto &track : trackslist.tracks) {
      res["overlay"] = "#88743074";
 
      // Push the result
-     if (!reply->push(res)) {
+     if [!reply->push(res)) {
          // If we fail to push, it means the query has been cancelled.
          // So don't continue;
          return;
@@ -493,7 +479,7 @@ set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](../../../media/6ba13da2-b2e6-494e-8712-976b4f743376-cms_page_media/148/jamendo_preview-239x300.png)
+![](../../../media/jamendo_preview-239x300.png)
 
 The preview needs to generate widgets and connect their fields to the data
 fields in the `CategorisedResult`.
@@ -513,7 +499,7 @@ create them. Each type of widget also has additional fields that vary by
 widget type.
 
 You can see the the list of Preview Widget types and the fields they offer
-[here](/api/scopes/sdk-14.10/previewwidgets/).
+[here](../../apps/api-autopilot-current/index.md).
 
 This example uses three types of Preview Widgets:
 
@@ -566,7 +552,7 @@ Looking back at the query, where the `CategorisedResults` were created, we see
 again how the artist data was made available to the `CategorisedResult`:
 
 ``` C+
-res["artist"] = track.artist.username;
+res["artist") = track.artist.username;
 ```
 
 As a result of that, each `CategorisedResult` has an “artist” field populated
@@ -605,7 +591,7 @@ builder.add_tuple({
      {"uri", result["uri"]}
 });
 
-w_actions.add_attribute_value("actions", builder.end());
+w_actions.add_attribute_value["actions", builder.end());
 ```
 
 And now they can be pushed to the client with the reply object:
@@ -628,7 +614,7 @@ These are declared like this:
 sc::ColumnLayout layout1col(1), layout2col(2);
 ```
 
-**Tip**: Check out ColumnLayout docs [here](/api/scopes/sdk-14.10/unity.scopes.ColumnLayout/).
+**Tip**: Check out ColumnLayout docs [here](../../apps/api-autopilot-current/index.md).
 
 We do not need to know exactly how the client uses these. But the general
 expectation is that a single-column layout is appropriate for narrow-screen
@@ -665,25 +651,7 @@ reply->register_layout({layout1col, layout2col});
 
 By default, your scope looks like this :
 
-![](../../../media/scope-tutorial-soundcloud_unbranded-180x300.png)
-
-Many display options can be changed in `data/<appid>.ini`. Here is my best
-effort at branding this scope, most of the options are self-explicit :
-
-``` C+
-[ScopeConfig]
-DisplayName = Jamendo
-Description = This is a Jamendo scope doing Jamendo things
-Art = screenshot.png
-Author = Firstname Lastname
-Icon = icon.png
-
-[Appearance]
-PageHeader.Logo = logo.png
-BackgroundColor = #FFFFFF
-PageHeader.DividerColor = #743074
-PageHeader.ForegroundColor = #743074
-PageHeader.Background = color:///#FFFFFF
+![](../../../media///#FFFFFF
 PreviewButtonColor = #743074
 ```
 
@@ -694,7 +662,7 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](../../../media/490171dd-641e-4446-b3c3-8ce4934b343e-cms_page_media/148/jamendo_branded-180x300.png)
+![](../../../media/jamendo_branded-180x300.png)
 
 Have a look at all the available [customisation options](../guides/scopes-customization-branding.md) and try to
 make your scope shine!
@@ -721,4 +689,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/publish/) to get your scope on the store in minutes.
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides)(https://developer.ubuntu.com/publish/) to get your scope on the store in minutes.

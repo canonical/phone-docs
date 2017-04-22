@@ -9,7 +9,7 @@ sustainable way, independently from the language or tools used.
 
 ## Automating user acceptance testing
 
-Automated testing of an application through the Graphical User Interface (GUI)
+Automated testing of an application through the Graphical User Interface [GUI)
 is inherently fragile. The associated test suite requires regular review and
 attention during the development cycle. This is known as **Interface
 Sensitivity** –_even minor changes to the interface can cause tests to fail_,
@@ -17,7 +17,7 @@ quoting [xUnit test patterns](http://xunitpatterns.com/)).
 
 Also they are slow and they exercise too many components, some of which are
 not under our control. That's why Test-Driven Development is instead done with
-isolated and fast [unit tests](../../apps/qml/tutorials/qml-unit-testing.html)
+isolated and fast [unit tests](../../apps/qml/tutorials-qml-unit-testing.html)
 that are not coupled to the GUI.
 
 Yet after we run the automated unit tests that don't depend on the design of
@@ -33,7 +33,6 @@ acceptance testing in a sustainable manner.
 
 > “ The page object pattern enables automated User Acceptance Testing in a
 sustainable manner. ”
-
 
 ## Introducing the Page Object Pattern
 
@@ -57,8 +56,7 @@ Let's take the page objects of the [Ubuntu ClockApp](http://bazaar.launchpad.net
 example, with some simplifications.
 
 This application is written in QML and Javascript using the Ubuntu SDK; the
-tests are written in Python using [Autopilot](http://developer.ubuntu.com/api/devel/ubuntu-14.04/autopilot/tutorial/what_is_autopilot.html) as the tool to simulate user actions through the GUI.
-
+tests are written in Python using [Autopilot](../../apps/api-autopilot-current/index.md) as the tool to simulate user actions through the GUI.
 
 
 ### The public methods represent the services that the page offers.
@@ -77,8 +75,7 @@ class Stopwatch(object):
         raise NotImplementedError()
 ```
 
-![](../../../media/7fb5ee92-4f3f-4e66-be1d-2e2fbc0e2d77-cms_page_media/65/stopwatch-179x300.png)
-
+![](../../../media/stopwatch-179x300.png)
 
 ### Try not to expose the internals of the page.
 
@@ -113,7 +110,6 @@ encapsulation and turn these tests into a useful way to verify that a change
 in the GUI didn't introduce any regressions.
 
 
-
 ### Methods return other PageObjects
 
 An UAT checks a user story. It will involve the journey of the user through
@@ -143,7 +139,6 @@ class Clock(object):
 Now the return value of open_stopwatch will make available to the caller all
 the available services that the stopwatch exposes to the user. Thus it can be
 chained as a user journey from one page to the other.
-
 
 
 ### Generally don't make assertions
@@ -212,8 +207,6 @@ open the stopwatch page we end up calling Header methods.
 
 
 
-
-
 ### Different results for the same action are modeled as different methods
 
 According to guideline #3 we are returning page objects every time that a user
@@ -249,7 +242,6 @@ Take a look at the methods `add_alarm` and `add_alarm_with_error`. The first one
 returns the Alarm page again, where the user can continue his journey or
 finish the test checking the result. The second one returns the error dialog
 that's expected when you try to add an alarm with the wrong values.
-
 
 
 ## Conclusion

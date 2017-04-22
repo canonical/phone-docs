@@ -10,7 +10,7 @@ generic RSS feeds reader, a music library or even a store front… If you have
 an Ubuntu device, you can already have a look at some of your options by
 swiping to the right and browse the default scopes.
 
-The examples below are using the SoundCloud scope created using [thistutorial](../tutorials/write-a-json-scope-in-cpp.html).
+The examples below are using the SoundCloud scope created using [thistutorial](../tutorials/write-a-json-scope-in-cpp.md).
 
 ## Header and background
 
@@ -19,13 +19,11 @@ about it in a moment, the other is the .ini file of your scope, registered by
 the Dash even when your scope has not been started or has been paused by the
 system.
 
-![](../../../media/scope-guides-soundcloud_cat1.png)
+![](../../../media/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-cpp/view/head:/data/com.ubuntu.developer.davidcalle.soundcloud-scope_soundcloud.ini) file allows you to set several keys to change the look of your scope header, background and text color.
 
-The [<scope>.ini](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-cpp/view/head:/data/com.ubuntu.developer.davidcalle.soundcloud-scope_soundcloud.ini) file allows you to set several keys to change the look of your scope header, background and text color.
+You can add the following keys to the [Appearance) group of this file :
 
-You can add the following keys to the [Appearance] group of this file :
-
-  * **ForegroundColor** - default text color (defaults to theme-provided foreground color)
+  * **ForegroundColor** - default text color [defaults to theme-provided foreground color)
   * **BackgroundColor** - color of scope background (default is transparent)
   * **ShapeImages** - whether to use Ubuntu-shape (rounded corners) for all cards and artwork (defaults to true)
   * **CategoryHeaderBackground** - background scheme of the results categories
@@ -49,11 +47,11 @@ these keys include:
 
 Here are a few examples of color customization :
 
-![](../../../media/27071f53-c3e0-4f38-a090-359561c3fb8d-cms_page_media/140/cb2.png)
+![](../../../media/cb2.png)
 
-![](../../../media/915dbd2f-f263-4d51-88f3-fdcb6a36dc47-cms_page_media/140/cb1.png)
+![](../../../media/cb1.png)
 
-![](../../../media/0605ddd8-2d13-4198-97fc-fdd3c63337f0-cms_page_media/140/cb3.png)
+![](../../../media/cb3.png)
 
 ## Categories templates
 
@@ -88,7 +86,7 @@ Here is a standard template :
 
 The “template” part defines how result cards will be laid out within the
 category. The “components” keys represent each piece of information your cards
-will display. How to attach information to a field is explained in the [Sound Cloud tutorial](../tutorials/write-a-json-scope-in-cpp.html).
+will display. How to attach information to a field is explained in the [Sound Cloud tutorial](../tutorials/write-a-json-scope-in-cpp.md).
 
 ### Template keys
 
@@ -113,11 +111,11 @@ will display. How to attach information to a field is explained in the [Sound Cl
 
 Here are a few examples of category layouts :
 
-![](../../../media/5daddbf5-fe1b-4cac-9864-8eb8c7b93905-cms_page_media/140/cb5.png)
+![](../../../media/cb5.png)
 
-![](../../../media/4563884d-227c-48e5-b22c-096673468e20-cms_page_media/140/cb4.png)
+![](../../../media/cb4.png)
 
-![](../../../media/3fe5bf8-4f9f-411b-a111-b196eee39ace-cms_page_media/140/cb10.png)
+![](../../../media/cb10.png)
 
 ## Anatomy of a card
 
@@ -127,7 +125,7 @@ amount of components you want them to display.
 As seen before, a number of predefined components can be used. Here is an
 example of a result card using most of them :
 
-![](../../../media/5c3fdcf-1dbf-4032-aa70-c893fa96b3df-cms_page_media/140/cb7_crop.png)
+![](../../../media/cb7_crop.png)
 
   * **Art** : Image file, local or remote
   * **Mascot** : Image file, local or remote
@@ -140,12 +138,12 @@ example of a result card using most of them :
 Here is the same card with a different layout : “horizontal” with a “summary”
 component and no “mascot”.
 
-![](../../../media/658c0f13-05bd-420e-a0ce-e0f6c373097e-cms_page_media/140/cb8_crop.png)
+![](../../../media/cb8_crop.png)
 
 For emblems and attribute icons, symbolic svg icons will use the
 **ForegroundColor** of the scope.
 
-![](../../../media/7581f1f0-462f-4213-8588-6094cb8b69f7-cms_page_media/140/cb9.png)
+![](../../../media/cb9.png)
 
 ## Going further
 
@@ -153,5 +151,5 @@ Scope flexibility is here to unlock your creativity : try to push the
 customization to its maximum and make your scope unique. Have a look at
 default scopes such as Ebay, Wikipedia or Youtube to get some design ideas !
 
-You can dive into the [API documentation](https://developer.ubuntu.com/api/scopes/cpp/current/) if you
+You can dive into the [API documentation)(../api-cpp-current/index.md) if you
 need more details on tweaking cards and categories to your needs.

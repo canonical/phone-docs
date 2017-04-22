@@ -11,7 +11,7 @@ A scope is a tailored view for a set of data, that can use custom layouts,
 display and branding options. From RSS news feeds to weather data and search
 engine results, the flexibility of scopes allows you to provide a simple,
 recognizable and consistent experience with the rest of the OS. Scopes can
-also integrate with system-wide user accounts (email, social networks…), split
+also integrate with system-wide user accounts [email, social networks…), split
 your content into categories and aggregate into each others (for example, a
 “shopping” scope aggregating results from several store scopes).
 
@@ -29,18 +29,16 @@ scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
-![](../../../media/45591f2b-6d99-4c68-9ba3-be193e981e79-cms_page_media/110/scope_wizard1-700x435.png)
+![](../../../media/scope_wizard1-700x435.png)
 
-![](../../../media/scope-tutorial-scope_wizard2_bis-700x371.png)
+![](../../../media/platform/sdk/tutorials-creating-an-sdk-app-project.md).
 
-If you need more help to get started with the SDK, have a look at the [SDKsetup article](../../apps/sdk/tutorials/creating-an-sdk-app-project.md).
-
-**Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
+**Note**: Even if you are used to the [security policies](https://developer.ubuntu.com/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ### Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope on [your phone or on in anemulator](../../apps/sdk/tutorials/running-apps-from-the-sdk.md). Wait a few
+sidebar of the SDK to test the scope on [your phone or on in anemulator](../../platform/sdk/tutorials-running-apps-from-the-sdk.md). Wait a few
 seconds for your project to be built and uploaded to the device, it should
 then open by itself.
 
@@ -48,9 +46,7 @@ then open by itself.
 
 You can get the source code of this tutorial by running
 
-
 $ bzr branch lp:~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson
-
 
 The generated project contains quite a lot of files and we are going to talk
 about the most important ones. One thing to note is that the template already
@@ -68,7 +64,7 @@ environment.
 
 Security policy groups used by your scopes. None in our case, since the
 “ubuntu-scope-network” template we are using already allows network calls.
-Learn more about [security policy groups](/en/publish/security-policy-groups/).
+Learn more about [security policy groups](https://developer.ubuntu.com/en/publish/security-policy-groups/).
 
 ### data/<appid>.ini
 
@@ -193,7 +189,7 @@ access. Its sole purpose is to retrieve data from SoundCloud.
 
 [Link to the file](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/scope.cpp)
 
-This file defines a class of type [unity::scopes::ScopeBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.ScopeBase/) that provides
+This file defines a class of type [unity::scopes::ScopeBase](../api-cpp-development/unity.scopes.ScopeBase.md) that provides
 the entry point API the client uses to interact with the scope.
 
   * It implements start and stop methods. Many scopes can leave these unmodified, and this example does as well.
@@ -201,7 +197,7 @@ the entry point API the client uses to interact with the scope.
 
 **Note**: You may find it useful to check out the ScopeBase class declaration (its API) in the corresponding header file: include/scope/scope.h. The header file is a great way to understand C+ classes because their API is declared without any additional implementation code, making it easy to understand.
 
-**Tip**: Check out the [Unity 8 Scope API reference docs](https://developer.ubuntu.com/api/scopes/cpp/development/) during this tutorial if you want a deeper understanding of specific classes.
+**Tip**: Check out the [Unity 8 Scope API reference docs](../api-cpp-development/index.md) during this tutorial if you want a deeper understanding of specific classes.
 
 ### src/scope/query.cpp
 
@@ -211,7 +207,7 @@ Here is where we send queries to the API client, transform returned results
 into result cards, declare categories that will host these cards and their
 layout.
 
-This file defines a class of type [unity::scopes::SearchQueryBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.SearchQueryBase/).
+This file defines a class of type [unity::scopes::SearchQueryBase](../api-cpp-development/unity.scopes.SearchQueryBase.md).
 
 This class generates search results from a query string a client provides and
 returns them as a reply to the client:
@@ -233,7 +229,7 @@ header file: `include/scope/query.h`.
 
 [Link to the file](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp)
 
-This key file defines a class of type [unity::scopes::PreviewQueryBase](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.PreviewQueryBase/).
+This key file defines a class of type [unity::scopes::PreviewQueryBase](../api-cpp-development/unity.scopes.PreviewQueryBase.md).
 
 This class defines the widgets and layouts used for each search result during
 the preview phase. It:
@@ -247,14 +243,14 @@ the preview phase. It:
 Check out the SearchPreviewBase class declaration (its API) in the
 corresponding header file: `include/scope/preview.h`.
 
-For a list of Preview Widgets and documentation, see [this page](https://developer.ubuntu.com/api/scopes/cpp/development/previewwidgets/).
+For a list of Preview Widgets and documentation, see [this page](../api-cpp-development/previewwidgets.md).
 
 Let’s drill into our example scope and detail some of the code, starting with
 the query.
 
 ## Query string
 
-![](../../../media/298ae1cf-6796-47c1-a017-cd8dd27b0be3-cms_page_media/110/soundcloud_query1-300x264.png)
+![](../../../media/soundcloud_query1-300x264.png)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -341,7 +337,7 @@ Client::TrackRes Client::tracks(const string& query) {
  for (const QVariant &i : variant) {
 
      QVariantMap item = i.toMap();
-     QVariantMap user = item["user"].toMap();
+     QVariantMap user = item["user").toMap();
      string art;
 
      // If the track artwork is empty, we use the artist picture
@@ -366,7 +362,7 @@ Client::TrackRes Client::tracks(const string& query) {
              Artist {
                  user["id"].toUInt(),
                  user["username"].toString().toStdString(),
-                 user["avatar_url"].toString().toStdString()
+                 user["avatar_url"].toString[).toStdString()
              }
          }
      );
@@ -381,7 +377,7 @@ way we want.
 
 ## Category renderers
 
-![](../../../media/6cfa1712-246e-40a1-9e8a-8c145f03d6ad-cms_page_media/110/soundcloud_cat1-300x264.png)
+![](../../../media/soundcloud_cat1-300x264.png)
 
 Each result needs to be displayed inside a category. In terms of UI, a
 category can provide a header title to a list of results and a specific layout
@@ -419,7 +415,7 @@ const static string TRACKS_TEMPLATE =
  )";
 ```
 
-This will display a simple list of results, it’s a category style used in many scopes, working well with many types of content. You can have a look at all your options in the [unity::scopes::CategoryRenderer doc](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategoryRenderer/).
+This will display a simple list of results, it’s a category style used in many scopes, working well with many types of content. You can have a look at all your options in the [unity::scopes::CategoryRenderer doc](../api-cpp-development/unity.scopes.CategoryRenderer.md).
 
 Now, in the `try{}` part of the `Query::run` method, we can register our category
 on the reply object :
@@ -450,7 +446,7 @@ automatically discarded.
 
 Still in [src/scope/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/query.cpp),
 in the try{} part of our Query::run method, we need to iterate over our tracks
-list, and create a [unity::scope::CategorisedResult](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.CategorisedResult/) for each.
+list, and create a [unity::scope::CategorisedResult](../api-cpp-development/unity.scopes.CategorisedResult.md) for each.
 Paste the content of the tutorial file into your own, or reproduce the
 following lines :
 
@@ -468,11 +464,11 @@ for (const auto &;track : trackslist.tracks) {
 
      // Set the rest of the attributes, art, artist, etc.
      res.set_art(track.artwork_url);
-     res["artist"] = track.artist.username;
+     res["artist") = track.artist.username;
      res["stream"] = track.stream_url;
 
      // Push the result
-     if (!reply->push(res)) {
+     if [!reply->push(res)) {
 
          // If we fail to push, it means the query has been cancelled.
          return;
@@ -486,26 +482,7 @@ set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](../../../media/scope-tutorial-soundcloud_preview1-300x264.png)
-
-The preview needs to generate widgets and connect their fields to the data
-fields in the `CategorisedResult`.
-
-It also should generate layouts to handle different display environments. The
-idea is that only the client knows the layout context. The client thinks of
-the display context it in terms of the number columns available. The scope
-defines which columns to put widgets into for layouts with different numbers
-of columns.
-
-First, let’s take a look at widgets.
-
-### Preview Widgets
-
-There is a set of predefined Preview Widgets. Each has a type field you use to
-create them. Each type of widget also has additional fields that vary by
-widget type.
-
-You can see the the list of Preview Widget types and the fields they offer [here](https://developer.ubuntu.com/api/scopes/cpp/development/previewwidgets/).
+![](../../../media/api/scopes/cpp/development/previewwidgets/).
 
 This example uses three types of Preview Widgets:
 
@@ -515,8 +492,7 @@ This example uses three types of Preview Widgets:
 
 Here’s how our example creates a header widget named w_header on the
 `Preview::run` method of
-[src/scope/preview.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
-
+[src/scope/preview.cpp)(http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-soundcloud-qjson/view/head:/src/scope/preview.cpp):
 
 ``` C+
 sc::PreviewWidget w_header("headerId", "header");
@@ -550,7 +526,6 @@ The field is artist. We added the artist key and value directly to our
 `CategorisedResult` for each result previously. So this example shows how to
 display data in your preview even when the data is not displayed in results
 phase and is custom to the scope:
-
 
 ``` C+
 w_header.add_attribute_mapping("subtitle", "artist");
@@ -600,7 +575,7 @@ builder.add_tuple({
 
 });
 
-w_actions.add_attribute_value("actions", builder.end());
+w_actions.add_attribute_value["actions", builder.end());
 ```
 
 And now they can be pushed to the client with the reply object:
@@ -623,7 +598,7 @@ These are declared like this:
 sc::ColumnLayout layout1col(1), layout2col(2);
 ```
 
-**Tip**: Check out ColumnLayout docs [here](https://developer.ubuntu.com/api/scopes/cpp/development/unity.scopes.ColumnLayout/).
+**Tip**: Check out ColumnLayout docs [here](../api-cpp-development/unity.scopes.ColumnLayout.md).
 
 We do not need to know exactly how the client uses these. But the general
 expectation is that a single-column layout is appropriate for narrow-screen
@@ -659,13 +634,13 @@ reply->;register_layout({layout1col, layout2col});
 
 By default, your scope looks like this :
 
-![](../../../media/718a1f60-d667-44bf-8e72-3ea7f37881d5-cms_page_media/110/soundcloud_unbranded-180x300.png)
+![](../../../media/soundcloud_unbranded-180x300.png)
 
 Many display options can be changed in `data/<appid>.ini`. Here is my best
 effort at branding this scope, most of the options are self-explicit :
 
 ``` C+
-[ScopeConfig]
+[ScopeConfig)
 DisplayName = SoundCloud
 Description = This is a SoundCloud scope doing SoundCloud things
 Art = screenshot.png
@@ -688,8 +663,7 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](../../../media/scope-tutorial-soundcloud_branded-180x300.png)
-![](../../../media/786c12ef-12b2-4e18-b74f-620dbeedb1ce-cms_page_media/110/soundcloud_branded2-180x300.png)
+![](../../../media/soundcloud_branded2-180x300.png)
 
 Have a look at all the available [customization options](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/) and try to make your scope shine!
 
@@ -715,4 +689,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/en/publish/) to get your scope on the store in minutes.
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides)(https://developer.ubuntu.com/en/publish/) to get your scope on the store in minutes.

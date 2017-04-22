@@ -19,15 +19,15 @@ The app we develop here is quite simple:
 
 ### Cordova guide
 
-You may want to read the [Cordova Guide](guides-cordova-guide.html). It contains all the info you need to set up your development environment. The three prerequisites being:
+You may want to read the [Cordova Guide](guides-cordova-guide.md). It contains all the info you need to set up your development environment. The three prerequisites being:
 
   * Installing `cordova-cli` from the Ubuntu Cordova PPA
-  * Creating a [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
-  * Installing build dependencies in the [click chroot](../../sdk/tutorials/click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.html)
+  * Creating a [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
+  * Installing build dependencies in the [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.md)
 
 ### HTML5 UI Toolkit basics
 
-This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.html).
+This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.md).
 
 ### Getting the resources for this app
 
@@ -113,28 +113,7 @@ starting the application directly.
 $ cordova run --device --debug
 ```
 
-![](../../../../media/app-html5-tutorial-cordova-screenshot.png)
-
-**Tip**: you may see warning messages after the build. For example: you haven't specified an icon for your application yet.
-
-As the application is started on the device, you should also notice that the
-output contains debug messages to let you connect to the running Javascript
-code and inspect the HTML5 UI.
-
-At this point, the app GUI is still in its default unmodified state. We
-implement our app GUI in the next section.
-
-## Define the HTML5 GUI
-
-Here we replace the GUI declared in the default app with one appropriate for
-this Camera app.
-
-  * In index.html, add the following stylesheet declarations in the <head> section of the document:
-
-``` html
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<!-- Ubuntu UI Style imports - Ambiance theme -->
-<link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
+![](../../../media/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css" />
 <!-- Ubuntu UI javascript imports - Ambiance theme -->
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
@@ -159,21 +138,21 @@ this Camera app.
 ``` html
 <div data-role="mainview">
   <header data-role="header">
-    <ul data-role="tabs">
-      <li data-role="tabitem" data-page="camera">Camera</li>
-    </ul>
+<ul data-role="tabs">
+  <li data-role="tabitem" data-page="camera">Camera</li>
+</ul>
   </header>
   <div data-role="content">
-    <div data-role="tab" id="camera">
-        <div id="loading">
-            <header>Loading...</header>
-            <progress class="bigger">Loading...</progress>
-        </div>
-        <div id="loaded">
-            <button data-role="button" class="ubuntu" id="click">Take Picture</button>
-            <img id="image" src="" />
-        </div>
-    </div> <!-- tab: camera -->
+<div data-role="tab" id="camera">
+<div id="loading">
+<header>Loading...</header>
+<progress class="bigger">Loading...</progress>
+</div>
+<div id="loaded">
+<button data-role="button" class="ubuntu" id="click">Take Picture</button>
+<img id="image" src="" />
+</div>
+</div> <!-- tab: camera -->
   </div> <!-- content -->
 </div> <!-- mainview -->
 ```
@@ -191,12 +170,11 @@ following:
 
 If you run the app now, the GUI appears as follows:
 
-![](../../../../media/app-html5-tutorial-cordova-spinner.png)
+![](../../../media/spinner.png)
 
-As noted above, that is the loading div that displays until Cordova
-deviceready event is received.
+As noted above, that is the loading div that displays until Cordova deviceready event is received.
 
-**Tip**: To isolate your application UI from future UI toolkit changes, we now recommend to bundle a copy of the toolkit inside your application package. There is a small tool documented here that will assist you in migrating your project. See [https://code.launchpad.net/~dbarth/ubuntu-html5-theme/cmdline-tool/+merge/253498](https://code.launchpad.net/~dbarth/ubuntu-html5-theme/cmdline-tool/+merge/253498)
+**Tip:** To isolate your application UI from future UI toolkit changes, we now recommend to bundle a copy of the toolkit inside your application package. There is a small tool [documented here](https://code.launchpad.net/~dbarth/ubuntu-html5-theme/cmdline-tool/+merge/253498) that will assist you in migrating your project.
 
 **Note:** at the end of the index.html file you should also see a reference to a `cordova.js` script file which is loaded at the beginning of the page. This file is not present in the source 'www' directory. However it is automatically copied with the rest of the cordova runtime startup code, during the build phase. So don't worry, the file will be present in the resulting click package.
 
@@ -256,7 +234,7 @@ This is the first bit of new code that’s needed. Let’s take a look at it.
   * An event handler for the Cordova deviceready event is added. This is received when the Cordova system is fully loaded and ready, so this is a great place to put code that uses Cordova objects. (See Cordova Guide for information.)
   * Inside the deviceready handler, first the loading div is hidden and then then loaded div is displayed.
   * Then, the **Take Picture** button is obtained with: UI.button(“click”).
-  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](../api.md) for complete API reference docs.)
+  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](api.md) for complete API reference docs.)
   * This event handling function calls the navigator.camera.getPicture(…) method.
   * The navigator object is the base Cordova object and is available in the HTML5 runtime container when the app includes Cordova as described above.
   * getPicture(…) takes three arguments: the name of the function to run when a picture is taken(this is calledonSuccess here and is defined below), the name of a function to run when an attempt to take a picture fails (onFail here, defined below), and some optional arguments.
@@ -311,7 +289,7 @@ $ cordova run --device --debug
 
 Here is how the application looks like after clicking **Take Picture**:
 
-![](../../../../media/264a3e03-204d-47d2-b46c-076da4eb1809-cms_page_media/116/camera-snap.png)
+![](../../../media/camera-snap.png)
 
 Once you validate the picture, the system will bring back your application and
 will display the photo below the button.
@@ -346,11 +324,11 @@ Now, in `index.html`, simply add the following inside the `<head>`
 
 Now, the Loading page and the home page look like this:
 
-![](../../../../media/6f565d93-ac5a-4034-a293-02d61b45446e-cms_page_media/116/camera-app.png)
+![](../../../media/camera-app.png)
 
 ## Next steps
 
-Check out the [Cordova Guide](guides-cordova-guide.html) for
+Check out the [Cordova Guide](guides-cordova-guide.md) for
 a high level review of using Cordova in Ubuntu HTML5 apps and for adding
 Ubuntu as a built platform for native Cordova projects.
 

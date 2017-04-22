@@ -5,7 +5,6 @@ table_of_contents: true
 
 # Web apps guide
 
-
 Ubuntu Webapps are a great way to deliver online web applications into Ubuntu.
 
 The Ubuntu platform provides an advanced web engine container to run online
@@ -15,7 +14,7 @@ Web applications are hosted online. They can be as simple as a website, like
 an online news site, or they can distribute content like videos. They can also
 have a rich user interface or use the WebGL extension to deliver games online.
 
-**Note**: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content (and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs.
+**Note**: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content [and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs.
 
 ## Webapps for converged Ubuntu
 
@@ -31,7 +30,7 @@ Let’s take a look at how the run-time pieces fit together.
 A web app displays in a webview inside a `webapp-container` that runs as an
 Ubuntu app in the Ubuntu/Unity shell.
 
-![](../../media/4d8fe47a-5046-48ea-b6b8-087500699e83-cms_page_media/134/Webapps-Guide1.png)
+![](../../media/Webapps-Guide1.png)
 
 Taking a closer look:
 
@@ -113,7 +112,7 @@ $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/* http://www.ubuntu
   * The asterix is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL
 
 With this launch command and URL pattern, the user can navigate to and open in
-the webapp any URL that starts with [http://www.ubuntu.com/](http://www.ubuntu.com/). For example, they can click on the Phone button ([http://www.ubuntu.com/phone](http://www.ubuntu.com/phone)) in the banner and it opens in the webapp, or the Tablet button ([http://www.ubuntu.com/tablet](http://www.ubuntu.com/tablet)). But, clicking `Developer` opens the corresponding URL in the browser.
+the webapp any URL that starts with [http://www.ubuntu.com/](http://www.ubuntu.com/). For example, they can click on the Phone button in the banner and it opens in the webapp, or the Tablet button. But, clicking `Developer` opens the corresponding URL in the browser.
 
 **Tip**: Make sure to fully specify the subdomain in your starting URL, that is, use [http://www.ubuntu.com](http://www.ubuntu.com) instead of [www.ubuntu.com](http://ubuntu.com). Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns.
 
@@ -123,9 +122,9 @@ You might want to limit access to only some subpages of your site from within
 the webapp. This is easy with wildcard patterns. (Links to other subpages are
 opened in the browser.) For example, the following allows access to
 [www.ubuntu.com/desktop/features](http://www.ubuntu.com/desktop/features) and
-[www.ubuntu.com/phone/features](http://www.ubuntu.com/phone/features) while
+www.ubuntu.com/phone/features while
 not allowing access to [www.ubuntu.com/desktop](http://www.ubuntu.com/desktop)
-or [www.ubuntu.com/phone](http://www.ubuntu.com/phone)
+or www.ubuntu.com/phone
 
 ```
 $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/*/features http://www.ubuntu.com
@@ -136,13 +135,13 @@ $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/*/features http://w
 You can use multiple patterns by separating them with a comma. For example,
 the following allows access only to
 [www.ubuntu.com/desktop/features](http://www.ubuntu.com/desktop/features) and
-[www.ubuntu.com/phone/features](http://www.ubuntu.com/phone/features):
+www.ubuntu.com/phone/features:
 
 ```
 $ webapp-container --webappUrlPatterns=http://www.ubuntu.com/desktop/features,http://www.ubuntu.com/phone/features  http://www.ubuntu.com
 ```
 
-**Tip**: Multiple patterns are often necessary to achieve the intended containment behavior.
+**Tip**: Multiple patterns are often necessary to achieve the intended containment behaviour.
 
 ### Adding a specific subdomain
 
@@ -187,7 +186,7 @@ $ webapp-container --webappUrlPatterns=http://*.ubuntu.com/*  http://www.ubuntu.
 
 Sometimes a site uses https for some of its URLs. Here is an example that
 allows https and https as access within the webapp to
-[www.launchpad.net](http://www.launchpad.net) (and all subpages due to the
+[www.launchpad.net)(http://www.launchpad.net) (and all subpages due to the
 wildcard):
 
 ```

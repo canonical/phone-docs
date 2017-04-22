@@ -17,7 +17,7 @@ name `<scope>-settings.ini`.
 
 For example, for a scope with ID "myscope", the normal configuration file is
 `myscope.ini`, and the settings definition file is `myscope-settings.ini`. Both
-files must be installed in the same directory (together with the scope’s `.so`
+files must be installed in the same directory [together with the scope’s `.so`
 file).
 
 The shell constructs a user interface from the settings definitions. The user
@@ -33,7 +33,7 @@ The following types are supported for settings:
   * boolean: true or false
   * list: a list of alternatives to choose from (single-choice)
 
-**Note**: Please see [Scope settings - what does “list” typereturns?](http://askubuntu.com/questions/548788/scope-settings-what-does-list-type-returns) from Ask Ubuntu
+**Note**: Please see [Scope settings - what does “list” typereturns?](https://askubuntu.com/questions/548788/scope-settings-what-does-list-type-returns) from Ask Ubuntu
 
 It is possible to optionally define a default value for each setting.
 
@@ -43,25 +43,13 @@ It is possible to optionally define a default value for each setting.
 
 These types provide text inputs.
 
-![](../../../media/355c2284-09f1-4411-983b-c9dbeba92411-cms_page_media/145/scope-settings_visitparis1.png)
+![](../../../media/scope-settings_visitparis1.png)
 
-![](../../../media/scope-tutorial-scope-settings_visitparis2.png)
+![](../../../media/scope-settings_indieconcerts21.png)
 
-#### boolean
+![](../../../media/scope-settings_coffeenearby1.png)
 
-This type provides a checkbox.
-
-![](../../../media/f19e212e-ae90-462c-955b-85240cc1cbf0-cms_page_media/145/scope-settings_indieconcerts21.png)
-
-![](../../../media/scope-tutorials-scope-settings_indieconcerts11.png)
-
-#### list
-
-This type provides an expandable list.
-
-![](../../../media/f2825b25-614d-4d39-b460-1b3d80dc3528-cms_page_media/145/scope-settings_coffeenearby1.png)
-
-![](../../../media/8aa72285-9d53-41a4-900d-522ede562eba-cms_page_media/145/scope-settings_coffeenearby2.png)
+![](../../../media/scope-settings_coffeenearby2.png)
 
 ## <scope>-settings.ini
 
@@ -91,7 +79,7 @@ the current locale, the non-localized value is used.
 Here is an example of a `<scope>-settings.ini` file using all the settings types:
 
 ```
-[location]
+[location)
  type = string
  defaultValue = London
  displayName = Location
@@ -174,7 +162,7 @@ private:
 #### Retrieve settings value
 
 We are now going to create our function exposing settings value to the scope.
-At the bottom of [src/query.cpp](http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-settings-may2015/view/head:/src/query.cpp), let’s add a few lines that :
+At the bottom of [src/query.cpp)(http://bazaar.launchpad.net/~davidc3/ubuntu-sdk-tutorials/scope-tutorial-settings-may2015/view/head:/src/query.cpp), let’s add a few lines that :
 
   * Request settings data
   * Check if the config is empty
@@ -187,7 +175,7 @@ void Query::initScope()
     if (config.empty())
         cerr << "CONFIG EMPTY!" << endl;
     s_location = config["location"].get_string();
-    s_forecast = config["forecast"].get_bool();
+    s_forecast = config["forecast"].get_bool[);
 }
 ```
 
@@ -252,10 +240,8 @@ if(!s_forecast){
 
 Our scope now has working settings and should look like this:
 
-![](../../../media/9d757f2a-3a0b-4c30-8bcd-4e6475fd04fc-cms_page_media/145/scope-settings-final0.png)
+![](../../../media/scope-settings-final0.png)
 
-![](../../../media/scope-tutorial-scope-settings-final1.png)
+![](../../../media/scope-settings-final2.png)
 
-![](../../../media/3e77d008-d796-43cb-b087-812c672d994e-cms_page_media/145/scope-settings-final2.png)
-
-![](../../../media/34cb813b-16cc-4aa1-b630-85ccd6f60e08-cms_page_media/145/scope-settings-final3.png)
+![](../../../media/scope-settings-final3.png)

@@ -5,7 +5,7 @@ title: "Guides - introduction to the HTML5 UI toolkit"
 #  Guides - introduction to the HTML5 UI toolkit
 
 Your app can use any visual style, but if you want to give a more native feel
-to it, Ubuntu provides a set of HTML5 layouts and widgets (with associated CSS
+to it, Ubuntu provides a set of HTML5 layouts and widgets [with associated CSS
 and JavaScript) that you can use to build an HTML5 app that looks and behaves
 like other platform apps.
 
@@ -19,9 +19,8 @@ level:
   * **A header with tabitems**: when the user clicks a tabitem, the GUI switches to the associated tab content. This is also called “Flat” navigation because the tabs are at the same “level” and the user switches between them “horizontally” by clicking the header.
   * **A pagestack of pages**. This is called “deep” navigation. With this, the user can drill further into the stack of pages and use the “Back” button to climb out.
 
-Be sure to check out [design examples](http://design.ubuntu.com/apps) for
+Be sure to check out [design examples](../design/index.md) for
 further guidance on app layouts and widgets.
-
 
 ## Widgets
 
@@ -53,8 +52,6 @@ itself.
 
 
 
-
-
 ## Head and imports
 
 When you create a new app in the Ubuntu SDK, its index.html file
@@ -67,7 +64,7 @@ Naturally, the head imports Ubuntu CSS and Javascript. For example:
 ``` html
 <link href="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/css/appTemplate.css" rel="stylesheet" type="text/css"/>
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/core.js"></script>
-<!-- [...] -->
+<!-- [...) -->
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/fast-buttons.js"></script>
 ```
 
@@ -109,8 +106,6 @@ and widgets are declared.
 
 
 
-
-
 ## Body and mainview
 
 Each HTML5 app has an Ubuntu mainview inside the `<body>...</body>`. This
@@ -118,20 +113,18 @@ main view typically contains a header and content:
 
 ``` html
 <body>
-    <header data-role="header">
-      <!-- [...] -->
-    </header>
-    <div data-role="content">
-      <!-- [...] -->
-    </div>
+<header data-role="header">
+  <!-- [...] -->
+</header>
+<div data-role="content">
+  <!-- [...] -->
+</div>
   </div>
 </body>
 ```
 
 The header and content are used for both tab-style and pagestack-style app
 navigation. Let’s take a look.
-
-
 
 
 
@@ -153,8 +146,8 @@ a sample with two tabitems:
 ``` html
 <header data-role="header">
   <ul data-role="tabs">
-    <li data-role="tabitem" data-page="main">Main</li>
-    <li data-role="tabitem" data-page="anotherpage">Another</li>
+<li data-role="tabitem" data-page="main">Main</li>
+<li data-role="tabitem" data-page="anotherpage">Another</li>
   </ul>
 </header>
 ```
@@ -167,17 +160,15 @@ correct id. Here is a content section with two tabs:
 ``` html
 <div data-role="content">
   <div data-role="tab" id="main">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <div data-role="tab" id="anotherpage">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
 </div>
 ```
 
 **Tip**: You can make a single page app with a single `tabitem` and one corresponding tab.
-
-
 
 
 
@@ -206,23 +197,22 @@ pagestack and pages. A simple pagestack looks like this:
 ``` html
 <body>
   <div data-role="mainview">
-    <header data-role="header">
-      <!-- [...] -->
-    </header>
-    <div data-role="content">
-      <div data-role="pagestack">
-        <div data-role="page" id="main">
-          <!-- [...] -->
-        </div> <!-- page: main -->
-        <div data-role="page" id="anotherPage">
-          <!-- [...] -->
-        </div> <!-- page: anotherPage -->
-      </div> <!-- pagestack -->
-    </div> <!-- content -->
+<header data-role="header">
+  <!-- [...] -->
+</header>
+<div data-role="content">
+  <div data-role="pagestack">
+<div data-role="page" id="main">
+  <!-- [...] -->
+</div> <!-- page: main -->
+<div data-role="page" id="anotherPage">
+  <!-- [...] -->
+</div> <!-- page: anotherPage -->
+  </div> <!-- pagestack -->
+</div> <!-- content -->
   </div> <!-- mainview -->
 </body>
 ```
-
 
 
 
@@ -245,30 +235,29 @@ Here is an example of a customized pagestack footer:
 ``` html
 <div data-role="pagestack">
   <div data-role="page” id="page1">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <div data-role="page" id="page2">
-    <!-- [...] -->
+<!-- [...] -->
   </div>
   <!-- this footer overrides
        the default pagestack footer -->
   <footer data-role="footer" id="footerID">
-    <div data-role="list">
-      <ul>
-        <li>
-          <a href="#" id="home">
-            <img src=”./back.png”/>
-            <span>Tap me!</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+<div data-role="list">
+  <ul>
+<li>
+  <a href="#" id="home">
+<img src=”./back.png”/>
+<span>Tap me!</span>
+  </a>
+</li>
+  </ul>
+</div>
   </footer>
 <div> <!- end of pagestack -->
 ```
 
 Here’s how to add footer to a specific page that overrides the default footer:
-
 
 ``` html
 <div data-role="page" id="anotherPage">
@@ -281,8 +270,6 @@ Here’s how to add footer to a specific page that overrides the default footer:
 
 **Note:** A footer is represented by the Toolbar class in the Ubuntu JavaScript
 API.
-
-
 
 
 
@@ -300,17 +287,17 @@ Here’s an example of declaring a dialog:
 ``` html
 <body>
   <div data-role="mainview">
-    <!-- [...] -->
-    <div data-role="content">
-      <div data-role="tab" id=”main”>
-        <!-- [...] -->
-      </div>
-        <!-- [...] -->
-      <div data-role="dialog" id="mydialog">
-        <!-- [...] -->
-        <button data-role="button id="close”>Close</button>
-      </div>
-    </div>
+<!-- [...] -->
+<div data-role="content">
+  <div data-role="tab" id=”main”>
+<!-- [...] -->
+  </div>
+<!-- [...] -->
+  <div data-role="dialog" id="mydialog">
+<!-- [...] -->
+<button data-role="button id="close”>Close</button>
+  </div>
+</div>
   </div>
 </body>
 ```
@@ -329,10 +316,10 @@ Here’s an example with:
  ``` html
 <div data-role="content">
   <div data-role="tab” id="hello-page">
-    <button data-role="button" id='show'>show</button>
+<button data-role="button" id='show'>show</button>
   </div>
   <div data-role='dialog' id='dialog'>
-    <button data-role="button" id='hide'>Hide</button>
+<button data-role="button" id='hide'>Hide</button>
   </div>
 </div>
 ```
@@ -356,7 +343,6 @@ window.onload = function () {
 
 
 
-
 ## Lists
 
 The Ubuntu HTML5 framework provides flexible lists. A list can optionally have
@@ -367,24 +353,23 @@ secondary text labels, an icon, and more. Here’s a sample list declaration:
 <div data-role="list" id="testlist">
   <header>My header text</header>
   <ul>
-    <li>
-      <a href="#">Main text, to the left</a>
-    </li>
-    <li>
-      <a href="#">Main text</a>
-      <label>Right text</label>
-    </li>
-    <li>
-      <aside>
-        <img src="someicon.png">
-      </aside>
-      <a href="#">Main text</a>
-      <label>Right</label>
-    </li>
+<li>
+  <a href="#">Main text, to the left</a>
+</li>
+<li>
+  <a href="#">Main text</a>
+  <label>Right text</label>
+</li>
+<li>
+  <aside>
+<img src="someicon.png">
+  </aside>
+  <a href="#">Main text</a>
+  <label>Right</label>
+</li>
   </ul>
 </div>
 ```
-
 
 
 
@@ -399,8 +384,6 @@ the gallery by searching the Ubuntu Applications scope for “Ubuntu HTML5 UI
 Gallery”.
 
 Be sure to check out the JavaScript API reference docs for everything.
-
-
 
 
 

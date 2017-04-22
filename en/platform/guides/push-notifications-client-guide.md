@@ -24,7 +24,7 @@ suffers.
 Using the Ubuntu Push Server, this problem is alleviated: the Chatter server
 will deliver the messages to the Ubuntu Push Server, which in turn will send
 it in an efficient manner to the Ubuntu Push Client running in Bob and Carol's
-devices. The user sees a notification (all without starting the app) and then
+devices. The user sees a notification [all without starting the app) and then
 can launch it if he's interested in reading messages at that point.
 
 Since the app is not started and messages are delivered opportunistically, this
@@ -34,7 +34,6 @@ The Ubuntu Push system provides:
 
   * A push server which receives **push messages** from the app servers, queues them and delivers them efficiently to the devices.
   * A push client which receives those messages, queues messages to the app and displays notifications to the user
-
 
 The full lifecycle of a push message is:
 
@@ -48,9 +47,7 @@ The full lifecycle of a push message is:
 If the user interacts with the notification, the application is launched and
 should check its queue for messages it has to process.
 
-![](../../../media/6d4838df-e8f8-4141-a528-988dddc9a362-cms_page_media/70/push.png)
-
-
+![](../../../media/push.png)
 
 
 
@@ -63,8 +60,6 @@ For the app developer, there are several components needed:
 
 In the following sections, we'll see how to implement all the client side
 parts. For the application server, see the Ubuntu Push Server API section
-
-
 
 
 
@@ -91,7 +86,7 @@ appId property to your application's APP_ID, with or without version number.
 For this to succeed the user **must** have an Ubuntu One account configured in
 the device.
 
-The APP_ID is as described in the [ApplicationIddocumentation](https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
+The APP_ID is as described in the [ApplicationIddocumentation)(https://wiki.ubuntu.com/AppStore/Interfaces/ApplicationId)
 except that the version is treated as optional. Therefore both
 `com.ubuntu.music_music` and `com.ubuntu.music_music_1.3.496` are valid. Keep in
 mind that while both versioned and un-versioned APP_IDs are valid, they are
@@ -142,8 +137,6 @@ notifications for that app marked by tags. If no tag is given, match all.
 
 The count property sets the counter in the application's icon to the given
 value.
-
-
 
 
 
@@ -223,8 +216,6 @@ client/legacy-helpers/` as part of the package.
 
 
 
-
-
 ## Helper output format
 
 Helpers output has two parts, the postal message (in the "message" key) and a
@@ -263,7 +254,7 @@ persistent notification management API.
 **Note**: This format **will** change with future versions of the SDK and it **may** be
 incompatible.
 
- * **message**: (optional) A JSON object that is passed as-is to the application via PopAll.
+ * **message**: [optional) A JSON object that is passed as-is to the application via PopAll.
  * **notification**: (optional) Describes the user-facing notifications triggered by this push
 message.
 
@@ -275,7 +266,7 @@ notification to be given to the user, and has the following fields:
  * **actions**: If empty (the default), a bubble notification is non-clickable. If you add a
 URL, then bubble notifications are clickable and launch that URL. One use for
 this is using a URL like `appid://com.ubuntu.developer.ralsina.hello/hello/current-user-version` which
-will switch to the app or launch it if it's not running. See the [URLDispatcher guide](https://developer.ubuntu.com/en/apps/platform/guides/url-dispatcher-guide/) for more information.
+will switch to the app or launch it if it's not running. See the [URLDispatcher guide](url-dispatcher-guide.md) for more information.
  * **icon**: An icon relating to the event being notified. Defaults to empty (no icon); a secondary icon relating to the application will be shown as well, regardless of this field.
  * **timestamp**: Seconds since the unix epoch, only used for persist (for now). If zero or
 unset, defaults to current timestamp.
@@ -319,7 +310,7 @@ profile, using something like this:
     "policy_groups": [
         "networking",
         "push-notification-client"
-    ],
+    ),
     "policy_version": 1.2
 }
 ```

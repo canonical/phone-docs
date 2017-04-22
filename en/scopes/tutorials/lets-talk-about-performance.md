@@ -15,7 +15,7 @@ you some tips on common pitfalls and resource hogs.
 
 Let’s start with an important truth: if you want your animations and
 transitions to look natural and smooth, your application will need to render
-each frame in less than 16ms (~60fps).
+each frame in less than 16ms [~60fps).
 
 This can be a challenge if you are trying to do many things at the same time.
 The good news is: the SDK gives you tools to measure and track the cause of
@@ -37,29 +37,15 @@ You now have a new piece of UI floating above your app, don’t worry you can
 move it around. The top pane of the overlay shows the frame rendering time,
 the CPU usage is at the bottom.
 
-![](../../../media/5b83c9af-1efc-455b-8103-60ac5ba0007a-cms_page_media/61/perf_overlay-300x134.png)
+![](../../../media/perf_overlay-300x134.png)
 
 Interact with your app and perform common actions… Each time you end up in the
 red, there is something you need to optimize! (like this app that obviously
 needs more work before being released…)
 
-![](../../../media/09a203ff-b17a-44d8-bf2c-b10d72b68f08-cms_page_media/61/perf_countries1-420x700.png)
+![](../../../media/perf_countries1-420x700.png)
 
-![](../../../media/perf_countries2-420x700.png)
-
-### Profiler
-
-When you have identified an issue, but are not sure which part of your code is
-causing it, the profiler is a fantastic tool to show you what’s going wrong:
-
-  * Go to the “Analyze” pane of the SDK and start your application from it.
-  * Reproduce the problematic event
-  * Stop the application and wait for the profile to load
-
-For each event, it provides creating and painting time, javascript functions
-and specific QML objects performance.
-
-![](../../../media/ec0e48ec-beeb-47b8-8fe6-6fdc5d38b894-cms_page_media/61/perf_profiler-700x428.png)
+![](../../../media/perf_profiler-700x428.png)
 
 ## Best practices for optimum performance
 
@@ -99,7 +85,7 @@ To unload the component, simply set pageLoader.source to an empty string.
 Below, you can see how _hiding_ a GIF keeps consuming CPU as opposed to
 unloading it.
 
-![](../../../media/6eb0231d-2e94-426a-94d7-226a6cfbbc91-cms_page_media/61/out.gif)
+![](../../../media/out.gif)
 
 To learn more about it, have a look at the [Loaders documentation](http://qt-project.org/doc/qt-5/qml-qtquick-loader.html).
 
@@ -116,7 +102,6 @@ They are often the greatest memory hogs, let’s see how to handle them:
 
   * **Avoid scaling and resizing images**. Don’t hesitate to use multiple sizes of your assets and declare their exact dimensions.
   * **Load large images asynchronously**, the UI will stay responsive while loading them. Note that this is only needed for local resources, network images are always lazy-loaded.
-
 
 ```
 Image {
@@ -138,11 +123,9 @@ Image {
 Here is a small test app showing CPU usage on a Nexus4 with various image
 loading parameters (35%, 15% and 4%):
 
-![](../../../media/68aadb7b-cba2-4692-9b48-d5658dfa1fcd-cms_page_media/61/perf_img1-420x700.png)
+![](../../../media/perf_img1-420x700.png)
 
-![](../../../media/perf_img2-420x700.png)
-
-![](../../../media/360517c6-d948-48c0-8437-617c8894b1e4-cms_page_media/61/perf_img3-420x700.png)
+![](../../../media/perf_img3-420x700.png)
 
   * **Avoid enabling the ****smooth**** property of images while animating them**. If you really need to smooth an image, you can turn smoothing off before the animation and add it back when the animation is over.
   * **Prefer bitmaps.** This is a sad fact of life, but vectors will load slower than bitmaps.
@@ -159,7 +142,7 @@ times.
 ## Going further
 
 You can find more QML tips in the [Qt doc](http://qt-project.org/wiki/Performance_tip_Images) and at
-[AskUbuntu](http://askubuntu.com/questions/tagged/qml).
+[AskUbuntu](https://askubuntu.com/questions/tagged/qml).
 
 If you are blocked on a performance issue, come on Freenode IRC and ask the
-friendly developer community in the [#ubuntu-app-devel channel](http://webchat.freenode.net/?channels=ubuntu-app-devel).
+friendly developer community in the [#ubuntu-app-devel channel)(http://webchat.freenode.net/?channels=ubuntu-app-devel).

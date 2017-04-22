@@ -18,7 +18,7 @@ Here you learn how to use the Ubuntu emulator from the Ubuntu SDK, including:
 
 **Note**: The Ubuntu emulator is under rapid development, including its support in the SDK. So stay nimble, stay tuned for new information, and keep alert for changes!
 
-**Tip**: For the cutting edge Ubuntu emulator and SDK experience, update your system from the SDK PPA, as explained in the [Installing the SDK](installing-the-sdk.html) tutorial.
+**Tip**: For the cutting edge Ubuntu emulator and SDK experience, update your system from the SDK PPA, as explained in the [Installing the SDK](installing-the-sdk.md) tutorial.
 
 ## What is the Ubuntu emulator?
 
@@ -35,13 +35,13 @@ GUI instead of physical touch and swipe gestures.
 
 **Tip**: The i386 emulator runs much quicker on x86 devices like your computer than the armhf emulator.
 
-![](../../../media/823ec01c-0445-4a09-82f0-ecad6e95d6ca-cms_page_media/30/001-Qt-Creator_008.png)
+![](../../../media/001-Qt-Creator_008.png)
 
   1. In the Ubuntu SDK, open the **Devices** tab. At the bottom click the plus "+" icon.
   2. Inside the new window, enter a name for your new emulator in the **Name** field. In addition, select your desired channel and and architecture for the emulator.
   3. Click the **Create** new emulator button.
 
-![](../../../media/5a004f0e-9f46-4ea2-9638-a00cbdedd53c-cms_page_media/30/002-Selection_007.png)
+![](../../../media/002-Selection_007.png)
 
 **Note**: It takes a while to create an emulator.
 
@@ -58,7 +58,7 @@ tablets image.
 
 **Tip**: It takes some time for an emulator to start.
 
-![](../../../media/260034d3-e1ce-4dc5-b240-27f9f764cb76-cms_page_media/30/003-emulator-.png)
+![](../../../media/003-emulator-.png)
 
 When the launch is complete, the emulator displays in a separate window. You
 interact with the GUI using your mouse and the onscreen keyboard, which
@@ -66,20 +66,10 @@ displays when needed.
 
 ## Getting shell access to a running emulator
 
-![](../../../media/platform-sdk-004-Selection_009.png)
-
-You can now open a shell to a running emulator using the `_control_` buttons
-inside the emulator device tab as follows:
-
-  1. Click the **Control** rollup near the bottom of the page. The list will expaned showing several options
-  2. Click the **execute** button next to Open SSH connection to device
-
-## More information
-
-  * [https://wiki.ubuntu.com/Touch/Emulator](https://wiki.ubuntu.com/Touch/Emulator)
-  * [http://davidplanella.org/ubuntu-emulator-quickstart-guide/](http://davidplanella.org/ubuntu-emulator-quickstart-guide/)
+![](../../../media/Touch/Emulator](https://wiki.ubuntu.com/Touch/Emulator)
+  * [http://davidplanella.org/ubuntu-emulator-quickstart-guide/)(http://davidplanella.org/ubuntu-emulator-quickstart-guide/)
 
 ## Next steps
 
 Now that you have an emulator running as an attached device, you might check
-out the [Running an app from the SDK](tutorials-running-apps-from-the-sdk.html) tutorial.
+out the [Running an app from the SDK](tutorials-running-apps-from-the-sdk.md) tutorial.
