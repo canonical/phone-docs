@@ -1,0 +1,92 @@
+---
+Title: QtQuick.qtquick-visualcanvas-visualparent
+---
+
+# QtQuick.qtquick-visualcanvas-visualparent
+
+<span class="subtitle"></span>
+<!-- $$$qtquick-visualcanvas-visualparent.html-description -->
+<h2 id="visual-parent">Visual Parent</h2>
+<p>When creating visual scenes with Qt Quick, it is important to understand the concept of the <i>visual parent</i>.</p>
+<p>The concept of the visual parent in Qt Quick is separate from, but related to, the concept of the <i>object parent</i> within the QObject parent hierarchy. All QML objects have an <i>object parent</i>, which is determined by the object hierarchy in which the object is declared. When working with the <code>QtQuick</code> module, the <a href="QtQuick.Item.md">Item</a> type is the base type for all visual items provided by this module, and it provides the concept of an additional <i>visual parent</i>, as defined by an item's <a href="QtQuick.Item.md#parent-prop">parent</a> property. Every item has a visual parent; if an item's <a href="QtQuick.Item.md#parent-prop">parent</a> property value is <code>null</code>, the item will not be rendered in the scene.</p>
+<p>Any object assigned to an item's <a href="QtQuick.Item.md#data-prop">data</a> property becomes a child of the item within its QObject hierarchy, for memory management purposes. Additionally, if an object added to the data property is of the <a href="QtQuick.Item.md">Item</a> type, it is also assigned to the <a href="QtQuick.Item.md#children-prop">Item::children</a> property and becomes a child of the item within the visual scene hierarchy. (Most Qt Quick hierarchy crawling algorithms, especially the rendering algorithms, only consider the visual parent hierarchy.)</p>
+<p>For convenience, the Item <a href="QtQuick.Item.md#data-prop">data</a> property is its default property. This means that any child item declared within an <a href="QtQuick.Item.md">Item</a> object without being assigned to a specific property is automatically assigned to the <a href="QtQuick.Item.md#data-prop">data</a> property and becomes a child of the item as described above. So, the two code blocks below produce the same result, and you will almost always see the form shown below left, rather than the explicit <code>data</code> assignment shown below right:</p>
+<table class="generic">
+<tr valign="top"><td ><pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
+Item {
+width: <span class="number">100</span>; height: <span class="number">100</span>
+Rectangle { width: <span class="number">50</span>; height: <span class="number">50</span>; color: <span class="string">&quot;red&quot;</span> }
+}</pre>
+</td><td ><pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
+Item {
+width: <span class="number">100</span>; height: <span class="number">100</span>
+data: <span class="operator">[</span>
+Rectangle { width: <span class="number">50</span>; height: <span class="number">50</span>; color: <span class="string">&quot;red&quot;</span> }
+<span class="operator">]</span>
+}</pre>
+</td></tr>
+</table>
+<p>An item's visual parent can be changed at any time by setting its <a href="QtQuick.Item.md#parent-prop">parent</a> property. Thus, an item's visual parent may not necessarily be the same as its object parent.</p>
+<p>When an item becomes the child of another item:</p>
+<ul>
+<li>The child's <a href="QtQuick.Item.md#parent-prop">parent</a> refers to its parent item</li>
+<li>The parent's <a href="QtQuick.Item.md#children-prop">children</a> and <a href="QtQuick.Item.md#childrenRect.x-prop">childrenRect</a> properties takes that child into account</li>
+</ul>
+<p>Declaring an item as a child of another does not automatically mean that the child item will be appropriately positioned or sized to fit within its parent. Some QML types may have in-built behaviors that affect the positioning of child items — for example, a <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a> object automatically re-positions its children into a horizontal formation — but these are behaviors enforced by the types' own specific implementations. Additionally, a parent item will not automatically clip its children to visually contain them within the parent's visual bounds, unless its <a href="QtQuick.Item.md#clip-prop">clip</a> property is set to true.</p>
+<p>The visual parent of an item may come under consideration in particular circumstances, as described in the sections below.</p>
+<h3 >Item Coordinates</h3>
+<p>As item coordinates are relative to the visual parent, they can be affected by changes to the visual hierarchy. See the <a href="QtQuick.qtquick-visualcanvas-coordinates.md">Visual Coordinates</a> concept page for more detail.</p>
+<h3 >Stacking Order</h3>
+<p>Qt Quick items use a recursive drawing algorithm for determining which items are drawn on top in case of collisions. In general items are drawn on top of their parent items, in the order they were created (or specified in the QML file). So in the following example, the blue rectangle will be drawn on top of the green rectangle:</p>
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">color</span>: <span class="string">&quot;#272822&quot;</span>
+<span class="name">width</span>: <span class="number">320</span>
+<span class="name">height</span>: <span class="number">480</span>
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">y</span>: <span class="number">64</span>
+<span class="name">width</span>: <span class="number">256</span>
+<span class="name">height</span>: <span class="number">256</span>
+<span class="name">color</span>: <span class="string">&quot;green&quot;</span>
+}
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">x</span>: <span class="number">64</span>
+<span class="name">y</span>: <span class="number">172</span>
+<span class="name">width</span>: <span class="number">256</span>
+<span class="name">height</span>: <span class="number">256</span>
+<span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
+}
+}</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/356f3c2a-eb7a-4e61-a88f-211eba06e091-../qtquick-visualcanvas-visualparent/images/visual-parent-example.png" alt="" /></p><p>Because the algorithm recurses through the visual item hierarchy, any children of the green rectangle will also be drawn beneath the blue rectangle and beneath any of the blue rectangle's children.</p>
+<p>Stacking order can be influenced with the <a href="QtQuick.Item.md#z-prop">Item::z</a> property. Z values below 0 will stack below the parent, and if z values are assigned then siblings will stack in z-order (with creation order used to break ties). Z values only affect stacking compared to siblings and the parent item. If you have an item who is obscured by a subtree rooted above its parent item, no z value on that item will increase its stacking order to stack above that subtree. To stack that item above the other subtree you'll have to alter z values farther up in the hierarchy, or re-arrange the visual item hierarchy.</p>
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">color</span>: <span class="string">&quot;#272822&quot;</span>
+<span class="name">width</span>: <span class="number">320</span>
+<span class="name">height</span>: <span class="number">480</span>
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">y</span>: <span class="number">64</span>
+<span class="name">z</span>: <span class="number">1</span>
+<span class="name">width</span>: <span class="number">256</span>
+<span class="name">height</span>: <span class="number">256</span>
+<span class="name">color</span>: <span class="string">&quot;green&quot;</span>
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">x</span>: <span class="number">192</span>
+<span class="name">y</span>: <span class="number">64</span>
+<span class="name">z</span>: <span class="number">2000</span>
+<span class="name">width</span>: <span class="number">128</span>
+<span class="name">height</span>: <span class="number">128</span>
+<span class="name">color</span>: <span class="string">&quot;red&quot;</span>
+}
+}
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="name">x</span>: <span class="number">64</span>
+<span class="name">y</span>: <span class="number">192</span>
+<span class="name">z</span>: <span class="number">2</span>
+<span class="name">width</span>: <span class="number">256</span>
+<span class="name">height</span>: <span class="number">256</span>
+<span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
+}
+}</pre>
+<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/dcd129ea-3fea-424c-838e-81f609a9c6fe-../qtquick-visualcanvas-visualparent/images/visual-parent-example2.png" alt="" /></p><p>In the above example, the red rectangle has a high z value, but is still stacked below the blue rectangle. This is because it is a child of the green rectangle, and the green rectangle is a sibling of the blue rectangle. The z value of the green rectangle is lower than that of the blue rectangle, so the green rectangle and all children will be stacked beneath the blue rectangle.</p>
+<h3 >Canvas Ownership</h3>
+<p>The definition of what is rendered in a Qt Quick scene is the visual item tree rooted at QQuickWindow::contentItem. Therefore to add an Item to a specific Qt Quick scene for rendering it needs to become a visual hierarchy child of an Item already in the visual item hierarchy, such as QQuickWindow::contentItem.</p>
+<!-- @@@qtquick-visualcanvas-visualparent.html -->
