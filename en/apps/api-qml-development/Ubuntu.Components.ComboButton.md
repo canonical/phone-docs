@@ -41,7 +41,7 @@ import Ubuntu.Components 1.3
 }
 }</pre>
 </li>
-<li>If the content height is greater than <a href="#expandedHeight-prop">expandedHeight</a>, the combo list will expand till the height specified by the property and the content will be scrolled; in case the combo list content is one single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content scrolling will be provided by the content itself.<pre class="qml">import QtQuick 2.4
+<li>If the content height is greater than <a href="#expandedHeight-prop">expandedHeight</a>, the combo list will expand till the height specified by the property and the content will be scrolled; in case the combo list content is one single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content scrolling will be provided by the content itself.<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;long scrolled content&quot;</span>
@@ -57,7 +57,7 @@ import Ubuntu.Components 1.3
 }
 }</pre>
 </li>
-<li>In case the content is a single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content will be filling the entire combo list area defined.<pre class="qml">import QtQuick 2.4
+<li>In case the content is a single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content will be filling the entire combo list area defined.<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {

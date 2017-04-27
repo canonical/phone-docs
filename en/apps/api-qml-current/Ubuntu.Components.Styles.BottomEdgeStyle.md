@@ -24,15 +24,15 @@ Title: Ubuntu.Components.Styles.BottomEdgeStyle
 <!-- @@@BottomEdgeStyle -->
 <h2>Property Documentation</h2>
 <!-- $$$contentItem -->
-<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="name">contentItem</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Holds the current content item created from <a href="Ubuntu.Components.BottomEdge.md#contentUrl-prop">BottomEdge::contentUrl</a> or <a href="Ubuntu.Components.BottomEdge.md#contentComponent-prop">BottomEdge::contentComponent</a>.</p>
+<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="name">contentItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Holds the current content item created from <a href="Ubuntu.Components.BottomEdge.md#contentUrl-prop">BottomEdge::contentUrl</a> or <a href="Ubuntu.Components.BottomEdge.md#contentComponent-prop">BottomEdge::contentComponent</a>.</p>
 <!-- @@@contentItem -->
 <br/>
 <!-- $$$panel -->
-<table class="qmlname"><tr valign="top" id="panel-prop"><td class="tblQmlPropNode"><p><span class="name">panel</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Represents the item holding the bottom edge content.</p>
+<table class="qmlname"><tr valign="top" id="panel-prop"><td class="tblQmlPropNode"><p><span class="name">panel</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>Represents the item holding the bottom edge content.</p>
 <!-- @@@panel -->
 <br/>
 <!-- $$$panelAnimation -->
-<table class="qmlname"><tr valign="top" id="panelAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">panelAnimation</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Animation.md">Animation</a></span></p></td></tr></table><p>Holds the animation of the panel. <a href="Ubuntu.Components.BottomEdge.md">BottomEdge</a> requires this property to know when the bottom edge is fully committed or collapsed.</p>
+<table class="qmlname"><tr valign="top" id="panelAnimation-prop"><td class="tblQmlPropNode"><p><span class="name">panelAnimation</span> : <span class="type"><a href="QtQuick.Animation.md">Animation</a></span></p></td></tr></table><p>Holds the animation of the panel. <a href="Ubuntu.Components.BottomEdge.md">BottomEdge</a> requires this property to know when the bottom edge is fully committed or collapsed.</p>
 <!-- @@@panelAnimation -->
 <br/>
 <!-- $$$revealThreshold -->

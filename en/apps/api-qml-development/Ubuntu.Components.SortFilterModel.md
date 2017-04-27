@@ -22,7 +22,7 @@ Title: Ubuntu.Components.SortFilterModel
 <!-- $$$SortFilterModel-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="index.html">SortFilterModel</a> takes an existing model such as a <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> or any <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a> implementation. The original rows and role names show up in the <a href="index.html">SortFilterModel</a> with two basic differences. For one if <a href="#sort.property-prop">sort.property</a> is set all rows will be sorted. Further more if <a href="#filter.property-prop">filter.property</a> is set only rows matching the filter will be in the model.</p>
+<p>The <a href="index.html">SortFilterModel</a> takes an existing model such as a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> or any <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a> implementation. The original rows and role names show up in the <a href="index.html">SortFilterModel</a> with two basic differences. For one if <a href="#sort.property-prop">sort.property</a> is set all rows will be sorted. Further more if <a href="#filter.property-prop">filter.property</a> is set only rows matching the filter will be in the model.</p>
 <p>Example usage:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2

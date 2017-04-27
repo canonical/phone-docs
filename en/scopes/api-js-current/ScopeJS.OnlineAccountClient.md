@@ -8,7 +8,6 @@ Title: ScopeJS.OnlineAccountClient
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 Array of OnlineAccountClientServiceStatus <strong class="name"><code>get_service_statuses</code></strong>( <code>  </code> ) 
 <br>
 <p>Get statuses for all services matching the name, type and provider specified on construction</p>

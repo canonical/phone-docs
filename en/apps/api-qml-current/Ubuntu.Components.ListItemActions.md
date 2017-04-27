@@ -23,7 +23,7 @@ Title: Ubuntu.Components.ListItemActions
 <p>The <a href="#actions-prop">actions</a> are Action instances or elements derived from Action. The default visualization of the actions can be overridden using the <a href="#delegate-prop">delegate</a> property, and the default implementation uses the <code>name</code> property of the Action.</p>
 <h4 >Using with ListViews</h4>
 <p><a href="index.html">ListItemActions</a> instances can be shared between <a href="Ubuntu.Components.ListItem.md">ListItem</a> instances within the same view. When shared, the memory footprint of the view will be lot smaller, as there will be no individual action container created for each list's actions. Having individual <a href="index.html">ListItemActions</a> instances increases the memory footprint, and also has performance impact on kinetic scrolling.</p>
-<p>The examples below illustrate the worst and best practice when used in a <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>. The worst case:</p>
+<p>The examples below illustrate the worst and best practice when used in a <a href="QtQuick.ListView.md">ListView</a>. The worst case:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
@@ -92,7 +92,7 @@ import Ubuntu.Components 1.2
 }
 }</pre>
 <h4 >Action parameter types</h4>
-<p>Actions handled by the <a href="Ubuntu.Components.ListItem.md">ListItem</a> are all triggered with the <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s index as parameter. This index can either be the model index when used with <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, or the child index from the parentItem's childItems list. Actions can use this parameter to identify the instance of the <a href="Ubuntu.Components.ListItem.md">ListItem</a> on which it was executed, in which case <a href="Ubuntu.Components.ListItem.md">ListItem</a> will change the type from <code>Actions.None</code> to <code>Actions.Integer</code> when it is triggered.</p>
+<p>Actions handled by the <a href="Ubuntu.Components.ListItem.md">ListItem</a> are all triggered with the <a href="Ubuntu.Components.ListItem.md">ListItem</a>'s index as parameter. This index can either be the model index when used with <a href="QtQuick.ListView.md">ListView</a>, or the child index from the parentItem's childItems list. Actions can use this parameter to identify the instance of the <a href="Ubuntu.Components.ListItem.md">ListItem</a> on which it was executed, in which case <a href="Ubuntu.Components.ListItem.md">ListItem</a> will change the type from <code>Actions.None</code> to <code>Actions.Integer</code> when it is triggered.</p>
 <!-- @@@ListItemActions -->
 <h2>Property Documentation</h2>
 <!-- $$$actions -->
@@ -106,7 +106,7 @@ import Ubuntu.Components 1.2
 <!-- @@@actions -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the custom delegate to visualize the actions listed in the <a href="index.html">ListItemActions</a>. When set to null, the default delegate specified by the <a href="Ubuntu.Components.Styles.ListItemStyle.md">ListItemStyle</a> will be used.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the custom delegate to visualize the actions listed in the <a href="index.html">ListItemActions</a>. When set to null, the default delegate specified by the <a href="Ubuntu.Components.Styles.ListItemStyle.md">ListItemStyle</a> will be used.</p>
 <p><a href="index.html">ListItemActions</a> provides the <code>action</code> context property which contains the Action instance currently visualized. Using this property delegates can access the information to be visualized. The action is triggered by the panel item holding the visualized action, therefore only visualization is needed by the custom delegate. The other context property exposed to delegates is the <code>index</code>, which specifies the index of the action visualized.</p>
 <p>Specifying a custom delegate will not override the triggering logic of the action, that will be still handled by the panel itself. However custom delegates may still need to distinguish the pressed/released state visually. This can be achieved using the <code>pressed</code> context property, which informs the delegate about the pressed state of the action.</p>
 <p>The delegate height is set automatically by the panel item, only the width must be specified which will be clamped between height and the maximum width of the list item divided by the number of actions in the list.</p>

@@ -46,7 +46,7 @@ Title: Ubuntu.Components.ActionBar
 <!-- @@@actions -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>Set this to override the default delegate button that shows the actions in the <a href="index.html">ActionBar</a>. Uses the defaultDelegate of <a href="Ubuntu.Components.Styles.ActionBarStyle.md">ActionBarStyle</a> by default.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>Set this to override the default delegate button that shows the actions in the <a href="index.html">ActionBar</a>. Uses the defaultDelegate of <a href="Ubuntu.Components.Styles.ActionBarStyle.md">ActionBarStyle</a> by default.</p>
 <p>Example:</p>
 <pre class="qml"><span class="type"><a href="index.html">ActionBar</a></span> {
 <span class="name">id</span>: <span class="name">customDelegateBar</span>

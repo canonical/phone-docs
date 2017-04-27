@@ -8,7 +8,6 @@ Title: ScopeJS.FilterOption
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>has_filter</code></strong>( <code>id </code> ) 
 <br>
 <p>Check if state for the given filter has been stored</p>

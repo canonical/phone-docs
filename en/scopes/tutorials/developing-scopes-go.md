@@ -347,7 +347,7 @@ First, install the required packages to setup a chroot
 In this case we are using version 15.04 (Vivid), if you use a different
 distribution the names of packages and/or version may change.
 
-Note that you can also create a click chroot [from the UbuntuSDK](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/).
+Note that you can also create a click chroot [from the UbuntuSDK](../../apps/sdk/tutorials-click-targets-and-device-kits/).
 
     $ sudo click chroot -a armhf -f ubuntu-sdk-15.04 -s vivid create
 

@@ -34,7 +34,7 @@ Title: Ubuntu.Components.StyledItem
 <!-- @@@StyledItem -->
 <h2>Property Documentation</h2>
 <!-- $$$style -->
-<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>Style component instantiated immediately and placed below everything else. Has precedence over the <a href="#styleName-prop">styleName</a>. When both set, the style will be created from the component given as property value, and can be reset to the theme style when set to null or reset (set to undefined).</p>
+<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>Style component instantiated immediately and placed below everything else. Has precedence over the <a href="#styleName-prop">styleName</a>. When both set, the style will be created from the component given as property value, and can be reset to the theme style when set to null or reset (set to undefined).</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Press to reset&quot;</span>
 <span class="name">style</span>: <span class="name">Rectangle</span> {

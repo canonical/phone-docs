@@ -9,7 +9,7 @@ Title: Ubuntu.Components.OrientationHelper
 <p>The OrientationHelper automatically rotates its children following the orientation of the device. More...</p>
 <!-- @@@OrientationHelper -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.Popups.PopupBase.md">PopupBase</a>.</p>
 </td></tr></table><ul>
 <li>Obsolete members</li>
@@ -28,7 +28,7 @@ Title: Ubuntu.Components.OrientationHelper
 <p>Any Item placed inside an Orientation Helper will be automatically rotated following the orientation of the device.</p>
 <p>Note that <a href="index.html">OrientationHelper</a> is always filling its parent (anchors.parent: fill).</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">OrientationHelper</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Automatically rotated&quot;</span>

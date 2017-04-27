@@ -30,7 +30,7 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;flow&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="comment">//[...]</span>
 }
@@ -38,10 +38,10 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
 <span class="comment">//[...]</span>
 }
@@ -56,7 +56,7 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;flow&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="comment">//[...]</span>
 }
@@ -64,17 +64,17 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
 <span class="comment">//[...]</span>
 }
 }
 }
 ]
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Press me&quot;</span>
@@ -95,7 +95,7 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;flow&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;item1&quot;</span>
@@ -108,10 +108,10 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;item1&quot;</span>
@@ -123,7 +123,7 @@ Title: Ubuntu.Layouts.Layouts
 }
 }
 ]
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Press me&quot;</span>
@@ -143,7 +143,7 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;flow&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">60</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;item1&quot;</span>
@@ -156,10 +156,10 @@ Title: Ubuntu.Layouts.Layouts
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flickable.md">Flickable</a></span> {
+<span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">contentHeight</span>: <span class="name">column</span>.<span class="name">childrenRect</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">column</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;item1&quot;</span>
@@ -171,7 +171,7 @@ Title: Ubuntu.Layouts.Layouts
 }
 }
 ]
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Press me&quot;</span>

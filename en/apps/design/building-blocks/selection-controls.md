@@ -30,7 +30,7 @@ Use a checkbox to enable or select an option from a list; or as a singular optio
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [Checkbox API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.CheckBox/) is a component with two states: checked or unchecked. It can be used to set boolean options.
+The  [Checkbox API](../../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.
 
 
 ## Multiple options
@@ -249,7 +249,7 @@ Use the spinner component to display a set of values on a reel that can be eithe
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [PickerPanel API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.PickerPanel/) is a component that provides the date and time values with picking functionality.
+The  [PickerPanel API](../../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.
 
 
 ## Display month, year and day
@@ -313,7 +313,7 @@ Use interactive sliders to select a value from a continuous or discrete range of
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [Slider API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.Slider/) is a component that allow the user to select a value from a continuous range of values.
+The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.
 
 
 ## Slider types

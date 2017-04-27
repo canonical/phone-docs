@@ -57,7 +57,7 @@ import Ubuntu.Components 1.3
 <!-- @@@actionContext -->
 <br/>
 <!-- $$$header -->
-<table class="qmlname"><tr valign="top" id="header-prop"><td class="tblQmlPropNode"><p><span class="name">header</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The header property for this page. Setting this property will reparent the header to the page and disable the <a href="Ubuntu.Components.MainView.md">MainView</a>'s application header.</p>
+<table class="qmlname"><tr valign="top" id="header-prop"><td class="tblQmlPropNode"><p><span class="name">header</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The header property for this page. Setting this property will reparent the header to the page and disable the <a href="Ubuntu.Components.MainView.md">MainView</a>'s application header.</p>
 <pre class="qml"><span class="type"><a href="index.html">Page</a></span> {
 <span class="name">id</span>: <span class="name">page</span>
 <span class="name">header</span>: <span class="name">PageHeader</span> {

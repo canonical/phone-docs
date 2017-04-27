@@ -25,7 +25,7 @@ Title: Ubuntu.Components.Button
 </p>
 <p><a href="http://design.ubuntu.com/apps/building-blocks/buttons">See also the Design Guidelines on Buttons</a>.</p>
 <p>Examples:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="index.html">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Send&quot;</span>
 <span class="name">onClicked</span>: <span class="name">print</span>(<span class="string">&quot;clicked text-only Button&quot;</span>)
@@ -43,7 +43,7 @@ Title: Ubuntu.Components.Button
 }
 }</pre>
 <p>An <a href="Ubuntu.Components.Action.md">Action</a> can be used to specify <b>clicked</b>, iconSource and text. Example:</p>
-<pre class="qml"> <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"> <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.Action.md">Action</a></span> {
 <span class="name">id</span>: <span class="name">action1</span>
 <span class="name">text</span>: <span class="string">&quot;Click me&quot;</span>
@@ -68,7 +68,7 @@ Title: Ubuntu.Components.Button
 <!-- @@@font -->
 <br/>
 <!-- $$$gradient -->
-<table class="qmlname"><tr valign="top" id="gradient-prop"><td class="tblQmlPropNode"><p><span class="name">gradient</span> : <span class="type"><a href="../sdk-15.04/QtQuick.Gradient.md">Gradient</a></span></p></td></tr></table><p>The gradient used to fill the background of the button.</p>
+<table class="qmlname"><tr valign="top" id="gradient-prop"><td class="tblQmlPropNode"><p><span class="name">gradient</span> : <span class="type"><a href="QtQuick.Gradient.md">Gradient</a></span></p></td></tr></table><p>The gradient used to fill the background of the button.</p>
 <p>Standard Ubuntu gradients are defined in <a href="Ubuntu.Components.UbuntuColors.md">UbuntuColors</a>.</p>
 <p>If both a gradient and a color are specified, the gradient will be used.</p>
 <p><b>See also </b><a href="#color-prop">color</a>.</p>

@@ -27,7 +27,7 @@ Title: Ubuntu.Components.ListItemLayout
 <p>We will call <a href="index.html">ListItemLayout</a>'s visual children &quot;slots&quot;. <a href="index.html">ListItemLayout</a> positions its slots automatically, following the visual rules specified by the Ubuntu Design team. Because we think flexibility is an important value of our UI components, we made it possible to tweak the position of each slot by modifying its attached properties (see <a href="Ubuntu.Components.SlotsLayout.md#advanced-layout-tweaks">Advanced layout tweaks</a>).</p>
 <p>If you need a progression symbol in your list item, just add <a href="Ubuntu.Components.ProgressionSlot.md">ProgressionSlot</a> as a child of your <a href="index.html">ListItemLayout</a>. No manual positioning is needed, the layout will handle it for you.</p>
 <p>To read more about advanced slots positioning or how to handle input (mouse or touch) in <a href="index.html">ListItemLayout</a>, see <a href="Ubuntu.Components.SlotsLayout.md">SlotsLayout</a> documentation.</p>
-<p>If you don't need the features provided by <a href="Ubuntu.Components.ListItem.md">ListItem</a> (such as the swiping actions), you can also use <a href="index.html">ListItemLayout</a> directly as root of your list view delegate or inside a <a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a>, as explained in <a href="Ubuntu.Components.SlotsLayout.md#input-handling">Input handling</a>.</p>
+<p>If you don't need the features provided by <a href="Ubuntu.Components.ListItem.md">ListItem</a> (such as the swiping actions), you can also use <a href="index.html">ListItemLayout</a> directly as root of your list view delegate or inside a <a href="QtQuick.MouseArea.md">MouseArea</a>, as explained in <a href="Ubuntu.Components.SlotsLayout.md#input-handling">Input handling</a>.</p>
 <p>The following code example shows how easy it is to create even non trivial list items using <a href="Ubuntu.Components.ListItem.md">ListItem</a> and <a href="index.html">ListItemLayout</a>:</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span> {
 <span class="name">height</span>: <span class="name">layout</span>.<span class="name">height</span> <span class="operator">+</span> (<span class="name">divider</span>.<span class="name">visible</span> ? <span class="name">divider</span>.<span class="name">height</span> : <span class="number">0</span>)
@@ -53,13 +53,13 @@ Title: Ubuntu.Components.ListItemLayout
 <span class="name">title</span>.text: <span class="string">&quot;Hello...&quot;</span>
 <span class="name">title</span>.color: <span class="name">UbuntuColors</span>.<span class="name">Orange</span>
 <span class="name">subtitle</span>.text: <span class="string">&quot;...world!&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">SlotsLayout</span>.position: <span class="name">SlotsLayout</span>.<span class="name">Leading</span>
 <span class="name">color</span>: <span class="string">&quot;pink&quot;</span>
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">6</span>)
 <span class="name">width</span>: <span class="name">height</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">slot</span>
 <span class="name">width</span>: <span class="name">secondLabel</span>.<span class="name">width</span>
 <span class="name">height</span>: <span class="name">parent</span>.<span class="name">height</span>
@@ -136,14 +136,14 @@ property <span class="type">alias</span> <span class="name">iconName</span>: <sp
 }</pre>
 <p>As you can see, we alias the label item itself instead of its properties. This also has the advantage of only exposing one alias instead of one for each property, thus making your QML app a bit more performant. Once your delegate is defined, you can use it in your ListViews like usual.</p>
 <pre class="qml"><span class="comment">//other UI code...</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">model</span>: <span class="name">ListModel</span> {
 <span class="name">id</span>: <span class="name">listViewModel</span>
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello1&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;message&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello2&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;email&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello3&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;email&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello4&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;message&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello1&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;message&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello2&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;email&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello3&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;email&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">titleText</span>: <span class="string">&quot;Hello4&quot;</span>; <span class="name">icon</span>: <span class="string">&quot;message&quot;</span> }
 }
 <span class="name">delegate</span>: <span class="name">CustomListItem</span> {
 <span class="name">title</span>.text: <span class="name">model</span>.<span class="name">titleText</span>
@@ -164,7 +164,7 @@ property <span class="type">alias</span> <span class="name">iconName</span>: <sp
 <br/>
 <!-- $$$title -->
 <table class="qmlname"><tr valign="top" id="title-prop"><td class="tblQmlPropNode"><p><span class="name">title</span> : <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span></p></td></tr></table><p>This property defines the title label and its properties. Styling and font properties can be set just like on any other Text component, as shown in the following example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">ListItemLayout</a></span> {
 <span class="name">title</span>.text: <span class="string">&quot;Hello&quot;</span>
 <span class="name">title</span>.color: <span class="string">&quot;yellow&quot;</span>

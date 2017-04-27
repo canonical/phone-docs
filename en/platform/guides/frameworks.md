@@ -51,7 +51,7 @@ list all changes between versions of a framework is coming soon.
 
 The SDK allows you to run your app with any framework, regardless of your
 development environment and version of Ubuntu. See the “Device kits” section
-of [Running apps from the SDK](../../apps/sdk/tutorials/running-apps-from-the-sdk.html).
+of [Running apps from the SDK](../../apps/sdk/tutorials-running-apps-from-the-sdk.html).
 
 ### Going further
 

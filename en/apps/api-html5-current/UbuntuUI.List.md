@@ -33,7 +33,6 @@ var list = UI.list('[id=&quot;testlist&quot;]');</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 Element <strong class="name"><code>append</code></strong>( <code>text, label, id, onclick, user_data </code> ) 
 <br>
 </span><br>

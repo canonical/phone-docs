@@ -13,20 +13,20 @@ Title: QtLocation.User
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.User.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.User.md#user-prop">user</a></b></b> : QPlaceUser</li>
-<li class="fn"><b><b><a href="..//QtLocation.User.md#userId-prop">userId</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#user-prop">user</a></b></b> : QPlaceUser</li>
+<li class="fn"><b><b><a href="#userId-prop">userId</a></b></b> : string</li>
 </ul>
 <!-- $$$User-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Each <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> content item has an associated user who contributed the content. This type provides information about that user.</p>
+<p>Each <a href="QtLocation.location-cpp-qml.md#place">Place</a> content item has an associated user who contributed the content. This type provides information about that user.</p>
 <h2 id="example">Example</h2>
 <p>The following example shows how to display information about the user who submitted an editorial:</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2
 import QtLocation 5.3
-<span class="type"><a href="..//QtLocation.EditorialModel.md">EditorialModel</a></span> {
+<span class="type"><a href="QtLocation.EditorialModel.md">EditorialModel</a></span> {
 <span class="name">id</span>: <span class="name">editorialModel</span>
 <span class="name">batchSize</span>: <span class="number">3</span>
 <span class="name">place</span>: <span class="name">place</span>
@@ -72,7 +72,7 @@ import QtLocation 5.3
 }
 }
 }</pre>
-<p><b>See also </b><a href="..//QtLocation.ImageModel.md">ImageModel</a>, <a href="..//QtLocation.ReviewModel.md">ReviewModel</a>, and <a href="..//QtLocation.EditorialModel.md">EditorialModel</a>.</p>
+<p><b>See also </b><a href="QtLocation.ImageModel.md">ImageModel</a>, <a href="QtLocation.ReviewModel.md">ReviewModel</a>, and <a href="QtLocation.EditorialModel.md">EditorialModel</a>.</p>
 <!-- @@@User -->
 <h2>Property Documentation</h2>
 <!-- $$$name -->

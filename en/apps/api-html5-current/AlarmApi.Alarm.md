@@ -23,7 +23,6 @@ console.log(api.AlarmApi.api.errorToMessage(errorid));
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>cancel</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

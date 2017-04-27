@@ -10,7 +10,6 @@ OnlineAccounts api calls.</p>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 String <strong class="name"><code>accountId</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Styles.PullToRefreshStyle
 <p>Style API for PullToRefresh component. More...</p>
 <!-- @@@PullToRefreshStyle -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -29,7 +29,7 @@ Title: Ubuntu.Components.Styles.PullToRefreshStyle
 <!-- @@@activationThreshold -->
 <br/>
 <!-- $$$defaultContent -->
-<table class="qmlname"><tr valign="top" id="defaultContent-prop"><td class="tblQmlPropNode"><p><span class="name">defaultContent</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the style provided default content component. The value is assigned to the <a href="Ubuntu.Components.PullToRefresh.md#content-prop">PullToRefresh::content</a> property.</p>
+<table class="qmlname"><tr valign="top" id="defaultContent-prop"><td class="tblQmlPropNode"><p><span class="name">defaultContent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The property holds the style provided default content component. The value is assigned to the <a href="Ubuntu.Components.PullToRefresh.md#content-prop">PullToRefresh::content</a> property.</p>
 <!-- @@@defaultContent -->
 <br/>
 <!-- $$$releaseToRefresh -->

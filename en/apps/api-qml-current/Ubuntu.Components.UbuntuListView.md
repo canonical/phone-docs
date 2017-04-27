@@ -9,7 +9,7 @@ Title: Ubuntu.Components.UbuntuListView
 <p>A ListView with special features tailored for a look and feel fitting the Ubuntu Touch platform. The UbuntuListView works just like a regular ListView, but it adds special features such as expanding/collapsing items (when used together with the Expandable item). It provides features like automatically positioning the expanding item when it expands and collapsing it again when the user taps outside of it. More...</p>
 <!-- @@@UbuntuListView -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.ListView.md">ListView</a></p>
 </td></tr></table><ul>
 <li>Obsolete members</li>
 </ul>
@@ -23,8 +23,8 @@ Title: Ubuntu.Components.UbuntuListView
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
-<span class="type"><a href="../sdk-14.10/QtQml.ListModel.md">ListModel</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQml.ListModel.md">ListModel</a></span> {
 <span class="name">id</span>: <span class="name">listModel</span>
 }
 <span class="type"><a href="index.html">UbuntuListView</a></span> {
@@ -53,7 +53,7 @@ import Ubuntu.Components 1.3
 <span class="name">model</span>: <span class="name">XmlListModel</span> {
 <span class="name">source</span>: <span class="string">&quot;http://feeds.reuters.com/reuters/topNews&quot;</span>
 <span class="name">query</span>: <span class="string">&quot;/rss/channel/item&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
+<span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;title&quot;</span>; <span class="name">query</span>: <span class="string">&quot;title/string()&quot;</span> }
 }
 <span class="comment">// let refresh control know when the refresh gets completed</span>
 <span class="type">pullToRefresh</span> {

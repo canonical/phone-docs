@@ -31,8 +31,8 @@ areas too.
 There are a couple requirements:
 
   * You need to install the Ubuntu SDK
-  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials/creating-an-sdk-app-project.md)
-  * You should have some experience [running apps from the SDK](../../sdk/tutorials/running-apps-from-the-sdk.md)
+  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials-creating-an-sdk-app-project.md)
+  * You should have some experience [running apps from the SDK](../../sdk/tutorials-running-apps-from-the-sdk.md)
 
 ### Getting the app source
 

@@ -43,7 +43,7 @@ might start with:</p>
 </pre>
 <p>For use within a testcase, use useFixture:</p>
 <blockquote>
-<div>from autopilot.application import NormalApplicationLauncher
+from autopilot.application import NormalApplicationLauncher
 launcher = self.useFixture(NormalApplicationLauncher())
 app_proxy = launcher.launch(&#8216;gedit&#8217;)</blockquote>
 <p>Applications can be given command line arguments by supplying an

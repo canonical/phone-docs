@@ -9,7 +9,7 @@ Title: U1db.Index
 <!-- @@@Index -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;Index&gt;</span>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="../../../apps/qml/sdk-14.10/U1db.Index.md">Index</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="#">Index</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
 </ul>
 <h2 id="public-functions">Public Functions</h2>
 <table class="alignedsummary">
@@ -31,8 +31,8 @@ Title: U1db.Index
 <p>Instantiate a new Index with an optional <i>parent</i>, usually by declaring it as a QML item.</p>
 <!-- @@@Index -->
 <!-- $$$getDatabase[overload1]$$$getDatabase -->
-<h3 class="fn" id="getDatabase"><span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> * Index::<span class="name">getDatabase</span>()</h3>
-<p>Returns the <a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a> to lookup documents from and store the index in.</p>
+<h3 class="fn" id="getDatabase"><span class="type"><a href="U1db.Database.md">Database</a></span> * Index::<span class="name">getDatabase</span>()</h3>
+<p>Returns the <a href="U1db.Database.md">Database</a> to lookup documents from and store the index in.</p>
 <!-- @@@getDatabase -->
 <!-- $$$getExpression[overload1]$$$getExpression -->
 <h3 class="fn" id="getExpression"><span class="type">QStringList</span> Index::<span class="name">getExpression</span>()</h3>
@@ -43,7 +43,7 @@ Title: U1db.Index
 <p>Returns the name of the index. Both name and expression must be specified.</p>
 <!-- @@@getName -->
 <!-- $$$setDatabase[overload1]$$$setDatabaseDatabase* -->
-<h3 class="fn" id="setDatabase"><span class="type">void</span> Index::<span class="name">setDatabase</span>(<span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> *<i> database</i>)</h3>
+<h3 class="fn" id="setDatabase"><span class="type">void</span> Index::<span class="name">setDatabase</span>(<span class="type"><a href="U1db.Database.md">Database</a></span> *<i> database</i>)</h3>
 <p>Sets the <i>database</i> to lookup documents from and store the index in. The dataInvalidated() signal will be emitted on all changes that could affect the index.</p>
 <!-- @@@setDatabase -->
 <!-- $$$setExpression[overload1]$$$setExpressionQStringList -->

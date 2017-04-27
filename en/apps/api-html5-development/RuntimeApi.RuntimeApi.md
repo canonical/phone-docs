@@ -17,7 +17,6 @@ console.log('Application name: ' + application.getApplicationName());
 <li>Methods</li>
 <li>Properties</li>
 </ul>
-<div>
 <strong class="name"><code>getApplication</code></strong>( <code>callback </code> ) 
 <br>
 </span><br>

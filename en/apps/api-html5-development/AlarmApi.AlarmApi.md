@@ -24,7 +24,6 @@ console.log(api.AlarmApi.api.errorToMessage(errorid));
 <li>Methods</li>
 <li>Properties</li>
 </ul>
-<div>
 <strong class="name"><code>api.createAndSaveAlarmFor</code></strong>( <code>date, type, daysOfWeek, message, callback </code> ) 
 <br>
 </span><br>

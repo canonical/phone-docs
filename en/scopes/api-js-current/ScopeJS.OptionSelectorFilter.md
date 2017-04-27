@@ -8,7 +8,6 @@ Title: ScopeJS.OptionSelectorFilter
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 Array of FilterOption <strong class="name"><code>active_options</code></strong>( <code>filter_state </code> ) 
 <br>
 <p>Get active options from an instance of FilterState for this filter</p>

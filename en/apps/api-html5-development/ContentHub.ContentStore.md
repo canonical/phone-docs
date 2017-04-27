@@ -21,7 +21,6 @@ hub.defaultStoreForType(pictureContentType, function(store) {
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>destroy</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

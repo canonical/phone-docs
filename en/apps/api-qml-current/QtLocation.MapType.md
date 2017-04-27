@@ -13,16 +13,16 @@ Title: QtLocation.MapType
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapType.md#description-prop">description</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapType.md#mobile-prop">mobile</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapType.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapType.md#night-prop">night</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapType.md#style-prop">style</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#description-prop">description</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#mobile-prop">mobile</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#night-prop">night</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#style-prop">style</a></b></b> : enumeration</li>
 </ul>
 <!-- $$$MapType-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>This includes the map type's <a href="..//QtLocation.MapType.md#name-prop">name</a> and <a href="..//QtLocation.MapType.md#description-prop">description</a>, the <a href="..//QtLocation.MapType.md#style-prop">style</a> and a flag to indicate if the map type is optimized for mobile devices (<a href="..//QtLocation.MapType.md#mobile-prop">mobile</a>).</p>
+<p>This includes the map type's <a href="#mobile-prop">mobile</a>).</p>
 <!-- @@@MapType -->
 <h2>Property Documentation</h2>
 <!-- $$$description -->
@@ -47,16 +47,16 @@ Title: QtLocation.MapType
 <!-- $$$style -->
 <table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type">enumeration</span></p></td></tr></table><p>This read-only property gives access to the style of the map type.</p>
 <ul>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.NoMap - No map.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.StreetMap - A street map.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.SatelliteMapDay - A map with day-time satellite imagery.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.SatelliteMapNight - A map with night-time satellite imagery.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.TerrainMap - A terrain map.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.HybridMap - A map with satellite imagery and street information.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.GrayStreetMap - A gray-shaded street map.</li>
+<li><a href="#">MapType</a>.NoMap - No map.</li>
+<li><a href="#">MapType</a>.StreetMap - A street map.</li>
+<li><a href="#">MapType</a>.SatelliteMapDay - A map with day-time satellite imagery.</li>
+<li><a href="#">MapType</a>.SatelliteMapNight - A map with night-time satellite imagery.</li>
+<li><a href="#">MapType</a>.TerrainMap - A terrain map.</li>
+<li><a href="#">MapType</a>.HybridMap - A map with satellite imagery and street information.</li>
+<li><a href="#">MapType</a>.GrayStreetMap - A gray-shaded street map.</li>
 <li>MapType::PedestrianMap - A street map suitable for pedestriants.</li>
 <li>MapType::CarNavigationMap - A street map suitable for car navigation.</li>
-<li><a href="..//QtLocation.MapType.md">MapType</a>.CustomMap - A custom map type.</li>
+<li><a href="#">MapType</a>.CustomMap - A custom map type.</li>
 </ul>
 <!-- @@@style -->
 <br/>

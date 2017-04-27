@@ -28,5 +28,5 @@ UbuntuNumberAnimation on <span class="name">x</span> { <span class="name">to</sp
 <li><i>duration</i>: <a href="Ubuntu.Components.UbuntuAnimation.md#FastDuration-prop">UbuntuAnimation.FastDuration</a></li>
 <li><i>easing</i>: <a href="Ubuntu.Components.UbuntuAnimation.md#StandardEasing-prop">UbuntuAnimation.StandardEasing</a></li>
 </ul>
-<p>If the standard duration and easing used by <a href="index.html">UbuntuNumberAnimation</a> do not satisfy a use case or you need to use a different type of Animation (e.g&#x2e; <a href="../sdk-14.10/QtQuick.qtquick-animation-example.md#coloranimation">ColorAnimation</a>), use standard durations and easing defined in <a href="Ubuntu.Components.UbuntuAnimation.md">UbuntuAnimation</a> manually in order to ensure consistency.</p>
+<p>If the standard duration and easing used by <a href="index.html">UbuntuNumberAnimation</a> do not satisfy a use case or you need to use a different type of Animation (e.g&#x2e; <a href="QtQuick.qtquick-animation-example.md#coloranimation">ColorAnimation</a>), use standard durations and easing defined in <a href="Ubuntu.Components.UbuntuAnimation.md">UbuntuAnimation</a> manually in order to ensure consistency.</p>
 <!-- @@@UbuntuNumberAnimation -->

@@ -46,7 +46,6 @@ var popover = UI.popover(popBase, &quot;popover&quot;);</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>element</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

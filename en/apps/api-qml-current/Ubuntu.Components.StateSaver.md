@@ -31,7 +31,7 @@ import Ubuntu.Components 1.2
 }</pre>
 <p>In this example the state saver is synchronized with the attachee's one.</p>
 <p>Group properties can also be serialized by specifying the path to their individual properties.</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rect</span>
 <span class="name">color</span>: <span class="string">&quot;gray&quot;</span>
 <span class="type">border</span> {
@@ -42,9 +42,9 @@ import Ubuntu.Components 1.2
 }</pre>
 <p><a href="index.html">StateSaver</a> computes a unique identifier for the attachee using the component's and all its parents' <i>id</i>. Therefore attachee component as well as all its parents must have a valid ID set.</p>
 <p>The following example will give error for the <i>input</i>, as the root component has no id specified:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="comment">//[...]</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">parent</span>
 <span class="comment">//[...]</span>
 <span class="type"><a href="Ubuntu.Components.TextField.md">TextField</a></span> {
@@ -54,10 +54,10 @@ import Ubuntu.Components 1.2
 }
 }</pre>
 <p>but the following example will successfully save the text field content</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 <span class="comment">//[...]</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">parent</span>
 <span class="comment">//[...]</span>
 <span class="type"><a href="Ubuntu.Components.TextField.md">TextField</a></span> {
@@ -67,12 +67,12 @@ import Ubuntu.Components 1.2
 }
 }</pre>
 <p>When used with Repeater, each created item from the Repeater's delegate will be saved separately. Note that due to the way Repeater works, Repeaters do not need to have id specified.</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 <span class="comment">// [...]</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="number">10</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rect</span>
 <span class="name">width</span>: <span class="number">50</span>; <span class="name">height</span>: <span class="number">50</span>
 <span class="name">StateSaver</span>.properties: <span class="string">&quot;width, height&quot;</span>
@@ -80,8 +80,8 @@ import Ubuntu.Components 1.2
 }
 <span class="comment">// [...]</span>
 }</pre>
-<p>It can be used in the same way in <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> or <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>, except that both <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> and <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> must have an id set.</p>
-<p>The <a href="index.html">StateSaver</a> can save all <a href="../sdk-15.04/QtQml.qtqml-typesystem-basictypes.md">QML base types</a>, Objects, list of objects or variants containing any of these cannot be saved.</p>
+<p>It can be used in the same way in <a href="QtQuick.ListView.md">ListView</a> or <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a>, except that both <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> must have an id set.</p>
+<p>The <a href="index.html">StateSaver</a> can save all <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a>, Objects, list of objects or variants containing any of these cannot be saved.</p>
 <!-- @@@StateSaver -->
 <h2>Property Documentation</h2>
 <!-- $$$enabled -->
@@ -90,7 +90,7 @@ import Ubuntu.Components 1.2
 <!-- @@@enabled -->
 <br/>
 <!-- $$$properties -->
-<table class="qmlname"><tr valign="top" id="properties-prop"><td class="tblQmlPropNode"><p><span class="name">properties</span> : <span class="type">string</span></p></td></tr></table><p>List of properties to be serialized, separated with commas. Properties must be writable and can only be <a href="../sdk-15.04/QtQml.qtqml-typesystem-basictypes.md">QML base types</a>.</p>
+<table class="qmlname"><tr valign="top" id="properties-prop"><td class="tblQmlPropNode"><p><span class="name">properties</span> : <span class="type">string</span></p></td></tr></table><p>List of properties to be serialized, separated with commas. Properties must be writable and can only be <a href="QtQml.qtqml-typesystem-basictypes.md">QML base types</a>.</p>
 <p>A custom single line input which saves the text, placeholderText, font and color would look as follows:</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.TextField.md">TextField</a></span> {
 <span class="name">id</span>: <span class="name">input</span>

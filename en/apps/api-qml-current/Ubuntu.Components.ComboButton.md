@@ -35,21 +35,21 @@ Title: Ubuntu.Components.ComboButton
 import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;smaller content&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">5</span>) <span class="comment">// smaller than the default expandedHeight</span>
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 }
 }</pre>
 </li>
-<li>If the content height is greater than <a href="#expandedHeight-prop">expandedHeight</a>, the combo list will expand till the height specified by the property and the content will be scrolled; in case the combo list content is one single Flickable, <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="../sdk-14.10/QtQuick.PathView.md">PathView</a>, the content scrolling will be provided by the content itself.<pre class="qml">import QtQuick 2.4
+<li>If the content height is greater than <a href="#expandedHeight-prop">expandedHeight</a>, the combo list will expand till the height specified by the property and the content will be scrolled; in case the combo list content is one single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content scrolling will be provided by the content itself.<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;long scrolled content&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="number">5</span>
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">5</span>)
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 }
@@ -57,12 +57,12 @@ import Ubuntu.Components 1.3
 }
 }</pre>
 </li>
-<li>In case the content is a single Flickable, <a href="../sdk-14.10/QtQuick.ListView.md">ListView</a>, <a href="../sdk-14.10/QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="../sdk-14.10/QtQuick.PathView.md">PathView</a>, the content will be filling the entire combo list area defined.<pre class="qml">import QtQuick 2.4
+<li>In case the content is a single Flickable, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.qtquick-draganddrop-example.md#gridview">GridView</a> or <a href="QtQuick.PathView.md">PathView</a>, the content will be filling the entire combo list area defined.<pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;listview&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="number">10</span>
 <span class="name">delegate</span>: <span class="name">Standard</span> {
 <span class="name">text</span>: <span class="string">&quot;Item #&quot;</span> <span class="operator">+</span> <span class="name">modelData</span>
@@ -75,7 +75,7 @@ import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">id</span>: <span class="name">combo</span>
 <span class="name">text</span>: <span class="string">&quot;smaller content&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">height</span>: <span class="name">combo</span>.<span class="name">comboListHeight</span>
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 }
@@ -86,8 +86,8 @@ import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">text</span>: <span class="string">&quot;auto-sized content&quot;</span>
 <span class="name">expandedHeight</span>: -<span class="number">1</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
-<span class="type"><a href="../sdk-14.10/QtQuick.Repeater.md">Repeater</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Repeater.md">Repeater</a></span> {
 <span class="name">model</span>: <span class="number">5</span>
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
@@ -129,7 +129,7 @@ import Ubuntu.Components 1.3
 <!-- @@@collapsedHeight -->
 <br/>
 <!-- $$$comboList -->
-<table class="qmlname"><tr valign="top" id="comboList-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">comboList</span> : <span class="type">list</span>&lt;<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Property holding the list of items to be shown in the combo list. Being a default property children items declared will land in the combo list.</p>
+<table class="qmlname"><tr valign="top" id="comboList-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">comboList</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtQuick.Item.md">Item</a></span>&gt;</p></td></tr></table><p>Property holding the list of items to be shown in the combo list. Being a default property children items declared will land in the combo list.</p>
 <p><b>Note: </b>The component is not responsible for layouting the content. It only provides scrolling abilities for the case the content exceeds the defined expanded height.</p><!-- @@@comboList -->
 <br/>
 <!-- $$$comboListHeight -->
@@ -140,7 +140,7 @@ import Ubuntu.Components.ListItems 1.3
 <span class="type"><a href="index.html">ComboButton</a></span> {
 <span class="name">id</span>: <span class="name">combo</span>
 <span class="name">text</span>: <span class="string">&quot;Full comboList size&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="type">anchors</span> {
 <span class="name">left</span>: <span class="name">parent</span>.<span class="name">left</span>
 <span class="name">right</span>: <span class="name">parent</span>.<span class="name">right</span>

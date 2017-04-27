@@ -120,7 +120,7 @@ import Ubuntu.Components 1.3
 <span class="name">theme</span>.name: <span class="string">&quot;theme&quot;</span>
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">title</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Theme sample&quot;</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">1</span>)
 <span class="type">anchors</span> {
 <span class="name">margins</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">2</span>)

@@ -8,7 +8,6 @@ Title: ScopeJS.ActionMetadata
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>contains_hint</code></strong>( <code>hint </code> ) 
 <br>
 <p>Check if this ActionMetadata has a hint</p>

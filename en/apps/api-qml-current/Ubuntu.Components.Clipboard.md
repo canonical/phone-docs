@@ -32,7 +32,7 @@ Title: Ubuntu.Components.Clipboard
 <p>The clipboard data cannot be modified through the type returned by the data property, for this a new instance of <a href="Ubuntu.Components.MimeData.md">MimeData</a> type must be used. This instance can be either a standalone MimeDala component or an object created using <a href="#newData-method">newData()</a> function. Remember that standalone <a href="Ubuntu.Components.MimeData.md">MimeData</a> types duplicate the clipboard data which may cause extensive memory use.</p>
 <p>Examples of use:</p>
 <p>1. Using standard MimeType component - the following example copies the selected text from the text area into the clipboard pushing also a color</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.TextArea.md">TextArea</a></span> {
 <span class="name">id</span>: <span class="name">editor</span>
 }
@@ -47,7 +47,7 @@ Title: Ubuntu.Components.Clipboard
 }
 }</pre>
 <p>2. Pushing data straight to clipboard</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.TextArea.md">TextArea</a></span> {
 <span class="name">id</span>: <span class="name">editor</span>
 }
@@ -60,7 +60,7 @@ Title: Ubuntu.Components.Clipboard
 }
 }</pre>
 <p>3. Pushing data using <a href="Ubuntu.Components.MimeData.md">MimeData</a> object</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.TextArea.md">TextArea</a></span> {
 <span class="name">id</span>: <span class="name">editor</span>
 }

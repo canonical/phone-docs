@@ -13,16 +13,16 @@ Title: QtLocation.PluginParameter
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.PluginParameter.md#name-prop">name</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.PluginParameter.md#value-prop">value</a></b></b> : QVariant</li>
+<li class="fn"><b><b><a href="#name-prop">name</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#value-prop">value</a></b></b> : QVariant</li>
 </ul>
 <!-- $$$PluginParameter-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.PluginParameter.md">PluginParameter</a> object is used to provide a parameter of some kind to a Plugin. Typically these parameters contain details like an application token for access to a service, or a proxy server to use for network access.</p>
-<p>To set such a parameter, declare a <a href="..//QtLocation.PluginParameter.md">PluginParameter</a> inside a <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> object, and give it <a href="..//QtLocation.PluginParameter.md#name-prop">name</a> and <a href="..//QtLocation.PluginParameter.md#value-prop">value</a> properties. A list of valid parameter names for each plugin is available from the <a href="..//QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin reference pages</a>.</p>
+<p>The <a href="#">PluginParameter</a> object is used to provide a parameter of some kind to a Plugin. Typically these parameters contain details like an application token for access to a service, or a proxy server to use for network access.</p>
+<p>To set such a parameter, declare a <a href="#value-prop">value</a> properties. A list of valid parameter names for each plugin is available from the <a href="QtLocation.qtlocation-index.md#plugin-references-and-parameters">plugin reference pages</a>.</p>
 <h3 >Example Usage</h3>
-<p>The following example shows an instantiation of the <a href="..//QtLocation.location-plugin-nokia.md">Nokia</a> plugin with a mapping API <i>app_id</i> and <i>token</i> pair specific to the application.</p>
+<p>The following example shows an instantiation of the <a href="QtLocation.location-plugin-nokia.md">Nokia</a> plugin with a mapping API <i>app_id</i> and <i>token</i> pair specific to the application.</p>
 <pre class="cpp">Plugin {
 name: <span class="string">&quot;nokia&quot;</span>
 PluginParameter { name: <span class="string">&quot;app_id&quot;</span>; value: <span class="string">&quot;EXAMPLE_API_ID&quot;</span> }

@@ -8,7 +8,6 @@ Title: OnlineAccounts.OnlineAccounts
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>api.getAccounts</code></strong>( <code>filters, callback </code> ) 
 <br>
 </span><br>

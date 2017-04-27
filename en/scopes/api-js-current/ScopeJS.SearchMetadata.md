@@ -15,7 +15,6 @@ or</li>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 Array of String <strong class="name"><code>aggregated_keywords</code></strong>( <code>  </code> ) 
 <br>
 <p>Get the list of scope keywords used to initiate this search request.</p>

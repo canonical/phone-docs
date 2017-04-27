@@ -9,7 +9,7 @@ Title: Ubuntu.Components.UbuntuColors
 <p>Singleton defining the Ubuntu color palette. More...</p>
 <!-- @@@UbuntuColors -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQml.QtObject.md">QtObject</a></p>
 </td></tr></table><ul>
 <li>Obsolete members</li>
 </ul>
@@ -33,7 +33,7 @@ Title: Ubuntu.Components.UbuntuColors
 </p>
 <p>Each color of the Ubuntu color palette is accesible from it. For more information on how to appropriately use the colors according to the context, please refer to the <a href="http://design.ubuntu.com/brand/colour-palette">Ubuntu brand guidelines</a>.</p>
 <p>Example of use:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">UbuntuColors</span>.<span class="name">orange</span>
 }</pre>
 <!-- @@@UbuntuColors -->

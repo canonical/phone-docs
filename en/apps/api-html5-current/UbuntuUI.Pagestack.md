@@ -44,7 +44,6 @@ UI.pagestack.METHOD();
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>clear</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

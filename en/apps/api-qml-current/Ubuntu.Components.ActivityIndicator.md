@@ -18,9 +18,9 @@ Title: Ubuntu.Components.ActivityIndicator
 <!-- $$$ActivityIndicator-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Note: for time consuming JavaScript operations use <a href="../sdk-14.10/QtQuick.qtquick-threading-example.md#workerscript">WorkerScript</a>, otherwise no UI interaction will be possible and the ActicityIndicator animation will freeze.</p>
+<p>Note: for time consuming JavaScript operations use <a href="QtQuick.qtquick-threading-example.md#workerscript">WorkerScript</a>, otherwise no UI interaction will be possible and the ActicityIndicator animation will freeze.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">ActivityIndicator</a></span> {
 <span class="name">id</span>: <span class="name">activity</span>
 }

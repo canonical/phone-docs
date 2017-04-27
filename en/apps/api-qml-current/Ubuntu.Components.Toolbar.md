@@ -22,13 +22,13 @@ Title: Ubuntu.Components.Toolbar
 </p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.PageHeader.md">PageHeader</a></span> {
 <span class="name">id</span>: <span class="name">editHeader</span>
-property <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> <span class="name">delegate</span>: <span class="name">Component</span> {
+property <span class="type"><a href="QtQml.Component.md">Component</a></span> <span class="name">delegate</span>: <span class="name">Component</span> {
 <span class="type"><a href="Ubuntu.Components.AbstractButton.md">AbstractButton</a></span> {
 <span class="name">id</span>: <span class="name">button</span>
 <span class="name">action</span>: <span class="name">modelData</span>
 <span class="name">width</span>: <span class="name">label</span>.<span class="name">width</span> <span class="operator">+</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">4</span>)
 <span class="name">height</span>: <span class="name">parent</span>.<span class="name">height</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">UbuntuColors</span>.<span class="name">slate</span>
 <span class="name">opacity</span>: <span class="number">0.1</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>

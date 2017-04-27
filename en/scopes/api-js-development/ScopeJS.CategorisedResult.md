@@ -8,7 +8,6 @@ Title: ScopeJS.CategorisedResult
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 String <strong class="name"><code>art</code></strong>( <code>  </code> ) 
 <br>
 <p>Get the &quot;art&quot; property of this Result.

@@ -9,7 +9,7 @@ Title: Ubuntu.Components.PageColumnsLayout
 <p>Component configuring a layout in an AdaptivePageLayout component. More...</p>
 <!-- @@@PageColumnsLayout -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQml.QtObject.md">QtObject</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -54,7 +54,7 @@ import Ubuntu.Components 1.3
 <span class="type"><a href="Ubuntu.Components.Page.md">Page</a></span> {
 <span class="name">id</span>: <span class="name">page1</span>
 <span class="name">title</span>: <span class="string">&quot;Main page&quot;</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Add Page2 above &quot;</span> <span class="operator">+</span> <span class="name">page1</span>.<span class="name">title</span>
 <span class="name">onClicked</span>: <span class="name">page1</span>.<span class="name">pageStack</span>.<span class="name">addPageToCurrentColumn</span>(<span class="name">page1</span>, <span class="name">page2</span>)

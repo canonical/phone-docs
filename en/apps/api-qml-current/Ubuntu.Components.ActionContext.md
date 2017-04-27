@@ -24,7 +24,7 @@ Title: Ubuntu.Components.ActionContext
 <p><a href="index.html">ActionContext</a> drives the state of its <a href="#actions-prop">actions</a>. Shortcuts and mnemonics are only registered if the context is active or if the action is assigned to an <a href="Ubuntu.Components.ActionItem.md">ActionItem</a> all of whose parent contexts are active. In the following example the <a href="index.html">ActionContext</a> drives the underlaying <code>action1</code> and <code>action2</code> shortcuts, and <code>orphanAction</code> will never trigger as it is neither enclosed in an active context nor assigned to an <a href="Ubuntu.Components.ActionItem.md">ActionItem</a>.</p>
 <pre class="qml">import QtQuick 2.4
 import ubuntu.Componenst 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
@@ -43,7 +43,7 @@ import ubuntu.Componenst 1.3
 <span class="name">shortcut</span>: <span class="string">'Ctrl+O'</span>
 <span class="name">onTriggered</span>: <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;This will not be called&quot;</span>)
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">text</span>: <span class="name">rootContext</span>.<span class="name">active</span> ? <span class="string">&quot;Deactivate&quot;</span> : <span class="string">&quot;Activate&quot;</span>
 <span class="name">onClicked</span>: <span class="name">rootContext</span>.<span class="name">active</span> <span class="operator">=</span> !<span class="name">rootContext</span>.<span class="name">active</span>

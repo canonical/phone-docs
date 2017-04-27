@@ -37,7 +37,6 @@ var tab = UI.tab(&quot;tabID&quot;);</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>activate</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

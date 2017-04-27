@@ -13,22 +13,22 @@ Title: QtLocation.ContactDetails
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn">variant <b><b><a href="..//QtLocation.ContactDetails.md#keys-method">keys</a></b></b>()</li>
+<li class="fn">variant <b><b><a href="#keys-method">keys</a></b></b>()</li>
 </ul>
 <!-- $$$ContactDetails-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.ContactDetails.md">ContactDetails</a> type is a map of <a href="..//QtLocation.ContactDetail.md">ContactDetail</a> objects. To access contact details in the map use the <a href="..//QtLocation.ContactDetails.md#keys-method">keys()</a> method to get the list of keys stored in the map and then use the <code>[]</code> operator to access the <a href="..//QtLocation.ContactDetail.md">ContactDetail</a> items.</p>
-<p>The following keys are defined in the API. <a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a> implementations are free to define additional keys.</p>
+<p>The <a href="#keys-method">keys()</a> method to get the list of keys stored in the map and then use the <code>[]</code> operator to access the <a href="QtLocation.ContactDetail.md">ContactDetail</a> items.</p>
+<p>The following keys are defined in the API. <a href="QtLocation.location-places-qml.md#plugin">Plugin</a> implementations are free to define additional keys.</p>
 <ul>
 <li>phone</li>
 <li>fax</li>
 <li>email</li>
 <li>website</li>
 </ul>
-<p><a href="..//QtLocation.ContactDetails.md">ContactDetails</a> instances are only ever used in the context of <a href="..//QtLocation.location-cpp-qml.md#place">Places</a>. It is not possible to create a <a href="..//QtLocation.ContactDetails.md">ContactDetails</a> instance directly or re-assign <a href="..//QtLocation.ContactDetails.md">ContactDetails</a> instances to <a href="..//QtLocation.location-cpp-qml.md#place">Places</a>. Modification of <a href="..//QtLocation.ContactDetails.md">ContactDetails</a> can only be accomplished via Javascript.</p>
+<p><a href="#">ContactDetails</a> can only be accomplished via Javascript.</p>
 <h2 id="examples">Examples</h2>
-<p>The following example shows how to access all <a href="..//QtLocation.ContactDetail.md">ContactDetails</a> and print them to the console:</p>
+<p>The following example shows how to access all <a href="QtLocation.ContactDetail.md">ContactDetails</a> and print them to the console:</p>
 <pre class="qml">import QtPositioning 5.2
 import QtLocation 5.3
 <span class="keyword">function</span> <span class="name">printContactDetails</span>(<span class="name">contactDetails</span>) {

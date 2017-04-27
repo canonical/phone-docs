@@ -28,8 +28,8 @@ Title: Ubuntu.Components.ListItems.Expandable
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
-<span class="type"><a href="../sdk-14.10/QtQml.ListModel.md">ListModel</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQml.ListModel.md">ListModel</a></span> {
 <span class="name">id</span>: <span class="name">listModel</span>
 }
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.UbuntuListView {
@@ -48,7 +48,7 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 <!-- @@@Expandable -->
 <h2>Property Documentation</h2>
 <!-- $$$children -->
-<table class="qmlname"><tr valign="top" id="children-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">children</span> : <span class="type"><a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a></span></p></td></tr></table><p>Reparent any content to inside the Flickable</p>
+<table class="qmlname"><tr valign="top" id="children-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">children</span> : <span class="type"><a href="QtQml.QtObject.md">QtObject</a></span></p></td></tr></table><p>Reparent any content to inside the Flickable</p>
 <!-- @@@children -->
 <br/>
 <!-- $$$collapseOnClick -->

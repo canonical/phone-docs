@@ -11,16 +11,16 @@ Title: QtLocation.qtlocation-cpp
 <p>With the Maps API we can associate a position with a map in various formats supplied by a backend. Then the Places API could be used to populate places on the Map or even specify the current position as a place of interest and associate it with an icon, contact details and other information.</p>
 <p>The following table provides links to more detailed information on sections of the Qt Location C++ API.</p>
 <table class="generic">
-<tr valign="top"><td ><a href="..//QtLocation.location-maps-cpp.md">Maps and Navigation</a></td><td >Displaying maps and finding routes.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.location-places-cpp.md">Places</a></td><td >Searching for and managing points of interest.</td></tr>
-<tr valign="top"><td ><a href="..//QtLocation.qtlocation-geoservices.md">Geoservices Plugin Implementation</a></td><td >Implement new geoservices and positioning plugins.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.location-maps-cpp.md">Maps and Navigation</a></td><td >Displaying maps and finding routes.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.location-places-cpp.md">Places</a></td><td >Searching for and managing points of interest.</td></tr>
+<tr valign="top"><td ><a href="QtLocation.qtlocation-geoservices.md">Geoservices Plugin Implementation</a></td><td >Implement new geoservices and positioning plugins.</td></tr>
 </table>
 <h2 id="geoservice-provider-classes">Geoservice Provider Classes</h2>
 <table class="annotated">
 <tr class="odd topAlign"><td class="tblName"><p>QGeoServiceProvider</p></td><td class="tblDescr"><p>Aggregates access to services which provide geographical information</p></td></tr>
 </table>
 <h2 id="maps-and-navigation-classes">Maps and Navigation Classes</h2>
-<p>Currently it is not possible to interact with maps data via C++. The only available interface is the <a href="..//QtLocation.location-maps-qml.md">Maps and Navigation (QML)</a> API.</p>
+<p>Currently it is not possible to interact with maps data via C++. The only available interface is the <a href="QtLocation.location-maps-qml.md">Maps and Navigation (QML)</a> API.</p>
 <table class="annotated">
 <tr class="odd topAlign"><td class="tblName"><p>QGeoManeuver</p></td><td class="tblDescr"><p>Represents the information relevant to the point at which two QGeoRouteSegments meet</p></td></tr>
 <tr class="even topAlign"><td class="tblName"><p>QGeoRoute</p></td><td class="tblDescr"><p>Represents a route between two points</p></td></tr>

@@ -8,7 +8,6 @@ Title: ScopeJS.ScopeMetadata
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 String <strong class="name"><code>art</code></strong>( <code>  </code> ) 
 <br>
 <p>Get the scope art</p>

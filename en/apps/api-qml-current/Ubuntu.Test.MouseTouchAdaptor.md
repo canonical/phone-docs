@@ -13,13 +13,13 @@ Title: Ubuntu.Test.MouseTouchAdaptor
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//Ubuntu.Test.MouseTouchAdaptor.md#enabled-prop">enabled</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#enabled-prop">enabled</a></b></b> : bool</li>
 </ul>
 <!-- $$$MouseTouchAdaptor-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>When enabled, mouse events will be translated into single finger touch events. Being a singleton, the feature must be enabled explicitly either on component completion or through a binding.</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQml.Binding.md">Binding</a></span> {
+<pre class="qml"><span class="type"><a href="QtQml.Binding.md">Binding</a></span> {
 <span class="name">target</span>: <span class="name">MouseTouchAdaptor</span>
 <span class="name">property</span>: <span class="string">&quot;enabled&quot;</span>
 <span class="name">value</span>: <span class="number">true</span>

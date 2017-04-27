@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Panel
 <p>A panel that can be swiped in and out from an edge of the window by the user. For most applications, it is highly recommended to use the MainView instead which includes a toolbar at its bottom that can be swiped in or out. More...</p>
 <!-- @@@Panel -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -40,7 +40,7 @@ Title: Ubuntu.Components.Panel
 <p>A black panel that can be swiped in from the lower-right of the window can be created like this:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="type"><a href="index.html">Panel</a></span> {
@@ -51,7 +51,7 @@ import Ubuntu.Components 1.3
 }
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span> <span class="operator">/</span> <span class="number">2</span>
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">8</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">color</span>: <span class="name">theme</span>.<span class="name">palette</span>.<span class="name">normal</span>.<span class="name">overlay</span>
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
@@ -64,7 +64,7 @@ import Ubuntu.Components 1.3
 <p>A panel that looks like the standard (bottom-aligned) toolbar, but with custom contents, can be created like this:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="type"><a href="index.html">Panel</a></span> {
@@ -75,7 +75,7 @@ import Ubuntu.Components 1.3
 <span class="name">bottom</span>: <span class="name">parent</span>.<span class="name">bottom</span>
 }
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">8</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="comment">// two properties used by the toolbar delegate:</span>
 property <span class="type">bool</span> <span class="name">opened</span>: <span class="name">panel</span>.<span class="name">opened</span>
@@ -90,7 +90,7 @@ property <span class="type">bool</span> <span class="name">animating</span>: <sp
 <p>Any Items can be placed inside the Panel, but MouseAreas can block mouse events from reaching the panel and thus obstruct the swiping behavior for hiding the panel. As a result, the user cannot start swiping on the buttons in the examples above in order to hide the panel. To remedy this, clicked() signals are forwarded from the panel by calling the child's trigger() function. Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">theme</span>.<span class="name">palette</span>.<span class="name">normal</span>.<span class="name">background</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
@@ -102,10 +102,10 @@ import Ubuntu.Components 1.3
 <span class="name">bottom</span>: <span class="name">parent</span>.<span class="name">bottom</span>
 }
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">8</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">theme</span>.<span class="name">palette</span>.<span class="name">normal</span>.<span class="name">overlay</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">8</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">4</span>)
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
@@ -131,7 +131,7 @@ import Ubuntu.Components 1.3
 <li>Qt.AlignLeading left when layout mirrorring is disabled, right otherwise</li>
 <li>Qt.AlignTrailing right when layout mirroring is disabled, left otherwise</li>
 </ul>
-<p>The default value is <b>Qt.AlignBottom</b>, and it is not recommended to change the default value because the left, right and top edge are already used for system functions, while the bottom edge is reserved for app-specific functionality such as a default toolbar. The use of Qt.AlignLeading and Qt.AlignTrailing is preferred over Qt.AlignLeft and Qt.AlignRight in order to more easily support right-to-left user interfaces that use <a href="../sdk-14.10/QtQuick.LayoutMirroring.md">LayoutMirroring</a>.</p>
+<p>The default value is <b>Qt.AlignBottom</b>, and it is not recommended to change the default value because the left, right and top edge are already used for system functions, while the bottom edge is reserved for app-specific functionality such as a default toolbar. The use of Qt.AlignLeading and Qt.AlignTrailing is preferred over Qt.AlignLeft and Qt.AlignRight in order to more easily support right-to-left user interfaces that use <a href="QtQuick.LayoutMirroring.md">LayoutMirroring</a>.</p>
 <!-- @@@align -->
 <br/>
 <!-- $$$animate -->

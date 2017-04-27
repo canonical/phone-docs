@@ -8,7 +8,6 @@ Title: ScopeJS.Department
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>add_subdepartment</code></strong>( <code>sub </code> ) 
 <br>
 <p>Add sub-department to this department</p>

@@ -17,7 +17,6 @@ followed by a call to run().</p>
 <li>Methods</li>
 <li>Properties</li>
 </ul>
-<div>
 <strong class="name"><code>initialize</code></strong>( <code>options, runtime_config </code> ) 
 <br>
 <p>This member function is the entry point to setting up a scope's behavior

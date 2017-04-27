@@ -8,7 +8,6 @@ Title: ScopeJS.OnlineAccountClientServiceStatus
 <ul>
 <li>Properties</li>
 </ul>
-<div>
 <code>access_token</code> &lt;<strong>String</strong>&gt;<br>
 <p>&quot;AccessToken&quot; OAuth parameter.</p>
 <code>account_id</code> &lt;<strong>String</strong>&gt;<br>

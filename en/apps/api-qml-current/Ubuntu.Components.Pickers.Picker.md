@@ -78,7 +78,7 @@ var <span class="name">stack</span> = [];
 <!-- @@@circular -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate visualizing the model elements. Any kind of component can be used as delegate, however it is recommended to use <a href="Ubuntu.Components.Pickers.PickerDelegate.md">PickerDelegate</a>, which integrates selection functionality into the Picker.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate visualizing the model elements. Any kind of component can be used as delegate, however it is recommended to use <a href="Ubuntu.Components.Pickers.PickerDelegate.md">PickerDelegate</a>, which integrates selection functionality into the Picker.</p>
 <!-- @@@delegate -->
 <br/>
 <!-- $$$itemHeight -->

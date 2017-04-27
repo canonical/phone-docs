@@ -35,12 +35,12 @@ import Ubuntu.Components 1.3
 <span class="type"><a href="index.html">ScrollView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">30</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">140</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">gradient</span>: <span class="name">Gradient</span> {
-<span class="type"><a href="../sdk-14.10/QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">0.0</span>; <span class="name">color</span>: <span class="string">&quot;lightsteelblue&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">1.0</span>; <span class="name">color</span>: <span class="string">&quot;blue&quot;</span> }
+<span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">0.0</span>; <span class="name">color</span>: <span class="string">&quot;lightsteelblue&quot;</span> }
+<span class="type"><a href="QtQuick.GradientStop.md">GradientStop</a></span> { <span class="name">position</span>: <span class="number">1.0</span>; <span class="name">color</span>: <span class="string">&quot;blue&quot;</span> }
 }
 }
 }</pre>
@@ -48,11 +48,11 @@ import Ubuntu.Components 1.3
 <!-- @@@ScrollView -->
 <h2>Property Documentation</h2>
 <!-- $$$contentItem -->
-<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">contentItem</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The contentItem of the <a href="index.html">ScrollView</a>. This is set by the user. Note that the definition of contentItem is somewhat different to that of a Flickable, where the contentItem is implicitly created.</p>
+<table class="qmlname"><tr valign="top" id="contentItem-prop"><td class="tblQmlPropNode"><p><span class="qmldefault">[default] </span><span class="name">contentItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The contentItem of the <a href="index.html">ScrollView</a>. This is set by the user. Note that the definition of contentItem is somewhat different to that of a Flickable, where the contentItem is implicitly created.</p>
 <!-- @@@contentItem -->
 <br/>
 <!-- $$$flickableItem -->
-<table class="qmlname"><tr valign="top" id="flickableItem-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">flickableItem</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The flickableItem of the <a href="index.html">ScrollView</a>. If the <a href="#contentItem-prop">contentItem</a> provided to the <a href="index.html">ScrollView</a> is a Flickable, that will be the flickableItem. Otherwise <a href="index.html">ScrollView</a> will create a Flickable which will hold the items provided as children.</p>
+<table class="qmlname"><tr valign="top" id="flickableItem-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">flickableItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The flickableItem of the <a href="index.html">ScrollView</a>. If the <a href="#contentItem-prop">contentItem</a> provided to the <a href="index.html">ScrollView</a> is a Flickable, that will be the flickableItem. Otherwise <a href="index.html">ScrollView</a> will create a Flickable which will hold the items provided as children.</p>
 <!-- @@@flickableItem -->
 <br/>
 <!-- $$$horizontalScrollbar -->
@@ -78,6 +78,6 @@ import Ubuntu.Components 1.3
 <!-- @@@verticalScrollbar -->
 <br/>
 <!-- $$$viewport -->
-<table class="qmlname"><tr valign="top" id="viewport-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">viewport</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This property holds the viewport Item. The children of the <a href="index.html">ScrollView</a> element are reparented to this item to make sure the scrollbars are correctly positioned and the items are clipped at their boundaries.</p>
+<table class="qmlname"><tr valign="top" id="viewport-prop"><td class="tblQmlPropNode"><p><span class="qmlreadonly">[read-only] </span><span class="name">viewport</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This property holds the viewport Item. The children of the <a href="index.html">ScrollView</a> element are reparented to this item to make sure the scrollbars are correctly positioned and the items are clipped at their boundaries.</p>
 <!-- @@@viewport -->
 <br/>

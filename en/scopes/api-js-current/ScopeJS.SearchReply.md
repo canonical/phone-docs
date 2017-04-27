@@ -8,7 +8,6 @@ Title: ScopeJS.SearchReply
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>error</code></strong>( <code>  </code> ) 
 <br>
 <p>Informs the source of a query that the query was terminated due to an error</p>

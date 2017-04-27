@@ -23,7 +23,7 @@ Title: Ubuntu.Components.ProgressBar
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">ProgressBar</a></span> {
 <span class="name">id</span>: <span class="name">indeterminateBar</span>
 <span class="name">indeterminate</span>: <span class="number">true</span>

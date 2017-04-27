@@ -22,7 +22,6 @@ pictureContentType
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 String <strong class="name"><code>appId</code></strong>( <code>callback </code> ) 
 <br>
 </span><br>

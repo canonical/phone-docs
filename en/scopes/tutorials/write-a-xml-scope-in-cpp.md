@@ -12,7 +12,7 @@ using the Ubuntu SDK. For this example, very limited C++ knowledge is actually
 required and adapting it to another service exposing a XML API will be fairly
 simple.
 
-**Note**: This tutorial should work for Ubuntu 14.04 and later versions. If you are using 14.04, you will need [an emulator or a device](/apps/sdk/tutorials/running-apps-from-the-sdk/). If you want to use the desktop scopes layout tool, you will need at least Ubuntu 14.10.
+**Note**: This tutorial should work for Ubuntu 14.04 and later versions. If you are using 14.04, you will need [an emulator or a device](../../sdk/tutorials-running-apps-from-the-sdk/). If you want to use the desktop scopes layout tool, you will need at least Ubuntu 14.10.
 
 ## SDK setup
 
@@ -28,14 +28,14 @@ HTTP + XML API” template.
 
 ![](../../../media/25934cef-bece-44c0-ac9e-5158403a9bce-cms_page_media/148/scope-wizard-step3-xml1-700x371.png)
 
-If you need more help to get started with the SDK, have a look at the [SDK setup article](/apps/sdk/tutorials/creating-an-sdk-app-project/).
+If you need more help to get started with the SDK, have a look at the [SDK setup article](../../sdk/tutorials-creating-an-sdk-app-project/).
 
 **Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ## Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope on [your phone or on in anemulator](/apps/sdk/tutorials/running-apps-from-the-sdk/). Wait a few seconds
+sidebar of the SDK to test the scope on [your phone or on in anemulator](../../sdk/tutorials-running-apps-from-the-sdk/). Wait a few seconds
 for your project to be built and uploaded to the device, it should then open
 by itself.
 

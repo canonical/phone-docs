@@ -19,7 +19,6 @@ UI.pagestack.push('pageid');
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 Button <strong class="name"><code>button</code></strong>( <code>id </code> ) 
 <br>
 </span><br>

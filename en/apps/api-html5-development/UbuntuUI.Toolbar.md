@@ -31,7 +31,6 @@ UI.pagestack.push(&quot;main&quot;);
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>element</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

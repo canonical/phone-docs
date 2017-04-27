@@ -8,7 +8,6 @@ Title: ScopeJS.PreviewQuery
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>action_metadata</code></strong>( <code>  </code> ) 
 <br>
 <p>Get metadata for this preview request</p>

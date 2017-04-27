@@ -9,7 +9,7 @@ Title: U1db.Query
 <p>Query filters documents based on the query and index. More...</p>
 <!-- @@@Query -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="index.html"><a href="../../../scopes/cpp/sdk-14.10/U1db.Query.md">Query</a></td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="#">Query</a></td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

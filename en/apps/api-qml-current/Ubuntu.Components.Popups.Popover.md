@@ -42,15 +42,15 @@ Title: Ubuntu.Components.Popups.Popover
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Components.Popups 1.3
-<span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">theme</span>.<span class="name">palette</span>.<span class="name">normal</span>.<span class="name">background</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">popoverComponent</span>
 <span class="type"><a href="index.html">Popover</a></span> {
 <span class="name">id</span>: <span class="name">popover</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">id</span>: <span class="name">containerLayout</span>
 <span class="type">anchors</span> {
 <span class="name">left</span>: <span class="name">parent</span>.<span class="name">left</span>
@@ -100,7 +100,7 @@ import Ubuntu.Components.Popups 1.3
 <!-- @@@autoClose -->
 <br/>
 <!-- $$$caller -->
-<table class="qmlname"><tr valign="top" id="caller-prop"><td class="tblQmlPropNode"><p><span class="name">caller</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The Item such as a <a href="Ubuntu.Components.Button.md">Button</a> that the user interacted with to open the Dialog. This property will be used for the automatic positioning of the Dialog next to the caller, if possible.</p>
+<table class="qmlname"><tr valign="top" id="caller-prop"><td class="tblQmlPropNode"><p><span class="name">caller</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The Item such as a <a href="Ubuntu.Components.Button.md">Button</a> that the user interacted with to open the Dialog. This property will be used for the automatic positioning of the Dialog next to the caller, if possible.</p>
 <!-- @@@caller -->
 <br/>
 <!-- $$$callerMargin -->
@@ -124,15 +124,15 @@ import Ubuntu.Components.Popups 1.3
 <!-- @@@edgeMargins -->
 <br/>
 <!-- $$$foregroundStyle -->
-<table class="qmlname"><tr valign="top" id="foregroundStyle-prop"><td class="tblQmlPropNode"><p><span class="name">foregroundStyle</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>Exposes the style property of the <a href="Ubuntu.Components.StyledItem.md">StyledItem</a> contained in the Popover. Refer to <a href="Ubuntu.Components.StyledItem.md">StyledItem</a> how to use it.</p>
+<table class="qmlname"><tr valign="top" id="foregroundStyle-prop"><td class="tblQmlPropNode"><p><span class="name">foregroundStyle</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>Exposes the style property of the <a href="Ubuntu.Components.StyledItem.md">StyledItem</a> contained in the Popover. Refer to <a href="Ubuntu.Components.StyledItem.md">StyledItem</a> how to use it.</p>
 <!-- @@@foregroundStyle -->
 <br/>
 <!-- $$$pointerTarget -->
-<table class="qmlname"><tr valign="top" id="pointerTarget-prop"><td class="tblQmlPropNode"><p><span class="name">pointerTarget</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item to which the pointer should be anchored to. This can be same as the caller or any child of the caller. By default the property is set to caller.</p>
+<table class="qmlname"><tr valign="top" id="pointerTarget-prop"><td class="tblQmlPropNode"><p><span class="name">pointerTarget</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the item to which the pointer should be anchored to. This can be same as the caller or any child of the caller. By default the property is set to caller.</p>
 <!-- @@@pointerTarget -->
 <br/>
 <!-- $$$style -->
-<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The style of the foreground of the Popover. This property takes precedence over <a href="#styleName-prop">styleName</a></p>
+<table class="qmlname"><tr valign="top" id="style-prop"><td class="tblQmlPropNode"><p><span class="name">style</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The style of the foreground of the Popover. This property takes precedence over <a href="#styleName-prop">styleName</a></p>
 <p>This QML property was introduced in  Ubuntu.Components 1.3.</p>
 <p><b>See also </b><a href="Ubuntu.Components.StyledItem.md#style-prop">StyledItem::style</a>.</p>
 <!-- @@@style -->

@@ -41,7 +41,6 @@ var header = UI.header(&quot;headerID&quot;);</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 DOMElement <strong class="name"><code>element</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

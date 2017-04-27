@@ -86,14 +86,14 @@ Title: Ubuntu.Components.UbuntuShape
 <!-- $$$source -->
 <table class="qmlname"><tr valign="top" id="source-prop"><td class="tblQmlPropNode"><p><span class="name">source</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-variant.html">variant</a></span></p></td></tr></table><p>This property sets the source provider of a texture rendered in the <a href="index.html">UbuntuShape</a>. Supported types are <code>Image</code>, <code>AnimatedImage</code> (to render a GIF image for instance) and <code>ShaderEffectSource</code> (to embed a UI previously rendered with QML). It is blended over the background color. The default value is <code>null</code>.</p>
 <p>It can be set either with an inlined <code>Image</code>:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">UbuntuShape</a></span> {
 <span class="name">source</span>: <span class="name">Image</span> { <span class="name">source</span>: <span class="string">&quot;ubuntu.png&quot;</span> }
 }
 }</pre>
 <p>or with an <code>Image</code> <code>id</code>:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
-<span class="type"><a href="../sdk-14.10/QtQuick.Image.md">Image</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">img</span>
 <span class="name">visible</span>: <span class="number">false</span>
 <span class="name">source</span>: <span class="string">&quot;ubuntu.png&quot;</span>

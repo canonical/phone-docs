@@ -35,7 +35,7 @@ Title: Ubuntu.Components.Pickers.DatePicker
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Pickers 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Selected date: W&quot;</span> <span class="operator">+</span> <span class="name">datePicker</span>.<span class="name">week</span> <span class="operator">+</span> <span class="string">&quot; - &quot;</span> <span class="operator">+</span>
 <span class="name">Qt</span>.<span class="name">formatDate</span>(<span class="name">datePicker</span>.<span class="name">date</span>, <span class="string">&quot;dddd, dd-MMMM-yyyy&quot;</span>)
@@ -48,7 +48,7 @@ import Ubuntu.Components.Pickers 1.0
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Pickers 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Selected month: &quot;</span> <span class="operator">+</span> <span class="name">Qt</span>.<span class="name">formatDate</span>(<span class="name">datePicker</span>.<span class="name">date</span>, <span class="string">&quot;MMMM-yyyy&quot;</span>)
 }
@@ -61,7 +61,7 @@ import Ubuntu.Components.Pickers 1.0
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Pickers 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Selected time: &quot;</span> <span class="operator">+</span> <span class="name">Qt</span>.<span class="name">formatTime</span>(<span class="name">datePicker</span>.<span class="name">date</span>, <span class="string">&quot;hh:mm:ss&quot;</span>)
 }
@@ -79,7 +79,7 @@ import Ubuntu.Components.Pickers 1.0
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Pickers 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="Ubuntu.Components.Label.md">Label</a></span> {
 <span class="name">text</span>: <span class="string">&quot;Selected date: &quot;</span> <span class="operator">+</span> <span class="name">Qt</span>.<span class="name">formatDate</span>(<span class="name">datePicker</span>.<span class="name">date</span>, <span class="string">&quot;dddd, dd-MMMM-yyyy&quot;</span>)
 }

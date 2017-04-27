@@ -56,7 +56,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts2
 <pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -90,7 +90,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts2
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/43f19fa2-2f5f-42c7-8e67-6e5df534e941-../ubuntu-layouts2/images/layout1.png" alt="" /></p><pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Layouts 1.0
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">root</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">30</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">30</span>)
@@ -102,7 +102,7 @@ import Ubuntu.Layouts 1.0
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>

@@ -9,7 +9,7 @@ Title: Ubuntu.Components.ListItems.ThinDivider
 <p>Narrow line used as a divider between ListItems. More...</p>
 <!-- @@@ThinDivider -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.ListItems 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.ListItems 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Rectangle.md">Rectangle</a></p>
 </td></tr></table><ul>
 </ul>
 <!-- $$$ThinDivider-description -->
@@ -18,7 +18,7 @@ Title: Ubuntu.Components.ListItems.ThinDivider
 <p><b>Note: </b><b>The component is deprecated. Use <a href="Ubuntu.Components.ListItem.md">ListItem</a> component's divider property instead.</b></p><p>ListItems will usually include this line at the bottom of the item to give a visually pleasing list of items. But a divider line can also be inserted manually using this component.</p>
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">width</span>: <span class="number">250</span>
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.ThinDivider {} <span class="comment">//can be used as header for list</span>
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.Standard {

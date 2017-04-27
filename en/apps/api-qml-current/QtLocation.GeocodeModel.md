@@ -13,33 +13,33 @@ Title: QtLocation.GeocodeModel
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#bounds-prop">bounds</a></b></b> : geoshape</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#count-prop">count</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#error-prop">error</a></b></b> : enumeration</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#errorString-prop">errorString</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#limit-prop">limit</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#offset-prop">offset</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#plugin-prop">plugin</a></b></b> : Plugin</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#query-prop">query</a></b></b> : QVariant</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#status-prop">status</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#autoUpdate-prop">autoUpdate</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#bounds-prop">bounds</a></b></b> : geoshape</li>
+<li class="fn"><b><b><a href="#count-prop">count</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#error-prop">error</a></b></b> : enumeration</li>
+<li class="fn"><b><b><a href="#errorString-prop">errorString</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#limit-prop">limit</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#offset-prop">offset</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#plugin-prop">plugin</a></b></b> : Plugin</li>
+<li class="fn"><b><b><a href="#query-prop">query</a></b></b> : QVariant</li>
+<li class="fn"><b><b><a href="#status-prop">status</a></b></b> : enumeration</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#cancel-method">cancel</a></b></b>()</li>
-<li class="fn">Location <b><b><a href="..//QtLocation.GeocodeModel.md#get-method">get</a></b></b>(int)</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#reset-method">reset</a></b></b>()</li>
-<li class="fn"><b><b><a href="..//QtLocation.GeocodeModel.md#update-method">update</a></b></b>()</li>
+<li class="fn"><b><b><a href="#cancel-method">cancel</a></b></b>()</li>
+<li class="fn">Location <b><b><a href="#get-method">get</a></b></b>(int)</li>
+<li class="fn"><b><b><a href="#reset-method">reset</a></b></b>()</li>
+<li class="fn"><b><b><a href="#update-method">update</a></b></b>()</li>
 </ul>
 <!-- $$$GeocodeModel-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> type is used as part of a model/view grouping to match addresses or search strings with geographic locations. How the geographic locations generated are used or displayed is decided by any Views attached to the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> (for example a <a href="..//QtLocation.MapItemView.md">MapItemView</a> or ListView).</p>
-<p>Like <a href="..//QtLocation.Map.md">Map</a> and <a href="..//QtLocation.RouteModel.md">RouteModel</a>, all the data for a <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> to work comes from a services plugin. This is contained in the <a href="..//QtLocation.location-places-qml.md#plugin">plugin</a> property, and this must be set before the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> can do any useful work.</p>
-<p>Once the plugin is set, the <a href="..//QtLocation.GeocodeModel.md#query-prop">query</a> property can be used to specify the address or search string to match. If <a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a> is enabled, the Model will update its output automatically. Otherwise, the <a href="..//QtLocation.GeocodeModel.md#update-method">update</a> method may be used. By default, <a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a> is disabled.</p>
-<p>The data stored and returned in the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> consists of Location objects, as a list with the role name &quot;locationData&quot;. See the documentation for Location for further details on its structure and contents.</p>
+<p>The <a href="#">GeocodeModel</a> (for example a <a href="QtLocation.MapItemView.md">MapItemView</a> or ListView).</p>
+<p>Like <a href="#">GeocodeModel</a> can do any useful work.</p>
+<p>Once the plugin is set, the <a href="#autoUpdate-prop">autoUpdate</a> is disabled.</p>
+<p>The data stored and returned in the <a href="#">GeocodeModel</a> consists of Location objects, as a list with the role name &quot;locationData&quot;. See the documentation for Location for further details on its structure and contents.</p>
 <h3 >Example Usage</h3>
-<p>The following snippet is two-part, showing firstly the declaration of objects, and secondly a short piece of procedural code using it. We set the geocodeModel's <a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a> property to false, and call <a href="..//QtLocation.GeocodeModel.md#update-method">update</a> once the query is set up. In this case, as we use a string value in <a href="..//QtLocation.GeocodeModel.md#query-prop">query</a>, only one update would occur, even with <a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a> enabled. However, if we provided an Address object we may inadvertently trigger multiple requests whilst setting its properties.</p>
+<p>The following snippet is two-part, showing firstly the declaration of objects, and secondly a short piece of procedural code using it. We set the geocodeModel's <a href="#autoUpdate-prop">autoUpdate</a> enabled. However, if we provided an Address object we may inadvertently trigger multiple requests whilst setting its properties.</p>
 <pre class="cpp">Plugin {
 id: aPlugin
 }
@@ -65,19 +65,19 @@ geocodeModel<span class="operator">.</span>update()
 <!-- @@@bounds -->
 <br/>
 <!-- $$$count -->
-<table class="qmlname"><tr valign="top" id="count-prop"><td class="tblQmlPropNode"><p><span class="name">count</span> : <span class="type">int</span></p></td></tr></table><p>This property holds how many locations the model currently has. Amongst other uses, you can use this value when accessing locations via the <a href="..//QtLocation.GeocodeModel.md#get-method">GeocodeModel::get</a> -method.</p>
+<table class="qmlname"><tr valign="top" id="count-prop"><td class="tblQmlPropNode"><p><span class="name">count</span> : <span class="type">int</span></p></td></tr></table><p>This property holds how many locations the model currently has. Amongst other uses, you can use this value when accessing locations via the <a href="#get-method">GeocodeModel::get</a> -method.</p>
 <!-- @@@count -->
 <br/>
 <!-- $$$error -->
 <table class="qmlname"><tr valign="top" id="error-prop"><td class="tblQmlPropNode"><p><span class="name">error</span> : <span class="type">enumeration</span></p></td></tr></table><p>This read-only property holds the latest error value of the geocoding request.</p>
 <ul>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.NoError - No error has occurred</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.EngineNotSetError - The plugin/service provider used does not support (reverse) geocoding</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.CommunicationError - An error occurred while communicating with the service provider</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.ParseError - The response from the service provider was in an unrecognizable format</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.UnsupportedOptionError - The requested operation or one of the options for the operation are not supported by the service provider.</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.CombinationError - An error occurred while results where being combined from multiple sources</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.UnknownError - An error occurred which does not fit into any of the other categories</li>
+<li><a href="#">GeocodeModel</a>.NoError - No error has occurred</li>
+<li><a href="#">GeocodeModel</a>.EngineNotSetError - The plugin/service provider used does not support (reverse) geocoding</li>
+<li><a href="#">GeocodeModel</a>.CommunicationError - An error occurred while communicating with the service provider</li>
+<li><a href="#">GeocodeModel</a>.ParseError - The response from the service provider was in an unrecognizable format</li>
+<li><a href="#">GeocodeModel</a>.UnsupportedOptionError - The requested operation or one of the options for the operation are not supported by the service provider.</li>
+<li><a href="#">GeocodeModel</a>.CombinationError - An error occurred while results where being combined from multiple sources</li>
+<li><a href="#">GeocodeModel</a>.UnknownError - An error occurred which does not fit into any of the other categories</li>
 </ul>
 <!-- @@@error -->
 <br/>
@@ -87,18 +87,18 @@ geocodeModel<span class="operator">.</span>update()
 <!-- @@@errorString -->
 <br/>
 <!-- $$$limit -->
-<table class="qmlname"><tr valign="top" id="limit-prop"><td class="tblQmlPropNode"><p><span class="name">limit</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the maximum number of results. The limit and <a href="..//QtLocation.GeocodeModel.md#offset-prop">offset</a> values are only applicable with free string geocoding (that is they are not considered when using addresses or coordinates in the search query).</p>
-<p>If limit is -1 the entire result set will be returned, otherwise at most limit results will be returned. The limit and <a href="..//QtLocation.GeocodeModel.md#offset-prop">offset</a> results can be used together to implement paging.</p>
+<table class="qmlname"><tr valign="top" id="limit-prop"><td class="tblQmlPropNode"><p><span class="name">limit</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the maximum number of results. The limit and <a href="#offset-prop">offset</a> values are only applicable with free string geocoding (that is they are not considered when using addresses or coordinates in the search query).</p>
+<p>If limit is -1 the entire result set will be returned, otherwise at most limit results will be returned. The limit and <a href="#offset-prop">offset</a> results can be used together to implement paging.</p>
 <!-- @@@limit -->
 <br/>
 <!-- $$$offset -->
-<table class="qmlname"><tr valign="top" id="offset-prop"><td class="tblQmlPropNode"><p><span class="name">offset</span> : <span class="type">int</span></p></td></tr></table><p>This property tells not to return the first 'offset' number of the results. The <a href="..//QtLocation.GeocodeModel.md#limit-prop">limit</a> and offset values are only applicable with free string geocoding (that is they are not considered when using addresses or coordinates in the search query).</p>
-<p>The <a href="..//QtLocation.GeocodeModel.md#limit-prop">limit</a> and offset results can be used together to implement paging.</p>
+<table class="qmlname"><tr valign="top" id="offset-prop"><td class="tblQmlPropNode"><p><span class="name">offset</span> : <span class="type">int</span></p></td></tr></table><p>This property tells not to return the first 'offset' number of the results. The <a href="#limit-prop">limit</a> and offset values are only applicable with free string geocoding (that is they are not considered when using addresses or coordinates in the search query).</p>
+<p>The <a href="#limit-prop">limit</a> and offset results can be used together to implement paging.</p>
 <!-- @@@offset -->
 <br/>
 <!-- $$$plugin -->
-<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="..//QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the plugin that provides the actual geocoding service. Note that all plugins do not necessarily provide geocoding (could for example provide only routing or maps).</p>
-<p><b>See also </b><a href="..//QtLocation.location-places-qml.md#plugin">Plugin</a>.</p>
+<table class="qmlname"><tr valign="top" id="plugin-prop"><td class="tblQmlPropNode"><p><span class="name">plugin</span> : <span class="type"><a href="QtLocation.Plugin.md">Plugin</a></span></p></td></tr></table><p>This property holds the plugin that provides the actual geocoding service. Note that all plugins do not necessarily provide geocoding (could for example provide only routing or maps).</p>
+<p><b>See also </b><a href="QtLocation.location-places-qml.md#plugin">Plugin</a>.</p>
 <!-- @@@plugin -->
 <br/>
 <!-- $$$query -->
@@ -113,28 +113,28 @@ geocodeModel<span class="operator">.</span>update()
 <!-- $$$status -->
 <table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">enumeration</span></p></td></tr></table><p>This read-only property holds the current status of the model.</p>
 <ul>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Null - No geocode requests have been issued or <a href="..//QtLocation.GeocodeModel.md#reset-method">reset</a> has been called.</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Ready - Geocode request(s) have finished successfully.</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Loading - Geocode request has been issued but not yet finished</li>
-<li><a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Error - Geocoding error has occurred, details are in <a href="..//QtLocation.GeocodeModel.md#error-prop">error</a> and <a href="..//QtLocation.GeocodeModel.md#errorString-prop">errorString</a></li>
+<li><a href="#reset-method">reset</a> has been called.</li>
+<li><a href="#">GeocodeModel</a>.Ready - Geocode request(s) have finished successfully.</li>
+<li><a href="#">GeocodeModel</a>.Loading - Geocode request has been issued but not yet finished</li>
+<li><a href="#errorString-prop">errorString</a></li>
 </ul>
 <!-- @@@status -->
 <br/>
 <h2>Method Documentation</h2>
 <!-- $$$cancel -->
-<table class="qmlname"><tr valign="top" id="cancel-method"><td class="tblQmlFuncNode"><p><span class="name">cancel</span>()</p></td></tr></table><p>Cancels any outstanding requests and clears errors. Model status will be set to either <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Null or <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Ready.</p>
+<table class="qmlname"><tr valign="top" id="cancel-method"><td class="tblQmlFuncNode"><p><span class="name">cancel</span>()</p></td></tr></table><p>Cancels any outstanding requests and clears errors. Model status will be set to either <a href="#">GeocodeModel</a>.Ready.</p>
 <!-- @@@cancel -->
 <br/>
 <!-- $$$get -->
-<table class="qmlname"><tr valign="top" id="get-method"><td class="tblQmlFuncNode"><p><span class="type">Location</span> <span class="name">get</span>(<span class="type">int</span>)</p></td></tr></table><p>Returns the Location at given index. Use <a href="..//QtLocation.GeocodeModel.md#count-prop">count</a> property to check the amount of locations available. The locations are indexed from zero, so the accessible range is 0..&#x2e;(count - 1).</p>
+<table class="qmlname"><tr valign="top" id="get-method"><td class="tblQmlFuncNode"><p><span class="type">Location</span> <span class="name">get</span>(<span class="type">int</span>)</p></td></tr></table><p>Returns the Location at given index. Use <a href="#count-prop">count</a> property to check the amount of locations available. The locations are indexed from zero, so the accessible range is 0..&#x2e;(count - 1).</p>
 <p>If you access out of bounds, a zero (null object) is returned and a warning is issued.</p>
 <!-- @@@get -->
 <br/>
 <!-- $$$reset -->
-<table class="qmlname"><tr valign="top" id="reset-method"><td class="tblQmlFuncNode"><p><span class="name">reset</span>()</p></td></tr></table><p>Resets the model. All location data is cleared, any outstanding requests are aborted and possible errors are cleared. Model status will be set to <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a>.Null</p>
+<table class="qmlname"><tr valign="top" id="reset-method"><td class="tblQmlFuncNode"><p><span class="name">reset</span>()</p></td></tr></table><p>Resets the model. All location data is cleared, any outstanding requests are aborted and possible errors are cleared. Model status will be set to <a href="#">GeocodeModel</a>.Null</p>
 <!-- @@@reset -->
 <br/>
 <!-- $$$update -->
-<table class="qmlname"><tr valign="top" id="update-method"><td class="tblQmlFuncNode"><p><span class="name">update</span>()</p></td></tr></table><p>Instructs the <a href="..//QtLocation.GeocodeModel.md">GeocodeModel</a> to update its data. This is most useful when <a href="..//QtLocation.GeocodeModel.md#autoUpdate-prop">autoUpdate</a> is disabled, to force a refresh when the query has been changed.</p>
+<table class="qmlname"><tr valign="top" id="update-method"><td class="tblQmlFuncNode"><p><span class="name">update</span>()</p></td></tr></table><p>Instructs the <a href="#autoUpdate-prop">autoUpdate</a> is disabled, to force a refresh when the query has been changed.</p>
 <!-- @@@update -->
 <br/>

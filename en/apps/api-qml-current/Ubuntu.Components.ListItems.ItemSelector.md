@@ -34,7 +34,7 @@ Title: Ubuntu.Components.ListItems.ItemSelector
 </p>
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components.ListItems 1.3 as ListItem
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>
 <span class="name">anchors</span>.right: <span class="name">parent</span>.<span class="name">right</span>
 <span class="name">spacing</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">3</span>)
@@ -69,16 +69,16 @@ Title: Ubuntu.Components.ListItems.ItemSelector
 <span class="name">colourImage</span>: <span class="number">true</span>
 <span class="name">delegate</span>: <span class="name">selectorDelegate</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">selectorDelegate</span>
 <span class="type">OptionSelectorDelegate</span> { <span class="name">text</span>: <span class="name">name</span>; <span class="name">subText</span>: <span class="name">description</span>; <span class="name">iconSource</span>: <span class="name">image</span> }
 }
-<span class="type"><a href="../sdk-14.10/QtQml.ListModel.md">ListModel</a></span> {
+<span class="type"><a href="QtQml.ListModel.md">ListModel</a></span> {
 <span class="name">id</span>: <span class="name">customModel</span>
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 1&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 1&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 2&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 2&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 3&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 3&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 4&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 4&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 1&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 1&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 2&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 2&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 3&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 3&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> { <span class="name">name</span>: <span class="string">&quot;Name 4&quot;</span>; <span class="name">description</span>: <span class="string">&quot;Description 4&quot;</span>; <span class="name">image</span>: <span class="string">&quot;images.png&quot;</span> }
 }
 <span class="type"><a href="Ubuntu.Components.ListItem.md">ListItem</a></span>.ItemSelector {
 <span class="name">text</span>: <span class="name">i18n</span>.<span class="name">tr</span>(<span class="string">&quot;Label&quot;</span>)
@@ -121,7 +121,7 @@ Title: Ubuntu.Components.ListItems.ItemSelector
 <!-- @@@currentlyExpanded -->
 <br/>
 <!-- $$$delegate -->
-<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a> delegate.</p>
+<table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p><a href="QtQuick.ListView.md">ListView</a> delegate.</p>
 <!-- @@@delegate -->
 <br/>
 <!-- $$$expanded -->

@@ -9,18 +9,18 @@ Title: Ubuntu.Components.TabBar
 <p>Tab bar that will be shown in the header when Tabs is active. This component does not need to be instantiated by the developer, it is automatically created by the Tabs. More...</p>
 <!-- @@@TabBar -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="..//Ubuntu.Components.StyledItem.md">StyledItem</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.StyledItem.md">StyledItem</a></p>
 </td></tr></table><ul>
 <li>Obsolete members</li>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#alwaysSelectionMode-prop">alwaysSelectionMode</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#animate-prop">animate</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#model-prop">model</a></b></b> : var</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#pressed-prop">pressed</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#selectedIndex-prop">selectedIndex</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//Ubuntu.Components.TabBar.md#selectionMode-prop">selectionMode</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#alwaysSelectionMode-prop">alwaysSelectionMode</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#animate-prop">animate</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#model-prop">model</a></b></b> : var</li>
+<li class="fn"><b><b><a href="#pressed-prop">pressed</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#selectedIndex-prop">selectedIndex</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#selectionMode-prop">selectionMode</a></b></b> : bool</li>
 </ul>
 <!-- $$$TabBar-description -->
 <h2 id="details">Detailed Description</h2>
@@ -36,7 +36,7 @@ Title: Ubuntu.Components.TabBar
 <!-- @@@animate -->
 <br/>
 <!-- $$$model -->
-<table class="qmlname"><tr valign="top" id="model-prop"><td class="tblQmlPropNode"><p><span class="name">model</span> : <span class="type"><a href="http://doc.qt.io/qt-5/qml-var.html">var</a></span></p></td></tr></table><p>The model containing the tabs to be controlled by the <a href="..//Ubuntu.Components.TabBar.md">TabBar</a>. The tabs are visualized by the style, displaying controlling elements based on the data specified by the roles. The default style mandates the existence of either the <b>title</b> or <b>tab</b> role, but different styles may require to have other roles (e.g&#x2e; image, color). The order the role existence is checked is also determined by the style component, Default style checks the existence of the <b>tab</b> role first, and if not defined will use the <b>title</b> role.</p>
+<table class="qmlname"><tr valign="top" id="model-prop"><td class="tblQmlPropNode"><p><span class="name">model</span> : <span class="type"><a href="#">TabBar</a>. The tabs are visualized by the style, displaying controlling elements based on the data specified by the roles. The default style mandates the existence of either the <b>title</b> or <b>tab</b> role, but different styles may require to have other roles (e.g&#x2e; image, color). The order the role existence is checked is also determined by the style component, Default style checks the existence of the <b>tab</b> role first, and if not defined will use the <b>title</b> role.</p>
 <!-- @@@model -->
 <br/>
 <!-- $$$pressed -->

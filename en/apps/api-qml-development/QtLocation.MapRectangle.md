@@ -13,28 +13,28 @@ Title: QtLocation.MapRectangle
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#border-prop">border</a></b></b><ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#border.width-prop">border.width</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#border.color-prop">border.color</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#border-prop">border</a></b></b><ul>
+<li class="fn"><b><b><a href="#border.width-prop">border.width</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#border.color-prop">border.color</a></b></b> : color</li>
 </ul>
 </li>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#bottomRight-prop">bottomRight</a></b></b> : coordinate</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#color-prop">color</a></b></b> : color</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#opacity-prop">opacity</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapRectangle.md#topLeft-prop">topLeft</a></b></b> : coordinate</li>
+<li class="fn"><b><b><a href="#bottomRight-prop">bottomRight</a></b></b> : coordinate</li>
+<li class="fn"><b><b><a href="#color-prop">color</a></b></b> : color</li>
+<li class="fn"><b><b><a href="#opacity-prop">opacity</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#topLeft-prop">topLeft</a></b></b> : coordinate</li>
 </ul>
 <!-- $$$MapRectangle-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="..//QtLocation.MapRectangle.md">MapRectangle</a> type displays a rectangle on a Map. Rectangles are a special case of Polygon with exactly 4 vertices and 4 &quot;straight&quot; edges. In this case, &quot;straight&quot; means that the top-left point has the same latitude as the top-right point (the top edge), and the bottom-left point has the same latitude as the bottom-right point (the bottom edge). Similarly, the points on the left side have the same longitude, and the points on the right side have the same longitude.</p>
-<p>To specify the rectangle, it requires a <a href="..//QtLocation.MapRectangle.md#topLeft-prop">topLeft</a> and <a href="..//QtLocation.MapRectangle.md#bottomRight-prop">bottomRight</a> point, both given by a coordinate.</p>
-<p>By default, the rectangle is displayed with transparent fill and a 1-pixel thick black border. This can be changed using the <a href="..//QtLocation.MapRectangle.md#color-prop">color</a>, <a href="..//QtLocation.MapRectangle.md#border.color-prop">border.color</a> and <a href="..//QtLocation.MapRectangle.md#border.width-prop">border.width</a> properties.</p>
-<p><b>Note: </b>Similar to the <a href="..//QtLocation.MapPolygon.md">MapPolygon</a> type, MapRectangles are geographic items, thus dragging a <a href="..//QtLocation.MapRectangle.md">MapRectangle</a> causes its vertices to be recalculated in the geographic coordinate space. Apparent stretching of the item occurs when dragged to the a different latitude, however, its edges remain straight.</p>
+<p>The <a href="#">MapRectangle</a> type displays a rectangle on a Map. Rectangles are a special case of Polygon with exactly 4 vertices and 4 &quot;straight&quot; edges. In this case, &quot;straight&quot; means that the top-left point has the same latitude as the top-right point (the top edge), and the bottom-left point has the same latitude as the bottom-right point (the bottom edge). Similarly, the points on the left side have the same longitude, and the points on the right side have the same longitude.</p>
+<p>To specify the rectangle, it requires a <a href="#bottomRight-prop">bottomRight</a> point, both given by a coordinate.</p>
+<p>By default, the rectangle is displayed with transparent fill and a 1-pixel thick black border. This can be changed using the <a href="#border.width-prop">border.width</a> properties.</p>
+<p><b>Note: </b>Similar to the <a href="#">MapRectangle</a> causes its vertices to be recalculated in the geographic coordinate space. Apparent stretching of the item occurs when dragged to the a different latitude, however, its edges remain straight.</p>
 <h3 >Performance</h3>
-<p>MapRectangles have a rendering cost identical to a <a href="..//QtLocation.MapPolygon.md">MapPolygon</a> with 4 vertices.</p>
-<p>Like the other map objects, <a href="..//QtLocation.MapRectangle.md">MapRectangle</a> is normally drawn without a smooth appearance. Setting the <a href="..//QtLocation.MapRectangle.md#opacity-prop">opacity</a> property will force the object to be blended, which decreases performance considerably depending on the hardware in use.</p>
+<p>MapRectangles have a rendering cost identical to a <a href="QtLocation.MapPolygon.md">MapPolygon</a> with 4 vertices.</p>
+<p>Like the other map objects, <a href="#opacity-prop">opacity</a> property will force the object to be blended, which decreases performance considerably depending on the hardware in use.</p>
 <h3 >Example Usage</h3>
-<p>The following snippet shows a map containing a <a href="..//QtLocation.MapRectangle.md">MapRectangle</a>, spanning from (-27, 153) to (-28, 153.5), near Brisbane, Australia. The rectangle is filled in green, with a 2 pixel black border.</p>
+<p>The following snippet shows a map containing a <a href="#">MapRectangle</a>, spanning from (-27, 153) to (-28, 153.5), near Brisbane, Australia. The rectangle is filled in green, with a 2 pixel black border.</p>
 <pre class="cpp">Map {
 MapRectangle {
 color: <span class="char">'green'</span>
@@ -57,7 +57,7 @@ longitude: <span class="number">153.5</span>
 <!-- @@@border -->
 <br/>
 <!-- $$$bottomRight -->
-<table class="qmlname"><tr valign="top" id="bottomRight-prop"><td class="tblQmlPropNode"><p><span class="name">bottomRight</span> : <span class="type">coordinate</span></p></td></tr></table><p>This property holds the bottom-right coordinate of the <a href="..//QtLocation.MapRectangle.md">MapRectangle</a> which can be used to retrieve its longitude, latitude and altitude.</p>
+<table class="qmlname"><tr valign="top" id="bottomRight-prop"><td class="tblQmlPropNode"><p><span class="name">bottomRight</span> : <span class="type">coordinate</span></p></td></tr></table><p>This property holds the bottom-right coordinate of the <a href="#">MapRectangle</a> which can be used to retrieve its longitude, latitude and altitude.</p>
 <!-- @@@bottomRight -->
 <br/>
 <!-- $$$color -->
@@ -70,6 +70,6 @@ longitude: <span class="number">153.5</span>
 <!-- @@@opacity -->
 <br/>
 <!-- $$$topLeft -->
-<table class="qmlname"><tr valign="top" id="topLeft-prop"><td class="tblQmlPropNode"><p><span class="name">topLeft</span> : <span class="type">coordinate</span></p></td></tr></table><p>This property holds the top-left coordinate of the <a href="..//QtLocation.MapRectangle.md">MapRectangle</a> which can be used to retrieve its longitude, latitude and altitude.</p>
+<table class="qmlname"><tr valign="top" id="topLeft-prop"><td class="tblQmlPropNode"><p><span class="name">topLeft</span> : <span class="type">coordinate</span></p></td></tr></table><p>This property holds the top-left coordinate of the <a href="#">MapRectangle</a> which can be used to retrieve its longitude, latitude and altitude.</p>
 <!-- @@@topLeft -->
 <br/>

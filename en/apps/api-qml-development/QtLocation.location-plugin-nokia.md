@@ -7,7 +7,7 @@ Title: QtLocation.location-plugin-nokia
 <span class="subtitle"></span>
 <!-- $$$location-plugin-nokia.html-description -->
 <h2 id="overview">Overview</h2>
-<p>Included with Qt Location is a geo services plugin which accesses the relevant Nokia services provided by Nokia. The use of these services is governed by the terms and conditions available at <a href="..//QtLocation.location-plugin-nokia-terms.md">Qt Location Nokia Plugin - Nokia Services Terms and Conditions</a>.</p>
+<p>Included with Qt Location is a geo services plugin which accesses the relevant Nokia services provided by Nokia. The use of these services is governed by the terms and conditions available at <a href="QtLocation.location-plugin-nokia-terms.md">Qt Location Nokia Plugin - Nokia Services Terms and Conditions</a>.</p>
 <p>Note that accepting the terms and conditions only applies those terms and conditions to the use of the Nokia geo services plugin and does not limit the use of the other geo services plugins that may be included with Qt.</p>
 <p>The Nokia geo services plugin can be loaded by using the plugin key &quot;nokia&quot;.</p>
 <p>The online plugin uses the tiled map classes, which caches tile data in heap memory and texture memory.</p>

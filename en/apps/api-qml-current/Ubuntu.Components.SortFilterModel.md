@@ -22,7 +22,7 @@ Title: Ubuntu.Components.SortFilterModel
 <!-- $$$SortFilterModel-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="index.html">SortFilterModel</a> takes an existing model such as a <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> or any <a href="../sdk-14.10/QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a> implementation. The original rows and role names show up in the <a href="index.html">SortFilterModel</a> with two basic differences. For one if <a href="#sort.property-prop">sort.property</a> is set all rows will be sorted. Further more if <a href="#filter.property-prop">filter.property</a> is set only rows matching the filter will be in the model.</p>
+<p>The <a href="index.html">SortFilterModel</a> takes an existing model such as a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> or any <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a> implementation. The original rows and role names show up in the <a href="index.html">SortFilterModel</a> with two basic differences. For one if <a href="#sort.property-prop">sort.property</a> is set all rows will be sorted. Further more if <a href="#filter.property-prop">filter.property</a> is set only rows matching the filter will be in the model.</p>
 <p>Example usage:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
@@ -30,17 +30,17 @@ import Ubuntu.Components.ListItems 1.1
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">80</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
-<span class="type"><a href="../sdk-14.10/QtQml.ListModel.md">ListModel</a></span> {
+<span class="type"><a href="QtQml.ListModel.md">ListModel</a></span> {
 <span class="name">id</span>: <span class="name">movies</span>
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> {
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Esign&quot;</span>
 <span class="name">producer</span>: <span class="string">&quot;Chris Larkee&quot;</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> {
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Elephants Dream&quot;</span>
 <span class="name">producer</span>: <span class="string">&quot;Blender&quot;</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQml.ListElement.md">ListElement</a></span> {
+<span class="type"><a href="QtQml.ListElement.md">ListElement</a></span> {
 <span class="name">title</span>: <span class="string">&quot;Big Buck Bunny&quot;</span>
 <span class="name">producer</span>: <span class="string">&quot;Blender&quot;</span>
 }
@@ -55,7 +55,7 @@ import Ubuntu.Components.ListItems 1.1
 <span class="name">filter</span>.property: <span class="string">&quot;producer&quot;</span>
 <span class="name">filter</span>.pattern: /blender/
 }
-<span class="type"><a href="../sdk-14.10/QtQuick.ListView.md">ListView</a></span> {
+<span class="type"><a href="QtQuick.ListView.md">ListView</a></span> {
 <span class="name">model</span>: <span class="name">sortedMovies</span>
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">delegate</span>: <span class="name">Subtitled</span> {

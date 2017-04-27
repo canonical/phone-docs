@@ -8,7 +8,6 @@ Title: ScopeJS.CategoryRenderer
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>data</code></strong>( <code>  </code> ) 
 <br>
 <p>Returns complete renderer template definition in JSON format.</p>

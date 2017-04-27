@@ -25,7 +25,6 @@ var dialog = UI.dialog(&quot;dialogID&quot;);
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 DOMElement <strong class="name"><code>element</code></strong>( <code>  </code> ) 
 <br>
 </span><br>

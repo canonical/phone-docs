@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Label
 <p>Extended Text item with Ubuntu styling. More...</p>
 <!-- @@@Label -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Text.md">Text</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Text.md">Text</a></p>
 </td></tr></table><ul>
 <li>Obsolete members</li>
 </ul>
@@ -22,7 +22,7 @@ Title: Ubuntu.Components.Label
 </p>
 <p>Label is an extended Text item with Ubuntu styling. It exposes an additional property that provides adaptive resizing based on the measurement unit.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Rectangle.md">Rectangle</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="name">UbuntuColors</span>.<span class="name">warmGrey</span>
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">30</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">30</span>)

@@ -18,7 +18,6 @@ var shape = UI.shape(&quot;shapeID&quot;);
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>click</code></strong>( <code>- </code> ) 
 <br>
 </span><br>

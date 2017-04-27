@@ -28,7 +28,7 @@ Title: Ubuntu.Components.Theme
 <p>Example changing the current theme:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
-<span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">onClicked</span>: <span class="name">Theme</span>.<span class="name">name</span> <span class="operator">=</span> <span class="string">&quot;Ubuntu.Components.Themes.Ambiance&quot;</span>
 }
@@ -53,6 +53,6 @@ import Ubuntu.Components 1.2
 <br/>
 <h2>Method Documentation</h2>
 <!-- $$$createStyleComponent -->
-<table class="qmlname"><tr valign="top" id="createStyleComponent-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> <span class="name">createStyleComponent</span>(<span class="type">string</span><i> styleName</i>, <span class="type">object</span><i> parent</i>)</p></td></tr></table><p>Returns an instance of the style component named <i>styleName</i>.</p>
+<table class="qmlname"><tr valign="top" id="createStyleComponent-method"><td class="tblQmlFuncNode"><p><span class="type"><a href="QtQml.Component.md">Component</a></span> <span class="name">createStyleComponent</span>(<span class="type">string</span><i> styleName</i>, <span class="type">object</span><i> parent</i>)</p></td></tr></table><p>Returns an instance of the style component named <i>styleName</i>.</p>
 <!-- @@@createStyleComponent -->
 <br/>

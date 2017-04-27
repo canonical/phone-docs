@@ -13,14 +13,14 @@ Title: QtLocation.PlaceAttribute
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceAttribute.md#attribute-prop">attribute</a></b></b> : QPlaceAttribute</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceAttribute.md#label-prop">label</a></b></b> : string</li>
-<li class="fn"><b><b><a href="..//QtLocation.PlaceAttribute.md#text-prop">text</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#attribute-prop">attribute</a></b></b> : QPlaceAttribute</li>
+<li class="fn"><b><b><a href="#label-prop">label</a></b></b> : string</li>
+<li class="fn"><b><b><a href="#text-prop">text</a></b></b> : string</li>
 </ul>
 <!-- $$$PlaceAttribute-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>A place attribute stores an additional piece of information about a <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> that is not otherwise exposed through the <a href="..//QtLocation.location-cpp-qml.md#place">Place</a> type. A <a href="..//QtLocation.location-cpp-qml.md#placeattribute">PlaceAttribute</a> is a textual piece of data, accessible through the <a href="..//QtLocation.PlaceAttribute.md#text-prop">text</a> property, and a <a href="..//QtLocation.PlaceAttribute.md#label-prop">label</a>. Both the <a href="..//QtLocation.PlaceAttribute.md#text-prop">text</a> and <a href="..//QtLocation.PlaceAttribute.md#label-prop">label</a> properties are intended to be displayed to the user. PlaceAttributes are stored in an <a href="..//QtLocation.ExtendedAttributes.md">ExtendedAttributes</a> map with a unique key.</p>
+<p>A place attribute stores an additional piece of information about a <a href="#label-prop">label</a> properties are intended to be displayed to the user. PlaceAttributes are stored in an <a href="QtLocation.ExtendedAttributes.md">ExtendedAttributes</a> map with a unique key.</p>
 <p>The following example shows how to display all attributes in a list:</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2

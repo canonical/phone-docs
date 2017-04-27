@@ -17,7 +17,7 @@ Title: Ubuntu.Components.Switch
 </p>
 <p><a href="https://design.ubuntu.com/apps/building-blocks/selection">See also the Design Guidelines on selection</a>.</p>
 <p>Example:</p>
-<pre class="qml"><span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span> {
+<pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">Switch</a></span> {
 <span class="name">checked</span>: <span class="number">true</span>
 }

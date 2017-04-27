@@ -9,7 +9,6 @@ Title: ScopeJS.SearchQuery
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>query</code></strong>( <code>  </code> ) 
 <br>
 <p>Get a canned query for this search request</p>

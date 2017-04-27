@@ -60,7 +60,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/535e39ed-d3a5-4feb-af6d-188c231a0dc5-../ubuntu-layouts7/images/simple-layout2.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -92,7 +92,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/40840dc7-ab78-4539-bb41-b2ce9cc1d49e-../ubuntu-layouts7/images/simple-layout3.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;blue&quot;</span>
@@ -124,7 +124,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6fce9bd3-c40b-42f1-9b5a-bf4c76150555-../ubuntu-layouts7/images/simple-layout4.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;hiding-element&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -142,7 +142,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/0e0ee815-d859-4f4c-821e-dc03a3573110-../ubuntu-layouts7/images/simple-layout5.png" alt="" /></p><pre class="qml"><span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;showing-more&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -174,7 +174,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;column&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">50</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Column.md">Column</a></span> {
+<span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -205,7 +205,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;row&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">70</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;blue&quot;</span>
@@ -236,7 +236,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;hiding-element&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">90</span>) <span class="operator">&amp;&amp;</span> <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&lt;</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-15.04/QtQuick.Row.md">Row</a></span> {
+<span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>
@@ -253,7 +253,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts7
 <span class="type"><a href="Ubuntu.Layouts.ConditionalLayout.md">ConditionalLayout</a></span> {
 <span class="name">name</span>: <span class="string">&quot;showing-more&quot;</span>
 <span class="name">when</span>: <span class="name">layouts</span>.<span class="name">width</span> <span class="operator">&gt;=</span> <span class="name">units</span>.<span class="name">gu</span>(<span class="number">100</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Flow.md">Flow</a></span> {
+<span class="type"><a href="QtQuick.Flow.md">Flow</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="type"><a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a></span> {
 <span class="name">item</span>: <span class="string">&quot;red&quot;</span>

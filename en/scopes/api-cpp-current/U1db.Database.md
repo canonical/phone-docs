@@ -9,7 +9,7 @@ Title: U1db.Database
 <!-- @@@Database -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;Database&gt;</span>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="#">Database</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
 </ul>
 <h2 id="public-functions">Public Functions</h2>
 <table class="alignedsummary">
@@ -47,7 +47,7 @@ Title: U1db.Database
 <!-- @@@getDoc -->
 <!-- $$$getDocUnchecked[overload1]$$$getDocUncheckedconstQString& -->
 <h3 class="fn" id="getDocUnchecked"><span class="type">QVariant</span> Database::<span class="name">getDocUnchecked</span>(const <span class="type">QString</span> &amp;<i> docId</i>) const</h3>
-<p>Same functionality as <a href="../../../apps/qml/sdk-14.10/U1db.Database.md#getDoc-method">Database::getDoc</a>() except it won't set Database::lastError() and it doesn't implicitly try to initialize the underlying database. <i>docId</i> must be a valid unique ID string Use cases: model implementations, Document::getContents()</p>
+<p>Same functionality as <a href="#getDoc-method">Database::getDoc</a>() except it won't set Database::lastError() and it doesn't implicitly try to initialize the underlying database. <i>docId</i> must be a valid unique ID string Use cases: model implementations, Document::getContents()</p>
 <!-- @@@getDocUnchecked -->
 <!-- $$$getIndexExpressions[overload1]$$$getIndexExpressionsconstQString& -->
 <h3 class="fn" id="getIndexExpressions"><span class="type">QStringList</span> Database::<span class="name">getIndexExpressions</span>(const <span class="type">QString</span> &amp;<i> indexName</i>)</h3>

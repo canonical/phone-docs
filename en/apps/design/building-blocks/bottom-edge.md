@@ -23,7 +23,7 @@ Create something special with a unique bottom edge that belongs to your app from
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [BottomEdge API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.BottomEdge/) provides bottom edge content handling. See also the  [BottomEdgeHint API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.BottomEdgeHint/), which displays a label or an icon, or both, at the bottom of the component it is attached to.
+The  [BottomEdge API](../../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.
 
 
 ## Overview
@@ -174,5 +174,3 @@ Hint 2 is now fully visible; however if the user doesn’t interact with the con
 You can choose to have the bottom edge hint hidden from view when the user scrolls the content on the screen. This would work well for apps that need the whole screen, such as the Camera app, because the primary goal is to take a picture.
 
 ![750w_BottomEdge_HidingHints](https://assets.ubuntu.com/v1/e6120d50-750w_BottomEdge_HidingHints.png)
-
-

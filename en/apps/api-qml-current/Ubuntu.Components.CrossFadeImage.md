@@ -31,7 +31,7 @@ import Ubuntu.Components 1.2
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">75</span>)
 <span class="name">source</span>: <span class="string">&quot;http://design.ubuntu.com/wp-content/uploads/ubuntu-logo14.png&quot;</span>
 <span class="name">fadeDuration</span>: <span class="number">1000</span>
-<span class="type"><a href="../sdk-14.10/QtQuick.MouseArea.md">MouseArea</a></span> {
+<span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>
 <span class="name">onClicked</span>: <span class="name">parent</span>.<span class="name">source</span> <span class="operator">=</span> <span class="string">&quot;http://design.ubuntu.com/wp-content/uploads/canonical-logo1.png&quot;</span>
 }

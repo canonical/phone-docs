@@ -32,4 +32,3 @@ Multi selection:
 UI.optionselector(&quot;OptionSelectorID&quot;, false, true);</code></pre>
 <ul>
 </ul>
-<div>

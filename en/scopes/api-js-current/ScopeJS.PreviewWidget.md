@@ -8,7 +8,6 @@ Title: ScopeJS.PreviewWidget
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>add_attribute_mapping</code></strong>( <code>key, value </code> ) 
 <br>
 <p>Adds an attribute definition using a component mapping</p>

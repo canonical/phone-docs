@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Styles.PageHeaderStyle
 <p>Style API for page header. More...</p>
 <!-- @@@PageHeaderStyle -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -39,7 +39,7 @@ Title: Ubuntu.Components.Styles.PageHeaderStyle
 <!-- @@@contentHeight -->
 <br/>
 <!-- $$$defaultActionDelegate -->
-<table class="qmlname"><tr valign="top" id="defaultActionDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">defaultActionDelegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate used for the buttons in the leading and trailing <a href="Ubuntu.Components.ActionBar.md">ActionBar</a> in the header.</p>
+<table class="qmlname"><tr valign="top" id="defaultActionDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">defaultActionDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The delegate used for the buttons in the leading and trailing <a href="Ubuntu.Components.ActionBar.md">ActionBar</a> in the header.</p>
 <!-- @@@defaultActionDelegate -->
 <br/>
 <!-- $$$disabledForegroundColor -->
@@ -59,10 +59,10 @@ Title: Ubuntu.Components.Styles.PageHeaderStyle
 <!-- @@@subtitleColor -->
 <br/>
 <!-- $$$subtitleComponent -->
-<table class="qmlname"><tr valign="top" id="subtitleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">subtitleComponent</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default component to display the subtitle.</p>
+<table class="qmlname"><tr valign="top" id="subtitleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">subtitleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default component to display the subtitle.</p>
 <!-- @@@subtitleComponent -->
 <br/>
 <!-- $$$titleComponent -->
-<table class="qmlname"><tr valign="top" id="titleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">titleComponent</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default contents that will be loaded when no contents Item was set.</p>
+<table class="qmlname"><tr valign="top" id="titleComponent-prop"><td class="tblQmlPropNode"><p><span class="name">titleComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default contents that will be loaded when no contents Item was set.</p>
 <!-- @@@titleComponent -->
 <br/>

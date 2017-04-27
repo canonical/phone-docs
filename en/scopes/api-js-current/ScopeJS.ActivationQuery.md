@@ -8,7 +8,6 @@ Title: ScopeJS.ActivationQuery
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>action_id</code></strong>( <code>  </code> ) 
 <br>
 <p>Get the action identifier for this activation request handler</p>

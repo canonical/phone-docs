@@ -16,7 +16,6 @@ var button = UI.button(&quot;buttonID&quot;);</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>click</code></strong>( <code>callback </code> ) 
 <br>
 </span><br>

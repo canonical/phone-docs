@@ -9,7 +9,7 @@ Title: U1db.Synchronizer
 <!-- @@@Synchronizer -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;Synchronizer&gt;</span>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="../../../apps/qml/sdk-14.10/U1db.Synchronizer.md">Synchronizer</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="#">Synchronizer</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
 </ul>
 <h2 id="public-functions">Public Functions</h2>
 <table class="alignedsummary">
@@ -56,8 +56,8 @@ Title: U1db.Synchronizer
 <p>Returns <b>true</b> if conflicts during sync will be resolved in favor of the content from the source database.</p>
 <!-- @@@getResolveToSource -->
 <!-- $$$getSource[overload1]$$$getSource -->
-<h3 class="fn" id="getSource"><span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> * Synchronizer::<span class="name">getSource</span>()</h3>
-<p>Returns the source <a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a>.</p>
+<h3 class="fn" id="getSource"><span class="type"><a href="U1db.Database.md">Database</a></span> * Synchronizer::<span class="name">getSource</span>()</h3>
+<p>Returns the source <a href="U1db.Database.md">Database</a>.</p>
 <!-- @@@getSource -->
 <!-- $$$getSync[overload1]$$$getSync -->
 <h3 class="fn" id="getSync"><span class="type">bool</span> Synchronizer::<span class="name">getSync</span>()</h3>
@@ -77,7 +77,7 @@ Title: U1db.Synchronizer
 <p>If <i>resolve_to_source</i> is true, conflicts during sync will be resolved in favor of the content from the source database.</p>
 <!-- @@@setResolveToSource -->
 <!-- $$$setSource[overload1]$$$setSourceDatabase* -->
-<h3 class="fn" id="setSource"><span class="type">void</span> Synchronizer::<span class="name">setSource</span>(<span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Database.md">Database</a></span> *<i> source</i>)</h3>
+<h3 class="fn" id="setSource"><span class="type">void</span> Synchronizer::<span class="name">setSource</span>(<span class="type"><a href="U1db.Database.md">Database</a></span> *<i> source</i>)</h3>
 <p>Sets the <i>source</i> database.</p>
 <!-- @@@setSource -->
 <!-- $$$setSync[overload1]$$$setSyncbool -->

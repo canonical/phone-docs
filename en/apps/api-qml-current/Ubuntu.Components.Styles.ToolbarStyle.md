@@ -9,7 +9,7 @@ Title: Ubuntu.Components.Styles.ToolbarStyle
 <p>Style API for toolbar. More...</p>
 <!-- @@@ToolbarStyle -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQuick.Item.md">Item</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Styles 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQuick.Item.md">Item</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -23,6 +23,6 @@ Title: Ubuntu.Components.Styles.ToolbarStyle
 <!-- @@@ToolbarStyle -->
 <h2>Property Documentation</h2>
 <!-- $$$defaultDelegate -->
-<table class="qmlname"><tr valign="top" id="defaultDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">defaultDelegate</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default action delegate if the styled item does not provide a different delegate.</p>
+<table class="qmlname"><tr valign="top" id="defaultDelegate-prop"><td class="tblQmlPropNode"><p><span class="name">defaultDelegate</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>The default action delegate if the styled item does not provide a different delegate.</p>
 <!-- @@@defaultDelegate -->
 <br/>

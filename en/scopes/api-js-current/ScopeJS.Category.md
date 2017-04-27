@@ -10,7 +10,6 @@ To create a Category, use SearchReply.register_category.</p>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>icon</code></strong>( <code>  </code> ) 
 <br>
 <p>Get icon of this Category</p>

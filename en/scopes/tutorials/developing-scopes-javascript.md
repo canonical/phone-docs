@@ -20,7 +20,7 @@ online service should be very simple.
 
 ## Requirements
 
-Before going through this tutorial, you need to have the [Ubuntu SDK installed](https://developer.ubuntu.com/en/start/ubuntu-sdk/installing-the-sdk/) and [click targets created](https://developer.ubuntu.com/en/apps/sdk/tutorials/click-targets-and-device-kits/), preferably for the desktop and phone (armhf) targets.
+Before going through this tutorial, you need to have the [Ubuntu SDK installed](https://developer.ubuntu.com/en/start/ubuntu-sdk/installing-the-sdk/) and [click targets created](../..//sdk/tutorials-click-targets-and-device-kits/), preferably for the desktop and phone (armhf) targets.
 
 You also need to install the JS scopes dev tools and prepare your dev
 environment with the following commands:
@@ -46,7 +46,7 @@ scopes-doc` package.
 ### Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](https://developer.ubuntu.com/en/apps/sdk/tutorials/running-apps-from-the-sdk/).
+sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](https://developer.ubuntu.com/en/apps/sdk/tutorials-running-apps-from-the-sdk/).
 
 ## Create a new JavaScript scope
 

@@ -38,7 +38,6 @@ UI.tabs.METHOD();</code></pre>
 <ul>
 <li>Properties</li>
 </ul>
-<div>
 <code>count</code> &lt;<strong>Unknown</strong>&gt;<br>
 <p>Return the number of tab elements in the header</p>
 <code>currentPage</code> &lt;<strong>Unknown</strong>&gt;<br>

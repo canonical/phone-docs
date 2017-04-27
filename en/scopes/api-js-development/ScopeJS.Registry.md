@@ -8,7 +8,6 @@ Title: ScopeJS.Registry
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <a href="ScopeJS.ScopeMetadata.md">ScopeMetadata</a> <strong class="name"><code>get_metadata</code></strong>( <code>id </code> ) 
 <br>
 <p>Returns the metadata for the scope with the given ID</p>

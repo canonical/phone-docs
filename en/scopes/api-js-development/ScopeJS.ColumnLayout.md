@@ -8,7 +8,6 @@ Title: ScopeJS.ColumnLayout
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>add_column</code></strong>( <code>widget_ids </code> ) 
 <br>
 <p>Adds a new column and assigns widgets to it.</p>

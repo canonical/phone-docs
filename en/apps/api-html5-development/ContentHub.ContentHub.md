@@ -12,7 +12,6 @@ Title: ContentHub.ContentHub
 <li>Methods</li>
 <li>Properties</li>
 </ul>
-<div>
 <strong class="name"><code>api.importContent</code></strong>( <code>type, peer, transferOptions, onError, onSuccess </code> ) 
 <br>
 </span><br>

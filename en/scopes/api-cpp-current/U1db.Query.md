@@ -9,7 +9,7 @@ Title: U1db.Query
 <!-- @@@Query -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;Query&gt;</span>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="../../../apps/qml/sdk-14.10/U1db.Query.md">Query</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiated By:</td><td class="memItemRight bottomAlign"> <a href="#">Query</a></td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> </td></tr></table><ul>
 </ul>
 <h2 id="public-functions">Public Functions</h2>
 <table class="alignedsummary">
@@ -38,7 +38,7 @@ Title: U1db.Query
 <p>FIXME</p>
 <!-- @@@getDocuments -->
 <!-- $$$getIndex[overload1]$$$getIndex -->
-<h3 class="fn" id="getIndex"><span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Index.md">Index</a></span> * Query::<span class="name">getIndex</span>()</h3>
+<h3 class="fn" id="getIndex"><span class="type"><a href="U1db.Index.md">Index</a></span> * Query::<span class="name">getIndex</span>()</h3>
 <p>FIXME</p>
 <!-- @@@getIndex -->
 <!-- $$$getQuery[overload1]$$$getQuery -->
@@ -55,7 +55,7 @@ Title: U1db.Query
 <p>Resets the model of the Query</p>
 <!-- @@@resetModel -->
 <!-- $$$setIndex[overload1]$$$setIndexIndex* -->
-<h3 class="fn" id="setIndex"><span class="type">void</span> Query::<span class="name">setIndex</span>(<span class="type"><a href="../../../apps/qml/sdk-14.10/U1db.Index.md">Index</a></span> *<i> index</i>)</h3>
+<h3 class="fn" id="setIndex"><span class="type">void</span> Query::<span class="name">setIndex</span>(<span class="type"><a href="U1db.Index.md">Index</a></span> *<i> index</i>)</h3>
 <p>FIXME <i>index</i></p>
 <!-- @@@setIndex -->
 <!-- $$$setQuery[overload1]$$$setQueryQVariant -->

@@ -13,15 +13,15 @@ Title: QtLocation.Ratings
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.Ratings.md#average-prop">average</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.Ratings.md#count-prop">count</a></b></b> : int</li>
-<li class="fn"><b><b><a href="..//QtLocation.Ratings.md#maximum-prop">maximum</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.Ratings.md#ratings-prop">ratings</a></b></b> : QPlaceRatings</li>
+<li class="fn"><b><b><a href="#average-prop">average</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#count-prop">count</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#maximum-prop">maximum</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#ratings-prop">ratings</a></b></b> : QPlaceRatings</li>
 </ul>
 <!-- $$$Ratings-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>Rating information is used to describe how <i>good</i> a place is conceived to be. Typically this information is visualized as a number of stars. The <a href="..//QtLocation.Ratings.md#average-prop">average</a> property gives an aggregated ratings value out of a possible maximum as given by the <a href="..//QtLocation.Ratings.md#maximum-prop">maximum</a> property.</p>
+<p>Rating information is used to describe how <i>good</i> a place is conceived to be. Typically this information is visualized as a number of stars. The <a href="#maximum-prop">maximum</a> property.</p>
 <pre class="qml">import QtQuick 2.0
 import QtPositioning 5.2
 import QtLocation 5.3
@@ -32,11 +32,11 @@ import QtLocation 5.3
 <h2>Property Documentation</h2>
 <!-- $$$average -->
 <table class="qmlname"><tr valign="top" id="average-prop"><td class="tblQmlPropNode"><p><span class="name">average</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the average of the individual ratings.</p>
-<p><b>See also </b><a href="..//QtLocation.Ratings.md#maximum-prop">maximum</a>.</p>
+<p><b>See also </b><a href="#maximum-prop">maximum</a>.</p>
 <!-- @@@average -->
 <br/>
 <!-- $$$count -->
-<table class="qmlname"><tr valign="top" id="count-prop"><td class="tblQmlPropNode"><p><span class="name">count</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the total number of individual user ratings used in determining the overall ratings <a href="..//QtLocation.Ratings.md#average-prop">average</a>.</p>
+<table class="qmlname"><tr valign="top" id="count-prop"><td class="tblQmlPropNode"><p><span class="name">count</span> : <span class="type">int</span></p></td></tr></table><p>This property holds the total number of individual user ratings used in determining the overall ratings <a href="#average-prop">average</a>.</p>
 <!-- @@@count -->
 <br/>
 <!-- $$$maximum -->

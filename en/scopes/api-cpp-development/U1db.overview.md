@@ -8,7 +8,7 @@ Title: U1db.overview
 <!-- $$$overview.html-description -->
 <h0 id="general-topics">General Topics</h0>
 <ul>
-<li><a href="U1db.tutorial.md">Tutorial</a> gives a quick start guide from storing a document to querying a database and displaying it in <a href="../../../apps/qml/sdk-15.04/UbuntuUserInterfaceToolkit.overview-ubuntu-sdk.md">Ubuntu Components</a>.</li>
+<li><a href="U1db.tutorial.md">Tutorial</a> gives a quick start guide from storing a document to querying a database and displaying it in <a href="../apps/api-qml-current/UbuntuUserInterfaceToolkit.overview-ubuntu-sdk.md">Ubuntu Components</a>.</li>
 <li><a href="U1db.concepts.md">Design Concepts</a> provides an overview of the design and terminology.</li>
 </ul>
 <h0 id="document-storage">Document Storage</h0>

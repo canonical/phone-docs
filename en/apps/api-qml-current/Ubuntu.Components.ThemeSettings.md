@@ -95,11 +95,11 @@ import Ubuntu.Components.Themes 1.0
 <span class="type"><a href="Ubuntu.Components.MainView.md">MainView</a></span> {
 <span class="name">width</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">40</span>)
 <span class="name">height</span>: <span class="name">units</span>.<span class="name">gu</span>(<span class="number">71</span>)
-<span class="type"><a href="../sdk-14.10/QtQuick.Loader.md">Loader</a></span> {
+<span class="type"><a href="QtQuick.Loader.md">Loader</a></span> {
 <span class="name">id</span>: <span class="name">loader</span>
 <span class="name">onItemChanged</span>: <span class="keyword">if</span> (<span class="name">item</span>) <span class="name">button</span>.<span class="name">theme</span>.<span class="name">palette</span> <span class="operator">=</span> <span class="name">item</span>
 }
-<span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span> {
+<span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">dynamicPalette</span>
 <span class="type">Palette</span> {
 <span class="name">normal</span>.background: <span class="name">UbuntuColors</span>.<span class="name">blue</span>

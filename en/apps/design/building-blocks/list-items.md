@@ -180,7 +180,7 @@ If your list item allows for navigation through to an associated view, then a Pr
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [ProgressionSlot API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04.4/Ubuntu.Components.ProgressionSlot/) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
+The  [ProgressionSlot API](../../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
 
 
 ![366w_ListItems_Chevron1 (4)](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)

@@ -36,7 +36,7 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and device kits](https://developer.ubuntu.com/en/phone/apps/sdk/tutorials/click-targets-and-device-kits/) should give
+without hassle on all form factors. [Click targets and device kits](../../sdk/tutorials-click-targets-and-device-kits/) should give
 you all the details you need if you want to dive deeper or need more help.
 
 ![](../../../../media/b295dea4-879a-442e-9d8e-f868bd216323-cms_page_media/108/welcome-html5-app.png)

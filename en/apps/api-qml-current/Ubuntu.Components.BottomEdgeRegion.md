@@ -9,7 +9,7 @@ Title: Ubuntu.Components.BottomEdgeRegion
 <p>Defines an active region within the BottomEdge component. More...</p>
 <!-- @@@BottomEdgeRegion -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="../sdk-14.10/QtQml.QtObject.md">QtObject</a></p>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import  .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Since:</td><td class="memItemRight bottomAlign">  Ubuntu.Components 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="QtQml.QtObject.md">QtObject</a></p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
@@ -69,7 +69,7 @@ import Ubuntu.Components 1.3
 <p><b>Note: </b>Whereas there is no restriction on making overlapping sections, beware that overlapping sections changing the content through the <a href="#contentUrl-prop">contentUrl</a> or <a href="#contentComponent-prop">contentComponent</a> properties will cause unpredictable results.</p><!-- @@@BottomEdgeRegion -->
 <h2>Property Documentation</h2>
 <!-- $$$contentComponent -->
-<table class="qmlname"><tr valign="top" id="contentComponent-prop"><td class="tblQmlPropNode"><p><span class="name">contentComponent</span> : <span class="type"><a href="../sdk-14.10/QtQml.Component.md">Component</a></span></p></td></tr></table><p>Specifies the component defining the section specific content. This propery will temporarily override the <a href="Ubuntu.Components.BottomEdge.md#contentComponent-prop">BottomEdge::contentComponent</a> property value when the drag gesture enters the section area. The orginal value will be restored once the gesture leaves the section area.</p>
+<table class="qmlname"><tr valign="top" id="contentComponent-prop"><td class="tblQmlPropNode"><p><span class="name">contentComponent</span> : <span class="type"><a href="QtQml.Component.md">Component</a></span></p></td></tr></table><p>Specifies the component defining the section specific content. This propery will temporarily override the <a href="Ubuntu.Components.BottomEdge.md#contentComponent-prop">BottomEdge::contentComponent</a> property value when the drag gesture enters the section area. The orginal value will be restored once the gesture leaves the section area.</p>
 <!-- @@@contentComponent -->
 <br/>
 <!-- $$$contentUrl -->

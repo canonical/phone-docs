@@ -9,7 +9,6 @@ The Result API provides convenience methods for some typical attributes (title, 
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 String <strong class="name"><code>art</code></strong>( <code>  </code> ) 
 <br>
 <p>Get the &quot;art&quot; property of this Result</p>

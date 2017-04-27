@@ -13,18 +13,18 @@ Title: QtLocation.MapPinchEvent
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#accepted-prop">accepted</a></b></b> : bool</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#angle-prop">angle</a></b></b> : real</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#center-prop">center</a></b></b> : QPoint</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#point1-prop">point1</a></b></b> : QPoint</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#point2-prop">point2</a></b></b> : QPoint</li>
-<li class="fn"><b><b><a href="..//QtLocation.MapPinchEvent.md#pointCount-prop">pointCount</a></b></b> : int</li>
+<li class="fn"><b><b><a href="#accepted-prop">accepted</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="#angle-prop">angle</a></b></b> : real</li>
+<li class="fn"><b><b><a href="#center-prop">center</a></b></b> : QPoint</li>
+<li class="fn"><b><b><a href="#point1-prop">point1</a></b></b> : QPoint</li>
+<li class="fn"><b><b><a href="#point2-prop">point2</a></b></b> : QPoint</li>
+<li class="fn"><b><b><a href="#pointCount-prop">pointCount</a></b></b> : int</li>
 </ul>
 <!-- $$$MapPinchEvent-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="..//QtLocation.MapPinchEvent.md">MapPinchEvent</a> type provides basic information about pinch event. They are present in handlers of MapPinch (for example pinchStarted/pinchUpdated). Events are only guaranteed to be valid for the duration of the handler.</p>
-<p>Except for the <a href="..//QtLocation.MapPinchEvent.md#accepted-prop">accepted</a> property, all properties are read-only.</p>
+<p><a href="#">MapPinchEvent</a> type provides basic information about pinch event. They are present in handlers of MapPinch (for example pinchStarted/pinchUpdated). Events are only guaranteed to be valid for the duration of the handler.</p>
+<p>Except for the <a href="#accepted-prop">accepted</a> property, all properties are read-only.</p>
 <h3 >Example Usage</h3>
 <p>The following example enables the pinch gesture on a map and reacts to the finished event.</p>
 <pre class="cpp">Map {

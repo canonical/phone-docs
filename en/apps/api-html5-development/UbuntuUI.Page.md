@@ -33,7 +33,6 @@ var page = UI.page(&quot;pageID&quot;);</code></pre>
 <li>Methods</li>
 <li>Properties</li>
 </ul>
-<div>
 <strong class="name"><code>activate</code></strong>( <code>properties </code> ) 
 <br>
 </span><br>

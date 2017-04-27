@@ -30,7 +30,7 @@ Title: Ubuntu.Components.Popups.PopupBase
 <!-- @@@PopupBase -->
 <h2>Property Documentation</h2>
 <!-- $$$dismissArea -->
-<table class="qmlname"><tr valign="top" id="dismissArea-prop"><td class="tblQmlPropNode"><p><span class="name">dismissArea</span> : <span class="type"><a href="../sdk-14.10/QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the area used to dismiss the popups, the area from where mouse and touch events will be grabbed. By default this area is the Popup itself.</p>
+<table class="qmlname"><tr valign="top" id="dismissArea-prop"><td class="tblQmlPropNode"><p><span class="name">dismissArea</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The property holds the area used to dismiss the popups, the area from where mouse and touch events will be grabbed. By default this area is the Popup itself.</p>
 <!-- @@@dismissArea -->
 <br/>
 <!-- $$$grabDismissAreaEvents -->

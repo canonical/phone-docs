@@ -16,7 +16,6 @@ var pre = UI.progress(&quot;progressID&quot;);</code></pre>
 <ul>
 <li>Methods</li>
 </ul>
-<div>
 <strong class="name"><code>element</code></strong>( <code>  </code> ) 
 <br>
 </span><br>
