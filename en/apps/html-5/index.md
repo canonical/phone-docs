@@ -42,7 +42,7 @@ implementation detail. It is design that makes an Ubuntu app look and feel
 like an Ubuntu app.
 
 A good step before getting started writing Ubuntu HTML5 apps is looking at
-[design.ubuntu.com](http://design.ubuntu.com/). You will find examples and
+[design section](../design/index.md). You will find examples and
 guidance on using Ubuntu UI layouts and building blocks (from a toolkit
 agnostic viewpoint).
 

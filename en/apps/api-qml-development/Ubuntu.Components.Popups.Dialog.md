@@ -30,7 +30,7 @@ Title: Ubuntu.Components.Popups.Dialog
 <!-- $$$Dialog-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="http://design.ubuntu.com/apps/building-blocks/dialog">See also the Design Guidelines on Dialogs</a>.</p>
+<p><a href="../design/building-blocks/dialog.md">See also the Design Guidelines on Dialogs</a>.</p>
 <p>Example:</p>
 <pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.3

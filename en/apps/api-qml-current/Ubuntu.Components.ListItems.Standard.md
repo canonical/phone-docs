@@ -24,7 +24,7 @@ Title: Ubuntu.Components.ListItems.Standard
 <!-- $$$Standard-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><b>Note: </b><b>The component is deprecated. Use <a href="Ubuntu.Components.ListItem.md">ListItem</a> component instead.</b></p><p><a href="http://design.ubuntu.com/apps/building-blocks/list-items">See also the Design Guidelines on List Items</a>.</p>
+<p><b>Note: </b><b>The component is deprecated. Use <a href="Ubuntu.Components.ListItem.md">ListItem</a> component instead.</b></p><p><a href="../design/building-blocks/list-items.md">See also the Design Guidelines on List Items</a>.</p>
 <p>Examples:</p>
 <pre class="qml">import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
