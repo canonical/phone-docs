@@ -40,7 +40,7 @@ change existing Kits. This is especially useful when you forgot to create a
 specific Device Kit or when your application evolves to support other devices
 and architectures.
 
-![](../../../media/386976e6-a6cd-4524-8b7d-4337c494e138-cms_page_media/34/managing_kits.png)
+![](../../../media/managing_kits.png)
 
 ## Adding devices
 
@@ -60,7 +60,7 @@ build and `_devel-proposed_` contains new changes that still need to be tested.
 Creating an emulator downloads about 300 MB and prepares a system image, which
 may take some time.
 
-![](../../../media/6af7cee9-e4b5-40bd-a5b4-c45d631f7a0c-cms_page_media/34/emulator_create.png)
+![](../../../media/emulator_create.png)
 
 ### Launch an emulator
 
@@ -69,7 +69,7 @@ Once your emulator has been built, you can configure some launch variables:
   * **Scale**: the size of the emulator window
   * **Memory**: between 512 and 1024 MB of RAM allocated to the device
 
-![](../../../media/6a2b15f5-0065-4d22-a7d6-e9d50623b73a-cms_page_media/34/emulator_config-700x451.png)
+![](../../../media/emulator_config-700x451.png)
 
 When launched, an emulator can be managed like any other device and is able to
 run applications using compatible device kits. **Note** that when Ubuntu

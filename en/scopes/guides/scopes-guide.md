@@ -24,7 +24,7 @@ either through the Scopes scope in the Dash or through the Scope’s own page.
 
 ### Finding and launching scopes
 
-![](../../../media/fd9e266f-4ccb-4a85-b9e3-8e2c5c5e0223-cms_page_media/141/scopes-architecture.png)
+![](../../../media/scopes-architecture.png)
 
 Scopes can be local or remote. Local scopes run on the device and remote
 scopes run on the Scopes Server. For Ubuntu 14.10 only local scope submission
@@ -41,7 +41,7 @@ so that only the required scopes will be run as a result of a query.
 
 ### Scopes data flow
 
-![](../../../media/9bab4810-1560-4b2e-aa61-1e7e7f20bc1d-cms_page_media/141/scopes-data-flow.png)
+![](../../../media/scopes-data-flow.png)
 
 ### Scopes terminology
 
@@ -92,13 +92,13 @@ user may enter a search term in the Ubuntu shell, and the shell calls a scope.
 The scope performs its query and surfaces results to the shell, where they are
 rendered.
 
-![](../../../media/5a54b372-e9fe-4e70-a0d7-442864883d98-cms_page_media/141/diag1.png)
+![](../../../media/diag1.png)
 
 But, a scope does not know or care what calls it, which means a scope can call
 a scope. A scope can aggregate data from any data sources, including other
 scopes.
 
-![](../../../media/71c455e3-a9e4-4830-ae37-f651fe0c2d90-cms_page_media/141/daig2-crop.png)
+![](../../../media/daig2-crop.png)
 
 A scope is an atomic query process that returns results (and preview data) to
 whatever calls it. This architecture enables many possibilities to enhance the
@@ -140,7 +140,7 @@ query that provides the results, and the client displays them using the Unity
 
 Here is an example of results displayed with the default results renderer:
 
-![](../../../media/544b6b5d-3d71-4c69-91c1-be7fa0a17cd7-cms_page_media/141/grid-medium.png)
+![](../../../media/grid-medium.png)
 
 Developers can choose to enhance results display in various ways that add
 style and navigation options to the user experience and make the data more
@@ -156,7 +156,7 @@ the client without any work by the developer.
 Here is an example of two categories of results displayed from the same scope,
 one with carousel layout, one with grid layout:
 
-![](../../../media/8e6c0aa6-b494-4c75-be1a-0576ae18b4da-cms_page_media/141/twocategories-default.png)
+![](../../../media/twocategories-default.png)
 
 There are many other rendering options for result categories, including
 additional layouts (like journal, vertical-journal, organic-grid, and more),
@@ -166,19 +166,19 @@ renderer template (it is a small JSON object).
 
 Here are a few grid layout samples:
 
-![](../../../media/63a7888d-a597-4c37-9610-7f2372c8d587-cms_page_media/141/grid-medium-overlay-gradient.png)
+![](../../../media/grid-medium-overlay-gradient.png)
 
-![](../../../media/449174f2-f48c-4bc7-9130-8e9528ded2ae-cms_page_media/141/grid-small.png)
+![](../../../media/grid-small.png)
 
-![](../../../media/60a35d25-504c-4320-ac6e-9941a6e07c8a-cms_page_media/141/grid-medium-overlay-color.png)
+![](../../../media/grid-medium-overlay-color.png)
 
 And here are a few simple variations with carousel layouts:
 
-![](../../../media/61d9e84b-9b29-447d-bf5e-7cb24708947e-cms_page_media/141/carousel.png)
+![](../../../media/carousel.png)
 
-![](../../../media/8f2f1127-54ff-4e41-a81d-a557d28e93c1-cms_page_media/141/carousel-gradient.png)
+![](../../../media/carousel-gradient.png)
 
-![](../../../media/8a5066da-4f1f-42ca-abae-495ed55596c3-cms_page_media/141/carousel-color-overlay.png)
+![](../../../media/carousel-color-overlay.png)
 
 ## Preview widgets
 
@@ -197,7 +197,7 @@ Here’s a sample preview. It contains four widgets, a header widget (which has
 a title and a subtitle), an image widget (which has a source field), a text
 widget, and an actions widget:
 
-![](../../../media/5fb85c21-1620-4222-903c-51085d3eb13a-cms_page_media/141/preview-widgets-crop.png)
+![](../../../media/preview-widgets-crop.png)
 
 Here are the same four widgets, just in a different order:
 
@@ -236,7 +236,7 @@ Here is an example of a two column layout. Note that the image description is
 at the top of column two, and there are two additional text widgets
 (containing “Lorem ipsum …”):
 
-![](../../../media/498361bb-d8d3-4cae-bf52-7d177fe497af-cms_page_media/141/preview-twocolumnlayout.png)
+![](../../../media/preview-twocolumnlayout.png)
 
 # Next steps
 

@@ -21,12 +21,12 @@ scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
-![](../../../media/47017daf-1c24-45a6-8ea5-3b6fbd26d508-cms_page_media/148/scope_wizard1-700x435.png)
+![](../../../media/scope_wizard1-700x435.png)
 
 In the third screen of the wizard, we are going to pick the “Qt scope using
 HTTP + XML API” template.
 
-![](../../../media/25934cef-bece-44c0-ac9e-5158403a9bce-cms_page_media/148/scope-wizard-step3-xml1-700x371.png)
+![](../../../media/scope-wizard-step3-xml1-700x371.png)
 
 If you need more help to get started with the SDK, have a look at the [SDK setup article](../../sdk/tutorials-creating-an-sdk-app-project/).
 
@@ -239,7 +239,7 @@ the query.
 
 ## Query string
 
-![](../../../media/21349aa9-4605-49fa-878c-1ac94b023dde-cms_page_media/148/jamendo_query-239x300.png)
+![](../../../media/jamendo_query-239x300.png)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -394,7 +394,7 @@ display it the way we want.
 
 ## Category renderers
 
-![](../../../media/0396d437-af2e-4f86-ae31-9f49939fefdf-cms_page_media/148/jamendo_home-239x300.png)
+![](../../../media/jamendo_home-239x300.png)
 
 Each result needs to be displayed inside a category. In terms of UI, a
 category can provide a header title to a list of results and a specific layout
@@ -493,7 +493,7 @@ set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](../../../media/6ba13da2-b2e6-494e-8712-976b4f743376-cms_page_media/148/jamendo_preview-239x300.png)
+![](../../../media/jamendo_preview-239x300.png)
 
 The preview needs to generate widgets and connect their fields to the data
 fields in the `CategorisedResult`.
@@ -694,7 +694,7 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](../../../media/490171dd-641e-4446-b3c3-8ce4934b343e-cms_page_media/148/jamendo_branded-180x300.png)
+![](../../../media/jamendo_branded-180x300.png)
 
 Have a look at all the available [customisation options](../guides/scopes-customization-branding.md) and try to
 make your scope shine!

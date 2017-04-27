@@ -15,7 +15,7 @@ A well-tested application will cover all the levels of the testing pyramid and
 provide many more low-level unit tests than high level end-to-end tests
 running through a GUI. Ubuntu has you covered on all levels.
 
-![](../../media/3063914f-7df5-4e17-90ba-f038b3f41d5e-cms_page_media/379/testing-integration-c.png)
+![](../../media/testing-integration-c.png)
 
 ## Unit tests
 

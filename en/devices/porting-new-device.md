@@ -72,7 +72,7 @@ Other than the very basic services (needed to re-use the binary blobs already
 available), the rest is just pure Ubuntu goodness (we don't have dalvik
 running, for example).
 
-![](../../media/136981fa-6287-49d3-9874-06f40b2e4eb7-cms_page_media/380/ubuntu_touch_architecture.png)
+![](../../media/ubuntu_touch_architecture.png)
 
 ### Toolchain and build system
 

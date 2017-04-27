@@ -88,7 +88,7 @@ Rectangle {
 }
 ```
 
-![](../../../media/5e89e3e4-9330-4106-b880-34c54eac3f6d-cms_page_media/1130/s2EIHgTuUJ0fGllaUmM0duw.png)
+![](../../../media/s2EIHgTuUJ0fGllaUmM0duw.png)
 
 ####  Background
 

@@ -52,7 +52,7 @@ devices (connected via USB and existing emulators) and simple click the
 `Autocreate` button to create a device kit using the click target of your
 choice.
 
-![](../../../media/4d116adc-6ea1-478b-8314-f1b0b553d29b-cms_page_media/35/autocreate_device_kit-700x399.png)
+![](../../../media/autocreate_device_kit-700x399.png)
 
 ## Managing targets and kits
 
@@ -60,7 +60,7 @@ You can retrieve existing targets and kits from the Options pane of the SDK.
 
 Targets can be created, deleted and updated in the **"Ubuntu" > "Click"** pane
 
-![](../../../media/0e38e472-24ce-4277-a49b-cc29e3f6efcd-cms_page_media/35/manage_targets-700x404.png)
+![](../../../media/manage_targets-700x404.png)
 
 Kits can be created and deleted in the **"Build & Run" > "Kits"** pane.
 

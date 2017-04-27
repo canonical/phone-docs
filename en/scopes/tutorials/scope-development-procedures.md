@@ -31,7 +31,7 @@ You can open scope projects from QtCreator with the `Ctrl+O` shortcut
 and then navigating to and selecting the CMakeLists.txt file in the project’s
 root directory.
 
-![](../../../media/43b3a771-4e00-475a-b0ac-cedf3b2f402d-cms_page_media/100/scope-project-open.png)
+![](../../../media/scope-project-open.png)
 
 ## Opening a scope branch in QtCreator as a project
 
@@ -80,13 +80,13 @@ left pane of the QtCreator or by pressing `Ctrl+R`.
   2. select which device (**Kit** column) you want to run your scope on
   3. select the scope itself (**Run** column), instead of scope-unit-tests
 
-![](../../../media/47fa96ab-96fa-4b87-9fa3-d0e9155b0fa4-cms_page_media/100/scope-run-tests-vs-scope.png)
+![](../../../media/scope-run-tests-vs-scope.png)
 
 If you are using Ubuntu 14.10, you can run a scope on your desktop, by
 selecting the desktop as a target device. This runs the scope in a standalone
 window, with developer tools to tweak the ways results are rendered.
 
-![](../../../media/0826ca71-65c9-4520-ba67-7144b1122aae-cms_page_media/100/unity-scope-tool.png)
+![](../../../media/unity-scope-tool.png)
 
   * The scope name or logo displayed in the header is derived from the .ini file
   * The left half of the run window is the scope.

@@ -35,13 +35,13 @@ GUI instead of physical touch and swipe gestures.
 
 **Tip**: The i386 emulator runs much quicker on x86 devices like your computer than the armhf emulator.
 
-![](../../../media/823ec01c-0445-4a09-82f0-ecad6e95d6ca-cms_page_media/30/001-Qt-Creator_008.png)
+![](../../../media/001-Qt-Creator_008.png)
 
   1. In the Ubuntu SDK, open the **Devices** tab. At the bottom click the plus "+" icon.
   2. Inside the new window, enter a name for your new emulator in the **Name** field. In addition, select your desired channel and and architecture for the emulator.
   3. Click the **Create** new emulator button.
 
-![](../../../media/5a004f0e-9f46-4ea2-9638-a00cbdedd53c-cms_page_media/30/002-Selection_007.png)
+![](../../../media/002-Selection_007.png)
 
 **Note**: It takes a while to create an emulator.
 
@@ -58,7 +58,7 @@ tablets image.
 
 **Tip**: It takes some time for an emulator to start.
 
-![](../../../media/260034d3-e1ce-4dc5-b240-27f9f764cb76-cms_page_media/30/003-emulator-.png)
+![](../../../media/003-emulator-.png)
 
 When the launch is complete, the emulator displays in a separate window. You
 interact with the GUI using your mouse and the onscreen keyboard, which

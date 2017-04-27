@@ -84,9 +84,9 @@ The last thing needed is registering the root department on the reply object.
 If you try to run the scope at this point, you should see a new piece of UI at
 the top of your results!
 
-![](../../../media/1e85108f-60f3-4315-9e1c-7f1dd67c1635-cms_page_media/146/scope_dep0.png)
+![](../../../media/scope_dep0.png)
 
-![](../../../media/430f2c26-149b-4cce-bd1b-a1e2cd4dc976-cms_page_media/146/scope_dep1.png)
+![](../../../media/scope_dep1.png)
 
 ### Using departments in queries
 
@@ -122,7 +122,7 @@ if (!query.department_id().empty()) {
 }
 ```
 
-![](../../../media/996477d4-56e0-4b8c-a25a-c6cd35be8850-cms_page_media/146/scope_dep3.png)
+![](../../../media/scope_dep3.png)
 
 ![](../../../media/scopt-tutorial-scope_dep2.png)
 
@@ -201,11 +201,11 @@ reply->register_departments(all_depts);
 
 Lets see what it does !
 
-![](../../../media/b3e34309-c793-4212-b4af-6a7a20609486-cms_page_media/146/scope_dep4.png)
+![](../../../media/scope_dep4.png)
 
-![](../../../media/660dd0df-43c7-4875-bc0a-2cb9ee422db7-cms_page_media/146/scope_dep5.png)
+![](../../../media/scope_dep5.png)
 
-![](../../../media/4ed35f1f-4760-4181-b1e4-087a441e7ff1-cms_page_media/146/scope_dep6.png)
+![](../../../media/scope_dep6.png)
 
 ![](../../../media/scope-tutorial-scope_dep7.png)
 
@@ -219,4 +219,4 @@ sure you provide departments for the user to easily browse it!
 
 ![](../../../media/scope-tutorial-scope_dep81.png)
 
-![](../../../media/b47c4584-4704-489d-926f-7ab9e3d01613-cms_page_media/146/scope_dep9.png)
+![](../../../media/scope_dep9.png)

@@ -311,7 +311,7 @@ $ cordova run --device --debug
 
 Here is how the application looks like after clicking **Take Picture**:
 
-![](../../../../media/264a3e03-204d-47d2-b46c-076da4eb1809-cms_page_media/116/camera-snap.png)
+![](../../../../media/camera-snap.png)
 
 Once you validate the picture, the system will bring back your application and
 will display the photo below the button.
@@ -346,7 +346,7 @@ Now, in `index.html`, simply add the following inside the `<head>`
 
 Now, the Loading page and the home page look like this:
 
-![](../../../../media/6f565d93-ac5a-4034-a293-02d61b45446e-cms_page_media/116/camera-app.png)
+![](../../../../media/camera-app.png)
 
 ## Next steps
 

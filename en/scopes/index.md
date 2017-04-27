@@ -15,7 +15,7 @@ maintain traditional apps.
 These experiences are developed using Ubuntu Scopes, a new UI toolkit
 available through the Ubuntu SDK.
 
-![](../../media/bcfe3a8e-9a03-47c0-afa5-b326eb017708-cms_page_media/7/tablet-features-scopes.jpg)
+![](../../media/tablet-features-scopes.jpg)
 
 
 
