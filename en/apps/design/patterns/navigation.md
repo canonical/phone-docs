@@ -164,10 +164,9 @@ Use drawers sparingly because it:
 - Requires a tap to see available pages/or actions and two taps every time a user switches pages.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-A Back Button would be irrelevant if your app only has one page, because there would be no pages to go back from; so it is not required.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|A Back Button would be irrelevant if your app only has one page, because there would be no pages to go back from; so it is not required.|
+|
+|---|-----|
 
 
 ## Headers in multi-panel layout
@@ -184,10 +183,9 @@ In this example, Dekko displays an action for the bottom edge, search and settin
 ![750w_Navigation_ConvergentHeader3actions (2)](https://assets.ubuntu.com/v1/e8593d86-750w_Navigation_ConvergentHeader3actions-2.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-[For more slot layout examples see Header](/apps/design/building-blocks/header)
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more slot layout examples see Header](/apps/design/building-blocks/header)|
+|
+|---|-----|
 
 
 ## Header appearance

@@ -84,10 +84,9 @@ The new App Guide will be released in phases over the coming days and weeks.
 - Phase 4 – Resources and Style
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-See the Insights  [blog](https://insights.ubuntu.com/) for more updates.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|See the Insights  [blog](https://insights.ubuntu.com/) for more updates.|
+|
+|---|-----|
 
 
 Or follow us on  [Google+](https://plus.google.com/communities/111350780270925540549) and see the  [Canonical Design blog](https://design.canonical.com/) for all the latest news and designs.

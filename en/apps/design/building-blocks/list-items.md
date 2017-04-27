@@ -28,10 +28,9 @@ List items can be used to make up a list of ordered scrollable items that are re
 -  [List item layouts ›](#list-item-layouts)
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.|
+|
+|---|-----|
 
 
 ## Overview
@@ -137,10 +136,9 @@ In the Contacts app for example, the list of contacts is made editable to allow 
 3. The header changes to reveal editing actions, and the header section is replaced with a toolbar underneath the main header with further editing actions.
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-For more information about how edit mode is used see  [Header](header.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information about how edit mode is used see  [Header](header.md).|
+|
+|---|-----|
 
 
 ## Structure
@@ -177,10 +175,9 @@ List items must always contain at least one slot.
 If your list item allows for navigation through to an associated view, then a ProgressionSlot (chevron) is used in a fixed position in the right-most slot. No other actions is displayed in this slot, because this would conflict with the chevron navigation.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [ProgressionSlot API](../../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ProgressionSlot API](../../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.|
+|
+|---|-----|
 
 
 ![366w_ListItems_Chevron1 (4)](https://assets.ubuntu.com/v1/08b912ae-366w_ListItems_Chevron1-4.png)
@@ -210,10 +207,9 @@ Text is always aligned according to the currently displayed language. For exampl
 3. 2 lines – Summary
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-Developers are free to override the maximum amount lines for each label. See the  [Label API](../../api-qml-current/Ubuntu.Components.Label.md) for more information.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers are free to override the maximum amount lines for each label. See the  [Label API](../../api-qml-current/Ubuntu.Components.Label.md) for more information.|
+|
+|---|-----|
 
 
 ## Actions
@@ -255,10 +251,9 @@ Primary action: call using tap or click on the dial action.
 Secondary action: message using tap or click on the message action icon.
 
 
-![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Avoid creating visual noise by repeatedly using additional actions in list items.
+|![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Avoid creating visual noise by repeatedly using additional actions in list items.|
+|
+|---|-----|
 
 
 ## Touch regions
@@ -320,10 +315,9 @@ The toolkit provides a number of layouts when creating a list item to ensure use
 - The maximum number of slots is four.
 
 
-![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-You can place what you wish inside the slots. However, these recommendations take into consideration cognitive familiarity to provide a clean and minimalist look.
+|![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|You can place what you wish inside the slots. However, these recommendations take into consideration cognitive familiarity to provide a clean and minimalist look.|
+|
+|---|-----|
 
 
 ![366w_ListItems_OneSlotSmall (2)](https://assets.ubuntu.com/v1/26479ed7-366w_ListItems_OneSlotSmall-2.png)
@@ -346,10 +340,9 @@ You can place what you wish inside the slots. However, these recommendations tak
 ## Four slot
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.|
+|
+|---|-----|
 
 
 ## Avoid cluttered list items

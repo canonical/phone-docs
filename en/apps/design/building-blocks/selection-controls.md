@@ -27,10 +27,9 @@ The following components are used to change the state of a property or setting f
 Use a checkbox to enable or select an option from a list; or as a singular option. For example, a singular option that is an instruction to the system such as ‘Show password’, or selecting a property to be applied or unapplied to add or change a setting; such as changing a font style to ‘Bold’ and ‘Italic’.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Checkbox API](../../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Checkbox API](../../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.|
+|
+|---|-----|
 
 
 ## Multiple options
@@ -92,10 +91,9 @@ Each checkbox is independent of each other and can be selected individually. How
 Use for single selection where users confirm an action, such as accepting Terms and Conditions of a setting.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Use indeterminate checkboxes when the value is neither checked or unchecked.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Use indeterminate checkboxes when the value is neither checked or unchecked.|
+|
+|---|-----|
 
 
 ## Make it obvious
@@ -124,10 +122,9 @@ When aligning checkboxes with labels, or other dependent controls, it is importa
 ![750w_FormElements_Alignment (1)](https://assets.ubuntu.com/v1/ee20c929-750w_FormElements_Alignment-1.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-For more guidance on using familiar language and the right tone of voice for labels see Writing (coming soon).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more guidance on using familiar language and the right tone of voice for labels see Writing (coming soon).|
+|
+|---|-----|
 
 
 ## Radio buttons
@@ -143,10 +140,9 @@ Use radio buttons when there is a list of two or more options that are exclusive
 Clicking a non-selected radio button will deselect whichever button was previously selected. For example, ‘Soft delay’ will be deselected if the user selects another option.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Options presented with radio buttons require less mental effort, because users can easily compare options as they are all visible at once.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Options presented with radio buttons require less mental effort, because users can easily compare options as they are all visible at once.|
+|
+|---|-----|
 
 
 ## One selection – use radio buttons
@@ -178,10 +174,9 @@ If you have a selection of options that are long to list and the user could type
 Don’t use a radio menu entirely for command items. If the menu never contains any radio items, then use a toolbutton menu instead.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-A toolbutton is a borderless button, as found in the header or a bottom-edge panel. It usually consists of an icons, but may instead contain text buttons. See Buttons (coming soon) for more details.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|A toolbutton is a borderless button, as found in the header or a bottom-edge panel. It usually consists of an icons, but may instead contain text buttons. See Buttons (coming soon) for more details.|
+|
+|---|-----|
 
 
 ## Radio list
@@ -210,10 +205,9 @@ The switch allows the user to perform an action by turning it on or off.
 ![750w_FormElements_UseCasesBluetooth](https://assets.ubuntu.com/v1/49e2bc42-750w_FormElements_UseCasesBluetooth.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Switch API](../../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Switch API](../../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.|
+|
+|---|-----|
 
 
 ## Use cases
@@ -246,10 +240,9 @@ The toolkit provides a combination of multiple pickers for you to use to show th
 Use the spinner component to display a set of values on a reel that can be either flickable or draggable.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [PickerPanel API](../../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [PickerPanel API](../../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.|
+|
+|---|-----|
 
 
 ## Display month, year and day
@@ -298,10 +291,9 @@ The Time Picker supports hour, minute and seconds elements in any combination; e
 ![366w_FormElements_time 3 inputs (1)](https://assets.ubuntu.com/v1/75225ed8-366w_FormElements_time-3-inputs-1.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-An AM/PM selector will be added if the 12-hour clock is used.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|An AM/PM selector will be added if the 12-hour clock is used.|
+|
+|---|-----|
 
 
 ## Slider
@@ -310,10 +302,9 @@ An AM/PM selector will be added if the 12-hour clock is used.
 Use interactive sliders to select a value from a continuous or discrete range of values.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.|
+|
+|---|-----|
 
 
 ## Slider types
@@ -322,10 +313,9 @@ The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a compon
 You can choose between different slider types to allow the user to set different values.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-The interactive nature of the slider makes it a great choice for settings that reflect intensity levels, such as volume, brightness, or color saturation.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The interactive nature of the slider makes it a great choice for settings that reflect intensity levels, such as volume, brightness, or color saturation.|
+|
+|---|-----|
 
 
 ## Default slider
@@ -363,10 +353,9 @@ A system volume control is a control that any app can embed in its UI. You shoul
 For example, if you app has a media player or is a game that has sound effects, but no background music.It consists of a slider that automatically reflects and adjusts the audio volume for the current output role through the current output device.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The System volume control component is currently under heavy development because it might also include other audio features, so you won’t have to worry about developing it yourself.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The System volume control component is currently under heavy development because it might also include other audio features, so you won’t have to worry about developing it yourself.|
+|
+|---|-----|
 
 
 ## The advantages of using system volume control:

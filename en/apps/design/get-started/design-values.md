@@ -34,10 +34,9 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 ![](https://assets.ubuntu.com/v1/18e792e0-750w_Design_Values_AllInputEqualv2.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).|
+|
+|---|-----|
 
 
 ## Fast and effortless interactions
@@ -68,10 +67,9 @@ The task switcher allows the user to easily switch between apps or scopes using 
 Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are placed on the right, and negative actions, such as Delete and Cancel are placed on the left.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.|
+|
+|---|-----|
 
 
 ## Negative swipes left
@@ -90,10 +88,9 @@ The user swipes left to right to reveals a red deletion option when editing a co
 The user swipes right to left to reveal contextual options, such as information and messaging.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.|
+|
+|---|-----|
 
 
 ## Meaning in colors
@@ -105,10 +102,9 @@ The Suru design language associates meanings with certain colours to help the us
 Most color blind people have difficulty distinguishing red from green. Don’t use color in isolation, but instead bring them together with additional visual cues (e.g. text labels, button position and style).
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.|
+|
+|---|-----|
 
 
 ## Green
@@ -133,10 +129,9 @@ Negative and destructive actions, such as delete or block contact.
 Blue is an informative colour, it is neither positive or negative. Use blue for selected activity states. It works with all other elements, on both dark and light backgrounds, and stands out clearly and precisely when used in combination with a focus state.
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-For more information on how color is used across the platform see Color palette (coming soon).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on how color is used across the platform see Color palette (coming soon).|
+|
+|---|-----|
 
 
 ## Focus on content

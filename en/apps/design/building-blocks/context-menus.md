@@ -41,10 +41,9 @@ The same context menu appears with more commands when a user right-clicks on a w
 ![750w_Menus_PointerEnvironment](https://assets.ubuntu.com/v1/ff2be64e-750w_Menus_PointerEnvironment.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-[See how context menus behave in List items](list-items.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[See how context menus behave in List items](list-items.md).|
+|
+|---|-----|
 
 
 ## Cascading menus
@@ -53,10 +52,9 @@ The same context menu appears with more commands when a user right-clicks on a w
 Cascading menus act as sub-menus within your main contextual or application menu.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Try to limit nesting to one level deep, because it can be difficult for the user to navigate through multiple nested submenus in staged environments.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Try to limit nesting to one level deep, because it can be difficult for the user to navigate through multiple nested submenus in staged environments.|
+|
+|---|-----|
 
 
 ## Use case
@@ -106,10 +104,9 @@ On smaller screens, such as mobile, users reveal leading and trailing actions by
 ![366w_ListItems_ContextualActions1 (1)](https://assets.ubuntu.com/v1/115cb70d-366w_ListItems_ContextualActions1-1.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-[For more information about leading and trailing actions see List Item](list-items.md).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more information about leading and trailing actions see List Item](list-items.md).|
+|
+|---|-----|
 
 
 ## Layouts
@@ -176,10 +173,9 @@ Be concise and clear to avoid confusing or misinforming the user.
 Use over-long text labels that result in truncation (…).
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-By default the SDK applies a truncation to long text labels, therefore avoid placing them manually.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|By default the SDK applies a truncation to long text labels, therefore avoid placing them manually.|
+|
+|---|-----|
 
 
 ## Label examples
@@ -231,10 +227,9 @@ In cases where editable or configurable groups of similar items are presented to
 The top three actions inside your menu will appear as trailing actions when the user swipes right. Destruction actions inside the menu, such as delete, will be available as a leading action when the user swipes left.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Developer can choose to input a burger menu to store the actions inside the header rather than inside the list item, if they wish.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Developer can choose to input a burger menu to store the actions inside the header rather than inside the list item, if they wish.|
+|
+|---|-----|
 
 
 ## Avoid duplicating actions
@@ -267,10 +262,9 @@ The Flag Gutter will always be present in the context menu in order to allow fla
 ![366w_Menus_FlagGutter](https://assets.ubuntu.com/v1/a2d578bc-366w_Menus_FlagGutter.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-For more information on checkboxes and radio buttons see  [Selection controls.](selection-controls.md)
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on checkboxes and radio buttons see  [Selection controls.](selection-controls.md)|
+|
+|---|-----|
 
 
 ## Behavior

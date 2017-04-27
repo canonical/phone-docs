@@ -146,10 +146,9 @@ When your application is launched for the first time, the user will see a floati
 After the user has  interacted with Hint 1, the hint will morph to become Hint 2. This hint contains a label, icon or a combinations of the two. By using both a label and an icon it gives the user more detail of the content it will show, such as ‘ + New page’.
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-For more information on the behavior of the bottom edge hint see  [Bottom edge](/apps/design/building-blocks/bottom-edge).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on the behavior of the bottom edge hint see  [Bottom edge](/apps/design/building-blocks/bottom-edge).|
+|
+|---|-----|
 
 
 ## Instructional overlays
@@ -164,10 +163,9 @@ The SDK toolkit provides coach marks and tutorials that you can use to illustrat
 The look and feel of an instructional overlay should differ from your UI visual style. Doing this will create a distinction between what is permanently part of the app and what is an initial overlay feature.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-For more information on instructional overlays see Coach Marks (Coming soon).
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|For more information on instructional overlays see Coach Marks (Coming soon).|
+|
+|---|-----|
 
 
 ## Coach marks

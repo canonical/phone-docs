@@ -26,11 +26,8 @@ Use the header to let the user know where they are, what they can do, and where 
 
 -  [Best practices ›](#best-practices)
 
-
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Header API](../../api-qml-current/Ubuntu.Components.Header.md) includes the exposed, flickable and moving properties of the header.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Header API](../../api-qml-current/Ubuntu.Components.Header.md) includes the exposed, flickable and moving properties of the header.|
+|---|-----|
 
 
 ## Usage
@@ -68,10 +65,9 @@ The navigation area can include a Back Button, title, a subtitle or a navigation
 The action area can include actions such as settings, search, views, or an action drawer for when there’s no room to place further actions.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Don’t use a navigation drawer and an action drawer at the same time, because users are unlikely to distinguish between them.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Don’t use a navigation drawer and an action drawer at the same time, because users are unlikely to distinguish between them.|
+|
+|---|-----|
 
 
 ## Slots
@@ -82,10 +78,9 @@ The header contains a number of slots that can hold actions or navigational opti
 ![750w_Header_HeaderComponents](https://assets.ubuntu.com/v1/bc59f393-750w_Header_HeaderComponents.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Think about the most important actions and views you want the user to perform and make it easy for them to find by using the header.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Think about the most important actions and views you want the user to perform and make it easy for them to find by using the header.|
+|
+|---|-----|
 
 
 For smaller surfaces, such as on mobile, the SDK provides a maximum of four slots per header that can be arranged in two ways.
@@ -175,10 +170,9 @@ As the header gains width across screen sizes, additional slots become visible a
 The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-If your header has no more slots for actions, then everything after Slot D goes into Slot E inside an action drawer.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|If your header has no more slots for actions, then everything after Slot D goes into Slot E inside an action drawer.|
+|
+|---|-----|
 
 
 ## Search inside the header
@@ -202,10 +196,9 @@ Search can appear in both panels when two or more headers are present. For examp
 Avoid placing search in both panels unless necessary, because it could confuse the user as to what content is being filter. For example, they may type in the wrong field to search for a specific query if it isn’t in a hierarchical order.
 
 
-![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
-
-
-Find more information on search in the header see Navigation (coming soon).
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|Find more information on search in the header see Navigation (coming soon).|
+|
+|---|-----|
 
 
 ## Toolbar
@@ -214,10 +207,9 @@ Find more information on search in the header see Navigation (coming soon).
 The toolbar is an additional component that can be used to hold actions.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Toolbar API](../../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Toolbar API](../../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.|
+|
+|---|-----|
 
 
 ## Edit mode
@@ -256,10 +248,9 @@ Once the user has initiated the editing action, the toolbar will appear below th
 If you only use one text button then place it on the left hand side, because it will be easier for the user to reach with one gesture.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-The toolbar can contain additional actions other than editing ones, such as ‘Share’ or ‘Forward’.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The toolbar can contain additional actions other than editing ones, such as ‘Share’ or ‘Forward’.|
+|
+|---|-----|
 
 
 ## Edit mode in a multi-panel layout
@@ -278,10 +269,9 @@ An activated edit mode must always apply to the panel view it is triggered in. I
 If you need a delete icon place it on the left of the toolbar. If the  content you are editing needs to be saved then use two text buttons instead, such as ‘Cancel’ and ‘Save’.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](/apps/design/get-started/design-values) for more information.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](/apps/design/get-started/design-values) for more information.|
+|
+|---|-----|
 
 
 ## Toolbar placement
@@ -303,10 +293,9 @@ The toolbar appears below the main header when edit mode is initiated.
 You can decide how you want the header to appear in four ways: Fixed, Fixed and Opaque, Fixed and Transparent and Hidden.
 
 
-![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)
-
-
-When a header is displayed in a larger surface or a window, such as in a desktop, it will be fixed, because there will be more room to display content.
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|When a header is displayed in a larger surface or a window, such as in a desktop, it will be fixed, because there will be more room to display content.|
+|
+|---|-----|
 
 
 ## Fixed (default)
@@ -404,10 +393,9 @@ For example, the Clock app has a customized header and uses icons at the top of 
 The header section allow users to easily shift between category views within the same page. It has the same visibility as the main header. For example, if the header is set to default it will slide away with the sections when the user scrolls down.
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
-
-
-The  [Section API](../../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Section API](../../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.|
+|
+|---|-----|
 
 
 ## Dekko app
@@ -466,5 +454,3 @@ Allow users quick access to the most important actions by placing them inside th
 
 
 ![366w_Header_ClearHeaderAction (1)](https://assets.ubuntu.com/v1/50dcda9a-366w_Header_ClearHeaderAction-1.png)
-
-

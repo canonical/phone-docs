@@ -10,10 +10,10 @@ Scopes are a quick and easy way to deliver a content consumption experience with
 ![750w_DesignScopes_MainImage](https://assets.ubuntu.com/v1/12e52e48-750w_DesignScopes_MainImage.png)
 
 
-![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links..png)
+|![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links..png)|Start developing scopes with the [Scope Toolkit.](../../../scopes/design/guides/index.md)|
+|
+|---|-----|
 
-
-Start developing scopes with the [Scope Toolkit.](../../../scopes/design/guides/index.md)
 
 
 ## What is a scope?
