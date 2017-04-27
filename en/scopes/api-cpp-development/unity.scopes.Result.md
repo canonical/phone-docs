@@ -8,7 +8,7 @@ Title: unity.scopes.Result
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Result.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Result:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/40c96b50-f2ad-4e85-ab36-97399c0e87d1-../unity.scopes.Result/classunity_1_1scopes_1_1_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -8,7 +8,7 @@ Title: unity.scopes.Scope
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Scope.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Scope:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/67396ef0-5393-4d41-b02b-0f8b9a521f3a-../unity.scopes.Scope/classunity_1_1scopes_1_1_scope__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_scope__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -45,7 +45,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa53e54f6d9b505913dafda9ffca24d58"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="unity.scopes.md#a35e73cba26e0db0b36ffa0283a7d55dd">QueryCtrlProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa53e54f6d9b505913dafda9ffca24d58">activate_result_action</a> (<a class="el" href="unity.scopes.Result.md">Result</a> const &amp;result, <a class="el" href="unity.scopes.ActionMetadata.md">ActionMetadata</a> const &amp;metadata, std::string const &amp;action_id, ActivationListenerBase::SPtr const &amp;reply)=0</td></tr>
 <tr class="memdesc:aa53e54f6d9b505913dafda9ffca24d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates activation of a result (in-card) action.  More...<br /></td></tr>
 <tr class="separator:aa53e54f6d9b505913dafda9ffca24d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_object')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/cb9aa353-b926-4138-8dcd-2973c900ea1b-../unity.scopes.Scope/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Object.md">unity::scopes::Object</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_object')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Object.md">unity::scopes::Object</a></td></tr>
 <tr class="memitem:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Object.md#ad7618cc9d878c40b389361d4acd473ae">endpoint</a> ()=0</td></tr>
 <tr class="memdesc:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the endpoint this proxy connects to.  More...<br /></td></tr>
 <tr class="separator:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>

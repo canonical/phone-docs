@@ -8,7 +8,7 @@ Title: unity.scopes.testing.Sample
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Statistics.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Sample:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/5e20e564-0235-48ff-9a3f-17e13aa2ce51-../unity.scopes.testing.Sample/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_sample__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Types</h2></td></tr>

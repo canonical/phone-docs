@@ -8,7 +8,7 @@ Title: unity.scopes.RangeInputFilter
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/RangeInputFilter.h&gt;</code></p>
 Inheritance diagram for unity::scopes::RangeInputFilter:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/84a80008-82e7-491c-8b9f-9684d1fcc80a-../unity.scopes.RangeInputFilter/classunity_1_1scopes_1_1_range_input_filter__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_range_input_filter__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -48,7 +48,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fa97b63d86a89e7144a89e0996d1304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa97b63d86a89e7144a89e0996d1304">update_state</a> (<a class="el" href="unity.scopes.FilterState.md">FilterState</a> &amp;filter_state, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#afd86208a5f8fe8a81877bd0bf4588758">start_value</a>, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;<a class="el" href="#af5bee0ddf65a375a4a5e19b4313de940">end_value</a>) const </td></tr>
 <tr class="memdesc:a5fa97b63d86a89e7144a89e0996d1304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store start and end value for this filter in the filter state.  More...<br /></td></tr>
 <tr class="separator:a5fa97b63d86a89e7144a89e0996d1304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_filter_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/eb588139-d958-496e-a1fc-cd6c9a9bdbfc-../unity.scopes.RangeInputFilter/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_filter_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
 <tr class="memitem:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab4ab1b600ce3967dc50255e736c6d02e">set_display_hints</a> (int hints)</td></tr>
 <tr class="memdesc:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets display hints for the Shell UI.  More...<br /></td></tr>
 <tr class="separator:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,7 +91,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_filter_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3ee4eb9b-b186-4bc5-a351-1e902c970a6c-../unity.scopes.RangeInputFilter/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_filter_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
 <tr class="memitem:ab9e833d5e4029fed745d15ba63715159 inherit pub_types_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159">DisplayHints</a> { <a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f">Default</a> = 0, 
 <a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56">Primary</a> = 1
 }</td></tr>

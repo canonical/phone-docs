@@ -6,7 +6,7 @@ Title: unity.scopes.qt.QScopeBaseAPI
 
 <p><code>#include &lt;unity/scopes/qt/QScopeBaseAPI.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QScopeBaseAPI:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/cf8b8813-12db-46d3-9e1f-7aa9bed01001-../unity.scopes.qt.QScopeBaseAPI/classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_scope_base_a_p_i__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -20,7 +20,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a839ca01a0085c27edc5ee6fa060f7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5023d43f3169eb51283ebd6488da631"><td class="memItemLeft" align="right" valign="top">virtual unity::scopes::SearchQueryBase::UPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5023d43f3169eb51283ebd6488da631">search</a> (<a class="el" href="unity.scopes.CannedQuery.md">unity::scopes::CannedQuery</a> const &amp;q, <a class="el" href="unity.scopes.SearchMetadata.md">unity::scopes::SearchMetadata</a> const &amp;) override</td></tr>
 <tr class="separator:ac5023d43f3169eb51283ebd6488da631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_scope_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_scope_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f3246472-f2de-4eb0-9bbe-05e036c1ce8e-../unity.scopes.qt.QScopeBaseAPI/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ScopeBase.md">unity::scopes::ScopeBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_scope_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_scope_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ScopeBase.md">unity::scopes::ScopeBase</a></td></tr>
 <tr class="memitem:a386e99b98318a70f25db84bbe11c0292 inherit pub_methods_classunity_1_1scopes_1_1_scope_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.ScopeBase.md#a386e99b98318a70f25db84bbe11c0292">run</a> ()</td></tr>
 <tr class="memdesc:a386e99b98318a70f25db84bbe11c0292 inherit pub_methods_classunity_1_1scopes_1_1_scope_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the scopes runtime after it has called start() to hand a thread of control to the scope.  More...<br /></td></tr>
 <tr class="separator:a386e99b98318a70f25db84bbe11c0292 inherit pub_methods_classunity_1_1scopes_1_1_scope_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -60,7 +60,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classunity_1_1scopes_1_1_scope_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classunity_1_1scopes_1_1_scope_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/30427f39-600b-404e-b8df-97c1d22bea00-../unity.scopes.qt.QScopeBaseAPI/closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="unity.scopes.ScopeBase.md">unity::scopes::ScopeBase</a></td></tr>
+<tr class="inherit_header pub_static_methods_classunity_1_1scopes_1_1_scope_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classunity_1_1scopes_1_1_scope_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="unity.scopes.ScopeBase.md">unity::scopes::ScopeBase</a></td></tr>
 <tr class="memitem:a4cbdf8cb790e6f44e388e70ab456e686 inherit pub_static_methods_classunity_1_1scopes_1_1_scope_base"><td class="memItemLeft" align="right" valign="top">
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.ScopeBase.md#a4cbdf8cb790e6f44e388e70ab456e686">runtime_version</a> (int &amp;v_major, int &amp;v_minor, int &amp;v_micro) noexcept</td></tr>
 <tr class="memdesc:a4cbdf8cb790e6f44e388e70ab456e686 inherit pub_static_methods_classunity_1_1scopes_1_1_scope_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version information for the scopes API that the scope was linked with. <br /></td></tr>

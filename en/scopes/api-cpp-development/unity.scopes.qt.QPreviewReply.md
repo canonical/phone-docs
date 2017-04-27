@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QPreviewReply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QPreviewReply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QPreviewReply:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/0bd30626-ebad-45d4-bb4b-a15f353587de-../unity.scopes.qt.QPreviewReply/classunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

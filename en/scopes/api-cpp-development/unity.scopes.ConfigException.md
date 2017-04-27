@@ -8,7 +8,7 @@ Title: unity.scopes.ConfigException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ConfigException:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/a50dceb6-44d0-4a3f-968c-8707062dd11e-../unity.scopes.ConfigException/classunity_1_1scopes_1_1_config_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_config_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

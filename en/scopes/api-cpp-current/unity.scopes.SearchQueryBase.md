@@ -8,7 +8,7 @@ Title: unity.scopes.SearchQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/SearchQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::SearchQueryBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/7c315feb-2d6d-4b73-88d5-697a2d198d91-../unity.scopes.SearchQueryBase/classunity_1_1scopes_1_1_search_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_search_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -51,7 +51,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9821168cf48dd1548db3b258d6d8cba3"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="unity.scopes.md#a35e73cba26e0db0b36ffa0283a7d55dd">QueryCtrlProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>subsearch</b> (<a class="el" href="unity.scopes.md#a94db15da410f8419e4da711db842aaae">ScopeProxy</a> const &amp;scope, std::string const &amp;query_string, std::string const &amp;department_id, <a class="el" href="unity.scopes.FilterState.md">FilterState</a> const &amp;filter_state, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;user_data, <a class="el" href="unity.scopes.SearchMetadata.md">SearchMetadata</a> const &amp;hints, SearchListenerBase::SPtr const &amp;reply)</td></tr>
 <tr class="separator:a9821168cf48dd1548db3b258d6d8cba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/47d0063a-9bd0-4ff9-9994-228606fd3df7-../unity.scopes.SearchQueryBase/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_query_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_query_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.QueryBase.md">unity::scopes::QueryBase</a></td></tr>
 <tr class="memitem:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.QueryBase.md#a596b19dbfd6efe96b834be75a9b64c68">cancelled</a> ()=0</td></tr>
 <tr class="memdesc:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the scopes runtime when the query originator cancels a query.  More...<br /></td></tr>
 <tr class="separator:a596b19dbfd6efe96b834be75a9b64c68 inherit pub_methods_classunity_1_1scopes_1_1_query_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QScopeBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QScopeBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QScopeBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/b01acb15-5744-4f19-8ac5-5f1642b36da0-../unity.scopes.qt.QScopeBase/classunity_1_1scopes_1_1qt_1_1_q_scope_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_scope_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

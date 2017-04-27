@@ -8,7 +8,7 @@ Title: unity.scopes.TimeoutException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::TimeoutException:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/64e496d8-9f9c-476f-a82d-98f03ab7f60c-../unity.scopes.TimeoutException/classunity_1_1scopes_1_1_timeout_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_timeout_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -27,7 +27,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a7114cebfffd39c5c362f6e9043ac14"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="index.html">TimeoutException</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">TimeoutException</a> const &amp;)</td></tr>
 <tr class="separator:a2a7114cebfffd39c5c362f6e9043ac14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_middleware_exception')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/94243ee6-f7eb-4dd5-bb15-3d52ffe8faf5-../unity.scopes.TimeoutException/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.MiddlewareException.md">unity::scopes::MiddlewareException</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_middleware_exception')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.MiddlewareException.md">unity::scopes::MiddlewareException</a></td></tr>
 <tr class="memitem:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.MiddlewareException.md#af6250d2e529d103d30d3ebf06689c146">MiddlewareException</a> (std::string const &amp;reason)</td></tr>
 <tr class="memdesc:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the exception.  More...<br /></td></tr>
 <tr class="separator:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="memSeparator" colspan="2">&#160;</td></tr>

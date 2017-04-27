@@ -8,7 +8,7 @@ Title: unity.scopes.QueryMetadata
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/QueryMetadata.h&gt;</code></p>
 Inheritance diagram for unity::scopes::QueryMetadata:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/a0fff6ec-1a97-4e76-a815-a9f4c0fdccc2-../unity.scopes.QueryMetadata/classunity_1_1scopes_1_1_query_metadata__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_query_metadata__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Types</h2></td></tr>

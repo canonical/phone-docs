@@ -8,7 +8,7 @@ Title: unity.scopes.PreviewListenerBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/PreviewListenerBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::PreviewListenerBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/06cc4dd7-561e-416b-959b-397ed440c999-../unity.scopes.PreviewListenerBase/classunity_1_1scopes_1_1_preview_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_preview_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -24,7 +24,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c11160354d49672100522d3e476b7e3">push</a> (std::string const &amp;key, <a class="el" href="unity.scopes.Variant.md">Variant</a> const &amp;value)=0</td></tr>
 <tr class="memdesc:a2c11160354d49672100522d3e476b7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the scopes runtime for each data field that is returned by preview(). <br /></td></tr>
 <tr class="separator:a2c11160354d49672100522d3e476b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_listener_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_listener_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a914cea5-c3fc-4f5f-a0b6-9f0e32189bb9-../unity.scopes.PreviewListenerBase/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ListenerBase.md">unity::scopes::ListenerBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_listener_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_listener_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ListenerBase.md">unity::scopes::ListenerBase</a></td></tr>
 <tr class="memitem:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.ListenerBase.md#afb44937749b61c9e3ebfa20ec6e4634b">finished</a> (<a class="el" href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &amp;details)=0</td></tr>
 <tr class="memdesc:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by the scopes runtime after the final result for a request was sent.  More...<br /></td></tr>
 <tr class="separator:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

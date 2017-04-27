@@ -8,7 +8,7 @@ Title: unity.scopes.testing.Result
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Result.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Result:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/d2200805-f550-40f1-b6db-4aa869180942-../unity.scopes.testing.Result/classunity_1_1scopes_1_1testing_1_1_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -16,7 +16,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e95120f4af1ab4eb0f6676080ba34f">Result</a> ()</td></tr>
 <tr class="memdesc:a66e95120f4af1ab4eb0f6676080ba34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor, creates <a class="el" href="index.html" title="A simple class implementation of unity::scopes::Result that provides a default constructor. ">Result</a> instance with no attributes. <br /></td></tr>
 <tr class="separator:a66e95120f4af1ab4eb0f6676080ba34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_result')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/5c964ab1-29e9-414d-8816-2d97d24ffec8-../unity.scopes.testing.Result/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Result.md">unity::scopes::Result</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_result')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Result.md">unity::scopes::Result</a></td></tr>
 <tr class="memitem:af50d9e95694cc46f4c76369e97aec927 inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Result.md#af50d9e95694cc46f4c76369e97aec927">~Result</a> ()</td></tr>
 <tr class="separator:af50d9e95694cc46f4c76369e97aec927 inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744776333a9748ba41dace7c6943ca4d inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Result.md#a744776333a9748ba41dace7c6943ca4d">store</a> (<a class="el" href="unity.scopes.Result.md">Result</a> const &amp;other, bool intercept_activation=false)</td></tr>

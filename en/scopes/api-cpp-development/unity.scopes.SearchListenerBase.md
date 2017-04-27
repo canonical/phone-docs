@@ -8,7 +8,7 @@ Title: unity.scopes.SearchListenerBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/SearchListenerBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::SearchListenerBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/21935c2e-a46d-41d8-b94c-b1472664ce3f-../unity.scopes.SearchListenerBase/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_search_listener_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -31,7 +31,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aaf1af46d5d7b1219558f15c22ef85b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf1af46d5d7b1219558f15c22ef85b10">push</a> (<a class="el" href="unity.scopes.md#adab58c13cf604e0e64bd6b1a745364d3">Filters</a> const &amp;filters)</td></tr>
 <tr class="memdesc:aaf1af46d5d7b1219558f15c22ef85b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by the scope to send all filters and their states.  More...<br /></td></tr>
 <tr class="separator:aaf1af46d5d7b1219558f15c22ef85b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_listener_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_listener_base')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/91ce68eb-e00b-4851-97f5-ba72041a571a-../unity.scopes.SearchListenerBase/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ListenerBase.md">unity::scopes::ListenerBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_listener_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_listener_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.ListenerBase.md">unity::scopes::ListenerBase</a></td></tr>
 <tr class="memitem:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.ListenerBase.md#afb44937749b61c9e3ebfa20ec6e4634b">finished</a> (<a class="el" href="unity.scopes.CompletionDetails.md">CompletionDetails</a> const &amp;details)=0</td></tr>
 <tr class="memdesc:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by the scopes runtime after the final result for a request was sent.  More...<br /></td></tr>
 <tr class="separator:afb44937749b61c9e3ebfa20ec6e4634b inherit pub_methods_classunity_1_1scopes_1_1_listener_base"><td class="memSeparator" colspan="2">&#160;</td></tr>

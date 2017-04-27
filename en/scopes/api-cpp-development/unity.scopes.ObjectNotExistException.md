@@ -8,7 +8,7 @@ Title: unity.scopes.ObjectNotExistException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ObjectNotExistException:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/0d95d266-eecd-459f-82dd-278db38bee46-../unity.scopes.ObjectNotExistException/classunity_1_1scopes_1_1_object_not_exist_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_object_not_exist_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -30,7 +30,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c15b6adc374c4c4e48116920dd3d571"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="index.html">ObjectNotExistException</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">ObjectNotExistException</a> const &amp;)</td></tr>
 <tr class="separator:a6c15b6adc374c4c4e48116920dd3d571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_middleware_exception')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ded1e895-1eb6-4a04-84ce-d02bab7fcc3c-../unity.scopes.ObjectNotExistException/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.MiddlewareException.md">unity::scopes::MiddlewareException</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_middleware_exception')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.MiddlewareException.md">unity::scopes::MiddlewareException</a></td></tr>
 <tr class="memitem:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.MiddlewareException.md#af6250d2e529d103d30d3ebf06689c146">MiddlewareException</a> (std::string const &amp;reason)</td></tr>
 <tr class="memdesc:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the exception.  More...<br /></td></tr>
 <tr class="separator:af6250d2e529d103d30d3ebf06689c146 inherit pub_methods_classunity_1_1scopes_1_1_middleware_exception"><td class="memSeparator" colspan="2">&#160;</td></tr>

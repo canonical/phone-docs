@@ -8,7 +8,7 @@ Title: unity.scopes.Object
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Object.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Object:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/080831a9-80c7-4614-873f-2b73f65e7f5b-../unity.scopes.Object/classunity_1_1scopes_1_1_object__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_object__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

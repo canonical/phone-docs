@@ -8,7 +8,7 @@ Title: unity.scopes.CategorisedResult
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/CategorisedResult.h&gt;</code></p>
 Inheritance diagram for unity::scopes::CategorisedResult:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/37662741-5bf8-4d90-969d-bf1a00677beb-../unity.scopes.CategorisedResult/classunity_1_1scopes_1_1_categorised_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_categorised_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -36,7 +36,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04884020d59d81ade02afe7aa77865fd"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="index.html">CategorisedResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">CategorisedResult</a> &amp;&amp;)</td></tr>
 <tr class="separator:a04884020d59d81ade02afe7aa77865fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_result')"><img src="https://developer.ubuntu.com/static/devportal_uploaded/970db98c-a891-4cf0-ad5c-ebc17f3baf17-../unity.scopes.CategorisedResult/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Result.md">unity::scopes::Result</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_result')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Result.md">unity::scopes::Result</a></td></tr>
 <tr class="memitem:af50d9e95694cc46f4c76369e97aec927 inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Result.md#af50d9e95694cc46f4c76369e97aec927">~Result</a> ()</td></tr>
 <tr class="separator:af50d9e95694cc46f4c76369e97aec927 inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744776333a9748ba41dace7c6943ca4d inherit pub_methods_classunity_1_1scopes_1_1_result"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Result.md#a744776333a9748ba41dace7c6943ca4d">store</a> (<a class="el" href="unity.scopes.Result.md">Result</a> const &amp;other, bool intercept_activation=false)</td></tr>

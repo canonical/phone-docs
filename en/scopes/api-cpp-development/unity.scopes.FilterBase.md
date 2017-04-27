@@ -8,7 +8,7 @@ Title: unity.scopes.FilterBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/FilterBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::FilterBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/24fbb5f8-0877-4514-9819-56ec249d6214-../unity.scopes.FilterBase/classunity_1_1scopes_1_1_filter_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1_filter_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Types</h2></td></tr>

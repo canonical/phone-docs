@@ -6,7 +6,7 @@ Title: autopilot.emulators
 
 <!-- Start Namespace Content -->
 <span id="autopilot-emulators-backwards-compatibility-for-autopilot-v1-2"></span>
-<img alt="/static/devportal_uploaded/ee7b7262-fe8f-4626-b39e-44fc918d70ec-../autopilot.emulators/_images/otto-64.png" src="https://developer.ubuntu.com/static/devportal_uploaded/ee7b7262-fe8f-4626-b39e-44fc918d70ec-../autopilot.emulators/_images/otto-64.png" />
+<img alt="/static/devportal_uploaded/ee7b7262-fe8f-4626-b39e-44fc918d70ec-../autopilot.emulators/_images/otto-64.png" src="../../../media/_images/otto-64.png" />
 <p class="first admonition-title">Autopilot Says</p>
 <p><strong>Deprecated Namespace!</strong></p>
 <p>This module contains modules that were in the <tt class="docutils literal"><span class="pre">autopilot.emulators</span></tt>

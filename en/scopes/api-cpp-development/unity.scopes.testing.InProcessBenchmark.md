@@ -8,7 +8,7 @@ Title: unity.scopes.testing.InProcessBenchmark
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/InProcessBenchmark.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::InProcessBenchmark:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/2852f971-8545-4c60-ba58-042f69fdd944-../unity.scopes.testing.InProcessBenchmark/classunity_1_1scopes_1_1testing_1_1_in_process_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_in_process_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

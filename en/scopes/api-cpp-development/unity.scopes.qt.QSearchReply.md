@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QSearchReply
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QSearchReply.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QSearchReply:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/ec7172a3-6f65-4171-a33a-6d148623aed2-../unity.scopes.qt.QSearchReply/classunity_1_1scopes_1_1qt_1_1_q_search_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_search_reply__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

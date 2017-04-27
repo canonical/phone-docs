@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QResult
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QResult.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QResult:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/ebcbff77-7f91-45d4-85dd-ffb3a4193f3c-../unity.scopes.qt.QResult/classunity_1_1scopes_1_1qt_1_1_q_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QPreviewQueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QPreviewQueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QPreviewQueryBase:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/897c31aa-c0a1-40f8-8100-50f6ecb7cf95-../unity.scopes.qt.QPreviewQueryBase/classunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_preview_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

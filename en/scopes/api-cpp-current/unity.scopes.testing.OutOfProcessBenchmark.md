@@ -8,7 +8,7 @@ Title: unity.scopes.testing.OutOfProcessBenchmark
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/OutOfProcessBenchmark.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::OutOfProcessBenchmark:
-<img src="https://developer.ubuntu.com/static/devportal_uploaded/77252b4f-3540-4adb-84b7-961bf0ca7a22-../unity.scopes.testing.OutOfProcessBenchmark/classunity_1_1scopes_1_1testing_1_1_out_of_process_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_out_of_process_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
