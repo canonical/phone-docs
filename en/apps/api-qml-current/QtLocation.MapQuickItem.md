@@ -41,7 +41,7 @@ Title: QtLocation.MapQuickItem
 <span class="name">id</span>: <span class="name">image</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/25dc5576-cab8-47b0-b5ad-283091110cc7-api/apps/qml/sdk-15.04.1/QtLocation.MapQuickItem/images/api-mapquickitem.png" alt="" /></p><!-- @@@MapQuickItem -->
+<p class="centerAlign"><img src="../../../media/api-mapquickitem.png" alt="" /></p><!-- @@@MapQuickItem -->
 <h2>Property Documentation</h2>
 <!-- $$$anchorPoint -->
 <table class="qmlname"><tr valign="top" id="anchorPoint-prop"><td class="tblQmlPropNode"><p><span class="name">anchorPoint</span> : <span class="type">QPointF</span></p></td></tr></table><p>This property determines which point on the sourceItem that will be lined up with the coordinate on the map.</p>
@@ -50,7 +50,7 @@ Title: QtLocation.MapQuickItem
 <!-- $$$coordinate -->
 <table class="qmlname"><tr valign="top" id="coordinate-prop"><td class="tblQmlPropNode"><p><span class="name">coordinate</span> : <span class="type"><a href="#anchorPoint-prop">anchorPoint</a> is kept aligned with this coordinate when drawn on the map.</p>
 <p>In the image below, there are 3 MapQuickItems that are identical except for the value of their <a href="#anchorPoint-prop">anchorPoint</a> for each are written on top of the item.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/b69ec52f-c5a9-4581-88e2-c819f40d97ba-api/apps/qml/sdk-15.04.1/QtLocation.MapQuickItem/images/api-mapquickitem-anchor.png" alt="" /></p><!-- @@@coordinate -->
+<p class="centerAlign"><img src="../../../media/api-mapquickitem-anchor.png" alt="" /></p><!-- @@@coordinate -->
 <br/>
 <!-- $$$sourceItem -->
 <table class="qmlname"><tr valign="top" id="sourceItem-prop"><td class="tblQmlPropNode"><p><span class="name">sourceItem</span> : <span class="type">object</span></p></td></tr></table><p>This property holds the source item that will be drawn on the map.</p>

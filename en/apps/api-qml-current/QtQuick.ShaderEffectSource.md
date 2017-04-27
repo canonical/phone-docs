@@ -39,7 +39,7 @@ Title: QtQuick.ShaderEffectSource
 <li>an opacity layer. <a href="index.html">ShaderEffectSource</a> allows you to apply an opacity to items as a group rather than each item individually.</li>
 </ul>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/156d38e6-460c-4729-bd3e-339f6cc4b4c2-../QtQuick.ShaderEffectSource/images/declarative-shadereffectsource.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-shadereffectsource.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">200</span>
 <span class="name">height</span>: <span class="number">100</span>

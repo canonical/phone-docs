@@ -31,7 +31,7 @@ Title: QtQuick.PathCubic
 </p>
 <p>The following QML produces the path shown below:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/e64a36cf-d135-4c4c-878d-7d28cc53bf90-../QtQuick.PathCubic/images/declarative-pathcubic.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-pathcubic.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">20</span>; <span class="name">startY</span>: <span class="number">0</span>
 <span class="type"><a href="index.html">PathCubic</a></span> {
 <span class="name">x</span>: <span class="number">180</span>; <span class="name">y</span>: <span class="number">0</span>

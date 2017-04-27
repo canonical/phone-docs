@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-touchinteraction-example
 
 <span class="subtitle"></span>
 <!-- $$$touchinteraction-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/22049371-c3cd-4ed2-9463-89b8674e8e03-../qtquick-touchinteraction-example/images/qml-touchinteraction-example.png" alt="" /></p><p><i>Touch Interaction</i> is a collection of small QML examples relating to touch interaction methods. For more information, visit <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-touchinteraction-example.png" alt="" /></p><p><i>Touch Interaction</i> is a collection of small QML examples relating to touch interaction methods. For more information, visit <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="multipoint-flames">Multipoint Flames</h2>

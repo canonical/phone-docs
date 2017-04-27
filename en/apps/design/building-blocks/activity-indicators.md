@@ -13,7 +13,7 @@ Use Activity Indicators to give the user an indication of how long a running tas
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [Activity Indicator API](https://developer.ubuntu.com/api/qml/current/Ubuntu.Components.ActivityIndicator/) visually indicates that a task of unknown or known duration is in progress.
+The  [Activity Indicator API](../../api-qml-current/Ubuntu.Components.ActivityIndicator.md) visually indicates that a task of unknown or known duration is in progress.
 
 
 ## Types of indicators
@@ -106,5 +106,3 @@ Don’t fill the indicator if the task has failed, because it could confuse the 
 
 
 See Communicating Progress (coming soon) for best practices on labelling Activity Indicators.
-
-

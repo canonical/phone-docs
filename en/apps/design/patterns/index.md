@@ -15,7 +15,7 @@ Solve reoccurring design problems with common patterns to provide a familiar and
 Apply natural and progressive gestures to your app to allow users to get where they want to be.
 
 
-[Gestures activities &rsaquo;](/apps/design/patterns/gestures)
+[Gestures activities &rsaquo;](gestures.md)
 
 
 ## Navigation
@@ -25,7 +25,7 @@ Apply natural and progressive gestures to your app to allow users to get where t
 Allow users to navigate through your app in logical steps using components with innate behaviour.
 
 
-[Understand page stack &rsaquo;](/apps/design/patterns/navigation)
+[Understand page stack &rsaquo;](navigation.md)
 
 
 ## Layouts
@@ -35,4 +35,4 @@ Allow users to navigate through your app in logical steps using components with 
 Use predefined layouts to help you achieve a seamless experience across all devices.
 
 
-[Use an adaptive layout &rsaquo;](/apps/design/patterns/layouts)
+[Use an adaptive layout &rsaquo;](layouts.md)

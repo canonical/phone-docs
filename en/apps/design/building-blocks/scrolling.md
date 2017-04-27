@@ -99,7 +99,7 @@ Place any ListView API inside a ScrollView to present a scrollbar when items hav
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](/apps/design/building-blocks/list-items) for more guidance on using lists inside your application.
+Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](list-items.md) for more guidance on using lists inside your application.
 
 
 ## Scrolling within a text field

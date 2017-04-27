@@ -31,7 +31,7 @@ List items can be used to make up a list of ordered scrollable items that are re
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-[See the ListItemLayout API that provides customisable templates](https://developer.ubuntu.com/api/apps/design/qml/current/Ubuntu.Components.ListItemLayout/), and the  [ListItem API](https://developer.ubuntu.com/api/apps/design/qml/sdk-15.04/Ubuntu.Components.ListItem/) that provides swiping actions.
+[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.
 
 
 ## Overview
@@ -140,7 +140,7 @@ In the Contacts app for example, the list of contacts is made editable to allow 
 ![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-For more information about how edit mode is used see  [Header](/apps/design/building-blocks/header).
+For more information about how edit mode is used see  [Header](header.md).
 
 
 ## Structure
@@ -213,7 +213,7 @@ Text is always aligned according to the currently displayed language. For exampl
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-Developers are free to override the maximum amount lines for each label. See the  [Label API](https://developer.ubuntu.com/api/qml/sdk-14.10/Ubuntu.Components.Label/) for more information.
+Developers are free to override the maximum amount lines for each label. See the  [Label API](../../api-qml-current/Ubuntu.Components.Label.md) for more information.
 
 
 ## Actions
@@ -357,5 +357,3 @@ Provide a caption under the title to give the user more information if necessary
 
 
 In this example, the list item is too overcrowded and it is not immediately apparent what the primary action is.
-
-

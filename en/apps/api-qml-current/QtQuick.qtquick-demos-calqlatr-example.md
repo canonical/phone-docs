@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-demos-calqlatr-example
 
 <span class="subtitle"></span>
 <!-- $$$demos/calqlatr-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/91f3228e-ba24-47d3-8734-acc9fdbe6e69-../qtquick-demos-calqlatr-example/images/qtquick-demo-calqlatr.png" alt="" /></p><p><i>Calqlatr</i> demonstrates various QML and <a href="QtQuick.qtquick-index.md">Qt Quick</a> features, such as displaying custom components and using animation to move the components around in the application view. The application logic is implemented in JavaScript and the appearance is implemented in QML.</p>
+<p class="centerAlign"><img src="../../../media/qtquick-demo-calqlatr.png" alt="" /></p><p><i>Calqlatr</i> demonstrates various QML and <a href="QtQuick.qtquick-index.md">Qt Quick</a> features, such as displaying custom components and using animation to move the components around in the application view. The application logic is implemented in JavaScript and the appearance is implemented in QML.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="displaying-custom-components">Displaying Custom Components</h2>

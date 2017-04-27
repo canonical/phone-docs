@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-mousearea-example
 
 <span class="subtitle"></span>
 <!-- $$$mousearea-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3bbdeebc-3712-4a22-8a74-1f56ba64cf6a-../qtquick-mousearea-example/images/qml-mousearea-example.png" alt="" /></p><p><i>MouseArea</i> example shows how to respond to clicks and drags with a <a href="QtQuick.MouseArea.md">MouseArea</a>. For more information, visit <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-mousearea-example.png" alt="" /></p><p><i>MouseArea</i> example shows how to respond to clicks and drags with a <a href="QtQuick.MouseArea.md">MouseArea</a>. For more information, visit <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="mousearea-behavior">MouseArea Behavior</h2>

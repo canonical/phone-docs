@@ -47,7 +47,7 @@ Title: QtQuick.Grid
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">color</span>: <span class="string">&quot;magenta&quot;</span>; <span class="name">width</span>: <span class="number">10</span>; <span class="name">height</span>: <span class="number">10</span> }
 }</pre>
 <p>The Grid automatically positions the child items in a grid formation:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/aa87135e-7394-44bd-a283-8ec5cfd65064-../QtQuick.Grid/images/gridLayout_example.png" alt="" /></p><p>If an item within a Grid is not <a href="QtQuick.Item.md#visible-prop">visible</a>, or if it has a width or height of 0, the item will not be laid out and it will not be visible within the column. Also, since a Grid automatically positions its children, a child item within a Grid should not set its <a href="QtQuick.Item.md#x-prop">x</a> or <a href="QtQuick.Item.md#y-prop">y</a> positions or anchor itself with any of the <a href="QtQuick.Item.md#anchors-prop">anchor</a> properties.</p>
+<p class="centerAlign"><img src="../../../media/gridLayout_example.png" alt="" /></p><p>If an item within a Grid is not <a href="QtQuick.Item.md#visible-prop">visible</a>, or if it has a width or height of 0, the item will not be laid out and it will not be visible within the column. Also, since a Grid automatically positions its children, a child item within a Grid should not set its <a href="QtQuick.Item.md#x-prop">x</a> or <a href="QtQuick.Item.md#y-prop">y</a> positions or anchor itself with any of the <a href="QtQuick.Item.md#anchors-prop">anchor</a> properties.</p>
 <p>For more information on using Grid and other related positioner-types, see <a href="QtQuick.qtquick-positioning-layouts.md">Item Positioners</a>.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#flow">Flow</a>, <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a>, <a href="QtQuick.Positioner.md">Positioner</a>, GridLayout, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@Grid -->
@@ -81,7 +81,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/8872629b-2e4e-4d61-b499-b53b0fe781eb-../QtQuick.Grid/images/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/d062890f-2634-444d-b632-3465dbbe1b81-../QtQuick.Grid/images/gridLayout_aligntop.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/b4ae2285-0876-4cf4-a4a4-5839d378459f-../QtQuick.Grid/images/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -110,7 +110,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/ebea6277-d7fa-4fad-8bd1-c639d98fd8e7-../QtQuick.Grid/images/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/a9e186e2-654f-4df5-87d4-916d5202ef37-../QtQuick.Grid/images/gridLayout_aligntop.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/5f6e16fd-15e4-4f12-a174-360f22df3f54-../QtQuick.Grid/images/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -160,7 +160,7 @@ Title: QtQuick.Grid
 <!-- $$$spacing -->
 <table class="qmlname"><tr valign="top" id="spacing-prop"><td class="tblQmlPropNode"><p><span class="name">spacing</span> : <span class="type">qreal</span></p></td></tr></table><p>The spacing is the amount in pixels left empty between adjacent items. The amount of spacing applied will be the same in the horizontal and vertical directions. The default spacing is 0.</p>
 <p>The below example places a Grid containing a red, a blue and a green rectangle on a gray background. The area the grid positioner occupies is colored white. The positioner on the left has the no spacing (the default), and the positioner on the right has a spacing of 6.</p>
-<p><img src="https://developer.ubuntu.com/static/devportal_uploaded/8f6e5018-5aff-411e-af4b-c593126e8e32-../QtQuick.Grid/images/qml-grid-no-spacing.png" alt="" /> <img src="https://developer.ubuntu.com/static/devportal_uploaded/1961208e-3e8d-4788-88e9-c2f34707e3a3-../QtQuick.Grid/images/qml-grid-spacing.png" alt="" /></p>
+<p><img src="../../../media/qml-grid-no-spacing.png" alt="" /> <img src="../../../media/qml-grid-spacing.png" alt="" /></p>
 <p><b>See also </b><a href="#rows-prop">rows</a> and <a href="#columns-prop">columns</a>.</p>
 <!-- @@@spacing -->
 <br/>
@@ -170,7 +170,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/27a3b1ff-9673-4182-b9f2-2ae73f42430b-../QtQuick.Grid/images/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/9f3e9af4-8712-42e5-aa75-3d98e3acb781-../QtQuick.Grid/images/gridLayout_aligntop.png" alt="" /></td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/3cbb1987-6037-4fe3-a5f6-88ddc9c479ef-../QtQuick.Grid/images/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>

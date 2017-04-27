@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-animation-example
 
 <span class="subtitle"></span>
 <!-- $$$animation-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f4a4722c-c347-444a-88e4-c1ebba5bfa39-../qtquick-animation-example/images/qml-animations-example.png" alt="" /></p><p><i>Animation</i> is a collection of small QML examples relating to animation. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="../../../media/qml-animations-example.png" alt="" /></p><p><i>Animation</i> is a collection of small QML examples relating to animation. Each example is a small QML file emphasizing a particular type or feature.</p>
 <p>For more information about animations, visit <a href="QtQuick.qtquick-statesanimations-topic.md">Important Concepts in Qt Quick - States, Transitions and Animations</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>

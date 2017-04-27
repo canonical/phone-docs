@@ -82,7 +82,7 @@ var <span class="name">dynamicObject</span> = <span class="name">component</span
 <span class="name">onClicked</span>: <span class="name">SameGame</span>.<span class="name">startNewGame</span>()
 }</pre>
 <p>So, when you click the New Game button, <code>startNewGame()</code> is called and generates a field of blocks, like this:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ab497a5e-048a-4165-883e-c702b460f4a8-../qtquick-tutorials-samegame-samegame2-example/images/declarative-adv-tutorial2.png" alt="" /></p><p>Now, we have a screen of blocks, and we can begin to add the game mechanics.</p>
+<p class="centerAlign"><img src="../../../media/declarative-adv-tutorial2.png" alt="" /></p><p>Now, we have a screen of blocks, and we can begin to add the game mechanics.</p>
 <p>Files:</p>
 <ul>
 <li>tutorials/samegame/samegame2/Block.qml</li>

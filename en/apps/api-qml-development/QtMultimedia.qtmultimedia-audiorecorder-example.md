@@ -7,7 +7,7 @@ Title: QtMultimedia.qtmultimedia-audiorecorder-example
 <span class="subtitle"></span>
 <!-- $$$audiorecorder-description -->
 <p><i>Audio Recorder</i> demonstrates how to identify the available devices and supported codecs, and the use of QAudioRecorder class.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a1b384eb-2a7a-4fd5-a80f-850f9d17f1d1-../qtmultimedia-audiorecorder-example/images/audiorecorder.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../media/audiorecorder.png" alt="" /></p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="displaying-the-window-and-audio-settings">Displaying the Window and Audio Settings</h2>

@@ -43,7 +43,7 @@ Title: QtQuick.Repeater
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6ccc5089-25f6-4290-92fa-cb589e1731eb-../QtQuick.Repeater/images/repeater-simple.png" alt="" /></p><p>A Repeater's <a href="#model-prop">model</a> can be any of the supported <a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">data models</a>. Additionally, like delegates for other views, a Repeater delegate can access its index within the repeater, as well as the model data relevant to the delegate. See the <a href="#delegate-prop">delegate</a> property documentation for details.</p>
+<p class="centerAlign"><img src="../../../media/repeater-simple.png" alt="" /></p><p>A Repeater's <a href="#model-prop">model</a> can be any of the supported <a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">data models</a>. Additionally, like delegates for other views, a Repeater delegate can access its index within the repeater, as well as the model data relevant to the delegate. See the <a href="#delegate-prop">delegate</a> property documentation for details.</p>
 <p>Items instantiated by the Repeater are inserted, in order, as children of the Repeater's parent. The insertion starts immediately after the repeater's position in its parent stacking list. This allows a Repeater to be used inside a layout. For example, the following Repeater's items are stacked between a red rectangle and a blue rectangle:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">width</span>: <span class="number">10</span>; <span class="name">height</span>: <span class="number">20</span>; <span class="name">color</span>: <span class="string">&quot;red&quot;</span> }
@@ -53,7 +53,7 @@ Title: QtQuick.Repeater
 }
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">width</span>: <span class="number">10</span>; <span class="name">height</span>: <span class="number">20</span>; <span class="name">color</span>: <span class="string">&quot;blue&quot;</span> }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/5c790cbc-16af-4d05-a217-0840706dde7f-../QtQuick.Repeater/images/repeater.png" alt="" /></p><p><b>Note: </b>A Repeater item owns all items it instantiates. Removing or dynamically destroying an item created by a Repeater results in unpredictable behavior.</p>
+<p class="centerAlign"><img src="../../../media/repeater.png" alt="" /></p><p><b>Note: </b>A Repeater item owns all items it instantiates. Removing or dynamically destroying an item created by a Repeater results in unpredictable behavior.</p>
 <h3 >Considerations when using Repeater</h3>
 <p>The Repeater type creates all of its delegate items when the repeater is first created. This can be inefficient if there are a large number of delegate items and not all of the items are required to be visible at the same time. If this is the case, consider using other view types like <a href="QtQuick.ListView.md">ListView</a> (which only creates delegate items when they are scrolled into view) or use the Dynamic Object Creation methods to create items as they are required.</p>
 <p>Also, note that Repeater is <a href="QtQuick.Item.md">Item</a>-based, and can only repeat <a href="QtQuick.Item.md">Item</a>-derived objects. For example, it cannot be used to repeat QtObjects:</p>
@@ -81,7 +81,7 @@ model: <span class="number">10</span>
 <span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="string">&quot;I'm item &quot;</span> <span class="operator">+</span> <span class="name">index</span> }
 }
 }</pre>
-</td><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3204f232-afb5-4d12-a177-ffce5bbda402-../QtQuick.Repeater/images/repeater-index.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="../../../media/repeater-index.png" alt="" /></p></td></tr>
 </table>
 <p>If the <a href="#model-prop">model</a> is a <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qstringlist-based-model">string list</a> or <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qobjectlist-based-model">object list</a>, the delegate is also exposed to a read-only <code>modelData</code> property that holds the string or object data. For example:</p>
 <table class="generic">
@@ -91,7 +91,7 @@ model: <span class="number">10</span>
 <span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="string">&quot;Data: &quot;</span> <span class="operator">+</span> <span class="name">modelData</span> }
 }
 }</pre>
-</td><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/f4cd1693-e590-4029-9a52-5747a08862b8-../QtQuick.Repeater/images/repeater-modeldata.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="../../../media/repeater-modeldata.png" alt="" /></p></td></tr>
 </table>
 <p>If the <a href="#model-prop">model</a> is a model object (such as a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a>) the delegate can access all model roles as named properties, in the same way that delegates do for view classes like <a href="QtQuick.ListView.md">ListView</a>.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>.</p>

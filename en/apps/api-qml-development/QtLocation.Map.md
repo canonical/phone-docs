@@ -69,7 +69,7 @@ longitude: <span class="number">153</span>
 zoomLevel: map<span class="operator">.</span>minimumZoomLevel
 gesture<span class="operator">.</span>enabled: <span class="keyword">true</span>
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/e9f72b88-8f7c-498f-99fd-ca18f7c3df2c-api/apps/qml/sdk-15.04.1/QtLocation.Map/images/api-map.png" alt="" /></p><!-- @@@Map -->
+<p class="centerAlign"><img src="../../../media/api-map.png" alt="" /></p><!-- @@@Map -->
 <h2>Property Documentation</h2>
 <!-- $$$activeMapType -->
 <table class="qmlname"><tr valign="top" id="activeMapType-prop"><td class="tblQmlPropNode"><p><span class="name">activeMapType</span> : <span class="type"><a href="QtLocation.MapType.md">MapType</a></span></p></td></tr></table><p>Access to the currently active <a href="QtLocation.MapType.md">map type</a>.</p>

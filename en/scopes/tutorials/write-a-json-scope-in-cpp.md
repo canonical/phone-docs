@@ -33,14 +33,14 @@ a few values to generate it.
 
 ![](../../../media/scope-tutorial-scope_wizard2_bis-700x371.png)
 
-If you need more help to get started with the SDK, have a look at the [SDKsetup article](../../apps/sdk/tutorials-creating-an-sdk-app-project.md).
+If you need more help to get started with the SDK, have a look at the [SDKsetup article](../../platform/sdk/tutorials-creating-an-sdk-app-project.md).
 
 **Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ### Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope on [your phone or on in anemulator](../../apps/sdk/tutorials-running-apps-from-the-sdk.md). Wait a few
+sidebar of the SDK to test the scope on [your phone or on in anemulator](../../platform/sdk/tutorials-running-apps-from-the-sdk.md). Wait a few
 seconds for your project to be built and uploaded to the device, it should
 then open by itself.
 

@@ -22,8 +22,8 @@ The app we develop here is quite simple:
 You may want to read the [Cordova Guide](guides-cordova-guide.html). It contains all the info you need to set up your development environment. The three prerequisites being:
 
   * Installing `cordova-cli` from the Ubuntu Cordova PPA
-  * Creating a [click chroot](../../sdk/tutorials-click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
-  * Installing build dependencies in the [click chroot](../../sdk/tutorials-click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.html)
+  * Creating a [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
+  * Installing build dependencies in the [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.html)
 
 ### HTML5 UI Toolkit basics
 

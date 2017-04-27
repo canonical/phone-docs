@@ -7,7 +7,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts2
 <span class="subtitle"></span>
 <!-- $$$ubuntu-layouts2.html-description -->
 <p>As first let's create the following default layout, with anchored buttons to each other.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/158fd514-f46b-47e8-83a9-61f1d14f15c2-../ubuntu-layouts2/images/default-layout.png" alt="" /></p><p>Defined by the following code:</p>
+<p class="centerAlign"><img src="../../../media/default-layout.png" alt="" /></p><p>Defined by the following code:</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Components.Button.md">Button</a></span> {
 <span class="name">id</span>: <span class="name">redButton</span>
 <span class="name">text</span>: <span class="string">&quot;Item #1&quot;</span>
@@ -87,7 +87,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts2
 <p>Note the way the container is defined. Items are laid out using <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> host items. The items will be laid out in the order the <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> hosts are declared. Beside this <a href="Ubuntu.Layouts.ItemLayout.md">ItemLayout</a> also drives the size, scale, rotation, availability (enabled) visibility and opacity of the hosted item.</p>
 <p>The conditional layout is given a name so it can be identified when the layout is set through Layouts.curentLayout property. This, beside debugging abilities, gives additional possibilities to configure properties that are not directly updated by the layouting.</p>
 <p>Combining this with the default layout we will see the following layout when width exceeds 50 GU:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/43f19fa2-2f5f-42c7-8e67-6e5df534e941-../ubuntu-layouts2/images/layout1.png" alt="" /></p><pre class="qml">import QtQuick 2.4
+<p class="centerAlign"><img src="../../../media/layout1.png" alt="" /></p><pre class="qml">import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Layouts 1.0
 <span class="type"><a href="QtQuick.Item.md">Item</a></span> {

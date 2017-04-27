@@ -60,7 +60,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 <h3 >Threaded Render Loop</h3>
 <p>On many configurations, the scene graph rendering will happen on a dedicated render thread. This is done to increase parallelism of multi-core processors and make better use of stall times such as waiting for a blocking swap buffer call. This offers significant performance improvements, but imposes certain restrictions on where and when interaction with the scene graph can happen.</p>
 <p>The following is a simple outline of how a frame gets composed with the threaded render loop.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/1c3b258c-fd83-4482-9109-c9afd1b88154-../qtquick-visualcanvas-scenegraph/images/sg-renderloop-threaded.jpg" alt="" /></p><ol class="1">
+<p class="centerAlign"><img src="../../../media/sg-renderloop-threaded.jpg" alt="" /></p><ol class="1">
 <li>A change occurs in the QML scene, causing <code>QQuickItem::update()</code> to be called. This can be the result of for instance an animation or user input. An event is posted to the render thread to initiate a new frame.</li>
 <li>The render thread prepares to draw a new frame and makes the OpenGL context current and initiates a blocks on the GUI thread.</li>
 <li>While the render thread is preparing the new frame, the GUI thread calls QQuickItem::updatePolish() to do final touch-up of items before they are rendered.</li>
@@ -83,7 +83,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 <p>The non-threaded render loop is currently used by default on Windows and non-EGLFS based embedded platforms. This is mostly a precautionary measure, as not all combinations of OpenGL drivers and windowing systems have been tested.</p>
 <p>Even when using the non-threaded render loop, you should write your code as if you are using the threaded renderer, as failing to do so will make the code non-portable.</p>
 <p>The following is a simplified illustration of the frame rendering sequence in the non-threaded renderer.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d0cf3273-d9ba-4595-82f7-ab1fe9ebe9cb-../qtquick-visualcanvas-scenegraph/images/sg-renderloop-singlethreaded.jpg" alt="" /></p>
+<p class="centerAlign"><img src="../../../media/sg-renderloop-singlethreaded.jpg" alt="" /></p>
 <h3 >Custom control over rendering with QQuickRenderControl</h3>
 <p>When using QQuickRenderControl, the responsibility for driving the rendering loop is transferred to the application. In this case no built-in render loop is used. Instead, it is up to the application to invoke the polish, synchronize and rendering steps at the appropriate time. It is possible to implement either a threaded or non-threaded behavior similar to the ones shown above.</p>
 <h3 >Mixing Scene Graph and OpenGL</h3>

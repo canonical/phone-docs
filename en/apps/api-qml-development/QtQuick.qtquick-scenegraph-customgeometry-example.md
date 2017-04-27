@@ -7,7 +7,7 @@ Title: QtQuick.qtquick-scenegraph-customgeometry-example
 <span class="subtitle"></span>
 <!-- $$$scenegraph/customgeometry-description -->
 <p>The custom geometry example shows how to create a QQuickItem which uses the scene graph API to build a custom geometry for the scene graph. It does this by creating a BezierCurve item which is made part of the CustomGeometry module and makes use of this in a QML file.</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/788cad1c-c9d9-48f0-b702-c3b4331c7957-../qtquick-scenegraph-customgeometry-example/images/custom-geometry-example.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../media/custom-geometry-example.png" alt="" /></p>
 <h2 id="beziercurve-declaration">BezierCurve Declaration</h2>
 <pre class="cpp"><span class="preprocessor">#include &lt;QtQuick/QQuickItem&gt;</span>
 <span class="keyword">class</span> BezierCurve : <span class="keyword">public</span> <span class="type">QQuickItem</span>

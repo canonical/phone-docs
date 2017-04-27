@@ -52,7 +52,7 @@ path: <span class="operator">[</span>
 <span class="operator">]</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/326be5b3-39db-447f-b29e-686b39f47fe5-api/apps/qml/sdk-15.04.1/QtLocation.MapPolyline/images/api-mappolyline.png" alt="" /></p><!-- @@@MapPolyline -->
+<p class="centerAlign"><img src="../../../media/api-mappolyline.png" alt="" /></p><!-- @@@MapPolyline -->
 <h2>Property Documentation</h2>
 <!-- $$$line -->
 <table class="qmlname"><tr valign="top" id="line-prop"><th class="centerAlign"><p><b>line group</b></p></th></tr><tr valign="top" id="line.width-prop"><td class="tblQmlPropNode"><p><span class="name">line.width</span> : <span class="type">int</span></p></td></tr><tr valign="top" id="line.color-prop"><td class="tblQmlPropNode"><p><span class="name">line.color</span> : <span class="type">color</span></p></td></tr></table><p>This property is part of the line property group. The line property group holds the width and color used to draw the line.</p>

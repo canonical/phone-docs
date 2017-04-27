@@ -54,7 +54,7 @@ Title: QtLocation.location-places-qml
 }
 <span class="name">spacing</span>: <span class="number">10</span>
 }</pre>
-</td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/83a3d51e-3b66-4934-8d36-49d205587fba-api/apps/qml/sdk-15.04.1/location-places-qml/images/places-list.png" alt="" /></td></tr>
+</td><td ><img src="../../../media/places-list.png" alt="" /></td></tr>
 </table>
 <p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.places_list/">Places List</a> example for full source code.</p>
 <h3 >Display Search Results using a MapItemView</h3>
@@ -83,7 +83,7 @@ Title: QtLocation.location-places-qml
 }
 }
 }</pre>
-</td><td ><img src="https://developer.ubuntu.com/static/devportal_uploaded/1cf25225-6c8f-4d72-a945-5564b3fd0a7d-api/apps/qml/sdk-15.04.1/location-places-qml/images/places-map.jpg" alt="" /></td></tr>
+</td><td ><img src="../../../media/places-map.jpg" alt="" /></td></tr>
 </table>
 <p><b>Note: </b>For simplicty's sake we have assumed that every search result is of <a href="QtLocation.PlaceSearchModel.md#search-result-types">type</a> <code>PlaceSearchResult</code> and so always have access to the <i>place</i> role, other search result types may not have a <i>place</i> role.</p><p>See the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.places_map/">Places Map</a> example for full source code.</p>
 <h3 >Fetching Place Details</h3>

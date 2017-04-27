@@ -116,7 +116,7 @@ property <span class="type">int</span> <span class="name">type</span>: <span cla
 }</pre>
 <h3 >A working game</h3>
 <p>Now we now have a working game! The blocks can be clicked, the player can score, and the game can end (and then you can start a new one). Here is a screenshot of what has been accomplished so far:</p>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/717037a0-a0d3-4486-92f5-92d5417b30d4-../qtquick-tutorials-samegame-samegame3-example/images/declarative-adv-tutorial3.png" alt="" /></p><p>This is what <code>samegame.qml</code> looks like now:</p>
+<p class="centerAlign"><img src="../../../media/declarative-adv-tutorial3.png" alt="" /></p><p>This is what <code>samegame.qml</code> looks like now:</p>
 <pre class="qml">import QtQuick 2.0
 import &quot;samegame.js&quot; as SameGame
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

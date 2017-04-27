@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-sensorgestures-example
 
 <span class="subtitle"></span>
 <!-- $$$sensorgestures-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/94c78a49-e4a3-4681-98c3-8ecd2e68b530-../qtsensors-sensorgestures-example/images/sensorgesturecpp.png" alt="" /></p><p>QSensorGestures class defines one predefined signal, <code>void detected(const QString &amp;)</code></p>
+<p class="centerAlign"><img src="../../../media/sensorgesturecpp.png" alt="" /></p><p>QSensorGestures class defines one predefined signal, <code>void detected(const QString &amp;)</code></p>
 <p>As well, Sensor Gesture Recognizers may implement any number of their own custom signals.</p>
 <p>Our shake recognizer defines one custom signal, <code>void shake()</code>, as well as the predefined detected signal.</p>
 <h2 id="sensorgestures-class-implementation">SensorGestures Class Implementation</h2>

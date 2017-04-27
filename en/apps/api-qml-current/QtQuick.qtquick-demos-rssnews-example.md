@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-demos-rssnews-example
 
 <span class="subtitle"></span>
 <!-- $$$demos/rssnews-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ff9213bc-757f-4039-b50f-5c6dc63cf801-../qtquick-demos-rssnews-example/images/qtquick-demo-rssnews-small.png" alt="" /></p><p><i>RSS News</i> demonstrates the following <a href="QtQuick.qtquick-index.md">Qt Quick</a> features:</p>
+<p class="centerAlign"><img src="../../../media/qtquick-demo-rssnews-small.png" alt="" /></p><p><i>RSS News</i> demonstrates the following <a href="QtQuick.qtquick-index.md">Qt Quick</a> features:</p>
 <ul>
 <li>Using custom types to create screens and screen controls.</li>
 <li>Using list models and list elements to represent data.</li>

@@ -36,7 +36,7 @@ x86) and framework (set of APIs available for each SDK release). For example,
 if you want to test your app on your phone or in an arm emulator, you need to
 select at least one “armhf” kit. It is recommended to have one desktop and one
 phone Kit: this should allow you to test, build and distribute your app
-without hassle on all form factors. [Click targets and device kits](../../sdk/tutorials-click-targets-and-device-kits/) should give
+without hassle on all form factors. [Click targets and device kits](../../platform/sdk/tutorials-click-targets-and-device-kits/) should give
 you all the details you need if you want to dive deeper or need more help.
 
 ![](../../../../media/welcome-html5-app.png)
@@ -123,7 +123,7 @@ complete theme simply by calling :
 <script src="/usr/share/ubuntu-html5-ui-toolkit/0.1/ambiance/js/tabs.js"></script>
 ```
 
-And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.html)
+And using `<button>` and `<header>` tags. [This article](guides-introduction-to-the-html5-ui-toolkit.md)
 provides a high level introduction to key Ubuntu HTML5 layouts and widgets.
 
-[Read the full API](http://developer.ubuntu.com/api/html5/sdk-14.10/UbuntuUI/).
+[Read the full API](../../api-html5-current/UbuntuUI.md).

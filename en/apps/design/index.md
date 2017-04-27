@@ -13,7 +13,7 @@ Together we can design and build beautiful and usable apps for Ubuntu.
 Familiarise yourself with the essentials before designing your app.
 
 
-[Design values &rsaquo;](/apps/design/get-started/design-values)
+[Design values &rsaquo;](get-started/design-values)
 
 
 ## Style (coming soon)
@@ -30,7 +30,7 @@ Make your app look beautiful by using the uniquely designed Ubuntu fonts and col
 Use common patterns to allow users to get where they want to naturally and with little effort.
 
 
-[Gestures &rsauo;](http://design.ubuntu.com/apps/design/patterns/gestures)
+[Gestures &rsauo;](patterns/gestures)
 
 
 ## Building blocks
@@ -40,7 +40,7 @@ Use common patterns to allow users to get where they want to naturally and with 
 See uses cases and advice to get the best out of the Ubuntu toolkit.
 
 
-[Use the header &rsaquo;](/apps/design/building-blocks/header)
+[Use the header &rsaquo;](building-blocks/header)
 
 
 ## System integration (coming soon)
@@ -66,7 +66,7 @@ Download handy templates and the Ubuntu color palette to help you on your way.
 The toolkit contains all the important components you need to make your own unique Ubuntu experience. Follow the link below for all the API and developer documentation.
 
 
-[Ubuntu SDK &rsaquo;](http://developer.ubuntu.com/apps/design/sdk/)
+[Ubuntu SDK &rsaquo;](../../platform/sdk/index.md)
 
 
 ## Release phases

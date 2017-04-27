@@ -32,7 +32,7 @@ Continue through the wizard by picking:
 
 ![](../../../media/qml-tutorial-c-backend-screenshot4.png)
 
-  * A [kit](../../sdk/tutorials-click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
+  * A [kit](../../platform/sdk/tutorials-click-targets-and-device-kits/) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
 
 
 

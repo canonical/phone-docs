@@ -21,7 +21,7 @@ and selecting the currency required from the list.
 
 ## Requirements
 
-  * Ubuntu 14.04 or later – [get Ubuntu](http://www.ubuntu.com/download/desktop/)
+  * Ubuntu 14.04 or later – [get Ubuntu](http://www.ubuntu.com/download/desktop.md)
   * The Ubuntu SDK – [install the Ubuntu SDK](../../platform/sdk/installing-the-sdk.md)
 
 ## The tools
@@ -152,8 +152,8 @@ MainView {
 }
 ```
 
-Secondly, we create a [MainView](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.MainView/), the most essential SDK component, which acts as the root container for our application. It also provides the standard
-toolbar and [Header](http://design.ubuntu.com/apps/building-blocks/header).
+Secondly, we create a [MainView](../api-qml-current/Ubuntu.Components.MainView.md), the most essential SDK component, which acts as the root container for our application. It also provides the standard
+toolbar and [Header](../design/building-blocks/header.md).
 
 With a syntax similar to JSON, we define its
 [properties](http://doc.qt.io/qt-5/qtqml-syntax-propertybinding.html) by
@@ -170,7 +170,7 @@ are going to talk about in a minute. For now, you can consider them as a form-
 factor-agnostic way to specify measurements. They return a pixel value that’s
 dependent on the device the application is running on.
 
-Inside our main view, we add a child [Page](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.Page/), which will contain the rest of our
+Inside our main view, we add a child [Page](../api-qml-current/Ubuntu.Components.Page.md), which will contain the rest of our
 components as well as provide a title. We title text to the page, ensuring it
 is enclosed with the `i18n.tr()` function, which will make it translatable.
 
@@ -188,7 +188,7 @@ Most laptops | 1 gu = 8 px
 Retina laptops | 1 gu = 16 px
 Smart phones | 1 gu = 18 px
 
-[Learn more about resolution independence](https://developer.ubuntu.com/api/apps/qml/current/UbuntuUserInterfaceToolkit.resolution-independence/)
+[Learn more about resolution independence](../api-qml-current/UbuntuUserInterfaceToolkit.resolution-independence.md)
 
 ### Internationalization
 
@@ -297,7 +297,7 @@ result in the `currencies` ListModel.
 Notice how network access happens transparently so that you as a developer
 don’t have to even think about it!
 
-Around line 66, let’s add an [ActivityIndicator](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.ActivityIndicator/) component to show activity while the rates are being fetched:
+Around line 66, let’s add an [ActivityIndicator](../api-qml-current/Ubuntu.Components.ActivityIndicator.md) component to show activity while the rates are being fetched:
 
 ``` qml
 ActivityIndicator {
@@ -374,7 +374,7 @@ Component {
 At this point, if you run the app, you will not yet see any visible changes,
 so don’t worry if all you see is an empty rectangle.
 
-What we’ve done is to create the currency selector, based on a [Popover](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.Popups.Popover/) and a standard Qt Quick [ListView](http://doc.qt.io/qt-5/qml-qtquick-listview.html). The ListView will display the data from the `currencies` ListMode. Notice how the Column object wraps the [Header](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.ListItems.Header/) and the list view to arrange them vertically, and how each item in the list view will be a [Standard](https://developer.ubuntu.com/api/apps/qml/current/Ubuntu.Components.ListItems.Standard/) list item component.
+What we’ve done is to create the currency selector, based on a [Popover](../api-qml-current/Ubuntu.Components.Popups.Popover.md) and a standard Qt Quick [ListView](http://doc.qt.io/qt-5/qml-qtquick-listview.html). The ListView will display the data from the `currencies` ListMode. Notice how the Column object wraps the [Header](../api-qml-current/Ubuntu.Components.ListItems.Header.md) and the list view to arrange them vertically, and how each item in the list view will be a [Standard](../api-qml-current/Ubuntu.Components.ListItems.Standard.md) list item component.
 
 The popover will show the selection of currencies. Upon selection, the popover
 will be hidden (see `onClicked` signal) and the caller’s data is updated. We
@@ -538,9 +538,9 @@ Alternatively, if you only want to run the Component Showcase:
 
 ### Reference
 
-  * [Code for this tutorial](http://bazaar.launchpad.net/~ubuntu-sdk-tutorials-dev/ubuntu-sdk-tutorials/trunk/files/head:/getting-started/CurrencyConverter/) (use `bzr branch lp:ubuntu-sdk-tutorials` to get a local copy)
-  * [Writing tests for Currency Converter](../../platform/quality.html)
-  * [Ubuntu UI Toolkit API documentation](https://developer.ubuntu.com/api/apps/qml/current/)
+  * [Code for this tutorial](http://bazaar.launchpad.net/~ubuntu-sdk-tutorials-dev/ubuntu-sdk-tutorials/trunk/files/head:/getting-started/CurrencyConverter.md) (use `bzr branch lp:ubuntu-sdk-tutorials` to get a local copy)
+  * [Writing tests for Currency Converter](../../platform/quality.md)
+  * [Ubuntu UI Toolkit API documentation](../api-qml-current/index.md)
   * [Qt Quick documentation](http://qt-project.org/doc/qt-5.0/qtquick/qtquick-index.html)
   * [Getting Started Programming with Qt Quick](http://qt-project.org/doc/qt-5.0/qtdoc/gettingstartedqml.html)
   * [Syntax of the QML language](http://qt-project.org/doc/qt-5.0/qtqml/qtqml-index.html#syntax-of-the-qml-language)

@@ -102,7 +102,7 @@ Title: QtQuick.TextEdit
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 <span class="name">focus</span>: <span class="number">true</span>
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/970ad443-7088-46b5-8bcc-d42d47c515e2-../QtQuick.TextEdit/images/declarative-textedit.gif" alt="" /></p><p>Setting <a href="QtQuick.Item.md#focus-prop">focus</a> to <code>true</code> enables the <a href="index.html">TextEdit</a> item to receive keyboard focus.</p>
+<p class="centerAlign"><img src="../../../media/declarative-textedit.gif" alt="" /></p><p>Setting <a href="QtQuick.Item.md#focus-prop">focus</a> to <code>true</code> enables the <a href="index.html">TextEdit</a> item to receive keyboard focus.</p>
 <p>Note that the <a href="index.html">TextEdit</a> does not implement scrolling, following the cursor, or other behaviors specific to a look-and-feel. For example, to add flickable scrolling that follows the cursor:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Flickable.md">Flickable</a></span> {
 <span class="name">id</span>: <span class="name">flick</span>
@@ -450,7 +450,7 @@ myTextEdit<span class="operator">.</span>selectionEnd);</pre>
 <span class="name">text</span>: <span class="string">&quot;&lt;b&gt;Hello&lt;/b&gt; &lt;i&gt;World!&lt;/i&gt;&quot;</span>
 }
 }</pre>
-</td><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/534b3be2-0e16-47b4-bafd-1f4d72bff7be-../QtQuick.TextEdit/images/declarative-textformat.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="../../../media/declarative-textformat.png" alt="" /></p></td></tr>
 </table>
 <!-- @@@textFormat -->
 <br/>

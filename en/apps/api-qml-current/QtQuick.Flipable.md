@@ -54,7 +54,7 @@ property <span class="type">bool</span> <span class="name">flipped</span>: <span
 <span class="name">onClicked</span>: <span class="name">flipable</span>.<span class="name">flipped</span> <span class="operator">=</span> !<span class="name">flipable</span>.<span class="name">flipped</span>
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/09da3d68-eba9-4639-8c21-8f8648af9974-../QtQuick.Flipable/images/flipable.gif" alt="" /></p><p>The <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> creates the animation that changes the angle over four seconds. When the item changes between its &quot;back&quot; and default states, the <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> animates the angle between its old and new values.</p>
+<p class="centerAlign"><img src="../../../media/flipable.gif" alt="" /></p><p>The <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> creates the animation that changes the angle over four seconds. When the item changes between its &quot;back&quot; and default states, the <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> animates the angle between its old and new values.</p>
 <p>See <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a> for details on state changes and the default state, and <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> for more information on how animations work within transitions.</p>
 <p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.customitems-flipable/">UI Components: Flipable Example</a>.</p>
 <!-- @@@Flipable -->

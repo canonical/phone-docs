@@ -20,7 +20,7 @@ Title: QtQuick.PathSvg
 </p>
 <p>The following QML produces the path shown below:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/42d2ab49-167e-4d4f-bb0a-b4413d64fab8-../QtQuick.PathSvg/images/declarative-pathsvg.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-pathsvg.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">50</span>; <span class="name">startY</span>: <span class="number">50</span>
 <span class="type"><a href="index.html">PathSvg</a></span> { <span class="name">path</span>: <span class="string">&quot;L 150 50 L 100 150 z&quot;</span> }
 }</pre>

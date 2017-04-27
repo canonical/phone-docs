@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-sensor-explorer-example
 
 <span class="subtitle"></span>
 <!-- $$$sensor_explorer-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/46918d8e-69ee-48e0-8562-f382e0c522a6-../qtsensors-sensor-explorer-example/images/qtsensors-examples-explorer.png" alt="" /></p><p>This example is divided into two parts:</p>
+<p class="centerAlign"><img src="../../../media/qtsensors-examples-explorer.png" alt="" /></p><p>This example is divided into two parts:</p>
 <ul>
 <li>A <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtSensors.sensor_explorer/#sensor-explorer-qml-import">C++ plugin</a> that provides QML alternatives for <code>QSensorExplorer</code>, <code>QPropertyInfo</code> and <code>QSensorItem</code> C++ classes.</li>
 <li>A <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtSensors.sensor_explorer/#sensor-explorer-qml-application">QML Application</a> that uses the QML types to read the sensor meta-data and present it.</li>

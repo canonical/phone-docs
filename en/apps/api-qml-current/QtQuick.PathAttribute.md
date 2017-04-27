@@ -22,7 +22,7 @@ Title: QtQuick.PathAttribute
 <p>The <a href="index.html">PathAttribute</a> object allows attributes consisting of a name and a value to be specified for various points along a path. The attributes are exposed to the delegate as Attached Properties. The value of an attribute at any particular point along the path is interpolated from the PathAttributes bounding that point.</p>
 <p>The example below shows a path with the items scaled to 30% with opacity 50% at the top of the path and scaled 100% with opacity 100% at the bottom. Note the use of the <a href="QtQuick.PathView.md">PathView</a>.iconScale and <a href="QtQuick.PathView.md">PathView</a>.iconOpacity attached properties to set the scale and opacity of the delegate.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/a6e717d2-8ded-420c-b5a5-8e64dd35dcce-../QtQuick.PathAttribute/images/declarative-pathattribute.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-pathattribute.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">240</span>; <span class="name">height</span>: <span class="number">200</span>
 <span class="type">Component</span> {

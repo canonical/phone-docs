@@ -213,7 +213,7 @@ The switch allows the user to perform an action by turning it on or off.
 ![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)
 
 
-The  [Switch API](https://developer.ubuntu.com/api/qml/current/Ubuntu.Components.Switch/) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.
+The  [Switch API](../../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.
 
 
 ## Use cases

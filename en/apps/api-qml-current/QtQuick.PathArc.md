@@ -28,7 +28,7 @@ Title: QtQuick.PathArc
 <p><a href="index.html">PathArc</a> provides a simple way of specifying an arc that ends at a given position and uses the specified radius. It is modeled after the SVG elliptical arc command.</p>
 <p>The following QML produces the path shown below:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/357b1e11-01fb-4ecc-a979-faeadc469fba-../QtQuick.PathArc/images/declarative-patharc.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-patharc.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">100</span>; <span class="name">startY</span>: <span class="number">0</span>
 <span class="type"><a href="index.html">PathArc</a></span> {
 <span class="name">x</span>: <span class="number">0</span>; <span class="name">y</span>: <span class="number">100</span>
@@ -46,7 +46,7 @@ Title: QtQuick.PathArc
 <table class="qmlname"><tr valign="top" id="direction-prop"><td class="tblQmlPropNode"><p><span class="name">direction</span> : <span class="type">enumeration</span></p></td></tr></table><p>Defines the direction of the arc. Possible values are <a href="index.html">PathArc</a>.Clockwise (default) and <a href="index.html">PathArc</a>.Counterclockwise.</p>
 <p>The following QML can produce either of the two illustrated arcs below by changing the value of direction.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/6a525e6b-d3f1-4030-bac6-995c24fa8a7c-../QtQuick.PathArc/images/declarative-arcdirection.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-arcdirection.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">50</span>; <span class="name">startY</span>: <span class="number">50</span>
 <span class="type"><a href="index.html">PathArc</a></span> {
 <span class="name">x</span>: <span class="number">150</span>; <span class="name">y</span>: <span class="number">50</span>
@@ -62,7 +62,7 @@ Title: QtQuick.PathArc
 <table class="qmlname"><tr valign="top" id="radiusX-prop"><td class="tblQmlPropNode"><p><span class="name">radiusX</span> : <span class="type">real</span></p></td></tr></table><p>Defines the radius of the arc.</p>
 <p>The following QML demonstrates how different radius values can be used to change the shape of the arc:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/cfb4d3d4-88d2-4178-a053-8aa1af61af6a-../QtQuick.PathArc/images/declarative-arcradius.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-arcradius.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">0</span>; <span class="name">startY</span>: <span class="number">100</span>
 <span class="type"><a href="index.html">PathArc</a></span> {
 <span class="name">relativeX</span>: <span class="number">50</span>; <span class="name">y</span>: <span class="number">100</span>
@@ -89,7 +89,7 @@ Title: QtQuick.PathArc
 <table class="qmlname"><tr valign="top" id="radiusY-prop"><td class="tblQmlPropNode"><p><span class="name">radiusY</span> : <span class="type">real</span></p></td></tr></table><p>Defines the radius of the arc.</p>
 <p>The following QML demonstrates how different radius values can be used to change the shape of the arc:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/419ab223-a5a5-4e03-98c1-ee6b770f74fd-../QtQuick.PathArc/images/declarative-arcradius.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-arcradius.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">0</span>; <span class="name">startY</span>: <span class="number">100</span>
 <span class="type"><a href="index.html">PathArc</a></span> {
 <span class="name">relativeX</span>: <span class="number">50</span>; <span class="name">y</span>: <span class="number">100</span>
@@ -130,7 +130,7 @@ Title: QtQuick.PathArc
 <table class="qmlname"><tr valign="top" id="useLargeArc-prop"><td class="tblQmlPropNode"><p><span class="name">useLargeArc</span> : <span class="type">bool</span></p></td></tr></table><p>Whether to use a large arc as defined by the arc points.</p>
 <p>Given fixed start and end positions, radius, and direction, there are two possible arcs that can fit the data. useLargeArc is used to distinguish between these. For example, the following QML can produce either of the two illustrated arcs below by changing the value of useLargeArc.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/e46afb61-47fc-4f45-bde1-071b7c831c27-../QtQuick.PathArc/images/declarative-largearc.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-largearc.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Path.md">Path</a></span> {
 <span class="name">startX</span>: <span class="number">0</span>; <span class="name">startY</span>: <span class="number">100</span>
 <span class="type"><a href="index.html">PathArc</a></span> {
 <span class="name">x</span>: <span class="number">100</span>; <span class="name">y</span>: <span class="number">200</span>

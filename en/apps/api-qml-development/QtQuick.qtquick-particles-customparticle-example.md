@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-particles-customparticle-example
 
 <span class="subtitle"></span>
 <!-- $$$particles/customparticle-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/5b785eb1-f807-41e3-a424-e2217a547a63-../qtquick-particles-customparticle-example/images/qml-customparticle-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using <a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a> in the particle system. Each example is a small QML file emphasizing a different way to use <a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-customparticle-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using <a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a> in the particle system. Each example is a small QML file emphasizing a different way to use <a href="QtQuick.Particles.CustomParticle.md">CustomParticle</a>.</p>
 <p>Blur Particles adds a blur effect to the particles, which increases over the particle's life time. It uses a custom vertex shader:</p>
 <pre class="qml"><span class="name">vertexShader</span>:<span class="string">&quot;
 uniform lowp float qt_Opacity;

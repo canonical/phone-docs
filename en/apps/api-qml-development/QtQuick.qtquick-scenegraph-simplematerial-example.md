@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-scenegraph-simplematerial-example
 
 <span class="subtitle"></span>
 <!-- $$$scenegraph/simplematerial-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3a3f4ab0-dec0-4c49-946a-836bd880a445-../qtquick-scenegraph-simplematerial-example/images/simplematerial-example.jpg" alt="" /></p><p>In this example, we will make use of the QSGSimpleMaterialShader class to fill a shape in the scene graph. This is a convenience class intended to avoid a lot of the boilerplate code required when creating materials with the QSGMaterial, QSGMaterialShader and QSGMaterialType classes directly.</p>
+<p class="centerAlign"><img src="../../../media/simplematerial-example.jpg" alt="" /></p><p>In this example, we will make use of the QSGSimpleMaterialShader class to fill a shape in the scene graph. This is a convenience class intended to avoid a lot of the boilerplate code required when creating materials with the QSGMaterial, QSGMaterialShader and QSGMaterialType classes directly.</p>
 <p>A simple material consists of two parts: the material state and the material shader. The material shader has one instance per scene graph and contains the actual OpenGL shader program and information about which attributes and uniforms it uses. The material state is what we assign to each individual node; in this case to give them different colors.</p>
 <pre class="cpp"><span class="keyword">struct</span> State
 {

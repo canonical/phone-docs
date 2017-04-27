@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-imageelements-example
 
 <span class="subtitle"></span>
 <!-- $$$imageelements-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/d67e9217-a197-44df-aa0a-ccb2e8351a00-../qtquick-imageelements-example/images/qml-imageelements-example.png" alt="" /></p><p><i>Image Elements</i> is a collection of small QML examples relating to image types. For more information, visit Use Case - Visual Elements In QML.</p>
+<p class="centerAlign"><img src="../../../media/qml-imageelements-example.png" alt="" /></p><p><i>Image Elements</i> is a collection of small QML examples relating to image types. For more information, visit Use Case - Visual Elements In QML.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="borderimage">BorderImage</h2>

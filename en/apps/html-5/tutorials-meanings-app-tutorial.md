@@ -31,8 +31,8 @@ areas too.
 There are a couple requirements:
 
   * You need to install the Ubuntu SDK
-  * You need to know how to [create an HTML5 app project in the SDK](../../sdk/tutorials-creating-an-sdk-app-project.md)
-  * You should have some experience [running apps from the SDK](../../sdk/tutorials-running-apps-from-the-sdk.md)
+  * You need to know how to [create an HTML5 app project in the SDK](../../platform/sdk/tutorials-creating-an-sdk-app-project.md)
+  * You should have some experience [running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.md)
 
 ### Getting the app source
 
@@ -73,7 +73,7 @@ naturally, the GUI and control logic are simply the defaults for any new app.
 We’ll implement a GUI and control logic that suits the needs of or Meanings
 app below.
 
-**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
+**Note**: If you have a physical device, you can try running it there by following the tips in the [Ubuntu SDK](../../platform/sdk/index.md) section. You can also try creating an emulator and running it there, again following those tips.
 
 ### Run the app from the terminal
 

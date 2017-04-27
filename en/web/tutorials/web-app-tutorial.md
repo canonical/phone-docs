@@ -12,8 +12,8 @@ RPG created by Little Workshop and sponsored by Mozilla. Before going further,
 you may want to check the following resources to be sure you understand
 everything you will be doing :
 
-  * [Creating an SDK app project](../../apps/sdk/tutorials-creating-an-sdk-app-project.md)
-  * [Running apps from the SDK](../../apps/sdk/tutorials-running-apps-from-the-sdk.md)
+  * [Creating an SDK app project](../../platform/sdk/tutorials-creating-an-sdk-app-project.md)
+  * [Running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.md)
   * [Security policy groups](/en/publish/security-policy-groups/)
 
 ## First step : Creating the project
@@ -42,7 +42,7 @@ You will be asked some information about the project:
 
 #### Device info
 
-  * Device kits](../../apps/sdk/tutorials-running-apps-from-the-sdk.md) your project will be using.
+  * Device kits](../../platform/sdk/tutorials-running-apps-from-the-sdk.md) your project will be using.
 
 ![](../../../media/device-kits.png)
 

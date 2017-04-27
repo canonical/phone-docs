@@ -6,7 +6,7 @@ Title: QtMultimedia.qtmultimedia-declarative-camera-example
 
 <span class="subtitle"></span>
 <!-- $$$declarative-camera-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/872c3f2e-23dd-4a95-9c72-857713b6d3e2-../qtmultimedia-declarative-camera-example/images/qml-camera.png" alt="" /></p><p>This example demonstrates how to use the Qt Multimedia QML API to access camera functions. It shows how to change settings and to capture images.</p>
+<p class="centerAlign"><img src="../../../media/qml-camera.png" alt="" /></p><p>This example demonstrates how to use the Qt Multimedia QML API to access camera functions. It shows how to change settings and to capture images.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="application-structure">Application Structure</h2>

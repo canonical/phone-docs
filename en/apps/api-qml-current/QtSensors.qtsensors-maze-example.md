@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-maze-example
 
 <span class="subtitle"></span>
 <!-- $$$maze-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3761a3c8-c9f5-4f65-a8c9-c2eaebd228af-../qtsensors-maze-example/images/maze.png" alt="" /></p>
+<p class="centerAlign"><img src="../../../media/maze.png" alt="" /></p>
 <h3 >Maze in QML</h3>
 <p>To write a QML application that will use the <a href="QtSensors.TiltSensor.md">TiltSensor</a> QML sensors type you need to do the following steps:</p>
 <p>Import the QtSensors 5.x declarative plugin:</p>

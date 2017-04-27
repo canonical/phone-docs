@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-particles-affectors-example
 
 <span class="subtitle"></span>
 <!-- $$$particles/affectors-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/ec26d0bc-728a-4145-95a6-868f33278b22-../qtquick-particles-affectors-example/images/qml-affectors-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="../../../media/qml-affectors-example.png" alt="" /></p><p>This is a collection of small QML examples relating to using Affectors in the particle system. Each example is a small QML file emphasizing a particular type or feature.</p>
 <p>Age demonstrates using an Age affector to prematurely end the lives of particles.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Particles.Age.md">Age</a></span> {
 <span class="name">anchors</span>.fill: <span class="name">parent</span>

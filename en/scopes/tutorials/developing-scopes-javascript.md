@@ -46,7 +46,7 @@ scopes-doc` package.
 ### Testing your scope
 
 At any point during this tutorial, you can press the Play button on the
-sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](https://developer.ubuntu.com/en/apps/sdk/tutorials-running-apps-from-the-sdk/).
+sidebar of the SDK to test the scope [on your desktop, phone or in anemulator](../../platform/sdk/tutorials-running-apps-from-the-sdk.md).
 
 ## Create a new JavaScript scope
 

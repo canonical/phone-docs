@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-demos-photosurface-example
 
 <span class="subtitle"></span>
 <!-- $$$demos/photosurface-description -->
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/9c8de1cd-7f99-402c-ba63-10bc13110aa4-../qtquick-demos-photosurface-example/images/qtquick-demo-photosurface-small.png" alt="" /></p><p><i>Photo Surface</i> demonstrates how to use a <a href="QtQuick.Repeater.md">Repeater</a> with a <a href="Qt.labs.folderlistmodel.FolderListModel.md">FolderListModel</a> and a FileDialog to access images from a folder selected by a user and how to handle dragging, rotation and pinch zooming within the same item using a <a href="QtQuick.PinchArea.md">PinchArea</a> that contains a <a href="QtQuick.MouseArea.md">MouseArea</a>.</p>
+<p class="centerAlign"><img src="../../../media/qtquick-demo-photosurface-small.png" alt="" /></p><p><i>Photo Surface</i> demonstrates how to use a <a href="QtQuick.Repeater.md">Repeater</a> with a <a href="Qt.labs.folderlistmodel.FolderListModel.md">FolderListModel</a> and a FileDialog to access images from a folder selected by a user and how to handle dragging, rotation and pinch zooming within the same item using a <a href="QtQuick.PinchArea.md">PinchArea</a> that contains a <a href="QtQuick.MouseArea.md">MouseArea</a>.</p>
 <p>All the app code is contained in one QML file, photosurface.qml. Inline JavaScript code is used to place, rotate, and scale images on the photo surface.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>

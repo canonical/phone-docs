@@ -34,7 +34,7 @@ Text { text: rect<span class="operator">.</span>Positioner<span class="operator"
 }
 }
 }</pre>
-<p class="centerAlign"><img src="https://developer.ubuntu.com/static/devportal_uploaded/3a7f04b4-e553-4e35-8797-9bdf1fbe29ef-../QtQuick.Positioner/images/positioner-example.png" alt="" /></p><!-- @@@Positioner -->
+<p class="centerAlign"><img src="../../../media/positioner-example.png" alt="" /></p><!-- @@@Positioner -->
 <h2>Attached Property Documentation</h2>
 <!-- $$$index -->
 <table class="qmlname"><tr valign="top" id="index-attached-prop"><td class="tblQmlPropNode"><p><span class="name">Positioner.index</span> : <span class="type">int</span></p></td></tr></table><p>This property allows the item to determine its index within the positioner.</p>
