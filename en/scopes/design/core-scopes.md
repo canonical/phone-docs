@@ -82,7 +82,7 @@ There are a number of ways to navigate to different views inside a scope.
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See more in our  [Navigation](navigation) section on how to get the best navigation experience within your scope.
+See more in our  [Navigation](navigation.md) section on how to get the best navigation experience within your scope.
 
 
 ##Enabling content
@@ -170,7 +170,7 @@ Taken from our News scope, this card is used to display a snippet of a news stor
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See more in our  [Components](components) section on the different card sizes and layout designs.
+See more in our  [Components](components.md) section on the different card sizes and layout designs.
 
 
 ##Categories
@@ -200,7 +200,7 @@ This is an example taken from our NearBy scope, where it shows events in the use
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See more in our  [Components](components) section on how to structure your categories and how both the category and scope header works.
+See more in our  [Components](components.md) section on how to structure your categories and how both the category and scope header works.
 
 
 ##Sourcing your scope
@@ -259,5 +259,3 @@ The NearBy scope draws in all manner of places, landmarks, and cool new bars tha
 
 
 Here are a few examples of some hidden gems that have been found using the NearBy scope.
-
-

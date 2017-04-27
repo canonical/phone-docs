@@ -32,7 +32,7 @@ Create your first Unity 8 scope by following along these tutorials.
 Learn more about how to make your scopes unique and add an extra layer of
 features.
 
-  * [Customization and branding](../guides/scopes-customization-branding/)
+  * [Customization and branding](../guides/scopes-customization-branding.md)
   * [Adding settings to your scope](adding-settings-to-your-scope.md)
   * [Adding location awareness to your scope](adding-location-awareness-to-your-scope.md)
   * [Adding departments](adding-departments-to-your-scope.md)

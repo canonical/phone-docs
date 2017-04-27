@@ -31,7 +31,7 @@ the user is browsing installed scopes.
 ### DisplayName
 
 The text that will appear in the header of your scope when running (unless you
-are [using a logo](../guides/scopes-customization-branding.md)),
+are [using a logo](../guides/scopes-customization-branding.md),
 but it’s also what users will see in the store and in their installed scopes
 list. Make sure you are using a unique DisplayName to make your scope stand
 out.

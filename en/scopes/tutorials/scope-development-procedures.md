@@ -105,4 +105,4 @@ $ unity-scope-tool src/myscope.ini
 ## Next step
 
 Now that you are ready to make your first scope, you should give a try to the
-[SoundCloud scope tutorial](/scopes/tutorials/write-a-json-scope-in-cpp.md).
+[SoundCloud scope tutorial](write-a-json-scope-in-cpp.md).
