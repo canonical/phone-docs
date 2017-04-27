@@ -157,7 +157,7 @@ Categories group together related results and help you structure your scope to s
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-To see examples of a standard template code and more in-depth information see our  [developer docs.](guides/scopes-customization-branding.md)
+To see examples of a standard template code and more in-depth information see our  [developer docs.](../guides/scopes-customization-branding.md)
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
@@ -319,7 +319,7 @@ A benefit of using grid units instead of pixels is that it gives the designer mo
 ![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
 
 
-Once you have written your fantastic new scope, you will have to name it. Use  [keywords](../tutorials/scope-keywords.md) to help your scope get noticed.
+Once you have written your fantastic new scope, you will have to name it. Use  [keywords](../guides/scope-keywords.md) to help your scope get noticed.
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
