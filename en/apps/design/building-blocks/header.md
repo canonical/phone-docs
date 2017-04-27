@@ -269,7 +269,7 @@ An activated edit mode must always apply to the panel view it is triggered in. I
 If you need a delete icon place it on the left of the toolbar. If the  content you are editing needs to be saved then use two text buttons instead, such as ‘Cancel’ and ‘Save’.
 
 
-|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](/apps/design/get-started/design-values) for more information.|
+|![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](../get-started/design-values.md) for more information.|
 |
 |---|-----|
 

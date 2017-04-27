@@ -43,8 +43,8 @@ for existing APIs.
 #### **Changes between versions**
 
 You can find the list of supported APIs for the latest stable frameworks and
-the ones being currently worked on, in the [QML](../../apps/qml/index.html) and
-[HTML5](../../apps/html-5/index.html) API docs. Note that a command line tool to
+the ones being currently worked on, in the [QML](../../apps/qml/index.md) and
+[HTML5](../../apps/html-5/index.md) API docs. Note that a command line tool to
 list all changes between versions of a framework is coming soon.
 
 #### **Target a framework newer than the version of Ubuntu you are running**

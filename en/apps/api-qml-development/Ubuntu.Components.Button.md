@@ -23,7 +23,7 @@ Title: Ubuntu.Components.Button
 <!-- $$$Button-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="../design/building-blocks/buttons.md">See also the Design Guidelines on Buttons</a>.</p>
+
 <p>Examples:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Column.md">Column</a></span> {
 <span class="type"><a href="index.html">Button</a></span> {

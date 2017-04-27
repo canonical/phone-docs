@@ -14,7 +14,7 @@ create and add them to your scope.
 This tutorial assumes you have a working scope. You can create a simple
 weather scope by selecting New Project in QtCreator and pick the Unity Scope
 template. This is what we are going to use in the next steps. If you need any
-help for these steps, have a look at the [scope development procedures](scope-development-procedures.html) article.
+help for these steps, have a look at the [scope development procedures](scope-development-procedures.md) article.
 
 ## Two easy steps
 

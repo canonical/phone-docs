@@ -122,7 +122,7 @@ Cards represent a search result and can be made up of three components, which ca
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Components](/scopes/design/components) section for the different ways you can place components in cards, as well as card sizes and layouts.
+See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
 
 
 ##Categories
@@ -157,13 +157,13 @@ Categories group together related results and help you structure your scope to s
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-To see examples of a standard template code and more in-depth information see our  [developer docs.](https://developer.ubuntu.com/en/scopes/design/guides/scopes-customization-branding/)
+To see examples of a standard template code and more in-depth information see our  [developer docs.](guides/scopes-customization-branding/)
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Components](/scopes/design/components) section for the different ways you can place components in cards, as well as card sizes and layouts.
+See our  [Components](components.md) section for the different ways you can place components in cards, as well as card sizes and layouts.
 
 
 ##Modes of display
@@ -319,7 +319,7 @@ A benefit of using grid units instead of pixels is that it gives the designer mo
 ![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
 
 
-Once you have written your fantastic new scope, you will have to name it. Use  [keywords](https://developer.ubuntu.com/en/scopes/design/tutorials/scope-keywords/) to help your scope get noticed.
+Once you have written your fantastic new scope, you will have to name it. Use  [keywords](tutorials/scope-keywords/) to help your scope get noticed.
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
@@ -338,5 +338,3 @@ At a fraction of the cost of building an app, the scope toolkit allows you to gi
 
 
 Raring to go? Then dive into our  [Scope Toolkit(SDK)](https://developer.ubuntu.com/api/scopes/design/cpp/current/)(SDK) for all our APIs.
-
-

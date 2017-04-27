@@ -17,7 +17,7 @@ quoting [xUnit test patterns](http://xunitpatterns.com/)).
 
 Also they are slow and they exercise too many components, some of which are
 not under our control. That's why Test-Driven Development is instead done with
-isolated and fast [unit tests](../../apps/qml/tutorials/qml-unit-testing.html)
+isolated and fast [unit tests](../../apps/qml/tutorials-qml-unit-testing.md)
 that are not coupled to the GUI.
 
 Yet after we run the automated unit tests that don't depend on the design of

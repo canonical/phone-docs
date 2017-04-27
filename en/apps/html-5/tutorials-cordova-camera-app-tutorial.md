@@ -19,15 +19,15 @@ The app we develop here is quite simple:
 
 ### Cordova guide
 
-You may want to read the [Cordova Guide](guides-cordova-guide.html). It contains all the info you need to set up your development environment. The three prerequisites being:
+You may want to read the [Cordova Guide](guides-cordova-guide.md). It contains all the info you need to set up your development environment. The three prerequisites being:
 
   * Installing `cordova-cli` from the Ubuntu Cordova PPA
   * Creating a [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md) for the armhf architecture, to run and contain your application
-  * Installing build dependencies in the [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.html)
+  * Installing build dependencies in the [click chroot](../../platform/sdk/tutorials-click-targets-and-device-kits.md); refer to the corresponding section in the [Cordova Guide](guides-cordova-guide.md)
 
 ### HTML5 UI Toolkit basics
 
-This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.html).
+This tutorial is not focused on the UI Toolkit. For help, see the [Ubuntu HTML5 UI Toolkit Guide](guides-introduction-to-the-html5-ui-toolkit.md).
 
 ### Getting the resources for this app
 
@@ -350,7 +350,7 @@ Now, the Loading page and the home page look like this:
 
 ## Next steps
 
-Check out the [Cordova Guide](guides-cordova-guide.html) for
+Check out the [Cordova Guide](guides-cordova-guide.md) for
 a high level review of using Cordova in Ubuntu HTML5 apps and for adding
 Ubuntu as a built platform for native Cordova projects.
 

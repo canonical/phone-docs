@@ -156,7 +156,7 @@ This is the required code that creates an UbuntuUI object (locally named UI).
 This object is your entry point into the UbuntuUI API. This API is used to
 control the Ubuntu HTML5 GUI.
 
-**Tip**: Later, take a look at the [HTML5 UbuntuUI API](../guides-introduction-to-the-html5-ui-toolkit.html) reference docs.
+**Tip**: Later, take a look at the [HTML5 UbuntuUI API](guides-introduction-to-the-html5-ui-toolkit.md) reference docs.
 
 This is an event handler for the `window.onload` event. It provides an anonymous
 function that executes when the event is received. This event is received
@@ -189,7 +189,7 @@ Ubuntu HTML5 apps use specific markup to implement the GUI.
 
 Let’s take a super fast look at Ubuntu HTML5 highlights.
 
-**Tip**: Check out the [HTML5 Guide](../guides/html5-guide.md) for a more detailed look.
+**Tip**: Check out the [HTML5 Guide](guides-html5-guide.md) for a more detailed look.
 
 ### App layout
 

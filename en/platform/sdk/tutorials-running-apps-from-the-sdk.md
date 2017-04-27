@@ -22,7 +22,7 @@ Device kits are an important concept of the SDK: they allow your application
 to be built for several devices and architectures, regardless of your
 development environment. Don’t worry if you haven’t added any device kits,
 when you start a new project you can always create new ones. Have a look at
-[the article on kits](tutorials-click-targets-and-device-kits.html) to learn more about them, or just follow the next steps. When creating a project for the first time, the SDK will ask you to
+[the article on kits](tutorials-click-targets-and-device-kits.md) to learn more about them, or just follow the next steps. When creating a project for the first time, the SDK will ask you to
 create at least one kit and select two aspects for it :
 
   * The **framework** your application will use (most of the time, you will want to use the latest stable release, matching the Ubuntu release number. eg 14.04)
@@ -122,4 +122,4 @@ Application Output pane at the bottom of the editor.
 
 ## Next steps
 
-You may be ready to start writing apps! A great next step is the [Ubuntu App Platform](../index.html) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.html) and [HTML5](../../apps/html-5/index.html) sections for help deciding which toolkit to use.
+You may be ready to start writing apps! A great next step is the [Ubuntu App Platform](../index.md) section for information and guides on the common parts of Ubuntu that app developers need to know about. Ready to start coding? Check out the [QML](../../apps/qml/index.md) and [HTML5](../../apps/html-5/index.md) sections for help deciding which toolkit to use.

@@ -16,9 +16,9 @@ instance of the keyboard class, call <a class="reference internal" href="#autopi
 <em class="property">static </em><tt class="descname">create</tt><big>(</big><em>preferred_backend=''</em><big>)</big><a class="reference internal" href="#Keyboard.create"></a><a class="headerlink" href="#autopilot.input.Keyboard.create" title="Permalink to this definition"></a></dt>
 <dd><p>Get an instance of the <a class="reference internal" href="#autopilot.input.Keyboard" title="autopilot.input.Keyboard"><tt class="xref py py-class docutils literal"><span class="pre">Keyboard</span></tt></a> class.</p>
 <p>For more infomration on picking specific backends, see
-<a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
+<a class="reference internal" href="tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
 <p>For details regarding backend limitations please see:
-<a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#keyboard-backend-limitations"><em>Keyboard backend limitations</em></a></p>
+<a class="reference internal" href="tutorial-advanced_autopilot.md#keyboard-backend-limitations"><em>Keyboard backend limitations</em></a></p>
 <p class="first admonition-title">Warning</p>
 <p class="last">The <strong>OSK</strong> (On Screen Keyboard) backend option does not
 implement either <a class="reference internal" href="#autopilot.input.Keyboard.release" title="autopilot.input.Keyboard.release"><tt class="xref py py-meth docutils literal"><span class="pre">release</span></tt></a> methods due to

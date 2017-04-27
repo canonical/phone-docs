@@ -39,7 +39,7 @@ Note that emulators can use any architecture.
 ### Frameworks
 
 Each
-[framework](../guides/frameworks.html) is
+[framework](../guides/frameworks.md) is
 related to an Ubuntu release. In most cases, you will want to use the latest
 version to allow your app to use the latest features of the platform, but you
 can also try and see how your app behaves with older releases.

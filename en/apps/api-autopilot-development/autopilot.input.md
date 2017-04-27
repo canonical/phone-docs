@@ -18,23 +18,23 @@ instance of the specified class that suits the current platform. In this case,
 autopilot will do it&#8217;s best to pick a suitable backend. Calling <tt class="docutils literal"><span class="pre">create</span></tt>
 with a backend name will result in that specific backend type being returned,
 or, if it cannot be created, an exception will be raised. For more information
-on creating backends, see <a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
+on creating backends, see <a class="reference internal" href="tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
 <p>There are three basic input types available:</p>
 <blockquote>
-<li><p class="first"><a class="reference internal" href="../1.5.0/autopilot.input.Keyboard.md#autopilot.input.Keyboard" title="autopilot.input.Keyboard"><tt class="xref py py-class docutils literal"><span class="pre">Keyboard</span></tt></a> - traditional keyboard devices.</p>
+<li><p class="first"><a class="reference internal" href="autopilot.input.Keyboard.md#autopilot.input.Keyboard" title="autopilot.input.Keyboard"><tt class="xref py py-class docutils literal"><span class="pre">Keyboard</span></tt></a> - traditional keyboard devices.</p>
 </li>
 <li><dl class="first docutils">
-<dt><a class="reference internal" href="../1.5.0/autopilot.input.Mouse.md#autopilot.input.Mouse" title="autopilot.input.Mouse"><tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt></a> - traditional mouse devices (Currently only avaialble on the</dt>
+<dt><a class="reference internal" href="autopilot.input.Mouse.md#autopilot.input.Mouse" title="autopilot.input.Mouse"><tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt></a> - traditional mouse devices (Currently only avaialble on the</dt>
 <dd><p class="first last">desktop).</p>
 </dd>
 </dl>
 </li>
-<li><p class="first"><a class="reference internal" href="../1.5.0/autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> - single point-of-contact touch device.</p>
+<li><p class="first"><a class="reference internal" href="autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> - single point-of-contact touch device.</p>
 </li>
 </ul>
 </blockquote>
-<p>The <a class="reference internal" href="../1.5.0/autopilot.input.Pointer.md#autopilot.input.Pointer" title="autopilot.input.Pointer"><tt class="xref py py-class docutils literal"><span class="pre">Pointer</span></tt></a> class is a wrapper that unifies the API of the
-<a class="reference internal" href="../1.5.0/autopilot.input.Mouse.md#autopilot.input.Mouse" title="autopilot.input.Mouse"><tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt></a> and <a class="reference internal" href="../1.5.0/autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> classes, which can be helpful if you want to
+<p>The <a class="reference internal" href="autopilot.input.Pointer.md#autopilot.input.Pointer" title="autopilot.input.Pointer"><tt class="xref py py-class docutils literal"><span class="pre">Pointer</span></tt></a> class is a wrapper that unifies the API of the
+<a class="reference internal" href="autopilot.input.Mouse.md#autopilot.input.Mouse" title="autopilot.input.Mouse"><tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt></a> and <a class="reference internal" href="autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> classes, which can be helpful if you want to
 write a test that can use either a mouse of a touch device. A common pattern is
 to use a Touch device when running on a mobile device, and a Mouse device when
 running on a desktop.</p>

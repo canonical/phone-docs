@@ -41,7 +41,7 @@ See our  [Component](/components) section on how to best place these actions ins
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-For more information on how to implement settings in your scope, see our  [SDK](https://developer.ubuntu.com/en/scopes/design/tutorials/adding-settings-to-your-scope/).
+For more information on how to implement settings in your scope, see our  [SDK](../tutorials/adding-settings-to-your-scope.md).
 
 
 ##Category header
@@ -142,7 +142,7 @@ We use it in some of core scopes such as Music and Shopping, where users can bro
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-Learn how to create departments and use them in queries in our  [SDK](https://developer.ubuntu.com/en/scopes/design/tutorials/adding-departments-to-your-scope/).
+Learn how to create departments and use them in queries in our  [SDK](../tutorials/adding-departments-to-your-scope.md).
 
 
 ##Multiple level hierarchy
@@ -200,5 +200,3 @@ Once the user has selected a feature, the scope page will rearrange the results 
 
 
 Where there are multiple choices in each department branch a chevron is used to indicate to the user that there are options available.
-
-

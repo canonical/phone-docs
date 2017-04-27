@@ -25,7 +25,7 @@ development tutorials.
 
 Functional or acceptance tests help ensure your application behaves properly
 from a user perspective. The tests seek to mimic the user as closely as
-possible. Acceptance tests are the pinnacle of the [testing pyramid](../scopes/tutorials/scopes-unit-testing.md). The
+possible. Acceptance tests are the pinnacle of the [testing pyramid](../../scopes/tutorials/scopes-unit-testing.md). The
 testing pyramid describes the three levels of testing an application, going
 from low level tests at the bottom and increasing to high level tests at the
 top. As acceptance tests are the highest level, they will represent the
@@ -53,7 +53,7 @@ this by driving a browser and providing programmatic access to it.
 
 Before you can run a testcase, you’ll need to setup your environment.
 
-  * Create a test class that inherits [AutopilotTestCase](https://developer.ubuntu.com/api/autopilot/python/1.5.0/autopilot.testcase.AutopilotTestCase/#autopilot.testcase.AutopilotTestCase)
+  * Create a test class that inherits [AutopilotTestCase](../api-autopilot-current/autopilot.testcase.AutopilotTestCase.md#autopilot.testcase.AutopilotTestCase)
   * Define your `Setup()` and `TearDown()` functions
   * Launch the application with introspection via `launch_test_application`
 
@@ -206,7 +206,7 @@ When you are architecting your test suite, it’s important to think about
 design. Functional tests are the most UI sensitive testcases in your project
 and are more likely to break than lower level tests. To address this issue,
 the page object model can guide you towards writing tests that can scale and
-deal with changes over time easily. Check out the [Page ObjectModel](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-page_object/) for more information.
+deal with changes over time easily. Check out the [Page ObjectModel](../api-autopilot-current/guides-page_object.md) for more information.
 
 ## Conclusion
 
@@ -216,6 +216,6 @@ HTML5 tests. Check out the links below for more documentation and help.
 
 ### Resources
 
- * [Autopilot API](https://developer.ubuntu.com/api/autopilot/python/1.5.0/)
+ * [Autopilot API](../api-autopilot-current/index.md)
  * [Selenium Webdriver API](http://selenium-python.readthedocs.org/en/latest/api.html)
  * [HTML5 SDK documentation](api.md)

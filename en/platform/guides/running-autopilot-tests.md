@@ -10,14 +10,14 @@ applications developed with the Ubuntu SDK. This guide will cover the
 different options available to you for running the autopilot test suite for
 your applications. While the autopilot binary is also a testrunner, there are
 some other tools to make it easier to run on the desktop and the device. This
-guide assumes you are familiar with using [autopilot testrunner](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-running_ap/).
+guide assumes you are familiar with using [autopilot testrunner](../../apps/api-autopilot-current/guides-running_ap.md).
 
 ## Running tests on the desktop
 
 ### Using the Ubuntu SDK
 
 By utilizing the ubuntu SDK for development, it's easy to also run a project's
-autopilot tests directly from inside the SDK. Be sure to [follow the installation guide for the SDK](../sdk/installing-the-sdk.html) to
+autopilot tests directly from inside the SDK. Be sure to [follow the installation guide for the SDK](../sdk/installing-the-sdk.md) to
 ensure the SDK release ppa is installed. Then install the autopilot plugin
 package.
 
@@ -41,7 +41,7 @@ results of the tests will be displayed in the Application Output Console.
 
 This tool ships with autopilot itself and was developed as a way to run
 autopilot test suites on your desktop in a sane manner. If you have autopilot,
-it's already installed. If not, make sure you [install autopilotfirst](https://developer.ubuntu.com/api/autopilot/python/1.5.0/guides-installation/). By default, autopilot will take control of your mouse and
+it's already installed. If not, make sure you [install autopilotfirst](../../apps/api-autopilot-current/guides-installation.md). By default, autopilot will take control of your mouse and
 keyboard for the test duration. This is not desirable in a desktop
 environment. `autopilot3-sandbox-run` allows you to run autopilot tests in a
 nested xserver, thereby retaining control of your mouse and keyboard on the

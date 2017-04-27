@@ -26,7 +26,7 @@ applications from it. The easiest way to create a new app from QtCreator is to
 create a New project and select the HTML5 app template. You will be asked for
 a project name, then an app name. Other required fields will be useful for
 packaging and integrating your application within the Ubuntu app confinement
-model. You can have a look at [this article](../../platform/guides/app-confinement.html) to get a better grasp of what our security model is.
+model. You can have a look at [this article](../../platform/guides/app-confinement.md) to get a better grasp of what our security model is.
 
 ![](../../../media/creating-a-html5-app.png)
 
@@ -100,7 +100,7 @@ window.onload = function() {
     });
 };
 ```
-You can find more documentation on Ubuntu HTML5 APIs in the [API section](api.html).
+You can find more documentation on Ubuntu HTML5 APIs in the [API section](api.md).
 
 ## How to add an Ubuntu style
 

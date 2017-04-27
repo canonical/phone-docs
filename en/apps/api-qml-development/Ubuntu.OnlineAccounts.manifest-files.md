@@ -140,7 +140,7 @@ Title: Ubuntu.OnlineAccounts.manifest-files
 <p>The authentication data consists of:</p>
 <ul>
 <li>the <code>CredentialsId</code> key: this is the numeric ID of the account credentials in the local machine. This key is usually never stored in the <code>&lt;template&gt;</code> element, as its value becomes known only when the account is created.</li>
-<li>the <code>auth/method</code> key: a string defining which authentication plugin needs to be used. Please refer to the <a href="../../../scopes/cpp/sdk-14.10/U1db.Index.md">libsignon-qt documentation</a>.</li>
+<li>the <code>auth/method</code> key: a string defining which authentication plugin needs to be used. Please refer to the <a href="U1db.Index.md">libsignon-qt documentation</a>.</li>
 <li>the <code>auth/mechanism</code> key: a string defining which authentication mechanism needs to be used. Each authentication plugin defines its own mechanisms, so please refer to the plugin's documentation.</li>
 <li>all the settings defined under the <code>&quot;auth/</code> <i>&lt;method&gt;</i> <code>/</code> <i>&lt;mechanism&gt;</i> <code>&quot;</code> group. Each authentication plugin defines its own parameters, so please refer to the plugin's documentation.</li>
 </ul>

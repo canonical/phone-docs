@@ -26,14 +26,14 @@ raised. These are documented in the specific methods below.</p>
 <dt id="autopilot.input.Pointer.x">
 <tt class="descname">x</tt><a class="reference internal" href="#Pointer.x"></a><a class="headerlink" href="#autopilot.input.Pointer.x" title="Permalink to this definition"></a></dt>
 <dd><p>Pointer X coordinate.</p>
-<p>If the wrapped device is a <a class="reference internal" href="../1.5.0/autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> device, this will return the
+<p>If the wrapped device is a <a class="reference internal" href="autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> device, this will return the
 last known X coordinate, which may not be a sensible value.</p>
 </dd></dl>
 <dl class="attribute">
 <dt id="autopilot.input.Pointer.y">
 <tt class="descname">y</tt><a class="reference internal" href="#Pointer.y"></a><a class="headerlink" href="#autopilot.input.Pointer.y" title="Permalink to this definition"></a></dt>
 <dd><p>Pointer Y coordinate.</p>
-<p>If the wrapped device is a <a class="reference internal" href="../1.5.0/autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> device, this will return the
+<p>If the wrapped device is a <a class="reference internal" href="autopilot.input.Touch.md#autopilot.input.Touch" title="autopilot.input.Touch"><tt class="xref py py-class docutils literal"><span class="pre">Touch</span></tt></a> device, this will return the
 last known Y coordinate, which may not be a sensible value.</p>
 </dd></dl>
 <dl class="method">

@@ -13,7 +13,7 @@ Together we can design and build beautiful and usable apps for Ubuntu.
 Familiarise yourself with the essentials before designing your app.
 
 
-[Design values &rsaquo;](get-started/design-values)
+[Design values &rsaquo;](get-started/design-values.md)
 
 
 ## Style (coming soon)
@@ -30,7 +30,7 @@ Make your app look beautiful by using the uniquely designed Ubuntu fonts and col
 Use common patterns to allow users to get where they want to naturally and with little effort.
 
 
-[Gestures &rsauo;](patterns/gestures)
+[Gestures &rsauo;](patterns/gestures.md)
 
 
 ## Building blocks

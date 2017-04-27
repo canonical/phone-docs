@@ -374,7 +374,7 @@ Component {
 At this point, if you run the app, you will not yet see any visible changes,
 so don’t worry if all you see is an empty rectangle.
 
-What we’ve done is to create the currency selector, based on a [Popover](../api-qml-current/Ubuntu.Components.Popups.Popover.md) and a standard Qt Quick [ListView](http://doc.qt.io/qt-5/qml-qtquick-listview.html). The ListView will display the data from the `currencies` ListMode. Notice how the Column object wraps the [Header](../api-qml-current/Ubuntu.Components.ListItems.Header.md) and the list view to arrange them vertically, and how each item in the list view will be a [Standard](../api-qml-current/Ubuntu.Components.ListItems.Standard.md) list item component.
+What we’ve done is to create the currency selector, based on a [Popover](../api-qml-current/Ubuntu.Components.Popups.Popover.md) and a standard Qt Quick [ListView](http://doc.qt.io/qt-5/qml-qtquick-listview.md). The ListView will display the data from the `currencies` ListMode. Notice how the Column object wraps the [Header](../api-qml-current/Ubuntu.Components.ListItems.Header.md) and the list view to arrange them vertically, and how each item in the list view will be a [Standard](../api-qml-current/Ubuntu.Components.ListItems.Standard.md) list item component.
 
 The popover will show the selection of currencies. Upon selection, the popover
 will be hidden (see `onClicked` signal) and the caller’s data is updated. We
@@ -498,7 +498,7 @@ currency converter you’ve just written with a few lines of code.
 
 ## Test it!
 
-Now that the application is running, don't forget about tests! The [qualitypage for qml applications](../../platform/quality.html) has you covered. Learn
+Now that the application is running, don't forget about tests! The [qualitypage for qml applications](../../platform/quality.md) has you covered. Learn
 about writing tests for every level of the testing pyramid by using the
 application you just built.
 

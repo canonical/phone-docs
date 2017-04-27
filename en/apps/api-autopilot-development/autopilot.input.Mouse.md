@@ -21,7 +21,7 @@ instance of the mouse class, call <a class="reference internal" href="#autopilot
 <em class="property">static </em><tt class="descname">create</tt><big>(</big><em>preferred_backend=''</em><big>)</big><a class="reference internal" href="#Mouse.create"></a><a class="headerlink" href="#autopilot.input.Mouse.create" title="Permalink to this definition"></a></dt>
 <dd><p>Get an instance of the <a class="reference internal" href="#autopilot.input.Mouse" title="autopilot.input.Mouse"><tt class="xref py py-class docutils literal"><span class="pre">Mouse</span></tt></a> class.</p>
 <p>For more infomration on picking specific backends, see
-<a class="reference internal" href="../1.5.0/tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
+<a class="reference internal" href="tutorial-advanced_autopilot.md#tut-picking-backends"><em>Advanced Backend Picking</em></a></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

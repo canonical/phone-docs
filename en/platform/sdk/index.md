@@ -29,6 +29,6 @@ tuned!
 
 ## Next steps
 
-  * Get started and easily [install the Ubuntu SDK](installing-the-sdk.html).
+  * Get started and easily [install the Ubuntu SDK](installing-the-sdk.md).
   * Enable [developer mode](https://developer.ubuntu.com/en/start/ubuntu-for-devices/installing-ubuntu-for-devices#enabling-dev-mode) on your Ubuntu device.
-  * Learn how to create new projects, run apps from the SDK, use the emulator, how to cross build and more. [Check out the SDK tutorials](tutorials-index.html).
+  * Learn how to create new projects, run apps from the SDK, use the emulator, how to cross build and more. [Check out the SDK tutorials](tutorials-index.md).

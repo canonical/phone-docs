@@ -57,7 +57,7 @@ based on the framework and target architecture (e.g. i386 or armhf). The
 architecture will correspond to the test environment the developer is using
 and ultimately what the products are built with.
 
-[Learn more about building for different architectures&nbsp;&rsaquo;](apps/sdk/tutorials-building-cross-architecture-click-applications.md)
+[Learn more about building for different architectures&nbsp;&rsaquo;](platform/sdk/tutorials-building-cross-architecture-click-applications.md)
 
 ### Testing applications on devices
 
@@ -71,4 +71,4 @@ click and installed to the device or emulator in order to properly test it.
 Again the IDE will assist with creating, validating, deploying and installing
 the package.
 
-[Learn how to run apps with the Ubuntu SDK IDE&nbsp;&rsaquo;](apps/sdk/tutorials-running-apps-from-the-sdk.md)
+[Learn how to run apps with the Ubuntu SDK IDE&nbsp;&rsaquo;](platform/sdk/tutorials-running-apps-from-the-sdk.md)

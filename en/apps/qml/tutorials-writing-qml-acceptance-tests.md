@@ -10,9 +10,9 @@ Converter Tutorial.
 
 ## Requirements
 
-  * Ubuntu 14.04 or later -- [get Ubuntu](http://www.ubuntu.com/download/desktop/).
-  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](tutorials-building-your-first-qml-app.html).
-  * The lower level testing tutorials on [unit testing](tutorials-qml-unit-testing.html), and [integration testing](tutorials-qml-integration-testing.html).
+  * Ubuntu 14.04 or later -- [get Ubuntu](https://www.ubuntu.com/download/desktop/).
+  * The Currency Converter tutorial -- if you haven't already, [complete the Currency Converter tutorial](tutorials-building-your-first-qml-app.md).
+  * The lower level testing tutorials on [unit testing](tutorials-qml-unit-testing.md), and [integration testing](tutorials-qml-integration-testing.md).
 
 ## Testing like a user with autopilot
 
@@ -249,6 +249,6 @@ to the world of testing!
 
 ### Resources
 
-  * [Official Autopilot Tutorial](https://developer.ubuntu.com/api/autopilot/python/1.5.0/tutorial-getting_started/)
-  * [Autopilot API Documentation](https://developer.ubuntu.com/api/autopilot/python/1.5.0/)
-  * [Autopilot SDK Helpers](https://developer.ubuntu.com/api/autopilot/python/1.5.0/ubuntuuitoolkit/)
+  * [Official Autopilot Tutorial](../api-autopilot-current/tutorial-getting_started.md)
+  * [Autopilot API Documentation](../api-autopilot-current/index.md)
+  * [Autopilot SDK Helpers](../api-autopilot-current/ubuntuuitoolkit.md)

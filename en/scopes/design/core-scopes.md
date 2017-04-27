@@ -127,7 +127,7 @@ The header must always have a back button to take the user back to the previous 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-See how to implement  [location settings](https://developer.ubuntu.com/api/scopes/design/cpp/sdk-14.10/unity.scopes.Location/) inside your scope in our SDK.
+See how to implement  [location settings](../api-cpp-current/unity.scopes.Location.md) inside your scope in our SDK.
 
 
 ##Designing layouts

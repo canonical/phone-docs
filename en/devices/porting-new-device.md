@@ -5,7 +5,7 @@ table_of_contents: true
 
 # Devices - porting to a new device
 
-Ubuntu for devices runs on a variety of mobile [devices](devices.html), such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris (commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is possible and encouraged to enable other devices to run the mobile OS.
+Ubuntu for devices runs on a variety of mobile [devices](devices.md), such as the Nexus 4 and Nexus 7 2013 (reference hardware) or the bq Aquaris (commercial phone). Due to Ubuntu’s Open Source nature and architecture, it is possible and encouraged to enable other devices to run the mobile OS.
 
 This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 

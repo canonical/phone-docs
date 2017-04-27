@@ -251,9 +251,9 @@ straightforward pattern for a lot of what you can do with Cordova APIs.
 
 ## Next steps
 
-Check out the [Cordova Camera Tutorial](tutorials-cordova-camera-app-tutorial.html), which
+Check out the [Cordova Camera Tutorial](tutorials-cordova-camera-app-tutorial.md), which
 provides all the steps you need to make a working HTML5 Camera app that let’s
 you snap a picture and then displays it in the app.
 
-You may also want to check out the [HTML5 Guide](guides-html5-guide.html) for an overview of Ubuntu
+You may also want to check out the [HTML5 Guide](guides-html5-guide.md) for an overview of Ubuntu
 HTML5.

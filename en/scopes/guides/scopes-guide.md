@@ -240,7 +240,7 @@ at the top of column two, and there are two additional text widgets
 
 # Next steps
 
-  * A good starting point is looking at [Scopes development procedures](../tutorials/scope-development-procedures.html). This provides steps for creating a scope project in the Ubuntu SDK, building it and running it on the desktop and devices.
-  * Next, you can check out the [scopes tutorials](../tutorials/index.html). They provide working examples and discuss key points from a coding and development perspective.
+  * A good starting point is looking at [Scopes development procedures](../tutorials/scope-development-procedures.md). This provides steps for creating a scope project in the Ubuntu SDK, building it and running it on the desktop and devices.
+  * Next, you can check out the [scopes tutorials](../tutorials/index.md). They provide working examples and discuss key points from a coding and development perspective.
   * Since scopes can do so much more, you may want to have a look at the [In-Depth Scopes Developer Guide](../api-cpp-development/index.md).
-  * And of course, you need the scopes [API reference docs](../api.html).
+  * And of course, you need the scopes [API reference docs](../api.md).
