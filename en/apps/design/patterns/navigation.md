@@ -183,7 +183,7 @@ In this example, Dekko displays an action for the bottom edge, search and settin
 ![750w_Navigation_ConvergentHeader3actions (2)](https://assets.ubuntu.com/v1/e8593d86-750w_Navigation_ConvergentHeader3actions-2.png)
 
 
-|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more slot layout examples see Header](/apps/design/building-blocks/header)|
+|![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more slot layout examples see Header](/apps/design/building-blocks/header.md)|
 |
 |---|-----|
 

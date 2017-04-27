@@ -113,7 +113,7 @@ starting the application directly.
 $ cordova run --device --debug
 ```
 
-![](../../../../media/app-html5-tutorial-cordova-screenshot.png)
+![](../../../media/app-html5-tutorial-cordova-screenshot.png)
 
 **Tip**: you may see warning messages after the build. For example: you haven't specified an icon for your application yet.
 
@@ -191,7 +191,7 @@ following:
 
 If you run the app now, the GUI appears as follows:
 
-![](../../../../media/app-html5-tutorial-cordova-spinner.png)
+![](../../../media/app-html5-tutorial-cordova-spinner.png)
 
 As noted above, that is the loading div that displays until Cordova
 deviceready event is received.
@@ -256,7 +256,7 @@ This is the first bit of new code that’s needed. Let’s take a look at it.
   * An event handler for the Cordova deviceready event is added. This is received when the Cordova system is fully loaded and ready, so this is a great place to put code that uses Cordova objects. (See Cordova Guide for information.)
   * Inside the deviceready handler, first the loading div is hidden and then then loaded div is displayed.
   * Then, the **Take Picture** button is obtained with: UI.button(“click”).
-  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](../api.md) for complete API reference docs.)
+  * Its click(FUNCTION) method provides the FUNCTION that runs when the button is clicked, the button’s event handler code. (See [HTML5 APIs](api.md) for complete API reference docs.)
   * This event handling function calls the navigator.camera.getPicture(…) method.
   * The navigator object is the base Cordova object and is available in the HTML5 runtime container when the app includes Cordova as described above.
   * getPicture(…) takes three arguments: the name of the function to run when a picture is taken(this is calledonSuccess here and is defined below), the name of a function to run when an attempt to take a picture fails (onFail here, defined below), and some optional arguments.
@@ -311,7 +311,7 @@ $ cordova run --device --debug
 
 Here is how the application looks like after clicking **Take Picture**:
 
-![](../../../../media/camera-snap.png)
+![](../../../media/camera-snap.png)
 
 Once you validate the picture, the system will bring back your application and
 will display the photo below the button.
@@ -346,7 +346,7 @@ Now, in `index.html`, simply add the following inside the `<head>`
 
 Now, the Loading page and the home page look like this:
 
-![](../../../../media/camera-app.png)
+![](../../../media/camera-app.png)
 
 ## Next steps
 

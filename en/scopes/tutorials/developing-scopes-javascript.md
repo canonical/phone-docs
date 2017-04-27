@@ -20,7 +20,7 @@ online service should be very simple.
 
 ## Requirements
 
-Before going through this tutorial, you need to have the [Ubuntu SDK installed](https://developer.ubuntu.com/en/start/ubuntu-sdk/installing-the-sdk/) and [click targets created](../..//sdk/tutorials-click-targets-and-device-kits/), preferably for the desktop and phone (armhf) targets.
+Before going through this tutorial, you need to have the [Ubuntu SDK installed](../../platform/sdk/installing-the-sdk.md) and [click targets created](../../platform/sdk/tutorials-click-targets-and-device-kits.md), preferably for the desktop and phone (armhf) targets.
 
 You also need to install the JS scopes dev tools and prepare your dev
 environment with the following commands:
@@ -365,4 +365,4 @@ preview: function(result, action_metadata) {
 
 ## Package creation
 
-The SDK IDE handles all the packaging process, simply follow [these instructions](https://developer.ubuntu.com/en/scopes/tutorials/prepare-your-scope-for-publication/) to ensure your scope will look great once installed on your phone for testing or when published in the store.
+The SDK IDE handles all the packaging process, simply follow [these instructions](prepare-your-scope-for-publication.md) to ensure your scope will look great once installed on your phone for testing or when published in the store.

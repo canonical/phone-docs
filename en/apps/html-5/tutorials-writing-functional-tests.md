@@ -218,4 +218,4 @@ HTML5 tests. Check out the links below for more documentation and help.
 
  * [Autopilot API](https://developer.ubuntu.com/api/autopilot/python/1.5.0/)
  * [Selenium Webdriver API](http://selenium-python.readthedocs.org/en/latest/api.html)
- * [HTML5 SDK documentation](../api.md)
+ * [HTML5 SDK documentation](api.md)

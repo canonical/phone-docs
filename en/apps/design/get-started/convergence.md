@@ -102,7 +102,7 @@ Using touch a user can swipe or long-press on a list item to reveal a contextual
 ![link_external](https://assets.ubuntu.com/v1/75f60d24-link_external.png)
 
 
-All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](/apps/design/building-blocks/header).
+All the components in the toolkit adapt to a convergent environment.  [See how the header converges to provide more room for actions within different surfaces](/apps/design/building-blocks/header.md).
 
 
 ## See for yourself

@@ -288,4 +288,4 @@ Check out the links below for more documentation and help.
  * [Jasmine](http://jasmine.github.io/)
  * [Grunt](http://gruntjs.com/)
  * [NodeJS](https://nodejs.org/)
- * [HTML5 SDK documentation](../api.md)
+ * [HTML5 SDK documentation](api.md)

@@ -41,7 +41,7 @@ as follows:
 
   1. `Ctrl+O` to open a file or project (or use the **File** &gt; **Open File and Project** menu).
   2. Navigate to and select the CMakeLists.txt file in the source tree, then click the **Open** button.
-  3. In the **Configure Project** dialog that displays, choose the [devices kits](../../platform/sdk/tutorials-click-targets-and-device-kits/) you want your project to be configured for and click the the **Configure Project** button.
+  3. In the **Configure Project** dialog that displays, choose the [devices kits](../../platform/sdk/tutorials-click-targets-and-device-kits.md) you want your project to be configured for and click the the **Configure Project** button.
 
 ![](../../../media/scope-tutorial-scope-branch-project-config.png)
 

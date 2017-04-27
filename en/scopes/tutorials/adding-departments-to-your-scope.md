@@ -71,7 +71,7 @@ all_depts->set_subdepartments({paris_department, berlin_department});
 ```
 
 Note that you can also use `add_subdepartmen`t if you want to add another
-department to an existing list of sub-departments. Have a look at the [APIdoc](/api/scopes/sdk-14.10/unity.scopes.Department/) for the complete list of
+department to an existing list of sub-departments. Have a look at the [APIdoc](../api-cpp-current/unity.scopes.Department.md) for the complete list of
 departments methods.
 
 The last thing needed is registering the root department on the reply object.

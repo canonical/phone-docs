@@ -14,7 +14,7 @@ everything you will be doing :
 
   * [Creating an SDK app project](../../platform/sdk/tutorials-creating-an-sdk-app-project.md)
   * [Running apps from the SDK](../../platform/sdk/tutorials-running-apps-from-the-sdk.md)
-  * [Security policy groups](/en/publish/security-policy-groups/)
+  * [Security policy groups](http://developer.ubuntu.com/en/publish/security-policy-groups/)
 
 ## First step : Creating the project
 
@@ -67,7 +67,7 @@ following files :
 First, we are going to replace the default icon by a new 256x256 one, which is
 the minimum size for it to look good in the store. Luckily, BrowerQuest is
 open source and we can find a lot of resources, such as sprites from the game.
-Make sure your follow [our good practices](/en/publish/creating-a-good-icon/).
+Make sure your follow [our good practices](http://developer.ubuntu.com/en/publish/creating-a-good-icon/).
 Here is the icon I’ve created:
 
 ![](../../../media/browserquest.png)
@@ -149,4 +149,4 @@ installing it on your device, directly from the **Publish** page with the
 
 We are done with the SDK. Once you have successfully created a click package
 and are happy with how it looks and works, you are ready to upload it and
-start the process of [publishing it](/en/publish/).
+start the process of [publishing it](http://developer.ubuntu.com/en/publish/).

@@ -85,4 +85,4 @@ in the same folder as your project folder is).
 
 That’s it, you can go to the store page, and upload your scope. It will be
 available to users in minutes! For guidance on the publication process itself,
-have a look at the [Publish](/en/publish/) section.
+have a look at the [Publish](http://developer.ubuntu.com/en/publish/) section.

@@ -35,7 +35,7 @@ a few values to generate it.
 
 If you need more help to get started with the SDK, have a look at the [SDKsetup article](../../platform/sdk/tutorials-creating-an-sdk-app-project.md).
 
-**Note**: Even if you are used to the [security policies](/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
+**Note**: Even if you are used to the [security policies](http://developer.ubuntu.com/en/publish/security-policy-groups/) of the platform, there is one more thing you need to know with scopes : if you need to use the network at some point, you won’t be able to access user data. This is a logical privacy policy to avoid user data extraction without explicit consent.
 
 ### Testing your scope
 
@@ -68,7 +68,7 @@ environment.
 
 Security policy groups used by your scopes. None in our case, since the
 “ubuntu-scope-network” template we are using already allows network calls.
-Learn more about [security policy groups](/en/publish/security-policy-groups/).
+Learn more about [security policy groups](http://developer.ubuntu.com/en/publish/security-policy-groups/).
 
 ### data/<appid>.ini
 
@@ -715,4 +715,4 @@ is the [ProgrammableWeb](http://www.programmableweb.com/apis/directory) API
 directory, but there are many others sources. Feel free to experiment with
 different layouts and cards to accommodate different types of data !
 
-Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](/en/publish/) to get your scope on the store in minutes.
+Publishing a scope is exactly like publishing other apps, have a look at [our publishing guides](http://developer.ubuntu.com/en/publish/) to get your scope on the store in minutes.

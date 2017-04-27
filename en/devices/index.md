@@ -59,7 +59,7 @@ them to. This makes for a very secure operating system that puts your privacy
 into your hands, without undermining the applications purpose and usefuleness:
 you allow them to do only what you want them to do.
 
-[Learn more about our security policies&nbsp;&rsaquo;](/en/publish/security-policy-groups/)
+[Learn more about our security policies&nbsp;&rsaquo;](http://developer.ubuntu.com/en/publish/security-policy-groups/)
 
 ## Next steps
 

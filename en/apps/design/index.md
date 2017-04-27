@@ -40,7 +40,7 @@ Use common patterns to allow users to get where they want to naturally and with 
 See uses cases and advice to get the best out of the Ubuntu toolkit.
 
 
-[Use the header &rsaquo;](building-blocks/header)
+[Use the header &rsaquo;](building-blocks/header.md)
 
 
 ## System integration (coming soon)
