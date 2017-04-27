@@ -35,7 +35,7 @@ The scope header contains the main title of your scope, together with four eleme
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-See our  [Component](/components) section on how to best place these actions inside your scope header.
+See our  [Component](/components.md) section on how to best place these actions inside your scope header.
 
 
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)

@@ -87,5 +87,5 @@ possible. Autopilot is the recommended tool for testing.
 
 ### For HTML5 app developers
 
-  * [Writing HTML5 functional tests](../apps/html-5/tutorials/writing-functional-tests.md)
+  * [Writing HTML5 functional tests](../apps/html-5/tutorials-writing-functional-tests.md)
   * [Selenium API](http://selenium-python.readthedocs.org/en/latest/api.html)

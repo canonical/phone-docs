@@ -176,7 +176,7 @@ As you may have noticed from the above code examples, you can control the OSK
 type shown using the `inputMethodHints` method. The Ubuntu SDK is quite
 powerful (by inheriting and improving on upstream QML widgets). If you would
 like to get more information about the different textfield method hints, I
-will refer you to the official documentation found [here](https://developer.ubuntu.com/api/apps/qml/sdk-14.10/Ubuntu.Components.TextField/).
+will refer you to the official documentation found [here](../api-qml-current/Ubuntu.Components.TextField.md).
 
 Good Luck with your app! Remember one achieves a great user experience by
 paying attention to such small details.

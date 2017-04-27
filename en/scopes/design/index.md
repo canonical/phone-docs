@@ -87,7 +87,7 @@ Allow users to purchase music, products, connect to websites, view map locations
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-Implement the widget, meta data and query bases for previews from our  [SDK](https://developer.ubuntu.com/api/scopes/design/cpp/current/).
+Implement the widget, meta data and query bases for previews from our  [SDK](../api-cpp-current/index.md).
 
 
 ##Easy to create
@@ -319,13 +319,13 @@ A benefit of using grid units instead of pixels is that it gives the designer mo
 ![information-link](https://assets.ubuntu.com/v1/7024ba0f-information-link.png)
 
 
-Once you have written your fantastic new scope, you will have to name it. Use  [keywords](tutorials/scope-keywords/) to help your scope get noticed.
+Once you have written your fantastic new scope, you will have to name it. Use  [keywords](tutorials/scope-keywords.md) to help your scope get noticed.
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)
 
 
-Travel through some of our  [core scopes](/scopes/design/core-scopes) for inspiration.
+Travel through some of our  [core scopes](core-scopes.md) for inspiration.
 
 
 ##The tools
@@ -337,4 +337,4 @@ At a fraction of the cost of building an app, the scope toolkit allows you to gi
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-Raring to go? Then dive into our  [Scope Toolkit(SDK)](https://developer.ubuntu.com/api/scopes/design/cpp/current/)(SDK) for all our APIs.
+Raring to go? Then dive into our  [Scope Toolkit(SDK)](../api-cpp-current/index.md)(SDK) for all our APIs.

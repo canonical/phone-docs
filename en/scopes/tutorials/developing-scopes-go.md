@@ -375,4 +375,4 @@ You will find the ARM binary in the $GOPATH/src/my-goscope directory.
 Now that you have a working scope, you can learn how to make it shine by
 changing its appearance and making its content feel at home.
 
-Get started with our [customization and brandingguide](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/).
+Get started with our [customization and brandingguide](../guides/scopes-customization-branding.md).

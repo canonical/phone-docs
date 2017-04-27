@@ -691,7 +691,7 @@ styles. The one on the left is the result of using the above snippet :
 ![](../../../media/scope-tutorial-soundcloud_branded-180x300.png)
 ![](../../../media/soundcloud_branded2-180x300.png)
 
-Have a look at all the available [customization options](https://developer.ubuntu.com/en/scopes/guides/scopes-customization-branding/) and try to make your scope shine!
+Have a look at all the available [customization options](../guides/scopes-customization-branding.md) and try to make your scope shine!
 
 That’s it, our SoundCloud scope is finished. You can launch it by pressing the Start button in the SDK sidebar, see if everything compiles and starts correctly at the bottom of the editor, and try your new scope!
 
