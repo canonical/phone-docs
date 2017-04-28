@@ -296,7 +296,7 @@ Our query URI will look like:
 
 [https://api.jamendo.com/v3.0/tracks/?client_id=b6747d04&format=xml&order=popularity_week&search=<query>](https://api.jamendo.com/v3.0/tracks/?client_id=b6747d04&format=xml&order=popularity_week&search=)
 
-**Note**: About client_id: if you wish to distribute a Jamendo scope, you will need to register your own API key at [Jamendo Developers](https://developers.jamendo.com/) (it’s free and takes 5 minutes). In the above sample, I’m using their example key.
+**Note**: About client_id: if you wish to distribute a Jamendo scope, you will need to register your own API key at [Jamendo Developers](https://developer.jamendo.com/) (it’s free and takes 5 minutes). In the above sample, I’m using their example key.
 
 Then, we need to iterate over each result present in our root XML object and
 extract what we need:

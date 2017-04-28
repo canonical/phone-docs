@@ -20,7 +20,7 @@ knowledge.
 
   * **Android sources:** the device already runs Android and we have access to an Android source tree (preferably the original as with OEM devices but CyanogenMod or independent ports are enough too) and kernel sources for the device. Note that this guide focuses on porting to devices present in the AOSP tree and another version will focus on CyanogenMod based ports.
   * **Drivers:** you will need the vendor proprietary drivers, which make the GPU and various sensors work. If not explicitly available for download they need to be extracted from a running device.
-  * **[CyanogenMod porting guide](http://wiki.cyanogenmod.org/w/Doc:_porting_intro):** Porting CyanogenMod to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
+  * **[CyanogenMod porting guide](http://www.cyanogenmods.org/):** Porting CyanogenMod to a device should be read and understood before embarking on porting Ubuntu Touch, since a lot of the work done requires some knowledge of Android builds and system internals.
   * **Boot modes:** you need to be familiar with how to boot into various modes (bootloader, recovery…) by pressing volume keys or any device specific method.
   * **Unlock and root:** the device needs to be unlocked/rooted in order to allow flashing custom images. A lot of preparation work is common with attempts to port CyanogenMod or other custom Android ROMs.
 

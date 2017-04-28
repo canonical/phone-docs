@@ -10,7 +10,7 @@ Title: Ubuntu.Components.Popups.PopupBase
 <!-- @@@PopupBase -->
 <table class="alignedsummary">
 <tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Ubuntu.Components.Popups 1.3</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.OrientationHelper.md">OrientationHelper</a></p>
-</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.Popups.Dialog.md">Dialog</a>, <a href="Ubuntu.Components.Popups.Popover.md">Popover</a>, and <a href="Ubuntu.Components.Popups.SheetBase.md">SheetBase</a>.</p>
+</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherited By:</td><td class="memItemRight bottomAlign"> <p><a href="Ubuntu.Components.Popups.Dialog.md">Dialog</a>, <a href="Ubuntu.Components.Popups.Popover.md">Popover</a>, and SheetBase.</p>
 </td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>

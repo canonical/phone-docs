@@ -86,7 +86,7 @@ Title: Ubuntu.Components.TextField
 <!-- $$$TextField-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="../design/building-blocks/text-input.md#text-field">See also the Design Guidelines on the Text Field</a>.</p>
+<p><a href="../design/building-blocks/selection-controls.md#text-field">See also the Design Guidelines on the Text Field</a>.</p>
 <p>Example:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">TextField</a></span> {

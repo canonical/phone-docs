@@ -9,7 +9,7 @@ Title: U1db.Synchronizer
 <p>Synchronizer handles synchronizing between two databases. More...</p>
 <!-- @@@Synchronizer -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../synchronizer.html">Synchronizer</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import U1db .</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign">Synchronizer</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

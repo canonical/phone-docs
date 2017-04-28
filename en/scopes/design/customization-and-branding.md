@@ -86,7 +86,7 @@ Creating a logo and using a specific color helps users identify more with a bran
 ![developer_links.](https://assets.ubuntu.com/v1/0d9d7281-developer_links..png)
 
 
-To get inspired why not check out how the branded SoundCloud scope was created in this handy  [tutorial](https://developer.ubuntu.com/en/scopes/design/tutorials/write-a-json-scope-in-cpp/), or simply flick through the default scopes on your Ubuntu device.
+To get inspired why not check out how the branded SoundCloud scope was created in this handy  [tutorial](../tutorials/write-a-json-scope-in-cpp.md), or simply flick through the default scopes on your Ubuntu device.
 
 
 ![link_external](https://assets.ubuntu.com/v1/9e8b37dd-link_external.png)

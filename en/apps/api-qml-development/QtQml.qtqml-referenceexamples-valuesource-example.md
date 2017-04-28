@@ -8,13 +8,13 @@ Title: QtQml.qtqml-referenceexamples-valuesource-example
 <!-- $$$referenceexamples/valuesource-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="QtQml.referenceexamples-signal-example.md">Extending QML - Signal Support Example</a></li>
-<li><a href="QtQml.referenceexamples-attached-example.md">Extending QML - Attached Properties Example</a></li>
-<li><a href="QtQml.referenceexamples-grouped-example.md">Extending QML - Grouped Properties Example</a></li>
-<li><a href="QtQml.referenceexamples-default-example.md">Extending QML - Default Property Example</a></li>
-<li><a href="QtQml.referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a></li>
-<li><a href="QtQml.referenceexamples-properties-example.md">Extending QML - Object and List Property Types Example</a></li>
-<li><a href="QtQml.referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-signal-example.md">Extending QML - Signal Support Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-attached-example.md">Extending QML - Attached Properties Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-grouped-example.md">Extending QML - Grouped Properties Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-default-example.md">Extending QML - Default Property Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-properties-example.md">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>Files:</p>
 <ul>

@@ -98,8 +98,8 @@ Title: QtQuick.qtquick-codesamples
 <li><a href="QtQuick.qtquick-customitems-painteditem-example.md">Painted Item</a></li>
 <li><a href="QtQuick.qtquick-scenegraph-customgeometry-example.md">Custom Geometry</a></li>
 <li><a href="QtQuick.qtquick-scenegraph-graph-example.md">Graph</a></li>
-<li><a href="QtQuick.qtquick-scenegraph-graph-simplematerial.md">Simple Material</a></li>
-<li><a href="QtQuick.qtquick-scenegraph-graph-textureinsgnode.md">Rendering FBOs</a></li>
+<li><a href="QtQuick.qtquick-scenegraph-simplematerial-example.md">Simple Material</a></li>
+<li><a href="QtQuick.qtquick-scenegraph-textureinsgnode-example.md">Rendering FBOs</a></li>
 <li><a href="QtQuick.qtquick-scenegraph-textureinthread-example.md">Rendering FBOs in a thread</a></li>
 </ul>
 <!-- @@@qtquick-codesamples.html -->

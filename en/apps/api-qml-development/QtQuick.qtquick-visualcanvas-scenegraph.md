@@ -47,7 +47,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 <tr class="odd topAlign"><td class="tblName"><p>QSGVertexColorMaterial</p></td><td class="tblDescr"><p>Convenient way of rendering per-vertex colored geometry in the scene graph</p></td></tr>
 </table>
 </p>
-<p>For more details, see the <a href="QtQuick.qtquick-scenegraph-graph-simplematerial.md">Scene Graph - Simple Material</a></p>
+<p>For more details, see the <a href="QtQuick.qtquick-scenegraph-simplematerial-example.md">Scene Graph - Simple Material</a></p>
 <h3 >Convenience Nodes</h3>
 <p>The scene graph API is very low-level and focuses on performance rather than convenience. Writing custom geometries and materials from scratch, even the most basic ones, requires a non-trivial amount of code. For this reason, the API includes a few convenience classes to make the most common custom nodes readily available.</p>
 <ul>

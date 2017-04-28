@@ -15,7 +15,7 @@ Title: Ubuntu.Components.Switch
 <!-- $$$Switch-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="../design/building-blocks/selection.md">See also the Design Guidelines on selection</a>.</p>
+<p><a href="../design/building-blocks/selection-controls.md">See also the Design Guidelines on selection</a>.</p>
 <p>Example:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="type"><a href="index.html">Switch</a></span> {

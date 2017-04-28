@@ -325,7 +325,7 @@ obtain the image. For guidance on which channel is best for you check out the
 ### Install Ubuntu
 
   * Power the device off with the Power button.
-  * Reboot into the bootloader by pressing the correct physical button combination for your [device type](devices.md) as shown here: [https://source.android.com/source/building-devices.html#booting-into-fastboot-mode](https://source.android.com/source/building-devices.html#booting-into-fastboot-mode)
+  * Reboot into the bootloader by pressing the correct physical button combination for your [device type](devices.md) as shown here: [https://source.android.com/source/building-devices#booting-into-fastboot-mode](https://source.android.com/source/building-devices#booting-into-fastboot-mode)
   * Install Ubuntu using your selected channel, in this case we use the **stable** channel:
 
 ```
