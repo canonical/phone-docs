@@ -94,7 +94,7 @@ signal <span class="type">clicked</span>
 }</pre>
 <p>At the moment, the block doesn't do anything; it is just an image. As the tutorial progresses we will animate and give behaviors to the blocks. We have not added any code yet to create the blocks; we will do this in the next chapter.</p>
 <p>We have set the image to be the size of its parent Item using <code>anchors.fill: parent</code>. This means that when we dynamically create and resize the block items later on in the tutorial, the image will be scaled automatically to the correct size.</p>
-<p>Notice the relative path for the Image type's <code>source</code> property. This path is relative to the location of the file that contains the <a href="QtQuick.imageelements.md#image">Image</a> type. Alternatively, you could set the Image source to an absolute file path or a URL that contains an image.</p>
+<p>Notice the relative path for the Image type's <code>source</code> property. This path is relative to the location of the file that contains the <a href="QtQuick.qtquick-imageelements-example.md#image">Image</a> type. Alternatively, you could set the Image source to an absolute file path or a URL that contains an image.</p>
 <p>You should be familiar with the code so far. We have just created some basic types to get started. Next, we will populate the game canvas with some blocks.</p>
 <p>Files:</p>
 <ul>
@@ -106,5 +106,5 @@ signal <span class="type">clicked</span>
 <!-- @@@tutorials/samegame/samegame1 -->
 <p class="naviNextPrevious footerNavi">
 <a class="prevPage" href="QtQuick.qml-advtutorial.md">QML Advanced Tutorial</a>
-<a class="nextPage" href="QtQuick.tutorials-samegame-samegame2.md">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-samegame-samegame2-example.md">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
 </p>

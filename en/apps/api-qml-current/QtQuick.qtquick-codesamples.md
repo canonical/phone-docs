@@ -74,7 +74,7 @@ Title: QtQuick.qtquick-codesamples
 </ul>
 <p><b>Image and Graphics</b></p>
 <ul>
-<li><a href="QtQuick.imageelements/">Image Elements</a></li>
+<li><a href="QtQuick.qtquick-imageelements-example.md">Image Elements</a></li>
 <li><a href="QtQuick.animation/">Animation</a></li>
 <li><a href="QtQuick.canvas/">Canvas API</a></li>
 <li><a href="QtQuick.shadereffects/">Shader Effects</a></li>
@@ -90,7 +90,7 @@ Title: QtQuick.qtquick-codesamples
 <li><a href="QtQuick.threading/">Threading</a></li>
 <li><a href="QtQuick.quick-accessibility/">Accessibility</a></li>
 <li><a href="QtQuick.externaldraganddrop/">External Drag and Drop</a></li>
-<li><a href="QtQuick.draganddrop/">Drag and Drop</a></li>
+<li><a href="QtQuick.qtquick-draganddrop-example.md/">Drag and Drop</a></li>
 </ul>
 <p><b>Scene Graph</b></p>
 <ul>

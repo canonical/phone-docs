@@ -91,7 +91,7 @@ Title: QtQuick.ListView
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>A <a href="index.html">ListView</a> displays data from models created from built-in QML types like <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> and <a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a>, or custom model classes defined in C++ that inherit from <a href="QtQuick.qtquick-modelviewsdata-cppmodels.md#qabstractitemmodel">QAbstractItemModel</a> or QAbstractListModel.</p>
-<p>A <a href="index.html">ListView</a> has a <a href="#model-prop">model</a>, which defines the data to be displayed, and a <a href="#delegate-prop">delegate</a>, which defines how the data should be displayed. Items in a <a href="index.html">ListView</a> are laid out horizontally or vertically. List views are inherently flickable because <a href="index.html">ListView</a> inherits from <a href="QtQuick.touchinteraction.md#flickable">Flickable</a>.</p>
+<p>A <a href="index.html">ListView</a> has a <a href="#model-prop">model</a>, which defines the data to be displayed, and a <a href="#delegate-prop">delegate</a>, which defines how the data should be displayed. Items in a <a href="index.html">ListView</a> are laid out horizontally or vertically. List views are inherently flickable because <a href="index.html">ListView</a> inherits from <a href="QtQuick.qtquick-touchinteraction-example.md#flickable">Flickable</a>.</p>
 <h2 id="example-usage">Example Usage</h2>
 <p>The following example shows the definition of a simple list model defined in a file called <code>ContactModel.qml</code>:</p>
 <pre class="qml">import QtQuick 2.0
@@ -140,7 +140,7 @@ Title: QtQuick.ListView
 <span class="name">focus</span>: <span class="number">true</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/listview-highlight.png" alt="" /></p><p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.views.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the list view. The list view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
+<p class="centerAlign"><img src="../../../media/listview-highlight.png" alt="" /></p><p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the list view. The list view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
 <p>Delegates are instantiated as needed and may be destroyed at any time. They are parented to <a href="index.html">ListView</a>'s <a href="QtQuick.Flickable.md#contentItem-prop">contentItem</a>, not to the view itself. State should <i>never</i> be stored in a delegate.</p>
 <p><a href="index.html">ListView</a> attaches a number of properties to the root item of the delegate, for example <code>ListView:isCurrentItem</code>. In the following example, the root delegate item can access this attached property directly as <code>ListView.isCurrentItem</code>, while the child <code>contactInfo</code> object must refer to this property as <code>wrapper.ListView.isCurrentItem</code>.</p>
 <pre class="qml"><span class="type"><a href="index.html">ListView</a></span> {
@@ -178,7 +178,7 @@ Title: QtQuick.ListView
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Horizontal orientation</th></tr></thead>
 <tr valign="top"><td >Left to right<p class="centerAlign"><img src="../../../media/listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="../../../media/listview-layout-righttoleft.png" alt="" /></p></td></tr>
 </table>
-<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.draganddrop.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
 <!-- @@@ListView -->
 <h2>Property Documentation</h2>
 <!-- $$$add -->
@@ -335,7 +335,7 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <!-- $$$highlight -->
 <table class="qmlname"><tr valign="top" id="highlight-prop"><td class="tblQmlPropNode"><p><span class="name">highlight</span> : <span class="type">Component</span></p></td></tr></table><p>This property holds the component to use as the highlight.</p>
 <p>An instance of the highlight component is created for each list. The geometry of the resulting component instance is managed by the list so as to stay with the current item, unless the highlightFollowsCurrentItem property is false. The default stacking order of the highlight item is <code>0</code>.</p>
-<p><b>See also </b><a href="#highlightItem-prop">highlightItem</a>, <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>, and <a href="QtQuick.views.md#highlight">ListView highlight example</a>.</p>
+<p><b>See also </b><a href="#highlightItem-prop">highlightItem</a>, <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>, and <a href="QtQuick.qtquick-views-example.md#highlight">ListView highlight example</a>.</p>
 <!-- @@@highlight -->
 <br/>
 <!-- $$$highlightFollowsCurrentItem -->
@@ -366,13 +366,13 @@ Behavior on <span class="name">y</span> {
 <span class="name">focus</span>: <span class="number">true</span>
 }</pre>
 <p>Note that the highlight animation also affects the way that the view is scrolled. This is because the view moves to maintain the highlight within the preferred highlight range (or visible viewport).</p>
-<p><b>See also </b><a href="QtQuick.views.md#highlight">highlight</a> and <a href="#highlightMoveVelocity-prop">highlightMoveVelocity</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> and <a href="#highlightMoveVelocity-prop">highlightMoveVelocity</a>.</p>
 <!-- @@@highlightFollowsCurrentItem -->
 <br/>
 <!-- $$$highlightItem -->
-<table class="qmlname"><tr valign="top" id="highlightItem-prop"><td class="tblQmlPropNode"><p><span class="name">highlightItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This holds the highlight item created from the <a href="QtQuick.views.md#highlight">highlight</a> component.</p>
+<table class="qmlname"><tr valign="top" id="highlightItem-prop"><td class="tblQmlPropNode"><p><span class="name">highlightItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This holds the highlight item created from the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> component.</p>
 <p>The <code>highlightItem</code> is managed by the view unless highlightFollowsCurrentItem is set to false. The default stacking order of the highlight item is <code>0</code>.</p>
-<p><b>See also </b><a href="QtQuick.views.md#highlight">highlight</a> and <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> and <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>.</p>
 <!-- @@@highlightItem -->
 <br/>
 <!-- $$$highlightMoveDuration -->

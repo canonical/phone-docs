@@ -8,11 +8,11 @@ Title: QtQml.qtqml-referenceexamples-attached-example
 <!-- $$$referenceexamples/attached-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="QtQml.referenceexamples-grouped.md">Extending QML - Grouped Properties Example</a></li>
-<li><a href="QtQml.referenceexamples-default.md">Extending QML - Default Property Example</a></li>
-<li><a href="QtQml.referenceexamples-coercion.md">Extending QML - Inheritance and Coercion Example</a></li>
-<li><a href="QtQml.referenceexamples-properties.md">Extending QML - Object and List Property Types Example</a></li>
-<li><a href="QtQml.referenceexamples-adding.md">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.referenceexamples-grouped-example.md">Extending QML - Grouped Properties Example</a></li>
+<li><a href="QtQml.referenceexamples-default-example.md">Extending QML - Default Property Example</a></li>
+<li><a href="QtQml.referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="QtQml.referenceexamples-properties-example.md">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="QtQml.referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>Files:</p>
 <ul>

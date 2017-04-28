@@ -35,8 +35,8 @@ Title: QtQuick.BorderImage
 <!-- $$$BorderImage-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>The <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> type is used to create borders out of images by scaling or tiling parts of each image.</p>
-<p>A <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> breaks a source image, specified using the <a href="#source-prop">source</a> property, into 9 regions, as shown below:</p>
+<p>The <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> type is used to create borders out of images by scaling or tiling parts of each image.</p>
+<p>A <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> breaks a source image, specified using the <a href="#source-prop">source</a> property, into 9 regions, as shown below:</p>
 <p class="centerAlign"><img src="../../../media/declarative-scalegrid.png" alt="" /></p><p>When the image is scaled, regions of the source image are scaled or tiled to create the displayed border image in the following way:</p>
 <ul>
 <li>The corners (regions 1, 3, 7, and 9) are not scaled at all.</li>
@@ -51,7 +51,7 @@ Title: QtQuick.BorderImage
 <pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;pics/borderframe.png&quot;</span>
 }</pre>
-<br style="clear: both" /><p class="centerAlign"><img src="../../../media/qml-borderimage-scaled.png" alt="" /></p><p>A <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> is used to display the image, and it is given a size that is larger than the original image. Since the <a href="#horizontalTileMode-prop">horizontalTileMode</a> property is set to <a href="#horizontalTileMode-prop">BorderImage.Stretch</a>, the parts of image in regions 2 and 8 are stretched horizontally. Since the <a href="#verticalTileMode-prop">verticalTileMode</a> property is set to <a href="#verticalTileMode-prop">BorderImage.Stretch</a>, the parts of image in regions 4 and 6 are stretched vertically.</p>
+<br style="clear: both" /><p class="centerAlign"><img src="../../../media/qml-borderimage-scaled.png" alt="" /></p><p>A <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> is used to display the image, and it is given a size that is larger than the original image. Since the <a href="#horizontalTileMode-prop">horizontalTileMode</a> property is set to <a href="#horizontalTileMode-prop">BorderImage.Stretch</a>, the parts of image in regions 2 and 8 are stretched horizontally. Since the <a href="#verticalTileMode-prop">verticalTileMode</a> property is set to <a href="#verticalTileMode-prop">BorderImage.Stretch</a>, the parts of image in regions 4 and 6 are stretched vertically.</p>
 <pre class="qml"><span class="type"><a href="index.html">BorderImage</a></span> {
 <span class="name">width</span>: <span class="number">180</span>; <span class="name">height</span>: <span class="number">180</span>
 <span class="type">border</span> { <span class="name">left</span>: <span class="number">30</span>; <span class="name">top</span>: <span class="number">30</span>; <span class="name">right</span>: <span class="number">30</span>; <span class="name">bottom</span>: <span class="number">30</span> }
@@ -59,7 +59,7 @@ Title: QtQuick.BorderImage
 <span class="name">verticalTileMode</span>: <span class="name">BorderImage</span>.<span class="name">Stretch</span>
 <span class="name">source</span>: <span class="string">&quot;pics/borderframe.png&quot;</span>
 }</pre>
-<br style="clear: both" /><p class="centerAlign"><img src="../../../media/qml-borderimage-tiled.png" alt="" /></p><p>Again, a large <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> is used to display the image. With the <a href="#horizontalTileMode-prop">horizontalTileMode</a> property set to <a href="#horizontalTileMode-prop">BorderImage.Repeat</a>, the parts of image in regions 2 and 8 are tiled so that they fill the space at the top and bottom of the item. Similarly, the <a href="#verticalTileMode-prop">verticalTileMode</a> property is set to <a href="#verticalTileMode-prop">BorderImage.Repeat</a>, the parts of image in regions 4 and 6 are tiled so that they fill the space at the left and right of the item.</p>
+<br style="clear: both" /><p class="centerAlign"><img src="../../../media/qml-borderimage-tiled.png" alt="" /></p><p>Again, a large <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> is used to display the image. With the <a href="#horizontalTileMode-prop">horizontalTileMode</a> property set to <a href="#horizontalTileMode-prop">BorderImage.Repeat</a>, the parts of image in regions 2 and 8 are tiled so that they fill the space at the top and bottom of the item. Similarly, the <a href="#verticalTileMode-prop">verticalTileMode</a> property is set to <a href="#verticalTileMode-prop">BorderImage.Repeat</a>, the parts of image in regions 4 and 6 are tiled so that they fill the space at the left and right of the item.</p>
 <pre class="qml"><span class="type"><a href="index.html">BorderImage</a></span> {
 <span class="name">width</span>: <span class="number">180</span>; <span class="name">height</span>: <span class="number">180</span>
 <span class="type">border</span> { <span class="name">left</span>: <span class="number">30</span>; <span class="name">top</span>: <span class="number">30</span>; <span class="name">right</span>: <span class="number">30</span>; <span class="name">bottom</span>: <span class="number">30</span> }
@@ -68,10 +68,10 @@ Title: QtQuick.BorderImage
 <span class="name">source</span>: <span class="string">&quot;pics/borderframe.png&quot;</span>
 }</pre>
 <br style="clear: both" /><p>In some situations, the width of regions 2 and 8 may not be an exact multiple of the width of the corresponding regions in the source image. Similarly, the height of regions 4 and 6 may not be an exact multiple of the height of the corresponding regions. It can be useful to use <a href="#horizontalTileMode-prop">BorderImage.Round</a> instead of <a href="#horizontalTileMode-prop">BorderImage.Repeat</a> in cases like these.</p>
-<p>The Border Image example in <a href="QtQuick.imageelements.md">Qt Quick Examples - Image Elements</a> shows how a <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> can be used to simulate a shadow effect on a rectangular item.</p>
+<p>The Border Image example in <a href="QtQuick.qtquick-imageelements-example.md">Qt Quick Examples - Image Elements</a> shows how a <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> can be used to simulate a shadow effect on a rectangular item.</p>
 <h2 id="image-loading">Image Loading</h2>
 <p>The source image may not be loaded instantaneously, depending on its original location. Loading progress can be monitored with the <a href="#progress-prop">progress</a> property.</p>
-<p><b>See also </b><a href="QtQuick.imageelements.md#image">Image</a> and <a href="QtQuick.AnimatedImage.md">AnimatedImage</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-imageelements-example.md#image">Image</a> and <a href="QtQuick.AnimatedImage.md">AnimatedImage</a>.</p>
 <!-- @@@BorderImage -->
 <h2>Property Documentation</h2>
 <!-- $$$asynchronous -->
@@ -97,11 +97,11 @@ Title: QtQuick.BorderImage
 <!-- $$$horizontalTileMode -->
 <table class="qmlname"><tr valign="top" id="horizontalTileMode-prop"><td class="tblQmlPropNode"><p><span class="name">horizontalTileMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property describes how to repeat or stretch the middle parts of the border image.</p>
 <ul>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Stretch - Scales the image to fit to the available area.</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Repeat - Tile the image until there is no more space. May crop the last image.</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Round - Like Repeat, but scales the images down to ensure that the last image is not cropped.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Stretch - Scales the image to fit to the available area.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Repeat - Tile the image until there is no more space. May crop the last image.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Round - Like Repeat, but scales the images down to ensure that the last image is not cropped.</li>
 </ul>
-<p>The default tile mode for each property is <a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Stretch.</p>
+<p>The default tile mode for each property is <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Stretch.</p>
 <!-- @@@horizontalTileMode -->
 <br/>
 <!-- $$$mirror -->
@@ -121,7 +121,7 @@ Title: QtQuick.BorderImage
 <br/>
 <!-- $$$source -->
 <table class="qmlname"><tr valign="top" id="source-prop"><td class="tblQmlPropNode"><p><span class="name">source</span> : <span class="type">url</span></p></td></tr></table><p>This property holds the URL that refers to the source image.</p>
-<p><a href="QtQuick.imageelements.md#borderimage">BorderImage</a> can handle any image format supported by Qt, loaded from any URL scheme supported by Qt.</p>
+<p><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> can handle any image format supported by Qt, loaded from any URL scheme supported by Qt.</p>
 <p>This property can also be used to refer to .sci files, which are written in a QML-specific, text-based format that specifies the borders, the image file and the tile rules for a given border image.</p>
 <p>The following .sci file sets the borders to 10 on each side for the image <code>picture.png</code>:</p>
 <pre class="cpp">border<span class="operator">.</span>left: <span class="number">10</span>
@@ -135,17 +135,17 @@ source: <span class="string">&quot;picture.png&quot;</span></pre>
 <br/>
 <!-- $$$sourceSize -->
 <table class="qmlname"><tr valign="top" id="sourceSize-prop"><td class="tblQmlPropNode"><p><span class="name">sourceSize</span> : <span class="type">QSize</span></p></td></tr></table><p>This property holds the actual width and height of the loaded image.</p>
-<p>In <a href="QtQuick.imageelements.md#borderimage">BorderImage</a>, this property is read-only.</p>
+<p>In <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>, this property is read-only.</p>
 <p><b>See also </b><a href="QtQuick.Image.md#sourceSize-prop">Image::sourceSize</a>.</p>
 <!-- @@@sourceSize -->
 <br/>
 <!-- $$$status -->
 <table class="qmlname"><tr valign="top" id="status-prop"><td class="tblQmlPropNode"><p><span class="name">status</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property describes the status of image loading. It can be one of:</p>
 <ul>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Null - no image has been set</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Ready - the image has been loaded</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Loading - the image is currently being loaded</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Error - an error occurred while loading the image</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Null - no image has been set</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Ready - the image has been loaded</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Loading - the image is currently being loaded</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Error - an error occurred while loading the image</li>
 </ul>
 <p><b>See also </b><a href="#progress-prop">progress</a>.</p>
 <!-- @@@status -->
@@ -153,10 +153,10 @@ source: <span class="string">&quot;picture.png&quot;</span></pre>
 <!-- $$$verticalTileMode -->
 <table class="qmlname"><tr valign="top" id="verticalTileMode-prop"><td class="tblQmlPropNode"><p><span class="name">verticalTileMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property describes how to repeat or stretch the middle parts of the border image.</p>
 <ul>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Stretch - Scales the image to fit to the available area.</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Repeat - Tile the image until there is no more space. May crop the last image.</li>
-<li><a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Round - Like Repeat, but scales the images down to ensure that the last image is not cropped.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Stretch - Scales the image to fit to the available area.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Repeat - Tile the image until there is no more space. May crop the last image.</li>
+<li><a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Round - Like Repeat, but scales the images down to ensure that the last image is not cropped.</li>
 </ul>
-<p>The default tile mode for each property is <a href="QtQuick.imageelements.md#borderimage">BorderImage</a>.Stretch.</p>
+<p>The default tile mode for each property is <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a>.Stretch.</p>
 <!-- @@@verticalTileMode -->
 <br/>

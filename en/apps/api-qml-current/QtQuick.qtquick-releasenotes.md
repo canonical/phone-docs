@@ -82,13 +82,13 @@ Title: QtQuick.qtquick-releasenotes
 <li>New <a href="QtQuick.Item.md#enabled-prop">enabled</a> property is available, which stops input event delivery and removes active focus.</li>
 </ul>
 </li>
-<li><a href="QtQuick.imageelements.md#image">Image</a>:<ul>
+<li><a href="QtQuick.qtquick-imageelements-example.md#image">Image</a>:<ul>
 <li>New <a href="QtQuick.Image.md#horizontalAlignment-prop">horizontalAlignment</a> and <a href="QtQuick.Image.md#verticalAlignment-prop">verticalAlignment</a> properties to set the image alignment.</li>
 <li>New <code>Image.Pad</code> enumeration value for <a href="QtQuick.Image.md#fillMode-prop">fillMode</a> that does not transform the image, unlike other <a href="QtQuick.Image.md#fillMode-prop">fillMode</a> enumeration values.</li>
 </ul>
 </li>
 <li>New <a href="QtQuick.ShaderEffect.md">ShaderEffect</a> and <a href="QtQuick.ShaderEffectSource.md">ShaderEffectSource</a> types enable GLSL shader programs to be integrated directly into QML code and applied to QML items and images. (This obsoletes the experimental Qt.labs.shaders module.)</li>
-<li>New <a href="QtQuick.imageelements.md#spritesequence">SpriteSequence</a> type renders animated sprites and can transition between animations. Each animation in a sequence is represented by the new <a href="QtQuick.Sprite.md">Sprite</a> type.</li>
+<li>New <a href="QtQuick.qtquick-imageelements-example.md#spritesequence">SpriteSequence</a> type renders animated sprites and can transition between animations. Each animation in a sequence is represented by the new <a href="QtQuick.Sprite.md">Sprite</a> type.</li>
 <li>New <a href="QtQuick.qtquick-effects-sprites.md#animatedsprite">AnimatedSprite</a> type for drawing single sprite animations.</li>
 </ul>
 <h3 >Animations and Transitions</h3>
@@ -202,8 +202,8 @@ Title: QtQuick.qtquick-releasenotes
 <li>Now has features to filter the items to be displayed in a view. This is supported by the new groups, filterOnGroup, items and persistedItems properties.</li>
 </ul>
 </li>
-<li>Changes common to both <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop.md#gridview">GridView</a>:<ul>
-<li>New transition support for animating the adding, removing and moving of items in a <a href="QtQuick.ListView.md">ListView</a> or <a href="QtQuick.draganddrop.md#gridview">GridView</a>. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for details.</li>
+<li>Changes common to both <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.Drag.md#gridview">GridView</a>:<ul>
+<li>New transition support for animating the adding, removing and moving of items in a <a href="QtQuick.ListView.md">ListView</a> or <a href="QtQuick.Drag.md#gridview">GridView</a>. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for details.</li>
 <li>New <code>verticalLayoutDirection</code> property enables items to be laid out from bottom-to-top using the new <code>BottomToTop</code> enumeration value.</li>
 <li>New <code>headerItem</code> and <code>footerItem</code> properties provide access to the instantiated header and footer items.</li>
 <li>The <code>cacheBuffer</code> property now has a non-zero default.</li>
@@ -217,7 +217,7 @@ Title: QtQuick.qtquick-releasenotes
 <li><code>highlightMoveSpeed</code> and <code>highlightResizeSpeed</code> have been renamed to <a href="QtQuick.ListView.md#highlightMoveVelocity-prop">highlightMoveVelocity</a> and <a href="QtQuick.ListView.md#highlightResizeVelocity-prop">highlightResizeVelocity</a>.</li>
 </ul>
 </li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a> only:<ul>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a> only:<ul>
 <li><a href="QtQuick.GridView.md#cellWidth-prop">cellWidth</a> and <a href="QtQuick.GridView.md#cellHeight-prop">cellHeight</a> now use real numbers instead of integers.</li>
 </ul>
 </li>

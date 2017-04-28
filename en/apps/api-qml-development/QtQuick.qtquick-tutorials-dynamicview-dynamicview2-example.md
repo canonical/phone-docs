@@ -84,6 +84,6 @@ Behavior on <span class="name">color</span> { <span class="type"><a href="QtQuic
 </ul>
 <!-- @@@tutorials/dynamicview/dynamicview2 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-dynamicview-dynamicview1.md">QML Dynamic View Ordering Tutorial 1 - A Simple ListView and Delegate</a>
-<a class="nextPage" href="QtQuick.tutorials-dynamicview-dynamicview3.md">QML Dynamic View Ordering Tutorial 3 - Moving Dragged Items</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-dynamicview-dynamicview1-example.md">QML Dynamic View Ordering Tutorial 1 - A Simple ListView and Delegate</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-dynamicview-dynamicview3-example.md">QML Dynamic View Ordering Tutorial 3 - Moving Dragged Items</a>
 </p>

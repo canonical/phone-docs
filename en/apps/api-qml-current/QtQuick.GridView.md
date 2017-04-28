@@ -77,8 +77,8 @@ Title: QtQuick.GridView
 <!-- $$$GridView-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>A <a href="QtQuick.draganddrop.md#gridview">GridView</a> displays data from models created from built-in QML types like <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> and <a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a>, or custom model classes defined in C++ that inherit from QAbstractListModel.</p>
-<p>A <a href="QtQuick.draganddrop.md#gridview">GridView</a> has a <a href="#model-prop">model</a>, which defines the data to be displayed, and a <a href="#delegate-prop">delegate</a>, which defines how the data should be displayed. Items in a <a href="QtQuick.draganddrop.md#gridview">GridView</a> are laid out horizontally or vertically. Grid views are inherently flickable as <a href="QtQuick.draganddrop.md#gridview">GridView</a> inherits from <a href="QtQuick.touchinteraction.md#flickable">Flickable</a>.</p>
+<p>A <a href="QtQuick.Drag.md#gridview">GridView</a> displays data from models created from built-in QML types like <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a> and <a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a>, or custom model classes defined in C++ that inherit from QAbstractListModel.</p>
+<p>A <a href="QtQuick.Drag.md#gridview">GridView</a> has a <a href="#model-prop">model</a>, which defines the data to be displayed, and a <a href="#delegate-prop">delegate</a>, which defines how the data should be displayed. Items in a <a href="QtQuick.Drag.md#gridview">GridView</a> are laid out horizontally or vertically. Grid views are inherently flickable as <a href="QtQuick.Drag.md#gridview">GridView</a> inherits from <a href="QtQuick.qtquick-touchinteraction-example.md#flickable">Flickable</a>.</p>
 <h2 id="example-usage">Example Usage</h2>
 <p>The following example shows the definition of a simple list model defined in a file called <code>ContactModel.qml</code>:</p>
 <pre class="qml">import QtQuick 2.0
@@ -102,7 +102,7 @@ Title: QtQuick.GridView
 }</pre>
 <p><img src="../../../media/gridview-simple.png" alt="" /></p>
 <p>This model can be referenced as <code>ContactModel</code> in other QML files. See QML Modules for more information about creating reusable components like this.</p>
-<p>Another component can display this model data in a <a href="QtQuick.draganddrop.md#gridview">GridView</a>, as in the following example, which creates a <code>ContactModel</code> component for its model, and a <a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a> (containing <a href="QtQuick.imageelements.md#image">Image</a> and <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> items) for its delegate.</p>
+<p>Another component can display this model data in a <a href="QtQuick.Drag.md#gridview">GridView</a>, as in the following example, which creates a <code>ContactModel</code> component for its model, and a <a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a> (containing <a href="QtQuick.qtquick-imageelements-example.md#image">Image</a> and <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> items) for its delegate.</p>
 <br style="clear: both" /><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="index.html">GridView</a></span> {
 <span class="name">width</span>: <span class="number">300</span>; <span class="name">height</span>: <span class="number">200</span>
@@ -138,9 +138,9 @@ Title: QtQuick.GridView
 <span class="name">focus</span>: <span class="number">true</span>
 }
 }</pre>
-<p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.views.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the grid view. The grid view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
+<p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the grid view. The grid view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
 <p>Delegates are instantiated as needed and may be destroyed at any time. State should <i>never</i> be stored in a delegate.</p>
-<p><a href="QtQuick.draganddrop.md#gridview">GridView</a> attaches a number of properties to the root item of the delegate, for example <code>GridView.isCurrentItem</code>. In the following example, the root delegate item can access this attached property directly as <code>GridView.isCurrentItem</code>, while the child <code>contactInfo</code> object must refer to this property as <code>wrapper.GridView.isCurrentItem</code>.</p>
+<p><a href="QtQuick.Drag.md#gridview">GridView</a> attaches a number of properties to the root item of the delegate, for example <code>GridView.isCurrentItem</code>. In the following example, the root delegate item can access this attached property directly as <code>GridView.isCurrentItem</code>, while the child <code>contactInfo</code> object must refer to this property as <code>wrapper.GridView.isCurrentItem</code>.</p>
 <pre class="qml"><span class="type"><a href="index.html">GridView</a></span> {
 <span class="name">width</span>: <span class="number">300</span>; <span class="name">height</span>: <span class="number">200</span>
 <span class="name">cellWidth</span>: <span class="number">80</span>; <span class="name">cellHeight</span>: <span class="number">80</span>
@@ -164,18 +164,18 @@ Title: QtQuick.GridView
 }</pre>
 <p><b>Note: </b>Views do not set the <a href="QtQuick.Item.md#clip-prop">clip</a> property automatically. If the view is not clipped by another item or the screen, it will be necessary to set this property to true in order to clip the items that are partially or fully outside the view.</p>
 <h2 id="gridview-layouts">GridView Layouts</h2>
-<p>The layout of the items in a <a href="QtQuick.draganddrop.md#gridview">GridView</a> can be controlled by these properties:</p>
+<p>The layout of the items in a <a href="QtQuick.Drag.md#gridview">GridView</a> can be controlled by these properties:</p>
 <ul>
-<li><a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> - controls whether items flow from left to right (as a series of rows) or from top to bottom (as a series of columns). This value can be either <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight or <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowTopToBottom.</li>
+<li><a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> - controls whether items flow from left to right (as a series of rows) or from top to bottom (as a series of columns). This value can be either <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight or <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom.</li>
 <li><a href="#layoutDirection-prop">layoutDirection</a> - controls the horizontal layout direction: that is, whether items are laid out from the left side of the view to the right, or vice-versa. This value can be either Qt.LeftToRight or Qt.RightToLeft.</li>
-<li><a href="#verticalLayoutDirection-prop">verticalLayoutDirection</a> - controls the vertical layout direction: that is, whether items are laid out from the top of the view down towards the bottom of the view, or vice-versa. This value can be either <a href="QtQuick.draganddrop.md#gridview">GridView</a>.TopToBottom or <a href="QtQuick.draganddrop.md#gridview">GridView</a>.BottomToTop.</li>
+<li><a href="#verticalLayoutDirection-prop">verticalLayoutDirection</a> - controls the vertical layout direction: that is, whether items are laid out from the top of the view down towards the bottom of the view, or vice-versa. This value can be either <a href="QtQuick.Drag.md#gridview">GridView</a>.TopToBottom or <a href="QtQuick.Drag.md#gridview">GridView</a>.BottomToTop.</li>
 </ul>
-<p>By default, a <a href="QtQuick.draganddrop.md#gridview">GridView</a> flows from left to right, and items are laid out from left to right horizontally, and from top to bottom vertically.</p>
-<p>These properties can be combined to produce a variety of layouts, as shown in the table below. The GridViews in the first row all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight, but use different combinations of horizontal and vertical layout directions (specified by <a href="#layoutDirection-prop">layoutDirection</a> and <a href="#verticalLayoutDirection-prop">verticalLayoutDirection</a> respectively). Similarly, the GridViews in the second row below all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowTopToBottom, but use different combinations of horizontal and vertical layout directions to lay out their items in different ways.</p>
+<p>By default, a <a href="QtQuick.Drag.md#gridview">GridView</a> flows from left to right, and items are laid out from left to right horizontally, and from top to bottom vertically.</p>
+<p>These properties can be combined to produce a variety of layouts, as shown in the table below. The GridViews in the first row all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight, but use different combinations of horizontal and vertical layout directions (specified by <a href="#layoutDirection-prop">layoutDirection</a> and <a href="#verticalLayoutDirection-prop">verticalLayoutDirection</a> respectively). Similarly, the GridViews in the second row below all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom, but use different combinations of horizontal and vertical layout directions to lay out their items in different ways.</p>
 <table class="generic">
-<thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight flow</th></tr></thead>
+<thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight flow</th></tr></thead>
 <tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-ltr-ttb.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-rtl-ttb.png" alt="" /></p></td><td ><b>(H)</b> Left to right <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-rtl-btt.png" alt="" /></p></td></tr>
-<thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowTopToBottom flow</th></tr></thead>
+<thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom flow</th></tr></thead>
 <tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-ttb.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-ttb.png" alt="" /></p></td><td ><b>(H)</b> Left to right <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-btt.png" alt="" /></p></td></tr>
 </table>
 <p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
@@ -235,20 +235,20 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <br/>
 <!-- $$$currentIndex -->
 <table class="qmlname"><tr valign="top" id="currentIndex-prop"><td class="tblQmlPropNode"><p><span class="name">currentIndex</span> : <span class="type">int</span></p></td></tr></table><p>The <code>currentIndex</code> property holds the index of the current item, and <code>currentItem</code> holds the current item. Setting the currentIndex to -1 will clear the highlight and set <a href="#currentItem-prop">currentItem</a> to null.</p>
-<p>If <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a> is <code>true</code>, setting either of these properties will smoothly scroll the <a href="QtQuick.draganddrop.md#gridview">GridView</a> so that the current item becomes visible.</p>
+<p>If <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a> is <code>true</code>, setting either of these properties will smoothly scroll the <a href="QtQuick.Drag.md#gridview">GridView</a> so that the current item becomes visible.</p>
 <p>Note that the position of the current item may only be approximate until it becomes visible in the view.</p>
 <!-- @@@currentIndex -->
 <br/>
 <!-- $$$currentItem -->
 <table class="qmlname"><tr valign="top" id="currentItem-prop"><td class="tblQmlPropNode"><p><span class="name">currentItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>The <code>currentIndex</code> property holds the index of the current item, and <code>currentItem</code> holds the current item. Setting the <a href="#currentIndex-prop">currentIndex</a> to -1 will clear the highlight and set currentItem to null.</p>
-<p>If <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a> is <code>true</code>, setting either of these properties will smoothly scroll the <a href="QtQuick.draganddrop.md#gridview">GridView</a> so that the current item becomes visible.</p>
+<p>If <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a> is <code>true</code>, setting either of these properties will smoothly scroll the <a href="QtQuick.Drag.md#gridview">GridView</a> so that the current item becomes visible.</p>
 <p>Note that the position of the current item may only be approximate until it becomes visible in the view.</p>
 <!-- @@@currentItem -->
 <br/>
 <!-- $$$delegate -->
 <table class="qmlname"><tr valign="top" id="delegate-prop"><td class="tblQmlPropNode"><p><span class="name">delegate</span> : <span class="type">Component</span></p></td></tr></table><p>The delegate provides a template defining each item instantiated by the view. The index is exposed as an accessible <code>index</code> property. Properties of the model are also available depending upon the type of <a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">Data Model</a>.</p>
 <p>The number of objects and bindings in the delegate has a direct effect on the flicking performance of the view. If at all possible, place functionality that is not needed for the normal display of the delegate in a <a href="QtQuick.Loader.md">Loader</a> which can load additional components when needed.</p>
-<p>The item size of the <a href="QtQuick.draganddrop.md#gridview">GridView</a> is determined by <a href="#cellHeight-prop">cellHeight</a> and <a href="#cellWidth-prop">cellWidth</a>. It will not resize the items based on the size of the root item in the delegate.</p>
+<p>The item size of the <a href="QtQuick.Drag.md#gridview">GridView</a> is determined by <a href="#cellHeight-prop">cellHeight</a> and <a href="#cellWidth-prop">cellWidth</a>. It will not resize the items based on the size of the root item in the delegate.</p>
 <p>The default stacking order of delegate instances is <code>1</code>.</p>
 <p><b>Note: </b>Delegates are instantiated as needed and may be destroyed at any time. State should <i>never</i> be stored in a delegate.</p><!-- @@@delegate -->
 <br/>
@@ -295,8 +295,8 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <table class="qmlname"><tr valign="top" id="flow-prop"><td class="tblQmlPropNode"><p><span class="name">flow</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the flow of the grid.</p>
 <p>Possible values:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight (default) - Items are laid out from left to right, and the view scrolls vertically</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowTopToBottom - Items are laid out from top to bottom, and the view scrolls horizontally</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight (default) - Items are laid out from left to right, and the view scrolls vertically</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom - Items are laid out from top to bottom, and the view scrolls horizontally</li>
 </ul>
 <!-- @@@flow -->
 <br/>
@@ -361,9 +361,9 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Sp
 <!-- @@@highlightFollowsCurrentItem -->
 <br/>
 <!-- $$$highlightItem -->
-<table class="qmlname"><tr valign="top" id="highlightItem-prop"><td class="tblQmlPropNode"><p><span class="name">highlightItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This holds the highlight item created from the <a href="QtQuick.views.md#highlight">highlight</a> component.</p>
+<table class="qmlname"><tr valign="top" id="highlightItem-prop"><td class="tblQmlPropNode"><p><span class="name">highlightItem</span> : <span class="type"><a href="QtQuick.Item.md">Item</a></span></p></td></tr></table><p>This holds the highlight item created from the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> component.</p>
 <p>The highlightItem is managed by the view unless highlightFollowsCurrentItem is set to false. The default stacking order of the highlight item is <code>0</code>.</p>
-<p><b>See also </b><a href="QtQuick.views.md#highlight">highlight</a> and <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> and <a href="#highlightFollowsCurrentItem-prop">highlightFollowsCurrentItem</a>.</p>
 <!-- @@@highlightItem -->
 <br/>
 <!-- $$$highlightMoveDuration -->
@@ -378,9 +378,9 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Sp
 <p>These properties affect the position of the current item when the view is scrolled. For example, if the currently selected item should stay in the middle of the view when it is scrolled, set the <code>preferredHighlightBegin</code> and <code>preferredHighlightEnd</code> values to the top and bottom coordinates of where the middle item would be. If the <code>currentItem</code> is changed programmatically, the view will automatically scroll so that the current item is in the middle of the view. Furthermore, the behavior of the current item index will occur whether or not a highlight exists.</p>
 <p>Valid values for <code>highlightRangeMode</code> are:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
 </ul>
 <!-- @@@highlightRangeMode -->
 <br/>
@@ -397,7 +397,7 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Sp
 <li>Qt.LeftToRight (default) - Items will be laid out starting in the top, left corner. The flow is dependent on the <a href="#flow-prop">GridView::flow</a> property.</li>
 <li>Qt.RightToLeft - Items will be laid out starting in the top, right corner. The flow is dependent on the <a href="#flow-prop">GridView::flow</a> property.</li>
 </ul>
-<p><b>Note</b>: If <a href="#flow-prop">GridView::flow</a> is set to <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight, this is not to be confused if GridView::layoutDirection is set to Qt.RightToLeft. The <a href="QtQuick.draganddrop.md#gridview">GridView</a>.FlowLeftToRight flow value simply indicates that the flow is horizontal.</p>
+<p><b>Note</b>: If <a href="#flow-prop">GridView::flow</a> is set to <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight, this is not to be confused if GridView::layoutDirection is set to Qt.RightToLeft. The <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight flow value simply indicates that the flow is horizontal.</p>
 <p><b>See also </b><a href="#effectiveLayoutDirection-prop">GridView::effectiveLayoutDirection</a> and <a href="#verticalLayoutDirection-prop">GridView::verticalLayoutDirection</a>.</p>
 <!-- @@@layoutDirection -->
 <br/>
@@ -461,9 +461,9 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <p>These properties affect the position of the current item when the view is scrolled. For example, if the currently selected item should stay in the middle of the view when it is scrolled, set the <code>preferredHighlightBegin</code> and <code>preferredHighlightEnd</code> values to the top and bottom coordinates of where the middle item would be. If the <code>currentItem</code> is changed programmatically, the view will automatically scroll so that the current item is in the middle of the view. Furthermore, the behavior of the current item index will occur whether or not a highlight exists.</p>
 <p>Valid values for <code>highlightRangeMode</code> are:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
 </ul>
 <!-- @@@preferredHighlightBegin -->
 <br/>
@@ -472,9 +472,9 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <p>These properties affect the position of the current item when the view is scrolled. For example, if the currently selected item should stay in the middle of the view when it is scrolled, set the <code>preferredHighlightBegin</code> and <code>preferredHighlightEnd</code> values to the top and bottom coordinates of where the middle item would be. If the <code>currentItem</code> is changed programmatically, the view will automatically scroll so that the current item is in the middle of the view. Furthermore, the behavior of the current item index will occur whether or not a highlight exists.</p>
 <p>Valid values for <code>highlightRangeMode</code> are:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.ApplyRange - the view attempts to maintain the highlight within the range. However, the highlight can move outside of the range at the ends of the view or due to mouse interaction.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.StrictlyEnforceRange - the highlight never moves outside of the range. The current item changes if a keyboard or mouse action would cause the highlight to move outside of the range.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.NoHighlightRange - this is the default value.</li>
 </ul>
 <!-- @@@preferredHighlightEnd -->
 <br/>
@@ -515,9 +515,9 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <!-- $$$snapMode -->
 <table class="qmlname"><tr valign="top" id="snapMode-prop"><td class="tblQmlPropNode"><p><span class="name">snapMode</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property determines how the view scrolling will settle following a drag or flick. The possible values are:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.NoSnap (default) - the view stops anywhere within the visible area.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.SnapToRow - the view settles with a row (or column for <code>GridView.FlowTopToBottom</code> flow) aligned with the start of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.SnapOneRow - the view will settle no more than one row (or column for <code>GridView.FlowTopToBottom</code> flow) away from the first visible row at the time the mouse button is released. This mode is particularly useful for moving one page at a time.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.NoSnap (default) - the view stops anywhere within the visible area.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.SnapToRow - the view settles with a row (or column for <code>GridView.FlowTopToBottom</code> flow) aligned with the start of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.SnapOneRow - the view will settle no more than one row (or column for <code>GridView.FlowTopToBottom</code> flow) away from the first visible row at the time the mouse button is released. This mode is particularly useful for moving one page at a time.</li>
 </ul>
 <!-- @@@snapMode -->
 <br/>
@@ -525,8 +525,8 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <table class="qmlname"><tr valign="top" id="verticalLayoutDirection-prop"><td class="tblQmlPropNode"><p><span class="name">verticalLayoutDirection</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the vertical layout direction of the grid.</p>
 <p>Possible values:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.TopToBottom (default) - Items are laid out from the top of the view down to the bottom of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.BottomToTop - Items are laid out from the bottom of the view up to the top of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.TopToBottom (default) - Items are laid out from the top of the view down to the bottom of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.BottomToTop - Items are laid out from the bottom of the view up to the top of the view.</li>
 </ul>
 <p><b>See also </b><a href="#layoutDirection-prop">GridView::layoutDirection</a>.</p>
 <!-- @@@verticalLayoutDirection -->
@@ -593,8 +593,8 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <br/>
 <h2>Method Documentation</h2>
 <!-- $$$forceLayout -->
-<table class="qmlname"><tr valign="top" id="forceLayout-method"><td class="tblQmlFuncNode"><p><span class="name">forceLayout</span>()</p></td></tr></table><p>Responding to changes in the model is usually batched to happen only once per frame. This means that inside script blocks it is possible for the underlying model to have changed, but the <a href="QtQuick.draganddrop.md#gridview">GridView</a> has not caught up yet.</p>
-<p>This method forces the <a href="QtQuick.draganddrop.md#gridview">GridView</a> to immediately respond to any outstanding changes in the model.</p>
+<table class="qmlname"><tr valign="top" id="forceLayout-method"><td class="tblQmlFuncNode"><p><span class="name">forceLayout</span>()</p></td></tr></table><p>Responding to changes in the model is usually batched to happen only once per frame. This means that inside script blocks it is possible for the underlying model to have changed, but the <a href="QtQuick.Drag.md#gridview">GridView</a> has not caught up yet.</p>
+<p>This method forces the <a href="QtQuick.Drag.md#gridview">GridView</a> to immediately respond to any outstanding changes in the model.</p>
 <p><b>Note</b>: methods should only be called after the Component has completed.</p>
 <p>This QML method was introduced in  Qt 5.1.</p>
 <!-- @@@forceLayout -->
@@ -648,12 +648,12 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <!-- $$$positionViewAtIndex -->
 <table class="qmlname"><tr valign="top" id="positionViewAtIndex-method"><td class="tblQmlFuncNode"><p><span class="name">positionViewAtIndex</span>(<span class="type">int</span><i> index</i>, <span class="type">PositionMode</span><i> mode</i>)</p></td></tr></table><p>Positions the view such that the <i>index</i> is at the position specified by <i>mode</i>:</p>
 <ul>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.Beginning - position item at the top (or left for <code>GridView.FlowTopToBottom</code> flow) of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.Center - position item in the center of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.End - position item at bottom (or right for horizontal orientation) of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.Visible - if any part of the item is visible then take no action, otherwise bring the item into view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.Contain - ensure the entire item is visible. If the item is larger than the view the item is positioned at the top (or left for <code>GridView.FlowTopToBottom</code> flow) of the view.</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a>.SnapPosition - position the item at <a href="#preferredHighlightBegin-prop">preferredHighlightBegin</a>. This mode is only valid if <a href="#highlightRangeMode-prop">highlightRangeMode</a> is StrictlyEnforceRange or snapping is enabled via <a href="#snapMode-prop">snapMode</a>.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.Beginning - position item at the top (or left for <code>GridView.FlowTopToBottom</code> flow) of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.Center - position item in the center of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.End - position item at bottom (or right for horizontal orientation) of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.Visible - if any part of the item is visible then take no action, otherwise bring the item into view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.Contain - ensure the entire item is visible. If the item is larger than the view the item is positioned at the top (or left for <code>GridView.FlowTopToBottom</code> flow) of the view.</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a>.SnapPosition - position the item at <a href="#preferredHighlightBegin-prop">preferredHighlightBegin</a>. This mode is only valid if <a href="#highlightRangeMode-prop">highlightRangeMode</a> is StrictlyEnforceRange or snapping is enabled via <a href="#snapMode-prop">snapMode</a>.</li>
 </ul>
 <p>If positioning the view at the index would cause empty space to be displayed at the beginning or end of the view, the view will be positioned at the boundary.</p>
 <p>It is not recommended to use <a href="QtQuick.Flickable.md#contentX-prop">contentX</a> or <a href="QtQuick.Flickable.md#contentY-prop">contentY</a> to position the view at a particular index. This is unreliable since removing items from the start of the view does not cause all other items to be repositioned. The correct way to bring an item into view is with <code>positionViewAtIndex</code>.</p>

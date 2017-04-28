@@ -9,7 +9,7 @@ Title: QtQuick.qtquick-keyinteraction-example
 <p class="centerAlign"><img src="../../../media/qml-keyinteraction-example.png" alt="" /></p><p><i>Keyboard Focus in Qt Quick</i> combines various methods of handling keyboard focus. For more information, visit <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a>.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
-<p>Using the keyboard arrow keys, the focus shifts to the menus and the <a href="QtQuick.draganddrop.md#gridview">GridView</a>.</p>
+<p>Using the keyboard arrow keys, the focus shifts to the menus and the <a href="QtQuick.Drag.md#gridview">GridView</a>.</p>
 <p>Files:</p>
 <ul>
 <li>keyinteraction/keyinteraction.qml</li>

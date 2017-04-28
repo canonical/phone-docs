@@ -37,7 +37,7 @@ Title: QtQuick.Rotation
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 <span class="name">transform</span>: <span class="name">Rotation</span> { <span class="name">origin</span>.x: <span class="number">25</span>; <span class="name">origin</span>.y: <span class="number">25</span>; <span class="name">angle</span>: <span class="number">45</span>}
 }</pre>
-<p>For 3D-like item rotations, you must specify the axis of rotation in addition to the origin point. The following example shows various 3D-like rotations applied to an <a href="QtQuick.imageelements.md#image">Image</a>.</p>
+<p>For 3D-like item rotations, you must specify the axis of rotation in addition to the origin point. The following example shows various 3D-like rotations applied to an <a href="QtQuick.qtquick-imageelements-example.md#image">Image</a>.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Row.md">Row</a></span> {
 <span class="name">x</span>: <span class="number">10</span>; <span class="name">y</span>: <span class="number">10</span>

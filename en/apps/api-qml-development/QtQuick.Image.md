@@ -114,7 +114,7 @@ Title: QtQuick.Image
 </td></tr>
 </table>
 <p>Note that <code>clip</code> is <code>false</code> by default which means that the item might paint outside its bounding rectangle even if the fillMode is set to <code>PreserveAspectCrop</code>.</p>
-<p><b>See also </b><a href="QtQuick.imageelements.md">Qt Quick Examples - Image Elements</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-imageelements-example.md">Qt Quick Examples - Image Elements</a>.</p>
 <!-- @@@fillMode -->
 <br/>
 <!-- $$$horizontalAlignment -->

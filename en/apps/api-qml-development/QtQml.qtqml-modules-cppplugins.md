@@ -62,10 +62,10 @@ plugin qmlqtimeexampleplugin</pre>
 <span class="name">hours</span>: <span class="name">time</span>.<span class="name">hour</span>
 <span class="name">minutes</span>: <span class="name">time</span>.<span class="name">minute</span>
 }</pre>
-<p>The full source code is available in the <a href="QtQml.qmlextensionplugins.md">plugins example</a>.</p>
+<p>The full source code is available in the <a href="QtQml.qtqml-qmlextensionplugins-example.md">plugins example</a>.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="QtQml.tutorials-extending-qml.md">Writing QML Extensions with C++</a> - contains a chapter on creating QML plugins.</li>
+<li><a href="QtQml.qtqml-tutorials-extending-qml-example.md">Writing QML Extensions with C++</a> - contains a chapter on creating QML plugins.</li>
 <li><a href="QtQml.qtqml-cppintegration-definetypes.md">Defining QML Types from C++</a> - information about registering C++ types into the runtime.</li>
 <li>How to Create Qt Plugins - information about Qt plugins</li>
 </ul>

@@ -185,5 +185,5 @@ property <span class="type">alias</span> <span class="name">color</span>: <span 
 }
 }</pre>
 <p class="centerAlign"><img src="../../../media/declarative-qmlfocus5.png" alt="" /></p><p>While the example is simple, there are a lot going on behind the scenes. Whenever the current item changes, the <a href="QtQuick.ListView.md">ListView</a> sets the delegate's <code>Item::focus</code> property. As the <a href="QtQuick.ListView.md">ListView</a> is a focus scope, this doesn't affect the rest of the application. However, if the <a href="QtQuick.ListView.md">ListView</a> itself has active focus this causes the delegate itself to receive active focus. In this example, the root type of the delegate is also a focus scope, which in turn gives active focus to the <code>Text</code> type that actually performs the work of handling the <code>Return</code> key.</p>
-<p>All of the QML view classes, such as <a href="QtQuick.PathView.md">PathView</a> and <a href="QtQuick.draganddrop.md#gridview">GridView</a>, behave in a similar manner to allow key handling in their respective delegates.</p>
+<p>All of the QML view classes, such as <a href="QtQuick.PathView.md">PathView</a> and <a href="QtQuick.Drag.md#gridview">GridView</a>, behave in a similar manner to allow key handling in their respective delegates.</p>
 <!-- @@@qtquick-input-focus.html -->

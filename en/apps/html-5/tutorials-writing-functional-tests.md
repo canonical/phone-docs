@@ -141,7 +141,7 @@ Fortunately selenium also makes it easy to find and introspect objects. You
 can issue a find by id, name, path, link, tag, class, and css! You can also
 find multiple elements by most of the same attributes.
 
-You can read more about finding elements in the [Selenium documentation](http://selenium-python.readthedocs.io/en/latest/locating-elements.html#locating-elements).
+You can read more about finding elements in the [Selenium documentation](http://selenium-python.readthedocs.io/locating-elements.html#locating-elements).
 
 Once you have found an element you can interact with it by reading its
 properties or performing an action. Let’s talk about each one.
@@ -191,12 +191,12 @@ def test_click_button(self):
         actions.perform()
 ```
 
-To find out about other useful methods, check out the [Actions Chain documentation](http://selenium-python.readthedocs.io/en/latest/api.html#module-selenium.webdriver.common.action_chains).
+To find out about other useful methods, check out the [Actions Chain documentation](http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.common.action_chains).
 
 ## Assertions and Expectations
 
 In addition to the suite of assertions that autopilot has, selenium allows for
-you to create expectations about elements. These are called [expected conditions](http://selenium-python.readthedocs.io/en/latest/api.html#module-selenium.webdriver.support.expected_conditions). For example, we could wait for an element to be clickable before clicking on it.
+you to create expectations about elements. These are called [expected conditions](http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.support.expected_conditions). For example, we could wait for an element to be clickable before clicking on it.
 
 ```wait.until(expected_conditions.element_to_be_clickable(By.class("ubuntu")))```
 
@@ -217,5 +217,5 @@ HTML5 tests. Check out the links below for more documentation and help.
 ### Resources
 
  * [Autopilot API](../api-autopilot-current/index.md)
- * [Selenium Webdriver API](http://selenium-python.readthedocs.io/en/latest/api.html)
+ * [Selenium Webdriver API](http://selenium-python.readthedocs.io/api.html)
  * [HTML5 SDK documentation](api.md)

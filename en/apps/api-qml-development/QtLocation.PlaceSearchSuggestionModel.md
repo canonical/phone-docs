@@ -129,7 +129,7 @@ model<span class="operator">.</span>searchArea<span class="operator">.</span>cet
 model<span class="operator">.</span>update();
 }
 }</pre>
-<p>A more detailed example can be found in the in <a href="QtLocation.places.md#presenting-search-suggestions">Places (QML)</a> example.</p>
+<p>A more detailed example can be found in the in <a href="QtLocation.location-places-qml.md#presenting-search-suggestions">Places (QML)</a> example.</p>
 <p><b>See also </b><a href="#status-prop">status</a>.</p>
 <!-- @@@update -->
 <br/>

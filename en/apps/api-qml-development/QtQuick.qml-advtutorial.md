@@ -12,13 +12,13 @@ Title: QtQuick.qml-advtutorial
 <p>An understanding of JavaScript is helpful to understand parts of this tutorial, but if you don't know JavaScript you can still get a feel for how you can integrate backend logic to create and control QML types.</p>
 <p>Tutorial chapters:</p>
 <ol class="1">
-<li><a href="QtQuick.tutorials-samegame-samegame1.md">Creating the Game Canvas and Blocks</a></li>
-<li><a href="QtQuick.tutorials-samegame-samegame2.md">Populating the Game Canvas</a></li>
-<li><a href="QtQuick.tutorials-samegame-samegame3.md">Implementing the Game Logic</a></li>
-<li><a href="QtQuick.tutorials-samegame-samegame4.md">Finishing Touches</a></li>
+<li><a href="QtQuick.qtquick-tutorials-samegame-samegame1-example.md">Creating the Game Canvas and Blocks</a></li>
+<li><a href="QtQuick.qtquick-tutorials-samegame-samegame2-example.md">Populating the Game Canvas</a></li>
+<li><a href="QtQuick.qtquick-tutorials-samegame-samegame3-example.md">Implementing the Game Logic</a></li>
+<li><a href="QtQuick.qtquick-tutorials-samegame-samegame4-example.md">Finishing Touches</a></li>
 </ol>
 <p>All the code in this tutorial can be found in Qt's <code>examples/quick/tutorials/samegame</code> directory.</p>
 <!-- @@@qml-advtutorial.html -->
 <p class="naviNextPrevious footerNavi">
-<a class="nextPage" href="QtQuick.tutorials-samegame-samegame1.md">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-samegame-samegame1-example.md">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
 </p>

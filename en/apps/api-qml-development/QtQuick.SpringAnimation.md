@@ -46,7 +46,7 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="index.html
 }
 }</pre>
 <p>Like any other animation type, a <a href="index.html">SpringAnimation</a> can be applied in a number of ways, including transitions, behaviors and property value sources. The <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> documentation shows a variety of methods for creating animations.</p>
-<p><b>See also </b><a href="QtQuick.SmoothedAnimation.md">SmoothedAnimation</a>, <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.animation.md">Qt Quick Examples - Animation</a>, and <a href="QtQuick.demos-clocks.md">Qt Quick Demo - Clocks</a>.</p>
+<p><b>See also </b><a href="QtQuick.SmoothedAnimation.md">SmoothedAnimation</a>, <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.animation.md">Qt Quick Examples - Animation</a>, and <a href="QtQuick.qtquick-demos-clocks-example.md">Qt Quick Demo - Clocks</a>.</p>
 <!-- @@@SpringAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$damping -->

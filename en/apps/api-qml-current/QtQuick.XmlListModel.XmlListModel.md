@@ -33,7 +33,7 @@ Title: QtQuick.XmlListModel.XmlListModel
 </p>
 <p>To use this element, you will need to import the module with the following line:</p>
 <pre class="cpp">import <span class="type">QtQuick</span><span class="operator">.</span>XmlListModel <span class="number">2.0</span></pre>
-<p><a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a> is used to create a read-only model from XML data. It can be used as a data source for view elements (such as <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, <a href="QtQuick.draganddrop.md#gridview">GridView</a>) and other elements that interact with model data (such as <a href="QtQuick.Repeater.md">Repeater</a>).</p>
+<p><a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a> is used to create a read-only model from XML data. It can be used as a data source for view elements (such as <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>) and other elements that interact with model data (such as <a href="QtQuick.Repeater.md">Repeater</a>).</p>
 <p>For example, if there is a XML document at http://www.mysite.com/feed.xml like this:</p>
 <pre class="cpp"><span class="operator">&lt;</span><span class="operator">?</span>xml version<span class="operator">=</span><span class="string">&quot;1.0&quot;</span> encoding<span class="operator">=</span><span class="string">&quot;utf-8&quot;</span><span class="operator">?</span><span class="operator">&gt;</span>
 <span class="operator">&lt;</span>rss version<span class="operator">=</span><span class="string">&quot;2.0&quot;</span><span class="operator">&gt;</span>

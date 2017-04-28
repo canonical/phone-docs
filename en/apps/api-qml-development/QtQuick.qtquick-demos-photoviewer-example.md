@@ -48,7 +48,7 @@ Title: QtQuick.qtquick-demos-photoviewer-example
 <p>List elements are defined like other QML types except that they contain a collection of <i>role</i> definitions instead of properties. Roles both define how the data is accessed and include the data itself. For each list element, we use the <code>tag</code> role to specify the photos to download.</p>
 <p>A DelegateModel type is used together with the Package type to provide delegates to multiple views. The <code>model</code> property holds the model providing data for the delegate model and the <code>delegate</code> property specifies the template defining each item instantiated by a view:</p>
 <pre class="qml">    <span class="type">DelegateModel</span> { <span class="name">id</span>: <span class="name">albumVisualModel</span>; <span class="name">model</span>: <span class="name">photosModel</span>; <span class="name">delegate</span>: <span class="name">AlbumDelegate</span> {} }</pre>
-<p>We use a <a href="QtQuick.draganddrop.md#gridview">GridView</a> type to lay out the albums as a grid:</p>
+<p>We use a <a href="QtQuick.Drag.md#gridview">GridView</a> type to lay out the albums as a grid:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.GridView.md">GridView</a></span> {
 <span class="name">id</span>: <span class="name">albumView</span>; <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>; <span class="name">height</span>: <span class="name">parent</span>.<span class="name">height</span>; <span class="name">cellWidth</span>: <span class="number">210</span>; <span class="name">cellHeight</span>: <span class="number">220</span>
 <span class="name">model</span>: <span class="name">albumVisualModel</span>.<span class="name">parts</span>.<span class="name">album</span>; <span class="name">visible</span>: <span class="name">albumsShade</span>.<span class="name">opacity</span> <span class="operator">!=</span> <span class="number">1.0</span>
@@ -94,7 +94,7 @@ property <span class="type">double</span> <span class="name">randomAngle</span>:
 property <span class="type">double</span> <span class="name">randomAngle2</span>: <span class="name">Math</span>.<span class="name">random</span>() <span class="operator">*</span> (<span class="number">2</span> <span class="operator">*</span> <span class="number">6</span> <span class="operator">+</span> <span class="number">1</span>) <span class="operator">-</span> <span class="number">6</span>
 <span class="name">x</span>: <span class="number">0</span>; <span class="name">y</span>: <span class="number">0</span>; <span class="name">width</span>: <span class="number">140</span>; <span class="name">height</span>: <span class="number">133</span>
 <span class="name">z</span>: <span class="name">stackItem</span>.<span class="name">PathView</span>.<span class="name">z</span>; <span class="name">rotation</span>: <span class="name">photoWrapper</span>.<span class="name">randomAngle</span></pre>
-<p>We use a <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> type to create borders for the images:</p>
+<p>We use a <a href="QtQuick.qtquick-imageelements-example.md#borderimage">BorderImage</a> type to create borders for the images:</p>
 <pre class="qml">            <span class="type"><a href="QtQuick.BorderImage.md">BorderImage</a></span> {
 <span class="type">anchors</span> {
 <span class="name">fill</span>: <span class="name">originalImage</span>.<span class="name">status</span> <span class="operator">==</span> <span class="name">Image</span>.<span class="name">Ready</span> ? <span class="name">border</span> : <span class="name">placeHolder</span>
@@ -182,7 +182,7 @@ signal <span class="type">tagChanged</span>(string tag)</pre>
 }</pre>
 <p>In PhotoDelegate.qml, we use them to indicate activity while a photo is being loaded:</p>
 <pre class="qml">            <span class="type">BusyIndicator</span> { <span class="name">anchors</span>.centerIn: <span class="name">parent</span>; <span class="name">on</span>: <span class="name">originalImage</span>.<span class="name">status</span> <span class="operator">!=</span> <span class="name">Image</span>.<span class="name">Ready</span> }</pre>
-<p>We define the <code>BusyIndicator</code> type in <code>BusyIndicator.qml</code>. We use an <a href="QtQuick.imageelements.md#image">Image</a> type to display an image and apply a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to its <code>rotation</code> property to rotate the image in an infinite loop:</p>
+<p>We define the <code>BusyIndicator</code> type in <code>BusyIndicator.qml</code>. We use an <a href="QtQuick.qtquick-imageelements-example.md#image">Image</a> type to display an image and apply a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to its <code>rotation</code> property to rotate the image in an infinite loop:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">container</span>
 property <span class="type">bool</span> <span class="name">on</span>: <span class="number">false</span>

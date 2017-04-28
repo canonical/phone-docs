@@ -79,7 +79,7 @@ property <span class="type"><a href="QtQuick.Item.md">Item</a></span> <span clas
 <span class="name">flick</span>.<span class="name">returnToBounds</span>()
 }</pre>
 <h2 id="flickable">Flickable</h2>
-<p><i>Flickable</i> is a simple example demonstrating the <a href="QtQuick.touchinteraction.md#flickable">Flickable</a> type.</p>
+<p><i>Flickable</i> is a simple example demonstrating the <a href="QtQuick.qtquick-touchinteraction-example.md#flickable">Flickable</a> type.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">320</span>
 <span class="name">height</span>: <span class="number">480</span>
@@ -91,7 +91,7 @@ property <span class="type"><a href="QtQuick.Item.md">Item</a></span> <span clas
 <span class="name">width</span>: <span class="number">1000</span>
 <span class="name">height</span>: <span class="number">1000</span></pre>
 <h2 id="corkboards">Corkboards</h2>
-<p><i>Corkboards</i> shows another use for <a href="QtQuick.touchinteraction.md#flickable">Flickable</a>, with QML types within the flickable object that respond to mouse and keyboard interaction. This behavior does not require special code as the Qt Quick types already cooperate with the Flickable type for accepting touch events.</p>
+<p><i>Corkboards</i> shows another use for <a href="QtQuick.qtquick-touchinteraction-example.md#flickable">Flickable</a>, with QML types within the flickable object that respond to mouse and keyboard interaction. This behavior does not require special code as the Qt Quick types already cooperate with the Flickable type for accepting touch events.</p>
 <p>Files:</p>
 <ul>
 <li>touchinteraction/touchinteraction.qml</li>

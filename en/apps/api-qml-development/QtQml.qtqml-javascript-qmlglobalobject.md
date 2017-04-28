@@ -61,5 +61,5 @@ Title: QtQml.qtqml-javascript-qmlglobalobject
 </ul>
 </td></tr>
 </table>
-<p>The <a href="QtQml.xmlhttprequest.md">XMLHttpRequest example</a> demonstrates how to use the <a href="#xmlhttprequest">XMLHttpRequest</a> object to make a request and read the response headers.</p>
+<p>The <a href="QtQml.qtqml-xmlhttprequest-example.md">XMLHttpRequest example</a> demonstrates how to use the <a href="#xmlhttprequest">XMLHttpRequest</a> object to make a request and read the response headers.</p>
 <!-- @@@qtqml-javascript-qmlglobalobject.html -->

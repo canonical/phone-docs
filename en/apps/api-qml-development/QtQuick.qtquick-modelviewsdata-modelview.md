@@ -18,7 +18,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 <p>A set of standard views are provided in the basic set of Qt Quick graphical types:</p>
 <ul>
 <li><a href="QtQuick.ListView.md">ListView</a> - arranges items in a horizontal or vertical list</li>
-<li><a href="QtQuick.draganddrop.md#gridview">GridView</a> - arranges items in a grid within the available space</li>
+<li><a href="QtQuick.Drag.md#gridview">GridView</a> - arranges items in a grid within the available space</li>
 <li><a href="QtQuick.PathView.md">PathView</a> - arranges items on a path</li>
 </ul>
 <p>These types have properties and behaviors exclusive to each type. Visit their respective documentation for more information.</p>
@@ -140,7 +140,7 @@ Title: QtQuick.qtquick-modelviewsdata-modelview
 }</pre>
 <p class="centerAlign"><img src="../../../media/listview-setup.png" alt="" /></p>
 <h3 >Accessing Views and Models from Delegates</h3>
-<p>The list view to which the delegate is bound is accessible from the delegate through the <code>ListView.view</code> property. Likewise, the <a href="QtQuick.draganddrop.md#gridview">GridView</a> <code>GridView.view</code> is available to delegates. The corresponding model and its properties, therefore, are available through <code>ListView.view.model</code>. In addition, any defined signals or methods in the model are also accessible.</p>
+<p>The list view to which the delegate is bound is accessible from the delegate through the <code>ListView.view</code> property. Likewise, the <a href="QtQuick.Drag.md#gridview">GridView</a> <code>GridView.view</code> is available to delegates. The corresponding model and its properties, therefore, are available through <code>ListView.view.model</code>. In addition, any defined signals or methods in the model are also accessible.</p>
 <p>This mechanism is useful when you want to use the same delegate for a number of views, for example, but you want decorations or other features to be different for each view, and you would like these different settings to be properties of each of the views. Similarly, it might be of interest to access or show some properties of the model.</p>
 <p>In the following example, the delegate shows the property <i>language</i> of the model, and the color of one of the fields depends on the property <i>fruit_color</i> of the view.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -248,7 +248,7 @@ property <span class="type">color</span> <span class="name">fruit_color</span>: 
 <span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;link&quot;</span>; <span class="name">query</span>: <span class="string">&quot;link/string()&quot;</span> }
 <span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;description&quot;</span>; <span class="name">query</span>: <span class="string">&quot;description/string()&quot;</span> }
 }</pre>
-<p>The <a href="QtQuick.demos-rssnews.md">RSS News demo</a> shows how <a href="#xmllistmodel">XmlListModel</a> can be used to display an RSS feed.</p>
+<p>The <a href="QtQuick.qtquick-demos-rssnews-example.md">RSS News demo</a> shows how <a href="#xmllistmodel">XmlListModel</a> can be used to display an RSS feed.</p>
 <h3 >VisualItemModel</h3>
 <p><a href="#visualitemmodel">VisualItemModel</a> allows QML items to be provided as a model.</p>
 <p>This model contains both the data and delegate; the child items of a <a href="#visualitemmodel">VisualItemModel</a> provide the contents of the delegate. The model does not provide any roles.</p>

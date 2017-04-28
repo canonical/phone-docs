@@ -64,7 +64,7 @@ property <span class="type">alias</span> <span class="name">dropProxy</span>: <s
 }</pre>
 <p>The keys property of the <a href="QtQuick.DropArea.md">DropArea</a> will only allow an item with a matching key in its Drag.keys property to be dropped on it.</p>
 <h2 id="gridview">GridView</h2>
-<p><i>GridView</i> adds drag and drop to a <a href="QtQuick.draganddrop.md#gridview">GridView</a>, allowing you to reorder the list. It also uses a DelegateModel to move a delegate item to the position of another item it is dragged over.</p>
+<p><i>GridView</i> adds drag and drop to a <a href="QtQuick.Drag.md#gridview">GridView</a>, allowing you to reorder the list. It also uses a DelegateModel to move a delegate item to the position of another item it is dragged over.</p>
 <pre class="qml">    <span class="name">model</span>: <span class="name">DelegateModel</span> {
 <span class="name">delegate</span>: <span class="name">MouseArea</span> {
 <span class="name">id</span>: <span class="name">delegateRoot</span>

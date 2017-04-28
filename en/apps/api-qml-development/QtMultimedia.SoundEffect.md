@@ -9,7 +9,7 @@ Title: QtMultimedia.SoundEffect
 <p>The SoundEffect type provides a way to play sound effects in QML. More...</p>
 <!-- @@@SoundEffect -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtMultimedia 5.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../qsoundeffect.html">QSoundEffect</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtMultimedia 5.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="QtMultimedia.SoundEffect.md">QSoundEffect</td></tr></table><ul>
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>

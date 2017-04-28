@@ -19,7 +19,7 @@ Title: QtLocation.location-plugin-nokia
 <tr valign="top"><td >app_id</td><td >Client <i>app_id</i> part of the app_id/token pair used for authentication by all managers.</td></tr>
 <tr valign="top"><td >token</td><td >Client <i>token</i> part of the app_id/token pair for the service used for authentication by all managers.</td></tr>
 </table>
-<p>The Nokia geo services plugin requires an application id and token pair to authenticate the application with the Nokia services. To obtain an application id and token pair visit <a href="http://api.developer.nokia.com/">http://api.developer.nokia.com/</a></p>
+<p>The Nokia geo services plugin requires an application id and token pair to authenticate the application with the Nokia services. To obtain an application id and token pair visit <a href="https://networks.nokia.com/developer/mn/">https://networks.nokia.com/developer/mn/</a></p>
 <h3 >Optional parameters</h3>
 <p>The following table lists optional parameters that can be passed to the Nokia plugin.</p>
 <table class="generic">

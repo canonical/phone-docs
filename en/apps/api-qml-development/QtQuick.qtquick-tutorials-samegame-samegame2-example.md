@@ -93,6 +93,6 @@ var <span class="name">dynamicObject</span> = <span class="name">component</span
 </ul>
 <!-- @@@tutorials/samegame/samegame2 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-samegame-samegame1.md">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
-<a class="nextPage" href="QtQuick.tutorials-samegame-samegame3.md">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-samegame-samegame1-example.md">QML Advanced Tutorial 1 - Creating the Game Canvas and Blocks</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-samegame-samegame3-example.md">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
 </p>

@@ -8,8 +8,8 @@ Title: QtQml.qtqml-referenceexamples-coercion-example
 <!-- $$$referenceexamples/coercion-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="QtQml.referenceexamples-properties.md">Extending QML - Object and List Property Types Example</a></li>
-<li><a href="QtQml.referenceexamples-adding.md">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.referenceexamples-properties-example.md">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="QtQml.referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>The Inheritance and Coercion Example shows how to use base classes to assign types of more than one type to a property. It specializes the Person type developed in the previous examples into two types - a <code>Boy</code> and a <code>Girl</code>.</p>
 <pre class="qml"><span class="type">BirthdayParty</span> {

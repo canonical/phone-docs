@@ -8,11 +8,11 @@ Title: QtQml.qtqml-referenceexamples-default-example
 <!-- $$$referenceexamples/default-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="QtQml.referenceexamples-coercion.md">Extending QML - Inheritance and Coercion Example</a></li>
-<li><a href="QtQml.referenceexamples-properties.md">Extending QML - Object and List Property Types Example</a></li>
-<li><a href="QtQml.referenceexamples-adding.md">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a></li>
+<li><a href="QtQml.referenceexamples-properties-example.md">Extending QML - Object and List Property Types Example</a></li>
+<li><a href="QtQml.referenceexamples-adding-example.md">Extending QML - Adding Types Example</a></li>
 </ul>
-<p>The Default Property Example is a minor modification of the <a href="QtQml.referenceexamples-coercion.md">Extending QML - Inheritance and Coercion Example</a> that simplifies the specification of a BirthdayParty through the use of a default property.</p>
+<p>The Default Property Example is a minor modification of the <a href="QtQml.referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a> that simplifies the specification of a BirthdayParty through the use of a default property.</p>
 <pre class="qml"><span class="type">BirthdayParty</span> {
 <span class="name">host</span>: <span class="name">Boy</span> {
 <span class="name">name</span>: <span class="string">&quot;Bob Jones&quot;</span>

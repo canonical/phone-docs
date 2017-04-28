@@ -22,7 +22,7 @@ Title: QtQuick.ViewTransition
 <!-- $$$ViewTransition-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>With <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop.md#gridview">GridView</a>, it is possible to specify transitions that should be applied whenever the items in the view change as a result of modifications to the view's model. They both have the following properties that can be set to the appropriate transitions to be run for various operations:</p>
+<p>With <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.Drag.md#gridview">GridView</a>, it is possible to specify transitions that should be applied whenever the items in the view change as a result of modifications to the view's model. They both have the following properties that can be set to the appropriate transitions to be run for various operations:</p>
 <ul>
 <li><code>populate</code> - the transition to apply to the items created initially for the view, or when the model changes</li>
 <li><code>add</code> - the transition to apply to items that are added to the view after it has been created</li>

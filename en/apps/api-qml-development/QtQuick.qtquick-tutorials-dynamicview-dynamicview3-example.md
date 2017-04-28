@@ -77,6 +77,6 @@ property <span class="type">bool</span> <span class="name">held</span>: <span cl
 </ul>
 <!-- @@@tutorials/dynamicview/dynamicview3 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-dynamicview-dynamicview2.md">QML Dynamic View Ordering Tutorial 2 - Dragging View Items</a>
-<a class="nextPage" href="QtQuick.tutorials-dynamicview-dynamicview4.md">QML Dynamic View Ordering Tutorial 4 - Sorting Items</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-dynamicview-dynamicview2-example.md">QML Dynamic View Ordering Tutorial 2 - Dragging View Items</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-dynamicview-dynamicview4-example.md">QML Dynamic View Ordering Tutorial 4 - Sorting Items</a>
 </p>
