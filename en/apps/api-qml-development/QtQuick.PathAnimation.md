@@ -43,7 +43,7 @@ Title: QtQuick.PathAnimation
 }
 }</pre>
 <p>In the above case, the path start will be the item's current position, and the path end will be the item's target position in the target state.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathinterpolator">PathInterpolator</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation.md#pathinterpolator">PathInterpolator</a>.</p>
 <!-- @@@PathAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$anchorPoint -->
@@ -64,30 +64,30 @@ Title: QtQuick.PathAnimation
 <br/>
 <!-- $$$endRotation -->
 <table class="qmlname"><tr valign="top" id="endRotation-prop"><td class="tblQmlPropNode"><p><span class="name">endRotation</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the ending rotation for the target.</p>
-<p>If an orientation has been specified for the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>, and the path doesn't end with the item at the desired rotation, the endRotation property can be used to manually specify an end rotation.</p>
+<p>If an orientation has been specified for the <a href="QtQuick.animation.md#pathanimation">PathAnimation</a>, and the path doesn't end with the item at the desired rotation, the endRotation property can be used to manually specify an end rotation.</p>
 <p>This property is typically used with <a href="#orientationExitDuration-prop">orientationExitDuration</a>, as specifying an endRotation without an <a href="#orientationExitDuration-prop">orientationExitDuration</a> may cause a jump to the final rotation, rather than a smooth transition.</p>
 <!-- @@@endRotation -->
 <br/>
 <!-- $$$orientation -->
 <table class="qmlname"><tr valign="top" id="orientation-prop"><td class="tblQmlPropNode"><p><span class="name">orientation</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property controls the rotation of the item as it animates along the path.</p>
-<p>If a value other than <code>Fixed</code> is specified, the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a> will rotate the item to achieve the specified orientation as it travels along the path.</p>
+<p>If a value other than <code>Fixed</code> is specified, the <a href="QtQuick.animation.md#pathanimation">PathAnimation</a> will rotate the item to achieve the specified orientation as it travels along the path.</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.Fixed (default) - the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a> will not control the rotation of the item.</li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.RightFirst - The right side of the item will lead along the path.</li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.LeftFirst - The left side of the item will lead along the path.</li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.BottomFirst - The bottom of the item will lead along the path.</li>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.TopFirst - The top of the item will lead along the path.</li>
+<li><a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.Fixed (default) - the <a href="QtQuick.animation.md#pathanimation">PathAnimation</a> will not control the rotation of the item.</li>
+<li><a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.RightFirst - The right side of the item will lead along the path.</li>
+<li><a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.LeftFirst - The left side of the item will lead along the path.</li>
+<li><a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.BottomFirst - The bottom of the item will lead along the path.</li>
+<li><a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.TopFirst - The top of the item will lead along the path.</li>
 </ul>
 <!-- @@@orientation -->
 <br/>
 <!-- $$$orientationEntryDuration -->
 <table class="qmlname"><tr valign="top" id="orientationEntryDuration-prop"><td class="tblQmlPropNode"><p><span class="name">orientationEntryDuration</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the duration (in milliseconds) of the transition in to the orientation.</p>
-<p>If an orientation has been specified for the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>, and the starting rotation of the item does not match that given by the orientation, orientationEntryDuration can be used to smoothly transition from the item's starting rotation to the rotation given by the path orientation.</p>
+<p>If an orientation has been specified for the <a href="QtQuick.animation.md#pathanimation">PathAnimation</a>, and the starting rotation of the item does not match that given by the orientation, orientationEntryDuration can be used to smoothly transition from the item's starting rotation to the rotation given by the path orientation.</p>
 <!-- @@@orientationEntryDuration -->
 <br/>
 <!-- $$$orientationExitDuration -->
 <table class="qmlname"><tr valign="top" id="orientationExitDuration-prop"><td class="tblQmlPropNode"><p><span class="name">orientationExitDuration</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the duration (in milliseconds) of the transition out of the orientation.</p>
-<p>If an orientation and <a href="#endRotation-prop">endRotation</a> have been specified for the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>, orientationExitDuration can be used to smoothly transition from the rotation given by the path orientation to the specified <a href="#endRotation-prop">endRotation</a>.</p>
+<p>If an orientation and <a href="#endRotation-prop">endRotation</a> have been specified for the <a href="QtQuick.animation.md#pathanimation">PathAnimation</a>, orientationExitDuration can be used to smoothly transition from the rotation given by the path orientation to the specified <a href="#endRotation-prop">endRotation</a>.</p>
 <!-- @@@orientationExitDuration -->
 <br/>
 <!-- $$$path -->

@@ -8,7 +8,7 @@ Title: QtQml.qtqml-referenceexamples-extended-example
 <!-- $$$referenceexamples/extended-description -->
 <p>This example builds on:</p>
 <ul>
-<li><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQml.referenceexamples-adding/">Extending QML - Adding Types Example</a></li>
+<li><a href="QtQml.referenceexamples-adding.md">Extending QML - Adding Types Example</a></li>
 </ul>
 <p>Shows how to use qmlRegisterExtendedType() to provide an extension object to a QLineEdit without modifying or subclassing. The QML engine instantiates a QLineEdit and sets a property that only exists on the extension type. The extension type performs calls on the QLineEdit that otherwise will not be accessible to the QML engine.</p>
 <p>Files:</p>

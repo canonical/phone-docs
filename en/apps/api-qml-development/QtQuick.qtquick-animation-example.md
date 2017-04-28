@@ -143,7 +143,7 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Sp
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">properties</span>: <span class="string">&quot;x,y&quot;</span>; <span class="name">duration</span>: <span class="number">200</span> }
 }</pre>
 <h2 id="pathanimation">PathAnimation</h2>
-<p><i>PathAnimation</i> animates an image along a bezier curve using a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a>.</p>
+<p><i>PathAnimation</i> animates an image along a bezier curve using a <a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.PathAnimation.md">PathAnimation</a></span> {
 <span class="name">id</span>: <span class="name">pathAnim</span>
 <span class="name">duration</span>: <span class="number">2000</span>
@@ -163,7 +163,7 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Sp
 }
 }</pre>
 <h2 id="pathinterpolator">PathInterpolator</h2>
-<p><i>PathInterpolator</i> animates an image along the same bezier curve, using a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathinterpolator">PathInterpolator</a> instead.</p>
+<p><i>PathInterpolator</i> animates an image along the same bezier curve, using a <a href="QtQuick.animation.md#pathinterpolator">PathInterpolator</a> instead.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.PathInterpolator.md">PathInterpolator</a></span> {
 <span class="name">id</span>: <span class="name">motionPath</span>
 <span class="name">path</span>: <span class="name">Path</span> {

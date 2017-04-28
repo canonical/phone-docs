@@ -22,7 +22,7 @@ Title: QtQuick.ViewTransition
 <!-- $$$ViewTransition-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p>With <a href="QtQuick.ListView.md">ListView</a> and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.draganddrop/#gridview">GridView</a>, it is possible to specify transitions that should be applied whenever the items in the view change as a result of modifications to the view's model. They both have the following properties that can be set to the appropriate transitions to be run for various operations:</p>
+<p>With <a href="QtQuick.ListView.md">ListView</a> and <a href="QtQuick.draganddrop.md#gridview">GridView</a>, it is possible to specify transitions that should be applied whenever the items in the view change as a result of modifications to the view's model. They both have the following properties that can be set to the appropriate transitions to be run for various operations:</p>
 <ul>
 <li><code>populate</code> - the transition to apply to the items created initially for the view, or when the model changes</li>
 <li><code>add</code> - the transition to apply to items that are added to the view after it has been created</li>
@@ -133,7 +133,7 @@ Title: QtQuick.ViewTransition
 }</pre>
 <p>Now, a displaced item will first move to a position of (20, 50) relative to its starting position, and then to its final, correct position in the view:</p>
 <p class="centerAlign"><img src="../../../media/viewtransitions-intermediatemove.gif" alt="" /></p><p>Since the final <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> does not specify a <code>to</code> value, the view implicitly sets this value to the item's final position in the view, and so this last animation will move this item to the correct place. If the transition requires the final position of the item for some calculation, this is accessible through <a href="index.html">ViewTransition</a>.destination.</p>
-<p>Instead of using multiple NumberAnimations, you could use a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a> to animate an item over a curved path. For example, the <code>add</code> transition in the previous example could be augmented with a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.animation/#pathanimation">PathAnimation</a> as follows: to animate newly added items along a path:</p>
+<p>Instead of using multiple NumberAnimations, you could use a <a href="QtQuick.animation.md#pathanimation">PathAnimation</a> to animate an item over a curved path. For example, the <code>add</code> transition in the previous example could be augmented with a <a href="QtQuick.animation.md#pathanimation">PathAnimation</a> as follows: to animate newly added items along a path:</p>
 <pre class="qml">    <span class="name">add</span>: <span class="name">Transition</span> {
 <span class="name">id</span>: <span class="name">addTrans</span>
 <span class="type"><a href="QtQuick.NumberAnimation.md">NumberAnimation</a></span> { <span class="name">property</span>: <span class="string">&quot;opacity&quot;</span>; <span class="name">from</span>: <span class="number">0</span>; <span class="name">to</span>: <span class="number">1.0</span>; <span class="name">duration</span>: <span class="number">400</span> }

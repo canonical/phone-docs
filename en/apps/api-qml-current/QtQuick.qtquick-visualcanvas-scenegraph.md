@@ -27,7 +27,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 </p>
 <p>Custom nodes are added to the scene graph by subclassing QQuickItem::updatePaintNode() and setting the QQuickItem::ItemHasContents flag.</p>
 <p><b>Warning:</b> It is crucial that OpenGL operations and interaction with the scene graph happens exclusively on the render thread, primarily during the updatePaintNode() call. The rule of thumb is to only use classes with the &quot;QSG&quot; prefix inside the QQuickItem::updatePaintNode() function.</p>
-<p>For more details, see the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.scenegraph-customgeometry/">Scene Graph - Custom Geometry</a>.</p>
+<p>For more details, see the <a href="QtQuick.scenegraph-customgeometry/">Scene Graph - Custom Geometry</a>.</p>
 <h4 >Preprocessing</h4>
 <p>Nodes have a virtual QSGNode::preprocess() function, which will be called before the scene graph is rendered. Node subclasses can set the flag QSGNode::UsePreprocess and override the QSGNode::preprocess() function to do final preparation of their node. For example, dividing a bezier curve into the correct level of detail for the current scale factor or updating a section of a texture.</p>
 <h4 >Node Ownership</h4>
@@ -47,7 +47,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 <tr class="odd topAlign"><td class="tblName"><p>QSGVertexColorMaterial</p></td><td class="tblDescr"><p>Convenient way of rendering per-vertex colored geometry in the scene graph</p></td></tr>
 </table>
 </p>
-<p>For more details, see the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.scenegraph-simplematerial/">Scene Graph - Simple Material</a></p>
+<p>For more details, see the <a href="QtQuick.scenegraph-simplematerial/">Scene Graph - Simple Material</a></p>
 <h3 >Convenience Nodes</h3>
 <p>The scene graph API is very low-level and focuses on performance rather than convenience. Writing custom geometries and materials from scratch, even the most basic ones, requires a non-trivial amount of code. For this reason, the API includes a few convenience classes to make the most common custom nodes readily available.</p>
 <ul>
@@ -89,7 +89,7 @@ Title: QtQuick.qtquick-visualcanvas-scenegraph
 <h3 >Mixing Scene Graph and OpenGL</h3>
 <p>The scene graph offers two methods for integrating OpenGL content: by calling OpenGL commands directly and by creating a textured node in the scene graph.</p>
 <p>By connecting to the QQuickWindow::beforeRendering() and QQuickWindow::afterRendering() signals, applications can make OpenGL calls directly into the same context as the scene graph is rendering to. As the signal names indicate, the user can then render OpenGL content either under a Qt Quick scene or over it. The benefit of integrating in this manner is that no extra framebuffer nor memory is needed to perform the rendering. The downside is that Qt Quick decides when to call the signals and this is the only time the OpenGL application is allowed to draw.</p>
-<p>The <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.scenegraph-openglunderqml/">Scene Graph - OpenGL Under QML</a> example gives an example on how to use these signals.</p>
+<p>The <a href="QtQuick.scenegraph-openglunderqml/">Scene Graph - OpenGL Under QML</a> example gives an example on how to use these signals.</p>
 <p>The other alternative is to create a QQuickFramebufferObject, render into it, and let it be displayed in the scene graph as a texture. The Scene Graph - Rendering FBOs example shows how this can be done. It is also possible to combine multiple rendering contexts and multiple threads to create content to be displayed in the scene graph. The Scene Graph - Rendering FBOs in a thread examples show how this can be done.</p>
 <p><b>Warning:</b> When mixing OpenGL content with scene graph rendering, it is important the application does not leave the OpenGL context in a state with buffers bound, attributes enabled, special values in the z-buffer or stencil-buffer or similar. Doing so can result in unpredictable behavior.</p>
 <p><b>Warning:</b> The OpenGL rendering code must be thread aware, as the rendering might be happening outside the GUI thread.</p>

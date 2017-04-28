@@ -21,7 +21,7 @@ Title: QtQuick.NumberAnimation
 <!-- $$$NumberAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">NumberAnimation</a> is a specialized <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.animation/#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a numerical value changes.</p>
+<p><a href="index.html">NumberAnimation</a> is a specialized <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a numerical value changes.</p>
 <p>Here is a <a href="index.html">NumberAnimation</a> applied to the <code>x</code> property of a <a href="QtQuick.Rectangle.md">Rectangle</a> as a property value source. It animates the <code>x</code> value from its current value to a value of 50, over 1000 milliseconds:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -31,7 +31,7 @@ NumberAnimation on <span class="name">x</span> { <span class="name">to</span>: <
 }</pre>
 <p>Like any other animation type, a <a href="index.html">NumberAnimation</a> can be applied in a number of ways, including transitions, behaviors and property value sources. The <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> documentation shows a variety of methods for creating animations.</p>
 <p>Note that <a href="index.html">NumberAnimation</a> may not animate smoothly if there are irregular changes in the number value that it is tracking. If this is the case, use <a href="QtQuick.SmoothedAnimation.md">SmoothedAnimation</a> instead.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@NumberAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$from -->

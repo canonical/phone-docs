@@ -80,7 +80,7 @@ Title: QtQuick.Text
 <p>The <a href="#elide-prop">elide</a> property can alternatively be used to fit a single line of plain text to a set width.</p>
 <p>Note that the Supported HTML Subset is limited. Also, if the text contains HTML img tags that load remote images, the text is reloaded.</p>
 <p>Text provides read-only text. For editable text, see <a href="QtQuick.TextEdit.md">TextEdit</a>.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.text/#fonts">Fonts example</a>.</p>
+<p><b>See also </b><a href="QtQuick.text/#fonts">Fonts example</a>.</p>
 <!-- @@@Text -->
 <h2>Property Documentation</h2>
 <!-- $$$baseUrl -->

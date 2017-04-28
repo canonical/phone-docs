@@ -31,7 +31,7 @@ Title: QtContacts.RelationshipModel
 </p>
 <p>This element is part of the <b>QtContacts</b> module.</p>
 <p>The contents of the model can be specified with <a href="#participantId-prop">participantId</a>, <a href="#role-prop">role</a> and <a href="#relationshipType-prop">relationshipType</a> properties. Whether the model is automatically updated when the store or filter changes, can be controlled with <a href="#autoUpdate-prop">RelationshipModel::autoUpdate</a> property.</p>
-<p>There are two ways of accessing the relationship data: through model by using views and delegates, or alternatively via <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtContacts.qtcontacts-overview/#relationships">relationships</a> list property.</p>
+<p>There are two ways of accessing the relationship data: through model by using views and delegates, or alternatively via <a href="QtContacts.qtcontacts-overview.md#relationships">relationships</a> list property.</p>
 <p>At the moment only data role provided by the model is <code>relationship</code> (<a href="QtContacts.Relationship.md">Relationship</a>). Through that one can access any data provided by the Relationship element.</p>
 <p><b>See also </b>Relationship and QContactRelationship.</p>
 <!-- @@@RelationshipModel -->

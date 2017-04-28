@@ -94,7 +94,7 @@ PropertyChanges { target: img; opacity: <span class="number">0</span> }
 }
 ]</pre>
 <p>Now the game is beautifully animated, with subtle (or not-so-subtle) animations added for all of the player's actions. The end result is shown below, with a different set of images to demonstrate basic theming:</p>
-<p class="centerAlign"><img src="../../../media/declarative-adv-tutorial4.gif" alt="" /></p><p>The theme change here is produced simply by replacing the block images. This can be done at runtime by changing the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#image">Image</a> <code>source</code> property, so for a further challenge, you could add a button that toggles between themes with different images.</p>
+<p class="centerAlign"><img src="../../../media/declarative-adv-tutorial4.gif" alt="" /></p><p>The theme change here is produced simply by replacing the block images. This can be done at runtime by changing the <a href="QtQuick.imageelements/#image">Image</a> <code>source</code> property, so for a further challenge, you could add a button that toggles between themes with different images.</p>
 <h3 >Keeping a High Scores table</h3>
 <p>Another feature we might want to add to the game is a method of storing and retrieving high scores.</p>
 <p>To do this, we will show a dialog when the game is over to request the player's name and add it to a High Scores table. This requires a few changes to <code>Dialog.qml</code>. In addition to a <code>Text</code> type, it now has a <code>TextInput</code> child item for receiving keyboard text input:</p>
@@ -215,5 +215,5 @@ postman.send(postData);
 </ul>
 <!-- @@@tutorials/samegame/samegame4 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.tutorials-samegame-samegame3/">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
+<a class="prevPage" href="QtQuick.tutorials-samegame-samegame3/">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
 </p>

@@ -89,7 +89,7 @@ Title: QtQuick.MouseArea
 }
 }
 }</pre>
-<p><b>See also </b><a href="QtQuick.MouseEvent.md">MouseEvent</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.mousearea/">MouseArea example</a>, and <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
+<p><b>See also </b><a href="QtQuick.MouseEvent.md">MouseEvent</a>, <a href="QtQuick.mousearea.md">MouseArea example</a>, and <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
 <!-- @@@MouseArea -->
 <h2>Property Documentation</h2>
 <!-- $$$acceptedButtons -->
@@ -305,7 +305,7 @@ Title: QtQuick.MouseArea
 <h2>Signal Documentation</h2>
 <!-- $$$canceled -->
 <table class="qmlname"><tr valign="top" id="canceled-signal"><td class="tblQmlFuncNode"><p><span class="name">canceled</span>()</p></td></tr></table><p>This signal is emitted when mouse events have been canceled, either because an event was not accepted, or because another item stole the mouse event handling.</p>
-<p>This signal is for advanced use: it is useful when there is more than one <a href="index.html">MouseArea</a> that is handling input, or when there is a <a href="index.html">MouseArea</a> inside a <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.touchinteraction/#flickable">Flickable</a>. In the latter case, if you execute some logic in the <code>onPressed</code> signal handler and then start dragging, the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.touchinteraction/#flickable">Flickable</a> will steal the mouse handling from the <a href="index.html">MouseArea</a>. In these cases, to reset the logic when the <a href="index.html">MouseArea</a> has lost the mouse handling to the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.touchinteraction/#flickable">Flickable</a>, <code>canceled</code> should be handled in addition to <a href="#released-signal">released</a>.</p>
+<p>This signal is for advanced use: it is useful when there is more than one <a href="index.html">MouseArea</a> that is handling input, or when there is a <a href="index.html">MouseArea</a> inside a <a href="QtQuick.touchinteraction.md#flickable">Flickable</a>. In the latter case, if you execute some logic in the <code>onPressed</code> signal handler and then start dragging, the <a href="QtQuick.touchinteraction.md#flickable">Flickable</a> will steal the mouse handling from the <a href="index.html">MouseArea</a>. In these cases, to reset the logic when the <a href="index.html">MouseArea</a> has lost the mouse handling to the <a href="QtQuick.touchinteraction.md#flickable">Flickable</a>, <code>canceled</code> should be handled in addition to <a href="#released-signal">released</a>.</p>
 <p>The corresponding handler is <code>onCanceled</code>.</p>
 <!-- @@@canceled -->
 <br/>

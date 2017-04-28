@@ -23,7 +23,7 @@ Title: QtQuick.qml-tutorial1
 }</pre>
 <h2 id="walkthrough">Walkthrough</h2>
 <h3 >Import</h3>
-<p>First, we need to import the types that we need for this example. Most QML files will import the built-in QML types (like <a href="QtQuick.Rectangle.md">Rectangle</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#image">Image</a>, ..&#x2e;) that come with Qt, using:</p>
+<p>First, we need to import the types that we need for this example. Most QML files will import the built-in QML types (like <a href="QtQuick.Rectangle.md">Rectangle</a>, <a href="QtQuick.imageelements/#image">Image</a>, ..&#x2e;) that come with Qt, using:</p>
 <pre class="qml">import QtQuick 2.0</pre>
 <h3 >Rectangle Type</h3>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

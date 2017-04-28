@@ -49,7 +49,7 @@ Title: QtQuick.Column
 <span class="name">Keys</span>.onSpacePressed: <span class="name">greenRect</span>.<span class="name">visible</span> <span class="operator">=</span> !<span class="name">greenRect</span>.<span class="name">visible</span>
 }</pre>
 <p>When the Space key is pressed, the <a href="QtQuick.Item.md#visible-prop">visible</a> value of the green <a href="QtQuick.Rectangle.md">Rectangle</a> is toggled. As it appears and disappears, the blue <a href="QtQuick.Rectangle.md">Rectangle</a> moves within the Column, and the <a href="#move-prop">move</a> transition is automatically applied to the blue <a href="QtQuick.Rectangle.md">Rectangle</a>:</p>
-<p class="centerAlign"><img src="../../../media/verticalpositioner_transition.gif" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#grid">Grid</a>, <a href="QtQuick.qtquick-positioning-layouts.md#flow">Flow</a>, <a href="QtQuick.Positioner.md">Positioner</a>, ColumnLayout, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p class="centerAlign"><img src="../../../media/verticalpositioner_transition.gif" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#grid">Grid</a>, <a href="QtQuick.qtquick-positioning-layouts.md#flow">Flow</a>, <a href="QtQuick.Positioner.md">Positioner</a>, ColumnLayout, and <a href="QtQuick.positioners.md">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@Column -->
 <h2>Property Documentation</h2>
 <!-- $$$add -->
@@ -59,7 +59,7 @@ Title: QtQuick.Column
 <li>Child items that change their <a href="QtQuick.Item.md#visible-prop">Item::visible</a> property from false to true, and thus are now visible</li>
 </ul>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being added. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>Note: </b>This transition is not applied to the items that already part of the positioner at the time of its creation. In this case, the <a href="#populate-prop">populate</a> transition is applied instead.</p><p><b>See also </b><a href="#populate-prop">populate</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>Note: </b>This transition is not applied to the items that already part of the positioner at the time of its creation. In this case, the <a href="#populate-prop">populate</a> transition is applied instead.</p><p><b>See also </b><a href="#populate-prop">populate</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners.md">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@add -->
 <br/>
 <!-- $$$move -->
@@ -69,13 +69,13 @@ Title: QtQuick.Column
 <li>Child items that are repositioned due to the resizing of other items in the positioner</li>
 </ul>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being moved. Note, however, that for this move transition, the <a href="QtQuick.ViewTransition.md">ViewTransition</a>.targetIndexes and <a href="QtQuick.ViewTransition.md">ViewTransition</a>.targetItems lists are only set when this transition is triggered by the addition of other items in the positioner; in other cases, these lists will be empty. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>Note: </b>In Qt Quick 1, this transition was applied to all items that were part of the positioner at the time of its creation. From <a href="QtQuick.qtquick-index.md">Qt Quick 2</a> onwards, positioners apply the <a href="#populate-prop">populate</a> transition to these items instead.</p><p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>Note: </b>In Qt Quick 1, this transition was applied to all items that were part of the positioner at the time of its creation. From <a href="QtQuick.qtquick-index.md">Qt Quick 2</a> onwards, positioners apply the <a href="#populate-prop">populate</a> transition to these items instead.</p><p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners.md">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@move -->
 <br/>
 <!-- $$$populate -->
 <table class="qmlname"><tr valign="top" id="populate-prop"><td class="tblQmlPropNode"><p><span class="name">populate</span> : <span class="type"><a href="QtQuick.Transition.md">Transition</a></span></p></td></tr></table><p>This property holds the transition to be run for items that are part of this positioner at the time of its creation. The transition is run when the positioner is first created.</p>
 <p>The transition can use the <a href="QtQuick.ViewTransition.md">ViewTransition</a> property to access more details about the item that is being added. See the <a href="QtQuick.ViewTransition.md">ViewTransition</a> documentation for more details and examples on using these transitions.</p>
-<p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.positioners/">Qt Quick Examples - Positioners</a>.</p>
+<p><b>See also </b><a href="#add-prop">add</a>, <a href="QtQuick.ViewTransition.md">ViewTransition</a>, and <a href="QtQuick.positioners.md">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@populate -->
 <br/>
 <!-- $$$spacing -->

@@ -29,7 +29,7 @@ map<span class="operator">.</span>center <span class="operator">=</span> positio
 }</pre>
 <h3 >Geocoding</h3>
 <p><a href="http://en.wikipedia.org/wiki/Geocoding">Geocoding</a> is the derivation of geographical coordinates (latitude and longitude) from other geographical references to the locations. For example, this can be a street address. Reverse geocoding is also possible with a street address being used to determine a geographical coordinate. Geocoding is performed by using the GeoCodeModel type.</p>
-<p>The following code examples are a small part of the <code>map</code> component in the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.mapviewer/">Map Viewer (QML)</a> example. The snippets demonstrate the declaration of the <a href="QtLocation.GeocodeModel.md">GeocodeModel</a> component.</p>
+<p>The following code examples are a small part of the <code>map</code> component in the <a href="QtLocation.mapviewer.md">Map Viewer (QML)</a> example. The snippets demonstrate the declaration of the <a href="QtLocation.GeocodeModel.md">GeocodeModel</a> component.</p>
 <p>In the snippet we see that the <code>geocodeModel</code> property contains the plugin and two signal handlers. One for changes in status (<code>onStatusChanged</code> ) and the other to update the centering of the Map object (<code>onLocationsChanged</code> ).</p>
 <pre class="qml">    property <span class="type"><a href="QtLocation.GeocodeModel.md">GeocodeModel</a></span> <span class="name">geocodeModel</span>: <span class="name">GeocodeModel</span> {
 <span class="name">plugin</span>: <span class="name">map</span>.<span class="name">plugin</span>
@@ -149,7 +149,7 @@ property <span class="type">string</span> <span class="name">distance</span>
 <span class="name">delegate</span>: <span class="name">routeDelegate</span>
 <span class="name">autoFitViewport</span>: <span class="number">true</span>
 }</pre>
-<p>For more information on the example see the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.mapviewer/">Map Viewer (QML)</a> example.</p>
+<p>For more information on the example see the <a href="QtLocation.mapviewer.md">Map Viewer (QML)</a> example.</p>
 <h3 >Zoom, Pinch and Flickable</h3>
 <p>The <a href="QtLocation.Map.md">Map</a> item also supports user interface interactions with the map using tactile and mouse gestures. That is features such as swiping to pan, pinching to zoom.</p>
 <p>Enabling and configuring pinch and flickable is easy within the <a href="QtLocation.Map.md">Map</a> type.</p>
@@ -193,5 +193,5 @@ property <span class="type">string</span> <span class="name">distance</span>
 <tr class="odd topAlign"><td class="tblName"><p><a href="QtLocation.RouteSegment.md">RouteSegment</a></p></td><td class="tblDescr"><p>Type represents a segment of a Route</p></td></tr>
 </table>
 <h2 id="example">Example</h2>
-<p>The above snippets are taken from the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.1/QtLocation.mapviewer/">Map Viewer (QML)</a> example.</p>
+<p>The above snippets are taken from the <a href="QtLocation.mapviewer.md">Map Viewer (QML)</a> example.</p>
 <!-- @@@qml-location5-maps.html -->

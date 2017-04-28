@@ -89,7 +89,7 @@ painter<span class="operator">-</span><span class="operator">&gt;</span>drawConv
 <span class="name">spacing</span>: <span class="number">5</span>
 <span class="name">width</span>: <span class="name">parent</span>.<span class="name">width</span>
 }</pre>
-<p>The balloonModel contains two types at application start which will be displayed by the <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.customitems-painteditem/#balloonview">balloonView</a>. The <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.customitems-painteditem/#balloonview">balloonView</a> alernates the TextBalloon delegate items between left-aligned and right-aligned.</p>
+<p>The balloonModel contains two types at application start which will be displayed by the <a href="QtQuick.customitems-painteditem.md#balloonview">balloonView</a>. The <a href="QtQuick.customitems-painteditem.md#balloonview">balloonView</a> alernates the TextBalloon delegate items between left-aligned and right-aligned.</p>
 <h3 >Controls</h3>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">controls</span>

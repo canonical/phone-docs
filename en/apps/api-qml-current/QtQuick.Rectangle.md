@@ -47,7 +47,7 @@ Title: QtQuick.Rectangle
 <br style="clear: both" />
 <h2 id="performance">Performance</h2>
 <p>Using the <a href="QtQuick.Item.md#antialiasing-prop">Item::antialiasing</a> property improves the appearance of a rounded rectangle at the cost of rendering performance. You should consider unsetting this property for rectangles in motion, and only set it when they are stationary.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtQuick.imageelements/#image">Image</a>.</p>
+<p><b>See also </b><a href="QtQuick.imageelements/#image">Image</a>.</p>
 <!-- @@@Rectangle -->
 <h2>Property Documentation</h2>
 <!-- $$$antialiasing -->

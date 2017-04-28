@@ -13,13 +13,13 @@ Title: QtFeedback.ThemeEffect
 </ul>
 <h2 id="properties">Properties</h2>
 <ul>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.themeeffect.md#effect-prop">effect</a></b></b> : ThemeEffect</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.themeeffect.md#supported-prop">supported</a></b></b> : bool</li>
+<li class="fn"><b><b><a href="QtFeedback.themeeffect.md#effect-prop">effect</a></b></b> : ThemeEffect</li>
+<li class="fn"><b><b><a href="QtFeedback.themeeffect.md#supported-prop">supported</a></b></b> : bool</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.themeeffect.md#play-method-2">play</a></b></b>(Effect)</li>
-<li class="fn"><b><b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.themeeffect.md#play-method">play</a></b></b>()</li>
+<li class="fn"><b><b><a href="QtFeedback.themeeffect.md#play-method-2">play</a></b></b>(Effect)</li>
+<li class="fn"><b><b><a href="QtFeedback.themeeffect.md#play-method">play</a></b></b>()</li>
 </ul>
 <!-- $$$ThemeEffect-description -->
 <h2 id="details">Detailed Description</h2>
@@ -84,7 +84,7 @@ Effect.play(Effect.Press)
 <!-- @@@ThemeEffect -->
 <h2>Property Documentation</h2>
 <!-- $$$effect -->
-<table class="qmlname"><tr valign="top" id="effect-prop"><td class="tblQmlPropNode"><p><span class="name">effect</span> : <span class="type"><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtFeedback.themeeffect.md">ThemeEffect</a></span></p></td></tr></table><p>This property holds the specific themed effect type to play. It is one of:</p>
+<table class="qmlname"><tr valign="top" id="effect-prop"><td class="tblQmlPropNode"><p><span class="name">effect</span> : <span class="type"><a href="QtFeedback.themeeffect.md">ThemeEffect</a></span></p></td></tr></table><p>This property holds the specific themed effect type to play. It is one of:</p>
 <p>Effect.Undefined - Undefined feedback. No feedback is given.</p>
 <p>Effect.Press - Feedback for when the screen is pressed.</p>
 <p>Effect.Release - Feedback for touch release.</p>

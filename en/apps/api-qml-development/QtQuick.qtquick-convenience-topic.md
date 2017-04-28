@@ -10,7 +10,7 @@ Title: QtQuick.qtquick-convenience-topic
 <h2 id="dynamic-object-instantiation">Dynamic Object Instantiation</h2>
 <p>QML provides a number of ways to dynamically create and manage QML objects.</p>
 <p>Objects can be created dynamically from within imperative JavaScript code in various ways. See Dynamic QML object creation from JavaScript for more details.</p>
-<p>Qt Quick provides the <a href="QtQuick.Loader.md">Loader</a>, <a href="QtQuick.Repeater.md">Repeater</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.draganddrop/#gridview">GridView</a> and <a href="QtQuick.PathView.md">PathView</a> types which also support dynamic object management, and provide a declarative API.</p>
+<p>Qt Quick provides the <a href="QtQuick.Loader.md">Loader</a>, <a href="QtQuick.Repeater.md">Repeater</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.draganddrop.md#gridview">GridView</a> and <a href="QtQuick.PathView.md">PathView</a> types which also support dynamic object management, and provide a declarative API.</p>
 <p>Please see the performance guide for more information on using dynamic instantiation and lazy initialization to improve application performance.</p>
 <h2 id="dynamic-bindings">Dynamic Bindings</h2>
 <p>Property bindings are a fundamental feature of QML. Typically, a property is initialized with its binding. However, the Binding type and Qt.binding() function allows the client to dynamically bind properties from any object at run-time, and modify the binding target when required (or when it becomes available).</p>

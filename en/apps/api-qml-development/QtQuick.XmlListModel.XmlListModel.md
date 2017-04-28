@@ -33,7 +33,7 @@ Title: QtQuick.XmlListModel.XmlListModel
 </p>
 <p>To use this element, you will need to import the module with the following line:</p>
 <pre class="cpp">import <span class="type">QtQuick</span><span class="operator">.</span>XmlListModel <span class="number">2.0</span></pre>
-<p><a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a> is used to create a read-only model from XML data. It can be used as a data source for view elements (such as <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.draganddrop/#gridview">GridView</a>) and other elements that interact with model data (such as <a href="QtQuick.Repeater.md">Repeater</a>).</p>
+<p><a href="QtQuick.qtquick-modelviewsdata-modelview.md#xmllistmodel">XmlListModel</a> is used to create a read-only model from XML data. It can be used as a data source for view elements (such as <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, <a href="QtQuick.draganddrop.md#gridview">GridView</a>) and other elements that interact with model data (such as <a href="QtQuick.Repeater.md">Repeater</a>).</p>
 <p>For example, if there is a XML document at http://www.mysite.com/feed.xml like this:</p>
 <pre class="cpp"><span class="operator">&lt;</span><span class="operator">?</span>xml version<span class="operator">=</span><span class="string">&quot;1.0&quot;</span> encoding<span class="operator">=</span><span class="string">&quot;utf-8&quot;</span><span class="operator">?</span><span class="operator">&gt;</span>
 <span class="operator">&lt;</span>rss version<span class="operator">=</span><span class="string">&quot;2.0&quot;</span><span class="operator">&gt;</span>
@@ -75,7 +75,7 @@ import QtQuick.XmlListModel 2.0
 <p>Then when <a href="#reload-method">reload()</a> is called, the model will only add and reload items with a &quot;pubDate&quot; value that is not already present in the model.</p>
 <p>This is useful when displaying the contents of XML documents that are incrementally updated (such as RSS feeds) to avoid repainting the entire contents of a model in a view.</p>
 <p>If multiple key roles are specified, the model only adds and reload items with a combined value of all key roles that is not already present in the model.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.demos-rssnews/">Qt Quick Demo - RSS News</a>.</p>
+<p><b>See also </b><a href="QtQuick.demos-rssnews.md">Qt Quick Demo - RSS News</a>.</p>
 <!-- @@@XmlListModel -->
 <h2>Property Documentation</h2>
 <!-- $$$count -->

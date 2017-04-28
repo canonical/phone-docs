@@ -39,7 +39,7 @@ Title: QtQuick.qtquick-demos-clocks-example
 <p>For each list element, we use the <code>cityName</code> role to specify the name of a city and the <code>timeShift</code> role to specify a time zone as a positive or negative offset from UTC (coordinated universal time).</p>
 <p>The Clock custom type is used as the <a href="QtQuick.ListView.md">ListView</a>'s <code>delegate</code>, defining the visual appearance of list items. To use the Clock type, we add an import statement that imports the folder called <code>content</code> where the type is located:</p>
 <pre class="qml">import &quot;content&quot; as Content</pre>
-<p>We use an <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> type to display arrows that indicate whether users can flick the view to see more clocks on the left or right:</p>
+<p>We use an <a href="QtQuick.imageelements.md#image">Image</a> type to display arrows that indicate whether users can flick the view to see more clocks on the left or right:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">anchors</span>.left: <span class="name">parent</span>.<span class="name">left</span>
 <span class="name">anchors</span>.bottom: <span class="name">parent</span>.<span class="name">bottom</span>
@@ -73,13 +73,13 @@ var <span class="name">date</span> = new <span class="name">Date</span>;
 <span class="name">interval</span>: <span class="number">100</span>; <span class="name">running</span>: <span class="number">true</span>; <span class="name">repeat</span>: <span class="number">true</span>;
 <span class="name">onTriggered</span>: <span class="name">clock</span>.<span class="name">timeChanged</span>()
 }</pre>
-<p>We use <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> types within an <a href="QtQuick.Item.md">Item</a> type to display the time on an analog clock face. Different images are used for daytime and nighttime hours:</p>
+<p>We use <a href="QtQuick.imageelements.md#image">Image</a> types within an <a href="QtQuick.Item.md">Item</a> type to display the time on an analog clock face. Different images are used for daytime and nighttime hours:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 <span class="name">width</span>: <span class="number">200</span>; <span class="name">height</span>: <span class="number">240</span>
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> { <span class="name">id</span>: <span class="name">background</span>; <span class="name">source</span>: <span class="string">&quot;clock.png&quot;</span>; <span class="name">visible</span>: <span class="name">clock</span>.<span class="name">night</span> <span class="operator">==</span> <span class="number">false</span> }
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> { <span class="name">source</span>: <span class="string">&quot;clock-night.png&quot;</span>; <span class="name">visible</span>: <span class="name">clock</span>.<span class="name">night</span> <span class="operator">==</span> <span class="number">true</span> }</pre>
-<p>A <a href="QtQuick.Rotation.md">Rotation</a> transform applied to <a href="https://developer.ubuntu.comapps/qml/sdk-15.04.6/QtQuick.imageelements/#image">Image</a> types provides a way to rotate the clock hands. The <code>origin</code> property holds the point that stays fixed relative to the parent as the rest of the item rotates. The <code>angle</code> property determines the angle to rotate the hands in degrees clockwise.</p>
+<p>A <a href="QtQuick.Rotation.md">Rotation</a> transform applied to <a href="QtQuick.imageelements.md#image">Image</a> types provides a way to rotate the clock hands. The <code>origin</code> property holds the point that stays fixed relative to the parent as the rest of the item rotates. The <code>angle</code> property determines the angle to rotate the hands in degrees clockwise.</p>
 <pre class="qml">        <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">x</span>: <span class="number">92.5</span>; <span class="name">y</span>: <span class="number">27</span>
 <span class="name">source</span>: <span class="string">&quot;hour.png&quot;</span>
