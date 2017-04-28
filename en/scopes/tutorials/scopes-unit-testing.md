@@ -11,7 +11,7 @@ quality of your Ubuntu scope. It builds upon the scopes development tutorials.
 ## Requirements
 
   * **Ubuntu 14.10 or later**  
-[Get Ubuntu](http://www.ubuntu.com/download/desktop/)
+[Get Ubuntu](https://www.ubuntu.com/download/desktop/)
   * **The scopes development tutorial**  
 If you haven't already, [complete the scopes tutorials.](index.md)
   * **googletest**  

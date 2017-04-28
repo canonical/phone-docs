@@ -1,8 +1,8 @@
 ---
-Title: index.html
+Title: Autopilot API - 1.6.0 - development
 ---
 
-# index.html
+# Autopilot API - 1.6.0 - development
 
 <h3 class="section_title">Scopes</h3>
 <ul>

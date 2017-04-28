@@ -197,8 +197,6 @@ navigation:
             location: apps/api-autopilot-current/guides-page_object.md
           - title: guides-running_ap
             location: apps/api-autopilot-current/guides-running_ap.md
-          - title: index
-            location: apps/api-autopilot-current/index.md
           - title: porting-porting
             location: apps/api-autopilot-current/porting-porting.md
           - title: scope_harness.Category
@@ -360,8 +358,6 @@ navigation:
             location: apps/api-autopilot-development/guides-page_object.md
           - title: guides-running_ap
             location: apps/api-autopilot-development/guides-running_ap.md
-          - title: index
-            location: apps/api-autopilot-development/index.md
           - title: porting-porting
             location: apps/api-autopilot-development/porting-porting.md
           - title: scope_harness.Category

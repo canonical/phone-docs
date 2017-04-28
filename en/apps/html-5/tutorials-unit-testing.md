@@ -11,7 +11,7 @@ tutorials.
 ## Requirements
 
   * Ubuntu 14.10 or later
-    * [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
+    * [Get Ubuntu](https://www.ubuntu.com/download/desktop/)
   * The HTML5 development tutorials
     * If you haven't already complete the [HTML5 development tutorials](index.md)
   * nodejs

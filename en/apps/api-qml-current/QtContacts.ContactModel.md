@@ -82,7 +82,7 @@ Title: QtContacts.ContactModel
 <br/>
 <!-- $$$contacts -->
 <table class="qmlname"><tr valign="top" id="contacts-prop"><td class="tblQmlPropNode"><p><span class="name">contacts</span> : <span class="type">list</span>&lt;<span class="type"><a href="QtContacts.Contact.md">Contact</a></span>&gt;</p></td></tr></table><p>This property holds the list of contacts.</p>
-<p><b>See also </b><a href="https://developer.ubuntu.comapps/qml/sdk-15.04.5/QtContacts.qtcontacts-overview/#contact">Contact</a>.</p>
+<p><b>See also </b><a href="QtContacts.md#contact">Contact</a>.</p>
 <!-- @@@contacts -->
 <br/>
 <!-- $$$error -->

@@ -1,8 +1,8 @@
 ---
-Title: index.html
+Title: Autopilot API - 1.5.0 - current
 ---
 
-# index.html
+# Autopilot API - 1.5.0 - current
 
 <h3 class="section_title">Scopes</h3>
 <ul>

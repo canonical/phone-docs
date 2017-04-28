@@ -82,7 +82,7 @@ the html5 player element:
     </div>
 
 You can find more documentation on Web APIs at
-[webplatform.org](https://docs.webplatform.org/wiki/apis).
+[webplatform.org](http://docs.webplatform.org/apis).
 
 ## How to use Ubuntu APIs in your application
 

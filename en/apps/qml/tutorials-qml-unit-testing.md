@@ -10,7 +10,7 @@ Tutorial.
 
 ## Requirements
 
-  * **Ubuntu 14.04 or later**  - [Get Ubuntu](http://www.ubuntu.com/download/desktop/)
+  * **Ubuntu 14.04 or later**  - [Get Ubuntu](https://www.ubuntu.com/download/desktop/)
   * **The Currency Converter tutorial**  - if you haven't already, [complete the Currency Convertertutorial](tutorials-building-your-first-qml-app.md)
   * **The QML test runner tool**  - open a terminal with `Ctrl+Alt+T` and run these commands to install all required
 packages:
