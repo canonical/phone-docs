@@ -154,7 +154,7 @@ for an application is by calling either
 <h2><a class="toc-backref" href="#id16">Autopilot Qt &amp; Gtk Support</a><a class="headerlink" href="#autopilot-qt-gtk-support" title="Permalink to this headline"></a></h2>
 <h3><a class="toc-backref" href="#id17">Q. How do I launch my application so that I can explore it with the vis tool?</a><a class="headerlink" href="#q-how-do-i-launch-my-application-so-that-i-can-explore-it-with-the-vis-tool" title="Permalink to this headline"></a></h3>
 <p>Autopilot can launch applications with Autopilot support enabled allowing you to
-explore and introspect the application using the <a class="reference internal" href="guides-running_ap.md/#visualise-introspection-tree"><em>vis
+explore and introspect the application using the <a class="reference internal" href="guides-running_ap.md#visualise-introspection-tree"><em>vis
 tool</em></a></p>
 <p>For instance launching gedit is as easy as:</p>
 <pre>$ autopilot3 launch gedit
@@ -166,7 +166,7 @@ the <strong>-i</strong> argument.</p>
 <p>For example, in our previous example Autopilot was able to automatically
 determine that gedit is a Gtk application and thus no further arguments were
 required.</p>
-<p>If we want to use the vis tool to introspect something like the <a class="reference internal" href="tutorial-getting_started.md/#tut-test-with-interaction"><em>testapp.py
+<p>If we want to use the vis tool to introspect something like the <a class="reference internal" href="tutorial-getting_started.md#tut-test-with-interaction"><em>testapp.py
 script</em></a> from an earlier tutorial we will need to
 inform autopilot that it is a Qt application so that it can enable the correct
 support:</p>

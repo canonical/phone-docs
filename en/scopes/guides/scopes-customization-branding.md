@@ -41,9 +41,9 @@ All appearance keys are optional. Some of them (like
 `PageHeader.Background`) require background scheme URIs, valid URIs for
 these keys include:
 
-  * `color:///#aarrggbb`
+  * `color://.md#aarrggbb`
   * `color:///black`
-  * `gradient:///#aarrggbb/#aarrggbb`
+  * `gradient://.md#aarrggbb.md#aarrggbb`
   * `/absolute/path/to/image`
   * [http://remote-server.com/path/to/image](http://remote-server.com/path/to/image)
 
@@ -97,7 +97,7 @@ will display. How to attach information to a field is explained in the [Sound Cl
   * **card-size**: Size of the result cards; possible values: “small”, “medium” (default), “large”; when using “category-layout”: “vertical-journal” any integer between 12 and 38
   * **overlay**: Overlay text data on top of the art; boolean, default false
   * **collapsed-rows**: Number of result rows displayed while the category is collapsed; possible values: any non-negative integer, where 0 fully expands the category (only affects grid and journal)
-  * **card-background**: Background color for the cards; string; URI in the format `color:///#rrggbb` or `color:///color_name` or `gradient:///#rrggbb/#rrggbb` or an image URI (will be stretched)
+  * **card-background**: Background color for the cards; string; URI in the format `color://.md#rrggbb` or `color:///color_name` or `gradient://.md#rrggbb.md#rrggbb` or an image URI (will be stretched)
 
 ### Components keys
 

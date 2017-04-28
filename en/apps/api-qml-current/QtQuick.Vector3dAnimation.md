@@ -20,7 +20,7 @@ Title: QtQuick.Vector3dAnimation
 <!-- $$$Vector3dAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">Vector3dAnimation</a> is a specialized <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a Vector3d value changes.</p>
+<p><a href="index.html">Vector3dAnimation</a> is a specialized <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a Vector3d value changes.</p>
 <p>Like any other animation type, a <a href="index.html">Vector3dAnimation</a> can be applied in a number of ways, including transitions, behaviors and property value sources. The <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> documentation shows a variety of methods for creating animations.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@Vector3dAnimation -->

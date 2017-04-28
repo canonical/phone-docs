@@ -21,7 +21,7 @@ Title: QtQuick.NumberAnimation
 <!-- $$$NumberAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">NumberAnimation</a> is a specialized <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a numerical value changes.</p>
+<p><a href="index.html">NumberAnimation</a> is a specialized <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> that defines an animation to be applied when a numerical value changes.</p>
 <p>Here is a <a href="index.html">NumberAnimation</a> applied to the <code>x</code> property of a <a href="QtQuick.Rectangle.md">Rectangle</a> as a property value source. It animates the <code>x</code> value from its current value to a value of 50, over 1000 milliseconds:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

@@ -157,7 +157,7 @@ When an application is run for the first time after being installed it won't
 see any accounts in the model, because – even if the user might have some
 accounts already configured in the System Settings – the user hasn't yet
 authorized it to use any accounts. The application needs to explicitly request
-access to the user's accounts, and this is done by invoking the [requestAccess()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.AccountModel/#requestAccess-method/) method:
+access to the user's accounts, and this is done by invoking the [requestAccess()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.AccountModel.md#requestAccess-method/) method:
 
 ``` QML
 import QtQuick 2.0
@@ -199,7 +199,7 @@ authentication token for that account. Depending on the authentication method
 being used, this could be an OAuth authentication token or, in case of
 services offering a basic login only, a username and a password. Obtaining the
 authentication token is simply done by accessing an `[Account](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/)` element and
-calling its `[authenticate()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticate-method)` method:
+calling its `[authenticate()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account.md#authenticate-method)` method:
 
 ``` QML
 import QtQuick 2.0
@@ -221,7 +221,7 @@ ListView {
 ```
 
 After the `authenticate()` method has been called, the `Account` object will
-emit the [authenticationReply()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account/#authenticationReply-signal) signal which will
+emit the [authenticationReply()](http://developer.ubuntu.com/api/qml/current/Ubuntu.OnlineAccounts.2.Account.md#authenticationReply-signal) signal which will
 carry a `reply` parameter with the authentication result. Applications might
 want to specify some additional parameters when performing the authentication;
 for example, an application which is logging into an account which supports

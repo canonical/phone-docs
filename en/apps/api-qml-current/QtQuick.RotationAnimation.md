@@ -21,7 +21,7 @@ Title: QtQuick.RotationAnimation
 <!-- $$$RotationAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">RotationAnimation</a> is a specialized <a href="QtQuick.animation/#propertyanimation">PropertyAnimation</a> that gives control over the direction of rotation during an animation.</p>
+<p><a href="index.html">RotationAnimation</a> is a specialized <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> that gives control over the direction of rotation during an animation.</p>
 <p>By default, it rotates in the direction of the numerical change; a rotation from 0 to 240 will rotate 240 degrees clockwise, while a rotation from 240 to 0 will rotate 240 degrees counterclockwise. The <a href="#direction-prop">direction</a> property can be set to specify the direction in which the rotation should occur.</p>
 <p>In the following example we use <a href="index.html">RotationAnimation</a> to animate the rotation between states via the shortest path:</p>
 <pre class="qml">import QtQuick 2.0

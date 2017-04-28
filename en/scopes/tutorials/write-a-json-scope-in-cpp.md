@@ -674,7 +674,7 @@ Icon = icon.png
 
 [Appearance]
 PageHeader.Logo = logo.png
-PageHeader.background = color:///#FFFFFF
+PageHeader.background = color://.md#FFFFFF
 PageHeader.ForegroundColor = #F8500F
 BackgroundColor = #FFFFFF
 PageHeader.DividerColor = #F8500F

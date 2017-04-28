@@ -279,7 +279,7 @@ current--;
 <span class="name">model</span>: <span class="name">visualModel</span>.<span class="name">parts</span>.<span class="name">grid</span>
 }</pre>
 <h2 id="objectmodel">ObjectModel</h2>
-<p><i>ObjectModel</i> uses an <a href="QtQuick.views/#objectmodel">ObjectModel</a> for the model instead of a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a>.</p>
+<p><i>ObjectModel</i> uses an <a href="QtQuick.views.md#objectmodel">ObjectModel</a> for the model instead of a <a href="QtQuick.qtquick-modelviewsdata-modelview.md#listmodel">ListModel</a>.</p>
 <pre class="qml">    <span class="type">ObjectModel</span> {
 <span class="name">id</span>: <span class="name">itemModel</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

@@ -128,7 +128,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <br/>
 <!-- $$$font -->
 <table class="qmlname"><tr valign="top" id="font-prop"><td class="tblQmlPropNode"><p><span class="name">font</span> : <span class="type">string</span></p></td></tr></table><p>Holds the current font settings.</p>
-<p>A subset of the <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-font">w3C 2d context standard for font</a> is supported:</p>
+<p>A subset of the <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-font">w3C 2d context standard for font</a> is supported:</p>
 <ul>
 <li>font-style (optional): normal | italic | oblique</li>
 <li>font-variant (optional): normal | small-caps</li>
@@ -244,7 +244,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <table class="qmlname"><tr valign="top" id="arc-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">arc</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>, <span class="type">real</span><i> radius</i>, <span class="type">real</span><i> startAngle</i>, <span class="type">real</span><i> endAngle</i>, <span class="type">bool</span><i> anticlockwise</i>)</p></td></tr></table><p>Adds an arc to the current subpath that lies on the circumference of the circle whose center is at the point (<i>x</i>, <i>y</i>) and whose radius is <i>radius</i>.</p>
 <p>Both <code>startAngle</code> and <code>endAngle</code> are measured from the x-axis in radians.</p>
 <p class="centerAlign"><font color="red">[Missing image qml-item-canvas-arc.png]</font></p><p class="centerAlign"><img src="../../../media/qml-item-canvas-startAngle.png" alt="" /></p><p>The <i>anticlockwise</i> parameter is <code>true</code> for each arc in the figure above because they are all drawn in the anticlockwise direction.</p>
-<p><b>See also </b><a href="#arcTo-method">arcTo</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arc">W3C's 2D Context Standard for arc()</a>.</p>
+<p><b>See also </b><a href="#arcTo-method">arcTo</a> and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-arc">W3C's 2D Context Standard for arc()</a>.</p>
 <!-- @@@arc -->
 <br/>
 <!-- $$$arcTo -->
@@ -254,7 +254,7 @@ var ctx <span class="operator">=</span> canvas<span class="operator">.</span>get
 <li>Call the <a href="#moveTo-method">moveTo</a>(<code>x</code>, <code>y</code>) method to set your starting position on the canvas at the point (<code>x</code>, <code>y</code>).</li>
 <li>To draw an arc or circle, call the arcTo(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>radius</i>) method. This adds an arc with starting point (<i>x1</i>, <i>y1</i>), ending point (<i>x2</i>, <i>y2</i>), and <i>radius</i> to the current subpath and connects it to the previous subpath by a straight line.</li>
 </ul>
-<p class="centerAlign"><img src="../../../media/qml-item-canvas-arcTo.png" alt="" /></p><p><b>See also </b><a href="#arc-method">arc</a> and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-arcto">W3C's 2D Context Standard for arcTo()</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-item-canvas-arcTo.png" alt="" /></p><p><b>See also </b><a href="#arc-method">arc</a> and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-arcto">W3C's 2D Context Standard for arcTo()</a>.</p>
 <!-- @@@arcTo -->
 <br/>
 <!-- $$$beginPath -->
@@ -269,7 +269,7 @@ ctx<span class="operator">.</span><a href="#beginPath-method">beginPath</a>();
 ctx<span class="operator">.</span><a href="#moveTo-method">moveTo</a>(<span class="number">20</span><span class="operator">,</span> <span class="number">0</span>);<span class="comment">//start point</span>
 ctx<span class="operator">.</span>bezierCurveTo(<span class="operator">-</span><span class="number">10</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">210</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">180</span><span class="operator">,</span> <span class="number">0</span>);
 ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
-<p class="centerAlign"><img src="../../../media/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
 <!-- @@@bezierCurveTo -->
 <br/>
 <!-- $$$clearRect -->
@@ -284,12 +284,12 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <li>Call the <code>context.clip()</code> method.</li>
 </ol>
 <p>The new shape displays. The following shows how a clipping path can modify how an image displays:</p>
-<p class="centerAlign"><img src="../../../media/qml-item-canvas-clip-complex.png" alt="" /></p><p><b>See also </b><a href="#beginPath-method">beginPath()</a>, <a href="#closePath-method">closePath()</a>, <a href="#stroke-method">stroke()</a>, <a href="#fill-method">fill()</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-clip">W3C 2d context standard for clip</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-item-canvas-clip-complex.png" alt="" /></p><p><b>See also </b><a href="#beginPath-method">beginPath()</a>, <a href="#closePath-method">closePath()</a>, <a href="#stroke-method">stroke()</a>, <a href="#fill-method">fill()</a>, and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-clip">W3C 2d context standard for clip</a>.</p>
 <!-- @@@clip -->
 <br/>
 <!-- $$$closePath -->
 <table class="qmlname"><tr valign="top" id="closePath-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">closePath</span>()</p></td></tr></table><p>Closes the current subpath by drawing a line to the beginning of the subpath, automatically starting a new path. The current point of the new path is the previous subpath's first point.</p>
-<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-closepath">W3C 2d context standard for closePath</a>.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-closepath">W3C 2d context standard for closePath</a>.</p>
 <!-- @@@closePath -->
 <br/>
 <!-- $$$createConicalGradient -->
@@ -359,18 +359,18 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <!-- $$$drawImage -->
 <table class="qmlname"><tr valign="top" id="drawImage-method-3"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> sx</i>, <span class="type">real</span><i> sy</i>, <span class="type">real</span><i> sw</i>, <span class="type">real</span><i> sh</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>, <span class="type">real</span><i> dw</i>, <span class="type">real</span><i> dh</i>)</p></td></tr></table><p>This is an overloaded function. Draws the given item as <i>image</i> from source point (<i>sx</i>, <i>sy</i>) and source width <i>sw</i>, source height <i>sh</i> onto the canvas at point (<i>dx</i>, <i>dy</i>) and with width <i>dw</i>, height <i>dh</i>.</p>
 <p>Note: The <i>image</i> type can be an Image or Canvas item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
-<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements.md#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
 <!-- @@@drawImage -->
 <br/>
 <!-- $$$drawImage -->
 <table class="qmlname"><tr valign="top" id="drawImage-method-2"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>, <span class="type">real</span><i> dw</i>, <span class="type">real</span><i> dh</i>)</p></td></tr></table><p>This is an overloaded function. Draws the given item as <i>image</i> onto the canvas at point (<i>dx</i>, <i>dy</i>) and with width <i>dw</i>, height <i>dh</i>.</p>
 <p>Note: The <i>image</i> type can be an Image item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
-<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements.md#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
 <!-- @@@drawImage -->
 <br/>
 <!-- $$$drawImage -->
 <table class="qmlname"><tr valign="top" id="drawImage-method"><td class="tblQmlFuncNode"><p><span class="name">drawImage</span>(<span class="type">variant</span><i> image</i>, <span class="type">real</span><i> dx</i>, <span class="type">real</span><i> dy</i>)</p></td></tr></table><p>Draws the given <i>image</i> on the canvas at position (<i>dx</i>, <i>dy</i>). Note: The <i>image</i> type can be an Image item, an image url or a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object. When given as Image item, if the image isn't fully loaded, this method draws nothing. When given as url string, the image should be loaded by calling Canvas item's <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage()</a> method first. This image been drawing is subject to the current context clip path, even the given <code>image</code> is a <a href="QtQuick.CanvasImageData.md">CanvasImageData</a> object.</p>
-<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements/#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a>, <a href="QtQuick.imageelements.md#image">Image</a>, <a href="QtQuick.Canvas.md#loadImage-method">Canvas::loadImage</a>, <a href="QtQuick.Canvas.md#isImageLoaded-method">Canvas::isImageLoaded</a>, <a href="QtQuick.Canvas.md#imageLoaded-signal">Canvas::imageLoaded</a>, and <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-drawimage">W3C 2d context standard for drawImage</a>.</p>
 <!-- @@@drawImage -->
 <br/>
 <!-- $$$ellipse -->
@@ -380,7 +380,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <br/>
 <!-- $$$fill -->
 <table class="qmlname"><tr valign="top" id="fill-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">fill</span>()</p></td></tr></table><p>Fills the subpaths with the current fill style.</p>
-<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-fill">W3C 2d context standard for fill</a> and <a href="#fillStyle-prop">fillStyle</a>.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-fill">W3C 2d context standard for fill</a> and <a href="#fillStyle-prop">fillStyle</a>.</p>
 <!-- @@@fill -->
 <br/>
 <!-- $$$fillRect -->
@@ -399,7 +399,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <br/>
 <!-- $$$isPointInPath -->
 <table class="qmlname"><tr valign="top" id="isPointInPath-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">isPointInPath</span>(<span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Returns true if the given point is in the current path.</p>
-<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-ispointinpath">W3C 2d context standard for isPointInPath</a>.</p>
+<p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-ispointinpath">W3C 2d context standard for isPointInPath</a>.</p>
 <!-- @@@isPointInPath -->
 <br/>
 <!-- $$$lineTo -->
@@ -420,7 +420,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <br/>
 <!-- $$$quadraticCurveTo -->
 <table class="qmlname"><tr valign="top" id="quadraticCurveTo-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">quadraticCurveTo</span>(<span class="type">real</span><i> cpx</i>, <span class="type">real</span><i> cpy</i>, <span class="type">real</span><i> x</i>, <span class="type">real</span><i> y</i>)</p></td></tr></table><p>Adds a quadratic bezier curve between the current point and the endpoint (<code>x</code>, <code>y</code>) with the control point specified by (<code>cpx</code>, <code>cpy</code>).</p>
-<p>See <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-quadraticcurveto">W3C 2d context standard for quadraticCurveTo</a></p>
+<p>See <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-quadraticcurveto">W3C 2d context standard for quadraticCurveTo</a></p>
 <!-- @@@quadraticCurveTo -->
 <br/>
 <!-- $$$rect -->
@@ -485,7 +485,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <!-- $$$setTransform -->
 <table class="qmlname"><tr valign="top" id="setTransform-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">setTransform</span>(<span class="type">real</span><i> a</i>, <span class="type">real</span><i> b</i>, <span class="type">real</span><i> c</i>, <span class="type">real</span><i> d</i>, <span class="type">real</span><i> e</i>, <span class="type">real</span><i> f</i>)</p></td></tr></table><p>Changes the transformation matrix to the matrix given by the arguments as described below.</p>
 <p>Modifying the transformation matrix directly enables you to perform scaling, rotating, and translating transformations in a single step.</p>
-<p>Each point on the canvas is multiplied by the matrix before anything is drawn. The <a href="http://www.w3.org/TR/2dcontext/#transformations">HTML Canvas 2D Context specification</a> defines the transformation matrix as:</p>
+<p>Each point on the canvas is multiplied by the matrix before anything is drawn. The <a href="http://www.w3.org/TR/2dcontext#transformations">HTML Canvas 2D Context specification</a> defines the transformation matrix as:</p>
 <p class="centerAlign"><img src="../../../media/qml-item-canvas-math.png" alt="" /></p><p>where:</p>
 <ul>
 <li><code>a</code> is the scale factor in the horizontal (x) direction<p class="centerAlign"><img src="../../../media/qml-item-canvas-scalex.png" alt="" /></p></li>
@@ -506,7 +506,7 @@ ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
 <br/>
 <!-- $$$stroke -->
 <table class="qmlname"><tr valign="top" id="stroke-method"><td class="tblQmlFuncNode"><p><span class="type">object</span> <span class="name">stroke</span>()</p></td></tr></table><p>Strokes the subpaths with the current stroke style.</p>
-<p>See <a href="http://www.w3.org/TR/2dcontext/#dom-context-2d-stroke">W3C 2d context standard for stroke</a></p>
+<p>See <a href="http://www.w3.org/TR/2dcontext#dom-context-2d-stroke">W3C 2d context standard for stroke</a></p>
 <p><b>See also </b><a href="#strokeStyle-prop">strokeStyle</a>.</p>
 <!-- @@@stroke -->
 <br/>

@@ -683,7 +683,7 @@ PageHeader.Logo = logo.png
 BackgroundColor = #FFFFFF
 PageHeader.DividerColor = #743074
 PageHeader.ForegroundColor = #743074
-PageHeader.Background = color:///#FFFFFF
+PageHeader.Background = color://.md#FFFFFF
 PreviewButtonColor = #743074
 ```
 

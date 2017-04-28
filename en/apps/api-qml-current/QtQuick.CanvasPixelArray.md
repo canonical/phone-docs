@@ -19,7 +19,7 @@ Title: QtQuick.CanvasPixelArray
 <h2 id="details">Detailed Description</h2>
 </p>
 <p>The <a href="index.html">CanvasPixelArray</a> object provides ordered, indexed access to the color components of each pixel of the image data. The <a href="index.html">CanvasPixelArray</a> can be accessed as normal Javascript array.</p>
-<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a> and <a href="http://www.w3.org/TR/2dcontext/#canvaspixelarray">W3C 2d context standard for PixelArray</a>.</p>
+<p><b>See also </b><a href="QtQuick.CanvasImageData.md">CanvasImageData</a> and <a href="http://www.w3.org/TR/2dcontext#canvaspixelarray">W3C 2d context standard for PixelArray</a>.</p>
 <!-- @@@CanvasPixelArray -->
 <h2>Property Documentation</h2>
 <!-- $$$length -->

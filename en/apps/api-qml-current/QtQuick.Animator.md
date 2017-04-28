@@ -118,7 +118,7 @@ The peak amplitude can be set with the <i>amplitude</i> parameter, and the perio
 <p><code>easing.overshoot</code> is only applicable if <code>easing.type</code> is: <code>Easing.InBack</code>, <code>Easing.OutBack</code>, <code>Easing.InOutBack</code> or <code>Easing.OutInBack</code>.</p>
 <p><code>easing.period</code> is only applicable if easing.type is: <code>Easing.InElastic</code>, <code>Easing.OutElastic</code>, <code>Easing.InOutElastic</code> or <code>Easing.OutInElastic</code>.</p>
 <p><code>easing.bezierCurve</code> is only applicable if easing.type is: <code>Easing.Bezier</code>. This property is a list&lt;real&gt; containing groups of three points defining a curve from 0,0 to 1,1 - control1, control2, end point: [cx1, cy1, cx2, cy2, endx, endy, ..&#x2e;]&#x2e; The last point must be 1,1.</p>
-<p>See the <a href="QtQuick.animation/#easing-curves">Easing Curves</a> for a demonstration of the different easing settings.</p>
+<p>See the <a href="QtQuick.animation.md#easing-curves">Easing Curves</a> for a demonstration of the different easing settings.</p>
 <!-- @@@easing -->
 <br/>
 <!-- $$$from -->

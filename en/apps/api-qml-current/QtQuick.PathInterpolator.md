@@ -22,7 +22,7 @@ Title: QtQuick.PathInterpolator
 <!-- $$$PathInterpolator-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="QtQuick.animation/#pathinterpolator">PathInterpolator</a> provides <code>x</code>, <code>y</code>, and <code>angle</code> information for a particular <code>progress</code> along a path.</p>
+<p><a href="QtQuick.animation.md#pathinterpolator">PathInterpolator</a> provides <code>x</code>, <code>y</code>, and <code>angle</code> information for a particular <code>progress</code> along a path.</p>
 <p>In the following example, we animate a green rectangle along a bezier path.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -63,7 +63,7 @@ NumberAnimation on <span class="name">progress</span> { <span class="name">from<
 <br/>
 <!-- $$$progress -->
 <table class="qmlname"><tr valign="top" id="progress-prop"><td class="tblQmlPropNode"><p><span class="name">progress</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the current progress along the path.</p>
-<p>Typical usage of <a href="QtQuick.animation/#pathinterpolator">PathInterpolator</a> is to set the progress (often via a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a>), and read the corresponding values for x, y, and angle (often via bindings to these values).</p>
+<p>Typical usage of <a href="QtQuick.animation.md#pathinterpolator">PathInterpolator</a> is to set the progress (often via a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a>), and read the corresponding values for x, y, and angle (often via bindings to these values).</p>
 <p>Progress ranges from 0.0 to 1.0&#x2e;</p>
 <!-- @@@progress -->
 <br/>

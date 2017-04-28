@@ -13,7 +13,7 @@ Title: QtQuick.qtquick-demos-rssnews-example
 <li>Using XML list models to download XML data.</li>
 <li>Using list views to display data.</li>
 <li>Using the Component type to create a footer for the news item list view.</li>
-<li>Using the <a href="QtQuick.imageelements/#image">Image</a> type to create a button for closing the app.</li>
+<li>Using the <a href="QtQuick.imageelements.md#image">Image</a> type to create a button for closing the app.</li>
 </ul>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
@@ -79,7 +79,7 @@ property <span class="type">int</span> <span class="name">itemWidth</span>: <spa
 <span class="name">id</span>: <span class="name">delegate</span>
 property <span class="type">bool</span> <span class="name">selected</span>: <span class="name">ListView</span>.<span class="name">isCurrentItem</span></pre>
 <p>We set the <code>selected</code> property to the <code>ListView.isCurrentItem</code> attached property to specify that <code>selected</code> is <code>true</code> if <code>delegate</code> is the current item.</p>
-<p>We use the <a href="QtQuick.imageelements/#image">Image</a> type <code>source</code> property to display the image, centered in the delegate, specified for the list element by the <code>image</code> role in the <code>rssFeeds</code> list model:</p>
+<p>We use the <a href="QtQuick.imageelements.md#image">Image</a> type <code>source</code> property to display the image, centered in the delegate, specified for the list element by the <code>image</code> role in the <code>rssFeeds</code> list model:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 <span class="name">source</span>: <span class="name">image</span>
@@ -196,7 +196,7 @@ Behavior on <span class="name">scale</span> { <span class="type"><a href="QtQuic
 <span class="name">anchors</span>.centerIn: <span class="name">parent</span>
 }</pre>
 <p>We use the <code>scale</code> property to reduce the indicator size to <code>0.8</code>. We bind the <code>visible</code> property to the <code>isCurrentItem</code> attached property of the <code>delegate</code> list view and <code>loading</code> property of the main window to display the indicator image when a category list item is the current item and XML data is being loaded.</p>
-<p>We define the <code>BusyIndicator</code> type in <code>BusyIndicator.qml</code>. We use an <a href="QtQuick.imageelements/#image">Image</a> type to display an image and apply a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to its <code>rotation</code> property to rotate the image in an infinite loop:</p>
+<p>We define the <code>BusyIndicator</code> type in <code>BusyIndicator.qml</code>. We use an <a href="QtQuick.imageelements.md#image">Image</a> type to display an image and apply a <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> to its <code>rotation</code> property to rotate the image in an infinite loop:</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">container</span>
 <span class="name">source</span>: <span class="string">&quot;images/busy.png&quot;</span>;
@@ -236,7 +236,7 @@ NumberAnimation on <span class="name">rotation</span> {
 property <span class="type">variant</span> <span class="name">scrollArea</span>
 property <span class="type">int</span> <span class="name">orientation</span>: <span class="name">Qt</span>.<span class="name">Vertical</span>
 <span class="name">opacity</span>: <span class="number">0</span></pre>
-<p>We use a <a href="QtQuick.imageelements/#borderimage">BorderImage</a> type to display the scroll bar thumb at the x and y position that we calculate by using the <code>position()</code> function:</p>
+<p>We use a <a href="QtQuick.imageelements.md#borderimage">BorderImage</a> type to display the scroll bar thumb at the x and y position that we calculate by using the <code>position()</code> function:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.BorderImage.md">BorderImage</a></span> {
 <span class="name">source</span>: <span class="string">&quot;images/scrollbar.png&quot;</span>
 <span class="type">border</span> { <span class="name">left</span>: <span class="number">1</span>; <span class="name">right</span>: <span class="number">1</span>; <span class="name">top</span>: <span class="number">1</span>; <span class="name">bottom</span>: <span class="number">1</span> }
@@ -277,7 +277,7 @@ property <span class="type">int</span> <span class="name">orientation</span>: <s
 }</pre>
 <p>We bind the <code>width</code> of the footer to the width of the component and the <code>height</code> to the of close button to align them when no news items are displayed.</p>
 <h2 id="creating-buttons">Creating Buttons</h2>
-<p>In rssnews.qml, we use an <a href="QtQuick.imageelements/#image">Image</a> type to create a simple push button that users can tap to close the app:</p>
+<p>In rssnews.qml, we use an <a href="QtQuick.imageelements.md#image">Image</a> type to create a simple push button that users can tap to close the app:</p>
 <pre class="qml">    <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">closeButton</span>
 <span class="name">source</span>: <span class="string">&quot;content/images/btn_close.png&quot;</span>

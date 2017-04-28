@@ -35,7 +35,7 @@ effort basis and at different degrees of functionality.
 OnePlus One | Nexus 5 | Fairphone 2
 ----------- | ------- | -----------
 Marius Gripsgard | Vojtech Bocek | Marius Gripsgard
-[Install instructions](https://devices.ubports.com/#/bacon) | [Install instructions](https://wiki.ubuntu.com/Touch/Devices#Server_at_http:.2BAC8ALw-system-image.tasemnice.eu) | [Install instructions](https://devices.ubports.com/#/FP2)
+[Install instructions](https://devices.ubports.com.md#/bacon) | [Install instructions](https://wiki.ubuntu.com/Touch/Devices#Server_at_http:.2BAC8ALw-system-image.tasemnice.eu) | [Install instructions](https://devices.ubports.com.md#/FP2)
 
 What do you want to do next?
 

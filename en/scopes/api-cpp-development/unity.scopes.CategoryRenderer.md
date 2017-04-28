@@ -70,8 +70,8 @@ template keys</h2>
 <li><code>card-size</code> Size of the result cards; possible values: <code>"small"</code>, <code>"medium"</code> (default), <code>"large"</code>; when using <code>"category-layout": "vertical-journal"</code> any integer between 12 and 38 </li>
 <li><code>overlay</code> Overlay text data on top of the art; boolean, default false </li>
 <li><code>collapsed-rows</code> Number of result rows displayed while the category is collapsed; possible values: any non-negative integer, where 0 fully expands the category (only affects grid) </li>
-<li><code>card-background</code> Background color for the cards; string; URI in the format<pre class="fragment">color:///#rrggbb </pre> or<pre class="fragment">color:///color_name
-</pre> or<pre class="fragment">gradient:///#rrggbb/#rrggbb </pre> or an image URI (will be stretched) </li>
+<li><code>card-background</code> Background color for the cards; string; URI in the format<pre class="fragment">color://.md#rrggbb </pre> or<pre class="fragment">color:///color_name
+</pre> or<pre class="fragment">gradient://.md#rrggbb.md#rrggbb </pre> or an image URI (will be stretched) </li>
 <li><code>quick-preview-type</code> The type of media content represented by result cards, for use with inline playback; the only currently supported type is "audio".</li>
 </ul>
 <h2>
