@@ -9,7 +9,7 @@ Title: QtQuick.ItemGrabResult
 <p>Contains the results from a call to Item::grabToImage(). More...</p>
 <!-- @@@ItemGrabResult -->
 <table class="alignedsummary">
-<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="https://developer.ubuntu.com../qquickitemgrabresult.html">QQuickItemGrabResult</td></tr></table><ul>
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import QtQuick 2.4</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Instantiates:</td><td class="memItemRight bottomAlign"> <a href="QtQuick.ItemGrabResult.md">QQuickItemGrabResult</td></tr></table><ul>
 </ul>
 <h2 id="methods">Methods</h2>
 <ul>

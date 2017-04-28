@@ -36,7 +36,7 @@ Behavior on <span class="name">width</span> {
 }</pre>
 <p>Note that a property cannot have more than one assigned Behavior. To provide multiple animations within a Behavior, use <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> or <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a>.</p>
 <p>If a <a href="QtQuick.qtquick-statesanimations-states.md">state change</a> has a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> that matches the same property as a Behavior, the <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> animation overrides the Behavior for that state change. For general advice on using Behaviors to animate state changes, see <a href="QtQuick.qtquick-statesanimations-behaviors.md">Using Qt Quick Behaviors with States</a>.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.animation.md#behaviors">Behavior example</a>, and Qt QML.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.Animation.md#behaviors">Behavior example</a>, and Qt QML.</p>
 <!-- @@@Behavior -->
 <h2>Property Documentation</h2>
 <!-- $$$animation -->

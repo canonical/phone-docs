@@ -75,14 +75,14 @@ Title: QtQuick.qtquick-codesamples
 <p><b>Image and Graphics</b></p>
 <ul>
 <li><a href="QtQuick.qtquick-imageelements-example.md">Image Elements</a></li>
-<li><a href="QtQuick.animation.md">Animation</a></li>
+<li><a href="QtQuick.Animation.md">Animation</a></li>
 <li><a href="QtQuick.canvas.md">Canvas API</a></li>
 <li><a href="QtQuick.qtquick-shadereffects-example.md">Shader Effects</a></li>
 </ul>
 <p><b>Keyboard, Focus, and Touch</b></p>
 <ul>
 <li><a href="QtQuick.qtquick-keyinteraction-example.md">Key Interaction</a></li>
-<li><a href="QtQuick.mousearea.md">MouseArea</a></li>
+<li><a href="QtQuick.MouseArea.md">MouseArea</a></li>
 <li>Touch Gallery</li>
 </ul>
 <p><b>System and Events</b></p>

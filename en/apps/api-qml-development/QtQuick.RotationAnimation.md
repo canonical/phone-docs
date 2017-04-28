@@ -21,7 +21,7 @@ Title: QtQuick.RotationAnimation
 <!-- $$$RotationAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="index.html">RotationAnimation</a> is a specialized <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> that gives control over the direction of rotation during an animation.</p>
+<p><a href="index.html">RotationAnimation</a> is a specialized <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> that gives control over the direction of rotation during an animation.</p>
 <p>By default, it rotates in the direction of the numerical change; a rotation from 0 to 240 will rotate 240 degrees clockwise, while a rotation from 240 to 0 will rotate 240 degrees counterclockwise. The <a href="#direction-prop">direction</a> property can be set to specify the direction in which the rotation should occur.</p>
 <p>In the following example we use <a href="index.html">RotationAnimation</a> to animate the rotation between states via the shortest path:</p>
 <pre class="qml">import QtQuick 2.0
@@ -45,7 +45,7 @@ Title: QtQuick.RotationAnimation
 <p>Notice the <a href="index.html">RotationAnimation</a> did not need to set a <code>target</code> value. As a convenience, when used in a transition, <a href="index.html">RotationAnimation</a> will rotate all properties named &quot;rotation&quot; or &quot;angle&quot;. You can override this by providing your own properties via <a href="QtQuick.PropertyAnimation.md#properties-prop">properties</a> or <a href="QtQuick.PropertyAnimation.md#property-prop">property</a>.</p>
 <p>Also, note the <a href="QtQuick.Rectangle.md">Rectangle</a> will be rotated around its default <a href="QtQuick.Item.md#transformOrigin-prop">transformOrigin</a> (which is <code>Item.Center</code>). To use a different transform origin, set the origin in the <a href="QtQuick.PropertyChanges.md">PropertyChanges</a> object and apply the change at the start of the animation using <a href="QtQuick.PropertyAction.md">PropertyAction</a>. See the <a href="QtQuick.PropertyAction.md">PropertyAction</a> documentation for more details.</p>
 <p>Like any other animation type, a <a href="index.html">RotationAnimation</a> can be applied in a number of ways, including transitions, behaviors and property value sources. The <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> documentation shows a variety of methods for creating animations.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation.md">Qt Quick Examples - Animation</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@RotationAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$direction -->

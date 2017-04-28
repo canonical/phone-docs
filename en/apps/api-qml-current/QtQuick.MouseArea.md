@@ -89,7 +89,7 @@ Title: QtQuick.MouseArea
 }
 }
 }</pre>
-<p><b>See also </b><a href="QtQuick.MouseEvent.md">MouseEvent</a>, <a href="QtQuick.mousearea/">MouseArea example</a>, and <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
+<p><b>See also </b><a href="QtQuick.MouseEvent.md">MouseEvent</a>, <a href="QtQuick.MouseArea.md">MouseArea example</a>, and <a href="QtQuick.qtquick-input-topic.md">Important Concepts In Qt Quick - User Input</a>.</p>
 <!-- @@@MouseArea -->
 <h2>Property Documentation</h2>
 <!-- $$$acceptedButtons -->

@@ -51,7 +51,7 @@ Title: QtQuick.ParentAnimation
 <p>A <a href="index.html">ParentAnimation</a> can contain any number of animations. These animations will be run in parallel; to run them sequentially, define them within a <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a>.</p>
 <p>In some cases, such as when reparenting between items with clipping enabled, it is useful to animate the parent change via another item that does not have clipping enabled. Such an item can be set using the <a href="#via-prop">via</a> property.</p>
 <p><a href="index.html">ParentAnimation</a> is typically used within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> in conjunction with a <a href="QtQuick.ParentChange.md">ParentChange</a>. When used in this manner, it animates any <a href="QtQuick.ParentChange.md">ParentChange</a> that has occurred during the state change. This can be overridden by setting a specific target item using the <a href="#target-prop">target</a> property.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@ParentAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$newParent -->

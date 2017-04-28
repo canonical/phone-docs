@@ -269,7 +269,7 @@ ctx<span class="operator">.</span><a href="#beginPath-method">beginPath</a>();
 ctx<span class="operator">.</span><a href="#moveTo-method">moveTo</a>(<span class="number">20</span><span class="operator">,</span> <span class="number">0</span>);<span class="comment">//start point</span>
 ctx<span class="operator">.</span>bezierCurveTo(<span class="operator">-</span><span class="number">10</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">210</span><span class="operator">,</span> <span class="number">90</span><span class="operator">,</span> <span class="number">180</span><span class="operator">,</span> <span class="number">0</span>);
 ctx<span class="operator">.</span><a href="#stroke-method">stroke</a>();</pre>
-<p class="centerAlign"><img src="../../../media/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="http://www.openrise.com/lab/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-item-canvas-bezierCurveTo.png" alt="" /></p><p><b>See also </b><a href="http://www.w3.org/TR/2dcontext#dom-context-2d-beziercurveto">W3C 2d context standard for bezierCurveTo</a> and <a href="https://github.com/yinyunqiao/qml-canvas-demos/tree/master/FlowerPower/">The beautiful flower demo by using bezierCurveTo</a>.</p>
 <!-- @@@bezierCurveTo -->
 <br/>
 <!-- $$$clearRect -->

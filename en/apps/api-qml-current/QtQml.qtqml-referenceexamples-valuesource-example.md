@@ -9,7 +9,7 @@ Title: QtQml.qtqml-referenceexamples-valuesource-example
 <p>This example builds on:</p>
 <ul>
 <li><a href="QtQml.qtqml-referenceexamples-signal-example.md">Extending QML - Signal Support Example</a></li>
-<li><a href="QtQml.qtqml-referenceexamples-signal-attached.md">Extending QML - Attached Properties Example</a></li>
+<li><a href="QtQml.qtqml-referenceexamples-signal-example.md">Extending QML - Attached Properties Example</a></li>
 <li><a href="QtQml.qtqml-referenceexamples-grouped-example.md">Extending QML - Grouped Properties Example</a></li>
 <li><a href="QtQml.qtqml-referenceexamples-default-example.md">Extending QML - Default Property Example</a></li>
 <li><a href="QtQml.qtqml-referenceexamples-coercion-example.md">Extending QML - Inheritance and Coercion Example</a></li>

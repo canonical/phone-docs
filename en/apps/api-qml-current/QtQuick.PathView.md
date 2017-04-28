@@ -143,7 +143,7 @@ Title: QtQuick.PathView
 }
 }</pre>
 <p><b>Note</b> that views do not enable <i>clip</i> automatically. If the view is not clipped by another item or the screen, it will be necessary to set <i>clip: true</i> in order to have the out of view items clipped nicely.</p>
-<p><b>See also </b><a href="QtQuick.Path.md">Path</a>, <a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
+<p><b>See also </b><a href="QtQuick.Path.md">Path</a>, <a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@PathView -->
 <h2>Property Documentation</h2>
 <!-- $$$cacheItemCount -->

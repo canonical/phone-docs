@@ -179,6 +179,6 @@ property <span class="type">int</span> <span class="name">blockSize</span>: <spa
 </ul>
 <!-- @@@tutorials/samegame/samegame3 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-samegame-samegame2/">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
-<a class="nextPage" href="QtQuick.tutorials-samegame-samegame4/">QML Advanced Tutorial 4 - Finishing Touches</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-samegame-samegame2-example.md">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-samegame-samegame4-example.md">QML Advanced Tutorial 4 - Finishing Touches</a>
 </p>

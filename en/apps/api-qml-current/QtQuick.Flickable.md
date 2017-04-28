@@ -322,7 +322,7 @@ component<span class="operator">.</span>createObject(myFlickable<span class="ope
 <span class="name">color</span>: <span class="string">&quot;black&quot;</span>
 }
 }</pre>
-<p><b>See also </b><a href="QtQuick.customitems-scrollbar/">UI Components: Scrollbar Example</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-customitems-scrollbar-example.md">UI Components: Scrollbar Example</a>.</p>
 <!-- @@@visibleArea -->
 <br/>
 <h2>Signal Documentation</h2>

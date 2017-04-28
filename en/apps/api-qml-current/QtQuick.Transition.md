@@ -58,7 +58,7 @@ Title: QtQuick.Transition
 } ]</pre>
 <p>If multiple Transitions are specified, only a single (best-matching) Transition will be applied for any particular state change. In the example above, when changing to <code>state1</code>, the first transition will be used, rather than the more generic second transition.</p>
 <p>If a state change has a Transition that matches the same property as a <a href="QtQuick.Behavior.md">Behavior</a>, the Transition animation overrides the <a href="QtQuick.Behavior.md">Behavior</a> for that state change.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.animation.md#states">States example</a>, <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a>, and Qt QML.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>, <a href="QtQuick.Animation.md#states">States example</a>, <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a>, and Qt QML.</p>
 <!-- @@@Transition -->
 <h2>Property Documentation</h2>
 <!-- $$$animations -->
@@ -140,7 +140,7 @@ Title: QtQuick.Transition
 }
 }
 }</pre>
-<p>If the transition did not set the <code>to</code> and <code>reversible</code> values, then on the mouse release, the transition would play the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> before the <a href="QtQuick.animation.md#coloranimation">ColorAnimation</a> instead of reversing the sequence.</p>
+<p>If the transition did not set the <code>to</code> and <code>reversible</code> values, then on the mouse release, the transition would play the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> before the <a href="QtQuick.Animation.md#coloranimation">ColorAnimation</a> instead of reversing the sequence.</p>
 <!-- @@@reversible -->
 <br/>
 <!-- $$$running -->

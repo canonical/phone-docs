@@ -43,7 +43,7 @@ Title: QtQuick.State
 }</pre>
 <p>Notice the default state is referred to using an empty string (&quot;&quot;).</p>
 <p>States are commonly used together with <a href="QtQuick.qtquick-statesanimations-animations.md">Transitions</a> to provide animations when state changes occur.</p>
-<p><b>Note: </b>Setting the state of an object from within another state of the same object is not allowed.</p><p><b>See also </b><a href="QtQuick.animation.md#states">States example</a>, <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a>, <a href="QtQuick.qtquick-statesanimations-animations.md">Transitions</a>, and Qt QML.</p>
+<p><b>Note: </b>Setting the state of an object from within another state of the same object is not allowed.</p><p><b>See also </b><a href="QtQuick.Animation.md#states">States example</a>, <a href="QtQuick.qtquick-statesanimations-states.md">Qt Quick States</a>, <a href="QtQuick.qtquick-statesanimations-animations.md">Transitions</a>, and Qt QML.</p>
 <!-- @@@State -->
 <h2>Property Documentation</h2>
 <!-- $$$changes -->

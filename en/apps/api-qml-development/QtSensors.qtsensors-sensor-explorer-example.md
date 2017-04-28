@@ -8,8 +8,8 @@ Title: QtSensors.qtsensors-sensor-explorer-example
 <!-- $$$sensor_explorer-description -->
 <p class="centerAlign"><img src="../../../media/qtsensors-examples-explorer.png" alt="" /></p><p>This example is divided into two parts:</p>
 <ul>
-<li>A <a href="QtSensors.sensor_explorer.md#sensor-explorer-qml-import">C++ plugin</a> that provides QML alternatives for <code>QSensorExplorer</code>, <code>QPropertyInfo</code> and <code>QSensorItem</code> C++ classes.</li>
-<li>A <a href="QtSensors.sensor_explorer.md#sensor-explorer-qml-application">QML Application</a> that uses the QML types to read the sensor meta-data and present it.</li>
+<li>A <a href="QtSensors.qtsensors-sensor-explorer-example.md#sensor-explorer-qml-import">C++ plugin</a> that provides QML alternatives for <code>QSensorExplorer</code>, <code>QPropertyInfo</code> and <code>QSensorItem</code> C++ classes.</li>
+<li>A <a href="QtSensors.qtsensors-sensor-explorer-example.md#sensor-explorer-qml-application">QML Application</a> that uses the QML types to read the sensor meta-data and present it.</li>
 </ul>
 <p>This example is built as an executable with C++ code that runs the QML, but it can also be launched directly using the <code>qmlscene</code> tool. You should build the top-level <i>sensor_explorer</i> project before trying to run this example or it will not be able to find its dependencies.</p>
 <pre class="cpp">qmlscene <span class="operator">-</span>I <span class="operator">.</span> sensor_explorer<span class="operator">.</span>qml</pre>

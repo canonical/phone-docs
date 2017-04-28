@@ -60,7 +60,7 @@ Title: QtQuick.Rotation
 <span class="name">transform</span>: <span class="name">Rotation</span> { <span class="name">origin</span>.x: <span class="number">30</span>; <span class="name">origin</span>.y: <span class="number">30</span>; <span class="type">axis</span> { <span class="name">x</span>: <span class="number">0</span>; <span class="name">y</span>: <span class="number">1</span>; <span class="name">z</span>: <span class="number">0</span> } <span class="name">angle</span>: <span class="number">72</span> }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.customitems-dialcontrol/">Dial Control example</a> and <a href="QtQuick.demos-clocks/">Qt Quick Demo - Clocks</a>.</p>
+<p class="centerAlign"><img src="../../../media/axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-customitems-dialcontrol-example.md">Dial Control example</a> and <a href="QtQuick.qtquick-demos-clocks-example.md">Qt Quick Demo - Clocks</a>.</p>
 <!-- @@@Rotation -->
 <h2>Property Documentation</h2>
 <!-- $$$angle -->

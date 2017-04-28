@@ -178,7 +178,7 @@ Title: QtQuick.GridView
 <thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom flow</th></tr></thead>
 <tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-ttb.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-ttb.png" alt="" /></p></td><td ><b>(H)</b> Left to right <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-btt.png" alt="" /></p></td></tr>
 </table>
-<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@GridView -->
 <h2>Property Documentation</h2>
 <!-- $$$add -->

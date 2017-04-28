@@ -248,7 +248,7 @@ property <span class="type">color</span> <span class="name">fruit_color</span>: 
 <span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;link&quot;</span>; <span class="name">query</span>: <span class="string">&quot;link/string()&quot;</span> }
 <span class="type"><a href="QtQuick.XmlListModel.XmlRole.md">XmlRole</a></span> { <span class="name">name</span>: <span class="string">&quot;description&quot;</span>; <span class="name">query</span>: <span class="string">&quot;description/string()&quot;</span> }
 }</pre>
-<p>The <a href="QtQuick.demos-rssnews/">RSS News demo</a> shows how <a href="#xmllistmodel">XmlListModel</a> can be used to display an RSS feed.</p>
+<p>The <a href="QtQuick.qtquick-demos-rssnews-example.md">RSS News demo</a> shows how <a href="#xmllistmodel">XmlListModel</a> can be used to display an RSS feed.</p>
 <h3 >VisualItemModel</h3>
 <p><a href="#visualitemmodel">VisualItemModel</a> allows QML items to be provided as a model.</p>
 <p>This model contains both the data and delegate; the child items of a <a href="#visualitemmodel">VisualItemModel</a> provide the contents of the delegate. The model does not provide any roles.</p>

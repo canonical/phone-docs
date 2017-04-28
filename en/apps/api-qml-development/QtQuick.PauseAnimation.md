@@ -26,7 +26,7 @@ NumberAnimation { <span class="operator">.</span><span class="operator">.</span>
 PauseAnimation { duration: <span class="number">100</span> }
 NumberAnimation { <span class="operator">.</span><span class="operator">.</span><span class="operator">.</span> duration: <span class="number">200</span> }
 }</pre>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation.md">Qt Quick Examples - Animation</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@PauseAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$duration -->

@@ -215,5 +215,5 @@ postman.send(postData);
 </ul>
 <!-- @@@tutorials/samegame/samegame4 -->
 <p class="naviNextPrevious footerNavi">
-<a class="prevPage" href="QtQuick.tutorials-samegame-samegame3/">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
+<a class="prevPage" href="QtQuick.qtquick-tutorials-samegame-samegame3-example.md">QML Advanced Tutorial 3 - Implementing the Game Logic</a>
 </p>

@@ -75,7 +75,7 @@ import QtQuick.XmlListModel 2.0
 <p>Then when <a href="#reload-method">reload()</a> is called, the model will only add and reload items with a &quot;pubDate&quot; value that is not already present in the model.</p>
 <p>This is useful when displaying the contents of XML documents that are incrementally updated (such as RSS feeds) to avoid repainting the entire contents of a model in a view.</p>
 <p>If multiple key roles are specified, the model only adds and reload items with a combined value of all key roles that is not already present in the model.</p>
-<p><b>See also </b><a href="QtQuick.demos-rssnews/">Qt Quick Demo - RSS News</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-demos-rssnews-example.md">Qt Quick Demo - RSS News</a>.</p>
 <!-- @@@XmlListModel -->
 <h2>Property Documentation</h2>
 <!-- $$$count -->

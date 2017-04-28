@@ -178,7 +178,7 @@ Title: QtQuick.ListView
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Horizontal orientation</th></tr></thead>
 <tr valign="top"><td >Left to right<p class="centerAlign"><img src="../../../media/listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="../../../media/listview-layout-righttoleft.png" alt="" /></p></td></tr>
 </table>
-<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.views/">Qt Quick Examples - Views</a>.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@ListView -->
 <h2>Property Documentation</h2>
 <!-- $$$add -->
@@ -602,7 +602,7 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <span class="name">section</span>.criteria: <span class="name">ViewSection</span>.<span class="name">FullString</span>
 <span class="name">section</span>.delegate: <span class="name">sectionHeading</span>
 }</pre>
-<p class="centerAlign"><img src="../../../media/qml-listview-sections-example.png" alt="" /></p><p><b>Note: </b>Adding sections to a <a href="index.html">ListView</a> does not automatically re-order the list items by the section criteria. If the model is not ordered by section, then it is possible that the sections created will not be unique; each boundary between differing sections will result in a section header being created even if that section exists elsewhere.</p><p><b>See also </b><a href="QtQuick.views/">ListView examples</a>.</p>
+<p class="centerAlign"><img src="../../../media/qml-listview-sections-example.png" alt="" /></p><p><b>Note: </b>Adding sections to a <a href="index.html">ListView</a> does not automatically re-order the list items by the section criteria. If the model is not ordered by section, then it is possible that the sections created will not be unique; each boundary between differing sections will result in a section header being created even if that section exists elsewhere.</p><p><b>See also </b><a href="QtQuick.qtquick-views-example.md">ListView examples</a>.</p>
 <!-- @@@section -->
 <br/>
 <!-- $$$snapMode -->

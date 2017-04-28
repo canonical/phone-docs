@@ -94,8 +94,8 @@ Title: QtQuick.qtquick-releasenotes
 <h3 >Animations and Transitions</h3>
 <ul>
 <li>New <a href="QtQuick.AnimationController.md">AnimationController</a> type enables an animation to be manually driven by a <a href="QtQuick.AnimationController.md#progress-prop">progress</a> value.</li>
-<li>New <a href="QtQuick.animation.md#pathanimation">PathAnimation</a> type animates an item along a <a href="QtQuick.Path.md">Path</a>.</li>
-<li>New <a href="QtQuick.animation.md#pathinterpolator">PathInterpolator</a> type provides updated attribute values for an item animating along a path. It can be used as an low-level alternative to <a href="QtQuick.animation.md#pathanimation">PathAnimation</a>.</li>
+<li>New <a href="QtQuick.Animation.md#pathanimation">PathAnimation</a> type animates an item along a <a href="QtQuick.Path.md">Path</a>.</li>
+<li>New <a href="QtQuick.Animation.md#pathinterpolator">PathInterpolator</a> type provides updated attribute values for an item animating along a path. It can be used as an low-level alternative to <a href="QtQuick.Animation.md#pathanimation">PathAnimation</a>.</li>
 <li><a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a>:<ul>
 <li>New <a href="QtQuick.Transition.md#running-prop">running</a> property holds whether a transition is currently running.</li>
 <li>New <a href="QtQuick.Transition.md#enabled-prop">enabled</a> property controls whether a transition is enabled.</li>

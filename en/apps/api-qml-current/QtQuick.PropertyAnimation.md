@@ -35,7 +35,7 @@ Title: QtQuick.PropertyAnimation
 <!-- $$$PropertyAnimation-description -->
 <h2 id="details">Detailed Description</h2>
 </p>
-<p><a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> provides a way to animate changes to a property's value.</p>
+<p><a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> provides a way to animate changes to a property's value.</p>
 <p>It can be used to define animations in a number of ways:</p>
 <ul>
 <li>In a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a><p>For example, to animate any objects that have changed their <code>x</code> or <code>y</code> properties as a result of a state change, using an <code>InOutQuad</code> easing curve:</p>
@@ -89,8 +89,8 @@ SequentialAnimation on <span class="name">x</span> {
 </li>
 </ul>
 <p>Depending on how the animation is used, the set of properties normally used will be different. For more information see the individual property documentation, as well as the <a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> introduction.</p>
-<p>Note that <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> inherits the abstract <a href="QtQuick.Animation.md">Animation</a> type. This includes additional properties and methods for controlling the animation.</p>
-<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
+<p>Note that <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> inherits the abstract <a href="QtQuick.Animation.md">Animation</a> type. This includes additional properties and methods for controlling the animation.</p>
+<p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a> and <a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@PropertyAnimation -->
 <h2>Property Documentation</h2>
 <!-- $$$duration -->
@@ -154,7 +154,7 @@ The peak amplitude can be set with the <i>amplitude</i> parameter, and the perio
 <p><code>easing.overshoot</code> is only applicable if <code>easing.type</code> is: <code>Easing.InBack</code>, <code>Easing.OutBack</code>, <code>Easing.InOutBack</code> or <code>Easing.OutInBack</code>.</p>
 <p><code>easing.period</code> is only applicable if easing.type is: <code>Easing.InElastic</code>, <code>Easing.OutElastic</code>, <code>Easing.InOutElastic</code> or <code>Easing.OutInElastic</code>.</p>
 <p><code>easing.bezierCurve</code> is only applicable if easing.type is: <code>Easing.Bezier</code>. This property is a list&lt;real&gt; containing groups of three points defining a curve from 0,0 to 1,1 - control1, control2, end point: [cx1, cy1, cx2, cy2, endx, endy, ..&#x2e;]&#x2e; The last point must be 1,1.</p>
-<p>See the <a href="QtQuick.animation.md#easing-curves">Easing Curves</a> for a demonstration of the different easing settings. //! propertyanimation.easing</p>
+<p>See the <a href="QtQuick.Animation.md#easing-curves">Easing Curves</a> for a demonstration of the different easing settings. //! propertyanimation.easing</p>
 <!-- @@@easing -->
 <br/>
 <!-- $$$exclude -->
@@ -164,7 +164,7 @@ The peak amplitude can be set with the <i>amplitude</i> parameter, and the perio
 <br/>
 <!-- $$$from -->
 <table class="qmlname"><tr valign="top" id="from-prop"><td class="tblQmlPropNode"><p><span class="name">from</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the starting value for the animation.</p>
-<p>If the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> is defined within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> or <a href="QtQuick.Behavior.md">Behavior</a>, this value defaults to the value defined in the starting state of the <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a>, or the current value of the property at the moment the <a href="QtQuick.Behavior.md">Behavior</a> is triggered.</p>
+<p>If the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> is defined within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> or <a href="QtQuick.Behavior.md">Behavior</a>, this value defaults to the value defined in the starting state of the <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a>, or the current value of the property at the moment the <a href="QtQuick.Behavior.md">Behavior</a> is triggered.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>.</p>
 <!-- @@@from -->
 <br/>
@@ -382,7 +382,7 @@ Behavior on <span class="name">y</span> { <span class="type"><a href="QtQuick.Nu
 <br/>
 <!-- $$$to -->
 <table class="qmlname"><tr valign="top" id="to-prop"><td class="tblQmlPropNode"><p><span class="name">to</span> : <span class="type">variant</span></p></td></tr></table><p>This property holds the end value for the animation.</p>
-<p>If the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> is defined within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> or <a href="QtQuick.Behavior.md">Behavior</a>, this value defaults to the value defined in the end state of the <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a>, or the value of the property change that triggered the <a href="QtQuick.Behavior.md">Behavior</a>.</p>
+<p>If the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> is defined within a <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> or <a href="QtQuick.Behavior.md">Behavior</a>, this value defaults to the value defined in the end state of the <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a>, or the value of the property change that triggered the <a href="QtQuick.Behavior.md">Behavior</a>.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-statesanimations-animations.md">Animation and Transitions in Qt Quick</a>.</p>
 <!-- @@@to -->
 <br/>

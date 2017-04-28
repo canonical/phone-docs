@@ -45,7 +45,7 @@ sensor<span class="operator">.</span>start();
 <span class="type">QSensorReading</span> <span class="operator">*</span>reading <span class="operator">=</span> sensor<span class="operator">.</span>reading();
 <span class="type">qreal</span> x <span class="operator">=</span> reading<span class="operator">-</span><span class="operator">&gt;</span>property(<span class="string">&quot;x&quot;</span>)<span class="operator">.</span>value<span class="operator">&lt;</span><span class="type">qreal</span><span class="operator">&gt;</span>();
 <span class="type">qreal</span> y <span class="operator">=</span> reading<span class="operator">-</span><span class="operator">&gt;</span>value(<span class="number">1</span>)<span class="operator">.</span>value<span class="operator">&lt;</span><span class="type">qreal</span><span class="operator">&gt;</span>();</pre>
-<p>You can discover all of this information at runtime too. The <a href="QtSensors.sensor_explorer.md">sensor_explorer</a> example shows you information about available sensors.</p>
+<p>You can discover all of this information at runtime too. The <a href="QtSensors.qtsensors-sensor-explorer-example.md">sensor_explorer</a> example shows you information about available sensors.</p>
 <h2 id="front-end-back-end">Front End, Back End</h2>
 <p>The Qt Sensors API has a front end, for application developers to use and a back end, where device implementors write code to access their hardware. As an application developer you do not need to access the back end though it may be useful to understand how it works.</p>
 <p>Commands from the application are delivered through QSensor and then down to the device plugin. Data comes back through the QSensorReading class.</p>

@@ -58,11 +58,11 @@ Title: QtQuick.qtquick-statesanimations-animations
 <span class="type">easing</span> {<span class="name">type</span>: <span class="name">Easing</span>.<span class="name">OutBack</span>; <span class="name">overshoot</span>: <span class="number">500</span>}
 }
 }</pre>
-<p>Specialized property animation types have more efficient implementations than the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> type. They are for setting animations to different QML types such as <code>int</code>, <code>color</code>, and rotations. Similarly, the <a href="QtQuick.ParentAnimation.md">ParentAnimation</a> can animate parent changes.</p>
+<p>Specialized property animation types have more efficient implementations than the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> type. They are for setting animations to different QML types such as <code>int</code>, <code>color</code>, and rotations. Similarly, the <a href="QtQuick.ParentAnimation.md">ParentAnimation</a> can animate parent changes.</p>
 <p>See the <a href="#qml-controlling-animations">Controlling Animations</a> section for more information about the different animation properties.</p>
 <h3 >Using Predefined Targets and Properties</h3>
-<p>In the previous example, the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> and <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> objects needed to specify particular <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> and <a href="QtQuick.PropertyAnimation.md#properties-prop">properties</a> values to specify the objects and properties that should be animated. This can be avoided by using the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax, which specifies the animation is to be applied as a <i>property value source</i>.</p>
-<p>Below are two <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> objects that are specified using this syntax:</p>
+<p>In the previous example, the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> and <a href="QtQuick.NumberAnimation.md">NumberAnimation</a> objects needed to specify particular <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> and <a href="QtQuick.PropertyAnimation.md#properties-prop">properties</a> values to specify the objects and properties that should be animated. This can be avoided by using the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax, which specifies the animation is to be applied as a <i>property value source</i>.</p>
+<p>Below are two <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> objects that are specified using this syntax:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">rect</span>
@@ -71,7 +71,7 @@ Title: QtQuick.qtquick-statesanimations-animations
 PropertyAnimation on <span class="name">x</span> { <span class="name">to</span>: <span class="number">100</span> }
 PropertyAnimation on <span class="name">y</span> { <span class="name">to</span>: <span class="number">100</span> }
 }</pre>
-<p>The animation starts as soon as the rectangle is loaded, and will automatically be applied to its <code>x</code> and <code>y</code> values. Since the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax has been used, it is not necessary to set the <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> value of the <a href="QtQuick.animation.md#propertyanimation">PropertyAnimation</a> objects to <code>rect</code>, and neither is it necessary to set the <a href="QtQuick.PropertyAnimation.md#property-prop">property</a> values to <code>x</code> and <code>y</code>.</p>
+<p>The animation starts as soon as the rectangle is loaded, and will automatically be applied to its <code>x</code> and <code>y</code> values. Since the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax has been used, it is not necessary to set the <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> value of the <a href="QtQuick.Animation.md#propertyanimation">PropertyAnimation</a> objects to <code>rect</code>, and neither is it necessary to set the <a href="QtQuick.PropertyAnimation.md#property-prop">property</a> values to <code>x</code> and <code>y</code>.</p>
 <p>This can also be used by <a href="#playing-animations-in-parallel-or-in-sequence">grouped animations</a> to ensure that all animations within a group are applied to the same property. For example, the previous example could instead use <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> to animate the rectangle's <code>color</code> first to yellow, then to blue:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -82,7 +82,7 @@ SequentialAnimation on <span class="name">color</span> {
 <span class="type"><a href="QtQuick.ColorAnimation.md">ColorAnimation</a></span> { <span class="name">to</span>: <span class="string">&quot;blue&quot;</span>; <span class="name">duration</span>: <span class="number">1000</span> }
 }
 }</pre>
-<p>Since the <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> object has been specified on the <code>color</code> property using the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax, its child <a href="QtQuick.animation.md#coloranimation">ColorAnimation</a> objects are also automatically applied to this property and do not need to specify <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> or <a href="QtQuick.PropertyAnimation.md#property-prop">property</a> animation values.</p>
+<p>Since the <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> object has been specified on the <code>color</code> property using the <i>&lt;Animation&gt; on &lt;Property&gt;</i> syntax, its child <a href="QtQuick.Animation.md#coloranimation">ColorAnimation</a> objects are also automatically applied to this property and do not need to specify <a href="QtQuick.PropertyAnimation.md#target-prop">target</a> or <a href="QtQuick.PropertyAnimation.md#property-prop">property</a> animation values.</p>
 <h3 >Transitions during State Changes</h3>
 <p><a href="QtQuick.State.md">Qt Quick States</a> are property configurations where a property may have different values to reflect different states. State changes introduce abrupt property changes; animations smooth transitions to produce visually appealing state changes.</p>
 <p>The <a href="QtQuick.qmlexampletoggleswitch.md#transition">Transition</a> type can contain animation types to interpolate property changes caused by state changes. To assign the transition to an object, bind it to the <code>transitions</code> property.</p>
@@ -150,7 +150,7 @@ Behavior on <span class="name">y</span> {
 }
 }</pre>
 <p>There are several methods of assigning behavior animations to properties. The <code>Behavior on &lt;property&gt;</code> declaration is a convenient way of assigning a behavior animation onto a property.</p>
-<p>See the <a href="QtQuick.animation/">Qt Quick Examples - Animation</a> for a demonstration of behavioral animations.</p>
+<p>See the <a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a> for a demonstration of behavioral animations.</p>
 <h2 id="playing-animations-in-parallel-or-in-sequence">Playing Animations in Parallel or in Sequence</h2>
 <p>Animations can run <i>in parallel</i> or <i>in sequence</i>. Parallel animations will play a group of animations at the same time while sequential animations play a group of animations in order: one after the other. Grouping animations in <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> and <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> will play the animations in sequence or in parallel.</p>
 <p>A banner component may have several icons or slogans to display, one after the other. The <code>opacity</code> property could transform to <code>1.0</code> denoting an opaque object. Using the <a href="QtQuick.SequentialAnimation.md">SequentialAnimation</a> type, the opacity animations will play after the preceding animation finishes. The <a href="QtQuick.ParallelAnimation.md">ParallelAnimation</a> type will play the animations at the same time.</p>
@@ -228,5 +228,5 @@ Behavior on <span class="name">y</span> { <span class="name">animation</span>: <
 Behavior on <span class="name">x</span> { <span class="type">MyNumberAnimation</span> {} }
 Behavior on <span class="name">y</span> { <span class="type">MyNumberAnimation</span> {} }
 }</pre>
-<p><b>See also </b><a href="QtQuick.animation/">Qt Quick Examples - Animation</a>.</p>
+<p><b>See also </b><a href="QtQuick.Animation.md">Qt Quick Examples - Animation</a>.</p>
 <!-- @@@qtquick-statesanimations-animations.html -->

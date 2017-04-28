@@ -106,5 +106,5 @@ signal <span class="type">clicked</span>
 <!-- @@@tutorials/samegame/samegame1 -->
 <p class="naviNextPrevious footerNavi">
 <a class="prevPage" href="QtQuick.qml-advtutorial.md">QML Advanced Tutorial</a>
-<a class="nextPage" href="QtQuick.tutorials-samegame-samegame2/">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
+<a class="nextPage" href="QtQuick.qtquick-tutorials-samegame-samegame2-example.md">QML Advanced Tutorial 2 - Populating the Game Canvas</a>
 </p>
