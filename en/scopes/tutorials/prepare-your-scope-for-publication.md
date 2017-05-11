@@ -13,7 +13,7 @@ In the next steps, we are going to prepare a few graphics, edit the
 `<scope>.ini` file located in the data directory of your project and package the
 scope for the store.
 
-## data/<scope>.ini
+## data/&lt;scope&gt;.ini
 
 At the top of this file, the `ScopeConfig` section contains data that is
 going to be used to display your scope when it’s not running, for example when
