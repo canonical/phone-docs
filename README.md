@@ -6,7 +6,7 @@
 
 This documentation contains information from the Ubuntu touch project, which was actively developed by [Canonical](https://www.canonical.com) from 2012 to 2017.
 
-They will be published on [docs.ubuntu.com](https://docs.ubuntu.com/) soon.
+They are be published on [docs.ubuntu.com](https://docs.ubuntu.com/phone/en/).
 
 ## About Ubuntu Touch and these docs
 
