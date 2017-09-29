@@ -35,7 +35,6 @@ This means that touch, pointer and focus interactions are now mapped to perform 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more details on how a seamless experience can be achieved in your app, see Convergence](convergence.md).|
-|
 |---|-----|
 
 
@@ -68,7 +67,6 @@ Throughout the Ubuntu platform positive actions, such as OK, Yes and Accept are 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The position of positive and negative actions are important to consider when designing your app, because it can reinforce behavior when used in a consistent way.|
-|
 |---|-----|
 
 
@@ -89,7 +87,6 @@ The user swipes right to left to reveal contextual options, such as information 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Users can access the same actions with a pointer or keyboard by pressing the right mouse button or menu key to open a context menu.|
-|
 |---|-----|
 
 
@@ -103,7 +100,6 @@ Most color blind people have difficulty distinguishing red from green. Don’t u
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Think about how colors complement each other and how they can create a harmony that is pleasing on the eye.|
-|
 |---|-----|
 
 
@@ -130,7 +126,6 @@ Blue is an informative colour, it is neither positive or negative. Use blue for 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on how color is used across the platform see Color palette (coming soon).|
-|
 |---|-----|
 
 

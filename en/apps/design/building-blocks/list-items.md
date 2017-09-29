@@ -29,7 +29,6 @@ List items can be used to make up a list of ordered scrollable items that are re
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|[See the ListItemLayout API that provides customisable templates](../../api-qml-current/Ubuntu.Components.ListItemLayout.md), and the  [ListItem API](../../api-qml-current/Ubuntu.Components.ListItem.md) that provides swiping actions.|
-|
 |---|-----|
 
 
@@ -137,7 +136,6 @@ In the Contacts app for example, the list of contacts is made editable to allow 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information about how edit mode is used see  [Header](header.md).|
-|
 |---|-----|
 
 
@@ -176,7 +174,6 @@ If your list item allows for navigation through to an associated view, then a Pr
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ProgressionSlot API](../../api-qml-current/Ubuntu.Components.ProgressionSlot.md) is designed to provide an easy way for developers to add a progression symbol to the list item created using ListItemLayout or SlotsLayout.|
-|
 |---|-----|
 
 
@@ -208,7 +205,6 @@ Text is always aligned according to the currently displayed language. For exampl
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers are free to override the maximum amount lines for each label. See the  [Label API](../../api-qml-current/Ubuntu.Components.Label.md) for more information.|
-|
 |---|-----|
 
 
@@ -252,7 +248,6 @@ Secondary action: message using tap or click on the message action icon.
 
 
 |![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Avoid creating visual noise by repeatedly using additional actions in list items.|
-|
 |---|-----|
 
 
@@ -316,7 +311,6 @@ The toolkit provides a number of layouts when creating a list item to ensure use
 
 
 |![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|You can place what you wish inside the slots. However, these recommendations take into consideration cognitive familiarity to provide a clean and minimalist look.|
-|
 |---|-----|
 
 
@@ -341,7 +335,6 @@ The toolkit provides a number of layouts when creating a list item to ensure use
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|Provide a caption under the title to give the user more information if necessary. For example, displaying a contact’s email address saves the user clicking through to find the information.|
-|
 |---|-----|
 
 

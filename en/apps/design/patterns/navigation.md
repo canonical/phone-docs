@@ -165,7 +165,6 @@ Use drawers sparingly because it:
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|A Back Button would be irrelevant if your app only has one page, because there would be no pages to go back from; so it is not required.|
-|
 |---|-----|
 
 
@@ -184,7 +183,6 @@ In this example, Dekko displays an action for the bottom edge, search and settin
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more slot layout examples see Header](../building-blocks/header.md)|
-|
 |---|-----|
 
 

@@ -18,7 +18,6 @@ The Ubuntu interface has been designed according to a philosophy called Suru.
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[See how the Suru visual language is integrated into the new Xerus 16.04 wallpaper here](https://design.canonical.com/2016/04/wallpaper-design-for-xenial-xerus-16-04/).|
-|
 |---|-----|
 
 

@@ -147,7 +147,6 @@ After the user has  interacted with Hint 1, the hint will morph to become Hint 2
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on the behavior of the bottom edge hint see  [Bottom edge](../building-blocks/bottom-edge.md).|
-|
 |---|-----|
 
 
@@ -164,7 +163,6 @@ The look and feel of an instructional overlay should differ from your UI visual 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|For more information on instructional overlays see Coach Marks (Coming soon).|
-|
 |---|-----|
 
 

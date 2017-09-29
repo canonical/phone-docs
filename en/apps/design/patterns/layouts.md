@@ -18,7 +18,6 @@ Make your app consistent and adaptive across all screen sizes with just one API.
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Adaptive Layout API](../../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) allows you to add multiple columns to a page (under heavy development).|
-|
 |---|-----|
 
 
@@ -65,7 +64,6 @@ A mobile device would typically suit a 50 GU-wide virtual portrait screen, becau
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|See the  [design blog](http://design.canonical.com/2015/06/the-grid-system-in-detail/) for developer specifications of Grid Units and layouts.|
-|
 |---|-----|
 
 
@@ -84,7 +82,6 @@ For example, placing a 50 and 40 grid unit layout in portrait mode can easily be
 
 
 |![information-link](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|If your app can use multiple columns then use a single screen layout on mobile touch that changes to a 2 or 3 panel layout on tablet and desktop.|
-|
 |---|-----|
 
 
@@ -109,7 +106,6 @@ On a windowed environment, just like on a tablet, more than one panel can be dis
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Developers can choose to create completely adaptive 2 or 3 panel layouts for desktop if they desire.|
-|
 |---|-----|
 
 
@@ -120,7 +116,6 @@ Use the AdaptiveLayout API to display panels in one or more columns from left to
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The  [AdaptiveLayout API](../../api-qml-current/Ubuntu.Components.AdaptivePageLayout.md) provides a flexible way of viewing a stack of pages in one or more columns. Unlike in PageStack, there can be more than one Page active at a time, depending on the number of the columns in the view.|
-|
 |---|-----|
 
 
@@ -144,5 +139,3 @@ The panel that is defined as the main panel (for example 50GU) will initially be
 
 
 To provide a consistent user experience across the whole platform leave at least one of the panels fixed at a minimum size of either 50 or 40GU inside each screen size. This creates a familiar experience from mobile, tablet and desktop.
-
-
