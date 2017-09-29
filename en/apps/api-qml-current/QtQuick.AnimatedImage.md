@@ -27,7 +27,7 @@ Title: QtQuick.AnimatedImage
 <p>Information about the current frame and total length of the animation can be obtained using the <a href="#currentFrame-prop">currentFrame</a> and <a href="#frameCount-prop">frameCount</a> properties. You can start, pause and stop the animation by changing the values of the <a href="#playing-prop">playing</a> and <a href="#paused-prop">paused</a> properties.</p>
 <p>The full list of supported formats can be determined with QMovie::supportedFormats().</p>
 <h2 id="example-usage">Example Usage</h2>
-<p class="centerAlign"><img src="../../../media/animatedimageitem.gif" alt="" /></p><p>The following QML shows how to display an animated image and obtain information about its state, such as the current frame and total number of frames. The result is an animated image with a simple progress indicator underneath it.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/e603b76f-animatedimageitem.gif" alt="" /></p><p>The following QML shows how to display an animated image and obtain information about its state, such as the current frame and total number of frames. The result is an animated image with a simple progress indicator underneath it.</p>
 <p><b>Note</b>: Unlike images, animated images are not cached or shared internally.</p>
 <br style="clear: both" /><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {

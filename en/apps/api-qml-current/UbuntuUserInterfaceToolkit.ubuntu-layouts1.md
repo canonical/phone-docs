@@ -12,7 +12,7 @@ Title: UbuntuUserInterfaceToolkit.ubuntu-layouts1
 <p>Each layout defined in the block is compound of containers, which can host laid out items hosted by item holders.</p>
 <p>An item holder is a pseudo-item which can host only one item, where the item is anchored to the item holder's edges, therefore the item holder has control over the componet's size, scale and rotation.</p>
 <p>To understand this let's take the following layout structure:</p>
-<p class="centerAlign"><img src="../../../media/sample-layout.png" alt="" /></p><p>In this layout all three buttons are laid out in the same container, but green button was required to take the height of the window, whereas the red and blue buttons were required to have the same width and height.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/d9dc836b-sample-layout.png" alt="" /></p><p>In this layout all three buttons are laid out in the same container, but green button was required to take the height of the window, whereas the red and blue buttons were required to have the same width and height.</p>
 <p>Illustrating the layout on the image with code:</p>
 <pre class="qml"><span class="type"><a href="Ubuntu.Layouts.Layouts.md">Layouts</a></span> { <span class="comment">// &lt;-- layout block</span>
 <span class="name">id</span>: <span class="name">layouts</span>

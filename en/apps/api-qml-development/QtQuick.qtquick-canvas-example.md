@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-canvas-example
 
 <span class="subtitle"></span>
 <!-- $$$canvas-description -->
-<p class="centerAlign"><img src="../../../media/qml-canvas-example.png" alt="" /></p><p><i>Canvas</i> is a collection of small QML examples relating to the <a href="QtQuick.Canvas.md">Canvas</a> type. Each example is a small QML file emphasizing a particular type or feature.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/4d889401-qml-canvas-example.png" alt="" /></p><p><i>Canvas</i> is a collection of small QML examples relating to the <a href="QtQuick.Canvas.md">Canvas</a> type. Each example is a small QML file emphasizing a particular type or feature.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>
 <h2 id="red-heart">Red Heart</h2>

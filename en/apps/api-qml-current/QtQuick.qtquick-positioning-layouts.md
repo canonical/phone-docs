@@ -12,7 +12,7 @@ Title: QtQuick.qtquick-positioning-layouts
 <h2 id="positioners">Positioners</h2>
 <p>A set of standard positioners are provided in the basic set of Qt Quick graphical types:</p>
 <h3 >Column</h3>
-<p><img src="../../../media/qml-column.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/306b2168-qml-column.png" alt="" /></p>
 <p><a href="#column">Column</a> items are used to vertically arrange items. The following example uses a Column item to arrange three <a href="QtQuick.Rectangle.md">Rectangle</a> items in an area defined by an outer <a href="QtQuick.Item.md">Item</a>. The <a href="QtQuick.Column.md#spacing-prop">spacing</a> property is set to include a small amount of space between the rectangles.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Item.md">Item</a></span> {
@@ -37,7 +37,7 @@ Title: QtQuick.qtquick-positioning-layouts
 }</pre>
 <p>Note that, since Column inherits directly from Item, any background color must be added to a parent Rectangle, if desired.</p>
 <h3 >Row</h3>
-<p><img src="../../../media/qml-row.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/a86cbb6a-qml-row.png" alt="" /></p>
 <p><a href="#row">Row</a> items are used to horizontally arrange items. The following example uses a Row item to arrange three rounded <a href="QtQuick.Rectangle.md">Rectangle</a> items in an area defined by an outer colored Rectangle. The <a href="QtQuick.Row.md#spacing-prop">spacing</a> property is set to include a small amount of space between the rectangles.</p>
 <p>We ensure that the parent Rectangle is large enough so that there is some space left around the edges of the horizontally centered Row item.</p>
 <pre class="qml">import QtQuick 2.0
@@ -57,7 +57,7 @@ Title: QtQuick.qtquick-positioning-layouts
 }
 }</pre>
 <h3 >Grid</h3>
-<p><img src="../../../media/qml-grid-spacing.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/7972d66e-qml-grid-spacing.png" alt="" /></p>
 <p><a href="#grid">Grid</a> items are used to place items in a grid or table arrangement. The following example uses a Grid item to place four <a href="QtQuick.Rectangle.md">Rectangle</a> items in a 2-by-2 grid. As with the other positioners, the spacing between items can be specified using the <a href="QtQuick.Grid.md#spacing-prop">spacing</a> property.</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -77,7 +77,7 @@ Title: QtQuick.qtquick-positioning-layouts
 <p>There is no difference between horizontal and vertical spacing inserted between items, so any additional space must be added within the items themselves.</p>
 <p>Any empty cells in the grid must be created by defining placeholder items at the appropriate places in the Grid definition.</p>
 <h3 >Flow</h3>
-<p><img src="../../../media/qml-flow-text1.png" alt="" /> <img src="../../../media/qml-flow-text2.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /> <img src="../../../media/qml-flow-text2.png" alt="" /></p>
 <p><a href="#flow">Flow</a> items are used to place items like words on a page, with rows or columns of non-overlapping items.</p>
 <p>Flow items arrange items in a similar way to <a href="#grid">Grid</a> items, with items arranged in lines along one axis (the minor axis), and lines of items placed next to each other along another axis (the major axis). The direction of flow, as well as the spacing between items, are controlled by the <a href="QtQuick.Flow.md#flow-prop">flow</a> and <a href="QtQuick.Flow.md#spacing-prop">spacing</a> properties.</p>
 <p>The following example shows a Flow item containing a number of <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> child items. These are arranged in a similar way to those shown in the screenshots.</p>

@@ -6,7 +6,7 @@ Title: QtQml.qtqml-qml-i18n-example
 
 <span class="subtitle"></span>
 <!-- $$$qml-i18n-description -->
-<p class="centerAlign"><img src="../../../media/qml-i18n-example.png" alt="" /></p><p>The QML runtime automatically loads a translation from the i18n subdirectory of the root QML file, based on the system language.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/6c7bffe4-qml-i18n-example.png" alt="" /></p><p>The QML runtime automatically loads a translation from the i18n subdirectory of the root QML file, based on the system language.</p>
 <p>The files are created or updated by running:</p>
 <pre class="cpp">lupdate qml<span class="operator">-</span>i18n<span class="operator">.</span>qml <span class="operator">-</span>ts i18n<span class="operator">/</span>base<span class="operator">.</span>ts</pre>
 <p>Translations for new languages are created by copying <i>i18n/base.ts</i> to <i>i18n/qml_&lt;lang&gt;.ts</i> The .ts files can then be edited with �{Qt Linguist}:</p>

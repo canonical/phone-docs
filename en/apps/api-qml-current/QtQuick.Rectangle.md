@@ -33,7 +33,7 @@ Title: QtQuick.Rectangle
 <p>You can add an optional border to a rectangle with its own color and thickness by setting the <a href="#border.color-prop">border.color</a> and <a href="#border.width-prop">border.width</a> properties. Set the color to &quot;transparent&quot; to paint a border without a fill color.</p>
 <p>You can also create rounded rectangles using the <a href="#radius-prop">radius</a> property. Since this introduces curved edges to the corners of a rectangle, it may be appropriate to set the <a href="QtQuick.Item.md#antialiasing-prop">Item::antialiasing</a> property to improve its appearance.</p>
 <h2 id="example-usage">Example Usage</h2>
-<p><img src="../../../media/declarative-rect.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/fb6cea37-declarative-rect.png" alt="" /></p>
 <p>The following example shows the effects of some of the common properties on a Rectangle item, which in this case is used to create a square:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="index.html">Rectangle</a></span> {
@@ -64,7 +64,7 @@ Title: QtQuick.Rectangle
 <!-- $$$color -->
 <table class="qmlname"><tr valign="top" id="color-prop"><td class="tblQmlPropNode"><p><span class="name">color</span> : <span class="type">color</span></p></td></tr></table><p>This property holds the color used to fill the rectangle.</p>
 <p>The default color is white.</p>
-<p><img src="../../../media/rect-color.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/34807d0f-rect-color.png" alt="" /></p>
 <p>The following example shows rectangles with colors specified using hexadecimal and named color notation:</p>
 <pre class="qml"><span class="type"><a href="index.html">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;#00B000&quot;</span>
@@ -81,7 +81,7 @@ Title: QtQuick.Rectangle
 <!-- $$$gradient -->
 <table class="qmlname"><tr valign="top" id="gradient-prop"><td class="tblQmlPropNode"><p><span class="name">gradient</span> : <span class="type"><a href="QtQuick.Gradient.md">Gradient</a></span></p></td></tr></table><p>The gradient to use to fill the rectangle.</p>
 <p>This property allows for the construction of simple vertical gradients. Other gradients may by formed by adding rotation to the rectangle.</p>
-<p><img src="../../../media/declarative-rect_gradient.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/f5c0e9ff-declarative-rect_gradient.png" alt="" /></p>
 <pre class="qml"><span class="type"><a href="index.html">Rectangle</a></span> {
 <span class="name">y</span>: <span class="number">0</span>; <span class="name">width</span>: <span class="number">80</span>; <span class="name">height</span>: <span class="number">80</span>
 <span class="name">color</span>: <span class="string">&quot;lightsteelblue&quot;</span>

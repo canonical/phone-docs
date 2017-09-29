@@ -16,10 +16,10 @@ used for other types.
 
   * Launch the wizard in the Ubuntu SDK with: **File** > **New File or Project**
   * Select the **Ubuntu** project type, then **HTML5 App,** and then click the **Choose** button, as shown here:  
-![](../../../media/sdk-tutorial_new-project-1-700x435.png)
+![](https://assets.ubuntu.com/v1/76bc5df0-new-project-1-700x435.png)
 
   * Give your project a **Name**, specify a directory to create it in, and click the **Next** button, as shown here:  
-![](../../../media/sdk-tutorial_new-project-2-700x371.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 **Tip**: You may want to enable this as the default directory for all Ubuntu SDK projects by checking the **Use as default project location** check box.
 
@@ -28,7 +28,7 @@ used for other types.
   * Your **maintainer** information: your name and email, ie: `Joe Blobbs <joe@blobbs.com>`
   * The **name** of your app.
 
-![](../../../media/sdk-tutorial_new-project-3.png)
+![](https://assets.ubuntu.com/v1/fae95454-sdk-tutorial_new-project-3.png)
 
   * On the **Build targets** page. You will be asked to create at least one device kit for your project.
 
@@ -37,16 +37,16 @@ Device kits are devices environments required to build and run your app. The
 can have a look at the [device kits article](tutorials-click-targets-and-device-kits.md) to learn
 more about them.
 
-![](../../../media/sdk-tutorial_new-project-4.png)
+![](https://assets.ubuntu.com/v1/a2a5af3a-sdk-tutorial_new-project-4.png)
 
-![](../../../media/sdk-tutorial_new-project-5.png)
+![](https://assets.ubuntu.com/v1/7df54c5a-sdk-tutorial_new-project-5.png)
 
 After creating a device kit, select it to continue:
 
-![](../../../media/sdk-tutorial_new-project-6.png)
+![](https://assets.ubuntu.com/v1/450c6d36-sdk-tutorial_new-project-6.png)
 
   * On the **Project Management** page, optionally select **Bazaar** under **Add to version control**:  
-![](../../../media/sdk-tutorial_new-project-7.png)
+![](https://assets.ubuntu.com/v1/a7cd4c6c-sdk-tutorial_new-project-7.png)
 
 **Tip**: You can also manage your project under revision control from the command line using bzr. To use Bazaar in the shell, first open a terminal with `Ctrl+Alt+T`, then install the bzr package and view help as follows:
 
@@ -57,7 +57,7 @@ bzr help
 
   * Click **Finish**, and the wizard finishes, the project is created, and you are returned to the main SDK GUI. At this point your new project looks something like this:
 
-![](../../../media/sdk-tutorial_new-project-8.png)
+![](https://assets.ubuntu.com/v1/d95c5c4f-sdk-tutorial_new-project-8.png)
 
 **Tip**: Each app project has a desktop file that represents the app in Unity, including its displayed name and its icon.
 

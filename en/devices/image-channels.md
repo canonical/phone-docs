@@ -28,7 +28,7 @@ schedules. Build IDs are defined within a specific channel.
 
 ## Release cycle and image promotion
 
-![](../../media/devices-phone-release-cycle-diagram.png)
+![](https://assets.ubuntu.com/v1/cd81ebc1-devices-phone-release-cycle-diagram.png)
 
 Ubuntu images are generated daily (often multiple images per day) and are
 thoroughly tested with automated and manual tests to ensure they comply with

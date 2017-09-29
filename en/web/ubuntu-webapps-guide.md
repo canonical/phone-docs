@@ -31,7 +31,7 @@ Let’s take a look at how the run-time pieces fit together.
 A web app displays in a webview inside a `webapp-container` that runs as an
 Ubuntu app in the Ubuntu/Unity shell.
 
-![](../../media/Webapps-Guide1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 Taking a closer look:
 

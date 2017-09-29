@@ -78,7 +78,7 @@ the terminal, now switch to the tutorial folder:
 If you navigate to that folder with the file browser, you can click on the
 `CurrencyConverter.qmlproject` file and open it with the Ubuntu SDK IDE:
 
-![](../../../media/Test-project.png)
+![](https://assets.ubuntu.com/v1/74496e85-Test-project.png)
 
 Inside you will notice a tests folder that contains three subfolders named
 unit, integration, and functional. You’ll notice this corresponds to the [testing pyramid](https://developer.ubuntu.com/en/apps/quality/).
@@ -93,7 +93,7 @@ So let’s run it! Switch back to your terminal and run:
 If everything went successfully, you should see a small printout displaying
 all tests as passing.
 
-![](../../../media/Passsed.png)
+![](https://assets.ubuntu.com/v1/555575d7-Passsed.png)
 
 ## What to test
 

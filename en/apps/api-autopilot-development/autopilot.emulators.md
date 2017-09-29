@@ -6,7 +6,7 @@ Title: autopilot.emulators
 
 <!-- Start Namespace Content -->
 <span id="autopilot-emulators-backwards-compatibility-for-autopilot-v1-2"></span>
-<img alt="otto icon" src="../../../media/otto-64.png" />
+<img alt="otto icon" src="https://assets.ubuntu.com/v1/14ad469c-otto-64.png" />
 <p class="first admonition-title">Autopilot Says</p>
 <p><strong>Deprecated Namespace!</strong></p>
 <p>This module contains modules that were in the <tt class="docutils literal"><span class="pre">autopilot.emulators</span></tt>

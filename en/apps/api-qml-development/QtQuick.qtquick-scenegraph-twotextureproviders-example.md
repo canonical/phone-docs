@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-scenegraph-twotextureproviders-example
 
 <span class="subtitle"></span>
 <!-- $$$scenegraph/twotextureproviders-description -->
-<p class="centerAlign"><img src="../../../media/twotextureproviders-example.jpg" alt="" /></p><p>Files:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ab43ad04-twotextureproviders-example.jpg" alt="" /></p><p>Files:</p>
 <ul>
 <li>scenegraph/twotextureproviders/main.qml</li>
 <li>scenegraph/twotextureproviders/xorblender.cpp</li>

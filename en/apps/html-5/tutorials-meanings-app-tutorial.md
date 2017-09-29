@@ -66,7 +66,7 @@ Get it running on the Desktop with: **Build** &gt; **Run**.
 Here’s how a brand new app looks when run from the SDK (the actual GUI may
 vary as refinements are released):
 
-![](../../../media/1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 The brand new HTML5 app project has the basic set of files you need. But,
 naturally, the GUI and control logic are simply the defaults for any new app.
@@ -241,7 +241,7 @@ Let’s check out how the app looks if you run it now with Ctrl + R. Note that
 the GUI does not function yet because we have not yet added the JavaScript
 control logic.
 
-![](../../../media/app-html5-tutorial-meanings-app.png)
+![](https://assets.ubuntu.com/v1/ae9a1f60-app-html5-tutorial-meanings-app.png)
 
 ## App HTML5 highlights
 
@@ -461,7 +461,7 @@ you can use the `Ctrl + R` shortcut to run it in a window on the Desktop.
 Here we see it running after the user has typed in the word ‘hack’ and clicked
 the **Get** button:
 
-![](../../../media/meanings-app2.png)
+![](https://assets.ubuntu.com/v1/72aa498f-meanings-app2.png)
 
 If you have problems, you might have accidentally introduced errors, so trying
 debugging the app’s JavaScript as described above.

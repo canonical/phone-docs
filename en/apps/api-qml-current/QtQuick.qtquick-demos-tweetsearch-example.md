@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-demos-tweetsearch-example
 
 <span class="subtitle"></span>
 <!-- $$$demos/tweetsearch-description -->
-<p class="centerAlign"><img src="../../../media/qtquick-demo-tweetsearch-med-1.png" alt="" /></p><p class="centerAlign"><img src="../../../media/qtquick-demo-tweetsearch-med-2.png" alt="" /></p><p><i>Tweet Search</i> is a QML application that searches items posted to Twitter service using a number of query parameters. Search can be done for tweets from a specified user, a hashtag, or a search phrase.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /></p><p class="centerAlign"><img src="../../../media/qtquick-demo-tweetsearch-med-2.png" alt="" /></p><p><i>Tweet Search</i> is a QML application that searches items posted to Twitter service using a number of query parameters. Search can be done for tweets from a specified user, a hashtag, or a search phrase.</p>
 <p>The search result is a list of items showing the contents of the tweet as well as the name and image of the user who posted it. Hashtags, names and links in the content are clickable. Clicking on the image will flip the item to reveal more information.</p>
 <h2 id="running-the-example">Running the Example</h2>
 <p>To run the example from Qt Creator, open the <b>Welcome</b> mode and select the example from <b>Examples</b>. For more information, visit Building and Running an Example.</p>

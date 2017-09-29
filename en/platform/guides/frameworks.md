@@ -28,9 +28,9 @@ previous version and the following new frameworks :
 These screenshots show the framework picker in the “Publish” page of the SDK
 and the complete list of available frameworks.
 
-![](../../../media/pick_framework_sdk.png)
+![](https://assets.ubuntu.com/v1/12636f1c-pick_framework_sdk.png)
 
-![](../../../media/pick_framework_list_sdk.png)
+![](https://assets.ubuntu.com/v1/41e0f3e5-pick_framework_list_sdk.png)
 
 ### Which framework version to target?
 

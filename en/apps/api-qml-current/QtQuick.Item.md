@@ -143,7 +143,7 @@ Title: QtQuick.Item
 <h3 >Layer Opacity vs Item Opacity</h3>
 <p>When applying <a href="QtQuick.qtquick-effects-topic.md#opacity">opacity</a> to an item hierarchy the opacity is applied to each item individually. This can lead to undesired visual results when the opacity is applied to a subtree. Consider the following example:</p>
 <table class="generic">
-<tr valign="top"><td ><img src="../../../media/qml-blending-nonlayered.png" alt="" /></td><td ><b>Non-layered Opacity</b><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><img src="https://assets.ubuntu.com/v1/b5c5555f-qml-blending-nonlayered.png" alt="" /></td><td ><b>Non-layered Opacity</b><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="name">id</span>: <span class="name">nonLayered</span>
 <span class="name">opacity</span>: <span class="number">0.5</span>
 <span class="name">width</span>: <span class="number">100</span>
@@ -155,7 +155,7 @@ Title: QtQuick.Item
 </table>
 <p>A layer is rendered with the root item's opacity being 1, and then the root item's opacity is applied to the texture when it is drawn. This means that fading in a large item hierarchy from transparent to opaque, or vice versa, can be done without the overlap artifacts that the normal item by item alpha blending has. Here is the same example with layer enabled:</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/qml-blending-layered.png" alt="" /></p></td><td ><b>Layered Opacity</b><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/fad24e3b-qml-blending-layered.png" alt="" /></p></td><td ><b>Layered Opacity</b><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="name">id</span>: <span class="name">layered</span>
 <span class="name">opacity</span>: <span class="number">0.5</span>
 <span class="name">layer</span>.enabled: <span class="number">true</span>
@@ -223,7 +223,7 @@ gl_FragColor = vec4(g, g, g, p.a) * qt_Opacity;
 <p>Margins apply to top, bottom, left, right, and fill anchors. The <a href="#anchors.margins-prop">anchors.margins</a> property can be used to set all of the various margins at once, to the same value. It will not override a specific margin that has been previously set; to clear an explicit margin set its value to <code>undefined</code>. Note that margins are anchor-specific and are not applied if an item does not use anchors.</p>
 <p>Offsets apply for horizontal center, vertical center, and baseline anchors.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-anchors_example.png" alt="" /></p></td><td >Text anchored to Image, horizontally centered and vertically below, with a margin.<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/a1b20cf4-declarative-anchors_example.png" alt="" /></p></td><td >Text anchored to Image, horizontally centered and vertically below, with a margin.<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">pic</span>
 <span class="comment">// ...</span>
@@ -237,7 +237,7 @@ gl_FragColor = vec4(g, g, g, p.a) * qt_Opacity;
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-anchors_example2.png" alt="" /></p></td><td >Left of Text anchored to right of Image, with a margin. The y property of both defaults to 0.<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/402fb520-declarative-anchors_example2.png" alt="" /></p></td><td >Left of Text anchored to right of Image, with a margin. The y property of both defaults to 0.<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">id</span>: <span class="name">pic</span>
 <span class="comment">// ...</span>
@@ -443,7 +443,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 <table class="qmlname"><tr valign="top" id="opacity-prop"><td class="tblQmlPropNode"><p><span class="name">opacity</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the opacity of the item. Opacity is specified as a number between 0.0 (fully transparent) and 1.0 (fully opaque). The default value is 1.0&#x2e;</p>
 <p>When this property is set, the specified opacity is also applied individually to child items. This may have an unintended effect in some circumstances. For example in the second set of rectangles below, the red rectangle has specified an opacity of 0.5, which affects the opacity of its blue child rectangle even though the child has not specified an opacity.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_opacity1.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
@@ -454,7 +454,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_opacity2.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/eb44aed5-declarative-item_opacity2.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">opacity</span>: <span class="number">0.5</span>
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
@@ -484,7 +484,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 <table class="qmlname"><tr valign="top" id="rotation-prop"><td class="tblQmlPropNode"><p><span class="name">rotation</span> : <span class="type">real</span></p></td></tr></table><p>This property holds the rotation of the item in degrees clockwise around its <a href="#transformOrigin-prop">transformOrigin</a>.</p>
 <p>The default value is 0 degrees (that is, no rotation).</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-rotation.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/f29d2d64-declarative-rotation.png" alt="" /></p></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -504,7 +504,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 <p>The default value is 1.0&#x2e;</p>
 <p>Scaling is applied from the <a href="#transformOrigin-prop">transformOrigin</a>.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-scale.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/912efbec-declarative-scale.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;blue&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
@@ -565,7 +565,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 <!-- $$$transformOrigin -->
 <table class="qmlname"><tr valign="top" id="transformOrigin-prop"><td class="tblQmlPropNode"><p><span class="name">transformOrigin</span> : <span class="type">enumeration</span></p></td></tr></table><p>This property holds the origin point around which scale and rotation transform.</p>
 <p>Nine transform origins are available, as shown in the image below. The default transform origin is <code>Item.Center</code>.</p>
-<p class="centerAlign"><img src="../../../media/declarative-transformorigin.png" alt="" /></p><p>This example rotates an image around its bottom-right corner.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/009f4e0d-declarative-transformorigin.png" alt="" /></p><p>This example rotates an image around its bottom-right corner.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Image.md">Image</a></span> {
 <span class="name">source</span>: <span class="string">&quot;myimage.png&quot;</span>
 <span class="name">transformOrigin</span>: <span class="name">Item</span>.<span class="name">BottomRight</span>
@@ -627,7 +627,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 <p>Items with a higher stacking value are drawn on top of siblings with a lower stacking order. Items with the same stacking value are drawn bottom up in the order they appear. Items with a negative stacking value are drawn under their parent's content.</p>
 <p>The following example shows the various effects of stacking order.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_stacking1.png" alt="" /></p></td><td >Same <code>z</code> - later children above earlier children:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /></p></td><td >Same <code>z</code> - later children above earlier children:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
@@ -638,7 +638,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_stacking2.png" alt="" /></p></td><td >Higher <code>z</code> on top:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/5b75b1e8-declarative-item_stacking2.png" alt="" /></p></td><td >Higher <code>z</code> on top:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">z</span>: <span class="number">1</span>
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
@@ -650,7 +650,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_stacking3.png" alt="" /></p></td><td >Same <code>z</code> - children above parents:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/0e0590d0-declarative-item_stacking3.png" alt="" /></p></td><td >Same <code>z</code> - children above parents:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>
@@ -661,7 +661,7 @@ property <span class="type">alias</span> <span class="name">label</span>: <span 
 }
 }</pre>
 </td></tr>
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-item_stacking4.png" alt="" /></p></td><td >Lower <code>z</code> below:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/8352b07c-declarative-item_stacking4.png" alt="" /></p></td><td >Lower <code>z</code> below:<pre class="qml"><span class="type"><a href="index.html">Item</a></span> {
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">color</span>: <span class="string">&quot;red&quot;</span>
 <span class="name">width</span>: <span class="number">100</span>; <span class="name">height</span>: <span class="number">100</span>

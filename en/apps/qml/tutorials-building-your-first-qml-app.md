@@ -65,7 +65,7 @@ path to the application:
 To start Ubuntu SDK, simply open the **Dash**, start typing “**ubuntu sdk**“,
 and click on the Ubuntu SDK icon that appears on the search results.
 
-![](../../../media/qml-tutorial-ubuntu-sdk-dash.jpg)
+![](https://assets.ubuntu.com/v1/14d90463-qml-tutorial-ubuntu-sdk-dash.jpg)
 
 Next stop: putting our developer hat on.
 
@@ -112,7 +112,7 @@ Or alternatively, from the terminal:
   1. Open a terminal with `Ctrl+Alt+T`
   2. Run the following command: `qmlscene ~/CurrencyConverter/main.qml`
 
-![](../../../media/qml-tutorial-converter_0.png)
+![](https://assets.ubuntu.com/v1/c2234e78-converter_0.png)
 
 Hooray! Your first Ubuntu app for the phone is up and running. Nothing very
 exciting yet, but notice how simple it was to bootstrap it. You can close your
@@ -484,7 +484,7 @@ a currency selector button and a text field to display or input the currency
 conversion values. We’ve also added a button below them to clear both text
 fields at once. Here’s a mockup to illustrate the layout:
 
-![](../../../media/qml-tutorial-PageLayout_2.png)
+![](https://assets.ubuntu.com/v1/1034c685-PageLayout_2.png)
 
 ## Lo and behold
 
@@ -492,9 +492,9 @@ So that’s it! Now we can lay back and enjoy our creation. Just press the
 `Ctrl+R` shortcut within Ubuntu SDK, and behold the fully functional and slick
 currency converter you’ve just written with a few lines of code.
 
-![](../../../media/qml-tutorial-converter_1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/qml-tutorial-converter_2.png)
+![](https://assets.ubuntu.com/v1/19a4b63c-converter_2.png)
 
 ## Test it!
 
@@ -521,7 +521,7 @@ check out the **Component Showcase** app that comes with the Ubuntu QML
 toolkit preview. With it, you’ll be able to see all of the Ubuntu components
 in action and look at their code to learn how to use it in your apps.
 
-![](../../../media/qml-tutorial-ui_gallery.png)
+![](https://assets.ubuntu.com/v1/55dea4b6-qml-tutorial-ui_gallery.png)
 
 If you want to study the Component Showcase code:
 

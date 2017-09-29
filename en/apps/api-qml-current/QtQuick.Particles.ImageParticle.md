@@ -147,9 +147,9 @@ Title: QtQuick.Particles.ImageParticle
 <p>If the image is a sprite animation, use the sprite property instead.</p>
 <p>Since Qt 5.2, some default images are provided as resources to aid prototyping:</p>
 <table class="generic">
-<tr valign="top"><td >qrc:///particleresources/star.png</td><td ><img src="../../../media/star.png" alt="" /></td></tr>
-<tr valign="top"><td >qrc:///particleresources/glowdot.png</td><td ><img src="../../../media/glowdot.png" alt="" /></td></tr>
-<tr valign="top"><td >qrc:///particleresources/fuzzydot.png</td><td ><img src="../../../media/fuzzydot.png" alt="" /></td></tr>
+<tr valign="top"><td >qrc:///particleresources/star.png</td><td ><img src="https://assets.ubuntu.com/v1/b5b8205a-star.png" alt="" /></td></tr>
+<tr valign="top"><td >qrc:///particleresources/glowdot.png</td><td ><img src="https://assets.ubuntu.com/v1/c9e48710-glowdot.png" alt="" /></td></tr>
+<tr valign="top"><td >qrc:///particleresources/fuzzydot.png</td><td ><img src="https://assets.ubuntu.com/v1/23b7fd2b-fuzzydot.png" alt="" /></td></tr>
 </table>
 <p>Note that the images are white and semi-transparent, to allow colorization and alpha levels to have maximum effect.</p>
 <!-- @@@source -->

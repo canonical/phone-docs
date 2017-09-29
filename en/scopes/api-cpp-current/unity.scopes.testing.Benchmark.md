@@ -8,7 +8,7 @@ Title: unity.scopes.testing.Benchmark
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Benchmark.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Benchmark:
-<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/92931db8-classunity_1_1scopes_1_1testing_1_1_benchmark__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Classes</h2></td></tr>

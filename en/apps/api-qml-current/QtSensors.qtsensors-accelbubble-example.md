@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-accelbubble-example
 
 <span class="subtitle"></span>
 <!-- $$$accelbubble-description -->
-<p class="centerAlign"><img src="../../../media/accelbubble.png" alt="" /></p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/6ab1b6e9-accelbubble.png" alt="" /></p>
 <h2 id="overview">Overview</h2>
 <p>Writing a QML application that uses the Accelerometer QML sensors type requires the following steps:</p>
 <p>Import the Sensors Declarative module.</p>

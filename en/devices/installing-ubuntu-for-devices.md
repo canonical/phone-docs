@@ -357,7 +357,7 @@ to it (through scripts or the command line), you might want to enable the
 developer mode. To do this, go to **Settings → About this device → Developer
 mode**.
 
-![](../../media/devices-installing-ubuntu-1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 This allows you to access your device via ADB or directly with SSH, when the
 device is unlocked. The `phablet-shell` command, provided by the phablet-tools

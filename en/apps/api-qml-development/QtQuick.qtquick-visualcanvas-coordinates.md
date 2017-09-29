@@ -31,7 +31,7 @@ color: <span class="string">&quot;green&quot;</span>
 }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/visual-coordinates-example.png" alt="" /></p><p>In this image the black dot is positioned at (0,0) within the item coordinates of the red rectangle. If the red rectangle was the root item of the scene, then the black dot would also be positioned at (0,0) in scene coordinates.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/58e64dbd-visual-coordinates-example.png" alt="" /></p><p>In this image the black dot is positioned at (0,0) within the item coordinates of the red rectangle. If the red rectangle was the root item of the scene, then the black dot would also be positioned at (0,0) in scene coordinates.</p>
 <p>The blue rectangle is positioned at the white dot, (100,100), relative to the red rectangle's top left corner.</p>
 <p>The green rectangle has no x,y specified, so its position defaults to (0,0). Because it is at (0,0) in the coordinates of its parent, the blue rectangle, it is positioned at the top left corner of that rectangle. This is the same point as the white dot at (100,100) in the coordinates of the red rectangle.</p>
 <!-- @@@qtquick-visualcanvas-coordinates.html -->

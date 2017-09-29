@@ -62,7 +62,7 @@ subdirectory. Inside is a folder aptly called _currencyconverter_ which
 represents our testsuite name. Finally, inside this folder is the testcases
 and supporting code.
 
-![](../../../media/qml-tutorial-Selection_009.jpg)
+![](https://assets.ubuntu.com/v1/23375529-qml-tutorial-Selection_009.jpg)
 
 `cd tests/functional/currencyconverter`
 

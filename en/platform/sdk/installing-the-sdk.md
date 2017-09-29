@@ -31,7 +31,7 @@ Install as follows:
   1. Search in the Dash for “Ubuntu SDK”.
   2. Launch it from this icon:
 
-![](../../../media/ubuntu-qtcreator.png)
+![](https://assets.ubuntu.com/v1/582afc46-ubuntu-qtcreator.png)
 
 You can also launch the SDK from the shell with:
 

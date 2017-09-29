@@ -47,7 +47,7 @@ Title: QtQuick.Grid
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> { <span class="name">color</span>: <span class="string">&quot;magenta&quot;</span>; <span class="name">width</span>: <span class="number">10</span>; <span class="name">height</span>: <span class="number">10</span> }
 }</pre>
 <p>The Grid automatically positions the child items in a grid formation:</p>
-<p class="centerAlign"><img src="../../../media/gridLayout_example.png" alt="" /></p><p>If an item within a Grid is not <a href="QtQuick.Item.md#visible-prop">visible</a>, or if it has a width or height of 0, the item will not be laid out and it will not be visible within the column. Also, since a Grid automatically positions its children, a child item within a Grid should not set its <a href="QtQuick.Item.md#x-prop">x</a> or <a href="QtQuick.Item.md#y-prop">y</a> positions or anchor itself with any of the <a href="QtQuick.Item.md#anchors-prop">anchor</a> properties.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/74889142-gridLayout_example.png" alt="" /></p><p>If an item within a Grid is not <a href="QtQuick.Item.md#visible-prop">visible</a>, or if it has a width or height of 0, the item will not be laid out and it will not be visible within the column. Also, since a Grid automatically positions its children, a child item within a Grid should not set its <a href="QtQuick.Item.md#x-prop">x</a> or <a href="QtQuick.Item.md#y-prop">y</a> positions or anchor itself with any of the <a href="QtQuick.Item.md#anchors-prop">anchor</a> properties.</p>
 <p>For more information on using Grid and other related positioner-types, see <a href="QtQuick.qtquick-positioning-layouts.md">Item Positioners</a>.</p>
 <p><b>See also </b><a href="QtQuick.qtquick-positioning-layouts.md#flow">Flow</a>, <a href="QtQuick.qtquick-positioning-layouts.md#row">Row</a>, <a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a>, <a href="QtQuick.Positioner.md">Positioner</a>, GridLayout, and <a href="QtQuick.qtquick-positioners-example.md">Qt Quick Examples - Positioners</a>.</p>
 <!-- @@@Grid -->
@@ -81,7 +81,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -110,7 +110,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -160,7 +160,7 @@ Title: QtQuick.Grid
 <!-- $$$spacing -->
 <table class="qmlname"><tr valign="top" id="spacing-prop"><td class="tblQmlPropNode"><p><span class="name">spacing</span> : <span class="type">qreal</span></p></td></tr></table><p>The spacing is the amount in pixels left empty between adjacent items. The amount of spacing applied will be the same in the horizontal and vertical directions. The default spacing is 0.</p>
 <p>The below example places a Grid containing a red, a blue and a green rectangle on a gray background. The area the grid positioner occupies is colored white. The positioner on the left has the no spacing (the default), and the positioner on the right has a spacing of 6.</p>
-<p><img src="../../../media/qml-grid-no-spacing.png" alt="" /> <img src="../../../media/qml-grid-spacing.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/a7568235-qml-grid-no-spacing.png" alt="" /> <img src="https://assets.ubuntu.com/v1/7972d66e-qml-grid-spacing.png" alt="" /></p>
 <p><b>See also </b><a href="#rows-prop">rows</a> and <a href="#columns-prop">columns</a>.</p>
 <!-- @@@spacing -->
 <br/>
@@ -170,7 +170,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="../../../media/gridLayout_aligntopleft.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>

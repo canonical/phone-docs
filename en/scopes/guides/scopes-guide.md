@@ -16,7 +16,7 @@ One of **Unity**‘s main features is the **Dash**. The Dash allows the user to
 quickly search for information both locally (installed applications, recent
 files, bookmarks, etc) and remotely (Twitter, Google Drive, etc).
 
-![](../../../media/scopes-intro-tablet-scopes.png)
+![](https://assets.ubuntu.com/v1/16b49670-scopes-intro-tablet-scopes.png)
 
 The Dash achieves this by having one or more **Scopes** that are responsible
 for providing one category of search results. The user may search for content
@@ -24,7 +24,7 @@ either through the Scopes scope in the Dash or through the Scope’s own page.
 
 ### Finding and launching scopes
 
-![](../../../media/scopes-architecture.png)
+![](https://assets.ubuntu.com/v1/b39c4c13-scopes-architecture.png)
 
 Scopes can be local or remote. Local scopes run on the device and remote
 scopes run on the Scopes Server. For Ubuntu 14.10 only local scope submission
@@ -41,7 +41,7 @@ so that only the required scopes will be run as a result of a query.
 
 ### Scopes data flow
 
-![](../../../media/scopes-data-flow.png)
+![](https://assets.ubuntu.com/v1/0322ea13-scopes-data-flow.png)
 
 ### Scopes terminology
 
@@ -92,13 +92,13 @@ user may enter a search term in the Ubuntu shell, and the shell calls a scope.
 The scope performs its query and surfaces results to the shell, where they are
 rendered.
 
-![](../../../media/diag1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 But, a scope does not know or care what calls it, which means a scope can call
 a scope. A scope can aggregate data from any data sources, including other
 scopes.
 
-![](../../../media/daig2-crop.png)
+![](https://assets.ubuntu.com/v1/0be64bb4-daig2-crop.png)
 
 A scope is an atomic query process that returns results (and preview data) to
 whatever calls it. This architecture enables many possibilities to enhance the
@@ -140,7 +140,7 @@ query that provides the results, and the client displays them using the Unity
 
 Here is an example of results displayed with the default results renderer:
 
-![](../../../media/grid-medium.png)
+![](https://assets.ubuntu.com/v1/921eb740-grid-medium.png)
 
 Developers can choose to enhance results display in various ways that add
 style and navigation options to the user experience and make the data more
@@ -156,7 +156,7 @@ the client without any work by the developer.
 Here is an example of two categories of results displayed from the same scope,
 one with carousel layout, one with grid layout:
 
-![](../../../media/twocategories-default.png)
+![](https://assets.ubuntu.com/v1/df4e9423-twocategories-default.png)
 
 There are many other rendering options for result categories, including
 additional layouts (like journal, vertical-journal, organic-grid, and more),
@@ -166,19 +166,19 @@ renderer template (it is a small JSON object).
 
 Here are a few grid layout samples:
 
-![](../../../media/grid-medium-overlay-gradient.png)
+![](https://assets.ubuntu.com/v1/603bc1fc-grid-medium-overlay-gradient.png)
 
-![](../../../media/grid-small.png)
+![](https://assets.ubuntu.com/v1/15ba9e7c-grid-small.png)
 
-![](../../../media/grid-medium-overlay-color.png)
+![](https://assets.ubuntu.com/v1/9ab8b56b-grid-medium-overlay-color.png)
 
 And here are a few simple variations with carousel layouts:
 
-![](../../../media/carousel.png)
+![](https://assets.ubuntu.com/v1/2dbacbdc-carousel.png)
 
-![](../../../media/carousel-gradient.png)
+![](https://assets.ubuntu.com/v1/7e76b3b2-carousel-gradient.png)
 
-![](../../../media/carousel-color-overlay.png)
+![](https://assets.ubuntu.com/v1/eb944347-carousel-color-overlay.png)
 
 ## Preview widgets
 
@@ -197,16 +197,16 @@ Here’s a sample preview. It contains four widgets, a header widget (which has
 a title and a subtitle), an image widget (which has a source field), a text
 widget, and an actions widget:
 
-![](../../../media/preview-widgets-crop.png)
+![](https://assets.ubuntu.com/v1/38dc305a-preview-widgets-crop.png)
 
 Here are the same four widgets, just in a different order:
 
-![](../../../media/scope-intro-preview-differentwidgetorder.png)
+![](https://assets.ubuntu.com/v1/63df1bb1-preview-differentwidgetorder.png)
 
 You can add data to the preview that is not derived from the search result
 being processed. For example, here a new “text” widget is added:
 
-![](../../../media/scope-intro-preview-hardcode-crop.png)
+![](https://assets.ubuntu.com/v1/a7aabeec-preview-hardcode-crop.png)
 
 Different types of search results in the same scope can expose different data
 in the preview. For example, a restaurant preview may expose ratings and
@@ -236,7 +236,7 @@ Here is an example of a two column layout. Note that the image description is
 at the top of column two, and there are two additional text widgets
 (containing “Lorem ipsum …”):
 
-![](../../../media/preview-twocolumnlayout.png)
+![](https://assets.ubuntu.com/v1/57f0bba9-preview-twocolumnlayout.png)
 
 # Next steps
 

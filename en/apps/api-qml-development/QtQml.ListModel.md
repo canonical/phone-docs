@@ -36,7 +36,7 @@ Title: QtQml.ListModel
 <p>Elements can be manipulated via the model using the <a href="#setProperty-method">setProperty()</a> method, which allows the roles of the specified element to be set and changed.</p>
 <h2 id="example-usage">Example Usage</h2>
 <p>The following example shows a <a href="index.html">ListModel</a> containing three elements, with the roles &quot;name&quot; and &quot;cost&quot;.</p>
-<p><img src="../../../media/listmodel.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/14b53b34-listmodel.png" alt="" /></p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="index.html">ListModel</a></span> {
 <span class="name">id</span>: <span class="name">fruitModel</span>
@@ -104,7 +104,7 @@ Title: QtQml.ListModel
 }
 }</pre>
 <p>The delegate displays all the fruit attributes:</p>
-<p><img src="../../../media/listmodel-nested.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/3eb8812c-listmodel-nested.png" alt="" /></p>
 <pre class="qml"><span class="type"><a href="QtQml.Component.md">Component</a></span> {
 <span class="name">id</span>: <span class="name">fruitDelegate</span>
 <span class="type">Item</span> {

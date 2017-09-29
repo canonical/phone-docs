@@ -84,9 +84,9 @@ The last thing needed is registering the root department on the reply object.
 If you try to run the scope at this point, you should see a new piece of UI at
 the top of your results!
 
-![](../../../media/scope_dep0.png)
+![](https://assets.ubuntu.com/v1/b74c6d5d-scope_dep0.png)
 
-![](../../../media/scope_dep1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 ### Using departments in queries
 
@@ -122,9 +122,9 @@ if (!query.department_id().empty()) {
 }
 ```
 
-![](../../../media/scope_dep3.png)
+![](https://assets.ubuntu.com/v1/69c526c6-scope_dep3.png)
 
-![](../../../media/scopt-tutorial-scope_dep2.png)
+![](https://assets.ubuntu.com/v1/926c9e7e-scope_dep2.png)
 
 ## Complex hierarchies
 
@@ -201,13 +201,13 @@ reply->register_departments(all_depts);
 
 Lets see what it does !
 
-![](../../../media/scope_dep4.png)
+![](https://assets.ubuntu.com/v1/cdfdcc61-scope_dep4.png)
 
-![](../../../media/scope_dep5.png)
+![](https://assets.ubuntu.com/v1/7b5b86e8-scope_dep5.png)
 
-![](../../../media/scope_dep6.png)
+![](https://assets.ubuntu.com/v1/cb0aa96f-scope_dep6.png)
 
-![](../../../media/scope-tutorial-scope_dep7.png)
+![](https://assets.ubuntu.com/v1/76b8fa20-scope-tutorial-scope_dep7.png)
 
 ### Going further
 
@@ -217,6 +217,6 @@ request to an online service. If the API you are using is providing a way to
 list item categories or has data that can be split in a logical way, make
 sure you provide departments for the user to easily browse it!
 
-![](../../../media/scope-tutorial-scope_dep81.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/scope_dep9.png)
+![](https://assets.ubuntu.com/v1/21516a4b-scope_dep9.png)

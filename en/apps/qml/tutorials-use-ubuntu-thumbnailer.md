@@ -67,7 +67,7 @@ which size to produce the thumbnail.
 
 ## A few other examples
 
-![](../../../media/qml-tutorial-thumbnailer-screenshot.png)
+![](https://assets.ubuntu.com/v1/c2358b48-qml-tutorial-thumbnailer-screenshot.png)
 
 ## Size and ratio
 

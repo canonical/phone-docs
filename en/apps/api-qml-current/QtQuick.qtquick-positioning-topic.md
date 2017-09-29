@@ -33,7 +33,7 @@ Title: QtQuick.qtquick-positioning-topic
 <span class="name">color</span>: <span class="string">&quot;yellow&quot;</span>
 }
 }</pre>
-</td><td ><p class="centerAlign"><img src="../../../media/manual-layout.png" alt="" /></p></td></tr>
+</td><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/3332c464-manual-layout.png" alt="" /></p></td></tr>
 </table>
 <h2 id="positioning-with-bindings">Positioning With Bindings</h2>
 <p>Items may also be positioned by assigning binding expressions to the properties associated with their location in the visual canvas. This type of positioning is the most highly dynamic, however some performance cost is associated with positioning items in this manner.</p>

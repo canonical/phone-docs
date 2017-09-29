@@ -8,7 +8,7 @@ Title: unity.scopes.ScopeBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::ScopeBase:
-<img src="../../../media/classunity_1_1scopes_1_1_scope_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/bf4862d8-classunity_1_1scopes_1_1_scope_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

@@ -37,15 +37,15 @@ You now have a new piece of UI floating above your app, don’t worry you can
 move it around. The top pane of the overlay shows the frame rendering time,
 the CPU usage is at the bottom.
 
-![](../../../media/perf_overlay-300x134.png)
+![](https://assets.ubuntu.com/v1/22b6af39-perf_overlay-300x134.png)
 
 Interact with your app and perform common actions… Each time you end up in the
 red, there is something you need to optimize! (like this app that obviously
 needs more work before being released…)
 
-![](../../../media/perf_countries1-420x700.png)
+![](https://assets.ubuntu.com/v1/bc515d01-perf_countries1-420x700.png)
 
-![](../../../media/perf_countries2-420x700.png)
+![](https://assets.ubuntu.com/v1/2cccf3c0-perf_countries2-420x700.png)
 
 ### Profiler
 
@@ -59,7 +59,7 @@ causing it, the profiler is a fantastic tool to show you what’s going wrong:
 For each event, it provides creating and painting time, javascript functions
 and specific QML objects performance.
 
-![](../../../media/perf_profiler-700x428.png)
+![](https://assets.ubuntu.com/v1/66645a7d-perf_profiler-700x428.png)
 
 ## Best practices for optimum performance
 
@@ -99,7 +99,7 @@ To unload the component, simply set pageLoader.source to an empty string.
 Below, you can see how _hiding_ a GIF keeps consuming CPU as opposed to
 unloading it.
 
-![](../../../media/out.gif)
+![](https://assets.ubuntu.com/v1/9913e443-out.gif)
 
 To learn more about it, have a look at the [Loaders documentation](http://qt-project.org/doc/qt-5/qml-qtquick-loader.html).
 
@@ -138,11 +138,11 @@ Image {
 Here is a small test app showing CPU usage on a Nexus4 with various image
 loading parameters (35%, 15% and 4%):
 
-![](../../../media/perf_img1-420x700.png)
+![](https://assets.ubuntu.com/v1/9e652ab1-perf_img1-420x700.png)
 
-![](../../../media/perf_img2-420x700.png)
+![](https://assets.ubuntu.com/v1/e24ebd91-perf_img2-420x700.png)
 
-![](../../../media/perf_img3-420x700.png)
+![](https://assets.ubuntu.com/v1/19a465b7-perf_img3-420x700.png)
 
   * **Avoid enabling the ****smooth**** property of images while animating them**. If you really need to smooth an image, you can turn smoothing off before the animation and add it back when the animation is over.
   * **Prefer bitmaps.** This is a sad fact of life, but vectors will load slower than bitmaps.
