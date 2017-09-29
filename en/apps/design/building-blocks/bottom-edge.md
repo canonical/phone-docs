@@ -22,7 +22,6 @@ Create something special with a unique bottom edge that belongs to your app from
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [BottomEdge API](../../api-qml-current/Ubuntu.Components.BottomEdge.md) provides bottom edge content handling. See also the  [BottomEdgeHint API](../../api-qml-current/Ubuntu.Components.BottomEdgeHint.md), which displays a label or an icon, or both, at the bottom of the component it is attached to.|
-|
 |---|-----|
 
 
@@ -34,7 +33,6 @@ The bottom edge allows for a very natural transition through a progressive gestu
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|You can create your own customised bottom edge and add different content depending on the context of your app.  [See ‘Loving the bottom edge’ for more information.](http://design.canonical.com/2014/03/loving-the-bottom-edge/)|
-|
 |---|-----|
 
 

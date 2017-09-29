@@ -27,18 +27,18 @@ To create a click build target in Ubuntu SDK, do the following:
 The list displays current click build targets, including the targeted
 framework and architecture
 
-![](../../../media/sdk-options-dialog-with-chroots.png)
+![](https://assets.ubuntu.com/v1/ad5344bb-sdk-options-dialog-with-chroots.png)
 
   * Click **Create Click Target** to create a new target.
   * In the popup dialog, select your target framework and armhf as the architecture.
 
-![](../../../media/sdk-create-click-chroot-dialog.png)
+![](https://assets.ubuntu.com/v1/1993d656-sdk-create-click-chroot-dialog.png)
 
   * Click **OK** and enter your password as prompted.
 
 **Note**: Creating the click build target requires internet access and time. During this step, an armhf chroot is created for building armhf native code
 
-![](../../../media/chroot-setup.png)
+![](https://assets.ubuntu.com/v1/75fd8854-chroot-setup.png)
 
   * After the click build target is finished, close Ubuntu SDK.
 
@@ -55,7 +55,7 @@ section. To maintain a click build target:
   * Select **Ubuntu** in the vertical panel on the left of the **Options** dialog.
   * Select the **Click** tab.
 
-![](../../../media/sdk-options-dialog-with-chroots.png)
+![](https://assets.ubuntu.com/v1/ad5344bb-sdk-options-dialog-with-chroots.png)
 
 The list displays current click build targets, including the targeted
 framework and architecture
@@ -70,24 +70,24 @@ opened the project in Ubuntu SDK before:
 
  * Open the project you wish to build (here I open the lp:music-app).​
 
-​ ![](../../../media/sdk-open-music-app.png)
+​ ![](https://assets.ubuntu.com/v1/273b5ff1-sdk-open-music-app.png)
 
  * Select the build location.​
 
-![](../../../media/sdk-select-build-location.png)
+![](https://assets.ubuntu.com/v1/07652336-sdk-select-build-location.png)
 
  * Since it is a cmake project we need to select a generator and so a target
 Kit
 
-![](../../../media/sdk-cmake-wizzard-select-generator.png)
+![](https://assets.ubuntu.com/v1/379fe50e-sdk-cmake-wizzard-select-generator.png)
 
  * Push the "Run Cmake" button and wait for the results
 
-![](../../../media/sdk-cmake-wizzard-cmake-done.png)
+![](https://assets.ubuntu.com/v1/0345a5c6-sdk-cmake-wizzard-cmake-done.png)
 
  * The project is opened.
 
-![](../../../media/sdk-open-project.png)
+![](https://assets.ubuntu.com/v1/8a9ec35e-sdk-open-project.png)
 
 For an existing project:
 
@@ -97,7 +97,7 @@ For an existing project:
   * A new tab is created showing the kit name and allowing you to set options.
   * Click the new tab. This is all that is needed to configure the project to build using the selected the armhf kit. (This also closes the new tab.)
 
-  ![](../../../media/x-build-addkit1-edit.png)
+  ![](https://assets.ubuntu.com/v1/76a5c37c-x-build-addkit1-edit.png)
 
 
 ## Building with an armhf click build target
@@ -107,10 +107,10 @@ project, you can use it for building, as long as the project is configured
 using cmake.
 
   * Open **Build and Run Kit Selector** which can be found in the vertical left pane, as well as **Build** > **Open Build and Run Kit Selector**.
-    * Ensure the armhf click build target is selected. ![](../../../media/sdk-select-armhf-target.png)
+    * Ensure the armhf click build target is selected. ![](https://assets.ubuntu.com/v1/b8285426-sdk-select-armhf-target.png)
   * Open the **Publish** tab located in the vertical pane on the left.
   * Click **Create package**.
-  * The created click package will be placed to the build directory of the project. The exact path to the click package is logged in the "Compilet output" logs in Edit mode. One might need to scroll up few pages. ![](../../../media/sdk-click-package-completed.png)
+  * The created click package will be placed to the build directory of the project. The exact path to the click package is logged in the "Compilet output" logs in Edit mode. One might need to scroll up few pages. ![](https://assets.ubuntu.com/v1/ad84252c-sdk-click-package-completed.png)
 
 The Ubuntu SDK should utilize the target we created earlier to produce a build
 for armhf devices. You can deploy your application to your tablet, phone or
@@ -127,7 +127,7 @@ inside your build directory. To verify the click package was built correctly:
   * Navigate to the package you built, and open it.
   * Check the output for warnings and error messages
 
-![](../../../media/validate-click.png)
+![](https://assets.ubuntu.com/v1/1bd3eb4f-validate-click.png)
 
 To verify the package has been compiled properly:
 

@@ -21,12 +21,12 @@ scopes have their own template, and this is what we are going to use. Hit the
 “New Project” button to create a new scope project. You will be asked to fill
 a few values to generate it.
 
-![](../../../media/scope_wizard1-700x435.png)
+![](https://assets.ubuntu.com/v1/623c2072-scope_wizard1-700x435.png)
 
 In the third screen of the wizard, we are going to pick the “Qt scope using
 HTTP + XML API” template.
 
-![](../../../media/scope-wizard-step3-xml1-700x371.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 If you need more help to get started with the SDK, have a look at the [SDK setup article](../../platform/sdk/tutorials-creating-an-sdk-app-project.md).
 
@@ -239,7 +239,7 @@ the query.
 
 ## Query string
 
-![](../../../media/jamendo_query-239x300.png)
+![](https://assets.ubuntu.com/v1/6884360c-jamendo_query-239x300.png)
 
 In [src/scope/query.cpp](http://bazaar.launchpad.net/%7Edavidc3/ubuntu-sdk-tutorials/scope-tutorial-jamendo-qtxml/view/head:/src/scope/query.cpp), you
 can easily see where the scope is receiving the user query. When the scope is
@@ -394,7 +394,7 @@ display it the way we want.
 
 ## Category renderers
 
-![](../../../media/jamendo_home-239x300.png)
+![](https://assets.ubuntu.com/v1/12a6f2cc-jamendo_home-239x300.png)
 
 Each result needs to be displayed inside a category. In terms of UI, a
 category can provide a header title to a list of results and a specific layout
@@ -493,7 +493,7 @@ set_uri…) and can also add custom fields (artist, stream, duration…).
 
 ## Previews
 
-![](../../../media/jamendo_preview-239x300.png)
+![](https://assets.ubuntu.com/v1/45f326ae-jamendo_preview-239x300.png)
 
 The preview needs to generate widgets and connect their fields to the data
 fields in the `CategorisedResult`.
@@ -665,7 +665,7 @@ reply->register_layout({layout1col, layout2col});
 
 By default, your scope looks like this :
 
-![](../../../media/scope-tutorial-soundcloud_unbranded-180x300.png)
+![](https://assets.ubuntu.com/v1/e4df5bd4-scope-tutorial-soundcloud_unbranded-180x300.png)
 
 Many display options can be changed in `data/<appid>.ini`. Here is my best
 effort at branding this scope, most of the options are self-explicit :
@@ -694,7 +694,7 @@ replace the one provided by the template. Download it and save it as
 If you tweak the category layout and colors, you can get very different
 styles. The one on the left is the result of using the above snippet :
 
-![](../../../media/jamendo_branded-180x300.png)
+![](https://assets.ubuntu.com/v1/ad057ca4-jamendo_branded-180x300.png)
 
 Have a look at all the available [customisation options](../guides/scopes-customization-branding.md) and try to
 make your scope shine!

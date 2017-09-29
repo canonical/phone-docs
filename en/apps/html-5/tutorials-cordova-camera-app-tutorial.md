@@ -113,7 +113,7 @@ starting the application directly.
 $ cordova run --device --debug
 ```
 
-![](../../../media/app-html5-tutorial-cordova-screenshot.png)
+![](https://assets.ubuntu.com/v1/382ecda6-app-html5-tutorial-cordova-screenshot.png)
 
 **Tip**: you may see warning messages after the build. For example: you haven't specified an icon for your application yet.
 
@@ -191,7 +191,7 @@ following:
 
 If you run the app now, the GUI appears as follows:
 
-![](../../../media/app-html5-tutorial-cordova-spinner.png)
+![](https://assets.ubuntu.com/v1/2e9eeea0-app-html5-tutorial-cordova-spinner.png)
 
 As noted above, that is the loading div that displays until Cordova
 deviceready event is received.
@@ -311,7 +311,7 @@ $ cordova run --device --debug
 
 Here is how the application looks like after clicking **Take Picture**:
 
-![](../../../media/camera-snap.png)
+![](https://assets.ubuntu.com/v1/e25936fb-camera-snap.png)
 
 Once you validate the picture, the system will bring back your application and
 will display the photo below the button.
@@ -346,7 +346,7 @@ Now, in `index.html`, simply add the following inside the `<head>`
 
 Now, the Loading page and the home page look like this:
 
-![](../../../media/camera-app.png)
+![](https://assets.ubuntu.com/v1/1d37b3be-camera-app.png)
 
 ## Next steps
 

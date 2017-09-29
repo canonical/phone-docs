@@ -39,7 +39,7 @@ anchors<span class="operator">.</span>fill: parent
 model: itemModel
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/visualitemmodel.png" alt="" /></p><p><b>See also </b>Qt Quick Examples - Views.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/968998c8-visualitemmodel.png" alt="" /></p><p><b>See also </b>Qt Quick Examples - Views.</p>
 <!-- @@@ObjectModel -->
 <h2>Property Documentation</h2>
 <!-- $$$count -->

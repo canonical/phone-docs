@@ -6,7 +6,7 @@ Title: QtLocation.qtlocation-places-example
 
 <span class="subtitle"></span>
 <!-- $$$places-description -->
-<p class="centerAlign"><img src="../../../media/qml-places.png" alt="" /></p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/0acb4a71-qml-places.png" alt="" /></p>
 <h2 id="overview">Overview</h2>
 <p>The Places example presents an application window displaying a map. At the top of the window is a search box, which is used to enter a place search query. To search for a place enter a search term into the text box and click the magnifying glass icon. To search for a place by category, click the category icon to display the list of available categories and select the desired category. The place search query will be for places that are near the current location shown on the map.</p>
 <p>The search box provides search term suggestions when three or more characters are entered. Selecting one of the suggestions will cause a place search to be performed with the selected search text.</p>
@@ -239,7 +239,7 @@ signal <span class="type">editClicked</span>(variant category)
 }
 <span class="type">Row</span> {
 <span class="type">Image</span> {
-<span class="name">source</span>: <span class="name">place</span>.<span class="name">favorite</span> ? <span class="string">&quot;../../resources/star.png&quot;</span> : <span class="name">place</span>.<span class="name">icon</span>.<span class="name">url</span>()
+<span class="name">source</span>: <span class="name">place</span>.<span class="name">favorite</span> ? <span class="string">&quot;https://assets.ubuntu.com/v1/b5b8205a-star.png&quot;</span> : <span class="name">place</span>.<span class="name">icon</span>.<span class="name">url</span>()
 }
 <span class="type">Column</span> {
 <span class="name">anchors</span>.verticalCenter: <span class="name">parent</span>.<span class="name">verticalCenter</span>

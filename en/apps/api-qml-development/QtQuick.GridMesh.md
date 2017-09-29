@@ -24,7 +24,7 @@ Title: QtQuick.GridMesh
 <!-- $$$resolution -->
 <table class="qmlname"><tr valign="top" id="resolution-prop"><td class="tblQmlPropNode"><p><span class="name">resolution</span> : <span class="type">size</span></p></td></tr></table><p>This property holds the grid resolution. The resolution's width and height specify the number of cells or spacings between vertices horizontally and vertically respectively. The minimum and default is 1x1, which corresponds to four vertices in total, one in each corner. For non-linear vertex transformations, you probably want to set the resolution higher.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-gridmesh.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/37c9c1d5-declarative-gridmesh.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.ShaderEffect.md">ShaderEffect</a></span> {
 <span class="name">width</span>: <span class="number">200</span>
 <span class="name">height</span>: <span class="number">200</span>

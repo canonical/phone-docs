@@ -60,7 +60,7 @@ Title: QtQuick.Rotation
 <span class="name">transform</span>: <span class="name">Rotation</span> { <span class="name">origin</span>.x: <span class="number">30</span>; <span class="name">origin</span>.y: <span class="number">30</span>; <span class="type">axis</span> { <span class="name">x</span>: <span class="number">0</span>; <span class="name">y</span>: <span class="number">1</span>; <span class="name">z</span>: <span class="number">0</span> } <span class="name">angle</span>: <span class="number">72</span> }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-customitems-dialcontrol-example.md">Dial Control example</a> and <a href="QtQuick.qtquick-demos-clocks-example.md">Qt Quick Demo - Clocks</a>.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/5939a2ac-axisrotation.png" alt="" /></p><p><b>See also </b><a href="QtQuick.qtquick-customitems-dialcontrol-example.md">Dial Control example</a> and <a href="QtQuick.qtquick-demos-clocks-example.md">Qt Quick Demo - Clocks</a>.</p>
 <!-- @@@Rotation -->
 <h2>Property Documentation</h2>
 <!-- $$$angle -->
@@ -70,7 +70,7 @@ Title: QtQuick.Rotation
 <!-- $$$axis -->
 <table class="qmlname"><tr valign="top" id="axis-prop"><th class="centerAlign"><p><b>axis group</b></p></th></tr><tr valign="top" id="axis.x-prop"><td class="tblQmlPropNode"><p><span class="name">axis.x</span> : <span class="type">real</span></p></td></tr><tr valign="top" id="axis.y-prop"><td class="tblQmlPropNode"><p><span class="name">axis.y</span> : <span class="type">real</span></p></td></tr><tr valign="top" id="axis.z-prop"><td class="tblQmlPropNode"><p><span class="name">axis.z</span> : <span class="type">real</span></p></td></tr></table><p>The axis to rotate around. For simple (2D) rotation around a point, you do not need to specify an axis, as the default axis is the z axis (<code>axis { x: 0; y: 0; z: 1 }</code>).</p>
 <p>For a typical 3D-like rotation you will usually specify both the origin and the axis.</p>
-<p class="centerAlign"><img src="../../../media/3d-rotation-axis.png" alt="" /></p><!-- @@@axis -->
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/a5c82f79-3d-rotation-axis.png" alt="" /></p><!-- @@@axis -->
 <br/>
 <!-- $$$origin -->
 <table class="qmlname"><tr valign="top" id="origin-prop"><th class="centerAlign"><p><b>origin group</b></p></th></tr><tr valign="top" id="origin.x-prop"><td class="tblQmlPropNode"><p><span class="name">origin.x</span> : <span class="type">real</span></p></td></tr><tr valign="top" id="origin.y-prop"><td class="tblQmlPropNode"><p><span class="name">origin.y</span> : <span class="type">real</span></p></td></tr></table><p>The origin point of the rotation (i.e&#x2e;, the point that stays fixed relative to the parent as the rest of the item rotates). By default the origin is (0, 0).</p>

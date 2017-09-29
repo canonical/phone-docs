@@ -42,7 +42,6 @@ The same context menu appears with more commands when a user right-clicks on a w
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[See how context menus behave in List items](list-items.md).|
-|
 |---|-----|
 
 
@@ -53,7 +52,6 @@ Cascading menus act as sub-menus within your main contextual or application menu
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Try to limit nesting to one level deep, because it can be difficult for the user to navigate through multiple nested submenus in staged environments.|
-|
 |---|-----|
 
 
@@ -105,7 +103,6 @@ On smaller screens, such as mobile, users reveal leading and trailing actions by
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|[For more information about leading and trailing actions see List Item](list-items.md).|
-|
 |---|-----|
 
 
@@ -174,7 +171,6 @@ Use over-long text labels that result in truncation (…).
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|By default the SDK applies a truncation to long text labels, therefore avoid placing them manually.|
-|
 |---|-----|
 
 
@@ -228,7 +224,6 @@ The top three actions inside your menu will appear as trailing actions when the 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Developer can choose to input a burger menu to store the actions inside the header rather than inside the list item, if they wish.|
-|
 |---|-----|
 
 
@@ -263,7 +258,6 @@ The Flag Gutter will always be present in the context menu in order to allow fla
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more information on checkboxes and radio buttons see  [Selection controls.](selection-controls.md)|
-|
 |---|-----|
 
 

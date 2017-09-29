@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-scenegraph-textureinsgnode-example
 
 <span class="subtitle"></span>
 <!-- $$$scenegraph/textureinsgnode-description -->
-<p class="centerAlign"><img src="../../../media/textureinsgnode-example.jpg" alt="" /></p><p>Files:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/b533223b-textureinsgnode-example.jpg" alt="" /></p><p>Files:</p>
 <ul>
 <li>scenegraph/textureinsgnode/fboinsgrenderer.cpp</li>
 <li>scenegraph/textureinsgnode/fboinsgrenderer.h</li>

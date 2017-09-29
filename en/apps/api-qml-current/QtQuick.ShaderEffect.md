@@ -50,7 +50,7 @@ Title: QtQuick.ShaderEffect
 <p>The QML scene graph back-end may choose to allocate textures in texture atlases. If a texture allocated in an atlas is passed to a <a href="index.html">ShaderEffect</a>, it is by default copied from the texture atlas into a stand-alone texture so that the texture coordinates span from 0 to 1, and you get the expected wrap modes. However, this will increase the memory usage. To avoid the texture copy, set <a href="#supportsAtlasTextures-prop">supportsAtlasTextures</a> for simple shaders using qt_MultiTexCoord0, or for each &quot;uniform sampler2D &lt;name&gt;&quot; declare a &quot;uniform vec4 qt_SubRect_&lt;name&gt;&quot; which will be assigned the texture's normalized source rectangle. For stand-alone textures, the source rectangle is [0, 1]x[0, 1]. For textures in an atlas, the source rectangle corresponds to the part of the texture atlas where the texture is stored. The correct way to calculate the texture coordinate for a texture called &quot;source&quot; within a texture atlas is &quot;qt_SubRect_source.xy + qt_SubRect_source.zw * qt_MultiTexCoord0&quot;.</p>
 <p>The output from the <a href="#fragmentShader-prop">fragmentShader</a> should be premultiplied. If <a href="#blending-prop">blending</a> is enabled, source-over blending is used. However, additive blending can be achieved by outputting zero in the alpha channel.</p>
 <table class="generic">
-<tr valign="top"><td ><p class="centerAlign"><img src="../../../media/declarative-shadereffectitem.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
+<tr valign="top"><td ><p class="centerAlign"><img src="https://assets.ubuntu.com/v1/f5ae8656-declarative-shadereffectitem.png" alt="" /></p></td><td ><pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">200</span>; <span class="name">height</span>: <span class="number">100</span>
 <span class="type"><a href="QtQuick.Row.md">Row</a></span> {
@@ -84,7 +84,7 @@ gl_FragColor = vec4(vec3(dot(tex.rgb, vec3(0.344, 0.5, 0.156))), tex.a) * qt_Opa
 <h2 id="shadereffect-and-item-layers">ShaderEffect and Item Layers</h2>
 <p>The <a href="index.html">ShaderEffect</a> type can be combined with <a href="QtQuick.Item.md#item-layers">layered items</a>.</p>
 <table class="generic">
-<tr valign="top"><td ><b>Layer with effect disabled</b> <img src="../../../media/qml-shadereffect-nolayereffect.png" alt="" /></td><td ><b>Layer with effect enabled</b> <img src="../../../media/qml-shadereffect-layereffect.png" alt="" /></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<tr valign="top"><td ><b>Layer with effect disabled</b> <img src="https://assets.ubuntu.com/v1/6013e354-qml-shadereffect-nolayereffect.png" alt="" /></td><td ><b>Layer with effect enabled</b> <img src="https://assets.ubuntu.com/v1/5d918eb8-qml-shadereffect-layereffect.png" alt="" /></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">layerRoot</span>
 <span class="name">layer</span>.enabled: <span class="number">true</span>
 <span class="name">layer</span>.effect: <span class="name">ShaderEffect</span> {
@@ -102,7 +102,7 @@ gl_FragColor = vec4(g, g, g, p.a) * qt_Opacity;
 </table>
 <p>It is also possible to combine multiple layered items:</p>
 <table class="generic">
-<tr valign="top"><td ><img src="../../../media/qml-shadereffect-opacitymask.png" alt="" /></td><td ><pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
+<tr valign="top"><td ><img src="https://assets.ubuntu.com/v1/1689b8dd-qml-shadereffect-opacitymask.png" alt="" /></td><td ><pre class="qml">    <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">gradientRect</span>;
 <span class="name">width</span>: <span class="number">10</span>
 <span class="name">height</span>: <span class="number">10</span>

@@ -13,10 +13,10 @@ Title: QtMultimedia.qtmultimedia-video-qmlvideofx-example
 <p>It also shows how native code can be combined with QML to implement more advanced functionality - in this case, C++ code is used to calculate the QML frame rate. This value is rendered in QML in a semi-transparent item overlaid on the video content.</p>
 <p>The following screenshots show shader effects being applied. In each case, the effect is implemented using a fragment shader.</p>
 <p>Here we see an edge detection algorithm being applied to a video clip (<a href="http://durian.blender.org/">Sintel from blender.org</a>).</p>
-<p class="centerAlign"><img src="../../../media/qmlvideofx-video-edgedetection.jpg" alt="" /></p><p>This image shows a page curl effect, applied to the same video clip.</p>
-<p class="centerAlign"><img src="../../../media/qmlvideofx-video-pagecurl.jpg" alt="" /></p><p>Here we see a 'glow' effect (edge detection plus colour quantization) being applied to the camera viewfinder.</p>
-<p class="centerAlign"><img src="../../../media/qmlvideofx-camera-glow.jpg" alt="" /></p><p>This image shows a 'wobble' effect applied to the viewfinder.</p>
-<p class="centerAlign"><img src="../../../media/qmlvideofx-camera-wobble.jpg" alt="" /></p><p>The application includes many more effects than the ones shown here - look for Effect*.qml files in the list of files below to see the full range.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/1e61c722-qmlvideofx-video-edgedetection.jpg" alt="" /></p><p>This image shows a page curl effect, applied to the same video clip.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/561b157c-qmlvideofx-video-pagecurl.jpg" alt="" /></p><p>Here we see a 'glow' effect (edge detection plus colour quantization) being applied to the camera viewfinder.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/1169ca35-qmlvideofx-camera-glow.jpg" alt="" /></p><p>This image shows a 'wobble' effect applied to the viewfinder.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/3e241c48-qmlvideofx-camera-wobble.jpg" alt="" /></p><p>The application includes many more effects than the ones shown here - look for Effect*.qml files in the list of files below to see the full range.</p>
 <h2 id="application-structure">Application structure</h2>
 <p>Shader effects can be applied to video or viewfinder content using ShaderEffect, as shown in the following example, which applies a wiggly effect to the content:</p>
 <pre class="cpp">import <span class="type">QtQuick</span> <span class="number">2.0</span>
@@ -127,7 +127,7 @@ property <span class="type">real</span> <span class="name">granularity</span>: <
 }</pre>
 <p>The main.qml file shows a FileOpen, which allows the user to select the input source and an EffectSelectionPanel item, which lists each of the available shader effects. As described above, a Content item is used to load the appropriate input and effect type. A Divider item draws the vertical dividing line, which can be dragged left / right by the user. Finally, a ParameterPanel item renders the sliders corresponding to each effect parameter.</p>
 <p>Here is the effect selection menu:</p>
-<p class="centerAlign"><img src="../../../media/qmlvideofx-effects-menu.jpg" alt="" /></p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/a598d79f-qmlvideofx-effects-menu.jpg" alt="" /></p>
 <h2 id="calculating-and-displaying-qml-painting-rate">Calculating and displaying QML painting rate</h2>
 <p>The QML painting rate is calculated by the FrequencyMonitor class, which turns a stream of events (received via the notify() slot), into an instantaneous and an averaged frequency:</p>
 <pre class="qml"><span class="keyword">class</span> FrequencyMonitor : <span class="keyword">public</span> <span class="type">QObject</span>
@@ -185,7 +185,7 @@ Q_INVOKABLE <span class="type">void</span> notify();
 }
 }</pre>
 <p>The result looks like this:</p>
-<p class="centerAlign"><img src="../../../media/video-qml-paint-rate.png" alt="" /></p><p>All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/767ac9a4-video-qml-paint-rate.png" alt="" /></p><p>All that remains is to connect the afterRendering() signal of the QQuickView object to a JavaScript function, which will eventually call frequencyItem.notify():</p>
 <pre class="qml"><span class="preprocessor">#include &lt;QtGui/QGuiApplication&gt;</span>
 <span class="preprocessor">#include &lt;QtQuick/QQuickItem&gt;</span>
 <span class="preprocessor">#include &lt;QtQuick/QQuickView&gt;</span>

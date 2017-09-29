@@ -554,7 +554,7 @@ property <span class="type">string</span> <span class="name">greeting</span>: <s
 <span class="name">color</span>: <span class="name">Qt</span>.<span class="name">tint</span>(<span class="string">&quot;lightsteelblue&quot;</span>, <span class="string">&quot;#10FF0000&quot;</span>)
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/declarative-rect_tint.png" alt="" /></p><p>Tint is most useful when a subtle change is intended to be conveyed due to some event; you can then use tinting to more effectively tune the visible color.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/00e6890f-declarative-rect_tint.png" alt="" /></p><p>Tint is most useful when a subtle change is intended to be conveyed due to some event; you can then use tinting to more effectively tune the visible color.</p>
 <!-- @@@tint -->
 <br/>
 <!-- $$$vector2d -->

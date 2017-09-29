@@ -52,7 +52,7 @@ the terminal, now switch to the tutorial folder:
 If you navigate to that folder with the file browser, you can click on the
 `CurrencyConverter.qmlproject` file and open it with the Ubuntu SDK IDE:
 
-![](../../../media/Selection_006.jpg)
+![](https://assets.ubuntu.com/v1/201fe525-Selection_006.jpg)
 
 So let’s run it! Switch back to your terminal and run:
 
@@ -61,7 +61,7 @@ So let’s run it! Switch back to your terminal and run:
 If everything went successfully, you should see a small window appear and
 disappear quickly and a printout displaying all tests as passing.
 
-![](../../../media/Selection_008.jpg)
+![](https://assets.ubuntu.com/v1/df49c54e-Selection_008.jpg)
 
 ## Integration tests for Currency Converter
 

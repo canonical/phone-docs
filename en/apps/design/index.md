@@ -85,7 +85,6 @@ The new App Guide will be released in phases over the coming days and weeks.
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|See the Insights  [blog](https://insights.ubuntu.com/) for more updates.|
-|
 |---|-----|
 
 

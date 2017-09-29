@@ -31,9 +31,9 @@ toggle location data access. Note that it will be enabled by default. If you
 run the scope at this point, you should see a new “Settings” entry in the
 header, with an “Enable location data” checkbox.
 
-![](../../../media/scope-location-0.png)
+![](https://assets.ubuntu.com/v1/d9663948-scope-location-0.png)
 
-![](../../../media/scope-location-1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 ## Location data
 
@@ -128,7 +128,7 @@ if (query_string.empty()) {
 
 That’s it! The scope should now be able to surface weather data for your location when you open it.
 
-![](../../../media/scope-location-2.png)
+![](https://assets.ubuntu.com/v1/1d3e49f6-scope-location-2.png)
 
 ## Next steps
 

@@ -48,7 +48,7 @@ The full lifecycle of a push message is:
 If the user interacts with the notification, the application is launched and
 should check its queue for messages it has to process.
 
-![](../../../media/push.png)
+![](https://assets.ubuntu.com/v1/f76d23d6-push.png)
 
 
 

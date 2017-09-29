@@ -28,14 +28,14 @@ Select Run to change the Run settings. Use the dropdown to select the
 'Autopilot' run configuration. It will display a list of autopilot tests for
 the project.
 
-![](../../../media/Selection_008.jpg)
+![](https://assets.ubuntu.com/v1/df49c54e-Selection_008.jpg)
 
 Choose a specific test to run or run them all. When ready, launch the tests as
 normal by pressing the run button. Your autopilot tests will now run inside a
 separate window. You can watch there execution or continue working. The
 results of the tests will be displayed in the Application Output Console.
 
-![](../../../media/platform-run-autopilot-trim.gif)
+![](https://assets.ubuntu.com/v1/3d51cacb-platform-run-autopilot-trim.gif)
 
 ### autopilot3-sandbox-run
 

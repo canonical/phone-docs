@@ -9,7 +9,7 @@ Ubuntu for devices runs on a variety of mobile [devices](devices.md), such as th
 
 This guide provides all the information required to port Ubuntu to new hardware, and to enable the Ubuntu community to create and host their own ports, with support for Over-The-Air (OTA) updates.
 
-![](../../media/devices-porting-devices-illustration.png)
+![](https://assets.ubuntu.com/v1/485c732a-devices-porting-devices-illustration.png)
 
 ## Before getting started
 
@@ -72,7 +72,7 @@ Other than the very basic services (needed to re-use the binary blobs already
 available), the rest is just pure Ubuntu goodness (we don't have dalvik
 running, for example).
 
-![](../../media/ubuntu_touch_architecture.png)
+![](https://assets.ubuntu.com/v1/98e0a5d4-ubuntu_touch_architecture.png)
 
 ### Toolchain and build system
 

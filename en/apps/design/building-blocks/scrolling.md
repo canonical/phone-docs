@@ -11,7 +11,6 @@ The toolkit provides a ScrollView component that allows users to scroll content 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [ScrollView API](../../api-qml-current/Ubuntu.Components.ScrollView.md) is a scrollable view that features scrollbars and scrolling when using keyboard keys.|
-|
 |---|-----|
 
 
@@ -96,7 +95,6 @@ Place any ListView API inside a ScrollView to present a scrollbar when items hav
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|Use the  [ListView API](../../api-qml-current/QtQuick.ListView.md) or see  [List Items](list-items.md) for more guidance on using lists inside your application.|
-|
 |---|-----|
 
 

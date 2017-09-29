@@ -8,7 +8,7 @@ Title: unity.scopes.testing.Category
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/testing/Category.h&gt;</code></p>
 Inheritance diagram for unity::scopes::testing::Category:
-<img src="../../../media/classunity_1_1scopes_1_1testing_1_1_category__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/497289dd-classunity_1_1scopes_1_1testing_1_1_category__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -18,7 +18,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb48fefd29c1b45b1877ac103a301328"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb48fefd29c1b45b1877ac103a301328">Category</a> (<a class="el" href="unity.scopes.md#ad5d8ccfa11a327fca6f3e4cee11f4c10">VariantMap</a> const &amp;variant_map)</td></tr>
 <tr class="memdesc:abb48fefd29c1b45b1877ac103a301328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes category from a variant data.  More...<br /></td></tr>
 <tr class="separator:abb48fefd29c1b45b1877ac103a301328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_category"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_category')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Category.md">unity::scopes::Category</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_category"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_category')"><img src="https://assets.ubuntu.com/v1/c6607712-closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Category.md">unity::scopes::Category</a></td></tr>
 <tr class="memitem:aa14a4f95af60187f890ef475d0d8cabe inherit pub_methods_classunity_1_1scopes_1_1_category"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Category.md#aa14a4f95af60187f890ef475d0d8cabe">id</a> () const </td></tr>
 <tr class="memdesc:aa14a4f95af60187f890ef475d0d8cabe inherit pub_methods_classunity_1_1scopes_1_1_category"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get identifier of this Category.  More...<br /></td></tr>
 <tr class="separator:aa14a4f95af60187f890ef475d0d8cabe inherit pub_methods_classunity_1_1scopes_1_1_category"><td class="memSeparator" colspan="2">&#160;</td></tr>

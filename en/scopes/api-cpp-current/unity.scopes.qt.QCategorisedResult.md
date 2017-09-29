@@ -8,7 +8,7 @@ Title: unity.scopes.qt.QCategorisedResult
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/qt/QCategorisedResult.h&gt;</code></p>
 Inheritance diagram for unity::scopes::qt::QCategorisedResult:
-<img src="../../../media/classunity_1_1scopes_1_1qt_1_1_q_categorised_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/74a3bcac-classunity_1_1scopes_1_1qt_1_1_q_categorised_result__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -36,7 +36,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27a508103a641b362cd7738cebcf230e"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="index.html">QCategorisedResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="index.html">QCategorisedResult</a> &amp;&amp;)</td></tr>
 <tr class="separator:a27a508103a641b362cd7738cebcf230e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.qt.QResult.md">unity::scopes::qt::QResult</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result')"><img src="https://assets.ubuntu.com/v1/c6607712-closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.qt.QResult.md">unity::scopes::qt::QResult</a></td></tr>
 <tr class="memitem:ad1bc050f67237c601821cc5836c76b94 inherit pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.qt.QResult.md#ad1bc050f67237c601821cc5836c76b94">~QResult</a> ()</td></tr>
 <tr class="separator:ad1bc050f67237c601821cc5836c76b94 inherit pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56592ac2bbf7a752f9aa99ea26226cee inherit pub_methods_classunity_1_1scopes_1_1qt_1_1_q_result"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.qt.QResult.md#a56592ac2bbf7a752f9aa99ea26226cee">store</a> (<a class="el" href="unity.scopes.qt.QResult.md">QResult</a> const &amp;other, bool intercept_activation=false)</td></tr>

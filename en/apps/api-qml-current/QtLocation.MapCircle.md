@@ -46,7 +46,7 @@ color: <span class="char">'green'</span>
 border<span class="operator">.</span>width: <span class="number">3</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/api-mapcircle.png" alt="" /></p><!-- @@@MapCircle -->
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/5f473a72-api-mapcircle.png" alt="" /></p><!-- @@@MapCircle -->
 <h2>Property Documentation</h2>
 <!-- $$$border -->
 <table class="qmlname"><tr valign="top" id="border-prop"><th class="centerAlign"><p><b>border group</b></p></th></tr><tr valign="top" id="border.width-prop"><td class="tblQmlPropNode"><p><span class="name">border.width</span> : <span class="type">int</span></p></td></tr><tr valign="top" id="border.color-prop"><td class="tblQmlPropNode"><p><span class="name">border.color</span> : <span class="type">color</span></p></td></tr></table><p>This property is part of the border group property. The border property holds the width and color used to draw the border of the circle. The width is in pixels and is independent of the zoom level of the map.</p>

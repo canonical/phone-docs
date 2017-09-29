@@ -8,7 +8,7 @@ Title: unity.scopes.OptionSelectorFilter
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/OptionSelectorFilter.h&gt;</code></p>
 Inheritance diagram for unity::scopes::OptionSelectorFilter:
-<img src="../../../media/classunity_1_1scopes_1_1_option_selector_filter__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/200f368f-classunity_1_1scopes_1_1_option_selector_filter__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -36,7 +36,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02124402ba7551b06a10398850343109"><td class="memItemLeft" align="right" valign="top">FilterOption::SCPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02124402ba7551b06a10398850343109">add_option</a> (std::string const &amp;<a class="el" href="unity.scopes.FilterBase.md#a1f2d96647b23af77b1ff1cffc80f3868">id</a>, std::string const &amp;<a class="el" href="#a125c5b43a776bb80f02293ae6d1801d3">label</a>, bool value)</td></tr>
 <tr class="memdesc:a02124402ba7551b06a10398850343109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new option to this filter and provide its default value.  More...<br /></td></tr>
 <tr class="separator:a02124402ba7551b06a10398850343109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_filter_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_filter_base')"><img src="https://assets.ubuntu.com/v1/c6607712-closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
 <tr class="memitem:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab4ab1b600ce3967dc50255e736c6d02e">set_display_hints</a> (int hints)</td></tr>
 <tr class="memdesc:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets display hints for the Shell UI.  More...<br /></td></tr>
 <tr class="separator:ab4ab1b600ce3967dc50255e736c6d02e inherit pub_methods_classunity_1_1scopes_1_1_filter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -73,7 +73,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_filter_base')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
+<tr class="inherit_header pub_types_classunity_1_1scopes_1_1_filter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classunity_1_1scopes_1_1_filter_base')"><img src="https://assets.ubuntu.com/v1/c6607712-closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="unity.scopes.FilterBase.md">unity::scopes::FilterBase</a></td></tr>
 <tr class="memitem:ab9e833d5e4029fed745d15ba63715159 inherit pub_types_classunity_1_1scopes_1_1_filter_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159">DisplayHints</a> { <a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a277f24de7d0bcc7e8ec8bfe0639f356f">Default</a> = 0, 
 <a class="el" href="unity.scopes.FilterBase.md#ab9e833d5e4029fed745d15ba63715159a8c8262ffd071c61b213ec489b64bdf56">Primary</a> = 1
 }</td></tr>

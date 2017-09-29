@@ -14,7 +14,7 @@ other mobile devices.
 
 ## Convergence
 
-![](../../media/devices-converged-devices.png)
+![](https://assets.ubuntu.com/v1/b26f327c-devices-converged-devices.png)
 
 Since the Ubuntu Phone announcement, Ubuntu is on track to become a convergent
 OS, using the same codebase for all devices, from desktops, servers and

@@ -43,25 +43,25 @@ It is possible to optionally define a default value for each setting.
 
 These types provide text inputs.
 
-![](../../../media/scope-settings_visitparis1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/scope-tutorial-scope-settings_visitparis2.png)
+![](https://assets.ubuntu.com/v1/7ce0e885-scope-settings_visitparis2.png)
 
 #### boolean
 
 This type provides a checkbox.
 
-![](../../../media/scope-settings_indieconcerts21.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/scope-tutorials-scope-settings_indieconcerts11.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 #### list
 
 This type provides an expandable list.
 
-![](../../../media/scope-settings_coffeenearby1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/scope-settings_coffeenearby2.png)
+![](https://assets.ubuntu.com/v1/5eeca313-scope-settings_coffeenearby2.png)
 
 ## <scope>-settings.ini
 
@@ -252,10 +252,10 @@ if(!s_forecast){
 
 Our scope now has working settings and should look like this:
 
-![](../../../media/scope-settings-final0.png)
+![](https://assets.ubuntu.com/v1/0f5827ae-scope-settings-final0.png)
 
-![](../../../media/scope-tutorial-scope-settings-final1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
-![](../../../media/scope-settings-final2.png)
+![](https://assets.ubuntu.com/v1/b0f0291a-scope-settings-final2.png)
 
-![](../../../media/scope-settings-final3.png)
+![](https://assets.ubuntu.com/v1/d6ff0d1b-scope-settings-final3.png)

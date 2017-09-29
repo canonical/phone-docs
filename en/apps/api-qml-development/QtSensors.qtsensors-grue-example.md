@@ -6,7 +6,7 @@ Title: QtSensors.qtsensors-grue-example
 
 <span class="subtitle"></span>
 <!-- $$$grue-description -->
-<p class="centerAlign"><img src="../../../media/qtsensors-examples-grue.png" alt="" /></p><p>The Qt Sensors - Grue sensor example demonstrates all the steps from creating a new sensor to using it.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ee6b7e87-qtsensors-examples-grue.png" alt="" /></p><p>The Qt Sensors - Grue sensor example demonstrates all the steps from creating a new sensor to using it.</p>
 <p>The sensor definition is placed in a library where client apps can access it. The actual implementation lives in a plugin.</p>
 <ul>
 <li><a href="QtSensors.qtsensors-grue-example.md#grue-sensor-definition">Grue Sensor Definition</a></li>

@@ -7,7 +7,7 @@ Title: QtQuick.qml-tutorial1
 <span class="subtitle"></span>
 <!-- $$$qml-tutorial1.html-description -->
 <p>This first program is a very simple &quot;Hello world&quot; example that introduces some basic QML concepts. The picture below is a screenshot of this program.</p>
-<p class="centerAlign"><img src="../../../media/declarative-tutorial1.png" alt="" /></p><p>Here is the QML code for the application:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /></p><p>Here is the QML code for the application:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">page</span>

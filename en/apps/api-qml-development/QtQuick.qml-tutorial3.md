@@ -8,7 +8,7 @@ Title: QtQuick.qml-tutorial3
 <!-- $$$qml-tutorial3.html-description -->
 <p>In this chapter, we make this example a little bit more dynamic by introducing states and transitions.</p>
 <p>We want our text to move to the bottom of the screen, rotate and become red when clicked.</p>
-<p class="centerAlign"><img src="../../../media/declarative-tutorial3_animation.gif" alt="" /></p><p>Here is the QML code:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/210ef34f-declarative-tutorial3_animation.gif" alt="" /></p><p>Here is the QML code:</p>
 <pre class="qml">import QtQuick 2.0
 <span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">id</span>: <span class="name">page</span>

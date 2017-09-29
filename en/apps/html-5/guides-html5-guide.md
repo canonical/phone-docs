@@ -28,7 +28,7 @@ a project name, then an app name. Other required fields will be useful for
 packaging and integrating your application within the Ubuntu app confinement
 model. You can have a look at [this article](../../platform/guides/app-confinement.md) to get a better grasp of what our security model is.
 
-![](../../../media/creating-a-html5-app.png)
+![](https://assets.ubuntu.com/v1/fca9f3fa-creating-a-html5-app.png)
 
 Next, you will need to select devices Kits for running your app. Kits are
 containers to run your app in the context of a specific architecture (arm,
@@ -39,7 +39,7 @@ phone Kit: this should allow you to test, build and distribute your app
 without hassle on all form factors. [Click targets and device kits](../../platform/sdk/tutorials-click-targets-and-device-kits.md) should give
 you all the details you need if you want to dive deeper or need more help.
 
-![](../../../media/welcome-html5-app.png)
+![](https://assets.ubuntu.com/v1/043ac673-welcome-html5-app.png)
 
 That’s it, your app template is created and ready to be edited. You can even
 run it right now by clicking the play button at the bottom of the left pane
@@ -66,7 +66,7 @@ you of any mistakes when you try to run or package your app.
 
 ## How to use Web APIs in your application
 
-![](../../../media/browser-score.png)
+![](https://assets.ubuntu.com/v1/4b94bdcc-browser-score.png)
 
 You can expect the large majority of standard APIs to be supported and be as
 easy to use as usual. Here is [the compatibity chart](http://html5test.com/s/676117241b62d256.html) of our web engine on

@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-models-objectlistmodel-example
 
 <span class="subtitle"></span>
 <!-- $$$models/objectlistmodel-description -->
-<p class="centerAlign"><img src="../../../media/qml-objectlistmodel-example.png" alt="" /></p><p>Files:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/83807cb2-qml-objectlistmodel-example.png" alt="" /></p><p>Files:</p>
 <ul>
 <li>models/objectlistmodel/dataobject.cpp</li>
 <li>models/objectlistmodel/dataobject.h</li>

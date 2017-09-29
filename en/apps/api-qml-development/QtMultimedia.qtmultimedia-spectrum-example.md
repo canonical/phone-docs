@@ -7,7 +7,7 @@ Title: QtMultimedia.qtmultimedia-spectrum-example
 <span class="subtitle"></span>
 <!-- $$$spectrum-description -->
 <p><i>Spectrum</i> demonstrates how the <a href="QtMultimedia.qtmultimedia-index.md">Qt Multimedia</a> module can be used to analyze an audio stream while recording it, and also play the recorded stream.</p>
-<p class="centerAlign"><img src="../../../media/spectrum-demo.png" alt="" /></p><p>Because Qt Multimedia allows the application to access the raw audio stream, the data can either be inspected or modified by the application. The Spectrum Analyzer example displays three pieces of information while audio is being either captured or played back:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/f7a3725b-spectrum-demo.png" alt="" /></p><p>Because Qt Multimedia allows the application to access the raw audio stream, the data can either be inspected or modified by the application. The Spectrum Analyzer example displays three pieces of information while audio is being either captured or played back:</p>
 <ul>
 <li>Information about the raw audio stream, shown in the uppermost widget:<ul>
 <li>The amount of data currently in the buffer, shown in blue</li>

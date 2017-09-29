@@ -48,7 +48,7 @@ Title: QtQuick.ParentChange
 <span class="type"><a href="QtQuick.MouseArea.md">MouseArea</a></span> { <span class="name">anchors</span>.fill: <span class="name">parent</span>; <span class="name">onClicked</span>: <span class="name">blueRect</span>.<span class="name">state</span> <span class="operator">=</span> <span class="string">&quot;reparented&quot;</span> }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/parentchange.png" alt="" /></p><p>You can specify at which point in a transition you want a <a href="index.html">ParentChange</a> to occur by using a <a href="QtQuick.ParentAnimation.md">ParentAnimation</a>.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/620c4c6e-parentchange.png" alt="" /></p><p>You can specify at which point in a transition you want a <a href="index.html">ParentChange</a> to occur by using a <a href="QtQuick.ParentAnimation.md">ParentAnimation</a>.</p>
 <p>Note that unlike <a href="QtQuick.PropertyChanges.md">PropertyChanges</a>, <a href="index.html">ParentChange</a> expects an Item-based target; it will not work with arbitrary objects (for example, you couldn't use it to reparent a Timer).</p>
 <!-- @@@ParentChange -->
 <h2>Property Documentation</h2>

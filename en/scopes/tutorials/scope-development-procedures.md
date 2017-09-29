@@ -16,7 +16,7 @@ In the Ubuntu SDK, simply create a new project using the Unity Scope template.
 
 **File** &gt; **New File or Project** &gt; **Unity Scope**
 
-![](../../../media/scope-tutorial-Screenshot_2015-02-25_09-20-37.png)
+![](https://assets.ubuntu.com/v1/a5b06e3a-scope-tutorial-Screenshot_2015-02-25_09-20-37.png)
 
 **Tip**: Note that when you build the scope, the generated build is placed by default in the parent directory, in a directory named `build-<project name>-<build env>-<build config>`'`. For example, if your scope project is named `‘`myscope` and you are building for an armhf target, your build directory will be `../build-myscope-armhf-14_10-Default`.
 
@@ -31,7 +31,7 @@ You can open scope projects from QtCreator with the `Ctrl+O` shortcut
 and then navigating to and selecting the CMakeLists.txt file in the project’s
 root directory.
 
-![](../../../media/scope-project-open.png)
+![](https://assets.ubuntu.com/v1/83075a7d-scope-project-open.png)
 
 ## Opening a scope branch in QtCreator as a project
 
@@ -43,7 +43,7 @@ as follows:
   2. Navigate to and select the CMakeLists.txt file in the source tree, then click the **Open** button.
   3. In the **Configure Project** dialog that displays, choose the [devices kits](../../platform/sdk/tutorials-click-targets-and-device-kits.md) you want your project to be configured for and click the the **Configure Project** button.
 
-![](../../../media/scope-tutorial-scope-branch-project-config.png)
+![](https://assets.ubuntu.com/v1/49d901f6-scope-branch-project-config.png)
 
 From a terminal, you can also navigate to the directory and run
 
@@ -80,13 +80,13 @@ left pane of the QtCreator or by pressing `Ctrl+R`.
   2. select which device (**Kit** column) you want to run your scope on
   3. select the scope itself (**Run** column), instead of scope-unit-tests
 
-![](../../../media/scope-run-tests-vs-scope.png)
+![](https://assets.ubuntu.com/v1/9d615ec3-scope-run-tests-vs-scope.png)
 
 If you are using Ubuntu 14.10, you can run a scope on your desktop, by
 selecting the desktop as a target device. This runs the scope in a standalone
 window, with developer tools to tweak the ways results are rendered.
 
-![](../../../media/unity-scope-tool.png)
+![](https://assets.ubuntu.com/v1/a31fb57c-unity-scope-tool.png)
 
   * The scope name or logo displayed in the header is derived from the .ini file
   * The left half of the run window is the scope.

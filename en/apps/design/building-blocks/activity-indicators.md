@@ -11,7 +11,6 @@ Use Activity Indicators to give the user an indication of how long a running tas
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Activity Indicator API](../../api-qml-current/Ubuntu.Components.ActivityIndicator.md) visually indicates that a task of unknown or known duration is in progress.|
-|
 |---|-----|
 
 
@@ -45,7 +44,6 @@ Use a determinate progress bar or spinner for tasks where the activity can be de
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The toolkit progress bars and spinners automatically handle presence for individual tasks by waiting for two seconds. If the task takes less than that they won’t appear at all.|
-|
 |---|-----|
 
 
@@ -101,5 +99,4 @@ Don’t fill the indicator if the task has failed, because it could confuse the 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|See Communicating Progress (coming soon) for best practices on labelling Activity Indicators.|
-|
 |---|-----|

@@ -66,7 +66,6 @@ The action area can include actions such as settings, search, views, or an actio
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Don’t use a navigation drawer and an action drawer at the same time, because users are unlikely to distinguish between them.|
-|
 |---|-----|
 
 
@@ -79,7 +78,6 @@ The header contains a number of slots that can hold actions or navigational opti
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Think about the most important actions and views you want the user to perform and make it easy for them to find by using the header.|
-|
 |---|-----|
 
 
@@ -171,7 +169,6 @@ The maximum number of visible action slots in a convergent environment is 6. If 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|If your header has no more slots for actions, then everything after Slot D goes into Slot E inside an action drawer.|
-|
 |---|-----|
 
 
@@ -197,7 +194,6 @@ Avoid placing search in both panels unless necessary, because it could confuse t
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|Find more information on search in the header see Navigation (coming soon).|
-|
 |---|-----|
 
 
@@ -208,7 +204,6 @@ The toolbar is an additional component that can be used to hold actions.
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Toolbar API](../../api-qml-current/Ubuntu.Components.Toolbar.md) allows you to determine the action or options you want to display in the toolbar.|
-|
 |---|-----|
 
 
@@ -249,7 +244,6 @@ If you only use one text button then place it on the left hand side, because it 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The toolbar can contain additional actions other than editing ones, such as ‘Share’ or ‘Forward’.|
-|
 |---|-----|
 
 
@@ -270,7 +264,6 @@ If you need a delete icon place it on the left of the toolbar. If the  content y
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Place negative actions on the left and positive actions on the right in the main header for consistency across the platform. See  [Design values](../get-started/design-values.md) for more information.|
-|
 |---|-----|
 
 
@@ -294,7 +287,6 @@ You can decide how you want the header to appear in four ways: Fixed, Fixed and 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|When a header is displayed in a larger surface or a window, such as in a desktop, it will be fixed, because there will be more room to display content.|
-|
 |---|-----|
 
 
@@ -394,7 +386,6 @@ The header section allow users to easily shift between category views within the
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Section API](../../api-qml-current/Ubuntu.Components.Sections.md) displays a list of sections that the user can select. It is strongly recommended to limit the number of sections to two or three to avoid a cultured looking header.|
-|
 |---|-----|
 
 

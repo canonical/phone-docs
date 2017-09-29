@@ -118,7 +118,7 @@ Title: QtQuick.ListView
 <span class="name">text</span>: <span class="name">name</span> <span class="operator">+</span> <span class="string">&quot;: &quot;</span> <span class="operator">+</span> <span class="name">number</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/listview-simple.png" alt="" /></p><p>Here, the <a href="index.html">ListView</a> creates a <code>ContactModel</code> component for its model, and a <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> item for its delegate. The view will create a new <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> component for each item in the model. Notice the delegate is able to access the model's <code>name</code> and <code>number</code> data directly.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/80acc770-listview-simple.png" alt="" /></p><p>Here, the <a href="index.html">ListView</a> creates a <code>ContactModel</code> component for its model, and a <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> item for its delegate. The view will create a new <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> component for each item in the model. Notice the delegate is able to access the model's <code>name</code> and <code>number</code> data directly.</p>
 <p>An improved list view is shown below. The delegate is visually improved and is moved into a separate <code>contactDelegate</code> component.</p>
 <pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
 <span class="name">width</span>: <span class="number">180</span>; <span class="name">height</span>: <span class="number">200</span>
@@ -140,7 +140,7 @@ Title: QtQuick.ListView
 <span class="name">focus</span>: <span class="number">true</span>
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/listview-highlight.png" alt="" /></p><p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the list view. The list view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/306082df-listview-highlight.png" alt="" /></p><p>The currently selected item is highlighted with a blue <a href="QtQuick.Rectangle.md">Rectangle</a> using the <a href="QtQuick.qtquick-views-example.md#highlight">highlight</a> property, and <code>focus</code> is set to <code>true</code> to enable keyboard navigation for the list view. The list view itself is a focus scope (see <a href="QtQuick.qtquick-input-focus.md">Keyboard Focus in Qt Quick</a> for more details).</p>
 <p>Delegates are instantiated as needed and may be destroyed at any time. They are parented to <a href="index.html">ListView</a>'s <a href="QtQuick.Flickable.md#contentItem-prop">contentItem</a>, not to the view itself. State should <i>never</i> be stored in a delegate.</p>
 <p><a href="index.html">ListView</a> attaches a number of properties to the root item of the delegate, for example <code>ListView:isCurrentItem</code>. In the following example, the root delegate item can access this attached property directly as <code>ListView.isCurrentItem</code>, while the child <code>contactInfo</code> object must refer to this property as <code>wrapper.ListView.isCurrentItem</code>.</p>
 <pre class="qml"><span class="type"><a href="index.html">ListView</a></span> {
@@ -174,9 +174,9 @@ Title: QtQuick.ListView
 <p>By default, a <a href="index.html">ListView</a> has a vertical orientation, and items are laid out from top to bottom. The table below shows the different layouts that a <a href="index.html">ListView</a> can have, depending on the values of the properties listed above.</p>
 <table class="generic">
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Vertical orientation</th></tr></thead>
-<tr valign="top"><td >Top to bottom<p class="centerAlign"><img src="../../../media/listview-layout-toptobottom.png" alt="" /></p></td><td >Bottom to top<p class="centerAlign"><img src="../../../media/listview-layout-bottomtotop.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Top to bottom<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/dd82a4c3-listview-layout-toptobottom.png" alt="" /></p></td><td >Bottom to top<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/b5600284-listview-layout-righttoleft.png" alt="" /></p></td></tr>
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Horizontal orientation</th></tr></thead>
-<tr valign="top"><td >Left to right<p class="centerAlign"><img src="../../../media/listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="../../../media/listview-layout-righttoleft.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Left to right<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ecfebfdd-listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/b5600284-listview-layout-righttoleft.png" alt="" /></p></td></tr>
 </table>
 <p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@ListView -->
@@ -478,8 +478,8 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <li><a href="index.html">ListView</a>.Vertical (default) - Items are laid out vertically</li>
 </ul>
 <table class="generic">
-<tr valign="top"><td >Horizontal orientation:<p class="centerAlign"><img src="../../../media/ListViewHorizontal.png" alt="" /></p></td></tr>
-<tr valign="top"><td >Vertical orientation:<p class="centerAlign"><img src="../../../media/listview-highlight.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Horizontal orientation:<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/5f1f1f64-ListViewHorizontal.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Vertical orientation:<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/306082df-listview-highlight.png" alt="" /></p></td></tr>
 </table>
 <!-- @@@orientation -->
 <br/>
@@ -602,7 +602,7 @@ NumberAnimation { properties: <span class="string">&quot;x,y&quot;</span>; durat
 <span class="name">section</span>.criteria: <span class="name">ViewSection</span>.<span class="name">FullString</span>
 <span class="name">section</span>.delegate: <span class="name">sectionHeading</span>
 }</pre>
-<p class="centerAlign"><img src="../../../media/qml-listview-sections-example.png" alt="" /></p><p><b>Note: </b>Adding sections to a <a href="index.html">ListView</a> does not automatically re-order the list items by the section criteria. If the model is not ordered by section, then it is possible that the sections created will not be unique; each boundary between differing sections will result in a section header being created even if that section exists elsewhere.</p><p><b>See also </b><a href="QtQuick.qtquick-views-example.md">ListView examples</a>.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/8ca6dad2-qml-listview-sections-example.png" alt="" /></p><p><b>Note: </b>Adding sections to a <a href="index.html">ListView</a> does not automatically re-order the list items by the section criteria. If the model is not ordered by section, then it is possible that the sections created will not be unique; each boundary between differing sections will result in a section header being created even if that section exists elsewhere.</p><p><b>See also </b><a href="QtQuick.qtquick-views-example.md">ListView examples</a>.</p>
 <!-- @@@section -->
 <br/>
 <!-- $$$snapMode -->

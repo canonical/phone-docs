@@ -77,7 +77,7 @@ class Stopwatch(object):
         raise NotImplementedError()
 ```
 
-![](../../../media/stopwatch-179x300.png)
+![](https://assets.ubuntu.com/v1/74d9877a-stopwatch-179x300.png)
 
 
 ### Try not to expose the internals of the page.

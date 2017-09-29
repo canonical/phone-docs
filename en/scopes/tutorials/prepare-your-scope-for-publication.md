@@ -50,8 +50,8 @@ scope in action.
 
 To take a screenshot of your scope running on a phone or in an emulator, you can use the phablet-screenshot command line tool (`phablet-screenshot <filename>.png`), `Shift+Ctrl+P` from QtCreator or pressing `Volume up` + `Volume down` on the device.
 
-![](../../../media/screenshot-166x300.jpg)
-![](../../../media/scope-tutorial-scope_prev-180x300.png)
+![](https://assets.ubuntu.com/v1/c815dde2-screenshot-166x300.jpg)
+![](https://assets.ubuntu.com/v1/cff66540-scope-tutorial-scope_prev-180x300.png)
 
 ### Icon
 
@@ -63,7 +63,7 @@ To look good when cropped, the point of focus (in this example, the YouTube
 logo) you should be slightly above the horizontal center and its width should
 be a third of the icon size.
 
-![](../../../media/yt-2-300x300.png)
+![](https://assets.ubuntu.com/v1/b0b332dd-yt-2-300x300.png)
 
 ## Creating the package
 
@@ -73,9 +73,9 @@ To create it from QtCreator, make sure you have an armhf kit selected and go
 to the Publish page. Click the “Create and validate Click package” button and
 wait a few seconds for the build and validation tests to run.
 
-![](../../../media/Screenshot-from-2014-11-26-1-700x223.png)
+![](https://assets.ubuntu.com/v1/a2a5066d-Screenshot-from-2014-11-26-1-700x223.png)
 
-![](../../../media/Screenshot-from-2014-11-26-2-700x223.png)
+![](https://assets.ubuntu.com/v1/3844aa03-Screenshot-from-2014-11-26-2-700x223.png)
 
 If everything is green, your click package is ready to be submitted to the
 store! It’s in your build folder (“`build-<kit name>-<project name>`”, located

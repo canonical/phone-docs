@@ -62,7 +62,7 @@ These are:
   1. base - sits flat on the surface of any main layer.
   2. raised - sits proud but not detached from the surface of any main layer.
 
-![](../../../media/qml-tutorial-palette-diagram-02.png)
+![](https://assets.ubuntu.com/v1/678a4ed8-palette-diagram-02.png)
 
 In addition to these there are palette values which are not applied on any
 particular layer, but mostly color a section of a component. Those will be
@@ -88,7 +88,7 @@ Rectangle {
 }
 ```
 
-![](../../../media/s2EIHgTuUJ0fGllaUmM0duw.png)
+![](https://assets.ubuntu.com/v1/13e19aff-s2EIHgTuUJ0fGllaUmM0duw.png)
 
 ####  Background
 
@@ -310,7 +310,7 @@ ListView {
 The following diagram illustrates the state transitions of a component driving
 the colors.
 
-![](../../../media/qml-tutorial-state-transitions-colors.png)
+![](https://assets.ubuntu.com/v1/18807eb5-qml-tutorial-state-transitions-colors.png)
 
 ## Choosing the palette value set automatically
 

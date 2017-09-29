@@ -14,23 +14,23 @@ In this tutorial, you will learn how to use and invoke C++ classes from QML and 
 
 Let's start by opening the Ubuntu SDK and click on New Project to be presented with the project wizard. For this tutorial, we are going to use the `QML App with C++ plugin (cmake)` template.
 
-![](../../../media/qml-tutorial-c-backend-screenshot1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 Continue through the wizard by picking:
 
   * A project name. For the sake of consistency during this tutorial, let's use "`mycppapp`"
   * An app name (`mycppapp`)
 
-![](../../../media/qml-tutorial-c-backend-screenshot2.png)
+![](https://assets.ubuntu.com/v1/cf21b315-qml-tutorial-c-backend-screenshot2.png)
 
 
   * Enter your [developer information](https://myapps.developer.ubuntu.com/dev/account/)
 
-![](../../../media/qml-tutorial-c-backend-screenshot3.png)
+![](https://assets.ubuntu.com/v1/cc25cbc8-qml-tutorial-c-backend-screenshot3.png)
 
   * Choose a framework (if you are unsure about which one to use, see the [Frameworks guide](https://developer.ubuntu.com/en/start/platform/guides/frameworks/)). For this tutorial, we are going to use `ubuntu-sdk-15.04`.
 
-![](../../../media/qml-tutorial-c-backend-screenshot4.png)
+![](https://assets.ubuntu.com/v1/64e54e9f-qml-tutorial-c-backend-screenshot4.png)
 
   * A [kit](../../platform/sdk/tutorials-click-targets-and-device-kits.md) corresponding to the type of device and architecture your app will be published for. For this tutorial, we are only going to use a `desktop` kit.
 
@@ -42,7 +42,7 @@ After creating the project, the SDK has now switched to the editor tab. If you
 are already used to QML-only apps, you can see a slightly different file tree
 on the left pane:
 
-![](../../../media/qml-tutorial-c-backend-screenshot-template-files.png)
+![](https://assets.ubuntu.com/v1/ed8fffd8-qml-tutorial-c-backend-screenshot-template-files.png)
 
 An `app` folder for QML files and the desktop file, a `backend` folder for
 C++ modules and tests, and a `po` folder that will hold generated
@@ -65,7 +65,7 @@ the green Play icon), you can see that it looks similar to a standalone QML
 app, the big difference is that the QML object used to display the "Hello
 world" string is actually a class imported from C++.
 
-![](../../../media/qml-tutorial-c-backend-screenshot-running.png)
+![](https://assets.ubuntu.com/v1/614d4291-qml-tutorial-c-backend-screenshot-running.png)
 
 ## First example - Calling the command-line
 
@@ -194,7 +194,7 @@ Page {
 
 Run the app and enjoy a tiny shell access!
 
-![](../../../media/qml-tutorial-c-backend-screenshot-tiny-shell.png)
+![](https://assets.ubuntu.com/v1/cd1e242e-qml-tutorial-c-backend-screenshot-tiny-shell.png)
 
 ## Second example - Integrate an external library
 
@@ -353,7 +353,7 @@ Page {
 That's it! Our simple QML app is ready to use: enter some Y-axis values in the
 input field and it will generate and display a SVG graph.
 
-![](../../../media/qml-tutorial-c-backend-screenshot-graph.png)
+![](https://assets.ubuntu.com/v1/723bda03-qml-tutorial-c-backend-screenshot-graph.png)
 
 ### Packaging
 

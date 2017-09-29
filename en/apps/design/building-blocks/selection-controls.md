@@ -28,7 +28,6 @@ Use a checkbox to enable or select an option from a list; or as a singular optio
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Checkbox API](../../api-qml-current/Ubuntu.Components.CheckBox.md) is a component with two states: checked or unchecked. It can be used to set boolean options.|
-|
 |---|-----|
 
 
@@ -92,7 +91,6 @@ Use for single selection where users confirm an action, such as accepting Terms 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Use indeterminate checkboxes when the value is neither checked or unchecked.|
-|
 |---|-----|
 
 
@@ -123,7 +121,6 @@ When aligning checkboxes with labels, or other dependent controls, it is importa
 
 
 |![no alt text](https://assets.ubuntu.com/v1/75f60d24-link_external.png)|For more guidance on using familiar language and the right tone of voice for labels see Writing (coming soon).|
-|
 |---|-----|
 
 
@@ -141,7 +138,6 @@ Clicking a non-selected radio button will deselect whichever button was previous
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|Options presented with radio buttons require less mental effort, because users can easily compare options as they are all visible at once.|
-|
 |---|-----|
 
 
@@ -175,7 +171,6 @@ Don’t use a radio menu entirely for command items. If the menu never contains 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|A toolbutton is a borderless button, as found in the header or a bottom-edge panel. It usually consists of an icons, but may instead contain text buttons. See Buttons (coming soon) for more details.|
-|
 |---|-----|
 
 
@@ -206,7 +201,6 @@ The switch allows the user to perform an action by turning it on or off.
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Switch API](../../api-qml-current/Ubuntu.Components.Switch.md) is a component with two states: checked or unchecked. It can be used to set boolean options. The behavior is the same as CheckBox, the only difference is the graphical style.|
-|
 |---|-----|
 
 
@@ -241,7 +235,6 @@ Use the spinner component to display a set of values on a reel that can be eithe
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [PickerPanel API](../../api-qml-current/Ubuntu.Components.PickerPanel.md) is a component that provides the date and time values with picking functionality.|
-|
 |---|-----|
 
 
@@ -292,7 +285,6 @@ The Time Picker supports hour, minute and seconds elements in any combination; e
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|An AM/PM selector will be added if the 12-hour clock is used.|
-|
 |---|-----|
 
 
@@ -303,7 +295,6 @@ Use interactive sliders to select a value from a continuous or discrete range of
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The  [Slider API](../../api-qml-current/Ubuntu.Components.Slider.md) is a component that allow the user to select a value from a continuous range of values.|
-|
 |---|-----|
 
 
@@ -314,7 +305,6 @@ You can choose between different slider types to allow the user to set different
 
 
 |![no alt text](https://assets.ubuntu.com/v1/e9f11635-information-link.png)|The interactive nature of the slider makes it a great choice for settings that reflect intensity levels, such as volume, brightness, or color saturation.|
-|
 |---|-----|
 
 
@@ -354,7 +344,6 @@ For example, if you app has a media player or is a game that has sound effects, 
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links.png)|The System volume control component is currently under heavy development because it might also include other audio features, so you won’t have to worry about developing it yourself.|
-|
 |---|-----|
 
 

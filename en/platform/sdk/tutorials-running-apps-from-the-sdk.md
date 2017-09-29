@@ -28,7 +28,7 @@ create at least one kit and select two aspects for it :
   * The **framework** your application will use (most of the time, you will want to use the latest stable release, matching the Ubuntu release number. eg 14.04)
   * The **architecture** of the device (armfh: most phones and tablets or i386: desktop)
 
-![](../../../media/platform-sdk-devicekits_create-700x348.png)
+![](https://assets.ubuntu.com/v1/15c9ba66-devicekits_create-700x348.png)
 
 Adding multiple kits will allow you to test your app in multiple contexts,
 architectures and display sizes.
@@ -40,7 +40,7 @@ change existing Kits. This is especially useful when you forgot to create a
 specific Device Kit or when your application evolves to support other devices
 and architectures.
 
-![](../../../media/managing_kits.png)
+![](https://assets.ubuntu.com/v1/379dcb82-managing_kits.png)
 
 ## Adding devices
 
@@ -48,7 +48,7 @@ The “Devices” page allows you to see connected Ubuntu devices, manage their
 settings (enable developer mode, clone network configuration from your desktop
 to the device...) and create new devices (emulators).
 
-![](../../../media/platform-sdk-devices_connected-700x452.png)
+![](https://assets.ubuntu.com/v1/c872a83a-devices_connected-700x452.png)
 
 ### Create an emulator
 
@@ -60,7 +60,7 @@ build and `_devel-proposed_` contains new changes that still need to be tested.
 Creating an emulator downloads about 300 MB and prepares a system image, which
 may take some time.
 
-![](../../../media/emulator_create.png)
+![](https://assets.ubuntu.com/v1/bfbbe073-emulator_create.png)
 
 ### Launch an emulator
 
@@ -69,14 +69,14 @@ Once your emulator has been built, you can configure some launch variables:
   * **Scale**: the size of the emulator window
   * **Memory**: between 512 and 1024 MB of RAM allocated to the device
 
-![](../../../media/emulator_config-700x451.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 When launched, an emulator can be managed like any other device and is able to
 run applications using compatible device kits. **Note** that when Ubuntu
 starts on the emulator, you will be asked for a password to enter the session:
 the default password is "0000".
 
-![](../../../media/platform-sdk-emulator_running-700x333.png)
+![](https://assets.ubuntu.com/v1/24fd5881-emulator_running-700x333.png)
 
 ## Running your application
 
@@ -85,7 +85,7 @@ application via a button on the left side of the SDK window. The
 red/orange/green dot on the icon indicates its status (here, my phone is
 connected and ready to host the application).
 
-![](../../../media/platform-sdk-run-picker.png)
+![](https://assets.ubuntu.com/v1/956e3b82-platform-sdk-run-picker.png)
 
 Once you have selected a run target, the play icon below will launch your
 application.

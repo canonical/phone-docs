@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-text-example
 
 <span class="subtitle"></span>
 <!-- $$$text-description -->
-<p class="centerAlign"><img src="../../../media/qml-text-example.png" alt="" /></p><p><i>Text</i> is a collection of small QML examples relating to text. Each example is a small QML file, usually containing or emphasizing a particular type or feature. You can run and observe the behavior of each example.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/60510036-qml-text-example.png" alt="" /></p><p><i>Text</i> is a collection of small QML examples relating to text. Each example is a small QML file, usually containing or emphasizing a particular type or feature. You can run and observe the behavior of each example.</p>
 <h2 id="hello">Hello</h2>
 <p><i>Hello</i> shows how to change and animate the letter spacing of a <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> type. It uses a sequential animation to first animate the font.letterSpacing property from <code>0</code> to <code>50</code> over three seconds and then move the text to a random position on screen:</p>
 <pre class="qml">            SequentialAnimation on <span class="name">font</span>.letterSpacing {

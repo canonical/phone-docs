@@ -8,7 +8,7 @@ Title: unity.scopes.QueryBase
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/QueryBase.h&gt;</code></p>
 Inheritance diagram for unity::scopes::QueryBase:
-<img src="../../../media/classunity_1_1scopes_1_1_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/62ab339d-classunity_1_1scopes_1_1_query_base__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

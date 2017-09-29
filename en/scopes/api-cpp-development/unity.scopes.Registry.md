@@ -8,7 +8,7 @@ Title: unity.scopes.Registry
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/Registry.h&gt;</code></p>
 Inheritance diagram for unity::scopes::Registry:
-<img src="../../../media/classunity_1_1scopes_1_1_registry__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/7748ae41-classunity_1_1scopes_1_1_registry__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>
@@ -30,7 +30,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f540dc612ce4a5e50a21ec66fec75fd"><td class="memItemLeft" align="right" valign="top">virtual core::ScopedConnection&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f540dc612ce4a5e50a21ec66fec75fd">set_list_update_callback</a> (std::function&lt; void()&gt; callback)=0</td></tr>
 <tr class="memdesc:a1f540dc612ce4a5e50a21ec66fec75fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a callback method to be executed when the registry's scope list changes.  More...<br /></td></tr>
 <tr class="separator:a1f540dc612ce4a5e50a21ec66fec75fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_object')"><img src="../../../media/closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Object.md">unity::scopes::Object</a></td></tr>
+<tr class="inherit_header pub_methods_classunity_1_1scopes_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classunity_1_1scopes_1_1_object')"><img src="https://assets.ubuntu.com/v1/c6607712-closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="unity.scopes.Object.md">unity::scopes::Object</a></td></tr>
 <tr class="memitem:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unity.scopes.Object.md#ad7618cc9d878c40b389361d4acd473ae">endpoint</a> ()=0</td></tr>
 <tr class="memdesc:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the endpoint this proxy connects to.  More...<br /></td></tr>
 <tr class="separator:ad7618cc9d878c40b389361d4acd473ae inherit pub_methods_classunity_1_1scopes_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>

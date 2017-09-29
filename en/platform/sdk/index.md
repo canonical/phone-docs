@@ -7,7 +7,7 @@ title: "SDK - the Ubuntu SDK"
 The Ubuntu SDK is your full-featured integrated development environment (IDE)
 for writing Ubuntu apps.
 
-![](../../../media/platform-sdk-screenshot-1.png)
+![](https://assets.ubuntu.com/v1/c643406e-1.png)
 
 Based on QtCreator, the Ubuntu SDK provides all the tools you need to get up
 and running and super productive developing Ubuntu apps of all types, with

@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-scenegraph-textureinthread-example
 
 <span class="subtitle"></span>
 <!-- $$$scenegraph/textureinthread-description -->
-<p class="centerAlign"><img src="../../../media/textureinthread-example.jpg" alt="" /></p><p>Files:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/63d14a15-textureinthread-example.jpg" alt="" /></p><p>Files:</p>
 <ul>
 <li>scenegraph/textureinthread/error.qml</li>
 <li>scenegraph/textureinthread/main.qml</li>

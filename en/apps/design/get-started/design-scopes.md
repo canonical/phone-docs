@@ -11,7 +11,6 @@ Scopes are a quick and easy way to deliver a content consumption experience with
 
 
 |![no alt text](https://assets.ubuntu.com/v1/608696e3-developer_links..png)|Start developing scopes with the [Scope Toolkit.](../../../scopes/design/index.md)|
-|
 |---|-----|
 
 

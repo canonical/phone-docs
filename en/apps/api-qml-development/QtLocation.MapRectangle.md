@@ -49,7 +49,7 @@ longitude: <span class="number">153.5</span>
 }
 }
 }</pre>
-<p class="centerAlign"><img src="../../../media/api-maprectangle.png" alt="" /></p><!-- @@@MapRectangle -->
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/c5ba0f64-api-maprectangle.png" alt="" /></p><!-- @@@MapRectangle -->
 <h2>Property Documentation</h2>
 <!-- $$$border -->
 <table class="qmlname"><tr valign="top" id="border-prop"><th class="centerAlign"><p><b>border group</b></p></th></tr><tr valign="top" id="border.width-prop"><td class="tblQmlPropNode"><p><span class="name">border.width</span> : <span class="type">int</span></p></td></tr><tr valign="top" id="border.color-prop"><td class="tblQmlPropNode"><p><span class="name">border.color</span> : <span class="type">color</span></p></td></tr></table><p>This property is part of the border property group. The border property group holds the width and color used to draw the border of the rectangle. The width is in pixels and is independent of the zoom level of the map.</p>

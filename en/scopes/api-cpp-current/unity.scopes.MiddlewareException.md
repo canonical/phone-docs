@@ -8,7 +8,7 @@ Title: unity.scopes.MiddlewareException
 <a href="#details">More...</a></p>
 <p><code>#include &lt;unity/scopes/ScopeExceptions.h&gt;</code></p>
 Inheritance diagram for unity::scopes::MiddlewareException:
-<img src="../../../media/classunity_1_1scopes_1_1_middleware_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
+<img src="https://assets.ubuntu.com/v1/060eac16-classunity_1_1scopes_1_1_middleware_exception__inherit__graph.png" border="0" alt="Inheritance graph"/>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">
 Public Member Functions</h2></td></tr>

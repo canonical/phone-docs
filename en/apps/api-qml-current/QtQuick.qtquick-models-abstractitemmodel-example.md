@@ -6,7 +6,7 @@ Title: QtQuick.qtquick-models-abstractitemmodel-example
 
 <span class="subtitle"></span>
 <!-- $$$models/abstractitemmodel-description -->
-<p class="centerAlign"><img src="../../../media/qml-abstractitemmodel-example.png" alt="" /></p><p>Files:</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/dcbe25e5-qml-abstractitemmodel-example.png" alt="" /></p><p>Files:</p>
 <ul>
 <li>models/abstractitemmodel/model.cpp</li>
 <li>models/abstractitemmodel/model.h</li>

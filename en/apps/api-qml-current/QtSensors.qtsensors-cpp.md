@@ -11,10 +11,10 @@ Title: QtSensors.qtsensors-cpp
 <p>For a list of built-in sensor types, see the <a href="#sensor-classes">Sensor Classes</a> section below.</p>
 <h2 id="common-conventions">Common Conventions</h2>
 <p>Unless specified otherwise, Qt Sensors uses the <a href="http://en.wikipedia.org/wiki/Cartesian_coordinate_system">Right Hand Cartesian coordinate system</a>.</p>
-<p class="centerAlign"><img src="../../../media/sensors-coordinates.jpg" alt="" /></p><p>To allow for measurements in all 6 directions, negative values are used.</p>
-<p class="centerAlign"><img src="../../../media/sensors-coordinates2.jpg" alt="" /></p><p>Where rotation around an axis is used, the rotation shall be expressed as a Right Hand rotation.</p>
-<p class="centerAlign"><img src="../../../media/sensors-coordinates3.jpg" alt="" /></p><p>In general, sensor data is oriented relative to QPlatformScreen::nativeOrientation, that is to the top of the device when the device is held in its natural orientation (normally when the device logo appears the right side up). If values are to be displayed on the screen, the values may need to be transformed so that they match the user interface orientation. A sensor may define its data as being oriented to the UI. This will be noted in the documentation for the sensor.</p>
-<p class="centerAlign"><img src="../../../media/sensors-sides2.jpg" alt="" /></p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/3df971ab-sensors-coordinates.jpg" alt="" /></p><p>To allow for measurements in all 6 directions, negative values are used.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/3f5f1e0c-sensors-coordinates2.jpg" alt="" /></p><p>Where rotation around an axis is used, the rotation shall be expressed as a Right Hand rotation.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/fda4657f-sensors-coordinates3.jpg" alt="" /></p><p>In general, sensor data is oriented relative to QPlatformScreen::nativeOrientation, that is to the top of the device when the device is held in its natural orientation (normally when the device logo appears the right side up). If values are to be displayed on the screen, the values may need to be transformed so that they match the user interface orientation. A sensor may define its data as being oriented to the UI. This will be noted in the documentation for the sensor.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/379e3b0c-sensors-sides2.jpg" alt="" /></p>
 <h2 id="using-a-sensor">Using a Sensor</h2>
 <p>The life cycle of a QSensor is typically:</p>
 <ul>
@@ -49,7 +49,7 @@ sensor<span class="operator">.</span>start();
 <h2 id="front-end-back-end">Front End, Back End</h2>
 <p>The Qt Sensors API has a front end, for application developers to use and a back end, where device implementors write code to access their hardware. As an application developer you do not need to access the back end though it may be useful to understand how it works.</p>
 <p>Commands from the application are delivered through QSensor and then down to the device plugin. Data comes back through the QSensorReading class.</p>
-<p class="centerAlign"><img src="../../../media/sensors-overview.png" alt="" /></p><p>More information about the back end can be found in Qt Sensors Backend.</p>
+<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/9ceee4a7-sensors-overview.png" alt="" /></p><p>More information about the back end can be found in Qt Sensors Backend.</p>
 <h2 id="main-classes">Main Classes</h2>
 <p>The primary classes that make up the Qt Sensors API.</p>
 <table class="annotated">

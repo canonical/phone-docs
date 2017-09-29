@@ -100,7 +100,7 @@ Title: QtQuick.GridView
 <span class="name">portrait</span>: <span class="string">&quot;pics/portrait.png&quot;</span>
 }
 }</pre>
-<p><img src="../../../media/gridview-simple.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/8ae65f12-gridview-simple.png" alt="" /></p>
 <p>This model can be referenced as <code>ContactModel</code> in other QML files. See QML Modules for more information about creating reusable components like this.</p>
 <p>Another component can display this model data in a <a href="QtQuick.Drag.md#gridview">GridView</a>, as in the following example, which creates a <code>ContactModel</code> component for its model, and a <a href="QtQuick.qtquick-positioning-layouts.md#column">Column</a> (containing <a href="QtQuick.qtquick-imageelements-example.md#image">Image</a> and <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> items) for its delegate.</p>
 <br style="clear: both" /><pre class="qml">import QtQuick 2.0
@@ -112,7 +112,7 @@ Title: QtQuick.GridView
 <span class="type"><a href="QtQuick.Text.md">Text</a></span> { <span class="name">text</span>: <span class="name">name</span>; <span class="name">anchors</span>.horizontalCenter: <span class="name">parent</span>.<span class="name">horizontalCenter</span> }
 }
 }</pre>
-<p><img src="../../../media/gridview-highlight.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/394bfe12-gridview-highlight.png" alt="" /></p>
 <p>The view will create a new delegate for each item in the model. Note that the delegate is able to access the model's <code>name</code> and <code>portrait</code> data directly.</p>
 <p>An improved grid view is shown below. The delegate is visually improved and is moved into a separate <code>contactDelegate</code> component.</p>
 <br style="clear: both" /><pre class="qml"><span class="type"><a href="QtQuick.Rectangle.md">Rectangle</a></span> {
@@ -174,9 +174,9 @@ Title: QtQuick.GridView
 <p>These properties can be combined to produce a variety of layouts, as shown in the table below. The GridViews in the first row all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight, but use different combinations of horizontal and vertical layout directions (specified by <a href="#layoutDirection-prop">layoutDirection</a> and <a href="#verticalLayoutDirection-prop">verticalLayoutDirection</a> respectively). Similarly, the GridViews in the second row below all have a <a href="QtQuick.qtquick-positioning-layouts.md#flow">flow</a> value of <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom, but use different combinations of horizontal and vertical layout directions to lay out their items in different ways.</p>
 <table class="generic">
 <thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowLeftToRight flow</th></tr></thead>
-<tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-ltr-ttb.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-rtl-ttb.png" alt="" /></p></td><td ><b>(H)</b> Left to right <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-lefttoright-rtl-btt.png" alt="" /></p></td></tr>
+<tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/656c2c94-gridview-layout-lefttoright-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/dd72133d-gridview-layout-lefttoright-rtl-btt.png" alt="" /></p></td></tr>
 <thead><tr class="qt-style"><th  colspan="4" rowspan=" 1"><b>GridViews</b> with <a href="QtQuick.Drag.md#gridview">GridView</a>.FlowTopToBottom flow</th></tr></thead>
-<tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-ttb.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Top to bottom<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-ttb.png" alt="" /></p></td><td ><b>(H)</b> Left to right <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="../../../media/gridview-layout-toptobottom-rtl-btt.png" alt="" /></p></td></tr>
+<tr valign="top"><td ><b>(H)</b> Left to right <b>(V)</b> Top to bottom<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ef70aad3-gridview-layout-toptobottom-ltr-btt.png" alt="" /></p></td><td ><b>(H)</b> Right to left <b>(V)</b> Bottom to top<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/9b74ebe5-gridview-layout-toptobottom-rtl-btt.png" alt="" /></p></td></tr>
 </table>
 <p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.ListView.md">ListView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@GridView -->
