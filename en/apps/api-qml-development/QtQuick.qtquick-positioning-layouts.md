@@ -77,7 +77,7 @@ Title: QtQuick.qtquick-positioning-layouts
 <p>There is no difference between horizontal and vertical spacing inserted between items, so any additional space must be added within the items themselves.</p>
 <p>Any empty cells in the grid must be created by defining placeholder items at the appropriate places in the Grid definition.</p>
 <h3 >Flow</h3>
-<p><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /> <img src="../../../media/qml-flow-text2.png" alt="" /></p>
+<p><img src="https://assets.ubuntu.com/v1/c643406e-1.png" alt="" /> <img src="https://assets.ubuntu.com/v1/14c7e51b-qml-flow-text2.png" alt="" /></p>
 <p><a href="#flow">Flow</a> items are used to place items like words on a page, with rows or columns of non-overlapping items.</p>
 <p>Flow items arrange items in a similar way to <a href="#grid">Grid</a> items, with items arranged in lines along one axis (the minor axis), and lines of items placed next to each other along another axis (the major axis). The direction of flow, as well as the spacing between items, are controlled by the <a href="QtQuick.Flow.md#flow-prop">flow</a> and <a href="QtQuick.Flow.md#spacing-prop">spacing</a> properties.</p>
 <p>The following example shows a Flow item containing a number of <a href="QtQuick.qtquick-releasenotes.md#text">Text</a> child items. These are arranged in a similar way to those shown in the screenshots.</p>

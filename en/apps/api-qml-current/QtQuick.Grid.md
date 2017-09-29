@@ -81,7 +81,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="https://assets.ubuntu.com/v1/9eb66c58-gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -110,7 +110,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="https://assets.ubuntu.com/v1/9eb66c58-gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>
@@ -170,7 +170,7 @@ Title: QtQuick.Grid
 <p>The valid values for <code>verticalItemAlignment</code> are <code>Grid.AlignTop</code>, <code>Grid.AlignBottom</code> and <code>Grid.AlignVCenter</code>.</p>
 <p>The below images show three examples of how to align items.</p>
 <table class="generic">
-<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="../../../media/gridLayout_aligncenter.png" alt="" /></td></tr>
+<tr valign="top"><td ></td><td ><img src="https://assets.ubuntu.com/v1/c0bc8f69-gridLayout_aligntop.png" alt="" /></td><td ><img src="https://assets.ubuntu.com/v1/9eb66c58-gridLayout_aligncenter.png" alt="" /></td></tr>
 <tr valign="top"><td >Horizontal alignment</td><td >AlignLeft</td><td >AlignHCenter</td><td >AlignHCenter</td></tr>
 <tr valign="top"><td >Vertical alignment</td><td >AlignTop</td><td >AlignTop</td><td >AlignVCenter</td></tr>
 </table>

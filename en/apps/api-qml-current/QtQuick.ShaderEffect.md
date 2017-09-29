@@ -84,7 +84,7 @@ gl_FragColor = vec4(vec3(dot(tex.rgb, vec3(0.344, 0.5, 0.156))), tex.a) * qt_Opa
 <h2 id="shadereffect-and-item-layers">ShaderEffect and Item Layers</h2>
 <p>The <a href="index.html">ShaderEffect</a> type can be combined with <a href="QtQuick.Item.md#item-layers">layered items</a>.</p>
 <table class="generic">
-<tr valign="top"><td ><b>Layer with effect disabled</b> <img src="https://assets.ubuntu.com/v1/6013e354-qml-shadereffect-nolayereffect.png" alt="" /></td><td ><b>Layer with effect enabled</b> <img src="../../../media/qml-shadereffect-layereffect.png" alt="" /></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
+<tr valign="top"><td ><b>Layer with effect disabled</b> <img src="https://assets.ubuntu.com/v1/6013e354-qml-shadereffect-nolayereffect.png" alt="" /></td><td ><b>Layer with effect enabled</b> <img src="https://assets.ubuntu.com/v1/5d918eb8-qml-shadereffect-layereffect.png" alt="" /></td><td ><pre class="qml"><span class="type"><a href="QtQuick.Item.md">Item</a></span> {
 <span class="name">id</span>: <span class="name">layerRoot</span>
 <span class="name">layer</span>.enabled: <span class="number">true</span>
 <span class="name">layer</span>.effect: <span class="name">ShaderEffect</span> {

@@ -174,9 +174,9 @@ Title: QtQuick.ListView
 <p>By default, a <a href="index.html">ListView</a> has a vertical orientation, and items are laid out from top to bottom. The table below shows the different layouts that a <a href="index.html">ListView</a> can have, depending on the values of the properties listed above.</p>
 <table class="generic">
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Vertical orientation</th></tr></thead>
-<tr valign="top"><td >Top to bottom<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/dd82a4c3-listview-layout-toptobottom.png" alt="" /></p></td><td >Bottom to top<p class="centerAlign"><img src="../../../media/listview-layout-bottomtotop.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Top to bottom<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/dd82a4c3-listview-layout-toptobottom.png" alt="" /></p></td><td >Bottom to top<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/b5600284-listview-layout-righttoleft.png" alt="" /></p></td></tr>
 <thead><tr class="qt-style"><th  colspan="2" rowspan=" 1"><b>ListViews</b> with Qt.Horizontal orientation</th></tr></thead>
-<tr valign="top"><td >Left to right<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ecfebfdd-listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="../../../media/listview-layout-righttoleft.png" alt="" /></p></td></tr>
+<tr valign="top"><td >Left to right<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/ecfebfdd-listview-layout-lefttoright.png" alt="" /></p></td><td >Right to left<p class="centerAlign"><img src="https://assets.ubuntu.com/v1/b5600284-listview-layout-righttoleft.png" alt="" /></p></td></tr>
 </table>
 <p><b>See also </b><a href="QtQuick.qtquick-modelviewsdata-modelview.md#qml-data-models">QML Data Models</a>, <a href="QtQuick.Drag.md#gridview">GridView</a>, <a href="QtQuick.PathView.md">PathView</a>, and <a href="QtQuick.qtquick-views-example.md">Qt Quick Examples - Views</a>.</p>
 <!-- @@@ListView -->
