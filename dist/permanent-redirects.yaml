@@ -1,0 +1,2 @@
+(?P<page>.*/)index(.html)?: "{page}"
+(?P<page>.*).html: "{page}"
