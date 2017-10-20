@@ -8,6 +8,7 @@ import flask
 import routing
 
 
+application_root = '/phone'
 app = flask.Flask(__name__)
 
 permanent_redirect_map = routing.YamlRegexMap("permanent-redirects.yaml")
@@ -16,7 +17,7 @@ redirect_map = routing.YamlRegexMap("redirects.yaml")
 
 # Ordered before_request processors
 # ===
-# The order of these functions is paramount
+# The order of these functions must be preserved
 
 
 @app.before_request
@@ -45,9 +46,15 @@ def find_file_or_redirect():
     of the other paths, and redirect there if necessary
     """
 
-    request_path = flask.request.path
+    # Check the request is within this application
+    if not flask.request.path.startswith(application_root):
+        return
+
+    # Get a contextual request_path by stripping application_root
+    local_request_path = flask.request.path[len(application_root):]
+
     template_finder = routing.TemplateFinder(app.template_folder)
-    file_path = routing.get_file(request_path)
+    file_path = routing.get_file(local_request_path)
     preferred_languages = routing.requested_languages(flask.request)
     if 'en' not in preferred_languages:
         preferred_languages.append('en')
@@ -58,11 +65,10 @@ def find_file_or_redirect():
         return flask.render_template(file_path)
     else:
         new_path = template_finder.find_alternate_path(
-            request_path,
+            local_request_path,
             languages,
             versions
         )
 
         if new_path:
-            return flask.redirect(new_path)
-
+            return flask.redirect(application_root + new_path)
