@@ -1,3 +1,2 @@
-/: phone/
 /phone/(?P<page>(.*/)?)index(.html)?: "phone/{page}"
 /phone/(?P<page>(.*)?).html: "phone/{page}"
