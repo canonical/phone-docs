@@ -47,6 +47,17 @@ def get_versions():
             return versions
 
 
+def get_file(request_path):
+    """
+    Given a request_path, return the path where the file should be
+    """
+
+    if request_path.endswith('/'):
+        return request_path + '/index.html'
+    else:
+        return request_path + '.html'
+
+
 def is_version(version):
     """
     Check if a string is one of the available versions
@@ -101,17 +112,6 @@ class YamlRegexMap:
                 return target.format(**parts)
 
 
-def get_file(request_path):
-    """
-    Given a request_path, return the path where the file should be
-    """
-
-    if request_path.endswith('/'):
-        return request_path + '/index.html'
-    else:
-        return request_path + '.html'
-
-
 class TemplateFinder:
     """
     Provides functions for matching URL paths to templates
@@ -123,65 +123,6 @@ class TemplateFinder:
         """
 
         self.templates_dir = templates_dir
-
-    def find_alternate_path(self, request_path, languages, versions):
-        """
-        For a request_path that doesn't match up to a file,
-        try our best to find a URL that does
-        """
-
-        # Try the other URL form
-        if request_path.endswith('/'):
-            new_path = request_path.rstrip('/')
-            if os.path.isfile(self.templates_dir + get_file(new_path)):
-                return new_path
-        else:
-            new_path = request_path + '/'
-            if os.path.isfile(self.templates_dir + get_file(new_path)):
-                return new_path
-
-        # Try parsing languages and versions
-        url_parts = request_path.split('/')[1:]
-        language = None
-        version = None
-
-        for part in url_parts:
-            if languages and part in languages:
-                language = part
-                url_parts.remove(part)
-            elif versions and part in versions:
-                version = part
-                url_parts.remove(part)
-
-        if not language and languages:
-            language = languages[0]
-        if not version and versions:
-            version = versions[0]
-
-        if language or version:
-            new_path = "/" + "/".join(url_parts)
-
-            if language:
-                new_path = "/" + language + new_path
-
-            if version:
-                new_path = "/" + version + new_path
-
-            if os.path.isfile(self.templates_dir + get_file(new_path)):
-                return new_path
-            elif (
-                new_path.endswith('/') and
-                os.path.isfile(
-                    self.templates_dir + get_file(new_path.rstrip('/'))
-                )
-            ):
-                return new_path.rstrip('/')
-            elif (
-                os.path.isfile(
-                    self.templates_dir + get_file(new_path + '/')
-                )
-            ):
-                return new_path + '/'
 
     def get_languages(self, preferred_order=[]):
         """
@@ -215,3 +156,68 @@ class TemplateFinder:
             available_languages = [item[1] for item in weighted_languages]
 
         return available_languages
+
+    def find_alternate_path(self, request_path, languages, versions):
+        """
+        For a request_path that doesn't match up to a file,
+        try our best to find a URL that does
+        """
+
+        # Try the other URL form
+        if request_path.endswith('/'):
+            new_path = request_path.rstrip('/')
+            if os.path.isfile(self.templates_dir + get_file(new_path)):
+                return new_path
+        else:
+            new_path = request_path + '/'
+            if os.path.isfile(self.templates_dir + get_file(new_path)):
+                return new_path
+
+        # Try parsing languages and versions
+        url_parts = request_path.split('/')[1:]
+        language = None
+        version = None
+
+        for part in url_parts:
+            if languages and part in languages:
+                language = part
+                url_parts.remove(part)
+            elif versions and part in versions:
+                version = part
+                url_parts.remove(part)
+
+        if language:
+            languages = [language]
+
+        if version:
+            versions = [version]
+
+        # Build up language and version URLs
+        search_paths = ["/" + "/".join(url_parts)]
+
+        if languages:
+            new_paths = []
+            for language in languages:
+                for path in search_paths:
+                    new_paths.append("/" + language + path)
+            search_paths = new_paths
+
+        if versions:
+            new_paths = []
+            for version in versions:
+                for path in search_paths:
+                    new_paths.append("/" + version + path)
+            search_paths = new_paths
+
+        for path in search_paths:
+            alt_path = path + '/'
+            if alt_path.endswith('//'):
+                alt_path = alt_path[:-2]
+
+            template = self.templates_dir + get_file(path)
+            alt_template = self.templates_dir + get_file(alt_path)
+
+            if os.path.isfile(template):
+                return path
+            elif os.path.isfile(alt_template):
+                return alt_path
