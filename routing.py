@@ -70,6 +70,30 @@ def is_version(version):
         return version in versions
 
 
+def split_path(request_path, languages, versions):
+    """
+    Given a URL path of the form:
+      (/{version})(/language)/remaining/path
+    and a list of valid versions and languages,
+    extract and return any versions and languages and the remaining URL path
+    """
+
+    # Try parsing languages and versions
+    url_parts = request_path.split('/')[1:]
+    language = None
+    version = None
+
+    for part in url_parts:
+        if languages and part in languages:
+            language = part
+            url_parts.remove(part)
+        elif versions and part in versions:
+            version = part
+            url_parts.remove(part)
+
+    return (language, version, "/" + "/".join(url_parts))
+
+
 class YamlRegexMap:
     def __init__(self, filepath):
         """
@@ -161,57 +185,47 @@ class TemplateFinder:
 
         return available_languages
 
-    def find_alternate_path(self, request_path, languages, versions):
+    def try_alternate_path(self, path):
         """
-        For a request_path that doesn't match up to a file,
-        try our best to find a URL that does
+        If the path is for a file, see if the directory exists instead.
+        If the path is for a directory, see if the file exists instead.
+        If the alternate exists, return it. Otherwise return None.
         """
 
         # Try the other URL form
-        if request_path.endswith('/'):
-            new_path = request_path.rstrip('/')
+        if path.endswith('/'):
+            new_path = path.rstrip('/')
             if os.path.isfile(self.templates_dir + get_file(new_path)):
                 return new_path
         else:
-            new_path = request_path + '/'
+            new_path = path + '/'
             if os.path.isfile(self.templates_dir + get_file(new_path)):
                 return new_path
 
-        # Try parsing languages and versions
-        url_parts = request_path.split('/')[1:]
-        language = None
-        version = None
-
-        for part in url_parts:
-            if languages and part in languages:
-                language = part
-                url_parts.remove(part)
-            elif versions and part in versions:
-                version = part
-                url_parts.remove(part)
-
-        if language:
-            languages = [language]
-
-        if version:
-            versions = [version]
+    def try_language_version_path(self, path, languages, versions):
+        """
+        Given a URL path that doesn't contain any language or version
+        information, and a list of possible languages and versions,
+        try adding each language and version to the URL until we find
+        an existing file, and then return the path for that file
+        """
 
         # Build up language and version URLs
-        search_paths = ["/" + "/".join(url_parts)]
+        search_paths = []
 
         if languages:
-            new_paths = []
             for language in languages:
-                for path in search_paths:
-                    new_paths.append("/" + language + path)
-            search_paths = new_paths
+                search_paths.append("/" + language + path)
 
         if versions:
             new_paths = []
             for version in versions:
-                for path in search_paths:
-                    new_paths.append("/" + version + path)
-            search_paths = new_paths
+                search_paths.append("/" + version + path)
+
+                for search_path in search_paths:
+                    new_paths.append("/" + version + search_path)
+
+            search_paths += new_paths
 
         for path in search_paths:
             alt_path = path + '/'
@@ -225,3 +239,35 @@ class TemplateFinder:
                 return path
             elif os.path.isfile(alt_template):
                 return alt_path
+
+    def find_alternate_path(self, request_path, languages, versions):
+        """
+        For a request_path that doesn't match up to a file,
+        try our best to find a URL that does
+        """
+
+        alternate_path = self.try_alternate_path(request_path)
+
+        if alternate_path:
+            return alternate_path
+
+        (language, version, remaining_path) = split_path(
+            request_path, languages, versions
+        )
+
+        # If the URL contained a language or version, then
+        # we should limit the lists of possibilities
+        if language:
+            languages = [language]
+
+        if version:
+            versions = [version]
+
+        language_version_path = self.try_language_version_path(
+            remaining_path,
+            languages,
+            versions
+        )
+
+        if language_version_path:
+            return language_version_path
