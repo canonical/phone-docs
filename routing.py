@@ -66,8 +66,7 @@ def is_version(version):
 
     versions = get_versions()
 
-    if versions:
-        return version in versions
+    return versions and version in versions
 
 
 def split_path(request_path, languages, versions):
@@ -121,7 +120,6 @@ class YamlRegexMap:
 
                 if lines:
                     for url_match, target_url in lines.items():
-                        # Make sure all matches start with slash
                         if url_match[0] != '/':
                             url_match = '/' + url_match
 
