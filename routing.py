@@ -5,6 +5,7 @@ import yaml
 
 # External packages
 import pycountry
+import yamlordereddictloader
 
 
 # Helper functions
@@ -34,13 +35,13 @@ def requested_languages(flask_request):
     return preferred_languages
 
 
-def get_versions():
+def get_versions(version_filepath):
     """
     Check if this repo has versions
     """
 
-    if os.path.isfile('versions'):
-        with open('versions') as version_file:
+    if os.path.isfile(version_filepath):
+        with open(version_filepath) as version_file:
             versions = list(filter(None, version_file.read().splitlines()))
 
         if len(versions):
@@ -89,7 +90,10 @@ class YamlRegexMap:
 
         if os.path.isfile(filepath):
             with open(filepath) as redirects_file:
-                lines = yaml.load(redirects_file)
+                lines = yaml.load(
+                    redirects_file,
+                    Loader=yamlordereddictloader.Loader
+                )
 
                 if lines:
                     for url_match, target_url in lines.items():

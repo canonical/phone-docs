@@ -1,18 +1,27 @@
 # Core packages
 import os
+import re
 
 # External packages
 import flask
 
 # Local packages
-import routing
+from src import routing
 
 
 application_root = '/phone'
 app = flask.Flask(__name__)
 
-permanent_redirect_map = routing.YamlRegexMap("permanent-redirects.yaml")
-redirect_map = routing.YamlRegexMap("redirects.yaml")
+permanent_redirects_path = app.config.get(
+    'PERMANENT_REDIRECTS_FILEPATH',
+    'permanent-redirects.yaml'
+)
+redirects_path = app.config.get(
+    'REDIRECTS_FILEPATH',
+    'redirects.yaml'
+)
+permanent_redirect_map = routing.YamlRegexMap(permanent_redirects_path)
+redirect_map = routing.YamlRegexMap(redirects_path)
 
 
 # Ordered before_request processors
@@ -40,6 +49,21 @@ def apply_redirects():
 
 
 @app.before_request
+def strip_extensions():
+    """
+    Remove .html and index.html
+    """
+
+    index_match = re.match(r'^(.*/)index(.html)?$', flask.request.path)
+    html_match = re.match(r'^(.*[^/]).html$', flask.request.path)
+
+    if index_match:
+        return flask.redirect(index_match.group(1), code=301)
+    elif html_match:
+        return flask.redirect(html_match.group(1), code=301)
+
+
+@app.before_request
 def find_file_or_redirect():
     """
     If a file doesn't exist at the requested path, see if it exists at one
@@ -59,7 +83,9 @@ def find_file_or_redirect():
     if 'en' not in preferred_languages:
         preferred_languages.append('en')
     languages = template_finder.get_languages(preferred_languages)
-    versions = routing.get_versions()
+    versions = routing.get_versions(
+        app.config.get('VERSION_FILEPATH', 'versions')
+    )
 
     if os.path.isfile(app.template_folder + file_path):
         return flask.render_template(file_path)
@@ -72,3 +98,12 @@ def find_file_or_redirect():
 
         if new_path:
             return flask.redirect(application_root + new_path)
+
+
+@app.route('/')
+def redirect_to_phone():
+    """
+    Redirect homepage to application_root (/phone)
+    """
+
+    return flask.redirect(application_root + '/')
