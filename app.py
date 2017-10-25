@@ -6,7 +6,7 @@ import re
 import flask
 
 # Local packages
-from src import routing
+import routing
 
 
 application_root = '/phone'
