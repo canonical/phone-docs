@@ -104,4 +104,4 @@ yarn.lock
 bin/
 
 # Local docs
-documents/
+docs/
