@@ -1,10 +1,8 @@
 {
   "scripts": {
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
-    "watch": "watch -p 'docs/**/*.md' -c 'yarn run build-css'",
-    "build": "documentation-builder --base-directory docs --output-path templates",
-    "test": "",
-    "serve": "./entrypoint 0.0.0.0:$PORT"
+    "watch": "watch -p 'docs/**/*.md' -c 'yarn run build'",
+    "build": "documentation-builder --base-directory docs --no-link-extensions"
   },
   "dependencies": {
     "watch-cli": "^0.2.2"

@@ -61,3 +61,6 @@ env[23]/
 /env/
 /templates/
 *.pyc
+
+# Project-specific
+build/
