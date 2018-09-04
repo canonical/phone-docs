@@ -2,7 +2,7 @@
   "scripts": {
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log *.sqlite _site/ build/ .jekyll-metadata .bundle",
     "watch": "watch -p 'docs/**/*.md' -c 'yarn run build'",
-    "build": "documentation-builder --base-directory docs --no-link-extensions"
+    "build": "documentation-builder --base-directory docs --no-link-extensions --tag-manager-code 'GTM-K92JCQ'"
   },
   "dependencies": {
     "watch-cli": "^0.2.2"
