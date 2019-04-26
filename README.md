@@ -1,3 +1,11 @@
+**Deprecated and archived**
+
+*Although these docs are still hosted at https://docs.ubuntu.com/phone/en/, they are very much legacy at this point. They haven't been significantly updated in years and we are not currently maintaining them.*
+
+*I'm archiving this codebase for now.*
+
+---
+
 ![tablet pictogram](https://assets.ubuntu.com/v1/afcff2f2-pictogram-tablet-shape.svg)
 
 # Ubuntu phone documentation
