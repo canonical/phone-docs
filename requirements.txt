@@ -1,1 +1,3 @@
 ubuntudesign.documentation-builder==1.5.0
+# Version pinned for compatibility:
+gitdb2==3.0.1
