@@ -1,2 +1,2 @@
-~^/(phone/?|en/?|phone/en)?$ /phone/en/;
+~^/(phone/?|phone/en)?$ /en/;
 
