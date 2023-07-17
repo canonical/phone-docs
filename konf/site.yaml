@@ -1,6 +1,6 @@
 domain: phone.docs.ubuntu.com
 
-image: prod-comms.docker-registry.canonical.com/phone.docs.ubuntu.com
+image: prod-comms.ps5.docker-registry.canonical.com/phone.docs.ubuntu.com
 
 readinessPath: "/"
 

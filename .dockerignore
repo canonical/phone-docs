@@ -102,5 +102,5 @@ package-lock.json
 yarn.lock
 bin/
 
-# Local docs
-docs/
+# # Local docs
+# docs/
