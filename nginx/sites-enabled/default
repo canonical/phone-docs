@@ -7,6 +7,8 @@ server {
     listen [::]:8201 default_server;
     server_name _;
 
+    absolute_redirect off;
+
     # Log to stdout
     access_log /dev/stdout;
     error_log /dev/stderr info;

@@ -391,7 +391,7 @@ case $run_command in
         done
 
         # Run nginx to serve static files
-        docker run -ti -p 8201:8201 -v `pwd`/build:/srv -v `pwd`/redirects.map:/etc/nginx/redirects.map -v `pwd`/nginx.conf:/etc/nginx/conf.d/deflt.conf nginx
+        docker run -ti -p 8201:8201 -v `pwd`/build:/srv -v `pwd`/nginx/redirects.map:/etc/nginx/redirects.map -v `pwd`/nginx/sites-enabled/default:/etc/nginx/conf.d/deflt.conf nginx
     ;;
     "stop")
         echo "Stopping all running containers for ${project}"
