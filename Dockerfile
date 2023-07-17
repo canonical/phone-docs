@@ -9,11 +9,10 @@ RUN pip3 install -r requirements.txt
 RUN documentation-builder --base-directory docs --no-link-extensions --tag-manager-code 'GTM-K92JCQ'
 
 # Build stage: Build the production image
-FROM nginx:1.25.1-alpine
+FROM ubuntu/nginx:1.18-20.04_beta
 WORKDIR /srv
 
 # Set git commit ID
-RUN apk add git
 RUN echo "export COMMIT_ID=$(git rev-parse HEAD || echo 'unknown')" >> /envfile
 RUN . /envfile; test -n "${COMMIT_ID}"
 
